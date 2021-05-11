@@ -1,8 +1,8 @@
-require_relative 'lib/interscript/version'
+INTERSCRIPT_MAPS_VERSION="1.90.0"
 
 Gem::Specification.new do |spec|
-  spec.name          = "interscript"
-  spec.version       = Interscript::VERSION
+  spec.name          = "interscript-maps"
+  spec.version       = INTERSCRIPT_MAPS_VERSION
   spec.summary       = %q{Interoperable script conversion systems}
   spec.description   = %q{Interoperable script conversion systems}
   spec.authors       = ["Ribose Inc."]
@@ -10,12 +10,12 @@ Gem::Specification.new do |spec|
 
   spec.date = %q{2019-11-17}
   spec.homepage      = "https://www.interscript.com"
-  spec.license       = "BSD-2-Clause"
+  spec.license       = "MIT"
 
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/interscript/interscript"
+  spec.metadata["source_code_uri"] = "https://github.com/interscript/maps"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -24,8 +24,5 @@ Gem::Specification.new do |spec|
   end
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
-
-  spec.add_dependency "thor"
-  spec.add_dependency "interscript-maps"
+  spec.require_paths = [""]
 end
