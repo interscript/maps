@@ -1,0 +1,28 @@
+= Interscript: Script conversion maps
+
+== Introduction
+
+This repository contains all Interscript interoperable script conversion schemes.
+
+== Contents
+
+Systems from these authorities are included in this repository:
+
+* ALA-LC
+* BGN/PCGN
+* ICAO
+* ISO
+* ODNI
+* UN (by UNGEGN)
+* and others systems that do not have a defined authority
+
+== Organization
+
+All maps are encoded in the "Interoperable Script Processing Model" language syntax (extension: `.imp`).
+
+System file names adhere to the script conversion system code convention
+of ISO 24229.
+
+== Copyright and license
+
+This is a Ribose project. Copyright Ribose.
