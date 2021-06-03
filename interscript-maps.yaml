@@ -21,6 +21,215 @@ secryst-models:
 # locate one that we are tyring to access.
 aliases:
   ogc11122:
+    zho_Hani2Latn_AcadSin_2002:
+      description: Chinese Tongyong Pinyin Academica Sinica 2002 System
+      alias_to: acadsin-zho-Hani-Latn-2002
+    amh_Ethi2Latn_ALA_1997:
+      description: Amharic ALA-Library of Congress 1997 System
+      alias_to: alalc-amh-Ethi-Latn-1997
+    ara_Arab2Latn_ALA_1997:
+      description: Arabic ALA-Library of Congress 1997 System
+      alias_to: alalc-ara-Arab-Latn-1997
+    asm_Deva2Latn_ALA_1997:
+      description: Assamese ALA-Library of Congress 1997 System
+      alias_to: alalc-asm-Deva-Latn-1997
+    aze_Arab2Latn_ALA_1997:
+      description: Arabic ALA-Library of Congress 1997 System
+      alias_to: alalc-aze-Arab-Latn-1997
+    aze_Cyrl2Latn_ALA_1997:
+      description: Azerbaijani ALA-Library of Congress 1997 System
+      alias_to: alalc-aze-Cyrl-Latn-1997
+    bel_Cyrl2Latn_ALA_1997:
+      description: Byelorussian ALA-Library of Congress 1997 System
+      alias_to: alalc-bel-Cyrl-Latn-1997
+    ben_Beng2Latn_ALA_1997:
+      description: Bengali ALA-Library of Congress 1997 System
+      alias_to: alalc-ben-Beng-Latn-1997
+    bul_Cyrl2Latn_ALA_1997:
+      description: Bulgarian ALA-Library of Congress Bulgarian 1997 System
+      alias_to: alalc-bul-Cyrl-Latn-1997
+    div_Thaa2Latn_ALA_1997:
+      description: Divehi ALA-Library of Congress 1997 System
+      alias_to: alalc-div-Thaa-Latn-1997
+    ell_Grek2Latn_ALA_1997:
+      description: Greek ALA-Library of Congress 1997 System
+      alias_to: alalc-ell-Grek-Latn-1997
+    guj_Gujr2Latn_ALA_1997:
+      description: Gujarati ALA-Library of Congress 1997 System
+      alias_to: alalc-guj-Gujr-Latn-1997
+    guj_Gujr2Latn_ALA_2011:
+      description: Gujarati ALA-Library of Congress 2011 System
+      alias_to: alalc-guj-Gujr-Latn-2011
+    hin_Deva2Latn_ALA_1997:
+      description: Hindi ALA-Library of Congress 1997 System
+      alias_to: alalc-hin-Deva-Latn-1997
+    kat_Geor2Latn_ALA_1997:
+      description: Georgian ALA-Library of Congress 1997 System
+      alias_to: alalc-kat-Geor-Latn-1997
+    kor_Hang2Latn_ALA_1997:
+      description: Korean ALA-Library of Congress 1997 System
+      alias_to: alalc-kor-Hang-Latn-1997
+    mal_Mlym2Latn_ALA_1997:
+      description: Malayalam ALA-Library of Congress 1997 System
+      alias_to: alalc-mal-Mlym-Latn-1997
+    mal_Mlym2Latn_ALA_2012:
+      description: Malayalam ALA-Library of Congress 2012 System
+      alias_to: alalc-mal-Mlym-Latn-2012
+    mar_Deva2Latn_ALA_1997:
+      description: Marathi ALA-Library of Congress 1997 System
+      alias_to: alalc-mar-Deva-Latn-1997
+    mon_Cyrl2Latn_ALA_1997:
+      description: Mongolian ALA-Library of Congress 1997 System
+      alias_to: alalc-mon-Cyrl-Latn-1997
+    ori_Orya2Latn_ALA_1997:
+      description: Oriya ALA-Library of Congress 1997 System
+      alias_to: alalc-ori-Orya-Latn-1997
+    ori_Orya2Latn_ALA_2011:
+      description: Oriya ALA-Library of Congress 2011 System
+      alias_to: alalc-ori-Orya-Latn-2011
+    pan_Deva2Latn_ALA_1997:
+      description: Panjabi ALA-Library of Congress 1997 System
+      alias_to: alalc-pan-Guru-Latn-1997
+    pan_Deva2Latn_ALA_2011:
+      description: Panjabi ALA-Library of Congress 2011 System
+      alias_to: alalc-pan-Guru-Latn-2011
+    rus_Cyrl2Latn_ALA_1997:
+      description: Russian ALA-Library of Congress 1997 System
+      alias_to: alalc-rus-Cyrl-Latn-1997
+    sin_Sinh2Latn_ALA_1997:
+      description: Sinhalese ALA-Library of Congress 1997 System
+      alias_to: alalc-sin-Sinh-Latn-1997
+    sin_Sinh2Latn_ALA_2011:
+      description: Sinhalese ALA-Library of Congress 2011 System
+      alias_to: alalc-sin-Sinh-Latn-2011
+    srp_Cyrl2Latn_ALA_1997:
+      description: Serbian and Macedonian ALA-Library of Congress 1997 System
+      alias_to: alalc-srp-Cyrl-Latn-1997
+    tam_Taml2Latn_ALA_1997:
+      description: Tamil ALA-Library of Congress 1997 System
+      alias_to: alalc-tam-Taml-Latn-1997
+    tam_Taml2Latn_ALA_2011:
+      description: Tamil ALA-Library of Congress 2011 System
+      alias_to: alalc-tam-Taml-Latn-2011
+    tel_Telu2Latn_ALA_1997:
+      description: Telugu ALA-Library of Congress 1997 System
+      alias_to: alalc-tel-Telu-Latn-1997
+    ukr_Cyrl2Latn_ALA_1997:
+      description: Ukrainian ALA-Library of Congress 1997 System
+      alias_to: alalc-ukr-Cyrl-Latn-1997
+    kor_Hang2Latn_MR_1939:
+      description: Korean McCune-Reischauer System, 1943 US Board on Geographic Names
+        (BGN) Agreement
+      alias_to: bgn-kor-Hang-Latn-1943
+    amh_Ethi2Latn_BGN_1967:
+      description: Amharic Board on Geographic Names/Permanent Committee on Geographical
+        Names for British Official Use(PCGN) 1967 System
+      alias_to: bgnpcgn-amh-Ethi-Latn-1967
+    ara_Arab2Latn_BGN_1956:
+      description: Arabic US Board on Geographic Names(BGN)/Permanent Committee on Geographical
+        Names for British Official Use(PCGN) 1956 System
+      alias_to: bgnpcgn-ara-Arab-Latn-1956
+    bak_Cyrl2Latn_BGN_2007:
+      description: Bashkir 2007 BGN/PCGN Cyrillic-Latin Table of Correspondences
+      alias_to: bgnpcgn-bak-Cyrl-Latn-2007
+    bel_Cyrl2Latn_BGN_1979:
+      description: Byelorussian US Board on Geographic Names(BGN)/Permanent Committee
+        on Geographical Names for British Official Use(PCGN) 1979 System
+      alias_to: bgnpcgn-bel-Cyrl-Latn-1979
+    bul_Cyrl2Latn_BGN_1952:
+      description: Bulgarian US Board on Geographic Names(BGN)/Permanent Committee on
+        Geographical Names for British Official Use(PCGN) Bulgarian 1952 System
+      alias_to: bgnpcgn-bul-Cyrl-Latn-1952
+    bul_Cyrl2Latn_BGN_2013:
+      description: Bulgarian US Board on Geographic Names(BGN)/Permanent Committee on
+        Geographical Names(PCGN) Bulgarian 2013 System
+      alias_to: bgnpcgn-bul-Cyrl-Latn-2013
+    div_Thaa2Latn_GMV_1988:
+      description: Maldivian (Divehi) 1988 system
+      alias_to: bgnpcgn-div-Thaa-Latn-1988
+    ell_Grek2Latn_BGN_1962:
+      description: US Board on Geographic Names(BGN)/Permanent Committee on Geographical
+        Names for British Official Use(PCGN) Greek 1962 System (out of date)
+      alias_to: bgnpcgn-ell-Grek-Latn-1962
+    ell_Grek2Latn_ELOT743_1996:
+      description: Greek ELOT 743 System, US Board on Geographic Names(BGN)/Permanent
+        Committee on Geographical Names for British Official Use(PCGN) 1996 agreement
+      alias_to: bgnpcgn-ell-Grek-Latn-1996
+    fas_Arab2Latn_BGN_1958:
+      description: Persian (Afghan and Iranian) BGN/Permanent Committee on Geographical
+        Names for British Official Use(PCGN) 1958 System
+      alias_to: bgnpcgn-fas-Arab-Latn-1956
+    kat_Geor2Latn_BGN_1981:
+      description: Georgian US Board on Geographic Names(BGN)/Permanent Committee on Geographical
+        Names for British Official Use(PCGN) 1981 System
+      alias_to: bgnpcgn-kat-Geor-Latn-1981
+    mkd_Cyrl2Latn_BGN_1981:
+      description: Macedonian US Board on Geographic Names(BGN)/Permanent Committee on
+        Geographical Names for British Official Use(PCGN) 1981 System
+      alias_to: bgnpcgn-mkd-Cyrl-Latn-1981
+    mon_Cyrl2Latn_BGN_1964:
+      description: Mongolian US Board on Geographic Names(BGN)/Permanent Committee on
+        Geographical Names for British Official Use(PCGN) 1964 System
+      alias_to: bgnpcgn-mon-Cyrl-Latn-1964
+    uas_Arab2Latn_BGN_2007:
+      description: Unified Afghan Romanization System US Board on Geographic Names (BGN)/The
+        Permanent Committee on Geographical Names (PCGN) 2007
+      alias_to: bgnpcgn-urd-Arab-Latn-2007
+    rue_Cyrl2Latn_BGN_2016:
+      description: The BGN/PCGN system for Rusyn was designed for use in romanizing names
+        written in the Rusyn alphabet.
+      alias_to: bgnpcgn-rue-Cyrl-Latn-2016
+    rus_Cyrl2Latn_BGN_1947:
+      description: Russian US Board on Geographic Names(BGN)/Permanent Committee on Geographical
+        Names for British Official Use(PCGN) 1947 System
+      alias_to: bgnpcgn-rus-Cyrl-Latn-1947
+    srp_Cyrl2Latn_BGN_2005:
+      description: Serbian Cyrillic Table of Correspondences US Board on Geographic Names(BGN)/Permanent
+        Committee on Geographical Names for British Official Use(PCGN) 2005
+      alias_to: bgnpcgn-srp-Cyrl-Latn-2005
+    tat_Cyrl2Latn_BGN_2005:
+      description: Tatar is an official language within Respublika Tatarstan, one of the
+        republics of the Russian Federation.
+      alias_to: bgnpcgn-tat-Cyrl-Latn-2007
+    tgk_Cyrl2Latn_BGN_1994:
+      description: The BGN/PCGN system for Tajik was designed for use in romanizing names
+        written in the Tajik Cyrillic alphabet.
+      alias_to: bgnpcgn-tgk-Cyrl-Latn-1994
+    ukr_Cyrl2Latn_BGN_1965:
+      description: Ukrainian Board on Geographic Names/Permanent Committee on Geographical
+        Names for British Official Use(PCGN) 1965 System
+      alias_to: bgnpcgn-ukr-Cyrl-Latn-1965
+    bel_Cyrl2Latn_GBO_1998:
+      description: Byelorussian Government of Belarus 1998 System
+      alias_to: by-bel-Cyrl-Latn-1998
+    kat_Geor2Latn_GGG_2002:
+      description: Georgian State Department of Geodesy and Cartography 2002 System
+      alias_to: ggg-kat-Geor-Latn-2002
+    rus_Cyrl2Latn_GOST_1983:
+      description: Russian GOST 1983 System, Main Administration of Geodesy and Cartography
+        of the Former Soviet Union
+      alias_to: gost-rus-Cyrl-Latn-16876-71-1983
+    kor_Hang2Latn_GKN_2002:
+      description: Korean Democratic People's Republic of Korea Korean 2002 System
+      alias_to: kp-kor-Hang-Latn-2002
     kor_Hang2Latn_MOCT_2000:
       description: Korean Ministry of Culture and Tourism 2000 System
       alias_to: moct-kor-Hang-Latn-2000
+    tha_Thai2Latn_RIT_1968:
+      description: Thai Royal Institute of Thailand 1968 System (out of date)
+      alias_to: royin-tha-Thai-Latn-1968
+    tir_Thai2Latn_RIT_2000:
+      description: Thai Royal Institute of Thailand 2000 System
+      alias_to: royin-tha-Thai-Latn-1999
+    zho_Hani2Latn_GCH_1979:
+      description: Chinese Hanyu Pinyin 1979 System
+      alias_to: sac-zho-Hans-Latn-1979
+    ara_Arab2Latn_SES_1930:
+      description: Arabic Survey of Egypt System
+      alias_to: ses-ara-Arab-Latn-1930
+    ukr_Cyrl2Latn_GUP_1996:
+      description: Ukrainian Government of Ukraine 1996 System
+      alias_to: ua-ukr-Cyrl-Latn-1996
+    zho_Hani2Latn_WDG_1979:
+      description: Chinese Wade-Giles 1979 System
+      alias_to: var-zho-Hani-Latn-wd-1979
