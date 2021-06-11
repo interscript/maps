@@ -1,0 +1,45 @@
+name: test
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        repository: interscript/interscript
+        submodules: true
+    
+    - run: |
+        rm -rf maps
+        mkdir maps
+
+    - uses: actions/checkout@v2
+      with:
+        path: maps
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7
+    
+    - name: cache ruby gems
+      uses: actions/cache@v2
+      env:
+        cache-name: cache-ruby-modules
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-ruby-2.7-gems-${{ hashFiles('**/interscript.gemspec') }}
+        restore-keys: |
+          ${{ runner.os }}-ruby-2.7-gems-
+    
+    - run: |
+        bundle config path vendor/bundle
+        pushd ruby && bundle install --jobs 4 --retry 3 --with jsexec --without secryst && popd
+    
+    - run: pushd ruby && bundle exec rspec interscript_spec.rb && popd
