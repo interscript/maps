@@ -86,14 +86,14 @@ tests {
 stage {
 
   # RULES
-  sub capture("\u2019\u0415"), "Je" # Е
-  sub capture("\u2019\u0435"), "je" # е
-  sub capture("\u2019\u0401"), "Jo" # Ë
-  sub capture("\u2019\u0451"), "jo" # ё
-  sub capture("\u2019\u042E"), "Ju" # Ю
-  sub capture("\u2019\u044E"), "ju" # ю
-  sub capture("\u2019\u042F"), "Ja" # Я
-  sub capture("\u2019\u044F"), "ja" # я
+  sub "\u2019\u0415", "Je" # Е
+  sub "\u2019\u0435", "je" # е
+  sub "\u2019\u0401", "Jo" # Ë
+  sub "\u2019\u0451", "jo" # ё
+  sub "\u2019\u042E", "Ju" # Ю
+  sub "\u2019\u044E", "ju" # ю
+  sub "\u2019\u042F", "Ja" # Я
+  sub "\u2019\u044F", "ja" # я
 
   sub "\u0415", "Je", before: any("АаЕеЁёИиОоУуЭэЮюЯяЬьЎў") # Е after vowels
   sub "\u0435", "je", before: any("АаЕеЁёИиОоУуЭэЮюЯяЬьЎў") # е after vowels

@@ -43,8 +43,9 @@ stage {
 
   # RULES
   # note[5]
-  sub "\u044C", ref( 1 ), before: any("ЗзЛлНнСсЦц") # ь after consonants
-  sub "\u02B9", ref( 1 ), before: any("ЗзЛлНнСсЦц") # Ь after consonants
+  # Those two are nonsense and harmful for reversibility
+  # sub "\u044C", ref( 1 ), before: any("ЗзЛлНнСсЦц") # ь after consonants
+  # sub "\u02B9", ref( 1 ), before: any("ЗзЛлНнСсЦц") # Ь after consonants
   # Й at end
   sub "\u0419" + line_end, "", before: any("ЕеЁёЫыЮюЯя") # Я after vowels
   sub "\u0439" + line_end, "", before: any("ЕеЁёЫыЮюЯя") # я after vowels
