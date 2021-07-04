@@ -9,7 +9,7 @@ metadata {
     - https://www.iso.org/standard/4118.html
     - https://cdn.standards.iteh.ai/samples/4118/2f03c828842c4055a5619c1bded39381/ISO-233-2-1993.pdf
   creation_date: 1993-08
-  confirmation date: 2018-06
+  confirmation_date: 2018-06
   description: |
     Establishes a simplified system for the transliteration. This
     simplification of the stringent rules established by ISO 233:1984
@@ -18,24 +18,29 @@ metadata {
     gives the diacritical signs used (taken from the code table of
     ISO 5436:1983).
   notes:
-    - 4.1.1 In Order to render a transliterated text more legible, the vowels
-    are supplied [method 2.1 c) of ISO 233:1984]. However sukün (`\u0652`) is
-    omitted, as well as the vowels and diphthongs which have only a flexional
-    function in nominal forms.
+    - |
+      4.1.1 In Order to render a transliterated text more legible, the vowels
+      are supplied [method 2.1 c) of ISO 233:1984]. However sukün (`\u0652`) is
+      omitted, as well as the vowels and diphthongs which have only a flexional
+      function in nominal forms.
 
-    - 4.1.2 The initial alif (`\u0627`) is not represented: the presence of an
-    initial vowel in the transliterated word is enough to indicate an alif in
-    the original script.
+    - |
+      4.1.2 The initial alif (`\u0627`) is not represented: the presence of an
+      initial vowel in the transliterated word is enough to indicate an alif in
+      the original script.
 
-    - 4.1.3 A character bearing a hamzat (`\u0621`), which depends on the
-    vocalic context, is not represented.
+    - |
+      4.1.3 A character bearing a hamzat (`\u0621`), which depends on the
+      vocalic context, is not represented.
 
-    - 4.1.4 The definite article (`\u0627\u0644`), is always represented by the
-    characters “al-”, whatever its vocalization.
+    - |
+      4.1.4 The definite article (`\u0627\u0644`), is always represented by the
+      characters “al-”, whatever its vocalization.
 
-    - 4.1.5 The prepositions (li, bi, ka) as well as the conjunction wa, which
-    in Arabic are joined to the word, are separated by a hyphen in the
-    transliterated script.
+    - |
+      4.1.5 The prepositions (li, bi, ka) as well as the conjunction wa, which
+      in Arabic are joined to the word, are separated by a hyphen in the
+      transliterated script.
 
 }
 
@@ -64,7 +69,7 @@ stage {
     sub "\u064e(?=\u0629)", ""  # َ fatha followed by ta' marboota
     sub "\u0650", "i"           # ِ kasra
     sub "\u064f", "u"           # ُ damma
-    sub "\u0652", ""            # ْ sokoon, see note A below
+    sub "\u0652", ""            # ْ sokoon, see 4.1.1
 
     # special pointed letters
     sub "\u0639\u064e", "‘a"  # عَ
@@ -135,11 +140,11 @@ stage {
 
     sub "\u0649", "ỳ"  # ى
 
-    '\u0626' : "'" # ئ
+    sub "\u0626", "'" # ئ
 
     sub "\u0623", "a"  # أ
 
-    # See note B
+    # See 4.1.4
     sub "\b\u0627\u0644", "al "  # ال
     # '\uFE8E' : ''  # ﺎ
 
