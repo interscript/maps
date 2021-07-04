@@ -1,0 +1,175 @@
+metadata {
+  authority_id: iso
+  id: 233-2-1993
+  language: iso-639-2:ara
+  source_script: Arab
+  destination_script: Latn
+  name: ISO 233-2:1993 Documentation — Transliteration of Arabic characters into Latin characters
+  url:
+    - https://www.iso.org/standard/4118.html
+    - https://cdn.standards.iteh.ai/samples/4118/2f03c828842c4055a5619c1bded39381/ISO-233-2-1993.pdf
+  creation_date: 1993-08
+  confirmation date: 2018-06
+  description: |
+    Establishes a simplified system for the transliteration. This
+    simplification of the stringent rules established by ISO 233:1984
+    is especially intended to facilitate the processing of bibliographic
+    information (e.g. catalogues, indices, citations, etc.). Annex A
+    gives the diacritical signs used (taken from the code table of
+    ISO 5436:1983).
+  notes:
+    - 4.1.1 In Order to render a transliterated text more legible, the vowels
+    are supplied [method 2.1 c) of ISO 233:1984]. However sukün (`\u0652`) is
+    omitted, as well as the vowels and diphthongs which have only a flexional
+    function in nominal forms.
+
+    - 4.1.2 The initial alif (`\u0627`) is not represented: the presence of an
+    initial vowel in the transliterated word is enough to indicate an alif in
+    the original script.
+
+    - 4.1.3 A character bearing a hamzat (`\u0621`), which depends on the
+    vocalic context, is not represented.
+
+    - 4.1.4 The definite article (`\u0627\u0644`), is always represented by the
+    characters “al-”, whatever its vocalization.
+
+    - 4.1.5 The prepositions (li, bi, ka) as well as the conjunction wa, which
+    in Arabic are joined to the word, are separated by a hyphen in the
+    transliterated script.
+
+}
+
+tests {
+  test "مِصر", "Miṣr"
+  test "قَطَر", "Qaṭar"
+  test "الجُمهُورِيَّة العِرَاقِيَّة", "Al Ǧumhuwriyaẗ al ‘Ira’qiyaẗ"
+  test "جُمهُورِيَّة مِصر العَرَبِيَّة", "Ǧumhuwriyaẗ Miṣr al ‘Arabiyaẗ"
+  test "الرِيَاض", "Ar Riya’ḍ"
+  test "الشارِقة", "Aš Šâriqaẗ"
+}
+
+# Although this system inherits from iso-ara-Arab-Latn-233-1984,
+# it utilizes a set of simplified rules.
+# It is therefore easier to be implemented as a separate map instead
+# of using the inherit flag.
+# inherit: iso-ara-Arab-Latn-233-1984
+
+stage {
+
+  # CHARACTERS
+  parallel {
+
+    # pointing
+    sub "\u064e", "a"           # َ fatha
+    sub "\u064e(?=\u0629)", ""  # َ fatha followed by ta' marboota
+    sub "\u0650", "i"           # ِ kasra
+    sub "\u064f", "u"           # ُ damma
+    sub "\u0652", ""            # ْ sokoon, see note A below
+
+    # special pointed letters
+    sub "\u0639\u064e", "‘a"  # عَ
+    sub "\u0639\u0650", "‘i"  # عِ
+    sub "\u0639\u064f", "‘ū"  # عُ
+    # handle MacOS regex difference
+    sub "\u0639\u064f\u0648", "‘ū"  # عُو damma followed by و
+
+    sub "\u0650\u064a", "iy" # ـِي kasra followed by ي
+    sub "\u0650\u064a\u0651\u064e", "iy" # ـِيَّ
+    sub "\u0650\u064a(?=\u064e|u064f)", "iy" # ـِي kasra followed by ي
+    sub "\u064e\u0627", "a’"  # ـَا fatha followed by ا
+    sub "\u064e\u0649", "aỳ"  # ـَى fatha followed by ى which is ا not ي
+    sub "\u064f\u0648", "uw"  # ـُو damma followed by و
+    sub "\u064e\u0648\u0652", "aw"  # ـَوْ
+    sub "\u064e\u064a\u0652", "ay"  # ـَيْ
+
+    # Sun letters
+    sub "\b\u0627\u0644\u062a", "at t"  # الت
+    sub "\b\u0627\u0644\u062b", "aṯ ṯ"  # الث
+    sub "\b\u0627\u0644\u062f", "ad d" # الد
+    sub "\b\u0627\u0644\u0630", "aḏ ḏ"  # الذ
+    sub "\b\u0627\u0644\u0631", "ar r" # الر
+    sub "\b\u0627\u0644\u0632", "az z"  # الز
+    sub "\b\u0627\u0644\u0633", "as s" # الس
+    sub "\b\u0627\u0644\u0634", "aš š" # الش
+    sub "\b\u0627\u0644\u0635", "aṣ ṣ"  # الص
+    sub "\b\u0627\u0644\u0636", "aḍ ḍ"  # الض
+    sub "\b\u0627\u0644\u0637", "aṭ ṭ"  # الط
+    sub "\b\u0627\u0644\u0638", "aẓ ẓ" # الظ
+    sub "\b\u0627\u0644\u0644", "al l"  # الل
+    sub "\b\u0627\u0644\u0646", "an n"  # الن
+
+    # ta' marboota in iso-233-1984 is all the same `aẗ`
+    sub "\u0629", "aẗ" # ة in the middle of the sentence
+
+    # Shadda
+    sub "\u0628\u0651", "bb"  # ب
+    sub "\u062a\u0651", "tt"  # ت
+    sub "\u062b\u0651", "ṯṯ"  # ث
+    sub "\u062c\u0651", "ǧǧ"  # ج
+    sub "\u062d\u0651", "ḥḥ" # ح
+    sub "\u062e\u0651", "ẖẖ"  # خ
+    sub "\u062f\u0651", "dd"  # د
+    sub "\u0630\u0651", "ḏḏ"  # ذ
+    sub "\u0631\u0651", "rr"  # ر
+    sub "\u0632\u0651", "zz"  # ز
+    sub "\u0633\u0651", "ss"  # س
+    sub "\u0634\u0651", "šš"  # ش
+    sub "\u0635\u0651", "ṣṣ"  # ص
+    sub "\u0636\u0651", "ḍḍ"  # ض
+    sub "\u0637\u0651", "ṭṭ"  # ط
+    sub "\u0638\u0651", "ẓẓ"  # ظ
+    sub "\u063a\u0651", "ġġ"  # غ
+    sub "\u0641\u0651", "ff"  # ف
+    sub "\u0642\u0651", "qq"  # ق
+    sub "\u0643\u0651", "kk"  # ك
+    sub "\u0644\u0651", "ll"  # ل
+    sub "\u0645\u0651", "mm"  # م
+    sub "\u0646\u0651", "nn"  # ن
+    sub "\u0647\u0651", "hh"  # ه
+    sub "\u0648\u0651", "ww"  # و
+    sub "\u064a\u0651", "yy"  # ي
+
+    sub "\u0622", "’â"  # آ
+
+    sub "\u0627", "â"  # ا
+
+    sub "\u0649", "ỳ"  # ى
+
+    '\u0626' : "'" # ئ
+
+    sub "\u0623", "a"  # أ
+
+    # See note B
+    sub "\b\u0627\u0644", "al "  # ال
+    # '\uFE8E' : ''  # ﺎ
+
+    sub "[\u0641|\u06A2]", "f"  # ف | ڢ
+
+    sub "[\u0642|\u06A8]", "q"  # ق | ڧ‎
+
+    sub "\u0646", "n"  # ن
+    sub "\ufee7", "n"  # ﻧ
+    sub "\ufee8", "n"  # ﻨ
+    sub "\ufee6", "n"  # ﻦ
+  }
+
+  # POSTRULES
+  sub any("\u0061".."\uFFFF"), upcase, before: boundary, not_before: boundary + any("‘’'")
+  # don't capitalize defined article in the middle of a sentence
+  sub " At T", " at T" # الت
+  sub " Aṯ Ṯ", " aṯ Ṯ" # الث
+  sub " Ad D", " ad D" # الد
+  sub " Aḏ Ḏ", " aḏ Ḏ" # الذ
+  sub " Ar R", " ar R" # الر
+  sub " Az Z", " az Z" # الز
+  sub " As S", " as S" # الس
+  sub " Aš Š", " aš Š" # الش
+  sub " Aṣ Ṣ", " aṣ Ṣ" # الص
+  sub " Aḍ Ḍ", " aḍ Ḍ" # الض
+  sub " Aṭ Ṭ", " aṭ Ṭ" # الط
+  sub " Aẓ Ẓ", " aẓ Ẓ" # الظ
+  sub " Al L", " al L" # الل
+  sub " An N", " an N" # الن
+  sub " Al ", " al "   # ال
+
+}
