@@ -100,20 +100,20 @@ stage {
     sub "\u064e\u064a\u0652", "ay"  # ـَيْ
 
     # Sun letters
-    sub "\b\u0627\u0644\u062a", "at t"  # الت
-    sub "\b\u0627\u0644\u062b", "aṯ ṯ"  # الث
-    sub "\b\u0627\u0644\u062f", "ad d" # الد
-    sub "\b\u0627\u0644\u0630", "aḏ ḏ"  # الذ
-    sub "\b\u0627\u0644\u0631", "ar r" # الر
-    sub "\b\u0627\u0644\u0632", "az z"  # الز
-    sub "\b\u0627\u0644\u0633", "as s" # الس
-    sub "\b\u0627\u0644\u0634", "aš š" # الش
-    sub "\b\u0627\u0644\u0635", "aṣ ṣ"  # الص
-    sub "\b\u0627\u0644\u0636", "aḍ ḍ"  # الض
-    sub "\b\u0627\u0644\u0637", "aṭ ṭ"  # الط
-    sub "\b\u0627\u0644\u0638", "aẓ ẓ" # الظ
-    sub "\b\u0627\u0644\u0644", "al l"  # الل
-    sub "\b\u0627\u0644\u0646", "an n"  # الن
+    sub boundary + "\u0627\u0644\u062a", "at t"  # الت
+    sub boundary + "\u0627\u0644\u062b", "aṯ ṯ"  # الث
+    sub boundary + "\u0627\u0644\u062f", "ad d" # الد
+    sub boundary + "\u0627\u0644\u0630", "aḏ ḏ"  # الذ
+    sub boundary + "\u0627\u0644\u0631", "ar r" # الر
+    sub boundary + "\u0627\u0644\u0632", "az z"  # الز
+    sub boundary + "\u0627\u0644\u0633", "as s" # الس
+    sub boundary + "\u0627\u0644\u0634", "aš š" # الش
+    sub boundary + "\u0627\u0644\u0635", "aṣ ṣ"  # الص
+    sub boundary + "\u0627\u0644\u0636", "aḍ ḍ"  # الض
+    sub boundary + "\u0627\u0644\u0637", "aṭ ṭ"  # الط
+    sub boundary + "\u0627\u0644\u0638", "aẓ ẓ" # الظ
+    sub boundary + "\u0627\u0644\u0644", "al l"  # الل
+    sub boundary + "\u0627\u0644\u0646", "an n"  # الن
 
     # Table 1 No. 27a
     # ta' marboota in iso-233-2-1993 is all the same `aẗ`
