@@ -7,15 +7,16 @@ metadata {
   name: Hong Kong Government Cantonese Romanisation
   url: http://caes.hku.hk/hkjalonline/issues/download_the_file.php?f=2008_v11_1_kataoka__n__lee.pdf
   creation_date: 2020-01
-  description:
-    - This system is commonly used for the transliteration of place names or
-      person's names in Hong Kong, as pronounced in Cantonese. There will be more
-      than one legitimate transliteration for the same syllable, or sometimes even
-      for the same character. For example, the character 仔 can be transcribed as
-      Chai or Tsai in this system. Some of the choice is context-depenedent (e.g.
-      the same character in the place name 灣仔 is almost always Chai, but more likely
-      to be Tsai elsewhere). There will be more variations and unpredictabilities in
-      person's names, and these conventions need to be hard-coded.
+  description: |
+    This system is commonly used for the transliteration of place names or
+    person's names in Hong Kong, as pronounced in Cantonese. There will be more
+    than one legitimate transliteration for the same syllable, or sometimes even
+    for the same character. For example, the character 仔 can be transcribed as
+    Chai or Tsai in this system. Some of the choice is context-dependent (e.g.
+    the same character in the place name 灣仔 is almost always Chai, but more
+    likely to be Tsai elsewhere). There will be more variations and
+    unpredictable conversions in person's names, and these conventions need to
+    be hard-coded.
 
   notes:
     - Tone is not represented in this system.
@@ -27,10 +28,9 @@ metadata {
       distinctions were represented by ’ or diacritics (e.g. á vs. a), but were
       removed in printed / typeset documents.
 
-
-  #A longer test list will be generated from GeoNames database
 }
 
+# TODO: A longer test list will be generated from GeoNames database
 tests {
   test "煎魚灣", "Tsin Yue Wan"
   test "分流廟灣", "Fan Lau Miu Wan"
