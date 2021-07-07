@@ -38,7 +38,7 @@ metadata {
       غ is ġ instead of gh
       ة is ẗ instead of h/t
       ى is ỳ
-      ـِي is iy instead of iy
+      ـِي is iy instead of ī
       ـُو is uw instead of ū
       ـَا is a’ instead of ā
       ـَى is aỳ instead of á
@@ -54,7 +54,6 @@ tests {
 }
 
 stage {
-
 
   # CHARACTERS
   parallel {
@@ -105,7 +104,6 @@ stage {
 
     # Shadda
 
-
     sub "\u0628\u0651", "bb" # ب
     sub "\u062a\u0651", "tt" # ت
     sub "\u062b\u0651", "ṯṯ" # ث
@@ -133,7 +131,6 @@ stage {
     sub "\u0648\u0651", "ww" # و
     sub "\u064a\u0651", "yy" # ي
 
-
     sub "\u0622", "’â" # آ
 
     sub "\u0627", "â" # ا
@@ -141,7 +138,6 @@ stage {
     sub "\u0649", "ỳ" # ى
 
     sub "\u0626", "'" # ئ
-
 
     sub "\u0621", maybe("’") # ء# see note A
 
