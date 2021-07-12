@@ -52,15 +52,14 @@ tests {
   test "جُمهُورِيَّة مِصر العَرَبِيَّة", "Ǧumhuwriyaẗ Miṣr al-‘Arabiyaẗ"
   test "الرِيَاض", "al-Riya’ḍ"
   test "الشارِقة", "al-Šâriqaẗ"
-  test "فِي نُورِ الْقَمَرِ", "fī nūr al-qamar"
-  test "بِئْر", "bi’r"
-  test "سَأَلَ", "sa’ala"
-  test "أَخْبَار", "aẖbār"
-  test "قُرْآن", "qur’ān"
-  test "آدَاب", "ādāb"
-  test "أَلش", "ādāb"
-  test "آدَاب", "ādāb"
-  test "أَلشَّمْسُ", "al-Šams"
+  test "فِي نُورِ الْقَمَرِ", "Fī Nūr al-Qamar"
+  test "بِئْر", "Bi’r"
+  test "سَأَلَ", "Sa’ala"
+  test "أَخْبَار", "Aẖbār"
+  test "قُرْآن", "Qur’ān"
+  test "آدَاب", "Ādāb"
+  test "آدَاب", "Ādāb"
+  test "اَلشَّمْسُ", "al-Šams"
   test "بِاللَيلِ", "bi-al-Layl"
   test "لِلوَلَدِ", "li-l-walad"
 }
@@ -157,7 +156,6 @@ stage {
     sub "\u0623", "a"  # أ
 
     # See 4.1.4
-    sub boundary + "\u0627\u0644", "al " # ال
     # '\uFE8E' : ''  # ﺎ
 
     # Table 1 No. 3
@@ -337,7 +335,7 @@ stage {
 
     sub "\u0627\u0644", "al-", before: "\u0628\u0650" # بِال
 
-    sub boundary + "\u0628\u0650", "bi-" # بـِ
+    sub boundary + "\u0628\u0650", "bi-", after: "\u0627\u0644" # بـِ
 
     sub boundary + "\u0644\u0650\u0644", "li-l-" # لِل
 
@@ -348,6 +346,6 @@ stage {
   sub any("\u0061".."\uFFFF"), upcase, before: boundary, not_before: boundary + any("‘’'")
   # don't capitalize defined article in the middle of a sentence
   sub "Al-", "al-" # ال
-  # sub "Bi-", "bi-" # بِ
+  sub "Bi-", "bi-" # بِ
   # sub "-L-", "-l-" # بِل
 }
