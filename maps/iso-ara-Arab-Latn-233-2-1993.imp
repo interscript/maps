@@ -46,10 +46,9 @@ metadata {
 
 tests {
   test "مِصر", "Miṣr"
-
   test "قَطَر", "Qaṭar"
-  test "الجُمهُورِيَّة العِرَاقِيَّة", "al-Ǧumhuwriyaẗ al-‘Ira’qiyaẗ"
-  test "جُمهُورِيَّة مِصر العَرَبِيَّة", "Ǧumhuwriyaẗ Miṣr al-‘Arabiyaẗ"
+  test "الجُمهُورِيَّة العِرَاقِيَّة", "al-Ǧumhūriyaẗ al-‘Ira’qiyaẗ"
+  test "جُمهُورِيَّة مِصر العَرَبِيَّة", "Ǧumhūriyaẗ Miṣr al-‘Arabiyaẗ"
   test "الرِيَاض", "al-Riya’ḍ"
   test "الشارِقة", "al-Šâriqaẗ"
   test "فِي نُورِ الْقَمَرِ", "Fī Nūr al-Qamar"
@@ -58,10 +57,9 @@ tests {
   test "أَخْبَار", "Aẖbār"
   test "قُرْآن", "Qur’ān"
   test "آدَاب", "Ādāb"
-  test "آدَاب", "Ādāb"
   test "اَلشَّمْسُ", "al-Šams"
   test "بِاللَيلِ", "bi-al-Layl"
-  test "لِلوَلَدِ", "li-l-walad"
+  test "لِلوَلَدِ", "li-l-Walad"
 }
 
 # Although this system inherits from iso-ara-Arab-Latn-233-1984,
@@ -153,7 +151,8 @@ stage {
 
     sub "\u0649", "ỳ"  # ى
 
-    sub "\u0623", "a"  # أ
+    sub "\u0623", "’a"  # أ
+    sub boundary + "\u0623", ""  # أ
 
     # See 4.1.4
     # '\uFE8E' : ''  # ﺎ
@@ -347,5 +346,5 @@ stage {
   # don't capitalize defined article in the middle of a sentence
   sub "Al-", "al-" # ال
   sub "Bi-", "bi-" # بِ
-  # sub "-L-", "-l-" # بِل
+  sub "Li-L-", "li-l-" # بِل
 }
