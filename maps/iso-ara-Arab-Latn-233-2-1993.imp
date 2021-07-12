@@ -47,7 +47,7 @@ metadata {
 tests {
   test "مِصر", "Miṣr"
   test "قَطَر", "Qaṭar"
-  test "الرِيَاض", "al-Riyaḍ"
+  test "الرِيَاض", "al-Riyāḍ"
   test "الشارِقة", "al-Šâriqaẗ"
   test "فِي نُورِ الْقَمَرِ", "Fī Nūr al-Qamar"
   test "بِئْر", "Bi’r"
@@ -55,7 +55,7 @@ tests {
   test "أَخْبَار", "Aẖbār"
   test "قُرْآن", "Qur’ān"
   test "آدَاب", "Ādāb"
-  test "الشَّمْسُ", "al-Šams"
+  test "الشَمْسُ", "al-Šams"
   test "بِاللَيلِ", "bi-al-Layl"
   test "لِلوَلَدِ", "li-l-Walad"
 }
@@ -149,7 +149,7 @@ stage {
 
     sub "\u0649", "ỳ"  # ى
 
-    sub "\u0623", "’a"  # أ
+    sub "\u0623", "’"  # أ
     sub boundary + "\u0623", ""  # أ
 
     # See 4.1.4
