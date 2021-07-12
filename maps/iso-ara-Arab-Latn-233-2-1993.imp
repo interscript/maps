@@ -46,11 +46,23 @@ metadata {
 
 tests {
   test "مِصر", "Miṣr"
+
   test "قَطَر", "Qaṭar"
-  test "الجُمهُورِيَّة العِرَاقِيَّة", "Al Ǧumhuwriyaẗ al ‘Ira’qiyaẗ"
-  test "جُمهُورِيَّة مِصر العَرَبِيَّة", "Ǧumhuwriyaẗ Miṣr al ‘Arabiyaẗ"
-  test "الرِيَاض", "Ar Riya’ḍ"
-  test "الشارِقة", "Aš Šâriqaẗ"
+  test "الجُمهُورِيَّة العِرَاقِيَّة", "al-Ǧumhuwriyaẗ al-‘Ira’qiyaẗ"
+  test "جُمهُورِيَّة مِصر العَرَبِيَّة", "Ǧumhuwriyaẗ Miṣr al-‘Arabiyaẗ"
+  test "الرِيَاض", "al-Riya’ḍ"
+  test "الشارِقة", "al-Šâriqaẗ"
+  test "فِي نُورِ الْقَمَرِ", "fī nūr al-qamar"
+  test "بِئْر", "bi’r"
+  test "سَأَلَ", "sa’ala"
+  test "أَخْبَار", "aẖbār"
+  test "قُرْآن", "qur’ān"
+  test "آدَاب", "ādāb"
+  test "أَلش", "ādāb"
+  test "آدَاب", "ādāb"
+  test "أَلشَّمْسُ", "al-Šams"
+  test "بِاللَيلِ", "bi-al-Layl"
+  test "لِلوَلَدِ", "li-l-walad"
 }
 
 # Although this system inherits from iso-ara-Arab-Latn-233-1984,
@@ -79,6 +91,11 @@ stage {
     # Table 3, No. 33
     sub "\u0652", "" # ْ sokoon, see 4.1.1
 
+    # pointing omitted in the end of words
+    sub "\u064e" + boundary, ""                 # َ fatha
+    sub "\u064f" + boundary, ""                 # ُ damma
+    sub "\u0650" + boundary, ""                 # ِ kasra
+
     # special pointed letters
     sub "\u0639\u064e", "‘a"  # عَ
     sub "\u0639\u0650", "‘i"  # عِ
@@ -86,34 +103,18 @@ stage {
     # handle MacOS regex difference
     sub "\u0639\u064f\u0648", "‘ū"  # عُو damma followed by و
 
-    sub "\u0650\u064a", "iy" # ـِي kasra followed by ي
+    sub "\u0650\u064a", "ī" # ـِي kasra followed by ي
     sub "\u0650\u064a\u0651\u064e", "iy" # ـِيَّ
     sub "\u0650\u064a", "iy", after: any("\u064e\u064f") # ـِي kasra followed by ي
-    sub "\u064e\u0627", "a’"  # ـَا fatha followed by ا
+    sub "\u064e\u0627", "ā"  # ـَا fatha followed by ا
     sub "\u064e\u0649", "aỳ"  # ـَى fatha followed by ى which is ا not ي
-    sub "\u064f\u0648", "uw"  # ـُو damma followed by و
+    sub "\u064f\u0648", "ū"  # ـُو damma followed by و
 
     # Table 2 No. 31, column 4
     sub "\u064e\u0648\u0652", "aw"  # ـَوْ
 
     # Table 2 No. 32, column 4
     sub "\u064e\u064a\u0652", "ay"  # ـَيْ
-
-    # Sun letters
-    sub boundary + "\u0627\u0644\u062a", "at t"  # الت
-    sub boundary + "\u0627\u0644\u062b", "aṯ ṯ"  # الث
-    sub boundary + "\u0627\u0644\u062f", "ad d" # الد
-    sub boundary + "\u0627\u0644\u0630", "aḏ ḏ"  # الذ
-    sub boundary + "\u0627\u0644\u0631", "ar r" # الر
-    sub boundary + "\u0627\u0644\u0632", "az z"  # الز
-    sub boundary + "\u0627\u0644\u0633", "as s" # الس
-    sub boundary + "\u0627\u0644\u0634", "aš š" # الش
-    sub boundary + "\u0627\u0644\u0635", "aṣ ṣ"  # الص
-    sub boundary + "\u0627\u0644\u0636", "aḍ ḍ"  # الض
-    sub boundary + "\u0627\u0644\u0637", "aṭ ṭ"  # الط
-    sub boundary + "\u0627\u0644\u0638", "aẓ ẓ" # الظ
-    sub boundary + "\u0627\u0644\u0644", "al l"  # الل
-    sub boundary + "\u0627\u0644\u0646", "an n"  # الن
 
     # Table 1 No. 27a
     # ta' marboota in iso-233-2-1993 is all the same `aẗ`
@@ -149,13 +150,9 @@ stage {
     sub "\u0648\u0651", "ww" # و
     sub "\u064a\u0651", "yy" # ي
 
-    sub "\u0622", "’â"  # آ
-
     sub "\u0627", "â"  # ا
 
     sub "\u0649", "ỳ"  # ى
-
-    sub "\u0626", "'" # ئ
 
     sub "\u0623", "a"  # أ
 
@@ -327,25 +324,30 @@ stage {
     # Table 4 row 3
     sub "\u061f", "?" # ؟
 
+    # 4.3 Notes to Tables
+    sub "\u0626", "’" # ئ
+
+    sub "\u0622", "’ā"  # آ
+
+    sub boundary + "\u0622", "ā"  # آ
+
+    # definite article
+
+    sub boundary + "\u0627\u0644", "al-" # ال
+
+    sub "\u0627\u0644", "al-", before: "\u0628\u0650" # بِال
+
+    sub boundary + "\u0628\u0650", "bi-" # بـِ
+
+    sub boundary + "\u0644\u0650\u0644", "li-l-" # لِل
+
   }
+
 
   # POSTRULES
   sub any("\u0061".."\uFFFF"), upcase, before: boundary, not_before: boundary + any("‘’'")
   # don't capitalize defined article in the middle of a sentence
-  sub " At T", " at T" # الت
-  sub " Aṯ Ṯ", " aṯ Ṯ" # الث
-  sub " Ad D", " ad D" # الد
-  sub " Aḏ Ḏ", " aḏ Ḏ" # الذ
-  sub " Ar R", " ar R" # الر
-  sub " Az Z", " az Z" # الز
-  sub " As S", " as S" # الس
-  sub " Aš Š", " aš Š" # الش
-  sub " Aṣ Ṣ", " aṣ Ṣ" # الص
-  sub " Aḍ Ḍ", " aḍ Ḍ" # الض
-  sub " Aṭ Ṭ", " aṭ Ṭ" # الط
-  sub " Aẓ Ẓ", " aẓ Ẓ" # الظ
-  sub " Al L", " al L" # الل
-  sub " An N", " an N" # الن
-  sub " Al ", " al "   # ال
-
+  sub "Al-", "al-" # ال
+  # sub "Bi-", "bi-" # بِ
+  # sub "-L-", "-l-" # بِل
 }
