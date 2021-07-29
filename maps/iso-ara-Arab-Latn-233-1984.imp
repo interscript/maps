@@ -85,7 +85,7 @@ stage {
     # Sun letters
 
     sub boundary + "\u0627\u0644\u062a" + maybe("\u0651"), "at t" # الت
-    sub boundary + "\u0627\u0644\u062b" + maybe("\u0651"),, "aṯ ṯ" # الث
+    sub boundary + "\u0627\u0644\u062b" + maybe("\u0651"), "aṯ ṯ" # الث
     sub boundary + "\u0627\u0644\u062f" + maybe("\u0651"), "ad d" # الد
     sub boundary + "\u0627\u0644\u0630" + maybe("\u0651"), "aḏ ḏ" # الذ
     sub boundary + "\u0627\u0644\u0631" + maybe("\u0651"), "ar r" # الر

@@ -249,7 +249,7 @@ stage {
 
     # Sun letters
     sub boundary + "\u0627\u0644\u062a" + maybe("\u0651"), "ut t" # الت
-    sub boundary + "\u0627\u0644\u062b" + maybe("\u0651"),, "us̄ s̄" # الث
+    sub boundary + "\u0627\u0644\u062b" + maybe("\u0651"), "us̄ s̄" # الث
     sub boundary + "\u0627\u0644\u062f" + maybe("\u0651"), "ud d" # الد
     sub boundary + "\u0627\u0644\u0630" + maybe("\u0651"), "uz̄ z̄" # الذ
     sub boundary + "\u0627\u0644\u0631" + maybe("\u0651"), "ur r" # الر

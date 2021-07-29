@@ -130,7 +130,7 @@ stage {
 
     # Sun letters
     sub boundary + "\u0627\u0644\u062a" + maybe("\u0651"), "el-t" # الت
-    sub boundary + "\u0627\u0644\u062b" + maybe("\u0651"),, any(["el-th", "el-t"]) # الث
+    sub boundary + "\u0627\u0644\u062b" + maybe("\u0651"), any(["el-th", "el-t"]) # الث
     sub boundary + "\u0627\u0644\u062f" + maybe("\u0651"), "el-d" # الد
     sub boundary + "\u0627\u0644\u0630" + maybe("\u0651"), any(["el-dh", "el-z"]) # الذ
     sub boundary + "\u0627\u0644\u0631" + maybe("\u0651"), "el-r" # الر
