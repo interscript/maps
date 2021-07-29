@@ -248,20 +248,20 @@ stage {
     sub "\u0659", "ê"
 
     # Sun letters
-    sub boundary + "\u0627\u0644\u062a", "ut t" # الت
-    sub boundary + "\u0627\u0644\u062b", "us̄ s̄" # الث
-    sub boundary + "\u0627\u0644\u062f", "ud d" # الد
-    sub boundary + "\u0627\u0644\u0630", "uz̄ z̄" # الذ
-    sub boundary + "\u0627\u0644\u0631", "ur r" # الر
-    sub boundary + "\u0627\u0644\u0632", "uz z" # الز
-    sub boundary + "\u0627\u0644\u0633", "us s" # الس
-    sub boundary + "\u0627\u0644\u0634", "ush sh" # الش
-    sub boundary + "\u0627\u0644\u0635", "uş ş" # الص
-    sub boundary + "\u0627\u0644\u0636", "uẕ ẕ" # الض
-    sub boundary + "\u0627\u0644\u0637", "uţ ţ" # الط
-    sub boundary + "\u0627\u0644\u0638", "uz̧ z̧" # الظ
-    sub boundary + "\u0627\u0644\u0644", "ul l" # الل
-    sub boundary + "\u0627\u0644\u0646", "un n" # الن
+    sub boundary + "\u0627\u0644\u062a" + maybe("\u0651"), "ut t" # الت
+    sub boundary + "\u0627\u0644\u062b" + maybe("\u0651"),, "us̄ s̄" # الث
+    sub boundary + "\u0627\u0644\u062f" + maybe("\u0651"), "ud d" # الد
+    sub boundary + "\u0627\u0644\u0630" + maybe("\u0651"), "uz̄ z̄" # الذ
+    sub boundary + "\u0627\u0644\u0631" + maybe("\u0651"), "ur r" # الر
+    sub boundary + "\u0627\u0644\u0632" + maybe("\u0651"), "uz z" # الز
+    sub boundary + "\u0627\u0644\u0633" + maybe("\u0651"), "us s" # الس
+    sub boundary + "\u0627\u0644\u0634" + maybe("\u0651"), "ush sh" # الش
+    sub boundary + "\u0627\u0644\u0635" + maybe("\u0651"), "uş ş" # الص
+    sub boundary + "\u0627\u0644\u0636" + maybe("\u0651"), "uẕ ẕ" # الض
+    sub boundary + "\u0627\u0644\u0637" + maybe("\u0651"), "uţ ţ" # الط
+    sub boundary + "\u0627\u0644\u0638" + maybe("\u0651"), "uz̧ z̧" # الظ
+    sub boundary + "\u0627\u0644\u0644" + maybe("\u0651"), "ul l" # الل
+    sub boundary + "\u0627\u0644\u0646" + maybe("\u0651"), "un n" # الن
 
     sub "\u0626", "êy" # ئ
   }

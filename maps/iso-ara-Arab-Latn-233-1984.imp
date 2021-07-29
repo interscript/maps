@@ -84,20 +84,20 @@ stage {
 
     # Sun letters
 
-    sub boundary + "\u0627\u0644\u062a", "at t" # الت
-    sub boundary + "\u0627\u0644\u062b", "aṯ ṯ" # الث
-    sub boundary + "\u0627\u0644\u062f", "ad d" # الد
-    sub boundary + "\u0627\u0644\u0630", "aḏ ḏ" # الذ
-    sub boundary + "\u0627\u0644\u0631", "ar r" # الر
-    sub boundary + "\u0627\u0644\u0632", "az z" # الز
-    sub boundary + "\u0627\u0644\u0633", "as s" # الس
-    sub boundary + "\u0627\u0644\u0634", "aš š" # الش
-    sub boundary + "\u0627\u0644\u0635", "aṣ ṣ" # الص
-    sub boundary + "\u0627\u0644\u0636", "aḍ ḍ" # الض
-    sub boundary + "\u0627\u0644\u0637", "aṭ ṭ" # الط
-    sub boundary + "\u0627\u0644\u0638", "aẓ ẓ" # الظ
-    sub boundary + "\u0627\u0644\u0644", "al l" # الل
-    sub boundary + "\u0627\u0644\u0646", "an n" # الن
+    sub boundary + "\u0627\u0644\u062a" + maybe("\u0651"), "at t" # الت
+    sub boundary + "\u0627\u0644\u062b" + maybe("\u0651"),, "aṯ ṯ" # الث
+    sub boundary + "\u0627\u0644\u062f" + maybe("\u0651"), "ad d" # الد
+    sub boundary + "\u0627\u0644\u0630" + maybe("\u0651"), "aḏ ḏ" # الذ
+    sub boundary + "\u0627\u0644\u0631" + maybe("\u0651"), "ar r" # الر
+    sub boundary + "\u0627\u0644\u0632" + maybe("\u0651"), "az z" # الز
+    sub boundary + "\u0627\u0644\u0633" + maybe("\u0651"), "as s" # الس
+    sub boundary + "\u0627\u0644\u0634" + maybe("\u0651"), "aš š" # الش
+    sub boundary + "\u0627\u0644\u0635" + maybe("\u0651"), "aṣ ṣ" # الص
+    sub boundary + "\u0627\u0644\u0636" + maybe("\u0651"), "aḍ ḍ" # الض
+    sub boundary + "\u0627\u0644\u0637" + maybe("\u0651"), "aṭ ṭ" # الط
+    sub boundary + "\u0627\u0644\u0638" + maybe("\u0651"), "aẓ ẓ" # الظ
+    sub boundary + "\u0627\u0644\u0644" + maybe("\u0651"), "al l" # الل
+    sub boundary + "\u0627\u0644\u0646" + maybe("\u0651"), "an n" # الن
 
     # ta' marboota in iso-233-1984 is all the same `aẗ`
     sub "\u0629", "aẗ" # ة in the middle of the sentence

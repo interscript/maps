@@ -130,20 +130,20 @@ stage {
 
     # NOTE 1
     # Sun letters
-    sub boundary + "\u0627\u0644\u062a", "ot t" # الت
-    sub boundary + "\u0627\u0644\u062b", "os̄ s̄" # الث
-    sub boundary + "\u0627\u0644\u062f", "od d" # الد
-    sub boundary + "\u0627\u0644\u0630", "oz̄ z̄" # الذ
-    sub boundary + "\u0627\u0644\u0631", "or r" # الر
-    sub boundary + "\u0627\u0644\u0632", "oz z" # الز
-    sub boundary + "\u0627\u0644\u0633", "os s" # الس
-    sub boundary + "\u0627\u0644\u0634", "osh sh" # الش
-    sub boundary + "\u0627\u0644\u0635", "oş ş" # الص
-    sub boundary + "\u0627\u0644\u0636", "oẕ ẕ" # الض
-    sub boundary + "\u0627\u0644\u0637", "oţ ţ" # الط
-    sub boundary + "\u0627\u0644\u0638", "oz̧ z̧" # الظ
-    sub boundary + "\u0627\u0644\u0644", "ol l" # الل
-    sub boundary + "\u0627\u0644\u0646", "on n" # الن
+    sub boundary + "\u0627\u0644\u062a" + maybe("\u0651"), "ot t" # الت
+    sub boundary + "\u0627\u0644\u062b" + maybe("\u0651"),, "os̄ s̄" # الث
+    sub boundary + "\u0627\u0644\u062f" + maybe("\u0651"), "od d" # الد
+    sub boundary + "\u0627\u0644\u0630" + maybe("\u0651"), "oz̄ z̄" # الذ
+    sub boundary + "\u0627\u0644\u0631" + maybe("\u0651"), "or r" # الر
+    sub boundary + "\u0627\u0644\u0632" + maybe("\u0651"), "oz z" # الز
+    sub boundary + "\u0627\u0644\u0633" + maybe("\u0651"), "os s" # الس
+    sub boundary + "\u0627\u0644\u0634" + maybe("\u0651"), "osh sh" # الش
+    sub boundary + "\u0627\u0644\u0635" + maybe("\u0651"), "oş ş" # الص
+    sub boundary + "\u0627\u0644\u0636" + maybe("\u0651"), "oẕ ẕ" # الض
+    sub boundary + "\u0627\u0644\u0637" + maybe("\u0651"), "oţ ţ" # الط
+    sub boundary + "\u0627\u0644\u0638" + maybe("\u0651"), "oz̧ z̧" # الظ
+    sub boundary + "\u0627\u0644\u0644" + maybe("\u0651"), "ol l" # الل
+    sub boundary + "\u0627\u0644\u0646" + maybe("\u0651"), "on n" # الن
 
     sub "\u0650\u064a\u0651", "īy" # ـِيَّ
     sub "\u0650\u064a", "iy", after: any("\u064e\u064f") # ـِي kasra followed by ي

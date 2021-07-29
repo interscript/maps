@@ -129,20 +129,20 @@ stage {
 
 
     # Sun letters
-    sub boundary + "\u0627\u0644\u062a", "el-t" # الت
-    sub boundary + "\u0627\u0644\u062b", any(["el-th", "el-t"]) # الث
-    sub boundary + "\u0627\u0644\u062f", "el-d" # الد
-    sub boundary + "\u0627\u0644\u0630", any(["el-dh", "el-z"]) # الذ
-    sub boundary + "\u0627\u0644\u0631", "el-r" # الر
-    sub boundary + "\u0627\u0644\u0632", "el-z" # الز
-    sub boundary + "\u0627\u0644\u0633", any(["el-s", "el-c"]) # الس
-    sub boundary + "\u0627\u0644\u0634", "el-sh" # الش
-    sub boundary + "\u0627\u0644\u0635", "el-ṣ" # الص
-    sub boundary + "\u0627\u0644\u0636", "el-ḍ" # الض
-    sub boundary + "\u0627\u0644\u0637", "el-ṭ" # الط
-    sub boundary + "\u0627\u0644\u0638", any(["el-ẓ", "el-d"]) # الظ
-    sub boundary + "\u0627\u0644\u0644", "el-l" # الل
-    sub boundary + "\u0627\u0644\u0646", "el-n" # الن
+    sub boundary + "\u0627\u0644\u062a" + maybe("\u0651"), "el-t" # الت
+    sub boundary + "\u0627\u0644\u062b" + maybe("\u0651"),, any(["el-th", "el-t"]) # الث
+    sub boundary + "\u0627\u0644\u062f" + maybe("\u0651"), "el-d" # الد
+    sub boundary + "\u0627\u0644\u0630" + maybe("\u0651"), any(["el-dh", "el-z"]) # الذ
+    sub boundary + "\u0627\u0644\u0631" + maybe("\u0651"), "el-r" # الر
+    sub boundary + "\u0627\u0644\u0632" + maybe("\u0651"), "el-z" # الز
+    sub boundary + "\u0627\u0644\u0633" + maybe("\u0651"), any(["el-s", "el-c"]) # الس
+    sub boundary + "\u0627\u0644\u0634" + maybe("\u0651"), "el-sh" # الش
+    sub boundary + "\u0627\u0644\u0635" + maybe("\u0651"), "el-ṣ" # الص
+    sub boundary + "\u0627\u0644\u0636" + maybe("\u0651"), "el-ḍ" # الض
+    sub boundary + "\u0627\u0644\u0637" + maybe("\u0651"), "el-ṭ" # الط
+    sub boundary + "\u0627\u0644\u0638" + maybe("\u0651"), any(["el-ẓ", "el-d"]) # الظ
+    sub boundary + "\u0627\u0644\u0644" + maybe("\u0651"), "el-l" # الل
+    sub boundary + "\u0627\u0644\u0646" + maybe("\u0651"), "el-n" # الن
 
 
     # shadda
