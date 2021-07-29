@@ -379,20 +379,20 @@ stage {
 
 
     # Sun letters
-    sub boundary + "\u0627\u0644\u062a", "at̄ t̄" # الت
-    sub boundary + "\u0627\u0644\u062b", "as̄ s̄" # الث
-    sub boundary + "\u0627\u0644\u062f", "aḏ ḏ" # الد
-    sub boundary + "\u0627\u0644\u0630", "az̄ z̄" # الذ
-    sub boundary + "\u0627\u0644\u0631", "aṟ ṟ" # الر
-    sub boundary + "\u0627\u0644\u0632", "az z" # الز
-    sub boundary + "\u0627\u0644\u0633", "as s" # الس
-    sub boundary + "\u0627\u0644\u0634", "aš š" # الش
-    sub boundary + "\u0627\u0644\u0635", "as̱ s̱" # الص
-    sub boundary + "\u0627\u0644\u0636", "ad͟z d͟z" # الض
-    sub boundary + "\u0627\u0644\u0637", "aṯ ṯ" # الط
-    sub boundary + "\u0627\u0644\u0638", "aẕ ẕ" # الظ
-    sub boundary + "\u0627\u0644\u0644", "al l" # الل
-    sub boundary + "\u0627\u0644\u0646", "an n" # الن
+    sub boundary + "\u0627\u0644\u062a" + maybe("\u0651"), "at̄ t̄" # الت
+    sub boundary + "\u0627\u0644\u062b" + maybe("\u0651"),, "as̄ s̄" # الث
+    sub boundary + "\u0627\u0644\u062f" + maybe("\u0651"), "aḏ ḏ" # الد
+    sub boundary + "\u0627\u0644\u0630" + maybe("\u0651"), "az̄ z̄" # الذ
+    sub boundary + "\u0627\u0644\u0631" + maybe("\u0651"), "aṟ ṟ" # الر
+    sub boundary + "\u0627\u0644\u0632" + maybe("\u0651"), "az z" # الز
+    sub boundary + "\u0627\u0644\u0633" + maybe("\u0651"), "as s" # الس
+    sub boundary + "\u0627\u0644\u0634" + maybe("\u0651"), "aš š" # الش
+    sub boundary + "\u0627\u0644\u0635" + maybe("\u0651"), "as̱ s̱" # الص
+    sub boundary + "\u0627\u0644\u0636" + maybe("\u0651"), "ad͟z d͟z" # الض
+    sub boundary + "\u0627\u0644\u0637" + maybe("\u0651"), "aṯ ṯ" # الط
+    sub boundary + "\u0627\u0644\u0638" + maybe("\u0651"), "aẕ ẕ" # الظ
+    sub boundary + "\u0627\u0644\u0644" + maybe("\u0651"), "al l" # الل
+    sub boundary + "\u0627\u0644\u0646" + maybe("\u0651"), "an n" # الن
 
     # consonant characters
 
