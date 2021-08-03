@@ -8,10 +8,13 @@ metadata {
   url: http://catdir.loc.gov/catdir/cpso/romanization/amharic.pdf
   creation_date: 1997
   description: |
-    ALA-LC Romanization Tables: Transliteration Schemes for Non-Roman Scripts. Randal K. Berry (ed.). Library of Congress, 1997.
-  
+    ALA-LC Romanization Tables: Transliteration Schemes for Non-Roman Scripts.
+    Randal K. Berry (ed.). Library of Congress, 1997.
+
   notes:
-    - The Ethiopic script used for Amharic is also used for other languages, including Ge’ez, Argobba, Gurage, and Tigre. Ge’ez, which is chiefly a liturgical language, uses only 26 basic letter forms from this table.
+    - The Ethiopic script used for Amharic is also used for other languages,
+    including Ge’ez, Argobba, Gurage, and Tigre. Ge’ez, which is chiefly a
+    liturgical language, uses only 26 basic letter forms from this table.
 }
 
 tests {
@@ -319,17 +322,17 @@ stage {
     sub "ቬ", "vé"
     sub "ቭ", any(["ve", "v"])
     sub "ቮ", "vo"
-    
+
     sub "ቈ", "qwa"
     sub "ቊ", "qwi"
     sub "ቋ", "qwā"
     sub "ቌ", "qwé"
     sub "ቍ", "qwe"
-    sub "ኈ", "hwa"
-    sub "ኊ", "hwi"
-    sub "ኋ", "hwā"
-    sub "ኌ", "hwé"
-    sub "ኍ", "hwe"
+    sub "ኈ", "ẖwa"
+    sub "ኊ", "ẖwi"
+    sub "ኋ", "ẖwā"
+    sub "ኌ", "ẖwé"
+    sub "ኍ", "ẖwe"
     sub "ኰ", "kwa"
     sub "ኲ", "kwi"
     sub "ኳ", "kwā"
@@ -340,7 +343,7 @@ stage {
     sub "ጓ", "gwā"
     sub "ጔ", "gwé"
     sub "ጕ", "gwe"
-    
+
     sub "ሏ", "lwa"
     sub "ቧ", "bwa"
     sub "ዟ", "zwa"
@@ -361,12 +364,12 @@ stage {
     sub "ሿ", "šwa"
     sub "ኟ", "ñwa"
     sub "ጇ", "ǧwa"
-    
+
     sub "ፙ", "mya"
     sub "ፚ", "fya"
-    
+
     sub "ኧ", "ă"
-    
+
     sub "፩", "1"
     sub "፪", "2"
     sub "፫", "3"
