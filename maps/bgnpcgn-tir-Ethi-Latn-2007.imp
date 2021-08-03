@@ -10,7 +10,7 @@ metadata {
   description: |
     The BGN/PCGN system for Tigrinya is designed for use in romanizing
     geographical names written in Tigrinya (Ge’ez) characters. The Roman letters
-    and letter combinations shown as ek'uivalents to the Tigrinya characters
+    and letter combinations shown as ek’uivalents to the Tigrinya characters
     reflect modern Tigrinya pronunciation, while taking into account some
     conscious archaisms based on Ge’ez and liturgical practices.
 
@@ -61,20 +61,20 @@ tests {
   test "የዜግነት ክብር በ ኢትዮጵያችን ጸንቶ", "yeziegĭnetĭ kĭbĭrĭ be ’itĭyop’ĭyachĭnĭ ts’enĭto"
   test "ታየ ሕዝባዊነት ዳር እስከዳር በርቶ", "taye ḥĭzĭbawinetĭ darĭ ’ĭsĭkedarĭ berĭto"
   test "ለሰላም ለፍትህ ለሕዝቦች ነጻነት", "leselamĭ lefĭtĭhĭ leḥĭzĭbochĭ nets’anetĭ"
-  test "በእኩልነት በፍቅር ቆመናል ባንድነት", "be’ĭkulĭnetĭ befĭk'ĭrĭ k'omenalĭ banĭdĭnetĭ"
+  test "በእኩልነት በፍቅር ቆመናል ባንድነት", "be’ĭkulĭnetĭ befĭk’ĭrĭ k’omenalĭ banĭdĭnetĭ"
   test "መሠረተ ፅኑ ሰብዕናን ያልሻርን", "meserete ts’ĭnu sebĭ‘ĭnanĭ yalĭsharĭnĭ"
   test "ሕዝቦች ነን ለሥራ በሥራ የኖርን", "ḥĭzĭbochĭ nenĭ lesĭra besĭra yenorĭnĭ"
-  test "ድንቅ የባህል መድረክ ያኩሪ ቅርስ ባለቤት", "dĭnĭk'ĭ yebahĭlĭ medĭrekĭ yakuri k'ĭrĭsĭ balebietĭ"
+  test "ድንቅ የባህል መድረክ ያኩሪ ቅርስ ባለቤት", "dĭnĭk’ĭ yebahĭlĭ medĭrekĭ yakuri k’ĭrĭsĭ balebietĭ"
   test "የተፈጥሮ ጸጋ የጀግና ሕዝብ እናት", "yetefet’ĭro ts’ega yejegĭna ḥĭzĭbĭ ’ĭnatĭ"
-  test "እንጠብቅሻለን አለብን አደራ", "’ĭnĭt’ebĭk'ĭshalenĭ ’elebĭnĭ ’edera"
+  test "እንጠብቅሻለን አለብን አደራ", "’ĭnĭt’ebĭk’ĭshalenĭ ’elebĭnĭ ’edera"
   test "ኢትዮጵያችን ኑሪ እኛም ባንቺ እንኩራ", "’itĭyop’ĭyachĭnĭ nuri ’ĭnyamĭ banĭchi ’ĭnĭkura"
-  test "ቋንቋ የድምጽ, የምልክት ወይም የምስል ቅንብር ሆኖ", "k’wanĭk’wa yedĭmĭts’ĭ, yemĭlĭkĭtĭ weyĭmĭ yemĭsĭlĭ k'ĭnĭbĭrĭ hono"
+  test "ቋንቋ የድምጽ, የምልክት ወይም የምስል ቅንብር ሆኖ", "k’wanĭk’wa yedĭmĭts’ĭ, yemĭlĭkĭtĭ weyĭmĭ yemĭsĭlĭ k’ĭnĭbĭrĭ hono"
   test "ለማሰብ ወይም የታሰበን ሃሳብ ለሌላ ለማስተላለፍ የሚረዳ መሳሪያ ነው", "lemasebĭ weyĭmĭ yetasebenĭ hasabĭ leliela lemasĭtelalefĭ yemireda mesariya newĭ"
-  test "በአጭሩ ቋንቋ የምልክቶች ስርዓትና እኒህን ምልክቶች ለማቀናበር", "be’ech’ĭru k’wanĭk’wa yemĭlĭkĭtochĭ sĭrĭ‘atĭna ’ĭnihĭnĭ mĭlĭkĭtochĭ lemak'enaberĭ"
-  test "የሚያስፈልጉ ህጎች ጥንቅር ነው. ቋንቋወችን ለመፈረጅ እንዲሁም", "yemiyasĭfelĭgu hĭgochĭ t’ĭnĭk'ĭrĭ newĭ. k’wanĭk’wawechĭnĭ lemeferejĭ ’ĭnĭdihumĭ"
-  test "ለምክፈል የሚያስችሉ መስፈርቶችን ለማስቀመጥ ባለው ችግር", "lemĭkĭfelĭ yemiyasĭchĭlu mesĭferĭtochĭnĭ lemasĭk'emet’ĭ balewĭ chĭgĭrĭ"
+  test "በአጭሩ ቋንቋ የምልክቶች ስርዓትና እኒህን ምልክቶች ለማቀናበር", "be’ech’ĭru k’wanĭk’wa yemĭlĭkĭtochĭ sĭrĭ‘atĭna ’ĭnihĭnĭ mĭlĭkĭtochĭ lemak’enaberĭ"
+  test "የሚያስፈልጉ ህጎች ጥንቅር ነው. ቋንቋወችን ለመፈረጅ እንዲሁም", "yemiyasĭfelĭgu hĭgochĭ t’ĭnĭk’ĭrĭ newĭ. k’wanĭk’wawechĭnĭ lemeferejĭ ’ĭnĭdihumĭ"
+  test "ለምክፈል የሚያስችሉ መስፈርቶችን ለማስቀመጥ ባለው ችግር", "lemĭkĭfelĭ yemiyasĭchĭlu mesĭferĭtochĭnĭ lemasĭk’emet’ĭ balewĭ chĭgĭrĭ"
   test "ምክንያት በአሁኑ ሰዓት በርግጠኝነት ስንት ቋንቋ በዓለም ላይ", "mĭkĭnĭyatĭ be’ehunu se‘atĭ berĭgĭt’enyĭnetĭ sĭnĭtĭ k’wanĭk’wa be‘alemĭ layĭ"
-  test "እንዳለ ማወቅ አስቸጋሪ ነው", "’ĭnĭdale mawek'ĭ ’esĭchegari newĭ"
+  test "እንዳለ ማወቅ አስቸጋሪ ነው", "’ĭnĭdale mawek’ĭ ’esĭchegari newĭ"
   test "አሰላ", "’esela"
   test "አሶሳ", "’esosa"
   test "አንኮበር", "’enĭkoberĭ"
@@ -85,12 +85,12 @@ tests {
   test "አዳማ", "’edama"
   test "ደምበጫ", "demĭbech’a"
   test "ደርባ", "derĭba"
-  test "ደብረ ማርቆስ", "debĭre marĭk'osĭ"
+  test "ደብረ ማርቆስ", "debĭre marĭk’osĭ"
   test "ደብረ ብርሃን", "debĭre bĭrĭhanĭ"
   test "ደብረ ታቦር (ከተማ)", "debĭre taborĭ (ketema)"
   test "ደብረ ዘይት", "debĭre zeyĭtĭ"
   test "ደገሃቡር", "degehaburĭ"
-  test "ወልቂጤ", "welĭk'it’ie"
+  test "ወልቂጤ", "welĭk’it’ie"
   test "ወልወል", "welĭwelĭ"
   test "ወልደያ", "welĭdeya"
   test "ናይሎ ሳህራን", "nayĭlo sahĭranĭ"
@@ -103,19 +103,19 @@ tests {
   test "አርቦርኛ", "’erĭborĭnya"
   test "ባይሶኛ", "bayĭsonya"
   test "ቡሳኛ", "busanya"
-  test "ሁለተኛ ጥፋት ከገበያ ማንቀላፋት", "huletenya t’ĭfatĭ kegebeya manĭk'elafatĭ"
+  test "ሁለተኛ ጥፋት ከገበያ ማንቀላፋት", "huletenya t’ĭfatĭ kegebeya manĭk’elafatĭ"
   test "ሁሉም ከልኩ አያልፍም", "hulumĭ kelĭku ’eyalĭfĭmĭ"
   test "አልሞት ባይ ተጋዳይ", "’elĭmotĭ bayĭ tegadayĭ"
   test "ውርድ ከራሴ", "wĭrĭdĭ kerasie"
-  test "ፀጉር መሰንጠቅ", "ts’egurĭ mesenĭt’ek'ĭ"
+  test "ፀጉር መሰንጠቅ", "ts’egurĭ mesenĭt’ek’ĭ"
   test "ግንትር ፀሐይ", "gĭnĭtĭrĭ ts’eḥeyĭ"
   test "በሬ ወለደ", "berie welede"
   test "ራስ ሳይጠና ጉተና", "rasĭ sayĭt’ena gutena"
   test "ለሆዴ ጠግቤ በልብሴ አንግቤ", "lehodie t’egĭbie belĭbĭsie ’enĭgĭbie"
-  test "ለልጅ ከሳቁለት ለውሻ ከሮጡለት", "lelĭjĭ kesak'uletĭ lewĭsha kerot’uletĭ"
+  test "ለልጅ ከሳቁለት ለውሻ ከሮጡለት", "lelĭjĭ kesak’uletĭ lewĭsha kerot’uletĭ"
   test "መልካም ባል መጥፎ ሴት ይገራል", "melĭkamĭ balĭ met’ĭfo sietĭ yĭgeralĭ"
   test "ሆድና ግንባር አይሸሸግም", "hodĭna gĭnĭbarĭ ’eyĭsheshegĭmĭ"
-  test "ቀሊል አማት ሲሶ በትር አላት", "k'elilĭ ’ematĭ siso betĭrĭ ’elatĭ"
+  test "ቀሊል አማት ሲሶ በትር አላት", "k’elilĭ ’ematĭ siso betĭrĭ ’elatĭ"
   test "ጨው ለራስህ ብለህ ጣፍጥ አለበለዚያ ድንጋይ ነው ብለው ይወረውሩሀል", "ch’ewĭ lerasĭhĭ bĭlehĭ t’afĭt’ĭ ’elebeleziya dĭnĭgayĭ newĭ bĭlewĭ yĭwerewĭruhelĭ"
   test "ጀምሮ ይጨርሳል አልሞ ይተኩሳል", "jemĭro yĭch’erĭsalĭ ’elĭmo yĭtekusalĭ"
 }
@@ -198,7 +198,7 @@ stage {
     sub "\u1242", "k’i" # ቂ
     sub "\u1243", "k’a" # ቃ
     sub "\u1244", "k’ie" # ቄ
-    sub "\u1245", any(["k’ĭ", "k'"]) # ቅ
+    sub "\u1245", any(["k’ĭ", "k’"]) # ቅ
     sub "\u1246", "k’o" # ቆ
 
     sub "\u1250", "kh’e" # ቐ
