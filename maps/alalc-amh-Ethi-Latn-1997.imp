@@ -12,9 +12,10 @@ metadata {
     Randal K. Berry (ed.). Library of Congress, 1997.
 
   notes:
-    - The Ethiopic script used for Amharic is also used for other languages,
-    including Ge’ez, Argobba, Gurage, and Tigre. Ge’ez, which is chiefly a
-    liturgical language, uses only 26 basic letter forms from this table.
+    - |
+      The Ethiopic script used for Amharic is also used for other languages,
+      including Ge’ez, Argobba, Gurage, and Tigre. Ge’ez, which is chiefly a
+      liturgical language, uses only 26 basic letter forms from this table.
 }
 
 tests {
