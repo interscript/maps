@@ -218,6 +218,12 @@ aliases:
     tha_Thai2Latn_RIT_1968:
       description: Thai Royal Institute of Thailand 1968 System (out of date)
       alias_to: royin-tha-Thai-Latn-1968
+    tir_Ethi2Latn_ALA_1997:
+      description: ALA-LC Romanization Table -- Tigrinya (1997)
+      alias_to: alalc-tir-Ethi-Latn-1997
+    tir_Ethi2Latn_BGN_2007:
+      description: BGN/PCGN Tigrinya Romanization System (2007)
+      alias_to: bgnpcgn-tir-Ethi-Latn-2007
     tir_Thai2Latn_RIT_2000:
       description: Thai Royal Institute of Thailand 2000 System
       alias_to: royin-tha-Thai-Latn-1999
