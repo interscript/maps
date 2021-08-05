@@ -1,0 +1,47 @@
+metadata {
+  authority_id: un
+  id: 1997
+  language: iso-639-2:srp
+  source_script: Cyrl
+  destination_script: Latn
+  name: UNITED NATIONS ROMANIZATION SYSTEMS FOR GEOGRAPHICAL NAMES
+  url: http://www.eki.ee/wgrs/rom1_sr.htm
+  creation_date: 1997
+  description: |
+    The United Nations recommended system was approved in 1977 (III/11), based on the Roman equivalent of the Serbo-Croatian Cyrillic alphabet that had long been employed in official gazetteers and maps of Yugoslavia. The table was published as an annex to the resolution1. The term relating to the language (Serbian instead of Serbo-Croatian) was modified in 2002 (resolution VIII/14).
+    The system is used in Serbia, Montenegro, and Bosnia and Herzegovina. It is also used in international cartographic products.
+    Serbian uses the Cyrillic script that is alphabetic. The romanization table is unambiguous and can be applied automatically. The system is reversible.
+}
+
+tests {
+  test "Шупља Стена", "Šuplja Stena"
+  test "Чукарица", "Čukarica"
+  test "Црна Трава", "Crna Trava"
+  test "Херцег Нови", "Herceg Novi"
+  test "Улцињ", "Ulcinj"
+  test "Ужице", "Užice"
+  test "Тресаначка Река", "Tresanačka Reka"
+  test "Сјеница", "Sjenica"
+  test "Рожаје", "Rožaje"
+  test "Пљевља", "Pljevlja"
+  test "Оџаци", "Odžaci"
+  test "Никшић", "Nikšić"
+  test "Медвеђа", "Medveđa"
+  test "Лозница", "Loznica"
+  test "Књажевац", "Knjaževac"
+  test "Зрењанин", "Zrenjanin"
+  test "Житорађа", "Žitorađa"
+  test "Ервеник", "Ervenik"
+  test "Доње Љупче", "Donje Ljupče"
+  test "Гусиње", "Gusinje"
+  test "ГУСИЊЕ", "GUSINJE"
+  test "Врњачка Бања", "Vrnjačka Banja"
+  test "Бијело Поље", "Bijelo Polje"
+  test "Алибунар", "Alibunar"
+}
+
+dependency "alalc-srp-Cyrl-Latn-2013", as: srpalatn
+
+stage {
+  run map.srpalatn.stage.main
+}
