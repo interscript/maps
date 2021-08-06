@@ -1,0 +1,119 @@
+metadata {
+  authority_id: id
+  id: 1977
+  language: iso-639-2:mkd
+  source_script: Cyrl
+  destination_script: Latn
+  name: UNITED NATIONS ROMANIZATION SYSTEMS FOR GEOGRAPHICAL NAMES
+  url: https://www.eki.ee/wgrs/v2_2/rom1_mk.htm
+  creation_date: 1977
+  description: |
+    The United Nations recommended system was approved in 1977 (III/11), based on the romanization of the Serbo-Croatian and Macedonian Cyrillic alphabets that had long been employed in official gazetteers and maps of Yugoslavia. The table was published as an annex to the resolution (Third United Nations Conference on the Standardization of Geographical Names. Athens, 17 August - 7 September 1977. Vol. I. Report of the Conference, pp. 29, 31).
+    The system is used in The former Yugoslav Republic of Macedonia (see e.g. Report of The former Yugoslav Republic of Macedonia. Seventh United Nations Conference on the Standardization of Geographical Names. New York, 13-22 January 1998. Document E/CONF.91/CRP.23) and in international cartographic products.
+    The Cyrillic alphabet is used. The romanization table is unambiguous and can be applied automatically. The system is on the whole reversible with the exception of the characters ѓ and ќ. These are romanized as g and k, respectively, before е and и. But also г and к are occasionally used before е and и, so, for example, the name Makedonija is reconstituted as Македонија, not Маќедонија in the Cyrillic source script.
+}
+
+tests {
+  test "Маќедонија", "Makedonija"
+  test "Општина Ердут", "Opština Erdut"
+  test "Општина Двор", "Opština Dvor"
+  test "ЛУЃЕ луѓе", "LUGE luge"
+  test "ЅВЕЗДА ѕвезда Ѕвезда", "DZVEZDA dzvezda Dzvezda"
+  test "ЌАРУВАЊЕ ќарување", "ĆARUVANJE ćaruvanje"
+}
+
+dependency "posix", import: true
+
+stage {
+  sub "Ѓ", "G", after: any("ЕИеи")
+  sub "ѓ", "g", after: any("ЕИеи")
+  sub "Ќ", "K", after: any("ЕИеи")
+  sub "ќ", "k", after: any("ЕИеи")
+
+  # CHARACTERS
+  parallel {
+    sub "А", "A"
+    sub "Б", "B"
+    sub "В", "V"
+    sub "Г", "G"
+    sub "Д", "D"
+    sub "Ѓ", "Đ" # Đ
+    sub "Е", "E"
+    sub "Ж", "Ž" # Ž
+    sub "З", "Z"
+    sub "Ѕ", "Dz"
+    sub "И", "I"
+    sub "Ј", "J"
+    sub "К", "K"
+    sub "Л", "L"
+    sub "Љ", "Lj"
+    sub "М", "M"
+    sub "Н", "N"
+    sub "Њ", "Nj"
+    sub "О", "O"
+    sub "П", "P"
+    sub "Р", "R"
+    sub "С", "S"
+    sub "Т", "T"
+    sub "Ќ", "Ć" # Ć
+    sub "У", "U"
+    sub "Ф", "F"
+    sub "Х", "H"
+    sub "Ц", "C"
+    sub "Ч", "Č" # Č
+    sub "Џ", "Dž" # Dž
+    sub "Ш", "Š" # Š
+    sub "а", "a"
+    sub "б", "b"
+    sub "в", "v"
+    sub "г", "g"
+    sub "д", "d"
+    sub "ѓ", "đ" # đ
+    sub "е", "e"
+    sub "ж", "ž" # ž
+    sub "з", "z"
+    sub "ѕ", "dz"
+    sub "и", "i"
+    sub "ј", "j"
+    sub "к", "k"
+    sub "л", "l"
+    sub "љ", "lj"
+    sub "м", "m"
+    sub "н", "n"
+    sub "њ", "nj"
+    sub "о", "o"
+    sub "п", "p"
+    sub "р", "r"
+    sub "с", "s"
+    sub "т", "t"
+    sub "ќ", "ć" # ć
+    sub "у", "u"
+    sub "ф", "f"
+    sub "х", "h"
+    sub "ц", "c"
+    sub "ч", "č" # č
+    sub "џ", "dž" # dž
+    sub "ш", "š" # š
+  }
+
+  # POSTRULES
+  # rewritten by hand to work properly
+  # DZ
+  sub capture(maybe(upper)) + "Dz" + capture(upper), ref(1) + "DZ" + ref(2)
+  sub capture(upper) + "Dz" +  capture(maybe(upper)), ref(1) + "DZ" + ref(2)
+
+  #LJ
+  sub capture(upper) + "Lj" + capture(maybe(upper)), ref(1) + "LJ" + ref(2)
+  sub capture(maybe(upper)) + "Lj" + capture(upper), ref(1) + "LJ" + ref(2)
+
+  #NJ
+  sub capture(upper) + "Nj" + capture(maybe(upper)), ref(1) + "NJ" + ref(2)
+  sub capture(maybe(upper)) + "Nj" + capture(upper), ref(1) + "NJ" + ref(2)
+
+  #DŽ
+  sub capture(upper) + "Dž" + capture(maybe(upper)), ref(1) + "DŽ" + ref(2)
+  sub capture(maybe(upper)) + "Dž" + capture(upper), ref(1) + "DŽ" + ref(2)
+
+  compose
+}
+
