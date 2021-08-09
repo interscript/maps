@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:kir
   source_script: Cyrl
   destination_script: Latn
-  name: Standards for the transliteration of kyrgyz personal names in written reports and products
+  name: Romanization of Kyrgyz Personal Names (2015)
   source: ICS-630-01 Annex R
   creation_date: 2015
   confirmation_date: 2015

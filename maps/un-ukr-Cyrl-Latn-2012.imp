@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:ukr
   source_script: Cyrl
   destination_script: Latn
-  name: ROMANIZATION SYSTEM FOR BELARUSIAN, RUSSIAN AND UKRAINIAN CYRILLIC
+  name: Romanization of Belarusian, Russian And Ukrainian Cyrillic (2012)
   url: http://www.eki.ee/wgrs/rom1_uk.htm
   creation_date: 2010
 }

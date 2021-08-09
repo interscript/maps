@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:srp
   source_script: Cyrl
   destination_script: Latn
-  name: UNITED NATIONS ROMANIZATION SYSTEMS FOR GEOGRAPHICAL NAMES
+  name: Romanization of Serbo-Crotian (1972)
   url: http://www.eki.ee/wgrs/rom1_sr.htm
   creation_date: 1997
   description: |

@@ -4,32 +4,32 @@ metadata {
   language: iso-639-2:amh
   source_script: Ethi
   destination_script: Latn
-  name: BGN/PCGN Romanization System -- Amharic (1967)
+  name: Romanization of Amharic (1967)
   url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693663/ROMANIZATION_OF_AMHARIC.pdf
   creation_date: 1967
   description: |
     Amharic is the principal and official language of Ethiopia. The BGN/PCGN system for Amharic was designed for use in romanizing names written in the Amharic alphabet. The Roman letters and letter combinations shown as equivalents to the Amharic characters reflect modern Amharic pronunciation.
-  
+
   notes:
     - 1. The 6th-order characters should be romanized either with or without the letter i, depending on pronunciation.
-  
+
     - 2. For documentation purposes, the characters romanized with h in rows 1, 3, 13, and 18 may, instead, be romanized with h, ḥ, ḫ, and ẖ, respectively; the characters both romanized with s in rows 5 and 7 may, instead, be romanized with š and s, respectively; and the characters both romanized with ts’ in rows 30 and 31 may, instead, be romanized with ts’ and ts’, respectively.
-  
+
     - 3. When the character ና in row 14 is known to represent the Amharic word meaning ‘and’, its romanization (na) should always be separated from the preceding and following words by spaces and should never be capitalized, e.g., Raya na K’obo.
-  
+
     - 4. The vowel characters in row 16 should be romanized ā, u, ī, a, ē, i, and o initially and ’ā, ’u, ’ī, ’a, ’ē, ’i, and ’o in all other positions.
-  
+
     - 5. When the character የ in row 23 is known to represent the Amharic preposition, its romanization (Ye) should begin with an upper-case letter and written together with the following word, which should also begin with an upper-case letter, e.g., YeWiha Shet’.
-  
+
     - |
       6. An inventory of letter-diacritic combinations, with their Unicode encoding, in addition to the unmodified letters of the basic Roman script is:
-  
+
       All apostrophes appearing in romanization are U+2019, except as they appear in row 20, which are U+2018.
-  
+
       Ā (U+0100) ā (U+0101)
       Ī (U+012A) ī (U+012B)
       Ē (U+0112) ē (U+0113)
-  
+
     - 7.The Romanization column shows only lowercase forms but, when romanizing, uppercase and lowercase Roman letters as appropriate should be used.
 }
 
@@ -365,7 +365,7 @@ stage {
     sub "ቬ", "vē" # ቬ
     sub "ቭ", any(["v", "vi"]) # ቭ
     sub "ቮ", "vo" # ቮ
-    
+
     sub "፩", "1" # ፩
     sub "፪", "2" # ፪
     sub "፫", "3" # ፫

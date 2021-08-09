@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:bul
   source_script: Cyrl
   destination_script: Latn
-  name: Romanization of Bulgarian geographical names
+  name: Romanization of Bulgarian geographical names (1977)
   url: https://www.eki.ee/wgrs/res/res_3_10.htm
   creation_date: 1977
   description: |
@@ -148,7 +148,7 @@ stage {
     sub "Ь", "J"
     sub "Ю", "Yu"
     sub "Я", "Ya"
-    
+
     sub "а", "a"
     sub "б", "b"
     sub "в", "v"
@@ -179,7 +179,7 @@ stage {
     sub "ь", "j"
     sub "ю", "yu"
     sub "я", "ya"
-    
+
   }
 
   # ŠT

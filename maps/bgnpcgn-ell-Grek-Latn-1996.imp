@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:ell
   source_script: Grek
   destination_script: Latn
-  name: BGN/PCGN 1996 System
+  name: Romanization of Greek (1996)
   url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693694/ROMANIZATION_OF_GREEK.pdf
   creation_date: 1996
   description: |

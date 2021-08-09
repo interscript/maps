@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:hin
   source_script: Deva
   destination_script: Latn
-  name: Hindi Romanization, 1997
+  name: Romanization Table -- Hindi (1997)
   url: http://catdir.loc.gov/catdir/cpso/romanization/hindi.pdf
   creation_date: 1997
   description: |

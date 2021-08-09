@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:tam
   source_script: Taml
   destination_script: Latn
-  name: Tamil Romanization, 2011
+  name: Romanization Table -- Tamil (2011)
   url: https://www.loc.gov/catdir/cpso/romanization/tamil.pdf
   creation_date: 2011
   description: |

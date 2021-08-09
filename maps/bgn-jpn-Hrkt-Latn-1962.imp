@@ -4,22 +4,22 @@ metadata {
   language: iso-639-2:jpn
   source_script: Hrkt
   destination_script: Latn
-  name: BGN (Modified Hepburn) System
+  name: BGN Modified Hepburn Japanese transliteration system (1962)
   url:
   creation_date: 1930
   adoption_date: 1962
   description: |
     The BGN (Modified Hepburn) System for the transliteration of Japanese
     has been in use by the Board on Geographic Names since about 1930 and
-    has been extensively employed in the systematic standardsization of
-    thousands of geographic names of Japan in romanized form.
+    has been extensively employed in the systematic standardization of
+    thousands of geographic names of Japan in Romanized form.
 
   notes: |
 
     1. The "tsu" forms (ツ/つ) are also used to indicate a double consonant and
-    are generally (but not alwyas) written in smaller script or type
+    are generally (but not always) written in smaller script or type
     slightly to the right of or below the regular line. These characters
-    are trasnliterated as k before k; s before s or sh; t before t, ts, or
+    are transliterated as k before k; s before s or sh; t before t, ts, or
     ch; and p before p. Occasionally, when a "ku" (ク/く) or "ki" (キ/き) form
     precedes k, the u in ku or the i in ki is dropped.
 

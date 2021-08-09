@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:tel
   source_script: Telu
   destination_script: Latn
-  name: Telugu Romanization, 1997
+  name: Romanization Table -- Telugu (1997)
   url: http://catdir.loc.gov/catdir/cpso/romanization/telugu.pdf
   creation_date: 1997
   description: |
@@ -231,7 +231,7 @@ stage {
     sub "౮", "8"
     sub "౯", "9"
   }
-  
+
  compose
 }
 

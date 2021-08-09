@@ -4,7 +4,7 @@ metadata {
   language: iso-639-3:prs
   source_script: Arab
   destination_script: Latn
-  name: ALA-LC Romanization Table -- Persian (1997)
+  name: Romanization Table -- Persian (1997)
   url: http://catdir.loc.gov/catdir/cpso/romanization/persian.pdf
   creation_date: 1997
   confirmation_date: 1997

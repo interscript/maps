@@ -4,13 +4,13 @@ metadata {
   language: iso-639-2:kat
   source_script: Geor
   destination_script: Latn
-  name: ROMANIZATION OF GEORGIAN; BGN/PCGN 1981 System
+  name: Romanization of Georgian (1981)
   url: https://transliteration.eki.ee/pdf/Georgian.pdf
   creation_date: 1981
   confirmation_date: 1981
   description: |
     BGN/PCGN system of 1981.
-  
+
   notes:
 }
 
@@ -75,18 +75,18 @@ stage {
     sub "\u10d4", "e" # ე
     sub "\u10d5", "v" # ვ
     sub "\u10d6", "z" # ზ
-    
+
     sub "\u10f1", "ey" # ჱ
-    
+
     sub "\u10d7", "t’" # თ
     sub "\u10d8", "i" # ი
     sub "\u10d9", "k’" # კ
     sub "\u10da", "l" # ლ
     sub "\u10db", "m" # მ
     sub "\u10dc", "n" # ნ
-    
+
     sub "\u10f2", "j" # ჲ
-    
+
     sub "\u10dd", "o" # ო
     sub "\u10de", "p" # პ
     sub "\u10df", "zh" # ჟ
@@ -105,9 +105,9 @@ stage {
     sub "\u10ec", "ts" # წ
     sub "\u10ed", "ch" # ჭ
     sub "\u10ee", "kh" # ხ
-    
+
     sub "\u10f4", "q’" # ჴ
-    
+
     sub "\u10ef", "j" # ჯ
     sub "\u10f0", "h" # ჰ
   }

@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:kor
   source_script: Hang
   destination_script: Latn
-  name: BGN/PCGN 1945 Agreement
+  name: Romanization of Korean -- For DPRK (Hangul to Latin) (1945 Agreement)
   url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693725/ROMANIZATION_OF_KOREAN-_MR_for_DPRK.pdf
   creation_date: 1945
   adoption_date:

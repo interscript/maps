@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:ell
   source_script: Grek
   destination_script: Latn
-  name: UNGEGN Greek v4.0
+  name: Romanization of Greek -- UNGEGN 4.0 (transliteration)
   url: http://www.eki.ee/wgrs/rom1_el.htm
   creation_date: 1987
   description: |

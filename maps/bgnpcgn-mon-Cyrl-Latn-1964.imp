@@ -4,10 +4,10 @@ metadata {
   language: iso-639-2:mon
   source_script: Cyrl
   destination_script: Latn
-  name: BGN/PCGN 1964 System
+  name: Romanization of Mongolian (1964)
   url: https://github.com/interscript/interscript/files/5180767/BGN_Romanization_Guide_1964_mongolian_1964.pdf
-  creation_date:
-  confirmation_date:
+  creation_date: 1964
+  confirmation_date: 1964
   description: |
     This system was originated by the PCGN in 1957 and adopted as a
     BGN/PCGN System in 1964. It is intended for use in the romanization of

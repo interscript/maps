@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:kor
   source_script: Hang
   destination_script: Latn
-  name: BGN Agreement -- Korean McCune-Reischauer System (1943)
+  name: BGN Agreement -- Korean McCune-Reischauer System (Hangul to Latin) (1943)
   url:
   creation_date: 1943
   adoption_date:

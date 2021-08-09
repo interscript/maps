@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:rus
   source_script: Cyrl
   destination_script: Latn
-  name: LETTERS TRANSLATION RULES OF KIRILLOVSKY ALPHABET WITH LETTERS OF LATIN ALPHABET GOST 16876-71 (TABLE 1)
+  name: GOST 16876-71 Translation Rules Of Cyrillic Alphabet Letters With Latin Alphabet Letters (Table 1)
   url: http://vsegost.com/Catalog/45/45002.shtml
   creation_date: 1978
   confirmation_date: 1982-04-16

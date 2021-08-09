@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:ben
   source_script: Beng
   destination_script: Latn
-  name: Bengali Romanization, Version 4.0
+  name: Romanization of Bengali -- UNGEGN 4.0
   url: http://www.eki.ee/wgrs/rom1_bn.htm
   creation_date: 2016
   description: |

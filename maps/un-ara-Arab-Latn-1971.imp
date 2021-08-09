@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:ara
   source_script: Arab
   destination_script: Latn
-  name: 1971 "Beirut system"
+  name: Romanization of Arabic -- Beirut system (1971)
   url: https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/2nd-uncsgn-docs/E_Conf61_4_Add1_e.pdf
   creation_date: 1971
   confirmation_date: 2018-06

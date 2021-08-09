@@ -4,13 +4,13 @@ metadata {
   language: iso-639-2:kat
   source_script: Geok
   destination_script: Latn
-  name: ALA-LC Georgian System (1997)
+  name: Romanization Table -- Georgian Khutsuri (1997)
   url: https://www.loc.gov/catdir/cpso/romanization/georgian.pdf
   creation_date: 1997
   confirmation_date: 1997
   description: |
     Values are shown for the Khutsuri alphabet.
-  
+
   notes:
 }
 
@@ -64,7 +64,7 @@ stage {
     sub "\u10c3", "W" # Ⴣ
     sub "\u10c4", "X̣" # Ⴤ
     sub "\u10c5", "Ō" # Ⴥ
-    
+
     sub "\u2d00", "a" # ⴀ
     sub "\u2d01", "b" # ⴁ
     sub "\u2d02", "g" # ⴂ

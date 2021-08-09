@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:guj
   source_script: Gujr
   destination_script: Latn
-  name: Gujarati Romanization, 2011
+  name: Romanization Table -- Gujarati (2011)
   url: https://www.loc.gov/catdir/cpso/romanization/gujarati.pdf
   creation_date: 2011
   description: |

@@ -4,14 +4,14 @@ metadata {
   language: iso-639-2:mon
   source_script: Cyrl
   destination_script: Latn
-  name: Transliteration of Cyrillic Khalkha
+  name: Romanization Table -- Mongolian Cyrillic Khalkha (1997)
   url: https://collab.its.virginia.edu/wiki/tibetan-script/Transliteration%20Schemes%20Mongolian%20Cyrillic%20Script.html
-  creation_date:
+  creation_date: 1997
   confirmation_date:
   description: |
     In Mongolia, the Khalkha dialect, currently written in both Cyrillic and traditional Mongolian script
     (and at times in Latin for social networking), is predominant, while in Inner Mongolia, the language
-    is dialectally more diverse and is written in the traditional Mongolian script.
+    is dialectically more diverse and is written in the traditional Mongolian script.
 }
 
 tests {

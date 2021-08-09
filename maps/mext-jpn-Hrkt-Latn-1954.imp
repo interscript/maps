@@ -4,7 +4,8 @@ metadata {
   language: iso-639-2:jpn
   source_script: Hrkt
   destination_script: Latn
-  name: 内閣告示第一号 -- ローマ字のつづり方
+  name: Japanese Cabinet Romanisation of Japanese
+  # name: 内閣告示第一号 -- ローマ字のつづり方
   url: http://www.mext.go.jp/b_menu/hakusho/nc/k19541209001/k19541209001.html
   creation_date: 1954
   adoption_date: 1954-12-09

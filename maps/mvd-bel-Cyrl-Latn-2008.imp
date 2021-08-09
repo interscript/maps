@@ -4,8 +4,8 @@ metadata {
   language: iso-639-2:bel
   source_script: Cyrl
   destination_script: Latn
-  name: About approval of the Instructions for transliteration of surnames and proper names of citizens of the Republic of Belarus when their personal data is included in the population register
-  url: https://www.icao.int/publications/pages/publication.aspx?docnum=9303
+  name: Transliteration system for Belarusian names in the population register (2008)
+  url:
   creation_date: 2008
 
   description: |
@@ -127,9 +127,9 @@ stage {
     sub "\u0412", "V" # B
     sub "\u0413", "G" # Г
     sub "\u0414", "D" # Д
-    sub "\u0415", "Ie" # Е or JE TODO add rule   
-    sub "\u0415", "IE", after: any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ") # Е or JE TODO add rule 
-    sub "\u0415", "IE", before: any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ") # Е or JE TODO add rule 
+    sub "\u0415", "Ie" # Е or JE TODO add rule
+    sub "\u0415", "IE", after: any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ") # Е or JE TODO add rule
+    sub "\u0415", "IE", before: any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ") # Е or JE TODO add rule
     sub "\u0401", "Io" # Ё or JO TODO add rule
     sub "\u0401", "IO", after: any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ") # Ё or JO TODO add rule
     sub "\u0401", "IO", before: any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ") # Ё or JO TODO add rule

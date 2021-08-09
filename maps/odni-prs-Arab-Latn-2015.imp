@@ -4,7 +4,7 @@ metadata {
   language: iso-639-3:prs
   source_script: Arab
   destination_script: Latn
-  name: ODNI Persian Farsi Dari Personal Names 2015 System, ICS-630-01 Annex J
+  name: Romanization of Persian Farsi Dari Personal Names (2015), ICS-630-01 Annex J
   url: https://github.com/interscript/ics-630-01/blob/master/reference-docs/ANNEX%20J%20-%20Persian-Farsi_Dari_Personal_Names_FLTS_2018_Revision%20(U).pdf
   creation_date: 2015
   confirmation_date: 2015-11

@@ -4,10 +4,10 @@ metadata {
   language: iso-639-2:bel
   source_script: Cyrl
   destination_script: Latn
-  name: ALA-LC Romanization Table -- Byelorussian (1997)
+  name: Romanization Table -- Byelorussian (1997)
   url: http://catdir.loc.gov/catdir/cpso/romanization/beloruss.pdf
   creation_date: 1997
-  
+
   notes:
     - Ґ letter found in Old Belarusian and in modern publications in Tarashkevitsa orthography.
     - Do not confuse with the digraph кг (also romanized as “kh”). Manual review may be needed when transcribing data in vernacular characters in order to distinguish х from кг.
@@ -43,7 +43,7 @@ stage {
     sub "\u00B4", "" # official english Apostrophe
     sub "\u02BC", ""
     sub "\u0027", "" # from belarussian keyboard
-    
+
     # Characters
     sub "\u0410", "A" # A
     sub "\u0411", "B" # Б
@@ -78,7 +78,7 @@ stage {
     sub "\u042D", "Ė" # Э : Ė
     sub "\u042E", "I͡U" # Ю : I͡U
     sub "\u042F", "I͡A" # Я : I͡A
-    
+
     sub "\u0430", "a" # а
     sub "\u0431", "b" # б
     sub "\u0432", "v" # в

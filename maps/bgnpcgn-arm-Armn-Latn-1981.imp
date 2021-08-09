@@ -4,9 +4,9 @@ metadata {
   language: iso-639-2:arm
   source_script: Armn
   destination_script: Latn
-  name: BGN/PCGN 1981 System
+  name: Romanization of Armenian (1981)
   url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/810208/ROMANIZATION_OF_ARMENIAN.pdf
-  creation_date: 2013
+  creation_date: 1981
   confirmation_date: 2019-06
   description: |
     The BGN/PCGN system for Armenian was designed for use in romanizing

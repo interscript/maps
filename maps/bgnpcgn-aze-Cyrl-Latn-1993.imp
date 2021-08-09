@@ -4,12 +4,12 @@ metadata {
   language: iso-639-2:aze
   source_script: Cyrl
   destination_script: Latn
-  name: AZERBAIJANI TABLE OF CORRESPONDENCES CYRILLIC-ROMAN -- BGN/PCGN 1993 Agreement
+  name: Table of Correspondences for Azerbaijani (Cyrillic-Roman) (1993 Agreement)
   url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/816656/TABLE_OF_CORRESPONDENCES_FOR_AZERBAIJANI.pdf
   creation_date: 1993
   confirmation_date: 2019-06
   description: |
-      Azerbaijani, also known as Azeri, is the official language of the Republic of Azerbaijan. In 1991, the Azerbaijani government adopted the Roman alphabet to replace the existing Cyrillic alphabet. The presentation below provides a table of correspondences between the former Cyrillic alphabet and the current Roman alphabet. When Azerbaijani Roman-alphabet spellings are not available, this table can be used to convert Azerbaijani Cyrillic spellings.
+      , also known as Azeri, is the official language of the Republic of Azerbaijan. In 1991, the Azerbaijani government adopted the Roman alphabet to replace the existing Cyrillic alphabet. The presentation below provides a table of correspondences between the former Cyrillic alphabet and the current Roman alphabet. When Azerbaijani Roman-alphabet spellings are not available, this table can be used to convert Azerbaijani Cyrillic spellings.
 
   notes:
 

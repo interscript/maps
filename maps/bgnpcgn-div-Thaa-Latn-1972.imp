@@ -4,14 +4,14 @@ metadata {
   language: iso-639-2:div
   source_script: Thaa
   destination_script: Latn
-  name: ROMANIZATION SYSTEM FOR MALDIVIAN BGN/PCGN 1972 System
-  url: ''
+  name: Romanization of Maldivian (1972)
+  url: https://libraries.ucsd.edu/bib/fed/USBGN_romanization.pdf
   creation_date: 1972
   description: ROMANIZATION SYSTEM FOR MALDIVIAN BGN/PCGN 1972 System
   notes:
     - Maldivian writing is read from right to left.
-    - In the vowel and Diacritical Mark columns x represents any Maldivian consonant character. A Roman vowel letter follows the romanized Maldivian consonant
-    - Alifu(އ) is romanized [’], except when brearing a vowel ,marker, in which case it is not represented in romanization.
+    - In the vowel and Diacritical Mark columns x represents any Maldivian consonant character. A Roman vowel letter follows the Romanized Maldivian consonant
+    - Alifu(އ) is romanized [’], except when brearing a vowel ,marker, in which case it is not represented in Romanization.
     - Nūnu(ނ) appearing immediately before bā, dālu, d̦aviyani, or gāfu, and not braring a vowel marker or sukunu, is romanised [ň];otherwise [n].
     - Where sīnu is followed by hā, or nūnu by yā, a raised dot or slash may be employed in order to differentiate these form shaviyani and nyaviyani respectively
 }

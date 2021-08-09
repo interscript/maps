@@ -4,15 +4,17 @@ metadata {
   language: iso-639-2:srp
   source_script: Cyrl
   destination_script: Latn
-  name: TRANSLITERATION OF SERBIAN CYRILLIC
+  name: Transliteration of Serbian Cyrillic
   creation_date: 1962
   confirmation_date: 1962
   description: |
     Serbo-Croatian, the official national language of Yugoslavia, is a single literary language.
+
     In Serbian areas it is written in the cyrillic (Serbian) alphabet, while in Croatian areas it is
     written in the roman (Croatian) alphabet.
-    Both the BGN and PCGN use the standard Croation equivalents for fomanizing the Serbian cyrillic
-    alphabet whenether romanized names are not available.
+
+    Both the BGN and PCGN use the standard Croatian equivalents for formalizing the Serbian cyrillic
+    alphabet whenever romanized names are not available.
 
   notes:
     - The digraph dj(Dj) will occasionally be found as the Croatian equivalent of ђ(Ђ),

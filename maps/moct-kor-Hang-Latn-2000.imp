@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:kor
   source_script: Hang
   destination_script: Latn
-  name: Korean Ministry of Culture and Tourism 2000 System
+  name: Ministry of Culture and Tourism Korean Romanization System (2000)
   url: https://www.korean.go.kr/front_eng/roman/roman_01.do
   creation_date: 2000
   adoption_date: 2002

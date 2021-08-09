@@ -1,14 +1,14 @@
 metadata {
   authority_id: bgnpcgn
-  id: 2020
+  id: 2011
   language: iso-639-2:nep
   source_script: Deva
   destination_script: Latn
-  name: Nepali Romanization, 2020
+  name: Romanization for Nepali (2011 Agreement)
   url: https://geonames.nga.mil/gns/html/Romanization/ROMANIZATION%20OF%20NEPALI.pdf
-  creation_date: 1964
+  creation_date: 2011
+  confirmation_date: 2017
   description: |
-    BGN/PCGN 2011 Agreement Romanization of Nepali
     The BGN and the PCGN have adopted the Nepal Survey Department (NSD) system for the
     romanization of Nepali names.  This system, below, should be applied to Nepali names for which Roman‐
     script spellings in materials produced by the government of Nepal are not available.

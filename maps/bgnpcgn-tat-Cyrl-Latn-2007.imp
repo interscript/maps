@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:tat
   source_script: Cyrl
   destination_script: Latn
-  name: TATAR TABLE OF CORRESPONDENCES CYRILLIC - ROMAN BGN/PCGN 2007 Agreement
+  name: Table of Correspondences for Tatar (Cyrillic-Roman) (2007 Agreement)
   url: https://geonames.nga.mil/gns/html/Romanization/TABLE%20OF%20CORRESPONDENCES%20FOR%20TATAR.pdf
   creation_date: 2007
   confirmation_date: 2017-11

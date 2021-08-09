@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:zho
   source_script: Hans
   destination_script: Latn
-  name: ROMANIZATION OF CHINESE -- BGN/PCGN 1979 AGREEMENT
+  name: Romanization of Chinese (1979 Agreement)
   url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693689/ROMANIZATION_OF_CHINESE.pdf
   creation_date: 1979
   confirmation_date: 2017-12

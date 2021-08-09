@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:bul
   source_script: Cyrl
   destination_script: Latn
-  name: Intelligence Community (IC) Standard for the Transliteration of Bulgarian Personal Names
+  name: Intelligence Community (IC) Standard for the Transliteration of Bulgarian Personal Names (2005)
   creation_date: 2005
   description:
 }
@@ -53,7 +53,7 @@ stage {
     sub "\u042c", "Y"
     sub "\u042e", "Yu"
     sub "\u042f", "Ya"
-    
+
     sub "\u0430", "a"
     sub "\u0431", "b"
     sub "\u0432", "v"

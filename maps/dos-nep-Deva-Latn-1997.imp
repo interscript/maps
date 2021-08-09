@@ -1,10 +1,10 @@
 metadata {
-  authority_id: bgnpcgn
+  authority_id: dos
   id: 1997
   language: iso-639-2:nep
   source_script: Deva
   destination_script: Latn
-  name: Nepali Romanization, 1997
+  name: Survey Department Nepali Romanization System (1997)
   url: http://nationalgeoportal.gov.np/old/pdf/translation2.pdf
   creation_date: 1997
   description: |

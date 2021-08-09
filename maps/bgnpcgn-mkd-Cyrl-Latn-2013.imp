@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:mkd
   source_script: Cyrl
   destination_script: Latn
-  name: Makedonian Romanization, BGN/PCGN 2013 System
+  name: Romanization for Macedonian (2013)
   url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/811514/ROMANIZATION_OF_MACEDONIAN.pdf
   creation_date: 2013
   description: |

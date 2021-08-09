@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:ukr
   source_script: Cyrl
   destination_script: Latn
-  name: BGN/PCGN 2019 Agreement
+  name: Romanization of Ukrainian (2019 Agreement)
   url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/864314/ROMANIZATION_OF_UKRAINIAN.pdf
   creation_date: 2019
   confirmation_date: 2020-01

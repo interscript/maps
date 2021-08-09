@@ -4,10 +4,10 @@ metadata {
   language: iso-639-2:mkd
   source_script: Cyrl
   destination_script: Latn
-  name: Serbian and Makedonian Romanization, ALA-LC 1997 System
+  name: Romanization Table -- Serbian and Macedonian (1997)
   url: http://catdir.loc.gov/catdir/cpso/romanization/serbian.pdf
   creation_date: 1997
-  description: ALA-LC Romanization table for Serbian and Makedonian.
+  description: ALA-LC Romanization table for Serbian and Macedonian.
 
   notes:
     - Special characters in romanization

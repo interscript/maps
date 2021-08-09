@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:kan
   source_script: Kana
   destination_script: Latn
-  name: Kannada Romanization, 2011
+  name: Romanization Table -- Kannada (2011)
   url: http://catdir.loc.gov/catdir/cpso/romanization/kannada.pdf
   creation_date: 2011
   description: |

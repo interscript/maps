@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:ron
   source_script: Cyrl
   destination_script: Latn
-  name: CYRILLIC - ROMAN BGN/PCGN 2002 Agreement
+  name: Table of Correspondences for Moldovan (Cyrillic-Roman) (2002 Agreement)
   url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/816780/TABLE_OF_CORRESPONDENCES_FOR_MOLDOVAN.pdf
   creation_date: 2002
   confirmation_date: 2019
@@ -14,7 +14,7 @@ metadata {
     and the current Roman alphabet. When Moldovan Roman-alphabet spellings are not available, this table
     can be used to convert Moldovan Cyrillic spellings. It should be noted that Moldovan is little used as a
     language label now, and is usually considered as Romanian.
-  
+
   notes:
     - | # 1
       This Roman-script form is used before e, i and iu.

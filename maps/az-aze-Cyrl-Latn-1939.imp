@@ -6,6 +6,7 @@ metadata {
   destination_script: Latn
   url: https://omniglot.com/writing/azeri.htm
   creation_date: 1939
+  name: Azeri Romanization (1939)
   description: |
     In 1939 Joseph Stalin ordered the Cyrillic alphabet to be used by Azeri speakers in the Soviet Union.
 

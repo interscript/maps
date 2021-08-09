@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:ell
   source_script: Grek
   destination_script: Latn
-  name: BGN/PCGN 1962 System
+  name: Romanization of Greek (1962)
   url: https://github.com/riboseinc/interscript/files/4225556/BGN_Romanization_Guide_1962_greek.pdf
   creation_date: 1962
   description: |

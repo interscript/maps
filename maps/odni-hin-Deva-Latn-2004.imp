@@ -4,12 +4,12 @@ metadata {
   language: iso-639-2:hin
   source_script: Deva
   destination_script: Latn
-  name: IC STANDARDS FOR TRANSLITERATION OF HINDI AND URDU PERSONAL NAMES
+  name: Intelligence Community (IC) Standard for the Transliteration of Hindi and Urdu Personal Names (2004)
   url: https://github.com/interscript/interscript-private-references/blob/master/odni/Hindi_and_Urdu_IC_Standard.doc
   creation_date: 2004
   description: |
     IC STANDARDS FOR TRANSLITERATION OF HINDI AND URDU PERSONAL NAMES
-  
+
   notes:
     - |
       Long/Short Vowels: Long and short vowels are not distinguished in the system:
@@ -69,7 +69,7 @@ stage {
 
   # CHARACTERS
   parallel {
-    
+
     #Independent vowel characters
     sub "अ", "a"
     sub "आ", "a"
@@ -84,7 +84,7 @@ stage {
     sub "ओ", "o"
     sub "ऑ", "au"
     sub "औ", "au"
-    
+
     #Dependent Vowels
     sub "ा", "a"
     sub "ि", "i"
@@ -98,10 +98,10 @@ stage {
     sub "ो", "o"
     sub "ौ", "au"
     sub "ॉ", "au"
-    
-    
+
+
     # Consonants
-    
+
     # Gutturals
     sub "क", "k"
     sub "क्ष", "ksha"
@@ -112,7 +112,7 @@ stage {
     sub "ग़", "gh"
     sub "घ", "gh"
     sub "ङ", "n"
-    
+
     # Palatals
     sub "च", "ch"
     sub "छ", "ch"
@@ -121,7 +121,7 @@ stage {
     sub "झ", "gya"
     sub "झ", "jh"
     sub "ञ", "n"
-    
+
     # Cerebrals
     sub "ट", "t"
     sub "ठ", "th"
@@ -130,14 +130,14 @@ stage {
     sub "ढ़", "rh"
     sub "ढ", "dh"
     sub "ण", "n"
-    
+
     # Dentals
     sub "त", "t"
     sub "थ", "th"
     sub "द", "d"
     sub "ध", "dh"
     sub "न", "n"
-    
+
     # Labials
     sub "प", "p"
     sub "फ़", "f"
@@ -145,34 +145,34 @@ stage {
     sub "ब", "b"
     sub "भ", "bh"
     sub "म", "m"
-    
+
     # Semivowels
     sub "य", "y"
     sub "र", "r"
     sub "ल", "l"
     sub "व", "v"
-    
+
     # Sibilants
     sub "श", "sh"
     sub "ष", "sh"
     sub "स", "s"
-    
-    
+
+
     # Aspirate
     sub "ह", "h"
-    
+
     # Anusvāra
     sub "ं", "n"
-    
+
     # Anunāsika
     sub "ँ", "n"
-    
+
     # halanta
     sub "्", ""
-    
+
     # bisharga
     sub "ः", "h"
-    
+
     sub "़", ""
   }
 

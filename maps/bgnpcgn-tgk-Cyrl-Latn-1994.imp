@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:tgk
   source_script: Cyrl
   destination_script: Latn
-  name: BGN/PCGN Romanization System -- Tajik (1994)
+  name: Romanization of Tajik (1994)
   url: https://geonames.nga.mil/gns/html/Romanization/ROMANIZATION%20OF%20TAJIK.pdf
   creation_date: 1994
   confirmation_date: 2017-11

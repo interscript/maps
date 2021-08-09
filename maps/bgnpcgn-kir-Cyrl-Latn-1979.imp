@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:kir
   source_script: Cyrl
   destination_script: Latn
-  name: Romanization of Kyrgyz
+  name: Romanization of Kyrgyz (1979)
   url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/816663/ROMANIZATION_OF_KYRGYZ.pdf
   creation_date: 1979
   confirmation_date: 2019
@@ -12,7 +12,7 @@ metadata {
     The BGN/PCGN system for Kyrgyz Cyrillic was designed for use in romanizing names written
     in the Kyrgyz Cyrillic alphabet. The Kyrgyz Cyrillic alphabet contains three characters not present in
     the Russian alphabet: Ң , Ө, and Y.
-  
+
   notes:
     - Both Kyrgyz and Kirghiz may frequently be seen as the language name; both these spellings are used in the
       ISO 639 Standard on the representation of names for languages.
@@ -127,7 +127,7 @@ stage {
     sub "\u042D", "E" # Э
     sub "\u042E", "Yu" # Ю
     sub "\u042F", "Ya" # Я
-    
+
     sub "\u0430", "a" # а
     sub "\u0431", "b" # б
     sub "\u0432", "v" # в

@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:mar
   source_script: Deva
   destination_script: Latn
-  name: Marathi Romanization, 2011
+  name: Romanization Table -- Marathi (2011)
   url: https://loc.gov/catdir/cpso/romanization/marathi.pdf
   creation_date: 1997
   description: |

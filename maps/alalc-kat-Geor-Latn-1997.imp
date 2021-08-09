@@ -4,14 +4,14 @@ metadata {
   language: iso-639-2:kat
   source_script: Geor
   destination_script: Latn
-  name: ALA-LC Georgian System (1997)
+  name: Romanization Table -- Georgian Mkhedruli (1997)
   url: https://www.loc.gov/catdir/cpso/romanization/georgian.pdf
   creation_date: 1997
   confirmation_date: 1997
   description: |
     Values are shown for the older Khutsuri and the modern Mkhedruli alphabets.
     There are no upper case letters in Mkhedruli.
-  
+
   notes:
 }
 
@@ -54,27 +54,27 @@ stage {
     sub "\u10d4", "e" # ე
     sub "\u10d5", "v" # ვ
     sub "\u10d6", "z" # ზ
-    
+
     sub "\u10f1", "ē" # ჱ
-    
+
     sub "\u10d7", "tʻ" # თ
     sub "\u10d8", "i" # ი
     sub "\u10d9", "k" # კ
     sub "\u10da", "l" # ლ
     sub "\u10db", "m" # მ
     sub "\u10dc", "n" # ნ
-    
+
     sub "\u10f2", "y" # ჲ
-    
+
     sub "\u10dd", "o" # ო
     sub "\u10de", "p" # პ
     sub "\u10df", "ž" # ჟ
     sub "\u10e0", "r" # რ
     sub "\u10e1", "s" # ს
     sub "\u10e2", "t" # ტ
-    
+
     sub "\u10f3", "w" # ჳ
-    
+
     sub "\u10e3", "u" # უ
     sub "\u10e4", "pʻ" # ფ
     sub "\u10e5", "kʻ" # ქ
@@ -87,14 +87,14 @@ stage {
     sub "\u10ec", "c" # წ
     sub "\u10ed", "č" # ჭ
     sub "\u10ee", "x" # ხ
-    
+
     sub "\u10f4", "x̣" # ჴ
-    
+
     sub "\u10ef", "j" # ჯ
     sub "\u10f0", "h" # ჰ
-    
+
     sub "\u10f5", "ō" # ჵ
-    
+
     sub "\u10f6", "f" # ჶ
     sub "\u10f7", "ĕ" # ჷ
     sub "\u10f8", "ʻ" # ჸ

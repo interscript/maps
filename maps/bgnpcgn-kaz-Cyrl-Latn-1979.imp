@@ -1,18 +1,18 @@
 metadata {
-  
+
   authority_id: bgnpcgn
   id: 1979
   language: iso-639-2:kaz
   source_script: Cyrl
   destination_script: Latn
-  name: Romanization of Kazakh
+  name: Romanization of Kazakh (1979)
   url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/811511/ROMANIZATION_OF_KAZAKH.pdf
   creation_date: 1979
   confirmation_date: 2019
   description: |
     The BGN/PCGN system for Kazakh was designed for use in romanizing names written in the Kazakh Cyrillic alphabet.
     The Kazakh Cyrillic alphabet contains nine characters not present in the Russian alphabet: ә, ғ, қ, ң, ө, ұ, ү, һ and і.
-  
+
   notes:
     - The character sequences гһ, зһ, кһ, нг, сһ and цһ may be romanized g·h, z·h, k·h, n·g, s·h
       and ts·h in order to differentiate those romanizations from from the digraphs gh, zh, kh, ng, sh,
@@ -144,7 +144,7 @@ stage {
     sub "\u042D", "Ė" # Э
     sub "\u042E", "Yu" # Ю
     sub "\u042F", "Ya" # Я
-    
+
     sub "\u0430", "a" # а
     sub "\u04D9", "ä" # ә
     sub "\u0431", "b" # б

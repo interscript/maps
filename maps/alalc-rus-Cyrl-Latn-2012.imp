@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:rus
   source_script: Cyrl
   destination_script: Latn
-  name: ALA-LC Romanization System 2012
+  name: Romanization Table -- Russian (2012)
   url: https://www.loc.gov/catdir/cpso/romanization/russian.pdf
   creation_date: 2012
   description: |

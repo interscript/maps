@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:ben
   source_script: Beng
   destination_script: Latn
-  name: "Information and documentation — Transliteration of Devanagari and related Indic scripts into Latin characters"
+  name: "ISO 15919:2001 - Information and documentation — Transliteration of Devanagari and related Indic scripts into Latin characters"
   url: https://www.chatranjali.fr/Scripts/Standards/ISO15919.pdf
   creation_date: 2001
   adoption_date: 2001

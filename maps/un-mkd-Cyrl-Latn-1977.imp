@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:mkd
   source_script: Cyrl
   destination_script: Latn
-  name: UNITED NATIONS ROMANIZATION SYSTEMS FOR GEOGRAPHICAL NAMES
+  name: Romanization of Macedonian geographical names (1977)
   url: https://www.eki.ee/wgrs/v2_2/rom1_mk.htm
   creation_date: 1977
   description: |

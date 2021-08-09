@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:ara
   source_script: Arab
   destination_script: Latn
-  name: ROMANIZATION OF ARABIC -- UNGEGN 1972 System
+  name: Romanization of Arabic -- UNGEGN (1972)
   url: http://www.eki.ee/wgrs/obs_rom_vers/rom1_ar_v4_0.pdf
   creation_date: 1972
   confirmation_date: 2018-06

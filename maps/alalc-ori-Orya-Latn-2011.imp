@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:ori
   source_script: Orya
   destination_script: Latn
-  name: Oriya Romanization, 2011
+  name: Romanization Table -- Oriya (2011)
   url: https://www.loc.gov/catdir/cpso/romanization/oriya.pdf
   creation_date: 2011
   description: |

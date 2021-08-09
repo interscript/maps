@@ -4,10 +4,10 @@ metadata {
   language: iso-639-2:mkd
   source_script: Cyrl
   destination_script: Latn
-  name: Makedonian Romanization, ALA-LC 2013 System
+  name: Romanization Table -- Macedonian (2013)
   url: https://www.loc.gov/catdir/cpso/romanization/macedonian.pdf
   creation_date: 2013
-  description: ALA-LC Romanization table for Makedonian.
+  description: ALA-LC Romanization table for Macedonian.
 }
 
 tests {

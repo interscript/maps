@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:uzb
   source_script: Cyrl
   destination_script: Latn
-  name: TABLE OF CORRESPONDENCES CYRILLIC - ROMAN BGN/PCGN 2000 Agreement
+  name: Table of Correspondences for Uzbek (Cyrillic-Roman) (2000 Agreement)
   description: |
     In 1995, the Uzbek government adopted the Roman alphabet to replace the existing Cyrillic alphabet.
     The presentation below provides a table of correspondences between the former Cyrillic alphabet and the

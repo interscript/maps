@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:ben
   source_script: Beng
   destination_script: Latn
-  name: Bengali Romanization, 1997
+  name: Romanization Table -- Bengali (1997)
   url: http://catdir.loc.gov/catdir/cpso/romanization/bengali.pdf
   creation_date: 1997
   description: |

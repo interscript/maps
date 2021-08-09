@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:uzb
   source_script: Cyrl
   destination_script: Latn
-  name: BGN/PCGN Romanization System -- Uzbek Cyrillic (1979)
+  name: Romanization of Uzbek Cyrillic (1979)
   url: http://transliteration.eki.ee/pdf/Uzbek.pdf
   creation_date: 1979
 
@@ -30,7 +30,7 @@ tests {
 }
 
 aliases {
-  
+
 def_alias uzbek_upper, any("\u0410\u0411\u0412\u0413\u0492\u0414\u0415\u0401\u0416\u0417\u0418\u0419\u041A\u049A\u041B\u041C\u041D\u041E\u041F\u0420\u0421\u0422\u0423\u040E\u0424\u04B2\u0426\u0427\u0428\u042a\u042c\u042D\u042E\u042F")
 
 }
@@ -55,7 +55,7 @@ stage {
     sub "\u0401", "Yo" # Ё
     sub "\u0401", "YO", after: any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ") # Ё
     sub "\u0401", "YO", before: any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ") # Ё
-    
+
     sub "\u0416", "Zh" # Ж
     sub "\u0416", "ZH", after: any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ") # Ж
     sub "\u0416", "ZH", before: any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ") # Ж

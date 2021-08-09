@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:bul
   source_script: Cyrl
   destination_script: Latn
-  name: Toponymic Guidelines for Antarctica, Lyubomir Ivanov. Antarctic Place-names Commission of Bulgaria, Sofia, 1995.
+  name: Toponymic Guidelines for Antarctica (1995)
   url: http://www.apcbg.org/Toponymic-Guidelines.htm
   creation_date: 1995
   description: |
@@ -13,6 +13,9 @@ metadata {
     international scientific research.  They facilitate information exchange in the field, in scientific publications and in
     administrative measures under the Antarctic Treaty System. Geographical names also reflect the history of Antarctic
     exploration.
+
+    Toponymic Guidelines for Antarctica, Lyubomir Ivanov. Antarctic Place-names
+    Commission of Bulgaria, Sofia, 1995.
 }
 
 tests {
@@ -149,7 +152,7 @@ stage {
     sub "\u042c", "Y"
     sub "\u042e", "Yu"
     sub "\u042f", "Ya"
-    
+
     sub "\u0430", "a"
     sub "\u0431", "b"
     sub "\u0432", "v"
@@ -180,11 +183,11 @@ stage {
     sub "\u044c", "y"
     sub "\u044e", "yu"
     sub "\u044f", "ya"
-    
+
     # note 2
     sub "\u046A", "Ŭ" # Ѫ
     sub "\u046B", "ŭ" # ѫ
-    
+
     # note[3]
     sub "\u0462", "YE" # Ѣ
     sub "\u0463", "ye" # ѣ

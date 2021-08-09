@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:asm
   source_script: Deva
   destination_script: Latn
-  name: Assamese Romanization, 1997
+  name: Romanization Table -- Assamese (1997)
   url: http://catdir.loc.gov/catdir/cpso/romanization/assamese.pdf
   creation_date: 1997
   description: |

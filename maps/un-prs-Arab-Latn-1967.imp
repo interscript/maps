@@ -5,7 +5,7 @@ metadata {
   # prs stands for Dari (https://iso639-3.sil.org/code/prs&_ga=GA1.2.2054538372.1574092823)
   source_script: Arab
   destination_script: Latn
-  name: Persian UN 1967
+  name: Romanization of Persian (1967)
   url: http://www.eki.ee/wgrs/v2_2/rom1_fa.htm
   creation_date: 1967
   confirmation_date: 01-2003

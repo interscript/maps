@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:tel
   source_script: Telu
   destination_script: Latn
-  name: Telugu Romanization, 2011
+  name: Romanization Table -- Telugu (2011)
   url: http://catdir.loc.gov/catdir/cpso/romanization/telugu.pdf
   creation_date: 2011
   description: |

@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:bul
   source_script: Cyrl
   destination_script: Latn
-  name: ROMANIZATION SYSTEM FOR BULGARIAN BGN/PCGN of 1952
+  name: Romanization of Bulgarian (1952)
   url: https://libraries.ucsd.edu/bib/fed/USBGN_romanization.pdf
   creation_date: 1945
   confirmation_date: 1952
@@ -16,10 +16,16 @@ metadata {
     are applicable to sources predating the orthographic reform of 1945.
 
   notes:
-    - In modern Bulgarian orthography, the character ъ, does not occcur in word-final position. It should be omitted in romanization when found in word-final position on older sources
+    - In modern Bulgarian orthography, the character ъ, does not occur in
+      word-final position. It should be omitted in romanization when found in
+      word-final position on older sources
     - The obsolete character ѫ, which was replaced by ъ in 1945, should be romanized ŭ
-    - The obsolete character ѣ, replaced in 1945 by е or я according to local pronunciation, should be romanized as e or ya, accordingly, if the pronunciation is known; otherwise, as ye
-    - The character sequence тс may be romanized t·s in order to differentiate that romanization from the regularly occurring digraph ts, which represents the character ц
+    - The obsolete character ѣ, replaced in 1945 by е or я according to local
+      pronunciation, should be romanized as e or ya, accordingly, if the
+      pronunciation is known; otherwise, as ye
+    - The character sequence тс may be romanized t·s in order to differentiate
+      that romanization from the regularly occurring digraph ts, which represents
+      the character ц
 }
 
 tests {

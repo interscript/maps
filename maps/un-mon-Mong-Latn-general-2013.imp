@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:mon
   source_script: Mong
   destination_script: Latn
-  name: Mongolian Romanization in China, Version 4.0 (general)
+  name: Romanization of Mongolian in China -- UNGEGN 4.0
   url: http://www.eki.ee/wgrs/rom1_mnc.htm
   creation_date: 2013-09
   description: |

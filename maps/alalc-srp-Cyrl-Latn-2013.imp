@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:srp
   source_script: Cyrl
   destination_script: Latn
-  name: ROMANIZATION OF SERBIAN, ALA-LC 2013 System
+  name: Romanization Table -- Serbian (2013)
   url: https://www.loc.gov/catdir/cpso/romanization/serbian.pdf
   creation_date: 2013
   description: |

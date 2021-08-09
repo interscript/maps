@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:sin
   source_script: Sinh
   destination_script: Latn
-  name: Sinhalese Romanization, 2011
+  name: Romanization Table -- Sinhalese (2011)
   url: https://www.loc.gov/catdir/cpso/romanization/sinhales.pdf
   creation_date: 2011
   description: |

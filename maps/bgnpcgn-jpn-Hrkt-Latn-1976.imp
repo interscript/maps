@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:jpn
   source_script: Hrkt
   destination_script: Latn
-  name: Japanese Kana Modified Hepburn 1930 System
+  name: Romanization of Japanese -- Kana Modified Hepburn (1930)
   url:
   creation_date:
   adoption_date:
