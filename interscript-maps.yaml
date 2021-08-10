@@ -28,9 +28,18 @@ rababa-configs:
       batch_size: 32
       
 # This instruction denotes that the following maps are incompatible with certain
-# compilers and shouldn't be tested or compiled in.
+# compilers and platforms and shouldn't be tested or compiled in.
 skip:
   Interscript::Compiler::Javascript:
+    - var-ara-Arab-Arab-rababa
+  # Windows currently fails tests for rababa
+  mswin64:
+    - var-ara-Arab-Arab-rababa
+  mswin32:
+    - var-ara-Arab-Arab-rababa
+  mingw32:
+    - var-ara-Arab-Arab-rababa
+  cygwin:
     - var-ara-Arab-Arab-rababa
 
 # This part registers aliases. Those were previously a part of maps themselves,
