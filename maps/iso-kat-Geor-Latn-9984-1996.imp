@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:kat
   source_script: Geor
   destination_script: Latn
-  name: "ISO 9984:1996 Information and documentation — Transliteration of Georgian characters into Latin characters"
+  name: "ISO 9984:1996 Information and documentation -- Transliteration of Georgian characters into Latin characters"
   url: https://www.iso.org/standard/17892.html
   creation_date: 1996
   confirmation_date: 1996
@@ -12,7 +12,7 @@ metadata {
     Establishes a system for the transliteration of Georgian characters
     into Latin characters to permit international information exchange,
     particularly by electronic means.
-  
+
   notes:
 }
 
@@ -55,27 +55,27 @@ stage {
     sub "\u10d4", "e" # ე
     sub "\u10d5", "v" # ვ
     sub "\u10d6", "z" # ზ
-    
+
     sub "\u10f1", "ē" # ჱ
-    
+
     sub "\u10d7", "t̕" # თ
     sub "\u10d8", "i" # ი
     sub "\u10d9", "k" # კ
     sub "\u10da", "l" # ლ
     sub "\u10db", "m" # მ
     sub "\u10dc", "n" # ნ
-    
+
     sub "\u10f2", "y" # ჲ
-    
+
     sub "\u10dd", "o" # ო
     sub "\u10de", "p" # პ
     sub "\u10df", "ž" # ჟ
     sub "\u10e0", "r" # რ
     sub "\u10e1", "s" # ს
     sub "\u10e2", "t" # ტ
-    
+
     sub "\u10f3", "w" # ჳ
-    
+
     sub "\u10e3", "u" # უ
     sub "\u10e4", "p̕" # ფ
     sub "\u10e5", "k̕" # ქ
@@ -88,14 +88,14 @@ stage {
     sub "\u10ec", "c" # წ
     sub "\u10ed", "č" # ჭ
     sub "\u10ee", "x" # ხ
-    
+
     sub "\u10f4", "ẖ" # ჴ
-    
+
     sub "\u10ef", "ǰ" # ჯ
     sub "\u10f0", "h" # ჰ
-    
+
     sub "\u10f5", "ō" # ჵ
-    
+
     sub "\u10f6", "f" # ჶ
   }
 

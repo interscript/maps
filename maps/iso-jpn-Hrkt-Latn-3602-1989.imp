@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:jpn
   source_script: Hrkt
   destination_script: Latn
-  name: "ISO 3602:1989 Documentation — Romanization of Japanese (kana script)"
+  name: "ISO 3602:1989 documentation -- Romanization of Japanese (kana script)"
   url: https://www.iso.org/standard/9029.html
   creation_date: 1989
   adoption_date: 1989

@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:jpn
   source_script: Hrkt
   destination_script: Latn
-  name: Modified Hepburn
+  name: Modified Hepburn System
   url:
   creation_date: 1954
   adoption_date:

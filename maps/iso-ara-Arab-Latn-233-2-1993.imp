@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:ara
   source_script: Arab
   destination_script: Latn
-  name: ISO 233-2:1993 Documentation — Transliteration of Arabic characters into Latin characters
+  name: ISO 233-2:1993 documentation -- Transliteration of Arabic characters into Latin characters
   url:
     - https://www.iso.org/standard/4118.html
     - https://cdn.standards.iteh.ai/samples/4118/2f03c828842c4055a5619c1bded39381/ISO-233-2-1993.pdf

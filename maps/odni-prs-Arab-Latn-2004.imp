@@ -5,7 +5,6 @@ metadata {
   source_script: Arab
   destination_script: Latn
   name: Intelligence Community (IC) Standard for the Transliteration of Dari Personal Names (2004)
-  url: https://github.com/interscript/interscript-private-references/blob/master/odni/Farsi_(Persian)_%26_Dari_IC_Standards.doc
   creation_date: 2004
   confirmation_date: 2004-11
   description: |

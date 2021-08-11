@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:kor
   source_script: Hang
   destination_script: Latn
-  name: McCune-Reischauer System
+  name: McCune-Reischauer System (Korean-Latin)
   url:
   creation_date: 1939
   adoption_date:

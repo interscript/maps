@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:mon
   source_script: Mong
   destination_script: Latn
-  name: Transliteration Systems for Uyghur-Mongolian or Vertical or Old Script
+  name: Lessing transliteration system for Uyghur-Mongolian script
   url: https://collab.its.virginia.edu/wiki/tibetan-script/Transliteration%20Schemes%20for%20Mongolian%20Vertical%20Script.html
   creation_date:
   description: |
@@ -18,7 +18,7 @@ metadata {
 
   notes:
     - A separated final form of vowels a or e is common, and can appear at the end
-      of a word, word stem, or suffix. This form rexuires a final-shaped preceding
+      of a word, word stem, or suffix. This form requires a final-shaped preceding
       consonant and an inter-word gap in between. The vowels themselves appear as ᠎ᠠ,
       and with consonants as ‍ᠬ᠎ᠠ q‑a, ‍ᠷ᠎ᠠ r‑a/r‑e, etc. This gap can be transliterated
       with a hyphen. In digital typesetting, these forms are triggered by inserting

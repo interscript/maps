@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:tml
   source_script: Taml
   destination_script: Latn
-  name: Indian script code for information interchange - ISCII - Tamil Romanization
+  name: Indian script code for information interchange (ISCII) -- Tamil Romanization
 
   #url:
   creation_date: 1991

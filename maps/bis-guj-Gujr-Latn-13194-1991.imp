@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:guj
   source_script: Gujr
   destination_script: Latn
-  name: Indian script code for information interchange - ISCII - Gujrati Romanization
+  name: Indian script code for information interchange (ISCII) -- Gujrati Romanization
 
   #url:
   creation_date: 1991

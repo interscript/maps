@@ -1,10 +1,10 @@
 metadata {
   authority_id: var
-  id: VPMC
+  id: vpmc
   language: iso-639-2:mon
   source_script: Mong
   destination_script: Latn
-  name: Transliteration Systems for Uyghur-Mongolian or Vertical or Old Script
+  name: VPMC transliteration system for Uyghur-Mongolian script
   url: https://collab.its.virginia.edu/wiki/tibetan-script/Transliteration%20Schemes%20for%20Mongolian%20Vertical%20Script.html
   creation_date:
   description: |

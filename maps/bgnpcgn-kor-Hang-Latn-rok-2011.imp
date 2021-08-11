@@ -4,14 +4,14 @@ metadata {
   language: iso-639-2:kor
   source_script: Hang
   destination_script: Latn
-  name: Romanization of Korean -- For the ROK (2011 Agreement, Ministry of Culture and Tourism System (2000))
+  name: Romanization of Korean for ROK (Hangul-Latin) (2011 Agreement, MOCT System 2000)
   url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693724/ROMANIZATION_OF_KOREAN-__MOCT_for_ROK.pdf
   creation_date: 2011
   adoption_date: 2011
   description:
 
   notes:
-    BGN/PCGN 2011 Agreement
+  - BGN/PCGN 2011 Agreement
 }
 
 tests {

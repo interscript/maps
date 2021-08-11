@@ -4,8 +4,8 @@ metadata {
   language: ics-630-01:ara
   source_script: Arab
   destination_script: Latn
-  name: Romanization of Arabic Personal Names (2015), ICS 630-01 Annex A
-  url: https://github.com/interscript/ics-630-01/blob/master/reference-docs/ANNEX%20A%20-%20Arabic_Personal_Names_FLTS%20(U).pdf
+  name: ICS-630-01 Romanization of Arabic Personal Names (2015)
+  source: ICS-630-01 Annex A
   creation_date: 2017
   confirmation_date: 2018-06
   description: |

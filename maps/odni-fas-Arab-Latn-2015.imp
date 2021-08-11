@@ -4,10 +4,10 @@ metadata {
   language: iso-639-2:fas
   source_script: Arab
   destination_script: Latn
-  name: Romanization of Persian Farsi Dari Personal Names (2015), ICS-630-01 Annex J
-  url: https://github.com/interscript/ics-630-01/blob/master/reference-docs/ANNEX%20J%20-%20Persian-Farsi_Dari_Personal_Names_FLTS_2018_Revision%20(U).pdf
+  name: ICS-630-01 Romanization of Persian Farsi Dari Personal Names (2015)
+  source: ICS-630-01 Annex J
   creation_date: 2015
-  confirmation_date: 2015-11
+  confirmation_date: 2018-11
   description: |
     This system is the Intelligence Community (IC) standard for
     the transliteration of Persian (Farsi)

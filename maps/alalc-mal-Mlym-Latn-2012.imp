@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:mal
   source_script: Mlym
   destination_script: Latn
-  name: Malayalam Romanization, 2012
+  name: Romanization Table -- Malayalam (2012)
   url: https://www.loc.gov/catdir/cpso/romanization/malayalam.pdf
   creation_date: 2012
   description: |

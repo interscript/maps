@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:pra
   source_script: Deva
   destination_script: Latn
-  name: IAST Sanskrit Devanagari System
+  name: IAST Sanskrit Devanagari System (Prakrit)
   url: https://www.ashtangayoga.info/philosophy/sanskrit-and-devanagari/transliteration/pronunciation-transliterations/
   creation_date: 1912
   description:

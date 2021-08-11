@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:jpn
   source_script: Hrkt
   destination_script: Latn
-  name: Traditional Hepburn
+  name: Traditional Hepburn System
   url: http://www.ab.cyberhome.ne.jp/~kaizu/roomazi/doc/hep3.html
   creation_date: 1886
   adoption_date:

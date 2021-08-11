@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:nep
   source_script: Deva
   destination_script: Latn
-  name: "DIN 33904:2018-10 Information and documentation - Romanization Devanagari, Nepali"
+  name: "DIN 33904:2018-10 Information and documentation -- Romanization Devanagari, Nepali"
   url: https://www.beuth.de/en/standard/din-33904/293049024
   creation_date: 2018
   description: |

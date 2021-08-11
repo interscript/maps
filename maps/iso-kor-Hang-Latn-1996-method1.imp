@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:kor
   source_script: Hang
   destination_script: Latn
-  name: ISO/TR 11941:1996 Information and documentation — Transliteration of Korean script into Latin characters
+  name: "ISO/TR 11941:1996 Information and documentation -- Transliteration of Korean script into Latin characters (Method 1)"
   url: https://www.iso.org/standard/20564.html
   creation_date: 1996
   adoption_date: ""

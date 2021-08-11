@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:rus
   source_script: Cyrl
   destination_script: Latn
-  name: Streamlined Romanization of Russian Cyrillic -- Basic Streamlined System
+  name: Streamlined Romanization of Russian Cyrillic (Basic Streamlined System)
   url: https://www.researchgate.net/publication/318402098
   creation_date: 2017-07
   description: |

@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:rus
   source_script: Cyrl
   destination_script: Latn
-  name: "ISO 9:1995 Information and documentation — Transliteration of Cyrillic characters into Latin characters — Slavic and non-Slavic languages"
+  name: "ISO 9:1995 Information and documentation -- Transliteration of Cyrillic characters into Latin characters -- Slavic and non-Slavic languages (Russian)"
   url: https://www.iso.org/standard/3589.html
   creation_date: 1995
   description: |

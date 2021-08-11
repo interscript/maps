@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:ell
   source_script: Grek
   destination_script: Latn
-  name: ELOT 743:2001 (transliteration)
+  name: ELOT 743:2001 Information and documentation -- Conversion of Greek characters into Latin characters (transliteration system)
   url: https://docplayer.gr/docview/18/849832/
   #file=/storage/18/849832/849832.pdf
   creation_date: 2001

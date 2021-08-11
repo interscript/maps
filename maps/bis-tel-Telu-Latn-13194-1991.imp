@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:tel
   source_script: Telu
   destination_script: Latn
-  name: Indian script code for information interchange - ISCII - Telegu Romanization
+  name: Indian script code for information interchange (ISCII) -- Telegu Romanization
 
   #url:
   creation_date: 1991

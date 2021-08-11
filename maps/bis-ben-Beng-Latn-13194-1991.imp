@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:ben
   source_script: Beng
   destination_script: Latn
-  name: Indian script code for information interchange - ISCII - Bengali Romanization
+  name: Indian script code for information interchange (ISCII) -- Bengali Romanization
 
   #url:
   creation_date: 1991

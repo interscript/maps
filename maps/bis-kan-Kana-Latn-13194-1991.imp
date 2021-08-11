@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:kan
   source_script: Kana
   destination_script: Latn
-  name: Indian script code for information interchange - ISCII - Kannada Romanization
+  name: Indian script code for information interchange (ISCII) -- Kannada Romanization
 
   #url:
   creation_date: 1991

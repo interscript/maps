@@ -1,10 +1,10 @@
 metadata {
-  authority_id: ungegn
+  authority_id: un
   id: 2017
   language: iso-639-2:ara
   source_script: Arab
   destination_script: Latn
-  name: Romanization of Arabic -- UNGEGN (2017)
+  name: Romanization of Arabic -- Unified Arabic Transliteration System (2017)
   url: http://www.eki.ee/wgrs/rom1_ar.pdf
   creation_date: 2017
   confirmation_date: 2018-06

@@ -4,7 +4,7 @@ metadata {
   language: iso-233-3:prs
   source_script: Arab
   destination_script: Latn
-  name: Persian language — Simplified transliteration
+  name: "ISO 223-3:1999 Persian language -- Simplified transliteration"
   url: https://web.archive.org/web/20200920064754/http://www.freeprotocols.org/content/republished/doc.public/standards/communication/iso/iso-233/iso-233-3.pdf
   creation_date: 1999
   confirmation_date: 1999-01-15
@@ -65,7 +65,7 @@ metadata {
     references, the latest edition of the normative document
     referred to applies. Members of ISO and IEC maintain
     registers of currently valid International StandardsISO 233-
-    2, Information and documentation — Transliteration of
+    2, Information and documentation -- Transliteration of
     Arabic characters into Latin characters — Part 2: Arabic
     language — Simplified transliteration. ISO/IEC 10646-1,
     Information Technology — Universal Multiple-Octet Coded

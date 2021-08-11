@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:dev
   source_script: Deva
   destination_script: Latn
-  name: Indian script code for information interchange - ISCII - Devanagri Romanization
+  name: Indian script code for information interchange (ISCII) -- Devanagri Romanization
 
   #url:
   creation_date: 1991

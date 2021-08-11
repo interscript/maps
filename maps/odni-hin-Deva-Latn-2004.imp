@@ -5,7 +5,6 @@ metadata {
   source_script: Deva
   destination_script: Latn
   name: Intelligence Community (IC) Standard for the Transliteration of Hindi and Urdu Personal Names (2004)
-  url: https://github.com/interscript/interscript-private-references/blob/master/odni/Hindi_and_Urdu_IC_Standard.doc
   creation_date: 2004
   description: |
     IC STANDARDS FOR TRANSLITERATION OF HINDI AND URDU PERSONAL NAMES

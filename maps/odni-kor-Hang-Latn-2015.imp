@@ -4,8 +4,8 @@ metadata {
   language: iso-639-2:kor
   source_script: Hang
   destination_script: Latn
-  name: Romanization of Korean Personal Names (2015), ICS-630-01 Annex W
-  url:
+  name: ICS-630-01 Romanization of Korean Personal Names (2015)
+  source: ICS-630-01 Annex W
   creation_date: 2015
   adoption_date:
   description:

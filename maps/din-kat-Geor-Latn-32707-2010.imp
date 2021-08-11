@@ -9,8 +9,8 @@ metadata {
   creation_date: 2010
   confirmation_date: 2010
   description: |
-    Information and documentation - Romanization of the Georgian alphabet.
-  
+    Information and documentation -- Romanization of the Georgian alphabet.
+
   notes:
 }
 
@@ -53,27 +53,27 @@ stage {
     sub "\u10d4", "e" # ე
     sub "\u10d5", "v" # ვ
     sub "\u10d6", "z" # ზ
-    
+
     sub "\u10f1", "ê" # ჱ
-    
+
     sub "\u10d7", "t̕" # თ
     sub "\u10d8", "i" # ი
     sub "\u10d9", "k" # კ
     sub "\u10da", "l" # ლ
     sub "\u10db", "m" # მ
     sub "\u10dc", "n" # ნ
-    
+
     sub "\u10f2", "y" # ჲ
-    
+
     sub "\u10dd", "o" # ო
     sub "\u10de", "p" # პ
     sub "\u10df", "ž" # ჟ
     sub "\u10e0", "r" # რ
     sub "\u10e1", "s" # ს
     sub "\u10e2", "t" # ტ
-    
+
     sub "\u10f3", "w" # ჳ
-    
+
     sub "\u10e3", "u" # უ
     sub "\u10e4", "p̕" # ფ
     sub "\u10e5", "k̕" # ქ
@@ -86,14 +86,14 @@ stage {
     sub "\u10ec", "c" # წ
     sub "\u10ed", "č" # ჭ
     sub "\u10ee", "x" # ხ
-    
+
     sub "\u10f4", "q̕" # ჴ
-    
+
     sub "\u10ef", "ǰ" # ჯ
     sub "\u10f0", "h" # ჰ
-    
+
     sub "\u10f5", "ô" # ჵ
-    
+
     sub "\u10f6", "f" # ჶ
     sub "\u10f7", "ẹ" # ჷ
     sub "\u10f8", "ʼ" # ჸ

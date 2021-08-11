@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:jpn
   source_script: Hrkt
   destination_script: Latn
-  name: BGN Modified Hepburn Japanese transliteration system (1962)
+  name: Japanese Modified Hepburn (1962)
   url:
   creation_date: 1930
   adoption_date: 1962

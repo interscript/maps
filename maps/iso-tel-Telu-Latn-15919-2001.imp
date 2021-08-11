@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:tel
   source_script: Telu
   destination_script: Latn
-  name: "Information and documentation — Transliteration of Devanagari and related Indic scripts into Latin characters"
+  name: "ISO 15919:2001 Information and documentation -- Transliteration of Devanagari and related Indic scripts into Latin characters (Telugu)"
   url: https://www.chatranjali.fr/Scripts/Standards/ISO15919.pdf
   creation_date: 2001
   adoption_date: 2001

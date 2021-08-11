@@ -4,7 +4,7 @@ metadata {
   language: iso-639-2:mlm
   source_script: Mlym
   destination_script: Latn
-  name: Indian script code for information interchange - ISCII - Malayalam Romanization
+  name: Indian script code for information interchange (ISCII) -- Malayalam Romanization
 
   #url:
   creation_date: 1991

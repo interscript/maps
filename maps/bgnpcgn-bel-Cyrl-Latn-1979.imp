@@ -4,13 +4,16 @@ metadata {
   language: iso-639-2:bel
   source_script: Cyrl
   destination_script: Latn
-  name: United States Board on Geographic Names Foreign Names Committee Staff, 1994. Romanization Systems and Roman-Script Spelling Conventions, p. 23.
+  name: Romanization of Belarusian (1979)
   url: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/811510/ROMANIZATION_OF_BELARUSIAN.pdf
   creation_date: 1979
   description: |
     The BGN/PCGN system for Belarusian (formerly referred to as Byelorussian) was designed for use in
     romanizing names written in the Belarusian Cyrillic alphabet. The Belarusian alphabet contains three
     characters not present in the Russian alphabet: і, ў, and ’.
+
+    United States Board on Geographic Names Foreign Names Committee Staff, 1994.
+    Romanization Systems and Roman-Script Spelling Conventions, p. 23.
 
   notes:
    - The character sequences зг, кг, сг, тс and цг and may be romanized z·h, k·h, s·h, t·s and ts·h in order to differentiate those romanizations from the digraphs zh, kh, sh, ts, and the letter sequence tsh, which are used to render the characters ж, x, ш, ц, and the character sequence тш
