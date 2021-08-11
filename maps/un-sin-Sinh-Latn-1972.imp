@@ -5,6 +5,7 @@ metadata {
   source_script: Sinh
   destination_script: Latn
   name: Romanization of Sinhalese -- UNGEGN 4.0 (1972)
+  source: "Second United Nations Conference on the Standardization of Geographical Names. London, 10–31 May 1972. Vol. II. Technical papers, pp. 151–152."
   url: https://www.eki.ee/wgrs/rom1_ml.htm
   creation_date: 1972
   confirmation_date: 2016
@@ -17,7 +18,6 @@ metadata {
     Sinhalese uses an alphasyllabic script whereby each character represents a syllable rather than one sound.
     Vowels and diphthongs are marked in two ways: as independent characters (used syllable-initially) and in an
     abbreviated form, to denote vowels after consonants.
-
 
   notes:
     - |
@@ -170,6 +170,18 @@ stage {
     sub "හ", "ha"
     sub "ෆ", "fa"
     sub "ළ", "ḷa"
+
+    # Prenasalized sounds
+    sub "ඟ", "ṅga"
+    sub "ඦ", "ñja"
+    sub "ඬ", "ṇḍa"
+    sub "ඳ", "nda"
+    sub "ඹ", "mba"
+
+    # Other ligatures
+    sub "ක්‍ෂ", "kṣha"
+    sub "ඥ", "jña"
+    sub "න්‍ද", "nda"
 
     # numbers
     sub "\u0DE6", "0"
