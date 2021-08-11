@@ -1,0 +1,25 @@
+metadata {
+  authority_id: var
+  id: rababa
+  language: iso-639-2:ara
+  source_script: Arab
+  destination_script: Latn
+  name: RABABA the Arabic Diacritization Library
+  url: https://github.com/interscript/rababa/
+  description: |
+    Arabic diacritization is useful for several practical business cases
+    like text to speech or Romanization of Arabic texts or scripts.
+
+    This map in particular uses the RABABA library to automatically detect
+    and add diacritics using machine learning.
+}
+
+tests {
+  test 'قطر' ,'قِطْرَ'
+  test 'abc', 'abc'
+  test '‘Iz. Ibrāhīm as-Sa‘danī', '‘Iz. Ibrāhīm as-Sa‘danī'
+}
+
+stage {
+  rababa config: "200"
+}

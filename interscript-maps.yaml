@@ -16,6 +16,32 @@ staging:
 secryst-models:
   - https://raw.githubusercontent.com/secryst/data-thai-interscript/master/index.yaml
 
+# Here we describe Rababa configs for the maps that are required
+rababa-configs:
+  "200":
+    model: https://github.com/secryst/rababa-models/releases/download/0.1/diacritization_model_max_len_200.onnx
+    config:
+      session_name: base
+      text_encoder: ArabicEncoderWithStartSymbol
+      text_cleaner: valid_arabic_cleaners
+      max_len: 200
+      batch_size: 32
+      
+# This instruction denotes that the following maps are incompatible with certain
+# compilers and platforms and shouldn't be tested or compiled in.
+skip:
+  Interscript::Compiler::Javascript:
+    - var-ara-Arab-Arab-rababa
+  # Windows currently fails tests for rababa
+  mswin64:
+    - var-ara-Arab-Arab-rababa
+  mswin32:
+    - var-ara-Arab-Arab-rababa
+  mingw32:
+    - var-ara-Arab-Arab-rababa
+  cygwin:
+    - var-ara-Arab-Arab-rababa
+
 # This part registers aliases. Those were previously a part of maps themselves,
 # moving this here saves us from a burden of having to load all the maps to
 # locate one that we are trying to access.
