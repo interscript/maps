@@ -37,13 +37,13 @@ metadata {
 
 tests {
   test "ශී‍්‍ර ලංකාවේ කී‍්‍රඩාව ඉතිහාසයේ ඉහළම තැනකට ගේන්න කටයුතු කරනවා", "shīra laṁkāve kīraḍāva itihāsaye ihaḷama tæ̆nakaṭa genna kaṭayutu karanavā"
-  test "කොච්චිකඬේ මෝයකට අසල නෑමට ගිය තරුණයෝ ෩ක් මරුට - මිතුරාගේ උපන් දිනය සැමරීමට ඇවිත්", "kŏchchikaඬe moyakaṭa asala næmaṭa giya taruṇayo 3k maruṭa - miturāge upan dinaya sæ̆marīmaṭa æ̆vit"
+  test "කොච්චිකඬේ මෝයකට අසල නෑමට ගිය තරුණයෝ ෩ක් මරුට - මිතුරාගේ උපන් දිනය සැමරීමට ඇවිත්", "kŏchchikaṇḍae moyakaṭa asala næmaṭa giya taruṇayo 3k maruṭa - miturāge upan dinaya sæ̆marīmaṭa æ̆vit"
   test "ලෝක ළමා දිනයදා සිසුන් පිරිසක් කසිප්පු බීලා", "loka ḷamā dinayadā sisun pirisak kasippu bīlā"
   test "කෝටි 16ක හෙරොයින් සමග දන්කොටුවේදී 7ක් දැලේ", "koṭi 16ka hĕrŏyin samaga dankŏṭuvedī 7k dæ̆le"
   test "මිනුවන්ගොඩ පීසීආර් දෙදහසක් සිදුකරයි", "minuvangŏḍa pīsīār dĕdahasak sidukarayi"
   test "පාස්කු ප‍්‍රහාරය වගේම පාස්කු ප්‍රෝඩාව ගැනත් සොයන්න කොමිසමක් පත්කළ යුතුයි - විපක්‍ෂ නායක සජිත් පේ‍්‍රමදාස", "pāsku parahāraya vagema pāsku proḍāva gæ̆nat sŏyanna kŏmisamak patkaḷa yutuyi - vipakṣha nāyaka sajit peramadāsa"
   test "ට‍්‍රම්ප්ගේ සෞඛ්‍යය තීරණාත්මකයි - ට්විටර් හරහා ජනතාව අමතයි", "ṭarampge saukhyaya tīraṇātmakayi - ṭviṭar harahā janatāva amatayi"
-  test "පාස්කු දා ප‍්‍රහාරය පිළිබඳ පරීක්‍ෂණවලින් කිසිවකුට අසාධාරණයක් වීමට ඉඩ දෙන්නේ නෑ - අගමැති", "pāsku dā parahāraya piḷibaඳ parīkṣhaṇavalin kisivakuṭa asādhāraṇayak vīmaṭa iḍa dĕnne næ - agamæ̆ti"
+  test "පාස්කු දා ප‍්‍රහාරය පිළිබඳ පරීක්‍ෂණවලින් කිසිවකුට අසාධාරණයක් වීමට ඉඩ දෙන්නේ නෑ - අගමැති", "pāsku dā parahāraya piḷibanda parīkṣhaṇavalin kisivakuṭa asādhāraṇayak vīmaṭa iḍa dĕnne næ - agamæ̆ti"
   test "දිල්ලි කැපිටල්ස් සහ කෝලිගේ බැංගලෝර් තෙවැනි ජය ලබයි", "dilli kæ̆piṭals saha kolige bæ̆ṁgalor tĕvæ̆ni jaya labayi"
   test "ශ‍්‍රී ලාංකික සම්භවයක් සහිත ප‍්‍රංශයේ පවුලක 5 ක් ඝාතනය කරලා", "sharī lāṁkika sambhavayak sahita paraṁshaye pavulaka 5 k ghātanaya karalā"
   test "පැතිකුදය ඉක්මනින් සුව කරන ප‍්‍රතිකාර", "pæ̆tikudaya ikmanin suva karana paratikāra"
