@@ -1,0 +1,31 @@
+metadata {
+  authority_id: alalc
+  id: 2011
+  language: iso-639-2:kat
+  source_script: Geok
+  destination_script: Latn
+  name: Romanization Table -- Georgian Khutsuri (2011)
+  url: https://www.loc.gov/catdir/cpso/romanization/georgian.pdf
+  creation_date: 2011
+  confirmation_date: 2011
+  description: |
+    Values are shown for the Khutsuri alphabet.
+  notes:
+}
+
+tests {
+  test "ႼႨႢႬႨ", "CIGNI"
+  test "ⴜⴈⴂⴌⴈ", "cigni"
+  test "ႱႭႪႭႫႭႬ", "SOLOMON"
+  test "ⴑⴍⴊⴍⴋⴍⴌ", "solomon"
+  test "ႠႡႰႠჀႠႫ", "ABRAHAM"
+}
+
+
+dependency "alalc-kat-Geok-Latn-1997", as: geoklatn
+
+stage {
+
+  run map.geoklatn.stage.main
+
+}

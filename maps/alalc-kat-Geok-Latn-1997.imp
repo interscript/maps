@@ -5,12 +5,11 @@ metadata {
   source_script: Geok
   destination_script: Latn
   name: Romanization Table -- Georgian Khutsuri (1997)
-  url: https://www.loc.gov/catdir/cpso/romanization/georgian.pdf
+  url: http://catdir.loc.gov/catdir/cpso/romanization/georgian.pdf
   creation_date: 1997
   confirmation_date: 1997
   description: |
     Values are shown for the Khutsuri alphabet.
-
   notes:
 }
 
