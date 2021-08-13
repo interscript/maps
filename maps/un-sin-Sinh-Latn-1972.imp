@@ -179,9 +179,9 @@ stage {
     sub "ඹ", "mba"
 
     # Other ligatures
-    sub "ක්‍ෂ", "kṣha"
+    sub "ක්", "k"
     sub "ඥ", "jña"
-    sub "න්‍ද", "nda"
+    sub "න්", "n"
 
     # numbers
     sub "\u0DE6", "0"
