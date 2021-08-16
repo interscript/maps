@@ -32,6 +32,10 @@ rababa-configs:
 skip:
   Interscript::Compiler::Javascript:
     - var-ara-Arab-Arab-rababa
+  # It works for detection, but takes too much time and doesn't make sense for
+  # the main usecase of Detector
+  Interscript::Detector:
+    - var-ara-Arab-Arab-rababa
   # Windows currently fails tests for rababa
   mswin64:
     - var-ara-Arab-Arab-rababa
