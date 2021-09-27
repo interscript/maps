@@ -42,4 +42,4 @@ jobs:
         bundle config path vendor/bundle
         pushd ruby && bundle install --jobs 4 --retry 3 --with jsexec --without secryst && popd
     
-    - run: pushd ruby && bundle exec rspec spec/interscript_spec.rb && popd
+    - run: pushd ruby && bundle exec rspec spec/interscript_spec.rb spec/map_name_and_metadata_spec.rb && popd
