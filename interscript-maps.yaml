@@ -72,6 +72,7 @@ aliases:
     ara_Arab2Latn_ODNI_2004:
       description: Arabic Personal Names Office of the Director Of National Intelligence
         2004 System
+      alias_to: odni-ara-Arab-Latn-2004
     ara_Arab2Latn_RJGC_1996:
       description: Arabic Royal Jordanian Geographic Center 1996 System
     ara_Arab2Latn_SES_1930:
@@ -132,15 +133,18 @@ aliases:
       alias_to: odni-bul-Cyrl-Latn-2005
     che_Cyrl2Latn_BGN_2007:
       description: Chechen 2007 BGN/PCGN Cyrillic-Latin Table of Correspondences
+      # alias_to: bgnpcgn-che-Cyrl-Latn-2008 - closest match
     deu_Latn2Latn_BGN_1986:
       description: German Spelling Convention US Board on Geographic Names(BGN)/Permanent
         Committee on Geographical Names for British Official Use(PCGN) 1986
+      # alias_to: bgnpcgn-deu-Latn-Latn-2000 - closest match
     div_Thaa2Latn_ALA_1997:
       description: Maldivian (Divehi) ALA-Library of Congress 1997 System
       alias_to: alalc-div-Thaa-Latn-1997
     div_Thaa2Latn_BGN_1972:
       description: Maldivian (Divehi) US Board on Geographic Names(BGN)/Permanent Committee
         on Geographical Names for British Official Use(PCGN) 1972 system (out of date)
+      alias_to: bgnpcgn-div-Thaa-Latn-1972
     div_Thaa2Latn_GMV_1988:
       description: Maldivian (Divehi) Maldivian Government 1988 system
       alias_to: bgnpcgn-div-Thaa-Latn-1988
@@ -176,6 +180,7 @@ aliases:
     fas_Arab2Latn_ODNI_2004:
       description: Farsi (Iranian Persian) Personal Names Office of the Director Of National
         Intelligence 2004 System
+      alias_to: odni-fas-Arab-Latn-2004
     guj_Gijr2Latn_ALA_1997:
       description: Gujerati 1997 ALA-Library of Congress System
     guj_Gujr2Latn_ALA_1997:
@@ -212,6 +217,7 @@ aliases:
       description: Japanese ALA-Library of Congress 1997 System
     jpn_Hrkt2Latn_BGN_1930:
       description: Japanese Kana Modified Hepburn 1930 System
+      # alias_to: bgn-jpn-Hrkt-Latn-1962 - closest match
     jpn_Hrkt2Latn_GJP_1954:
       description: Japanese Kunrei-siki 1954 System
     kas_Arab2Latn_ALA_1997:
@@ -229,6 +235,7 @@ aliases:
     kaz_Cyrl2Latn_BGN_1979:
       description: Kazakh Cyrillic US Board on Geographic Names(BGN)/Permanent Committee
         on Geographical Names for British Official Use(PCGN) 1979 System
+      alias_to: bgnpcgn-kaz-Cyrl-Latn-1979
     khm_Khmr2Latn_ALA_1997:
       description: Cambodian (Khmer) ALA-Library of Congress 1997 System
     khm_Khmr2Latn_SGK_1959:
@@ -236,6 +243,7 @@ aliases:
     kir_Cyrl2Latn_BGN_1979:
       description: Kirghiz US Board on Geographic Names(BGN)/Permanent Committee on Geographical
         Names for British Official Use(PCGN) 1979 System
+      alias_to: bgnpcgn-kir-Cyrl-Latn-1979
     kor_Hang2Latn_ALA_1997:
       description: Korean ALA-Library of Congress 1997 System
       alias_to: alalc-kor-Hang-Latn-1997
@@ -252,10 +260,12 @@ aliases:
     kor_Hang2Latn_ODNI_2004:
       description: Korean Personal Names Office of the Director Of National Intelligence
         2004 System
+      # alias_to: odni-kor-Hang-Latn-2015 - closest match
     kur_Arab2Latn_ALA_1997:
       description: Kurdish 1997 ALA-Library of Congress Kurdish 1997 System
     kur_Arab2Latn_BGN_1931:
       description: 2007 Kurdish Hawar Romanization System BGN/PCGN
+      alias_to: bgnpcgn-kur-Arab-Latn-2007 - closest match
     kur_Arab2Latn_EDMONDS_1931:
       description: Kurdish 1931 J.C. Edmonds Romanization System
     lad_Hebr2Latn_ALA_1997:
@@ -282,9 +292,11 @@ aliases:
     mkd_Cyrl2Latn_BGN_2013:
       description: Macedonian US Board on Geographic Names(BGN)/Permanent Committee on
         Geographical Names for British Official Use(PCGN) 2013 System
+      alias_to: bgnpcgn-mkd-Cyrl-Latn-2013
     mkd_Cyrl2Latn_ODNI_2005:
       description: Macedonian Personal Names Office of the Director Of National Intelligence
         2004 System
+      alias_to: odni-mkd-Cyrl-Latn-2005
     mly_Arab2Latn_ALA_1997:
       description: Malay ALA-Library of Congress 1997 System
     mol_Cyrl2Latn_BGN_2002:
@@ -302,7 +314,7 @@ aliases:
     nep_Deva2Latn_BGN_1964:
       description: Nepalese US Board on Geographic Names(BGN)/Permanent Committee on Geographical
         Names for British Official Use(PCGN) 1964 System
-      # alias_to: bgnpcgn-nep-Deva-Latn-2011
+      # alias_to: bgnpcgn-nep-Deva-Latn-2011 - closest match
     nep_Mymr2Latn_BGN_1970:
       description: Burmese US Board on Geographic Names(BGN)/Permanent Committee on Geographical
         Names for British Official Use(PCGN) 1970 Agreement
@@ -326,6 +338,7 @@ aliases:
     pus_Arab2Latn_BGN_1968:
       description: Pashto (Pushtu) US Board on Geographic Names(BGN)/Permanent Committee
         on Geographical Names for British Official Use(PCGN) 1968 System
+      alias_to: bgnpcgn-pus-Arab-Latn-1968
     rue_Cyrl2Latn_BGN_2016:
       description: BGN/PCGN 2016 System
       alias_to: bgnpcgn-rue-Cyrl-Latn-2016
@@ -343,6 +356,7 @@ aliases:
     rus_Cyrl2Latn_ODNI_2004:
       description: Russian Personal Names Office of the Director Of National Intelligence
         2004 System
+      # alias_to: odni-rus-Cyrl-Latn-2015 - closest match
     sin_Sinh2Latn_ALA_1997:
       description: Sinhalese ALA-Library of Congress 1997 System
       alias_to: alalc-sin-Sinh-Latn-1997
@@ -365,6 +379,7 @@ aliases:
     srp_Cyrl2Latn_ODNI_2005:
       description: Serbian Personal Names Office of the Director Of National Intelligence
         2004 System
+      alias_to: odni-srp-Cyrl-Latn-2005
     tam_Taml2Latn_ALA_1997:
       description: Tamil ALA-Library of Congress 1997 System
       alias_to: alalc-tam-Taml-Latn-1997
@@ -424,20 +439,25 @@ aliases:
     ukr_Cyrl2Latn_ODNI_2005:
       description: Ukrainian Personal Names Office of the Director Of National Intelligence
         2004 System
+      alias_to: odni-ukr-Cyrl-Latn-2015
     urd_Arab2Latn_ALA_1997:
       description: Urdu ALA-Library of Congress 1997 System
     urd_Arab2Latn_BGN_2007:
       description: Urdu 2007 BGN/PCGN Urdu Romanization System
+      alias_to: bgnpcgn-urd-Arab-Latn-2007
     urd_Arab2Latn_HUN_:
       description: Hunterian System
     urd_Arab2Latn_ODNI_2004:
       description: Urdu Personal Names Office of the Director Of National Intelligence
         2004 System
+      # alias_to: odni-urd-Arab-Latn-2015 - closest match
     urd_Arab2Latn_UN_1972:
       description: Urdu United Nations 1972 System
+      alias_to: un-urd-Arab-Latn-1972
     uzb_Cyrl2Latn_BGN_1979:
       description: Uzbek Cyrillic US Board on Geographic Names(BGN)/Permanent Committee
         on Geographical Names for British Official Use(PCGN) 1979 System (out of date)
+      alias_to: bgnpcgn-uzb-Cyrl-Latn-1979
     uzb_Cyrl2Latn_GUZ_2000:
       description: Uzbek Cyrillic Table of Correspondences Government of Uzbekistan 2000
         System
