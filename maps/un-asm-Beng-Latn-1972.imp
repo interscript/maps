@@ -1,7 +1,7 @@
 metadata {
   authority_id: un
   id: 1972
-  language: iso-639-2:ben
+  language: iso-639-2:asm
   source_script: Beng
   destination_script: Latn
   name: Romanization of Assamese -- UNGEGN 4.0

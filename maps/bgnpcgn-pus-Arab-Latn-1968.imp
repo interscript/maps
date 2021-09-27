@@ -1,7 +1,7 @@
 metadata {
   authority_id: bgnpcgn
   id: 1968
-  language: iso-639-3:prs
+  language: iso-639-2:pus
   source_script: Arab
   destination_script: Latn
   name: Romanization of Pashto (1968)

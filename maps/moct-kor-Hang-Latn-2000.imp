@@ -1,6 +1,6 @@
 metadata {
   authority_id: moct
-  id: 2000-viajamo
+  id: 2000
   language: iso-639-2:kor
   source_script: Hang
   destination_script: Latn

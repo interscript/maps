@@ -1,7 +1,7 @@
 metadata {
   authority_id: un
-  id: 2017
-  language: iso-639-2:ara
+  id: 1972
+  language: iso-639-2:urd
   source_script: Arab
   destination_script: Latn
   name: Romanization of Arabic (2017)

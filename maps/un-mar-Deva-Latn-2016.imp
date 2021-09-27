@@ -1,7 +1,7 @@
 metadata {
   authority_id: un
   id: 2016
-  language: iso-639-2:hin
+  language: iso-639-2:mar
   source_script: Deva
   destination_script: Latn
   name: Romanization of Marathi -- UNGEGN 4.0

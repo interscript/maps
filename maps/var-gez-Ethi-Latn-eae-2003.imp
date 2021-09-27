@@ -1,7 +1,7 @@
 metadata {
   authority_id: var
-  id: 2003
-  language: gez
+  id: eae-2003
+  language: iso-639-2:gez
   source_script: Ethi
   destination_script: Latn
   name: Encyclopaedia Aethiopica Amharic transliteration system (2003)

@@ -1,7 +1,7 @@
 metadata {
   authority_id: mvd
   id: 2010
-  language: iso-639-2:bel
+  language: iso-639-2:rus
   source_script: Cyrl
   destination_script: Latn
   name: Transliteration system for Russian names (2010)

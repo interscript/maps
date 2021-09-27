@@ -1,7 +1,7 @@
 metadata {
   authority_id: bgnpcgn
   id: 1958
-  language: iso-639-3:prs
+  language: iso-639-2:per
   # prs stands for Dari (https://iso639-3.sil.org/code/prs&_ga=GA1.2.2054538372.1574092823)
   source_script: Arab
   destination_script: Latn

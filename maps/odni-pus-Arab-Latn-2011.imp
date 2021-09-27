@@ -1,7 +1,7 @@
 metadata {
-  authority_id: bgnpcgn
-  id: 2007
-  language: iso-639-3:prs
+  authority_id: odni
+  id: 2011
+  language: iso-639-2:pus
   source_script: Arab
   destination_script: Latn
   name: Pashto Standardized Transliteration System for Personal Names (2011)

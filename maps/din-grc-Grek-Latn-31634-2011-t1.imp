@@ -1,7 +1,7 @@
 metadata {
   authority_id: din
-  id: 2011
-  language: din-31634:grc
+  id: 31634-2011-t1
+  language: iso-639-3:grc
   source_script: Grek
   destination_script: Latn
   name: "DIN 31634:2011 Information und Dokumentation — Unschrift des griechischen Alphabets"

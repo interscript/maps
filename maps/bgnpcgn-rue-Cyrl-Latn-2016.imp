@@ -1,7 +1,7 @@
 metadata {
   authority_id: bgnpcgn
   id: 2016
-  language: iso-639-2:rue
+  language: iso-639-3:rue
   source_script: Cyrl
   destination_script: Latn
   name: Romanization of Rusyn (2016)

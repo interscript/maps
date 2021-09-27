@@ -1,6 +1,6 @@
 metadata {
   authority_id: gost
-  id: 2002
+  id: 7.79-2000-2002
   language: iso-639-2:rus
   source_script: Cyrl
   destination_script: Latn

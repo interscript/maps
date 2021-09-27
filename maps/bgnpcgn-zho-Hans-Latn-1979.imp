@@ -1,6 +1,6 @@
 metadata {
   authority_id: bgnpcgn
-  id: pinyin
+  id: 1979
   language: iso-639-2:zho
   source_script: Hans
   destination_script: Latn

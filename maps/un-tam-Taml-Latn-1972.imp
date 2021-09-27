@@ -2,8 +2,8 @@ metadata {
   authority_id: un
   id: 1972
   language: iso-639-2:tam
-  source_script: Gujr
-  destination_script: Taml
+  source_script: Taml
+  destination_script: Latn
   name: Romanization of Tamil -- UNGEGN 4.0 (1972)
   url: https://www.eki.ee/wgrs/rom1_ta.htm
   creation_date: 1972

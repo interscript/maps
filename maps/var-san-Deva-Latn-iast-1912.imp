@@ -1,6 +1,6 @@
 metadata {
   authority_id: var
-  id: 1912
+  id: iast-1912
   language: iso-639-2:san
   source_script: Deva
   destination_script: Latn

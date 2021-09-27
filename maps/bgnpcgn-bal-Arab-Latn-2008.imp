@@ -1,7 +1,7 @@
 metadata {
   authority_id: bgnpcgn
   id: 2008
-  language: bal
+  language: iso-639-2:bal
   source_script: Arab
   destination_script: Latn
   name: ROMANIZATION OF BALUCHI -- BGN/PCGN 2008 System

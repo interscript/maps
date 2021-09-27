@@ -1,7 +1,7 @@
 metadata {
   authority_id: bgnpcgn
   id: 2007
-  language: kur
+  language: iso-639-2:kur
   source_script: Arab
   destination_script: Latn
   name: Romanization of Kurdish (2007)

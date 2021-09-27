@@ -1,7 +1,7 @@
 metadata {
   authority_id: odni
-  id: 2017
-  language: ics-630-01:ara
+  id: 2015
+  language: iso-639-2:ara
   source_script: Arab
   destination_script: Latn
   name: ICS-630-01 Romanization of Arabic Personal Names (2015)

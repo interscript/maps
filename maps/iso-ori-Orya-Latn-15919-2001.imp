@@ -2,7 +2,7 @@ metadata {
   authority_id: iso
   id: 15919-2001
   language: iso-639-2:ori
-  source_script: Deva
+  source_script: Orya
   destination_script: Latn
   name: "ISO 15919:2001 Information and documentation -- Transliteration of Devanagari and related Indic scripts into Latin characters (Oriya)"
   url: https://www.chatranjali.fr/Scripts/Standards/ISO15919.pdf

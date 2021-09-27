@@ -1,7 +1,7 @@
 metadata {
   authority_id: iso
-  id: 233-3
-  language: iso-233-3:prs
+  id: 233-3-1999
+  language: iso-639-3:prs
   source_script: Arab
   destination_script: Latn
   name: "ISO 223-3:1999 Persian language -- Simplified transliteration"

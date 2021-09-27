@@ -1,7 +1,7 @@
 metadata {
   authority_id: bis
-  id: 1991
-  language: iso-639-2:pnj
+  id: 13194-1991
+  language: iso-639-3:pnj
   source_script: Guru
   destination_script: Latn
   name: Indian script code for information interchange (ISCII) -- Panjabi(Gurmukhi) Romanization

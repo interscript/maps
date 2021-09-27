@@ -1,7 +1,7 @@
 metadata {
   authority_id: bgnpcgn
   id: 2007
-  language: iso-639-2:rus
+  language: iso-639-2:bak
   source_script: Cyrl
   destination_script: Latn
   name: Table of Correspondences for Bashkir (Cyrillic-Roman) (2007 Agreement)

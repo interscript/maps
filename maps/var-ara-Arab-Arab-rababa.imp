@@ -3,7 +3,7 @@ metadata {
   id: rababa
   language: iso-639-2:ara
   source_script: Arab
-  destination_script: Latn
+  destination_script: Arab
   name: RABABA the Arabic Diacritization Library
   url: https://github.com/interscript/rababa/
   description: |

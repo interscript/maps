@@ -1,7 +1,7 @@
 metadata {
   authority_id: odni
   id: 2004
-  language: ics-630-01:ara
+  language: iso-639-2:ara
   source_script: Arab
   destination_script: Latn
   name: Intelligence Community (IC) Standard for the Transliteration of Arabic Personal Names (2004)

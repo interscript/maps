@@ -1,7 +1,7 @@
 metadata {
   authority_id: bgnpcgn
   id: 1964
-  language: iso-639-2:far
+  language: iso-639-2:fao
   source_script: Latn
   destination_script: Latn
   name: Romanization of Faeroese (1964)

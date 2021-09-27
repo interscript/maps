@@ -1,5 +1,5 @@
 metadata {
-  authority_id: nil
+  authority_id: var
   id: jamo
   language: iso-639-2:kor
   source_script: Hang
