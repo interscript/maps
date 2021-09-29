@@ -2,7 +2,7 @@ name: test
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, v* ]
   pull_request:
 
 jobs:
@@ -10,18 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
       with:
-        repository: interscript/interscript
-        submodules: true
-    
-    - run: |
-        rm -rf maps
-        mkdir maps
+        repository: interscript/interscript-bootstrap
 
-    - uses: actions/checkout@v2
-      with:
-        path: maps
+    - name: Run a bootstrap script
+      run: ruby bootstrap.rb
 
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
