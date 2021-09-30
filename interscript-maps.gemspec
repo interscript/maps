@@ -1,4 +1,4 @@
-INTERSCRIPT_MAPS_VERSION="2.3.2"
+INTERSCRIPT_MAPS_VERSION="2.3.3.a1"
 
 Gem::Specification.new do |spec|
   spec.name          = "interscript-maps"
