@@ -15,15 +15,15 @@ jobs:
       with:
         repository: interscript/interscript
 
-    - name: Run a bootstrap script
+    - name: Run bootstrap script
       run: ruby bootstrap.rb
 
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.7
-    
-    - name: cache ruby gems
+
+    - name: Cache Ruby gems
       uses: actions/cache@v2
       env:
         cache-name: cache-ruby-modules
@@ -32,9 +32,17 @@ jobs:
         key: ${{ runner.os }}-ruby-2.7-gems-${{ hashFiles('**/interscript.gemspec') }}
         restore-keys: |
           ${{ runner.os }}-ruby-2.7-gems-
-    
-    - run: |
-        bundle config path vendor/bundle
-        pushd ruby && bundle install --jobs 4 --retry 3 --with jsexec --without secryst && popd
-    
-    - run: pushd ruby && bundle exec rspec spec/interscript_spec.rb spec/map_name_and_metadata_spec.rb && popd
+
+    - name: Configure bundle to use vendor mode
+      run: bundle config path vendor/bundle
+
+    - name: Install bundle
+      working-directory: ./ruby
+      run: |
+        bundle install --jobs 4 --retry 3 --with jsexec --without secryst
+
+    - name: Execute tests
+      working-directory: ./ruby
+      run: |
+        bundle exec rspec spec/interscript_spec.rb spec/map_name_and_metadata_spec.rb
+
