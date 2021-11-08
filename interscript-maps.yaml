@@ -167,6 +167,7 @@ aliases:
       alias_to: bgnpcgn-fao-Latn-Latn-1968
     fas_Arab2Latn_ALA_1997:
       description: Persian 1997 ALA-Library of Congress System
+      alias_to: alalc-fas-Arab-Latn-1997
     fas_Arab2Latn_AMMI_1959:
       description: Afghanistan Ministry of Mines and Industries Transliteration System
         for Geographic Names in Afghanistan (Yaghubi)
