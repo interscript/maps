@@ -47,7 +47,7 @@ metadata {
     - Since maddah (آ), which is placed over alif (ا), nearly always occurs in word-initial position, no .)◌َا( as well as for fatḩah alif )آ( confusion results from the use of ā for alif maddah
     - The ligatures لا and لـا represent lām- alif, and should be romanized lā.
 
-  special_rules:
+  implementation_notes:
     # TODO: These are not used
     - Initial definite articles and prepositions should be capitalized and hyphens should not be used to connect parts of names, e.g., Ash Shāriqah and Tall al Laḩm.
     - If any evidence is found for the use of the definite article in a name, the article should be used in the name chosen.

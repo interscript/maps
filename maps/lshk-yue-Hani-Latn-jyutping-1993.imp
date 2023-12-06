@@ -7,15 +7,15 @@ metadata {
   name: Jyutping Cantonese Romanisation Scheme
   url: https://lshk.org/jyutping
   creation_date: 1993-12
-  description:
-    - The Linguistic Society of Hong Kong Cantonese Romanisation Scheme, or
-      known as Jyutping, was designed and proposed by the Linguistic Society of
-      Hong Kong in 1993. Jyutping is a new Cantonese romanization system which
-      has many advantages. It is multifunctional, systematic, user-friendly,
-      compatible with all possible modern Cantonese sounds, and solely based on
-      alphanumeric characters without any diacritics and strange symbols.
-      Jyutping can also be used as a Chinese computer input method. Its basic
-      principles are simple, easy to learn, and professional.
+  description: |
+    The Linguistic Society of Hong Kong Cantonese Romanisation Scheme, or
+    known as Jyutping, was designed and proposed by the Linguistic Society of
+    Hong Kong in 1993. Jyutping is a new Cantonese romanization system which
+    has many advantages. It is multifunctional, systematic, user-friendly,
+    compatible with all possible modern Cantonese sounds, and solely based on
+    alphanumeric characters without any diacritics and strange symbols.
+    Jyutping can also be used as a Chinese computer input method. Its basic
+    principles are simple, easy to learn, and professional.
 
   notes:
     - One may need to parse the text in order to generate accurate

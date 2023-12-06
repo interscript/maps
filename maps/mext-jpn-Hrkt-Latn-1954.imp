@@ -11,34 +11,36 @@ metadata {
   adoption_date: 1954-12-09
   # 昭和二十九年十二月九日
   description:
-    jp: |
-      国語を書き表わす場合に用いるローマ字のつづり方を次のように定める。
+    The spelling method for Roman characters used when writing Japanese language is as follows.
 
-      まえがき
-      １　一般に国語を書き表わす場合は、第1表に掲げたつづり方によるものとする。
-      ２　国際的関係その他従来の慣例をにわかに改めがたい事情にある場合に限り、第2表に掲げたつづり方によつてもさしつかえない。
-      ３　前二項のいずれの場合においても、おおむねそえがきを適用する。
-    en: |
-      The spelling method for Roman characters used when writing Japanese language is as follows.
+    Preface
+    1. In general, when the language is written, the spelling shown in Table 1 shall be used.
+    2. The spelling methods listed in Table 2 can be used only when there is a situation that is difficult to change due to international relations or other conventional practices.
+    3. In either case of the preceding two paragraphs, the general introduction will apply.
 
-      Preface
-      1. In general, when the language is written, the spelling shown in Table 1 shall be used.
-      2. The spelling methods listed in Table 2 can be used only when there is a situation that is difficult to change due to international relations or other conventional practices.
-      3. In either case of the preceding two paragraphs, the general introduction will apply.
+  original_description: |
+    国語を書き表わす場合に用いるローマ字のつづり方を次のように定める。
+
+    まえがき
+    １　一般に国語を書き表わす場合は、第1表に掲げたつづり方によるものとする。
+    ２　国際的関係その他従来の慣例をにわかに改めがたい事情にある場合に限り、第2表に掲げたつづり方によつてもさしつかえない。
+    ３　前二項のいずれの場合においても、おおむねそえがきを適用する。
 
   notes:
-    - jp: はねる音「ン」はすべてnと書く。
-      en: ン / ん is romanized always n in Kunrei-siki
-    - jp: はねる音を表わすnと次にくる母音字またはyとを切り離す必要がある場合には、nの次に’を入れる。
-      en: When it is necessary to separate the sound n from the vowel or y to follow, the apostrophe is added after the n.
-    - jp: つまる音は、最初の子音字を重ねて表わす。
-      en: The clogged sound is represented by overlapping the first consonant characters.
-    - jp: 長音は母音字の上に＾をつけて表わす。なお、大文字の場合は母音字を並べてもよい。
-      en: Long vowels are expressed in Kunrei-siki by placing a circumflex (^) over a vowel. In the case of capital letters, vowel characters may be arranged.
-    - jp: 特殊音の書き表わし方は自由とする。
-      en: The way of writing special sounds is free.
-    - jp: 文の書きはじめ、および固有名詞は語頭を大文字で書く。なお、固有名詞以外の名詞の語頭を大文字で書いてもよい。
-      en: Begin writing sentences and proper nouns with capital letters. Note that the beginning of nouns other than proper nouns may be written in capital letters.
+    - ン / ん is romanized always n in Kunrei-siki
+    - When it is necessary to separate the sound n from the vowel or y to follow, the apostrophe is added after the n.
+    - The clogged sound is represented by overlapping the first consonant characters.
+    - Long vowels are expressed in Kunrei-siki by placing a circumflex (^) over a vowel. In the case of capital letters, vowel characters may be arranged.
+    - The way of writing special sounds is free.
+    - Begin writing sentences and proper nouns with capital letters. Note that the beginning of nouns other than proper nouns may be written in capital letters.
+
+  original_notes:
+    - はねる音「ン」はすべてnと書く。
+    - はねる音を表わすnと次にくる母音字またはyとを切り離す必要がある場合には、nの次に’を入れる。
+    - つまる音は、最初の子音字を重ねて表わす。
+    - 長音は母音字の上に＾をつけて表わす。なお、大文字の場合は母音字を並べてもよい。
+    - 特殊音の書き表わし方は自由とする。
+    - 文の書きはじめ、および固有名詞は語頭を大文字で書く。なお、固有名詞以外の名詞の語頭を大文字で書いてもよい。
 }
 
 tests {
