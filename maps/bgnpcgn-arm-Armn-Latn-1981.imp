@@ -26,6 +26,9 @@ metadata {
 }
 
 tests {
+  # UN card tests
+  test "Հայաստան", "Hayastan"
+  test "Երևան", "Yerevan"
 }
 
 # This map has been partially converted by the bin/maps_v1_to_v2 script

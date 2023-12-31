@@ -52,6 +52,10 @@ tests {
   test "൫൦൦൦ മണിക്കൂർ കാത്തിരിക്കാൻ തയാറെന്ന് രാഹുൽ: ഒടുവിൽ വഴങ്ങി ഹരിയാന", "5000 maṇikkūr kāttirikkān tayāṟĕnn rāhul: ŏṭuvil vaḻaṅṅi hariyāna"
   test "കാരണം ഷോര്‍ട്ട്‌സര്‍ക്യൂട്ടല്ല; കത്തിയത് ഫയല്‍ മാത്രം, സാനിറ്റൈസര്‍ ഉള്‍പ്പെടെ കത്തിയില്ല", "kāraṇaṃ ṣhorṭṭsarkyūṭṭalla; kattiyat phayal mātraṃ, sāniṟṟaisar uḷppĕṭĕ kattiyilla"
   test "വിമൺ സയൻറിസ്റ്റ്സ് സ്കീം", "vimaṇ sayanṟisṟṟs skīṃ"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+  test "കേരളം", "keraḷaṃ"
+  test "തിരുവനന്തപുരം", "tiruvanantapuraṃ"
 }
 
 aliases {

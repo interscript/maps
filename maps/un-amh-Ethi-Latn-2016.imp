@@ -134,6 +134,10 @@ tests {
   test "ቀሊል አማት ሲሶ በትር አላት", "K’e̠lili̠ Amati̠ Siso Be̠ti̠ri̠ Alati̠"
   test "ጨው ለራስህ ብለህ ጣፍጥ አለበለዚያ ድንጋይ ነው ብለው ይወረውሩሀል", "Ch’e̠wi̠ Le̠rasi̠hi̠ Bi̠le̠hi̠ T’afi̠t’i̠ Ale̠be̠le̠ziya Di̠ni̠gayi̠ Ne̠wi̠ Bi̠le̠wi̠ Yi̠we̠re̠wi̠ruhali̠"
   test "ጀምሮ ይጨርሳል አልሞ ይተኩሳል", "Je̠mi̠ro Yi̠ch’e̠ri̠sali̠ Ali̠mo Yi̠te̠kusali̠"
+
+  # UN card tests
+  test "ኢትዮጵያ", "Iti̠yop’i̠ya"
+  test "አዲስ አበባ", "Adisi̠ Abe̠ba"
 }
 
 stage {

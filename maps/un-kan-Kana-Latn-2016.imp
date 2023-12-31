@@ -43,6 +43,10 @@ tests {
   test "ಅಂಜನಾದ್ರಿ ಆಂಜನೇಯನ ದರ್ಶನ ಪಡೆದ ಪವರ್ ಸ್ಟಾರ್ ಪುನೀತ್ ರಾಜ್ ಕುಮಾರ್", "aṁjanādri āṁjaneyana darshana paḍĕda pavar sṭār punīt rāj kumār"
   test "ಇನ್ನು ಹಿಂದೂ ದೇವಸ್ಥಾನದ ಧಾರ್ಮಿಕ ಕಾರ್ಯದಲ್ಲಿ ಭಾಗಿಯಾಗಿದ್ದಕ್ಕೆ ಮೋಯಿದ್ದೀನ್ ಬಾವಾಗೆ ಬೆದರಿಕೆ ಒಡ್ಡಲಾಗಿದೆ", "innu hiṁdū devasthānada dhārmika kāryadalli bhāgiyāgiddakkĕ moyiddīn bāvāgĕ bĕdarikĕ ŏḍḍalāgidĕ"
   test "ಇದು ಮೋದಿ ದೇಶ - ದನ ತಿಂದು ಹೋದ್ರೆ ಹುಷಾರ್ : ದೇಗುಲಕ್ಕೆ ಹೋಗಿದ್ದ ಬಾವಾಗೆ ಬೆದರಿಕೆ", "idu modi desha - dana tiṁdu hodrĕ huṣhār : degulakkĕ hogidda bāvāgĕ bĕdarikĕ"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+  test "ಕರ್ನಾಟಕ", "karnāṭaka"
+  test "ಬೆಂಗಳೂರು", "bĕṁgaḷūru"
 }
 
 aliases {

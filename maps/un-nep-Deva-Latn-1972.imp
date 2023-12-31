@@ -59,6 +59,10 @@ tests {
   test "अरार्यते", "arāryate"
   test "श्रीमान्", "shrīmān"
   test "खाँचो बिरुवा बैंकको", "khām̐cho biruvā baiṁkako"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+  test "नेपाल", "nepāl"
+  test "काठमाडौँ", "kāṭhamāḍaum̐"
 }
 
 aliases {

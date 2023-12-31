@@ -74,6 +74,10 @@ tests {
   test "Язъявaн", "Jaz”javan"
   test "Яя", "Jaja"
   test "Вязьмa", "Vjaz’ma"
+
+  # UN card tests
+  test "Россия", "Rossija"
+  test "Москва", "Moskva"
 }
 
 dependency "gost-rus-Cyrl-Latn-16876-71-1983", as: cyrllatn

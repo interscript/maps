@@ -110,6 +110,9 @@ tests {
   test "залив Златни пясъци", "zaliv Zlatni pyasǎci"
   test "ледник Злокучене", "lednik Zlokučene"
   test "проток Злогош", "protok Zlogoš"
+
+  # UN card tests
+  test "Република България", "Republika Bǎlgariya"
 }
 
 dependency "posix", import: true

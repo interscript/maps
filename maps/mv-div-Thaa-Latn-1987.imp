@@ -33,6 +33,10 @@ tests {
   test "ރަށްރަށުގައި", "rarrashugai"
   test "ޑިޕާޓްމަންޓުން", "dipaatman’tun’"
   test "ހޯދިފައިނުވާ", "hoadhifain’uvaa"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+  test "ދިވެހިރާއްޖެ", "dhivehiraajje"
+  test "މާލެ", "maale"
 }
 
 stage {

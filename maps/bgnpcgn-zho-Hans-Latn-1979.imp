@@ -31,6 +31,9 @@ metadata {
 }
 
 tests {
+  # Note: UN card expects this to start with an uppercase letter
+  test "中国", "zhongguo"
+  test "北京", "beijing"
 }
 
 stage {

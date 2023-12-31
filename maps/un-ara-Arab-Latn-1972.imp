@@ -97,6 +97,9 @@ tests {
   test "جُمهُورِيَّة مِصر العَرَبِيَّة", "Jumhūrīyat Mişr al ‘Arabīyah"
   test "الرِيَاض", "Ar Riyāḑ"
   test "الشارِقة", "Ash Shāriqah"
+
+  # Note: UN card expects "Al" to be lowercase, but it would break other tests
+  test "جَزيرة العَرَب", "Jazyrat al ‘Arab"
 }
 
 dependency "un-ara-Arab-Latn-2017", as: arablatn

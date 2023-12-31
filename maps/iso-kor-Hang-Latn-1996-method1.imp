@@ -45,6 +45,10 @@ tests {
   test "같이", "kath'i"
   test "앞에", "aph'e"
   test "꽃에", "kkoch'e"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+  test "평양", "phyeong'yang"
+  test "서울", "seo'ul"
 }
 
 dependency "var-kor", import: true

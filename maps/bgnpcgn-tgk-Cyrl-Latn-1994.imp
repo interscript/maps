@@ -89,6 +89,10 @@ tests {
   test "июн", "iyun"
   test "ягонагӣ", "yagonagí"
   test "РАМЗҲО", "RAMZ·HO"
+
+  # UN card tests
+  test "Тоҷикистон", "Tojikiston"
+  test "Душанбе", "Dushanbe"
 }
 
 stage {

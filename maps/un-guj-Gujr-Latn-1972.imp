@@ -55,6 +55,10 @@ tests {
   test "કોરોના પ્રોટોકોલ વચ્ચે આજે મેડિકલ પ્રવેશ પરીક્ષા લેવાશેઃ એન્ટ્રી ટચ ફ્રી રહેશે, એડમિટ કાર્ડ બાર કોડથી ચેક થશે", "kŏrŏnā prŏṭŏkŏla vachchĕ ājĕ mĕḍikala pravĕsha parīkṣhā lĕvāshĕḥ ĕnṭrī ṭacha frī rahĕshĕ, ĕḍamiṭa kārḍa bāra kŏḍathī chĕka thashĕ"
   test "અલ્ ક઼`ઇદ્ માં હવામાન", "al ka`id māṁ havāmāna"
   test "મંત્રાલય તથા ખ઼.ય ના વિ૨ષ્ઠ અધિકા૨ીઓ ઉપસ્થિત ૨હ્યા હતા", "maṁtrālaya tathā kha.ya nā vi2ṣhṭha adhikā2īŏ upasthita 2hyā hatā"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+  test "જરાતી", "jarātī"
+  test "ગાંધીનગર", "gāṁdhīnagara"
 }
 
 aliases {

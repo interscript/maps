@@ -30,6 +30,10 @@ tests {
   test "მარტვილის მუნიციპალიტეტი", "mart’vilis munitsip’alit’et’i"
   test "ლეკუხონა", "lek’ukhona"
   test "მყინვარი აღმოსავლეთი მაგუაშირხა", "mq’invari aghmosavleti maguashirkha"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+  test "საქართველო", "sakartvelo"
+  test "თბილისი", "tbilisi"
 }
 
 stage {

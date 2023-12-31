@@ -71,6 +71,10 @@ tests {
   test "دَهَانِهٴ مَمبَر", "Dahāneh-ye Mambar"
   test "سَلَسِيٴ بُذُرگ", "Salasī-ye Boz̄org"
   test "ذُو الفَقَار", "Z̄ū ol Faqār"
+
+  # UN card tests
+  test "اِيران", "Īrān"
+  test "تِهران", "Tehrān"
 }
 
 stage {

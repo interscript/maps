@@ -68,6 +68,10 @@ tests {
   test "Баяры", "Bajary"
   test "Валяр'яны", "Valiarjany"
   test "Вязынка", "Viazynka"
+
+  # UN card tests
+  test "Беларусь", "Bielaruś"
+  test "Минск", "Minsk"
 }
 
 dependency "by-bel-Cyrl-Latn-1998", as: cyrllatn

@@ -118,6 +118,10 @@ tests {
   test "ቀሊል አማት ሲሶ በትር አላት", "k’elilĭ ’ematĭ siso betĭrĭ ’elatĭ"
   test "ጨው ለራስህ ብለህ ጣፍጥ አለበለዚያ ድንጋይ ነው ብለው ይወረውሩሀል", "ch’ewĭ lerasĭhĭ bĭlehĭ t’afĭt’ĭ ’elebeleziya dĭnĭgayĭ newĭ bĭlewĭ yĭwerewĭruhelĭ"
   test "ጀምሮ ይጨርሳል አልሞ ይተኩሳል", "jemĭro yĭch’erĭsalĭ ’elĭmo yĭtekusalĭ"
+
+  # UN card tests
+  test "ኤርትራ", "’ierĭtĭra"
+  test "ኣስመራ", "’asĭmera"
 }
 
 stage {

@@ -96,6 +96,10 @@ tests {
   test "Бөстай Учаскесі", "Böstay Ūchaskesi"
   test "Аққолқы Тоғайы", "Aqqolqy Toghayy"
   test "Іңқардария", "Ingqardarīya"
+
+  # UN card tests
+  test "Қазақстан", "Qazaqstan"
+  test "Астана", "Astana"
 }
 
 stage {

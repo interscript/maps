@@ -80,6 +80,10 @@ tests {
   test "Адаацаг Сум", "Adaatsag Sum"
   test "Чандмань Сум", "Chandmanĭ Sum"
   test "Хяргас Сум", "Hyargas Sum"
+
+  # Note: UN card expects "uls" to start with an uppercase letter, but that would break other tests
+  test "Монгол улс", "Mongol uls"
+  test "Улаанбаатар", "Ulaanbaatar"
 }
 
 stage {

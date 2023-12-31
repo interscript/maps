@@ -29,6 +29,10 @@ tests {
   test "ЄНАКІЄВЕ", "ÊNAKÌÊVE"
   test "УКРАЇНА", "UKRAÌNA"
   test "КИЇВ", "KIÌV"
+
+  # UN card tests
+  test "Україна", "Ukraı̀na"
+  test "Київ", "Kiı̀v"
 }
 
 dependency "gost-rus-Cyrl-Latn-16876-71-1983", as: cyrllatn

@@ -85,6 +85,10 @@ tests {
   test "Аюу-Чача", "Ayuu-Chacha"
   test "Арпа", "Arpa"
   test "Ак-Суу", "Ak-Suu"
+
+  # UN card tests
+  test "Кыргызстан", "Kyrgyzstan"
+  test "Бишкек", "Bishkek"
 }
 
 stage {

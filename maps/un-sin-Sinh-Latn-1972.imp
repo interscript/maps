@@ -47,6 +47,10 @@ tests {
   test "දිල්ලි කැපිටල්ස් සහ කෝලිගේ බැංගලෝර් තෙවැනි ජය ලබයි", "dilli kæ̆piṭals saha kolige bæ̆ṁgalor tĕvæ̆ni jaya labayi"
   test "ශ‍්‍රී ලාංකික සම්භවයක් සහිත ප‍්‍රංශයේ පවුලක 5 ක් ඝාතනය කරලා", "sharī lāṁkika sambhavayak sahita paraṁshaye pavulaka 5 k ghātanaya karalā"
   test "පැතිකුදය ඉක්මනින් සුව කරන ප‍්‍රතිකාර", "pæ̆tikudaya ikmanin suva karana paratikāra"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+  test "ශ්‍රී ලංකා", "shrī laṁkā"
+  test "කොළඹ", "kŏḷamba"
 }
 
 aliases {

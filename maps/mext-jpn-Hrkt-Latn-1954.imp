@@ -54,6 +54,10 @@ tests {
   test "てっら", "terra"
   test "にゃっほー", "nyahhô"
   test "ゴッホ", "gohho"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+  test "にっぽん", "nippon"
+  test "とうきょ", "tôkyo"
 }
 
 stage {

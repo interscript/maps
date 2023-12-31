@@ -38,6 +38,10 @@ tests {
   test "Врњачка Бања", "Vrnjačka Banja"
   test "Бијело Поље", "Bijelo Polje"
   test "Алибунар", "Alibunar"
+
+  # UN card tests
+  test "Србија", "Srbija"
+  test "Београд", "Beograd"
 }
 
 dependency "alalc-srp-Cyrl-Latn-2013", as: srpalatn

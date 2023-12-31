@@ -54,6 +54,10 @@ tests {
   test "কমুম্বাইৰ মেয়ৰৰ দেহত কোভিড পজিটিভ", "kamumbāira meyarara dehata kobhiḍa pajiṭibha"
   test "টুইটাৰযোগে খোদ সদৰী কৰে এই কথা", "ṭuiṭāraj̱oge khoda sadarī kare ei kathā"
   test "লখিমপুৰ জিলাৰ নাৰায়ণপুৰৰ বৰপথাৰত আজি প্ৰশান্তি ধাম নামেৰে এখন বৃদ্ধাশ্ৰমৰ শুভাৰম্ভ কৰা হয়", "lakhimapura jilāra nārāyaṇapurara barapathārata āji prashānti dhāma nāmere ekhana bṛddhāshramara shubhārambha karā haya"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break the other tests
+  test "অসম", "asama"
+  test "দিছপুৰ", "dichhapura"
 }
 
 aliases {

@@ -20,6 +20,10 @@ tests {
   test "ЛУЃЕ луѓе", "LUGE luge"
   test "ЅВЕЗДА ѕвезда Ѕвезда", "DZVEZDA dzvezda Dzvezda"
   test "ЌАРУВАЊЕ ќарување", "ĆARUVANJE ćaruvanje"
+
+  # UN card tests
+  test "Скопје", "Skopje"
+  test "Битола", "Bitola"
 }
 
 dependency "posix", import: true

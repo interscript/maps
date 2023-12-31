@@ -91,6 +91,10 @@ tests {
   test "تَودَہ چِینَہ", "Taudaḥ Chīnaḥ"
   test "مُوسى خَان كَلے", "Mūsá Ḳhān Kale"
   test "مُلَّا بَاغ", "Mullā Bāgh"
+
+  # UN card tests
+  test "پاکِستَان", "Pākistān"
+  test "اِسلام آبَاد", "Islāmābād"
 }
 
 stage {

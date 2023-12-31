@@ -56,6 +56,10 @@ tests {
   test "भारत में गैंबलिंग की इजाजत नहीं", "bhārat meṁ gaiṁbaliṁg kī ijājat nahīṁ"
   test "कोरोना वैक्सीन मुद्दे पर घिरे राष्ट्रपति; जो बाइडेन बोले- मुझे और देश को वैज्ञानिकों पर भरोसा है, डोनाल्ड ट्रम्प पर नहीं", "koronā vaiksīn mudde par ghire rāṣhṭrapati; jo bāiḍen bole- mujhe aur desh ko vaijñānikoṁ par bharosā hai, ḍonālḍ ṭramp par nahīṁ"
   test "गूगल की कार्रवाई पर पेटीएम ने कहा था कि ऐप को अस्थायी तौर पर प्ले-स्टोर से हटाया गया है, आपके पैसे सुरक्षित हैं", "gūgal kī kārravāī par peṭīem ne kahā thā ki aip ko asthāyī taur par ple-sṭor se haṭāyā gayā hai, āpake paise surakṣhit haiṁ"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+  test "भारत", "bhārat"
+  test "दिल्ली", "dillī"
 }
 
 

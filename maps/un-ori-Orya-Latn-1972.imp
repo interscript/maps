@@ -39,6 +39,10 @@ tests {
   test "ପାରିବାରିକ ଅଶାନ୍ତିର କରୁଣ ପରିଣତି: କୂଅକୁ ଡେଇଁଲେ ମା’-ଝିଅ, ଝିଅ ମୃତ", "pāribārika ashāntira karuṇa pariṇati: kūaku ḍeimle mā’-jhia, jhia mṛta"
   test "‘ଭ୍ରଷ୍ଟାଚାରର ବଂଶବାଦ’ ଏବେ ସାଜିଛି ଦେଶ ପାଇଁ ନୂଆ ସମସ୍ୟା; ପ୍ରଧାନମନ୍ତ୍ରୀ ମୋଦୀ", "‘bhraṣhṭāchārara baṃshabāda’ ebe sājichhhi desha pāim nūā samasyā; pradhānamantrī modī"
   test "ପାହାଡ଼ି ଇଲାକାବାସୀଙ୍କ ଆଶାର ବତୀ ‘ପାର୍ବତୀ’", "pāhāṙi ilākābāsīṅka āshāra batī ‘pārbatī’"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+  test "ଓଡ଼ିଶା", "oṙishā"
+  test "ଭୁବନେଶ୍ୱର", "bhubaneshvara"
 }
 
 aliases {

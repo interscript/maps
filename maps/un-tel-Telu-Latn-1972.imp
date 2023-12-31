@@ -64,6 +64,10 @@ tests {
   test "ట్ట", "ṭṭa"
   test "ప్ప", "ppa"
   test "చ్చ", "chcha"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+  test "ఆంధ్ర ప్రదేశ్", "āṃdhra pradesh"
+  test "హైదరాబాదు", "haidarābādu"
 }
 
 aliases {

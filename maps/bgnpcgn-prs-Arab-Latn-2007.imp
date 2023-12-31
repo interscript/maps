@@ -273,6 +273,10 @@ tests {
   # - source: ميا
   #   expected: Myā
   test "جَبَل السَرَاج", "Jabal as Sarāj"
+
+  # UN card tests
+  test "افغانِستان", "Āfghānistān"
+  test "کابُل", "Kābul"
 }
 
 stage {

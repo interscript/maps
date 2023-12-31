@@ -55,6 +55,10 @@ tests {
   test "संपादक अर्णब गोस्वामी यांच्याविरूद्ध खडक पोलिस ठाण्यात तक्रार", "saṁpādak arṇab gosvāmī yāṁchyāvirūddh khaḍak polis ṭhāṇyāt takrār"
   test "करणाऱ्या मुलांना अनुक्रमे प्ले ग्रूप", "karaṇāryā mulāṁnā anukrame ple grūp"
   test "राज्यातील शाळा दिवाळीपर्यंत बंद, मंत्र्यांच्या बैठकीत निर्णय, शिक्षकांची जबाबदारी वाढली", "rājyātīl shāḷaā divāḷaīparyaṁt baṁd, maṁtryāṁchyā baiṭhakīt nirṇay, shikṣhakāṁchī jabābadārī vāḍhalī"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+  test "महाराष्ट्र", "mahārāṣhṭr"
+  test "मुंबई", "muṁbaī"
 }
 
 
