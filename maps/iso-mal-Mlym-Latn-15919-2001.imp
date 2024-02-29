@@ -73,9 +73,9 @@ tests {
 stage {
 
   # RULES
-  sub "\u0D4D", "ŭ", after: boundary, before: ""
-  sub "\u0D02", "m", after: boundary, before: ""
-  sub "\u0D7C", "ṟ", after: boundary, before: ""
+  sub "\u0D4D", "ŭ", after: any([boundary, "\u200c", "\u200d"])
+  sub "\u0D02", "m", after: any([boundary, "\u200c", "\u200d"])
+  sub "\u0D7C", "ṟ", after: any([boundary, "\u200c", "\u200d"])
 
 
   # CHARACTERS
