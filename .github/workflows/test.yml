@@ -36,9 +36,10 @@ jobs:
     - name: Configure bundle to use vendor mode
       run: bundle config path vendor/bundle
 
-    - name: Install bundle
+    - name: Install bundle and Python dependencies
       working-directory: ./ruby
       run: |
+        pip install regex
         bundle install --jobs 4 --retry 3 --with jsexec --without secryst
 
     - name: Execute tests
