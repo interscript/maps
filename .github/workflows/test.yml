@@ -8,42 +8,34 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        ruby: ["3.3", "3.4"]
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-      with:
-        repository: interscript/interscript
+      - name: Checkout monorepo
+        uses: actions/checkout@v7
+        with:
+          repository: interscript/interscript
 
-    - name: Run bootstrap script
-      run: ruby bootstrap.rb
+      - name: Bootstrap packages
+        run: ruby bootstrap.rb
 
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.7
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
+          working-directory: ruby
 
-    - name: Cache Ruby gems
-      uses: actions/cache@v2
-      env:
-        cache-name: cache-ruby-modules
-      with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-ruby-2.7-gems-${{ hashFiles('**/interscript.gemspec') }}
-        restore-keys: |
-          ${{ runner.os }}-ruby-2.7-gems-
+      - name: Install Python helper
+        run: pip install regex
 
-    - name: Configure bundle to use vendor mode
-      run: bundle config path vendor/bundle
+      - name: Install gems
+        working-directory: ruby
+        run: bundle install --jobs 4 --retry 3 --with jsexec --without secryst
 
-    - name: Install bundle and Python dependencies
-      working-directory: ./ruby
-      run: |
-        pip install regex
-        bundle install --jobs 4 --retry 3 --with jsexec --without secryst
-
-    - name: Execute tests
-      working-directory: ./ruby
-      run: |
-        bundle exec rspec spec/interscript_spec.rb spec/map_name_and_metadata_spec.rb
-
+      - name: RSpec (maps-focused)
+        working-directory: ruby
+        run: bundle exec rspec spec/interscript_spec.rb spec/map_name_and_metadata_spec.rb
