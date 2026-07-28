@@ -1,28 +1,33 @@
-INTERSCRIPT_MAPS_VERSION="2.4.3"
+INTERSCRIPT_MAPS_VERSION = "2.4.3"
 
 Gem::Specification.new do |spec|
   spec.name          = "interscript-maps"
   spec.version       = INTERSCRIPT_MAPS_VERSION
-  spec.summary       = %q{Interoperable script conversion systems}
-  spec.description   = %q{Interoperable script conversion systems}
+  spec.summary       = "Interoperable script conversion systems — map data"
+  spec.description   = "Map data package for Interscript interoperable script conversion systems."
   spec.authors       = ["Ribose Inc."]
   spec.email         = ["open.source@ribose.com"]
 
-  spec.date = %q{2019-11-17}
   spec.homepage      = "https://www.interscript.com"
   spec.license       = "MIT"
+  spec.required_ruby_version = ">= 3.3.0"
 
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
-
-  spec.metadata["homepage_uri"] = spec.homepage
+  spec.metadata["homepage_uri"]    = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/interscript/maps"
+  spec.metadata["changelog_uri"]   = "https://github.com/interscript/maps/releases"
+  spec.metadata["bug_tracker_uri"] = "https://github.com/interscript/maps/issues"
+  spec.metadata["rubygems_mfa_required"] = "true"
 
-  # Specify which files should be added to the gem when it is released.
-  # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
-    `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.files = Dir.chdir(__dir__) do
+    Dir[
+      "libs/**/*",
+      "maps/**/*",
+      "maps-staging/**/*",
+      "interscript-maps.yaml",
+      "README*",
+      "LICENSE*",
+      "*.gemspec"
+    ].select { |f| File.file?(f) }
   end
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = [""]
 end
