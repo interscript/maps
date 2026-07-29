@@ -1,3 +1,4 @@
+image:https://github.com/interscript/maps/actions/workflows/test.yml/badge.svg["CI status", link="https://github.com/interscript/maps/actions/workflows/test.yml"]
 = Interscript: Script conversion maps
 
 == Introduction
