@@ -1,0 +1,63 @@
+system "ISO:hin-Deva:Latn:15919-2001" {
+
+metadata {
+  authority_id iso
+  id 15919-2001
+  language iso-639-2:hin
+  source_script Deva
+  destination_script Latn
+  name "ISO 15919:2001 Information and documentation -- Transliteration of Devanagari and related Indic scripts into Latin characters (Hindi)"
+  url https://www.chatranjali.fr/Scripts/Standards/ISO15919.pdf
+  creation_date 2001
+  adoption_date 2001
+  description {    Script conversion is often required for documents such as historical and literary texts, geographical texts (including
+    maps and atlases), bibliographies, catalogues, lists and passports (and other identification documents).
+
+    Text in Devanagari script or other Indic scripts sometimes needs to be shown in Latin script, where users, or
+    equipment that they are using, cannot read or write the text
+
+    This International Standard applies to transliteration of Devanagari, and to Indic scripts related to Devanagari,
+    independent of the period in which it is or was used.
+  }
+
+  notes {
+
+    note "All transliterations made using this International Standard shall be case-insensitive."
+    note "Inherent a with a consonant shall always be transliterated."
+    note "anusvara (including Vedic anusvara) shall be transliterated as ṁ"
+    note "candrabindu shall be transliterated as m̐"
+    note "When m̐, ṃ or ṁ are associated with a vowel, they shall be placed after the vowel. When m̐ is associated\n with a semivowel, it shall be placed before the semivowel."
+    note "Latin punctuation signs and Hindu-Arabic numerals shall remain unchanged in transliteration.\n Indic punctuation is outside the scope of this International Standard."
+    note "The Vedic accent Udatta shall be transliterated as an acute accent over the transliterated vowel, and the\n independent Svarita as a grave accent over the transliterated vowel. In the case of the digraphs ai, au, the accent\n shall be attached to the second vowel."
+    note "      A colon: before a Latin character shall be used to resolve ambiguity. Some normative cases are as\n      follows.\n       -  :’ for avagraha in modern text. (The apostrophe in modern text remains unchanged in accordance with previous rule."
+    note "If a character in an Indic script is defined in such a way as to be equivalent to another character in any\n script, where the second character has a transliteration in this International Standard, then the first character shall\n be transliterated in the same way as the second character."
+    note "Where it is desired to show the Vedic accent Anudatta, it should be transliterated as an underscore. In the case of\n the digraphs ai, au, both Latin vowels should be underscored.\n Where word boundaries are not shown in the original text (as happens commonly in Sanskrit) and a word ends in a\n consonant, the transliteration should show word division by a space; but when phonological processes result in two\n words sharing a common vowel, no attempt should be made to separate them. This will require a good knowledge\n of the language in question."
+  }
+}
+
+tests {
+   "हम" ->  "hama"
+   "मीन" ->  "maīna"
+   "औसत" ->  "ausata"
+   "माँऽऽऽ!" ->  "maām̐:’:’:’!"
+   "आग़ा ख़ान" ->  "āġaā k͟haāna"
+   "पढ़ना" ->  "paṛhanaā"
+   "पेड़" ->  "paeṛa"
+   "अंग्रेज़ी" ->  "aṁgaraezaī"
+   "करोड़" ->  "karaoṛa"
+   "माँ" ->  "maām̐"
+   "गंभीर मरीजों के मामले में भारत दूसरे नंबर पर" ->  "gaṁbhaīra maraījaoṁ kae maāmalae maeṁ bhaārata daūsarae naṁbara para"
+   "कोरोना अपडेट्स" ->  "kaoraonaā apaḍaeṭasa"
+   "सीडीसी चीफ का बयान अहम" ->  "saīḍaīsaī caīpha kaā bayaāna ahama"
+   "गूगल प्ले स्टोर पर पेटीएम की वापसी" ->  "gaūgala palae saṭaora para paeṭaīema kaī vaāpasaī"
+   "भारत में गैंबलिंग की इजाजत नहीं" ->  "bhaārata maeṁ gaaiṁbalaiṁga kaī ijaājata nahaīṁ"
+   "कोरोना वैक्सीन मुद्दे पर घिरे राष्ट्रपति; जो बाइडेन बोले- मुझे और देश को वैज्ञानिकों पर भरोसा है, डोनाल्ड ट्रम्प पर नहीं" ->  "kaoraonaā vaaikasaīna maudadae para ghairae raāṣaṭarapatai; jao baāiḍaena baolae- maujhae aura daeśa kao vaaijañaānaikaoṁ para bharaosaā haai, ḍaonaālaḍa ṭaramapa para nahaīṁ"
+   "गूगल की कार्रवाई पर पेटीएम ने कहा था कि ऐप को अस्थायी तौर पर प्ले-स्टोर से हटाया गया है, आपके पैसे सुरक्षित हैं" ->  "gaūgala kaī kaāraravaāī para paeṭaīema nae kahaā thaā kai aipa kao asathaāyaī taaura para palae-saṭaora sae haṭaāyaā gayaā haai, āpakae paaisae saurakaṣaita haaiṁ"
+}
+
+dependency "iso-san-Deva-Latn-15919-2001" as devalatn
+
+stage main {
+  run  map.devalatn.stage.main
+}
+}

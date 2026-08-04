@@ -1,0 +1,404 @@
+system "ALA-LC:sin-Sinh:Latn:1997" {
+
+metadata {
+  authority_id alalc
+  id 1997
+  language iso-639-2:sin
+  source_script Sinh
+  destination_script Latn
+  name Romanization Table -- Sinhalese (1997)
+  url http://catdir.loc.gov/catdir/cpso/romanization/sinhales.pdf
+  creation_date 1997
+  description {    ALA-LC Romanization table for Sinhalese
+  }
+
+  notes {
+
+    note "Only the vowel forms that appear at the beginning of a syllable are listed; the forms used for\n vowels following a consonant can be found in grammars; no distinction between the two is\n made in transliteration."
+
+    note "      The vowel a is implicit after all consonants and consonant clusters and is supplied in\n      transliteration, with the following exceptions:\n\n      a) when another vowel is indicated by its appropriate sign; and\n      b) when the absence of any vowel is indicated by the sign ් called virāma."
+
+    note "      Exceptions: Anusvāra is transliterated by:\n\n      a) ṅ before gutturals,\n      b) ñ before palatals,\n      c) ṇ before cerebrals,\n      d) n before dentals, and\n      e) m before labials."
+
+    note "      Exceptions:\n      a) when saññaka represents a nasal, it is romanized according to the rule for anusvāra.\n      b) when saññaka is combined with an aspirated consonant, the combination is romanized as a non-aspirated, followed by an aspirated consonant."
+  }
+}
+
+tests {
+   "ශී‍්‍ර ලංකාවේ කී‍්‍රඩාව ඉතිහාසයේ ඉහළම තැනකට ගේන්න කටයුතු කරනවා" ->  "śīra laṃkāvē kīraḍāva itihāsayē ihaḷama tănakaṭa gēnanna kaṭayutu karanavā"
+   "කොච්චිකඬේ මෝයකට අසල නෑමට ගිය තරුණයෝ ෩ක් මරුට - මිතුරාගේ උපන් දිනය සැමරීමට ඇවිත්" ->  "kocañcikaṇḍē mōyakaṭa asala nâmaṭa giya taruṇayō 3k maruṭa - miturāgē upan dinaya sămarīmaṭa ăvit"
+   "ලෝක ළමා දිනයදා සිසුන් පිරිසක් කසිප්පු බීලා" ->  "lōka ḷamā dinayadā sisun pirisak kasippu bīlā"
+   "කෝටි 16ක හෙරොයින් සමග දන්කොටුවේදී 7ක් දැලේ" ->  "kōṭi 16ka heroyin samaga danaṅkoṭuvēdī 7k dălē"
+   "මිනුවන්ගොඩ පීසීආර් දෙදහසක් සිදුකරයි" ->  "minuvanaṅgoḍa pīsīār dedahasak sidukarayi"
+   "පාස්කු ප‍්‍රහාරය වගේම පාස්කු ප්‍රෝඩාව ගැනත් සොයන්න කොමිසමක් පත්කළ යුතුයි - විපක්‍ෂ නායක සජිත් පේ‍්‍රමදාස" ->  "pāsaṅku parahāraya vagēma pāsaṅku prōḍāva gănat soyananna komisamak pataṅkaḷa yutuyi - vipakṣa nāyaka sajit pēramadāsa"
+   "ට‍්‍රම්ප්ගේ සෞඛ්‍යය තීරණාත්මකයි - ට්විටර් හරහා ජනතාව අමතයි" ->  "ṭarampaṅgē saukhyaya tīraṇātmakayi - ṭviṭar harahā janatāva amatayi"
+   "පාස්කු දා ප‍්‍රහාරය පිළිබඳ පරීක්‍ෂණවලින් කිසිවකුට අසාධාරණයක් වීමට ඉඩ දෙන්නේ නෑ - අගමැති" ->  "pāsaṅku dā parahāraya piḷibanda parīkṣaṇavalin kisivakuṭa asādhāraṇayak vīmaṭa iḍa denannē nâ - agamăti"
+   "දිල්ලි කැපිටල්ස් සහ කෝලිගේ බැංගලෝර් තෙවැනි ජය ලබයි" ->  "dilli kăpiṭals saha kōligē băṃgalōr tevăni jaya labayi"
+   "ශ‍්‍රී ලාංකික සම්භවයක් සහිත ප‍්‍රංශයේ පවුලක 5 ක් ඝාතනය කරලා" ->  "śarī lāṃkika sambhavayak sahita paraṃśayē pavulaka 5 k ghātanaya karalā"
+   "පැතිකුදය ඉක්මනින් සුව කරන ප‍්‍රතිකාර" ->  "pătikudaya ikmanin suva karana paratikāra"
+}
+
+aliases {
+  sinh_chars_1 = any("\u0dcf\u0dd0\u0dd1\u0dd2\u0dd3\u0dd4\u0dd6\u0dd8\u0df2\u0ddf\u0df3\u0dd9\u0dda\u0ddb\u0ddc\u0ddd\u0dde\u0dca")
+}
+
+stage main {
+
+  # RULES
+  # note[3]
+    sub {
+    from "\u0DCA"
+    to "ṅ"
+    after any("කඛගඝඞ")
+  }
+    sub {
+    from "\u0DCA"
+    to "ñ"
+    after any("චඡජඣඤ")
+  }
+    sub {
+    from "\u0DCA"
+    to "ṇ"
+    after any("ටඨඩඪණ")
+  }
+    sub {
+    from "\u0DCA"
+    to "n"
+    after any("තථදධන")
+  }
+
+  # note[2(a,b)]
+    sub {
+    from "ක"
+    to "k"
+    after sinh_chars_1
+  }
+    sub {
+    from "ඛ"
+    to "kh"
+    after sinh_chars_1
+  }
+    sub {
+    from "ග"
+    to "g"
+    after sinh_chars_1
+  }
+    sub {
+    from "ඝ"
+    to "gh"
+    after sinh_chars_1
+  }
+    sub {
+    from "ඞ"
+    to "ṅ"
+    after sinh_chars_1
+  }
+    sub {
+    from "ච"
+    to "c"
+    after sinh_chars_1
+  }
+    sub {
+    from "ඡ"
+    to "ch"
+    after sinh_chars_1
+  }
+    sub {
+    from "ජ"
+    to "j"
+    after sinh_chars_1
+  }
+    sub {
+    from "ඣ"
+    to "jh"
+    after sinh_chars_1
+  }
+    sub {
+    from "ඤ"
+    to "ñ"
+    after sinh_chars_1
+  }
+    sub {
+    from "ට"
+    to "ṭ"
+    after sinh_chars_1
+  }
+    sub {
+    from "ඨ"
+    to "ṭh"
+    after sinh_chars_1
+  }
+    sub {
+    from "ඩ"
+    to "ḍ"
+    after sinh_chars_1
+  }
+    sub {
+    from "ඪ"
+    to "ḍh"
+    after sinh_chars_1
+  }
+    sub {
+    from "ණ"
+    to "ṇ"
+    after sinh_chars_1
+  }
+    sub {
+    from "ත"
+    to "t"
+    after sinh_chars_1
+  }
+    sub {
+    from "ථ"
+    to "th"
+    after sinh_chars_1
+  }
+    sub {
+    from "ද"
+    to "d"
+    after sinh_chars_1
+  }
+    sub {
+    from "ධ"
+    to "dh"
+    after sinh_chars_1
+  }
+    sub {
+    from "න"
+    to "n"
+    after sinh_chars_1
+  }
+    sub {
+    from "ප"
+    to "p"
+    after sinh_chars_1
+  }
+    sub {
+    from "ඵ"
+    to "ph"
+    after sinh_chars_1
+  }
+    sub {
+    from "බ"
+    to "b"
+    after sinh_chars_1
+  }
+    sub {
+    from "භ"
+    to "bh"
+    after sinh_chars_1
+  }
+    sub {
+    from "ම"
+    to "m"
+    after sinh_chars_1
+  }
+    sub {
+    from "ය"
+    to "y"
+    after sinh_chars_1
+  }
+    sub {
+    from "ර"
+    to "r"
+    after sinh_chars_1
+  }
+    sub {
+    from "ල"
+    to "l"
+    after sinh_chars_1
+  }
+    sub {
+    from "ළ"
+    to "ḷ"
+    after sinh_chars_1
+  }
+    sub {
+    from "ව"
+    to "v"
+    after sinh_chars_1
+  }
+    sub {
+    from "ශ"
+    to "ś"
+    after sinh_chars_1
+  }
+    sub {
+    from "ෂ"
+    to "ṣ"
+    after sinh_chars_1
+  }
+    sub {
+    from "ස"
+    to "s"
+    after sinh_chars_1
+  }
+    sub {
+    from "හ"
+    to "h"
+    after sinh_chars_1
+  }
+    sub {
+    from "ඟ"
+    to "ṅg"
+    after sinh_chars_1
+  }
+    sub {
+    from "ඦ"
+    to "ñj"
+    after sinh_chars_1
+  }
+    sub {
+    from "ඬ"
+    to "ṇḍ"
+    after sinh_chars_1
+  }
+    sub {
+    from "ඳ"
+    to "nd"
+    after sinh_chars_1
+  }
+    sub {
+    from "ඹ"
+    to "ṃb"
+    after sinh_chars_1
+  }
+
+
+
+  # CHARACTERS
+  parallel {
+
+    #Vowels and Diphthongs (see Note 1)
+
+    sub "අ" "a"
+    sub "ආ" "ā"
+    sub "ඇ" "ă"
+    sub "ඈ" "â"
+    sub "ඉ" "i"
+    sub "ඊ" "ī"
+    sub "උ" "u"
+    sub "ඌ" "ū"
+    sub "ඍ" "ṛ"
+    sub "ඎ" "ṝ"
+    sub "ඏ" "ḷ"
+    sub "ඐ" "ḹ"
+    sub "එ" "e"
+    sub "ඒ" "ē"
+    sub "ඓ" "ai"
+    sub "ඔ" "o"
+    sub "ඕ" "ō"
+    sub "ඖ" "au"
+
+    sub "ා" "ā"
+    sub "ැ" "ă"
+    sub "ෑ" "â"
+    sub "ි" "i"
+    sub "ී" "ī"
+    sub "ු" "u"
+    sub "ූ" "ū"
+    sub "ෘ" "ṛ"
+    sub "ෲ" "ṝ"
+    sub "ෟ" "ḷ"
+    sub "ෳ" "ḹ"
+    sub "ෙ" "e"
+    sub "ේ" "ē"
+    sub "ෛ" "ai"
+    sub "ො" "o"
+    sub "ෝ" "ō"
+    sub "ෞ" "au"
+
+
+    # II. Consonants (see Note 2)
+    # Gutturals
+    sub "ක" "ka"
+    sub "ඛ" "kha"
+    sub "ග" "ga"
+    sub "ඝ" "gha"
+    sub "ඞ" "ṅa"
+
+
+    # Palatals
+    sub "ච" "ca"
+    sub "ඡ" "cha"
+    sub "ජ" "ja"
+    sub "ඣ" "jha"
+    sub "ඤ" "ña"
+
+
+    # Cerebrals
+    sub "ට" "ṭa"
+    sub "ඨ" "ṭha"
+    sub "ඩ" "ḍa"
+    sub "ඪ" "ḍha"
+    sub "ණ" "ṇa"
+
+
+    # Dentals
+    sub "ත" "ta"
+    sub "ථ" "tha"
+    sub "ද" "da"
+    sub "ධ" "dha"
+    sub "න" "na"
+
+
+    # Labials
+    sub "ප" "pa"
+    sub "ඵ" "pha"
+    sub "බ" "ba"
+    sub "භ" "bha"
+    sub "ම" "ma"
+
+
+    # Semivowels
+    sub "ය" "ya"
+    sub "ර" "ra"
+    sub "ල" "la"
+    sub "ළ" "ḷa"
+    sub "ව" "va"
+
+    # Sibilants
+    sub "ශ" "śa"
+    sub "ෂ" "ṣa"
+    sub "ස" "sa"
+
+    # Aspirate
+    sub "හ" "ha"
+
+
+    # Visarga
+    sub "ඃ" "ḥ"
+
+    # Anusvāra (see Note 3)
+    sub "ං" "ṃ"
+
+
+    # numbers
+    sub "\u0DE6" "0"
+    sub "\u0DE7" "1"
+    sub "\u0DE8" "2"
+    sub "\u0DE9" "3"
+    sub "\u0DEA" "4"
+    sub "\u0DEB" "5"
+    sub "\u0DEC" "6"
+    sub "\u0DED" "7"
+    sub "\u0DEE" "8"
+    sub "\u0DEF" "9"
+
+
+    sub "‍" ""
+    sub "‌" ""
+    sub "්" ""
+
+    # Rule no 4
+    sub "ඟ" "ṅga"
+    sub "ඦ" "ñja"
+    sub "ඬ" "ṇḍa"
+    sub "ඳ" "nda"
+    sub "ඹ" "ṃba"
+  }
+
+  compose
+}
+
+}

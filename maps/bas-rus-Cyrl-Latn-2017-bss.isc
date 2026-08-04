@@ -1,0 +1,225 @@
+system "BAS:rus-Cyrl:Latn:2017-bss" {
+
+metadata {
+  authority_id bas
+  id 2017-bss
+  language iso-639-2:rus
+  source_script Cyrl
+  destination_script Latn
+  name Streamlined Romanization of Russian Cyrillic (Basic Streamlined System)
+  url https://www.researchgate.net/publication/318402098
+  creation_date 2017-07
+  description {    The streamlined approach to transliteration was initiated by the
+    author with the development of the Streamlined System for the
+    Romanization of Bulgarian, which was eventually codified by the
+    Transliteration Act of 2009 (ДВ 2009) of the Bulgarian Parliament.
+
+    The four purposes of the system below are in order of priority:
+    1. ensure a plausible phonetic approximation of Russian words by English speaking users, including those having no knowledge of the Russian language and no available additional explanations;
+    2. the system should allow for the retrieval of the original Cyrillic spellings as much as feasible;
+    3. transliterated Russian words should fit an English language environment i.e. not be perceived as too ‘un-English’; and
+    4. transliterated word forms should be streamlined and simple. (Ivanov 2003, Ivanov et al. 2010)
+  }
+
+  notes {
+    note "Typical for the streamlined approach is its non-use of diacritics,\n its use of Latin y for rendering only Cyrillic й rather than both й and\n ы, its non-use of Latin j, as well as its use of Latin h rather than kh\n for Cyrillic х."
+  }
+}
+
+tests {
+   "Эх, тройка! птица тройка, кто тебя выдумал? знать, у бойкого народа\nты могла только родиться, в той земле, что не любит шутить, а\nровнем-гладнем разметнулась на полсвета, да и ступай считать версты, пока\nне зарябит тебе в очи. И не хитрый, кажись, дорожный снаряд, не\nжелезным схвачен винтом, а наскоро живьём с одним топором да долотом\nснарядил и собрал тебя ярославский расторопный мужик. Не в немецких\nботфортах ямщик: борода да рукавицы, и сидит чёрт знает на чём; а\nпривстал, да замахнулся, да затянул песню — кони вихрем, спицы в\nколесах смешались в один гладкий круг, только дрогнула дорога, да вскрикнул\nв испуге остановившийся пешеход — и вон она понеслась, понеслась,\nпонеслась!\n\nН.В. Гоголь" ->  "Eh, troyka! ptitsa troyka, kto tebya vidumal? znat, u boykogo naroda\nti mogla tolko roditsya, v toy zemle, chto ne lyubit shutit, a\nrovnem-gladnem razmetnulas na polsveta, da i stupay schitat versti, poka\nne zaryabit tebe v ochi. I ne hitriy, kazhis, dorozhniy snaryad, ne\nzheleznim shvachen vintom, a naskoro zhivyem s odnim toporom da dolotom\nsnaryadil i sobral tebya yaroslavskiy rastoropniy muzhik. Ne v nemetskih\nbotfortah yamshchik: boroda da rukavitsi, i sidit chert znaet na chem; a\nprivstal, da zamahnulsya, da zatyanul pesnyu — koni vihrem, spitsi v\nkolesah smeshalis v odin gladkiy krug, tolko drognula doroga, da vskriknul\nv ispuge ostanovivshiysya peshehod — i von ona poneslas, poneslas,\nponeslas!\n\nN.V. Gogol"
+   "ЁЖ Ёж ёж" ->  "EZH Ezh ezh"
+   "Цветущий сад" ->  "Tsvetushchiy sad"
+   "Чувство юмора" ->  "Chuvstvo yumora"
+   "Широкий выбор" ->  "Shirokiy vibor"
+   "Все подъезды заблокированны" ->  "Vse podezdi zablokirovanni"
+   "Ожерелье" ->  "Ozherelye"
+   "Ручьи" ->  "Ruchyi"
+   "Каньон" ->  "Kanyon"
+   "Бельэтаж" ->  "Belyetazh"
+}
+
+dependency "posix"
+
+stage main {
+
+  # RULES
+  sub {
+    from "\u042c"
+    to "Y"
+    after any("ЕеЁёИиОоЭэ")
+  }
+  sub {
+    from "\u044c"
+    to "y"
+    after any("ЕеЁёИиОоЭэ")
+  }
+
+
+  # CHARACTERS
+  parallel {
+    # "\u0027": ""    # '
+    sub "А" "A"
+    sub "Б" "B"
+    sub "В" "V"
+    sub "Г" "G"
+    sub "Д" "D"
+    sub "Ё" "E"
+    sub "Е" "E"
+    sub "Ж" "Zh"
+    sub {
+    from "Ж"
+    to "ZH"
+    before any('AБBГДЕЁЖЗИЙКЛМНОПРСТУЎФХЦЧШЩЪЫЬЭЮЯІ')
+  }
+    sub {
+    from "Ж"
+    to "ZH"
+    after any('AБBГДЕЁЖЗИЙКЛМНОПРСТУЎФХЦЧШЩЪЫЬЭЮЯІ')
+  }
+
+    sub "З" "Z"
+    sub "Э" "E"
+    sub "И" "I"
+    sub "Й" "Y"
+    sub "К" "K"
+    sub "Л" "L"
+    sub "М" "M"
+    sub "Н" "N"
+    sub "О" "O"
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "У" "U"
+    sub "Ф" "F"
+    sub "Х" "H"
+    sub "Ц" "Ts"
+    sub {
+    from "Ц"
+    to "TS"
+    before any('AБBГДЕЁЖЗИЙКЛМНОПРСТУЎФХЦЧШЩЪЫЬЭЮЯІ')
+  }
+    sub {
+    from "Ц"
+    to "TS"
+    after any('AБBГДЕЁЖЗИЙКЛМНОПРСТУЎФХЦЧШЩЪЫЬЭЮЯІ')
+  }
+    sub "Ч" "Ch"
+    sub {
+    from "Ч"
+    to "CH"
+    before any('AБBГДЕЁЖЗИЙКЛМНОПРСТУЎФХЦЧШЩЪЫЬЭЮЯІ')
+  }
+    sub {
+    from "Ч"
+    to "CH"
+    after any('AБBГДЕЁЖЗИЙКЛМНОПРСТУЎФХЦЧШЩЪЫЬЭЮЯІ')
+  }
+    sub "Ш" "Sh"
+    sub {
+    from "Ш"
+    to "SH"
+    before any('AБBГДЕЁЖЗИЙКЛМНОПРСТУЎФХЦЧШЩЪЫЬЭЮЯІ')
+  }
+    sub {
+    from "Ш"
+    to "SH"
+    after any('AБBГДЕЁЖЗИЙКЛМНОПРСТУЎФХЦЧШЩЪЫЬЭЮЯІ')
+  }
+    sub "Щ" "Shch"
+    sub {
+    from "Щ"
+    to "SHCH"
+    before any('AБBГДЕЁЖЗИЙКЛМНОПРСТУЎФХЦЧШЩЪЫЬЭЮЯІ')
+  }
+    sub {
+    from "Щ"
+    to "SHCH"
+    after any('AБBГДЕЁЖЗИЙКЛМНОПРСТУЎФХЦЧШЩЪЫЬЭЮЯІ')
+  }
+    sub "Ы" "I"
+    sub "Я" "Ya"
+    sub {
+    from "Я"
+    to "YA"
+    before any('AБBГДЕЁЖЗИЙКЛМНОПРСТУЎФХЦЧШЩЪЫЬЭЮЯІ')
+  }
+    sub {
+    from "Я"
+    to "YA"
+    after any('AБBГДЕЁЖЗИЙКЛМНОПРСТУЎФХЦЧШЩЪЫЬЭЮЯІ')
+  }
+    sub "Ю" "Yu"
+    sub {
+    from "Ю"
+    to "YU"
+    before any('AБBГДЕЁЖЗИЙКЛМНОПРСТУЎФХЦЧШЩЪЫЬЭЮЯІ')
+  }
+    sub {
+    from "Ю"
+    to "YU"
+    after any('AБBГДЕЁЖЗИЙКЛМНОПРСТУЎФХЦЧШЩЪЫЬЭЮЯІ')
+  }
+
+    # Ь (before Е, Ё, И, O, Э)
+    # "\u042c\u0401": "YE"    # Ё
+    # "\u042c\u0415": "YE"    # Е
+    # "\u042c\u0418": "YI"    # И
+    # "\u042c\u041E": "YO"    # O
+    # "\u042c\u0417": "YE"    # Э
+
+    # Ь (otherwise) -> (none)
+    sub "Ь" ""
+
+    # Ъ  -> (none)
+    sub "Ъ" ""
+
+    sub "а" "a"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "g"
+    sub "д" "d"
+    sub "ё" "e"
+    sub "е" "e"
+    sub "ж" "zh"
+    sub "з" "z"
+    sub "э" "e"
+    sub "и" "i"
+    sub "й" "y"
+    sub "к" "k"
+    sub "л" "l"
+    sub "м" "m"
+    sub "н" "n"
+    sub "о" "o"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "у" "u"
+    sub "ф" "f"
+    sub "х" "h"
+    sub "ц" "ts"
+    sub "ч" "ch"
+    sub "ш" "sh"
+    sub "щ" "shch"
+    sub "ы" "i"
+    sub "я" "ya"
+    sub "ю" "yu"
+
+    # ь (before е, ё, и, o, э)
+    # "\u044c\u0435": "ye"    # ё
+    # "\u044c\u0451": "ye"    # е
+    # "\u044c\u0438": "yi"    # и
+    # "\u044c\u006f": "yo"    # o
+    # "\u044c\u044d": "ye"    # э
+
+    # ь (otherwise) -> (none)
+    sub "ь" ""
+
+    # ъ -> (none)
+    sub "ъ" ""
+  }
+
+}
+}

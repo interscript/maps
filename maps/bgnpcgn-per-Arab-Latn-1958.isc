@@ -1,0 +1,334 @@
+system "BGN-PCGN:per-Arab:Latn:1958" {
+
+metadata {
+  authority_id bgnpcgn
+  id 1958
+  language iso-639-2:per
+  # prs stands for Dari (https://iso639-3.sil.org/code/prs&_ga=GA1.2.2054538372.1574092823)
+  source_script Arab
+  destination_script Latn
+  name Transliteration System for Persian (1958)
+  url https://github.com/interscript/interscript/files/5180821/BGN_Romanization_Guide_1964_persian_1958.pdf
+  creation_date 1958
+  confirmation_date 1958
+  description {    The BGN/PCGN 1958 System for the Persian alphabet was
+    adopted by the BGN in 1946 and by the PCGN In 1958. It Is
+    used for the romanization of standard geographic names in
+    Iran.
+    The Persian alphabet is the same as the Arabic alphabet
+    except for the addition of four consonant symbols for
+    sounds which do not occur in Arabic. Therefore, the same
+    conversion values are used for the Persian alphabet as for
+    the Arabic alphabet wherever phonetically valid. Where
+    letters common to the two alphabets have different
+    pronunciation in the two languages, conversion values
+    reflecting the Persian pronunciation are provided in the
+    Persian system.
+    It may be noted that neither the system of pointing nor the
+    conversion values for vowels and diphthongs are the same
+    for Persian as for Arabic.
+    Persian presents the same problems of vowel pointing as
+    Arabic in that the short vowel symbols necessary for the
+    proper rendering of short vowels, long vowels, and
+    diphthongs are almost always omitted from written Persian.
+    It follows that, in order to produce transliterations in
+    terms of standard written Persian, the transliterator must
+    be able to identify the words used in names and must know
+    their standard written Persian spelling, their proper vowel
+    pointing, and how to eliminate peculiarities due to
+    dialectical variation.
+    The notes and special rules explain details of
+    transliteration not stated in the tables.
+  }
+
+  notes {
+    note "      1)The Persian writing system, in its generally used form,\n      employs only the symbols found in Table I, and the alef maddeh\n      (آ) of Table II. The symbols in column 1 of Table II are\n      traditional auxiliary symbols used by Persians only\n      sporadically to indicate the exact reading of a given word.\n      In the case of i, ū, ey and ow, a choice of symbology\n      exists, one system adhering to the Arabic tradition, the\n      other being a modification of it. Likewise, there are two\n      ways of writing alef maq§ureh. The BGN/PCGN transliteration\n      system presupposes forms fully pointed with the Persian\n      symbols represented in Table II, though these are omitted\n      from the examples given below."
+
+    note "2) Alef ( أ ) occurs with the following uses\n a. Initially, it indicates that the word begins with a vowel or\n diphthong, and the alef itself is not transliterated, e.g.,\n انجيرة Anjīreh, ايواني Eyvānī\n b. Initially with maddeh ( آ ),it indicates ā, e.g., آبادان Ābādān.\n c. Medially and finally. it represents ā, e.g., e.g., آبادان Ābādān,\n توكا Tūkā.\n d.	With hamzeh. See Note 5."
+
+    note "3) Where special considerations are paramount, the sub-dot\n may be used in place of the cedilla"
+
+    note "4) The two-letter symbols kh, zh, sh, and gh are convenient\n for use and easily comprehensible. The infrequent sequences\n of kāf, ze, sīn, and gāf followed by he can be unequivocally\n transliterated for bibliographical purposes by the use of a\n slant line (“shilling,” “solidus\") to separate true h from\n a preceding k, z, s, or	g; that is,	kh represents khe, but\n k/h stands for kāf followed by he."
+
+    note "5) Hamzeh (ء)	is	not regarded as a letter of the Persian\n alphabet, but as a diacritic mark, and as such is not\n always expressed in actual writing. In fully pointed words,\n however, it appears in several graphic forms, standing\n alone or written in conjunction with alef, vav, or ye (the\n ye in this instance being undotted). All these forms are\n transliterated simply with the apostrophe in the form\n resembling a small raised figure 9 (’)	,e.g., جزء Joz’\n صفراء şafrā’, مأخذ ma’khaz̄, مؤتمن mu’taman, پائين pā’īn Occasionally a word may\n appear pointed according to the strict Arabic tradition so\n as to indicate an initial hamzeh. This initial hamzeh is\n never transliterated, but only the vowel which it carries,\n e.g., •Jfi , whether pointed	or	0	.	is \"transliterated\n simply Anjireh.	' Hamzeh is also sometimes written over\n final he or ye to represent the -ye form of the eg&feh, cf.\n Note 8."
+
+    note "6) Alef maddeh is used initially to indicate ā, e.g., آبادان Ābādān\n Noninitially it indicates ’ā in words of Arabic origin,\n and must be so transliterated, e.g., قرآن Qor’ān, مآب ma’āb"
+
+    note "7) Tashdid ( ّ) indicates doubling of the consonant over which\n it is written and is represented in transliteration by writing\n the consonant twice, e.g محمّد Mohammad The sequence kasreh ye ye\n is transliterated īy.In names of Arabic origin containing the\n definite article, the vowel of the article is transliterated according\n to its Persian pronunciation and the lam, when followed by a “sun letter”\n (t, s̄, d, z̄, r, s, sh, ẕ, ţ, z̧, ţ, z̧, l, n) is assimilated. The article\n is written in lower case and separate from the preceding and following word,\n e.g., Zeyn od Din, but *£4 . Zeyn ed Dīn. Cf. Special Rule 1."
+
+    note "8) The relational (ezafeh) suffix	is	transliterated -e after final consonants\n (except for silent h). After silent h and after vowels, it is transliterated\n -ye. It is usually not expressed in Persian writing after a consonant\n (kasreh being understood), e.g., كوهِ مَرغٌوب Kuh-e Marghūb. After final alef or vav\n it is written with ye (ي), e.g., بايِ آب	Pa-ye Ab,	جويِ آس Jū-ye Ās.	After	ye (ي)\n and silent he it is written as hamzeh over the letter, e.g., دَهَانهٴ مَمبَر Dahāneh-ye Mambar,\n سَلَيٴ بُذٌرگ Salasi-ye Bozorrg."
+
+
+    note "1.	In Persian names of Arabic origin, the word division\n used for transliterating Arabic will obtain, except that\n names ending in the word Allah will be written solid and\n the a of Allah will be replaced by o, e.g.,	The Arabic\n definite article when not subject to assimilation will be\n written al in name-initial position but usually, ol\n elsewhere, e.g., Al JJal but 2u ol Faqar. Cf. Note 7 above."
+
+    note "2. In Persian names in general, in sequences of name\n elements pronounced as a single unit, division into\n separate words will be made after Persian letters written\n in the word final form. (But see the Rule immediately\n below.)"
+
+    note "3. The word abad which occurs very frequently at\n the end of place names will be written solid with the\n preceding word; e.g., Allahabad, not Allah Abad."
+
+    note "4. Persian derivational endings such as vand and Turkish and other\n endings such as lar, li and lu will be written solid with\n the preceding word, whether so written in Persian script or\n not."
+
+    note "5. The letter he, when used in Turkish fashion for\n word internal e, will be transliterated eh as usual but\n will be written solid with the remainder of the word."
+
+    note "6. Kheplus vdv followed by long vowel or khe plus vdv followed\n by gammeh will be rendered khv although the v is not\n pronounced."
+  }
+}
+
+tests {
+   "اَنجِيرة" ->  "Anjīreh"
+   "اِيْوَانِي" ->  "Eyvānī"
+   "آبادان" ->  "Ābādān"
+   "تُوكا" ->  "Tūkā"
+   "آبادان" ->  "Ābādān"
+   "قُرآن" ->  "Qor’ān"
+   "مَآب" ->  "Ma’āb"
+   "مُحَمَّد" ->  "Moḩammad"
+   "كُوهِ مَرغُوب" ->  "Kūh-e Marghūb"
+   "پَايِ آب" ->  "Pā-ye Āb"
+   "جُويِ آس" ->  "Jū-ye Ās"
+   "دَهَانِهٴ مَمبَر" ->  "Dahāneh-ye Mambar"
+   "سَلَسِيٴ بُذُرگ" ->  "Salasī-ye Boz̄org"
+   "عَبداللَّه" ->  "‘Abdollāh"
+   "ذُو الفَقَار" ->  "Z̄ū ol Faqār"
+   "اللَّه آبَاد" ->  "Allāhābād"
+   "اِيران" ->  "Īrān"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+
+    sub {
+    from space + "\u0622\u0628\u064E\u0627\u062F"
+    to "ābād"
+  }
+
+    sub {
+    from "\u064e"
+    to ""
+    after "\u0629"
+  }
+    sub {
+    from "\u064e"
+    to ""
+    after "a" + any("h|t")
+  }
+
+    # pointing
+    sub "\u064e" "a"
+    sub "\u0650" "e"
+    sub "\u064f" "o"
+    sub "\u064e\u0627" "ā"
+    sub "\u0649\u0670" "á"
+    sub "\u0622" "’ā"
+    sub {
+    from boundary + "\u0622"
+    to "ā"
+  }
+    sub {
+    from "\u0650" + any("\u064a|\u06cc")
+    to "ī"
+  }
+    # '\u0650\u06cc' : 'ī' # ـِي kasra followed by ي
+    sub "\u064f\u0648" "ū"
+    sub {
+    from "\u064e" + any("\u064a|\u06cc") + "\u0652"
+    to "ey"
+  }
+    sub {
+    from "\u0650" + any("\u064a|\u06cc") + "\u0652"
+    to "ey"
+  }
+    sub "\u064e\u0648" "ow"
+    sub "\u0652" ""
+    sub "\u0650\u064a\u0651" "īy"
+    sub {
+    from any("\u0654|\u0674")
+    to "-e"
+  }
+    sub {
+    from any("\u0654|\u0674")
+    to "-ye"
+    before any("\u064a|\u0647")
+  }
+    sub {
+    from "\u0650" + boundary
+    to "-e"
+  }
+    sub {
+    from any("\u064a|\u06cc") + "\u0650" + boundary
+    to "-ye"
+  }
+    # shadda
+
+    sub "\u0628\u0651" "bb"
+    sub "\u062a\u0651" "tt"
+    sub "\u062b\u0651" "s̄s̄"
+    sub "\u062c\u0651" "jj"
+    sub "\u062d\u0651" "ḩḩ"
+    sub "\u062e\u0651" "kh"
+    sub "\u062f\u0651" "dd"
+    sub "\u0630\u0651" "z̄z̄"
+    sub "\u0631\u0651" "rr"
+    sub "\u0632\u0651" "zz"
+    sub "\u0633\u0651" "ss"
+    sub "\u0634\u0651" "sh"
+    sub "\u0635\u0651" "şş"
+    sub "\u0636\u0651" "ẕẕ"
+    sub "\u0637\u0651" "ţţ"
+    sub "\u0638\u0651" "z̧z̧"
+    sub "\u063a\u0651" "gh"
+    sub "\u0641\u0651" "ff"
+    sub "\u0642\u0651" "qq"
+    sub "\u0643\u0651" "kk"
+    sub "\u0644\u0651" "ll"
+    sub "\u0645\u0651" "mm"
+    sub "\u0646\u0651" "nn"
+    sub "\u0647\u0651" "hh"
+    sub "\u0648\u0651" "vv"
+    sub "\u064a\u0651" "yy"
+
+    sub "\u0659" "ê"
+
+    # ta' marboota
+    sub "\u0629" "eh"
+
+    sub {
+    from boundary + "\u0627\u0644"
+    to "al "
+  }
+    sub {
+    from space + boundary + "\u0627\u0644"
+    to " ol "
+  }
+    sub "\ufdf2" "Allāh"
+    sub "\u0627\u0644\u0644\u0651\u064e\u0647" "Allāh"
+    sub {
+    from "\u0627\u0644\u0644\u0651\u064e\u0647"
+    to "ollāh"
+    not_before boundary
+  }
+    # '\uFE8E' : ''  # ﺎ
+
+    # Sun letters
+    sub {
+    from boundary + "\u0627\u0644\u062a" + maybe("\u0651")
+    to "at t"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u062b" + maybe("\u0651")
+    to "as̄ s̄"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u062f" + maybe("\u0651")
+    to "ad d"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0630" + maybe("\u0651")
+    to "az̄ z̄"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0631" + maybe("\u0651")
+    to "ar r"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0632" + maybe("\u0651")
+    to "az z"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0633" + maybe("\u0651")
+    to "as s"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0634" + maybe("\u0651")
+    to "ash sh"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0635" + maybe("\u0651")
+    to "aş ş"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0636" + maybe("\u0651")
+    to "aẕ ẕ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0637" + maybe("\u0651")
+    to "aţ ţ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0638" + maybe("\u0651")
+    to "az̧ z̧"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0644" + maybe("\u0651")
+    to "al l"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0646" + maybe("\u0651")
+    to "an n"
+  }
+
+
+    sub "\u0621" "’"
+    sub "\u0626" "’"
+
+    sub "\u0623" ""
+    sub "\u0625" ""
+    sub "\u0627" "ā"
+    sub {
+    from boundary + "\u0627"
+    to ""
+  }
+
+    # consonant characters
+
+    sub "\u0628" "b"
+    sub "\u067E" "p"
+    sub "\u062a" "t"
+    sub "\u062B" "s̄"
+    sub "\u062c" "j"
+    sub "\u0686" "ch"
+    sub "\u062d" "ḩ"
+    sub "\u062e" "kh"
+    sub "\u062f" "d"
+    sub "\u0630" "z̄"
+    sub "\u0631" "r"
+    sub "\u0632" "z"
+    sub "\u0698" "zh"
+    sub "\u0633" "s"
+    sub "\u0634" "sh"
+    sub "\u0635" "ş"
+    sub "\u0636" "ẕ"
+    sub "\u0637" "ţ"
+    sub "\u0638" "z̧"
+    sub "\u0639" "‘"
+    sub "\u063a" "gh"
+    sub "\u0641" "f"
+    sub "\u0642" "q"
+    sub "\u0643" "k"
+    sub "\u06A9" "k"
+    sub "\u06AF" "g"
+    sub "\u0644" "l"
+    sub "\u0645" "m"
+    sub "\u0646" "n"
+    sub "\u0647" "h"
+    sub "\u0648" "v"
+    sub "\u064a" "y"
+    sub "\u0649" "y"
+    sub "\u06D0" "ē"
+    sub "\u06CD" "êy"
+  }
+
+  # POSTRULES
+  sub {
+    from any("\u0061".."\uFFFF")
+    to upcase
+    before boundary
+    not_before boundary + any("‘’'-")
+  }
+
+  sub " Ol" " ol"
+
+
+}
+}

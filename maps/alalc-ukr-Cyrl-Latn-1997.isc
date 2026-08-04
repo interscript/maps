@@ -1,0 +1,127 @@
+system "ALA-LC:ukr-Cyrl:Latn:1997" {
+
+metadata {
+  authority_id alalc
+  id 1997
+  language iso-639-2:ukr
+  source_script Cyrl
+  destination_script Latn
+  name Romanization Table -- Ukrainian (1997)
+  url http://catdir.loc.gov/catdir/cpso/romanization/ukrainia.pdf
+  creation_date 1997
+  description {    The ALA-LC Romanization Tables, published by the American Library Association (1885)
+    and Library of Congress (1905). Used to represent bibliographic information by US and
+    Canadian libraries, by the British Library since 1975,[3] and in North American publications.
+    The latest 1997 revision is very similar to the 1905 version.
+  }
+
+  notes {
+    note "The z͡h ligature is necessary to distinguish ж from the combination зг."
+    note "The t͡s ligature is necessary to distinguish ц from the combination тс."
+  }
+}
+
+tests {
+   "Автономна Республіка Крим" ->  "Avtonomna Respublika Krym"
+   "Висунь" ->  "Vysunʹ"
+   "Долинське" ->  "Dolynsʹke"
+   "Дубище" ->  "Dubyshche"
+   "Єнакієве" ->  "I͡enakii͡eve"
+   "Зупиночний Пункт Мокіївці" ->  "Zupynochnyĭ Punkt Mokiïvt͡si"
+   "Іванівщина" ->  "Ivanivshchyna"
+   "Киликиїв" ->  "Kylykyïv"
+   "Кожанка" ->  "Koz͡hanka"
+   "Краснянка" ->  "Krasni͡anka"
+   "Краснівка" ->  "Krasnivka"
+   "Мале Микільське" ->  "Male Mykilʹsʹke"
+   "Маломиколаївка" ->  "Malomykolaïvka"
+   "Нове Село" ->  "Nove Selo"
+   "Новопавлівка" ->  "Novopavlivka"
+   "Новошичі" ->  "Novoshychi"
+   "Новоєфремівка" ->  "Novoi͡efremivka"
+   "Одеська Область" ->  "Odesʹka Oblastʹ"
+   "Орлівське" ->  "Orlivsʹke"
+   "Раневичі" ->  "Ranevychi"
+   "Рокувата" ->  "Rokuvata"
+   "Рудаєве" ->  "Rudai͡eve"
+   "Сахнівці" ->  "Sakhnivt͡si"
+   "Тернівка" ->  "Ternivka"
+   "Турбівка" ->  "Turbivka"
+   "Херсонська Область" ->  "Khersonsʹka Oblastʹ"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "А" "A"
+    sub "Б" "B"
+    sub "В" "V"
+    sub "Г" "H"
+    sub "Ґ" "G"
+    sub "Д" "D"
+    sub "Е" "E"
+    sub "Є" "I͡e"
+    sub "Ж" "Z͡h"
+    sub "З" "Z"
+    sub "И" "Y"
+    sub "І" "I"
+    sub "Ї" "Ï"
+    sub "Й" "Ĭ"
+    sub "К" "K"
+    sub "Л" "L"
+    sub "М" "M"
+    sub "Н" "N"
+    sub "О" "O"
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "У" "U"
+    sub "Ф" "F"
+    sub "Х" "Kh"
+    sub "Ц" "T͡s"
+    sub "Ч" "Ch"
+    sub "Ш" "Sh"
+    sub "Щ" "Shch"
+    sub "Ю" "I͡u"
+    sub "Я" "I͡a"
+    sub "Ь" "ʹ"
+    sub "а" "a"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "h"
+    sub "ґ" "g"
+    sub "д" "d"
+    sub "е" "e"
+    sub "є" "i͡e"
+    sub "ж" "z͡h"
+    sub "з" "z"
+    sub "и" "y"
+    sub "і" "i"
+    sub "ї" "ï"
+    sub "й" "ĭ"
+    sub "к" "k"
+    sub "л" "l"
+    sub "м" "m"
+    sub "н" "n"
+    sub "о" "o"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "у" "u"
+    sub "ф" "f"
+    sub "х" "kh"
+    sub "ц" "t͡s"
+    sub "ч" "ch"
+    sub "ш" "sh"
+    sub "щ" "shch"
+    sub "ю" "i͡u"
+    sub "я" "i͡a"
+    sub "ь" "ʹ"
+  }
+
+  compose
+}
+}

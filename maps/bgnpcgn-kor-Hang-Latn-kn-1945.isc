@@ -1,0 +1,261 @@
+system "BGN-PCGN:kor-Hang:Latn:kn-1945" {
+
+metadata {
+  authority_id bgnpcgn
+  id kn-1945
+  language iso-639-2:kor
+  source_script Hang
+  destination_script Latn
+  name Romanization of Korean for DPRK (Hangul-Latin) (1945 Agreement)
+  url https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693725/ROMANIZATION_OF_KOREAN-_MR_for_DPRK.pdf
+  creation_date 1945
+  adoption_date 
+  description 
+
+  notes {
+    note "\n\n    1. At the end of a syllable, the character ᄋ should be romanized ng,\n       as in the following example:\n\n       평양 → P’yŏngyang\n\n       At the beginning of a syllable, the character ᄋ is silent and\n       should not be romanized. An example follows:\n\n       용화 → Yonghwa\n\n    2. Syllable boundaries within words are not reflected in romanization.\n       In the different types of syllables shown in the table below, C\n       represents any consonant character, V represents any vowel character\n       and / represents a syllable boundary.\n\n         Han’gŭl              개성      남포      안양\n         Syllable boundaries  CV/CVC   CVC/CV   VC/VC\n         Romanization         Kaesŏng  Namp’o   Anyang\n\n    3. Euphonic changes occurring within a word, including between the\n       specific and generic of a geographical name, should be reflected in\n       romanization. Generic terms are usually seen separated from the name\n       by a hyphen and with a lower case initial letter rather than as a\n       separate word:\n\n         영진리 → Yŏngjil-li\n         덕흥리 → Tŏkhŭng-ni\n         압록강 → Amnok-kang\n         대동강 → Taedong-gang\n\n    4. As a result of 조선말규범집 (‘Standard Korean Language’ guidelines\n       published in North Korea in 1966), unlike the Korean spoken in the\n       Republic of Korea, the language spoken in the Democratic People’s\n       Republic of Korea maintains and pronounces the word-initial ᆯ (‘r’).\n       The use of the word-initial ᄅ ('r') can be seen in official news\n       reports as well as native mapping. Since such examples exist, the\n       word initial ᄅ ('r') is reflected as an option in the tables given above.\n\n    5. The Romanization column shows only lowercase forms but, when romanizing,\n       uppercase and lowercase Roman letters as appropriate should be used.\n    "
+  }
+}
+
+tests {
+   "평양" ->  "P’yŏngyang"
+   "용화" ->  "Yonghwa"
+   "개성" ->  "Kaesŏng"
+   "남포" ->  "Namp’o"
+   "안양" ->  "Anyang"
+   "영진-리" ->  "Yŏngjil-li"
+   "덕흥-리" ->  "Tŏkhŭng-ni"
+   "압록-강" ->  "Amnok-kang"
+   "대동-강" ->  "Taedong-gang"
+   "라선특별시" ->  "Rasŏnt’ŭkpyŏlsi"
+   "은하-리" ->  "Ŭnha-ri"
+   "은중-리" ->  "Ŭnjung-ni"
+   "은장-령" ->  "Ŭnjang-nyŏng"
+   "은혜-동" ->  "Ŭnhye-dong"
+   "은호-리" ->  "Ŭnho-ri"
+   "은행정" ->  "Ŭnhaengjŏng"
+   "은행-동" ->  "Ŭnhaeng-dong"
+   "은행-촌" ->  "Ŭnhaeng-ch’on"
+   "원수" ->  "Wŏnsu"
+   "원소리-고개" ->  "Wŏnsori-gogae"
+   "원소참" ->  "Wŏnsoch’am"
+   "원소-리" ->  "Wŏnso-ri"
+   "원신-리" ->  "Wŏnsil-li"
+   "난곡" ->  "Nan’gok"
+   "난산-리" ->  "Nansal-li"
+   "난직" ->  "Nanjik"
+   "영곡" ->  "Yŏnggok"
+   "윗두밀" ->  "Wittumil"
+   "윗도심이" ->  "Wittosimi"
+   "둔지" ->  "Tunji"
+   "서승" ->  "Sŏsŭng"
+   "신촌" ->  "Sinch’on"
+   "비암덕" ->  "Piamdŏk"
+   "바위안" ->  "Pawian"
+   "오송평" ->  "Osongp’yŏng"
+   "그물목" ->  "Kŭmulmok"
+   "구원정" ->  "Kuwŏnjŏng"
+   "일하" ->  "Irha"
+   "황우" ->  "Hwangu"
+   "자작보" ->  "Chajakpo"
+   "비파1-동" ->  "Pip’a Il-tong"
+   "문암 오-동" ->  "Munam O-dong"
+}
+
+dependency "var-kor-Hang-Latn-mr-1939" as hanglatn
+
+
+stage main {
+
+  # RULES
+  # Add Zero-width White-space U+200B after spaces (i.e. before word boundaries)
+  # So that the word-initial conversion rules will be blocked.
+  sub line_start "\u200B"
+  sub {
+    from ""
+    to "\u200B"
+    before " "
+  }
+
+  # convert numbers to space + Hangul
+  sub {
+    from capture(any([any("0".."9") + " "]))
+    to ref( 1 ) + " "
+    after any("0".."9")
+  }
+  sub "1" " 일"
+  sub "2" " 이"
+  sub "3" " 삼"
+  sub "4" " 사"
+  sub "5" " 오"
+  sub "6" " 육"
+  sub "7" " 칠"
+  sub "8" " 팔"
+  sub "9" " 구"
+
+  # This is a logic to add hyphen in front of generics
+  # - pattern: "(?<=.)(구역|동|리|도|고개|골|로동자구|사무소|초등학교|중학교|고등학교|강|포|령|역|봉|사|천|교|제|저수지|소류지|재|못|말|면|암|교회|촌|병원|바위|공원|섬|우체국|대학교|보건소|굴|치|대교|지구|폭포|해수욕장|휴게소|중고교|읍|보건진료소|마을|톨게이트|대학|시장|경찰서|학교)$" #to be expanded
+  #   result: "-\\1"
+
+
+  run  map.hanglatn.stage.main
+
+
+  # POSTRULES
+
+  # Add space to the two ends of the string for easier word boundary handling
+  sub line_start " "
+  sub line_end " "
+
+  # Initial rules in the inherited map were blocked, so that
+  # this set of updated rules (with the onset rules removed) will be used instead.
+  sub "\u200B" ""
+
+  sub {
+    from "ᄀ"
+    to "k"
+    before " "
+  }
+  sub {
+    from "ᄂ"
+    to "n"
+    before " "
+  }
+  sub {
+    from "ᄃ"
+    to "ch"
+    before " "
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᄃ"
+    to "t"
+    before " "
+  }
+  sub {
+    from "ᄅ"
+    to "r"
+    before " "
+  }
+  sub {
+    from "ᄆ"
+    to "m"
+    before " "
+  }
+  sub {
+    from "ᄇ"
+    to "p"
+    before " "
+  }
+  sub {
+    from "ᄉ"
+    to "sh"
+    before " "
+    after "ᅱ"
+  }
+  sub {
+    from "ᄉ"
+    to "s"
+    before " "
+  }
+  sub {
+    from "ᄋ"
+    to ""
+    before " "
+  }
+  sub {
+    from "ᄌ"
+    to "ch"
+    before " "
+  }
+  sub {
+    from "ᄎ"
+    to "ch’"
+    before " "
+  }
+  sub {
+    from "ᄏ"
+    to "k’"
+    before " "
+  }
+  sub {
+    from "ᄐ"
+    to "ch’"
+    before " "
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᄐ"
+    to "t’"
+    before " "
+  }
+  sub {
+    from "ᄑ"
+    to "p’"
+    before " "
+  }
+  sub {
+    from "ᄒ"
+    to "h"
+    before " "
+  }
+  sub {
+    from "ᄁ"
+    to "kk"
+    before " "
+  }
+  sub {
+    from "ᄭ"
+    to "kk"
+    before " "
+  }
+  sub {
+    from "ᄄ"
+    to "tt"
+    before " "
+  }
+  sub {
+    from "ᄯ"
+    to "tt"
+    before " "
+  }
+  sub {
+    from "ᄈ"
+    to "pp"
+    before " "
+  }
+  sub {
+    from "ᄲ"
+    to "pp"
+    before " "
+  }
+  sub {
+    from "ᄊ"
+    to "ss"
+    before " "
+  }
+  sub {
+    from "ᄍ"
+    to "tch"
+    before " "
+  }
+  sub {
+    from "ᄶ"
+    to "tch"
+    before " "
+  }
+
+  # Remove space added
+  sub {
+    from line_start + " "
+    to ""
+  }
+  sub {
+    from " " + line_end
+    to ""
+  }
+
+  title_case
+  compose
+}
+}

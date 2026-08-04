@@ -1,0 +1,191 @@
+system "ODNI:aze-Cyrl:Latn:2015" {
+
+metadata {
+  authority_id odni
+  id 2015
+  language iso-639-2:aze
+  source_script Cyrl
+  destination_script Latn
+  name ICS-630-01 Romanization of Azeri Personal Names (2015)
+  source ICS-630-01 Annex P
+  creation_date 2015
+  confirmation_date 2015
+  description {    This system is the Intelligence Community standard for the transliteration of Azeri person names
+    that will be applied to all final written reports and products for IC consumers. It is not
+    intended to eliminate variations of a name that can contribute forensic information. Rather, it is
+    to provide an IC standard Romanized (English) transliteration from Azeri that can then be linked
+    to forensic information in ways that will help identify the referent of the name.
+
+    In cases where an individual’s name has already been transliterated in a variant spelling, the IC
+    Standard spelling should appear first, followed by the variant spelling(s) in parentheses at the
+    first usage. In addition, if the original Cyrillic-script spelling is known, that spelling should
+    also appear in parentheses following the name, if possible, following best practices of the
+    issuing organization and taking into consideration information system capabilities. For example:
+    Rashad Sadykhov (also seen as Rashad Sadigov, Рашад Садыхов). This convention is designed to
+    ensure that vital forensic information is not lost.
+
+    For names of persons who are known to not be part of the Azeri-speaking community, use the
+    relevant IC transliteration standard for names from that language (e.g., Yitzhak). A translator’s
+    note may be used to clarify the known origin of the person. Spell names of individuals from
+    languages that are written in Roman letters as they are spelled in those languages (e.g.,
+    George Clooney, Jorge Garcia, Georges Pompidou).
+
+    In the case of active senior government officials in the on-line CIA World Factbook and the on-
+    line directory of Chiefs of State and Cabinet Members of Foreign Governments, the spellings given
+    in these on-line reference works should be used in place of the IC Standard. For any individual
+    who has at one time been listed in the Factbook or Chiefs of State directory but who no longer
+    appears in those resources (i.e. is no longer a government official), the IC Standard spelling
+    should appear first, with the spelling, if known, as it previously appeared in those resources
+    listed within parentheses at the first usage.
+
+    The primary goal is to produce a consistent Romanized transcription of names that is specifically
+    readable to the English-speaking non-specialist. The system uses the 26 letters of the standard
+    (English) Roman alphabet. Some ambiguities in the Romanized form will occur without the use of
+    diacritics. However, within the context of a report, where additional information about the
+    individual is provided, the referent will be clearly identified. This system will be used in
+    conjunction with on-line tools, name dictionaries, and lists containing conventional spellings of
+    names of well-known individuals.
+  }
+
+  notes {
+    note "Transliterate double digraphs as a single digraph, i.e. шш -> sh, not shsh"
+    note "In the Roman, no distinction is made between digraphs such as 'sh' and single contiguous letters,\n (e.g. 's' followed by 'h')."
+    note "The Cyrillic ъ and ь are not transliterated, but instead are left out of the transliteration."
+  }
+}
+
+tests {
+   "Рашад Садыхов" ->  "Rashad Sadykhov"
+}
+
+stage main {
+
+  # RULES
+  # note[1]
+  # generated with: "ҒЁЖХЧШЩЮЯ".split("").each { |i| puts %{sub capture(any("#{i}#{i.downcase}"))+any("#{i}#{i.downcase}"), ref(1)} }
+  sub {
+    from capture(any("Ғғ")) + any("Ғғ")
+    to ref(1)
+  }
+  sub {
+    from capture(any("Ёё")) + any("Ёё")
+    to ref(1)
+  }
+  sub {
+    from capture(any("Жж")) + any("Жж")
+    to ref(1)
+  }
+  sub {
+    from capture(any("Хх")) + any("Хх")
+    to ref(1)
+  }
+  sub {
+    from capture(any("Чч")) + any("Чч")
+    to ref(1)
+  }
+  sub {
+    from capture(any("Шш")) + any("Шш")
+    to ref(1)
+  }
+  sub {
+    from capture(any("Щщ")) + any("Щщ")
+    to ref(1)
+  }
+  sub {
+    from capture(any("Юю")) + any("Юю")
+    to ref(1)
+  }
+  sub {
+    from capture(any("Яя")) + any("Яя")
+    to ref(1)
+  }
+  # note[3]
+  sub {
+    from any("\u044A\u044C")
+    to none
+  }
+
+
+  # CHARACTERS
+  parallel {
+    sub "\u0410" "A"
+    sub "\u0411" "B"
+    sub "\u0412" "V"
+    sub "\u0413" "G"
+    sub "\u049C" "G"
+    sub "\u0492" "Gh"
+    sub "\u0414" "D"
+    sub "\u0415" "E"
+    sub "\u0401" "Yo"
+    sub "\u04D8" "A"
+    sub "\u0416" "Zh"
+    sub "\u0417" "Z"
+    sub "\u0418" "I"
+    sub "\u0419" "Y"
+    sub "\u0408" "Y"
+    sub "\u041A" "K"
+    sub "\u041B" "L"
+    sub "\u041C" "M"
+    sub "\u041D" "N"
+    sub "\u041E" "O"
+    sub "\u04E8" "O"
+    sub "\u041F" "P"
+    sub "\u0420" "R"
+    sub "\u0421" "S"
+    sub "\u0422" "T"
+    sub "\u0423" "U"
+    sub "\u04AE" "U"
+    sub "\u0424" "F"
+    sub "\u0425" "Kh"
+    sub "\u04BA" "H"
+    sub "\u0427" "Ch"
+    sub "\u04B8" "J"
+    sub "\u0428" "Sh"
+    sub "\u0429" "Shch"
+    sub "\u042B" "Y"
+    sub "\u042D" "E"
+    sub "\u042E" "Yu"
+    sub "\u042F" "Ya"
+
+    sub "\u0430" "a"
+    sub "\u0431" "b"
+    sub "\u0432" "v"
+    sub "\u0433" "g"
+    sub "\u049D" "g"
+    sub "\u0493" "gh"
+    sub "\u0434" "d"
+    sub "\u0435" "e"
+    sub "\u0451" "yo"
+    sub "\u04D9" "a"
+    sub "\u0436" "zh"
+    sub "\u0437" "z"
+    sub "\u0438" "i"
+    sub "\u0439" "y"
+    sub "\u0458" "y"
+    sub "\u043A" "k"
+    sub "\u043B" "l"
+    sub "\u043C" "m"
+    sub "\u043D" "n"
+    sub "\u043E" "o"
+    sub "\u04E9" "o"
+    sub "\u043F" "p"
+    sub "\u0440" "r"
+    sub "\u0441" "s"
+    sub "\u0442" "t"
+    sub "\u0443" "u"
+    sub "\u04AF" "u"
+    sub "\u0444" "f"
+    sub "\u0445" "kh"
+    sub "\u04BB" "h"
+    sub "\u0447" "ch"
+    sub "\u04B9" "j"
+    sub "\u0448" "sh"
+    sub "\u0449" "shch"
+    sub "\u044B" "y"
+    sub "\u044D" "e"
+    sub "\u044E" "yu"
+    sub "\u044F" "ya"
+  }
+
+}
+}

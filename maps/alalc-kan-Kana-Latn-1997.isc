@@ -1,0 +1,383 @@
+system "ALA-LC:kan-Kana:Latn:1997" {
+
+metadata {
+  authority_id alalc
+  id 1997
+  language iso-639-2:kan
+  source_script Kana
+  destination_script Latn
+  name Romanization Table -- Kannada (1997)
+  url http://catdir.loc.gov/catdir/cpso/romanization/kannada.pdf
+  creation_date 1997
+  description {    ALA-LC Romanization table for Kannada
+  }
+
+  notes {
+
+    note "Only the vowel forms that appear at the beginning of a syllable are listed; the forms used for\n vowels following a consonant can be found in grammars; no distinction between the two is\n made in transliteration."
+
+    note "      The vowel a is implicit after all consonants and consonant clusters and is supplied in\n      transliteration, with the following exceptions:\n\n      a) when another vowel is indicated by its appropriate sign; and\n      b) when the absence of any vowel is indicated by the superscript sign (◌್)."
+
+    note "      Exception: Anusvāra is transliterated by:\n\n      a) ṅ before gutturals,\n      b) ñ before palatals,\n      c) ṇ before cerebrals,\n      d) n before dentals, and\n      e) m before labials."
+  }
+}
+
+tests {
+   "ಕರ್ಣಾಟಕ" ->  "karṇāṭaka"
+   "ಬೆಂಗಳೂರು" ->  "beṅgaḷūru"
+   "ಉಡುಪಿಯಲ್ಲಿ ಪ್ರಪ್ರಥಮ ಬಾರಿಗೆ ಪ್ರಾರಂಭವಾಗಿರುವ ದೇಶಿ ಉತ್ಪನ್ನಗಳ ಮಳಿಗೆ" ->  "uḍupiyalli praprathama bārige prāraṃbhavāgiruva dēśi utpannagaḷa maḷige"
+   "ದೇವರ ಹೆಸರು ಬಳಸಿ ಆನ್‌ಲೈನ್‌ ಬೆಟ್ಟಿಂಗ್‌!" ->  "dēvara hesaru baḷasi ānlain beṭṭiṃg!"
+   "ಚಿಕ್ಕಮಗಳೂರು : ಪುಷ್ಪ ಸಮರ್ಪಣೆ ವೇಳೆ ಮಗಳನ್ನ ನೆನೆದು ಕಣ್ಣೀರಿಟ್ಟ ಮೃತ ಪೇದೆ ತಾಯಿ" ->  "cikkamagaḷūru : puṣpa samarpaṇe vēḷe magaḷanna nenedu kaṇṇīriṭṭa mṛta pēde tāyi"
+   "ಸ್ವಾಮಿತ್ವ: ಹೊಸ ಯೋಜನೆಯಿಂದ ನಮಗೆ ಏನು ಲಾಭ ?" ->  "svāmitva: hosa yōjaneyinda namage ēnu lābha ?"
+   "ಮರಳು ಸಾಗಾಣಿಕೆ ವ್ಯವಹಾರ ಆಗಬಾರದು :ಅಧಿಕಾರಿಗಳಿಗೆ ಖಡಕ್ ಸೂಚನೆ ನೀಡಿದ ಜಿಲ್ಲಾಧಿಕಾರಿ" ->  "maraḷu sāgāṇike vyavahāra āgabāradu :adhikārigaḷige khaḍak sūcane nīḍida jillādhikāri"
+   "ಹಾವೇರಿ ಜಿಲ್ಲೆಯಲ್ಲಿ ೯೭ ಜನರಲ್ಲಿ ಕೋವಿಡ್ ಸೋಂಕು ಪತ್ತೆ ; 54 ಮಂದಿ ಗುಣಮುಖ" ->  "hāvēri jilleyalli 97 janaralli kōviḍ sōṃku patte ; 54 maṃdi guṇamukha"
+   "ಸಿಂದಗಿ ಐಸಿಐಸಿಐ ಬ್ಯಾಂಕ್ ಸೆಕ್ಯುರಿಟಿ ಗಾರ್ಡ್ ಹತ್ಯೆ ಪ್ರಕರಣ ಭೇದಿಸಿದ ಪೊಲೀಸರು" ->  "sindagi aisiaisiai byāṃk sekyuriṭi gārḍ hatye prakaraṇa bhēdisida polīsaru"
+   "ಬ್ಯಾಂಕರ್‌ಗಳೊಂದಿಗೆ ಡಿವಿ ಸಭೆ : ಆಧ್ಯತಾ ವಲಯ, ಸಾಲ ಯೋಜನೆ ತ್ವರಿತ ಮಂಜೂರಿಗೆ ಸೂಚನೆ" ->  "byāṅkargaḷoṃdige ḍivi sabhe : ādhyatā valaya, sāla yōjane tvarita maṃjūrige sūcane"
+   "ಪೊಲೀಸ್‌ ಇಲಾಖೆ ಸಮಗ್ರ ಅಭಿವೃದ್ಧಿ; ಡಿಜಿಪಿ ನೇತೃತ್ವದಲ್ಲಿ ಸಮಿತಿ ರಚನೆ: ಬೊಮ್ಮಾಯಿ" ->  "polīs ilākhe samagra abhivṛddhi; ḍijipi nētṛtvadalli samiti racane: beūmmāyi"
+   "ಕೆಟ್ಟಿರುವ ರಸ್ತೆಗಳ ದುರಸ್ತಿಗೆ ಸರಕಾರದ ಯೋಜನೆ" ->  "keṭṭiruva rastegaḷa durastige sarakārada yōjane"
+}
+
+aliases {
+  kana_chars_1 = any("\u0cbe\u0cbf\u0cc0\u0cc1\u0cc2\u0cc3\u0cc6\u0cc7\u0cc8\u0cca\u0ccb\u0ccc\u0ccd")
+}
+
+stage main {
+
+  # RULES
+  # to cover diacritic and vowel less consonants rule II
+    sub {
+    from "ಕ"
+    to "k"
+    after kana_chars_1
+  }
+    sub {
+    from "ಖ"
+    to "kh"
+    after kana_chars_1
+  }
+    sub {
+    from "ಗ"
+    to "g"
+    after kana_chars_1
+  }
+    sub {
+    from "ಘ"
+    to "gh"
+    after kana_chars_1
+  }
+    sub {
+    from "ಙ"
+    to "ṅ"
+    after kana_chars_1
+  }
+    sub {
+    from "ಚ"
+    to "c"
+    after kana_chars_1
+  }
+    sub {
+    from "ಛ"
+    to "ch"
+    after kana_chars_1
+  }
+    sub {
+    from "ಜ"
+    to "j"
+    after kana_chars_1
+  }
+    sub {
+    from "ಝ"
+    to "jh"
+    after kana_chars_1
+  }
+    sub {
+    from "ಞ"
+    to "ñ"
+    after kana_chars_1
+  }
+    sub {
+    from "ಟ"
+    to "ṭ"
+    after kana_chars_1
+  }
+    sub {
+    from "ಠ"
+    to "ṭh"
+    after kana_chars_1
+  }
+    sub {
+    from "ಡ"
+    to "ḍ"
+    after kana_chars_1
+  }
+    sub {
+    from "ಢ"
+    to "ḍh"
+    after kana_chars_1
+  }
+    sub {
+    from "ಣ"
+    to "ṇ"
+    after kana_chars_1
+  }
+    sub {
+    from "ತ"
+    to "t"
+    after kana_chars_1
+  }
+    sub {
+    from "ಥ"
+    to "th"
+    after kana_chars_1
+  }
+    sub {
+    from "ದ"
+    to "d"
+    after kana_chars_1
+  }
+    sub {
+    from "ಧ"
+    to "dh"
+    after kana_chars_1
+  }
+    sub {
+    from "ನ"
+    to "n"
+    after kana_chars_1
+  }
+    sub {
+    from "ಪ"
+    to "p"
+    after kana_chars_1
+  }
+    sub {
+    from "ಫ"
+    to "ph"
+    after kana_chars_1
+  }
+    sub {
+    from "ಬ"
+    to "b"
+    after kana_chars_1
+  }
+    sub {
+    from "ಭ"
+    to "bh"
+    after kana_chars_1
+  }
+    sub {
+    from "ಮ"
+    to "m"
+    after kana_chars_1
+  }
+    sub {
+    from "ಯ"
+    to "y"
+    after kana_chars_1
+  }
+    sub {
+    from "ರ"
+    to "r"
+    after kana_chars_1
+  }
+    sub {
+    from "ಱ"
+    to "ṟ"
+    after kana_chars_1
+  }
+    sub {
+    from "ಲ"
+    to "l"
+    after kana_chars_1
+  }
+    sub {
+    from "ಳ"
+    to "ḷ"
+    after kana_chars_1
+  }
+    sub {
+    from "ೞ"
+    to "l̤"
+    after kana_chars_1
+  }
+    sub {
+    from "ವ"
+    to "v"
+    after kana_chars_1
+  }
+    sub {
+    from "ಶ"
+    to "ś"
+    after kana_chars_1
+  }
+    sub {
+    from "ಷ"
+    to "ṣ"
+    after kana_chars_1
+  }
+    sub {
+    from "ಸ"
+    to "s"
+    after kana_chars_1
+  }
+    sub {
+    from "ಹ"
+    to "h"
+    after kana_chars_1
+  }
+
+  # rule[III]
+    sub {
+    from "\u0C82"
+    to "ṅ"
+    after any("ಕಖಗಘಙ")
+  }
+    sub {
+    from "\u0C82"
+    to "ñ"
+    after any("ಚಛಜಝಞ")
+  }
+    sub {
+    from "\u0C82"
+    to "ṇ"
+    after any("ಟಠಡಢಣ")
+  }
+    sub {
+    from "\u0C82"
+    to "n"
+    after any("ತಥದಧನ")
+  }
+
+
+  # CHARACTERS
+  parallel {
+    sub "ಅ" "a"
+    sub "ಆ" "ā"
+    sub "ಇ" "i"
+    sub "ಈ" "ī"
+    sub "ಉ" "u"
+    sub "ಊ" "ū"
+    sub "ಋ" "ṛ"
+    sub "ೠ" "ṝ"
+
+    sub "ಌ" "ḻ"
+
+    sub "ಎ" "e"
+    sub "ಏ" "ē"
+    sub "ಐ" "ai"
+
+    sub "ಒ" "o"
+    sub "ಓ" "ō"
+    sub "ಔ" "au"
+
+    # Gutturals
+    sub "ಕ" "ka"
+    sub "ಖ" "kha"
+    sub "ಗ" "ga"
+    sub "ಘ" "gha"
+    sub "ಙ" "ṅa"
+
+    # Palatals
+    sub "ಚ" "ca"
+    sub "ಛ" "cha"
+    sub "ಜ" "ja"
+    sub "ಝ" "jha"
+    sub "ಞ" "ña"
+
+    # Cerebrals
+    sub "ಟ" "ṭa"
+    sub "ಠ" "ṭha"
+    sub "ಡ" "ḍa"
+    sub "ಢ" "ḍha"
+    sub "ಣ" "ṇa"
+
+    # Dentals
+    sub "ತ" "ta"
+    sub "ಥ" "tha"
+    sub "ದ" "da"
+    sub "ಧ" "dha"
+    sub "ನ" "na"
+
+    # Labials
+    sub "ಪ" "pa"
+    sub "ಫ" "pha"
+    sub "ಬ" "ba"
+    sub "ಭ" "bha"
+    sub "ಮ" "ma"
+
+    # Semivowels
+    sub "ಯ" "ya"
+    sub "ರ" "ra"
+    sub "ಱ" "ṟa"
+    sub "ಲ" "la"
+    sub "ಳ" "ḷa"
+    sub "ೞ" "l̤a"
+
+
+    sub "ವ" "va"
+
+    # Sibilants
+    sub "ಶ" "śa"
+    sub "ಷ" "ṣa"
+    sub "ಸ" "sa"
+
+
+    # Aspirate
+    sub "ಹ" "ha"
+
+
+    # Bisarga
+    sub "ಃ" "ḥ"
+
+    # Anusvāra
+    sub "ಂ" "ṃ"
+
+    sub "\u0cbc" ""
+
+    # Medials # Needed for connecting constants
+    sub "ಾ" "ā"
+    sub "ಿ" "i"
+    sub "ೀ" "ī"
+    sub "ು" "u"
+    sub "ೂ" "ū"
+    sub "ೃ" "ṛ"
+    sub "ೄ" "ṝ"
+    sub "\u0CE2" "ḻ"
+
+
+    sub "ೆ" "e"
+    sub "ೇ" "ē"
+    sub "ೈ" "ai"
+
+
+    sub "ೊ" "o"
+    sub "ೋ" "ō"
+    sub "ೌ" "au"
+
+
+    sub "्" ""
+    sub "़" ""
+    sub "್" ""
+    sub "‍" ""
+    sub "‌" ""
+
+
+
+    # Digits
+
+    sub "೦" "0"
+    sub "೧" "1"
+    sub "೨" "2"
+    sub "೩" "3"
+    sub "೪" "4"
+    sub "೫" "5"
+    sub "೬" "6"
+    sub "೭" "7"
+    sub "೮" "8"
+    sub "೯" "9"
+  }
+
+  compose
+}
+
+}

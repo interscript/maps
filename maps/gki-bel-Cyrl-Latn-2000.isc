@@ -1,0 +1,194 @@
+system "GKI:bel-Cyrl:Latn:2000" {
+
+metadata {
+  authority_id gki
+  id 2000
+  language iso-639-2:bel
+  source_script Cyrl
+  destination_script Latn
+  name Transliteration of geographical names of the Republic of Belarus with letters of the Latin alphabet (2000)
+  url https://registr.by/doc/103003
+  creation_date 2000
+  description {    Act name:
+      On approval of the Instructions for the transliteration of geographical names of
+      the Republic of Belarus in letters of the Latin alphabet
+    Type of act, adoption authority, date and number of adoption (publication):
+      Resolution of the State Committee for Land Resources, Geodesy and Cartography of
+      the Republic of Belarus of November 23, 2000 No. 15
+    National Registry Registration Number: 8/4488
+    Date of inclusion in the National Register: 11/30/2000
+    Source (s) of official publication:
+      National Register of Legal Acts of the Republic of Belarus, 2001,
+      No. 3, 8/4488 (published - January 11, 2001)
+  }
+}
+
+tests {
+   "Аршанскi" ->  "Aršanski"
+   "Бешанковічы" ->  "Biešankovičy"
+   "Віцебск" ->  "Viciebsk"
+   "Гомель" ->  "Homiel'"
+   "Гаўя" ->  "Haŭja"
+   "Добруш" ->  "Dobruš"
+   "Ельск" ->  "Jel'sk"
+   "Бабаедава" ->  "Babajedava"
+   "Лепель" ->  "Liepiel'"
+   "Ёды" ->  "Jody"
+   "Вераб'ёвічы" ->  "Vierabjovičy"
+   "Мёры" ->  "Miory"
+   "Жодзiшкi" ->  "Žodziški"
+   "Зэльва" ->  "Zel'va"
+   "Iванава" ->  "Ivanava"
+   "Iўе" ->  "Iŭje"
+   "Лагойск" ->  "Lahojsk"
+   "Круглае" ->  "Kruhlaje"
+   "Любань" ->  "Liuban'"
+   "Магілёў" ->  "Mahilioŭ"
+   "Нясвіж" ->  "Niasviž"
+   "Орша" ->  "Orša"
+   "Паставы" ->  "Pastavy"
+   "Рагачоў" ->  "Rahačoŭ"
+   "Светлагорск" ->  "Svietlahorsk" # original doc Svetlahorsk but it looks like mistake https://en.wikipedia.org/wiki/Svietlahorsk
+   "Талачын" ->  "Talačyn"
+   "Узда" ->  "Uzda"
+   "Шаркаўшчына" ->  "Šarkaŭščyna"
+   "Фаніпаль" ->  "Fanipal'"
+   "Хоцімск" ->  "Chocimsk"
+   "Цёмны Лес" ->  "Ciomny Lies"
+   "Чавусы" ->  "Čavusy"
+   "Шумілiна" ->  "Šumilina"
+   "Раз'езд" ->  "Razjezd"
+   "Чыгірынка" ->  "Čyhirynka"
+   "Чэрвень" ->  "Červien'"
+   "Чачэрск" ->  "Čačersk"
+   "Юхнаўка" ->  "Juchnaŭka"
+   "Гаюціна" ->  "Hajucina"
+   "Любонічы" ->  "Liuboničy"
+   "Ямнае" ->  "Jamnaje"
+   "Баяры" ->  "Bajary"
+   "Вязынка" ->  "Viazynka"
+   "Валяр'яны" ->  "Valiarjany"
+}
+
+dependency "var-Cyrl"
+
+stage main {
+
+  # RULES
+  sub {
+    from "\u0415"
+    to "IE"
+    before bel_consonant
+  }
+  sub {
+    from "\u0435"
+    to "ie"
+    before bel_consonant
+  }
+  sub {
+    from "\u0401"
+    to "IO"
+    before bel_consonant
+  }
+  sub {
+    from "\u0451"
+    to "io"
+    before bel_consonant
+  }
+  sub {
+    from "\u042E"
+    to "IU"
+    before bel_consonant
+  }
+  sub {
+    from "\u044E"
+    to "iu"
+    before bel_consonant
+  }
+  sub {
+    from "\u042F"
+    to "IA"
+    before bel_consonant
+  }
+  sub {
+    from "\u044F"
+    to "ia"
+    before bel_consonant
+  }
+
+  # CHARACTERS
+  parallel {
+    sub "\u0027" ""
+
+    sub "\u0410" "A"
+    sub "\u0411" "B"
+    sub "\u0412" "V"
+    sub "\u0413" "H"
+    sub "\u0414" "D"
+    sub "\u0415" "Je"
+    sub "\u0401" "Jo"
+    sub "\u0416" "Ž"
+    sub "\u0417" "Z"
+    sub "\u0406" "I"
+    sub "\u0419" "J"
+    sub "\u041A" "K"
+    sub "\u041B" "L"
+    sub "\u041C" "M"
+    sub "\u041D" "N"
+    sub "\u041E" "O"
+    sub "\u041F" "P"
+    sub "\u0420" "R"
+    sub "\u0421" "S"
+    sub "\u0422" "T"
+    sub "\u0423" "U"
+    sub "\U040E" "Ŭ"
+    sub "\u0424" "F"
+    sub "\u0425" "Ch"
+    sub "\u0426" "C"
+    sub "\u0427" "Č"
+    sub "\u0428" "Š"
+    sub "\u042B" "Y"
+    sub "\u042D" "E"
+    sub "\u042E" "Ju"
+    sub "\u042F" "Ja"
+
+    sub "\u0430" "a"
+    sub "\u0431" "b"
+    sub "\u0432" "v"
+    sub "\u0433" "h"
+    sub "\u0434" "d"
+    sub "\u0435" "je"
+    sub "\u0451" "jo"
+    sub "\u0436" "ž"
+    sub "\u0437" "z"
+    sub "\u0456" "i"
+    sub "\u0439" "j"
+    sub "\u043A" "k"
+    sub "\u043B" "l"
+    sub "\u043C" "m"
+    sub "\u043D" "n"
+    sub "\u043E" "o"
+    sub "\u043F" "p"
+    sub "\u0440" "r"
+    sub "\u0441" "s"
+    sub "\u0442" "t"
+    sub "\u0443" "u"
+    sub "\u045E" "ŭ"
+    sub "\u0444" "f"
+    sub "\u0445" "ch"
+    sub "\u0446" "c"
+    sub "\u0447" "č"
+    sub "\u0448" "š"
+    sub "\u044B" "y"
+    sub "\u044D" "e"
+    sub "\u044E" "ju"
+    sub "\u044F" "ja"
+  }
+
+  # POSTRULES
+  sub "\u042C" "'"
+  sub "\u044C" "'"
+
+
+}
+}

@@ -1,0 +1,245 @@
+system "BGN-PCGN:pus-Arab:Latn:1968" {
+
+metadata {
+  authority_id bgnpcgn
+  id 1968
+  language iso-639-2:pus
+  source_script Arab
+  destination_script Latn
+  name Romanization of Pashto (1968)
+  url https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693760/ROMANIZATION_OF_PASHTO.pdf
+  creation_date 1968
+  confirmation_date 2017-11
+  description {    Pashto is an Indo-Iranian language and is one of two
+    nationally official languages in Afghanistan and one of
+    five regionally recognised languages in Pakistan. The
+    romanization system presented here may be applied to all
+    Pashto geographical names. Although the BGN/PCGN policy for
+    geographical names in Afghanistan is to apply the BGN/PCGN
+    national system of romanization for Afghanistan (2007),
+    which incorporates Dari elements, when applied to a Pashto
+    geographical name, the romanized results of the BGN/PCGN
+    national system for Afghanistan are the same as those of
+    this Pashto romanization system1 . The Pashto alphabet uses
+    a modified form of the Perso-Arabic script, and contains
+    twelve additional consonants not present in standard
+    Arabic, as well as three additional vowel characters and an
+    additional vowel point. ڼ گ ښ ژ ږ ړ ډ ځ څ چ ټ پ :Consonants
+    ٙ :Point Vowel; ې ۍ ى :Vowels The points used in Arabic to
+    mark short vowels and certain other diacritical marks are
+    not written in Pashto. Consequently, a reference source may
+    sometimes be required to aid correct identification of the
+    standard spellings and proper vowels and elimination of
+    dialectal and idiosyncratic variations. In the interests of
+    clarity, a column showing vowel pointing from Arabic to
+    indicate short vowels has been included in the examples
+    below, alongside the unpointed form that will usually be
+    encountered. However it should be noted that the
+    pronunciation of short vowels will vary. (Note: it is
+    recommended that a font such as Scheherazade, available
+    from www.sil.org, which includes the Unicode extended
+    Arabic sub-range, be used to view this system2 .)
+  }
+
+  notes {
+    note "1. Alif ( ‫ا‬ ) should be romanized as follows\n a. Initially,it indicates that the word begins with a vowel or\n diphthong; the alif itself is not romanized, but rather the\n short vowel it “carries” is romanized; e.g., Aslam Zhrandah\n ‫ه‬ َ‫د‬ ‫ن‬ ‫ژر‬ ‫سلَم‬ َ‫أ‬ ‫ميړ‬ → b. When it carries a\n maddah (‫)آ‬ (see vowel table, row 3), it represents ā;\n e.g., Band. Mīṟ ‫د‬ ‫ن‬ ‫ب‬ َ ‫آب‬ → Āb c. Medially and\n finally it represents ā (see table 2, row 2); e.g., ‫ۍ‬\n ‫ماڼ‬ → Māṉêy d. Medially and finally in words of Arabic\n origin, alif may serve as the bearer of hamzah, e.g.\n ‫رأس‬ → ra’s. See also note 4."
+
+    note "2. The characters tsē ( ‫څ‬ ) and dzē ( ‫ځ‬ ) may be\n romanized t͡ s and d͡ z (the combining double breve (\n Unicode 0361) appearing over the digraph) when for special\n reasons it is desired that confusion be avoided between\n ‫ت‬ (t) plus ‫س‬ (s) and between ‫د‬ (d) plus ‫ز‬ (z),\n respectively."
+
+    note "3. Occasionally the character sequences ‫ه‬ ‫ك‬ , ‫ه‬ ‫ز‬ ,\n ‫ه‬ ‫س‬ , and ‫ه‬ ‫گ‬ occur . They may be romanized k·h, z·\n h, s·h, and g·h in order to differentiate these\n romanizations from the digraphs kh, zh, sh, and gh, which\n are used to represent the characters ‫خ‬ , ‫ژ‬, ‫ش‬ , and\n ‫غ‬ respectively ."
+
+    note "4. Hamzah ( ‫ء‬ ) should be romanized as follows a. In\n word-initial position, where it will appear either above or\n below alif ( indicates a short vowel and should not itself\n be romanized. romanized by an apostrophe, e.g. ‫أ‬ or\n ‫إ‬ ), it In other positions it should be ‫جُزء‬ → juz’. b.\n Yeh with hamzah ( ‫ئ‬ ) should be romanized êy, unless it\n represents the compound (iẕāfah) morpheme, in which case it\n is romanized according to note 9 below."
+
+    note "5. The division of words utilized in Pashto writing is\n followed in romanization, except that the elements –ābād, -\n khwā, -shahr, -zādah, -zay and -ullāh are always romanized\n as part of the preceding word, e.g. ‫آباد‬ ‫ت‬ ‫م‬ َ ْ‫ح‬\n ‫ر‬ َ → Raḩmatābād and ‫الله‬ ‫ت‬ ‫م‬ َ ْ‫ح‬ ‫ر‬ َ →\n Raḩmatullāh. However, when the word for God ( ‫الله‬ )\n appears as a standalone word it should be written Allāh.\n Note also the “dagger alif” ( ٙ) above the second ‫ل‬ (lām)\n in the word ‫الله‬ ; this, like the short vowels, is not\n written in Pashto but should be romanized ā, like a full-\n size alif. Persian derivational endings such as –vand and\n endings of Turkish origin such as –lar, -lī, -lū, -i, -u, -\n si, and –su, should be written together with the preceding\n word."
+
+    note "6. The Pashto preposition ‫د‬ should be romanized dê in\n agreement with its pronunciation, despite the fact that\n it is sometimes pointed with kasrah ( ٙ )."
+
+    note "7. In names of Arabic origin, the l of the definite article\n al/ul is assimilated before the ‘sun letters’ t, s̄ , d,\n z̄ , r, z, s, sh, ş, ẕ, ţ, z̧ , l and n. In romanization,\n the article will be written al or its assimilated\n equivalent in name-initial position but ul or its\n assimilated equivalent elsewhere; the article should be\n separated from the name it precedes and should not be\n capitalized, except at the beginning of a name, e.g. جَبَل\n السَرَاج → Jabal us Sarāj"
+
+    note "8. In Arabic names, a shaddah, ٙ is used to denote the\n doubling of a particular consonant character, e.g. ‫مَّد‬\n َ‫ح‬ ‫م‬ ُ → Muḩammad. However, in Pashto this ‘doubling’\n is frequently omitted in both Perso-Arabic script and the\n resulting romanization. Guidance on doubling may be taken\n from an authoritative names source, such as an Afghan\n government source or Pashto dictionary; for example, it is\n usual to see Ḩājī without and ‘Abbās with the doubled\n consonant. The doubled y consonant is almost always\n retained, as in Sayyid or Qayyūm"
+
+    note "9. The iẕāfah morpheme is not a grammatical feature of\n Pashto and, if encountered in a linguistically hybrid\n geographical name (i.e. combining features of both Pashto\n and Dari), it should be treated according to the BGN/PCGN\n national system of romanization for Afghanistan, 2007, as –\n e, unless the preceding word ends with a silent heh (‫)ه‬\n or a vowel when it should be shown – ye, e.g. 10. The\n character sequence ‫خو‬ , ‫صار‬ ‫ح‬ ِ ‫غر‬ → Ghar-e Ḩişār;\n ‫و‬ ‫ن‬ َ ‫ه‬ ٔ ‫لع‬ َ ‫ق‬ َ → when followed by ‫ا‬ or\n ‫ی‬ , Qal‘ah-ye Now."
+
+    note "10. The character sequence خو when followed by ‫ا‬ or\n ‫ی‬ ,should be romanized khw, although the w is either not\n pronounced, or only weakly pronounced; e.g. ‫خواجه‬ →\n khwājah."
+
+    note "11. An inventory of letter-diacritic combinations in addition to the unmodified letters of the\n basic Roman script is\n ‘ (U+2018)\n ʼ (U+2019)\n Ā (U+0100)\n ā (U+0101)\n Á (U+00C1)\n á (U+00E1)\n Ḏ (U+0044+0031)\n ḏ (U+0064+00031)\n Ē (U+0112)\n ē (U+0113)\n Ê (U+00CA)\n ê (U+00EA)\n Ḩ (U+1E28)\n ḩ (U+1E29)\n Ī (U+012A)\n ī (U+012B)\n N̄ (U+004E+0304)\n n̄ (U+004E+0304)\n Ō (U+014C)\n ō (U+014D)\n Ṟ (U+0052+0031)\n ṟ (U+0072+0031)\n Ş (U+015E)\n ş (U+015F)\n S̄ (U+0053+0304)\n s̄ (U+0073+0304)\n Ṯ (U+0054+0031)\n ṯ (U+0074+0031)\n Ţ (U+0162)\n ţ (U+0163)\n Ū (U+016A)\n ū (U+016B)\n Z̧ (U+005A+0327)\n z̧ (U+007A+0327)\n Z̄ (U+005A+0304)\n z̄ (U+007A+0304)\n Ẕ (U+005A+0331)\n ẕ (U+007A+0331)\n Z͟ H (U+005A+0048+035F)\n z͟ h (U+007A+0068+035F)"
+  }
+}
+
+tests {
+   "بَغْلان" ->  "Baghlān"
+   "پُوټَكَى" ->  "Pōṯakay"
+   "شِيرِين تَگَاب" ->  "Shīrīn Tagāb"
+   "کُوْټ" ->  "Kōṯ"
+   "ثَابِر" ->  "S̄ābir"
+   "جَلال آبَاد" ->  "Jalālābād"
+   "چَارِيكَار" ->  "Chārīkār"
+   "ځَدْرَاڼ" ->  "Dzadrāṉ"
+   "څَوکۍ" ->  "Tsowkêy"
+   "حَضْرَتِ إِمَام" ->  "Ḩaẕrat-e Imām"
+   "خُوْسْت" ->  "Khōst"
+   "سْپِين بُوْلْدَک" ->  "Spīn Bōldak"
+   "ډَنْډ وَ پَتَان" ->  "Ḏanḏ Wa Patān"
+   "كَنْدَهَار" ->  "Kandahār"
+   "أَنْدَړ" ->  "Andaṟ"
+   "كُنْدُز" ->  "Kunduz"
+   "مِير أَسْلَم ژْرَنْدَه" ->  "Mīr Aslam Zhrandah"
+   "ږِيرَه" ->  "Z͟hīrah"
+   "سَمَنْگَان" ->  "Samangān"
+   "كښٙتَه كَلا" ->  "Ks͟hêtah Kalā"
+   "قَيْصَار" ->  "Qayşār"
+   "فَيض آبَاد" ->  "Faīẕābād"
+   "حَضْرَتِ سُلْطَان" ->  "Ḩaẕrat-e Sulţān"
+   "ظَاهِر كَلا" ->  "Z̧āhir Kalā"
+   "پُلِ عَلَم" ->  "Pul-e ‘Alam"
+   "غَزْنِي" ->  "Ghaznī"
+   "مَزَارِ شَرِيف" ->  "Mazār-e Sharīf"
+   "قَيْصَار" ->  "Qayşār"
+   "كَنْدَهَار" ->  "Kandahār"
+   "گَرْدېز" ->  "Gardēz"
+   "کَابُل" ->  "Kābul"
+   "مَيمَنَه" ->  "Maīmanah"
+   "خَان آبَاد" ->  "Khānābād"
+   "مَاڼۍ" ->  "Māṉêy"
+   "وَاخَان" ->  "Wākhān"
+   "يَنْگِي قَلعَه" ->  "Yangī Qal‘ah"
+   "جَلال آبَاد" ->  "Jalālābād"
+   "مُرْغَاب کَابُل" ->  "Murghāb Kābul"
+   "گٙردُون" ->  "Gêrdōn"
+   "آب بَنْد" ->  "Āb Band"
+   "سْپِين بُوْلْدَک" ->  "Spīn Bōldak"
+   "جَوزجَان" ->  "Jowzjān"
+   "گَرْدېز" ->  "Gardēz"
+   "مَیدان شَهْر" ->  "Maīdān Shahr"
+   "ډَنْډِ سُفْلىٰ" ->  "Ḏanḏ-e Suflá"
+   "جَبَل السَرَاج" ->  "Jabal us Sarāj"
+}
+
+dependency "bgnpcgn-prs-Arab-Latn-2007" as arablatn
+
+stage main {
+
+  run  map.arablatn.stage.main
+
+  # CHARACTERS
+  parallel {
+
+    sub "\u0650" "i"
+    sub "\u064f" "u"
+
+    sub {
+    from "\u0650" + boundary
+    to "-e"
+  }
+
+    sub {
+    from space + "\u0627\u0644\u0644\u0651\u064e\u0647"
+    to "ullāh"
+  }
+    sub {
+    from space + "\u062E\u0648\u0627"
+    to "khwā"
+  }
+    sub {
+    from space + "\u0634\u064E\u0647\u0631"
+    to "shahr"
+  }
+    sub {
+    from space + "\u0632\u0627\u062F\u0629"
+    to "zādah"
+  }
+    sub {
+    from space + "\u0632\u064E\u064a"
+    to "zay"
+  }
+    sub "\u0652" ""
+    sub "\u0659" "ê"
+
+    # Sun letters
+    sub {
+    from boundary + "\u0627\u0644\u062a" + maybe("\u0651")
+    to "ut t"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u062b" + maybe("\u0651")
+    to "us̄ s̄"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u062f" + maybe("\u0651")
+    to "ud d"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0630" + maybe("\u0651")
+    to "uz̄ z̄"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0631" + maybe("\u0651")
+    to "ur r"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0632" + maybe("\u0651")
+    to "uz z"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0633" + maybe("\u0651")
+    to "us s"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0634" + maybe("\u0651")
+    to "ush sh"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0635" + maybe("\u0651")
+    to "uş ş"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0636" + maybe("\u0651")
+    to "uẕ ẕ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0637" + maybe("\u0651")
+    to "uţ ţ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0638" + maybe("\u0651")
+    to "uz̧ z̧"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0644" + maybe("\u0651")
+    to "ul l"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0646" + maybe("\u0651")
+    to "un n"
+  }
+
+    sub "\u0626" "êy"
+  }
+
+  # POSTRULES
+  sub {
+    from any("\u0061".."\uFFFF")
+    to upcase
+    before boundary
+    not_before boundary + any("‘’'-")
+  }
+  # don't capitalize defined article in the middle of a sentence
+  sub " Ut T" " ut T"
+  sub " Us̄ S̄" " us̄ S̄"
+  sub " Ud D" " ud D"
+  sub " Uz̄ Z̄" " uz̄ Z̄"
+  sub " Ur R" " ur R"
+  sub " Uz Z" " uz Z"
+  sub " Us S" " us S"
+  sub " As S" " us S"
+  sub " Ush Sh" " ush Sh"
+  sub " Uş Ş" " uş Ş"
+  sub " Uẕ Ẕ" " uẕ Ẕ"
+  sub " Uţ Ţ" " uţ Ţ"
+  sub " Uz̧ Z̧" " uz̧ Z̧"
+  sub " Ul L" " ul L"
+  sub " Un n" " un N"
+
+  compose
+}
+}

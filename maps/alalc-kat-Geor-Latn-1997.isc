@@ -1,0 +1,107 @@
+system "ALA-LC:kat-Geor:Latn:1997" {
+
+metadata {
+  authority_id alalc
+  id 1997
+  language iso-639-2:kat
+  source_script Geor
+  destination_script Latn
+  name Romanization Table -- Georgian Mkhedruli (1997)
+  url http://catdir.loc.gov/catdir/cpso/romanization/georgian.pdf
+  creation_date 1997
+  confirmation_date 1997
+  description {    Values are shown for the older Khutsuri and the modern Mkhedruli alphabets.
+    There are no upper case letters in Mkhedruli.
+  }
+  notes {
+  }
+}
+
+tests {
+   "ხაოფსე" ->  "xaopʻse"
+   "ჭლოუ" ->  "člou"
+   "ჩოხულდი" ->  "čʻoxuldi"
+   "ქვემო ლინდა" ->  "kʻvemo linda"
+   "ტამკვაჩ იგვავერა" ->  "tamkvačʻ igvavera"
+   "სვანეთი" ->  "svanetʻi"
+   "საცხვარისი" ->  "sacʻxvarisi"
+   "მუხრან-თელეთი" ->  "muxran-tʻeletʻi"
+   "მუცდი" ->  "mucʻdi"
+   "ლეჩხუმი" ->  "lečʻxumi"
+   "ვერხნაია მწარა" ->  "verxnaia mcara"
+   "ეგრისის ქედი" ->  "egrisis kʻedi"
+   "დოჩარიფშა" ->  "dočʻaripʻša"
+   "ბოლოკო" ->  "boloko"
+   "აჭანდარა" ->  "ačandara"
+   "აუალიცა" ->  "aualicʻa"
+   "აკალამრა" ->  "akalamra"
+   "ლასილი" ->  "lasili"
+   "გუბაზეული" ->  "gubazeuli"
+   "ბაყაყი" ->  "baqaqi"
+   "ძროხა" ->  "żroxa"
+   "ჰაერი" ->  "haeri"
+   "ჟოლო" ->  "žolo"
+   "ჯართი" ->  "jartʻi"
+   "ღრმაღელე" ->  "ġrmaġele"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "\u10d0" "a"
+    sub "\u10d1" "b"
+    sub "\u10d2" "g"
+    sub "\u10d3" "d"
+    sub "\u10d4" "e"
+    sub "\u10d5" "v"
+    sub "\u10d6" "z"
+
+    sub "\u10f1" "ē"
+
+    sub "\u10d7" "tʻ"
+    sub "\u10d8" "i"
+    sub "\u10d9" "k"
+    sub "\u10da" "l"
+    sub "\u10db" "m"
+    sub "\u10dc" "n"
+
+    sub "\u10f2" "y"
+
+    sub "\u10dd" "o"
+    sub "\u10de" "p"
+    sub "\u10df" "ž"
+    sub "\u10e0" "r"
+    sub "\u10e1" "s"
+    sub "\u10e2" "t"
+
+    sub "\u10f3" "w"
+
+    sub "\u10e3" "u"
+    sub "\u10e4" "pʻ"
+    sub "\u10e5" "kʻ"
+    sub "\u10e6" "ġ"
+    sub "\u10e7" "q"
+    sub "\u10e8" "š"
+    sub "\u10e9" "čʻ"
+    sub "\u10ea" "cʻ"
+    sub "\u10eb" "ż"
+    sub "\u10ec" "c"
+    sub "\u10ed" "č"
+    sub "\u10ee" "x"
+
+    sub "\u10f4" "x̣"
+
+    sub "\u10ef" "j"
+    sub "\u10f0" "h"
+
+    sub "\u10f5" "ō"
+
+    sub "\u10f6" "f"
+    sub "\u10f7" "ĕ"
+    sub "\u10f8" "ʻ"
+  }
+
+}
+
+}

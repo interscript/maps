@@ -1,0 +1,78 @@
+system "ODNI:kat-Geor:Latn:2015" {
+
+metadata {
+  authority_id odni
+  id 2015
+  language iso-639-2:kat
+  source_script Geor
+  destination_script Latn
+  name ICS-630-01 Romanization of Georgian Personal Names (2015)
+  source ICS-630-01 Annex E
+  creation_date 2015
+  confirmation_date 2015
+  description {    This system is the Intelligence Community standard for the transliteration of Georgian names that
+    will be applied to all final written reports and products for IC consumers. It is not intended to
+    eliminate variations of a name that can contribute forensic information. Rather, it is to provide an
+    IC standard Romanized (English) transliteration from Georgian that can then be linked to forensic
+    information in ways that will help identify the referent of the name.
+  }
+
+  notes {
+  }
+}
+
+tests {
+   "ბაყაყი" ->  "baqaqi"
+   "ძროხა" ->  "dzrokha"
+   "ჰაერი" ->  "haeri"
+   "ჟოლო" ->  "zholo"
+   "ჯართი" ->  "jarti"
+   "ღრმაღელე" ->  "ghrmaghele"
+   "ზვიად გამსახურდია" ->  "zviad gamsakhurdia"
+   "ედუარდ შევარდნაძე" ->  "eduard shevardnadze"
+   "მიხეილ სააკაშვილი" ->  "mikheil saakashvili"
+   "გიორგი მარგველაშვილი" ->  "giorgi margvelashvili"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "\u10d0" "a"
+    sub "\u10d1" "b"
+    sub "\u10d2" "g"
+    sub "\u10d3" "d"
+    sub "\u10d4" "e"
+    sub "\u10d5" "v"
+    sub "\u10d6" "z"
+    sub "\u10d7" "t"
+    sub "\u10d8" "i"
+    sub "\u10d9" "k"
+    sub "\u10da" "l"
+    sub "\u10db" "m"
+    sub "\u10dc" "n"
+    sub "\u10dd" "o"
+    sub "\u10de" "p"
+    sub "\u10df" "zh"
+    sub "\u10e0" "r"
+    sub "\u10e1" "s"
+    sub "\u10e2" "t"
+    sub "\u10e3" "u"
+    sub "\u10e4" "p"
+    sub "\u10e5" "k"
+    sub "\u10e6" "gh"
+    sub "\u10e7" "q"
+    sub "\u10e8" "sh"
+    sub "\u10e9" "ch"
+    sub "\u10ea" "ts"
+    sub "\u10eb" "dz"
+    sub "\u10ec" "ts"
+    sub "\u10ed" "ch"
+    sub "\u10ee" "kh"
+    sub "\u10ef" "j"
+    sub "\u10f0" "h"
+  }
+
+}
+
+}

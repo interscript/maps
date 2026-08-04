@@ -1,0 +1,37 @@
+system "BGN:kor-Kore:Latn:1943" {
+
+metadata {
+  authority_id bgn
+  id 1943
+  language iso-639-2:kor
+  source_script Kore
+  destination_script Latn
+  name Korean McCune-Reischauer (Korean to Latin) (1943 Agreement)
+  url 
+  creation_date 1943
+  adoption_date 
+  description 
+
+  notes {
+  }
+}
+
+tests {
+   "서울" ->  "Sŏul"
+   "平壤" ->  "P’yŏngyang"
+   "釜山" ->  "Pusan"
+   "大邱" ->  "Taegu"
+   "慶尚南道" ->  "Kyŏngsangnamdo"
+}
+
+dependency "var-kor-Kore-Hang-2013" as korehang
+dependency "bgn-kor-Hang-Latn-1943" as hanglatn
+
+stage main {
+
+  run  map.korehang.stage.main
+  run  map.hanglatn.stage.main
+  compose
+  title_case
+}
+}

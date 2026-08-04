@@ -1,0 +1,389 @@
+system "ODNI:fas-Arab:Latn:2015" {
+
+metadata {
+  authority_id odni
+  id 2015
+  language iso-639-2:fas
+  source_script Arab
+  destination_script Latn
+  name ICS-630-01 Romanization of Persian Farsi Dari Personal Names (2015)
+  source ICS-630-01 Annex J
+  creation_date 2015
+  confirmation_date 2018-11
+  description {    This system is the Intelligence Community (IC) standard for
+    the transliteration of Persian (Farsi)
+    and Dari names that is applied to all final written reports
+    and products for IC consumers. It is not
+    intended to eliminate variations of a name that can
+    contribute forensic information. Rather, it is
+    to provide an IC standard Romanized (English)
+    transliteration from Persian (Farsi) and Dari that
+    can then be linked to forensic information in ways that
+    will help identify the referent of the
+    name.
+
+    In cases where an individual’s name has already been
+    transliterated in a variant spelling, the IC
+    Standard spelling should appear first, followed by the
+    variant spelling(s) in parentheses at the
+    first usage. In addition, if the original Perso-Arabic
+    script spelling is known, that spelling should
+    also appear in parentheses following the name, if possible,
+    following best practices of the issuing
+    organization and taking into consideration information
+    system capabilities. This convention is
+    designed to ensure that vital forensic information is not
+    lost while maintaining consistency.
+
+    For names of individuals who are not part of the Persian-(
+    Farsi) or Dari-speaking community,
+    but whose names are encountered in Farsi or Dari, use the
+    relevant IC transliteration standard for
+    names from that language (e.g., Mikhail, Yitzhak, Abu-
+    Murtada). Spell names of individuals
+    from languages that are written in Roman letters as they
+    are spelled in those languages (e.g.,
+    George Clooney, Jorge Garcia, Georges Pompidou).
+    In the case of active senior government officials in the
+    online CIA World Factbook and the
+    online directory of Chiefs of State and Cabinet Members of
+    Foreign Governments, the spellings
+    given in these online reference works should be used in
+    place of the IC Standard, with the IC
+    Standard included as a variant in parentheses at the first
+    usage. For any individual who has at one
+    time been listed in the Factbook or Chiefs of State
+    directory but who no longer appears in those
+    resources (i.e., is no longer a government official), the
+    IC Standard spelling should appear first,
+    with the spelling, if known, as it previously appeared in
+    those resources listed within parentheses
+    at the first usage (e.g., former president Mahmud
+    Ahmadinezhad (Ahmadi-Nejad).
+
+    The primary goal is to produce a consistent Romanized
+    transcription of names that is specifically
+    readable to the English-speaking non-specialist. The system
+    uses the 26 letters of the standard
+    (English) Roman alphabet plus the apostrophe and hyphen.
+    Some ambiguities in the Romanized
+    form will occur without the use of diacritics. However,
+    within the context of a report, where
+    additional information about the individual is provided,
+    the referent will be clearly identified.
+    This system will be used in conjunction with online tools,
+    name dictionaries, and lists containing
+    conventional spellings of names of well-known individuals.
+  }
+
+  notes {
+    note "      Alef maqsura (final yeh pronounced as a long “a”) should\n      be written “a” as in “Musa.”"
+
+    note "      Digraphs: No distinction is drawn between digraphs such\n      as sh and single contiguous letters\n      (e.g., s followed by h)."
+
+    note "      Long/short vowels: There is no distinction made between\n      long and short a. E.g., Farzad (the\n      first a is short, the second long)."
+
+    note "      Diphthongs: The diphthong such as in the name Hosein is\n      written ei. Following the\n      predominant lack of pronunciation of the ow diphthong in\n      Farsi, this diphthong will not be\n      represented (Khosro, not Khosrow)."
+
+    note "      Apostrophe: The apostrophe is used in three cases: 1) to\n      represent a name-internal or terminal\n      hamzeh or ein (Mo’men, Ghane’), 2) to represent the first\n      yeh (ی (in a double yeh (یی (\n      construction (since رضایی is simply an orthographic variant\n      of رضائی – both are rendered\n      Reza’i), and 3) to represent the alef (ا (in the special\n      case of a name ending in ای ه) e.g.,\n      Badreh’i, Ganjeh’i). Name-initially, however, neither\n      hamzeh nor ein are indicated in\n      transliteration (Abdorrahman, not 'Abdorrahman)."
+
+    note "      Double consonants: Double consonants represented by the\n      tashdid are shown by doubling the\n      Roman letter: Mo'azzami, Tavakkoli, Sajjad. Exceptions: Ein\n      and consonants represented by\n      Roman digraphs (e.g., sh, ch) are not doubled (Mobasher,\n      not Mobashsher). Double letters\n      are only used for tashdid (Hosein, not Hossein) or to\n      reflect “sun-letter” assimilation (see\n      below). Special care should be taken when possible to\n      discriminate between doubled and\n      non-doubled letters in names that are otherwise\n      indistinguishable in their transliterated forms:\n      Hasan (حسن (vs. Hassan (حسان("
+
+    note "      Hyphens: A hyphen will be used for compound\n      last names to connect major name elements (e.g., Raja’i-\n      Khorasani, Tabataba’i-Shirazi, Soleimani-Meimandi). No\n      spaces are to be used for last names to reduce ambiguity (\n      with the exception of certain Arabic-origin constructions\n      as specified below). Hyphens are not used to attach minor\n      elements and suffixes/prefixes, or to show ezafeh\n      constructions in or between names (Shahrbabak, not Shahr-e\n      Babak). It should be understood that when a full compound\n      last name is available, the second major element is\n      typically omitted for normal use, while the first major\n      element of the last name is preferred. It is thus\n      recommended as a best practice for reporting that both of\n      these names, if known, be included at the first instance,\n      and only the family name be used thereafter in the report (\n      unless it is known that a specific individual is commonly\n      known otherwise). E.g., “Mohammad Mahmudi-Tehrani (\n      hereafter Mahmudi).”"
+
+    note "      Compound first names will be written as distinct words:\n      Ali Reza (not Alireza or Ali-Reza);\n      Mohammad Hosein (not Mohammadhosein or Mohammad-Hosein),\n      with the exception of cases identified below."
+
+    note "      Arabic-origin names that incorporate the word “Allah” are\n      transliterated as one word, with the letter ‘o’ replacing the\n      alef in Allah (Azizollah, Rahimollah)."
+
+    note "      Name-internal Arabic definite article \"al\" (‫)ال‬: Common\n      in many names borrowed\n      from Arabic, the transliteration should follow the Arabic\n      rules for “sun letter” assimilation in spoken form and\n      reflect the nominative case. That is: Abdorrahman, not Abd-\n      al-Rahman. (The Arabic sun letters are: ‫ت‬،‫ث‬،‫د‬،‫ذ‬،\n      ‫ر‬، ‫ز‬،‫س‬،‫ش‬،‫ص‬،‫ض‬،‫ط‬،‫ظ‬،‫ل‬،‫ن‬ . These correspond with\n      d, l, n, r, s, sh, t, and z.) Note that the moon letters (\n      i.e., all other Arabic letters) are not assimilated (e.g.,\n      Abdolhasan, Abolfazl). Note also that the “Abdollah” and\n      “Abdol + attribute of Allah” names are written as a single\n      word, as are other names that contain the definite article:\n      Shamsoddin (not Shams-al-Din), Nezamoddin, etc."
+
+    note "      Name-initial Arabic definite article \"al\" (‫)ال‬: For\n      Arabic-origin names starting with the definite article “al” (‫)\n      ال‬, follow the Arabic standard of al-Sisi (‫)الصیصی‬ (not\n      Alsisi or Assisi) and forego sun-letter assimilation."
+
+    note "      Arabic \"family marker\" of Al (‫)آل‬: For Arabic-origin\n      names starting with the \"family marker\" of Al (‫)آل‬,\n      follow the Arabic standard of Al Davud (‫داود‬ ‫)آل‬ (not\n      Aldavud or Aledavud)."
+
+    note "      Kunyas: In the rather rare case where\n      a Persian uses a kunya (a name for an adult normally\n      derived from his or her eldest child, and sometimes\n      employed as a nom de guerre), this name will be rendered\n      with a space separating the two elements (Abu Hosein, Abu\n      Ghasem). Note that this does not apply when the person's\n      given or family name was derived from a predecessor's\n      kunya. In these cases, the leading element should be\n      treated as a prefix as indicated below (Abuhosein[i],\n      Abughasem[i])."
+
+    note "      Persian names of non-Persian origin that are\n      no longer considered foreign by Farsi speakers (commonly of\n      Arabic or Hebrew origin) follow this IC transliteration\n      standard for Persian. E.g., Yusef (not Joseph), Davud (not\n      David), Reza (not Rida), Abutorab (not Abu-Turab),\n      Abolfazl (not Abu-al-Fadl). However, in the uncommon event\n      the name of an Iranian with a non-Persian name appears in\n      Farsi (possibly as a result of mixed parentage), it is\n      spelled according to the standard Western tradition or the\n      appropriate IC standard: James, Georges, Pedro, Jiang."
+  }
+}
+
+tests {
+   "مُوسَى" ->  "musa"
+   "مُؤمِن" ->  "mo’men"
+   "رِضايي" ->  "reza’i"
+   "مُبَشِّر" ->  "mobasher"
+   "حَسَّان" ->  "hassan"
+   "حَسَن" ->  "hasan"
+   "صَفَّار" ->  "saffar"
+   "صَفَر" ->  "safar"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+
+
+
+    # special rules
+
+    sub {
+    from space
+    to ""
+    after "\u0622\u0628\u064E\u0627\u062F"
+  }
+    sub "\ufdf2" "Allah"
+    sub {
+    from space + "\u0627\u0644\u0644\u0651\u064e\u0647"
+    to "ollah"
+  }
+
+    sub "\u0652" ""
+    sub "\u0659" "ê"
+
+    sub "\u064e\u064a\u0652" "ay"
+    sub "\u0649\u0670" "á"
+    sub "\u0674" "-e"
+    sub "\u0654" "-e"
+    # - '-ye'
+
+
+    # ta' marboota
+    sub "\u0629" "eh"
+
+
+
+    sub "\u0626" "’"
+    sub "\u0624" "’"
+    sub "\u0623" ""
+    sub "\u0625" ""
+
+    # See note B
+    sub {
+    from boundary + "\u0627\u0644"
+    to "al "
+  }
+    sub {
+    from boundary + "\u0622\u0644"
+    to "Al "
+  }
+    # '\uFE8E' : ''  # ﺎ
+
+    # Sun letters
+    sub {
+    from boundary + "\u0627\u0644\u062a" + maybe("\u0651")
+    to "at t"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u062b" + maybe("\u0651")
+    to "as s"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u062f" + maybe("\u0651")
+    to "ad d"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0630" + maybe("\u0651")
+    to "az z"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0631" + maybe("\u0651")
+    to "ar r"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0632" + maybe("\u0651")
+    to "az z"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0633" + maybe("\u0651")
+    to "as s"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0634" + maybe("\u0651")
+    to "ash sh"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0635" + maybe("\u0651")
+    to "as s"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0636" + maybe("\u0651")
+    to "az z"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0637" + maybe("\u0651")
+    to "at t"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0638" + maybe("\u0651")
+    to "az z"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0644" + maybe("\u0651")
+    to "al l"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0646" + maybe("\u0651")
+    to "an n"
+  }
+
+    # Farsi Vowel (Pointing)
+    sub "\u0622" "a"
+    sub "\u064e" "a"
+    sub {
+    from "\u0627"
+    to ""
+    before "\u064e"
+  }
+    sub {
+    from "\u0627"
+    to "a"
+    not_before boundary
+  }
+    sub {
+    from boundary + "\u0627\u064e"
+    to "a"
+  }
+    sub {
+    from boundary + "\u0627\u064f"
+    to "o"
+  }
+    sub {
+    from boundary + "\u0627\u0650"
+    to "e"
+  }
+
+    sub "\u064f" "o"
+    sub "\u064f\u0648" "u"
+    # '\u064e\u0648' : 'ow'  # ـَو
+    # '\u064e\u0648\u0652' : 'aw'  # ـَوْ
+
+
+    sub "\u0650" "e"
+    sub "\u0650\u064a" "i"
+    sub "\u0650\u06cc" "i"
+    sub "\u0650\u064a\u0651\u064e" "iy"
+    sub "\u0650\u06cc\u0651\u064e" "iy"
+    sub {
+    from "\u0650\u064a"
+    to "iy"
+    after any(["\u064e", "u064f"])
+  }
+    # '\u064e\u064a' : 'aī'  # ـَي
+    # '\u064e\u06cc' : 'aī'  # ـَي
+    # '\u064e\u0649' : 'ay'  # ـَى fatha followed by ى which is ا not ي
+
+    # additional symbols
+
+    # shadda
+
+    sub "\u0628\u0651" "bb"
+    sub "\u062a\u0651" "tt"
+    sub "\u062b\u0651" "ss"
+    sub "\u062c\u0651" "jj"
+    sub "\u062d\u0651" "hh"
+    sub "\u062e\u0651" "kh"
+    sub "\u062f\u0651" "dd"
+    sub "\u0630\u0651" "zz"
+    sub "\u0631\u0651" "rr"
+    sub "\u0632\u0651" "zz"
+    sub "\u0633\u0651" "ss"
+    sub "\u0634\u0651" "sh"
+    sub "\u0635\u0651" "ss"
+    sub "\u0636\u0651" "zz"
+    sub "\u0637\u0651" "tt"
+    sub "\u0638\u0651" "zz"
+    sub "\u063a\u0651" "gh"
+    sub "\u0641\u0651" "ff"
+    sub "\u0642\u0651" "gh"
+    sub "\u0643\u0651" "kk"
+    sub "\u0644\u0651" "ll"
+    sub "\u0645\u0651" "mm"
+    sub "\u0646\u0651" "nn"
+    sub "\u0647\u0651" "hh"
+    sub "\u0648\u0651" "vv"
+    sub "\u064a\u0651" "yy"
+
+    sub {
+    from "\u0621"
+    to ""
+    before boundary
+  }
+    sub "\u0621" "’"
+
+    # FROM NOTES
+
+    sub "\u064e\u0649" "a"
+    sub "\u0649" "a"
+
+    sub "\u064a\u064a" "’i"
+    sub "\u06cc\u06cc" "’i"
+
+    sub {
+    from "\u0627\u064a" + boundary
+    to "’i"
+  }
+    sub {
+    from "\u0627\u06cc" + boundary
+    to "’i"
+  }
+
+    # Farsi consonant characters
+
+    sub "\u0628" "b"
+    sub "\u067E" "p"
+    sub "\u062a" "t"
+    # '\u067C': 'ṯ'  # ټ
+    sub "\u062B" "s"
+    sub "\u062c" "j"
+    sub "\u0686" "ch"
+
+    # # The variant form ج is seen infrequently and does not have a
+    # # single Unicode encoding.
+    # '\u0681': 'dz' # Note 2 # ‫ځ‬
+
+    # '\u0685': 'ts' # Note 2 # ‫څ
+
+    sub "\u062d" "h"
+    sub "\u062e" "kh"
+    sub "\u062f" "d"
+    # '\u0689' : 'ḏ' # ‫ډ‬
+    sub "\u0630" "z"
+    sub "\u0631" "r"
+    # '\u0693' : 'ṟ'   # ړ
+    sub "\u0632" "z"
+    sub "\u0698" "zh"
+    # '\u0696' : 'z͟h'  # ږ
+    sub "\u0633" "s"
+    # '\u069A' : 's͟h'  # ښ
+    sub "\u0634" "sh"
+    sub "\u0635" "s"
+    sub "\u0636" "z"
+    sub "\u0637" "t"
+    sub "\u0638" "z"
+    sub "\u0639" "‘"
+    sub {
+    from "\u0639"
+    to ""
+    before boundary
+  }
+    sub "\u063a" "gh"
+    sub "\u0641" "f"
+    sub "\u0642" "gh"
+    sub "\u0643" "k"
+    # '\u06A9' : 'k' # ک
+    sub "\u06AF" "g"
+    sub "\u0644" "l"
+    sub "\u0645" "m"
+    sub "\u0646" "n"
+    # '\u06BC' : 'ṉ' # ڼ
+    sub "\u0647" "h"
+    sub "\u0648" "v"
+    sub "\u064a" "y"
+    sub "\u0649" "y"
+    sub "\u06D0" "ē"
+    sub "\u06CD" "êy"
+  }
+
+}
+}

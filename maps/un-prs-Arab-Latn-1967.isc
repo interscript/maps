@@ -1,0 +1,358 @@
+system "UN:prs-Arab:Latn:1967" {
+
+metadata {
+  authority_id un
+  id 1967
+  language iso-639-3:prs
+  # prs stands for Dari (https://iso639-3.sil.org/code/prs&_ga=GA1.2.2054538372.1574092823)
+  source_script Arab
+  destination_script Latn
+  name Romanization of Persian (1967)
+  url http://www.eki.ee/wgrs/v2_2/rom1_fa.htm
+  creation_date 1967
+  confirmation_date 01-2003
+  description {    The United Nations recommended system was approved in 1967 (
+    I/13), based on the official system adopted by Iran and
+    published in its English version as Transliteration of
+    Farsi Geographic Names to Latin Alphabet (September 1966).
+    The romanization table was also published as an annex to
+    the Toponymic Guidelines for the Islamic Republic of Iran
+    in 2000 (Toponymic Guidelines for map and other editors –
+    Revised edition 1998. Submitted by the Islamic Republic of
+    Iran. UNGEGN, 20th session. New York, 17-28 January 2000,
+    Working Paper No. 41.).
+
+    The system is used in the Islamic Republic of Iran and in
+    international cartographic products.
+
+    Persian (Farsi) uses the Perso-Arabic script that is
+    written from right to left. The Persian script usually
+    omits vowel points and diacritical marks from writing which
+    makes it difficult to obtain uniform results in the
+    romanization of Persian. The romanization is generally
+    reversible though there are some ambiguous letter
+    sequences (kh, sh, th, zh) which also may represent the
+    romanized values of two Persian characters in addition to
+    the respective single ones.
+  }
+
+  notes {
+    note "A Word-initially."
+    note "B Not romanized; marks absence of the vowel."
+    note "C Doubling of the consonant letter."
+    note "D After a consonant (excl. -ah)."
+    note "E After a vowel (see also note 2)."
+    note "1-The adjectival ending of Arabic origin -يه in Persian is\n romanized -īyeh. In romanizing the definite article the\n same rules of assimilation of consonants are applied as in\n Arabic, e.g. زين الدين Zeyn od Dīn."
+
+    note "2-The relational suffix (eẕāfeh) -e is usually not\n expressed in Persian writing after a consonant. After final\n ا or و it is written with ى, e.g. پاى آب Pā-ye Āb. After\n final ى and ه it is expressed by writing hamzeh over the\n character دهانۀ ممبر Dahāneh-ye Mambar."
+
+    note "3-To point Persian vowels two systems are in use that are\n separated by a column in the table. The first system is a\n Persian one while the other adheres to the Arabic\n tradition. In normal spelling vowel points are not used."
+  }
+}
+
+tests {
+   "اَنجِيرة" ->  "Anjīrah"
+   "اِيْوَانِي" ->  "Eyvānī"
+   "آبَادَان" ->  "Ābādān"
+   "قُرآن" ->  "Qor’ān"
+   "مَآب" ->  "Ma’āb"
+   "مُحَمَّد" ->  "Moḩammad"
+   "كُوهِ مَرغُوب" ->  "Kūh-e Marghūb"
+   "پَايِ آب" ->  "Pā-ye Āb"
+   "جُويِ آس" ->  "Jū-ye Ās"
+   "دَهَانِهٴ مَمبَر" ->  "Dahāneh-ye Mambar"
+   "سَلَسِيٴ بُذُرگ" ->  "Salasī-ye Boz̄org"
+   "ذُو الفَقَار" ->  "Z̄ū ol Faqār"
+
+  # UN card tests
+   "اِيران" ->  "Īrān"
+   "تِهران" ->  "Tehrān"
+}
+
+stage main {
+  # CHARACTERS
+  parallel {
+
+    sub "\u064e" "a"
+    sub {
+    from "\u064e"
+    to ""
+    after "\u0629"
+  }
+    sub {
+    from "\u064e"
+    to ""
+    after "a" + any("ht")
+  }
+    sub "\u0650" "e"
+    sub "\u064f" "o"
+    sub "\u0652" ""
+
+    sub "\u064e\u0627" "ā"
+    sub "\u064e\u0649" "á"
+    sub {
+    from boundary + "\u0622"
+    to "ā"
+  }
+    sub "\u0622" "’ā"
+    sub "\u0650\u064a" "ī"
+    sub "\u064f\u0648" "ū"
+    sub {
+    from any("\u064e\u0650") + "\u064a\u0652"
+    to "ey"
+  }
+    sub {
+    from any("\u064e\u064f") + "\u0648\u0652"
+    to "ow"
+  }
+    sub "\u0621" "’"
+    sub "\u2013" "–"
+    sub {
+    from "\u2013" + any("\u0649\u064a") + "\u0647"
+    to "-īyeh"
+  }
+    sub {
+    from any("\u0654\u0674")
+    to "-e"
+  }
+    sub {
+    from any("\u0654\u0674")
+    to "-ye"
+    before any("\u064a\u0647")
+  }
+    sub {
+    from "\u0650" + boundary
+    to "-e"
+  }
+    sub {
+    from any("\u064a\u06cc") + "\u0650" + boundary
+    to "-ye"
+  }
+
+    # NOTE C
+    sub "\u0628\u0651" "bb"
+    sub "\u062a\u0651" "tt"
+    sub "\u062b\u0651" "s̄s̄"
+    sub "\u062c\u0651" "jj"
+    sub "\u062d\u0651" "ḩḩ"
+    sub "\u062e\u0651" "kh"
+    sub "\u062f\u0651" "dd"
+    sub "\u0630\u0651" "z̄z̄"
+    sub "\u0631\u0651" "rr"
+    sub "\u0632\u0651" "zz"
+    sub "\u0633\u0651" "ss"
+    sub "\u0634\u0651" "sh"
+    sub "\u0635\u0651" "şş"
+    sub "\u0636\u0651" "ẕẕ"
+    sub "\u0637\u0651" "ţţ"
+    sub "\u0638\u0651" "z̧z̧"
+    sub "\u063a\u0651" "gh"
+    sub "\u0641\u0651" "ff"
+    sub "\u0642\u0651" "qq"
+    sub "\u0643\u0651" "kk"
+    sub "\u0644\u0651" "ll"
+    sub "\u0645\u0651" "mm"
+    sub "\u0646\u0651" "nn"
+    sub "\u0647\u0651" "hh"
+    sub "\u0648\u0651" "vv"
+    sub "\u064a\u0651" "yy"
+
+    # NOTE 1
+    # Sun letters
+    sub {
+    from boundary + "\u0627\u0644\u062a" + maybe("\u0651")
+    to "ot t"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u062b" + maybe("\u0651")
+    to "os̄ s̄"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u062f" + maybe("\u0651")
+    to "od d"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0630" + maybe("\u0651")
+    to "oz̄ z̄"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0631" + maybe("\u0651")
+    to "or r"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0632" + maybe("\u0651")
+    to "oz z"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0633" + maybe("\u0651")
+    to "os s"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0634" + maybe("\u0651")
+    to "osh sh"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0635" + maybe("\u0651")
+    to "oş ş"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0636" + maybe("\u0651")
+    to "oẕ ẕ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0637" + maybe("\u0651")
+    to "oţ ţ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0638" + maybe("\u0651")
+    to "oz̧ z̧"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0644" + maybe("\u0651")
+    to "ol l"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0646" + maybe("\u0651")
+    to "on n"
+  }
+
+    sub "\u0650\u064a\u0651" "īy"
+    sub {
+    from "\u0650\u064a"
+    to "iy"
+    after any("\u064e\u064f")
+  }
+
+    # ta' marboota
+    sub "\u0629" "at"
+    sub {
+    from "\u0629" + line_end
+    to "ah"
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+
+    sub {
+    from boundary + "\u0627\u0644"
+    to "al "
+  }
+    sub {
+    from space + boundary + "\u0627\u0644"
+    to " ol "
+  }
+
+    sub {
+    from boundary + "\u0627"
+    to ""
+  }
+    sub "\u0627" "ā"
+    sub {
+    from "\u0627" + boundary
+    to "ā"
+  }
+
+    sub "\u0628" "b"
+    sub "\u067E" "p"
+    sub "\u062A" "t"
+    sub "\u062B" "s̄"
+    sub "\u062C" "j"
+    sub "\u0686" "ch"
+    sub "\u062D" "ḩ"
+    sub "\u062E" "kh"
+    sub "\u062F" "d"
+    sub "\u0630" "z̄"
+    sub "\u0631" "r"
+    sub "\u0632" "z"
+    sub "\u0698" "zh"
+    sub "\u0633" "s"
+    sub "\u0634" "sh"
+    sub "\u0635" "ş"
+    sub "\u0636" "ẕ"
+    sub "\u0637" "ţ"
+    sub "\u0638" "z̧"
+    sub "\u0639" "’"
+    sub "\u063A" "gh"
+    sub "\u0641" "f"
+    sub "\u0642" "q"
+    sub "\u0643" "k"
+    sub "\u06A9" "k"
+    sub "\u06AF" "g"
+    sub "\u0644" "l"
+    sub "\u0645" "m"
+    sub "\u0646" "n"
+    sub "\u0648" "v"
+    sub "\u0647" "h"
+    sub "\u0649" "y"
+    sub "\u064a" "y"
+  }
+
+  # POSTRULES
+  sub {
+    from any("\u0061".."\uFFFF")
+    to upcase
+    before boundary
+    not_before boundary + any("‘’'-")
+  }
+
+  sub " Al" " al"
+  sub " Ol" " ol"
+}
+}

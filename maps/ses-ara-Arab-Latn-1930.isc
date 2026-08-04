@@ -1,0 +1,340 @@
+system "SES:ara-Arab:Latn:1930" {
+
+metadata {
+  authority_id ses
+  id 1930
+  language iso-639-2:ara
+  source_script Arab
+  destination_script Latn
+  name Survey of Egypt Romanization
+  url http://www.eki.ee/wgrs/rom1_ar.pdf
+  creation_date 1930
+  confirmation_date 2018-06
+  description {    The Survey of Egypt System (SES) of Romanization.
+  }
+  notes {
+    note "      The Survey of Egypt System (SES) of romanization has the following correspondences with\n      the UN system:\n      á = a #  ـَى fatha followed by ى which is ا not ي\n      ā = â (a) # ـَا fatha followed by alef // آ\n      -ah (ة- = (a # ة ta' marboota at the end of a sentence\n      aw = ô (au) # ـَوْ\n      ay = ei (ai) # ـَيْ\n      ḏ = ḍ # ض\n      dh = dh (z) # ذ\n      d͟h = ẓ (d) # ظ\n      ẖ = ḥ # ح\n      ī = î\n      j = g (j)\n      q = q (k)\n      s = s (c)\n      s̱ = ṣ\n      ṯ = ṭ\n      th = th (t)\n      ū = û\n      ‘ = ‛"
+    note "      The variants in parentheses are used depending on pronunciation and tradition. Not all the\n      variations have been given above. The article is always written el- (El-Kafr el-Qadîm, Sharm\n      el-Sheikh)."
+  }
+}
+
+tests {
+  # Examples taken from:
+  # https://unstats.un.org/unsd/geoinfo/geonames/
+   "شَرم الشَيْخ" ->  "Sharm el-Sheikh"
+   "الكَفر القَدِيم" ->  "El-Kafr el-Qadîm"
+}
+
+dependency "un-ara-Arab-Latn-2017" as arablatn
+
+stage main {
+
+
+  # CHARACTERS
+  parallel {
+
+
+    # special pointed letters
+    sub "\u0639\u064e" "‛a"
+    sub "\u0639\u0650" "‛i"
+    sub "\u0639\u064f" "‛û"
+    # handle MacOS regex difference
+    sub "\u0639\u064f\u0648" "‛û"
+    sub "\u0650\u064a" "î"
+    sub "\u0650\u064a\u0651\u064e" "îy"
+    sub "\u064f\u0648" "û"
+    sub {
+    from "\u064e\u0627"
+    to any(["â", "a"])
+  }
+    sub "\u064e\u0649" "a"
+    sub {
+    from "\u064e\u0648\u0652"
+    to any(["ô", "au"])
+  }
+    sub {
+    from "\u064e\u064a\u0652"
+    to any(["ei", "ai"])
+  }
+    sub {
+    from "\u0622"
+    to any(["â", "a"])
+  }
+
+    # ta' marboota  in iso-233-1984 is all the same `a`
+    sub {
+    from "\u0629" + line_end
+    to "a"
+  }
+    sub {
+    from "\u0629"
+    to "a"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "a"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "a"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "a"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "a"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "a"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "a"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "a"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "a"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "a"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "a"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "a"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+
+
+    # Sun letters
+    sub {
+    from boundary + "\u0627\u0644\u062a" + maybe("\u0651")
+    to "el-t"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u062b" + maybe("\u0651")
+    to any(["el-th", "el-t"])
+  }
+    sub {
+    from boundary + "\u0627\u0644\u062f" + maybe("\u0651")
+    to "el-d"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0630" + maybe("\u0651")
+    to any(["el-dh", "el-z"])
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0631" + maybe("\u0651")
+    to "el-r"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0632" + maybe("\u0651")
+    to "el-z"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0633" + maybe("\u0651")
+    to any(["el-s", "el-c"])
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0634" + maybe("\u0651")
+    to "el-sh"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0635" + maybe("\u0651")
+    to "el-ṣ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0636" + maybe("\u0651")
+    to "el-ḍ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0637" + maybe("\u0651")
+    to "el-ṭ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0638" + maybe("\u0651")
+    to any(["el-ẓ", "el-d"])
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0644" + maybe("\u0651")
+    to "el-l"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0646" + maybe("\u0651")
+    to "el-n"
+  }
+
+
+    # shadda
+    sub {
+    from "\u062b\u0651"
+    to any(["thth", "tt"])
+  }
+    sub {
+    from "\u062c\u0651"
+    to any(["gg", "jj"])
+  }
+    sub "\u062d\u0651" "ḥḥ"
+    sub "\u062e\u0651" "khkh"
+
+    sub {
+    from "\u0633\u0651"
+    to any(["ss", "cc"])
+  }
+    sub "\u0635\u0651" "ṣṣ"
+    sub "\u0636\u0651" "ḍḍ"
+    sub "\u0637\u0651" "ṭṭ"
+    sub {
+    from "\u0638\u0651"
+    to any(["ẓẓ", "dd"])
+  }
+    sub {
+    from "\u0642\u0651"
+    to any(["qq", "kk"])
+  }
+
+    sub {
+    from boundary + "\u0627\u0644"
+    to "el-"
+  }
+
+    # normal letters
+    sub {
+    from "\u062c"
+    to any(["g", "j"])
+  }
+    sub {
+    from "\ufe9f"
+    to any(["g", "j"])
+  }
+    sub {
+    from "\ufea0"
+    to any(["g", "j"])
+  }
+    sub {
+    from "\ufe9e"
+    to any(["g", "j"])
+  }
+
+    sub "\u062d" "ḥ"
+    sub "\ufea3" "ḥ"
+    sub "\ufea4" "ḥ"
+    sub "\ufea2" "ḥ"
+
+    sub "\u062e" "kh"
+    sub "\ufea7" "kh"
+    sub "\ufea8" "kh"
+    sub "\ufea6" "kh"
+
+    sub {
+    from "\u0630"
+    to any(["dh", "z"])
+  }
+    sub {
+    from "\ufeac"
+    to any(["dh", "z"])
+  }
+
+
+    sub {
+    from "\u0633"
+    to any(["s", "c"])
+  }
+    sub {
+    from "\ufeb3"
+    to any(["s", "c"])
+  }
+    sub {
+    from "\ufeb4"
+    to any(["s", "c"])
+  }
+    sub {
+    from "\ufeb2"
+    to any(["s", "c"])
+  }
+
+    sub "\u0635" "ṣ"
+    sub "\ufebb" "ṣ"
+    sub "\ufebc" "ṣ"
+    sub "\ufeba" "ṣ"
+
+    sub "\u0636" "ḍ"
+    sub "\ufebf" "ḍ"
+    sub "\ufec0" "ḍ"
+    sub "\ufebe" "ḍ"
+
+    sub "\u0637" "ṭ"
+    sub "\ufec3" "ṭ"
+    sub "\ufec4" "ṭ"
+    sub "\ufec2" "ṭ"
+
+    sub "\u0639" "‛"
+    sub "\ufecb" "‛"
+    sub "\ufecc" "‛"
+    sub "\ufeca" "‛"
+
+    sub {
+    from "\u0638"
+    to any(["ẓ", "d"])
+  }
+    sub {
+    from "\ufec7"
+    to any(["ẓ", "d"])
+  }
+    sub {
+    from "\ufec8"
+    to any(["ẓ", "d"])
+  }
+    sub {
+    from "\ufec6"
+    to any(["ẓ", "d"])
+  }
+
+    sub {
+    from "\u0642"
+    to any(["q", "k"])
+  }
+    sub {
+    from "\ufed7"
+    to any(["q", "k"])
+  }
+    sub {
+    from "\ufed8"
+    to any(["q", "k"])
+  }
+    sub {
+    from "\ufed6"
+    to any(["q", "k"])
+  }
+  }
+
+  run  map.arablatn.stage.main
+
+  # POSTRULES
+  sub " El-" " el-"
+
+
+}
+}

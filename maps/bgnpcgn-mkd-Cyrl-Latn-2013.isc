@@ -1,0 +1,181 @@
+system "BGN-PCGN:mkd-Cyrl:Latn:2013" {
+
+metadata {
+  authority_id bgnpcgn
+  id 2013
+  language iso-639-2:mkd
+  source_script Cyrl
+  destination_script Latn
+  name Romanization for Macedonian (2013)
+  url https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/811514/ROMANIZATION_OF_MACEDONIAN.pdf
+  creation_date 2013
+  description {    Macedonian was officially established as a written language in Yugoslavia during
+    World War II and is now the official language of North Macedonia.
+    This romanization system replaces the BGN/PCGN 1981 agreement and adheres
+    to the most widely-accepted standardization of Macedonian orthography.
+  }
+
+  notes {
+    note "The Macedonian Cyrillic lowercase italic Д may sometimes be seen as g.\n There is no specific Unicode encoding for this variant form so a comparable character\n has been used here for illustrative purposes."
+    note "The Macedonian Cyrillic lowercase italic Ѓ may sometimes be seen as ī.\n There is no specific Unicode encoding for this variant form so a comparable character\n has been used here for illustrative purposes."
+    note "The Macedonian Cyrillic lowercase italic П may sometimes be seen as ū.\n There is no specific Unicode encoding for this variant form so a comparable character\n has been used here for illustrative purposes."
+    note "The Macedonian Cyrillic lowercase italic Т may sometimes be seen as w̄.\n There is no specific Unicode encoding for this variant form so a comparable character\n has been used here for illustrative purposes."
+    note "      An inventory of letter-diacritic combinations, with their Unicode encoding,\n      in addition to the unmodified letters of the basic Roman script is:\n      | Ǵ (U+01F4)   | ǵ (U+01F5)   |\n      | Ž (U+017D)   | ž (U+017E)   |\n      | Dz (U+01F2)* | dz (U+01F3)* |\n      | Lj (U+01C8)* | lj (U+01C9)* |\n      | Nj (U+01CB)* | nj(U+01CC)*  |\n      | Ḱ (U+IE30)   | ḱ (U+IE31)   |\n      | Č (U+010C)   | č (U+010D)   |\n      | Dž (U+01C5)* | dž (U+01C6)* |\n      | Š (U+0160)   | š (U+0161)   |\n      * Note that these characters can also be reproduced with individual letters (e.g. l+j)."
+    note "The Romanization column shows only lowercase forms but, when romanizing,\n uppercase and lowercase Roman letters as appropriate should be used."
+  }
+}
+
+tests {
+   "Ѓенови Ливаѓе" ->  "Ǵenovi Livaǵe"
+   "ЛУЃЕ луѓе" ->  "LUǴE luǵe"
+   "ЅВЕЗДА ѕвезда Ѕвезда" ->  "DZVEZDA dzvezda Dzvezda"
+   "Јабежица" ->  "Jabežica"
+   "Љиќен и Бард" ->  "Ljiḱen i Bard"
+   "Ќамилов Чукар" ->  "Ḱamilov Čukar"
+   "Џавидин Кајнак" ->  "Džavidin Kajnak"
+   "Џамалџи" ->  "Džamaldži"
+   "Џибра Гури и Зи" ->  "Džibra Guri i Zi"
+   "Абазова Куќарица" ->  "Abazova Kuḱarica"
+   "Баба Анѓина Маала" ->  "Baba Anǵina Maala"
+   "Ваљановец" ->  "Valjanovec"
+   "Галал Једи Дереш" ->  "Galal Jedi Dereš"
+   "Дванаесет Клајнци" ->  "Dvanaeset Klajnci"
+   "Електродистрибуција Струга" ->  "Elektrodistribucija Struga"
+   "Железничка Станица Рајко Жинзифов" ->  "Železnička Stanica Rajko Žinzifov"
+   "Заедничко Речиште" ->  "Zaedničko Rečište"
+   "Испраена Плоча" ->  "Ispraena Ploča"
+   "Казнено-Поправна Установа Идризово" ->  "Kazneno-Popravna Ustanova Idrizovo"
+   "Лази и Зејнелит" ->  "Lazi i Zejnelit"
+   "Мавровско Езеро" ->  "Mavrovsko Ezero"
+   "Национален Парк Галичица" ->  "Nacionalen Park Galičica"
+   "Одморалиште Свети Стефан" ->  "Odmoralište Sveti Stefan"
+   "Планинарски Дом Караџица" ->  "Planinarski Dom Karadžica"
+   "Раса е Лисењит" ->  "Rasa e Lisenjit"
+   "Скочивирска Клисура" ->  "Skočivirska Klisura"
+   "Термо-електроцентрала Неготино" ->  "Termo-elektrocentrala Negotino"
+   "Узуновско Бресје" ->  "Uzunovsko Bresje"
+   "Фабрика Југохром" ->  "Fabrika Jugohrom"
+   "Хидроелектрана Сапунџица" ->  "Hidroelektrana Sapundžica"
+   "Цветковско Рамниште" ->  "Cvetkovsko Ramnište"
+   "Чалтанова Пештера" ->  "Čaltanova Peštera"
+   "Шкемби Вишнејц" ->  "Škembi Višnejc"
+}
+
+dependency "posix"
+
+stage main {
+
+
+
+  # CHARACTERS
+  parallel {
+    sub "А" "A"
+    sub "Б" "B"
+    sub "В" "V"
+    sub "Г" "G"
+    sub "Д" "D"
+    sub "Ѓ" "Ǵ"
+    sub "Е" "E"
+    sub "Ж" "Ž"
+    sub "З" "Z"
+    sub "Ѕ" "Dz"
+    sub "И" "I"
+    sub "Ј" "J"
+    sub "К" "K"
+    sub "Л" "L"
+    sub "Љ" "Lj"
+    sub "М" "M"
+    sub "Н" "N"
+    sub "Њ" "Nj"
+    sub "О" "O"
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "Ќ" "Ḱ"
+    sub "У" "U"
+    sub "Ф" "F"
+    sub "Х" "H"
+    sub "Ц" "C"
+    sub "Ч" "Č"
+    sub "Џ" "Dž"
+    sub "Ш" "Š"
+    sub "а" "a"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "g"
+    sub "д" "d"
+    sub "ѓ" "ǵ"
+    sub "е" "e"
+    sub "ж" "ž"
+    sub "з" "z"
+    sub "ѕ" "dz"
+    sub "и" "i"
+    sub "ј" "j"
+    sub "к" "k"
+    sub "л" "l"
+    sub "љ" "lj"
+    sub "м" "m"
+    sub "н" "n"
+    sub "њ" "nj"
+    sub "о" "o"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "ќ" "ḱ"
+    sub "у" "u"
+    sub "ф" "f"
+    sub "х" "h"
+    sub "ц" "c"
+    sub "ч" "č"
+    sub "џ" "dž"
+    sub "ш" "š"
+  }
+  # POSTRULES
+  # rewritten by hand to work properly
+  # DZ
+  sub {
+    from capture(maybe(upper)) + "Dz" + capture(upper)
+    to ref(1) + "DZ" + ref(2)
+  }
+  sub {
+    from capture(upper) + "Dz" + capture(maybe(upper))
+    to ref(1) + "DZ" + ref(2)
+  }
+
+  #LJ
+  sub {
+    from capture(upper) + "Lj" + capture(maybe(upper))
+    to ref(1) + "LJ" + ref(2)
+  }
+  sub {
+    from capture(maybe(upper)) + "Lj" + capture(upper)
+    to ref(1) + "LJ" + ref(2)
+  }
+
+  #NJ
+  sub {
+    from capture(upper) + "Nj" + capture(maybe(upper))
+    to ref(1) + "NJ" + ref(2)
+  }
+  sub {
+    from capture(maybe(upper)) + "Nj" + capture(upper)
+    to ref(1) + "NJ" + ref(2)
+  }
+
+  #DŽ
+  sub {
+    from capture(upper) + "Dž" + capture(maybe(upper))
+    to ref(1) + "DŽ" + ref(2)
+  }
+  sub {
+    from capture(maybe(upper)) + "Dž" + capture(upper)
+    to ref(1) + "DŽ" + ref(2)
+  }
+
+  compose
+
+}
+
+}

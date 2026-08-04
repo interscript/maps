@@ -1,0 +1,87 @@
+system "ALA-LC:tir-Ethi:Latn:2011" {
+
+metadata {
+  authority_id alalc
+  id 2011
+  language iso-639-2:tir
+  source_script Ethi
+  destination_script Latn
+  name Romanization Table -- Tigrinya (2011)
+  url https://www.loc.gov/catdir/cpso/romanization/tigrinya.pdf
+  creation_date 2011
+  description 
+  implementation_notes {     This system is identical to the ALA-LC Tigrinya 1997 system, and hence
+    inherits its implementation. }
+}
+
+tests {
+   "የዜግነት ክብር በ ኢትዮጵያችን ጸንቶ" ->  "yazégenate kebere ba ʼiteyop̣eyāčene ṣaneto"
+   "ታየ ሕዝባዊነት ዳር እስከዳር በርቶ" ->  "tāya ḥezebāwinate dāre ʼesekadāre bareto"
+   "ለሰላም ለፍትህ ለሕዝቦች ነጻነት" ->  "lasalāme lafetehe laḥezeboče naṣānate"
+   "በእኩልነት በፍቅር ቆመናል ባንድነት" ->  "baʼekulenate bafeqere qomanāle bānedenate"
+   "መሠረተ ፅኑ ሰብዕናን ያልሻርን" ->  "maśarata ṡenu sabeʻenāne yālešārene"
+   "ሕዝቦች ነን ለሥራ በሥራ የኖርን" ->  "ḥezeboče nane laśerā baśerā yanorene"
+   "ድንቅ የባህል መድረክ ያኩሪ ቅርስ ባለቤት" ->  "deneqe yabāhele maderake yākuri qerese bālabéte"
+   "የተፈጥሮ ጸጋ የጀግና ሕዝብ እናት" ->  "yatafaṭero ṣagā yaǧagenā ḥezebe ʼenāte"
+   "እንጠብቅሻለን አለብን አደራ" ->  "ʼeneṭabeqešālane ʼalabene ʼadarā"
+   "ኢትዮጵያችን ኑሪ እኛም ባንቺ እንኩራ" ->  "ʼiteyop̣eyāčene nuri ʼeñāme bāneči ʼenekurā"
+   "ቋንቋ የድምጽ፣ የምልክት ወይም የምስል ቅንብር ሆኖ" ->  "qwāneqwā yademeṣe፣ yamelekete wayeme yamesele qenebere hono"
+   "ለማሰብ ወይም የታሰበን ሃሳብ ለሌላ ለማስተላለፍ የሚረዳ መሳሪያ ነው" ->  "lamāsabe wayeme yatāsabane hāsābe lalélā lamāsetalālafe yamiradā masāriyā nawe"
+   "በአጭሩ ቋንቋ የምልክቶች ስርዓትና እኒህን ምልክቶች ለማቀናበር" ->  "baʼaċeru qwāneqwā yameleketoče sereʻātenā ʼenihene meleketoče lamāqanābare"
+   "የሚያስፈልጉ ህጎች ጥንቅር ነው። ቋንቋወችን ለመፈረጅ እንዲሁም" ->  "yamiyāsefalegu hegoče ṭeneqere nawe። qwāneqwāwačene lamafaraǧe ʼenedihume"
+   "ለምክፈል የሚያስችሉ መስፈርቶችን ለማስቀመጥ ባለው ችግር" ->  "lamekefale yamiyāsečelu masefaretočene lamāseqamaṭe bālawe čegere"
+   "ምክንያት በአሁኑ ሰዓት በርግጠኝነት ስንት ቋንቋ በዓለም ላይ" ->  "mekeneyāte baʼahunu saʻāte baregeṭañenate senete qwāneqwā baʻālame lāye"
+   "እንዳለ ማወቅ አስቸጋሪ ነው" ->  "ʼenedāla māwaqe ʼasečagāri nawe"
+   "አሰላ" ->  "ʼasalā"
+   "አሶሳ" ->  "ʼasosā"
+   "አንኮበር" ->  "ʼanekobare"
+   "አክሱም" ->  "ʼakesume"
+   "አዋሳ" ->  "ʼawāsā"
+   "አዲስ ዘመን (ከተማ)" ->  "ʼadise zamane (katamā)"
+   "አዲግራት" ->  "ʼadigerāte"
+   "አዳማ" ->  "ʼadāmā"
+   "ደምበጫ" ->  "damebaċā"
+   "ደርባ" ->  "darebā"
+   "ደብረ ማርቆስ" ->  "dabera māreqose"
+   "ደብረ ብርሃን" ->  "dabera berehāne"
+   "ደብረ ታቦር (ከተማ)" ->  "dabera tābore (katamā)"
+   "ደብረ ዘይት" ->  "dabera zayete"
+   "ደገሃቡር" ->  "dagahābure"
+   "ወልቂጤ" ->  "waleqiṭé"
+   "ወልወል" ->  "walewale"
+   "ወልደያ" ->  "waledayā"
+   "ናይሎ ሳህራን" ->  "nāyelo sāherāne"
+   "አኙዋክኛ" ->  "ʼañuwākeñā"
+   "ኡዱክኛ" ->  "ʼudukeñā"
+   "ኦፓኛ" ->  "ʼopāñā"
+   "ጉምዝኛ" ->  "gumezeñā"
+   "አፋርኛ" ->  "ʼafāreñā"
+   "አላባኛ" ->  "ʼalābāñā"
+   "አርቦርኛ" ->  "ʼareboreñā"
+   "ባይሶኛ" ->  "bāyesoñā"
+   "ቡሳኛ" ->  "busāñā"
+   "ራስ ዓሊ (ትልቁ) ፬" ->  "rāse ʻāli (telequ) 4"
+   "ራስ ዓሊጋዝ ፭" ->  "rāse ʻāligāze 5"
+   "ራስ ዐሥራትና ፮" ->  "rāse ʻaśerātenā 6"
+   "ራስ ጉግሣ ፳፮" ->  "rāse gugeśā 206"
+   "ራስ ይማም ፪" ->  "rāse yemāme 2"
+   "ራስ ማርዬ ፫" ->  "rāse māreyé 3"
+   "ራስ ዶሪ ፫ ወር" ->  "rāse dori 3 ware"
+   "ራስ ዓሊ (ትንሹ) ፳" ->  "rāse ʻāli (tenešu) 20"
+   "ዓፄ ቴዎድሮስ ፲፭" ->  "ʻāṡé téwoderose 105"
+   "ዳግማዊ ዓጼ ተክለ ጊዮርጊስ ፫" ->  "dāgemāwi ʻāṣé takela giyoregise 3"
+   "ዓፄ ዮሐንስ ፲፰" ->  "ʻāṡé yoḥanese 108"
+   "ዳግማዊ ዓጼ ምኒልክ ፳፬" ->  "dāgemāwi ʻāṣé menileke 204"
+   "ልጅ ኢያሱ ፫" ->  "leǧe ʼiyāsu 3"
+   "ንግሥት ዘውዲቱ ፲፫" ->  "negeśete zaweditu 103"
+   "ቀዳማዊ ኃይለ ሥላሴ" ->  "qadāmāwi hāyela śelāsé"
+}
+
+dependency "alalc-tir-Ethi-Latn-1997" as ethilatn
+
+stage main {
+
+  run  map.ethilatn.stage.main
+
+}
+}

@@ -1,0 +1,397 @@
+system "ALA-LC:ori-Orya:Latn:1997" {
+
+metadata {
+  authority_id alalc
+  id 1997
+  language iso-639-2:ori
+  source_script Orya
+  destination_script Latn
+  name Romanization Table -- Oriya (1997)
+  url http://catdir.loc.gov/catdir/cpso/romanization/oriya.pdf
+  creation_date 1997
+  description {    ALA-LC Romanization table for Oriya
+  }
+
+  notes {
+    note "      Only the vowel forms that appear at the beginning of a syllable are listed; the forms used for vowels following a\n      consonant can be found in grammars; no distinction between the two is made in transliteration."
+    note "      The vowel a is implicit after all consonants and consonant clusters and is supplied in\n      transliteration, with the following exceptions:\n      a) when another vowel is indicated by its appropriate sign; and\n      b) when the absence of any vowel is indicated by the subscript sign ( ୍ ) called hasanta."
+    note "      ବ is used both as a labial and as a semivowel. When it occurs as the second consonant of a\n      consonant cluster, it is transliterated va. When ବ is doubled, it is transliterated bba."
+    note "      Exception: Anusvāra is transliterated by:\n        a) ṅ before gutturals,\n        b) ñ before palatals,\n        c) ṇ before cerebrals,\n        d) n before dentals, and\n        e) m before labials."
+    note "      Candrabindu before guttural, palatal, cerebral, and dental occlusives is transliterated n̐.\n      Before labials, sibilants, semivowels, the aspirate, vowels, and in final position it is\n      transliterated m̐."
+    note "When doubled, abagraha is transliterated by two apostrophes ( ’’ )."
+  }
+}
+
+tests {
+   "ର୍କ" ->  "rka"
+   "ଓଡ଼ିଆ" ->  "oṙiā"
+   "ଓଡ଼ିଶା" ->  "oṙiśā"
+   "ଭୁବନେଶ୍ୱର" ->  "bhubaneśwara"
+   "ଆଇପିଏଲ୍‌-୧୩: ରୟାଲ ଚ୍ୟାଲେଞ୍ଜର୍ସ ବାଙ୍ଗାଲୋରକୁ ୫ ଓ୍ୱିକେଟରେ ପରାସ୍ତ କଲା ମୁମ୍ବାଇ ଇଣ୍ଡିଆନ୍ସ" ->  "āipiel-13: raẏāla cẏāleñjarsa bāṅgāloraku 5 obikeṭare parāsta kalā mumbāi iṇḍiānsa"
+   "ଓଡ଼ିଶା ସିଭିଲ ସର୍ଭିସେସ୍‌ ମେନ୍‌ ପରୀକ୍ଷା ଡିସେମ୍ବରରେ, ଜାଣନ୍ତୁ କେଉଁ ବିଷୟର ପରୀକ୍ଷା କେବେ" ->  "oṙiśā sibhila sarbhises men parīkshā ḍisembarare, jāṇantu keum̐ bishaẏara parīkshā kebe"
+   "ଗଞ୍ଜାମରେ କୋଭିଡ଼ ମୃତ୍ୟୁ ୨୨୮ରେ ପହଞ୍ଚିଲା" ->  "gañjāmare keābhiṙa mṛtẏu 228re pahañcilā"
+   "ଭାରତ ମହାସାଗର ଦ୍ବୀପରାଷ୍ଟ୍ର ଶ୍ରୀଲଙ୍କା ଓ ମାଳଦ୍ବୀପରେ ପମ୍ପିଓଙ୍କ ଚୀନ୍‌ବିରୋଧୀ ଅଭିଯାନ" ->  "bhārata mahāsāgara dbīparāshṭra śrīlaṅkā o māḷadbīpare pampioṅka cīnbireādhī abhiyāna"
+   "କଟକ ସହରରୁ ଆଜି ୩୯ କରୋନା ପଜିଟିଭ୍‌ ଚିହ୍ନଟ, ସ୍ଥାନୀୟ ଅଂଚଳରୁ ୨୪ ଜଣ ଆକ୍ରାନ୍ତ" ->  "kaṭaka sahararu āji 39 karonā pajiṭibh cihnaṭa, sthānīẏa aṃcaḷaru 24 jaṇa ākrānta"
+   "ବିଧାୟକ ସୌମ୍ୟରଂଜନଙ୍କ ମାରାଥନ ପ୍ରଚାର: ‘ଦ୍ୱିତୀୟବାର ସୁଯୋଗ ମିଳିଛି, ବୁଝି ବିଚାରି ଭୋଟ ଦିଅ’" ->  "bidhāẏaka seୗmẏaraṃjanaṅka mārāthana pracāra: ‘dbitīẏabāra suyeāga miḷichi, bujhi bicāri bheāṭa dia’"
+   "ଅଣ୍ଡା ବିଗାଡ଼ିଛି ପୁଷ୍ଟିକର ଖାଦ୍ୟ ଯୋଜନା ଅଙ୍କ" ->  "aṇḍā bigāṙichi pushṭikara khādẏa yeājanā aṅka"
+   "ପଥରଗଡ଼ ମଦ ମୃତ୍ୟୁ ମାମଲା : ଠିକାଦାର ସହ ବନ୍ଧାହେଲେ ୪" ->  "patharagaḍa mada mṛtẏu māmalā : ṭhikādāra saha bandhāhele 4"
+   "ତିର୍ତ୍ତୋଲର ବିକାଶ ନେଇ ବିଷ୍ଣୁବାବୁ ମୋତେ ବହୁ ବାର ଭେଟୁଥିଲେ: ନବୀନ" ->  "tirtteālara bikāśa nei bishṇubābu mote bahu bāra bheṭuthile: nabīna"
+}
+
+aliases {
+  cons_or_cluster = any("\u0b4d\u0b3e\u0b3f\u0b40\u0b41\u0b42\u0b43\u0b47\u0b48\u0b4b\u0b4c")
+}
+
+stage main {
+
+  # RULES
+  # Rule II
+  sub {
+    from "କ"
+    to "k"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଖ"
+    to "kh"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଗ"
+    to "g"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଘ"
+    to "gh"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଙ"
+    to "ṅ"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଚ"
+    to "c"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଛ"
+    to "ch"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଜ"
+    to "j"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଝ"
+    to "jh"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଞ"
+    to "ñ"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଟ"
+    to "ṭ"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଠ"
+    to "ṭh"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଡ"
+    to "ḍ"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଢ"
+    to "ḍh"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଣ"
+    to "ṇ"
+    after cons_or_cluster
+  }
+  sub {
+    from "ତ"
+    to "t"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଥ"
+    to "th"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଦ"
+    to "d"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଧ"
+    to "dh"
+    after cons_or_cluster
+  }
+  sub {
+    from "ନ"
+    to "n"
+    after cons_or_cluster
+  }
+  sub {
+    from "ପ"
+    to "p"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଫ"
+    to "ph"
+    after cons_or_cluster
+  }
+  sub {
+    from "ବ"
+    to "b"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଭ"
+    to "bh"
+    after cons_or_cluster
+  }
+  sub {
+    from "ମ"
+    to "m"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଯ"
+    to "y"
+    after cons_or_cluster
+  }
+  sub {
+    from "ୟ"
+    to "ẏ"
+    after cons_or_cluster
+  }
+  sub {
+    from "ର"
+    to "r"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଲ"
+    to "l"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଳ"
+    to "ḷ"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଶ"
+    to "ś"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଷ"
+    to "sh"
+    after cons_or_cluster
+  }
+  sub {
+    from "ସ"
+    to "s"
+    after cons_or_cluster
+  }
+  sub {
+    from "ହ"
+    to "h"
+    after cons_or_cluster
+  }
+  sub {
+    from "ୱ"
+    to "b"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଡ଼"
+    to "ṙ"
+    after cons_or_cluster
+  }
+  sub {
+    from "ଢ଼"
+    to "ṙh"
+    after cons_or_cluster
+  }
+
+  # Rule III
+  sub {
+    from "ବ"
+    to "bba"
+    after any("\u0b2c")
+  }
+  # Rule IV
+  sub {
+    from "\u0902"
+    to "ṅ"
+    after any("କଖଗଘଙ")
+  }
+  sub {
+    from "\u0902"
+    to "ñ"
+    after any("ଚଛଜଝଞ")
+  }
+  sub {
+    from "\u0902"
+    to "ṇ"
+    after any("ଟଠଡଢଣ")
+  }
+  sub {
+    from "\u0902"
+    to "n"
+    after any("ତଥଦଧନ")
+  }
+  # Rule V
+  sub {
+    from "\u0b01"
+    to "m̐"
+    after any("ପଫବଭମଯୟରଲଳଶଷସହଅଆଇଈଉଊଋୠଌଏଐଓଔ")
+  }
+  sub {
+    from "\u0b01"
+    to "m̐"
+    after boundary
+  }
+
+
+  # CHARACTERS
+  parallel {
+    sub "ଅ" "a"
+    sub "ଆ" "ā"
+    sub "ଇ" "i"
+    sub "ଈ" "ī"
+    sub "ଉ" "u"
+    sub "ଊ" "ū"
+    sub "ଋ" "ṛ"
+    sub "ୠ" "ṝ"
+    sub "ଌ" "ḻ"
+    sub "ଏ" "e"
+    sub "ଐ" "ai"
+    sub "ଓ" "o"
+    sub "ଔ" "au"
+
+    # II. Consonants (see Note 2)
+    # Gutturals
+    sub "କ" "ka"
+    sub "ଖ" "kha"
+    sub "ଗ" "ga"
+    sub "ଘ" "gha"
+    sub "ଙ" "ṅa"
+
+    # Palatals
+    sub "ଚ" "ca"
+    sub "ଛ" "cha"
+    sub "ଜ" "ja"
+    sub "ଝ" "jha"
+    sub "ଞ" "ña"
+
+    # Cerebrals
+    sub "ଟ" "ṭa"
+    sub "ଠ" "ṭha"
+    sub "ଡ" "ḍa"
+    sub "ଢ" "ḍha"
+    sub "ଣ" "ṇa"
+
+    # Dentals
+    sub "ତ" "ta"
+    sub "ଥ" "tha"
+    sub "ଦ" "da"
+    sub "ଧ" "dha"
+    sub "ନ" "na"
+
+    # Labials
+    sub "ପ" "pa"
+    sub "ଫ" "pha"
+    sub "ବ" "ba"
+    sub "ଭ" "bha"
+    sub "ମ" "ma"
+
+    # Semivowels
+    sub "ଯ" "ya"
+    sub "ୟ" "ẏa"
+    sub "ର" "ra"
+    sub "ଲ" "la"
+    sub "ଳ" "ḷa"
+
+    # Sibilants
+    sub "ଶ" "śa"
+    sub "ଷ" "sha"
+    sub "ସ" "sa"
+
+
+    # Aspirate
+    sub "ହ" "ha"
+
+    # Chandrabindu
+    sub "ଁ" "n̐"
+
+    # Bisarga
+    sub "ଃ" "ḥ"
+
+    # Anusvāra
+    sub "ଂ" "ṃ"
+
+    # Abagraha
+    sub "ଽ" "’"
+
+    # Medials # Needed for connecting constants
+
+    sub "ା" "ā"
+    sub "ି" "i"
+    sub "ୀ" "ī"
+    sub "ୁ" "u"
+    sub "ୂ" "ū"
+    sub "ୃ" "ṛ"
+    sub "େ" "e"
+    sub "ୈ" "ai"
+    sub "ୋ" "o"
+    sub "ୌ" "au"
+
+    sub "्" ""
+    sub "୍" ""
+    sub "़" ""
+    sub "଼" ""
+    sub "।" "."
+    sub "‍" ""
+    sub "‌" ""
+
+    #Absent but used
+    sub "ୱ" "wa"
+    sub "ଡ଼" "ṙa"
+    sub "ଢ଼" "ṙha"
+
+    # Numbers
+
+    sub "୦" "0"
+    sub "୧" "1"
+    sub "୨" "2"
+    sub "୩" "3"
+    sub "୪" "4"
+    sub "୫" "5"
+    sub "୬" "6"
+    sub "୭" "7"
+    sub "୮" "8"
+    sub "୯" "9"
+  }
+
+  compose
+}
+}

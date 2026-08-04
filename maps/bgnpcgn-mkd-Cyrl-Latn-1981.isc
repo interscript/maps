@@ -1,0 +1,158 @@
+system "BGN-PCGN:mkd-Cyrl:Latn:1981" {
+
+metadata {
+  authority_id bgnpcgn
+  id 1981
+  language iso-639-2:mkd
+  source_script Cyrl
+  destination_script Latn
+  name Romanization for Macedonian (1981)
+  url https://github.com/riboseinc/interscript/files/4247920/USBGN_romanization_Macedonian_1981.pdf
+  creation_date 1981
+  description BGN/PCGN Romanization table for Macedonian.
+
+  notes {
+    note "The character ѓ should be romanized g when it occurs before е and и. In other\n instances, it should be romanized ǵ (Ǵ)."
+    note "The character ќ should be romanized k when it occurs before е and и. In other\n instances, it should be romanized ć."
+  }
+}
+
+tests {
+   "Ѓол" ->  "Đol"
+   "Јусек Тепеси" ->  "Jusek Tepesi"
+   "Љуги Ќарит" ->  "Ljugi Ćarit"
+   "Ќафа Сан" ->  "Ćafa San"
+   "Агроплод Ресен" ->  "Agroplod Resen"
+   "Алта Чука" ->  "Alta Čuka"
+   "Баш Тепе" ->  "Baš Tepe"
+   "Браќам" ->  "Braćam"
+   "Винарска Визба Агропин" ->  "Vinarska Vizba Agropin"
+   "Галичица" ->  "Galičica"
+   "Дрењево" ->  "Drenjevo"
+   "Енешево" ->  "Eneševo"
+   "Иберлија" ->  "Iberlija"
+   "Крмзи Су" ->  "Krmzi Su"
+   "Лесноски Рид" ->  "Lesnoski Rid"
+   "Мала Корабска Врата" ->  "Mala Korabska Vrata"
+   "Низок Врв" ->  "Nizok Vrv"
+   "Охридско Езеро" ->  "Ohridsko Ezero"
+   "Прлиќ" ->  "Prlić"
+   "Равна Гора" ->  "Ravna Gora"
+   "Сеѓавечкиот Рид" ->  "Seđavečkiot Rid"
+   "Трновите Њиве" ->  "Trnovite Njive"
+   "Фасов Рид" ->  "Fasov Rid"
+   "Црни Камен" ->  "Crni Kamen"
+   "Чатал Чешми" ->  "Čatal Češmi"
+   "Шехово" ->  "Šehovo"
+}
+
+dependency "var-Cyrl"
+
+stage main {
+
+  # RULES
+  sub {
+    from "Ѓ"
+    to "G"
+    after "еЕиИ"
+  }
+  sub {
+    from "ѓ"
+    to "g"
+    after "еЕиИ"
+  }
+  sub {
+    from "Ќ"
+    to "K"
+    after "еЕиИ"
+  }
+  sub {
+    from "ќ"
+    to "k"
+    after "еЕиИ"
+  }
+  # Those aren't tested.
+
+
+  # CHARACTERS
+  parallel {
+    sub "А" "A"
+    sub "Б" "B"
+    sub "В" "V"
+    sub "Г" "G"
+    sub "Д" "D"
+    sub "Ѓ" "Đ"
+    sub "Е" "E"
+    sub "Ж" "Ž"
+    sub "З" "Z"
+    sub "Ѕ" "Dz"
+    sub "И" "I"
+    sub "Ј" "J"
+    sub "К" "K"
+    sub "Л" "L"
+    sub "Љ" "Lj"
+    sub "М" "M"
+    sub "Н" "N"
+    sub "Њ" "Nj"
+    sub "О" "O"
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "Ќ" "Ć"
+    sub "У" "U"
+    sub "Ф" "F"
+    sub "Х" "H"
+    sub "Ц" "C"
+    sub "Ч" "Č"
+    sub "Џ" "Dž"
+    sub "Ш" "Š"
+    sub "а" "a"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "g"
+    sub "д" "d"
+    sub "ѓ" "đ"
+    sub "е" "e"
+    sub "ж" "ž"
+    sub "з" "z"
+    sub "ѕ" "dz"
+    sub "и" "i"
+    sub "ј" "j"
+    sub "к" "k"
+    sub "л" "l"
+    sub "љ" "lj"
+    sub "м" "m"
+    sub "н" "n"
+    sub "њ" "nj"
+    sub "о" "o"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "ќ" "ć"
+    sub "у" "u"
+    sub "ф" "f"
+    sub "х" "h"
+    sub "ц" "c"
+    sub "ч" "č"
+    sub "џ" "dž"
+    sub "ш" "š"
+  }
+
+  # POSTRULES
+  sub {
+    from any(["Dz", "Lj", "Nj", "Dž"])
+    to upcase
+    before any("A".."Z")
+  }
+  sub {
+    from any(["Dz", "Lj", "Nj", "Dž"])
+    to upcase
+    after any("A".."Z")
+  }
+  # Those aren't tested
+
+  compose
+}
+}

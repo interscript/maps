@@ -1,0 +1,72 @@
+system "MVD:bel-Cyrl:Latn:2010" {
+
+metadata {
+  authority_id mvd
+  id 2010
+  language iso-639-2:bel
+  source_script Cyrl
+  destination_script Latn
+  name Transliteration system for Belarusian names (2010)
+  url https://pravo.by/document/?guid=3871&p0=W21022721
+  creation_date 2010
+
+  description {    RESOLUTION OF THE MINISTRY OF INTERNAL AFFAIRS OF THE REPUBLIC OF BELARUS
+    June 28, 2010 No. 200
+    8/22721 About approval of the Instructions on the organization of work of units of citizenship
+    and migration of internal affairs bodies on the issuance, registration, exchange,
+    invalidation, seizure, storage and destruction of a passport of a citizen of the Republic of Belarus
+  }
+
+  notes {
+    note "      It is not allowed to use in the spelling of the surname, own name superscripts, punctuation, except\n      for the use of the apostrophe in Belarusian and Latin spelling."
+    note "The Belarusian letter \"Г\" is written as the Latin \"H\""
+  }
+}
+
+tests {
+   "Бабрыковіч Аляксандр" ->  "Babrykovich Aliaksandr"
+   "Міховіч Марыя" ->  "Mikhovich Maryia"
+   "Максім" ->  "Maksim"
+   "Іван" ->  "Ivan"
+   "СВЯТЛАНА" ->  "SVIATLANA"
+   "Ігар" ->  "Ihar"
+   "МІХАІЛ" ->  "MIKHAIL"
+}
+
+dependency "mvd-bel-Cyrl-Latn-2008" as cyrllatn
+
+
+stage main {
+
+
+  # RULES
+  # note[5]
+  # Those two are nonsense and harmful for reversibility
+  # sub "\u044C", ref( 1 ), before: any("ЗзЛлНнСсЦц") # ь after consonants
+  # sub "\u02B9", ref( 1 ), before: any("ЗзЛлНнСсЦц") # Ь after consonants
+  # Й at end
+  sub {
+    from "\u0419" + line_end
+    to ""
+    before any("ЕеЁёЫыЮюЯя")
+  }
+  sub {
+    from "\u0439" + line_end
+    to ""
+    before any("ЕеЁёЫыЮюЯя")
+  }
+
+
+  # CHARACTERS
+  parallel {
+    sub "\u0413" "H"
+    sub "\u0433" "h"
+
+    sub "\u042C" ""
+    sub "\u044C" ""
+  }
+
+  run  map.cyrllatn.stage.main
+}
+
+}

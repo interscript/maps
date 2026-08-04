@@ -1,0 +1,341 @@
+system "ALA-LC:aze-Arab:Latn:1997" {
+
+metadata {
+  authority_id alalc
+  id 1997
+  language iso-639-2:aze
+  source_script Arab
+  destination_script Latn
+  name Romanization Table -- azerbaij (1997)
+  url http://catdir.loc.gov/catdir/cpso/romanization/azerbaij.pdf
+  creation_date 1997
+  description {    ALA-LC Romanization table for Arabic
+  }
+
+  notes {
+    note "1. As seen in the examples above, vowel harmony, which is\n found in Modern Turkish, applies to Azerbaijani as well."
+
+    note "2. The letter ى in final position may represent the long\n vowel romanized á, in addition to the\n vowels romanized i and 1. This occurs in Arabic names, such\n as Mustafá\n al-Musanná"
+
+    note "3. Vowel points are used sparingly in Azerbaijani\n publications. For romanization, they must be\n supplied from a dictionary."
+
+    note "Rule 1 ء hamza\n (a) When initial, ء is not represented in romanization\n üzdah  أوزدة\n (b) When medial or final in words of Perso-Arabic origin, 9 is\n romanized as ’ (alit), except when it accompanies the\n phonetic sound e (as in men), in which case it is romanized\n by e.\n mas’alah مَسئَلة\n gecah كئجة\n necah نئجة"
+
+    note "Rule 2 ˜ (maddah)\n (a) Initial آ is romanized ā.\n ādām				        آدام\n (b) Medial آ, when it represents the phonetic combination ’ā, is so romanized.\n Heydar'ãbãd     حيدَرآبَاد"
+
+    note "Rule 3  ّ\n (shaddah or tashdid) is represented by doubling the letter or digraph concerned.\n sãqqãl   سَاقَّال\n Note the exceptional case where  ّ is written over و and ي to represent\n the combination of long vowel plus consonants.\n madaníyat  مَدَنِيَّت"
+
+    note "      Rule 4 Tanvīn (written form ٌ, ً (ًا), or ٍ ) which occurs chiefly in Arabic words,\n      is romanized un, in, an, and an, respectively.\n\n      (a)	When it occurs in indefinite nouns derived from defective roots.\n\n        qāḍin				قاضٍ\n        ma‘nan				معنىً\n\n      (b)	When it indicates the adverbial use of a noun or adjective.\n\n        ṭab‘an				  طبعًا\n        faj’atan				فجأةً\n        al-Mushtarik waḍ‘an		المشترك وضعاً\n              wa-al-muftariq ṣuq‘an	والمفترق صقعاً"
+
+    note "ة in a word in the construct state is romanized t.  See rule 7(b)."
+
+    note "The consonant letter ö at the end of Arabic words in the\n genetive construction (izãfah) is romanized by t.\n takmilat al-axbãr    تَكمِلَة الأخبَار"
+    # Grammatical Structure as It Affects Romanization
+    note "Rule 6 izãfah. When two Persian words are used in an Azerbaijani\n context in a relationship known as izãfah, the first word (\n the muzãf) is followed by an additional letter or syllable\n in romanization. This is added according to the following\n rules\n (a) When the muzaf bears no special mark of izãfah, it is\n followed by -i.\n Sazman-i tabligãti-Islãm   سازمان تبليغات اسلامي\n (b) When the muzãf is marked by the addition of 9, it is followed by -'i.\n Nãbigah-'i dahr   نابغة دَهر\n (c) When the muzãf is marked by the addition of û, it is followed by -yi.\n darya-yi nur    دَريَاي نُور\n (d) izãfah is represented in romanization of personal names only when\n implied in the Persian script.\n Mucír-i BeylaqãnT   مَجير بيلقاني\n Maktabí-i Sírãzí    مكتبي شيرازي"
+    # Affixes and Compounds
+    note "Rule 7 Affixes.\n (a) When the affix and the word with it is connected grammatically are\n written separately in Azerbaijani, the two are separated in romanization\n by a single prime(').\n (b) The Arabic article al is separated by a hyphen, in romanization,\n from the word to which it is prefixed."
+
+    note "Rule 8 Compounds.\n When the elements of a compound (except a compound personal name)\n are written separately in Azerbaijani, they are separated in\n romanization by a single prime(')."
+    # Orthography of Azerbaijani in Romanization
+
+    note "Rule 9 Capitalization\n (a) Rules for the capitalization of English are followed, except that\n the Arabic article al, is lower cased in all positions.\n (b)	Diacritics are used with both upper and lower case letters in romanization."
+
+    note "Rule 10 Foreign words.\n Foreign words in an Azerbaijani context, including Persian and Arabic words,\n are romanized according to the rules for Azerbaijani. For short vowels not\n indicated in the script, the Azerbaijani vowels nearest the original\n pronunciation of the word are supplied in romanization."
+  }
+}
+
+tests {
+   "بَرَكَت" ->  "Barakat"
+   "سَاحِل" ->  "Sāḥil"
+   "بَادِمجَان" ->  "Bādimcān"
+   "قُدرَت" ->  "Qudrat"
+   "بُوغَا" ->  "Būğā"
+   "آرَام" ->  "Ārām"
+   "اِئنلِي" ->  "Enlī"
+   "دَلِيل" ->  "Dalīl"
+   "قَارَانلِيق" ->  "Qārānlīq"
+   "اِيش" ->  "Īş"
+   "اِيشِيق" ->  "Īşīq"
+   "اُون" ->  "On"
+   "ُاون" ->  "Ūn"
+   "ُاؤن" ->  "Ön"
+  # - source: ُأوزُوم
+  #   expected: üzūm
+   "اَيْوَان" ->  "Eyvān"
+   "اَوحَدِي" ->  "Awḥadī"
+   "َاوَّل" ->  "Avval"
+   "طَهي" ->  "Ṭahy"
+  # From Rule 1 - part a
+   "ُأوزدَة" ->  "Üzdah"
+  # From Rule 1 - part b
+   "مَسئَلَة" ->  "Mas’alah"
+   "گِئجَة" ->  "Gecah"
+   "نِئچَة" ->  "Neçah"
+  # From Rule 2 - part a
+   "آدَام" ->  "Ādām"
+  # From Rule 2 - part b
+   "حَيْدَرآبَاد" ->  "Ḥeydar’ābād"
+  # From Rule 3
+   "سَاقَّال" ->  "Sāqqāl"
+   "مَدَنِيَّت" ->  "Madanīyat"
+  # From Rule 5
+   "تَكمِلَة الأَخبَار" ->  "Takmilat al-Axbār"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+
+    sub "\u0628\u0651" "bb"
+    sub "\u067E\u0651" "pp"
+    sub "\u062A\u0651" "tt"
+    sub "\u062b\u0651" "s̱s̱"
+    sub "\u062C\u0651" "cc"
+    sub "\u0686\u0651" "çç"
+    sub "\u062d\u0651" "ḥḥ"
+    sub "\u062E\u0651" "xx"
+    sub "\u062F\u0651" "dd"
+    sub "\u0630\u0651" "ẕẕ"
+    sub "\u0631\u0651" "rr"
+    sub "\u0632\u0651" "zz"
+    sub "\u0698\u0651" "jj"
+    sub "\u0633\u0651" "ss"
+    sub "\u0634\u0651" "şş"
+    sub "\u0635\u0651" "ṣṣ"
+    sub "\u0636\u0651" "z̤z̤"
+    sub "\u0637\u0651" "ṭṭ"
+    sub "\u0638\u0651" "ẓẓ"
+    sub "\u0639\u0651" "‘‘"
+    sub "\u063A\u0651" "ğğ"
+    sub "\u0341\u0651" "ff"
+    sub "\u0642\u0651" "qq"
+    sub "\u06A9\u0651" "kk"
+    sub "\u0643\u0651" "kk"
+    sub "\u06AF\u0651" "gg"
+    sub "\u0644\u0651" "ll"
+    sub "\u0645\u0651" "mm"
+    sub "\u0646\u0651" "nn"
+    sub "\u0648\u0651" "vv"
+    sub "\u0647\u0651" "hh"
+    sub "\u064A\u0651" "yy"
+
+    sub "\u060c" ","
+
+    sub "\u0627\u0644\u0644\u0651\u064e\u0647" "Allāh"
+
+    sub {
+    from boundary + "\u0627\u0644"
+    to "al-"
+  }
+
+    sub "\u0628" "b"
+    sub "\u067E" "p"
+    sub "\u062A" "t"
+    sub "\u062b" "s̱"
+    sub "\u062C" "c"
+    sub "\u0686" "ç"
+    sub "\u062d" "ḥ"
+    sub "\u062E" "x"
+    sub "\u062F" "d"
+    sub "\u0630" "ẕ"
+    sub "\u0631" "r"
+    sub "\u0632" "z"
+    sub "\u0698" "j"
+    sub "\u0633" "s"
+    sub "\u0634" "ş"
+    sub "\u0635" "ṣ"
+    sub "\u0636" "z̤"
+    sub "\u0637" "ṭ"
+    sub "\u0638" "ẓ"
+    sub "\u0639" "‘"
+    sub "\u063A" "ğ"
+    sub "\u0341" "f"
+    sub "\u0642" "q"
+    sub "\u06A9" "k"
+    sub "\u0643" "k"
+    sub "\u06AF" "g"
+    sub "\u0644" "l"
+    sub "\u0645" "m"
+    sub "\u0646" "n"
+    sub "\u0648" "v"
+    sub "\u0647" "h"
+    sub "\u064A" "y"
+
+    # Vowels and Diphthongs
+    sub "\u064e" "a"
+    sub "\u0650" "i"
+    sub "\u064f" "u"
+    sub "\u064f\u0648" "ū"
+    sub "\u064e\u0627" "ā"
+    sub "\u0622" "ā"
+    sub {
+    from "\u0650" + any("\u0621\u0623\u0624\u0626")
+    to "e"
+  }
+    sub "\u0650\u064a" "ī"
+    sub "\u0650\u0627\u064a" "ī"
+    sub {
+    from maybe(any("\u064f")) + "\u0627\u064f\u0648"
+    to "o"
+  }
+    sub "\u064f\u0627\u0648" "ū"
+    sub "\u064f\u0627\u0624" "ö"
+    sub "\u064f\u0623\u0648" "ü"
+    sub "\u064e\u064a\u0652" "ey"
+    sub {
+    from "\u064e\u0648" + maybe("\u0652")
+    to "aw"
+  }
+    sub {
+    from boundary + "\u0627"
+    to ""
+  }
+    sub {
+    from boundary + "\u064e\u0627"
+    to "a"
+  }
+    sub {
+    from boundary + "\u0650\u0627"
+    to "i"
+  }
+
+    # hamzah
+    sub {
+    from boundary + "\u0623"
+    to ""
+  }
+    sub {
+    from "\u0623"
+    to "’"
+    not_before "\u0644"
+  }
+    sub "\u0623" ""
+    sub "\u0624" "’"
+    sub "\u0626" "’"
+    sub {
+    from boundary + "\u0622"
+    to "ā"
+  }
+    sub {
+    from "\u0622"
+    to "’ā"
+    not_before any([boundary + "\u0627\u0644", boundary])
+    not_after any([boundary, "\u0621"])
+  }
+    sub "\u064e\u0622" "ā"
+    sub "\u0622" ""
+
+    # Rule 3 - shadda
+    sub "\u0650\u064a\u0651" "īy"
+    sub "\u064f\u0648\u0651" "ūw"
+    sub {
+    from "\u0650\u064a\u0651" + boundary
+    to "ī"
+  }
+    sub "\u064e\u0648\u0651" "aww"
+    sub "\u064e\u064a\u0651" "ayy"
+
+    # Rule 4 - tanvin
+    sub "\u064c" "un"
+    sub "\u064b" "an"
+    sub "\u064d" "in"
+    # tanween should be onb the letter preceeding the end in case of ا, ى
+    # however, it's common that people mistake that, so we're handling both orders
+    sub "\u064b\u0649" "an"
+    sub "\u064b\u0627" "an"
+    sub "\u0649\u064b" "an"
+    sub "\u0627\u064b" "an"
+
+    # Rule 5 ta' marboota
+    sub "\u0629" "t"
+    sub {
+    from "\u0629" + line_end
+    to "h"
+  }
+    sub {
+    from "\u0629"
+    to "h"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "h"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "h"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "h"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "h"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "h"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "h"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "h"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "h"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "h"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "h"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "h"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+
+
+    sub {
+    from "\u0650\u064a"
+    to "iy"
+    after any("\u064e\u064f")
+  }
+    sub "\u064e\u0649" "á"
+  }
+
+  # POSTRULES
+  sub {
+    from any("\u0061".."\uFFFF")
+    to upcase
+    before boundary
+    not_before boundary + any("‘’'")
+  }
+
+  sub {
+    from boundary + "Al"
+    to "al"
+  }
+
+  compose
+}
+}

@@ -1,0 +1,118 @@
+system "ISO:tha-Thai:Latn:11940-1998" {
+
+metadata {
+  authority_id iso
+  id 11940-1998
+  language iso-639-2:tha
+  source_script Thai
+  destination_script Latn
+  name ISO 11940:1998 Information and documentation -- Transliteration of Thai
+  url https://www.iso.org/standard/20574.html
+  creation_date 1998
+  adoption_date 
+  description 
+
+  notes {
+  }
+}
+
+tests {
+   "ภาษาไทย" ->  "p̣hās̛̄āịthy"
+   "เชียงใหม่" ->  "echīyngıh̄m̀"
+}
+
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "\u0e01" "k"
+    sub "\u0e02" "k̄h"
+    sub "\u0e03" "ḳ̄h"
+    sub "\u0e04" "kh"
+    sub "\u0e05" "k̛h"
+    sub "\u0e06" "ḳh"
+    sub "\u0e07" "ng"
+    sub "\u0e08" "c"
+    sub "\u0e09" "c̄h"
+    sub "\u0e0a" "ch"
+    sub "\u0e0b" "s"
+    sub "\u0e0c" "c̣h"
+    sub "\u0e0d" "ỵ"
+    sub "\u0e0e" "ḍ"
+    sub "\u0e0f" "ṭ"
+    sub "\u0e10" "ṭ̄h"
+    sub "\u0e11" "ṯh"
+    sub "\u0e12" "t̛h"
+    sub "\u0e13" "ṇ"
+    sub "\u0e14" "d"
+    sub "\u0e15" "t"
+    sub "\u0e16" "t̄h"
+    sub "\u0e17" "th"
+    sub "\u0e18" "ṭh"
+    sub "\u0e19" "n"
+    sub "\u0e1a" "b"
+    sub "\u0e1b" "p"
+    sub "\u0e1c" "p̄h"
+    sub "\u0e1d" "f̄"
+    sub "\u0e1e" "ph"
+    sub "\u0e1f" "f"
+    sub "\u0e20" "p̣h"
+    sub "\u0e21" "m"
+    sub "\u0e22" "y"
+    sub "\u0e23" "r"
+    sub "\u0e24" "v"
+    sub "\u0e25" "l"
+    sub "\u0e26" "ł"
+    sub "\u0e27" "w"
+    sub "\u0e28" "ṣ̄"
+    sub "\u0e29" "s̛̄"
+    sub "\u0e2a" "s̄"
+    sub "\u0e2b" "h̄"
+    sub "\u0e2c" "ḷ"
+    sub "\u0e2d" "x"
+    sub "\u0e2e" "ḥ"
+    sub "\u0e2f" "ǂ"
+    sub "\u0e30" "a"
+    sub "\u0e31" "ạ"
+    sub "\u0e32" "ā"
+    sub "\u0e33" "å"
+    sub "\u0e34" "i"
+    sub "\u0e35" "ī"
+    sub "\u0e36" "ụ"
+    sub "\u0e37" "ụ̄"
+    sub "\u0e38" "u"
+    sub "\u0e39" "ū"
+    sub "\u0e3a" "–̥"
+    sub "\u0e40" "e"
+    sub "\u0e41" "æ"
+    sub "\u0e42" "o"
+    sub "\u0e43" "ı"
+    sub "\u0e44" "ị"
+    sub "\u0e45" "ɨ"
+    sub "\u0e46" "«"
+    sub "\u0e47" "̆"
+    sub "\u0e48" "̀"
+    sub "\u0e49" "̂"
+    sub "\u0e4a" "́"
+    sub "\u0e4b" "̌"
+    sub "\u0e4c" "̒"
+    sub "\u0e4d" "̊"
+    sub "\u0e4e" "~"
+    sub "\u0e4f" "§"
+    sub "\u0e50" "0"
+    sub "\u0e51" "1"
+    sub "\u0e52" "2"
+    sub "\u0e53" "3"
+    sub "\u0e54" "4"
+    sub "\u0e55" "5"
+    sub "\u0e56" "6"
+    sub "\u0e57" "7"
+    sub "\u0e58" "8"
+    sub "\u0e59" "9"
+    sub "\u0e5a" "ǁ"
+    sub "\u0e5b" "»"
+  }
+  compose
+}
+}

@@ -1,0 +1,299 @@
+system "ODNI:fas-Arab:Latn:2004" {
+
+metadata {
+  authority_id odni
+  id 2004
+  language iso-639-2:fas
+  source_script Arab
+  destination_script Latn
+  name Intelligence Community (IC) Standard for the Transliteration of Farsi (Persian) Personal Names (2004)
+  creation_date 2004
+  confirmation_date 2004-11
+  description {
+  }
+  notes {
+    note "Long/short vowels:- There is no distinction made in Roman\n between long and short a:-  E.g., Parvas (first a is short,\n second is long)."
+    note "Double consonants:-  Double consonants represented by the\n tashdid are shown by doubling the Roman letter:-\n Mo'azzami.  Exceptions:-  Ain and consonants represented by\n Roman digraphs (e.g., sh, ch) are not doubled:-  Mobasher [\n not:-  Mobashsher].  Double letters are only used for\n tashdid (thus, Hosein [not Hossein]) or to reflect the ‘sun\n letter’ assimilation (see beelow)."
+    note "Hamzeh:-  The hamzeh is represented name-internally by an\n apostrophe, as is the ain.  Name-initially, however,\n neither hamzeh nor ain are indicated in transliteration (\n e.g., Abdorrahman, not 'Abdorrahman)."
+    note "Digraphs:-  No distinction is drawn in Roman between\n digraphs such as sh and single contiguous letters (e.g., s\n followed by h)."
+    note "Arabic definite article \"al\" ('the'):-  Common in many\n names borrowed from Arabic, the transliteration should\n follow the Arabic rules for “sun letter” assimilation in\n spoken form and reflect the nominative case.  That  is:-\n Abdorrahman, not Abd al-Rahman.  Note also that the\n “Abdollah” and “Abdol + attribute of Allah” names are\n written as one unanalyzed word, as are other names that\n contain the definite article:-  Shamsoddin (not Shams al-\n Din), Nezamoddin, etc."
+    note "Diphthongs:-  Diphthongs are written ei and ow, as in,\n respectively:-  Hosein; Khosrow."
+    note "Yeh maqsura (final yeh pronounced as “a”):-  should be\n written as “a” as in “Musa”."
+
+    note "Special Rules"
+
+    note "Hyphens:-  A hyphen is used to indicate the ezafeh\n construction:-  Arshad-e Ameri"
+    note "Borrowed names that incorporate the name of God (Allah)\n are transliterated as one word, with the letter \"o\":-  E.g.,\n Abdollah, Ayatollah, Azizollah."
+    note "Foreign names borrowed or appearing in Farsi are spelled\n according to the standard Western tradition (even if there\n is an Arabic or Farsi version of the same name):-  Joseph,\n Michael."
+    note "Common suffixes, such as nia, pur, fard, far, abad,\n zadeh, khah, and nezhad as well as nesbeh (‘relationship’ (\n to place of birth, etc.)) names derived with these\n suffixes  (e.g., nezhadi, abadi) are written as part of the\n name:-\n asa		Mehrasa\n baksh		Tajbaksh\n dust		Rafighdust\n far		Parvizfar\n fard		Akhavanfard\n gar		Fuladgar\n gol		Zarringol\n kar		Parhizkar\n khah		Vatankhah\n khu		Nikkhu\n mand		Purmand\n mehr		Zadmehr\n nezhad		Niknezhad\n nia		Montajebnia\n parast		Khodaparast\n parvar		Golparvar\n pur		Mohteshemipur\n tabar		Shayestehtbar\n yar		Mohammadyar\n zadeh		Vakilzadeh\n abadi		Salehabadi\n khani		Alikhani\n nezhadi 	Niknezhadi"
+
+    note "Note also that yar can function as a prefix and, as such,\n should be affixed directly to the name:-\n yar		Yarmohammadi, Yarshater"
+
+    note "This is in contrast with hyphenated names such as Raja’i-\n Khorasani, Tabataba’i-Shirazi, Soleimani-Maimandi, etc."
+  }
+}
+
+tests {
+   "مُوسَى" ->  "musa"
+   "مُؤمِن" ->  "mo’men"
+   "رِضايي" ->  "reza’i"
+   "مُبَشِّر" ->  "mobasher"
+   "حَسَّان" ->  "hassan"
+   "حَسَن" ->  "hasan"
+   "صَفَّار" ->  "saffar"
+   "صَفَر" ->  "safar"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    # special rules
+
+    sub {
+    from space
+    to ""
+    after "\u0622\u0628\u064E\u0627\u062F"
+  }
+    sub "\ufdf2" "Allah"
+    sub {
+    from space + "\u0627\u0644\u0644\u0651\u064e\u0647"
+    to "ollah"
+  }
+
+    sub "\u0652" ""
+    sub "\u0659" "ê"
+
+    sub "\u064e\u064a\u0652" "ay"
+    sub "\u0649\u0670" "á"
+    sub "\u0674" "-e"
+    sub "\u0654" "-e"
+    # - '-ye'
+
+
+    # ta' marboota
+    sub "\u0629" "eh"
+
+
+
+    sub "\u0626" "’"
+    sub "\u0624" "’"
+    sub "\u0623" ""
+    sub "\u0625" ""
+
+    # See note B
+    sub {
+    from boundary + "\u0627\u0644"
+    to "al "
+  }
+    sub {
+    from boundary + "\u0622\u0644"
+    to "Al "
+  }
+    # '\uFE8E' : ''  # ﺎ
+
+    # Sun letters
+    sub {
+    from boundary + "\u0627\u0644\u062a" + maybe("\u0651")
+    to "at t"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u062b" + maybe("\u0651")
+    to "as s"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u062f" + maybe("\u0651")
+    to "ad d"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0630" + maybe("\u0651")
+    to "az z"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0631" + maybe("\u0651")
+    to "ar r"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0632" + maybe("\u0651")
+    to "az z"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0633" + maybe("\u0651")
+    to "as s"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0634" + maybe("\u0651")
+    to "ash sh"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0635" + maybe("\u0651")
+    to "as s"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0636" + maybe("\u0651")
+    to "az z"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0637" + maybe("\u0651")
+    to "at t"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0638" + maybe("\u0651")
+    to "az z"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0644" + maybe("\u0651")
+    to "al l"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0646" + maybe("\u0651")
+    to "an n"
+  }
+
+    # Farsi Vowel (Pointing)
+    sub "\u0622" "a"
+    sub "\u064e" "a"
+    sub {
+    from "\u0627"
+    to ""
+    before "\u064e"
+  }
+    sub {
+    from "\u0627"
+    to "a"
+    not_before boundary
+  }
+    sub {
+    from boundary + "\u0627\u064e"
+    to "a"
+  }
+    sub {
+    from boundary + "\u0627\u064f"
+    to "o"
+  }
+    sub {
+    from boundary + "\u0627\u0650"
+    to "e"
+  }
+
+    sub "\u064f" "o"
+    sub "\u064f\u0648" "u"
+    # '\u064e\u0648' : 'ow'  # ـَو
+    # '\u064e\u0648\u0652' : 'aw'  # ـَوْ
+
+
+    sub "\u0650" "e"
+    sub "\u0650\u064a" "i"
+    sub "\u0650\u06cc" "i"
+    sub "\u0650\u064a\u0651\u064e" "iy"
+    sub "\u0650\u06cc\u0651\u064e" "iy"
+    sub {
+    from "\u0650\u064a"
+    to "iy"
+    after any(["\u064e", "u064f"])
+  }
+    # '\u064e\u064a' : 'aī'  # ـَي
+    # '\u064e\u06cc' : 'aī'  # ـَي
+    # '\u064e\u0649' : 'ay'  # ـَى fatha followed by ى which is ا not ي
+
+    # additional symbols
+
+    # shadda
+
+    sub "\u0628\u0651" "bb"
+    sub "\u062a\u0651" "tt"
+    sub "\u062b\u0651" "ss"
+    sub "\u062c\u0651" "jj"
+    sub "\u062d\u0651" "hh"
+    sub "\u062e\u0651" "kh"
+    sub "\u062f\u0651" "dd"
+    sub "\u0630\u0651" "zz"
+    sub "\u0631\u0651" "rr"
+    sub "\u0632\u0651" "zz"
+    sub "\u0633\u0651" "ss"
+    sub "\u0634\u0651" "sh"
+    sub "\u0635\u0651" "ss"
+    sub "\u0636\u0651" "zz"
+    sub "\u0637\u0651" "tt"
+    sub "\u0638\u0651" "zz"
+    sub "\u063a\u0651" "gh"
+    sub "\u0641\u0651" "ff"
+    sub "\u0642\u0651" "gh"
+    sub "\u0643\u0651" "kk"
+    sub "\u0644\u0651" "ll"
+    sub "\u0645\u0651" "mm"
+    sub "\u0646\u0651" "nn"
+    sub "\u0647\u0651" "hh"
+    sub "\u0648\u0651" "vv"
+    sub "\u064a\u0651" "yy"
+
+    sub {
+    from "\u0621"
+    to ""
+    before boundary
+  }
+    sub "\u0621" "’"
+
+    # FROM NOTES
+
+    sub "\u064e\u0649" "a"
+    sub "\u0649" "a"
+
+    sub "\u064a\u064a" "’i"
+    sub "\u06cc\u06cc" "’i"
+
+    sub {
+    from "\u0627\u064a" + boundary
+    to "’i"
+  }
+    sub {
+    from "\u0627\u06cc" + boundary
+    to "’i"
+  }
+
+    # Farsi consonant characters
+
+    sub "\u0628" "b"
+    sub "\u067E" "p"
+    sub "\u062a" "t"
+    sub "\u062B" "s"
+    sub "\u062c" "j"
+    sub "\u0686" "ch"
+    sub "\u062d" "h"
+    sub "\u062e" "kh"
+    sub "\u062f" "d"
+    sub "\u0630" "z"
+    sub "\u0631" "r"
+    sub "\u0632" "z"
+    sub "\u0698" "zh"
+    sub "\u0633" "s"
+    sub "\u0634" "sh"
+    sub "\u0635" "s"
+    sub "\u0636" "z"
+    sub "\u0637" "t"
+    sub "\u0638" "z"
+    sub "\u0639" "‘"
+    sub {
+    from "\u0639"
+    to ""
+    before boundary
+  }
+    sub "\u063a" "gh"
+    sub "\u0641" "f"
+    sub "\u0642" "gh"
+    sub "\u0643" "k"
+    sub "\u06A9" "k"
+    sub "\u06AF" "g"
+    sub "\u0644" "l"
+    sub "\u0645" "m"
+    sub "\u0646" "n"
+    sub "\u0647" "h"
+    sub "\u0648" "v"
+    sub "\u064a" "y"
+    sub "\u0649" "y"
+    sub "\u06D0" "ē"
+    sub "\u06CD" "êy"
+  }
+
+}
+}

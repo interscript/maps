@@ -1,0 +1,82 @@
+system "DIN:nep-Deva:Latn:33904-2018" {
+
+metadata {
+  authority_id din
+  id 33904-2018
+  language iso-639-2:nep
+  source_script Deva
+  destination_script Latn
+  name "DIN 33904:2018-10 Information and documentation -- Romanization Devanagari, Nepali"
+  url https://www.beuth.de/en/standard/din-33904/293049024
+  creation_date 2018
+  description {    Nepali system.
+
+    This standard specifies the transliteration of all languages of the Devanāgarī characters into Latin letters firmly.
+    It is suitable for any application.
+  }
+
+  notes {
+    note "      Vowels:\n      The Ardhacandra ॅ is often used to denote English vowels:\n      EXAMPLE\n      बॅट     bêṭa       (bat)\n      डॉक्टर  ḍôkṭara (doctor)"
+    note "      Consonants:\n\n      Since the Devanāgarī script is a syllabic script, it becomes -a inherent in the consonant.\n      Always written during transliteration, also in the final part\n      EXAMPLE 1\n      पुस्तक   pustaka\n\n      A line under the consonant, the so-called Virāma, means in the Devanāgarī script that that inherent -a not applicable.\n      EXAMPLE 2\n      वाक्   vāk\n\n      The anusvāra is always represented with -ṃ-.\n      EXAMPLE 3\n      संसकरण saṃskaraṇa\n\n      Before k, kh, g, gh, c, ch, j, jh, ṭ, ṭh, ḍ, ḍh, t, th, d, dh, p, ph, b, bh, the anusvāra becomes the class nasal transformed.\n      EXAMPLE 4\n      तंघी   kaṃghī becomes kaṅghī\n      पंजाबी  paṃjābī becomes pañjābī\n      पंडित  paṃḍita becomes paṇḍita\n      संधी   saṃdhī becomes sandhī\n      दिसंबर  disaṃbara becomes disambara\n\n      Anunāsika or Candrabindu signals the nasalization of vowels\n\n      EXAMPLE 5\n      माँ māṁ"
+  }
+}
+
+tests {
+   "लेखन" ->  "lekhana"
+   "मुद्रा" ->  "mudrā"
+   "प्रशंसा" ->  "praśaṃsā"
+   "अंक" ->  "aṅka"
+   "नेकपाले स्थगित स्थायी कमिटीको बैठक भदौ गते बोलाउने भएको" ->  "nekapāle sthagita sthāyī kamiṭīko baiṭhaka bhadau gate bolāune bhaeko"
+   "न घर रह्यो, न परिवार" ->  "na ghara rahyo, na parivāra"
+   "ढोरपाटनमा भुजीखोला बाढीपहिरोले अभिभावक गुमाएका बालबालिकाको बिचल्ली" ->  "ḍhorapāṭanamā bhujīkholā bāḍhīpahirole abhibhāvaka gumāekā bālabālikāko bicallī"
+   "सुस्मिताका काका हेमबहादुर र काकीलाई पनि पहिरोले बगायो" ->  "susmitākā kākā hemabahādura ra kākīlāī pani pahirole bagāyo"
+   "संविधान जारी भएसँगै सार्वजनिक प्रशासनमा नयाँ उत्साह आउने अपेक्षा थियो" ->  "saṃvidhāna jārī bhaesaṁgai sārvajanika praśāsanamā nayāṁ utsāha āune apekṣā thiyo"
+   "देशमा कोरोना संक्रमित र मृतकको संख्या हरेक दिन बढ्दो छ" ->  "deśamā koronā saṅkramita ra mṛtakako saṅkhyā hareka dina baḍhdo cha"
+   "गाउँपालिकाका अध्यक्ष टिका गुरुङका अनुसार विष्णुदासलाई राजुले सुत्नका लागि बेलुका साथी लगेका थिए" ->  "gāuṁpālikākā adhyakṣa ṭikā guruṅakā anusāra viṣṇudāsalāī rājule sutnakā lāgi belukā sāthī lagekā thie"
+   "यो आयोजना गाउँपालिकाको केन्द्र तेल्लोकमा पर्छ" ->  "yo āyojanā gāuṁpālikāko kendra tellokamā parcha"
+   "सुस्मिताका काका हेमबहादुर र काकीलाई पनि पहिरोले बगायो" ->  "susmitākā kākā hemabahādura ra kākīlāī pani pahirole bagāyo"
+   "चैत पहिलो साता घर आएका उनी लकडाउन भएपछि यतै रोकिए" ->  "caita pahilo sātā ghara āekā unī lakaḍāuna bhaepachi yatai rokie"
+   "काम गर्न जानेको हकमा रोजगारदाता कम्पनीको पत्रसँगै वडा र जिल्ला प्रशासनको सिफारिस अनिवार्य गरिएको छ" ->  "kāma garna jāneko hakamā rojagāradātā kampanīko patrasaṁgai vaḍā ra jillā praśāsanako siphārisa anivārya garieko cha"
+   "दुःख" ->  "duḥkha"
+}
+
+dependency "din-san-Deva-Latn-33904-2018" as devalatn
+
+
+stage main {
+
+  run  map.devalatn.stage.main
+
+  # CHARACTERS
+  parallel {
+
+    sub "ॲ" "ê"
+    sub "ऑ" "ô"
+
+    # Dotted variants
+    sub "क़" "ḵa"
+    sub "ख़" "ḵha"
+    sub "ग़" "g̱a"
+    sub "ज़" "j̱a"
+    sub "ड़" "ṙa"
+    sub "ढ़" "ṙha"
+    sub "फ़" "p̱ha"
+    sub "स़" "s̱a"
+    sub "ह़" "ẖa"
+    sub "व़" "v̱a"
+
+    # Dotted variants Virāma
+    sub "क़्" "ḵ"
+    sub "ख़्" "ḵh"
+    sub "ग़्" "g̱"
+    sub "ज़्" "j̱"
+    sub "ड़्" "ṙ"
+    sub "ढ़्" "ṙh"
+    sub "फ़्" "p̱h"
+    sub "स़्" "s̱"
+    sub "ह़्" "ẖ"
+  }
+
+}
+
+}

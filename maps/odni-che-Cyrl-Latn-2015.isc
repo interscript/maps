@@ -1,0 +1,184 @@
+system "ODNI:che-Cyrl:Latn:2015" {
+
+metadata {
+  authority_id odni
+  id 2015
+  language iso-639-2:che
+  source_script Cyrl
+  destination_script Latn
+  name ICS-630-01 Romanization of Chechen Cyrillic Personal Names (2015)
+  source ICS-630-01 Annex C
+  creation_date 2015
+  confirmation_date 2015
+
+  description {    This system is the Intelligence Community (IC) standard for the transliteration of Chechen names
+    that will be applied to all final written reports and products for IC consumers. It is not intended to
+    eliminate variations of a name that can contribute forensic information. Rather, it is to provide an
+    IC standard Romanized (English) transliteration from Chechen that can then be linked to forensic
+    information in ways that will help identify the referent of the name.
+    In cases where an individual’s name has already been transliterated in a variant spelling, the IC
+    Standard spelling should appear first, followed by the variant spelling(s) in parentheses at the first
+    usage. In addition, if the original Cyrillic or Arabic-script spelling is known, that spelling should
+    also appear in parentheses following the name, if possible, following best practices of the issuing
+    organization and taking into consideration information system capabilities. For example: Ilyas
+    Akhmadkant (also seen as Ilyas Axmadkhant, Ильяс Ахмадкӏант). This convention is designed
+    to ensure that vital forensic information is not lost.
+    For names of persons who are known to not be part of the Chechen-speaking community, use the
+    relevant IC transliteration standard for names from that language (e.g., Mikhail, Yitzhak). A
+    translator’s note may be used to clarify the known origin of the person. Spell names of
+    individuals from languages that are written in Roman letters as they are spelled in those
+    languages (e.g., George Clooney, Jorge Garcia, Georges Pompidou).
+    In the case of active senior government officials in the on-line CIA World Factbook and the online
+    directory of Chiefs of State and Cabinet Members of Foreign Governments, the spellings
+    given in these on-line reference works should be used in place of the IC Standard. For any
+    individual who has at one time been listed in the Factbook or Chiefs of State directory but who no
+    longer appears in those resources (i.e. is no longer a government official), the IC Standard
+    spelling should appear first, with the spelling, if known, as it previously appeared in those
+    resources listed within parentheses at the first usage.
+    The primary goal is to produce a consistent Romanized transcription of names that is specifically
+    readable to the English-speaking non-specialist. The system uses the 26 letters of the standard
+    (English) Roman alphabet plus the apostrophe. Some ambiguities in the Romanized form will
+    occur without the use of diacritics. However, within the context of a report, where additional
+    information about the individual is provided, the referent will be clearly identified. This system
+    will be used in conjunction with on-line tools, name dictionaries, and lists containing
+    conventional spellings of names of well-known individuals.
+  }
+
+  notes {
+    note "Add a preceding 'y' if the vowel is preceded by the sound of a 'y' consonant."
+    note "      This is a single apostrophe as found on regular US keyboards (ASCII character 39),\n      though software may render the apostrophe with differing appearances (e.g. curved left or right).\n      Note that the same apostrophe is used for 'ъ', '|', 'ӏ', and '1'."
+    note "A word-initial hard sign 'ъ' is not represented, but instead is left out of the transliteration."
+    note "The romanization follows the dialect spoken in Chechnya rather than other local pronunciations."
+    note "Long and short vowels are not distinguished in this system."
+    note "In the Roman, no distinction is made between digraphs such as 'sh' and single contiguous letters (e.g. 's' followed by 'h')."
+    note "The Cyrillic soft sign ('ь') by itself (not part of a digraph) is not represented, but instead is left out of the transliteration."
+    note "Interpretation of Cyrillic digraphs in Table 1 takes precedence over interpretation of the individual\n characters. Thus, 'кх' -> 'q', and not to 'k' followed by 'kh'."
+    note "Transliteration of Cyrillic digraphs for diphthongs will follow the combination of the transliteration of\n the individual characters. Thus, 'aй' -> 'ay', 'oй' -> 'oy', and both 'эй' and 'eй' -> 'ey'."
+  }
+}
+
+tests {
+   "Ильяс Ахмадкӏант" ->  "Ilyas Akhmadkant"
+   "Ильяс Ахмадк1ант" ->  "Ilyas Akhmadkant"
+}
+
+stage main {
+  # note[1]
+  sub {
+    from boundary + "\u0415"
+    to "Ye"
+    not_before boundary + "\u2019"
+  }
+  sub {
+    from boundary + "\u0435"
+    to "ye"
+    not_before boundary + "\u2019"
+  }
+  # note[2]
+  sub {
+    from "1"
+    to "ӏ"
+    before not_word
+    after not_word
+  }
+  sub {
+    from "1"
+    to "ӏ"
+    before not_word
+  }
+  sub {
+    from "1"
+    to "ӏ"
+    after not_word
+  }
+
+  parallel {
+    sub "\u0410" 'A'
+    sub "\u0411" 'B'
+    sub "\u0412" 'V'
+    sub "\u0413" 'G'
+    sub "\u0413\u04C0" 'Gh'
+    sub "\u0414" 'D'
+    sub "\u0415" 'E'
+    sub "\u0416" 'J'
+    sub "\u0417" 'Z'
+    sub "\u0418" 'I'
+    sub "\u0418\u042B" 'I'
+    sub "\u042B" 'Y'
+    sub "\u041A" 'K'
+    sub "\u041A\u04C0" 'K'
+    sub "\u041A\u0445" 'Q'
+    sub "\u041A\u044A" 'Q'
+    sub "\u041B" 'L'
+    sub "\u041C" 'M'
+    sub "\u041D" 'N'
+    sub "\u041E" 'O'
+    sub "\u041F" 'P'
+    sub "\u041F\u04C0" 'Ph'
+    sub "\u0420" 'R'
+    sub "\u0421" 'S'
+    sub "\u0422" 'T'
+    sub "\u0422\u04C0" 'T'
+    sub "\u0423" 'U'
+    sub "\u0424" 'F'
+    sub "\u0425" 'Kh'
+    sub "\u0425\u044C" 'H'
+    sub "\u0425\u04C0" 'H'
+    sub "\u04B8" 'Ts'
+    sub "\u04B8\u04C0" 'Ts'
+    sub "\u0427" 'Ch'
+    sub "\u0427\u04C0" 'Ch'
+    sub "\u0428" 'Sh'
+    sub "\u042A" "'"
+    sub "\u042B" 'Е'
+    sub "\u042D" 'E'
+    sub "\u042E" 'Yu'
+    sub "\u042F" 'Ya'
+    sub "\u04C0" "'"
+    sub "\u042C" ''
+
+    sub "\u0430" 'a'
+    sub "\u0431" 'b'
+    sub "\u0432" 'v'
+    sub "\u0433" 'g'
+    sub "\u0433\u04CF" 'gh'
+    sub "\u0434" 'd'
+    sub "\u0435" 'e'
+    sub "\u0436" 'j'
+    sub "\u0437" 'z'
+    sub "\u0438" 'i'
+    sub "\u0438\u0439" 'i'
+    sub "\u0439" 'y'
+    sub "\u043A" 'k'
+    sub "\u043A\u04CF" 'k'
+    sub "\u043A\u0445" 'q'
+    sub "\u043A\u044A" 'q'
+    sub "\u043B" 'l'
+    sub "\u043C" 'm'
+    sub "\u043D" 'n'
+    sub "\u043E" 'o'
+    sub "\u043F" 'p'
+    sub "\u0440" 'r'
+    sub "\u0441" 's'
+    sub "\u0442" 't'
+    sub "\u0442\u04CF" 't'
+    sub "\u0443" 'u'
+    sub "\u0444" 'f'
+    sub "\u0445" 'kh'
+    sub "\u0445\u044C" 'h'
+    sub "\u0445\u04CF" 'h'
+    sub "\u04B9" 'ts'
+    sub "\u04B9\u04CF" 'ts'
+    sub "\u0447" 'ch'
+    sub "\u0447\u04CF" 'ch'
+    sub "\u0448" 'sh'
+    sub "\u044A" "'"
+    sub "\u044B" 'e'
+    sub "\u044D" 'e'
+    sub "\u044E" 'yu'
+    sub "\u044F" 'ya'
+    sub "\u04CF" "'"
+    sub "\u044C" ''
+  }
+}
+}

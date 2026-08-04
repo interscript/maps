@@ -1,0 +1,380 @@
+system "ISO:ara-Arab:Latn:233-2-1993" {
+
+metadata {
+  authority_id iso
+  id 233-2-1993
+  language iso-639-2:ara
+  source_script Arab
+  destination_script Latn
+  name ISO 233-2:1993 documentation -- Transliteration of Arabic characters into Latin characters
+  url {
+ - https://www.iso.org/standard/4118.html
+    - https://cdn.standards.iteh.ai/samples/4118/2f03c828842c4055a5619c1bded39381/ISO-233-2-1993.pdf
+  }
+  creation_date 1993-08
+  confirmation_date 2018-06
+  description {    Establishes a simplified system for the transliteration. This
+    simplification of the stringent rules established by ISO 233:1984
+    is especially intended to facilitate the processing of bibliographic
+    information (e.g. catalogues, indices, citations, etc.). Annex A
+    gives the diacritical signs used (taken from the code table of
+    ISO 5436:1983).
+  }
+  notes {
+    note "      4.1.1 In order to render a transliterated text more legible, the vowels\n      are supplied [method 2.1 c) of ISO 233:1984]. However sukün (`\\u0652`) is\n      omitted, as well as the vowels and diphthongs which have only a flexional\n      function in nominal forms."
+
+    note "      4.1.2 The initial alif (`\\u0627`) is not represented: the presence of an\n      initial vowel in the transliterated word is enough to indicate an alif in\n      the original script."
+
+    note "      4.1.3 A character bearing a hamzat (`\\u0621`), which depends on the\n      vocalic context, is not represented."
+
+    note "      4.1.4 The definite article (`\\u0627\\u0644`), is always represented by the\n      characters “al-”, whatever its vocalization."
+
+    note "      4.1.5 The prepositions (li, bi, ka) as well as the conjunction wa, which\n      in Arabic are joined to the word, are separated by a hyphen in the\n      transliterated script."
+  }
+}
+
+tests {
+   "مِصر" ->  "Miṣr"
+   "قَطَر" ->  "Qaṭar"
+   "الرِيَاض" ->  "al-Riyāḍ"
+   "الشارِقة" ->  "al-Šâriqaẗ"
+   "فِي نُورِ الْقَمَرِ" ->  "Fī Nūr al-Qamar"
+   "بِئْر" ->  "Bi’r"
+   "سَأَلَ" ->  "Sa’al"
+   "أَخْبَار" ->  "Aẖbār"
+   "قُرْآن" ->  "Qur’ān"
+   "آدَاب" ->  "Ādāb"
+   "الشَمْسُ" ->  "al-Šams"
+   "بِاللَيلِ" ->  "bi-al-Layl"
+   "لِلوَلَدِ" ->  "li-l-Walad"
+}
+
+# Although this system inherits from iso-ara-Arab-Latn-233-1984,
+# it utilizes a set of simplified rules.
+# It is therefore easier to be implemented as a separate map instead
+# of using the inherit flag.
+# inherit: iso-ara-Arab-Latn-233-1984
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+
+    # pointing
+
+    # Table 2 No. 30
+    sub "\u064e" "a"
+    sub {
+    from "\u064e"
+    to ""
+    after "\u0629"
+  }
+
+    # Table 2, No. 31
+    sub "\u064f" "u"
+
+    # Table 2, No. 32
+    sub "\u0650" "i"
+
+    # Table 3, No. 33
+    sub "\u0652" ""
+
+    # pointing omitted in the end of words
+    sub {
+    from "\u064e" + boundary
+    to ""
+  }
+    sub {
+    from "\u064f" + boundary
+    to ""
+  }
+    sub {
+    from "\u0650" + boundary
+    to ""
+  }
+
+    # special pointed letters
+    sub "\u0639\u064e" "‘a"
+    sub "\u0639\u0650" "‘i"
+    sub "\u0639\u064f" "‘ū"
+    # handle MacOS regex difference
+    sub "\u0639\u064f\u0648" "‘ū"
+
+    sub "\u0650\u064a" "ī"
+    sub "\u0650\u064a\u0651\u064e" "iy"
+    sub {
+    from "\u0650\u064a"
+    to "iy"
+    after any("\u064e\u064f")
+  }
+    sub "\u064e\u0627" "ā"
+    sub "\u064e\u0649" "aỳ"
+    sub "\u064f\u0648" "ū"
+
+    # Table 2 No. 31, column 4
+    sub "\u064e\u0648\u0652" "aw"
+
+    # Table 2 No. 32, column 4
+    sub "\u064e\u064a\u0652" "ay"
+
+    # Table 1 No. 27a
+    # ta' marboota in iso-233-2-1993 is all the same `aẗ`
+    sub "\u0629" "aẗ"
+    # sub "\u0629", "ẗ" # ة
+
+    # Table 3, No. 34
+    # Shadda
+    sub "\u0628\u0651" "bb"
+    sub "\u062a\u0651" "tt"
+    sub "\u062b\u0651" "ṯṯ"
+    sub "\u062c\u0651" "ǧǧ"
+    sub "\u062d\u0651" "ḥḥ"
+    sub "\u062e\u0651" "ẖẖ"
+    sub "\u062f\u0651" "dd"
+    sub "\u0630\u0651" "ḏḏ"
+    sub "\u0631\u0651" "rr"
+    sub "\u0632\u0651" "zz"
+    sub "\u0633\u0651" "ss"
+    sub "\u0634\u0651" "šš"
+    sub "\u0635\u0651" "ṣṣ"
+    sub "\u0636\u0651" "ḍḍ"
+    sub "\u0637\u0651" "ṭṭ"
+    sub "\u0638\u0651" "ẓẓ"
+    sub "\u063a\u0651" "ġġ"
+    sub "\u0641\u0651" "ff"
+    sub "\u0642\u0651" "qq"
+    sub "\u0643\u0651" "kk"
+    sub "\u0644\u0651" "ll"
+    sub "\u0645\u0651" "mm"
+    sub "\u0646\u0651" "nn"
+    sub "\u0647\u0651" "hh"
+    sub "\u0648\u0651" "ww"
+    sub "\u064a\u0651" "yy"
+
+    sub "\u0627" "â"
+
+    sub "\u0649" "ỳ"
+
+    sub "\u0623" "’"
+    sub {
+    from boundary + "\u0623"
+    to ""
+  }
+
+    # See 4.1.4
+    # '\uFE8E' : ''  # ﺎ
+
+    # Table 1 No. 3
+    sub "\u0628" "b"
+    sub "\uFE91" "b"
+    sub "\uFE92" "b"
+    sub "\uFE90" "b"
+
+    # See note C
+    # Table 1 No. 4
+    sub "\u062a" "t"
+    sub "\ufe97" "t"
+    sub "\ufe98" "t"
+    sub "\ufe96" "t"
+
+    # Table 1 No. 5
+    sub "\u062b" "ṯ"
+    sub "\ufe9b" "ṯ"
+    sub "\ufe9c" "ṯ"
+    sub "\ufe9a" "ṯ"
+
+    # Table 1 No. 6
+    sub "\u062c" "ǧ"
+    sub "\ufe9f" "ǧ"
+    sub "\ufea0" "ǧ"
+    sub "\ufe9e" "ǧ"
+
+    # Table 1 No. 7
+    sub "\u062d" "ḥ"
+    sub "\ufea3" "ḥ"
+    sub "\ufea4" "ḥ"
+    sub "\ufea2" "ḥ"
+
+    # Table 1 No. 8
+    sub "\u062e" "ẖ"
+    sub "\ufea7" "ẖ"
+    sub "\ufea8" "ẖ"
+    sub "\ufea6" "ẖ"
+
+    # Table 1 No. 9
+    sub "\u062f" "d"
+    sub "\ufeaa" "d"
+
+    # Table 1 No. 10
+    sub "\u0630" "ḏ"
+    sub "\ufeac" "ḏ"
+
+    # Table 1 No. 11
+    sub "\u0631" "r"
+    sub "\ufeae" "r"
+
+    # Table 1 No. 12
+    sub "\u0632" "z"
+    sub "\ufeb0" "z"
+
+    # Table 1 No. 13
+    sub "\u0633" "s"
+    sub "\ufeb3" "s"
+    sub "\ufeb4" "s"
+    sub "\ufeb2" "s"
+
+    # Table 1 No. 14
+    sub "\u0634" "š"
+    sub "\ufeb7" "š"
+    sub "\ufeb8" "š"
+    sub "\ufeb6" "š"
+
+    # Table 1 No. 15
+    sub "\u0635" "ṣ"
+    sub "\ufebb" "ṣ"
+    sub "\ufebc" "ṣ"
+    sub "\ufeba" "ṣ"
+
+    # Table 1 No. 16
+    sub "\u0636" "ḍ"
+    sub "\ufebf" "ḍ"
+    sub "\ufec0" "ḍ"
+    sub "\ufebe" "ḍ"
+
+    # Table 1 No. 17
+    sub "\u0637" "ṭ"
+    sub "\ufec3" "ṭ"
+    sub "\ufec4" "ṭ"
+    sub "\ufec2" "ṭ"
+
+    # Table 1 No. 18
+    sub "\u0638" "ẓ"
+    sub "\ufec7" "ẓ"
+    sub "\ufec8" "ẓ"
+    sub "\ufec6" "ẓ"
+
+    # Table 1 No. 19
+    sub "\u0639" "‘"
+    sub "\ufecb" "‘"
+    sub "\ufecc" "‘"
+    sub "\ufeca" "‘"
+
+    # Table 1 No. 20
+    sub "\u063a" "ġ"
+    sub "\ufecf" "ġ"
+    sub "\ufed0" "ġ"
+    sub "\ufece" "ġ"
+
+    # Table 1 No. 21
+    sub "\u0641" "f"
+    sub "\ufed3" "f"
+    sub "\ufed4" "f"
+    sub "\ufed2" "f"
+    sub "\u06a2" "f"
+
+    # Table 1 No. 22
+    sub "\u0642" "q"
+    sub "\ufed7" "q"
+    sub "\ufed8" "q"
+    sub "\ufed6" "q"
+    sub "\u06a8" "q"
+
+    # Table 1 No. 23
+    sub "\u0643" "k"
+    sub "\ufedb" "k"
+    sub "\ufedc" "k"
+    sub "\ufeda" "k"
+
+    # Table 1 No. 24
+    sub "\u0644" "l"
+    sub "\ufedf" "l"
+    sub "\ufee0" "l"
+    sub "\ufede" "l"
+
+    # Table 1 No. 25
+    sub "\u0645" "m"
+    sub "\ufee3" "m"
+    sub "\ufee4" "m"
+    sub "\ufee2" "m"
+
+    # Table 1 No. 26
+    sub "\u0646" "n"
+    sub "\ufee7" "n"
+    sub "\ufee8" "n"
+    sub "\ufee6" "n"
+
+    # Table 1 No. 27
+    sub "\u0647" "h"
+    sub "\ufeeb" "h"
+    sub "\ufeec" "h"
+    sub "\ufeea" "h"
+
+    # Table 1 No. 28
+    sub "\u0648" "w"
+    sub "\ufeee" "w"
+
+    # Table 1 No. 29
+    sub "\u064a" "y"
+    sub "\ufef3" "y"
+    sub "\ufef4" "y"
+    sub "\ufef1" "y"
+
+    # Table 4 row 1
+    sub "\u060c" ","
+
+    # Table 4 row 2
+    sub "\u061b" ";"
+
+    # Table 4 row 3
+    sub "\u061f" "?"
+
+    # 4.3 Notes to Tables
+    sub "\u0626" "’"
+
+    sub "\u0622" "’ā"
+
+    sub {
+    from boundary + "\u0622"
+    to "ā"
+  }
+
+    # definite article
+
+    sub {
+    from boundary + "\u0627\u0644"
+    to "al-"
+  }
+
+    sub {
+    from "\u0627\u0644"
+    to "al-"
+    before "\u0628\u0650"
+  }
+
+    sub {
+    from boundary + "\u0628\u0650"
+    to "bi-"
+    after "\u0627\u0644"
+  }
+
+    sub {
+    from boundary + "\u0644\u0650\u0644"
+    to "li-l-"
+  }
+
+  }
+
+
+  # POSTRULES
+  sub {
+    from any("\u0061".."\uFFFF")
+    to upcase
+    before boundary
+    not_before boundary + any("‘’'")
+  }
+  # don't capitalize defined article in the middle of a sentence
+  sub "Al-" "al-"
+  sub "Bi-" "bi-"
+  sub "Li-L-" "li-l-"
+}
+}

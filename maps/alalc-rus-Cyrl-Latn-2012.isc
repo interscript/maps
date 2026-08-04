@@ -1,0 +1,111 @@
+system "ALA-LC:rus-Cyrl:Latn:2012" {
+
+metadata {
+  authority_id alalc
+  id 2012
+  language iso-639-2:rus
+  source_script Cyrl
+  destination_script Latn
+  name Romanization Table -- Russian (2012)
+  url https://www.loc.gov/catdir/cpso/romanization/russian.pdf
+  creation_date 2012
+  description {    The ALA-LC Romanization tables for Slavic alphabets is a set of standards for romanization of texts
+    in various writing systems used in North American libraries and publications.
+    The latest version was published by the American Library Association and the Library of Congress in 2012.
+  }
+
+  notes {
+    note "The letters І, Ѣ, Ѳ and Ѵ were eliminated in the orthographic reform of 1918. For other obsolete letters appearing in Russian texts, consult the Church Slavic table."
+  }
+}
+
+tests {
+   "Азов" ->  "Azov"
+   "Тамбов" ->  "Tambov"
+   "Барнаул" ->  "Barnaul"
+   "Кубань" ->  "Kubanʹ"
+   "Владимир" ->  "Vladimir"
+   "Ульяновск" ->  "Ulʹi͡anovsk"
+   "Грозный" ->  "Groznyǐ"
+   "Волгодонск" ->  "Volgodonsk"
+   "Дзержинский" ->  "Dzerzhinskiǐ"
+   "Нелидово" ->  "Nelidovo"
+   "Елизово" ->  "Elizovo"
+   "Чебоксары" ->  "Cheboksary"
+   "Ёлкин" ->  "Ëlkin"
+   "Озёрный" ->  "Ozërnyǐ"
+   "Жуков" ->  "Zhukov"
+   "Лужники" ->  "Luzhniki"
+   "Звенигород" ->  "Zvenigorod"
+   "Вязьма" ->  "Vi͡azʹma"
+   "Иркутск" ->  "Irkutsk"
+   "Апатиты" ->  "Apatity"
+   "Йошкар-Ола" ->  "Ǐoshkar-Ola"
+   "Бийск" ->  "Biǐsk"
+   "Киров" ->  "Kirov"
+   "Енисейск" ->  "Eniseǐsk"
+   "Ломоносов" ->  "Lomonosov"
+   "Нелидово" ->  "Nelidovo"
+   "Менделеев" ->  "Mendeleev"
+   "Каменка" ->  "Kamenka"
+   "Новосибирск" ->  "Novosibirsk"
+   "Кандалакша" ->  "Kandalaksha"
+   "Омск" ->  "Omsk"
+   "Красноярск" ->  "Krasnoi͡arsk"
+   "Петрозаводск" ->  "Petrozavodsk"
+   "Серпухов" ->  "Serpukhov"
+   "Ростов" ->  "Rostov"
+   "Северобайкальск" ->  "Severobaǐkalʹsk"
+   "Сковородино" ->  "Skovorodino"
+   "Чайковский" ->  "Chaǐkovskiǐ"
+   "Тамбов" ->  "Tambov"
+   "Мытищи" ->  "Mytishchi"
+   "Углич" ->  "Uglich"
+   "Дудинка" ->  "Dudinka"
+   "Фурманов" ->  "Furmanov"
+   "Уфа" ->  "Ufa"
+   "Хабаровск" ->  "Khabarovsk"
+   "Прохладный" ->  "Prokhladnyǐ"
+   "Цимлянск" ->  "T͡Simli͡ansk"
+   "Ельцин" ->  "Elʹt͡sin"
+   "Чебоксары" ->  "Cheboksary"
+   "Печора" ->  "Pechora"
+   "Шахтёрск" ->  "Shakhtërsk"
+   "Мышкин" ->  "Myshkin"
+   "Щёлково" ->  "Shchëlkovo"
+   "Ртищево" ->  "Rtishchevo"
+   "Подъездной" ->  "Podʺezdnoǐ"
+   "Ыттык-Кёль" ->  "Yttyk-Këlʹ"
+   "Тында" ->  "Tynda"
+   "Тюмень" ->  "Ti͡umenʹ"
+   "Электрогорск" ->  "Ėlektrogorsk"
+   "Радиоэлектроника" ->  "Radioėlektronika"
+   "Юбилейный" ->  "I͡Ubileǐnyǐ"
+   "Ключевская" ->  "Kli͡uchevskai͡a"
+   "Якутск" ->  "I͡Akutsk"
+   "Брянск" ->  "Bri͡ansk"
+}
+
+dependency "alalc-rus-Cyrl-Latn-1997" as cyrllatn
+
+
+stage main {
+
+  run  map.cyrllatn.stage.main
+
+  # CHARACTERS
+  parallel {
+    sub "\u0406" "Ī"
+    sub "\u0456" "ī"
+
+    sub "\u0462" "I͡E"
+    sub "\u0463" "i͡e"
+
+    sub "\u0472" "Ḟ"
+    sub "\u0473" "ḟ"
+
+    sub "\u0474" "Ẏ"
+    sub "\u0475" "ẏ"
+  }
+}
+}

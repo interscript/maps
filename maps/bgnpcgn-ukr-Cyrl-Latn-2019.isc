@@ -1,0 +1,83 @@
+system "BGN-PCGN:ukr-Cyrl:Latn:2019" {
+
+metadata {
+  authority_id bgnpcgn
+  id 2019
+  language iso-639-2:ukr
+  source_script Cyrl
+  destination_script Latn
+  name Romanization of Ukrainian (2019 Agreement)
+  url https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/864314/ROMANIZATION_OF_UKRAINIAN.pdf
+  creation_date 2019
+  confirmation_date 2020-01
+  description {    The BGN/PCGN system for Ukrainian was designed for use in romanizing names written
+    in the Ukrainian alphabet. It is an adoption of the Ukrainian national system in use
+    since 2010, and supersedes the BGN/PCGN 1965 System for Ukrainian.
+  }
+
+  notes {
+    note "      The 2019 system was adopted by BGN and PCGN after monitoring a good level of implementation\n      of the national system within Ukraine. Note, however, that this system is not recommended for\n      reverse transliteration; take caution when attempting to convert a romanized name back into Ukrainian.\n      This system also lacks the methodology outlined in the 1965 System to provide additional\n      differentiation between digraphs and individual character sequences.\n      For example, unlike the 1965 System, the 2019 System doesn’t differentiate the special character\n      sequences зг, кг, сг, тс, and тсг (previously romanized as z∙h, k∙h, s∙h, t∙s, and ts∙h)\n      from the digraphs zh, kh, sh, ts, and the letter sequence tsh, which are used to render\n      the characters ж, х, ш, ц and the character sequence тш."
+    note "To use the keyboard Unicode function, hold ALT and enter in sequence listed in the table."
+    note "The character sequence З Г, previously romanized as zh, is romanized zgh under the 2019 system."
+    note "These characters differ significantly in romanization from the BGN/PCGN 1965 system."
+  }
+}
+
+tests {
+   "Алушта" ->  "Alushta"
+   "Борщагівка" ->  "Borshchahivka"
+   "Вишгород" ->  "Vyshhorod"
+   "Гадяч" ->  "Hadiach"
+   "Згорани" ->  "Zghorany"
+   "Ґалаґан" ->  "Galagan"
+   "Дон" ->  "Don"
+   "Рівне" ->  "Rivne"
+   "Єнакієве" ->  "Yenakiieve"
+   "Наєнко" ->  "Naienko"
+   "Житомир" ->  "Zhytomyr"
+   "Запоріжжя" ->  "Zaporizhzhia"
+   "Закарпаття" ->  "Zakarpattia"
+   "Медвин" ->  "Medvyn"
+   "Іршава" ->  "Irshava"
+   "Їжакевич" ->  "Yizhakevych"
+   "Кадіївка" ->  "Kadiivka"
+   "Йосипівка" ->  "Yosypivka"
+   "Стрий" ->  "Stryi"
+   "Київ" ->  "Kyiv"
+   "Лебедин" ->  "Lebedyn"
+   "Миколаїв" ->  "Mykolaiv"
+   "Ніжин" ->  "Nizhyn"
+   "Одеса" ->  "Odesa"
+   "Полтава" ->  "Poltava"
+   "Ромни" ->  "Romny"
+   "Суми" ->  "Sumy"
+   "Тетерів" ->  "Teteriv"
+   "Ужгород" ->  "Uzhhorod"
+   "Фастів" ->  "Fastiv"
+   "Харків" ->  "Kharkiv"
+   "Біла Церква" ->  "Bila Tserkva"
+   "Чернівці" ->  "Chernivtsi"
+   "Шостка" ->  "Shostka"
+   "Гоща" ->  "Hoshcha"
+   "Русь" ->  "Rus"
+   "Юрій" ->  "Yurii"
+   "Крюківка" ->  "Kriukivka"
+   "Яготин" ->  "Yahotyn"
+   "Ічня" ->  "Ichnia"
+   "Знам’янка" ->  "Znamianka"
+}
+
+dependency "un-ukr-Cyrl-Latn-2012" as cyrllatn
+
+
+stage main {
+
+  run  map.cyrllatn.stage.main
+
+  # CHARACTERS
+  parallel {
+    sub "'" ""
+  }
+
+}
+}

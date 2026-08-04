@@ -1,0 +1,200 @@
+system "APCBG:bul-Cyrl:Latn:1995" {
+
+metadata {
+  authority_id apcbg
+  id 1995
+  language iso-639-2:bul
+  source_script Cyrl
+  destination_script Latn
+  name Toponymic Guidelines for Antarctica (1995)
+  url http://www.apcbg.org/Toponymic-Guidelines.htm
+  creation_date 1995
+  description {    In Antarctica geographical names are important elements of identification, orientation, localization and navigation,
+    providing an essential reference system for logistic operations, including search and rescue measures, and for
+    international scientific research.  They facilitate information exchange in the field, in scientific publications and in
+    administrative measures under the Antarctic Treaty System. Geographical names also reflect the history of Antarctic
+    exploration.
+
+    Toponymic Guidelines for Antarctica, Lyubomir Ivanov. Antarctic Place-names
+    Commission of Bulgaria, Sofia, 1995.
+  }
+}
+
+tests {
+   "нунатак Абрит" ->  "nunatak Abrit"
+   "връх Академия" ->  "vrah Akademiya"
+   "връх Ами Буе" ->  "vrah Ami Bue"
+   "нос Айтос" ->  "nos Aytos"
+   "залив Баба Тонка" ->  "zaliv Baba Tonka"
+   "Балабански камък" ->  "Balabanski kamak"
+   "Бедечки поток" ->  "Bedechki potok"
+   "нос Бяга" ->  "nos Byaga"
+   "остров Качо" ->  "ostrov Kacho" # wiki ostrov Cacho
+   "Чакъров остров" ->  "Chakarov ostrov"
+   "връх Дъбник" ->  "vrah Dabnik"
+   "залив Десислава" ->  "zaliv Desislava"
+   "ледник Джераси" ->  "lednik Dzherasi"
+   "Джегова скала" ->  "Dzhegova skala"
+   "Нунатак Едуард" ->  "Nunatak Eduard"
+   "Елховска седловина" ->  "Elhovska sedlovina"
+   "ледник Етър" ->  "lednik Etar"
+   "нунатак Филип Тотю" ->  "nunatak Filip Totyu"
+   "ледник Габаре" ->  "lednik Gabare"
+   "риф Гергини" ->  "rif Gergini"
+   "Гяуров връх" ->  "Gyaurov vrah"
+   "Гуцалски рид" ->  "Gutsalski rid" # not found
+   "Хараламбиев остров" ->  "Haralambiev ostrov"
+   "връх Ичера" ->  "vrah Ichera"
+   "полуостров Йоан Павел II" ->  "poluostrov Yoan Pavel II"
+   "нос Иван Александър" ->  "nos Ivan Aleksandar"
+   "нос Иречек" ->  "nos Irechek"
+   "нос Кърджали" ->  "nos Kardzhali"
+   "седловина Кърнаре" ->  "sedlovina Karnare"
+   "нунатак Керсеблепт" ->  "nunatak Kerseblept"
+   "Кондофрейски възвишения" ->  "Kondofreyski vazvisheniya"
+   "Костинбродски проход" ->  "Kostinbrodski prohod"
+   "връх Кожух" ->  "vrah Kozhuh"
+   "Кукерски нунатаци" ->  "Kukerski nunatatsi"
+   "залив Лазурен бряг" ->  "zaliv Lazuren bryag"
+   "връх Лудогорие" ->  "vrah Ludogorie"
+   "Лютибродски скали" ->  "Lyutibrodski skali"
+   "Масларов нунатак" ->  "Maslarov nunatak"
+   "Михневски връх" ->  "Mihnevski vrah"
+   "рид Митино" ->  "rid Mitino"
+   "езеро Наяда" ->  "ezero Nayada"
+   "нос Никюп" ->  "nos Nikyup"
+   "рид Оборище" ->  "rid Oborishte"
+   "залив Олуша" ->  "zaliv Olusha"
+   "Оряховски възвишения" ->  "Oryahovski vazvisheniya"
+   "нунатак Памидово" ->  "nunatak Pamidovo"
+   "връх Парангалица" ->  "vrah Parangalitsa"
+   "Първомайски провлак" ->  "Parvomayski provlak"
+   "ледник Патлейна" ->  "lednik Patleyna"
+   "полуостров Перник" ->  "poluostrov Pernik"
+   "връх Петко Войвода" ->  "vrah Petko Voyvoda"
+   "остров Фанагория" ->  "ostrov Fanagoriya"
+   "нос Плас" ->  "nos Plas"
+   "Пресиянов рид" ->  "Presiyanov rid"
+   "връх Принсипе де Астуриас" ->  "vrah Prinsipe de Asturias" # wiki: vrah Príncipe de Asturias
+   "нунатак Ръченица" ->  "nunatak Rachenitsa"
+   "връх Райна Княгиня" ->  "vrah Rayna Knyaginya"
+   "Рид Ръжана" ->  "Rid Razhana"
+   "връх Ригс" ->  "vrah Rigs"
+   "остров Рогулят" ->  "ostrov Rogulyat"
+   "ледник Сабазий" ->  "lednik Sabaziy"
+   "ледник Съединение" ->  "lednik Saedinenie"
+   "нунатак Сенокос" ->  "nunatak Senokos"
+   "Сейдолски камък" ->  "Seydolski kamak"
+   "ледник Щерна" ->  "lednik Shterna"
+   "връх Шишман" ->  "vrah Shishman"
+   "ледник Сигмен" ->  "lednik Sigmen"
+   "Седловина Синитово" ->  "Sedlovina Sinitovo"
+   "Ледник Скаплизо" ->  "Lednik Skaplizo"
+   "залив Слънчев бряг" ->  "zaliv Slanchev bryag"
+   "остров Соатрис" ->  "ostrov Soatris"
+   "планина Софийски Университет" ->  "planina Sofiyski Universitet"
+   "ледник Сребърна" ->  "lednik Srebarna"
+   "Средногорски възвишения" ->  "Srednogorski vazvisheniya"
+   "Св. Евтимиев камък" ->  "Sv. Evtimiev kamak"
+   "база Св. Климент Охридски" ->  "baza Sv. Kliment Ohridski"
+   "връх Стъргел" ->  "vrah Stargel"
+   "нунатак Сторгозия" ->  "nunatak Storgoziya" # nunatak Storgozia according to wiki
+   "нунатак Сурвакари" ->  "nunatak Survakari"
+   "ледник Световрачене" ->  "lednik Svetovrachene"
+   "остров Теменуга" ->  "ostrov Temenuga"
+   "Тракийски възвишения" ->  "Trakiyski vazvisheniya"
+   "хълм Цамблак" ->  "halm Tsamblak"
+   "ледник Урдовиза" ->  "lednik Urdoviza"
+   "остров Вълчедръм" ->  "ostrov Valchedram"
+   "острови Вардим" ->  "ostrovi Vardim"
+   "Владигеров проток" ->  "Vladigerov protok"
+   "ледник Ябланица" ->  "lednik Yablanitsa"
+   "залив Ямфорина" ->  "zaliv Yamforina"
+   "Йовков нос" ->  "Yovkov nos"
+   "рид Заберново" ->  "rid Zabernovo"
+   "ледник Збелсурд" ->  "lednik Zbelsurd"
+   "Жефарович камък" ->  "Zhefarovich kamak"
+   "връх Зиези" ->  "vrah Ziezi"
+   "залив Златни пясъци" ->  "zaliv Zlatni pyasatsi"
+   "ледник Злокучене" ->  "lednik Zlokuchene"
+   "проток Злогош" ->  "protok Zlogosh"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "\u0410" "A"
+    sub "\u0411" "B"
+    sub "\u0412" "V"
+    sub "\u0413" "G"
+    sub "\u0414" "D"
+    sub "\u0415" "E"
+    sub "\u0416" "Zh"
+    sub "\u0417" "Z"
+    sub "\u0418" "I"
+    sub "\u0419" "Y"
+    sub "\u041a" "K"
+    sub "\u041b" "L"
+    sub "\u041c" "M"
+    sub "\u041d" "N"
+    sub "\u041e" "O"
+    sub "\u041f" "P"
+    sub "\u0420" "R"
+    sub "\u0421" "S"
+    sub "\u0422" "T"
+    sub "\u0423" "U"
+    sub "\u0424" "F"
+    sub "\u0425" "H"
+    sub "\u0426" "Ts"
+    sub "\u0427" "Ch"
+    sub "\u0428" "Sh"
+    sub "\u0429" "Sht"
+    sub "\u042a" "A"
+    sub "\u042c" "Y"
+    sub "\u042e" "Yu"
+    sub "\u042f" "Ya"
+
+    sub "\u0430" "a"
+    sub "\u0431" "b"
+    sub "\u0432" "v"
+    sub "\u0433" "g"
+    sub "\u0434" "d"
+    sub "\u0435" "e"
+    sub "\u0436" "zh"
+    sub "\u0437" "z"
+    sub "\u0438" "i"
+    sub "\u0439" "y"
+    sub "\u043a" "k"
+    sub "\u043b" "l"
+    sub "\u043c" "m"
+    sub "\u043d" "n"
+    sub "\u043e" "o"
+    sub "\u043f" "p"
+    sub "\u0440" "r"
+    sub "\u0441" "s"
+    sub "\u0442" "t"
+    sub "\u0443" "u"
+    sub "\u0444" "f"
+    sub "\u0445" "h"
+    sub "\u0446" "ts"
+    sub "\u0447" "ch"
+    sub "\u0448" "sh"
+    sub "\u0449" "sht"
+    sub "\u044a" "a"
+    sub "\u044c" "y"
+    sub "\u044e" "yu"
+    sub "\u044f" "ya"
+
+    # note 2
+    sub "\u046A" "Ŭ"
+    sub "\u046B" "ŭ"
+
+    # note[3]
+    sub "\u0462" "YE"
+    sub "\u0463" "ye"
+  }
+
+}
+
+}

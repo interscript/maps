@@ -1,0 +1,38 @@
+system "ODNI:srp-Cyrl:Latn:2005" {
+
+metadata {
+  authority_id odni
+  id 2005
+  language iso-639-2:srp
+  source_script Cyrl
+  destination_script Latn
+  name Intelligence Community (IC) Standard for the Transliteration of Serbian Personal Names (2004)
+  creation_date 2005
+  confirmation_date 2005
+  description {    Office of the Director Of National Intelligence Serbian Personal Names 2004 System
+  }
+  notes {
+  }
+}
+
+tests {
+   "Гојко Митић" ->  "Gojko Mitic"
+   "Горња Ваганица" ->  "Gornja Vaganica"
+   "Довиђења" ->  "Dovidjenja"
+   "Ћао! Здраво!" ->  "Cao! Zdravo!"
+   "Кључ" ->  "Kljuc"
+   "Цигарете" ->  "Cigarete"
+   "Пролеће" ->  "Prolece"
+   "Понедељак" ->  "Ponedeljak"
+   "Горња Ваганица" ->  "Gornja Vaganica"
+}
+
+dependency "odni-srp-Cyrl-Latn-2015" as cyrllatn
+
+stage main {
+
+  run  map.cyrllatn.stage.main
+
+}
+
+}

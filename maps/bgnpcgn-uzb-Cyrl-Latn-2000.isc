@@ -1,0 +1,86 @@
+system "BGN-PCGN:uzb-Cyrl:Latn:2000" {
+
+metadata {
+  authority_id bgnpcgn
+  id 2000
+  language iso-639-2:uzb
+  source_script Cyrl
+  destination_script Latn
+  name Table of Correspondences for Uzbek (Cyrillic-Roman) (2000 Agreement)
+  description {    In 1995, the Uzbek government adopted the Roman alphabet to replace the existing Cyrillic alphabet.
+    The presentation below provides a table of correspondences between the former Cyrillic alphabet and the
+    current Roman alphabet. When Uzbek Roman-alphabet spellings are not available, this table can be used to
+    convert Uzbek Cyrillic spellings. This table of correspondences supersedes the BGN/PCGN 1979 romanization
+    system for Uzbek.
+  }
+  url http://transliteration.eki.ee/pdf/Uzbek.pdf
+  creation_date 2000
+  confirmation_date 2017-11
+
+  notes {
+    note "The letter sequence ye is used initially, after the vowel characters 1, 6, 7, 10, 16, 21, 29, 30, 31, and 32, and after characters 11 and 28."
+    note "The Unicode encoding of the apostrophe appearing in rows 27 and 28 is U+2019. The inverted apostrophe appearing in rows 32 (o‘) and 34 (g‘) is U+2018."
+    note "The Roman-script columns show only lowercase forms but, when applying the table, uppercase and lowercase Roman letters as appropriate should be used."
+  }
+}
+
+tests {
+  # https://ru.wikipedia.org/wiki/Узбекский_язык
+   "Ўзбек ёзуви" ->  "O‘zbek yozuwi"
+   "Ўзбек тили" ->  "O‘zbek tili"
+   "катта" ->  "katta"
+   "куп" ->  "kup"
+   "кальта" ->  "kal’ta"
+   "Бори элға яхшилик қилғилки, мундин яхши йўқ Ким, дегайлар даҳр аро қолди фалондин яхшилик" ->  "Bori elg‘a yaxshilik qilg‘ilki, mundin yaxshi yo‘q Kim, degaylar dahr aro qoldi falondin yaxshilik"
+   "Бахр ул-худо" ->  "Baxr ul-xudo"
+   "Рисале-йи маариф-и Шейбани" ->  "Risale-yi maarif-i Sheybani"
+   "Карами Хакка нихоят йукдур" ->  "Karami Xakka nixoyat yukdur"
+   "Йахши" ->  "Yaxshi"
+   "Тутук белгись" ->  "Tutuk belgis’"
+   "Барча одамлар эркин, қадр-қиммат ва ҳуқуқларда тенг бўлиб туғиладилар.\nУлар ақл ва виждон соҳибидирлар ва бир-бирлари ила биродарларча муомала қилишлари зарур." ->  "Barcha odamlar erkin, qadr-qimmat wa huquqlarda teng bo‘lib tug‘iladilar.\nUlar aql wa wijdon sohibidirlar wa bir-birlari ila birodarlarcha muomala qilishlari zarur."
+   "ПАПАПАЧУКА Респект!" ->  "PAPAPACHUKA Respekt!"
+}
+
+dependency "bgnpcgn-uzb-Cyrl-Latn-1979" as cyrllatn
+
+
+stage main {
+
+  # RULES
+  # note[1]
+  sub {
+    from "\u0415"
+    to "Ye"
+    before any("АаЕеЁёИиОоУуЭэЮюЯяЙйЬь")
+  }
+  sub {
+    from "\u0435"
+    to "ye"
+    before any("АаЕеЁёИиОоУуЭэЮюЯяЙйЬь")
+  }
+
+
+  # CHARACTERS
+  parallel {
+    sub "\u0412" "V"
+    sub "\u0492" "G‘"
+    sub "\u0416" "J"
+    sub "\u040E" "O‘"
+    sub "\u0425" "X"
+    sub "\u042a" "’"
+    sub "\u042c" "’"
+
+    sub "\u0432" "w"
+    sub "\u0493" "g‘"
+    sub "\u0436" "j"
+    sub "\u045E" "o‘"
+    sub "\u0445" "x"
+    sub "\u044a" "’"
+    sub "\u044c" "’"
+  }
+
+  run  map.cyrllatn.stage.main
+
+}
+
+}

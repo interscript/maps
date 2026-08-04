@@ -1,0 +1,311 @@
+system "ODNI:ara-Arab:Latn:2015" {
+
+metadata {
+  authority_id odni
+  id 2015
+  language iso-639-2:ara
+  source_script Arab
+  destination_script Latn
+  name ICS-630-01 Romanization of Arabic Personal Names (2015)
+  source ICS-630-01 Annex A
+  creation_date 2017
+  confirmation_date 2018-06
+  description {    This system, adapted from the Board on Geographic Names, is
+    the Intelligence Community (IC) standard for the
+    transliteration of Arabic names that will be applied to all
+    final written reports and products for IC consumers. It is
+    not intended to eliminate variations of a name that can
+    contribute forensic information. Rather, it is to provide
+    an IC standard Romanized (English) transliteration from
+    modern standard Arabic that can then be linked to forensic
+    information in ways that will help identify the referent of
+    the name. Ambiguities can result from the Romanization of
+    Arabic names because the Arabic source generally omits
+    short vowel markings, double consonant marks, and other
+    diacritics that would clearly distinguish the name.
+    Linguists use their experience with the language and aids
+    such as on-line tools and name dictionaries to determine
+    the exact Arabic and the appropriate transliteration into
+    the Roman alphabet. In cases where an individual's name has
+    already been transliterated, that is to be indicated -- as
+    found -- in parentheses immediately following its rendition
+    in the transliteration standard (e.g., Muhammad Khulud (
+    Mohamed Khulood)). In addition, if the original Arabic-
+    script spelling is known, that spelling should also appear
+    in parentheses following the name, if possible, following
+    best practices of the issuing organization and taking into
+    consideration information system capabilities. This
+    convention is designed to ensure that vital forensic
+    information is not lost. For names of persons who are known
+    to not be part of the Arabic-speaking community, use the
+    relevant IC transliteration standard for names from that
+    language (e.g., Mikhail, Yitzhak). A translator’s note may
+    be used to clarify the known origin of the person. Spell
+    names of individuals from languages that are written in
+    Roman letters as they are spelled in those languages (e.g.,
+    George Clooney, Jorge Garcia, Georges Pompidou). In the
+    case of active senior government officials in the on-line
+    CIA World Factbook and the online directory of Chiefs of
+    State and Cabinet Members of Foreign Governments, the
+    spellings given in these on-line reference works should be
+    used in place of the IC Standard. For any individual who
+    has at one time been listed in the Factbook or Chiefs of
+    State directory but who no longer appears in those
+    resources (i.e. is no longer a government official), the IC
+    Standard spelling should appear first, with the spelling,
+    if known, as it previously appeared in those resources
+    listed within parentheses at the first usage. The primary
+    goal of this system is to produce a consistent Romanized
+    transcription of the name that is readable to the non-
+    specialist. The system uses the 26 letters of the standard (
+    English) Roman alphabet plus the apostrophe. Some
+    ambiguities in the Romanized form will occur without the
+    use of diacritics. However, within the context of a report,
+    where additional information about the individual is
+    provided, the referent will be clearly identified. This
+    system will be used in conjunction with on-line tools, name
+    dictionaries, and lists containing conventional spellings
+    of names of well-known individuals.
+  }
+  notes {
+    note "    - Long/Short Vowels: Long and short vowels are not\n    distinguished in this system Samir (could be Saamir or\n    Samiir in Arabic).\n\n    - Double consonants: Double consonants represented by the\n    Arabic shaddah are shown in most cases (e.g., Hassan,\n    Muhammad). Exceptions: ’ayn and consonants represented by\n    digraphs are not doubled (e.g., al-Qadhafi [not\n    alQadhdhafi], Mubashir [not Mubashshir]).\n\n    - Hamzah (glottal stop): The hamzah is represented by an\n    apostrophe (’). Note that this is the same symbol used to\n    represent another consonant, the ’ayn.\n\n    - Ta’ marbutah (feminine ending marker): On the construct\n    form or when pronounced “t”, it is represented with a roman\n    t. In all other cases, it is represented with an h.\n\n    - Digraphs: No distinction is made between digraphs such as\n    sh and single contiguous letters (e.g., s followed by h).\n\n    - Definite article “al” (‘the’): Follows Arabic spelling\n    rather than pronunciation. That is, sun letter assimilation\n    is not shown in the Romanized form (e.g., ’Abd-alRahman,\n    not ’Abd-ar-Rahman).\n\n    - Diphthongs: the second element of the diphthong is\n      represented by a y or a w (rather than an i or a u):\n      Haytham, Faysal, Tawfiq, Rawdah.\n\n    - Hyphens: Hyphens (-) are used to connect name elements\n      within a name: ’Abd- al Rahman, Abu-al-Bashar, Bin-Ladin.\n      Exceptions: Names that incorporate “Allah” as part of the\n      name (e.g., ’Abdallah, Nasrallah), names marked by the\n      lineage/family marker “Al” (e.g., Al Thani) are not\n      hyphenated.\n\n    - The definite article, “al”, within name phrases, is\n      Romanized as al and not as ul: Nur-al-Din (not Nur-ul-Din).\n      It is not capitalized when name-initial.\n\n    - Names that incorporate Allah as part of the name retain the\n      a of Allah rather than a grammatical marker u: ’Abdallah (\n      not ’Abdullah).\n\n    - Foreign names borrowed or appearing in Arabic are spelled\n      according to the standard Western tradition: Georges,\n      Michel. However, names of non-Arabic origin no longer\n      considered foreign by Arabic speakers follow the IC\n      conventions: Butrus (not Peter).\n\n    - Prefix ‫بن‬ (bin ‘son of’) is Romanized Bin unless written\n      with an alif, in which case it is Romanized as Ibn. The\n      colloquial form Bu (‘father’) should not be standardized as\n      Abu. These prefixes are capitalized.\n\n    - In general, Romanization follows the Modern Standard\n      Arabic (MSA) form rather than local pronunciation\n      standards. For example, the letter ‫ج‬ (jim) is represented\n      as a j even when pronounced as a “g” (e.g., Egyptian Gamal\n      is Romanized as Jamal)."
+  }
+}
+
+tests {
+   "مِصر" ->  "Miṣr"
+   "قَطَر" ->  "Qaṭar"
+   "المَغرِب" ->  "Al Maghrib"
+   "الجُمهُورِيَّة العِراقِيَّة" ->  "Al Jumhuriyah al ’Iraqiyah"
+   "جُمهُورِيَّة العِراق" ->  "Jumhuriyat al ’Iraq"
+   "جُمهُورِيَّة مِصر العَرَبِيَّة" ->  "Jumhuriyat Miṣr al ’Arabiyah"
+   "بَغداد" ->  "Baghdad"
+   "تُونِس" ->  "Tunis"
+   "حَسّان" ->  "Hassan"
+   "مُحَمَّد" ->  "Muhammad"
+   "القَذَّافِي" ->  "Al Qadhafi"
+   "مُبَشِّر" ->  "Mubashir"
+   "الجَزائِر" ->  "Al Jaza’ir"
+   "عَبدالرَحمَن" ->  "’Abd al Rahman"
+   "هَيْثَم" ->  "Haytham"
+   "فَيْصَل" ->  "Fayṣal"
+   "تَوْفِيق" ->  "Tawfiq"
+   "رَوْضَة" ->  "Rawḍah"
+   "نُورُالدِين" ->  "Nur al Din"
+   "عَبدُاللَّه" ->  "’Abdallah"
+}
+
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+
+    # Tool used for Unicode finding:
+    # https://www.branah.com/unicode-converter
+
+    # pointing
+    sub "\u064e" "a"
+    sub {
+    from "\u064e"
+    to ""
+    after "\u0629"
+  }
+    sub {
+    from "\u064e"
+    to ""
+    after "a" + any("ht")
+  }
+    sub "\u0650" "i"
+    sub "\u064f" "u"
+    sub "\u0652" ""
+
+
+    sub "\u0650\u064a" "i"
+    sub "\u0650\u064a\u0651\u064e" "iy"
+    sub {
+    from "\u0650\u064a"
+    to "iy"
+    after any(["\u064e", "u064f"])
+  }
+    sub "\u064f\u0648" "u"
+    sub "\u064e\u0627" "a"
+    sub "\u064e\u0649" "á"
+    sub "\u064e\u0648\u0652" "aw"
+    sub "\u064e\u064a\u0652" "ay"
+    sub "\u0622" "a"
+
+    # ta' marboota
+    sub "\u0629" "at"
+    sub {
+    from "\u0629" + line_end
+    to "ah"
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+
+    # shadda
+
+    sub "\u0628\u0651" "bb"
+    sub "\u062a\u0651" "tt"
+    sub "\u062b\u0651" "th"
+    sub "\u062c\u0651" "jj"
+    sub "\u062d\u0651" "hh"
+    sub "\u062e\u0651" "kh"
+    sub "\u062f\u0651" "dd"
+    sub "\u0630\u0651" "dh"
+    sub "\u0631\u0651" "rr"
+    sub "\u0632\u0651" "zz"
+    sub "\u0633\u0651" "ss"
+    sub "\u0634\u0651" "sh"
+    sub "\u0635\u0651" "ṣṣ"
+    sub "\u0636\u0651" "ḍḍ"
+    sub "\u0637\u0651" "ṭṭ"
+    sub "\u0638\u0651" "ẓẓ"
+    sub "\u063a\u0651" "gh"
+    sub "\u0641\u0651" "ff"
+    sub "\u0642\u0651" "qq"
+    sub "\u0643\u0651" "kk"
+    sub "\u0644\u0651" "ll"
+    sub "\u0645\u0651" "mm"
+    sub "\u0646\u0651" "nn"
+    sub "\u0647\u0651" "hh"
+    sub "\u0648\u0651" "ww"
+    sub "\u064a\u0651" "yy"
+
+    sub "\u0626" "’"
+
+    sub {
+    from boundary + "\u0627\u0644\u0644\u0651\u064e\u0647"
+    to "Allah"
+  }
+
+    sub {
+    from non_word_boundary + maybe("\u064f") + "\u0627\u0644\u0644\u0651\u064e\u0647"
+    to "allah"
+  }
+
+    sub {
+    from "\u0621"
+    to any(["’", ""])
+  }
+
+    sub {
+    from boundary + "\u0627\u0644"
+    to "al "
+  }
+    sub {
+    from non_word_boundary + maybe("\u064f") + "\u0627\u0644"
+    to " al "
+  }
+
+    # '\uFE8E' : ''  # ﺎ
+
+
+    sub "\u0623" ""
+    sub {
+    from boundary + "\u0627"
+    to ""
+  }
+    sub "\u0627" "a"
+    sub "\u0628" "b"
+    sub "\u062a" "t"
+    sub "\u062b" "th"
+    sub "\u062c" "j"
+    sub "\u062d" "h"
+    sub "\u062e" "kh"
+    sub "\u062f" "d"
+    sub "\u0630" "dh"
+    sub "\u0631" "r"
+    sub "\u0632" "z"
+    sub "\u0633" "s"
+    sub "\u0634" "sh"
+    sub "\u0635" "ṣ"
+    sub "\u0636" "ḍ"
+    sub "\u0637" "ṭ"
+    sub "\u0638" "ẓ"
+    sub "\u0639" "’"
+    sub "\u063a" "gh"
+    sub "\u0641" "f"
+    sub "\u0642" "q"
+    sub "\u0643" "k"
+    sub "\u0644" "l"
+    sub "\u0645" "m"
+    sub "\u0646" "n"
+    sub "\u0647" "h"
+    sub "\u0648" "w"
+    sub "\u064a" "y"
+  }
+
+  # POSTRULES
+  sub {
+    from any("\u0061".."\uFFFF")
+    to upcase
+    before boundary
+    not_before boundary + any("‘’'")
+  }
+  sub " Al " " al "
+
+  # don't capitalize defined article in the middle of a sentence
+
+
+}
+}

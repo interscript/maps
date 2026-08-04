@@ -1,0 +1,221 @@
+system "UN:bul-Cyrl:Latn:1977" {
+
+metadata {
+  authority_id un
+  id 1977
+  language iso-639-2:bul
+  source_script Cyrl
+  destination_script Latn
+  name Romanization of Bulgarian geographical names (1977)
+  url https://www.eki.ee/wgrs/res/res_3_10.htm
+  creation_date 1977
+  description {    The System of Transliteration and Transcription of Bulgarian Geographical Names into Roman letters,
+    as shown in the annex below, be adopted as the international system for the romanization of Bulgarian geographical names.
+  }
+}
+
+tests {
+   "нунатак Абрит" ->  "nunatak Abrit"
+   "връх Академия" ->  "vrǎh Akademiya"
+   "връх Ами Буе" ->  "vrǎh Ami Bue"
+   "нос Айтос" ->  "nos Ajtos"
+   "залив Баба Тонка" ->  "zaliv Baba Tonka"
+   "Балабански камък" ->  "Balabanski kamǎk"
+   "Бедечки поток" ->  "Bedečki potok"
+   "нос Бяга БЯГА" ->  "nos Byaga BYAGA"
+   "остров Качо" ->  "ostrov Kačo" # wiki ostrov Cacho
+   "Чакъров остров" ->  "Čakǎrov ostrov"
+   "връх Дъбник" ->  "vrǎh Dǎbnik"
+   "залив Десислава" ->  "zaliv Desislava"
+   "ледник Джераси" ->  "lednik Džerasi"
+   "Джегова скала" ->  "Džegova skala"
+   "Нунатак Едуард" ->  "Nunatak Eduard"
+   "Елховска седловина" ->  "Elhovska sedlovina"
+   "ледник Етър" ->  "lednik Etǎr"
+   "нунатак Филип Тотю" ->  "nunatak Filip Totyu"
+   "ледник Габаре" ->  "lednik Gabare"
+   "риф Гергини" ->  "rif Gergini"
+   "Гяуров връх" ->  "Gyaurov vrǎh"
+   "Гуцалски рид" ->  "Gucalski rid" # not found
+   "Хараламбиев остров" ->  "Haralambiev ostrov"
+   "връх Ичера" ->  "vrǎh Ičera"
+   "полуостров Йоан Павел II" ->  "poluostrov Joan Pavel II"
+   "нос Иван Александър" ->  "nos Ivan Aleksandǎr"
+   "нос Иречек" ->  "nos Ireček"
+   "нос Кърджали" ->  "nos Kǎrdžali"
+   "седловина Кърнаре" ->  "sedlovina Kǎrnare"
+   "нунатак Керсеблепт" ->  "nunatak Kerseblept"
+   "Кондофрейски възвишения" ->  "Kondofrejski vǎzvišeniya"
+   "Костинбродски проход" ->  "Kostinbrodski prohod"
+   "връх Кожух" ->  "vrǎh Kožuh"
+   "Кукерски нунатаци" ->  "Kukerski nunataci"
+   "залив Лазурен бряг" ->  "zaliv Lazuren bryag"
+   "връх Лудогорие" ->  "vrǎh Ludogorie"
+   "Лютибродски скали" ->  "Lyutibrodski skali"
+   "Масларов нунатак" ->  "Maslarov nunatak"
+   "Михневски връх" ->  "Mihnevski vrǎh"
+   "рид Митино" ->  "rid Mitino"
+   "езеро Наяда" ->  "ezero Nayada"
+   "нос Никюп НИКЮП" ->  "nos Nikyup NIKYUP"
+   "рид Оборище ОБОРИЩЕ" ->  "rid Oborište OBORIŠTE"
+   "залив Олуша" ->  "zaliv Oluša"
+   "Оряховски възвишения" ->  "Oryahovski vǎzvišeniya"
+   "нунатак Памидово" ->  "nunatak Pamidovo"
+   "връх Парангалица" ->  "vrǎh Parangalica"
+   "Първомайски провлак" ->  "Pǎrvomajski provlak"
+   "ледник Патлейна" ->  "lednik Patlejna"
+   "полуостров Перник" ->  "poluostrov Pernik"
+   "връх Петко Войвода" ->  "vrǎh Petko Vojvoda"
+   "остров Фанагория" ->  "ostrov Fanagoriya"
+   "нос Плас" ->  "nos Plas"
+   "Пресиянов рид" ->  "Presiyanov rid"
+   "връх Принсипе де Астуриас" ->  "vrǎh Prinsipe de Asturias" # wiki: vrǎh Príncipe de Asturias
+   "нунатак Ръченица" ->  "nunatak Rǎčenica"
+   "връх Райна Княгиня" ->  "vrǎh Rajna Knyaginya"
+   "Рид Ръжана" ->  "Rid Rǎžana"
+   "връх Ригс" ->  "vrǎh Rigs"
+   "остров Рогулят" ->  "ostrov Rogulyat"
+   "ледник Сабазий" ->  "lednik Sabazij"
+   "ледник Съединение" ->  "lednik Sǎedinenie"
+   "нунатак Сенокос" ->  "nunatak Senokos"
+   "Сейдолски камък" ->  "Sejdolski kamǎk"
+   "ледник Щерна" ->  "lednik Šterna"
+   "връх Шишман" ->  "vrǎh Šišman"
+   "ледник Сигмен" ->  "lednik Sigmen"
+   "Седловина Синитово" ->  "Sedlovina Sinitovo"
+   "Ледник Скаплизо" ->  "Lednik Skaplizo"
+   "залив Слънчев бряг" ->  "zaliv Slǎnčev bryag"
+   "остров Соатрис" ->  "ostrov Soatris"
+   "планина Софийски Университет" ->  "planina Sofijski Universitet"
+   "ледник Сребърна" ->  "lednik Srebǎrna"
+   "Средногорски възвишения" ->  "Srednogorski vǎzvišeniya"
+   "Св. Евтимиев камък" ->  "Sv. Evtimiev kamǎk"
+   "база Св. Климент Охридски" ->  "baza Sv. Kliment Ohridski"
+   "връх Стъргел" ->  "vrǎh Stǎrgel"
+   "нунатак Сторгозия" ->  "nunatak Storgoziya" # nunatak Storgozia according to wiki
+   "нунатак Сурвакари" ->  "nunatak Survakari"
+   "ледник Световрачене" ->  "lednik Svetovračene"
+   "остров Теменуга" ->  "ostrov Temenuga"
+   "Тракийски възвишения" ->  "Trakijski vǎzvišeniya"
+   "хълм Цамблак" ->  "hǎlm Camblak"
+   "ледник Урдовиза" ->  "lednik Urdoviza"
+   "остров Вълчедръм" ->  "ostrov Vǎlčedrǎm"
+   "острови Вардим" ->  "ostrovi Vardim"
+   "Владигеров проток" ->  "Vladigerov protok"
+   "ледник Ябланица" ->  "lednik Yablanica"
+   "залив Ямфорина" ->  "zaliv Yamforina"
+   "Йовков нос" ->  "Jovkov nos"
+   "рид Заберново" ->  "rid Zabernovo"
+   "ледник Збелсурд" ->  "lednik Zbelsurd"
+   "Жефарович камък" ->  "Žefarovič kamǎk"
+   "връх Зиези" ->  "vrǎh Ziezi"
+   "залив Златни пясъци" ->  "zaliv Zlatni pyasǎci"
+   "ледник Злокучене" ->  "lednik Zlokučene"
+   "проток Злогош" ->  "protok Zlogoš"
+
+  # UN card tests
+   "Република България" ->  "Republika Bǎlgariya"
+}
+
+dependency "posix"
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "А" "A"
+    sub "Б" "B"
+    sub "В" "V"
+    sub "Г" "G"
+    sub "Д" "D"
+    sub "Е" "E"
+    sub "Ж" "Ž"
+    sub "З" "Z"
+    sub "И" "I"
+    sub "Й" "J"
+    sub "К" "K"
+    sub "Л" "L"
+    sub "М" "M"
+    sub "Н" "N"
+    sub "О" "O"
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "У" "U"
+    sub "Ф" "F"
+    sub "Х" "H"
+    sub "Ц" "C"
+    sub "Ч" "Č"
+    sub "Ш" "Š"
+    sub "Щ" "Št"
+    sub "Ъ" "Ǎ"
+    sub "Ь" "J"
+    sub "Ю" "Yu"
+    sub "Я" "Ya"
+
+    sub "а" "a"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "g"
+    sub "д" "d"
+    sub "е" "e"
+    sub "ж" "ž"
+    sub "з" "z"
+    sub "и" "i"
+    sub "й" "j"
+    sub "к" "k"
+    sub "л" "l"
+    sub "м" "m"
+    sub "н" "n"
+    sub "о" "o"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "у" "u"
+    sub "ф" "f"
+    sub "х" "h"
+    sub "ц" "c"
+    sub "ч" "č"
+    sub "ш" "š"
+    sub "щ" "št"
+    sub "ъ" "ǎ"
+    sub "ь" "j"
+    sub "ю" "yu"
+    sub "я" "ya"
+
+  }
+
+  # ŠT
+  sub {
+    from capture(maybe(upper)) + "Št" + capture(upper)
+    to ref(1) + "ŠT" + ref(2)
+  }
+  sub {
+    from capture(upper) + "Št" + capture(maybe(upper))
+    to ref(1) + "ŠT" + ref(2)
+  }
+
+  # YU
+  sub {
+    from capture(maybe(upper)) + "Yu" + capture(upper)
+    to ref(1) + "YU" + ref(2)
+  }
+  sub {
+    from capture(upper) + "Yu" + capture(maybe(upper))
+    to ref(1) + "YU" + ref(2)
+  }
+
+  # YA
+  sub {
+    from capture(maybe(upper)) + "Ya" + capture(upper)
+    to ref(1) + "YA" + ref(2)
+  }
+  sub {
+    from capture(upper) + "Ya" + capture(maybe(upper))
+    to ref(1) + "YA" + ref(2)
+  }
+}
+
+}

@@ -1,0 +1,397 @@
+system "ALA-LC:tel-Telu:Latn:1997" {
+
+metadata {
+  authority_id alalc
+  id 1997
+  language iso-639-2:tel
+  source_script Telu
+  destination_script Latn
+  name Romanization Table -- Telugu (1997)
+  url http://catdir.loc.gov/catdir/cpso/romanization/telugu.pdf
+  creation_date 1997
+  description {    ALA-LC Romanization table for Telugu
+  }
+
+  notes {
+
+    note "      Only the vowel forms that appear at the beginning of a syllable are listed; the forms used for\n      vowels following a consonant can be found in grammars; no distinction between the two is\n      made in transliteration."
+    note "      The vowel a is implicit after all consonants and consonant clusters and is supplied in\n      transliteration, with the following exceptions:\n      a) when another vowel is indicated by its appropriate sign; and\n      b) when the absence of any vowel is indicated by the superscript sign ( ౬ ) called valapalagilaka."
+    note "      Exception: Sunna is transliterated by:\n      a) ṅ before gutturals,\n      b) ñ before palatals,\n      c) ṇ before cerebrals,\n      d) n before dentals, and\n      e) m before labials."
+    note "      Ardhasunna before gutturals and palatal, cerebral, and dental occlusives is transliterated n̐.\n      Before labials, sibilants, semivowels, the aspirate, vowels, and in final position it is\n      transliterated m"
+  }
+}
+
+tests {
+   "తమిళనాడు" ->  "tamiḷanāḍu"
+   "తంటికొండ ఘటన: ఆగని మృత్యుఘోష" ->  "taṃṭikoṇḍa ghaṭana: āgani mṛtayughŏṣa"
+   "మళ్లీ వివాదం: అమితాబ్‌పై కేసు" ->  "maḷalī vivādaṃ: amitābapai kēsu"
+   "‘వరద సాయం పేరుతో వైట్ కాలర్ దోపిడీ’" ->  "‘varada sāyaṃ pērutŏ vaiṭa kālara dŏpiḍī’"
+   "రెండో విడత జీఎస్టీ పరిహారం" ->  "reṃḍŏ viḍata jīesaṭī parihāraṃ"
+   "నితీష్‌ కుమార్‌ అధ్యాయం ముగిసినట్లేనా?!" ->  "nitīṣa kumāra adhayāyaṃ mugisinaṭalēnā?!"
+   "వారిపై జీవితాంతం నిషేధం విధించండి!" ->  "vāripai jīvitāntaṃ niṣēdhaṃ vidhiñcaṃḍi!"
+   "మరో లాక్‌డౌన్‌ వల్ల అన్నీ అనర్థాలే!" ->  "marŏ lākaḍauna valala ananī anarathālē!"
+   "జెసిండా మరో సంచలనం" ->  "jesiṃḍā marŏ sañcalanaṃ"
+   "స్వీయ నిర్బంధంలోకి డబ్ల్యూహెచ్‌ఓ డైరెక్టర్‌" ->  "savīya nirabandhaṃlŏki ḍabalayūhecaō ḍairekaṭara"
+   "కరోనాపై యుద్ధంలో సమిధలు" ->  "karŏnāpai yudadhaṃlŏ samidhalu"
+   "అమెరికా ఎన్నికలు: ‘పెద్దన్న’ ఎవరో?!" ->  "amerikā enanikalu: ‘pedadanana’ evarŏ?!"
+   "౪౬౨౬౯" ->  "46269"
+}
+
+aliases {
+  telu_chars_1 = any("\u0c3e\u0c3f\u0c40\u0c41\u0c42\u0c43\u0c46\u0c47\u0c48\u0c4a\u0c4b\u0c4c\u0c6c")
+}
+
+stage main {
+
+  # RULES
+  # rule II
+    sub {
+    from "క"
+    to "k"
+    after telu_chars_1
+  }
+    sub {
+    from "ఖ"
+    to "kh"
+    after telu_chars_1
+  }
+    sub {
+    from "గ"
+    to "g"
+    after telu_chars_1
+  }
+    sub {
+    from "ఘ"
+    to "gh"
+    after telu_chars_1
+  }
+    sub {
+    from "ఙ"
+    to "ṅ"
+    after telu_chars_1
+  }
+    sub {
+    from "చ"
+    to "c"
+    after telu_chars_1
+  }
+    sub {
+    from "ౘ"
+    to "ĉ"
+    after telu_chars_1
+  }
+    sub {
+    from "ఛ"
+    to "ch"
+    after telu_chars_1
+  }
+    sub {
+    from "జ"
+    to "j"
+    after telu_chars_1
+  }
+    sub {
+    from "ౙ"
+    to "ĵ"
+    after telu_chars_1
+  }
+    sub {
+    from "ఝ"
+    to "jh"
+    after telu_chars_1
+  }
+    sub {
+    from "ఞ"
+    to "ñ"
+    after telu_chars_1
+  }
+    sub {
+    from "ట"
+    to "ṭ"
+    after telu_chars_1
+  }
+    sub {
+    from "ఠ"
+    to "ṭh"
+    after telu_chars_1
+  }
+    sub {
+    from "డ"
+    to "ḍ"
+    after telu_chars_1
+  }
+    sub {
+    from "ఢ"
+    to "ḍh"
+    after telu_chars_1
+  }
+    sub {
+    from "ణ"
+    to "ṇ"
+    after telu_chars_1
+  }
+    sub {
+    from "త"
+    to "t"
+    after telu_chars_1
+  }
+    sub {
+    from "థ"
+    to "th"
+    after telu_chars_1
+  }
+    sub {
+    from "ద"
+    to "d"
+    after telu_chars_1
+  }
+    sub {
+    from "ధ"
+    to "dh"
+    after telu_chars_1
+  }
+    sub {
+    from "న"
+    to "n"
+    after telu_chars_1
+  }
+    sub {
+    from "ప"
+    to "p"
+    after telu_chars_1
+  }
+    sub {
+    from "ఫ"
+    to "ph"
+    after telu_chars_1
+  }
+    sub {
+    from "బ"
+    to "b"
+    after telu_chars_1
+  }
+    sub {
+    from "భ"
+    to "bh"
+    after telu_chars_1
+  }
+    sub {
+    from "మ"
+    to "m"
+    after telu_chars_1
+  }
+    sub {
+    from "య"
+    to "y"
+    after telu_chars_1
+  }
+    sub {
+    from "ర"
+    to "r"
+    after telu_chars_1
+  }
+    sub {
+    from "ఱ"
+    to "ṛ"
+    after telu_chars_1
+  }
+    sub {
+    from "ల"
+    to "l"
+    after telu_chars_1
+  }
+    sub {
+    from "ళ"
+    to "ḷ"
+    after telu_chars_1
+  }
+    sub {
+    from "వ"
+    to "v"
+    after telu_chars_1
+  }
+    sub {
+    from "శ"
+    to "ś"
+    after telu_chars_1
+  }
+    sub {
+    from "ష"
+    to "ṣ"
+    after telu_chars_1
+  }
+    sub {
+    from "స"
+    to "s"
+    after telu_chars_1
+  }
+    sub {
+    from "హ"
+    to "h"
+    after telu_chars_1
+  }
+
+  # rule III
+    sub {
+    from "\u0C02"
+    to "ṅ"
+    after any("కఖగఘఙ")
+  }
+    sub {
+    from "\u0C02"
+    to "ñ"
+    after any("చౘఛజౙఝఞ")
+  }
+    sub {
+    from "\u0C02"
+    to "ṇ"
+    after any("టఠడఢణ")
+  }
+    sub {
+    from "\u0C02"
+    to "n"
+    after any("తథదధన")
+  }
+    sub {
+    from "\u0C02"
+    to "m"
+    after any("పఫబభమ")
+  }
+
+  # rule IV
+    sub {
+    from "\u0C01"
+    to "n̐"
+    after any("కఖగఘఙచౘఛజౙఝఞటఠడఢణతథదధన")
+  }
+
+
+  # CHARACTERS
+  parallel {
+
+    sub "అ" "a"
+    sub "ఆ" "ā"
+    sub "ఇ" "i"
+    sub "ఈ" "ī"
+    sub "ఉ" "u"
+    sub "ఊ" "ū"
+    sub "ఋ" "ṛ"
+    sub "ౠ" "ṝ"
+    sub "ఌ" "ḻ"
+    sub "ఎ" "e"
+    sub "ఏ" "ē"
+    sub "ఐ" "ai"
+    sub "ఒ" "o"
+    sub "ఓ" "ō"
+    sub "ఔ" "au"
+
+    # Gutturals
+    sub "క" "ka"
+    sub "ఖ" "kha"
+    sub "గ" "ga"
+    sub "ఘ" "gha"
+    sub "ఙ" "ṅa"
+
+    # Palatals
+    sub "చ" "ca"
+    sub "ౘ" "ĉa"
+    sub "ఛ" "cha"
+    sub "జ" "ja"
+    sub "ౙ" "ĵa"
+    sub "ఝ" "jha"
+    sub "ఞ" "ña"
+
+    # Cerebrals
+    sub "ట" "ṭa"
+    sub "ఠ" "ṭha"
+    sub "డ" "ḍa"
+    sub "ఢ" "ḍha"
+    sub "ణ" "ṇa"
+
+    # Dentals
+    sub "త" "ta"
+    sub "థ" "tha"
+    sub "ద" "da"
+    sub "ధ" "dha"
+    sub "న" "na"
+
+    # Labials
+    sub "ప" "pa"
+    sub "ఫ" "pha"
+    sub "బ" "ba"
+    sub "భ" "bha"
+    sub "మ" "ma"
+
+    # Semivowels
+    sub "య" "ya"
+    sub "ర" "ra"
+    sub "ఱ" "ṛa"
+    sub "ల" "la"
+    sub "ళ" "ḷa"
+    sub "వ" "va"
+
+    # Sibilants
+    sub "శ" "śa"
+    sub "ష" "ṣa"
+    sub "స" "sa"
+
+
+
+    # Aspirate
+    sub "హ" "ha"
+
+
+
+    # Chandrabindu
+    sub "ঁ" "m̐"
+    sub "ఁ" "m̐"
+
+    # Bisarga
+    sub "ః" "ḥ"
+
+    # Anusvāra
+    sub "ం" "ṃ"
+
+    # Medials # Needed for connecting constants
+
+    sub "ా" "ā"
+    sub "ి" "i"
+    sub "ీ" "ī"
+    sub "ు" "u"
+    sub "ూ" "ū"
+    sub "ృ" "ṛ"
+    sub "ె" "e"
+    sub "ే" "ē"
+    sub "ై" "ai"
+    sub "ొ" "o"
+    sub "ో" "ŏ"
+    sub "ౌ" "au"
+    sub "\u09CD" ""
+
+
+    sub "\u0c4d" ""
+    sub "ౕ\t" ""
+    sub "ౖ\t" ""
+    sub "्" ""
+    sub "़" ""
+    sub "‍" ""
+    sub "‌" ""
+
+    # numbers
+
+    sub "౦" "0"
+    sub "౧" "1"
+    sub "౨" "2"
+    sub "౩" "3"
+    sub "౪" "4"
+    sub "౫" "5"
+    sub "౬" "6"
+    sub "౭" "7"
+    sub "౮" "8"
+    sub "౯" "9"
+  }
+
+ compose
+}
+
+}

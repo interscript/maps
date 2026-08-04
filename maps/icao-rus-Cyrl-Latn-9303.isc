@@ -1,0 +1,129 @@
+system "ICAO:rus-Cyrl:Latn:9303" {
+
+metadata {
+  authority_id icao
+  id 9303
+  language iso-639-2:rus
+  source_script Cyrl
+  destination_script Latn
+  name ICAO Doc 9303 Machine Readable Travel Documents Part 3 -- Russian Cyrillic to Latin
+  url https://www.icao.int/publications/pages/publication.aspx?docnum=9303
+  creation_date 2015
+  description {    Part 3 defines specifications that are common to TD1, TD2 and TD3
+    size machine readable travel documents (MRTDs) including those
+    necessary for global interoperability using visual inspection and
+    machine readable (optical character recognition) means.
+
+    Since only Latin-alphabet characters are allowed in the VIZ, if
+    mandatory data elements are in a national language that does not use
+    the Latin alphabet, a transcription or transliteration shall also be
+    provided.
+
+    This document defines the transliteration mappings used to produce
+    this transcription or transliteration.
+  }
+}
+
+tests {
+}
+
+# https://www.icao.int/publications/Documents/9303_p3_cons_en.pdf
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "'" ""
+    sub "А" "A"
+    sub "Б" "B"
+    sub "Д" "D"
+    sub "Ё" "E"
+    sub "Е" "E"
+    sub "Э" "E"
+    sub "Ф" "F"
+    sub "Г" "G"
+    sub "И" "I"
+    sub "Й" "I"
+    sub "К" "K"
+    sub "Л" "L"
+    sub "М" "M"
+    sub "Н" "N"
+    sub "О" "O"
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "У" "U"
+    sub "В" "V"
+    sub "Ы" "Y"
+    sub "З" "Z"
+    sub "Ч" "CH"
+    sub "Я" "IA"
+    sub "Ю" "IU"
+    sub "Х" "KH"
+    sub "Ш" "SH"
+    sub "Щ" "SHCH"
+    sub "Ц" "TS"
+    sub "Ж" "ZH"
+    sub "Ґ" "G"
+    sub "Ў" "U"
+    sub "Ѫ" "U"
+    sub "Ђ" "D"
+    sub "Ѕ" "DZ"
+    sub "Ј" "J"
+    sub "Љ" "LJ"
+    sub "Њ" "NJ"
+    sub "Һ" "C"
+    sub "Џ" "DZ"
+    sub "Є" "IE"
+    sub "Ї" "I"
+    sub "Ѓ" "G"
+
+    sub "а" "a"
+    sub "б" "b"
+    sub "д" "d"
+    sub "ё" "e"
+    sub "е" "e"
+    sub "э" "e"
+    sub "ф" "f"
+    sub "г" "g"
+    sub "и" "i"
+    sub "й" "i"
+    sub "к" "k"
+    sub "л" "l"
+    sub "м" "m"
+    sub "н" "n"
+    sub "о" "o"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "у" "u"
+    sub "в" "v"
+    sub "ы" "y"
+    sub "з" "z"
+    sub "ч" "ch"
+    sub "я" "ia"
+    sub "ю" "iu"
+    sub "х" "kh"
+    sub "ш" "sh"
+    sub "щ" "shch"
+    sub "ц" "ts"
+    sub "ж" "zh"
+    sub "ґ" "g"
+    sub "ў" "u"
+    sub "ѫ" "u"
+    sub "ђ" "d"
+    sub "ѕ" "dz"
+    sub "ј" "j"
+    sub "љ" "lj"
+    sub "њ" "nj"
+    sub "һ" "c"
+    sub "џ" "dz"
+    sub "є" "ie"
+    sub "ї" "i"
+    sub "ѓ" "g"
+  }
+
+}
+
+}

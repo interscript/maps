@@ -1,0 +1,183 @@
+system "BIS:kan-Kana:Latn:13194-1991" {
+
+metadata {
+  authority_id bis
+  id 13194-1991
+  language iso-639-2:kan
+  source_script Kana
+  destination_script Latn
+  name Indian script code for information interchange (ISCII) -- Kannada Romanization
+
+  #
+  creation_date 1991
+  description {    IS 13194 (1991): Indian script code for information
+    interchange - ISCII [LITD 20: Indian Language Technologies
+    and Products]
+  }
+
+  notes {
+    note "      Exception: Anusvāra is transliterated by:\n\n      a) ṅ before gutturals,\n      b) ñ before palatals,\n      c) ṇ before cerebrals,\n      d) n before dentals, and\n      e) m before labials."
+  }
+}
+
+tests {
+   "ಈಗ ವೈರಲ್ ಆಗುತ್ತಿದೆ ಕಂಗನಾ ರಣಾವುತ್ ಹಳೇಯ ವಿಡಿಯೋ" ->  "īg vairl āguttide kṅgnā rṇāvut hḷēy viḍiyō"
+   "ಸಂಕಷ್ಟ ಎದುರಾದರೆ ಬಿಎಸ್‌ವೈ ಬೆನ್ನಿಗೆ ಎಚ್‌ಡಿಕೆ ?" ->  "sṅkṣṭ edurādre biesvai bennige ecḍike ?"
+   "ಶಾಸಕರಿಂದಲೂ ಒತ್ತಡ?" ->  "śāskrindlū ottḍ?"
+   "ಏಕೆಂದರೆ, ಇವರ ಹೆಸರೇ ಕೊರೊನಾ!" ->  "ēkendre, ivr hesrē keūronā!"
+   "ಕೊರೊನಾಕ್ಕಿಂತಲೂ ಮುಂಚೆಯೇ ಅವರು ಕೊರೊನಾ ಆಗಿದ್ದವರು!" ->  "keūronākkintlū muñceyē avru keūronā āgiddvru!"
+   "ಕೇರಳದ ಕೊಟ್ಟಾಯಂನ ಮಹಿಳೆಯೊಬ್ಬರು ಈಗ ತಮ್ಮ ಹೆಸರು ಹೇಳಲು ಮುಜುಗರ ಪಡುವಂತಾಗಿದೆ" ->  "kērḷd keūṭṭāynn mhiḷeyobbru īg tmm hesru hēḷlu mujugr pḍuvntāgide"
+   "ಬೇರೆ ಬೆಳವಣಿಗೆಗೆ ಸಾಕ್ಷಿ ಸಾಧ್ಯತೆ" ->  "bēre beḷvṇigege sākṣi sādhyte"
+   "ಗುರು ಶನಿ ಗ್ರಹಗಳ ನಡುವೆ 3 ಜನರ ಪ್ರಯಾಣ" ->  "guru śni grhgḷ nḍuve 3 jnr pryāṇ"
+   "ಕೊರೊನಾ ಬಿಕ್ಕಟ್ಟಿನ ಕಾಲದಲ್ಲಿ “ಮಿಸೆಸ್‌ ಕೊರೊನಾ’ಗೆ ಸಮಸ್ಯೆ!" ->  "keūronā bikkṭṭin kāldlli “mises keūronā’ge smsye!"
+   "ಕೆಲವು ತಿಂಗಳಿಂದ ರಷ್ಯಾ ದೇಶದ ಏನಾಟೊಲಿ ಇವ್ಯಾನಿಶಿನ್‌ ಮತ್ತು ಇವಾನ್‌ ವ್ಯಾಗನರ್‌ ಹಾಗೂ ಅಮೆರಿಕಾದ ಕ್ರಿಸ್‌ ಕ್ಯಾಸಿಡಿ ಈ ಉಪಗ್ರಹದಲ್ಲಿ ವಾಸಿಸುತ್ತಿದ್ದಾರೆ" ->  "kelvu tiṅgḷind rṣyā dēśd ēnāṭeūli ivyāniśin mttu ivān vyāgnr hāgū amerikād kris kyāsiḍi ī upgrhdlli vāsisuttiddāre"
+}
+
+stage main {
+
+  # RULES
+  # note
+  sub {
+    from "\u0C82"
+    to "ṅ"
+    after any("ಕಖಗಘಙ")
+  }
+  sub {
+    from "\u0C82"
+    to "ñ"
+    after any("ಚಛಜಝಞ")
+  }
+  sub {
+    from "\u0C82"
+    to "ṇ"
+    after any("ಟಠಡಢಣ")
+  }
+  sub {
+    from "\u0C82"
+    to "n"
+    after any("ತಥದಧನ")
+  }
+  sub {
+    from "\u0C82"
+    to "m"
+    after any("ಪಫಬಭಮ")
+  }
+
+
+  # CHARACTERS
+  parallel {
+    sub "ಅ" "a"
+    sub "ಆ" "ā"
+    sub "ಇ" "i"
+    sub "ಈ" "ī"
+    sub "ಉ" "u"
+    sub "ಊ" "ū"
+    sub "ಋ" "ṛ"
+    sub "ಌ" "ḻ"
+
+    sub "ಎ" "e"
+    sub "ಏ" "ē"
+    sub "ಐ" "ai"
+
+    sub "ಒ" "o"
+    sub "ಓ" "ŏ"
+    sub "ಔ" "au"
+
+    # II. Consonants (see Note 2)
+    # Gutturals
+    sub "ಕ" "k"
+    sub "ಖ" "kh"
+    sub "ಗ" "g"
+    sub "ಘ" "gh"
+    sub "ಙ" "ṅ"
+
+    # Palatals
+    sub "ಚ" "c"
+    sub "ಛ" "ch"
+    sub "ಜ" "j"
+    sub "ಝ" "jh"
+    sub "ಞ" "ñ"
+
+    # Cerebrals
+    sub "ಟ" "ṭ"
+    sub "ಠ" "ṭh"
+    sub "ಡ" "ḍ"
+    sub "ಢ" "ḍh"
+    sub "ಣ" "ṇ"
+
+    # Dentals
+    sub "ತ" "t"
+    sub "ಥ" "th"
+    sub "ದ" "d"
+    sub "ಧ" "dh"
+    sub "ನ" "n"
+
+    # Labials
+    sub "ಪ" "p"
+    sub "ಫ" "ph"
+    sub "ಬ" "b"
+    sub "ಭ" "bh"
+    sub "ಮ" "m"
+
+    # Semivowels
+    sub "ಯ" "y"
+    sub "ರ" "r"
+    sub "ಱ" "ṟ"
+    sub "ಲ" "l"
+    sub "ಳ" "ḷ"
+    #   'ऴ': 'ẕ'
+
+
+    sub "ವ" "v"
+
+    # Sibilants
+    sub "ಶ" "ś"
+    sub "ಷ" "ṣ"
+    sub "ಸ" "s"
+
+
+    # Aspirate
+    sub "ಹ" "h"
+
+
+    # Chandrabindu
+    sub "\u0C80" "m"
+    sub "\u0C81" "m"
+
+    # Bisarga
+    sub "ಃ" "ḥ"
+
+    # Anusvāra
+    sub "ಂ" "ṃ"
+
+    sub "$಼" ""
+
+    # Medials # Needed for connecting constants
+    sub "ಾ" "ā"
+    sub "ಿ" "i"
+    sub "ೀ" "ī"
+    sub "ು" "u"
+    sub "ೂ" "ū"
+    sub "ೃ" "ṛ"
+    sub "ೄ" "ṛr"
+
+
+    sub "ೆ" "e"
+    sub "ೇ" "ē"
+    sub "ೈ" "ai"
+
+
+    sub "ೊ" "o"
+    sub "ೋ" "ō"
+    sub "ೌ" "au"
+
+    sub "्" ""
+    sub "़" ""
+    sub "್" ""
+    sub "‍" ""
+    sub "‌" ""
+  }
+
+  compose
+}
+}

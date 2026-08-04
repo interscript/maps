@@ -1,0 +1,735 @@
+system "MOCT:kor-Hang:Latn:2000" {
+
+metadata {
+  authority_id moct
+  id 2000
+  language iso-639-2:kor
+  source_script Hang
+  destination_script Latn
+  name Ministry of Culture and Tourism Korean Romanization System (2000)
+  url https://www.korean.go.kr/front_eng/roman/roman_01.do
+  creation_date 2000
+  adoption_date 2002
+  description {    Generation of Jamo from Hangul
+
+    This is how the Hangul-to-Jamo maps are generated. Please refer to this page
+    for details about Korean text handling in Unicode.
+    http://gernot-katzers-spice-pages.com/var/korean_hangul_unicode.html
+
+    This formula copied from the page above is used:
+    [stem]
+    ====
+    tail = mod (Hangul codepoint − 44032, 28)
+    vowel = 1 + mod (Hangul codepoint − 44032 − tail, 588) / 28
+    lead = 1 + int [ (Hangul codepoint − 44032)/588 ]
+    ====
+
+    [source,python]
+    ----
+    import pandas as pd
+    import re
+    import math
+
+    leadjamo = [chr(0x1100+i) for i in range(0,19)]
+    # ᄀᄁᄂᄃᄄᄅᄆᄇᄈᄉᄊᄋᄌᄍᄎᄏᄐᄑᄒ
+    voweljamo = [chr(0x1161+i) for i in range(0,21)]
+    # ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ
+    tailjamo = ['']+[chr(0x11A8+i) for i in range(0,27)]
+    # ᆨᆩᆪᆫᆬᆭᆮᆯᆰᆱᆲᆳᆴᆵᆶᆷᆸᆹᆺᆻᆼᆽᆾᆿᇀᇁᇂ
+
+    hanguls = [chr(i) for i in range(44032,55204)]
+    tails = [tailjamo[(i-44032) % 28] for i in range(44032,55204)]
+    vowels = [voweljamo[((i-44032-((i-44032) % 28)) % 588) // 28] for i in range(44032,55204)]
+    leads = [leadjamo[math.floor((i-44032)// 588)] for i in range(44032,55204)]
+
+    kr_df = pd.DataFrame(\{'Hangul':hanguls, 'Lead':leads,'Vowel':vowels, 'Tail':tails\})
+    ----
+
+    Hangul	Lead	Vowel	Tail
+    0	가	ᄀ	ᅡ
+    1	각	ᄀ	ᅡ	ᆨ
+    2	갂	ᄀ	ᅡ	ᆩ
+    3	갃	ᄀ	ᅡ	ᆪ
+    4	간	ᄀ	ᅡ	ᆫ
+    5	갅	ᄀ	ᅡ	ᆬ
+    6	갆	ᄀ	ᅡ	ᆭ
+    7	갇	ᄀ	ᅡ	ᆮ
+    8	갈	ᄀ	ᅡ	ᆯ
+    9	갉	ᄀ	ᅡ	ᆰ
+  }
+
+  notes { }
+}
+
+tests {
+   "불국사" ->  "Bulguksa"
+   "묵호" ->  "Mukho"
+   "울산" ->  "Ulsan"
+   "독립문" ->  "Dongnimmun"
+   "강남역" ->  "Gangnamyeok"
+   "남산리" ->  "Namsan-ri" #Note: no assimilation for -ri even after nasals
+   "내월리" ->  "Naewol-ri"
+   "울릉군" ->  "Ulleung-gun"
+   "설악산" ->  "Seoraksan"
+   "삼죽면" ->  "Samjuk-myeon"
+   "평리1동" ->  "Pyeongni Il-dong"
+   "평리2동" ->  "Pyeongni I-dong"
+   "탑안이" ->  "Tabani"
+}
+
+dependency "var-kor"
+dependency "var-kor-Hang-Hang-jamo" as hangjamo
+
+# Those may be parts of this supposed korean library
+aliases {
+  double_cons_jamo = any("ᄁᄄᄈᄍᄊ")
+  aspirated_cons_jamo = any("ᄏᄐᄑᄎ")
+}
+
+stage main {
+  # convert numbers to space + Hangul
+  sub {
+    from none
+    to space
+    not_before any([digit, space])
+    after digit
+  }
+  sub "1" "일"
+  sub "2" "이"
+  sub "3" "삼"
+  sub "4" "사"
+  sub "5" "오"
+  sub "6" "육"
+  sub "7" "칠"
+  sub "8" "팔"
+  sub "9" "구"
+
+  # add hyphen in front of generics
+  sub {
+    from none
+    to "-"
+    not_before line_start
+    after any("도시군구읍면리동가") + line_end
+  }
+
+  run  map.hangjamo.stage.main
+
+  # Add space to the two ends of the string for easier word boundary handling
+  sub line_start space
+  sub line_end space
+
+  # HANGUL JONGSEONG SSANGKIYEOK
+  sub "ᆩᄋ" "ᆨᄁ"
+  sub "ᆩ" "ᆨ"
+
+  # HANGUL JONGSEONG SSANGKIYEOK
+  sub "ᆪᄋ" "ᆨᄉ"
+  sub "ᆪ" "ᆨ"
+
+  # HANGUL JONGSEONG NIEUN-CIEUC
+  sub "ᆬᄋ" "ᆫᄌ"
+  sub "ᆬ" "ᆫ"
+
+  # HANGUL JONGSEONG NIEUN-CIEUC
+  sub "ᆭᄀ" "ᆫᄏ"
+  sub "ᆭᄃ" "ᆫᄐ"
+  sub "ᆭᄇ" "ᆫᄑ"
+  sub "ᆭᄌ" "ᆫᄎ"
+  sub "ᆭ" "ᆫ"
+
+  # HANGUL JONGSEONG TIEUT
+  sub {
+    from "ᆮ"
+    to "ᆺ"
+    after any("ᄀᄁᄂᄃᄄᄅᄆᄇᄈᄉᄊᄌᄍᄎᄏᄐᄑᄒ")
+  }
+
+  # HANGUL JONGSEONG RIEUL-SIOS
+  sub "ᆳᄋ" "ᆯᄉ"
+  sub "ᆳ" "ᆯ"
+
+  # HANGUL JONGSEONG RIEUL-THIEUTH
+  sub "ᆴᄋ" "ᆯᄐ"
+  sub "ᆴ" "ᆯ"
+
+  # HANGUL JONGSEONG RIEUL-PHIEUPH
+  sub "ᆵᄋ" "ᆯᄑ"
+  sub {
+    from "ᆵ"
+    to "ᆯ"
+    after any("ᄃᄄᄐ")
+  }
+  sub "ᆵ" "ᄇ"
+
+  parallel {
+  # HANGUL JONGSEONG RIEUL-HIEUH
+  sub "ᆶᄀ" "ᆯᄏ"
+  sub "ᆶᄃ" "ᆯᄐ"
+  sub "ᆶᄇ" "ᆯᄑ"
+  sub "ᆶᄌ" "ᆯᄎ"
+  sub "ᆶ" "ᆯ"
+
+  # HANGUL JONGSEONG PIEUP-SIOS
+  sub "ᆹᄋ" "ᄇᄉ"
+  sub "ᆹ" "ᄇ"
+
+  # HANGUL JONGSEONG SSANG-SIOS
+  sub "ᆻᄋ" "ᆺᄊ"
+  sub "ᆻ" "ᆺ"
+
+  # HANGUL JONGSEONG CIEUC
+  sub "ᆽᄋ" "ᆺᄌ"
+  sub "ᆽ" "ᆺ"
+
+  # HANGUL JONGSEONG CHIEUCH
+  sub "ᆾᄋ" "ᆺᄎ"
+  sub "ᆾ" "ᆺ"
+
+  # HANGUL JONGSEONG KHIEUKH
+  sub "ᆿᄋ" "ᆨᄏ"
+  sub "ᆿ" "ᆨ"
+
+  # HANGUL JONGSEONG THIEUTH
+  sub "ᇀᄋ" "ᆺᄐ"
+  sub "ᇀ" "ᆺ"
+
+  # HANGUL JONGSEONG PHIEUPH
+  sub "ᇁᄋ" "ᆸᄑ"
+  sub "ᇁ" "ᆸ"
+
+  # HANGUL JONGSEONG HIEUH
+  sub "ᇂᄀ" "ᄏ"
+  sub "ᇂᄃ" "ᄐ"
+  sub "ᇂᄇ" "ᄑ"
+  sub "ᇂᄌ" "ᄎ"
+  sub "ᇂ" ""
+  }
+
+  parallel {
+  # From Unicode Chart
+  # https://github.com/unicode-org/cldr/blob/master/common/transforms/Korean-Latin-BGN.xml
+
+  sub "ᆮᄋ" "d"
+
+  sub "ᆨᄀ" "kg"
+  sub "ᆨᄂ" "ngn"
+  sub "ᆨᄃ" "kd"
+  sub "ᆨᄅ" "ngn"
+  sub "ᆨᄆ" "ngm"
+  sub "ᆨᄇ" "kb"
+  sub "ᆨᄉ" "ks"
+  sub "ᆨᄋ" "g"
+  sub "ᆨᄌ" "kj"
+  sub "ᆨᄎ" "kch"
+  sub "ᆨᄏ" "kk"
+  sub "ᆨᄐ" "kt"
+  sub "ᆨᄑ" "kp"
+  sub "ᆨᄒ" "kh"
+  sub "ᆨᄁ" "kkk"
+  sub "ᆨᄄ" "ktt"
+  sub "ᆨᄈ" "kpp"
+  sub "ᆨᄊ" "kss"
+  sub "ᆨᄍ" "kjj"
+  sub "ᆫᄀ" "ng"
+  sub "ᆫᄂ" "nn"
+  sub "ᆫᄃ" "nd"
+  sub "ᆫᄅ" "ll"
+  sub "ᆫᄆ" "nm"
+  sub "ᆫᄇ" "nb"
+  sub "ᆫᄉ" "ns"
+  sub "ᆫᄋ" "n"
+  sub "ᆫᄌ" "nj"
+  sub "ᆫᄎ" "nch"
+  sub "ᆫᄏ" "nk"
+  sub "ᆫᄐ" "nt"
+  sub "ᆫᄑ" "np"
+  sub "ᆫᄒ" "nh"
+  sub "ᆫᄁ" "nkk"
+  sub "ᆫᄄ" "ntt"
+  sub "ᆫᄈ" "npp"
+  sub "ᆫᄊ" "nss"
+  sub "ᆫᄍ" "njj"
+  sub "ᆯᄀ" "lg"
+  sub "ᆯᄂ" "ll"
+  sub "ᆯᄃ" "ld"
+  sub "ᆯᄅ" "ll"
+  sub "ᆯᄆ" "lm"
+  sub "ᆯᄇ" "lb"
+  sub "ᆯᄉ" "ls"
+  sub "ᆯᄋ" "r"
+  sub "ᆯᄌ" "lj"
+  sub "ᆯᄎ" "lch"
+  sub "ᆯᄏ" "lk"
+  sub "ᆯᄐ" "lt"
+  sub "ᆯᄑ" "lp"
+  sub "ᆯᄒ" "rh"
+  sub "ᆯᄁ" "lkk"
+  sub "ᆯᄄ" "ltt"
+  sub "ᆯᄈ" "lpp"
+  sub "ᆯᄊ" "lss"
+  sub "ᆯᄍ" "ljj"
+  sub "ᆷᄀ" "mg"
+  sub "ᆷᄂ" "mn"
+  sub "ᆷᄃ" "md"
+  sub "ᆷᄅ" "mn"
+  sub "ᆷᄆ" "mm"
+  sub "ᆷᄇ" "mb"
+  sub "ᆷᄉ" "ms"
+  sub "ᆷᄋ" "m"
+  sub "ᆷᄌ" "mj"
+  sub "ᆷᄎ" "mch"
+  sub "ᆷᄏ" "mk"
+  sub "ᆷᄐ" "mt"
+  sub "ᆷᄑ" "mp"
+  sub "ᆷᄒ" "mh"
+  sub "ᆷᄁ" "mkk"
+  sub "ᆷᄄ" "mtt"
+  sub "ᆷᄈ" "mpp"
+  sub "ᆷᄊ" "mss"
+  sub "ᆷᄍ" "mjj"
+  sub "ᆸᄀ" "pg"
+  sub "ᆸᄂ" "mn"
+  sub "ᆸᄃ" "pd"
+  sub "ᆸᄅ" "mn"
+  sub "ᆸᄆ" "mm"
+  sub "ᆸᄇ" "pb"
+  sub "ᆸᄉ" "ps"
+  sub "ᆸᄋ" "b"
+  sub "ᆸᄌ" "pj"
+  sub "ᆸᄎ" "pch"
+  sub "ᆸᄏ" "pk"
+  sub "ᆸᄐ" "pt"
+  sub "ᆸᄑ" "pp"
+  sub "ᆸᄒ" "ph"
+  sub "ᆸᄁ" "pkk"
+  sub "ᆸᄄ" "ptt"
+  sub "ᆸᄈ" "ppp"
+  sub "ᆸᄊ" "pss"
+  sub "ᆸᄍ" "pjj"
+  sub "ᆺᄀ" "tg"
+  sub "ᆺᄂ" "nn"
+  sub "ᆺᄃ" "td"
+  sub "ᆺᄅ" "nn"
+  sub "ᆺᄆ" "nm"
+  sub "ᆺᄇ" "tb"
+  sub "ᆺᄉ" "ts"
+  sub "ᆺᄋ" "s"
+  sub "ᆺᄌ" "tj"
+  sub "ᆺᄎ" "tch"
+  sub "ᆺᄏ" "tk"
+  sub "ᆺᄐ" "tt"
+  sub "ᆺᄑ" "tp"
+  sub "ᆺᄒ" "th"
+  sub "ᆺᄁ" "tkk"
+  sub "ᆺᄄ" "ttt"
+  sub "ᆺᄈ" "tpp"
+  sub "ᆺᄊ" "tss"
+  sub "ᆺᄍ" "tjj"
+  sub "ᆼᄀ" "ngg"
+  sub "ᆼᄂ" "ngn"
+  sub "ᆼᄃ" "ngd"
+  sub "ᆼᄅ" "ngn"
+  sub "ᆼᄆ" "ngm"
+  sub "ᆼᄇ" "ngb"
+  sub "ᆼᄉ" "ngs"
+  sub "ᆼᄋ" "ng"
+  sub "ᆼᄌ" "ngj"
+  sub "ᆼᄎ" "ngch"
+  sub "ᆼᄏ" "ngk"
+  sub "ᆼᄐ" "ngt"
+  sub "ᆼᄑ" "ngp"
+  sub "ᆼᄒ" "ngh"
+  sub "ᆼᄁ" "ngkk"
+  sub "ᆼᄄ" "ngtt"
+  sub "ᆼᄈ" "ngpp"
+  sub "ᆼᄊ" "ngss"
+  sub "ᆼᄍ" "ngjj"
+  }
+
+  sub {
+    from "ᄀ"
+    to "g"
+    before any([alpha, digit, jamo_vowel, "-"])
+  }
+  sub {
+    from "ᄂ"
+    to "n"
+    before any([alpha, digit, jamo_vowel, "-"])
+  }
+  sub {
+    from "ᄃ"
+    to "d"
+    before any([alpha, digit, jamo_vowel, "-"])
+  }
+  sub {
+    from "ᄅ"
+    to "r"
+    before any([alpha, digit, jamo_vowel, "-"])
+  }
+  sub {
+    from "ᄆ"
+    to "m"
+    before any([alpha, digit, jamo_vowel, "-"])
+  }
+  sub {
+    from "ᄇ"
+    to "b"
+    before any([alpha, digit, jamo_vowel, "-"])
+  }
+  sub {
+    from "ᄉ"
+    to "s"
+    before any([alpha, digit, jamo_vowel, "-"])
+  }
+  sub {
+    from "ᄋ"
+    to ""
+    before any([alpha, digit, jamo_vowel, "-"])
+  }
+  sub {
+    from "ᄌ"
+    to "j"
+    before any([alpha, digit, jamo_vowel, "-"])
+  }
+  sub {
+    from "ᄎ"
+    to "ch"
+    before any([alpha, digit, jamo_vowel, "-"])
+  }
+  sub {
+    from "ᄏ"
+    to "k"
+    before any([alpha, digit, jamo_vowel, "-"])
+  }
+  sub {
+    from "ᄐ"
+    to "t"
+    before any([alpha, digit, jamo_vowel, "-"])
+  }
+  sub {
+    from "ᄑ"
+    to "p"
+    before any([alpha, digit, jamo_vowel, "-"])
+  }
+  sub {
+    from "ᄒ"
+    to "h"
+    before any([alpha, digit, jamo_vowel, "-"])
+  }
+  sub {
+    from "ᄁ"
+    to "kk"
+    before any([alpha, digit, jamo_vowel])
+  }
+  sub {
+    from "ᄄ"
+    to "tt"
+    before any([alpha, digit, jamo_vowel])
+  }
+  sub {
+    from "ᄈ"
+    to "pp"
+    before any([alpha, digit, jamo_vowel])
+  }
+  sub {
+    from "ᄊ"
+    to "ss"
+    before any([alpha, digit, jamo_vowel])
+  }
+  sub {
+    from "ᄍ"
+    to "jj"
+    before any([alpha, digit, jamo_vowel])
+  }
+  parallel {
+  sub "ᆰᄀ" "lg"
+  sub "ᆰᄂ" "ngn"
+  sub "ᆰᄃ" "kd"
+  sub "ᆰᄅ" "ngn"
+  sub "ᆰᄆ" "ngm"
+  sub "ᆰᄇ" "kb"
+  sub "ᆰᄉ" "ks"
+  sub "ᆰᄋ" "lg"
+  sub "ᆰᄌ" "kj"
+  sub "ᆰᄎ" "kch"
+  sub "ᆰᄏ" "lk"
+  sub "ᆰᄐ" "kt"
+  sub "ᆰᄑ" "kp"
+  sub "ᆰᄒ" "lk"
+  sub "ᆰᄁ" "lkk"
+  sub "ᆰᄄ" "ktt"
+  sub "ᆰᄈ" "kpp"
+  sub "ᆰᄊ" "kss"
+  sub "ᆰᄍ" "kjj"
+  sub "ᆱᄀ" "mg"
+  sub "ᆱᄂ" "mn"
+  sub "ᆱᄃ" "md"
+  sub "ᆱᄅ" "mn"
+  sub "ᆱᄆ" "lm"
+  sub "ᆱᄇ" "mb"
+  sub "ᆱᄉ" "ms"
+  sub "ᆱᄋ" "lm"
+  sub "ᆱᄌ" "mj"
+  sub "ᆱᄎ" "mch"
+  sub "ᆱᄏ" "mk"
+  sub "ᆱᄐ" "mt"
+  sub "ᆱᄑ" "mp"
+  sub "ᆱᄒ" "mh"
+  sub "ᆱᄁ" "mkk"
+  sub "ᆱᄄ" "mtt"
+  sub "ᆱᄈ" "mpp"
+  sub "ᆱᄊ" "mss"
+  sub "ᆱᄍ" "mjj"
+  sub "ᆲᄀ" "pg"
+  sub "ᆲᄂ" "mn"
+  sub "ᆲᄃ" "pd"
+  sub "ᆲᄅ" "mn"
+  sub "ᆲᄆ" "mm"
+  sub "ᆲᄇ" "lb"
+  sub "ᆲᄉ" "ps"
+  sub "ᆲᄋ" "lb"
+  sub "ᆲᄌ" "pj"
+  sub "ᆲᄎ" "pch"
+  sub "ᆲᄏ" "pk"
+  sub "ᆲᄐ" "pt"
+  sub "ᆲᄑ" "lp"
+  sub "ᆲᄒ" "lp"
+  sub "ᆲᄁ" "pkk"
+  sub "ᆲᄄ" "ptt"
+  sub "ᆲᄈ" "lpp"
+  sub "ᆲᄊ" "pss"
+  sub "ᆲᄍ" "pjj"
+  }
+  sub {
+    from "ᄀ"
+    to "g"
+    before space
+  }
+  sub {
+    from "ᄂ"
+    to "n"
+    before space
+  }
+  sub {
+    from "ᄃ"
+    to "d"
+    before space
+  }
+  sub {
+    from "ᄅ"
+    to ""
+    before space
+    after any("ᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᄅ"
+    to "n"
+    before space
+  }
+  sub {
+    from "ᄆ"
+    to "m"
+    before space
+  }
+  sub {
+    from "ᄇ"
+    to "b"
+    before space
+  }
+  sub {
+    from "ᄉ"
+    to "s"
+    before space
+  }
+  sub {
+    from "ᄋ"
+    to ""
+    before space
+  }
+  sub {
+    from "ᄌ"
+    to "j"
+    before space
+  }
+  sub {
+    from "ᄎ"
+    to "ch"
+    before space
+  }
+  sub {
+    from "ᄏ"
+    to "k"
+    before space
+  }
+  sub {
+    from "ᄐ"
+    to "t"
+    before space
+  }
+  sub {
+    from "ᄑ"
+    to "p"
+    before space
+  }
+  sub {
+    from "ᄒ"
+    to "h"
+    before space
+  }
+  sub {
+    from "ᄁ"
+    to "kk"
+    before space
+  }
+  sub {
+    from "ᄭ"
+    to "kk"
+    before space
+  }
+  sub {
+    from "ᄄ"
+    to "tt"
+    before space
+  }
+  sub {
+    from "ᄯ"
+    to "tt"
+    before space
+  }
+  sub {
+    from "ᄈ"
+    to "pp"
+    before space
+  }
+  sub {
+    from "ᄲ"
+    to "pp"
+    before space
+  }
+  sub {
+    from "ᄊ"
+    to "ss"
+    before space
+  }
+  sub {
+    from "ᄍ"
+    to "jj"
+    before space
+  }
+  sub {
+    from "ᄶ"
+    to "jj"
+    before space
+  }
+  parallel {
+  sub "ᅡ" "a"
+  sub "ᅣ" "ya"
+  sub "ᅥ" "eo"
+  sub "ᅧ" "yeo"
+  sub "ᅩ" "o"
+  sub "ᅭ" "yo"
+  sub "ᅮ" "u"
+  sub "ᅲ" "yu"
+  sub "ᅳ" "eu"
+  sub "ᅵ" "i"
+  sub "ᅢ" "ae"
+  sub "ᅤ" "yae"
+  sub "ᅦ" "e"
+  sub "ᅨ" "ye"
+  sub "ᅬ" "oe"
+  sub "ᅱ" "wi"
+  sub "ᅴ" "ui"
+  sub "ᅪ" "wa"
+  sub "ᅯ" "wo"
+  sub "ᅫ" "wae"
+  sub "ᅰ" "we"
+  }
+  sub {
+    from "ᆨ"
+    to "k"
+    after any([space,"-"])
+  }
+  sub {
+    from "ᆫ"
+    to "n"
+    after any([space,"-"])
+  }
+  sub {
+    from "ᆮ"
+    to "t"
+    after any([space,"-"])
+  }
+  sub {
+    from "ᆯ"
+    to "l"
+    after any([space,"-"])
+  }
+  sub {
+    from "ᆷ"
+    to "m"
+    after any([space,"-"])
+  }
+  sub {
+    from "ᆸ"
+    to "p"
+    after any([space,"-"])
+  }
+  sub {
+    from "ᆺ"
+    to "t"
+    after any([space,"-"])
+  }
+  sub {
+    from "ᆼ"
+    to "ng"
+    after any([space,"-"])
+  }
+  sub {
+    from "ᆽ"
+    to "t"
+    after any([space,"-"])
+  }
+  sub {
+    from "ᆾ"
+    to "t"
+    after any([space,"-"])
+  }
+  sub {
+    from "ᆿ"
+    to "k"
+    after any([space,"-"])
+  }
+  sub {
+    from "ᇀ"
+    to "t"
+    after any([space,"-"])
+  }
+  sub {
+    from "ᇁ"
+    to "p"
+    after any([space,"-"])
+  }
+  sub {
+    from "ᆰ"
+    to "k"
+    after any([space,"-"])
+  }
+  sub {
+    from "ᆲ"
+    to "p"
+    after any([space,"-"])
+  }
+
+  # Remove space added
+  sub {
+    from line_start + space
+    to none
+  }
+  sub {
+    from space + line_end
+    to none
+  }
+
+  title_case
+}
+}

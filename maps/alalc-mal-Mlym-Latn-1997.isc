@@ -1,0 +1,408 @@
+system "ALA-LC:mal-Mlym:Latn:1997" {
+
+metadata {
+  authority_id alalc
+  id 1997
+  language iso-639-2:mal
+  source_script Mlym
+  destination_script Latn
+  name Romanization Table -- Malayalam (1997)
+  url http://catdir.loc.gov/catdir/cpso/romanization/malayala.pdf
+  creation_date 1997
+  description {    ALA-LC Romanization table for Malayalam
+  }
+
+  notes {
+
+    note "Only the vowel forms that appear at the beginning of a syllable are listed; the forms used for\n vowels following a consonant can be found in grammars; no distinction between the two is\n made in transliteration."
+
+    note "When  ് is used in combination with the vowel u (ഉ്), the combination is also transliterated ȧ."
+
+    note "      The vowel a is implicit after all consonants and consonant clusters and is supplied in transliteration, with the following exceptions:\n      a) when another vowel is indicated by its appropriate sign\n      b) when the absence of any vowel is indicated by the superscript sign  ് (also used for the vowel ȧ); and\n      c) when the following modified consonantal forms are used:\n        ൿ  k\n        ൻ  n\n        ൾ  ḷ\n        ൺ  ṇ\n        ൽ  l\n        ർ   r"
+    note "When റ റ appears as a subscript in a cluster (റ്റ), it is transliterated ta."
+
+    note "      Exception: Anusvāra is transliterated by:\n\n      a) ṅ before gutturals,\n      b) ñ before palatals,\n      c) ṇ before cerebrals,\n      d) n before dentals, and\n      e) m before labials."
+  }
+}
+
+tests {
+   "ചൈനയ്ക്കെതിരെ ലഡാക്കിൽ സദാസജ്ജം; യുഎസിൽനിന്ന് ൭൨,൫൦൦ സിഗ്–൧൬ റൈഫിൾ" ->  "cainayŭkŭketire lad̂ākŭkil sadāsajŭjaṃ; yuesilninŭnŭ 72,500 sigŭ–16 ṟaiphiḷ"
+   "സർഗഭൂമിക’യ്ക്കില്ല; ലളിതച്ചേച്ചി അങ്ങനെ പറഞ്ഞിട്ടുണ്ടാവില്ല: ആർഎൽവി രാമകൃഷ്ണൻ" ->  "sargabhūmika’yŭkŭkilŭla; laḷitacŭcēcŭci aṅŭṅane paṟañŭñiṭŭṭuṇŭṭāvilŭla: ārelvi rāmakṛṣŭṇan"
+   "സ്വർണക്കടത്ത്‌: ഫൈസൽ ഫരീദും റബിന്‍സും ദുബായിൽ അറസ്റ്റിലായെന്ന്‌ എന്‍ഐഎ" ->  "sŭvarṇakŭkaṭatŭtŭ: phaisal pharīduṃ ṟabinŭsuṃ dubāyil aṟasŭṟŭṟilāyenŭnŭ enŭaie"
+   "വരുമോ ചൈനയുടെ വാക്സീൻ?; ആഗോള ഉപയോഗത്തിന് ഡബ്ല്യുഎച്ച്ഒയുമായി ചർച്ച" ->  "varumō cainayuṭe vākŭsīn?; āgōḷa upayōgatŭtinŭ d̂abŭlŭyuecŭcŭoyumāyi carcŭca"
+   "കുട്ടികളുടെ മാനസിക പിരിമുറുക്കം മാറ്റാൻ പരിശീലനം; ക്ലാസുമായി പോക്സോ പ്രതി" ->  "kuṭŭṭikaḷuṭe mānasika pirimuṟukŭkaṃ māṟŭṟān pariśīlanaṃ; kŭlāsumāyi pōkŭsō pŭrati"
+   "ആദ്യം അമിത് ഷാ, ഇപ്പോൾ മോദി; ബിജെപിയെ പുണരാൻ ജഗൻ; ആന്ധ്രയിലെ കരുനീക്കങ്ങൾ" ->  "ādŭyaṃ amitŭ ṣā, ipŭpōḷ mōdi; bijepiye puṇarān jagan; ānŭdhŭrayile karunīkŭkaṅŭṅaḷ"
+   "ലഹരിമരുന്ന് കേസ്: ബിനീഷ് കോടിയേരിയെ ഇഡി 6 മണിക്കൂർ ചോദ്യം ചെയ്തു" ->  "laharimarunŭnŭ kēsŭ: binīṣŭ kōṭiyēriye id̂i 6 maṇikŭkūr cōdŭyaṃ ceyŭtu"
+   "ഈന്തപ്പഴം വിതരണം ചെയ്തത് ശിവശങ്കര്‍ പറഞ്ഞതു പ്രകാരം: ടി.വി അനുപമയുടെ മൊഴി" ->  "īnŭtapŭpaḻaṃ vitaraṇaṃ ceyŭtatŭ śivaśaṅŭkarŭ paṟañŭñatu pŭrakāraṃ: ṭi.vi anupamayuṭe moḻi"
+   "൫൦൦൦ മണിക്കൂർ കാത്തിരിക്കാൻ തയാറെന്ന് രാഹുൽ: ഒടുവിൽ വഴങ്ങി ഹരിയാന" ->  "5000 maṇikŭkūr kātŭtirikŭkān tayāṟenŭnŭ rāhul: oṭuvil vaḻaṅŭṅi hariyāna"
+   "കാരണം ഷോര്‍ട്ട്‌സര്‍ക്യൂട്ടല്ല; കത്തിയത് ഫയല്‍ മാത്രം, സാനിറ്റൈസര്‍ ഉള്‍പ്പെടെ കത്തിയില്ല" ->  "kāraṇaṃ ṣōrŭṭŭṭŭsarŭkŭyūṭŭṭalŭla; katŭtiyatŭ phayalŭ mātŭraṃ, sāniṟŭṟaisarŭ uḷŭpŭpeṭe katŭtiyilŭla"
+   "വിമൺ സയൻറിസ്റ്റ്സ് സ്കീം" ->  "vimaṇ sayanṟisŭṟŭṟŭsŭ sŭkīṃ"
+}
+
+aliases {
+  mlym_chars_1 = any("\u0d3e\u0d3f\u0d40\u0d41\u0d42\u0d4d\u0d43\u0d44\u0d46\u0d47\u0d48\u0d4a\u0d4b\u0d4c\u0D62\u0D63\u0d4d")
+}
+
+stage main {
+
+  # RULES
+  # note[5]
+    sub {
+    from "\u0DCA"
+    to "ṅ"
+    after any("കഖഗഘങ")
+  }
+    sub {
+    from "\u0DCA"
+    to "ñ"
+    after any("ചഛജഝഞ")
+  }
+    sub {
+    from "\u0DCA"
+    to "ṇ"
+    after any("ടഠഡഢണ")
+  }
+    sub {
+    from "\u0DCA"
+    to "n"
+    after any("തഥദധന")
+  }
+
+  # note[3(a,b)]
+    sub {
+    from "ക"
+    to "k"
+    after mlym_chars_1
+  }
+    sub {
+    from "ഖ"
+    to "kh"
+    after mlym_chars_1
+  }
+    sub {
+    from "ഗ"
+    to "g"
+    after mlym_chars_1
+  }
+    sub {
+    from "ഘ"
+    to "gh"
+    after mlym_chars_1
+  }
+    sub {
+    from "ങ"
+    to "ṅ"
+    after mlym_chars_1
+  }
+    sub {
+    from "ച"
+    to "c"
+    after mlym_chars_1
+  }
+    sub {
+    from "ഛ"
+    to "ch"
+    after mlym_chars_1
+  }
+    sub {
+    from "ജ"
+    to "j"
+    after mlym_chars_1
+  }
+    sub {
+    from "ഝ"
+    to "jh"
+    after mlym_chars_1
+  }
+    sub {
+    from "ഞ"
+    to "ñ"
+    after mlym_chars_1
+  }
+    sub {
+    from "ട"
+    to "ṭ"
+    after mlym_chars_1
+  }
+    sub {
+    from "ഠ"
+    to "ṭh"
+    after mlym_chars_1
+  }
+    sub {
+    from "ഡ"
+    to "d̂"
+    after mlym_chars_1
+  }
+    sub {
+    from "ഢ"
+    to "ḍh"
+    after mlym_chars_1
+  }
+    sub {
+    from "ണ"
+    to "ṇ"
+    after mlym_chars_1
+  }
+    sub {
+    from "ത"
+    to "t"
+    after mlym_chars_1
+  }
+    sub {
+    from "ഥ"
+    to "th"
+    after mlym_chars_1
+  }
+    sub {
+    from "ദ"
+    to "d"
+    after mlym_chars_1
+  }
+    sub {
+    from "ധ"
+    to "dh"
+    after mlym_chars_1
+  }
+    sub {
+    from "ന"
+    to "n"
+    after mlym_chars_1
+  }
+    sub {
+    from "പ"
+    to "p"
+    after mlym_chars_1
+  }
+    sub {
+    from "ഫ"
+    to "ph"
+    after mlym_chars_1
+  }
+    sub {
+    from "ബ"
+    to "b"
+    after mlym_chars_1
+  }
+    sub {
+    from "ഭ"
+    to "bh"
+    after mlym_chars_1
+  }
+    sub {
+    from "മ"
+    to "m"
+    after mlym_chars_1
+  }
+    sub {
+    from "യ"
+    to "y"
+    after mlym_chars_1
+  }
+    sub {
+    from "ര"
+    to "r"
+    after mlym_chars_1
+  }
+    sub {
+    from "റ"
+    to "ṟ"
+    after mlym_chars_1
+  }
+    sub {
+    from "ല"
+    to "l"
+    after mlym_chars_1
+  }
+    sub {
+    from "ള"
+    to "ḷ"
+    after mlym_chars_1
+  }
+    sub {
+    from "ഴ"
+    to "ḻ"
+    after mlym_chars_1
+  }
+    sub {
+    from "വ"
+    to "v"
+    after mlym_chars_1
+  }
+    sub {
+    from "ശ"
+    to "ś"
+    after mlym_chars_1
+  }
+    sub {
+    from "ഷ"
+    to "ṣ"
+    after mlym_chars_1
+  }
+    sub {
+    from "സ"
+    to "s"
+    after mlym_chars_1
+  }
+    sub {
+    from "ഩ"
+    to "ṉ"
+    after mlym_chars_1
+  }
+    sub {
+    from "ഹ"
+    to "h"
+    after mlym_chars_1
+  }
+
+
+
+
+  # CHARACTERS
+  parallel {
+
+    sub "അ" "a"
+    sub "ആ" "ā"
+    sub "ഇ" "i"
+    sub "ഈ" "ī"
+    sub "ഉ" "u"
+    sub "ഊ" "ū"
+    sub "ഋ" "ṛ"
+    sub "ൠ" "ṝ"
+    sub "ഌ" "ḷ"
+    sub "ൡ" "ḹ"
+
+    sub "എ" "e"
+    sub "ഏ" "ē"
+    sub "ഐ" "ai"
+
+    sub "ഒ" "o"
+    sub "ഓ" "ō"
+    sub "ഔ" "au"
+
+    # Consonants
+    # Gutturals
+    sub "ക" "ka"
+    sub "ഖ" "kha"
+    sub "ഗ" "ga"
+    sub "ഘ" "gha"
+    sub "ങ" "ṅa"
+
+    # Palatals
+    sub "ച" "ca"
+    sub "ഛ" "cha"
+    sub "ജ" "ja"
+    sub "ഝ" "jha"
+    sub "ഞ" "ña"
+
+    # Cerebrals
+    sub "ട" "ṭa"
+    sub "ഠ" "ṭha"
+    sub "ഡ" "d̂a"
+    sub "ഢ" "ḍha"
+    sub "ണ" "ṇa"
+
+    # Dentals
+    sub "ത" "ta"
+    sub "ഥ" "tha"
+    sub "ദ" "da"
+    sub "ധ" "dha"
+    sub "ന" "na"
+
+    # Labials
+    sub "പ" "pa"
+    sub "ഫ" "pha"
+    sub "ബ" "ba"
+    sub "ഭ" "bha"
+    sub "മ" "ma"
+
+    # Semivowels
+    sub "യ" "ya"
+    sub "ര" "ra"
+    sub "റ" "ṟa"
+    sub "റ്റ" "ṯṯa"
+    sub "ല" "la"
+    sub "ള" "ḷa"
+    sub "ഴ" "ḻa"
+    # Sibilants
+    sub "വ" "va"
+    sub "ശ" "śa"
+    sub "ഷ" "ṣa"
+    sub "സ" "sa"
+    sub "ഩ" "ṉa"
+
+
+    # Aspirate
+    sub "ഹ" "ha"
+
+    # Bisarga
+    sub "ഃ" "ḥ"
+
+    # Anusvāra
+    sub "ം" "ṃ"
+
+
+    # Abagraha
+    sub "ഽ" ":’"
+
+    # Medials # Needed for connecting constants
+
+    sub "ാ" "ā"
+    sub "ി" "i"
+    sub "ീ" "ī"
+    sub "ു" "u"
+    sub "ൂ" "ū"
+    sub "്" "ŭ"
+    sub "ൃ" "ṛ"
+    sub "ൄ" "ṝ"
+    sub "\u0D62" "ḷ"
+    sub "\u0D63" "ḹ"
+    sub "െ" "e"
+    sub "േ" "ē"
+    sub "ൈ" "ai"
+    sub "ൊ" "o"
+    sub "ോ" "ō"
+    sub "ൌ" "au"
+
+    sub "्" ""
+    sub "़" ""
+    sub "ൗ" ""
+    sub "‍" ""
+    sub "‌" ""
+
+
+    # numbers
+    sub "൦" "0"
+    sub "൧" "1"
+    sub "൨" "2"
+    sub "൩" "3"
+    sub "൪" "4"
+    sub "൫" "5"
+    sub "൬" "6"
+    sub "൭" "7"
+    sub "൮" "8"
+    sub "൯" "9"
+    sub "൰" "10"
+    sub "൱" "100"
+    sub "൲" "1000"
+
+
+    # Note 3(c)
+
+    sub "ൿ" "k"
+    sub "ൺ" "ṇ"
+    sub "ൻ" "n"
+    sub "ൽ" "l"
+    sub "ൾ" "ḷ"
+    sub "ർ" "r"
+    sub "ഉ്" "ū"
+
+    # extended and ancient forms
+
+    sub "ഺ" "ṯa"
+  }
+
+  compose
+}
+
+}

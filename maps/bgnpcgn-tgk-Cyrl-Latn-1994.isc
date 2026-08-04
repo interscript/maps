@@ -1,0 +1,199 @@
+system "BGN-PCGN:tgk-Cyrl:Latn:1994" {
+
+metadata {
+  authority_id bgnpcgn
+  id 1994
+  language iso-639-2:tgk
+  source_script Cyrl
+  destination_script Latn
+  name Romanization of Tajik (1994)
+  url https://geonames.nga.mil/gns/html/Romanization/ROMANIZATION%20OF%20TAJIK.pdf
+  creation_date 1994
+  confirmation_date 2017-11
+  description {    The BGN/PCGN system for Tajik was designed for use in romanizing names written in the Tajik Cyrillic alphabet.
+    The Tajik Cyrillic alphabet contains six characters not present in the Russian alphabet: ғ, ӣ, қ, ӯ, ҳ and ҷ. An
+    orthographic reform of the Tajik Cyrillic alphabet was implemented under the auspices of the Academy of Sciences of
+    Tajikistan. This reform was promulgated in a decree of 3 September 1998 by the government of the Republic of
+    Tajikistan. The reform abolished the characters ц, щ, ь and ы (see notes 2 through 5).
+  }
+
+  notes {
+    note "      The character sequences гҳ , зҳ , кҳ , and сҳ may be romanized g·h, z·h, k·h, and s·h in order\n      to differentiate those romanizations from the digraphs gh, zh, kh, and sh which are used to\n      render the characters ғ, ж, x, and ш."
+    note "      The obsolete character ц, abolished in 1998, should be romanized s (before a vowel and/or\n      after a consonant within a word) or ts intervocalically."
+    note "The obsolete character щ, replaced by ш in 1998, should be romanized sh."
+    note "The obsolete character ь, abolished in 1998, should not be romanized."
+    note "The obsolete character ы, replaced by и in 1998, should be romanized i."
+    note "Unicode values are shown with the uppercase Cyrillic character first, followed by the lowercase character."
+    note "      An inventory of letter-diacritic combinations, with their Unicode encoding, in addition to the\n      unmodified letters of the basic Roman script is:\n        All apostrophes appearing in romanization are U+2019\n          Í (U+00CD) í (U+00ED)\n          Ŭ (U+016C) ŭ (U+016D)\n          Ė (U+0116) ė (U+0117)"
+    note "      The Romanization column shows only lowercase forms but, when romanizing, uppercase and\n      lowercase Roman letters as appropriate should be used."
+  }
+}
+
+tests {
+  # https://ru.wikipedia.org/wiki/Таджикская_письменность#Образцы_записи
+   "Тамоми одамон озод ба дунё меоянд ва аз лиҳози манзилату ҳуқуқ бо ҳам баробаранд.\nҲама соҳиби ақлу виҷдонанд, бояд нисбат ба якдигар бародарвор муносабат намоянд." ->  "Tamomi odamon ozod ba dunyo meoyand va az lihozi manzilatu huquq bo ham barobarand.\nHama sohibi aqlu vijdonand, boyad nisbat ba yakdigar barodarvor munosabat namoyand."
+   "Баниодам аъзои як пайкаранд, ки дар офариниш зи як гавҳаранд. Чу узве ба дард оварад рӯзгор, дигар узвҳоро намонад қарор." ->  "Baniodam a’zoi yak paykarand, ki dar ofarinish zi yak gavharand. Chu uzve ba dard ovarad rŭzgor, digar uzvhoro namonad qaror."
+   "Саъдӣ" ->  "Sa’dí"
+   "Мурда будам, зинда шудам; гиря будам, xанда шудам. Давлати ишқ омаду ман давлати поянда шудам." ->  "Murda budam, zinda shudam; girya budam, xanda shudam. Davlati ishq omadu man davlati poyanda shudam."
+   "Мавлавӣ" ->  "Mavlaví"
+   "санг" ->  "sang"
+   "барг" ->  "barg"
+   "номвар" ->  "nomvar"
+   "Бағдод" ->  "Baghdod"
+   "ғор" ->  "ghor"
+   "модар" ->  "modar"
+   "меравам" ->  "meravam"
+   "дарё" ->  "daryo"
+   "осиёб" ->  "osiyob"
+   "жола" ->  "zhola"
+   "каждум" ->  "kazhdum"
+   "баъз" ->  "ba’z"
+   "назар" ->  "nazar"
+   "заҳоб" ->  "zahob"
+   "ихтиёр" ->  "ikhtiyor"
+   "зебоӣ" ->  "zeboí"
+   "май" ->  "may"
+   "кадом" ->  "kadom"
+   "қадам" ->  "qadam"
+   "лола" ->  "lola"
+   "мурдагӣ" ->  "murdagí"
+   "нон" ->  "non"
+   "орзу" ->  "orzu"
+   "панҷ" ->  "panj"
+   "ранг" ->  "rang"
+   "сар" ->  "sar"
+   "субҳ" ->  "subh"
+   "сурайё" ->  "surayyo"
+   "тоҷик" ->  "tojik"
+   "талаб" ->  "talab"
+   "дуд" ->  "dud"
+   "хӯрдан" ->  "khŭrdan"
+   "фурӯғ" ->  "furŭgh"
+   "хондан" ->  "khondan"
+   "ҳофиз" ->  "hofiz"
+   "чӣ" ->  "chí"
+   "ҷанг" ->  "jang"
+   "шаб" ->  "shab"
+   "таъриф" ->  "ta’rif"
+   "эй" ->  "ėy"
+   "июн" ->  "iyun"
+   "ягонагӣ" ->  "yagonagí"
+   "РАМЗҲО" ->  "RAMZ·HO"
+
+  # UN card tests
+   "Тоҷикистон" ->  "Tojikiston"
+   "Душанбе" ->  "Dushanbe"
+}
+
+stage main {
+
+  # RULES
+  # note[1]
+  sub {
+    from "\u04B3"
+    to "·h"
+    before any("ГгЗзКкСс")
+  }
+  sub {
+    from "\u04B2"
+    to "·H"
+    before any("ГгЗзКкСс")
+  }
+  # note[2]
+  sub {
+    from "\u0426"
+    to "S"
+    after any("АаЕеЁёИиОоУуЫыЭэЮюЯя")
+  }
+  sub {
+    from "\u0446"
+    to "s"
+    after any("АаЕеЁёИиОоУуЫыЭэЮюЯя")
+  }
+
+
+  # CHARACTERS
+  parallel {
+    sub "А" "A"
+    sub "Б" "B"
+    sub "В" "V"
+    sub "Г" "G"
+    sub "Ғ" "Gh"
+    sub "Д" "D"
+    sub "Е" "E"
+    sub "Ё" "Yo"
+    sub "Ж" "Zh"
+    sub "З" "Z"
+    sub "И" "I"
+    sub "Ӣ" "Í"
+    sub "Й" "Y"
+    sub "К" "K"
+    sub "Қ" "Q"
+    sub "Л" "L"
+    sub "М" "M"
+    sub "Н" "N"
+    sub "О" "O"
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "У" "U"
+    sub "Ӯ" "Ŭ"
+    sub "Ф" "F"
+    sub "Х" "Kh"
+    sub "Ҳ" "H"
+    sub "Ч" "Ch"
+    sub "Ҷ" "J"
+    sub "Ц" "Ts"
+    sub "Ш" "Sh"
+    sub "Щ" "Sh"
+    sub "Ъ" "’"
+    sub "Ы" "I"
+    sub "Ь" ""
+    sub "Э" "Ė"
+    sub "Ю" "Yu"
+    sub "Я" "Ya"
+
+    sub "а" "a"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "g"
+    sub "ғ" "gh"
+    sub "д" "d"
+    sub "е" "e"
+    sub "ё" "yo"
+    sub "ж" "zh"
+    sub "з" "z"
+    sub "и" "i"
+    sub "ӣ" "í"
+    sub "й" "y"
+    sub "к" "k"
+    sub "қ" "q"
+    sub "л" "l"
+    sub "м" "m"
+    sub "н" "n"
+    sub "о" "o"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "у" "u"
+    sub "ӯ" "ŭ"
+    sub "ф" "f"
+    sub "х" "kh"
+    sub "ҳ" "h"
+    sub "ч" "ch"
+    sub "ҷ" "j"
+    sub "ц" "ts"
+    sub "ш" "sh"
+    sub "щ" "sh"
+    sub "ъ" "’"
+    sub "ы" "i"
+    sub "ь" ""
+    sub "э" "ė"
+    sub "ю" "yu"
+    sub "я" "ya"
+  }
+
+}
+}

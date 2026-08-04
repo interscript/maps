@@ -1,0 +1,292 @@
+system "SASM:mon-Mong:Latn:general-1978" {
+
+metadata {
+  authority_id sasm
+  id general-1978
+  language iso-639-2:mon
+  source_script Mong
+  destination_script Latn
+  name Transliteration of Place Names in Minority Languages in Chinese Pinyin (Mongolian, general)
+  url http://www.moe.gov.cn/ewebeditor/uploadfile/2015/01/12/20150112161436994.pdf
+  creation_date 1976-06
+  description {    Article 1
+
+    The main purpose of the transliteration method of Chinese pinyin
+    letter transliteration of place names in minority languages:
+
+    (1) As a standard for spelling place names in minority languages ​​
+    with Chinese phonetic alphabet;
+    (2) As a phonetic tool for surveying and recording ethnic place
+    names in map surveying and mapping work;
+    (3) As the main basis for the pronunciation and selection of place
+    names in ethnic minority languages ​​in Chinese character
+    transliteration;
+    (4) Provide convenient conditions for the unified compilation of my
+    country's place-name information and index in alphabetical order.
+
+    Article 2
+
+    The transliteration method is limited to the 26 letters in the
+    "Hanyu Pinyin Plan", two letters with additional symbols and a
+    sound-proof symbol. In order to make the transcription and phonetic
+    more accurate, the syllable structure can not be restricted by the
+    syllable form of Mandarin Chinese. Soundproof symbols can be used
+    in various occasions that are easy to be confused. When recording,
+    additional symbols can be added to specific letters to represent
+    special sounds.
+
+    The transliteration and transliteration of ethnic minority scripts
+    in Latin script shall be based on the script. Letters with the same
+    or similar pronunciation and usage as in the "Hanyu Pinyin Plan"
+    shall be written according to them; different or dissimilar letters
+    shall be transcribed separately. If the text does not use Latin
+    letters, the corresponding Chinese phonetic letters shall be used
+    according to the pronunciation of the text. If there is no text,
+    according to the general voice mark.
+
+    Article 3
+
+    Special place names are handled with reference to the following
+    methods:
+
+    (1) If the commonly used Chinese name is partly transliterated and
+    partly translated, the transliteration part is spelled according to
+    the transliteration method, and the free translation part is
+    spelled according to the pronunciation of the Chinese character.
+
+    (2) If the commonly used Chinese character translation is a section
+    translation, the actual situation may be considered. Some are
+    transliterated according to the full name of the original name, and
+    some are spelled according to the Hanyu pronunciation of the
+    section translation.
+
+    (3) If the translated name of a Chinese character originally came
+    from a minority language, but later became a Chinese form and has
+    been commonly used, it can be spelled according to the
+    pronunciation of the Chinese character, including the original name
+    transliterated if necessary.
+
+    (4) Other special circumstances shall be dealt with according to
+    specific discretion.
+  }
+
+  original_description {     第一条
+
+    少数民族语地名汉语拼音字母音译转写法的主要用途：
+
+    （1） 作为用汉语拼音字母拼写少数民族语地名的标准；
+    （2）作为地图测绘工作中调査记录少数民族语地名的记音工具；
+    （3） 作为汉字音译少数民族语地名定音和选字的主要依据；
+    （4）为按照字母颐序统一编排我国地名资料和索引提供便利条件。
+
+    第二条
+
+    音译转写法限用《汉语拼音方案》中的26个字母，两个有附加符号的字母和一
+    个隔音符号，为了使转写和记音比较准确，音节结构可以不受汉语普通话音节
+    形式的限制，隔音符号可以在各种
+    容易混淆的场合应用，记音的时候附加符号可以加在特定的字母上面代表特殊
+    语音。
+
+
+    少数民族文字用拉丁字母的，音译转写以其文字为依据。跟《汉语拼音方案》
+    中读音和用法相同或相近的字母，一律照写；不同或不相近的字母分别规定转
+    写方式，文字不用拉丁字母的，根据文字的读音采用相应的汉语拼音字母表示
+    。没有文字的，根据通用语音标记。
+
+    第三条
+
+    特殊的地名参照下列办法处理：
+
+
+    (1）惯用的汉字译名如果是一部分音译，一部分意译，其音译部分根据音译转
+    写法拼写，意译部分按照汉字读音拼写。
+
+
+    (2）惯用的汉字译名如果是节译，可以斟酌具体体情况，有的按照原名全称音
+    译转写，有的按照节译的汉宇读音拼写。
+
+    (3) 汉字译名如果原先来自少数民族语，后来变成汉语形式并且已经通用，可以按
+    照汉字读音拼写，必要时括注音译转写的原名。
+
+    (4) 其他特殊情况具体斟酌处理。 }
+
+  notes {
+    note "The transliteration of Mongolian place names is based on the\n customary pronunciation combining written and spoken languages."
+    note "The length of Mongolian vowels are generally spelled regardless\n of their spelling. Long vowels in place names are represented by\n double letters."
+    note "The Chinese phonetic alphabets transliterated by transliteration\n are juxtaposed with or without symbols and adjuncts. Normally, the\n spelling letters are without symbols, and the place names are\n recorded by the acronym."
+  }
+
+  original_notes {(1) 蒙古语地名的音译转写，以书面语和口语通用相结合的习惯读法为依据。
+    (2) 蒙古语元音的长短，一般拼写不分，地名记音中长元音用双字母表示。
+    (3) 音译转写的汉语拼音字母有无符和加符并列的，一般拼写用无符字母，地名记音用加符宇母。
+  }
+
+  implementation_notes {
+ - A separated final form of vowels a or e is common, and can appear at the end
+      of a word, word stem, or suffix. This form requires a final-shaped preceding
+      consonant and an inter-word gap in between. The vowels themselves appear as ᠎ᠠ,
+      and with consonants as ‍ᠬ᠎ᠠ q‑a, ‍ᠷ᠎ᠠ r‑a/r‑e, etc. This gap can be transliterated
+      with a hyphen. In digital typesetting, these forms are triggered by inserting
+      a U+180E ᠎ MONGOLIAN VOWEL SEPARATOR (HTML &#6158; · MVS) between the consonant
+      and vowel.
+    - All case suffixes, as well as any plural suffixes consisting of one or two
+      syllables are likewise separated by a preceding and hyphen-transliterated gap.
+      In digital typesetting, this gap is represented by a U+202F   NARROW NO-BREAK SPACE
+      (HTML &#8239; · NNBSP). A maximum of two case suffixes can be added to a stem.
+      Single-letter vowel suffixes appear with the final-shaped forms of a/e, i, or u/ü,
+      as in ᠭᠠᠵᠠᠷ ᠠ γaǰar‑a 'to the country' and ᠡᠳᠦᠷ ᠡ edür‑e 'on the day', or ᠤᠯᠤᠰ ᠢ ulus‑i
+      'the state' etc. Multi-letter suffixes most often start with an initial- (consonants),
+      medial- (vowels), or variant-shaped form.
+  }
+}
+
+tests {
+   "ᠣᠷᠳᠣᠰ ᠬᠣᠲᠠ" ->  "ordos hota" # Ордос хот
+   "ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ" ->  "bayannagur hota" # Баяннуур хот
+   "ᠤᠯᠠᠭᠠᠨᠬᠣᠲᠠ" ->  "ulaganhota" # Улаан хот
+   "ᠬᠣᠣᠯᠢᠠ ᠭᠣᠤᠯ ᠬᠣᠲᠠ" ->  "hoolia goul hota" # Хоолингол хот
+   "ᠡᠷᠢᠶᠡᠨ ᠬᠣᠲᠠ" ->  "eriyen hota" #  Эрээн хот
+   "ᠷᠠᠰᠢᠶᠠᠨ ᠬᠣᠲᠠ" ->  "rasiyan hota" # Рашаан хот
+   "ᠪᠠᠭᠠᠷᠢᠨ ᠪᠠᠷᠠᠭᠤᠨ ᠬᠣᠰᠢᠭᠤ" ->  "bagarin baragun hosigu" # Баарин баруун хошуу
+   "ᠪᠠᠭᠠᠷᠢᠨ ᠵᠡᠭᠦᠨ ᠬᠣᠰᠢᠭᠤ" ->  "bagarin jegun hosigu" # Баарин зүүн хошуу
+   "ᠲᠦᠩᠯᠢᠶᠣᠤ ᠬᠣᠲᠠ" ->  "tungliyou hota" # Байшинт хот
+   "ᠰᠢᠯᠢ ᠶᠢᠨ ᠬᠣᠲᠠ" ->  "sili-yin hota" # Шилийн хот
+   "ᠬᠣᠷᠢᠨ ᠭᠡᠷ ᠰᠢᠶᠠᠨ" ->  "horin ger siyan" # Horinger County
+   "ᠤᠳᠠ ᠲᠣᠭᠣᠷᠢᠭ" ->  "uda togorig" # Уда тойрог
+   "ᠦᠬᠠᠢ ᠬᠣᠲᠠ" ->  "uhai hota" # Үхай хот
+   "ᠬᠠᠶᠢᠨᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "hayinan togorig" # Hainan District
+   "ᠬᠠᠶᠢᠷᠤᠪ ᠤᠨ ᠲᠣᠬᠣᠢ ᠲᠣᠭᠣᠷᠢᠭ" ->  "hayirub-un tohoi togorig" # Haibowan District
+   "ᠤᠯᠠᠭᠠᠨᠴᠠᠪ ᠬᠣᠲᠠ" ->  "ulaganqab hota" # Улаанцав хот
+   "ᠵᠢᠨᠢᠩ ᠲᠣᠭᠣᠷᠢᠭ" ->  "jining togorig" # Жинин тойрог
+   "ᠹᠸᠩᠵᠸᠡ ᠬᠣᠲᠠ" ->  "fwngjwe hota" # Фенжень хот
+   "ᠵᠦᠸᠧᠽᠢ ᠰᠢᠶᠠᠨ" ->  "juwezi siyan" # Zhuozi County
+   "ᠬᠤᠸᠠᠳᠧ ᠰᠢᠶᠠᠨ" ->  "huwade siyan" # Huade County
+   "ᠱᠠᠩᠳᠤ ᠰᠢᠶᠠᠨ" ->  "xangdu siyan" # Шанду шянь
+   "ᠰᠢᠩᠾᠧ ᠰᠢᠶᠠᠨ" ->  "singhe siyan" # Шинхэ шянь
+   "ᠯᠢᠶᠠᠩᠴᠠᠩ ᠰᠢᠶᠠᠨ" ->  "liyangqang siyan" # Liangcheng County
+   "ᠴᠠᠬᠠᠷ ᠪᠠᠷᠠᠭᠤᠨ ᠭᠠᠷᠤᠨ ᠡᠮᠦᠨᠡᠳᠦ ᠬᠣᠰᠢᠭᠤ" ->  "qahar baragun garun emunedu hosigu" # Цахар баруун гарын өмнөд хошуу
+   "ᠴᠠᠬᠠᠷ ᠪᠠᠷᠠᠭᠤᠨ ᠭᠠᠷᠤᠨ ᠳᠤᠮᠳᠠᠳᠤ ᠬᠣᠰᠢᠭᠤ" ->  "qahar baragun garun dumdadu hosigu" # Цахар баруун гарын дундад хошуу
+   "ᠴᠠᠬᠠᠷ ᠪᠠᠷᠠᠭᠤᠨ ᠭᠠᠷᠤᠨ ᠬᠣᠶᠢᠲᠤ ᠬᠣᠰᠢᠭᠤ" ->  "qahar baragun garun hoyitu hosigu" # Цахар баруун гарын хойд хошуу
+   "ᠳᠥᠷᠪᠡᠳ ᠬᠣᠰᠢᠭᠤ" ->  "dorbed hosigu" # Дөрвөд хошуу
+   "ᠪᠤᠭᠤᠲᠤ ᠬᠣᠲᠠ" ->  "bugutu hota" # Бугaт хот
+   "ᠬᠥᠨᠳᠡᠯᠡᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "hondelen togorig" # Hondlon District
+   "ᠳᠦᠩᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ" ->  "dunghe togorig" # Donghe District
+   "ᠴᠢᠩᠱᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "qingxan togorig" # Qingshan District
+   "ᠰᠢᠭᠤᠶᠢᠲᠤ ᠲᠣᠭᠣᠷᠢᠭ" ->  "siguyitu togorig" # Шигуай тойрог
+   "ᠵᠢᠦ ᠶᠤᠸᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "jiu yuwan togorig" # Jiuyuan District
+   "ᠭᠦᠶᠠᠩ ᠰᠢᠶᠠᠨ" ->  "guyang siyan" # Guyang County
+   "ᠲᠦᠮᠡᠳ ᠵᠡᠭᠦᠨ ᠬᠣᠰᠢᠭᠤ" ->  "tumed jegun hosigu" # Түмэд Зүүн хошуу
+   "ᠲᠦᠮᠡᠳ ᠪᠠᠷᠠᠭᠤᠨ ᠬᠣᠰᠢᠭᠤ" ->  "tumed baragun hosigu" # Түмэд Баруун хошуу
+   "ᠳᠠᠷᠬᠠᠨ ᠮᠤᠤᠮᠢᠩᠭ᠋ᠠᠨ ᠬᠣᠯᠪᠣᠭᠠᠲᠤ ᠬᠣᠰᠢᠭᠤ" ->  "darhan muumingg᠋an holbogatu hosigu" # Darhan Muminggan United Banner
+   "ᠬᠡᠰᠢᠭᠲᠡᠨ ᠬᠣᠰᠢᠭᠤ" ->  "hesigten hosigu" # Hexigten Banner
+   "ᠰᠢᠨ᠎ᠡ ᠪᠠᠷᠭᠤ ᠵᠡᠭᠦᠨ ᠬᠣᠰᠢᠭᠤ" ->  "sin-e bargu jegun hosigu" # New Barag Left Banner
+   "ᠰᠢᠨ᠎ᠡ ᠪᠠᠷᠭᠤ ᠪᠠᠷᠠᠭᠤᠨ ᠬᠣᠰᠢᠭᠤ" ->  "sin-e bargu baragun hosigu" # New Barag Right Banner
+   "ᠣᠲᠣᠭ ᠬᠣᠰᠢᠭᠤ" ->  "otog hosigu" # Otog Banner
+   "ᠳ᠋ᠦᠩᠱᠧᠩ ᠲᠣᠭᠣᠷᠢᠭ" ->  "d᠋ungxeng togorig" # Dongsheng District
+   "ᠳᠠᠯᠠᠳ ᠬᠣᠰᠢᠭᠤ" ->  "dalad hosigu" # Dalad Banner
+   "ᠵᠡᠭᠦᠨᠭᠠᠷ ᠬᠣᠰᠢᠭᠤ" ->  "jegungar hosigu" # Jungar Banner
+   "ᠣᠲᠣᠭ ᠤᠨ ᠡᠮᠦᠨᠡᠳᠦ ᠬᠣᠰᠢᠭᠤ" ->  "otog-un emunedu hosigu" # Otog Front Banner
+   "ᠬᠠᠩᠭᠢᠨ ᠬᠣᠰᠢᠭᠤ" ->  "hanggin hosigu" # Hanggin Banner
+   "ᠦᠦᠰᠢᠨ ᠬᠣᠰᠢᠭᠤ" ->  "uusin hosigu" # Uxin Banner
+   "ᠡᠵᠢᠨ ᠬᠣᠷᠣᠭ᠎ᠠ ᠬᠣᠰᠢᠭᠤ" ->  "ejin horog-a hosigu" # Эзэн Хороо хошуу
+   "ᠵᠠᠯᠠᠨ ᠠᠢ᠌ᠯ ᠬᠣᠲᠠ" ->  "jalan ai᠌l hota" # Жалан-Айл хот
+   "ᠶᠠᠭᠰᠢ ᠬᠣᠲᠠ" ->  "yagsi hota" # Ягши хот
+   "ᠮᠠᠨᠵᠤᠤᠷ ᠬᠣᠲᠠ" ->  "manjuur hota" # Манжуур хот
+   "ᠬᠠᠶᠢᠯᠠᠷ ᠲᠣᠭᠣᠷᠢᠭ" ->  "hayilar togorig" # Хайлаар тойрог
+   "ᠬᠣᠷᠴᠢᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "horqin togorig" # Horqin District
+   "ᠺᠠᠶᠢᠯᠦ ᠰᠢᠶᠠᠨ" ->  "kayilu siyan" # Kailu County
+   "ᠬᠦᠷᠢᠶ᠎ᠡ ᠬᠣᠰᠢᠭᠤ" ->  "huriy-e hosigu" # Hure Banner
+   "ᠨᠠᠢᠮᠠᠨ ᠬᠣᠰᠢᠭᠤ" ->  "naiman hosigu" # Naiman Banner
+   "ᠵᠠᠷᠤᠳ ᠬᠣᠰᠢᠭᠤ" ->  "jarud hosigu" # Jarud Banner
+   "ᠬᠣᠷᠴᠢᠨ ᠪᠠᠷᠠᠭᠤᠨ ᠭᠠᠷᠤᠨ ᠳᠤᠮᠳᠠᠳᠤ ᠬᠣᠰᠢᠭᠤ" ->  "horqin baragun garun dumdadu hosigu" # Хорчин Баруун Гарын Дундад Хошуу
+   "ᠬᠣᠷᠴᠢᠨ ᠵᠡᠭᠦᠨ ᠭᠠᠷᠤᠨ ᠳᠤᠮᠳᠠᠳᠤ ᠬᠣᠰᠢᠭᠤ" ->  "horqin jegun garun dumdadu hosigu" # Horqin Left Middle Banner
+   "ᠬᠣᠷᠴᠢᠨ ᠵᠡᠭᠦᠨ ᠭᠠᠷᠤᠨ ᠬᠣᠶᠢᠲᠤ ᠬᠣᠰᠢᠭᠤ" ->  "horqin jegun garun hoyitu hosigu" # Horqin Left Rear Banner
+   "ᠤᠯᠠᠭᠠᠨᠬᠠᠳᠠ ᠬᠣᠲᠠ" ->  "ulaganhada hota" # Улаанхад хот
+   "ᠰᠡᠷᠡᠴᠢ" ->  "sereqi" # Salaqi
+   "ᠭᠡᠭᠡᠨ ᠭᠣᠤᠯ ᠬᠣᠲᠠ" ->  "gegen goul hota" # Гэгээнгол хот
+   "ᠠᠯᠠᠱᠠ ᠵᠡᠭᠦᠨ ᠬᠣᠰᠢᠭᠤ" ->  "alaxa jegun hosigu" # Alxa Left Banner
+   "ᠠᠯᠠᠱᠠ ᠪᠠᠷᠠᠭᠤᠨ ᠬᠣᠰᠢᠭᠤ" ->  "alaxa baragun hosigu" # Alxa Right Banner
+   "ᠡᠵᠡᠨ᠎ᠡ ᠬᠣᠰᠢᠭᠤ" ->  "ejen-e hosigu" # Ejin Banner
+   "ᠬᠥᠪᠡᠭᠡᠲᠦ ᠰᠢᠷ᠎ᠠ ᠬᠣᠰᠢᠭᠤ" ->  "hobegetu sir-a hosigu" # Хөвөөт Шар хошуу
+   "ᠦᠶᠤᠸᠠᠨ ᠰᠢᠶᠠᠨ" ->  "uyuwan siyan" # Үюань шянь
+   "ᠦᠴᠤᠸᠠᠨ ᠰᠢᠶᠠᠨ" ->  "uquwan siyan" # Wuchuan County
+   "ᠲᠦᠴᠢᠤᠸᠠᠨ ᠰᠢᠶᠠᠨ" ->  "tuqiuwan siyan" # Тучуань шянь
+   "ᠨᠢᠩᠴᠧᠩ ᠰᠢᠶᠠᠨ" ->  "ningqeng siyan" # Ningcheng County
+   "ᠯᠢᠨᠰᠢ ᠰᠢᠶᠠᠨ" ->  "linsi siyan" # Linxi County
+   "ᠯᠢᠨᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ" ->  "linhe togorig" # Linhe
+   "ᠬᠠᠷᠠᠴᠢᠨ ᠬᠣᠰᠢᠭᠤ" ->  "haraqin hosigu" # Harqin Banner
+   "ᠳ᠋ᠧᠩᠺᠧᠦ ᠰᠢᠶᠠᠨ" ->  "d᠋engkeu siyan" # Dengkou County
+   "ᠠᠤᠬᠠᠨ ᠬᠣᠰᠢᠭᠤ" ->  "auhan hosigu" # Aohan Banner
+   "ᠴᠢᠩ ᠱᠦᠢ ᠾᠧ ᠰᠢᠶᠠᠨ" ->  "qing xui he siyan" # Qingshuihe County
+   "ᠬᠣᠳᠣᠩ ᠠᠷᠠᠳ ᠤᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "hodong arad-un togorig" # Huimin District
+   "ᠰᠠᠶᠢᠬᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "sayihan togorig" # Saihan District
+   "ᠰᠢᠨ᠎ᠡ ᠬᠣᠲᠠ ᠲᠣᠭᠣᠷᠢᠭ" ->  "sin-e hota togorig" # Xincheng District
+   "ᠬᠠᠶᠢᠷᠤᠪ ᠤᠨ ᠲᠣᠬᠣᠢ ᠲᠣᠭᠣᠷᠢᠭ" ->  "hayirub-un tohoi togorig" # Haibowan (Hairibin Tohoi) District
+   "ᠰᠦᠩ ᠱᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "sung xan togorig" # Songshan District
+   "ᠬᠦᠩ ᠱᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "hung xan togorig" # Hongshan District
+   "ᠠᠷᠤᠨ ᠬᠣᠰᠢᠭᠤ" ->  "arun hosigu" # Арун хошуу
+   "ᠶᠤᠸᠠᠨ ᠪᠣᠣ ᠱᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "yuwan boo xan togorig" # Юаньбаошань тойрог
+   "ᠰᠢᠯᠤᠭᠤᠨ ᠬᠥᠪᠡᠭᠡᠲᠦ ᠴᠠᠭᠠᠨ ᠬᠣᠰᠢᠭᠤ" ->  "silugun hobegetu qagan hosigu" # Шулуун Хөвөөт Цагаан хошуу
+   "ᠰᠢᠯᠤᠭᠤᠨ ᠬᠥᠬᠡ ᠬᠣᠰᠢᠭᠤ" ->  "silugun hohe hosigu" # Шулуун хөх хошуу
+   "ᠤᠷᠠᠳ ᠤᠨ ᠳᠤᠮᠳᠠᠳᠤ ᠬᠣᠰᠢᠭᠤ" ->  "urad-un dumdadu hosigu" # Урадын Дундад Хошуу
+   "ᠤᠷᠠᠳ ᠤᠨ ᠡᠮᠦᠨᠡᠳᠦ ᠬᠣᠰᠢᠭᠤ" ->  "urad-un emunedu hosigu" # Урадын Өмнөд Хошуу
+   "ᠲᠣᠭᠲᠠᠬᠤ ᠰᠢᠶᠠᠨ" ->  "togtahu siyan" # Тогтох шянь
+   "ᠲᠠᠶᠢᠫᠤᠰᠧ ᠬᠣᠰᠢᠭᠤ" ->  "tayipuse hosigu" # Тайвас хошуу
+   "ᠰᠥᠨᠡᠳ ᠵᠡᠭᠦᠨ ᠬᠣᠰᠢᠭᠤ" ->  "soned jegun hosigu" # Sonid Left Banner
+   "ᠰᠥᠨᠡᠳ ᠪᠠᠷᠠᠭᠤᠨ ᠬᠣᠰᠢᠭᠤ" ->  "soned baragun hosigu" # Sonid Right Banner
+   "ᠣᠩᠨᠢᠭᠤᠳ ᠬᠣᠰᠢᠭᠤ" ->  "ongnigud hosigu" # Ongniud Banner
+   "ᠵᠠᠯᠠᠢᠳ ᠬᠣᠰᠢᠭᠤ" ->  "jalaid hosigu" # Jalaid Banner
+   "ᠬᠠᠩᠭᠢᠨ ᠬᠣᠶᠢᠲᠤ ᠬᠣᠰᠢᠭᠤ" ->  "hanggin hoyitu hosigu" # Hanggin Rear Banner
+   "ᠵᠡᠭᠦᠨ ᠤᠵᠤᠮᠤᠴᠢᠨ ᠬᠣᠰᠢᠭᠤ" ->  "jegun ujumuqin hosigu" # East Ujimqin Banner
+   "ᠠᠷᠤ ᠬᠣᠷᠴᠢᠨ ᠬᠣᠰᠢᠭᠤ" ->  "aru horqin hosigu" # Ar Horqin Banner
+   "ᠠᠪᠠᠭ᠎ᠠ ᠬᠣᠰᠢᠭᠤ" ->  "abag-a hosigu" # Abag Banner
+   "ᠪᠤᠷᠢᠶᠠᠳ" ->  "buriyad" # Буриад
+   "ᠤᠯᠠᠭᠠᠨᠪᠠᠭᠠᠲᠤᠷ" ->  "ulaganbagatur" # Улаанбаатар
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "ᠠ" "a"
+    sub "ᠪ" "b"
+    sub "ᠼ" "c"
+    # sub "ᠲ", "d" # \u1832 - Duplicate rule
+    sub "ᠳ" "d"
+    sub "ᠡ" "e"
+    sub "ᠹ" "f"
+    sub "ᠭ" "g"
+    # sub "ᠺ", "g" # \u183a - Duplicate rule
+    sub "ᠬ" "h"
+    sub "ᠾ" "h"
+    sub "ᠢ" "i"
+    sub "ᠵ" "j"
+    sub "ᠺ" "k"
+    sub "ᠯ" "l"
+    sub "ᠮ" "m"
+    sub "ᠨ" "n"
+    sub "ᠥ" "o"
+    sub "ᠫ" "p"
+    sub "ᠴ" "q"
+    sub "ᠷ" "r"
+    sub "ᠰ" "s"
+    sub "ᠲ" "t"
+    sub "ᠦ" "u"
+    sub "ᠸ" "w"
+    sub "ᠱ" "x"
+    sub "ᠶ" "y"
+    sub "ᠽ" "z"
+    sub "ᠣ" "o"
+    # - "o"     # General use
+    # - "ô"     # For place names
+    sub "ᠤ" "u"
+    # - "u"     # General use
+    # - "û"     # For place names
+    sub "ᠧ" "e"
+    sub "ᠩ" "ng"
+    sub "᠎" "-"
+    sub " " "-"
+  }
+
+}
+}

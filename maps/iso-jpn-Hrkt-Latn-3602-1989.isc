@@ -1,0 +1,66 @@
+system "ISO:jpn-Hrkt:Latn:3602-1989" {
+
+metadata {
+  authority_id iso
+  id 3602-1989
+  language iso-639-2:jpn
+  source_script Hrkt
+  destination_script Latn
+  name "ISO 3602:1989 documentation -- Romanization of Japanese (kana script)"
+  url https://www.iso.org/standard/9029.html
+  creation_date 1989
+  adoption_date 1989
+  description {    Establishes a system for the romanization of the present-day
+    Japanese written language. Unrestricted application for the system
+    requires that the romanizer possess a detailed knowledge of the
+    language in its present-day written form.
+  }
+
+  notes {
+  }
+}
+
+tests {
+   "かんおう" ->  "kan’ô"
+   "かのう" ->  "kanô"
+   "きんゆう" ->  "kin’yû"
+   "とうきょう" ->  "tôkyô"
+   "がっ•こう" ->  "gakkô"
+   "かごっま" ->  "kagomma"
+   "ぽっぽっや" ->  "poppoyya"
+   "てっら" ->  "terra"
+   "にゃっほー" ->  "nyahhô"
+   "ゴッホ" ->  "gohho"
+   "おも•う" ->  "omou"
+   "こうし" ->  "kôsi"
+   "こう•し" ->  "kôsi" #格子
+   "こ•うし" ->  "kousi" #子牛
+   "ぎゃあ" ->  "gyâ"
+}
+
+dependency "mext-jpn-Hrkt-Latn-1954" as hrktlatn
+
+
+stage main {
+
+  # RULES
+  # Remove morpheme boundary marker after sokuon っ/ッ
+  sub {
+    from capture(any("っッ")) + "•"
+    to ref( 1 )
+  }
+
+
+  run  map.hrktlatn.stage.main
+
+
+  # POSTRULES
+  # Remove morpheme boundary marker
+  sub "•" ""
+
+  # Use ’ instead of '
+  sub "'" "’"
+
+
+}
+}
