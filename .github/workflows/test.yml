@@ -39,3 +39,76 @@ jobs:
       - name: RSpec (maps-focused)
         working-directory: ruby
         run: bundle exec rspec spec/interscript_spec.rb spec/map_name_and_metadata_spec.rb
+
+  isc-parse:
+    name: All .isc files parse (Ruby)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+      - name: Checkout interscript-ruby
+        run: |
+          git clone --depth=1 https://github.com/interscript/interscript.git ../interscript
+      - name: Parse all .isc files
+        run: |
+          cd ../interscript/ruby
+          ruby -Ilib -e '
+            require "interscript"
+            require "interscript/isc"
+            total = 0
+            failures = []
+            Dir.glob("../../maps/maps/*.isc").sort.each do |path|
+              total += 1
+              begin
+                tree = Interscript::Isc::Parser.parse(File.read(path), filename: File.basename(path))
+                Interscript::Isc::DocumentBuilder.build(tree, filename: File.basename(path))
+              rescue => e
+                failures << "#{File.basename(path)}: #{e.message[0,120]}"
+              end
+            end
+            puts "Parsed #{total - failures.size}/#{total} .isc files"
+            failures.each { |f| STDERR.puts "  #{f}" }
+            exit 1 if failures.any?
+          '
+
+  isc-parse-ts:
+    name: All .isc files parse (TS)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Checkout interscript-ts
+        run: |
+          git clone --depth=1 https://github.com/interscript/interscript-ts.git ../interscript-ts
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: ../interscript-ts/package-lock.json
+      - name: Install + build TS parser
+        working-directory: ../interscript-ts
+        run: |
+          npm ci
+          npm run build
+      - name: Parse all .isc files
+        working-directory: ../interscript-ts
+        run: |
+          npx tsx -e "
+            import {readdirSync, readFileSync} from 'fs'
+            import {parseIsc} from './src/isc/parser.ts'
+            const dir = '../maps/maps'
+            const files = readdirSync(dir).filter(f => f.endsWith('.isc'))
+            let ok = 0
+            const failures = []
+            for (const f of files.sort()) {
+              try { parseIsc(readFileSync(dir+'/'+f,'utf8'), f); ok++ }
+              catch (e) { failures.push(f+': '+(e as Error).message.slice(0,120)) }
+            }
+            console.log('Parsed '+ok+'/'+files.length+' .isc files')
+            if (failures.length) {
+              failures.forEach(f => console.error('  '+f))
+              process.exit(1)
+            }
+          "

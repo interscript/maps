@@ -23,5 +23,6 @@ tests {
 }
 
 stage main {
-  # rababa directive:  config: "200"
-}}
+  rababa config: "200"
+}
+}

@@ -105,7 +105,7 @@ stage main {
   sub {
     from capture(any("おこそとのほもよろをごぞどぼぽょぉオコソトノホモヨロヲゴゾドボポョォ")) + any("おオ")
     to ref( 1 )
-    not_after any(space+line_end)
+    not_after line_end
   }
 
   sub {
