@@ -54,7 +54,7 @@ jobs:
         run: |
           git clone --depth=1 --branch feat/isc-parser-codemod https://github.com/interscript/interscript-ruby.git ../interscript
       - name: Install parser dependency
-        run: gem install parselt
+        run: gem install parslet
       - name: Parse all .isc files
         run: |
           cd ../interscript
@@ -98,7 +98,7 @@ jobs:
           cd ../interscript-ts
           npx tsx -e "
             import {readdirSync, readFileSync} from 'fs'
-            import {parseIsc} from './src/isc/parser.ts'
+            import {parseIsc} from './dist/index.js'
             const dir = '../maps/maps'
             const files = readdirSync(dir).filter(f => f.endsWith('.isc'))
             let ok = 0
