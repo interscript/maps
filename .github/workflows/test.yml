@@ -18,7 +18,7 @@ jobs:
           ruby-version: "3.4"
       - name: Checkout interscript-ruby
         run: |
-          git clone --depth=1 --branch feat/isc-parser-codemod https://github.com/interscript/interscript-ruby.git ../interscript
+          git clone --depth=1 https://github.com/interscript/interscript-ruby.git ../interscript
       - name: Install parser dependency
         run: gem install parslet
       - name: Parse all .isc files
