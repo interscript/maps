@@ -52,16 +52,16 @@ jobs:
           ruby-version: "3.4"
       - name: Checkout interscript-ruby
         run: |
-          git clone --depth=1 https://github.com/interscript/interscript.git ../interscript
+          git clone --depth=1 --branch feat/isc-parser-codemod https://github.com/interscript/interscript-ruby.git ../interscript
       - name: Parse all .isc files
         run: |
-          cd ../interscript/ruby
+          cd ../interscript
           ruby -Ilib -e '
             require "interscript"
             require "interscript/isc"
             total = 0
             failures = []
-            Dir.glob("../../maps/maps/*.isc").sort.each do |path|
+            Dir.glob("../maps/maps/*.isc").sort.each do |path|
               total += 1
               begin
                 tree = Interscript::Isc::Parser.parse(File.read(path), filename: File.basename(path))
@@ -82,20 +82,18 @@ jobs:
       - uses: actions/checkout@v7
       - name: Checkout interscript-ts
         run: |
-          git clone --depth=1 https://github.com/interscript/interscript-ts.git ../interscript-ts
+          git clone --depth=1 --branch feat/imf-runtime-ts https://github.com/interscript/interscript-ts.git ../interscript-ts
       - uses: actions/setup-node@v7
         with:
           node-version: "22"
-          cache: npm
-          cache-dependency-path: ../interscript-ts/package-lock.json
       - name: Install + build TS parser
-        working-directory: ../interscript-ts
         run: |
+          cd ../interscript-ts
           npm ci
           npm run build
       - name: Parse all .isc files
-        working-directory: ../interscript-ts
         run: |
+          cd ../interscript-ts
           npx tsx -e "
             import {readdirSync, readFileSync} from 'fs'
             import {parseIsc} from './src/isc/parser.ts'
