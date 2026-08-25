@@ -94,22 +94,4 @@ jobs:
           npm ci
           npm run build
       - name: Parse all .isc files
-        run: |
-          cd ../interscript-ts
-          npx tsx -e "
-            import {readdirSync, readFileSync} from 'fs'
-            import {parseIsc} from './dist/index.js'
-            const dir = '../maps/maps'
-            const files = readdirSync(dir).filter(f => f.endsWith('.isc'))
-            let ok = 0
-            const failures = []
-            for (const f of files.sort()) {
-              try { parseIsc(readFileSync(dir+'/'+f,'utf8'), f); ok++ }
-              catch (e) { failures.push(f+': '+(e as Error).message.slice(0,120)) }
-            }
-            console.log('Parsed '+ok+'/'+files.length+' .isc files')
-            if (failures.length) {
-              failures.forEach(f => console.error('  '+f))
-              process.exit(1)
-            }
-          "
+        run: npx -y tsx scripts/parse-isc.mjs ../interscript-ts
