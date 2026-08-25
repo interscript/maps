@@ -19,7 +19,7 @@ Systems from these authorities are included in this repository:
 
 == Organization
 
-All maps are encoded in the "Interoperable Script Processing Model" language syntax (extension: `.imp`).
+All maps are encoded in the "Interoperable Script Conversion" language syntax (extension: `.isc`).
 
 System file names adhere to the script conversion system code convention
 of ISO 24229.
