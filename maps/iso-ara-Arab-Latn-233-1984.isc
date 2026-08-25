@@ -1,0 +1,343 @@
+system "ISO:ara-Arab:Latn:233-1984" {
+
+metadata {
+  authority_id iso
+  id 233-1984
+  language iso-639-2:ara
+  source_script Arab
+  destination_script Latn
+  name ISO 233:1984 Documentation -- Transliteration of Arabic characters into Latin characters
+  url {
+ - https://www.iso.org/standard/4117.html
+    - http://transliteration.eki.ee/pdf/Arabic_2.2.pdf
+    - http://www.eki.ee/wgrs/rom1_ar.pdf
+  }
+  creation_date 1984
+  confirmation_date 2018-06
+  description {    Is one of a series of International Standards dealing with
+    the conversion of systems of writing, following the
+    principles of stringent conversion in order to permit
+    international information exchange. Its aim is to provide a
+    means for international communication of written messages
+    in a form which permits the automatic transmission and
+    reconstitution of these by men or machines. Cancels and
+    replaces ISO Recommendation R 233-1961
+  }
+  notes {
+    note "      The transliteration ISO 233:1984 WRT ara-arab-latn-2017 gives every character and diacritical mark a unique\n      equivalent and e.g. long vowels in Arabic ā, ī and ū are consequently written a’, iy and uw\n      respectively in the ISO transliteration. Other main correspondences\n      ث is ṯ instead of th\n      ج is ǧ instead of j\n      ح is ḥ instead of ẖ\n      خ is ẖ instead of kh\n      ذ is ḏ instead of dh\n      ش is š instead of sh\n      ص is ṣ instead of s̱\n      ض is ḍ instead of ḏ\n      ط is ṭ instead of ṯ\n      ظ is ẓ instead of d͟h\n      غ is ġ instead of gh\n      ة is ẗ instead of h/t\n      ى is ỳ\n      ـِي is iy instead of ī\n      ـُو is uw instead of ū\n      ـَا is a’ instead of ā\n      ـَى is aỳ instead of á"
+  }
+}
+
+tests {
+   "مِصر" ->  "Miṣr"
+   "قَطَر" ->  "Qaṭar"
+   "الجُمهُورِيَّة العِرَاقِيَّة" ->  "Al Ǧumhuwriyaẗ al ‘Ira’qiyaẗ"
+   "جُمهُورِيَّة مِصر العَرَبِيَّة" ->  "Ǧumhuwriyaẗ Miṣr al ‘Arabiyaẗ"
+   "الرِيَاض" ->  "Ar Riya’ḍ"
+   "الشارِقة" ->  "Aš Šâriqaẗ"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+
+    # pointing
+    sub "\u064e" "a"
+    sub {
+    from "\u064e"
+    to ""
+    after "\u0629"
+  }
+    sub "\u0650" "i"
+    sub "\u064f" "u"
+    sub "\u0652" ""
+
+    # special pointed letters
+    # special pointed letters
+    sub "\u0639\u064e" "‘a"
+    sub "\u0639\u0650" "‘i"
+    sub "\u0639\u064f" "‘ū"
+    # handle MacOS regex difference
+    sub "\u0639\u064f\u0648" "‘ū"
+
+    sub "\u0650\u064a" "iy"
+    sub "\u0650\u064a\u0651\u064e" "iy"
+    sub {
+    from "\u0650\u064a"
+    to "iy"
+    after any("\u064e\u064f")
+  }
+    sub "\u064e\u0627" "a’"
+    sub "\u064e\u0649" "aỳ"
+    sub "\u064f\u0648" "uw"
+    sub "\u064e\u0648\u0652" "aw"
+    sub "\u064e\u064a\u0652" "ay"
+
+    # Sun letters
+
+    sub {
+    from boundary + "\u0627\u0644\u062a" + maybe("\u0651")
+    to "at t"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u062b" + maybe("\u0651")
+    to "aṯ ṯ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u062f" + maybe("\u0651")
+    to "ad d"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0630" + maybe("\u0651")
+    to "aḏ ḏ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0631" + maybe("\u0651")
+    to "ar r"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0632" + maybe("\u0651")
+    to "az z"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0633" + maybe("\u0651")
+    to "as s"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0634" + maybe("\u0651")
+    to "aš š"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0635" + maybe("\u0651")
+    to "aṣ ṣ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0636" + maybe("\u0651")
+    to "aḍ ḍ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0637" + maybe("\u0651")
+    to "aṭ ṭ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0638" + maybe("\u0651")
+    to "aẓ ẓ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0644" + maybe("\u0651")
+    to "al l"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0646" + maybe("\u0651")
+    to "an n"
+  }
+
+    # ta' marboota in iso-233-1984 is all the same `aẗ`
+    sub "\u0629" "aẗ"
+
+    # Shadda
+
+    sub "\u0628\u0651" "bb"
+    sub "\u062a\u0651" "tt"
+    sub "\u062b\u0651" "ṯṯ"
+    sub "\u062c\u0651" "ǧǧ"
+    sub "\u062d\u0651" "ḥḥ"
+    sub "\u062e\u0651" "ẖẖ"
+    sub "\u062f\u0651" "dd"
+    sub "\u0630\u0651" "ḏḏ"
+    sub "\u0631\u0651" "rr"
+    sub "\u0632\u0651" "zz"
+    sub "\u0633\u0651" "ss"
+    sub "\u0634\u0651" "šš"
+    sub "\u0635\u0651" "ṣṣ"
+    sub "\u0636\u0651" "ḍḍ"
+    sub "\u0637\u0651" "ṭṭ"
+    sub "\u0638\u0651" "ẓẓ"
+    sub "\u063a\u0651" "ġġ"
+    sub "\u0641\u0651" "ff"
+    sub "\u0642\u0651" "qq"
+    sub "\u0643\u0651" "kk"
+    sub "\u0644\u0651" "ll"
+    sub "\u0645\u0651" "mm"
+    sub "\u0646\u0651" "nn"
+    sub "\u0647\u0651" "hh"
+    sub "\u0648\u0651" "ww"
+    sub "\u064a\u0651" "yy"
+
+    sub "\u0622" "’â"
+
+    sub "\u0627" "â"
+
+    sub "\u0649" "ỳ"
+
+    sub "\u0626" "'"
+
+    sub {
+    from "\u0621"
+    to maybe("’")
+  }
+
+    sub "\u0623" "a"
+
+    # See note B
+    sub {
+    from boundary + "\u0627\u0644"
+    to "al "
+  }
+    # '\uFE8E' : ''  # ﺎ
+
+    sub "\u0628" "b"
+    sub "\uFE91" "b"
+    sub "\uFE92" "b"
+    sub "\uFE90" "b"
+
+    # See note C
+    sub "\u062a" "t"
+    sub "\ufe97" "t"
+    sub "\ufe98" "t"
+    sub "\ufe96" "t"
+
+    sub "\u062b" "ṯ"
+    sub "\ufe9b" "ṯ"
+    sub "\ufe9c" "ṯ"
+    sub "\ufe9a" "ṯ"
+
+    sub "\u062c" "ǧ"
+    sub "\ufe9f" "ǧ"
+    sub "\ufea0" "ǧ"
+    sub "\ufe9e" "ǧ"
+
+    sub "\u062d" "ḥ"
+    sub "\ufea3" "ḥ"
+    sub "\ufea4" "ḥ"
+    sub "\ufea2" "ḥ"
+
+    sub "\u062e" "ẖ"
+    sub "\ufea7" "ẖ"
+    sub "\ufea8" "ẖ"
+    sub "\ufea6" "ẖ"
+
+    sub "\u062f" "d"
+    sub "\ufeaa" "d"
+
+    sub "\u0630" "ḏ"
+    sub "\ufeac" "ḏ"
+
+    sub "\u0631" "r"
+    sub "\ufeae" "r"
+
+    sub "\u0632" "z"
+    sub "\ufeb0" "z"
+
+    sub "\u0633" "s"
+    sub "\ufeb3" "s"
+    sub "\ufeb4" "s"
+    sub "\ufeb2" "s"
+
+    sub "\u0634" "š"
+    sub "\ufeb7" "š"
+    sub "\ufeb8" "š"
+    sub "\ufeb6" "š"
+
+    sub "\u0635" "ṣ"
+    sub "\ufebb" "ṣ"
+    sub "\ufebc" "ṣ"
+    sub "\ufeba" "ṣ"
+
+    sub "\u0636" "ḍ"
+    sub "\ufebf" "ḍ"
+    sub "\ufec0" "ḍ"
+    sub "\ufebe" "ḍ"
+
+    sub "\u0637" "ṭ"
+    sub "\ufec3" "ṭ"
+    sub "\ufec4" "ṭ"
+    sub "\ufec2" "ṭ"
+
+    sub "\u0638" "ẓ"
+    sub "\ufec7" "ẓ"
+    sub "\ufec8" "ẓ"
+    sub "\ufec6" "ẓ"
+
+    sub "\u0639" "‘"
+    sub "\ufecb" "‘"
+    sub "\ufecc" "‘"
+    sub "\ufeca" "‘"
+
+    sub "\u063a" "ġ"
+    sub "\ufecf" "ġ"
+    sub "\ufed0" "ġ"
+    sub "\ufece" "ġ"
+
+    sub "\u0641" "f"
+    sub "\ufed3" "f"
+    sub "\ufed4" "f"
+    sub "\ufed2" "f"
+
+    sub "\u0642" "q"
+    sub "\ufed7" "q"
+    sub "\ufed8" "q"
+    sub "\ufed6" "q"
+
+    sub "\u0643" "k"
+    sub "\ufedb" "k"
+    sub "\ufedc" "k"
+    sub "\ufeda" "k"
+
+    sub "\u0644" "l"
+    sub "\ufedf" "l"
+    sub "\ufee0" "l"
+    sub "\ufede" "l"
+
+    sub "\u0645" "m"
+    sub "\ufee3" "m"
+    sub "\ufee4" "m"
+    sub "\ufee2" "m"
+
+    sub "\u0646" "n"
+    sub "\ufee7" "n"
+    sub "\ufee8" "n"
+    sub "\ufee6" "n"
+
+    # See note C
+    sub "\u0647" "h"
+    sub "\ufeeb" "h"
+    sub "\ufeec" "h"
+    sub "\ufeea" "h"
+
+    sub "\u0648" "w"
+    sub "\ufeee" "w"
+
+    sub "\u064a" "y"
+    sub "\ufef3" "y"
+    sub "\ufef4" "y"
+    sub "\ufef1" "y"
+  }
+
+  # POSTRULES
+  sub {
+    from any("\u0061".."\uFFFF")
+    to upcase
+    before boundary
+    not_before boundary + any("‘’'")
+  }
+  # don't capitalize defined article in the middle of a sentence
+  sub " At T" " at T"
+  sub " Aṯ Ṯ" " aṯ Ṯ"
+  sub " Ad D" " ad D"
+  sub " Aḏ Ḏ" " aḏ Ḏ"
+  sub " Ar R" " ar R"
+  sub " Az Z" " az Z"
+  sub " As S" " as S"
+  sub " Aš Š" " aš Š"
+  sub " Aṣ Ṣ" " aṣ Ṣ"
+  sub " Aḍ Ḍ" " aḍ Ḍ"
+  sub " Aṭ Ṭ" " aṭ Ṭ"
+  sub " Aẓ Ẓ" " aẓ Ẓ"
+  sub " Al L" " al L"
+  sub " An N" " an N"
+  sub " Al " " al "
+
+}
+}

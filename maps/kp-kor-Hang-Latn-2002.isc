@@ -1,0 +1,851 @@
+system "KP:kor-Hang:Latn:2002" {
+
+metadata {
+  authority_id kp
+  id 2002
+  language iso-639-2:kor
+  source_script Hang
+  destination_script Latn
+  name Korean Democratic People's Republic of Korea Korean System (2002)
+  url https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/8th-uncsgn-docs/inf/8th_UNCSGN_econf.94_INF.72.pdf
+  creation_date 
+  adoption_date 
+  description 
+
+  notes {
+
+    note "Here is a list of features that are listed in the guideline but\n not unimplemented in this map."
+
+    note "Note 3.2\n The combination n+r is romanized as -ll- only when it is \"considered\n to be longstanding\". In this implementation, all n+r will be romanized as\n -ll- for the sake of simplicity."
+
+    note "Note 3.3\n Sai-siot (Connective ㅅ) is not written out in DPRK Korean, but it is\n supposed to be romanized. Sai-siot is not predictable.\n This has not been implemented."
+
+    note "Note 4.1\n Hyphen \"may be inserted in case of a possible confusion in pronunciation\".\n Except for the n-g combination, this has not been implemented."
+
+    note "Note 4.4\n Geographical names \"may be transliterated or translated\". In this map,\n all names will be transliterated, not translated. Numerals will not be\n transliterated."
+
+    note "Note 4.5\n Spacing rule for personal names has not been implemented."
+
+    note "Note 4.7\n Optional omission of diacritics and optional simplification of\n KK, TT, PP, SS, JJ to single letter have not been implemented."
+  }
+}
+
+tests {
+  # Note1.5
+   "우리산" ->  "Urisan"
+  # Note2.1
+   "교구동" ->  "Kyogu-dong"
+   "초도" ->  "Chodo"
+   "고비리" ->  "Kobi-ri"
+   "강동" ->  "Kangdong"
+   "금교" ->  "Kümgyo"
+   "칠보산" ->  "Chilbosan"
+  # Note2.2
+   "곡산" ->  "Koksan"
+   "갑산" ->  "Kapsan"
+   "앞산" ->  "Apsan"
+   "삿갓봉" ->  "Satkatbong"
+  # Note2.3
+   "울산" ->  "Ulsan"
+  # - source: "은률"
+  #   expected: "Ünryul" # This is an exceptino to note 3.1
+  # Note2.4
+   "닭섬" ->  "Taksŏm"
+   "물곬" ->  "Mulkol"
+   "붉은바위" ->  "Pulgünbawi"
+   "앉은바위" ->  "Anjünbawi"
+  # Note3.1
+   "백마산" ->  "Paengmasan"
+   "꽃마을" ->  "Kkonmaül"
+   "압록강" ->  "Amrokgang"
+  # Note3.2
+   "천리마" ->  "Chŏllima"
+  # - source: "한나산"  # Typo in the original document
+   "한라산" ->  "Hallasan"
+   "전라도" ->  "Jŏlla-do"
+  # Note3.3
+  # - source: "기대산"   # ROK: 깃대산
+  #   expected: "Kittaesan"
+  # - source: "새별읍"   # ROK: 샛별
+  #   expected: "Saeppyŏl-üp"  # hyphen
+  # - source: "뒤문"    # ROK: 뒷문
+  #   expected: "Twinmun"
+  # Note4.1 - Separator (OPTIONAL)
+   "앞-언덕" ->  "Ap-ŏndŏk"
+   "부억-안골" ->  "Puŏk-angol"
+   "판교" ->  "Phan-gyo"
+  # - source: "방어동"
+  #   expected: "Pang-ŏ-dong"
+  # Note4.2
+   "평안남도 평성시" ->  "Phyŏngannam-do Phyŏngsŏng-si"
+  # Note4.3
+   "3.1동" ->  "3.1-dong"
+  # Note4.6
+   "평양" ->  "Pyongyang"
+  # Fix a problem with a trailing comma
+   "구현, 글꼴, 문자 배열, 다국어 컴퓨팅." ->  "Kuhyŏn, Külkkol, Munja Paeyŏl, Tagugŏ Khŏmphyuthing."
+}
+
+dependency "unicode"
+dependency "var-kor-Hang-Hang-jamo" as hanghang
+
+
+stage main {
+
+
+  # RULES
+
+  # This system does not require transliteration of numerals
+  # convert numbers to space + Hangul
+  # - pattern: "([^0-9 ])(?=[0-9])"
+  #   result: "\\1 "
+  # - pattern: "1"
+  #   result: "일"
+  # - pattern: "2"
+  #   result: "이"
+  # - pattern: "3"
+  #   result: "삼"
+  # - pattern: "4"
+  #   result: "사"
+  # - pattern: "5"
+  #   result: "오"
+  # - pattern: "6"
+  #   result: "육"
+  # - pattern: "7"
+  #   result: "칠"
+  # - pattern: "8"
+  #   result: "팔"
+  # - pattern: "9"
+  #   result: "구"
+
+  # Use voiced onset for geographical features
+  # Note 4.3.1
+  sub {
+    from "산" + capture(any([" ", line_end]))
+    to "san" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "거리" + capture(any([" ", line_end]))
+    to "gŏri" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "고개" + capture(any([" ", line_end]))
+    to "gogae" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "대" + capture(any([" ", line_end]))
+    to "dae" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "봉" + capture(any([" ", line_end]))
+    to "bong" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "교" + capture(any([" ", line_end]))
+    to "gyo" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "골" + capture(any([" ", line_end]))
+    to "gol" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "각" + capture(any([" ", line_end]))
+    to "gak" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "벌" + capture(any([" ", line_end]))
+    to "bŏl" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "관" + capture(any([" ", line_end]))
+    to "gwan" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "곶" + capture(any([" ", line_end]))
+    to "got" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "강" + capture(any([" ", line_end]))
+    to "gang" + ref( 1 )
+    before any_character + any_character
+  }
+
+  # add hyphen in front of generics
+  # Only add hyphen if the name is three syllables or longer
+  sub {
+    from "도" + capture(any([" ", line_end]))
+    to "-do" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "시" + capture(any([" ", line_end]))
+    to "-si" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "군" + capture(any([" ", line_end]))
+    to "-gun" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "면" + capture(any([" ", line_end]))
+    to "-myŏn" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "리" + capture(any([" ", line_end]))
+    to "-ri" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "동" + capture(any([" ", line_end]))
+    to "-dong" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "구" + capture(any([" ", line_end]))
+    to "-gu" + ref( 1 )
+    before any_character + any_character
+  }
+  sub {
+    from "구역" + capture(any([" ", line_end]))
+    to "-guyŏk" + ref( 1 )
+    before any_character + any_character
+  }
+
+  # The name Pyongyang will be an exception
+  # Not Phyŏngyang
+
+  sub "평양" "Pyongyang"
+
+
+  run  map.hanghang.stage.main
+
+  
+  # POSTRULES
+
+  # Add space to the two ends of the string for easier word boundary handling
+  sub line_start " "
+  sub line_end " "
+
+  # HANGUL JONGSEONG SSANGKIYEOK
+  sub "ᆩᄋ" "ᆨᄁ"
+  sub "ᆩ" "ᆨ"
+
+  # HANGUL JONGSEONG SSANGKIYEOK
+  sub "ᆪᄋ" "ᆨᄉ"
+  sub "ᆪ" "ᆨ"
+
+  # HANGUL JONGSEONG NIEUN-CIEUC
+  sub "ᆬᄋ" "ᆫᄌ"
+  sub "ᆬ" "ᆫ"
+
+  # HANGUL JONGSEONG NIEUN-CIEUC
+  sub "ᆭᄀ" "ᆫᄏ"
+  sub "ᆭᄃ" "ᆫᄐ"
+  sub "ᆭᄇ" "ᆫᄑ"
+  sub "ᆭᄌ" "ᆫᄎ"
+  sub "ᆭ" "ᆫ"
+
+  # HANGUL JONGSEONG TIEUT
+  sub {
+    from "ᆮ"
+    to "ᆺ"
+    after any("ᄀᄁᄂᄃᄄᄅᄆᄇᄈᄉᄊᄌᄍᄎᄏᄐᄑᄒ")
+  }
+
+  # HANGUL JONGSEONG RIEUL-SIOS
+  sub "ᆳᄋ" "ᆯᄉ"
+  sub "ᆳ" "ᆯ"
+
+  # HANGUL JONGSEONG RIEUL-THIEUTH
+  sub "ᆴᄋ" "ᆯᄐ"
+  sub "ᆴ" "ᆯ"
+
+  # HANGUL JONGSEONG RIEUL-PHIEUPH
+  sub "ᆵᄋ" "ᆯᄑ"
+  sub {
+    from "ᆵ"
+    to "ᆯ"
+    after any("ᄃᄄᄐ")
+  }
+  sub "ᆵ" "ᄇ"
+
+  # HANGUL JONGSEONG RIEUL-HIEUH
+  sub "ᆶᄀ" "ᆯᄏ"
+  sub "ᆶᄃ" "ᆯᄐ"
+  sub "ᆶᄇ" "ᆯᄑ"
+  sub "ᆶᄌ" "ᆯᄎ"
+  sub "ᆶ" "ᆯ"
+
+  # HANGUL JONGSEONG PIEUP-SIOS
+  sub "ᆹᄋ" "ᄇᄉ"
+  sub "ᆹ" "ᄇ"
+
+  # HANGUL JONGSEONG SSANG-SIOS
+  sub "ᆻᄋ" "ᆺᄊ"
+  sub "ᆻ" "ᆺ"
+
+  # HANGUL JONGSEONG CIEUC
+  sub "ᆽᄋ" "ᆺᄌ"
+  sub "ᆽ" "ᆺ"
+
+  # HANGUL JONGSEONG CHIEUCH
+  sub "ᆾᄋ" "ᆺᄎ"
+  sub "ᆾ" "ᆺ"
+
+  # HANGUL JONGSEONG KHIEUKH
+  sub "ᆿᄋ" "ᆨᄏ"
+  sub "ᆿ" "ᆨ"
+
+  # HANGUL JONGSEONG THIEUTH
+  sub "ᇀᄋ" "ᆺᄐ"
+  sub "ᇀ" "ᆺ"
+
+  # HANGUL JONGSEONG PHIEUPH
+  sub "ᇁᄋ" "ᆸᄑ"
+  sub "ᇁ" "ᆸ"
+
+  # HANGUL JONGSEONG HIEUH
+  sub "ᇂᄀ" "ᄏ"
+  sub "ᇂᄃ" "ᄐ"
+  sub "ᇂᄇ" "ᄑ"
+  sub "ᇂᄌ" "ᄎ"
+  sub "ᇂ" ""
+
+  # CHARACTERS
+  # parallel {
+  # From Unicode Chart
+  # https://github.com/unicode-org/cldr/blob/master/common/transforms/Korean-Latin-BGN.xml
+  parallel {
+  sub "ᆨᄀ" "kk"
+  sub "ᆨᄂ" "ngn"
+  sub "ᆨᄃ" "kt"
+  sub "ᆨᄅ" "ngn"
+  sub "ᆨᄆ" "ngm"
+  sub "ᆨᄇ" "kp"
+  sub "ᆨᄉ" "ks"
+  sub "ᆨᄋ" "g"
+  sub "ᆨᄌ" "kj"
+  sub "ᆨᄎ" "kch"
+  sub "ᆨᄏ" "kkh"
+  sub "ᆨᄐ" "kth"
+  sub "ᆨᄑ" "kp"
+  sub "ᆨᄒ" "kh"
+  sub "ᆨᄁ" "kkk"
+  sub "ᆨᄄ" "ktt"
+  sub "ᆨᄈ" "kpp"
+  sub "ᆨᄊ" "kss"
+  sub "ᆨᄍ" "kjj"
+  sub "ᆫᄀ" "n-g"
+  sub "ᆫᄂ" "nn"
+  sub "ᆫᄃ" "nd"
+  sub "ᆫᄅ" "ll"
+  sub "ᆫᄆ" "nm"
+  sub "ᆫᄇ" "nb"
+  sub "ᆫᄉ" "ns"
+  sub "ᆫᄋ" "n"
+  sub "ᆫᄌ" "nj"
+  sub "ᆫᄎ" "nch"
+  sub "ᆫᄏ" "nkh"
+  sub "ᆫᄐ" "nth"
+  sub "ᆫᄑ" "nph"
+  sub "ᆫᄒ" "nh"
+  sub "ᆫᄁ" "nkk"
+  sub "ᆫᄄ" "ntt"
+  sub "ᆫᄈ" "npp"
+  sub "ᆫᄊ" "nss"
+  sub "ᆫᄍ" "njj"
+  sub "ᆯᄀ" "lk"
+  sub "ᆯᄂ" "ll"
+  sub "ᆯᄃ" "lt"
+  sub "ᆯᄅ" "ll"
+  sub "ᆯᄆ" "lm"
+  sub "ᆯᄇ" "lb"
+  sub "ᆯᄉ" "ls"
+  sub "ᆯᄋ" "r"
+  sub "ᆯᄌ" "lj"
+  sub "ᆯᄎ" "lch"
+  sub "ᆯᄏ" "lkh"
+  sub "ᆯᄐ" "lth"
+  sub "ᆯᄑ" "lph"
+  sub "ᆯᄒ" "lh"
+  sub "ᆯᄁ" "lkk"
+  sub "ᆯᄄ" "ltt"
+  sub "ᆯᄈ" "lpp"
+  sub "ᆯᄊ" "lss"
+  sub "ᆯᄍ" "ljj"
+  sub "ᆷᄀ" "mg"
+  sub "ᆷᄂ" "mn"
+  sub "ᆷᄃ" "md"
+  sub "ᆷᄅ" "mr"
+  sub "ᆷᄆ" "mm"
+  sub "ᆷᄇ" "mb"
+  sub "ᆷᄉ" "ms"
+  sub "ᆷᄋ" "m"
+  sub "ᆷᄌ" "mj"
+  sub "ᆷᄎ" "mch"
+  sub "ᆷᄏ" "mkh"
+  sub "ᆷᄐ" "mth"
+  sub "ᆷᄑ" "mph"
+  sub "ᆷᄒ" "mh"
+  sub "ᆷᄁ" "mkk"
+  sub "ᆷᄄ" "mtt"
+  sub "ᆷᄈ" "mpp"
+  sub "ᆷᄊ" "mss"
+  sub "ᆷᄍ" "mjj"
+  sub "ᆸᄀ" "pk"
+  sub "ᆸᄂ" "mn"
+  sub "ᆸᄃ" "pt"
+  sub "ᆸᄅ" "mr"
+  sub "ᆸᄆ" "mm"
+  sub "ᆸᄇ" "pp"
+  sub "ᆸᄉ" "ps"
+  sub "ᆸᄋ" "b"
+  sub "ᆸᄌ" "pj"
+  sub "ᆸᄎ" "pch"
+  sub "ᆸᄏ" "pkh"
+  sub "ᆸᄐ" "pth"
+  sub "ᆸᄑ" "pph"
+  sub "ᆸᄒ" "ph"
+  sub "ᆸᄁ" "pkk"
+  sub "ᆸᄄ" "ptt"
+  sub "ᆸᄈ" "ppp"
+  sub "ᆸᄊ" "pss"
+  sub "ᆸᄍ" "pjj"
+  sub "ᆺᄀ" "tk"
+  sub "ᆺᄂ" "nn"
+  sub "ᆺᄃ" "tt"
+  sub "ᆺᄅ" "nr"
+  sub "ᆺᄆ" "nm"
+  sub "ᆺᄇ" "tp"
+  sub "ᆺᄉ" "ts"
+  sub "ᆺᄋ" "d"
+  sub "ᆺᄌ" "tj"
+  sub "ᆺᄎ" "tch"
+  sub "ᆺᄏ" "tkh"
+  sub "ᆺᄐ" "tth"
+  sub "ᆺᄑ" "tph"
+  sub "ᆺᄒ" "th"
+  sub "ᆺᄁ" "tkk"
+  sub "ᆺᄄ" "ttt"
+  sub "ᆺᄈ" "tpp"
+  sub "ᆺᄊ" "tss"
+  sub "ᆺᄍ" "tjj"
+  sub "ᆼᄀ" "ngg"
+  sub "ᆼᄂ" "ngn"
+  sub "ᆼᄃ" "ngd"
+  sub "ᆼᄅ" "ngn"
+  sub "ᆼᄆ" "ngm"
+  sub "ᆼᄇ" "ngb"
+  sub "ᆼᄉ" "ngs"
+  sub "ᆼᄋ" "ng"
+  sub "ᆼᄌ" "ngj"
+  sub "ᆼᄎ" "ngch"
+  sub "ᆼᄏ" "ngkh"
+  sub "ᆼᄐ" "ngth"
+  sub "ᆼᄑ" "ngph"
+  sub "ᆼᄒ" "ngh"
+  sub "ᆼᄁ" "ngkk"
+  sub "ᆼᄄ" "ngtt"
+  sub "ᆼᄈ" "ngpp"
+  sub "ᆼᄊ" "ngss"
+  sub "ᆼᄍ" "ngjj"
+  sub {
+    from "ᄀ"
+    to "g"
+    before any([any("-"), any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄂ"
+    to "n"
+    before any([any("-"), any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄃ"
+    to "d"
+    before any([any("-"), any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄅ"
+    to "r"
+    before any([any("-"), any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄆ"
+    to "m"
+    before any([any("-"), any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄇ"
+    to "b"
+    before any([any("-"), any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄉ"
+    to "s"
+    before any([any("-"), any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄋ"
+    to ""
+    before any([any("-"), any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄌ"
+    to "j"
+    before any([any("-"), any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄎ"
+    to "ch"
+    before any([any("-"), any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄏ"
+    to "kh"
+    before any([any("-"), any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄐ"
+    to "th"
+    before any([any("-"), any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄑ"
+    to "ph"
+    before any([any("-"), any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄒ"
+    to "h"
+    before any([any("-"), any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄁ"
+    to "kk"
+    before any([any("-"), any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄄ"
+    to "tt"
+    before any([any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄈ"
+    to "pp"
+    before any([any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄊ"
+    to "ss"
+    before any([any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub {
+    from "ᄍ"
+    to "jj"
+    before any([any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ") ])
+  }
+  sub "ᆰᄀ" "lg"
+  sub "ᆰᄂ" "ngn"
+  sub "ᆰᄃ" "kt"
+  sub "ᆰᄅ" "ngn"
+  sub "ᆰᄆ" "ngm"
+  sub "ᆰᄇ" "kp"
+  sub "ᆰᄉ" "ks"
+  sub "ᆰᄋ" "lg"
+  sub "ᆰᄌ" "kj"
+  sub "ᆰᄎ" "kch"
+  sub "ᆰᄏ" "lkh"
+  sub "ᆰᄐ" "kth"
+  sub "ᆰᄑ" "kph"
+  sub "ᆰᄒ" "lkh"
+  sub "ᆰᄁ" "lkk"
+  sub "ᆰᄄ" "ktt"
+  sub "ᆰᄈ" "kpp"
+  sub "ᆰᄊ" "kss"
+  sub "ᆰᄍ" "kjj"
+  sub "ᆱᄀ" "mg"
+  sub "ᆱᄂ" "mn"
+  sub "ᆱᄃ" "md"
+  sub "ᆱᄅ" "mr"
+  sub "ᆱᄆ" "lm"
+  sub "ᆱᄇ" "mb"
+  sub "ᆱᄉ" "ms"
+  sub "ᆱᄋ" "lm"
+  sub "ᆱᄌ" "mj"
+  sub "ᆱᄎ" "mch"
+  sub "ᆱᄏ" "mkh"
+  sub "ᆱᄐ" "mth"
+  sub "ᆱᄑ" "mph"
+  sub "ᆱᄒ" "mh"
+  sub "ᆱᄁ" "mkk"
+  sub "ᆱᄄ" "mtt"
+  sub "ᆱᄈ" "mpp"
+  sub "ᆱᄊ" "mss"
+  sub "ᆱᄍ" "mjj"
+  sub "ᆲᄀ" "pk"
+  sub "ᆲᄂ" "mn"
+  sub "ᆲᄃ" "pt"
+  sub "ᆲᄅ" "mr"
+  sub "ᆲᄆ" "mm"
+  sub "ᆲᄇ" "lb"
+  sub "ᆲᄉ" "ps"
+  sub "ᆲᄋ" "lb"
+  sub "ᆲᄌ" "pj"
+  sub "ᆲᄎ" "pch"
+  sub "ᆲᄏ" "pkh"
+  sub "ᆲᄐ" "pth"
+  sub "ᆲᄑ" "lph"
+  sub "ᆲᄒ" "lph"
+  sub "ᆲᄁ" "pkk"
+  sub "ᆲᄄ" "ptt"
+  sub "ᆲᄈ" "lpp"
+  sub "ᆲᄊ" "pss"
+  sub "ᆲᄍ" "pjj"
+  sub {
+    from "ᄀ"
+    to "k"
+    before " "
+  }
+  sub {
+    from "ᄂ"
+    to "n"
+    before " "
+  }
+  sub {
+    from "ᄃ"
+    to "t"
+    before " "
+  }
+
+  # DPRK does not follow the R-onset rule
+  # - pattern: "(?<= )ᄅ(?=[ᅣᅤᅧᅨᅭᅲ])"
+  #   result: "" # HANGUL CHOSEONG RIEUL # R-onset rule
+  sub {
+    from "ᄅ"
+    to "r"
+    before " "
+  }
+
+  sub {
+    from "ᄆ"
+    to "m"
+    before " "
+  }
+  sub {
+    from "ᄇ"
+    to "p"
+    before " "
+  }
+  sub {
+    from "ᄉ"
+    to "s"
+    before " "
+  }
+  sub {
+    from "ᄋ"
+    to ""
+    before " "
+  }
+  sub {
+    from "ᄌ"
+    to "j"
+    before " "
+  }
+  sub {
+    from "ᄎ"
+    to "ch"
+    before " "
+  }
+  sub {
+    from "ᄏ"
+    to "kh"
+    before " "
+  }
+  sub {
+    from "ᄐ"
+    to "th"
+    before " "
+  }
+  sub {
+    from "ᄑ"
+    to "ph"
+    before " "
+  }
+  sub {
+    from "ᄒ"
+    to "h"
+    before " "
+  }
+  sub {
+    from "ᄁ"
+    to "kk"
+    before " "
+  }
+  sub {
+    from "ᄭ"
+    to "kk"
+    before " "
+  }
+  sub {
+    from "ᄄ"
+    to "tt"
+    before " "
+  }
+  sub {
+    from "ᄯ"
+    to "tt"
+    before " "
+  }
+  sub {
+    from "ᄈ"
+    to "pp"
+    before " "
+  }
+  sub {
+    from "ᄲ"
+    to "pp"
+    before " "
+  }
+  sub {
+    from "ᄊ"
+    to "ss"
+    before " "
+  }
+  sub {
+    from "ᄍ"
+    to "jj"
+    before " "
+  }
+  sub {
+    from "ᄶ"
+    to "jj"
+    before " "
+  }
+  sub "ᅡ" "a"
+  sub "ᅣ" "ya"
+  sub "ᅥ" "ŏ"
+  sub "ᅧ" "yŏ"
+  sub "ᅩ" "o"
+  sub "ᅭ" "yo"
+  sub "ᅮ" "u"
+  sub "ᅲ" "yu"
+  sub "ᅳ" "ü"
+  sub "ᅵ" "i"
+  sub "ᅢ" "ae"
+  sub "ᅤ" "yae"
+  sub "ᅦ" "e"
+  sub "ᅨ" "ye"
+  sub "ᅬ" "oe"
+  sub "ᅱ" "wi"
+  sub "ᅴ" "üi"
+  sub "ᅪ" "wa"
+  sub "ᅯ" "wo"
+  sub "ᅫ" "wae"
+  sub "ᅰ" "we"
+  sub {
+    from "ᆨ"
+    to "k"
+    not_after unicode_hangul
+  }
+  sub {
+    from "ᆫ"
+    to "n"
+    not_after unicode_hangul
+  }
+  sub {
+    from "ᆮ"
+    to "t"
+    not_after unicode_hangul
+  }
+  sub {
+    from "ᆯ"
+    to "l"
+    not_after unicode_hangul
+  }
+  sub {
+    from "ᆷ"
+    to "m"
+    not_after unicode_hangul
+  }
+  sub {
+    from "ᆸ"
+    to "p"
+    not_after unicode_hangul
+  }
+  sub {
+    from "ᆺ"
+    to "t"
+    not_after unicode_hangul
+  }
+  sub {
+    from "ᆼ"
+    to "ng"
+    not_after unicode_hangul
+  }
+  sub {
+    from "ᆽ"
+    to "t"
+    not_after unicode_hangul
+  }
+  sub {
+    from "ᆾ"
+    to "t"
+    not_after unicode_hangul
+  }
+  sub {
+    from "ᆿ"
+    to "k"
+    not_after unicode_hangul
+  }
+  sub {
+    from "ᇀ"
+    to "t"
+    not_after unicode_hangul
+  }
+  sub {
+    from "ᇁ"
+    to "p"
+    not_after unicode_hangul
+  }
+  sub {
+    from "ᆰ"
+    to "k"
+    not_after unicode_hangul
+  }
+  sub {
+    from "ᆲ"
+    to "p"
+    not_after unicode_hangul
+  }
+  }
+  # Remove space added
+  sub {
+    from line_start + " "
+    to ""
+  }
+  sub {
+    from " " + line_end
+    to ""
+  }
+
+
+    # This is based on Jamo
+
+
+  title_case
+}
+
+}

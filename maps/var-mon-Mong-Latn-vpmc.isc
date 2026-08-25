@@ -1,0 +1,181 @@
+system "VAR:mon-Mong:Latn:vpmc" {
+
+metadata {
+  authority_id var
+  id vpmc
+  language iso-639-2:mon
+  source_script Mong
+  destination_script Latn
+  name VPMC transliteration system for Uyghur-Mongolian script
+  url https://collab.its.virginia.edu/wiki/tibetan-script/Transliteration%20Schemes%20for%20Mongolian%20Vertical%20Script.html
+  creation_date 
+  description {    The only system for the Mongolian vertical script which is used commonly throughout
+    Mongolian studies worldwide is the Vladimirtsov-Mostaert system (V-M). The only
+    dictionary using this system is in an appendix to Antoine Mostaert’s Dictionnaire
+    ordos. Thus the Harvard Journal of Asiatic Studies specifies, “please use the written
+    Mongolian appendix to Antoine Mostaert’s Dictionnaire ordos. However, the V-M system
+    has many difficult diacriticals and non-Latin characters that constitute a significant
+    problem for editors and thus is difficult to recommend.
+  }
+
+  notes {
+    note "A separated final form of vowels a or e is common, and can appear at the end\n of a word, word stem, or suffix. This form requires a final-shaped preceding\n consonant and an inter-word gap in between. The vowels themselves appear as ᠎ᠠ,\n and with consonants as ‍ᠬ᠎ᠠ q‑a, ‍ᠷ᠎ᠠ r‑a/r‑e, etc. This gap can be transliterated\n with a hyphen. In digital typesetting, these forms are triggered by inserting\n a U+180E ᠎ MONGOLIAN VOWEL SEPARATOR (HTML &#6158; · MVS) between the consonant\n and vowel."
+    note "All case suffixes, as well as any plural suffixes consisting of one or two\n syllables are likewise separated by a preceding and hyphen-transliterated gap.\n In digital typesetting, this gap is represented by a U+202F   NARROW NO-BREAK SPACE\n (HTML &#8239; · NNBSP). A maximum of two case suffixes can be added to a stem.\n Single-letter vowel suffixes appear with the final-shaped forms of a/e, i, or u/ü,\n as in ᠭᠠᠵᠠᠷ ᠠ γaǰar‑a 'to the country' and ᠡᠳᠦᠷ ᠡ edür‑e 'on the day', or ᠤᠯᠤᠰ ᠢ ulus‑i\n 'the state' etc. Multi-letter suffixes most often start with an initial- (consonants),\n medial- (vowels), or variant-shaped form."
+  }
+}
+
+tests {
+   "ᠬ᠎ᠠ" ->  "q-a"
+   "ᠷ᠎ᠠ" ->  "r-a"
+   "ᠭᠠᠵᠠᠷ ᠠ" ->  "γaǰar-a"
+   "ᠡᠳᠦᠷ ᠡ" ->  "edür-e"
+   "ᠤᠯᠤᠰ ᠢ" ->  "ulus-i"
+   "ᠬᠥᠬᠡᠬᠣᠲᠠ" ->  "kökeqota" # Хөх хот
+   "ᠣᠷᠳᠣᠰ ᠬᠣᠲᠠ" ->  "ordos qota" # Ордос хот
+   "ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ" ->  "bayannaγur qota" # Баяннуур хот
+   "ᠤᠯᠠᠭᠠᠨᠬᠣᠲᠠ" ->  "ulaγanqota" # Улаан хот
+   "ᠬᠣᠣᠯᠢᠠ ᠭᠣᠤᠯ ᠬᠣᠲᠠ" ->  "qoolia γoul qota" # Хоолингол хот
+   "ᠡᠷᠢᠶᠡᠨ ᠬᠣᠲᠠ" ->  "eriyen qota" #  Эрээн хот
+   "ᠷᠠᠰᠢᠶᠠᠨ ᠬᠣᠲᠠ" ->  "rasiyan qota" # Рашаан хот
+   "ᠪᠠᠭᠠᠷᠢᠨ ᠪᠠᠷᠠᠭᠤᠨ ᠬᠣᠰᠢᠭᠤ" ->  "baγarin baraγun qosiγu" # Баарин баруун хошуу
+   "ᠪᠠᠭᠠᠷᠢᠨ ᠵᠡᠭᠦᠨ ᠬᠣᠰᠢᠭᠤ" ->  "baγarin ǰegün qosiγu" # Баарин зүүн хошуу
+   "ᠲᠦᠩᠯᠢᠶᠣᠤ ᠬᠣᠲᠠ" ->  "tüngliyou qota" # Байшинт хот
+   "ᠰᠢᠯᠢ ᠶᠢᠨ ᠬᠣᠲᠠ" ->  "sili-yin qota" # Шилийн хот
+   "ᠬᠣᠷᠢᠨ ᠭᠡᠷ ᠰᠢᠶᠠᠨ" ->  "qorin ger siyan" # Horinger County
+   "ᠤᠳᠠ ᠲᠣᠭᠣᠷᠢᠭ" ->  "uda toγoriγ" # Уда тойрог
+   "ᠦᠬᠠᠢ ᠬᠣᠲᠠ" ->  "üqai qota" # Үхай хот
+   "ᠬᠠᠶᠢᠨᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "qayinan toγoriγ" # Hainan District
+   "ᠬᠠᠶᠢᠷᠤᠪ ᠤᠨ ᠲᠣᠬᠣᠢ ᠲᠣᠭᠣᠷᠢᠭ" ->  "qayirub-un toqoi toγoriγ" # Haibowan District
+   "ᠤᠯᠠᠭᠠᠨᠴᠠᠪ ᠬᠣᠲᠠ" ->  "ulaγančab qota" # Улаанцав хот
+   "ᠵᠢᠨᠢᠩ ᠲᠣᠭᠣᠷᠢᠭ" ->  "ǰining toγoriγ" # Жинин тойрог
+   "ᠹᠸᠩᠵᠸᠡ ᠬᠣᠲᠠ" ->  "fvngǰve qota" # Фенжень хот
+   "ᠱᠠᠩᠳᠤ ᠰᠢᠶᠠᠨ" ->  "šangdu siyan" # Шанду шянь
+   "ᠯᠢᠶᠠᠩᠴᠠᠩ ᠰᠢᠶᠠᠨ" ->  "liyangčang siyan" # Liangcheng County
+   "ᠴᠠᠬᠠᠷ ᠪᠠᠷᠠᠭᠤᠨ ᠭᠠᠷᠤᠨ ᠡᠮᠦᠨᠡᠳᠦ ᠬᠣᠰᠢᠭᠤ" ->  "čaqar baraγun γarun emünedü qosiγu" # Цахар баруун гарын өмнөд хошуу
+   "ᠴᠠᠬᠠᠷ ᠪᠠᠷᠠᠭᠤᠨ ᠭᠠᠷᠤᠨ ᠳᠤᠮᠳᠠᠳᠤ ᠬᠣᠰᠢᠭᠤ" ->  "čaqar baraγun γarun dumdadu qosiγu" # Цахар баруун гарын дундад хошуу
+   "ᠴᠠᠬᠠᠷ ᠪᠠᠷᠠᠭᠤᠨ ᠭᠠᠷᠤᠨ ᠬᠣᠶᠢᠲᠤ ᠬᠣᠰᠢᠭᠤ" ->  "čaqar baraγun γarun qoyitu qosiγu" # Цахар баруун гарын хойд хошуу
+   "ᠳᠥᠷᠪᠡᠳ ᠬᠣᠰᠢᠭᠤ" ->  "dörbed qosiγu" # Дөрвөд хошуу
+   "ᠪᠤᠭᠤᠲᠤ ᠬᠣᠲᠠ" ->  "buγutu qota" # Бугaт хот
+   "ᠬᠥᠨᠳᠡᠯᠡᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "köndelen toγoriγ" # Hondlon District
+   "ᠴᠢᠩᠱᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "čingšan toγoriγ" # Qingshan District
+   "ᠰᠢᠭᠤᠶᠢᠲᠤ ᠲᠣᠭᠣᠷᠢᠭ" ->  "siγuyitu toγoriγ" # Шигуай тойрог
+   "ᠵᠢᠦ ᠶᠤᠸᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "ǰiü yuvan toγoriγ" # Jiuyuan District
+   "ᠭᠦᠶᠠᠩ ᠰᠢᠶᠠᠨ" ->  "güyang siyan" # Guyang County
+   "ᠲᠦᠮᠡᠳ ᠵᠡᠭᠦᠨ ᠬᠣᠰᠢᠭᠤ" ->  "tümed ǰegün qosiγu" # Түмэд Зүүн хошуу
+   "ᠲᠦᠮᠡᠳ ᠪᠠᠷᠠᠭᠤᠨ ᠬᠣᠰᠢᠭᠤ" ->  "tümed baraγun qosiγu" # Түмэд Баруун хошуу
+   "ᠳᠠᠷᠬᠠᠨ ᠮᠤᠤᠮᠢᠩᠭ᠋ᠠᠨ ᠬᠣᠯᠪᠣᠭᠠᠲᠤ ᠬᠣᠰᠢᠭᠤ" ->  "darqan muumingγ᠋an qolboγatu qosiγu" # Darhan Muminggan United Banner
+   "ᠬᠡᠰᠢᠭᠲᠡᠨ ᠬᠣᠰᠢᠭᠤ" ->  "kesiγten qosiγu" # Hexigten Banner
+   "ᠰᠢᠨ᠎ᠡ ᠪᠠᠷᠭᠤ ᠵᠡᠭᠦᠨ ᠬᠣᠰᠢᠭᠤ" ->  "sin-e barγu ǰegün qosiγu" # New Barag Left Banner
+   "ᠰᠢᠨ᠎ᠡ ᠪᠠᠷᠭᠤ ᠪᠠᠷᠠᠭᠤᠨ ᠬᠣᠰᠢᠭᠤ" ->  "sin-e barγu baraγun qosiγu" # New Barag Right Banner
+   "ᠣᠲᠣᠭ ᠬᠣᠰᠢᠭᠤ" ->  "otoγ qosiγu" # Otog Banner
+   "ᠳᠠᠯᠠᠳ ᠬᠣᠰᠢᠭᠤ" ->  "dalad qosiγu" # Dalad Banner
+   "ᠵᠡᠭᠦᠨᠭᠠᠷ ᠬᠣᠰᠢᠭᠤ" ->  "ǰegünγar qosiγu" # Jungar Banner
+   "ᠣᠲᠣᠭ ᠤᠨ ᠡᠮᠦᠨᠡᠳᠦ ᠬᠣᠰᠢᠭᠤ" ->  "otoγ-un emünedü qosiγu" # Otog Front Banner
+   "ᠬᠠᠩᠭᠢᠨ ᠬᠣᠰᠢᠭᠤ" ->  "qanggin qosiγu" # Hanggin Banner
+   "ᠦᠦᠰᠢᠨ ᠬᠣᠰᠢᠭᠤ" ->  "üüsin qosiγu" # Uxin Banner
+   "ᠡᠵᠢᠨ ᠬᠣᠷᠣᠭ᠎ᠠ ᠬᠣᠰᠢᠭᠤ" ->  "eǰin qoroγ-a qosiγu" # Эзэн Хороо хошуу
+   "ᠵᠠᠯᠠᠨ ᠠᠢ᠌ᠯ ᠬᠣᠲᠠ" ->  "ǰalan ai᠌l qota" # Жалан-Айл хот
+   "ᠶᠠᠭᠰᠢ ᠬᠣᠲᠠ" ->  "yaγsi qota" # Ягши хот
+   "ᠮᠠᠨᠵᠤᠤᠷ ᠬᠣᠲᠠ" ->  "manǰuur qota" # Манжуур хот
+   "ᠬᠠᠶᠢᠯᠠᠷ ᠲᠣᠭᠣᠷᠢᠭ" ->  "qayilar toγoriγ" # Хайлаар тойрог
+   "ᠬᠣᠷᠴᠢᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "qorčin toγoriγ" # Horqin District
+   "ᠺᠠᠶᠢᠯᠦ ᠰᠢᠶᠠᠨ" ->  "kayilü siyan" # Kailu County
+   "ᠬᠦᠷᠢᠶ᠎ᠡ ᠬᠣᠰᠢᠭᠤ" ->  "küriy-e qosiγu" # Hure Banner
+   "ᠨᠠᠢᠮᠠᠨ ᠬᠣᠰᠢᠭᠤ" ->  "naiman qosiγu" # Naiman Banner
+   "ᠵᠠᠷᠤᠳ ᠬᠣᠰᠢᠭᠤ" ->  "ǰarud qosiγu" # Jarud Banner
+   "ᠬᠣᠷᠴᠢᠨ ᠪᠠᠷᠠᠭᠤᠨ ᠭᠠᠷᠤᠨ ᠳᠤᠮᠳᠠᠳᠤ ᠬᠣᠰᠢᠭᠤ" ->  "qorčin baraγun γarun dumdadu qosiγu" # Хорчин Баруун Гарын Дундад Хошуу
+   "ᠬᠣᠷᠴᠢᠨ ᠵᠡᠭᠦᠨ ᠭᠠᠷᠤᠨ ᠳᠤᠮᠳᠠᠳᠤ ᠬᠣᠰᠢᠭᠤ" ->  "qorčin ǰegün γarun dumdadu qosiγu" # Horqin Left Middle Banner
+   "ᠬᠣᠷᠴᠢᠨ ᠵᠡᠭᠦᠨ ᠭᠠᠷᠤᠨ ᠬᠣᠶᠢᠲᠤ ᠬᠣᠰᠢᠭᠤ" ->  "qorčin ǰegün γarun qoyitu qosiγu" # Horqin Left Rear Banner
+   "ᠤᠯᠠᠭᠠᠨᠬᠠᠳᠠ ᠬᠣᠲᠠ" ->  "ulaγanqada qota" # Улаанхад хот
+   "ᠰᠡᠷᠡᠴᠢ" ->  "sereči" # Salaqi
+   "ᠭᠡᠭᠡᠨ ᠭᠣᠤᠯ ᠬᠣᠲᠠ" ->  "gegen γoul qota" # Гэгээнгол хот
+   "ᠠᠯᠠᠱᠠ ᠵᠡᠭᠦᠨ ᠬᠣᠰᠢᠭᠤ" ->  "alaša ǰegün qosiγu" # Alxa Left Banner
+   "ᠠᠯᠠᠱᠠ ᠪᠠᠷᠠᠭᠤᠨ ᠬᠣᠰᠢᠭᠤ" ->  "alaša baraγun qosiγu" # Alxa Right Banner # Alaša Baraγun qosiγu
+   "ᠡᠵᠡᠨ᠎ᠡ ᠬᠣᠰᠢᠭᠤ" ->  "eǰen-e qosiγu" # Ejin Banner
+   "ᠬᠥᠪᠡᠭᠡᠲᠦ ᠰᠢᠷ᠎ᠠ ᠬᠣᠰᠢᠭᠤ" ->  "köbegetü sir-a qosiγu" # Хөвөөт Шар хошуу
+   "ᠦᠶᠤᠸᠠᠨ ᠰᠢᠶᠠᠨ" ->  "üyuvan siyan" # Үюань шянь
+   "ᠦᠴᠤᠸᠠᠨ ᠰᠢᠶᠠᠨ" ->  "üčuvan siyan" # Wuchuan County
+   "ᠲᠦᠴᠢᠤᠸᠠᠨ ᠰᠢᠶᠠᠨ" ->  "tüčiuvan siyan" # Тучуань шянь
+   "ᠯᠢᠨᠰᠢ ᠰᠢᠶᠠᠨ" ->  "linsi siyan" # Linxi County
+   "ᠬᠠᠷᠠᠴᠢᠨ ᠬᠣᠰᠢᠭᠤ" ->  "qaračin qosiγu" # Harqin Banner
+   "ᠠᠤᠬᠠᠨ ᠬᠣᠰᠢᠭᠤ" ->  "auqan qosiγu" # Aohan Banner
+   "ᠬᠣᠳᠣᠩ ᠠᠷᠠᠳ ᠤᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "qodong arad-un toγoriγ" # Huimin District
+   "ᠰᠠᠶᠢᠬᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "sayiqan toγoriγ" # Saihan District
+   "ᠰᠢᠨ᠎ᠡ ᠬᠣᠲᠠ ᠲᠣᠭᠣᠷᠢᠭ" ->  "sin-e qota toγoriγ" # Xincheng District
+   "ᠬᠠᠶᠢᠷᠤᠪ ᠤᠨ ᠲᠣᠬᠣᠢ ᠲᠣᠭᠣᠷᠢᠭ" ->  "qayirub-un toqoi toγoriγ" # Haibowan (Hairibin Tohoi) District
+   "ᠰᠦᠩ ᠱᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "süng šan toγoriγ" # Songshan District
+   "ᠬᠦᠩ ᠱᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "küng šan toγoriγ" # Hongshan District
+   "ᠠᠷᠤᠨ ᠬᠣᠰᠢᠭᠤ" ->  "arun qosiγu" # Арун хошуу
+   "ᠶᠤᠸᠠᠨ ᠪᠣᠣ ᠱᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ" ->  "yuvan boo šan toγoriγ" # Юаньбаошань тойрог
+   "ᠰᠢᠯᠤᠭᠤᠨ ᠬᠥᠪᠡᠭᠡᠲᠦ ᠴᠠᠭᠠᠨ ᠬᠣᠰᠢᠭᠤ" ->  "siluγun köbegetü čaγan qosiγu" # Шулуун Хөвөөт Цагаан хошуу
+   "ᠰᠢᠯᠤᠭᠤᠨ ᠬᠥᠬᠡ ᠬᠣᠰᠢᠭᠤ" ->  "siluγun köke qosiγu" # Шулуун хөх хошуу
+   "ᠤᠷᠠᠳ ᠤᠨ ᠳᠤᠮᠳᠠᠳᠤ ᠬᠣᠰᠢᠭᠤ" ->  "urad-un dumdadu qosiγu" # Урадын Дундад Хошуу
+   "ᠤᠷᠠᠳ ᠤᠨ ᠡᠮᠦᠨᠡᠳᠦ ᠬᠣᠰᠢᠭᠤ" ->  "urad-un emünedü qosiγu" # Урадын Өмнөд Хошуу
+   "ᠲᠣᠭᠲᠠᠬᠤ ᠰᠢᠶᠠᠨ" ->  "toγtaqu siyan" # Тогтох шянь
+   "ᠰᠥᠨᠡᠳ ᠵᠡᠭᠦᠨ ᠬᠣᠰᠢᠭᠤ" ->  "söned ǰegün qosiγu" # Sonid Left Banner
+   "ᠰᠥᠨᠡᠳ ᠪᠠᠷᠠᠭᠤᠨ ᠬᠣᠰᠢᠭᠤ" ->  "söned baraγun qosiγu" # Sonid Right Banner
+   "ᠣᠩᠨᠢᠭᠤᠳ ᠬᠣᠰᠢᠭᠤ" ->  "ongniγud qosiγu" # Ongniud Banner
+   "ᠵᠠᠯᠠᠢᠳ ᠬᠣᠰᠢᠭᠤ" ->  "ǰalaid qosiγu" # Jalaid Banner
+   "ᠬᠠᠩᠭᠢᠨ ᠬᠣᠶᠢᠲᠤ ᠬᠣᠰᠢᠭᠤ" ->  "qanggin qoyitu qosiγu" # Hanggin Rear Banner
+   "ᠵᠡᠭᠦᠨ ᠤᠵᠤᠮᠤᠴᠢᠨ ᠬᠣᠰᠢᠭᠤ" ->  "ǰegün uǰumučin qosiγu" # East Ujimqin Banner
+   "ᠠᠷᠤ ᠬᠣᠷᠴᠢᠨ ᠬᠣᠰᠢᠭᠤ" ->  "aru qorčin qosiγu" # Ar Horqin Banner
+   "ᠠᠪᠠᠭ᠎ᠠ ᠬᠣᠰᠢᠭᠤ" ->  "abaγ-a qosiγu" # Abag Banner
+   "ᠪᠤᠷᠢᠶᠠᠳ" ->  "buriyad" # Буриад
+   "ᠤᠯᠠᠭᠠᠨᠪᠠᠭᠠᠲᠤᠷ" ->  "ulaγanbaγatur" # Улаанбаатар
+   "ᠴᠢᠩᠭᠢᠰ ᠬᠠᠭᠠᠨ" ->  "činggis qaγan" # Чингис Хаан
+}
+
+stage main {
+
+  # RULES
+  sub {
+    from "\u182c"
+    to "k"
+    after any("\u1821\u1822\u1825\u1826")
+  }
+  sub {
+    from "\u182d"
+    to "g"
+    after any("\u1821\u1822\u1825\u1826")
+  }
+
+
+  # CHARACTERS
+  parallel {
+    sub "ᠠ" "a"
+    sub "ᠡ" "e"
+    sub "ᠢ" "i"
+    sub "ᠣ" "o"
+    sub "ᠤ" "u"
+    sub "ᠥ" "ö"
+    sub "ᠦ" "ü"
+    sub "ᠨ" "n"
+    sub "ᠩ" "ng"
+    sub "ᠬ" "q"
+    sub "ᠭ" "γ"
+    sub "ᠪ" "b"
+    sub "ᠫ" "p"
+    sub "ᠹ" "f"
+    sub "ᠰ" "s"
+    sub "ᠱ" "š"
+    sub "ᠲ" "t"
+    sub "ᠳ" "d"
+    sub "ᠯ" "l"
+    sub "ᠮ" "m"
+    sub "ᠴ" "č"
+    sub "ᠵ" "ǰ"
+    sub "ᠶ" "y"
+    sub "ᠺ" "k"
+    sub "ᠷ" "r"
+    sub "ᠸ" "v"
+    sub "ᠾ" "h"
+    sub "᠁" "..."
+    sub "᠂" ","
+    sub "᠃" "."
+    sub "᠄" ":"
+    sub "᠎" "-"
+    sub " " "-"
+  }
+
+}
+}

@@ -1,0 +1,56 @@
+system "ALA-LC:kat-Geor:Latn:2011" {
+
+metadata {
+  authority_id alalc
+  id 2011
+  language iso-639-2:kat
+  source_script Geor
+  destination_script Latn
+  name Romanization Table -- Georgian Mkhedruli (2011)
+  url https://www.loc.gov/catdir/cpso/romanization/georgian.pdf
+  creation_date 2011
+  confirmation_date 2011
+  description {    Values are shown for the older Khutsuri and the modern Mkhedruli alphabets.
+    There are no upper case letters in Mkhedruli.
+  }
+  notes {
+  }
+}
+
+tests {
+   "ხაოფსე" ->  "xaopʻse"
+   "ჭლოუ" ->  "člou"
+   "ჩოხულდი" ->  "čʻoxuldi"
+   "ქვემო ლინდა" ->  "kʻvemo linda"
+   "ტამკვაჩ იგვავერა" ->  "tamkvačʻ igvavera"
+   "სვანეთი" ->  "svanetʻi"
+   "საცხვარისი" ->  "sacʻxvarisi"
+   "მუხრან-თელეთი" ->  "muxran-tʻeletʻi"
+   "მუცდი" ->  "mucʻdi"
+   "ლეჩხუმი" ->  "lečʻxumi"
+   "ვერხნაია მწარა" ->  "verxnaia mcara"
+   "ეგრისის ქედი" ->  "egrisis kʻedi"
+   "დოჩარიფშა" ->  "dočʻaripʻša"
+   "ბოლოკო" ->  "boloko"
+   "აჭანდარა" ->  "ačandara"
+   "აუალიცა" ->  "aualicʻa"
+   "აკალამრა" ->  "akalamra"
+   "ლასილი" ->  "lasili"
+   "გუბაზეული" ->  "gubazeuli"
+   "ბაყაყი" ->  "baqaqi"
+   "ძროხა" ->  "żroxa"
+   "ჰაერი" ->  "haeri"
+   "ჟოლო" ->  "žolo"
+   "ჯართი" ->  "jartʻi"
+   "ღრმაღელე" ->  "ġrmaġele"
+}
+
+dependency "alalc-kat-Geor-Latn-1997" as georlatn
+
+stage main {
+
+  run  map.georlatn.stage.main
+
+}
+
+}

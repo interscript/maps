@@ -1,0 +1,204 @@
+system "UA:ukr-Cyrl:Latn:1996" {
+
+metadata {
+  authority_id ua
+  id 1996
+  language iso-639-2:ukr
+  source_script Cyrl
+  destination_script Latn
+  name Government of Ukraine Ukrainian System (1996)
+  url http://transliteration.eki.ee/pdf/Ukrainian.pdf
+  creation_date 1996
+  description Romanization table for Ukrainian. The current national system of romanization.
+
+  notes {
+    note "gh is used in the romanization of зг zgh."
+    note "In initial position є -> ye, ї -> yi, й -> y, ю -> yu, я -> ya."
+  }
+}
+
+tests {
+   "Алушта" ->  "Alushta"
+   "Борщагівка" ->  "Borschahivka"
+   "Вишгород" ->  "Vyshhorod"
+   "Гадяч" ->  "Hadiach"
+   "Згорани" ->  "Zghorany"
+   "Ґалаґан" ->  "Galagan"
+   "Дон" ->  "Don"
+   "Рівне" ->  "Rivne"
+   "Єнакієве" ->  "Yenakiieve"
+   "Наєнко" ->  "Naienko"
+   "Житомир" ->  "Zhytomyr"
+   "Запоріжжя" ->  "Zaporizhzhia"
+   "Закарпаття" ->  "Zakarpattia"
+   "Медвин" ->  "Medvyn"
+   "Іршава" ->  "Irshava"
+   "Їжакевич" ->  "Yizhakevych"
+   "Кадіївка" ->  "Kadiivka"
+   "Йосипівка" ->  "Yosypivka"
+   "Київ" ->  "Kyiv"
+   "Лебедин" ->  "Lebedyn"
+   "Миколаїв" ->  "Mykolaiv"
+   "Ніжин" ->  "Nizhyn"
+   "Одеса" ->  "Odesa"
+   "Полтава" ->  "Poltava"
+   "Ромни" ->  "Romny"
+   "Суми" ->  "Sumy"
+   "Тетерів" ->  "Teteriv"
+   "Ужгород" ->  "Uzhhorod"
+   "Фастів" ->  "Fastiv"
+   "Харків" ->  "Kharkiv"
+   "Біла Церква" ->  "Bila Tserkva"
+   "Чернівці" ->  "Chernivtsi"
+   "Шостка" ->  "Shostka"
+   "Гоща" ->  "Hoscha"
+   "Русь" ->  "Rus’"
+   "Юрій" ->  "Yurii"
+   "Крюківка" ->  "Kriukivka"
+   "Яготин" ->  "Yahotyn"
+   "Ічня" ->  "Ichnia"
+   "Знам’янка" ->  "Znam”ianka"
+}
+
+stage main {
+
+  # RULES
+  sub {
+    from "\u0413"
+    to "Gh"
+    before any("Зз")
+  }
+  sub {
+    from "\u0433"
+    to "gh"
+    before any("Зз")
+  }
+  sub {
+    from boundary + "\u0404"
+    to "Ye"
+    not_before boundary + "\u2019"
+  }
+  sub {
+    from boundary + "\u0454"
+    to "ye"
+    not_before boundary + "\u2019"
+  }
+  sub {
+    from boundary + "\u0407"
+    to "Yi"
+    not_before boundary + "\u2019"
+  }
+  sub {
+    from boundary + "\u0457"
+    to "yi"
+    not_before boundary + "\u2019"
+  }
+  sub {
+    from boundary + "\u0419"
+    to "Y"
+    not_before boundary + "\u2019"
+  }
+  sub {
+    from boundary + "\u0419"
+    to "y"
+    not_before boundary + "\u2019"
+  }
+  sub {
+    from boundary + "\u042e"
+    to "Yu"
+    not_before boundary + "\u2019"
+  }
+  sub {
+    from boundary + "\u044e"
+    to "yu"
+    not_before boundary + "\u2019"
+  }
+  sub {
+    from boundary + "\u042f"
+    to "Ya"
+    not_before boundary + "\u2019"
+  }
+  sub {
+    from boundary + "\u044f"
+    to "ya"
+    not_before boundary + "\u2019"
+  }
+  sub {
+    from boundary + "\u2019" + boundary
+    to "”"
+  }
+
+
+  # CHARACTERS
+  parallel {
+    sub "А" "A"
+    sub "Б" "B"
+    sub "В" "V"
+    sub "Г" "H"
+    sub "Ґ" "G"
+    sub "Д" "D"
+    sub "Е" "E"
+    sub "Є" "Ie"
+    sub "Ж" "Zh"
+    sub "З" "Z"
+    sub "И" "Y"
+    sub "І" "I"
+    sub "Ї" "I"
+    sub "Й" "I"
+    sub "К" "K"
+    sub "Л" "L"
+    sub "М" "M"
+    sub "Н" "N"
+    sub "О" "O"
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "У" "U"
+    sub "Ф" "F"
+    sub "Х" "Kh"
+    sub "Ц" "Ts"
+    sub "Ч" "Ch"
+    sub "Ш" "Sh"
+    sub "Щ" "Sch"
+    sub "Ю" "Iu"
+    sub "Я" "Ia"
+    sub "Ь" "’"
+    sub "а" "a"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "h"
+    sub "ґ" "g"
+    sub "д" "d"
+    sub "е" "e"
+    sub "є" "ie"
+    sub "ж" "zh"
+    sub "з" "z"
+    sub "и" "y"
+    sub "і" "i"
+    sub "ї" "i"
+    sub "й" "i"
+    sub "к" "k"
+    sub "л" "l"
+    sub "м" "m"
+    sub "н" "n"
+    sub "о" "o"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "у" "u"
+    sub "ф" "f"
+    sub "х" "kh"
+    sub "ц" "ts"
+    sub "ч" "ch"
+    sub "ш" "sh"
+    sub "щ" "sch"
+    sub "ю" "iu"
+    sub "я" "ia"
+    sub "ь" "’"
+  }
+
+}
+
+}

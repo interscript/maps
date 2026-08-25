@@ -1,0 +1,270 @@
+system "BGN-PCGN:tat-Cyrl:Latn:2007" {
+
+metadata {
+  authority_id bgnpcgn
+  id 2007
+  language iso-639-2:tat
+  source_script Cyrl
+  destination_script Latn
+  name Table of Correspondences for Tatar (Cyrillic-Roman) (2007 Agreement)
+  url https://geonames.nga.mil/gns/html/Romanization/TABLE%20OF%20CORRESPONDENCES%20FOR%20TATAR.pdf
+  creation_date 2007
+  confirmation_date 2017-11
+  description {    Tatar is an official language within Respublika Tatarstan, one of the republics of the Russian
+    Federation. It will normally be encountered in Cyrillic script, in which case it should be romanized by means
+    of the Cyrillic-Roman table of correspondences given below.
+  }
+
+  notes {
+    note "      The alphabet portrayed in the above table is referred to as yaꞑalif-2.\n      A set of simpler characters is also encountered; this is known as zamanalif.\n      In this latter set, the alternative characters ä, ñ and ö are used for letters\n      2, 17 and 19 respectively where the user has difficulty reproducing ə, ꞑ, and ө.\n      Please note that all three alternatives must be used as a set, and the letters should not be intermingled."
+    note "Used only in borrowed words."
+    note "The first option is used in words with back vowels, the second in words with front vowels (though this does not apply to borrowed words)."
+    note "yı/ye is used after a vowel (except и, ю), ъ and ь, also word-initially."
+    note "w is used after a vowel."
+    note "After ğ or q, ый is represented i"
+    note "Э is represented ’ after a vowel in words of Arabic origin."
+    note "Ю and Я are represented ü and a/ä respectively after и."
+    note "      An inventory of letter-diacritic combinations, with their Unicode encoding, in addition to the unmodified letters\n      of the basic Roman script is:\n          Ə (U+018F) ə (U+0259)\n          Ğ (U+011E) ğ (U+011F)\n          İ (U+0130) ı (U+0131)\n          Ü (U+00DC) ü (U+00FC)\n          Ꞑ (U+A790) ꞑ (U+A791)\n          Ɵ (U+019F) ɵ (U+0275)\n          Ç (U+00C7) ç (U+00E7)\n          Ş (U+015E) ş (U+015F)\n          Ä (U+00C4) ä (U+00E4)\n          ’ (U+2019)"
+    note "      The Roman-script columns show only lowercase forms but, when applying the table, uppercase and lowercase\n      Roman letters as appropriate should be used."
+  }
+}
+
+tests {
+   "Гыйльмиев" ->  "Ğil’miew" #  # note[6] in the note it's Ğilmiev which incorrect according to the rules
+  # https://en.wikipedia.org/wiki/Tatar_alphabet
+   "баеды" ->  "bayıdı" # note[4]
+   "кардәш" ->  "qardəş"
+   "калынлык һәм аеру билгесе" ->  "qalınlıq həm ayıru bilgese" # note[4]
+   "Барлык кешеләр дә азат һәм үз абруйлары һәм хокуклары ягыннан тиң булып туалар.\nАларга акыл һәм вөҗдан бирелгән һәм бер-берсенә карата туганнарча мөнасәбәттә булырга тиешләр." ->  "Barlıq keşelər də azat həm üz abruyları həm xoquqları yağınnan tiꞑ bulıp tualar.\nAlarğa aqıl həm wocdan birelgən həm ber-bersenə qarata tuğannarça monasəbəttə bulırğa tieşlər."
+  # https://www.azatliq.org/a/30820571.html
+   "Әлдермештән Әлмәндәр" ->  "Əldermeştən Əlməndər"
+   "Әссәламү галәйкүм" ->  "Əssəlamü ğaləyküm"
+   "Танымаган кешегә" ->  "Tanımağan keşegə" # note[3]
+   "Иң әүвәл кул бирешеп күрешик" ->  "İꞑ əwwəl qul bireşep küreşiq" # note[5]
+   "Ялгышмыйсың" ->  "Yalğışmıysıꞑ"
+   "Нәкъ үзе" ->  "Nəq üze"
+   "Кирәгеннән артыгын" ->  "Kirəgennən artığın" # note[3]
+   "мәңгелеккә килмәгән" ->  "məꞑgeleqkə kilməgən"
+   "кулыңны куй" ->  "qulıꞑnı quy"
+   "Өммия" ->  "Ommiä" # note[8]
+   "Җиһангир" ->  "Cihangir" # note[3]
+}
+
+stage main {
+
+  # RULES
+  # note[3] http://www.hintfox.com/article/sistema-glasnih-zvykov-na-tatarskom-i-anglijskom-jazikah.html
+  # back vowels: у, а, ы, о,
+  # front vowels: е, ә, и, ө, ү, э
+  sub {
+    from "Г"
+    to "G"
+    after any("ЕеƏәИиӨөҮүЭэ")
+  }
+  sub {
+    from "г"
+    to "g"
+    after any("ЕеƏәИиӨөҮүЭэ")
+  }
+  sub {
+    from "К"
+    to "K"
+    after any("ЕеƏәИиӨөҮүЭэ")
+  }
+  sub {
+    from "к"
+    to "k"
+    after any("ЕеƏәИиӨөҮүЭэ")
+  }
+  sub {
+    from "Ю"
+    to "Yü"
+    after any("ЕеƏәИиӨөҮүЭэ")
+  }
+  sub {
+    from "ю"
+    to "yü"
+    after any("ЕеƏәИиӨөҮүЭэ")
+  }
+  sub {
+    from "Я"
+    to "Yä"
+    after any("ЕеƏәИиӨөҮүЭэ")
+  }
+  sub {
+    from "я"
+    to "yä"
+    after any("ЕеƏәИиӨөҮүЭэ")
+  }
+
+  # note[4]
+  sub {
+    from "\u0415"
+    to "Yı"
+    before any("АаЕеƏәОоӨөҮүУуЫыЭэЯяЪъЬь")
+  }
+  sub {
+    from "\u0435"
+    to "yı"
+    before any("АаЕеƏәОоӨөҮүУуЫыЭэЯяЪъЬь")
+  }
+
+  # note[5]
+  sub {
+    from "\u0423"
+    to "W"
+    before any("АаЕеƏәИиОоӨөҮүУуЫыЭэЮюЯяЪъЬь")
+  }
+  sub {
+    from "\u0443"
+    to "w"
+    before any("АаЕеƏәИиОоӨөҮүУуЫыЭэЮюЯяЪъЬь")
+  }
+  sub {
+    from "\u04AE"
+    to "W"
+    before any("АаЕеƏәИиОоӨөҮүУуЫыЭэЮюЯяЪъЬь")
+  }
+  sub {
+    from "\u04AF"
+    to "w"
+    before any("АаЕеƏәИиОоӨөҮүУуЫыЭэЮюЯяЪъЬь")
+  }
+
+  # note[6]
+  sub {
+    from "ый"
+    to "i"
+    before any("Гг")
+  }
+
+  # note[8]
+  sub {
+    from "\u042E"
+    to "Ü"
+    before any("Ии")
+  }
+  sub {
+    from "\u044E"
+    to "ü"
+    before any("Ии")
+  }
+  sub {
+    from "\u042F"
+    to "Ä"
+    before any("Ии")
+  }
+  sub {
+    from "\u044F"
+    to "ä"
+    before any("Ии")
+  }
+
+
+  # CHARACTERS
+  parallel {
+    sub "А" "A"
+    sub {
+    from "Ә"
+    to any("ƏÄ")
+  }
+    sub "Б" "B"
+    sub {
+    from "В"
+    to any("WV")
+  }
+    sub "Г" "Ğ"
+    sub "Д" "D"
+    sub "Е" "E"
+    sub "Ж" "J"
+    sub "Җ" "C"
+    sub "З" "Z"
+    sub "И" "İ"
+    sub "Й" "Y"
+    sub "К" "Q"
+    sub "Л" "L"
+    sub "М" "M"
+    sub "Н" "N"
+    sub {
+    from "Ң"
+    to any("ꞐÑ")
+  }
+    sub "О" "O"
+    sub {
+    from "Ө"
+    to any("OÖ")
+  }
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "У" "U"
+    sub "Ү" "Ü"
+    sub "Ф" "F"
+    sub "Х" "Х"
+    sub "Һ" "H"
+    sub "Ц" "Ts"
+    sub "Ч" "Ç"
+    sub "Ш" "Ş"
+    sub "Щ" "ŞÇ"
+    sub "Ъ" ""
+    sub "Ы" "I"
+    sub "Ь" "’"
+    sub "Э" "E"
+    sub "Ю" "Yu"
+    sub "Я" "Ya"
+
+    sub "\u0430" "a"
+    sub {
+    from "\u04D9"
+    to any("əä")
+  }
+    sub "\u0431" "b"
+    sub {
+    from "\u0432"
+    to any("wv")
+  }
+    sub "\u0433" "ğ"
+    sub "\u0434" "d"
+    sub "\u0435" "e"
+    sub "\u0436" "j"
+    sub "\u0497" "c"
+    sub "\u0437" "z"
+    sub "\u0438" "i"
+    sub "\u0439" "y"
+    sub "\u043A" "q"
+    sub "\u043B" "l"
+    sub "\u043C" "m"
+    sub "\u043D" "n"
+    sub {
+    from "\u04A3"
+    to any("ꞑñ")
+  }
+    sub "\u043E" "o"
+    sub {
+    from "\u04E9"
+    to any("oö")
+  }
+    sub "\u043F" "p"
+    sub "\u0440" "r"
+    sub "\u0441" "s"
+    sub "\u0442" "t"
+    sub "\u0443" "u"
+    sub "\u04AF" "ü"
+    sub "\u0444" "f"
+    sub "\u0445" "x"
+    sub "\u04BB" "h"
+    sub "\u0446" "ts"
+    sub "\u0447" "ç"
+    sub "\u0448" "ş"
+    sub "\u0449" "şç"
+    sub "ъ" ""
+    sub "\u044B" "ı"
+    sub "ь" "’"
+    sub "\u044D" "e"
+    sub "\u044E" "yu"
+    sub "\u044F" "ya"
+  }
+
+}
+}

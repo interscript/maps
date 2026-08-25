@@ -1,0 +1,221 @@
+system "ISO:kor-Hang:Latn:1996-method1" {
+
+metadata {
+  authority_id iso
+  id 1996-method1
+  language iso-639-2:kor
+  source_script Hang
+  destination_script Latn
+  name "ISO/TR 11941:1996 Information and documentation -- Transliteration of Korean script into Latin characters (Method 1)"
+  url https://www.iso.org/standard/20564.html
+  creation_date 1996
+  adoption_date ""
+  description {    Establishes a system for the transliteration of the characters of Korean script into Latin characters.
+    Intended to provide a means for international communication of written documents.
+  }
+
+  notes { }
+}
+
+tests {
+  # Tests from https://www.eki.ee/wgrs/rom2_ko.pdf
+   "꽃이" ->  "kkoch'i" # Bad OCR
+   "강에" ->  "kang'e"
+   "앉아라" ->  "anc'ara"
+   "아까" ->  "a'kka"
+   "흰떡" ->  "hyin'tteok"
+   "유쾌하다" ->  "yu'khwaehata"
+
+  # Tests from https://github.com/interscript/interscript/files/5249245/ISO-TR-11941-1996.pdf
+   "애기" ->  "aeki"
+   "방" ->  "pang"
+   "아이" ->  "a'i"
+   "고양이" ->  "ko'yang'i"
+   "굽이" ->  "kup'i"
+   "밖에" ->  "pakk'e"
+   "박게" ->  "pakke"
+   "바께" ->  "pa'kke"
+   "간게" ->  "kanke"
+   "안자라" ->  "ancara"
+   "오빠" ->  "o'ppa"
+   "어찌" ->  "eo'cci"
+   "아씨" ->  "a'ssi"
+   "애타다" ->  "ae'thata"
+   "아프다" ->  "a'pheuta"
+   "기차다" ->  "ki'chata"
+   "동녘에" ->  "tongnyeokh'e"
+   "같이" ->  "kath'i"
+   "앞에" ->  "aph'e"
+   "꽃에" ->  "kkoch'e"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+   "평양" ->  "phyeong'yang"
+   "서울" ->  "seo'ul"
+}
+
+dependency "var-kor"
+dependency "var-kor-Hang-Hang-jamo" as hangjamo
+
+stage main {
+  run  map.hangjamo.stage.main
+
+  # Marks A, B, C
+  sub {
+    from "ᄋ"
+    to ""
+    not_before jamo
+  }
+  sub "ᄋ" "'"
+  sub "ᆼ" "ng"
+
+  # Note 4: add apostrophe before 5 double consonants at initial position
+  #         unless start of the word
+  sub {
+    from none
+    to "'"
+    before jamo
+    after double_cons_jamo
+  }
+  # Note 4: (only method 1) same but with 4 aspirated
+  sub {
+    from none
+    to "'"
+    before jamo
+    after aspirated_cons_jamo
+  }
+
+  # Those rules may be executed in parallel for performance gains
+  parallel {
+    # Consonants differing between method1 and method2
+    sub {
+    from any("ᄀᆨ")
+    to "k"
+  }
+    sub {
+    from any("ᄏᆿ")
+    to "kh"
+  }
+    sub {
+    from any("ᄁᆩ")
+    to "kk"
+  }
+    sub {
+    from any("ᄃᆮ")
+    to "t"
+  }
+    sub {
+    from any("ᄐᇀ")
+    to "th"
+  }
+    sub {
+    from any("ᄄퟍ")
+    to "tt"
+  }
+    sub {
+    from any("ᄇᆸ")
+    to "p"
+  }
+    sub {
+    from any("ᄑᇁ")
+    to "ph"
+  }
+    sub {
+    from any("ᄈퟦ")
+    to "pp"
+  }
+    sub {
+    from any("ᄌᆽ")
+    to "c"
+  }
+    sub {
+    from any("ᄎᆾ")
+    to "ch"
+  }
+    sub {
+    from any("ᄍퟹ")
+    to "cc"
+  }
+    # End
+
+    # Composite differing consonants (cons. https://en.wikipedia.org/wiki/ISO/TR_11941
+    sub "ᆪ" "ks"
+    sub "ꥤ" "rk"
+    sub "ᆰ" "lk"
+    sub "ᆴ" "lth"
+    sub "ꥩ" "rp"
+    sub "ᆲ" "lp"
+    sub "ᆵ" "lph"
+    sub {
+    from any("ᅜᆬ")
+    to "nc"
+  }
+    sub {
+    from any("ᄡᆹ")
+    to "ps"
+  }
+    # End
+
+    # Other consonants
+    sub {
+    from any("ᄉᆺ")
+    to "s"
+  }
+    sub {
+    from any("ᄊᆻ")
+    to "ss"
+  }
+    sub {
+    from any("ᄒᇂ")
+    to "h"
+  }
+    sub {
+    from any("ᄂᆫ")
+    to "n"
+  }
+    sub "ᄅ" "r"
+    sub "ᆯ" "l"
+    sub {
+    from any("ᄆᆷ")
+    to "m"
+  }
+    # End
+
+    # Other composite consonants (cons. https://en.wikipedia.org/wiki/ISO/TR_11941 )
+    sub "ꥬ" "rs"
+    sub "ᆳ" "ls"
+    sub "ꥨ" "rm"
+    sub "ᆱ" "lm"
+    sub "ᄚ" "rh"
+    sub "ᆶ" "lh"
+    sub {
+    from any("ᅝᆭ")
+    to "nh"
+  }
+    # End
+
+    # Vowels
+    sub "ᅡ" "a"
+    sub "ᅥ" "eo"
+    sub "ᅩ" "o"
+    sub "ᅮ" "u"
+    sub "ᅳ" "eu"
+    sub "ᅵ" "i"
+    sub "ᅢ" "ae"
+    sub "ᅦ" "e"
+    sub "ᅬ" "oe"
+    sub "ᅣ" "ya"
+    sub "ᅧ" "yeo"
+    sub "ᅭ" "yo"
+    sub "ᅲ" "yu"
+    sub "ᅤ" "yae"
+    sub "ᅨ" "ye"
+    sub "ᅪ" "wa"
+    sub "ᅯ" "weo"
+    sub "ᅱ" "wi"
+    sub "ᅫ" "wae"
+    sub "ᅰ" "we"
+    sub "ᅴ" "yi"
+    # End
+  }
+}
+}

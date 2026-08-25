@@ -1,0 +1,100 @@
+system "UN:rus-Cyrl:Latn:1987" {
+
+metadata {
+  authority_id un
+  id 1987
+  language iso-639-2:rus
+  source_script Cyrl
+  destination_script Latn
+  name Romanization of Russian (1987)
+  url http://www.eki.ee/wgrs/rom1_ru.htm
+  creation_date 1987
+  confirmation_date 2016
+  description {    The United Nations recommended system was approved in 1987 (V/18),
+    based on the official system of the Main Administration of Geodesy and
+    Cartography of the former Soviet Union, also known as the GOST 1983
+    system (GOST 16876-71). The table was published as an annex to the
+    resolution.
+
+    The system is used in the Russian Federation and increasingly in
+    international cartographic products.
+
+    Russian uses the Cyrillic script which is alphabetic. The
+    romanization table is unambiguous and can be applied automatically. The
+    system is reversible, although rarely there can be ambiguities.
+  }
+
+  notes {
+    note "Cursive forms of some characters might be formed differently: Аа Бб\n Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш\n Щщ Ъъ Ыы Ьь Ээ Юю Яя."
+
+    note "Fifth United Nations Conference on the Standardization of\n Geographical Names. Montreal, 18–31 August 1987. Vol. I. Report of the\n Conference, pp. 40–41."
+  }
+}
+
+tests {
+   "Aнaпa" ->  "Anapa"
+   "Бaбушкин" ->  "Babuškin"
+   "Вaвилово" ->  "Vavilovo"
+   "Гaгaрин" ->  "Gagarin"
+   "Дудинкa" ->  "Dudinka"
+   "Елисeeвкa" ->  "Eliseevka"
+   "Ёлкино" ->  "Ëlkino"
+   "Псëл" ->  "Psël"
+   "Жужa" ->  "Žuža"
+   "Звëздный" ->  "Zvëzdnyj"
+   "Идрицa" ->  "Idrica"
+   "Зaрaйск" ->  "Zarajsk"
+   "Кокaнд" ->  "Kokand"
+   "Лaлвaр" ->  "Lalvar"
+   "Мaймaк" ->  "Majmak"
+   "Нeжин" ->  "Nežin"
+   "Обoдoвкa" ->  "Obodovka"
+   "Пaп" ->  "Pap"
+   "Рeбрихa" ->  "Rebriha"
+   "Сaсoвo" ->  "Sasovo"
+   "Тaттa" ->  "Tatta"
+   "Уржум" ->  "Uržum"
+   "Фoфaнoвo" ->  "Fofanovo"
+   "Хoхломa" ->  "Hohloma"
+   "Цвeткoвo" ->  "Cvetkovo"
+   "Чeчeльник" ->  "Čečel’nik"
+   "Шишкинo" ->  "Šiškino"
+   "Щукинo" ->  "Ščukino"
+   "Пoдъячeвo" ->  "Pod”jačevo"
+   "Ыныкчaнский" ->  "Ynykčanskij"
+   "Пaрaньгa" ->  "Paran’ga"
+   "Кaзaнь" ->  "Kazan’"
+   "Щучьe" ->  "Ščuč’e"
+   "Элистa" ->  "Èlista"
+   "Юринo" ->  "Jurino"
+   "Юхнoв" ->  "Juhnov"
+   "Юрюзaнь" ->  "Jurjuzan’"
+   "Ямaл" ->  "Jamal"
+   "Язъявaн" ->  "Jaz”javan"
+   "Яя" ->  "Jaja"
+   "Вязьмa" ->  "Vjaz’ma"
+
+  # UN card tests
+   "Россия" ->  "Rossija"
+   "Москва" ->  "Moskva"
+}
+
+dependency "gost-rus-Cyrl-Latn-16876-71-1983" as cyrllatn
+
+
+stage main {
+  # CHARACTERS
+  parallel {
+    sub "\u042A" "”"
+    sub "\u042C" "’"
+    sub "\u044A" "”"
+    sub "\u044C" "’"
+    sub "\u042E" "Ju"
+    sub "\u044E" "ju"
+    sub "\u042F" "Ja"
+    sub "\u044F" "ja"
+  }
+
+  run  map.cyrllatn.stage.main
+}
+}

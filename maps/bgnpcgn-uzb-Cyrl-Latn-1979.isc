@@ -1,0 +1,221 @@
+system "BGN-PCGN:uzb-Cyrl:Latn:1979" {
+
+metadata {
+  authority_id bgnpcgn
+  id 1979
+  language iso-639-2:uzb
+  source_script Cyrl
+  destination_script Latn
+  name Romanization of Uzbek Cyrillic (1979)
+  url http://transliteration.eki.ee/pdf/Uzbek.pdf
+  creation_date 1979
+
+  notes {
+    note "At the beginning of a syllable, after a vowel, ъ or ь."
+  }
+}
+
+tests {
+  # https://ru.wikipedia.org/wiki/Узбекский_язык
+   "Ўзбек ёзуви" ->  "Ŭzbek yozuwi"
+   "Ўзбек тили" ->  "Ŭzbek tili"
+   "катта" ->  "katta"
+   "куп" ->  "kup"
+   "кальта" ->  "kalʼta"
+   "Бори элға яхшилик қилғилки, мундин яхши йўқ Ким, дегайлар даҳр аро қолди фалондин яхшилик" ->  "Bori elgha yakhshilik qilghilki, mundin yakhshi yŭq Kim, degaylar dahr aro qoldi falondin yakhshilik"
+   "Бахр ул-худо" ->  "Bakhr ul-khudo"
+   "Рисале-йи маариф-и Шейбани" ->  "Risale-yi maarif-i Sheybani"
+   "Карами Хакка нихоят йукдур" ->  "Karami Khakka nikhoyat yukdur"
+   "Йахши" ->  "Yakhshi"
+   "Тутук белгись" ->  "Tutuk belgisʼ"
+   "Барча одамлар эркин, қадр-қиммат ва ҳуқуқларда тенг бўлиб туғиладилар.\nУлар ақл ва виждон соҳибидирлар ва бир-бирлари ила биродарларча муомала қилишлари зарур." ->  "Barcha odamlar erkin, qadr-qimmat wa huquqlarda teng bŭlib tughiladilar.\nUlar aql wa wizhdon sohibidirlar wa bir-birlari ila birodarlarcha muomala qilishlari zarur."
+   "ПАПАПАЧУКА Респект!" ->  "PAPAPACHUKA Respekt!"
+}
+
+aliases {
+
+uzbek_upper = any("\u0410\u0411\u0412\u0413\u0492\u0414\u0415\u0401\u0416\u0417\u0418\u0419\u041A\u049A\u041B\u041C\u041D\u041E\u041F\u0420\u0421\u0422\u0423\u040E\u0424\u04B2\u0426\u0427\u0428\u042a\u042c\u042D\u042E\u042F")
+
+}
+
+stage main {
+
+  # RULES
+  # note[1]
+  sub {
+    from "\u0415"
+    to "Ye"
+    before any("АаЕеЁёИиОоУуЭэЮюЯяЪъЬь")
+  }
+  sub {
+    from "\u0435"
+    to "ye"
+    before any("АаЕеЁёИиОоУуЭэЮюЯяЪъЬь")
+  }
+
+
+  # CHARACTERS
+  parallel {
+    sub "\u0410" "A"
+    sub "\u0411" "B"
+    sub "\u0412" "W"
+    sub "\u0413" "G"
+    sub "\u0492" "Gh"
+    sub "\u0414" "D"
+    sub "\u0415" "E"
+    sub "\u0401" "Yo"
+    sub {
+    from "\u0401"
+    to "YO"
+    after any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ")
+  }
+    sub {
+    from "\u0401"
+    to "YO"
+    before any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ")
+  }
+
+    sub "\u0416" "Zh"
+    sub {
+    from "\u0416"
+    to "ZH"
+    after any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ")
+  }
+    sub {
+    from "\u0416"
+    to "ZH"
+    before any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ")
+  }
+
+    sub "\u0417" "Z"
+    sub "\u0418" "I"
+    sub "\u0419" "Y"
+    sub "\u041A" "K"
+    sub "\u049A" "Q"
+    sub "\u041B" "L"
+    sub "\u041C" "M"
+    sub "\u041D" "N"
+    sub "\u041E" "O"
+    sub "\u041F" "P"
+    sub "\u0420" "R"
+    sub "\u0421" "S"
+    sub "\u0422" "T"
+    sub "\u0423" "U"
+    sub "\u040E" "Ŭ"
+    sub "\u0424" "F"
+    sub "\u0425" "Kh"
+    sub {
+    from "\u0425"
+    to "KH"
+    after any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ")
+  }
+    sub {
+    from "\u0425"
+    to "KH"
+    before any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ")
+  }
+
+    sub "\u04B2" "H"
+    sub "\u0426" "Ts"
+    sub {
+    from "\u0426"
+    to "TS"
+    after any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ")
+  }
+    sub {
+    from "\u0426"
+    to "TS"
+    before any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ")
+  }
+
+    sub "\u0427" "Ch"
+    sub {
+    from "\u0427"
+    to "CH"
+    after any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ")
+  }
+    sub {
+    from "\u0427"
+    to "CH"
+    before any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ")
+  }
+
+    sub "\u0428" "Sh"
+    sub {
+    from "\u0428"
+    to "SH"
+    after any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ")
+  }
+    sub {
+    from "\u0428"
+    to "SH"
+    before any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ")
+  }
+
+    sub "\u042a" "ʼ"
+    sub "\u042c" "ʼ"
+    sub "\u042D" "E"
+    sub "\u042E" "Yu"
+    sub {
+    from "\u042E"
+    to "YU"
+    after any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ")
+  }
+    sub {
+    from "\u042E"
+    to "YU"
+    before any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ")
+  }
+
+    sub "\u042F" "Ya"
+    sub {
+    from "\u042F"
+    to "YA"
+    after any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ")
+  }
+    sub {
+    from "\u042F"
+    to "YA"
+    before any("АБВГҒДЕЁЖЗИЙКҚЛМНОПРСТУЎФҲЦЧШЪЬЭЮЯ")
+  }
+
+    sub "\u0430" "a"
+    sub "\u0431" "b"
+    sub "\u0432" "w"
+    sub "\u0433" "g"
+    sub "\u0493" "gh"
+    sub "\u0434" "d"
+    sub "\u0435" "e"
+    sub "\u0451" "yo"
+    sub "\u0436" "zh"
+    sub "\u0437" "z"
+    sub "\u0438" "i"
+    sub "\u0439" "y"
+    sub "\u043A" "k"
+    sub "\u049B" "q"
+    sub "\u043B" "l"
+    sub "\u043C" "m"
+    sub "\u043D" "n"
+    sub "\u043E" "o"
+    sub "\u043F" "p"
+    sub "\u0440" "r"
+    sub "\u0441" "s"
+    sub "\u0442" "t"
+    sub "\u0443" "u"
+    sub "\u045E" "ŭ"
+    sub "\u0444" "f"
+    sub "\u0445" "kh"
+    sub "\u04B3" "h"
+    sub "\u0446" "ts"
+    sub "\u0447" "ch"
+    sub "\u0448" "sh"
+    sub "\u044a" "ʼ"
+    sub "\u044c" "ʼ"
+    sub "\u044D" "e"
+    sub "\u044F" "ya"
+    sub "\u044E" "yu"
+  }
+
+}
+
+}

@@ -1,0 +1,1619 @@
+system "VAR:kor-Hang:Latn:mr-1939" {
+
+metadata {
+  authority_id var
+  id mr-1939
+  language iso-639-2:kor
+  source_script Hang
+  destination_script Latn
+  name McCune-Reischauer System (Hangul-Latin)
+  url 
+  creation_date 1939
+  adoption_date 
+  description { E. O. Reischauer and G. M. McCune The Romanization of the Korean Language Based on Its Phonetic Structure. XXIX:1-55. Korea Branch of the Royal Asiatic Society. Volume XXIX (PDF) }
+  notes {
+    This file only handles Hangul to Latin.
+  }
+}
+
+tests {
+   "구경" ->  "kugyŏng"
+   "금광" ->  "kŭmgwang"
+   "뎐기" ->  "chŏn’gi"
+   "양국" ->  "yangguk"
+   "물건" ->  "mulgŏn"
+   "국민" ->  "kungmin"
+   "막내" ->  "mangnae"
+   "작란" ->  "changnan"
+   "락심" ->  "naksim"
+   "합계" ->  "hapkye"
+   "각각" ->  "kakkak"
+   "속히" ->  "sokhi"
+   "독" ->  "tok"
+   "니" ->  "i"
+   "녀인" ->  "yŏin"
+   "녯적" ->  "yetchŏk"
+   "날" ->  "nal"
+   "농민" ->  "nongmin"
+   "얼는" ->  "ŏllŭn"
+   "련락" ->  "yŏllak"
+   "하나님" ->  "hananim"
+   "한문" ->  "hanmun"
+   "산" ->  "san"
+   "디방" ->  "chibang"
+   "다섯" ->  "tasŏt"
+   "뎐디" ->  "chŏnji"
+   "슈뎐" ->  "sujŏn"
+   "감뎡" ->  "kamjŏng"
+   "당됴" ->  "tangjo"
+   "무당" ->  "mudang"
+   "어드메" ->  "ŏdŭme"
+   "삼등" ->  "samdŭng"
+   "만두" ->  "mandu"
+   "앵도" ->  "aengdo"
+   "약됴" ->  "yakcho"
+   "박디" ->  "pakchi"
+   "협뎡" ->  "hyŏpchŏng"
+   "일뎡" ->  "ilchŏng"
+   "놋뎜" ->  "notchŏm"
+   "벽돌" ->  "pyŏktol"
+   "합동" ->  "haptong"
+   "열도" ->  "yŏlto"
+   "잇다가" ->  "ittaga"
+   "린근" ->  "in’gŭn"
+   "력사" ->  "yŏksa"
+   "령반" ->  "yŏngban"
+   "락뎨" ->  "nakche"
+   "마루" ->  "maru"
+   "일홈" ->  "irhom"
+   "할머니" ->  "halmŏni"
+   "신라" ->  "silla"
+   "물리학" ->  "mullihak"
+   "죵로" ->  "chongno"
+   "독립" ->  "tongnip"
+   "십리" ->  "simni"
+   "발" ->  "pal"
+   "말" ->  "mal"
+   "나무" ->  "namu"
+   "음식" ->  "ŭmsik"
+   "밤" ->  "pam"
+   "사발" ->  "sabal"
+   "담배" ->  "tambae"
+   "준비" ->  "chunbi"
+   "갈비" ->  "kalbi"
+   "십명" ->  "simmyŏng"
+   "입내" ->  "imnae"
+   "셥리" ->  "sŏmni"
+   "답장" ->  "tapchang"
+   "약방" ->  "yakpang"
+   "뎝시" ->  "chŏpsi"
+   "밥" ->  "pap"
+   "쉽다" ->  "shwipta"
+   "손쉽다" ->  "sonshwipta"
+   "목사" ->  "moksa"
+   "랭슈" ->  "naengsu"
+   "무식" ->  "musik"
+   "겻슌" ->  "kyŏssun"
+   "갓사기" ->  "kassagi"
+   "갓모" ->  "kanmo"
+   "잣나비" ->  "channabi"
+   "닷량" ->  "tannyang"
+   "잇해" ->  "ithae"
+   "졋통" ->  "chŏtt’ong"
+   "낫잠" ->  "natcham"
+   "붓채" ->  "putch’ae"
+   "갓방" ->  "katpang"
+   "엿가락" ->  "yŏtkarak"
+  # - source: "밋음"      # Obsolete
+  #   expected: "midŭm"
+  # - source: "깃브다"      # Obsolete
+  #   expected: "kippŭda"
+  # - source: "엇개"      # Obsolete
+  #   expected: "ŏkkae"
+   "갓" ->  "kat"
+   "알" ->  "al"
+   "독일" ->  "togil"
+   "농민" ->  "nongmin"
+   "방" ->  "pang"
+   "장" ->  "chang"
+   "도쟝" ->  "tojang"
+   "감자" ->  "kamja"
+   "민족" ->  "minjok"
+   "명지" ->  "myŏngji"
+   "목쟝" ->  "mokchang"
+   "압집" ->  "apchip"
+   "물질" ->  "mulchil"
+   "차" ->  "ch’a"
+   "김치" ->  "kimch’i"
+   "코" ->  "k’o"
+   "왜콩" ->  "waek’ong"
+   "텬당" ->  "ch’ŏndang"
+   "타산" ->  "t’asan"
+   "토끼" ->  "t’okki"
+   "동텰" ->  "tongch’ŏl"
+   "조타" ->  "chot’a"
+   "팔" ->  "p’al"
+   "셔판" ->  "sŏp’an"
+   "하나" ->  "hana"
+   "만히" ->  "manhi"
+   "학회" ->  "hakhoe"
+   "깍지" ->  "kkakchi"
+   "박꼿" ->  "pakkot"
+   "땅" ->  "ttang"
+   "허리띠" ->  "hŏritti"
+   "엿때" ->  "yŏttae"
+   "뿌리" ->  "ppuri"
+   "쇠뿔" ->  "soeppul"
+   "쓰다" ->  "ssŭda"
+   "콩씨" ->  "k’ongssi"
+   "좁쌀" ->  "chopssal"
+   "갓싸기" ->  "kassagi"
+   "짜르다" ->  "tcharŭda"
+   "꼼짝" ->  "kkomtchak"
+   "밋짝" ->  "mitchak"
+   "갉이" ->  "kalgi"
+   "멁금하다" ->  "mŏlgŭmhada" # Example gives mŏlk-, but spec requires mŏlg-
+   "얽매다" ->  "ŏngmaeda"
+   "붉히다" ->  "pulkhida"
+   "긁적대다" ->  "kŭkchŏktaeda"
+   "닭" ->  "tak"
+   "넓이" ->  "nŏlbi"
+   "얇판하다" ->  "yalp’anhada"
+   "넓나물" ->  "nŏmnamul"
+   "슯흠" ->  "sŭlphŭm"
+   "넓치" ->  "nŏpch’i"
+   "얾마가다" ->  "ŏlmagada"
+   "긂기다" ->  "kŭmgida"
+}
+
+dependency "var-kor-Hang-Hang-jamo" as hanghang
+
+aliases {
+  kor_beforeterm = any([any("A".."Z"), any("a".."z"), any("0".."9"), any("ᅡᅢᅣᅤᅥᅦᅧᅨᅩᅪᅫᅬᅭᅮᅯᅰᅱᅲᅳᅴᅵ")])
+
+  kor_maybedash = capture(maybe("-"))
+}
+
+stage main {
+  run  map.hanghang.stage.main
+
+  # RULES
+
+
+  # POSTRULES
+
+  # Add space to the two ends of the string for easier word boundary handling
+  sub line_start " "
+  sub line_end " "
+
+  # HANGUL JONGSEONG SSANGKIYEOK
+  sub {
+    from "ᆩ" + kor_maybedash + "ᄋ"
+    to "ᆨ" + ref( 1 ) + "ᄁ"
+  }
+  sub {
+    from "ᆩ" + kor_maybedash
+    to "ᆨ" + ref( 1 )
+  }
+
+  # HANGUL JONGSEONG SSANGKIYEOK
+  sub {
+    from "ᆪ" + kor_maybedash + "ᄋ"
+    to "ᆨ" + ref( 1 ) + "ᄉ"
+  }
+  sub {
+    from "ᆪ" + kor_maybedash
+    to "ᆨ" + ref( 1 )
+  }
+
+  # HANGUL JONGSEONG NIEUN-CIEUC
+  sub {
+    from "ᆬ" + kor_maybedash + "ᄋ"
+    to "ᆫ" + ref( 1 ) + "ᄌ"
+  }
+  sub {
+    from "ᆬ" + kor_maybedash
+    to "ᆫ" + ref( 1 )
+  }
+
+  # HANGUL JONGSEONG NIEUN-CIEUC
+  sub {
+    from "ᆭ" + kor_maybedash + "ᄀ"
+    to "ᆫ" + ref( 1 ) + "ᄏ"
+  }
+  sub {
+    from "ᆭ" + kor_maybedash + "ᄃ"
+    to "ᆫ" + ref( 1 ) + "ᄐ"
+  }
+  sub {
+    from "ᆭ" + kor_maybedash + "ᄇ"
+    to "ᆫ" + ref( 1 ) + "ᄑ"
+  }
+  sub {
+    from "ᆭ" + kor_maybedash + "ᄌ"
+    to "ᆫ" + ref( 1 ) + "ᄎ"
+  }
+  sub {
+    from "ᆭ" + kor_maybedash
+    to "ᆫ" + ref( 1 )
+  }
+
+  # HANGUL JONGSEONG TIEUT
+  sub {
+    from "ᆮ" + kor_maybedash
+    to "ᆺ" + ref( 1 )
+    after any("ᄀᄁᄂᄃᄄᄅᄆᄇᄈᄉᄊᄌᄍᄎᄏᄐᄑᄒ")
+  }
+
+  # HANGUL JONGSEONG RIEUL-SIOS
+  sub {
+    from "ᆳ" + kor_maybedash + "ᄋ"
+    to "ᆯ" + ref( 1 ) + "ᄉ"
+  }
+  sub {
+    from "ᆳ" + kor_maybedash
+    to "ᆯ" + ref( 1 )
+  }
+
+  # HANGUL JONGSEONG RIEUL-THIEUTH
+  sub {
+    from "ᆴ" + kor_maybedash + "ᄋ"
+    to "ᆯ" + ref( 1 ) + "ᄐ"
+  }
+  sub {
+    from "ᆴ" + kor_maybedash
+    to "ᆯ" + ref( 1 )
+  }
+
+  # HANGUL JONGSEONG RIEUL-PHIEUPH
+  sub {
+    from "ᆵ" + kor_maybedash + "ᄋ"
+    to "ᆯ" + ref( 1 ) + "ᄑ"
+  }
+  sub {
+    from "ᆵ" + kor_maybedash
+    to "ᆯ" + ref( 1 )
+    after any("ᄃᄄᄐ")
+  }
+  sub {
+    from "ᆵ" + kor_maybedash
+    to "ᄇ" + ref( 1 )
+  }
+
+  # HANGUL JONGSEONG RIEUL-HIEUH
+  sub {
+    from "ᆶ" + kor_maybedash + "ᄀ"
+    to "ᆯ" + ref( 1 ) + "ᄏ"
+  }
+  sub {
+    from "ᆶ" + kor_maybedash + "ᄃ"
+    to "ᆯ" + ref( 1 ) + "ᄐ"
+  }
+  sub {
+    from "ᆶ" + kor_maybedash + "ᄇ"
+    to "ᆯ" + ref( 1 ) + "ᄑ"
+  }
+  sub {
+    from "ᆶ" + kor_maybedash + "ᄌ"
+    to "ᆯ" + ref( 1 ) + "ᄎ"
+  }
+  sub {
+    from "ᆶ" + kor_maybedash
+    to "ᆯ" + ref( 1 )
+  }
+
+  # HANGUL JONGSEONG PIEUP-SIOS
+  sub {
+    from "ᆹ" + kor_maybedash + "ᄋ"
+    to "ᄇ" + ref( 1 ) + "ᄉ"
+  }
+  sub {
+    from "ᆹ" + kor_maybedash
+    to "ᄇ" + ref( 1 )
+  }
+
+  # HANGUL JONGSEONG SSANG-SIOS
+  sub {
+    from "ᆻ" + kor_maybedash + "ᄋ"
+    to "ᆺ" + ref( 1 ) + "ᄊ"
+  }
+  sub {
+    from "ᆻ" + kor_maybedash
+    to "ᆺ" + ref( 1 )
+  }
+
+  # HANGUL JONGSEONG CIEUC
+  sub {
+    from "ᆽ" + kor_maybedash + "ᄋ"
+    to "ᆺ" + ref( 1 ) + "ᄌ"
+  }
+  sub {
+    from "ᆽ" + kor_maybedash
+    to "ᆺ" + ref( 1 )
+  }
+
+  # HANGUL JONGSEONG CHIEUCH
+  sub {
+    from "ᆾ" + kor_maybedash + "ᄋ"
+    to "ᆺ" + ref( 1 ) + "ᄎ"
+  }
+  sub {
+    from "ᆾ" + kor_maybedash
+    to "ᆺ" + ref( 1 )
+  }
+
+  # HANGUL JONGSEONG KHIEUKH
+  sub {
+    from "ᆿ" + kor_maybedash + "ᄋ"
+    to "ᆨ" + ref( 1 ) + "ᄏ"
+  }
+  sub {
+    from "ᆿ" + kor_maybedash
+    to "ᆨ" + ref( 1 )
+  }
+
+  # HANGUL JONGSEONG THIEUTH
+  sub {
+    from "ᇀ" + kor_maybedash + "ᄋ"
+    to "ᆺ" + ref( 1 ) + "ᄐ"
+  }
+  sub {
+    from "ᇀ" + kor_maybedash
+    to "ᆺ" + ref( 1 )
+  }
+
+  # HANGUL JONGSEONG PHIEUPH
+  sub {
+    from "ᇁ" + kor_maybedash + "ᄋ"
+    to "ᆸ" + ref( 1 ) + "ᄑ"
+  }
+  sub {
+    from "ᇁ" + kor_maybedash
+    to "ᆸ" + ref( 1 )
+  }
+
+  # HANGUL JONGSEONG HIEUH
+  sub {
+    from "ᇂ" + kor_maybedash + "ᄀ"
+    to ref( 1 ) + "ᄏ"
+  }
+  sub {
+    from "ᇂ" + kor_maybedash + "ᄃ"
+    to ref( 1 ) + "ᄐ"
+  }
+  sub {
+    from "ᇂ" + kor_maybedash + "ᄇ"
+    to ref( 1 ) + "ᄑ"
+  }
+  sub {
+    from "ᇂ" + kor_maybedash + "ᄌ"
+    to ref( 1 ) + "ᄎ"
+  }
+  sub {
+    from "ᇂ" + kor_maybedash
+    to ref( 1 )
+  }
+
+  # From Unicode Chart
+  # https://github.com/unicode-org/cldr/blob/master/common/transforms/Korean-Latin-BGN.xml
+
+  sub {
+    from "ᆮ" + kor_maybedash + "ᄋ"
+    to ref( 1 ) + "d"
+  }
+
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄀ"
+    to "k" + ref( 1 ) + "k"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄂ"
+    to "ng" + ref( 1 ) + "n"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄃ"
+    to "k" + ref( 1 ) + "ch"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄃ"
+    to "k" + ref( 1 ) + "t"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄅ"
+    to "ng" + ref( 1 ) + "n"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄆ"
+    to "ng" + ref( 1 ) + "m"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄇ"
+    to "k" + ref( 1 ) + "p"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄉ"
+    to "k" + ref( 1 ) + "s"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄋ"
+    to ref( 1 ) + "g"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄌ"
+    to "k" + ref( 1 ) + "ch"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄎ"
+    to "k" + ref( 1 ) + "ch’"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄏ"
+    to "k" + ref( 1 ) + "k’"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄐ"
+    to "k" + ref( 1 ) + "ch’"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄐ"
+    to "k" + ref( 1 ) + "t’"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄑ"
+    to "k" + ref( 1 ) + "p’"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄒ"
+    to "k" + ref( 1 ) + "h"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄁ"
+    to "k" + ref( 1 ) + "k"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄄ"
+    to "k" + ref( 1 ) + "tt"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄈ"
+    to "k" + ref( 1 ) + "pp"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄊ"
+    to "k" + ref( 1 ) + "ss"
+  }
+  sub {
+    from "ᆨ" + kor_maybedash + "ᄍ"
+    to "k" + ref( 1 ) + "tch"
+  }
+  sub "ᆫᄀ" "n’g"
+  sub {
+    from "ᆫ" + capture("-") + "ᄀ"
+    to "n" + ref( 1 ) + "g"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄂ"
+    to "n" + ref( 1 ) + "n"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄃ"
+    to "n" + ref( 1 ) + "j"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄃ"
+    to "n" + ref( 1 ) + "d"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄅ"
+    to "l" + ref( 1 ) + "l"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄆ"
+    to "n" + ref( 1 ) + "m"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄇ"
+    to "n" + ref( 1 ) + "b"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄉ"
+    to "n" + ref( 1 ) + "s"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄋ"
+    to "n" + ref( 1 )
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄌ"
+    to "n" + ref( 1 ) + "j"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄎ"
+    to "n" + ref( 1 ) + "ch’"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄏ"
+    to "n" + ref( 1 ) + "k’"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄐ"
+    to "n" + ref( 1 ) + "ch’"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄐ"
+    to "n" + ref( 1 ) + "t’"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄑ"
+    to "n" + ref( 1 ) + "p’"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄒ"
+    to "n" + ref( 1 ) + "h"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄁ"
+    to "n" + ref( 1 ) + "kk"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄄ"
+    to "n" + ref( 1 ) + "tt"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄈ"
+    to "n" + ref( 1 ) + "pp"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄊ"
+    to "n" + ref( 1 ) + "ss"
+  }
+  sub {
+    from "ᆫ" + kor_maybedash + "ᄍ"
+    to "n" + ref( 1 ) + "tch"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄀ"
+    to "l" + ref( 1 ) + "g"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄂ"
+    to "l" + ref( 1 ) + "l"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄃ"
+    to "l" + ref( 1 ) + "ch"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄃ"
+    to "l" + ref( 1 ) + "t"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄅ"
+    to "l" + ref( 1 ) + "l"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄆ"
+    to "l" + ref( 1 ) + "m"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄇ"
+    to "l" + ref( 1 ) + "b"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄉ"
+    to "l" + ref( 1 ) + "s"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄋ"
+    to ref( 1 ) + "r"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄌ"
+    to "l" + ref( 1 ) + "ch"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄎ"
+    to "l" + ref( 1 ) + "ch’"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄏ"
+    to "l" + ref( 1 ) + "k’"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄐ"
+    to "l" + ref( 1 ) + "ch’"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄐ"
+    to "l" + ref( 1 ) + "t’"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄑ"
+    to "l" + ref( 1 ) + "p’"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄒ"
+    to "r" + ref( 1 ) + "h"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄁ"
+    to "l" + ref( 1 ) + "kk"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄄ"
+    to "l" + ref( 1 ) + "tt"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄈ"
+    to "l" + ref( 1 ) + "pp"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄊ"
+    to "l" + ref( 1 ) + "ss"
+  }
+  sub {
+    from "ᆯ" + kor_maybedash + "ᄍ"
+    to "l" + ref( 1 ) + "tch"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄀ"
+    to "m" + ref( 1 ) + "g"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄂ"
+    to "m" + ref( 1 ) + "n"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄃ"
+    to "m" + ref( 1 ) + "j"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄃ"
+    to "m" + ref( 1 ) + "d"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄅ"
+    to "m" + ref( 1 ) + "n"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄆ"
+    to "m" + ref( 1 ) + "m"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄇ"
+    to "m" + ref( 1 ) + "b"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄉ"
+    to "m" + ref( 1 ) + "s"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄋ"
+    to "m" + ref( 1 )
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄌ"
+    to "m" + ref( 1 ) + "j"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄎ"
+    to "m" + ref( 1 ) + "ch’"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄏ"
+    to "m" + ref( 1 ) + "k’"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄐ"
+    to "m" + ref( 1 ) + "ch’"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄐ"
+    to "m" + ref( 1 ) + "t’"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄑ"
+    to "m" + ref( 1 ) + "p’"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄒ"
+    to "m" + ref( 1 ) + "h"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄁ"
+    to "m" + ref( 1 ) + "kk"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄄ"
+    to "m" + ref( 1 ) + "tt"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄈ"
+    to "m" + ref( 1 ) + "pp"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄊ"
+    to "m" + ref( 1 ) + "ss"
+  }
+  sub {
+    from "ᆷ" + kor_maybedash + "ᄍ"
+    to "m" + ref( 1 ) + "tch"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄀ"
+    to "p" + ref( 1 ) + "k"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄂ"
+    to "m" + ref( 1 ) + "n"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄃ"
+    to "p" + ref( 1 ) + "ch"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄃ"
+    to "p" + ref( 1 ) + "t"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄅ"
+    to "m" + ref( 1 ) + "n"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄆ"
+    to "m" + ref( 1 ) + "m"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄇ"
+    to "p" + ref( 1 ) + "p"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄉ"
+    to "p" + ref( 1 ) + "s"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄋ"
+    to "p" + ref( 1 )
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄌ"
+    to "p" + ref( 1 ) + "ch"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄎ"
+    to "p" + ref( 1 ) + "ch’"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄏ"
+    to "p" + ref( 1 ) + "k’"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄐ"
+    to "p" + ref( 1 ) + "ch’"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄐ"
+    to "p" + ref( 1 ) + "t’"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄑ"
+    to "p" + ref( 1 ) + "p’"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄒ"
+    to "p" + ref( 1 ) + "h"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄁ"
+    to "p" + ref( 1 ) + "kk"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄄ"
+    to "p" + ref( 1 ) + "tt"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄈ"
+    to "p" + ref( 1 ) + "p"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄊ"
+    to "p" + ref( 1 ) + "ss"
+  }
+  sub {
+    from "ᆸ" + kor_maybedash + "ᄍ"
+    to "p" + ref( 1 ) + "tch"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄀ"
+    to "t" + ref( 1 ) + "k"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄂ"
+    to "n" + ref( 1 ) + "n"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄃ"
+    to "t" + ref( 1 ) + "ch"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄃ"
+    to "t" + ref( 1 ) + "t"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄅ"
+    to "n" + ref( 1 ) + "n"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄆ"
+    to "n" + ref( 1 ) + "m"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄇ"
+    to "t" + ref( 1 ) + "p"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄉ"
+    to "s" + ref( 1 ) + "s"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄋ"
+    to "s" + ref( 1 )
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄌ"
+    to "t" + ref( 1 ) + "ch"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄎ"
+    to "t" + ref( 1 ) + "ch’"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄏ"
+    to "t" + ref( 1 ) + "k’"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄐ"
+    to "t" + ref( 1 ) + "ch’"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄐ"
+    to "t" + ref( 1 ) + "t’"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄑ"
+    to "t" + ref( 1 ) + "p’"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄒ"
+    to "t" + ref( 1 ) + "h"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄁ"
+    to "t" + ref( 1 ) + "kk"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄄ"
+    to "t" + ref( 1 ) + "t"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄈ"
+    to "t" + ref( 1 ) + "pp"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄊ"
+    to "s" + ref( 1 ) + "s"
+  }
+  sub {
+    from "ᆺ" + kor_maybedash + "ᄍ"
+    to "t" + ref( 1 ) + "ch"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄀ"
+    to "ng" + ref( 1 ) + "g"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄂ"
+    to "ng" + ref( 1 ) + "n"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄃ"
+    to "ng" + ref( 1 ) + "j"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄃ"
+    to "ng" + ref( 1 ) + "d"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄅ"
+    to "ng" + ref( 1 ) + "n"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄆ"
+    to "ng" + ref( 1 ) + "m"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄇ"
+    to "ng" + ref( 1 ) + "b"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄉ"
+    to "ng" + ref( 1 ) + "s"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄋ"
+    to "ng" + ref( 1 )
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄌ"
+    to "ng" + ref( 1 ) + "j"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄎ"
+    to "ng" + ref( 1 ) + "ch’"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄏ"
+    to "ng" + ref( 1 ) + "k’"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄐ"
+    to "ng" + ref( 1 ) + "ch’"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄐ"
+    to "ng" + ref( 1 ) + "t’"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄑ"
+    to "ng" + ref( 1 ) + "p’"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄒ"
+    to "ng" + ref( 1 ) + "h"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄁ"
+    to "ng" + ref( 1 ) + "kk"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄄ"
+    to "ng" + ref( 1 ) + "tt"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄈ"
+    to "ng" + ref( 1 ) + "pp"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄊ"
+    to "ng" + ref( 1 ) + "ss"
+  }
+  sub {
+    from "ᆼ" + kor_maybedash + "ᄍ"
+    to "ng" + ref( 1 ) + "tch"
+  }
+  sub {
+    from kor_maybedash + "ᄀ"
+    to ref( 1 ) + "g"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄂ"
+    to ref( 1 ) + "n"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄃ"
+    to ref( 1 ) + "j"
+    before kor_beforeterm
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from kor_maybedash + "ᄃ"
+    to ref( 1 ) + "d"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄅ"
+    to ref( 1 ) + "r"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄆ"
+    to ref( 1 ) + "m"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄇ"
+    to ref( 1 ) + "b"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄉ"
+    to ref( 1 ) + "s"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄋ"
+    to ref( 1 )
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄌ"
+    to ref( 1 ) + "j"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄎ"
+    to ref( 1 ) + "ch’"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄏ"
+    to ref( 1 ) + "k’"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄐ"
+    to ref( 1 ) + "ch’"
+    before kor_beforeterm
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from kor_maybedash + "ᄐ"
+    to ref( 1 ) + "t’"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄑ"
+    to ref( 1 ) + "p’"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄒ"
+    to ref( 1 ) + "h"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄁ"
+    to ref( 1 ) + "kk"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄄ"
+    to ref( 1 ) + "tt"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄈ"
+    to ref( 1 ) + "pp"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄊ"
+    to ref( 1 ) + "ss"
+    before kor_beforeterm
+  }
+  sub {
+    from kor_maybedash + "ᄍ"
+    to ref( 1 ) + "tch"
+    before kor_beforeterm
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄀ"
+    to "l" + ref( 1 ) + "g"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄂ"
+    to "ng" + ref( 1 ) + "n"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄃ"
+    to "k" + ref( 1 ) + "t"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄅ"
+    to "ng" + ref( 1 ) + "n"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄆ"
+    to "ng" + ref( 1 ) + "m"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄇ"
+    to "k" + ref( 1 ) + "p"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄉ"
+    to "k" + ref( 1 ) + "s"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄋ"
+    to "l" + ref( 1 ) + "g"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄌ"
+    to "k" + ref( 1 ) + "ch"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄎ"
+    to "k" + ref( 1 ) + "ch’"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄏ"
+    to "l" + ref( 1 ) + "k’"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄐ"
+    to "k" + ref( 1 ) + "ch’"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄐ"
+    to "k" + ref( 1 ) + "t’"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄑ"
+    to "k" + ref( 1 ) + "p’"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄒ"
+    to "lk" + ref( 1 ) + "h"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄁ"
+    to "l" + ref( 1 ) + "kk"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄄ"
+    to "k" + ref( 1 ) + "tt"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄈ"
+    to "k" + ref( 1 ) + "pp"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄊ"
+    to "k" + ref( 1 ) + "ss"
+  }
+  sub {
+    from "ᆰ" + kor_maybedash + "ᄍ"
+    to "k" + ref( 1 ) + "tch"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄀ"
+    to "m" + ref( 1 ) + "g"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄂ"
+    to "m" + ref( 1 ) + "n"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄃ"
+    to "m" + ref( 1 ) + "d"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄅ"
+    to "m" + ref( 1 ) + "n"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄆ"
+    to "l" + ref( 1 ) + "m"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄇ"
+    to "m" + ref( 1 ) + "b"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄉ"
+    to "m" + ref( 1 ) + "s"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄋ"
+    to "l" + ref( 1 ) + "m"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄌ"
+    to "m" + ref( 1 ) + "j"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄎ"
+    to "m" + ref( 1 ) + "ch’"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄏ"
+    to "m" + ref( 1 ) + "k’"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄐ"
+    to "m" + ref( 1 ) + "ch’"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄐ"
+    to "m" + ref( 1 ) + "t’"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄑ"
+    to "m" + ref( 1 ) + "p’"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄒ"
+    to "m" + ref( 1 ) + "h"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄁ"
+    to "m" + ref( 1 ) + "kk"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄄ"
+    to "m" + ref( 1 ) + "tt"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄈ"
+    to "m" + ref( 1 ) + "pp"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄊ"
+    to "m" + ref( 1 ) + "ss"
+  }
+  sub {
+    from "ᆱ" + kor_maybedash + "ᄍ"
+    to "m" + ref( 1 ) + "tch"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄀ"
+    to "pk"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄂ"
+    to "mn"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄃ"
+    to "p" + ref( 1 ) + "t"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄅ"
+    to "m" + ref( 1 ) + "n"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄆ"
+    to "m" + ref( 1 ) + "m"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄇ"
+    to "l" + ref( 1 ) + "b"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄉ"
+    to "p" + ref( 1 ) + "s"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄋ"
+    to "l" + ref( 1 ) + "b"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄌ"
+    to "p" + ref( 1 ) + "ch"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄎ"
+    to "p" + ref( 1 ) + "ch’"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄏ"
+    to "p" + ref( 1 ) + "k’"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄐ"
+    to "p" + ref( 1 ) + "ch’"
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄐ"
+    to "p" + ref( 1 ) + "t’"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄑ"
+    to "l" + ref( 1 ) + "p’"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄒ"
+    to "lp" + ref( 1 ) + "h"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄁ"
+    to "p" + ref( 1 ) + "kk"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄄ"
+    to "p" + ref( 1 ) + "tt"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄈ"
+    to "l" + ref( 1 ) + "pp"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄊ"
+    to "p" + ref( 1 ) + "ss"
+  }
+  sub {
+    from "ᆲ" + kor_maybedash + "ᄍ"
+    to "p" + ref( 1 ) + "tch"
+  }
+  sub {
+    from "ᄀ"
+    to "k"
+    before " "
+  }
+  sub {
+    from "ᄂ"
+    to ""
+    before " "
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᄂ"
+    to "n"
+    before " "
+  }
+  sub {
+    from "ᄃ"
+    to "ch"
+    before " "
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᄃ"
+    to "t"
+    before " "
+  }
+  sub {
+    from "ᄅ"
+    to ""
+    before " "
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᄅ"
+    to "n"
+    before " "
+  }
+  sub {
+    from "ᄆ"
+    to "m"
+    before " "
+  }
+  sub {
+    from "ᄇ"
+    to "p"
+    before " "
+  }
+  sub {
+    from "ᄉ"
+    to "sh"
+    before " "
+    after "ᅱ"
+  }
+  sub {
+    from "ᄉ"
+    to "s"
+    before " "
+  }
+  sub {
+    from "ᄋ"
+    to ""
+    before " "
+  }
+  sub {
+    from "ᄌ"
+    to "ch"
+    before " "
+  }
+  sub {
+    from "ᄎ"
+    to "ch’"
+    before " "
+  }
+  sub {
+    from "ᄏ"
+    to "k’"
+    before " "
+  }
+  sub {
+    from "ᄐ"
+    to "ch’"
+    before " "
+    after any("ᅵᅣᅤᅧᅨᅭᅲ")
+  }
+  sub {
+    from "ᄐ"
+    to "t’"
+    before " "
+  }
+  sub {
+    from "ᄑ"
+    to "p’"
+    before " "
+  }
+  sub {
+    from "ᄒ"
+    to "h"
+    before " "
+  }
+  sub {
+    from "ᄁ"
+    to "kk"
+    before " "
+  }
+  sub {
+    from "ᄭ"
+    to "kk"
+    before " "
+  }
+  sub {
+    from "ᄄ"
+    to "tt"
+    before " "
+  }
+  sub {
+    from "ᄯ"
+    to "tt"
+    before " "
+  }
+  sub {
+    from "ᄈ"
+    to "pp"
+    before " "
+  }
+  sub {
+    from "ᄲ"
+    to "pp"
+    before " "
+  }
+  sub {
+    from "ᄊ"
+    to "ss"
+    before " "
+  }
+  sub {
+    from "ᄍ"
+    to "tch"
+    before " "
+  }
+  sub {
+    from "ᄶ"
+    to "tch"
+    before " "
+  }
+  sub "ᅡ" "a"
+  sub "ᅣ" "ya"
+  sub "ᅥ" "ŏ"
+  sub "ᅧ" "yŏ"
+  sub "ᅩ" "o"
+  sub "ᅭ" "yo"
+  sub "ᅮ" "u"
+  sub "ᅲ" "yu"
+  sub "ᅳ" "ŭ"
+  sub "ᅵ" "i"
+  sub "ᅢ" "ae"
+  sub "ᅤ" "yae"
+  sub "ᅦ" "e"
+  sub "ᅨ" "ye"
+  sub "ᅬ" "oe"
+  sub "ᅱ" "wi"
+  sub "ᅴ" "ŭi"
+  sub "ᅪ" "wa"
+  sub "ᅯ" "wŏ"
+  sub "ᅫ" "wae"
+  sub "ᅰ" "we"
+  sub {
+    from "ᆨ"
+    to "k"
+    after any(" -")
+  }
+  sub {
+    from "ᆫ"
+    to "n"
+    after any(" -")
+  }
+  sub {
+    from "ᆮ"
+    to "t"
+    after any(" -")
+  }
+  sub {
+    from "ᆯ"
+    to "l"
+    after any(" -")
+  }
+  sub {
+    from "ᆷ"
+    to "m"
+    after any(" -")
+  }
+  sub {
+    from "ᆸ"
+    to "p"
+    after any(" -")
+  }
+  sub {
+    from "ᆺ"
+    to "t"
+    after any(" -")
+  }
+  sub {
+    from "ᆼ"
+    to "ng"
+    after any(" -")
+  }
+  sub {
+    from "ᆽ"
+    to "t"
+    after any(" -")
+  }
+  sub {
+    from "ᆾ"
+    to "t"
+    after any(" -")
+  }
+  sub {
+    from "ᆿ"
+    to "k"
+    after any(" -")
+  }
+  sub {
+    from "ᇀ"
+    to "t"
+    after any(" -")
+  }
+  sub {
+    from "ᇁ"
+    to "p"
+    after any(" -")
+  }
+  sub {
+    from "ᆰ"
+    to "k"
+    after any(" -")
+  }
+  sub {
+    from "ᆲ"
+    to "p"
+    after any(" -")
+  }
+
+  sub {
+    from capture(any(["ch", "ch’", "j", "s", "ss"])) + "y"
+    to ref( 1 )
+  }
+
+  sub "swi" "shwi"
+
+  # Remove space added
+  sub {
+    from line_start + " "
+    to ""
+  }
+  sub {
+    from " " + line_end
+    to ""
+  }
+
+  decompose # NB: better compose tests?
+}
+}

@@ -1,0 +1,351 @@
+system "MV:div-Thaa:Latn:1987" {
+
+metadata {
+  authority_id mv
+  id 1987
+  language iso-639-2:div
+  source_script Thaa
+  destination_script Latn
+  name Maldivian (Divehi) Romanization system (1987)
+  url https://www.eki.ee/wgrs/rom2_dv.htm
+  creation_date 1887
+  description {    In 1987 the Maldivian government adopted a system for the romanization of Maldivian. It was also approved by the BGN and the PCGN in 1988.
+    Maldivian is written from right to left. Vowels are marked as diacritical marks accompanying a consonant character.
+  }
+
+  notes {
+    note "The character އ is not romanized. If it bears a vowel character, that vowel character alone is romanized, e.g. އިރުގައި irugai."
+    note "Characters އް and ށް word-finally and before a digraph are romanized h, e.g. ވޭވަށް Veyvah, ކެރެއްދޫ Kerehdhoo. In other cases,\n when އް and ށް are used, the romanized value of the following consonant character is doubled, e.g. ބައްޓެށް batteh, ކަޅެހުއްޓާ Kalhehuttaa."
+    note "The character ނ is romanized n’ if used without any vowel or auxiliary sign. For example kan’du (ކަނޑު)."
+    note "The character އ is Not romanized but see note 1"
+    note "Character ތް is romanized iy, e.g. ޒިޔާރަތްފުށި Ziyaaraiyfushi."
+  }
+}
+
+tests {
+   "އެނބޫދޫ" ->  "en’boodhoo"
+   "ކަޅެހުއްޓާ" ->  "kalhehuttaa"
+   "ކެރެށްދޫ" ->  "kerehdhoo"
+   "ވޭވައް" ->  "veyvah"
+   "ކަނޑުފުށި" ->  "kan’dufushi"
+   "ޒިޔާރަތްފުށި" ->  "ziyaaraiyfushi"
+   "ރައްކާތެރިކުރުމާއި" ->  "rakkaatherikurumaai"
+   "ދަރިވަރެއްގެވެސް" ->  "dharivareggeves"
+   "ދަރިވަރުންނާއި" ->  "dharivarun’n’aai"
+   "ރަށްރަށުގައި" ->  "rarrashugai"
+   "ޑިޕާޓްމަންޓުން" ->  "dipaatman’tun’"
+   "ހޯދިފައިނުވާ" ->  "hoadhifain’uvaa"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+   "ދިވެހިރާއްޖެ" ->  "dhivehiraajje"
+   "މާލެ" ->  "maale"
+}
+
+stage main {
+
+  # RULES
+  # Note 4
+  sub {
+    from "\u0787\u07b0"
+    to "h"
+    after any("ހ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "h"
+    after any("ށ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "n"
+    after any("ނ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "r"
+    after any("ރ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "b"
+    after any("ބ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "h"
+    after any("ޅ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "k"
+    after any("ކ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "v"
+    after any("ވ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "m"
+    after any("މ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "f"
+    after any("ފ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "h"
+    after any("ދ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "h"
+    after any("ތ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "l"
+    after any("ލ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "g"
+    after any("ގ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "h"
+    after any("ޏ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "s"
+    after any("ސ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "d"
+    after any("ޑ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "j"
+    after any("ޖ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "h"
+    after any("ޗ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "z"
+    after any("ޒ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "t"
+    after any("ޓ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "p"
+    after any("ޕ")
+  }
+  sub {
+    from "\u0787\u07b0"
+    to "y"
+    after any("ޔ")
+  }
+
+  sub {
+    from "\u0781\u07b0"
+    to "h"
+    after any("ހ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "h"
+    after any("ށ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "n"
+    after any("ނ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "r"
+    after any("ރ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "b"
+    after any("ބ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "h"
+    after any("ޅ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "k"
+    after any("ކ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "v"
+    after any("ވ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "m"
+    after any("މ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "f"
+    after any("ފ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "h"
+    after any("ދ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "h"
+    after any("ތ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "l"
+    after any("ލ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "g"
+    after any("ގ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "h"
+    after any("ޏ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "s"
+    after any("ސ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "d"
+    after any("ޑ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "j"
+    after any("ޖ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "h"
+    after any("ޗ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "z"
+    after any("ޒ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "t"
+    after any("ޓ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "p"
+    after any("ޕ")
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "y"
+    after any("ޔ")
+  }
+
+  sub {
+    from "\u0787\u07b0"
+    to "h"
+    after boundary
+  }
+  sub {
+    from "\u0781\u07b0"
+    to "h"
+    after boundary
+  }
+
+  # Note 5
+  sub {
+    from "\u0782"
+    to "n’"
+    not_after "=" + any("\u07a6\u07a7\u07a8\u07a9\u07aa\u07ab\u07ac\u07ad\u07ae\u07af\u07B0")
+  }
+
+  # Note 6
+  sub {
+    from "\u078C"
+    to "iy"
+    after "\u07B0"
+  }
+
+
+  # CHARACTERS
+  parallel {
+    # Vowels
+    sub "ަ" "a"
+    sub "ާ" "aa"
+    sub "ި" "i"
+    sub "ީ" "ee"
+    sub "ު" "u"
+    sub "ޫ" "oo"
+    sub "ެ" "e"
+    sub "ޭ" "ey"
+    sub "ޮ" "o"
+    sub "ޯ" "oa"
+    sub "ް" ""
+
+
+    # Consonants
+    sub "ހ" "h"
+    sub "ށ" "sh"
+    sub "ނ" "n"
+    sub "ރ" "r"
+    sub "ބ" "b"
+    sub "ޅ" "lh"
+    sub "ކ" "k"
+    sub "އ" ""
+    sub "ވ" "v"
+    sub "މ" "m"
+    sub "ފ" "f"
+    sub "ދ" "dh"
+    sub "ތ" "th"
+    sub "ލ" "l"
+    sub "ގ" "g"
+    sub "ޏ" "gn"
+    sub "ސ" "s"
+    sub "ޑ" "d"
+    sub "ޖ" "j"
+    sub "ޗ" "ch"
+    sub "ޒ" "z"
+    sub "ޓ" "t"
+    sub "ޕ" "p"
+    sub "ޔ" "y"
+  }
+
+}
+
+}

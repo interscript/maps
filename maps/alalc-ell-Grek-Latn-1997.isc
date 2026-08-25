@@ -1,0 +1,469 @@
+system "ALA-LC:ell-Grek:Latn:1997" {
+
+metadata {
+  authority_id alalc
+  id 1997
+  language iso-639-2:ell
+  source_script Grek
+  destination_script Latn
+  name Romanization Table -- Greek (1997)
+  url http://catdir.loc.gov/catdir/cpso/romanization/greek.pdf
+  creation_date 1997
+  description {    ALA-LC Romanization table for Greek
+  }
+
+  notes {
+    note "Applies to texts after 1453 (Modern Greek)"
+    note "This table presupposes monotonic accentuation; rough breathings are accordingly not addressed."
+    note "The diphthong definition for upsilon is taken from the 2010 version"
+    note "Generalised gramma digraph rule to capitals"
+  }
+}
+
+tests {
+   "Ένα πράμα μόνον με παρακίνησε κι εμένα να γράψω ότι τούτην την πατρίδα την έχομεν όλοι μαζί, και σοφοί κι αμαθείς και πλούσιοι και φτωχοί και πολιτικοί και στρατιωτικοί και οι πλέον μικρότεροι άνθρωποι· όσοι αγωνιστήκαμεν, αναλόγως ο καθείς, έχομεν να ζήσομεν εδώ. Το λοιπόν δουλέψαμεν όλοι μαζί, να την φυλάμεν κι όλοι μαζί και να μην λέγει ούτε ο δυνατός «εγώ» ούτε ο αδύνατος. Ξέρετε πότε να λέγει ο καθείς «εγώ»; Όταν αγωνιστεί μόνος του και φκιάσει ή χαλάσει, να λέγει «εγώ»· όταν όμως αγωνίζονται πολλοί και φκιάνουν, τότε να λένε «εμείς». Είμαστε εις το «εμείς» κι όχι εις το «εγώ». Και εις το εξής να μάθομεν γνώση, αν θέλομεν να φκιάσομεν χωριόν, να ζήσομεν όλοι μαζί.\n\nΓιάννης Μακρυγιάννης.\n" ->  "Ena prama monon me parakinēse ki emena na grapsō oti toutēn tēn patrida tēn echomen oloi mazi, kai sophoi ki amatheis kai plousioi kai phtōchoi kai politikoi kai stratiōtikoi kai oi pleon mikroteroi anthrōpoi; osoi agōnistēkamen, analogōs o katheis, echomen na zēsomen edō. To loipon doulepsamen oloi mazi, na tēn phylamen ki oloi mazi kai na mēn legei oute o dynatos «egō» oute o adynatos. Xerete pote na legei o katheis «egō»? Otan agōnistei monos tou kai phkiasei ē chalasei, na legei «egō»; otan omōs agōnizontai polloi kai phkianoun, tote na lene «emeis». Eimaste eis to «emeis» ki ochi eis to «egō». Kai eis to exēs na mathomen gnōsē, an thelomen na phkiasomen chōrion, na zēsomen oloi mazi.\n\nGiannēs Makrygiannēs.\n"
+   "ΑΘΗΝΑ" ->  "ATHĒNA"
+   "μπαμπάκι" ->  "bampaki"
+   "νταντά" ->  "ḏanta"
+   "γκέγκε" ->  "nkenke"
+   "Γκαμπόν" ->  "Nkampon"
+   "Μάγχη" ->  "Manchē"
+   "κογξ" ->  "konx"
+   "υιός" ->  "uios"
+   "Υιός" ->  "Uios"
+   "νεράντζι" ->  "nerantzi"
+   "Γοίθιος" ->  "Goithios"
+   "μπέικον" ->  "beikon"
+   "μπέϊκον" ->  "beikon"
+   "βόλεϊ" ->  "volei"
+   "αθεΐα" ->  "atheia"
+   "Εϊγιαφιάτλαγιοκουτλ" ->  "Eigiaphiatlagiokoutl"
+   "Εΐτζι" ->  "Eitzi"
+   "Μυρτώο" ->  "Myrtōo"
+   "αέρας" ->  "aeras"
+   "γαυ γαυ" ->  "gau gau"
+   "Ταΰγετος" ->  "Taygetos"
+   "σπρέυ" ->  "sprey"
+   "Αθήνα" ->  "Athēna"
+   "Άγιον Όρος" ->  "Agion Oros"
+   "Άγραφα" ->  "Agrapha"
+   "Αγρίνιο" ->  "Agrinio"
+   "Αίγινα" ->  "Aigina"
+   "Αίγιο" ->  "Aigio"
+   "Αλεξανδρούπολη" ->  "Alexandroupolē"
+   "Αλεποχώρι" ->  "Alepochōri"
+   "Αμοργός" ->  "Amorgos"
+   "Άμφισσα" ->  "Amphissa"
+   "Αράχωβα" ->  "Arachōva"
+   "Άργος" ->  "Argos"
+   "Αρκαδία" ->  "Arkadia"
+   "Άρτα" ->  "Arta"
+   "Βελούχι" ->  "Velouchi"
+   "Βέροια" ->  "Veroia"
+   "Βοιωτία" ->  "Voiōtia"
+   "Βόλος" ->  "Volos"
+   "Βόνιτσα" ->  "Vonitsa"
+   "Γαλαξίδι" ->  "Galaxidi"
+   "Γαλάτσι" ->  "Galatsi"
+   "Γιαννιτσά" ->  "Giannitsa"
+   "Γλυφάδα" ->  "Glyphada"
+   "Γρανίτσα" ->  "Granitsa"
+   "Γρεβενά" ->  "Grevena"
+   "Γύθειο" ->  "Gytheio"
+   "Διόνυσος" ->  "Dionysos"
+   "Δίστομο" ->  "Distomo"
+   "Δολιανά" ->  "Doliana"
+   "Δράμα" ->  "Drama"
+   "Δωδεκάνησα" ->  "Dōdekanēsa"
+   "Έδεσσα" ->  "Edessa"
+   "Ελευσίνα" ->  "Eleusina"
+   "Επίδαυρος" ->  "Epidauros"
+   "Επτάνησα" ->  "Eptanēsa"
+   "Ερμούπολη" ->  "Ermoupolē"
+   "Εύβοια" ->  "Euvoia"
+   "Ζάκυνθος" ->  "Zakynthos"
+   "Ήπειρος" ->  "Ēpeiros"
+   "Ηράκλειο" ->  "Ērakleio"
+   "Θάσος" ->  "Thasos"
+   "Θεσσαλονίκη" ->  "Thessalonikē"
+   "Θεσσαλία" ->  "Thessalia"
+   "Θεσπρωτία" ->  "Thesprōtia"
+   "Θήβα" ->  "Thēva"
+   "Θράκη" ->  "Thrakē"
+   "Ιθάκη" ->  "Ithakē"
+   "Ίος" ->  "Ios"
+   "Ιωάννινα" ->  "Iōannina"
+   "Καβάλα" ->  "Kavala"
+   "Καλάβρυτα" ->  "Kalavryta"
+   "Καλαμάτα" ->  "Kalamata"
+   "Καλαμπάκα" ->  "Kalampaka"
+   "Καλύβια" ->  "Kalyvia"
+   "Κάλυμνος" ->  "Kalymnos"
+   "Καρδίτσα" ->  "Karditsa"
+   "Καρπενήσι" ->  "Karpenēsi"
+   "Κάρυστος" ->  "Karystos"
+   "Καστελλόριζο" ->  "Kastellorizo"
+   "Καστοριά" ->  "Kastoria"
+   "Κατερίνη" ->  "Katerinē"
+   "Κάτω Αχαΐα" ->  "Katō Achaia"
+   "Κερατέα" ->  "Keratea"
+   "Κέρκυρα" ->  "Kerkyra"
+   "Κεφαλλονιά" ->  "Kephallonia"
+   "Κηφισιά" ->  "Kēphisia"
+   "Κιλκίς" ->  "Kilkis"
+   "Κοζάνη" ->  "Kozanē"
+   "Κολωνός" ->  "Kolōnos"
+   "Κομοτηνή" ->  "Komotēnē"
+   "Κόρινθος" ->  "Korinthos"
+   "Κορώνη" ->  "Korōnē"
+   "Κρανίδι" ->  "Kranidi"
+   "Κρέστενα" ->  "Krestena"
+   "Κρήτη" ->  "Krētē"
+   "Κύθηρα" ->  "Kythēra"
+   "Κυκλάδες" ->  "Kyklades"
+   "Κύμη" ->  "Kymē"
+   "Κυψέλη" ->  "Kypselē"
+   "Κως" ->  "Kōs"
+   "Λαγκαδάς" ->  "Lankadas"
+   "Λαμία" ->  "Lamia"
+   "Λάρισα" ->  "Larisa"
+   "Λαύριο" ->  "Laurio"
+   "Λέρος" ->  "Leros"
+   "Λέσβος" ->  "Lesvos"
+   "Λευκάδα" ->  "Leukada"
+   "Λήμνος" ->  "Lēmnos"
+   "Λιβαδειά" ->  "Livadeia"
+   "Μακεδονία" ->  "Makedonia"
+   "Μάνη" ->  "Manē"
+   "Μαραθώνας" ->  "Marathōnas"
+   "Μαρκόπουλο" ->  "Markopoulo"
+   "Μαρούσι" ->  "Marousi"
+   "Μέγαρα" ->  "Megara"
+   "Μεσολόγγι" ->  "Mesolongi"
+   "Μεταξουργείο" ->  "Metaxourgeio"
+   "Μέτσοβο" ->  "Metsovo"
+   "Μήλος" ->  "Mēlos"
+   "Μύκονος" ->  "Mykonos"
+   "Μυστράς" ->  "Mystras"
+   "Μυτιλήνη" ->  "Mytilēnē"
+   "Νάξος" ->  "Naxos"
+   "Νάουσα" ->  "Naousa"
+   "Ναύπακτος" ->  "Naupaktos"
+   "Ναύπλιο" ->  "Nauplio"
+   "Νέα Σμύρνη" ->  "Nea Smyrnē"
+   "Νίσυρος" ->  "Nisyros"
+   "Ξάνθη" ->  "Xanthē"
+   "Όλυμπος" ->  "Olympos"
+   "Παγκράτι" ->  "Pankrati"
+   "Παπάγου" ->  "Papagou"
+   "Πάρος" ->  "Paros"
+   "Πασαλιμάνι" ->  "Pasalimani"
+   "Πατήσια" ->  "Patēsia"
+   "Πάτμος" ->  "Patmos"
+   "Πάτρα" ->  "Patra"
+   "Πειραιάς" ->  "Peiraias"
+   "Πελοπόννησος" ->  "Peloponnēsos"
+   "Περιστέρι" ->  "Peristeri"
+   "Πεύκη" ->  "Peukē"
+   "Πήλιο" ->  "Pēlio"
+   "Πολύγυρος" ->  "Polygyros"
+   "Πόρος" ->  "Poros"
+   "Πρέβεζα" ->  "Preveza"
+   "Πτολεμαΐδα" ->  "Ptolemaida"
+   "Πύλος" ->  "Pylos"
+   "Πύργος" ->  "Pyrgos"
+   "Ρέθυμνο" ->  "Rethymno"
+   "Ρόδος" ->  "Rodos"
+   "Ρούμελη" ->  "Roumelē"
+   "Σαλαμίνα" ->  "Salamina"
+   "Σαμοθράκη" ->  "Samothrakē"
+   "Σάμος" ->  "Samos"
+   "Σαντορίνη" ->  "Santorinē"
+   "Σέρρες" ->  "Serres"
+   "Σίκινος" ->  "Sikinos"
+   "Σίφνος" ->  "Siphnos"
+   "Σκιάθος" ->  "Skiathos"
+   "Σκόπελος" ->  "Skopelos"
+   "Σούλι" ->  "Souli"
+   "Σπάρτη" ->  "Spartē"
+   "Στερεά Ελλάδα" ->  "Sterea Ellada"
+   "Στύρα" ->  "Styra"
+   "Σύμη" ->  "Symē"
+   "Σύρος" ->  "Syros"
+   "Σφακιά" ->  "Sphakia"
+   "Τήλος" ->  "Tēlos"
+   "Τήνος" ->  "Tēnos"
+   "Τρίκαλα" ->  "Trikala"
+   "Τρίπολη" ->  "Tripolē"
+   "Τσακωνιά" ->  "Tsakōnia"
+   "Ύδρα" ->  "Ydra"
+   "Φάληρο" ->  "Phalēro"
+   "Φλώρινα" ->  "Phlōrina"
+   "Φολέγανδρος" ->  "Pholegandros"
+   "Χάλκη" ->  "Chalkē"
+   "Χαλκίδα" ->  "Chalkida"
+   "Χαλάνδρι" ->  "Chalandri"
+   "Χαλκιδική" ->  "Chalkidikē"
+   "Χανιά" ->  "Chania"
+   "Χίος" ->  "Chios"
+   "Ψαρά" ->  "Psara"
+   "Αβάνα" ->  "Avana"
+   "Αγγλία" ->  "Anglia"
+   "Αϊβαλί" ->  "Aivali"
+   "Αλεξάνδρεια" ->  "Alexandreia"
+   "Άμστερνταμ" ->  "Amsterntam"
+   "Βαυαρία" ->  "Vauaria"
+   "Βενετία" ->  "Venetia"
+   "Βερολίνο" ->  "Verolino"
+   "Βερόνα" ->  "Verona"
+   "Βιέννη" ->  "Viennē"
+   "Γένοβα" ->  "Genova"
+   "Δουβλίνο" ->  "Douvlino"
+   "Καλαβρία" ->  "Kalavria"
+   "Καλιφόρνια" ->  "Kaliphornia"
+   "Καύκασος" ->  "Kaukasos"
+   "Κονγκό" ->  "Konnko"
+   "Κορσική" ->  "Korsikē"
+   "Κουρδιστάν" ->  "Kourdistan"
+   "Κωνσταντινούπολη" ->  "Kōnstantinoupolē"
+   "Κατεχόμενη Κύπρος" ->  "Katechomenē Kypros"
+   "Λαπωνία" ->  "Lapōnia"
+   "Λευκωσία" ->  "Leukōsia"
+   "Λιβόρνο" ->  "Livorno"
+   "Λονδίνο" ->  "Londino"
+   "Λυών" ->  "Lyōn"
+   "Μάλαγα" ->  "Malaga"
+   "Μασσαλία" ->  "Massalia"
+   "Μικρονησία" ->  "Mikronēsia"
+   "Μιλάνο" ->  "Milano"
+   "Μόσχα" ->  "Moscha"
+   "Μπολόνια" ->  "Bolonia"
+   "Νάπολη" ->  "Napolē"
+   "Νταγκεστάν" ->  "Ḏankestan"
+   "Νέα Υόρκη" ->  "Nea Yorkē"
+   "Οξφόρδη" ->  "Oxphordē"
+   "Ουαλία" ->  "Oualia"
+   "Παρίσι" ->  "Parisi"
+   "Πάφος" ->  "Paphos"
+   "Πολυνησία" ->  "Polynēsia"
+   "Ρώμη" ->  "Rōmē"
+   "Σαμάρεια" ->  "Samareia"
+   "Σικελία" ->  "Sikelia"
+   "Σκανδιναβία" ->  "Skandinavia"
+   "Σκόπια" ->  "Skopia"
+   "Σκωτία" ->  "Skōtia"
+   "Σμύρνη" ->  "Smyrnē"
+   "Ταϊτή" ->  "Taitē"
+   "Ταταρστάν" ->  "Tatarstan"
+   "Τζαμάικα" ->  "Tzamaika"
+   "Τηλλυρία" ->  "Tēllyria"
+   "Τιρόλο" ->  "Tirolo"
+   "Τορίνο" ->  "Torino"
+   "Φανάρι" ->  "Phanari"
+   "Φλωρεντία" ->  "Phlōrentia"
+   "Χαβάη" ->  "Chavaē"
+   "Χονγκ Κονγκ" ->  "Chonnk Konnk"
+}
+
+aliases {
+  greek_upper = any("ΆΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΈΉΊΌΏΪΫ")
+}
+
+
+# https://en.wikipedia.org/wiki/Romanization_of_Greek
+stage main {
+
+  # RULES
+  sub {
+    from "\u03A5"
+    to "U"
+    before any("ΑαΕεΟοΗηΩω")
+  }
+  sub {
+    from "\u03C5"
+    to "u"
+    before any("ΑαΕεΟοΗηΩω")
+  }
+  sub {
+    from "\u03CD"
+    to "u"
+    before any("ΑαΕεΟοΗηΩω")
+  }
+  sub {
+    from "\u03A5"
+    to "U"
+    after any("Ιιί")
+  }
+  sub {
+    from "\u03C5"
+    to "u"
+    after any("Ιιί")
+  }
+  sub {
+    from "\u0393"
+    to "N"
+    after any("γΓκΚξΞχΧ")
+  }
+  sub {
+    from "\u03B3"
+    to "n"
+    after any("γΓκΚξΞχΧ")
+  }
+  sub {
+    from "\u039D\u03A4"
+    to "Ḏ"
+    before boundary
+  }
+  sub {
+    from "\u039D\u03C4"
+    to "Ḏ"
+    before boundary
+  }
+  sub {
+    from "\u03BD\u03C4"
+    to "ḏ"
+    before boundary
+  }
+  sub {
+    from "\u039C\u03A0"
+    to "B"
+    before boundary
+  }
+  sub {
+    from "\u039C\u03C0"
+    to "B"
+    before boundary
+  }
+  sub {
+    from "\u03BC\u03C0"
+    to "b"
+    before boundary
+  }
+  sub "\u037E" "?"
+  sub "\u003B" "?"
+
+
+  # CHARACTERS
+  parallel {
+    sub "'" ""
+    sub "Ά" "A"
+    sub "Α" "A"
+    sub "Β" "V"
+    sub "Γ" "G"
+    sub "Δ" "D"
+    sub "Ε" "E"
+    sub "Ζ" "Z"
+    sub "Η" "Ē"
+    sub "Θ" "Th"
+    sub {
+    from "Θ"
+    to "TH"
+    after any("ΆΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΈΉΊΌΏΪΫ")
+  }
+    sub {
+    from "Θ"
+    to "TH"
+    before any("ΆΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΈΉΊΌΏΪΫ")
+  }
+    sub "Ι" "I"
+    sub "Κ" "K"
+    sub "Λ" "L"
+    sub "Μ" "M"
+    sub "Ν" "N"
+    sub "Ξ" "X"
+    sub "Ο" "O"
+    sub "Π" "P"
+    sub "Ρ" "R"
+    sub "Σ" "S"
+    sub "Τ" "T"
+    sub "Υ" "Y"
+    sub "Φ" "Ph"
+    sub {
+    from "Φ"
+    to "PH"
+    after any("ΆΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΈΉΊΌΏΪΫ")
+  }
+    sub {
+    from "Φ"
+    to "PH"
+    before any("ΆΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΈΉΊΌΏΪΫ")
+  }
+
+    sub "Χ" "Ch"
+    sub {
+    from "Χ"
+    to "CH"
+    after any("ΆΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΈΉΊΌΏΪΫ")
+  }
+    sub {
+    from "Χ"
+    to "CH"
+    before any("ΆΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΈΉΊΌΏΪΫ")
+  }
+
+    sub "Ψ" "Ps"
+    sub {
+    from "Ψ"
+    to "PS"
+    after any("ΆΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΈΉΊΌΏΪΫ")
+  }
+    sub {
+    from "Ψ"
+    to "PS"
+    before any("ΆΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΈΉΊΌΏΪΫ")
+  }
+
+    sub "Ω" "Ō"
+    sub "Έ" "E"
+    sub "Ή" "Ē"
+    sub "Ί" "I"
+    sub "Ό" "O"
+    sub "Ύ" "Y"
+    sub "Ώ" "Ō"
+    sub "Ϊ" "I"
+    sub "Ϋ" "Y"
+
+    sub "ά" "a"
+    sub "α" "a"
+    sub "β" "v"
+    sub "γ" "g"
+    sub "δ" "d"
+    sub "ε" "e"
+    sub "ζ" "z"
+    sub "η" "ē"
+    sub "θ" "th"
+    sub "ι" "i"
+    sub "κ" "k"
+    sub "λ" "l"
+    sub "μ" "m"
+    sub "ν" "n"
+    sub "ξ" "x"
+    sub "ο" "o"
+    sub "π" "p"
+    sub "ρ" "r"
+    sub "σ" "s"
+    sub "ς" "s"
+    sub "τ" "t"
+    sub "υ" "y"
+    sub "φ" "ph"
+    sub "χ" "ch"
+    sub "ψ" "ps"
+    sub "ω" "ō"
+    sub "έ" "e"
+    sub "ή" "ē"
+    sub "ί" "i"
+    sub "ό" "o"
+    sub "ύ" "y"
+    sub "ώ" "ō"
+    sub "ϊ" "i"
+    sub "ϋ" "y"
+    sub "ΐ" "i"
+    sub "ΰ" "y"
+
+    sub "·" ";"
+    sub "·" ";"
+  }
+
+}
+
+}

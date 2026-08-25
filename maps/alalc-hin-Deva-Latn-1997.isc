@@ -1,0 +1,433 @@
+system "ALA-LC:hin-Deva:Latn:1997" {
+
+metadata {
+  authority_id alalc
+  id 1997
+  language iso-639-2:hin
+  source_script Deva
+  destination_script Latn
+  name Romanization Table -- Hindi (1997)
+  url http://catdir.loc.gov/catdir/cpso/romanization/hindi.pdf
+  creation_date 1997
+  description {    ALA-LC Romanization table for Hindi
+  }
+
+  notes {
+
+    note "Only the vowel forms that appear at the beginning of a syllable are listed; the forms used for\n vowels following a consonant can be found in grammars; no distinction between the two is\n made in transliteration."
+
+    note "      The vowel a is implicit after all consonants and consonant clusters and is supplied in\n      transliteration, with the following exceptions:\n\n      a) when another vowel is indicated by its appropriate sign; and\n      b) when the absence of any vowel is indicated by the subscript sign ( ◌् ) called halanta or\n         virāma."
+
+    note "      Exception: Anusvāra is transliterated by:\n\n      a) ṅ before gutturals,\n      b) ñ before palatals,\n      c) ṇ before cerebrals,\n      d) n before dentals, and\n      e) m before labials."
+
+    note "Anunāsika before guttural, palatal, cerebral, and dental occlusives is transliterated n̐. Before\n labials, sibilants, semivowels, aspirates, vowels, and in final position it is transliterated m̐."
+
+    note "When doubled, avagraha is transliterated by two apostrophes ( ’’ )."
+  }
+}
+
+tests {
+   "हम" ->  "hama"
+   "मीन" ->  "mīna"
+   "औसत" ->  "ăusata"
+   "माँऽऽऽ!" ->  "mān̐’’’!"
+   "माँ" ->  "mām̐"
+   "गंभीर मरीजों के मामले में भारत दूसरे नंबर पर" ->  "gaṃbhīr marījoṃ ke māmale meṃ bhārat dūsare naṃbar para"
+   "कोरोना अपडेट्स" ->  "koronā apaḍeṭsa"
+   "सीडीसी चीफ का बयान अहम" ->  "sīḍīsī cīph kā bayān ahama"
+   "गूगल प्ले स्टोर पर पेटीएम की वापसी" ->  "gūgal ple sṭor par peṭīem kī vāpasī"
+   "भारत में गैंबलिंग की इजाजत नहीं" ->  "bhārat meṃ gaiṃbaliṃg kī ijājat nahīṃ"
+   "कोरोना वैक्सीन मुद्दे पर घिरे राष्ट्रपति; जो बाइडेन बोले- मुझे और देश को वैज्ञानिकों पर भरोसा है, डोनाल्ड ट्रम्प पर नहीं" ->  "koronā vaiksīn mudde par ghire rāshṭrapati; jo bāiḍen bole- mujhe ăur deś ko vaijñānikoṃ par bharosā hai, ḍonālḍ ṭramp par nahīṃ"
+   "गूगल की कार्रवाई पर पेटीएम ने कहा था कि ऐप को अस्थायी तौर पर प्ले-स्टोर से हटाया गया है, आपके पैसे सुरक्षित हैं" ->  "gūgal kī kārravāī par peṭīem ne kahā thā ki aip ko asthāyī tăur par ple-sṭor se haṭāyā gayā hai, āpake paise surakshit haiṃ"
+   "२५६८७५४४६४४६१६११" ->  "2568754464461611"
+}
+
+aliases {
+  hin_cons_or_conscluster = any("\u093E\u093F\u0940\u0941\u0942\u0943\u0944\u0945\u0947\u0948\u0949\u094B\u094C\u0020\u094d")
+}
+
+stage main {
+
+  # RULES
+  # note[2]
+  sub {
+    from capture("क" + maybe("="))
+    to "k"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("क़" + maybe("="))
+    to "q"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ख" + maybe("="))
+    to "kh"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ख़" + maybe("="))
+    to "kh"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ग" + maybe("="))
+    to "g"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ग़" + maybe("="))
+    to "gh"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("घ" + maybe("="))
+    to "gh"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ङ" + maybe("="))
+    to "ṅ"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("च" + maybe("="))
+    to "c"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("छ" + maybe("="))
+    to "ch"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ज" + maybe("="))
+    to "j"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ज़" + maybe("="))
+    to "j"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("झ" + maybe("="))
+    to "jh"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ञ" + maybe("="))
+    to "ñ"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ट" + maybe("="))
+    to "ṭ"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ट़" + maybe("="))
+    to "t̤"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ठ" + maybe("="))
+    to "ṭh"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ड" + maybe("="))
+    to "ḍ"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ड़" + maybe("="))
+    to "ṛ"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ड़" + maybe("="))
+    to "ṛ"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ढ" + maybe("="))
+    to "ḍh"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ढ़" + maybe("="))
+    to "ṛh"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ण" + maybe("="))
+    to "ṇ"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("त" + maybe("="))
+    to "t"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("थ" + maybe("="))
+    to "th"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("द" + maybe("="))
+    to "d"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ध" + maybe("="))
+    to "dh"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("न" + maybe("="))
+    to "n"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("प" + maybe("="))
+    to "p"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("फ" + maybe("="))
+    to "ph"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("फ़" + maybe("="))
+    to "ph"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ब" + maybe("="))
+    to "b"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("भ" + maybe("="))
+    to "bh"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("म" + maybe("="))
+    to "m"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("य" + maybe("="))
+    to "y"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("र" + maybe("="))
+    to "r"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ल" + maybe("="))
+    to "l"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("व" + maybe("="))
+    to "v"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("श" + maybe("="))
+    to "ś"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ष" + maybe("="))
+    to "sh"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("स" + maybe("="))
+    to "s"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("स़" + maybe("="))
+    to "s̤"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ह" + maybe("="))
+    to "h"
+    after hin_cons_or_conscluster
+  }
+  sub {
+    from capture("ह़" + maybe("="))
+    to "h"
+    after hin_cons_or_conscluster
+  }
+
+  # note[3]
+  sub {
+    from "\u0902"
+    to "ṅ"
+    after any("कक़खख़गग़घङ")
+  }
+  sub {
+    from "\u0902"
+    to "ñ"
+    after any("चछजज़झञ")
+  }
+  sub {
+    from "\u0902"
+    to "ṇ"
+    after any("टट़ठडड़ढढ़ण")
+  }
+  sub {
+    from "\u0902"
+    to "n"
+    after any("तथदधन")
+  }
+  # note[4]
+  sub {
+    from "\u0901"
+    to "m̐"
+    after boundary
+    before ""
+  }
+
+
+  # CHARACTERS
+  parallel {
+
+    # I. Vowels and Diphthongs (see Note 1)
+
+    sub "अ" "a"
+    sub "आ" "ā"
+    sub "इ" "i"
+    sub "ई" "ī"
+    sub "उ" "u"
+    sub "ऊ" "ū"
+    sub "ऋ" "ṛ"
+    sub "ॠ" "ṝ"
+    sub "ऌ" "ḷ"
+    sub "ॳ" "ĕ"
+    sub "ए" "e"
+    sub "ॲ" "ê"
+    sub "अै" "ăi"
+    sub "ऐ" "ai"
+    sub "ऒ" "ŏ"
+    sub "ओ" "o"
+    sub "ऑ" "ô"
+    sub "औ" "ău"
+
+    # II. Consonants (see Note 2)
+    # Gutturals
+    sub "क" "ka"
+    sub "क़" "qa"
+    sub "ख" "kha"
+    sub "ख़" "kha"
+    sub "ग" "ga"
+    sub "ग़" "gha"
+    sub "घ" "gha"
+    sub "ङ" "ṅa"
+
+    # Palatals
+    sub "च" "ca"
+    sub "छ" "cha"
+    sub "ज" "ja"
+    sub "ज़" "ja"
+    sub "झ" "jha"
+    sub "ञ" "ña"
+
+    # Cerebrals
+    sub "ट" "ṭa"
+    sub "ट़" "t̤a"
+    sub "ठ" "ṭha"
+    sub "ड" "ḍa"
+    sub "ड़" "ṛa"
+    sub "ड़" "ṛa"
+    sub "ढ" "ḍha"
+    sub "ढ़" "ṛha"
+    sub "ण" "ṇa"
+
+    # Dentals
+    sub "त" "ta"
+    sub "थ" "tha"
+    sub "द" "da"
+    sub "ध" "dha"
+    sub "न" "na"
+
+    # Labials
+    sub "प" "pa"
+    sub "फ" "pha"
+    sub "फ़" "pha"
+    sub "ब" "ba"
+    sub "भ" "bha"
+    sub "म" "ma"
+
+    # Semivowels
+    sub "य" "ya"
+    sub "र" "ra"
+    sub "ल" "la"
+    sub "व" "va"
+
+    # Sibilants
+    sub "श" "śa"
+    sub "ष" "sha"
+    sub "स" "sa"
+    sub "स़" "s̤a"
+
+    # Aspirate
+    sub "ह" "ha"
+    sub "ह़" "ha"
+
+    # Anusvāra
+    sub "ं" "ṃ"
+
+    # Bisarga
+    sub "ः " "ḥ"
+
+    # Anunāsika
+    sub "ँ" "n̐"
+
+    # Abagraha
+    sub "ऽ" "’"
+
+    # Medials # Needed for connecting constants
+    sub "ा" "ā"
+    sub "ॉ" "ô"
+    sub "ि" "i"
+    sub "ी" "ī"
+    sub "ु" "u"
+    sub "ू" "ū"
+    sub "ृ" "ṛ"
+    sub "ॄ" "ṝ"
+    sub "े" "e"
+    sub "ॊ" "ŏ"
+    sub "ौ" "ău"
+    sub "ै" "ai"
+    sub "ो" "o"
+    sub "्" ""
+    sub "़" ""
+
+    # digits
+
+    sub "०" "0"
+    sub "१" "1"
+    sub "२" "2"
+    sub "३" "3"
+    sub "४" "4"
+    sub "५" "5"
+    sub "६" "6"
+    sub "७" "7"
+    sub "८" "8"
+    sub "९" "9"
+  }
+  compose
+}
+}

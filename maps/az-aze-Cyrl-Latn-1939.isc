@@ -1,0 +1,110 @@
+system "AZ:aze-Cyrl:Latn:1939" {
+
+metadata {
+  authority_id az
+  id 1939
+  language iso-639-2:aze
+  source_script Cyrl
+  destination_script Latn
+  url https://omniglot.com/writing/azeri.htm
+  creation_date 1939
+  name Azeri Romanization (1939)
+  description {    In 1939 Joseph Stalin ordered the Cyrillic alphabet to be used by Azeri speakers in the Soviet Union.
+  }
+
+  notes {
+    # from Wikipedia
+    note "The letter Ц, intended for the sound [ц] in borrowed words, was used in the Azerbaijani Cyrillic alphabet until 1951. In the Azeri language, the sound [c] usually becomes [s]."
+  }
+}
+
+tests {
+   "Юя" ->  "Yuya"
+  # from internet
+   "Азәрбайҹан әлифбасы" ->  "Azərbaycan əlifbası"
+   "Бүтүн инсанлар ләйагәт вә һүгугларына ҝөрә азад бәрабәр доғулурлар.\nОнларын шүурлары вә виҹданлары вар вә бир-бирләринә мүнасибәтдә гардашлыг руһунда давранмалыдырлар." ->  "Bütün insanlar ləyaqət və hüquqlarına görə azad bərabər doğulurlar.\nOnların şüurları və vicdanları var və bir-birlərinə münasibətdə qardaşlıq ruhunda davranmalıdırlar."
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "А" "A"
+    sub "Б" "B"
+    sub "В" "V"
+    sub "Г" "Q"
+    sub "Ғ" "Ğ"
+    sub "Д" "D"
+    sub "Е" "E"
+    sub "Ә" "Ə"
+    sub "Ж" "J"
+    sub "З" "Z"
+    sub "И" "İ"
+    sub "Й" "Y"
+    sub "К" "K"
+    sub "Ҝ" "G"
+    sub "Л" "L"
+    sub "М" "M"
+    sub "Н" "N"
+    sub "О" "O"
+    sub "Ө" "Ö"
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "У" "U"
+    sub "Ү" "Ü"
+    sub "Ф" "F"
+    sub "Х" "X"
+    sub "Ц" "s"
+    sub "Һ" "H"
+    sub "Ч" "Ç"
+    sub "Ҹ" "C"
+    sub "Ш" "Ş"
+    sub "Ы" "I"
+    sub "Э" "E"
+    sub "Ю" "Yu"
+    sub "Я" "Ya"
+
+    sub "а" "a"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "q"
+    sub "ғ" "ğ"
+    sub "д" "d"
+    sub "е" "e"
+    sub "ә" "ə"
+    sub "ж" "j"
+    sub "з" "z"
+    sub "и" "i"
+    sub "й" "y"
+    sub "к" "k"
+    sub "ҝ" "g"
+    sub "л" "l"
+    sub "м" "m"
+    sub "н" "n"
+    sub "о" "o"
+    sub "ө" "ö"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "у" "u"
+    sub "ү" "ü"
+    sub "ф" "f"
+    sub "х" "x"
+    sub "ц" "s"
+    sub "һ" "h"
+    sub "ч" "ç"
+    sub "ҹ" "c"
+    sub "ш" "ş"
+    sub "ы" "ı"
+    sub "э" "e"
+    sub "ю" "yu"
+    sub "я" "ya"
+
+    sub "'" ""
+  }
+
+}
+}

@@ -1,0 +1,210 @@
+system "STATEGEOCADASTRE:ukr-Cyrl:Latn:1993" {
+
+metadata {
+  authority_id stategeocadastre
+  id 1993
+  language iso-639-2:ukr
+  source_script Cyrl
+  destination_script Latn
+  name PROVISIONAL RULES OF REPRODUCING LETTERS OF THE UKRAINIAN ALPHABET WITH LATIN (ENGLISH) CHARACTERS
+  url https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/17th-gegn-docs/17th_gegn_WP73.pdf
+  creation_date 1993
+  description {    These Rules are intended for Romanized transliteration of Ukrainian
+    geographic names in international cartographic editions.
+
+    Geographic names of Russia, Byelorussia, Bulgaria and other states
+    using the Cyrillic alphabet are transliterated according to rules
+    accepted in those states.
+
+    These Rules come into effect from the moment of their approval by
+    the Main Administration of Geodesy, Cartography and Cadastre and
+    will be effective until the introduction of a State standard of
+    Ukraine regulating the Romanized transliteration of the Ukrainian
+    alphabet.
+  }
+
+  notes {
+    note "No apostrophe (’) is used in transliteration, the combination \"ьо\" is transliterated as \"io\""
+    note "Use of capitals in Latin version of Ukrainian geographic names correspond to the Ukrainian spelling"
+    note "Generics geographical terms standing before or after a name in full or abbreviated form are transliterated"
+    note "Romanized versions of complex and compound Ukrainian toponyms (one word, hyphenated or separate words) will follow the Ukrainian spelling"
+    note "In indexes of Romanized geographical names entries must be arranged in the order of the Latin (English) alphabet"
+    note "Geographic names of Russia, Byelorussia, Bulgaria and other states using the Cyrillic alphabet are transliterated according to rules accepted in those states."
+    note "Ed: There seems to be a mistake in the source document. 'ц' should be replaced with ts instead 'tz'."
+  }
+}
+
+tests {
+   "Кам’янка" ->  "Kamianka" # note[1]
+   "Сьомаки" ->  "Siomaky" # note[1]
+   "Усть-Чорна" ->  "Ust’-Chorna" # note[2]
+   "Чорне море" ->  "Chorne more" # note[2]
+   "оз. Сиваш" ->  "oz. Syvash" # note[3]
+   "Кримський канал" ->  "Kryms’kyi kanal" # note[3] # ! Example had typo in original document "Krums’kyi kanal"
+   "Гола Пристань" ->  "Hola Prystan’"
+   "Корсунь Шевченківський" ->  "Korsun’ Shevchenkivs’kyi"
+   "Верхньодніпровськ" ->  "Verkhniodniprovs’k"
+   "Варва" ->  "Varva"
+   "Броди" ->  "Brody"
+   "Верховина" ->  "Verkhovyna"
+   "Глухів" ->  "Hlukhiv"
+   "Великий" ->  "Velykyi"
+   "Ґрунь(гора)" ->  "Grun’(hora)"
+   "Димер" ->  "Dymer"
+   "Срібне" ->  "Sribne"
+   "Євпаторія" ->  "Yevpatoriia"
+   "Єнакієве" ->  "Yenakiieve"
+   "Жолква" ->  "Zholkva"
+   "Затока" ->  "Zatoka"
+   "Житомир" ->  "Zhytomyr"
+   "Інгул" ->  "Inhul"
+   "Зміїв" ->  "Zmiïv"
+   "Йосипівка" ->  "Yosypivka"
+   "Стрий" ->  "Stryi"
+   "Калуш" ->  "Kalush"
+   "Лубни" ->  "Lubny"
+   "Миколаїв" ->  "Mykolaïv"
+   "Ніжин" ->  "Nizhyn"
+   "Острог" ->  "Ostroh"
+   "Печеніги" ->  "Pechenihy"
+   "Рівне" ->  "Rivne"
+   "Сарата" ->  "Sarata"
+   "Тячів" ->  "Tiachiv"
+   "Узин" ->  "Uzyn"
+   "Форос" ->  "Foros"
+   "Харків" ->  "Kharkiv"
+   "Цюрупінськ" ->  "Tsiurupins’k"
+   "Черемош" ->  "Cheremosh"
+   "Шацьк" ->  "Shats’k"
+   "Щорс" ->  "Shchors"
+   "Хмельницький" ->  "Khmel’nyts’kyi" # ! Example had typo in original document "Khmel’nyts’ky"
+   "Юрівка" ->  "Yurivka"
+   "Любеч" ->  "Liubech"
+   "Ялта" ->  "Yalta"
+   "Ясіня" ->  "Yasinia"
+}
+
+stage main {
+
+  # RULES
+    sub {
+    from boundary + "\u0404"
+    to "Ye"
+    not_before "\u2019"
+  }
+    sub {
+    from boundary + "\u0454"
+    to "ye"
+    not_before "\u2019"
+  }
+    sub {
+    from boundary + "\u0419"
+    to "Y"
+    not_before "\u2019"
+  }
+    sub {
+    from boundary + "\u0419"
+    to "y"
+    not_before "\u2019"
+  }
+    sub {
+    from boundary + "\u042e"
+    to "Yu"
+    not_before "\u2019"
+  }
+    sub {
+    from boundary + "\u044e"
+    to "yu"
+    not_before "\u2019"
+  }
+    sub {
+    from boundary + "\u042f"
+    to "Ya"
+    not_before "\u2019"
+  }
+    sub {
+    from boundary + "\u044f"
+    to "ya"
+    not_before "\u2019"
+  }
+  # note[1]
+    sub {
+    from boundary + "\u2019" + boundary
+    to ""
+  }
+    sub "\u042c\u041e" "IO"
+    sub "\u044c\u043e" "io"
+
+
+  # CHARACTERS
+  parallel {
+    sub "А" "A"
+    sub "Б" "B"
+    sub "В" "V"
+    sub "Г" "H"
+    sub "Ґ" "G"
+    sub "Д" "D"
+    sub "Е" "E"
+    sub "Є" "Ie"
+    sub "Ж" "Zh"
+    sub "З" "Z"
+    sub "И" "Y"
+    sub "І" "I"
+    sub "Ї" "Ï"
+    sub "Й" "I"
+    sub "К" "K"
+    sub "Л" "L"
+    sub "М" "M"
+    sub "Н" "N"
+    sub "О" "O"
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "У" "U"
+    sub "Ф" "F"
+    sub "Х" "Kh"
+    sub "Ц" "Ts"
+    sub "Ч" "Ch"
+    sub "Ш" "Sh"
+    sub "Щ" "Shch"
+    sub "Ь" "’"
+    sub "Ю" "Iu"
+    sub "Я" "Ia"
+    sub "а" "a"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "h"
+    sub "ґ" "g"
+    sub "д" "d"
+    sub "е" "e"
+    sub "є" "ie"
+    sub "ж" "zh"
+    sub "з" "z"
+    sub "и" "y"
+    sub "і" "i"
+    sub "ї" "i"
+    sub "й" "i"
+    sub "к" "k"
+    sub "л" "l"
+    sub "м" "m"
+    sub "н" "n"
+    sub "о" "o"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "у" "u"
+    sub "ф" "f"
+    sub "х" "kh"
+    sub "ц" "ts"
+    sub "ч" "ch"
+    sub "ш" "sh"
+    sub "щ" "shch"
+    sub "ю" "iu"
+    sub "я" "ia"
+    sub "ь" "’"
+  }
+
+}
+}

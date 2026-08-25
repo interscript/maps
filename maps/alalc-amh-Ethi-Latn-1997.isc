@@ -1,0 +1,493 @@
+system "ALA-LC:amh-Ethi:Latn:1997" {
+
+metadata {
+  authority_id alalc
+  id 1997
+  language iso-639-2:amh
+  source_script Ethi
+  destination_script Latn
+  name Romanization Table -- Amharic (1997)
+  url http://catdir.loc.gov/catdir/cpso/romanization/amharic.pdf
+  creation_date 1997
+  description {    ALA-LC Romanization Tables: Transliteration Schemes for Non-Roman Scripts.
+    Randal K. Berry (ed.). Library of Congress, 1997.
+  }
+
+  notes {
+    note "      The Ethiopic script used for Amharic is also used for other languages,\n      including Ge’ez, Argobba, Gurage, and Tigre. Ge’ez, which is chiefly a\n      liturgical language, uses only 26 basic letter forms from this table."
+  }
+}
+
+tests {
+   "የዜግነት ክብር በ ኢትዮጵያችን ጸንቶ" ->  "yazégenate kebere ba ʼiteyop̣eyāčene ṣaneto"
+   "ታየ ሕዝባዊነት ዳር እስከዳር በርቶ" ->  "tāya ḥezebāwinate dāre ʼesekadāre bareto"
+   "ለሰላም ለፍትህ ለሕዝቦች ነጻነት" ->  "lasalāme lafetehe laḥezeboče naṣānate"
+   "በእኩልነት በፍቅር ቆመናል ባንድነት" ->  "baʼekulenate bafeqere qomanāle bānedenate"
+   "መሠረተ ፅኑ ሰብዕናን ያልሻርን" ->  "maśarata ṡenu sabeʻenāne yālešārene"
+   "ሕዝቦች ነን ለሥራ በሥራ የኖርን" ->  "ḥezeboče nane laśerā baśerā yanorene"
+   "ድንቅ የባህል መድረክ ያኩሪ ቅርስ ባለቤት" ->  "deneqe yabāhele maderake yākuri qerese bālabéte"
+   "የተፈጥሮ ጸጋ የጀግና ሕዝብ እናት" ->  "yatafaṭero ṣagā yaǧagenā ḥezebe ʼenāte"
+   "እንጠብቅሻለን አለብን አደራ" ->  "ʼeneṭabeqešālane ʼalabene ʼadarā"
+   "ኢትዮጵያችን ኑሪ እኛም ባንቺ እንኩራ" ->  "ʼiteyop̣eyāčene nuri ʼeñāme bāneči ʼenekurā"
+   "ቋንቋ የድምጽ፣ የምልክት ወይም የምስል ቅንብር ሆኖ" ->  "qwāneqwā yademeṣe፣ yamelekete wayeme yamesele qenebere hono"
+   "ለማሰብ ወይም የታሰበን ሃሳብ ለሌላ ለማስተላለፍ የሚረዳ መሳሪያ ነው" ->  "lamāsabe wayeme yatāsabane hāsābe lalélā lamāsetalālafe yamiradā masāriyā nawe"
+   "በአጭሩ ቋንቋ የምልክቶች ስርዓትና እኒህን ምልክቶች ለማቀናበር" ->  "baʼaċeru qwāneqwā yameleketoče sereʻātenā ʼenihene meleketoče lamāqanābare"
+   "የሚያስፈልጉ ህጎች ጥንቅር ነው። ቋንቋወችን ለመፈረጅ እንዲሁም" ->  "yamiyāsefalegu hegoče ṭeneqere nawe። qwāneqwāwačene lamafaraǧe ʼenedihume"
+   "ለምክፈል የሚያስችሉ መስፈርቶችን ለማስቀመጥ ባለው ችግር" ->  "lamekefale yamiyāsečelu masefaretočene lamāseqamaṭe bālawe čegere"
+   "ምክንያት በአሁኑ ሰዓት በርግጠኝነት ስንት ቋንቋ በዓለም ላይ" ->  "mekeneyāte baʼahunu saʻāte baregeṭañenate senete qwāneqwā baʻālame lāye"
+   "እንዳለ ማወቅ አስቸጋሪ ነው" ->  "ʼenedāla māwaqe ʼasečagāri nawe"
+   "አሰላ" ->  "ʼasalā"
+   "አሶሳ" ->  "ʼasosā"
+   "አንኮበር" ->  "ʼanekobare"
+   "አክሱም" ->  "ʼakesume"
+   "አዋሳ" ->  "ʼawāsā"
+   "አዲስ ዘመን (ከተማ)" ->  "ʼadise zamane (katamā)"
+   "አዲግራት" ->  "ʼadigerāte"
+   "አዳማ" ->  "ʼadāmā"
+   "ደምበጫ" ->  "damebaċā"
+   "ደርባ" ->  "darebā"
+   "ደብረ ማርቆስ" ->  "dabera māreqose"
+   "ደብረ ብርሃን" ->  "dabera berehāne"
+   "ደብረ ታቦር (ከተማ)" ->  "dabera tābore (katamā)"
+   "ደብረ ዘይት" ->  "dabera zayete"
+   "ደገሃቡር" ->  "dagahābure"
+   "ወልቂጤ" ->  "waleqiṭé"
+   "ወልወል" ->  "walewale"
+   "ወልደያ" ->  "waledayā"
+   "ናይሎ ሳህራን" ->  "nāyelo sāherāne"
+   "አኙዋክኛ" ->  "ʼañuwākeñā"
+   "ኡዱክኛ" ->  "ʼudukeñā"
+   "ኦፓኛ" ->  "ʼopāñā"
+   "ጉምዝኛ" ->  "gumezeñā"
+   "አፋርኛ" ->  "ʼafāreñā"
+   "አላባኛ" ->  "ʼalābāñā"
+   "አርቦርኛ" ->  "ʼareboreñā"
+   "ባይሶኛ" ->  "bāyesoñā"
+   "ቡሳኛ" ->  "busāñā"
+   "ራስ ዓሊ (ትልቁ) ፬" ->  "rāse ʻāli (telequ) 4"
+   "ራስ ዓሊጋዝ ፭" ->  "rāse ʻāligāze 5"
+   "ራስ ዐሥራትና ፮" ->  "rāse ʻaśerātenā 6"
+   "ራስ ጉግሣ ፳፮" ->  "rāse gugeśā 206"
+   "ራስ ይማም ፪" ->  "rāse yemāme 2"
+   "ራስ ማርዬ ፫" ->  "rāse māreyé 3"
+   "ራስ ዶሪ ፫ ወር" ->  "rāse dori 3 ware"
+   "ራስ ዓሊ (ትንሹ) ፳" ->  "rāse ʻāli (tenešu) 20"
+   "ዓፄ ቴዎድሮስ ፲፭" ->  "ʻāṡé téwoderose 105"
+   "ዳግማዊ ዓጼ ተክለ ጊዮርጊስ ፫" ->  "dāgemāwi ʻāṣé takela giyoregise 3"
+   "ዓፄ ዮሐንስ ፲፰" ->  "ʻāṡé yoḥanese 108"
+   "ዳግማዊ ዓጼ ምኒልክ ፳፬" ->  "dāgemāwi ʻāṣé menileke 204"
+   "ልጅ ኢያሱ ፫" ->  "leǧe ʼiyāsu 3"
+   "ንግሥት ዘውዲቱ ፲፫" ->  "negeśete zaweditu 103"
+   "ቀዳማዊ ኃይለ ሥላሴ" ->  "qadāmāwi hāyela śelāsé"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "ሀ" "ha"
+    sub "ሁ" "hu"
+    sub "ሂ" "hi"
+    sub "ሃ" "hā"
+    sub "ሄ" "hé"
+    sub {
+    from "ህ"
+    to any(["he", "h"])
+  }
+    sub "ሆ" "ho"
+    sub "ለ" "la"
+    sub "ሉ" "lu"
+    sub "ሊ" "li"
+    sub "ላ" "lā"
+    sub "ሌ" "lé"
+    sub {
+    from "ል"
+    to any(["le", "l"])
+  }
+    sub "ሎ" "lo"
+    sub "ሐ" "ḥa"
+    sub "ሑ" "ḥu"
+    sub "ሒ" "ḥi"
+    sub "ሓ" "ḥā"
+    sub "ሔ" "ḥé"
+    sub {
+    from "ሕ"
+    to any(["ḥe", "ḥ"])
+  }
+    sub "ሖ" "ḥo"
+    sub "መ" "ma"
+    sub "ሙ" "mu"
+    sub "ሚ" "mi"
+    sub "ማ" "mā"
+    sub "ሜ" "mé"
+    sub {
+    from "ም"
+    to any(["me", "m"])
+  }
+    sub "ሞ" "mo"
+    sub "ሠ" "śa"
+    sub "ሡ" "śu"
+    sub "ሢ" "śi"
+    sub "ሣ" "śā"
+    sub "ሤ" "śé"
+    sub {
+    from "ሥ"
+    to any(["śe", "ś"])
+  }
+    sub "ሦ" "śo"
+    sub "ረ" "ra"
+    sub "ሩ" "ru"
+    sub "ሪ" "ri"
+    sub "ራ" "rā"
+    sub "ሬ" "ré"
+    sub {
+    from "ር"
+    to any(["re", "r"])
+  }
+    sub "ሮ" "ro"
+    sub "ሰ" "sa"
+    sub "ሱ" "su"
+    sub "ሲ" "si"
+    sub "ሳ" "sā"
+    sub "ሴ" "sé"
+    sub {
+    from "ስ"
+    to any(["se", "s"])
+  }
+    sub "ሶ" "so"
+    sub "ሸ" "ša"
+    sub "ሹ" "šu"
+    sub "ሺ" "ši"
+    sub "ሻ" "šā"
+    sub "ሼ" "šé"
+    sub {
+    from "ሽ"
+    to any(["še", "š"])
+  }
+    sub "ሾ" "šo"
+    sub "ቀ" "qa"
+    sub "ቁ" "qu"
+    sub "ቂ" "qi"
+    sub "ቃ" "qā"
+    sub "ቄ" "qé"
+    sub {
+    from "ቅ"
+    to any(["qe", "q"])
+  }
+    sub "ቆ" "qo"
+    sub "በ" "ba"
+    sub "ቡ" "bu"
+    sub "ቢ" "bi"
+    sub "ባ" "bā"
+    sub "ቤ" "bé"
+    sub {
+    from "ብ"
+    to any(["be", "b"])
+  }
+    sub "ቦ" "bo"
+    sub "ተ" "ta"
+    sub "ቱ" "tu"
+    sub "ቲ" "ti"
+    sub "ታ" "tā"
+    sub "ቴ" "té"
+    sub {
+    from "ት"
+    to any(["te", "t"])
+  }
+    sub "ቶ" "to"
+    sub "ቸ" "ča"
+    sub "ቹ" "ču"
+    sub "ቺ" "či"
+    sub "ቻ" "čā"
+    sub "ቼ" "čé"
+    sub {
+    from "ች"
+    to any(["če", "č"])
+  }
+    sub "ቾ" "čo"
+    sub "ኀ" "ha"
+    sub "ኁ" "hu"
+    sub "ኂ" "hi"
+    sub "ኃ" "hā"
+    sub "ኄ" "hé"
+    sub {
+    from "ኅ"
+    to any(["he", "h"])
+  }
+    sub "ኆ" "ho"
+    sub "ነ" "na"
+    sub "ኑ" "nu"
+    sub "ኒ" "ni"
+    sub "ና" "nā"
+    sub "ኔ" "né"
+    sub {
+    from "ን"
+    to any(["ne", "n"])
+  }
+    sub "ኖ" "no"
+    sub "ኘ" "ña"
+    sub "ኙ" "ñu"
+    sub "ኚ" "ñi"
+    sub "ኛ" "ñā"
+    sub "ኜ" "ñé"
+    sub {
+    from "ኝ"
+    to any(["ñe", "ñ"])
+  }
+    sub "ኞ" "ño"
+    sub "አ" "ʼa"
+    sub "ኡ" "ʼu"
+    sub "ኢ" "ʼi"
+    sub "ኣ" "ʼā"
+    sub "ኤ" "ʼé"
+    sub "እ" "ʼe"
+    sub "ኦ" "ʼo"
+    sub "ከ" "ka"
+    sub "ኩ" "ku"
+    sub "ኪ" "ki"
+    sub "ካ" "kā"
+    sub "ኬ" "ké"
+    sub {
+    from "ክ"
+    to any(["ke", "k"])
+  }
+    sub "ኮ" "ko"
+    sub "ኸ" "xa"
+    sub "ኹ" "xu"
+    sub "ኺ" "xi"
+    sub "ኻ" "xā"
+    sub "ኼ" "xé"
+    sub {
+    from "ኽ"
+    to any(["xe", "x"])
+  }
+    sub "ኾ" "xo"
+    sub "ወ" "wa"
+    sub "ዉ" "wu"
+    sub "ዊ" "wi"
+    sub "ዋ" "wā"
+    sub "ዌ" "wé"
+    sub {
+    from "ው"
+    to any(["we", "w"])
+  }
+    sub "ዎ" "wo"
+    sub "ዐ" "ʻa"
+    sub "ዑ" "ʻu"
+    sub "ዒ" "ʻi"
+    sub "ዓ" "ʻā"
+    sub "ዔ" "ʻé"
+    sub "ዕ" "ʻe"
+    sub "ዖ" "ʻo"
+    sub "ዘ" "za"
+    sub "ዙ" "zu"
+    sub "ዚ" "zi"
+    sub "ዛ" "zā"
+    sub "ዜ" "zé"
+    sub {
+    from "ዝ"
+    to any(["ze", "z"])
+  }
+    sub "ዞ" "zo"
+    sub "ዠ" "ža"
+    sub "ዡ" "žu"
+    sub "ዢ" "ži"
+    sub "ዣ" "žā"
+    sub "ዤ" "žé"
+    sub {
+    from "ዥ"
+    to any(["že", "ž"])
+  }
+    sub "ዦ" "žo"
+    sub "የ" "ya"
+    sub "ዩ" "yu"
+    sub "ዪ" "yi"
+    sub "ያ" "yā"
+    sub "ዬ" "yé"
+    sub {
+    from "ይ"
+    to any(["ye", "y"])
+  }
+    sub "ዮ" "yo"
+    sub "ደ" "da"
+    sub "ዱ" "du"
+    sub "ዲ" "di"
+    sub "ዳ" "dā"
+    sub "ዴ" "dé"
+    sub {
+    from "ድ"
+    to any(["de", "d"])
+  }
+    sub "ዶ" "do"
+    sub "ጀ" "ǧa"
+    sub "ጁ" "ǧu"
+    sub "ጂ" "ǧi"
+    sub "ጃ" "ǧā"
+    sub "ጄ" "ǧé"
+    sub {
+    from "ጅ"
+    to any(["ǧe", "ǧ"])
+  }
+    sub "ጆ" "ǧo"
+    sub "ገ" "ga"
+    sub "ጉ" "gu"
+    sub "ጊ" "gi"
+    sub "ጋ" "gā"
+    sub "ጌ" "gé"
+    sub {
+    from "ግ"
+    to any(["ge", "g"])
+  }
+    sub "ጎ" "go"
+    sub "ጠ" "ṭa"
+    sub "ጡ" "ṭu"
+    sub "ጢ" "ṭi"
+    sub "ጣ" "ṭā"
+    sub "ጤ" "ṭé"
+    sub {
+    from "ጥ"
+    to any(["ṭe", "ṭ"])
+  }
+    sub "ጦ" "ṭo"
+    sub "ጨ" "ċa"
+    sub "ጩ" "ċu"
+    sub "ጪ" "ċi"
+    sub "ጫ" "ċā"
+    sub "ጬ" "ċé"
+    sub {
+    from "ጭ"
+    to any(["ċe", "ċ"])
+  }
+    sub "ጮ" "ċo"
+    sub "ጰ" "p̣a"
+    sub "ጱ" "p̣u"
+    sub "ጲ" "p̣i"
+    sub "ጳ" "p̣ā"
+    sub "ጴ" "p̣é"
+    sub {
+    from "ጵ"
+    to any(["p̣e", "s\"p̣\""])
+  }
+    sub "ጶ" "p̣o"
+    sub "ጸ" "ṣa"
+    sub "ጹ" "ṣu"
+    sub "ጺ" "ṣi"
+    sub "ጻ" "ṣā"
+    sub "ጼ" "ṣé"
+    sub {
+    from "ጽ"
+    to any(["ṣe", "ṣ"])
+  }
+    sub "ጾ" "ṣo"
+    sub "ፀ" "ṡa"
+    sub "ፁ" "ṡu"
+    sub "ፂ" "ṡi"
+    sub "ፃ" "ṡā"
+    sub "ፄ" "ṡé"
+    sub {
+    from "ፅ"
+    to any(["ṡe", "ṡ"])
+  }
+    sub "ፆ" "ṡo"
+    sub "ፈ" "fa"
+    sub "ፉ" "fu"
+    sub "ፊ" "fi"
+    sub "ፋ" "fā"
+    sub "ፌ" "fé"
+    sub {
+    from "ፍ"
+    to any(["fe", "f"])
+  }
+    sub "ፎ" "fo"
+    sub "ፐ" "pa"
+    sub "ፑ" "pu"
+    sub "ፒ" "pi"
+    sub "ፓ" "pā"
+    sub "ፔ" "pé"
+    sub {
+    from "ፕ"
+    to any(["pe", "p"])
+  }
+    sub "ፖ" "po"
+    sub "ቨ" "va"
+    sub "ቩ" "vu"
+    sub "ቪ" "vi"
+    sub "ቫ" "vā"
+    sub "ቬ" "vé"
+    sub {
+    from "ቭ"
+    to any(["ve", "v"])
+  }
+    sub "ቮ" "vo"
+
+    sub "ቈ" "qwa"
+    sub "ቊ" "qwi"
+    sub "ቋ" "qwā"
+    sub "ቌ" "qwé"
+    sub "ቍ" "qwe"
+    sub "ኈ" "ẖwa"
+    sub "ኊ" "ẖwi"
+    sub "ኋ" "ẖwā"
+    sub "ኌ" "ẖwé"
+    sub "ኍ" "ẖwe"
+    sub "ኰ" "kwa"
+    sub "ኲ" "kwi"
+    sub "ኳ" "kwā"
+    sub "ኴ" "kwé"
+    sub "ኵ" "kwe"
+    sub "ጐ" "gwa"
+    sub "ጒ" "gwi"
+    sub "ጓ" "gwā"
+    sub "ጔ" "gwé"
+    sub "ጕ" "gwe"
+
+    sub "ሏ" "lwa"
+    sub "ቧ" "bwa"
+    sub "ዟ" "zwa"
+    sub "ጧ" "ṭwā"
+    sub "ሟ" "mwa"
+    sub "ⶁ" "mwa"
+    sub "ቷ" "twa"
+    sub "ዧ" "žwa"
+    sub "ጯ" "ċwā"
+    sub "ሯ" "rwa"
+    sub "ቿ" "čwa"
+    sub "ዯ" "ywa"
+    sub "ጿ" "ṣwā"
+    sub "ሷ" "swa"
+    sub "ኗ" "nwa"
+    sub "ዷ" "dwa"
+    sub "ፏ" "fwā"
+    sub "ሿ" "šwa"
+    sub "ኟ" "ñwa"
+    sub "ጇ" "ǧwa"
+
+    sub "ፙ" "mya"
+    sub "ፚ" "fya"
+
+    sub "ኧ" "ă"
+
+    sub "፩" "1"
+    sub "፪" "2"
+    sub "፫" "3"
+    sub "፬" "4"
+    sub "፭" "5"
+    sub "፮" "6"
+    sub "፯" "7"
+    sub "፰" "8"
+    sub "፱" "9"
+    sub "፲" "10"
+    sub "፳" "20"
+    sub "፴" "30"
+    sub "፵" "40"
+    sub "፶" "50"
+    sub "፷" "60"
+    sub "፸" "70"
+    sub "፹" "80"
+    sub "፺" "90"
+    sub "፻" "100"
+  }
+
+}
+
+}

@@ -4,38 +4,60 @@ on:
   push:
     branches: [ main, v* ]
   pull_request:
+  workflow_dispatch:
 
 jobs:
-  test:
+  isc-parse:
+    name: All .isc files parse (Ruby)
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        ruby: ["3.3", "3.4"]
-
     steps:
-      - name: Checkout monorepo
-        uses: actions/checkout@v7
-        with:
-          repository: interscript/interscript
-
-      - name: Bootstrap packages
-        run: ruby bootstrap.rb
-
+      - uses: actions/checkout@v7
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{ matrix.ruby }}
-          bundler-cache: true
-          working-directory: ruby
+          ruby-version: "3.4"
+      - name: Checkout interscript-ruby
+        run: |
+          git clone --depth=1 --branch feat/isc-parser-codemod https://github.com/interscript/interscript-ruby.git ../interscript
+      - name: Install parser dependency
+        run: gem install parslet
+      - name: Parse all .isc files
+        run: |
+          cd ../interscript
+          ruby -Ilib -e '
+            require "interscript"
+            require "interscript/isc"
+            total = 0
+            failures = []
+            Dir.glob("../maps/maps/*.isc").sort.each do |path|
+              total += 1
+              begin
+                tree = Interscript::Isc::Parser.parse(File.read(path), filename: File.basename(path))
+                Interscript::Isc::DocumentBuilder.build(tree, filename: File.basename(path))
+              rescue => e
+                failures << "#{File.basename(path)}: #{e.message[0,120]}"
+              end
+            end
+            puts "Parsed #{total - failures.size}/#{total} .isc files"
+            failures.each { |f| STDERR.puts "  #{f}" }
+            exit 1 if failures.any?
+          '
 
-      - name: Install Python helper
-        run: pip install regex
-
-      - name: Install gems
-        working-directory: ruby
-        run: bundle install --jobs 4 --retry 3 --with jsexec --without secryst
-
-      - name: RSpec (maps-focused)
-        working-directory: ruby
-        run: bundle exec rspec spec/interscript_spec.rb spec/map_name_and_metadata_spec.rb
+  isc-parse-ts:
+    name: All .isc files parse (TS)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Checkout interscript-ts
+        run: |
+          git clone --depth=1 --branch feat/imf-runtime-ts https://github.com/interscript/interscript-ts.git ../interscript-ts
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+      - name: Install + build TS parser
+        run: |
+          cd ../interscript-ts
+          npm ci
+          npm run build
+      - name: Parse all .isc files
+        run: npx -y tsx scripts/parse-isc.mjs ../interscript-ts

@@ -1,0 +1,44 @@
+system "BGN-PCGN:kor-Hang:Latn:rok-2011" {
+
+metadata {
+  authority_id bgnpcgn
+  id rok-2011
+  language iso-639-2:kor
+  source_script Hang
+  destination_script Latn
+  name Romanization of Korean for ROK (Hangul-Latin) (2011 Agreement, MOCT System 2000)
+  url https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693724/ROMANIZATION_OF_KOREAN-__MOCT_for_ROK.pdf
+  creation_date 2011
+  adoption_date 2011
+  description 
+
+  notes {
+  note "BGN/PCGN 2011 Agreement"
+  }
+}
+
+tests {
+   "불국사" ->  "Bulguksa"
+   "묵호" ->  "Mukho"
+   "울산" ->  "Ulsan"
+   "독립문" ->  "Dongnimmun"
+   "강남역" ->  "Gangnamyeok"
+   "남산리" ->  "Namsan-ri" #Note: no assimilation for -ri even after nasals
+   "내월리" ->  "Naewol-ri"
+   "울릉군" ->  "Ulleung-gun"
+   "설악산" ->  "Seoraksan"
+   "삼죽면" ->  "Samjuk-myeon"
+   "평리1동" ->  "Pyeongni Il-dong"
+   "평리2동" ->  "Pyeongni I-dong"
+   "탑안이" ->  "Tabani"
+}
+
+dependency "moct-kor-Hang-Latn-2000" as hanglatn
+
+stage main {
+
+  run  map.hanglatn.stage.main
+
+  title_case
+}
+}

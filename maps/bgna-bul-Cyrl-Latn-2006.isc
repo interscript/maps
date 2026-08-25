@@ -1,0 +1,122 @@
+system "BGNA:bul-Cyrl:Latn:2006" {
+
+metadata {
+  authority_id bgna
+  id 2006
+  language iso-639-2:bul
+  source_script Cyrl
+  destination_script Latn
+  name Republic of Bulgaria system for transliteration of Bulgarian geographical names with Roman letters
+  creation_date 2006
+  adoption_date 2006-10-26
+}
+
+tests {
+   "нунатак Абрит" ->  "nunatak Abrit"
+   "връх Академия" ->  "vrah Akademiya"
+   "връх Ами Буе" ->  "vrah Ami Bue"
+   "нос Айтос" ->  "nos Aytos"
+   "залив Баба Тонка" ->  "zaliv Baba Tonka"
+   "Балабански камък" ->  "Balabanski kamak"
+   "Бедечки поток" ->  "Bedechki potok"
+   "нос Бяга" ->  "nos Byaga"
+   "остров Качо" ->  "ostrov Kacho" # wiki ostrov Cacho
+   "Чакъров остров" ->  "Chakarov ostrov"
+   "връх Дъбник" ->  "vrah Dabnik"
+   "залив Десислава" ->  "zaliv Desislava"
+   "ледник Джераси" ->  "lednik Dzherasi"
+   "Джегова скала" ->  "Dzhegova skala"
+   "Нунатак Едуард" ->  "Nunatak Eduard"
+   "Елховска седловина" ->  "Elhovska sedlovina"
+   "ледник Етър" ->  "lednik Etar"
+   "нунатак Филип Тотю" ->  "nunatak Filip Totyu"
+   "ледник Габаре" ->  "lednik Gabare"
+   "риф Гергини" ->  "rif Gergini"
+   "Гяуров връх" ->  "Gyaurov vrah"
+   "Гуцалски рид" ->  "Gutsalski rid" # not found
+   "Хараламбиев остров" ->  "Haralambiev ostrov"
+   "връх Ичера" ->  "vrah Ichera"
+   "полуостров Йоан Павел II" ->  "poluostrov Yoan Pavel II"
+   "нос Иван Александър" ->  "nos Ivan Aleksandar"
+   "нос Иречек" ->  "nos Irechek"
+   "нос Кърджали" ->  "nos Kardzhali"
+   "седловина Кърнаре" ->  "sedlovina Karnare"
+   "нунатак Керсеблепт" ->  "nunatak Kerseblept"
+   "Кондофрейски възвишения" ->  "Kondofreyski vazvisheniya"
+   "Костинбродски проход" ->  "Kostinbrodski prohod"
+   "връх Кожух" ->  "vrah Kozhuh"
+   "Кукерски нунатаци" ->  "Kukerski nunatatsi"
+   "залив Лазурен бряг" ->  "zaliv Lazuren bryag"
+   "връх Лудогорие" ->  "vrah Ludogorie"
+   "Лютибродски скали" ->  "Lyutibrodski skali"
+   "Масларов нунатак" ->  "Maslarov nunatak"
+   "Михневски връх" ->  "Mihnevski vrah"
+   "рид Митино" ->  "rid Mitino"
+   "езеро Наяда" ->  "ezero Nayada"
+   "нос Никюп" ->  "nos Nikyup"
+   "рид Оборище" ->  "rid Oborishte"
+   "залив Олуша" ->  "zaliv Olusha"
+   "Оряховски възвишения" ->  "Oryahovski vazvisheniya"
+   "нунатак Памидово" ->  "nunatak Pamidovo"
+   "връх Парангалица" ->  "vrah Parangalitsa"
+   "Първомайски провлак" ->  "Parvomayski provlak"
+   "ледник Патлейна" ->  "lednik Patleyna"
+   "полуостров Перник" ->  "poluostrov Pernik"
+   "връх Петко Войвода" ->  "vrah Petko Voyvoda"
+   "остров Фанагория" ->  "ostrov Fanagoriya"
+   "нос Плас" ->  "nos Plas"
+   "Пресиянов рид" ->  "Presiyanov rid"
+   "връх Принсипе де Астуриас" ->  "vrah Prinsipe de Asturias" # wiki: vrah Príncipe de Asturias
+   "нунатак Ръченица" ->  "nunatak Rachenitsa"
+   "връх Райна Княгиня" ->  "vrah Rayna Knyaginya"
+   "Рид Ръжана" ->  "Rid Razhana"
+   "връх Ригс" ->  "vrah Rigs"
+   "остров Рогулят" ->  "ostrov Rogulyat"
+   "ледник Сабазий" ->  "lednik Sabaziy"
+   "ледник Съединение" ->  "lednik Saedinenie"
+   "нунатак Сенокос" ->  "nunatak Senokos"
+   "Сейдолски камък" ->  "Seydolski kamak"
+   "ледник Щерна" ->  "lednik Shterna"
+   "връх Шишман" ->  "vrah Shishman"
+   "ледник Сигмен" ->  "lednik Sigmen"
+   "Седловина Синитово" ->  "Sedlovina Sinitovo"
+   "Ледник Скаплизо" ->  "Lednik Skaplizo"
+   "залив Слънчев бряг" ->  "zaliv Slanchev bryag"
+   "остров Соатрис" ->  "ostrov Soatris"
+   "планина Софийски Университет" ->  "planina Sofiyski Universitet"
+   "ледник Сребърна" ->  "lednik Srebarna"
+   "Средногорски възвишения" ->  "Srednogorski vazvisheniya"
+   "Св. Евтимиев камък" ->  "Sv. Evtimiev kamak"
+   "база Св. Климент Охридски" ->  "baza Sv. Kliment Ohridski"
+   "връх Стъргел" ->  "vrah Stargel"
+   "нунатак Сторгозия" ->  "nunatak Storgoziya" # nunatak Storgozia according to wiki
+   "нунатак Сурвакари" ->  "nunatak Survakari"
+   "ледник Световрачене" ->  "lednik Svetovrachene"
+   "остров Теменуга" ->  "ostrov Temenuga"
+   "Тракийски възвишения" ->  "Trakiyski vazvisheniya"
+   "хълм Цамблак" ->  "halm Tsamblak"
+   "ледник Урдовиза" ->  "lednik Urdoviza"
+   "остров Вълчедръм" ->  "ostrov Valchedram"
+   "острови Вардим" ->  "ostrovi Vardim"
+   "Владигеров проток" ->  "Vladigerov protok"
+   "ледник Ябланица" ->  "lednik Yablanitsa"
+   "залив Ямфорина" ->  "zaliv Yamforina"
+   "Йовков нос" ->  "Yovkov nos"
+   "рид Заберново" ->  "rid Zabernovo"
+   "ледник Збелсурд" ->  "lednik Zbelsurd"
+   "Жефарович камък" ->  "Zhefarovich kamak"
+   "връх Зиези" ->  "vrah Ziezi"
+   "залив Златни пясъци" ->  "zaliv Zlatni pyasatsi"
+   "ледник Злокучене" ->  "lednik Zlokuchene"
+   "проток Злогош" ->  "protok Zlogosh"
+}
+
+dependency "apcbg-bul-Cyrl-Latn-1995" as cyrllatn
+
+stage main {
+
+  run  map.cyrllatn.stage.main
+
+}
+
+}

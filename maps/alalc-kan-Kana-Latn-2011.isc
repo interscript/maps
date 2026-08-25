@@ -1,0 +1,48 @@
+system "ALA-LC:kan-Kana:Latn:2011" {
+
+metadata {
+  authority_id alalc
+  id 2011
+  language iso-639-2:kan
+  source_script Kana
+  destination_script Latn
+  name Romanization Table -- Kannada (2011)
+  url http://catdir.loc.gov/catdir/cpso/romanization/kannada.pdf
+  creation_date 2011
+  description {    ALA-LC Romanization table for Kannada
+  }
+
+  notes {
+
+    note "Only the vowel forms that appear at the beginning of a syllable are listed; the forms used for\n vowels following a consonant can be found in grammars; no distinction between the two is\n made in transliteration."
+
+    note "      The vowel a is implicit after all consonants and consonant clusters and is supplied in\n      transliteration, with the following exceptions:\n\n      a) when another vowel is indicated by its appropriate sign; and\n      b) when the absence of any vowel is indicated by the superscript sign (◌್)."
+
+    note "      Exception: Anusvāra is transliterated by:\n\n      a) ṅ before gutturals,\n      b) ñ before palatals,\n      c) ṇ before cerebrals,\n      d) n before dentals, and\n      e) m before labials."
+  }
+}
+
+tests {
+   "ಕರ್ಣಾಟಕ" ->  "karṇāṭaka"
+   "ಬೆಂಗಳೂರು" ->  "beṅgaḷūru"
+   "ಭಾರತದಲ್ಲಿ ಗಾಳಿ ಕಲುಷಿತವಾಗಿದೆ: ಹವಾಮಾನ ಬದಲಾವಣೆ ಸಮರ್ಥನೆಗೆ ಭಾರತವನ್ನು ಟೀಕಿಸಿದ ಟ್ರಂಪ್" ->  "bhāratadalli gāḷi kaluṣitavāgide: havāmāna badalāvaṇe samarthanege bhāratavannu ṭīkisida ṭraṃp"
+   "ಅಮೆರಿಕ ಅಧ್ಯಕ್ಷೀಯ ಚುನಾವಣೆ ಅಂತಿಮ ಚರ್ಚೆ: ಭಾರತದ ವಿರುದ್ಧ ಟ್ರಂಪ್ ಆರೋಪವೇನು?!" ->  "amerika adhyakṣīya cunāvaṇe aṃtima carce: bhāratada viruddha ṭraṃp ārōpavēnu?!"
+   "ಹೇಗಿದೆ ಅಮೆರಿಕನ್‌ ಚುನಾವಣ ಕಣ?" ->  "hēgide amerikan cunāvaṇa kaṇa?"
+   "ಫ್ರೀಜರ್ ನಲ್ಲಿಟ್ಟ ನೂಡಲ್ಸ್ ತಿಂದು ಒಂದೇ ಕುಟುಂಬದ ೯ ಮಂದಿ ಸಾವು: ೩ ಮಕ್ಕಳು ಅಪಾಯದಿಂದ ಪಾರು" ->  "phrījar nalliṭṭa nūḍals tiṃdu oṃdē kuṭuṃbada 9 maṃdi sāvu: 3 makkaḷu apāyadinda pāru"
+   "ಉಡುಪಿಯಲ್ಲಿ ಪ್ರಪ್ರಥಮ ಬಾರಿಗೆ ಪ್ರಾರಂಭವಾಗಿರುವ ದೇಶಿ ಉತ್ಪನ್ನಗಳ ಮಳಿಗೆ" ->  "uḍupiyalli praprathama bārige prāraṃbhavāgiruva dēśi utpannagaḷa maḷige"
+   "ಚಿಕ್ಕಮಗಳೂರು : ಪುಷ್ಪ ಸಮರ್ಪಣೆ ವೇಳೆ ಮಗಳನ್ನ ನೆನೆದು ಕಣ್ಣೀರಿಟ್ಟ ಮೃತ ಪೇದೆ ತಾಯಿ" ->  "cikkamagaḷūru : puṣpa samarpaṇe vēḷe magaḷanna nenedu kaṇṇīriṭṭa mṛta pēde tāyi"
+   "ಸಮಂಗಳೂರು: ಡ್ರಗ್ಸ್ ಜಾಗೃತಿ ಬರಹದಿಂದ ಗಮನಸೆಳೆಯುತ್ತಿದೆ ಸಿಟಿ ಬಸ್" ->  "samaṅgaḷūru: ḍrags jāgṛti barahadinda gamanaseḷeyuttide siṭi bas"
+   "ಪುರಸಭೆ, ಪಪಂ ಅಧ್ಯಕ್ಷ-ಉಪಾಧ್ಯಕ್ಷ ಚುನಾವಣೆಗೆ ಹೈಕೋರ್ಟ್‌ ಅಸ್ತು" ->  "purasabhe, papaṃ adhyakṣa-upādhyakṣa cunāvaṇege haikōrṭ astu"
+   "ಅಮೆರಿಕ ಅಧ್ಯಕ್ಷೀಯ ಚುನಾವಣೆ ಅಂತಿಮ ಚರ್ಚೆ: ಭಾರತದ ವಿರುದ್ಧ ಟ್ರಂಪ್ ಆರೋಪವೇನು?" ->  "amerika adhyakṣīya cunāvaṇe aṃtima carce: bhāratada viruddha ṭraṃp ārōpavēnu?"
+   "ಮನೆ ಕುಸಿದು ತಂದೆ ಮತ್ತು ಮಗ ಸಾವು, ಇನ್ನಿಬ್ಬರಿಗೆ ಗಾಯ: ಸ್ಥಳಕ್ಕೆ ಶಾಸಕರ ಭೇಟಿ" ->  "mane kusidu taṃde mattu maga sāvu, innibbarige gāya: sthaḷakke śāsakara bhēṭi"
+}
+
+dependency "alalc-kan-Kana-Latn-1997" as kanalatn
+
+stage main {
+
+  run  map.kanalatn.stage.main
+
+}
+
+}

@@ -1,0 +1,617 @@
+system "BGN-PCGN:tir-Ethi:Latn:2007" {
+
+metadata {
+  authority_id bgnpcgn
+  id 2007
+  language iso-639-2:tir
+  source_script Ethi
+  destination_script Latn
+  name Romanization of Tigrinya (2007)
+  url https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693783/ROMANIZATION_OF_TIGRINYA.pdf
+  creation_date 2007
+  description {    The BGN/PCGN system for Tigrinya is designed for use in romanizing
+    geographical names written in Tigrinya (Ge’ez) characters. The Roman letters
+    and letter combinations shown as ek’uivalents to the Tigrinya characters
+    reflect modern Tigrinya pronunciation, while taking into account some
+    conscious archaisms based on Ge’ez and liturgical practices.
+  }
+
+  notes {
+    note "      Where consonant character sequences give rise to the romanizations\n      k-h, n-y, z-h and s-h, a hyphen may be added between them to differentiate\n      those romanizations from the digraphs kh, ny, zh and sh."
+
+    note "      Where possible, consonant gemination should be reflected. Though not\n      evident from the Ge’ez script, this may be ascertained from a reference\n      source, such as the Tigrinya-English dictionary, Thomas Leiper Kane,\n      Dunwoody Press, Springfield, VA, 2000."
+
+    note "      An inventory of letter-diacritic combinations, with their Unicode\n      encoding, in addition to the unmodified letters of the basic Roman script\n      is:\n        All apostrophes appearing in romanization are U+2019, except as they\n        appear in row 21, which are U+2018.\n        Ĭ (U+012C) ĭ (U+012D)\n        Ḥ (U+0048+0323) ḥ (U+0068+0323)"
+
+    note "      The Romanization column shows only lowercase forms but, when\n      romanizing, uppercase and lowercase Roman letters as appropriate should be\n      used."
+
+    note "      Table footnote 1. The 6th-order characters should be romanized either with\n      or without the letter ĭ, depending on pronunciation."
+
+    note "      Table footnote 2. Forms of the consonant character ሠ are understood to be\n      becoming obsolete in Tigrinya."
+
+    note "      Table footnote 3. The vowel characters in row 17 should be romanized with\n      the apostrophe unless appearing as a word-initial."
+
+    note "      Table footnote 4. Forms of the character አ are understood to be falling into\n      disuse in Tigrinya."
+  }
+}
+
+tests {
+   "የዜግነት ክብር በ ኢትዮጵያችን ጸንቶ" ->  "yeziegĭnetĭ kĭbĭrĭ be ’itĭyop’ĭyachĭnĭ ts’enĭto"
+   "ታየ ሕዝባዊነት ዳር እስከዳር በርቶ" ->  "taye ḥĭzĭbawinetĭ darĭ ’ĭsĭkedarĭ berĭto"
+   "ለሰላም ለፍትህ ለሕዝቦች ነጻነት" ->  "leselamĭ lefĭtĭhĭ leḥĭzĭbochĭ nets’anetĭ"
+   "በእኩልነት በፍቅር ቆመናል ባንድነት" ->  "be’ĭkulĭnetĭ befĭk’ĭrĭ k’omenalĭ banĭdĭnetĭ"
+   "መሠረተ ፅኑ ሰብዕናን ያልሻርን" ->  "meserete ts’ĭnu sebĭ‘ĭnanĭ yalĭsharĭnĭ"
+   "ሕዝቦች ነን ለሥራ በሥራ የኖርን" ->  "ḥĭzĭbochĭ nenĭ lesĭra besĭra yenorĭnĭ"
+   "ድንቅ የባህል መድረክ ያኩሪ ቅርስ ባለቤት" ->  "dĭnĭk’ĭ yebahĭlĭ medĭrekĭ yakuri k’ĭrĭsĭ balebietĭ"
+   "የተፈጥሮ ጸጋ የጀግና ሕዝብ እናት" ->  "yetefet’ĭro ts’ega yejegĭna ḥĭzĭbĭ ’ĭnatĭ"
+   "እንጠብቅሻለን አለብን አደራ" ->  "’ĭnĭt’ebĭk’ĭshalenĭ ’elebĭnĭ ’edera"
+   "ኢትዮጵያችን ኑሪ እኛም ባንቺ እንኩራ" ->  "’itĭyop’ĭyachĭnĭ nuri ’ĭnyamĭ banĭchi ’ĭnĭkura"
+   "ቋንቋ የድምጽ, የምልክት ወይም የምስል ቅንብር ሆኖ" ->  "k’wanĭk’wa yedĭmĭts’ĭ, yemĭlĭkĭtĭ weyĭmĭ yemĭsĭlĭ k’ĭnĭbĭrĭ hono"
+   "ለማሰብ ወይም የታሰበን ሃሳብ ለሌላ ለማስተላለፍ የሚረዳ መሳሪያ ነው" ->  "lemasebĭ weyĭmĭ yetasebenĭ hasabĭ leliela lemasĭtelalefĭ yemireda mesariya newĭ"
+   "በአጭሩ ቋንቋ የምልክቶች ስርዓትና እኒህን ምልክቶች ለማቀናበር" ->  "be’ech’ĭru k’wanĭk’wa yemĭlĭkĭtochĭ sĭrĭ‘atĭna ’ĭnihĭnĭ mĭlĭkĭtochĭ lemak’enaberĭ"
+   "የሚያስፈልጉ ህጎች ጥንቅር ነው. ቋንቋወችን ለመፈረጅ እንዲሁም" ->  "yemiyasĭfelĭgu hĭgochĭ t’ĭnĭk’ĭrĭ newĭ. k’wanĭk’wawechĭnĭ lemeferejĭ ’ĭnĭdihumĭ"
+   "ለምክፈል የሚያስችሉ መስፈርቶችን ለማስቀመጥ ባለው ችግር" ->  "lemĭkĭfelĭ yemiyasĭchĭlu mesĭferĭtochĭnĭ lemasĭk’emet’ĭ balewĭ chĭgĭrĭ"
+   "ምክንያት በአሁኑ ሰዓት በርግጠኝነት ስንት ቋንቋ በዓለም ላይ" ->  "mĭkĭnĭyatĭ be’ehunu se‘atĭ berĭgĭt’enyĭnetĭ sĭnĭtĭ k’wanĭk’wa be‘alemĭ layĭ"
+   "እንዳለ ማወቅ አስቸጋሪ ነው" ->  "’ĭnĭdale mawek’ĭ ’esĭchegari newĭ"
+   "አሰላ" ->  "’esela"
+   "አሶሳ" ->  "’esosa"
+   "አንኮበር" ->  "’enĭkoberĭ"
+   "አክሱም" ->  "’ekĭsumĭ"
+   "አዋሳ" ->  "’ewasa"
+   "አዲስ ዘመን (ከተማ)" ->  "’edisĭ zemenĭ (ketema)"
+   "አዲግራት" ->  "’edigĭratĭ"
+   "አዳማ" ->  "’edama"
+   "ደምበጫ" ->  "demĭbech’a"
+   "ደርባ" ->  "derĭba"
+   "ደብረ ማርቆስ" ->  "debĭre marĭk’osĭ"
+   "ደብረ ብርሃን" ->  "debĭre bĭrĭhanĭ"
+   "ደብረ ታቦር (ከተማ)" ->  "debĭre taborĭ (ketema)"
+   "ደብረ ዘይት" ->  "debĭre zeyĭtĭ"
+   "ደገሃቡር" ->  "degehaburĭ"
+   "ወልቂጤ" ->  "welĭk’it’ie"
+   "ወልወል" ->  "welĭwelĭ"
+   "ወልደያ" ->  "welĭdeya"
+   "ናይሎ ሳህራን" ->  "nayĭlo sahĭranĭ"
+   "አኙዋክኛ" ->  "’enyuwakĭnya"
+   "ኡዱክኛ" ->  "’udukĭnya"
+   "ኦፓኛ" ->  "’opanya"
+   "ጉምዝኛ" ->  "gumĭzĭnya"
+   "አፋርኛ" ->  "’efarĭnya"
+   "አላባኛ" ->  "’elabanya"
+   "አርቦርኛ" ->  "’erĭborĭnya"
+   "ባይሶኛ" ->  "bayĭsonya"
+   "ቡሳኛ" ->  "busanya"
+   "ሁለተኛ ጥፋት ከገበያ ማንቀላፋት" ->  "huletenya t’ĭfatĭ kegebeya manĭk’elafatĭ"
+   "ሁሉም ከልኩ አያልፍም" ->  "hulumĭ kelĭku ’eyalĭfĭmĭ"
+   "አልሞት ባይ ተጋዳይ" ->  "’elĭmotĭ bayĭ tegadayĭ"
+   "ውርድ ከራሴ" ->  "wĭrĭdĭ kerasie"
+   "ፀጉር መሰንጠቅ" ->  "ts’egurĭ mesenĭt’ek’ĭ"
+   "ግንትር ፀሐይ" ->  "gĭnĭtĭrĭ ts’eḥeyĭ"
+   "በሬ ወለደ" ->  "berie welede"
+   "ራስ ሳይጠና ጉተና" ->  "rasĭ sayĭt’ena gutena"
+   "ለሆዴ ጠግቤ በልብሴ አንግቤ" ->  "lehodie t’egĭbie belĭbĭsie ’enĭgĭbie"
+   "ለልጅ ከሳቁለት ለውሻ ከሮጡለት" ->  "lelĭjĭ kesak’uletĭ lewĭsha kerot’uletĭ"
+   "መልካም ባል መጥፎ ሴት ይገራል" ->  "melĭkamĭ balĭ met’ĭfo sietĭ yĭgeralĭ"
+   "ሆድና ግንባር አይሸሸግም" ->  "hodĭna gĭnĭbarĭ ’eyĭsheshegĭmĭ"
+   "ቀሊል አማት ሲሶ በትር አላት" ->  "k’elilĭ ’ematĭ siso betĭrĭ ’elatĭ"
+   "ጨው ለራስህ ብለህ ጣፍጥ አለበለዚያ ድንጋይ ነው ብለው ይወረውሩሀል" ->  "ch’ewĭ lerasĭhĭ bĭlehĭ t’afĭt’ĭ ’elebeleziya dĭnĭgayĭ newĭ bĭlewĭ yĭwerewĭruhelĭ"
+   "ጀምሮ ይጨርሳል አልሞ ይተኩሳል" ->  "jemĭro yĭch’erĭsalĭ ’elĭmo yĭtekusalĭ"
+
+  # UN card tests
+   "ኤርትራ" ->  "’ierĭtĭra"
+   "ኣስመራ" ->  "’asĭmera"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "\u1200" "he"
+    sub "\u1201" "hu"
+    sub "\u1202" "hi"
+    sub "\u1203" "ha"
+    sub "\u1204" "hie"
+    sub {
+    from "\u1205"
+    to any(["hĭ", "h"])
+  }
+    sub "\u1206" "ho"
+
+    sub "\u1208" "le"
+    sub "\u1209" "lu"
+    sub "\u120A" "li"
+    sub "\u120B" "la"
+    sub "\u120C" "lie"
+    sub {
+    from "\u120D"
+    to any(["lĭ", "l"])
+  }
+    sub "\u120E" "lo"
+
+    sub "\u1210" "ḥe"
+    sub "\u1211" "ḥu"
+    sub "\u1212" "ḥi"
+    sub "\u1213" "ḥa"
+    sub "\u1214" "ḥie"
+    sub {
+    from "\u1215"
+    to any(["ḥĭ", "ḥ"])
+  }
+    sub "\u1216" "ḥo"
+
+    sub "\u1218" "me"
+    sub "\u1219" "mu"
+    sub "\u121A" "mi"
+    sub "\u121B" "ma"
+    sub "\u121C" "mie"
+    sub {
+    from "\u121D"
+    to any(["mĭ", "m"])
+  }
+    sub "\u121E" "mo"
+
+    # TODO: NOTE 2:
+    # Where possible, consonant gemination should be reflected. Though not
+    # evident from the Ge’ez script, this may be ascertained from a reference
+    # source, such as the Tigrinya-English dictionary, Thomas Leiper Kane,
+    # Dunwoody Press, Springfield, VA, 2000.
+    sub "\u1220" "se"
+    sub "\u1221" "su"
+    sub "\u1222" "si"
+    sub "\u1223" "sa"
+    sub "\u1224" "sie"
+    sub {
+    from "\u1225"
+    to any(["sĭ", "s"])
+  }
+    sub "\u1226" "so"
+
+    sub "\u1228" "re"
+    sub "\u1229" "ru"
+    sub "\u122A" "ri"
+    sub "\u122B" "ra"
+    sub "\u122C" "rie"
+    sub {
+    from "\u122D"
+    to any(["rĭ", "r"])
+  }
+    sub "\u122E" "ro"
+
+    sub "\u1230" "se"
+    sub "\u1231" "su"
+    sub "\u1232" "si"
+    sub "\u1233" "sa"
+    sub "\u1234" "sie"
+    sub {
+    from "\u1235"
+    to any(["sĭ", "s"])
+  }
+    sub "\u1236" "so"
+
+    sub "\u1238" "she"
+    sub "\u1239" "shu"
+    sub "\u123A" "shi"
+    sub "\u123B" "sha"
+    sub "\u123C" "shie"
+    sub {
+    from "\u123D"
+    to any(["shĭ", "sh"])
+  }
+    sub "\u123E" "sho"
+
+    sub "\u1240" "k’e"
+    sub "\u1241" "k’u"
+    sub "\u1242" "k’i"
+    sub "\u1243" "k’a"
+    sub "\u1244" "k’ie"
+    sub {
+    from "\u1245"
+    to any(["k’ĭ", "k’"])
+  }
+    sub "\u1246" "k’o"
+
+    sub "\u1250" "kh’e"
+    sub "\u1251" "kh’u"
+    sub "\u1252" "kh’i"
+    sub "\u1253" "kh’a"
+    sub "\u1254" "kh’ie"
+    sub {
+    from "\u1255"
+    to any(["kh’ĭ", "kh’"])
+  }
+    sub "\u1256" "kh’o"
+
+    sub "\u1260" "be"
+    sub "\u1261" "bu"
+    sub "\u1262" "bi"
+    sub "\u1263" "ba"
+    sub "\u1264" "bie"
+    sub {
+    from "\u1265"
+    to any(["bĭ", "b"])
+  }
+    sub "\u1266" "bo"
+
+    sub "\u1270" "te"
+    sub "\u1271" "tu"
+    sub "\u1272" "ti"
+    sub "\u1273" "ta"
+    sub "\u1274" "tie"
+    sub {
+    from "\u1275"
+    to any(["tĭ", "t"])
+  }
+    sub "\u1276" "to"
+
+    sub "\u1278" "che"
+    sub "\u1279" "chu"
+    sub "\u127A" "chi"
+    sub "\u127B" "cha"
+    sub "\u127C" "chie"
+    sub {
+    from "\u127D"
+    to any(["chĭ", "ch"])
+  }
+    sub "\u127E" "cho"
+
+    sub "\u1280" "ḥe"
+    sub "\u1281" "ḥu"
+    sub "\u1282" "ḥi"
+    sub "\u1283" "ḥa"
+    sub "\u1284" "ḥie"
+    sub {
+    from "\u1285"
+    to any(["ḥĭ", "ḥ"])
+  }
+    sub "\u1286" "ḥo"
+
+    sub "\u1290" "ne"
+    sub "\u1291" "nu"
+    sub "\u1292" "ni"
+    sub "\u1293" "na"
+    sub "\u1294" "nie"
+    sub {
+    from "\u1295"
+    to any(["nĭ", "n"])
+  }
+    sub "\u1296" "no"
+
+    sub "\u1298" "nye"
+    sub "\u1299" "nyu"
+    sub "\u129A" "nyi"
+    sub "\u129B" "nya"
+    sub "\u129C" "nyie"
+    sub {
+    from "\u129D"
+    to any(["nyĭ", "ny"])
+  }
+    sub "\u129E" "nyo"
+
+    # NOTE 3 The vowel characters in row 17 should be romanized with the
+    # apostrophe unless appearing as a word-initial.
+    # NOTE 4 Forms of the character አ are understood to be falling into disuse
+    # in Tigrinya.
+    sub "\u12A0" "’e"
+    sub "\u12A1" "’u"
+    sub "\u12A2" "’i"
+    sub "\u12A3" "’a"
+    sub "\u12A4" "’ie"
+    sub {
+    from "\u12A5"
+    to any(["’ĭ", "ĭ"])
+  }
+    sub "\u12A6" "’o"
+
+    sub "\u12A8" "ke"
+    sub "\u12A9" "ku"
+    sub "\u12AA" "ki"
+    sub "\u12AB" "ka"
+    sub "\u12AC" "kie"
+    sub {
+    from "\u12AD"
+    to any(["kĭ", "k"])
+  }
+    sub "\u12AE" "ko"
+
+    sub "\u12B8" "khe"
+    sub "\u12B9" "khu"
+    sub "\u12BA" "khi"
+    sub "\u12BB" "kha"
+    sub "\u12BC" "khie"
+    sub {
+    from "\u12BD"
+    to any(["khĭ", "kh"])
+  }
+    sub "\u12BE" "kho"
+
+    sub "\u12C8" "we"
+    sub "\u12C9" "wu"
+    sub "\u12CA" "wi"
+    sub "\u12CB" "wa"
+    sub "\u12CC" "wie"
+    sub {
+    from "\u12CD"
+    to any(["wĭ", "w"])
+  }
+    sub "\u12CE" "wo"
+
+    sub "\u12D0" "‘e"
+    sub "\u12D1" "‘u"
+    sub "\u12D2" "‘i"
+    sub "\u12D3" "‘a"
+    sub "\u12D4" "‘ie"
+    sub {
+    from "\u12D5"
+    to any(["‘ĭ", "‘"])
+  }
+    sub "\u12D6" "‘o"
+
+    sub "\u12D8" "ze"
+    sub "\u12D9" "zu"
+    sub "\u12DA" "zi"
+    sub "\u12DB" "za"
+    sub "\u12DC" "zie"
+    sub {
+    from "\u12DD"
+    to any(["zĭ", "z"])
+  }
+    sub "\u12DE" "zo"
+
+    sub "\u12E0" "zhe"
+    sub "\u12E1" "zhu"
+    sub "\u12E2" "zhi"
+    sub "\u12E3" "zha"
+    sub "\u12E4" "zhie"
+    sub {
+    from "\u12E5"
+    to any(["zhĭ", "zh"])
+  }
+    sub "\u12E6" "zho"
+
+    sub "\u12E8" "ye"
+    sub "\u12E9" "yu"
+    sub "\u12EA" "yi"
+    sub "\u12EB" "ya"
+    sub "\u12EC" "yie"
+    sub {
+    from "\u12ED"
+    to any(["yĭ", "y"])
+  }
+    sub "\u12EE" "yo"
+
+    sub "\u12F0" "de"
+    sub "\u12F1" "du"
+    sub "\u12F2" "di"
+    sub "\u12F3" "da"
+    sub "\u12F4" "die"
+    sub {
+    from "\u12F5"
+    to any(["dĭ", "d"])
+  }
+    sub "\u12F6" "do"
+
+    sub "\u1300" "je"
+    sub "\u1301" "ju"
+    sub "\u1302" "ji"
+    sub "\u1303" "ja"
+    sub "\u1304" "jie"
+    sub {
+    from "\u1305"
+    to any(["jĭ", "j"])
+  }
+    sub "\u1306" "jo"
+
+    sub "\u1308" "ge"
+    sub "\u1309" "gu"
+    sub "\u130A" "gi"
+    sub "\u130B" "ga"
+    sub "\u130C" "gie"
+    sub {
+    from "\u130D"
+    to any(["gĭ", "g"])
+  }
+    sub "\u130E" "go"
+
+    sub "\u1320" "t’e"
+    sub "\u1321" "t’u"
+    sub "\u1322" "t’i"
+    sub "\u1323" "t’a"
+    sub "\u1324" "t’ie"
+    sub {
+    from "\u1325"
+    to any(["t’ĭ", "t’"])
+  }
+    sub "\u1326" "t’o"
+
+    sub "\u1328" "ch’e"
+    sub "\u1329" "ch’u"
+    sub "\u132A" "ch’i"
+    sub "\u132B" "ch’a"
+    sub "\u132C" "ch’ie"
+    sub {
+    from "\u132D"
+    to any(["ch’ĭ", "ch’"])
+  }
+    sub "\u132E" "ch’o"
+
+    sub "\u1330" "p’e"
+    sub "\u1331" "p’u"
+    sub "\u1332" "p’i"
+    sub "\u1333" "p’a"
+    sub "\u1334" "p’ie"
+    sub {
+    from "\u1335"
+    to any(["p’ĭ", "p’"])
+  }
+    sub "\u1336" "p’o"
+
+    sub "\u1338" "ts’e"
+    sub "\u1339" "ts’u"
+    sub "\u133A" "ts’i"
+    sub "\u133B" "ts’a"
+    sub "\u133C" "ts’ie"
+    sub {
+    from "\u133D"
+    to any(["ts’ĭ", "ts’"])
+  }
+    sub "\u133E" "ts’o"
+
+    sub "\u1340" "ts’e"
+    sub "\u1341" "ts’u"
+    sub "\u1342" "ts’i"
+    sub "\u1343" "ts’a"
+    sub "\u1344" "ts’ie"
+    sub {
+    from "\u1345"
+    to any(["ts’ĭ", "ts’"])
+  }
+    sub "\u1346" "ts’o"
+
+    sub "\u1348" "fe"
+    sub "\u1349" "fu"
+    sub "\u134A" "fi"
+    sub "\u134B" "fa"
+    sub "\u134C" "fie"
+    sub {
+    from "\u134D"
+    to any(["fĭ", "f"])
+  }
+    sub "\u134E" "fo"
+
+    sub "\u1350" "pe"
+    sub "\u1351" "pu"
+    sub "\u1352" "pi"
+    sub "\u1353" "pa"
+    sub "\u1354" "pie"
+    sub {
+    from "\u1355"
+    to any(["pĭ", "p"])
+  }
+    sub "\u1356" "po"
+
+    sub "\u1268" "ve"
+    sub "\u1269" "vu"
+    sub "\u126A" "vi"
+    sub "\u126B" "va"
+    sub "\u126C" "vie"
+    sub {
+    from "\u126D"
+    to any(["vĭ", "v"])
+  }
+    sub "\u126E" "vo"
+
+    # Combinations with W (Labialized Consonants)
+
+    sub "\u1248" "k’we"
+    sub "\u124a" "k’wi"
+    sub "\u124b" "k’wa"
+    sub "\u124c" "k’wie"
+    sub {
+    from "\u124d"
+    to any(["k’wĭ", "k’w"])
+  }
+
+    sub "\u1288" "ḥwe"
+    sub "\u128a" "ḥwi"
+    sub "\u128b" "ḥwa"
+    sub "\u128c" "ḥwie"
+    sub {
+    from "\u128d"
+    to any(["ḥwĭ", "ḥw"])
+  }
+
+    sub "\u12b0" "kwe"
+    sub "\u12b2" "kwi"
+    sub "\u12b3" "kwa"
+    sub "\u12b4" "kwie"
+    sub {
+    from "\u12b5"
+    to any(["kwĭ", "kw"])
+  }
+
+    sub "\u1310" "gwe"
+    sub "\u1312" "gwi"
+    sub "\u1313" "gwa"
+    sub "\u1314" "gwie"
+    sub {
+    from "\u1315"
+    to any(["gwĭ", "gw"])
+  }
+
+    sub "\u12c0" "khwe"
+    sub "\u12c2" "khwi"
+    sub "\u12c3" "khwa"
+    sub "\u12c4" "khwie"
+    sub {
+    from "\u12c5"
+    to any(["khwĭ", "khw"])
+  }
+
+    sub "\u1258" "kh’e"
+    sub "\u125a" "kh’i"
+    sub "\u125b" "kh’a"
+    sub "\u125c" "kh’ie"
+    sub {
+    from "\u125d"
+    to any(["kh’ĭ", "kh’"])
+  }
+
+    sub "\u120f" "lwa"
+    sub "\u121f" "mwa"
+    sub "\u122f" "rwa"
+    sub "\u1237" "swa"
+    sub "\u123f" "shwa"
+    sub "\u1267" "bwa"
+    sub "\u1277" "twa"
+    sub "\u127f" "chwa"
+
+    sub "\u1297" "nwa"
+    sub "\u129f" "nywa"
+    sub "\u12df" "zwa"
+    sub "\u12e7" "zhwa"
+    sub "\u12f7" "dwa"
+    sub "\u1307" "jwa"
+    sub "\u1327" "t’wa"
+    sub "\u132f" "ch’wa"
+    sub "\u133f" "ts’wa"
+    sub "\u134f" "fwa"
+
+    # Numerals
+
+    sub "\u1369" "1"
+    sub "\u136A" "2"
+    sub "\u136B" "3"
+    sub "\u136C" "4"
+    sub "\u136D" "5"
+    sub "\u136E" "6"
+    sub "\u136F" "7"
+    sub "\u1370" "8"
+    sub "\u1371" "9"
+    sub "\u1372" "10"
+    sub "\u1372\u1369" "11"
+    sub "\u1373" "20"
+    sub "\u1373\u1369" "21"
+    sub "\u1374" "30"
+    sub "\u1375" "40"
+    sub "\u1376" "50"
+    sub "\u1377" "60"
+    sub "\u1379" "80"
+    sub "\u137A" "90"
+    sub "\u137B" "100"
+
+    # These two rules are not defined in the sytsem.
+    # sub "\u1372\u137B", "1000" # ፲፻
+    # sub "\u137B\u137B", "10000" # ፻፻
+
+    # Punctuation
+
+    sub "፡" " "
+    sub "፣" ","
+    sub "፤" ";"
+    sub "።" "."
+
+  }
+
+}
+
+}

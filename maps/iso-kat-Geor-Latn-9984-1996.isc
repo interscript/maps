@@ -1,0 +1,107 @@
+system "ISO:kat-Geor:Latn:9984-1996" {
+
+metadata {
+  authority_id iso
+  id 9984-1996
+  language iso-639-2:kat
+  source_script Geor
+  destination_script Latn
+  name "ISO 9984:1996 Information and documentation -- Transliteration of Georgian characters into Latin characters"
+  url https://www.iso.org/standard/17892.html
+  creation_date 1996
+  confirmation_date 1996
+  description {    Establishes a system for the transliteration of Georgian characters
+    into Latin characters to permit international information exchange,
+    particularly by electronic means.
+  }
+
+  notes {
+  }
+}
+
+tests {
+   "ხაოფსე" ->  "xaop̕se"
+   "ჭლოუ" ->  "člou"
+   "ჩოხულდი" ->  "č̕oxuldi"
+   "ქვემო ლინდა" ->  "k̕vemo linda"
+   "ტამკვაჩ იგვავერა" ->  "tamkvač̕ igvavera"
+   "სვანეთი" ->  "svanet̕i"
+   "საცხვარისი" ->  "sac̕xvarisi"
+   "მუხრან-თელეთი" ->  "muxran-t̕elet̕i"
+   "მუცდი" ->  "muc̕di"
+   "ლეჩხუმი" ->  "leč̕xumi"
+   "ვერხნაია მწარა" ->  "verxnaia mcara"
+   "ეგრისის ქედი" ->  "egrisis k̕edi"
+   "დოჩარიფშა" ->  "doč̕arip̕ša"
+   "ბოლოკო" ->  "boloko"
+   "აჭანდარა" ->  "ačandara"
+   "აუალიცა" ->  "aualic̕a"
+   "აკალამრა" ->  "akalamra"
+   "ლასილი" ->  "lasili"
+   "გუბაზეული" ->  "gubazeuli"
+   "ბაყაყი" ->  "baqaqi"
+   "ძროხა" ->  "jroxa"
+   "ჰაერი" ->  "haeri"
+   "ჟოლო" ->  "žolo"
+   "ჯართი" ->  "ǰart̕i"
+   "ღრმაღელე" ->  "ḡrmaḡele"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "\u10d0" "a"
+    sub "\u10d1" "b"
+    sub "\u10d2" "g"
+    sub "\u10d3" "d"
+    sub "\u10d4" "e"
+    sub "\u10d5" "v"
+    sub "\u10d6" "z"
+
+    sub "\u10f1" "ē"
+
+    sub "\u10d7" "t̕"
+    sub "\u10d8" "i"
+    sub "\u10d9" "k"
+    sub "\u10da" "l"
+    sub "\u10db" "m"
+    sub "\u10dc" "n"
+
+    sub "\u10f2" "y"
+
+    sub "\u10dd" "o"
+    sub "\u10de" "p"
+    sub "\u10df" "ž"
+    sub "\u10e0" "r"
+    sub "\u10e1" "s"
+    sub "\u10e2" "t"
+
+    sub "\u10f3" "w"
+
+    sub "\u10e3" "u"
+    sub "\u10e4" "p̕"
+    sub "\u10e5" "k̕"
+    sub "\u10e6" "ḡ"
+    sub "\u10e7" "q"
+    sub "\u10e8" "š"
+    sub "\u10e9" "č̕"
+    sub "\u10ea" "c̕"
+    sub "\u10eb" "j"
+    sub "\u10ec" "c"
+    sub "\u10ed" "č"
+    sub "\u10ee" "x"
+
+    sub "\u10f4" "ẖ"
+
+    sub "\u10ef" "ǰ"
+    sub "\u10f0" "h"
+
+    sub "\u10f5" "ō"
+
+    sub "\u10f6" "f"
+  }
+
+}
+
+}

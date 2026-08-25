@@ -1,0 +1,207 @@
+system "BGN-PCGN:bel-Cyrl:Latn:1979" {
+
+metadata {
+  authority_id bgnpcgn
+  id 1979
+  language iso-639-2:bel
+  source_script Cyrl
+  destination_script Latn
+  name Romanization of Belarusian (1979)
+  url https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/811510/ROMANIZATION_OF_BELARUSIAN.pdf
+  creation_date 1979
+  description {    The BGN/PCGN system for Belarusian (formerly referred to as Byelorussian) was designed for use in
+    romanizing names written in the Belarusian Cyrillic alphabet. The Belarusian alphabet contains three
+    characters not present in the Russian alphabet: і, ў, and ’.
+
+    United States Board on Geographic Names Foreign Names Committee Staff, 1994.
+    Romanization Systems and Roman-Script Spelling Conventions, p. 23.
+  }
+
+  notes {
+   note "The character sequences зг, кг, сг, тс and цг and may be romanized z·h, k·h, s·h, t·s and ts·h in order to differentiate those romanizations from the digraphs zh, kh, sh, ts, and the letter sequence tsh, which are used to render the characters ж, x, ш, ц, and the character sequence тш"
+   note "All apostrophes appearing in romanization are Unicode encoding 2019."
+  }
+}
+
+tests {
+   "Антон" ->  "Anton"
+   "Вілейка" ->  "Vilyeyka"
+   "Брэст" ->  "Brest"
+   "Дубна" ->  "Dubna"
+   "Віцебск" ->  "Vitsyebsk"
+   "Асіповічы" ->  "Asipovichy"
+   "Гродна" ->  "Hrodna"
+   "Брагін" ->  "Brahin"
+   "Добруш" ->  "Dobrush"
+   "Ліда" ->  "Lida"
+   "Гомель" ->  "Homyel’"
+   "Беліца" ->  "Byelitsa"
+   "Ёдкавічы" ->  "Yodkavichy"
+   "Нёман" ->  "Nyoman"
+   "Жлобін" ->  "Zhlobin"
+   "Ружаны" ->  "Ruzhany"
+   "Зоя" ->  "Zoya"
+   "князь" ->  "knyaz’"
+   "Ігнат" ->  "Ihnat"
+   "Мінск" ->  "Minsk"
+   "Йосель" ->  "Yosyel’"
+   "Койданава" ->  "Koydanava"
+   "Крапіўна" ->  "Krapiwna"
+   "Менск" ->  "Myensk"
+   "Лаўна" ->  "Lawna"
+   "Лёсік" ->  "Lyosik"
+   "Купала" ->  "Kupala"
+   "Вілейка" ->  "Vilyeyka"
+   "Міхал" ->  "Mikhal"
+   "Вільня" ->  "Vil’nya"
+   "Лепель" ->  "Lyepyel’"
+   "Магілёў" ->  "Mahilyow"
+   "Няміга" ->  "Nyamiha"
+   "Наваградак" ->  "Navahradak"
+   "Баранавічы" ->  "Baranavichy"
+   "Орша" ->  "Orsha"
+   "Востраў" ->  "Vostraw"
+   "Пінск" ->  "Pinsk"
+   "Дняпро" ->  "Dnyapro"
+   "Рагачоў" ->  "Rahachow"
+   "Сураж" ->  "Surazh"
+   "Смаляны" ->  "Smalyany"
+   "Арэса" ->  "Aresa"
+   "Рось" ->  "Ros’"
+   "Талочын" ->  "Talochyn"
+   "Масты" ->  "Masty"
+   "Уладзімір" ->  "Uladzimir"
+   "Бабруйск" ->  "Babruysk"
+   "Быхаў" ->  "Bykhaw"
+   "Воўпа" ->  "Vowpa"
+   "Іўе" ->  "Iwye"
+   "Фолюш" ->  "Folyush"
+   "фортка" ->  "fortka"
+   "Хатынь" ->  "Khatyn’"
+   "Быхаў" ->  "Bykhaw"
+   "Ганцавічы" ->  "Hantsavichy"
+   "Стоўбцы" ->  "Stowbtsy"
+   "цьмяны" ->  "ts’myany"
+   "мясцовы" ->  "myastsovy"
+   "Астравец" ->  "Astravyets"
+   "Прыпяць" ->  "Prypyats’"
+   "Чэрыкаў" ->  "Cherykaw"
+   "Шчара" ->  "Shchara"
+   "Нарач" ->  "Narach"
+   "Шклоў" ->  "Shklow"
+   "Ашмяны" ->  "Ashmyany"
+   "Ыттык-Кёль" ->  "Yttyk-Kyol’"
+   "Кобрын" ->  "Kobryn"
+   "Солы" ->  "Soly"
+   "Копысь" ->  "Kopys’"
+   "рунь" ->  "run’"
+   "Эйсманты" ->  "Eysmanty"
+   "Крэва" ->  "Kreva"
+   "Юры" ->  "Yury"
+   "уюн" ->  "uyun"
+   "Язэп" ->  "Yazep"
+   "Івянец" ->  "Ivyanyets"
+   "з’езд" ->  "z”yezd"
+   "Вялiкiя Вераб’евічы" ->  "Vyalikiya Vyerab”yevichy"
+   "Дзям’янаўцы" ->  "Dzyam”yanawtsy"
+   "Задвор’е" ->  "Zadvor”ye"
+   "Гезгалы" ->  "Hyez·haly"
+   "Вадасховішча Гезгальскае" ->  "Vadaskhovishcha Hyez·hal’skaye"
+}
+
+stage main {
+
+  # RULES
+  parallel {
+    sub "\u0417\u0413" "Z·H"
+    sub "\u0437\u0433" "z·h"
+    sub "\u041A\u0413" "K·H"
+    sub "\u043A\u0433" "k·h"
+    sub "\u0421\u0413" "S·H"
+    sub "\u0441\u0433" "s·h"
+    sub "\u0422\u0421" "T·S"
+    sub "\u0442\u0441" "t·s"
+    sub "\u0426\u0413" "TS·H"
+    sub "\u0446\u0433" "ts·h"
+  }
+
+
+  # CHARACTERS
+  parallel {
+    sub "\u00B4" "”"
+    sub "\u02BC" "”"
+    sub "\u2019" "”"
+
+    sub "\u0410" "A"
+    sub "\u0411" "B"
+    sub "\u0412" "V"
+    sub "\u0413" "H"
+    sub "\u0414" "D"
+    sub "\u0415" "Ye"
+    sub "\u0401" "Yo"
+    sub "\u0416" "Zh"
+    sub "\u0417" "Z"
+    sub "\u0406" "I"
+    sub "\u0419" "Y"
+    sub "\u041A" "K"
+    sub "\u041B" "L"
+    sub "\u041C" "M"
+    sub "\u041D" "N"
+    sub "\u041E" "O"
+    sub "\u041F" "P"
+    sub "\u0420" "R"
+    sub "\u0421" "S"
+    sub "\u0422" "T"
+    sub "\u0423" "U"
+    sub "\\U040E" "W"
+    sub "\u0424" "F"
+    sub "\u0425" "Kh"
+    sub "\u0426" "Ts"
+    sub "\u0427" "Ch"
+    sub "\u0428" "Sh"
+    sub "\u042B" "Y"
+    sub "\u042D" "E"
+    sub "\u042E" "Yu"
+    sub "\u042F" "Ya"
+    sub "\u0490" "G"
+
+    sub "\u0430" "a"
+    sub "\u0431" "b"
+    sub "\u0432" "v"
+    sub "\u0433" "h"
+    sub "\u0434" "d"
+    sub "\u0435" "ye"
+    sub "\u0451" "yo"
+    sub "\u0436" "zh"
+    sub "\u0437" "z"
+    sub "\u0456" "i"
+    sub "\u0439" "y"
+    sub "\u043A" "k"
+    sub "\u043B" "l"
+    sub "\u043C" "m"
+    sub "\u043D" "n"
+    sub "\u043E" "o"
+    sub "\u043F" "p"
+    sub "\u0440" "r"
+    sub "\u0441" "s"
+    sub "\u0442" "t"
+    sub "\u0443" "u"
+    sub "\u045E" "w"
+    sub "\u0444" "f"
+    sub "\u0445" "kh"
+    sub "\u0446" "ts"
+    sub "\u0447" "ch"
+    sub "\u0448" "sh"
+    sub "\u044B" "y"
+    sub "\u044D" "e"
+    sub "\u044E" "yu"
+    sub "\u044F" "ya"
+    sub "\u0491" "g"
+  }
+
+  # POSTRULES
+  sub "\u042C" "’"
+  sub "\u044C" "’"
+  # Per documentation those rules are optional
+}
+}

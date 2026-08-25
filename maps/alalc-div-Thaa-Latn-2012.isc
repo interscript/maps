@@ -1,0 +1,49 @@
+system "ALA-LC:div-Thaa:Latn:2012" {
+
+metadata {
+  authority_id alalc
+  id 2012
+  language iso-639-2:div
+  source_script Thaa
+  destination_script Latn
+  name Romanization Table -- Divehi (2012)
+  url https://www.loc.gov/catdir/cpso/romanization/divehi.pdf
+  creation_date 2012
+  description {    ALA-Library of Congress Divehi Romanization 2012 System
+  }
+
+  notes {
+
+    note "      Romanize ށް as ḫ when it doubles the following consonant or is used as a glottal stop.\n        aḫvana	އަށްވަނަ\n        maśaḫ	މަށަށް"
+    note "      When used in medial position without ް (sukūn), romanize ނ as ṁ.\n        aṁga	އަނގަ\n        haṁdu	ހަނދު"
+    note "      Romanization of އ.\n      (a) When used in the initial position with any vowel sign, do not romanize.\n        ata	އަތަ\n        idu	އިދު\n        umuru	އުމުރު\n        egahugi	އެގަހުގި\n      (b) When used in the medial position with any vowel sign, romanize as ’.\n        ha’hūnu	ހައިހޫނު\n        fa’isa	ފައިސަ\n        k’īn	ކްއީން\n      (c) When a consonant follows އް in medial position, double it in romanization.\n        cappalu	ޗައްޕަލު\n        appacci	އައްޕައްޗި\n      (d) When used in final position with ް (sukūn), romanize as h.\n        boh	ބޮއް\n        biheh	ބިހެއް"
+    note "      Romanize ތް followed by another ތ as  t̤ .\n       at̤teri   އަތްތެރި"
+    note "      Only the vowel forms that appear at the beginning of a syllable are listed.\n      When the vowels follow a consonant, އ is not used and the vowel signs are added to the consonant forms.\n      Do not distinguish between the two in romanization."
+    note "      ް (called sukūn) generally indicates omission of an inherent vowel associated with a consonant.\n      For its other uses, see Notes 1, 3, and 4."
+  }
+}
+
+tests {
+   "މަށަށް" ->  "maśaḫ"
+   "އަނގަ" ->  "aṁga"
+   "ހަނދު" ->  "haṁdu"
+   "އަތަ" ->  "ata"
+   "އިދު" ->  "idu"
+   "އުމުރު" ->  "umuru"
+   "އެގަހުގި" ->  "egahugi"
+   "ފައިސަ" ->  "faʼisa"
+   "ބޮއް" ->  "boh"
+   "ބިހެއް" ->  "biheh"
+   "އަތްތެރި" ->  "at̤teri"
+   "ޗައްޕަލު" ->  "cappalu"
+   "އައްޕައްޗި" ->  "appacci"
+}
+
+dependency "alalc-div-Thaa-Latn-1997" as thaalatn
+
+stage main {
+
+  run  map.thaalatn.stage.main
+
+}
+}

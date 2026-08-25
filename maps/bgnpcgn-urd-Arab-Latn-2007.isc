@@ -1,0 +1,459 @@
+system "BGN-PCGN:urd-Arab:Latn:2007" {
+
+metadata {
+  authority_id bgnpcgn
+  id 2007
+  language iso-639-2:urd
+  source_script Arab
+  destination_script Latn
+  name Romanization of Urdu (2007)
+  url https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693788/ROMANIZATION_OF_URDU.pdf
+  creation_date 2007
+  confirmation_date 2017-11
+  description {    The following is the approved romanization system for
+    deriving standard spellings of Urdu geographical names for
+    Pakistan. It was jointly adopted by BGN and PCGN at the
+    23rd BGN/PCGN Conference in Washington, DC, in 2007 and it
+    is based on the Hunterian romanization system for Urdu,
+    which has been used by the Surveys of India and Pakistan
+    for romanizing Urdu geographical names for more than one
+    hundred years. The BGN/PCGN system laid out below includes
+    diacritical marks in order that the original script can be
+    derived from the romanized form (i.e. it is reversible).
+    For desk users requiring a diacritic-free form, these
+    diacritics can simply be removed. In every case the same
+    basic Roman-script characters are kept as are used in the
+    Hunterian system. The BGN/PCGN forms have further been
+    designed to harmonize with the BGN/PCGN Persian
+    romanization system.
+  }
+  notes {
+    note "1. When the vowel sign zīr ( ِ) occurs word-finally in the\n first element of a compound, it is assumed to mark the\n Persian izafat\n morpheme, and is romanized -e, not i."
+    note "2. The source of almost all example names is the 1951\n Census of Pakistan, Village List, Northwest Frontier\n Province, Chitral\n State. Office of the Provincial Superintendant of Census,\n North-West Frontier Province, Peshawar."
+    note "3. No examples of aspirated dental r (rh, رھ ( were found,\n though this phoneme is assumed to be part of the phonology\n of\n Urdu, and was therefore left out of Table 2."
+    note "4. Note that the short vowels in the Urdu examples are not\n pointed."
+    note "5. Occasionally, sequences of /z/ or /s/ plus /h/ may be\n encountered, i.e. z·h, s·h. These may be romanized with the\n Unicode\n 'center dot' (U+00B7) separating the two letters, to\n distinguish them from the digraphs /zh/ and /sh/."
+    note "Commented tests are blocked by this issue https://github.com/interscript/interscript/issues/572\n depends on the different ways of handling ي to y or e AND و to u or o"
+  }
+}
+
+tests {
+  # - source: بوغدِی
+  #   expected: Boghdī
+   "پَالِير" ->  "Pālīr"
+  # - source: بیزوت كَلے
+  #   expected: Bezot Kale
+  # - source: عَمَل كوٹ
+  #   expected: ‘Amal Koṭ
+   "ثَابِر" ->  "S̄ābir"
+   "شَاه نَثَار ميلة" ->  "Shāh Nas̄ār Mylah"
+  # - source: بَرجُو ميلَه
+  #   expected: Barjū Melah
+   "چَپرِی" ->  "Chaprī"
+   "أَحمَد خَان كَلے" ->  "Aḩmad Khān Kale"
+  # - source: آكَا خيل
+  #   expected: Ākā Khel
+   "دُرَانِي" ->  "Durānī"
+   "ڈَنگِیلا" ->  "Ḍangīlā"
+   "ذَرَانِی" ->  "Z̄arānī"
+   "بُركِي" ->  "Burkī"
+   "گِیدَڑَه" ->  "Gīdaṛah"
+   "عَلِي زَائِي" ->  "‘Alī Zā’ī"
+  # - source: ژوب
+  #   expected: Zhob
+   "بِسَاتُو" ->  "Bisātū"
+   "أَحمَدِي شَامَا" ->  "Aḩmadī Shāmā"
+   "اَصَالَت كَلے" ->  "Aşālat Kale"
+   "خَضَر خَان" ->  "Khaẕar Khān"
+   "سُلْطَان" ->  "Sulţān"
+   "عَزَم سَيِّد نُور كَلے" ->  "‘Azam Sayyid Nūr Kale"
+  # - source: عَلَم شير
+  #   expected: ‘Alam Sher
+   "بغَاكِي" ->  "Bghākī"
+  # - source: مُظَفَر كوٹ
+  #   expected: Muz̧afar Koṭ
+   "حَقدَرَه" ->  "Ḩaqdarah"
+   "کَچکِینَہ" ->  "Kachkīnah"
+   "بَاگَن" ->  "Bāgan"
+   "بُلبَلَک" ->  "Bulbalak"
+   "بِلیَامِین" ->  "Bilyāmīn"
+   "نَہر" ->  "Nahr"
+  # - source: جوکَالِیَاں
+  #   expected: Jokālīāñ
+   "اَرَوْالِی" ->  "Arawālī"
+  # - source: هیروشاه
+  #   expected: Heroshāh
+   "مَہردِی" ->  "Mahrdī"
+   "بَڑھ" ->  "Baṛh"
+  # - source: شِیوَاؤ
+  #   expected: Shīwā’o
+   "یَاردَا کَلے" ->  "Yārdā Kale"
+   "بهَائِي خَان" ->  "Bhā’ī Khān"
+   "پھاشک" ->  "Phāshk"
+   "تھَلّ" ->  "Thall"
+   "پَٹھان ريَا" ->  "Paṭhān Ryā"
+   "جھِیل" ->  "Jhīl"
+   "غَزْنِي سْپِين" ->  "Ghaznī Spīn"
+   "بَادشَاه چھُم" ->  "Bādshāh Chhum"
+   "سِندھ" ->  "Sindh"
+   "ڈھَنڈ" ->  "Ḍhanḍ"
+  # - source: غوزگَڑھِی
+  #   expected: Ghozgaṛhī
+  # - source: دوغَل گاکھَر
+  #   expected: Doghal Gākhar
+   "خَان گھَڑِی" ->  "Khān Ghaṛī"
+   "غُلَامَک كَلے" ->  "Ghulāmak Kale"
+  # - source: کاراخیل
+  #   expected: Kārākhel
+   "خَپیَنگا" ->  "Khapyangā"
+   "گَندَه كَلے" ->  "Gandah Kale"
+  # - source: گُلونَا ڈھيرِي
+  #   expected: Gulonā Ḍherī
+  # - source: خيرَه دِين
+  #   expected: Kherah Dīn
+   "مَورپِتھِی" ->  "Maurpithī"
+   "درے پلارِی" ->  "Dre Plārī"
+   "آگرَہ" ->  "Āgrah"
+   "ڈَنڈَر" ->  "Ḍanḍar"
+  # - source: گِیدو
+  #   expected: Gīdo
+   "گُبازانَہ" ->  "Gubāzānah"
+  # - source: اُوشو
+  #   expected: Ūsho
+   "حَےدَر عَلِی كَلے" ->  "Ḩaidar ‘Alī Kale"
+   "تَودَہ چِینَہ" ->  "Taudah Chīnah"
+   "مُوسى خَان كَلے" ->  "Mūsá Khān Kale"
+   "مُلَّا بَاغ" ->  "Mullā Bāgh"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    # special rules
+
+    sub {
+    from space
+    to ""
+    after "\u0622\u0628\u064E\u0627\u062F"
+  }
+    sub "\ufdf2" "Allāh"
+
+    # Vowels, Diphthongs, and Diacritical Marks
+    sub "\u064e" "a"
+    sub {
+    from "\u064e"
+    to ""
+    after "\u0629"
+  }
+    sub {
+    from "\u064e"
+    to ""
+    after "a" + any("h|t")
+  }
+
+    sub "\u0652" ""
+    sub "\u0659" "ê"
+
+    sub {
+    from "\u0650" + any("\u064a|\u06cc")
+    to "ī"
+  }
+    sub "\u0650" "i"
+    sub "\u06d2" "e"
+
+    sub "\u0622" "ā"
+    sub "\u064e\u0627" "ā"
+    sub "\u0627" "ā"
+    sub {
+    from boundary + "\u0627"
+    to ""
+  }
+
+    sub "\u0648" "o"
+    sub "\u064f" "u"
+    sub "\u064f\u0648" "ū"
+
+    sub "\u064e\u06d2" "ai"
+    sub "\u064e\u0648" "au"
+    sub "\u064e\u064a\u0651" "ayy"
+
+    sub "\u0670" "á"
+    sub "\u0649" "á"
+
+    # shadda
+    sub "\u0628\u0651" "bb"
+    sub "\u062a\u0651" "tt"
+    sub "\u062b\u0651" "thth"
+    sub "\u062c\u0651" "jj"
+    sub "\u062d\u0651" "ẖẖ"
+    sub "\u062e\u0651" "khkh"
+    sub "\u062f\u0651" "dd"
+    sub "\u0630\u0651" "z̄z̄"
+    sub "\u0631\u0651" "rr"
+    sub "\u0632\u0651" "zz"
+    sub "\u0633\u0651" "ss"
+    sub "\u0634\u0651" "sh"
+    sub "\u0635\u0651" "şş"
+    sub "\u0636\u0651" "ḏḏ"
+    sub "\u0637\u0651" "ţţ"
+    sub "\u0638\u0651" "z̧z̧"
+    sub "\u063a\u0651" "ghgh"
+    sub "\u0641\u0651" "ff"
+    sub "\u0642\u0651" "qq"
+    sub "\u0643\u0651" "kk"
+    sub "\u0644\u0651" "ll"
+    sub "\u0645\u0651" "mm"
+    sub "\u0646\u0651" "nn"
+    sub "\u0647\u0651" "hh"
+    sub "\u0648\u0651" "ww"
+    sub {
+    from any("\u064a|\u06cc") + "\u0651"
+    to "yy"
+  }
+    sub "\u064e\u064a" "yy"
+
+    # NOTE 1
+    sub {
+    from "\u0650" + boundary
+    to "-e"
+  }
+    sub "\u0674" "-e"
+    sub "\u0654" "-e"
+
+    sub "\u0650\u064a\u0651\u064e" "īy"
+    sub {
+    from "\u0650\u064a"
+    to "iy"
+    after any("\u064e\u064f")
+  }
+    sub "\u064e\u0649" "ay"
+    sub "\u064e\u0648\u0652" "aw"
+    sub "\u064e\u064a\u0652" "ay"
+    sub "\u0650\u06cc\u0651\u064e" "īy"
+    sub "\u064e\u064a" "aī"
+    sub "\u064e\u06cc" "aī"
+    # - '-ye'
+
+
+    # ta' marboota
+    sub "\u0629" "at"
+    sub {
+    from "\u0629" + line_end
+    to "ah"
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+  }
+
+
+
+    sub "\u0621" "’"
+    sub "\u0624" "’"
+    sub {
+    from "\u0624" + boundary
+    to "’o"
+  }
+    sub "\u0626" "’"
+
+    sub "\u0623" ""
+    sub "\u0625" ""
+    # See note B
+    sub {
+    from boundary + "\u0627\u0644"
+    to "al "
+  }
+    # '\uFE8E' : ''  # ﺎ
+
+    # Sun letters
+    sub {
+    from boundary + "\u0627\u0644\u062a" + maybe("\u0651")
+    to "at t"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u062b" + maybe("\u0651")
+    to "as̄ s̄"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u062f" + maybe("\u0651")
+    to "ad d"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0630" + maybe("\u0651")
+    to "az̄ z̄"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0631" + maybe("\u0651")
+    to "ar r"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0632" + maybe("\u0651")
+    to "az z"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0633" + maybe("\u0651")
+    to "as s"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0634" + maybe("\u0651")
+    to "ash sh"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0635" + maybe("\u0651")
+    to "aş ş"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0636" + maybe("\u0651")
+    to "aẕ ẕ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0637" + maybe("\u0651")
+    to "aţ ţ"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0638" + maybe("\u0651")
+    to "az̧ z̧"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0644" + maybe("\u0651")
+    to "al l"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0646" + maybe("\u0651")
+    to "an n"
+  }
+
+
+    # consonant characters
+
+    sub "\u0628" "b"
+    sub "\u067E" "p"
+    sub "\u062a" "t"
+    sub "\u0679" "ṭ"
+    sub "\u062B" "s̄"
+    sub "\u062c" "j"
+    sub "\u0686" "ch"
+    sub "\u062d" "ḩ"
+    sub "\u062e" "kh"
+    sub "\u062f" "d"
+    sub "\u0688" "ḍ"
+    sub "\u0630" "z̄"
+    sub "\u0631" "r"
+    sub "\u0691" "ṛ"
+    sub "\u0632" "z"
+    sub "\u0698" "zh"
+    sub "\u0633" "s"
+    sub "\u0634" "sh"
+    sub "\u0635" "ş"
+    sub "\u0636" "ẕ"
+    sub "\u0637" "ţ"
+    sub "\u0638" "z̧"
+    sub "\u0639" "‘"
+    sub "\u063a" "gh"
+    sub "\u0641" "f"
+    sub "\u0642" "q"
+    sub "\u0643" "k"
+    sub "\u06A9" "k"
+    sub "\u06AF" "g"
+    sub "\u0644" "l"
+    sub "\u0645" "m"
+    sub "\u0646" "n"
+    sub "\u06BA" "ñ"
+    sub {
+    from any("\u0647\u06c1\u06be")
+    to "h"
+  }
+    sub "\u0648" "w"
+    sub {
+    from any("\u064a\u06cc")
+    to "y"
+  }
+    # '\u0649' : 'y'  # ي
+    sub "\u06D0" "ē"
+    sub "\u06CD" "êy"
+  }
+
+  # POSTRULES
+  sub {
+    from any("\u0061".."\uFFFF")
+    to upcase
+    before boundary
+    not_before boundary + any("‘’'-")
+  }
+  # don't capitalize defined article in the middle of a sentence
+  sub " At T" " at T"
+  sub " As̄ S̄" " as̄ S̄"
+  sub " Ad D" " ad D"
+  sub " Az̄ Z̄" " az̄ Z̄"
+  sub " Ar R" " ar R"
+  sub " Az Z" " az Z"
+  sub " As S" " as S"
+  sub " Ash Sh" " ash Sh"
+  sub " Aş Ş" " aş Ş"
+  sub " Aẕ Ẕ" " aẕ Ẕ"
+  sub " Aţ Ţ" " aţ Ţ"
+  sub " Az̧ Z̧" " az̧ Z̧"
+  sub " Al L" " al L"
+  sub " An N" " an N"
+  sub " Al " " al "
+
+  compose
+}
+}

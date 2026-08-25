@@ -1,0 +1,165 @@
+system "ICAO:heb-Hebr:Latn:9303" {
+
+metadata {
+  authority_id icao
+  id 9303
+  language iso-639-2:heb
+  source_script Hebr
+  destination_script Latn
+  name ICAO Doc 9303 Machine Readable Travel Documents Part 3 -- Hebrew to Latin
+  url https://www.icao.int/publications/pages/publication.aspx?docnum=9303
+  creation_date 2015
+  description {    Part 3 defines specifications that are common to TD1, TD2 and TD3
+    size machine readable travel documents (MRTDs) including those
+    necessary for global interoperability using visual inspection and
+    machine readable (optical character recognition) means.
+
+    Since only Latin-alphabet characters are allowed in the VIZ, if
+    mandatory data elements are in a national language that does not use
+    the Latin alphabet, a transcription or transliteration shall also be
+    provided.
+
+    This document defines the transliteration mappings used to produce
+    this transcription or transliteration.
+  }
+}
+
+tests {
+  # UN card tests
+   "מְדִינַת ישְרְאֶל" ->  "MEDIYNAT YSEREEL"
+}
+
+# https://en.wikipedia.org/wiki/Romanization_of_Hebrew
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "'" ""
+
+    # Consonants
+    sub "א" ""
+    sub "ב" "V"
+    sub "בּ" "B"
+    sub "בּ" "B"
+    sub "ג" "G"
+    sub "גּ" "G"
+    sub "גּ" "G"
+    sub "ג׳" "J"
+    sub "ד" "D"
+    sub "דּ" "D"
+    sub "דּ" "D"
+    sub "ד׳" "DH"
+    sub "ה" "H"
+    sub "הּ" "H"
+    sub "הּ" "H"
+    sub "ו" "V"
+    sub "ו‬" "V"
+    sub "וּ" "V"
+    # "\uFB35":             "V"  # וּ  # To vowels "U"
+    sub "ז" "Z"
+    sub "זּ" "Z"
+    sub "זּ" "Z"
+    sub "ז׳" "ZH"
+    sub "ח" "CH"
+    sub "ט" "T"
+    sub "טּ" "T"
+    sub "טּ" "T"
+    sub "י" "Y"
+    sub "יּ" "Y"
+    sub "יּ‬" "Y"
+    sub "יּ" "Y"
+    sub "כ" "CH"
+    sub "כּ" "CH"
+    sub "כּ‬" "CH"
+    sub "כּ" "C"
+    sub "ך" "CH"
+    sub "ךּ" "CH"
+    sub "ךּ‬" "CH"
+    sub "ךּ" "CH"
+    sub "ל" "L"
+    sub "לּ" "L"
+    sub "לּ" "L"
+    sub "ם" "M"
+    sub "מ" "M"
+    sub "מּ" "M"
+    sub "מּ" "M"
+    sub "ן" "N"
+    sub "נ" "N"
+    sub "נּ" "N"
+    sub "נּ" "N"
+    sub "ס" "S"
+    sub "סּ" "S"
+    sub "סּ" "S"
+    sub "ע" ""
+    sub "ף" "F"
+    sub "ףּ" "P"
+    sub "ףּ" "P"
+    sub "פ" "F"
+    sub "פּ" "P"
+    sub "פּ" "P"
+    sub "ץ" "TZ"
+    sub "ץ׳" "TSH"
+    sub "צ" "TZ"
+    sub "צּ" "TZ"
+    sub "צּ" "TZ"
+    sub "צ׳" "TSH"
+    sub "ק" "Q"
+    sub "קּ" "Q"
+    sub "קּ" "Q"
+    sub "ר" "R"
+    sub "רּ" "R"
+    sub "רּ" "R"
+    sub "ש" "S"
+    sub "שּ" "S"
+    sub "שּ" "S"
+    sub "שׂ‬" "S"
+    sub "שׂ" "S"
+    sub "שׁ" "SH"
+    sub "שׁ" "SH"
+    sub "שּׂ‬" "S"
+    sub "שּׂ" "S"
+    sub "ת" "T"
+    sub "תּ" "T"
+    sub "תּ" "T"
+    sub "ת׳" "T"
+
+    # Niqqud vowels
+    sub "ְ" "E"
+    sub "ֱ" "E"
+    sub "ֲ" "A"
+    sub "ֳ" "O"
+    sub "ִ" "I"
+    sub "ֵ" "E"
+    sub "ֶ" "E"
+    sub "ַ" "A"
+    sub "ָ" "O"
+    sub "ֹ" "O"
+    sub "ֻ" "U"
+    sub "וּ" "U"
+    sub "וּ" "U"
+
+    # Diphthongs
+    sub "ֵי" "EI"
+    sub "ֶי" "EI"
+    sub "ַי" "AI"
+    sub "ַיְ" "AI"
+    sub "ַיְ‬" "AI"
+    sub "ָי" "AI"
+    sub "ָי‬" "AI"
+    sub "ָיְ" "AI"
+    sub "ָיְ‬" "AI"
+    sub "ֹי" "OI"
+    sub "ֹיְ" "OI"
+    sub "ֹיְ‬" "OI"
+    sub "ֻי" "UI"
+    sub "ֻיְ" "UI"
+    sub "ֻיְ‬" "UI"
+    sub "וּי" "UI"
+    sub "וּיְ" "UI"
+    sub "וּיְ‬" "UI"
+  }
+
+}
+
+}

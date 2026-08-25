@@ -1,0 +1,88 @@
+system "UA:ukr-Cyrl:Latn:2007" {
+
+metadata {
+  authority_id ua
+  id 2007
+  language iso-639-2:ukr
+  source_script Cyrl
+  destination_script Latn
+  name The Cabinet of Ministers of Ukraine adopted Resolution No 858 "About the statement of the technical description and a sample passport form of a citizen of Ukraine to go abroad and make changes to some acts of the Cabinet of Ministers of Ukraine"
+  url https://zakon.rada.gov.ua/laws/show/858-2007-%D0%BF/ed20070626
+  creation_date 2007
+}
+
+tests {
+  # tests generated with https://dmsu.gov.ua/services/transliteration.html
+   "ОЛЕКСАНДР ЯН" ->  "OLEKSANDR YAN"
+   "ТРАНСЛІТЕРАЦІЇ" ->  "TRANSLITERATSII"
+   "ПЕРЕВІРКА" ->  "PEREVIRKA"
+   "ВСІ МАТЕРІАЛИ РОЗМІЩЕНІ НА УМОВАХ ЛІЦЕНЗІЇ" ->  "VSI MATERIALY ROZMISHCHENI NA UMOVAKH LITSENZII"
+   "ВВЕДІТЬ ПРІЗВИЩЕ ТА ІМ'Я УКРАЇНСЬКИМИ ЛІТЕРАМИ" ->  "VVEDIT PRIZVYSHCHE TA IMIA UKRAINSKYMY LITERAMY"
+   "ДОДАТКОВА ІНФОРМАЦІЯ" ->  "DODATKOVA INFORMATSIIA"
+   "ДІЯЛЬНІСТЬ" ->  "DIIALNIST"
+   "ЮЛІЯ" ->  "YULIIA"
+   "ЗГОРАНИ" ->  "ZGHORANY"
+   "ЙОРКШИР-ТЕР'ЄР" ->  "YORKSHYR-TERIER"
+   "ПАПА ПАЧУКА" ->  "PAPA PACHUKA"
+   "ЄНАКІЄВЕ" ->  "YENAKIIEVE"
+   "УКРАЇНА" ->  "UKRAINA"
+   "КИЇВ" ->  "KYIV"
+}
+
+dependency "ua-ukr-Cyrl-Latn-1996" as cyrllatn
+
+
+stage main {
+  # RULES
+  # override parent rules
+  sub "\u0027" ""
+  sub "\u2019" ""
+  sub {
+    from "\u0413"
+    to "GH"
+    before any("З")
+  }
+  sub {
+    from boundary + "\u0404"
+    to "YE"
+  }
+  sub {
+    from boundary + "\u0407"
+    to "I"
+  }
+  sub {
+    from boundary + "\u042e"
+    to "YU"
+  }
+  sub {
+    from boundary + "\u042f"
+    to "YA"
+  }
+
+  # CHARACTERS
+  parallel {
+    sub "Г" "G"
+    sub "Ґ" "G"
+    sub "Є" "IE"
+    sub "Ж" "ZH"
+    sub "Х" "KH"
+    sub "Ц" "TS"
+    sub "Ч" "CH"
+    sub "Ш" "SH"
+    sub "Щ" "SHCH"
+    sub "Ю" "IU"
+    sub "Я" "IA"
+    sub "Ь" ""
+    sub "г" "g"
+    sub "ґ" "g"
+    sub "щ" "shch"
+    sub "ю" "iu"
+    sub "я" "ia"
+    sub "ь" ""
+    sub "'" ""
+    sub "’" ""
+  }
+
+  run  map.cyrllatn.stage.main
+}
+}

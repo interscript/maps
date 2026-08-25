@@ -1,0 +1,45 @@
+system "DOS:nep-Deva:Latn:1997" {
+
+metadata {
+  authority_id dos
+  id 1997
+  language iso-639-2:nep
+  source_script Deva
+  destination_script Latn
+  name Survey Department Nepali Romanization System (1997)
+  url http://nationalgeoportal.gov.np/old/pdf/translation2.pdf
+  creation_date 1997
+  description {    Survey Department, Ministry of Land Management, Cooperatives and Poverty Alleviation, Government of Nepal.
+  }
+
+  notes {
+    note "      ं (anusvara) is rendered by\n      ṅ before क, ख, ग, and घ\n      ñ before च, छ, ज, and झ\n      ṇ before ट, ठ, ड, and ढ\n      n before त, थ, द, and ध\n      ṁ before य, र, ल, व, श, ष, स"
+  }
+}
+
+tests {
+   "दुःख" ->  "duhkh"
+   "पूरा भइसकेका विषयलाई माग बनाएर दबाब नदिनुस्" ->  "pūrā bhiskekā viṣylāī māg bnāer dbāb ndinusa"
+   "जाँदै छ कता नेपाली संगीत" ->  "jā~dai chh ktā nepālī sṅgīt"
+   "३५ मिनेटको यो डकुमेन्ट्री फिल्मले प्रथम पुरस्कारस्वरूप ग्रान्ड पिक्स अवार्ड पाएको हो" ->  "35 mineṭko yo ḍkumenaṭarī philamle parthm pursakārsavrūp garānaḍ pikas avāraḍ pāeko ho"
+   "विक्षनरी" ->  "vikṣnrī"
+   "रुसमा उत्कृष्ट" ->  "rusmā utakṛiṣaṭ"
+   "वाणिज्य" ->  "vāṇijay"
+   "अंक विद्या" ->  "aṅk vidayā"
+}
+
+dependency "bgnpcgn-nep-Deva-Latn-2011" as devalatn
+
+stage main {
+
+
+  # CHARACTERS
+  parallel {
+
+    # Bisarga
+    sub "ः" "h"
+  }
+
+  run  map.devalatn.stage.main
+}
+}

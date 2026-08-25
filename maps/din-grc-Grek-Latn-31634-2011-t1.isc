@@ -1,0 +1,739 @@
+system "DIN:grc-Grek:Latn:31634-2011-t1" {
+
+metadata {
+  authority_id din
+  id 31634-2011-t1
+  language iso-639-3:grc
+  source_script Grek
+  destination_script Latn
+  name "DIN 31634:2011 Information und Dokumentation — Unschrift des griechischen Alphabets"
+  url https://byzantinistik.phil-fak.uni-koeln.de/sites/IfA/Byzantinistik/Allgemeine_Bilder/DIN_31634_2011.pdf
+  creation_date 2011
+  description {    Establishes a system for the transliteration and/or transcription
+    of Greek characters into Latin characters. This system applies to
+    the characters of the Greek script, independent of the period in
+    which it is or was used, i.e. scripts from all periods of Classic
+    or Modern Greek. It therefore allows for polytonic Greek, though
+    it only acknowlegdges rough breathing, and ignores all other diacritics.
+  }
+
+  notes {
+    note "Have not included transliteration of Greek numerals (e.g. ͵ΑϠΜΔʹ = 1944)"
+    note "      Have not introduced rules to infer the presence of diaeresis (e.g.\n      ἄυλος is rendered as aylos, but not aÿlos; Ἀιβαλί as Aibali not Aïbali)"
+  }
+}
+
+tests {
+   "Ένα πράμα μόνον με παρακίνησε κι εμένα να γράψω ότι τούτην την πατρίδα την έχομεν όλοι μαζί, και σοφοί κι αμαθείς και πλούσιοι και φτωχοί και πολιτικοί και στρατιωτικοί και οι πλέον μικρότεροι άνθρωποι· όσοι αγωνιστήκαμεν, αναλόγως ο καθείς, έχομεν να ζήσομεν εδώ. Το λοιπόν δουλέψαμεν όλοι μαζί, να την φυλάμεν κι όλοι μαζί και να μην λέγει ούτε ο δυνατός «εγώ» ούτε ο αδύνατος. Ξέρετε πότε να λέγει ο καθείς «εγώ»; Όταν αγωνιστεί μόνος του και φκιάσει ή χαλάσει, να λέγει «εγώ»· όταν όμως αγωνίζονται πολλοί και φκιάνουν, τότε να λένε «εμείς». Είμαστε εις το «εμείς» κι όχι εις το «εγώ». Και εις το εξής να μάθομεν γνώση, αν θέλομεν να φκιάσομεν χωριόν, να ζήσομεν όλοι μαζί.\n\nΓιάννης Μακρυγιάννης." ->  "Ena prama monon me parakinēse ki emena na grapsō oti toutēn tēn patrida tēn echomen oloi mazi, kai sophoi ki amatheis kai plousioi kai phtōchoi kai politikoi kai stratiōtikoi kai oi pleon mikroteroi anthrōpoi; osoi agōnistēkamen, analogōs o katheis, echomen na zēsomen edō. To loipon doulepsamen oloi mazi, na tēn phylamen ki oloi mazi kai na mēn legei oute o dynatos «egō» oute o adynatos. Xerete pote na legei o katheis «egō»? Otan agōnistei monos tou kai phkiasei ē chalasei, na legei «egō»; otan omōs agōnizontai polloi kai phkianoun, tote na lene «emeis». Eimaste eis to «emeis» ki ochi eis to «egō». Kai eis to exēs na mathomen gnōsē, an thelomen na phkiasomen chōrion, na zēsomen oloi mazi.\n\nGiannēs Makrygiannēs."
+   "Ἐμὲ οὖν νῦν τραχηλοκοπεῖσθαι μόνον;\" τί οὖν; ἤθελες πάντας τραχηλοκοπηθῆναι, ἵνα σὺ παραμυθίαν ἔχῃς; οὐ θέλεις οὕτως ἐκτεῖναι τὸν τράχηλον, ὡς Λατερανός τις ἐν τῇ Ῥώμῃ κελευσθεὶς ὑπὸ τοῦ Νέρωνος ἀποκεφαλισθῆναι; ἐκτείνας γὰρ τὸν τράχηλον καὶ πληγεὶς καὶ πρὸς αὐτὴν τὴν πληγὴν ἀσθενῆ γενομένην ἐπ' ὀλίγον συνελκυσθεὶς πάλιν ἐξέτεινεν. ἀλλὰ καὶ ἔτι πρότερον προσελθόντι τις Ἐπαφροδίτῳ τῷ κυρίῳ τοῦ Νέρωνος καὶ ἀνακρίνοντι αὐτὸν ὑπὲρ τοῦ συγκρουσθῆναι \"Ἄν τί θέλω,\" φησίν, \"ἐρῶ σου τῷ κυρίῳ\".\n\n\"Τί οὖν δεῖ πρόχειρον ἔχειν ἐν τοῖς τοιούτοις;\" τί γὰρ ἄλλο ἢ τί ἐμὸν καὶ τί οὐκ ἐμὸν καὶ τί μοι ἔξεστιν καὶ τί μοι οὐκ ἔξεστιν; ἀποθανεῖν με δεῖ: μή τι οὖν καὶ στένοντα; δεθῆναι: μή τι καὶ θρηνοῦντα; φυγαδευθῆναι: μή τις οὖν κωλύει γελῶντα καὶ εὐθυμοῦντα καὶ εὐροοῦντα; \"εἰπὲ τὰ ἀπόῤῥητα.\" οὐ λέγω: τοῦτο γὰρ ἐπ' ἐμοί ἐστιν. \"ἀλλὰ δήσω σε.\" ἄνθρωπε. τί λέγεις; ἐμέ; τὸ σκέλος μου δήσεις, τὴν προαίρεσιν δὲ οὐδ' ὁ Ζεὺς νικῆσαι δύναται. \"εἰς φυλακήν σε βαλῶ.\" τὸ σωμάτιον. \"ἀποκεφαλίσω σε.\" πότε οὖν σοὶ εἶπον, ὅτι μόνου ἐμοῦ ὁ τράχηλος ἀναπότμητός ἐστιν; ταῦτα ἔδει μελετᾶν τοὺς φιλοσοφοῦντας, ταῦτα καθ' ἡμέραν γράφειν, ἐν τούτοις γυμνάζεσθαι." ->  "Eme oun nyn trachēlokopeisthai monon?\" ti oun? ētheles pantas trachēlokopēthēnai, hina sy paramythian echēs? ou theleis houtōs ekteinai ton trachēlon, hōs Lateranos tis en tē Rhōmē keleustheis hypo tou Nerōnos apokephalisthēnai? ekteinas gar ton trachēlon kai plēgeis kai pros autēn tēn plēgēn asthenē genomenēn ep' oligon synelkystheis palin exeteinen. alla kai eti proteron proselthonti tis Epaphroditō tō kyriō tou Nerōnos kai anakrinonti auton hyper tou synkrousthēnai \"An ti thelō,\" phēsin, \"erō sou tō kyriō\".\n\n\"Ti oun dei procheiron echein en tois toioutois?\" ti gar allo ē ti emon kai ti ouk emon kai ti moi exestin kai ti moi ouk exestin? apothanein me dei: mē ti oun kai stenonta? dethēnai: mē ti kai thrēnounta? phygadeuthēnai: mē tis oun kōlyei gelōnta kai euthymounta kai euroounta? \"eipe ta aporrhēta.\" ou legō: touto gar ep' emoi estin. \"alla dēsō se.\" anthrōpe. ti legeis? eme? to skelos mou dēseis, tēn proairesin de oud' ho Zeus nikēsai dynatai. \"eis phylakēn se balō.\" to sōmation. \"apokephalisō se.\" pote oun soi eipon, hoti monou emou ho trachēlos anapotmētos estin? tauta edei meletan tous philosophountas, tauta kath' hēmeran graphein, en toutois gymnazesthai."
+   "ΑΘΗΝΑ" ->  "ATHĒNA"
+   "μπαμπάκι" ->  "mpampaki"
+   "νταντὰ" ->  "ntanta"
+   "γκέγκε" ->  "gkenke"
+   "Γκαμπὸν" ->  "Gkampon"
+   "Μάγχη" ->  "Manchē"
+   "κόγξ" ->  "konx"
+   "υἱὸς" ->  "hyios"
+   "Υἱὸς" ->  "Hyios"
+   "νεράντζι" ->  "nerantzi"
+   "Γοίθιος" ->  "Goithios"
+   "μπέικον" ->  "mpeikon"
+   "μπέϊκον" ->  "mpeïkon"
+   "βόλεϊ" ->  "boleï"
+   "ἀθεΐα" ->  "atheïa"
+   "Ἐϊγιαφιάτλαγιοκουτλ" ->  "Eïgiaphiatlagiokoutl"
+   "Ἐΐτζι" ->  "Eïtzi"
+   "Μυρτῷο" ->  "Myrtōo"
+   "ἀέρας" ->  "aeras"
+   "γαῦ γαῦ" ->  "gau gau"
+   "Ταΰγετος" ->  "Taÿgetos"
+   "σπρέυ" ->  "sprey"
+   "χαἱ" ->  "chhai"
+   "θοὗτος" ->  "thhoutos"
+   "Οὗγκο" ->  "Hounko"
+   "ΟΥΓΚΟ" ->  "OUNKO"
+   "Ἄυλος" ->  "Aylos"
+   "Αὐλός" ->  "Aulos"
+   "αὑτὸς" ->  "hautos"
+   "εὕρημα" ->  "heurēma"
+   "ηὗρον" ->  "hēuron"
+   "Εὕρημα" ->  "Heurēma"
+   "Ηὗρον" ->  "Hēuron"
+   "αἵτημα" ->  "haitēma"
+   "Αἵτημα" ->  "Haitēma"
+   "εἱλικόεις" ->  "heilikoeis"
+   "Εἱλικόεις" ->  "Heilikoeis"
+   "οἷος" ->  "hoios"
+   "Οἷος" ->  "Hoios"
+   "Ἀθῆναι" ->  "Athēnai"
+   "Ἅγιον Όρος" ->  "Hagion Oros"
+   "Ἄγραφα" ->  "Agrapha"
+   "Ἀγρίνιο" ->  "Agrinio"
+   "Αἴγινα" ->  "Aigina"
+   "Αἴγιο" ->  "Aigio"
+   "Ἀλεξανδρούπολη" ->  "Alexandroupolē"
+   "Ἀλεποχώρι" ->  "Alepochōri"
+   "Ἀμοργὸς" ->  "Amorgos"
+   "Ἄμφισσα" ->  "Amphissa"
+   "Ἀράχωβα" ->  "Arachōba"
+   "Ἄργος" ->  "Argos"
+   "Ἀρκαδία" ->  "Arkadia"
+   "Ἄρτα" ->  "Arta"
+   "Βελούχι" ->  "Belouchi"
+   "Βέροια" ->  "Beroia"
+   "Βοιωτία" ->  "Boiōtia"
+   "Βόλος" ->  "Bolos"
+   "Βόνιτσα" ->  "Bonitsa"
+   "Γαλαξίδι" ->  "Galaxidi"
+   "Γαλάτσι" ->  "Galatsi"
+   "Γιαννιτσὰ" ->  "Giannitsa"
+   "Γλυφάδα" ->  "Glyphada"
+   "Γρανίτσα" ->  "Granitsa"
+   "Γρεβενὰ" ->  "Grebena"
+   "Γύθειο" ->  "Gytheio"
+   "Διόνυσος" ->  "Dionysos"
+   "Δίστομο" ->  "Distomo"
+   "Δολιανὰ" ->  "Doliana"
+   "Δράμα" ->  "Drama"
+   "Δωδεκάνησα" ->  "Dōdekanēsa"
+   "Ἔδεσσα" ->  "Edessa"
+   "Ἐλευσίνα" ->  "Eleusina"
+   "Ἐπίδαυρος" ->  "Epidauros"
+   "Ἑπτάνησα" ->  "Heptanēsa"
+   "Ἑρμούπολη" ->  "Hermoupolē"
+   "Εὔβοια" ->  "Euboia"
+   "Ζάκυνθος" ->  "Zakynthos"
+   "Ἥπειρος" ->  "Hēpeiros"
+   "Ἡράκλειο" ->  "Hērakleio"
+   "Θάσος" ->  "Thasos"
+   "Θεσσαλονίκη" ->  "Thessalonikē"
+   "Θεσσαλία" ->  "Thessalia"
+   "Θεσπρωτία" ->  "Thesprōtia"
+   "Θήβα" ->  "Thēba"
+   "Θρᾴκη" ->  "Thrakē"
+   "Ἰθάκη" ->  "Ithakē"
+   "Ἴος" ->  "Ios"
+   "Ἰωάννινα" ->  "Iōannina"
+   "Καβάλα" ->  "Kabala"
+   "Καλάβρυτα" ->  "Kalabryta"
+   "Καλαμάτα" ->  "Kalamata"
+   "Καλαμπάκα" ->  "Kalampaka"
+   "Καλύβια" ->  "Kalybia"
+   "Κάλυμνος" ->  "Kalymnos"
+   "Καρδίτσα" ->  "Karditsa"
+   "Καρπενήσι" ->  "Karpenēsi"
+   "Κάρυστος" ->  "Karystos"
+   "Καστελλόριζο" ->  "Kastellorizo"
+   "Καστοριὰ" ->  "Kastoria"
+   "Κατερίνη" ->  "Katerinē"
+   "Κάτω Ἀχαΐα" ->  "Katō Achaïa"
+   "Κερατέα" ->  "Keratea"
+   "Κέρκυρα" ->  "Kerkyra"
+   "Κεφαλλονιὰ" ->  "Kephallonia"
+   "Κηφισιὰ" ->  "Kēphisia"
+   "Κιλκὶς" ->  "Kilkis"
+   "Κοζάνη" ->  "Kozanē"
+   "Κολωνὸς" ->  "Kolōnos"
+   "Κομοτηνή" ->  "Komotēnē"
+   "Κόρινθος" ->  "Korinthos"
+   "Κορώνη" ->  "Korōnē"
+   "Κρανίδι" ->  "Kranidi"
+   "Κρέστενα" ->  "Krestena"
+   "Κρήτη" ->  "Krētē"
+   "Κύθηρα" ->  "Kythēra"
+   "Κυκλάδες" ->  "Kyklades"
+   "Κύμη" ->  "Kymē"
+   "Κυψέλη" ->  "Kypselē"
+   "Κῶς" ->  "Kōs"
+   "Λαγκαδὰς" ->  "Lankadas"
+   "Λαμία" ->  "Lamia"
+   "Λάρισα" ->  "Larisa"
+   "Λαύριο" ->  "Laurio"
+   "Λέρος" ->  "Leros"
+   "Λέσβος" ->  "Lesbos"
+   "Λευκάδα" ->  "Leukada"
+   "Λῆμνος" ->  "Lēmnos"
+   "Λιβαδειὰ" ->  "Libadeia"
+   "Μακεδονία" ->  "Makedonia"
+   "Μάνη" ->  "Manē"
+   "Μαραθώνας" ->  "Marathōnas"
+   "Μαρκόπουλο" ->  "Markopoulo"
+   "Μαρούσι" ->  "Marousi"
+   "Μέγαρα" ->  "Megara"
+   "Μεσολόγγι" ->  "Mesolongi"
+   "Μεταξουργείο" ->  "Metaxourgeio"
+   "Μέτσοβο" ->  "Metsobo"
+   "Μῆλος" ->  "Mēlos"
+   "Μύκονος" ->  "Mykonos"
+   "Μυστρᾶς" ->  "Mystras"
+   "Μυτιλήνη" ->  "Mytilēnē"
+   "Νάξος" ->  "Naxos"
+   "Νάουσα" ->  "Naousa"
+   "Ναύπακτος" ->  "Naupaktos"
+   "Ναύπλιο" ->  "Nauplio"
+   "Νέα Σμύρνη" ->  "Nea Smyrnē"
+   "Νίσυρος" ->  "Nisyros"
+   "Ξάνθη" ->  "Xanthē"
+   "Ὄλυμπος" ->  "Olympos"
+   "Παγκράτι" ->  "Pankrati"
+   "Παπάγου" ->  "Papagou"
+   "Πᾶρος" ->  "Paros"
+   "Πασαλιμάνι" ->  "Pasalimani"
+   "Πατήσια" ->  "Patēsia"
+   "Πάτμος" ->  "Patmos"
+   "Πάτρα" ->  "Patra"
+   "Πειραιὰς" ->  "Peiraias"
+   "Πελοπόννησος" ->  "Peloponnēsos"
+   "Περιστέρι" ->  "Peristeri"
+   "Πεύκη" ->  "Peukē"
+   "Πήλιο" ->  "Pēlio"
+   "Πολύγυρος" ->  "Polygyros"
+   "Πόρος" ->  "Poros"
+   "Πρέβεζα" ->  "Prebeza"
+   "Πτολεμαΐδα" ->  "Ptolemaïda"
+   "Πύλος" ->  "Pylos"
+   "Πύργος" ->  "Pyrgos"
+   "Ῥέθυμνο" ->  "Rhethymno"
+   "Ῥόδος" ->  "Rhodos"
+   "Ῥούμελη" ->  "Rhoumelē"
+   "Σαλαμίνα" ->  "Salamina"
+   "Σαμοθρᾴκη" ->  "Samothrakē"
+   "Σάμος" ->  "Samos"
+   "Σαντορίνη" ->  "Santorinē"
+   "Σέρρες" ->  "Serres"
+   "Σίκινος" ->  "Sikinos"
+   "Σίφνος" ->  "Siphnos"
+   "Σκιάθος" ->  "Skiathos"
+   "Σκόπελος" ->  "Skopelos"
+   "Σούλι" ->  "Souli"
+   "Σπάρτη" ->  "Spartē"
+   "Στερεά Ελλάδα" ->  "Sterea Ellada"
+   "Στύρα" ->  "Styra"
+   "Σύμη" ->  "Symē"
+   "Σύρος" ->  "Syros"
+   "Σφακιὰ" ->  "Sphakia"
+   "Τῆλος" ->  "Tēlos"
+   "Τῆνος" ->  "Tēnos"
+   "Τρίκαλα" ->  "Trikala"
+   "Τρίπολη" ->  "Tripolē"
+   "Τσακωνιὰ" ->  "Tsakōnia"
+   "Ὕδρα" ->  "Hydra"
+   "Φάληρο" ->  "Phalēro"
+   "Φλώρινα" ->  "Phlōrina"
+   "Φολέγανδρος" ->  "Pholegandros"
+   "Χάλκη" ->  "Chalkē"
+   "Χαλκίδα" ->  "Chalkida"
+   "Χαλάνδρι" ->  "Chalandri"
+   "Χαλκιδικὴ" ->  "Chalkidikē"
+   "Χανιὰ" ->  "Chania"
+   "Χίος" ->  "Chios"
+   "Ψαρὰ" ->  "Psara"
+   "Ἁβάνα" ->  "Habana"
+   "Ἀγγλία" ->  "Anglia"
+   "Ἀιβαλὶ" ->  "Aibali"
+   "Ἀλεξάνδρεια" ->  "Alexandreia"
+   "Ἄμστερνταμ" ->  "Amsterntam"
+   "Βαυαρία" ->  "Bauaria"
+   "Βενετία" ->  "Benetia"
+   "Βερολῖνο" ->  "Berolino"
+   "Βερόνα" ->  "Berona"
+   "Βιέννη" ->  "Biennē"
+   "Γένοβα" ->  "Genoba"
+   "Δουβλῖνο" ->  "Doublino"
+   "Καλαβρία" ->  "Kalabria"
+   "Καλιφόρνια" ->  "Kaliphornia"
+   "Καύκασος" ->  "Kaukasos"
+   "Κονγκὸ" ->  "Konnko"
+   "Κορσικὴ" ->  "Korsikē"
+   "Κουρδιστάν" ->  "Kourdistan"
+   "Κωνσταντινούπολη" ->  "Kōnstantinoupolē"
+   "Κατεχόμενη Κύπρος" ->  "Katechomenē Kypros"
+   "Λαπωνία" ->  "Lapōnia"
+   "Λευκωσία" ->  "Leukōsia"
+   "Λιβόρνο" ->  "Liborno"
+   "Λονδῖνο" ->  "Londino"
+   "Λυὼν" ->  "Lyōn"
+   "Μάλαγα" ->  "Malaga"
+   "Μασσαλία" ->  "Massalia"
+   "Μικρονησία" ->  "Mikronēsia"
+   "Μιλάνο" ->  "Milano"
+   "Μόσχα" ->  "Moscha"
+   "Μπολόνια" ->  "Mpolonia"
+   "Νάπολη" ->  "Napolē"
+   "Νταγκεστὰν" ->  "Ntankestan"
+   "Νέα Ὑόρκη" ->  "Nea Hyorkē"
+   "Ὀξφόρδη" ->  "Oxphordē"
+   "Οὐαλία" ->  "Oualia"
+   "Παρίσι" ->  "Parisi"
+   "Πάφος" ->  "Paphos"
+   "Πολυνησία" ->  "Polynēsia"
+   "Ῥώμη" ->  "Rhōmē"
+   "Σαμάρεια" ->  "Samareia"
+   "Σικελία" ->  "Sikelia"
+   "Σκανδιναβία" ->  "Skandinabia"
+   "Σκόπια" ->  "Skopia"
+   "Σκωτία" ->  "Skōtia"
+   "Σμύρνη" ->  "Smyrnē"
+   "Ταϊτὴ" ->  "Taïtē"
+   "Ταταρστὰν" ->  "Tatarstan"
+   "Τζαμάικα" ->  "Tzamaika"
+   "Τηλλυρία" ->  "Tēllyria"
+   "Τιρόλο" ->  "Tirolo"
+   "Τορίνο" ->  "Torino"
+   "Φανάρι" ->  "Phanari"
+   "Φλωρεντία" ->  "Phlōrentia"
+   "Χαβάη" ->  "Chabaē"
+   "Χονγκ Κονγκ" ->  "Chongk Kongk"
+}
+
+aliases {
+  grek_any = any(["\u0386", any("\u0388".."\u03ff"), any("\u1f00".."\u1fbc")]) # A few more, but let's not bother
+  grek_latn_any = any([grek_any, any("a".."z"), any("A".."Z")])
+}
+
+# https://en.wikipedia.org/wiki/Romanization_of_Greek
+stage main {
+
+  # RULES
+  sub {
+    from any("ΥΎῪὙ")
+    to "U"
+    before any("ΑαΕεΗηΟο")
+  }
+  sub {
+    from any("υύύύὺῦὐὔὒὖ")
+    to "u"
+    before any("ΑαΕεΗηΟο")
+  }
+  sub "\u037E" "?"
+  sub "\u003B" "?"
+  sub {
+    from "Γ"
+    to "N"
+    after any("γΓξΞχΧ")
+  }
+  sub {
+    from "γ"
+    to "n"
+    after any("γΓξΞχΧ")
+  }
+  sub {
+    from "Γ"
+    to "N"
+    before grek_latn_any
+    after any("κΚ") + grek_latn_any
+  }
+  sub {
+    from "γ"
+    to "n"
+    before grek_latn_any
+    after any("κΚ") + grek_latn_any
+  }
+
+
+  # CHARACTERS
+  parallel {
+    sub {
+    from any("Αα") + any("ὙὝὛὟ")
+    to "HAU"
+  }
+    sub {
+    from any("Εε") + any("ὙὝὛὟ")
+    to "HEU"
+  }
+    sub {
+    from any("Ηη") + any("ὙὝὛὟ")
+    to "HĒU"
+  }
+    sub {
+    from any("Οο") + any("ὙὝὛὟ")
+    to "HOU"
+  }
+    sub {
+    from "Α" + any("ὑὕὓὗ")
+    to "Hau"
+  }
+    sub {
+    from "α" + any("ὑὕὓὗ")
+    to "hau"
+  }
+    sub {
+    from "Ε" + any("ὑὕὓὗ")
+    to "Heu"
+  }
+    sub {
+    from "ε" + any("ὑὕὓὗ")
+    to "heu"
+  }
+    sub {
+    from "Η" + any("ὑὕὓὗ")
+    to "Hēu"
+  }
+    sub {
+    from "η" + any("ὑὕὓὗ")
+    to "hēu"
+  }
+    sub {
+    from "Ο" + any("ὑὕὓὗ")
+    to "Hou"
+  }
+    sub {
+    from "ο" + any("ὑὕὓὗ")
+    to "hou"
+  }
+    sub {
+    from any("Αα") + any("ἹἽἻἿ")
+    to "HAI"
+  }
+    sub {
+    from any("Εε") + any("ἹἽἻἿ")
+    to "HEI"
+  }
+    sub {
+    from any("Οο") + any("ἹἽἻἿ")
+    to "HOI"
+  }
+    sub {
+    from any("Υυ") + any("ἹἽἻἿ")
+    to "HYI"
+  }
+    sub {
+    from "Α" + any("ἱἵἳἷ")
+    to "Hai"
+  }
+    sub {
+    from "α" + any("ἱἵἳἷ")
+    to "hai"
+  }
+    sub {
+    from "Ε" + any("ἱἵἳἷ")
+    to "Hei"
+  }
+    sub {
+    from "ε" + any("ἱἵἳἷ")
+    to "hei"
+  }
+    sub {
+    from "Ο" + any("ἱἵἳἷ")
+    to "Hoi"
+  }
+    sub {
+    from "ο" + any("ἱἵἳἷ")
+    to "hoi"
+  }
+    sub {
+    from "Υ" + any("ἱἵἳἷ")
+    to "Hyi"
+  }
+    sub {
+    from "υ" + any("ἱἵἳἷ")
+    to "hyi"
+  }
+
+    sub "Α" "A"
+    sub "Ά" "A"
+    sub "Ὰ" "A"
+    sub "Ᾰ" "A"
+    sub "Ᾱ" "A"
+    sub "Ἀ" "A"
+    sub "Ἄ" "A"
+    sub "Ἆ" "A"
+    sub "Ἁ" "Ha"
+    sub "Ἅ" "Ha"
+    sub "Ἃ" "Ha"
+    sub "Ἇ" "Ha"
+    sub "ᾼ" "A"
+    sub "ᾈ" "A"
+    sub "ᾊ" "A"
+    sub "ᾌ" "A"
+    sub "ᾎ" "A"
+    sub "ᾉ" "Ha"
+    sub "ᾋ" "Ha"
+    sub "ᾍ" "Ha"
+    sub "ᾏ" "Ha"
+    sub "Β" "B"
+    sub "Γ" "G"
+    sub "Δ" "D"
+    sub "Ε" "E"
+    sub "Έ" "E"
+    sub "Ἐ" "E"
+    sub "Ὲ" "E"
+    sub "Ἒ" "E"
+    sub "Ἔ" "E"
+    sub "Ἑ" "He"
+    sub "Ἓ" "He"
+    sub "Ἕ" "He"
+    sub "Ζ" "Z"
+    sub "Η" "Ē"
+    sub "Ή" "Ē"
+    sub "Ἠ" "Ē"
+    sub "Ὴ" "Ē"
+    sub "Ἢ" "Ē"
+    sub "Ἤ" "Ē"
+    sub "Ἦ" "Ē"
+    sub "Ἡ" "Hē"
+    sub "Ἣ" "Hē"
+    sub "Ἥ" "Hē"
+    sub "Ἧ" "Hē"
+    sub "ῌ" "Ē"
+    sub "ᾘ" "Ē"
+    sub "ᾚ" "Ē"
+    sub "ᾜ" "Ē"
+    sub "ᾞ" "Ē"
+    sub "ᾙ" "Hē"
+    sub "ᾛ" "Hē"
+    sub "ᾝ" "Hē"
+    sub "ᾟ" "Hē"
+    sub "Θ" "Th"
+    sub "Ι" "I"
+    sub "Ί" "I"
+    sub "Ῐ" "I"
+    sub "Ῑ" "I"
+    sub "Ἰ" "I"
+    sub "Ὶ" "I"
+    sub "Ἲ" "I"
+    sub "Ἴ" "I"
+    sub "Ἶ" "I"
+    sub "Ἱ" "Hi"
+    sub "Ἳ" "Hi"
+    sub "Ἵ" "Hi"
+    sub "Ἷ" "Hi"
+    sub "Κ" "K"
+    sub "Λ" "L"
+    sub "Μ" "M"
+    sub "Ν" "N"
+    sub "Ξ" "X"
+    sub "Ο" "O"
+    sub "Ό" "O"
+    sub "Ὀ" "O"
+    sub "Ὸ" "O"
+    sub "Ὂ" "O"
+    sub "Ὄ" "O"
+    sub "Ὁ" "Ho"
+    sub "Ὃ" "Ho"
+    sub "Ὅ" "Ho"
+    sub "Π" "P"
+    sub "Ρ" "R"
+    sub "Ῥ" "Rh"
+    sub "Σ" "S"
+    sub "Τ" "T"
+    sub "Υ" "Y"
+    sub "Ύ" "Y"
+    sub "Ὺ" "Y"
+    sub "Ῠ" "Y"
+    sub "Ῡ" "Y"
+    sub "Ὑ" "Hy"
+    sub "Ὓ" "Hy"
+    sub "Ὕ" "Hy"
+    sub "Ὗ" "Hy"
+    sub "Φ" "Ph"
+    sub "Χ" "Ch"
+    sub "Ψ" "Ps"
+    sub "Ω" "Ō"
+    sub "Ώ" "Ō"
+    sub "Ὠ" "Ō"
+    sub "Ὼ" "Ō"
+    sub "Ὢ" "Ō"
+    sub "Ὤ" "Ō"
+    sub "Ὦ" "Ō"
+    sub "Ὡ" "Hō"
+    sub "Ὣ" "Hō"
+    sub "Ὥ" "Hō"
+    sub "Ὧ" "Hō"
+    sub "ῼ" "Ō"
+    sub "ᾨ" "Ō"
+    sub "ᾪ" "Ō"
+    sub "ᾬ" "Ō"
+    sub "ᾮ" "Ō"
+    sub "ᾩ" "Hō"
+    sub "ᾫ" "Hō"
+    sub "ᾭ" "Hō"
+    sub "ᾯ" "Hō"
+    sub "Ϊ" "Ï"
+    sub "Ϋ" "Ÿ"
+
+    sub "α" "a"
+    sub "ά" "a"
+    sub "ά" "a"
+    sub "ἀ" "a"
+    sub "ὰ" "a"
+    sub "ᾰ" "a"
+    sub "ᾱ" "a"
+    sub "ᾶ" "a"
+    sub "ἂ" "a"
+    sub "ἄ" "a"
+    sub "ἆ" "a"
+    sub "ἁ" "ha"
+    sub "ἃ" "ha"
+    sub "ἅ" "ha"
+    sub "ἇ" "ha"
+    sub "ᾳ" "a"
+    sub "ᾲ" "a"
+    sub "ᾴ" "a"
+    sub "ᾷ" "a"
+    sub "ᾀ" "a"
+    sub "ᾂ" "a"
+    sub "ᾄ" "a"
+    sub "ᾆ" "a"
+    sub "ᾁ" "ha"
+    sub "ᾃ" "ha"
+    sub "ᾅ" "ha"
+    sub "ᾇ" "ha"
+    sub "β" "b"
+    sub "γ" "g"
+    sub "δ" "d"
+    sub "ε" "e"
+    sub "έ" "e"
+    sub "έ" "e"
+    sub "ἐ" "e"
+    sub "ὲ" "e"
+    sub "ἒ" "e"
+    sub "ἔ" "e"
+    sub "ἑ" "he"
+    sub "ἓ" "he"
+    sub "ἕ" "he"
+    sub "ζ" "z"
+    sub "η" "ē"
+    sub "ή" "ē"
+    sub "ή" "ē"
+    sub "ἠ" "ē"
+    sub "ὴ" "ē"
+    sub "ῆ" "ē"
+    sub "ἢ" "ē"
+    sub "ἤ" "ē"
+    sub "ἦ" "ē"
+    sub "ἡ" "hē"
+    sub "ἣ" "hē"
+    sub "ἥ" "hē"
+    sub "ἧ" "hē"
+    sub "ῃ" "ē"
+    sub "ᾐ" "ē"
+    sub "ῂ" "ē"
+    sub "ῄ" "ē"
+    sub "ῇ" "ē"
+    sub "ᾒ" "ē"
+    sub "ᾔ" "ē"
+    sub "ᾖ" "ē"
+    sub "ᾑ" "hē"
+    sub "ᾓ" "hē"
+    sub "ᾕ" "hē"
+    sub "ᾗ" "hē"
+    sub "θ" "th"
+    sub "ϑ" "th"
+    sub "ι" "i"
+    sub "ί" "i"
+    sub "ί" "i"
+    sub "ἰ" "i"
+    sub "ὶ" "i"
+    sub "ῐ" "i"
+    sub "ῑ" "i"
+    sub "ῖ" "i"
+    sub "ἲ" "i"
+    sub "ἴ" "i"
+    sub "ἶ" "i"
+    sub "ἱ" "hi"
+    sub "ἳ" "hi"
+    sub "ἵ" "hi"
+    sub "ἷ" "hi"
+    sub "κ" "k"
+    sub "λ" "l"
+    sub "μ" "m"
+    sub "ν" "n"
+    sub "ξ" "x"
+    sub "ο" "o"
+    sub "ό" "o"
+    sub "ό" "o"
+    sub "ό" "o"
+    sub "ὀ" "o"
+    sub "ὸ" "o"
+    sub "ὂ" "o"
+    sub "ὄ" "o"
+    sub "ὁ" "ho"
+    sub "ὃ" "ho"
+    sub "ὅ" "ho"
+    sub "π" "p"
+    sub "ρ" "r"
+    sub "ῤ" "r"
+    sub "ῥ" "rh"
+    sub "σ" "s"
+    sub "ς" "s"
+    sub "τ" "t"
+    sub "υ" "y"
+    sub "ύ" "y"
+    sub "ύ" "y"
+    sub "ὐ" "y"
+    sub "ὺ" "y"
+    sub "ῠ" "y"
+    sub "ῡ" "y"
+    sub "ῦ" "y"
+    sub "ὒ" "y"
+    sub "ὔ" "y"
+    sub "ὖ" "y"
+    sub "ὑ" "hy"
+    sub "ὓ" "hy"
+    sub "ὕ" "hy"
+    sub "ὗ" "hy"
+    sub "φ" "ph"
+    sub "χ" "ch"
+    sub "ψ" "ps"
+    sub "ω" "ō"
+    sub "ώ" "ō"
+    sub "ὠ" "ō"
+    sub "ὼ" "ō"
+    sub "ῶ" "ō"
+    sub "ὢ" "ō"
+    sub "ὤ" "ō"
+    sub "ὦ" "ō"
+    sub "ὡ" "hō"
+    sub "ὣ" "hō"
+    sub "ὥ" "hō"
+    sub "ὧ" "hō"
+    sub "ῳ" "ō"
+    sub "ᾠ" "ō"
+    sub "ῲ" "ō"
+    sub "ῴ" "ō"
+    sub "ῷ" "ō"
+    sub "ᾢ" "ō"
+    sub "ᾤ" "ō"
+    sub "ᾦ" "ō"
+    sub "ᾡ" "hō"
+    sub "ᾣ" "hō"
+    sub "ᾥ" "hō"
+    sub "ᾧ" "hō"
+    sub "ϊ" "ï"
+    sub "ϋ" "ÿ"
+    sub "ΐ" "ï"
+    sub "ῒ" "ï"
+    sub "ῗ" "ï"
+    sub "ΰ" "ÿ"
+    sub "ῢ" "ÿ"
+    sub "ῧ" "ÿ"
+
+    sub "Ϝ" "W"
+    sub "ϝ" "w"
+    sub "ϲ" "s"
+    sub "Ϲ" "S"
+
+    sub "·" ";"
+    sub "·" ";"
+  }
+
+  # POSTRULES
+  sub {
+    from any("Hh")
+    to ""
+    before any("AEIOUYĒŌaeiouyēō")
+  }
+
+  sub {
+    from any(["Th", "Ch", "Ps"])
+    to upcase
+    before any("A".."Z")
+  }
+  sub {
+    from any(["Th", "Ch", "Ps"])
+    to upcase
+    after any("A".."Z")
+  }
+}
+}

@@ -1,0 +1,64 @@
+system "ALA-LC:kor-Hang:Latn:1997" {
+
+metadata {
+  authority_id alalc
+  id 1997
+  language iso-639-2:kor
+  source_script Hang
+  destination_script Latn
+  name Romanization Table -- Korean (1997)
+  url http://catdir.loc.gov/catdir/cpso/romanization/korean.pdf
+  creation_date 1997
+  adoption_date 
+  description { 1. General Practice The Library of Congress will continue to follow the McCune-Reischauer system to romanize Korean with the exceptions noted in this document. See: Romanization of the Korean Language: Based upon its Phonetic Structure by G.M. McCune and E.O. Reischauer ([S.l.: s.n., 1939?), reprinted from the Transactions of the Korea Branch of the Royal Asiatic Society. Full text of the original document is available online from the National Library of Australia Web site: http://www.nla.gov.au/librariesaustralia/cjk/download/ras_1939.pdf }
+
+  notes {
+  }
+}
+
+tests {
+   "은하-리" ->  "Ŭnha-ri"
+   "은중-리" ->  "Ŭnjung-ni"
+   "은장-령" ->  "Ŭnjang-nyŏng"
+   "은혜-동" ->  "Ŭnhye-dong"
+   "은호-리" ->  "Ŭnho-ri"
+   "은행정" ->  "Ŭnhaengjŏng"
+   "은행-동" ->  "Ŭnhaeng-dong"
+   "은행-촌" ->  "Ŭnhaeng-ch’on"
+   "원수" ->  "Wŏnsu"
+   "원소리-고개" ->  "Wŏnsori-gogae"
+   "원소참" ->  "Wŏnsoch’am"
+   "원소-리" ->  "Wŏnso-ri"
+   "원신-리" ->  "Wŏnsil-li"
+   "난곡" ->  "Nan’gok"
+   "난산-리" ->  "Nansal-li"
+   "난직" ->  "Nanjik"
+   "영곡" ->  "Yŏnggok"
+   "윗두밀" ->  "Wittumil"
+   "윗도심이" ->  "Wittosimi"
+   "둔지" ->  "Tunji"
+   "서승" ->  "Sŏsŭng"
+  # - source: 신촌
+  #   expected: "Sinch’on"
+   "비암덕" ->  "Piamdŏk"
+   "바위안" ->  "Pawian"
+   "오송평" ->  "Osongp’yŏng"
+   "그물목" ->  "Kŭmulmok"
+   "구원정" ->  "Kuwŏnjŏng"
+   "일하" ->  "Irha"
+   "황우" ->  "Hwangu"
+   "자작보" ->  "Chajakpo"
+  # - source: 비파1-동
+  #   expected: "Pip’a Il-tong"
+   "문암 오-동" ->  "Munam O-dong"
+}
+
+dependency "var-kor-Hang-Latn-mr-1939" as hanglatn
+
+stage main {
+
+  run  map.hanglatn.stage.main
+  compose
+  title_case
+}
+}

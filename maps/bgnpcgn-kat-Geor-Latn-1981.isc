@@ -1,0 +1,120 @@
+system "BGN-PCGN:kat-Geor:Latn:1981" {
+
+metadata {
+  authority_id bgnpcgn
+  id 1981
+  language iso-639-2:kat
+  source_script Geor
+  destination_script Latn
+  name Romanization of Georgian (1981)
+  url https://transliteration.eki.ee/pdf/Georgian.pdf
+  creation_date 1981
+  confirmation_date 1981
+  description {    BGN/PCGN system of 1981.
+  }
+
+  notes {
+  }
+}
+
+tests {
+   "ჰებუდი" ->  "hebudi"
+   "ჯვრის წყალსაცავი" ->  "jvris tsqalsats’avi"
+   "ჯვავიაკვარა" ->  "jvaviak’vara"
+   "ჯობრია" ->  "jobria"
+   "ძულუხირა" ->  "dzulukhira"
+   "ლეკუხონა" ->  "lek’ukhona"
+   "აბაშა" ->  "abasha"
+   "ააცი" ->  "aats’i"
+  # TODO: This belongs to which system?!
+  # - source: აბააჟახვუ
+  #   expected: abaazhvakhu
+  # TODO: These examples from GNDB are clearly using the BGNPCGN 2009 system
+  #
+  # - source: ხობის მუნიციპალიტეტი
+  #   expected: khobis munitsip’alit’et’i
+  #
+  # - source: მყინვარი ჩრდილოეთი ლეადაშატი
+  #   expected: mq’invari chrdiloeti leadashat’i
+  #
+  # - source: ხეწკვარა
+  #   expected: khets’k’vara
+  #
+  # - source: ჯამპალი
+  #   expected: jamp’ali
+  #
+  # - source: ჯავის მუნიციპალიტეტი
+  #   expected: javis munitsip’alit’et’i
+  #
+  # - source: ხოიჯგეთა
+  #   expected: khoijgeta
+  #
+  # - source: ხობის მუნიციპალიტეტი
+  #   expected: khobis munitsip’alit’et’i
+  #
+  # - source: წვიშარხუ
+  #   expected: ts’visharkhu
+  # - source: აღმოსავლეთი გუმისთა
+  #   expected: aghmosavleti gumista
+  #
+  # - source: ქვემო ბირცხა
+  #   expected: kvemo birtskha
+  #
+  # - source: ზემო ბირცხა
+  #   expected: zemo birtskha
+  #
+  # - source: აბჟაყვა
+  #   expected: abzhaq’va
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "\u10d0" "a"
+    sub "\u10d1" "b"
+    sub "\u10d2" "g"
+    sub "\u10d3" "d"
+    sub "\u10d4" "e"
+    sub "\u10d5" "v"
+    sub "\u10d6" "z"
+
+    sub "\u10f1" "ey"
+
+    sub "\u10d7" "t’"
+    sub "\u10d8" "i"
+    sub "\u10d9" "k’"
+    sub "\u10da" "l"
+    sub "\u10db" "m"
+    sub "\u10dc" "n"
+
+    sub "\u10f2" "j"
+
+    sub "\u10dd" "o"
+    sub "\u10de" "p"
+    sub "\u10df" "zh"
+    sub "\u10e0" "r"
+    sub "\u10e1" "s"
+    sub "\u10e2" "t"
+    sub "\u10e3" "u"
+    sub "\u10e4" "p’"
+    sub "\u10e5" "k’"
+    sub "\u10e6" "gh"
+    sub "\u10e7" "q"
+    sub "\u10e8" "sh"
+    sub "\u10e9" "ch’"
+    sub "\u10ea" "ts’"
+    sub "\u10eb" "dz"
+    sub "\u10ec" "ts"
+    sub "\u10ed" "ch"
+    sub "\u10ee" "kh"
+
+    sub "\u10f4" "q’"
+
+    sub "\u10ef" "j"
+    sub "\u10f0" "h"
+  }
+
+}
+
+}

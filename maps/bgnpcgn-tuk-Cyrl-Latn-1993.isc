@@ -1,0 +1,115 @@
+system "BGN-PCGN:tuk-Cyrl:Latn:1993" {
+
+metadata {
+  authority_id bgnpcgn
+  id 1993
+  language iso-639-2:tuk
+  source_script Cyrl
+  destination_script Latn
+  name Table of Correspondences for Turkmen (Cyrillic-Roman) (2000 Agreement)
+  url https://assets.publishing.service.gov.uk/media/6329b1638fa8f53cb45763b4/TABLE_OF_CORRESPONDENCES_FOR_TURKMEN_with_examples.pdf
+  creation_date 1993
+  confirmation_date 2022
+  description {    In 1993, the Turkmen government adopted the Roman alphabet to replace the existing Cyrillic alphabet. The presentation below provides a table of correspondences between the former Cyrillic alphabet and the current Roman alphabet.  When Turkmen Roman-alphabet spellings are not available, this table can be used to convert Turkmen Cyrillic spellings.  This table of correspondences supersedes the BGN/PCGN 1979 romanization system for Turkmen. 
+  }
+
+  notes {
+    note "The letter sequence ýe is used initially, after the vowel characters 33, 35, 37, and 38,"
+    note "and after character 12. 2 Rarely encountered."
+    note "      If the letter Ұ (Unicode 04BE) is encountered, it should be rendered Ý.\n      If the letter ÿ (Unicode 00FF) is encountered, it should be rendered ý."
+    note "      If the character £ (Unicode 00A3) is encountered, it should be rendered Ž.\n      If the character ſ (Unicode 017F) is encountered, it should be rendered ž."
+    note "If the letter-diacritic combination ñ (Unicode 00F1) is encountered, it should be rendered ň."
+    note "      An inventory of letter-diacritic combinations, with their Unicode encoding, in addition to the unmodified letters of the basic Roman script is:\n        Ý (U+00DD) ý (U+00FD)\n        Ž (U+017D) ž (U+017E)\n        Ü (U+00DC) ü (U+00FC)\n        Ç (U+00C7) ç (U+00E7)\n        Ş (U+015E) ş (U+015F)\n        Ň (U+0147) ň (U+0148)\n        Ö (U+00D6) ö (U+00F6)\n        Ä (U+00C4) ä (U+00E4)"
+    note "The Roman-script columns show only lowercase forms but, when applying the table, uppercase and lowercase Roman letters as appropriate should be used."
+  }
+}
+
+tests {
+   "Aшгабат" ->  "Aşgabat"
+   "Лебап" ->  "Lebap"
+   "Ныязов" ->  "Nyýazow"
+   "Тагта" ->  "Tagta"
+   "Дашховуз" ->  "Daşhowuz"
+   "Небитдаг" ->  "Nebitdag"
+   "Ёлөтен" ->  "Ýolöten"
+   "Теҗен" ->  "Tejen"
+   "Газанҗык" ->  "Gazanjyk"
+   "Керки" ->  "Kerki"
+   "Бүзмейин" ->  "Büzmeýin"
+   "Кака" ->  "Kaka"
+   "Челекен" ->  "Çeleken"
+   "Түркменбашы" ->  "Türkmenbaşy"
+   "Чаршаңңы" ->  "Çarşaňňy"
+   "Мургап" ->  "Murgap"
+   "Мары" ->  "Mary"
+   "Сарахс" ->  "Sarahs"
+   "Фарап" ->  "Farap"
+   "Эсенгулы" ->  "Esenguly"
+   "Әнев" ->  "Änew"
+}
+
+dependency "bgnpcgn-tuk-Cyrl-Latn-1979" as cyrllatn
+
+stage main {
+  # RULES
+
+  # note[1]
+  sub {
+    from boundary + "\u0415"
+    to "Ýe"
+  }
+  sub {
+    from boundary + "\u0435"
+    to "ýe"
+  }
+  sub {
+    from "\u0415"
+    to "Ýe"
+    before any("АаЕеЁёИиЙйОоӨөУуҮүЫыЭэӘәЮюЯя")
+    after boundary
+  }
+  sub {
+    from "\u0435"
+    to "ýe"
+    before any("АаЕеЁёИиЙйОоӨөУуҮүЫыЭэӘәЮюЯя")
+    after boundary
+  }
+
+  # CHARACTERS
+  parallel {
+    sub "\u0412" "W"
+    sub "\u0401" "Ýo"
+    sub "\u0416" "Ž"
+    sub "\u0419" "Ý"
+    sub "\u04A2" "Ň"
+    sub "\u0425" "H"
+    sub "\u0426" "S"
+    sub "\u0427" "Ç"
+    sub "\u0428" "Ş"
+    sub "\u0429" "ŞÇ"
+    sub "\u042A" ""
+    sub "\u042C" ""
+    sub "\u042E" "Ýu"
+    sub "\u042F" "Ýa"
+
+    sub "\u0432" "w"
+    sub "\u0451" "ýo"
+    sub "\u0436" "ž"
+    sub "\u0439" "ý"
+    sub "\u04A3" "ň"
+    sub "\u04af" "ü"
+    sub "\u0444" "f"
+    sub "\u0445" "h"
+    sub "\u0446" "s"
+    sub "\u0447" "ç"
+    sub "\u0448" "ş"
+    sub "\u0449" "şç"
+    sub "\u044A" ""
+    sub "\u044C" ""
+    sub "\u044E" "ýu"
+    sub "\u044F" "ýa"
+  }
+
+  run  map.cyrllatn.stage.main
+}
+}

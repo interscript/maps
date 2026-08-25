@@ -1,0 +1,115 @@
+system "ICAO:fas-Arab:Latn:9303" {
+
+metadata {
+  authority_id icao
+  id 9303
+  language iso-639-2:fas
+  source_script Arab
+  destination_script Latn
+  name ICAO Doc 9303 Machine Readable Travel Documents Part 3 -- Persian Arabic to Latin
+  url https://www.icao.int/publications/pages/publication.aspx?docnum=9303
+  creation_date 2015
+  description {    Part 3 defines specifications that are common to TD1, TD2 and TD3
+    size machine readable travel documents (MRTDs) including those
+    necessary for global interoperability using visual inspection and
+    machine readable (optical character recognition) means.
+
+    Since only Latin-alphabet characters are allowed in the VIZ, if
+    mandatory data elements are in a national language that does not use
+    the Latin alphabet, a transcription or transliteration shall also be
+    provided.
+
+    This document defines the transliteration mappings used to produce
+    this transcription or transliteration.
+  }
+}
+
+tests {
+}
+
+# https://www.icao.int/publications/Documents/9303_p3_cons_en.pdf
+stage main {
+
+  # CHARACTERS
+  parallel {
+
+    sub "'" ""
+    sub "ء" "XE"
+    sub "آ" "XAA"
+    sub "أ" "XAE"
+    sub "ؤ" "U"
+    sub "إ" "I"
+    sub "ئ" "XI"
+    sub "ا" "A"
+    sub "ب" "B"
+    sub "ة" "P"
+    sub "ت" "T"
+    sub "ث" "XTH"
+    sub "ج" "J"
+    sub "ح" "XH"
+    sub "خ" "XKH"
+    sub "د" "D"
+    sub "ذ" "XDH"
+    sub "ر" "R"
+    sub "ز" "Z"
+    sub "س" "S"
+    sub "ش" "XSH"
+    sub "ص" "XSS"
+    sub "ض" "XDZ"
+    sub "ط" "XTT"
+    sub "ظ" "XZZ"
+    sub "ع" "E"
+    sub "غ" "G"
+    sub "ف" "F"
+    sub "ق" "Q"
+    sub "ك" "K"
+    sub "ل" "L"
+    sub "م" "M"
+    sub "ن" "N"
+    sub "ه" "H"
+    sub "و" "W"
+    sub "ى" "XAY"
+    sub "ي" "Y"
+    sub "ً" "F"
+    sub "ٌ" "N"
+    sub "ٍ" "K"
+    sub "َ" "A"
+    sub "ُ" "U"
+    sub "ِ" "I"
+    sub "ْ" "O"
+    sub "ٰ" ""
+    sub "ٱ" "XXA"
+    sub "ٹ" "XXT"
+    sub "ټ" "XRT"
+    sub "پ" "P"
+    sub "ځ" "XKE"
+    sub "څ" "XXH"
+    sub "چ" "XC"
+    sub "ڈ" "XXD"
+    sub "ډ" "XDR"
+    sub "ڑ" "XXR"
+    sub "ړ" "XRR"
+    sub "ږ" "XRX"
+    sub "ژ" "XJ"
+    sub "ښ" "XXS"
+    sub "ک" "XKK"
+    sub "ګ" "XXK"
+    sub "ڭ" "XNG"
+    sub "گ" "XGG"
+    sub "ں" "XNN"
+    sub "ڼ" "XXN"
+    sub "ھ" "XDO"
+    sub "ۀ" "XYH"
+    sub "ہ" "XXG"
+    sub "ۂ" "XGE"
+    sub "ۃ" "XTG"
+    sub "ی" "XYA"
+    sub "ۍ" "XXY"
+    sub "ې" "Y"
+    sub "ے" "XYB"
+    sub "ۓ" "XBE"
+  }
+
+}
+
+}

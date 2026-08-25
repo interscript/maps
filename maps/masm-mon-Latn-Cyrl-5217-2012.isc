@@ -1,0 +1,162 @@
+system "MASM:mon-Latn:Cyrl:5217-2012" {
+
+metadata {
+  authority_id masm
+  id 5217-2012
+  language iso-639-2:mon
+  source_script Latn
+  destination_script Cyrl
+  name Transliteration of Latin characters into Mongolian Cyrillic
+  url https://fr.wikipedia.org/wiki/MNS_5217:2012
+  creation_date 
+  confirmation_date 
+  description {    Latin characters into Mongolian Cyrillic is the opposite transliteration of based on MNS 5217:2012.
+    The standard MNS 5217:2012 is a standard of the Mongolian Agency for Standardization and Metrology
+    for transliteration from Cyrillic Mongolian in Latin alphabet.
+
+    The grammer of Khalkha Mongolian is required in order to make accurate translation of Latin characters
+    into Mongolian Cyrillic because of no distinguish between /и, й, ъ, ь/ for "i" and /ш, щ/ for "sh" in
+    the standard.
+
+    In Mongolia, the Khalkha dialect, currently written in both Cyrillic and traditional Mongolian script
+    (and at times in Latin for social networking), is predominant, while in Inner Mongolia, the language
+    is dialectally more diverse and is written in the traditional Mongolian script.
+  }
+
+  notes {
+    note "    - Khalkha also has four diphthongs: /ui, ʊi, ɔi, ai/. Vowels can also combine to form a further\n      three diphthongs, and so seven in total: ia (иа), ʊa (уа) ei (эй). For example: ай in далай (eyes),\n      иа in амиараа (individually), ой in нохой (dog), уа in хуаран (barracks), уй in уйлах (to cry),\n      үй in үйлдвэр (factory), эй in хэрэгтэй (necessary).\n    - Custom mapping sort orders made as following by: /й, ъ, ь, и/ for \"i\" and /щ, ш/ for \"sh\"."
+  }
+}
+
+tests {
+   "Avarga, khalbaga, aav" ->  "Аварга, халбага, аав"
+   "Baga, sambar" ->  "Бага, самбар"
+   "Avarga, vagon, sav" ->  "Аварга, вагон, сав"
+   "Gazar, geree, khereg" ->  "Газар, гэрээ, хэрэг"
+   "Dadlaga, akhmad" ->  "Дадлага, ахмад"
+   "Yeeven, yerööl" ->  "Еэвэн, ерөөл"
+   "Yorool, oyodol" ->  "Ёроол, оёдол"
+   "Juulchin, ajil, Jon" ->  "Жуулчин, ажил, Жон"
+   "Zam, azarga, baaz" ->  "Зам, азарга, бааз"
+   "Kino, kilomyetr, akadyemi" ->  "Кино, километр, академи"
+   "Ishig, bichig, khani" ->  "Ишиг, бичиг, хани" # Correct expectation: Ишиг, бичиг, хань - Hard transliteration required for ь
+   "Iim, eejiin" ->  "Ийм, ээжийн"
+   "Lam, alag, mal" ->  "Лам, алаг, мал"
+   "Mal, khamar, nam" ->  "Мал, хамар, нам"
+   "Nar, khana, ünen" ->  "Нар, хана, үнэн"
+   "Oron, bolovsrol, toono" ->  "Орон, боловсрол, тооно"
+   "Ödör, önöödör, ööröösöö" ->  "Өдөр, өнөөдөр, өөрөөсөө"
+   "Puujin, aparat" ->  "Пуужин, апарат"
+   "Rashaan, radio, sar" ->  "Рашаан, радио, сар"
+   "Sar, asar, etses" ->  "Сар, асар, эцэс"
+   "Tamga, tatlaga" ->  "Тамга, татлага"
+   "Uran, nuruu" ->  "Уран, нуруу"
+   "Ünen, türgen, tergüün" ->  "Үнэн, түргэн, тэргүүн"
+   "Foto, fond" ->  "Фото, фонд"
+   "Khavar, nökhör, ekh" ->  "Хавар, нөхөр, эх"
+   "Tsatsag, tsetseg" ->  "Цацаг, цэцэг"
+   "Chimeg, chadal, ach" ->  "Чимэг, чадал, ач"
+   "Shashin, aash" ->  "Шашин, ааш"
+   "Shyedrin, shors" ->  "Шедрин, шорс" # Correct expectation: Щедрин, щорс - Hard transliteration required for щ usage
+   "Oriyo, suriya, gariya" ->  "Ориё, сурия, гария" # Correct expectation: Оръё, суръя, гаръя - Hard transliteration required for ъ
+   "Khaany, akhyn" ->  "Хааны, ахын"
+   "Khari, bari" ->  "Хари, бари" # Correct expectation: Харь, барь - Hard transliteration required for ь
+   "Ezen, ene, emeel" ->  "Эзэн, энэ, эмээл"
+   "Yum, yuüden" ->  "Юм, юүдэн"
+   "Yamar, yaduu, aya" ->  "Ямар, ядуу, ая"
+   "ii, ia, ua, ai, ei, oi, üi, Ii, Ai, Ei, Oi, Üi" ->  "ий, иа, уа, ай, эй, ой, үй, Ий, Ай, Эй, Ой, Үй"
+   "uu, üü, yuu, yuü" ->  "уу, үү, юу, юү"
+}
+
+stage main {
+
+  # RULES
+  sub "ii" "ий"
+  sub "Ii" "Ий"
+  sub "ai" "ай"
+  sub "Ai" "Ай"
+  sub "ei" "эй"
+  sub "Ei" "Эй"
+  sub "oi" "ой"
+  sub "Oi" "Ой"
+  sub "üi" "үй"
+  sub "Üi" "Үй"
+
+
+  # CHARACTERS
+  parallel {
+    sub "A" "А"
+    sub "B" "Б"
+    sub "V" "В"
+    sub "G" "Г"
+    sub "D" "Д"
+    sub "Ye" "Е"
+    sub "Yo" "Ё"
+    sub "J" "Ж"
+    sub "Z" "З"
+    sub "I" "Й"
+    sub "K" "К"
+    sub "L" "Л"
+    sub "M" "М"
+    sub "N" "Н"
+    sub "O" "О"
+    sub "Ö" "Ө"
+    sub "P" "П"
+    sub "R" "Р"
+    sub "S" "С"
+    sub "T" "Т"
+    sub "U" "У"
+    sub "Ü" "Ү"
+    sub "F" "Ф"
+    sub "Kh" "Х"
+    sub "Ts" "Ц"
+    sub "Ch" "Ч"
+    sub "Sh" "Щ"
+    sub "Sh" "Ш"
+    sub "I" "Ъ"
+    sub "Y" "Ы"
+    sub "I" "Ь"
+    sub "I" "И"
+    sub "E" "Э"
+    sub "Yu" "Ю"
+    sub "Ya" "Я"
+    sub "a" "а"
+    sub "b" "б"
+    sub "v" "в"
+    sub "g" "г"
+    sub "d" "д"
+    sub "ye" "е"
+    sub "yo" "ё"
+    sub "j" "ж"
+    sub "z" "з"
+    sub "i" "й"
+    sub "k" "к"
+    sub "l" "л"
+    sub "m" "м"
+    sub "n" "н"
+    sub "o" "о"
+    sub "ö" "ө"
+    sub "p" "п"
+    sub "r" "р"
+    sub "s" "с"
+    sub "t" "т"
+    sub "u" "у"
+    sub "ü" "ү"
+    sub "f" "ф"
+    sub "kh" "х"
+    sub "ts" "ц"
+    sub "ch" "ч"
+    sub "sh" "щ"
+    sub "sh" "ш"
+    sub "i" "ъ"
+    sub "y" "ы"
+    sub "i" "ь"
+    sub "i" "и"
+    sub "e" "э"
+    sub "yu" "ю"
+    sub "ya" "я"
+  }
+
+}
+
+}

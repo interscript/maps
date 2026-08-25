@@ -1,0 +1,32 @@
+system "BGN-PCGN:isl-Latn:Latn:1968" {
+
+metadata {
+  authority_id bgnpcgn
+  id 1968
+  language iso-639-2:isl
+  source_script Latn
+  destination_script Latn
+  name Roman-Script Spelling Convention of Icelandic (1968 Agreement)
+  url https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693794/ROMAN-SCRIPT_SPELLING_CONVENTIONS.pdf
+  creation_date 1968
+
+  notes {
+    note "      The special letter Ð ð, known as edh, [Unicode: 00D0, 00F0] and the special letter Þ þ, known as thorn,\n      [Unicode: 00DE, 00FE] should be reproduced in those forms whenever encountered. In those instances\n      when they cannot be reproduced, however, the digraph Dh dh may be substituted for Ð ð and the digraph\n      Th th may be substituted for Þ þ."
+  }
+}
+
+tests {
+   "Fyrirgefðu" ->  "Fyrirgefdhu"
+   "þu ert velkominn" ->  "thu ert velkominn"
+   "GOÐAN DAGINN" ->  "GODHAN DAGINN"
+   "Þakka" ->  "Thakka"
+}
+
+dependency "bgnpcgn-isl-Latn-Latn-1964" as latnlatn
+
+stage main {
+
+  run  map.latnlatn.stage.main
+
+}
+}

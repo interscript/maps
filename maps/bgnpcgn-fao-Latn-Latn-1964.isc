@@ -1,0 +1,45 @@
+system "BGN-PCGN:fao-Latn:Latn:1964" {
+
+metadata {
+  authority_id bgnpcgn
+  id 1964
+  language iso-639-2:fao
+  source_script Latn
+  destination_script Latn
+  name Romanization of Faeroese (1964)
+  url https://github.com/interscript/interscript/files/5180777/BGN_Romanization_Guide_1964_faeroese.pdf
+  creation_date 1964
+  description {    The Faeroese language is a dialect of Icelandic and, like Icelandic, employs the letter eth (Ð ð).
+    Unlike Icelandic, however, the Faeroese ð has the sound of y (as in "yes") before i, v before u, and is silent in all other cases.
+    The Icelandic letter thorn (Þ þ) does not occur in the writing of Faeroese.
+
+    To avoid the use of the unfamiliar symbol ð, the Board transliterates it as dh, as in Icelandic,
+    even though its pronunciation in the two languages is not the same.
+  }
+}
+
+tests {
+   "Fyrirgefðu" ->  "Fyrirgefdhu"
+   "Þakka" ->  "Þakka"
+}
+
+dependency "bgnpcgn-isl-Latn-Latn-1964" as latnlatn
+
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "Þ" "<XXX>"
+    sub "þ" "<xxx>"
+  }
+
+  run  map.latnlatn.stage.main
+
+  parallel {
+    sub "<XXX>" "Þ"
+    sub "<xxx>" "þ"
+  }
+
+}
+}

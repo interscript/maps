@@ -1,0 +1,144 @@
+system "UN:ara-Arab:Latn:1971" {
+
+metadata {
+  authority_id un
+  id 1971
+  language iso-639-2:ara
+  source_script Arab
+  destination_script Latn
+  name Romanization of Arabic -- Beirut system (1971)
+  url https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/2nd-uncsgn-docs/E_Conf61_4_Add1_e.pdf
+  creation_date 1971
+  confirmation_date 2018-06
+  description {    The current United Nations recommended romanization
+    system was approved in 2017 (resolution XI/3), based on
+    the system adopted by Arabic experts at the conference
+    held in Beirut in 2007, the Unified Arabic
+    Transliteration System, taking into account the
+    practical amendments and corrections carried out and
+    agreed upon by the representatives of the Arabic-
+    speaking countries at the Fourth Arab Conference on
+    Geographical Names, held in Beirut in 2008, and some
+    clarifications and amendments agreed in Riyadh in 20171.
+    Previously, the United Nations had approved a
+    romanization system in 1972 (resolution II/8), based on the
+    system adopted by Arabic experts at the conference
+    held at Beirut in 1971 with the practical amendments carried out
+    and agreed upon by the representatives of the Arabic-speaking
+    countries at their conference. The table was published in volume
+    II of the conference report.
+    In UN resolution XI/3 it is specifically stated that the
+    system was recommended for the “romanization of the
+    geographical names within those Arabic-speaking countries
+    where this system is officially adopted”. There is
+    evidence of its partial implementation in Jordan, Oman and
+    Saudi Arabia. The UNGEGN Working Group on Romanization
+    Systems intends to continue monitoring the UN system’s
+    implementation across Arabic-speaking countries.
+    In some countries there exist local romanization schemes
+    or practices. The geographical names of Algeria, Djibouti,
+    Mauritania, Morocco and Tunisia are generally rendered in
+    the traditional manner which conforms to the principles of
+    the French orthography.
+    The previous UN-approved system is still found in
+    considerable international usage.
+    Arabic is written from right to left. The Arabic script
+    usually omits vowel points and diacritical marks from
+    writing which makes it difficult to obtain uniform results
+    in the romanization of Arabic. It is essential to identify
+    correctly the words which appear in any particular name
+    and to know the standard Arabic-script spelling including
+    the relevant vowels. One must also take into account
+    dialectal and idiosyncratic deviations. The romanization
+    is generally reversible though there may be some ambiguous
+    letter sequences (dh, kh, sh, th) which may also point to
+    combinations of Arabic characters in addition to the
+    respective single characters.
+  }
+  notes {
+    note "      ث is t͟h (th with sub marcon)\n      خ is k͟h (kh with sub marcon)\n      ذ is d͟h (dh with sub marcon)\n      ش is s͟h (sh with sub marcon)\n      ظ is z͟h (zh with sub marcon)\n      غ is g͟h (gh witg sub marcon)\n      The previous UN 1972 System had the following differences:\n      the character (ظ) was romanized as z̧ instead of d͟h;\n      the cedilla (¸) was used instead of sub-macron (_) in all characters with sub-macrons.  - |"
+  }
+}
+
+tests {
+  # Examples taken from:
+  # https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/2nd-uncsgn-docs/E_Conf61_4_Add1_e.pdf
+  # page 31 (38 digital)
+   "خَيبَر" ->  "K͟haybar"
+   "ظَهران" ->  "Z͟hahrān"
+   "القُدس" ->  "Al Quds"
+   "شَرم الشَيْخ" ->  "S͟harm as͟h S͟hayk͟h"
+}
+
+dependency "un-ara-Arab-Latn-2017" as arablatn
+
+stage main {
+
+
+  # CHARACTERS
+  parallel {
+
+    # sun letters
+    sub {
+    from boundary + "\u0627\u0644\u062b" + maybe("\u0651")
+    to "at͟h t͟h"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0630" + maybe("\u0651")
+    to "ad͟h d͟h"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0634" + maybe("\u0651")
+    to "as͟h s͟h"
+  }
+    sub {
+    from boundary + "\u0627\u0644\u0638" + maybe("\u0651")
+    to "az͟h z͟h"
+  }
+
+    # shadda
+    sub "\u062e\u0651" "k͟hk͟h"
+    sub "\u0630\u0651" "d͟hd͟h"
+    sub "\u0634\u0651" "s͟h"
+    sub "\u0638\u0651" "z͟hz͟h"
+    sub "\u063a\u0651" "g͟hg͟h"
+
+    sub "\u062b" "t͟h"
+    sub "\ufe9b" "t͟h"
+    sub "\ufe9c" "t͟h"
+    sub "\ufe9a" "t͟h"
+
+    sub "\u062e" "k͟h"
+    sub "\ufea7" "k͟h"
+    sub "\ufea8" "k͟h"
+    sub "\ufea6" "k͟h"
+
+    sub "\u063a" "g͟h"
+    sub "\ufecf" "g͟h"
+    sub "\ufed0" "g͟h"
+    sub "\ufece" "g͟h"
+
+    sub "\u0630" "d͟h"
+    sub "\ufeac" "d͟h"
+
+    sub "\u0634" "s͟h"
+    sub "\ufeb7" "s͟h"
+    sub "\ufeb8" "s͟h"
+    sub "\ufeb6" "s͟h"
+
+    sub "\u0638" "z͟h"
+    sub "\ufec7" "z͟h"
+    sub "\ufec8" "z͟h"
+    sub "\ufec6" "z͟h"
+  }
+
+  run  map.arablatn.stage.main
+
+  # POSTRULES
+  sub " At͟h T͟h" " at͟h T͟h"
+  sub " Ad͟h D͟h" " ad͟h D͟h"
+  sub " As͟h S͟h" " as͟h S͟h"
+  sub " Az͟h Z͟h" " az͟h Z͟h"
+
+}
+}

@@ -1,0 +1,364 @@
+system "UN:ori-Orya:Latn:1972" {
+
+metadata {
+  authority_id un
+  id 1972
+  language iso-639-2:ori
+  source_script Orya
+  destination_script Latn
+  name Romanization of Oriya (1972)
+  url http://www.eki.ee/wgrs/v2_2/rom1_or.pdf
+  creation_date 1972
+  confirmation_date 2003
+  description {    The United Nations recommended system was approved in 1972 (II/11), based on a report
+    prepared by D. N. Sharma. The note on the system was published in volume II of the
+    conference reports.
+
+    There is no evidence of the use of the system either in India or in international cartographic
+    products.
+
+    Oriya uses an alphasyllabic script whereby each character represents a syllable rather than one sound.
+    Vowels and diphthongs are marked in two ways: as independent characters (used syllable-initially) and in an
+    abbreviated form, to denote vowels after consonants. The romanization table is unambiguous. The system is mostly
+    reversible but there may exist some ambiguities in the romanization of vowels (independent vs. abbreviated characters)
+    and consonants (combinations with subscript consonants vs. character sequences).
+  }
+
+  notes {
+    note "Combinations with r as the first component are written with a special superscript symbol, e.g. ର୍କ rka."
+  }
+}
+
+tests {
+   "ର୍କ" ->  "rka"
+   "ଓଡ଼ିଆ" ->  "oṙiā"
+   "ଓଡ଼ିଶା" ->  "oṙishā"
+   "ଭୁବନେଶ୍ୱର" ->  "bhubaneshvara"
+   "ଆଇପିଏଲ୍‌-୧୩: ଦିଲ୍ଲୀ କ୍ୟାପିଟାଲ୍ସକୁ ୮୮ ରନ୍‌ ପରାସ୍ତ କଲା ସନରାଇଜର୍ସ ହାଇଦ୍ରାବାଦ" ->  "āipiel-13: dillī kyāpiṭālsaku 88 ran parāsta kalā sanarāijarsa hāidrābāda"
+   "ପ୍ରେମ ସମ୍ପର୍କରେ ଭଟ୍ଟା: ରାଗରେ ପ୍ରେମିକାର ତଣ୍ଟି କାଟି ନିଜେ ବିଷ ପିଇଲା ପ୍ରେମିକ" ->  "prema samparkare bhaṭṭā: rāgare premikāra taṇṭi kāṭi nije biṣha piilā premika"
+   "ପ୍ରେମ ସମ୍ପର୍କରେ ଭଟ୍ଟା: ରାଗରେ ପ୍ରେମିକାର ତଣ୍ଟି କାଟି ନିଜେ ବିଷ ପିଇଲା ପ୍ରେମିକ" ->  "prema samparkare bhaṭṭā: rāgare premikāra taṇṭi kāṭi nije biṣha piilā premika"
+   "ହୋଟେଲ, ଲଜ୍‌ରେ ରୁମ୍‌ ମିଳୁନି: ନେତା‌ଙ୍କ ନାଁରେ ଆଗୁଆ ହୋଇଯାଇଛି ବୁକିଂ" ->  "heāṭela, lajre rum miḷuni: netāṅka nāmre āguā heāiỵāichhhi bukiṃ"
+   "ପର୍ଯ୍ୟଟକମାନଙ୍କ ନିମନ୍ତେ ନଭେମ୍ବର ୧ରୁ ଖୋଲିବ ଶିମିଳିପାଳ ଅଭୟାରଣ୍ୟ" ->  "parỵyaṭakamānaṅka nimante nabhembara 1ru kholiba shimiḷipāḷa abhayāraṇya"
+   "ପାରିବାରିକ ଅଶାନ୍ତିର କରୁଣ ପରିଣତି: କୂଅକୁ ଡେଇଁଲେ ମା’-ଝିଅ, ଝିଅ ମୃତ" ->  "pāribārika ashāntira karuṇa pariṇati: kūaku ḍeimle mā’-jhia, jhia mṛta"
+   "‘ଭ୍ରଷ୍ଟାଚାରର ବଂଶବାଦ’ ଏବେ ସାଜିଛି ଦେଶ ପାଇଁ ନୂଆ ସମସ୍ୟା; ପ୍ରଧାନମନ୍ତ୍ରୀ ମୋଦୀ" ->  "‘bhraṣhṭāchārara baṃshabāda’ ebe sājichhhi desha pāim nūā samasyā; pradhānamantrī modī"
+   "ପାହାଡ଼ି ଇଲାକାବାସୀଙ୍କ ଆଶାର ବତୀ ‘ପାର୍ବତୀ’" ->  "pāhāṙi ilākābāsīṅka āshāra batī ‘pārbatī’"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+   "ଓଡ଼ିଶା" ->  "oṙishā"
+   "ଭୁବନେଶ୍ୱର" ->  "bhubaneshvara"
+}
+
+aliases {
+  orya_chars_1 = any("\u0b4d\u0b3e\u0b3f\u0b40\u0b41\u0b42\u0b43\u0b47\u0b48\u0b4b\u0b4c")
+}
+
+stage main {
+
+  # RULES
+  sub {
+    from "କ"
+    to "k"
+    after orya_chars_1
+  }
+  sub {
+    from "ଖ"
+    to "kh"
+    after orya_chars_1
+  }
+  sub {
+    from "ଗ"
+    to "g"
+    after orya_chars_1
+  }
+  sub {
+    from "ଘ"
+    to "gh"
+    after orya_chars_1
+  }
+  sub {
+    from "ଙ"
+    to "ṅ"
+    after orya_chars_1
+  }
+  sub {
+    from "ଚ"
+    to "ch"
+    after orya_chars_1
+  }
+  sub {
+    from "ଛ"
+    to "chhh"
+    after orya_chars_1
+  }
+  sub {
+    from "ଜ"
+    to "j"
+    after orya_chars_1
+  }
+  sub {
+    from "ଝ"
+    to "jh"
+    after orya_chars_1
+  }
+  sub {
+    from "ଞ"
+    to "ñ"
+    after orya_chars_1
+  }
+  sub {
+    from "ଟ"
+    to "ṭ"
+    after orya_chars_1
+  }
+  sub {
+    from "ଠ"
+    to "ṭh"
+    after orya_chars_1
+  }
+  sub {
+    from "ଡ"
+    to "ḍ"
+    after orya_chars_1
+  }
+  sub {
+    from "ଡ଼"
+    to "ṙ"
+    after orya_chars_1
+  }
+  sub {
+    from "ଢ"
+    to "ḍh"
+    after orya_chars_1
+  }
+  sub {
+    from "ଢ଼"
+    to "ṙh"
+    after orya_chars_1
+  }
+  sub {
+    from "ଣ"
+    to "ṇ"
+    after orya_chars_1
+  }
+  sub {
+    from "ତ"
+    to "t"
+    after orya_chars_1
+  }
+  sub {
+    from "ଥ"
+    to "th"
+    after orya_chars_1
+  }
+  sub {
+    from "ଦ"
+    to "d"
+    after orya_chars_1
+  }
+  sub {
+    from "ଧ"
+    to "dh"
+    after orya_chars_1
+  }
+  sub {
+    from "ନ"
+    to "n"
+    after orya_chars_1
+  }
+  sub {
+    from "ପ"
+    to "p"
+    after orya_chars_1
+  }
+  sub {
+    from "ଫ"
+    to "ph"
+    after orya_chars_1
+  }
+  sub {
+    from "ବ"
+    to "b"
+    after orya_chars_1
+  }
+  sub {
+    from "ଭ"
+    to "bh"
+    after orya_chars_1
+  }
+  sub {
+    from "ମ"
+    to "m"
+    after orya_chars_1
+  }
+  sub {
+    from "ଯ"
+    to "ỵ"
+    after orya_chars_1
+  }
+  sub {
+    from "ୟ"
+    to "y"
+    after orya_chars_1
+  }
+  sub {
+    from "ର"
+    to "r"
+    after orya_chars_1
+  }
+  sub {
+    from "ଲ"
+    to "l"
+    after orya_chars_1
+  }
+  sub {
+    from "ଳ"
+    to "ḷ"
+    after orya_chars_1
+  }
+  sub {
+    from "ଶ"
+    to "sh"
+    after orya_chars_1
+  }
+  sub {
+    from "ଷ"
+    to "ṣh"
+    after orya_chars_1
+  }
+  sub {
+    from "ସ"
+    to "s"
+    after orya_chars_1
+  }
+  sub {
+    from "ହ"
+    to "h"
+    after orya_chars_1
+  }
+  sub {
+    from "କ୍ଷ"
+    to "kṣh"
+    after orya_chars_1
+  }
+
+
+  # CHARACTERS
+  parallel {
+    sub "ଅ" "a"
+    sub "ଆ" "ā"
+    sub "ଇ" "i"
+    sub "ଈ" "ī"
+    sub "ଉ" "u"
+    sub "ଊ" "ū"
+    sub "ଋ" "ṛ"
+    sub "ୠ" "ṝ"
+    sub "ଌ" "ḻ"
+    sub "ଏ" "e"
+    sub "ଐ" "ai"
+    sub "ଓ" "o"
+    sub "ୱ" "va"
+    sub "ଔ" "au"
+
+    # II. Consonants
+    # Gutturals
+    sub "କ" "ka"
+    sub "ଖ" "kha"
+    sub "ଗ" "ga"
+    sub "ଘ" "gha"
+    sub "ଙ" "ṅa"
+
+    # Palatals
+    sub "ଚ" "cha"
+    sub "ଛ" "chha"
+    sub "ଜ" "ja"
+    sub "ଝ" "jha"
+    sub "ଞ" "ña"
+
+    # Cerebrals
+    sub "ଟ" "ṭa"
+    sub "ଠ" "ṭha"
+    sub "ଡ" "ḍa"
+    sub "ଡ଼" "ṙa"
+    sub "ଢ" "ḍha"
+    sub "ଢ଼" "ṙha"
+    sub "ଣ" "ṇa"
+
+    # Dentals
+    sub "ତ" "ta"
+    sub "ଥ" "tha"
+    sub "ଦ" "da"
+    sub "ଧ" "dha"
+    sub "ନ" "na"
+
+    # Labials
+    sub "ପ" "pa"
+    sub "ଫ" "pha"
+    sub "ବ" "ba"
+    sub "ଭ" "bha"
+    sub "ମ" "ma"
+
+    # Semivowels
+    sub "ଯ" "ỵa"
+    sub "ୟ" "ya"
+    sub "ର" "ra"
+    sub "ଲ" "la"
+    sub "ଳ" "ḷa"
+
+    # Sibilants
+    sub "ଶ" "sha"
+    sub "ଷ" "ṣha"
+    sub "ସ" "sa"
+
+
+    # Aspirate
+    sub "ହ" "ha"
+
+    sub "କ୍ଷ" "kṣha"
+
+    # Chandrabindu
+    sub "ଁ" "m"
+
+    # Bisarga
+    sub "ଃ" "ḥ"
+
+    # Anusvāra
+    sub "ଂ" "ṃ"
+
+    # Medials # Needed for connecting constants
+
+    sub "ା" "ā"
+    sub "ି" "i"
+    sub "ୀ" "ī"
+    sub "ୁ" "u"
+    sub "ୂ" "ū"
+    sub "ୃ" "ṛ"
+    sub "େ" "e"
+    sub "ୈ" "ai"
+    sub "ୋ" "o"
+    sub "ୌ" "au"
+
+    sub "्" ""
+    sub "୍" ""
+    sub "़" ""
+    sub "଼" ""
+    sub "।" "."
+    sub "‍" ""
+    sub "‌" ""
+
+    # Numbers
+
+    sub "୦" "0"
+    sub "୧" "1"
+    sub "୨" "2"
+    sub "୩" "3"
+    sub "୪" "4"
+    sub "୫" "5"
+    sub "୬" "6"
+    sub "୭" "7"
+    sub "୮" "8"
+    sub "୯" "9"
+  }
+
+  compose
+}
+}

@@ -1,0 +1,81 @@
+system "UN:bel-Cyrl:Latn:2007" {
+
+metadata {
+  authority_id un
+  id 2007
+  language iso-639-2:bel
+  source_script Cyrl
+  destination_script Latn
+  name Romanization of Belarusian geographic names (2007)
+  url https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/9th-uncsgn-docs/crp/9th_UNCSGN_e-conf-98-crp-21.pdf
+  creation_date 2007
+  description {    RESOLUTION OF THE STATE COMMITTEE
+    ON PROPERTY OF THE REPUBLIC OF BELARUS June 11, 2007 No. 38
+
+    8/16668 (06/18/2007) On amendments and additions to the Instructions
+    for the transliteration of geographical names of the
+    Republic of Belarus in letters of the Latin alphabet
+
+    Based on the Regulation on the State Property Committee of the Republic of Belarus,
+    approved by the Decree of the Council of Ministers of the Republic of Belarus dated July 29, 2006
+    No. 958 "Issues of the State Committee on Property of the Republic of Belarus"
+  }
+}
+
+tests {
+  # the same as "by-bel-cyrl-Latn-2007"
+   "Аршанскi" ->  "Aršanski"
+   "Бешанковічы" ->  "Biešankovičy"
+   "Віцебск" ->  "Viciebsk"
+   "Гомель" ->  "Homieĺ"
+   "Гаўя" ->  "Haŭja"
+   "Добруш" ->  "Dobruš"
+   "Ельск" ->  "Jeĺsk"
+   "Бабаедава" ->  "Babajedava"
+   "Венцавічы" ->  "Viencavičy"
+   "Ёды" ->  "Jody"
+   "Вераб'ёвічы" ->  "Vierabjovičy"
+   "Мёры" ->  "Miory"
+   "Зэльва" ->  "Zeĺva"
+   "Iванава" ->  "Ivanava"
+   "Iўе" ->  "Iŭje"
+   "Лагойск" ->  "Lahojsk"
+   "Круглае" ->  "Kruhlaje"
+   "Лошыца" ->  "Lošyca"
+   "Любань" ->  "Liubań"
+   "Магілёў" ->  "Mahilioŭ"
+   "Нясвіж" ->  "Niasviž"
+   "Орша" ->  "Orša"
+   "Паставы" ->  "Pastavy"
+   "Рагачоў" ->  "Rahačoŭ"
+   "Смаргонь" ->  "Smarhoń"
+   "Талачын" ->  "Talačyn"
+   "Узда" ->  "Uzda"
+   "Шаркаўшчына" ->  "Šarkaŭščyna"
+   "Фаніпаль" ->  "Fanipaĺ"
+   "Хоцімск" ->  "Chocimsk"
+   "Цёмны Лес" ->  "Ciomny Lies"
+   "Чавусы" ->  "Čavusy"
+   "Шумілiна" ->  "Šumilina"
+   "Чыгірынка" ->  "Čyhirynka"
+   "Чэрвень" ->  "Červień"
+   "Друць" ->  "Druć"
+   "Чачэрск" ->  "Čačersk"
+   "Юхнаўка" ->  "Juchnaŭka"
+   "Гаюціна" ->  "Hajucina"
+   "Цюрлi" ->  "Ciurli"
+   "Любонічы" ->  "Liuboničy"
+   "Ямнае" ->  "Jamnaje"
+   "Баяры" ->  "Bajary"
+   "Валяр'яны" ->  "Valiarjany"
+   "Вязынка" ->  "Viazynka"
+}
+
+dependency "by-bel-Cyrl-Latn-2007" as cyrllatn
+
+stage main {
+
+  run  map.cyrllatn.stage.main
+
+}
+}

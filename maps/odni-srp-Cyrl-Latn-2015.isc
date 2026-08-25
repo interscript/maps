@@ -1,0 +1,132 @@
+system "ODNI:srp-Cyrl:Latn:2015" {
+
+metadata {
+  authority_id odni
+  id 2015
+  language iso-639-2:srp
+  source_script Cyrl
+  destination_script Latn
+  name ICS-630-01 Romanization of Serbian Personal Names (2015)
+  source ICS-630-01 Annex L
+  creation_date 2015
+  confirmation_date 2015
+  description {    This system is the Intelligence Community (IC) standard for the transliteration of Serbian names
+    written in Cyrillic that will be applied to all final written reports and products for IC consumers. It
+    is not intended to eliminate variations of a name that can contribute forensic information. Rather,
+    it is to provide an IC standard Romanized (English) transliteration from Serbian that can then be
+    linked to forensic information in ways that will help identify the referent of the name.
+
+    In cases where an individual’s name has already been transliterated in a variant spelling, the IC
+    Standard spelling should appear first, followed by the variant spelling(s) in parentheses at the first
+    usage. In addition, if the original Cyrillic spelling is known, that spelling should also appear in
+    parentheses following the name, if possible, following best practices of the issuing organization
+    and taking into consideration information system capabilities. This convention is designed to
+    ensure that vital forensic information is not lost.
+
+    For names of persons who are known to not be part of the Serbian-speaking community, use the
+    relevant IC transliteration standard for names from that language (e.g., Mikhail, Yitzhak). A
+    translator’s note may be used to clarify the known origin of the person. Spell names of
+    individuals from languages that are written in Roman letters as they are spelled in those
+    languages (e.g., George Clooney, Jorge Garcia, Georges Pompidou).
+
+    In the case of active senior government officials in the on-line CIA World Factbook and the online directory of Chiefs of State and Cabinet Members of Foreign Governments, the spellings
+    given in these on-line reference works should be used in place of the IC Standard. For any
+    individual who has at one time been listed in the Factbook or Chiefs of State directory but who no
+    longer appears in those resources (i.e. is no longer a government official), the IC Standard
+    spelling should appear first, with the spelling, if known, as it previously appeared in those
+    resources listed within parentheses at the first usage.
+
+    The primary goal is to produce a consistent Romanized transcription of names that is specifically
+    readable to the English-speaking non-specialist. The system uses the 26 letters of the standard
+    (English) Roman alphabet. Some ambiguities in the Romanized form will occur without the use
+    of diacritics. However, within the context of a report, where additional information about the
+    individual is provided, the referent will be clearly identified. This system will be used in
+    conjunction with on-line tools, name dictionaries, and lists containing conventional spellings of
+    names of well-known individuals.
+  }
+
+  notes {
+  }
+}
+
+tests {
+   "Гојко Митић" ->  "Gojko Mitic"
+   "Горња Ваганица" ->  "Gornja Vaganica"
+   "Довиђења" ->  "Dovidjenja"
+   "Ћао! Здраво!" ->  "Cao! Zdravo!"
+   "Кључ" ->  "Kljuc"
+   "Цигарете" ->  "Cigarete"
+   "Пролеће" ->  "Prolece"
+   "Понедељак" ->  "Ponedeljak"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "\u0410" "A"
+    sub "\u0411" "B"
+    sub "\u0412" "V"
+    sub "\u0413" "G"
+    sub "\u0414" "D"
+    sub "\u0402" "Dj"
+    sub "\u0415" "E"
+    sub "\u0416" "Z"
+    sub "\u0417" "Z"
+    sub "\u0418" "I"
+    sub "\u0408" "J"
+    sub "\u041A" "K"
+    sub "\u041B" "L"
+    sub "\u0409" "Lj"
+    sub "\u041C" "M"
+    sub "\u041D" "N"
+    sub "\u040A" "Nj"
+    sub "\u041E" "O"
+    sub "\u041F" "P"
+    sub "\u0420" "R"
+    sub "\u0421" "S"
+    sub "\u0422" "T"
+    sub "\u040B" "C"
+    sub "\u0423" "U"
+    sub "\u0424" "F"
+    sub "\u0425" "H"
+    sub "\u0426" "C"
+    sub "\u0427" "C"
+    sub "\u040F" "Dz"
+    sub "\u0428" "S"
+
+    sub "\u0430" "a"
+    sub "\u0431" "b"
+    sub "\u0432" "v"
+    sub "\u0433" "g"
+    sub "\u0434" "d"
+    sub "\u0452" "dj"
+    sub "\u0435" "e"
+    sub "\u0436" "z"
+    sub "\u0437" "z"
+    sub "\u0438" "i"
+    sub "\u0458" "j"
+    sub "\u043A" "k"
+    sub "\u043B" "l"
+    sub "\u0459" "lj"
+    sub "\u043C" "m"
+    sub "\u043D" "n"
+    sub "\u045A" "nj"
+    sub "\u043E" "o"
+    sub "\u043F" "p"
+    sub "\u0440" "r"
+    sub "\u0441" "s"
+    sub "\u0442" "t"
+    sub "\u045B" "c"
+    sub "\u0443" "u"
+    sub "\u0444" "f"
+    sub "\u0445" "h"
+    sub "\u0446" "c"
+    sub "\u0447" "c"
+    sub "\u045F" "dz"
+    sub "\u0448" "s"
+  }
+
+}
+
+}

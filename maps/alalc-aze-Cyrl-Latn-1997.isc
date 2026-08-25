@@ -1,0 +1,105 @@
+system "ALA-LC:aze-Cyrl:Latn:1997" {
+
+metadata {
+  authority_id alalc
+  id 1997
+  language iso-639-2:aze
+  source_script Cyrl
+  destination_script Latn
+  name Romanization Table -- Azerbaijani (1997)
+  url https://transliteration.eki.ee/pdf/Azerbaijani.pdf
+  creation_date 1997
+  description {    ALA-LC Romanization Tables: Transliteration Schemes for Non-Roman Scripts. Randal K. Berry (ed.). Library of Congress, 1997.
+  }
+
+  notes {
+    note "Ј ј replaced Й й in 1959 (Roman: y; ISO 9: j; ALA-LC: ĭ)."
+  }
+}
+
+tests {
+  # from internet
+   "Азәрбајҹан дили" ->  "Azărbaı̐jan dili"
+   "Бүтүн инсанлар ләјагәт вә һүгугларына ҝөрә азад вә бәрабәр доғулурлар.\nОнларын шүурлары вә виҹданлары вар вә бир-бирләринә мүнасибәтдә гардашлыг руһунда давранмалыдырлар." ->  "Bu̇tu̇n insanlar lăı̐agăt vă ḣu̇guglaryna ġȯră azad vă bărabăr doghulurlar.\nOnlaryn shu̇urlary vă vijdanlary var vă bir-birlărină mu̇nasibătdă gardashlyg ruḣunda davranmalydyrlar."
+   "Азәрбајҹан! Азәрбајҹан!\nЕј гәһрәман өвладын шанлы Вәтәни!\nСәндән өтрү ҹан вермәјә ҹүмлә һазырыз!\nСәндән өтрү ган төкмәјә ҹүмлә гадириз!\nҮчрәнҝли бајрағынла мәсуд јаша!\nҮчрәнҝли бајрағынла мәсуд јаша!\nМинләрлә ҹан гурбан олду,\nСинән һәрбә мејдан олду!\nҺүгугундан кечән әсҝәр,\nҺәрә бир гәһрәман олду!\nСән оласан ҝүлүстан,\nСәнә һәр ан ҹан гурбан!\nСәнә мин бир мәһәббәт\nСинәмдә тутмуш мәкан!\nНамусуну һифз етмәјә,\nБајрағыны јүксәлтмәјә\nНамусуну һифз етмәјә,\nҸүмлә ҝәнҹләр мүштагдыр!\nШанлы Вәтән! Шанлы Вәтән!\nАзәрбајҹан! Азәрбајҹан!\nАзәрбајҹан! Азәрбајҹан!" ->  "Azărbaı̐jan! Azărbaı̐jan!\nEı̐ găḣrăman ȯvladyn shanly Vătăni!\nSăndăn ȯtru̇ jan vermăı̐ă ju̇mlă ḣazyryz!\nSăndăn ȯtru̇ gan tȯkmăı̐ă ju̇mlă gadiriz!\nU̇chrănġli baı̐raghynla măsud ı̐asha!\nU̇chrănġli baı̐raghynla măsud ı̐asha!\nMinlărlă jan gurban oldu,\nSinăn ḣărbă meı̐dan oldu!\nḢu̇gugundan kechăn ăsġăr,\nḢără bir găḣrăman oldu!\nSăn olasan ġu̇lu̇stan,\nSănă ḣăr an jan gurban!\nSănă min bir măḣăbbăt\nSinămdă tutmush măkan!\nNamusunu ḣifz etmăı̐ă,\nBaı̐raghyny ı̐u̇ksăltmăı̐ă\nNamusunu ḣifz etmăı̐ă,\nJu̇mlă ġănjlăr mu̇shtagdyr!\nShanly Vătăn! Shanly Vătăn!\nAzărbaı̐jan! Azărbaı̐jan!\nAzărbaı̐jan! Azărbaı̐jan!"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "\u0410" "A"
+    sub "\u0411" "B"
+    sub "\u0412" "V"
+    sub "\u0413" "G"
+    sub "\u0492" "Gh"
+    sub "\u0414" "D"
+    sub "\u0415" "E"
+    sub "\u04D8" "Ă"
+    sub "\u0416" "Zh"
+    sub "\u0417" "Z"
+    sub "\u0418" "I"
+    sub "\u042B" "Y"
+    sub "\u0408" "I̐"
+    sub "\u0419" "Y"
+    sub "\u0419" "Y"
+    sub "\u041A" "K"
+    sub "\u049C" "Ġ"
+    sub "\u041B" "L"
+    sub "\u041C" "M"
+    sub "\u041D" "N"
+    sub "\u041E" "O"
+    sub "\u04E8" "Ȯ"
+    sub "\u041F" "P"
+    sub "\u0420" "R"
+    sub "\u0421" "S"
+    sub "\u0422" "T"
+    sub "\u0423" "U"
+    sub "\u04AE" "U̇"
+    sub "\u0424" "F"
+    sub "\u0425" "Kh"
+    sub "\u04BA" "Ḣ"
+    sub "\u0427" "Ch"
+    sub "\u04B8" "J"
+    sub "\u0428" "Sh"
+
+    sub "\u0430" "a"
+    sub "\u0431" "b"
+    sub "\u0432" "v"
+    sub "\u0433" "g"
+    sub "\u0493" "gh"
+    sub "\u0434" "d"
+    sub "\u0435" "e"
+    sub "\u04D9" "ă"
+    sub "\u0436" "zh"
+    sub "\u0437" "z"
+    sub "\u0438" "i"
+    sub "\u044B" "y"
+    sub "\u0458" "ı̐"
+    sub "\u0439" "y"
+    sub "\u043A" "k"
+    sub "\u049D" "ġ"
+    sub "\u043B" "l"
+    sub "\u043C" "m"
+    sub "\u043D" "n"
+    sub "\u043E" "o"
+    sub "\u04E9" "ȯ"
+    sub "\u043F" "p"
+    sub "\u0440" "r"
+    sub "\u0441" "s"
+    sub "\u0442" "t"
+    sub "\u0443" "u"
+    sub "\u04AF" "u̇"
+    sub "\u0444" "f"
+    sub "\u0445" "kh"
+    sub "\u04BB" "ḣ"
+    sub "\u0447" "ch"
+    sub "\u04B9" "j"
+    sub "\u0448" "sh"
+
+    sub "\u2019" "\u2019"
+  }
+
+  compose
+}
+}

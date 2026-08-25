@@ -1,0 +1,102 @@
+system "UN:mar-Deva:Latn:2016" {
+
+metadata {
+  authority_id un
+  id 2016
+  language iso-639-2:mar
+  source_script Deva
+  destination_script Latn
+  name Romanization of Marathi -- UNGEGN 4.0
+  url https://www.eki.ee/wgrs/rom1_mr.pdf
+  creation_date 1972
+  confirmation_date 2016
+  description {    The United Nations recommended system was approved in 1972 (II/11) and amended in 1977
+    (III/12), based on a report prepared by D. N. Sharma. The tables and their corrections were
+    published in volume II of the conference reports
+
+    There is no evidence of the use of the system either in India or in international cartographic
+    products.
+
+    Marathi (Marāṭhī) uses the alphasyllabic script Devanāgarī.
+  }
+
+  notes {
+    note "       Additional characters (absent in Hindi):\n       ळ ḷa\n       ऍ ă (abbreviated: कॅ kă)"
+
+    note "      Ligatures may be formed with r as the first component: 'ऱ्य': 'rya' 'ऱ्ह': 'rha'"
+    note "      Typical are ligatures ending in h: न्ह nh, म्ह mh, ल्ह lh, व्ह vh."
+    note "      The following independent characters are sometimes used: अि i, अी ī, अु u, अू ū, अे e, अै ai."
+    ######################################## Additional Note ############################################################
+    #    It is recommended that the vowel अ (a) should always be romanized except when it ends a                        #
+    #    name. In the scheme we are not yet able to detect a name. Analysing language pattern and the example           #
+    #    we found that actually when a word ends with a consonant it should be transliterated without the vowel in it.  #
+    #    so we are applying this rule as if a word ends with a consonant, in this case we are removing the ending 'a'.  #
+    #####################################################################################################################
+  }
+}
+
+tests {
+   "महाराष्ट्र" ->  "mahārāṣhṭr"
+   "मुंबई" ->  "muṁbaī"
+   "परिपक्क" ->  "paripakk"
+   "ठाणे - जिल्ह्यात बुधवारी एक हजार रुग्णांची वाढ, तर जणांच्या मृत्यूची नोंद" ->  "ṭhāṇe - jilhyāt budhavārī ek hajār rugṇāṁchī vāḍh, tar jaṇāṁchyā mṛtyūchī noṁd"
+   "एकता कपूर पुन्हा अडकली वादात, वेबसीरिजमधल्या 'त्या' सीनमुळे जमावाची घरावर दगडफेक" ->  "ekatā kapūr punhā aḍakalī vādāt, vebasīrijamadhalyā 'tyā' sīnamuḷae jamāvāchī gharāvar dagaḍaphek"
+   "जाणून घ्या, बीएमसीच्या अधिकाऱ्यांनी कंगना राणौतच्या ऑफिसमधले नक्की काय- काय तोडलं" ->  "jāṇūn ghyā, bīemasīchyā adhikāryāṁnī kaṁganā rāṇautachyā ôphisamadhale nakkī kāy- kāy toḍalaṁ"
+   "कंगना मुंबईत दाखल होण्यापूर्वी 'मातोश्री'वरून फर्मान सुटले; प्रवक्त्यांना सक्त आदेश" ->  "kaṁganā muṁbaīt dākhal hoṇyāpūrvī 'mātoshrī'varūn pharmān suṭale; pravaktyāṁnā sakt ādesh"
+   "मराठा आरक्षणास तात्पुरती स्थगिती; सर्वोच्च न्यायालयाचा निर्णय" ->  "marāṭhā ārakṣhaṇās tātpuratī sthagitī; sarvochch nyāyālayāchā nirṇay"
+   "भारताच्या तिन्ही लशींचा पहिला टप्पा यशस्वी, वाचा कधी येणार बाजारात" ->  "bhāratāchyā tinhī lashīṁchā pahilā ṭappā yashasvī, vāchā kadhī yeṇār bājārāt"
+   "रुग्णवाढीमुळे खाटांची चणचण" ->  "rugṇavāḍhīmuḷae khāṭāṁchī chaṇachaṇ"
+   "पीएम स्वनिधी कर्ज योजनेला मुंबईतून अल्प प्रतिसाद" ->  "pīem svanidhī karj yojanelā muṁbaītūn alp pratisād"
+   "सांताक्रूझ-चेंबूर लिंक रोडवरील उन्नत मार्गाला स्थगिती" ->  "sāṁtākrūjh-cheṁbūr liṁk roḍavarīl unnat mārgālā sthagitī"
+   "संपादक अर्णब गोस्वामी यांच्याविरूद्ध खडक पोलिस ठाण्यात तक्रार" ->  "saṁpādak arṇab gosvāmī yāṁchyāvirūddh khaḍak polis ṭhāṇyāt takrār"
+   "करणाऱ्या मुलांना अनुक्रमे प्ले ग्रूप" ->  "karaṇāryā mulāṁnā anukrame ple grūp"
+   "राज्यातील शाळा दिवाळीपर्यंत बंद, मंत्र्यांच्या बैठकीत निर्णय, शिक्षकांची जबाबदारी वाढली" ->  "rājyātīl shāḷaā divāḷaīparyaṁt baṁd, maṁtryāṁchyā baiṭhakīt nirṇay, shikṣhakāṁchī jabābadārī vāḍhalī"
+
+  # Note: UN card expects this to start with an uppercase letter, but that would break other tests
+   "महाराष्ट्र" ->  "mahārāṣhṭr"
+   "मुंबई" ->  "muṁbaī"
+}
+
+
+dependency "un-hin-Deva-Latn-2016" as devalatn
+
+
+stage main {
+
+  run  map.devalatn.stage.main
+
+  # RULES
+  # note[3]
+  sub {
+    from some("\U") + "0939"
+    to "h"
+    before ""
+    after boundary
+  }
+
+
+  # CHARACTERS
+  parallel {
+
+    # Note 1
+    sub "ळ" "ḷa"
+    sub "ऍ" "ă"
+
+    # Note 2
+    sub "ऱ" "r"
+
+    # Note 4
+    sub "अि" "i"
+    sub "अी" "ī"
+    sub "अु" "u"
+    sub "अू" "ū"
+    sub "अे" "e"
+    sub "अै" "ai"
+
+    sub "ॲ" "ê"
+    sub "ऑ" "ô"
+  }
+  compose
+}
+
+}

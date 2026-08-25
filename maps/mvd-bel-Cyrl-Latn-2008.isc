@@ -1,0 +1,324 @@
+system "MVD:bel-Cyrl:Latn:2008" {
+
+metadata {
+  authority_id mvd
+  id 2008
+  language iso-639-2:bel
+  source_script Cyrl
+  destination_script Latn
+  name Transliteration system for Belarusian names in the population register (2008)
+  url 
+  creation_date 2008
+
+  description {    RESOLUTION OF THE MINISTRY OF INTERNAL AFFAIRS OF THE REPUBLIC OF BELARUS
+    October 9, 2008, No. 288
+    8/19678 (10.23.2008)
+    About 8/19678 approval of the Instructions for transliteration of surnames and proper names of citizens of
+    the Republic of Belarus when their personal data is included in the population register
+  }
+
+  notes {
+    # Original notes
+    #
+ note "    #   Инструкция по транслитерации фамилий и собственных имен граждан Республики Беларусь при включении\n    #   их персональных данных в регистр населения устанавливает правила передачи с белорусской либо русской формы\n    #   написания на латиницу при включении фамилий и собственных имен граждан Республики Беларусь в регистр населения.\n    # - |\n    #   Передача фамилий и собственных имен граждан Республики Беларусь на латиницу осуществляется с их правильного\n    #   написания на белорусском либо русском языке, за свидетельствованного документами, удостоверяющими личность.\n    # - Передача фамилий и собственных имен граждан Республики Беларусь осуществляется путем транслитерации\n    #   литер (букв, знаков) белорусского либорусского написания соответствующими литерами латиницы.\n    # - Транслитерацией достигается общность и унифицированность системы латинизированного написания,\n    #   позволяющей пользоваться ею во всех латинопишущих государствах.\n    # - Смягчение согласной буквы, обозначенное мягким знаком, в белорусской латинице следует показывать\n    #   диакритическим знаком (́), который располагается над соответствующей буквой: дзь – dź, зь – ź, ль – ĺ,\n    #   нь – ń, сь – ś, ць – ć.\n    # - Правила транслитерации букв белорусского и русского алфавитов соответствующими буквами латиницы\n    #   приведены в таблице транслитерации букв белорусского и русского алфавитов буквами латиницы соглас\n    #   но приложению к настоящей Инструкции.\n    # - Сложные и составные фамилии и собственные имена, пишущиеся слитно, раздельно или через дефис,\n    #   сохраняют слитное, раздельное или дефисное написание и в латинице.\n    - | # 1\n      Instructions for transliterating the names and first names of citizens of the Republic of Belarus\n      when including their personal data in the population register sets the rules for transferring\n      from the Belarusian or Russian form of writing in Latin when including the names and first names\n      of citizens of the Republic of Belarus in the population register.\n    - | # 2\n      Transfer of surnames and proper names of citizens of the Republic of Belarus to the Latin alphabet\n      is carried out with their correct spelling in Belarusian or Russian, for evidence of identity documents.\n    - | # 3\n      The transfer of surnames and proper names of citizens of the Republic of Belarus is carried out by\n      transliteration of the letters (letters, signs) of the Belarusian or Russian spelling in the corresponding\n      Latin letters.\n    - | # 4\n      Transliteration achieves the generality and unification of the system of Latinized writing,\n      which allows it to be used in all Latin-writing countries.\n    - | # 5\n      The softening of the consonant, indicated by a soft sign, in the Belarusian Latin should be shown\n      with a diacritic mark (́), which is located above the corresponding letter:\n        дзь - dź,\n        зь - ź,\n        ль - ĺ,\n        нь - ń,\n        сь - ś,\n        ць - ć.\n    # 6\n    - The rules for transliterating letters of the Belarusian and Russian alphabets with the corresponding\n      letters of the Latin alphabet are given in the table of transliteration of letters of the Belarusian\n      and Russian alphabets with the Latin letters according to the appendix to this Instruction.\n    # 7\n    - Compound and compound surnames and proper names, spelled together, separately or through a hyphen,\n      keep a single, separate or hyphen spelling in Latin."
+  }
+}
+
+tests {
+   "Ева" ->  "Jeva"
+   "Васiльева" ->  "Vasiĺjeva"
+   "Васiлёнак" ->  "Vasilionak"
+   "Ёрш" ->  "Jorsh"
+   "Вераб’ёў" ->  "Vierabjow"
+   "Салаўёва" ->  "Salawjova"
+   "Любоў" ->  "Liubow"
+   "В’юноў" ->  "Vjunow"
+   "Чарняк" ->  "Charniak"
+   "Лябецкая" ->  "Liabietskaja" # in reference doc it's Liabetskaja CAMOBAP waiting confirmation from officials
+   "Дар’я" ->  "Darja"
+}
+
+stage main {
+
+  # RULES
+  sub "\u2019\u0415" "Je"
+  sub "\u2019\u0435" "je"
+  sub "\u2019\u0401" "Jo"
+  sub "\u2019\u0451" "jo"
+  sub "\u2019\u042E" "Ju"
+  sub "\u2019\u044E" "ju"
+  sub "\u2019\u042F" "Ja"
+  sub "\u2019\u044F" "ja"
+
+  sub {
+    from "\u0415"
+    to "Je"
+    before any("АаЕеЁёИиОоУуЭэЮюЯяЬьЎў")
+  }
+  sub {
+    from "\u0435"
+    to "je"
+    before any("АаЕеЁёИиОоУуЭэЮюЯяЬьЎў")
+  }
+  sub {
+    from "\u0401"
+    to "Jo"
+    before any("АаЕеЁёИиОоУуЭэЮюЯяЬьЎў")
+  }
+  sub {
+    from "\u0451"
+    to "jo"
+    before any("АаЕеЁёИиОоУуЭэЮюЯяЬьЎў")
+  }
+  sub {
+    from "\u042E"
+    to "Ju"
+    before any("АаЕеЁёИиОоУуЭэЮюЯяЬьЎў")
+  }
+  sub {
+    from "\u044E"
+    to "ju"
+    before any("АаЕеЁёИиОоУуЭэЮюЯяЬьЎў")
+  }
+  sub {
+    from "\u042F"
+    to "Ja"
+    before any("АаЕеЁёИиОоУуЭэЮюЯяЬьЎў")
+  }
+  sub {
+    from "\u044F"
+    to "ja"
+    before any("АаЕеЁёИиОоУуЭэЮюЯяЬьЎў")
+  }
+
+  # note[5]
+  sub {
+    from "\u044C"
+    to "́"
+    before any("ЗзЛлНнСсЦц")
+  }
+  sub {
+    from "\u02B9"
+    to "́"
+    before any("ЗзЛлНнСсЦц")
+  }
+
+  # vowels initially
+  sub {
+    from boundary + "\u0415"
+    to "Je"
+  }
+  sub {
+    from boundary + "\u0435"
+    to "je"
+  }
+  sub {
+    from boundary + "\u0401"
+    to "Jo"
+  }
+  sub {
+    from boundary + "\u0451"
+    to "jo"
+  }
+  sub {
+    from boundary + "\u042E"
+    to "Ju"
+  }
+  sub {
+    from boundary + "\u044E"
+    to "ju"
+  }
+  sub {
+    from boundary + "\u042F"
+    to "Ja"
+  }
+  sub {
+    from boundary + "\u044F"
+    to "ja"
+  }
+
+
+  # CHARACTERS
+  parallel {
+
+    sub "\u0410" "A"
+    sub "\u0411" "B"
+    sub "\u0412" "V"
+    sub "\u0413" "G"
+    sub "\u0414" "D"
+    sub "\u0415" "Ie"
+    sub {
+    from "\u0415"
+    to "IE"
+    after any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+    sub {
+    from "\u0415"
+    to "IE"
+    before any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+    sub "\u0401" "Io"
+    sub {
+    from "\u0401"
+    to "IO"
+    after any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+    sub {
+    from "\u0401"
+    to "IO"
+    before any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+
+    sub "\u0416" "Zh"
+    sub {
+    from "\u0416"
+    to "ZH"
+    after any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+    sub {
+    from "\u0416"
+    to "ZH"
+    before any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+
+    sub "\u0417" "Z"
+    sub "\u0406" "I"
+    sub "\u0419" "J"
+    sub "\u041A" "K"
+    sub "\u041B" "L"
+    sub "\u041C" "M"
+    sub "\u041D" "N"
+    sub "\u041E" "O"
+    sub "\u041F" "P"
+    sub "\u0420" "R"
+    sub "\u0421" "S"
+    sub "\u0422" "T"
+    sub "\u0423" "U"
+    sub "\U040E" "W"
+    sub "\u0424" "F"
+    sub "\u0425" "Kh"
+    sub {
+    from "\u0425"
+    to "KH"
+    after any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+    sub {
+    from "\u0425"
+    to "KH"
+    before any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+
+    sub "\u0426" "Ts"
+    sub {
+    from "\u0426"
+    to "TS"
+    after any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+    sub {
+    from "\u0426"
+    to "TS"
+    before any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+
+    sub "\u0427" "Ch"
+    sub {
+    from "\u0427"
+    to "CH"
+    after any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+    sub {
+    from "\u0427"
+    to "CH"
+    before any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+
+    sub "\u0428" "Sh"
+    sub {
+    from "\u0428"
+    to "SH"
+    after any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+    sub {
+    from "\u0428"
+    to "SH"
+    before any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+
+    sub "\u0429" "Shch"
+    sub {
+    from "\u0429"
+    to "SHCH"
+    after any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+    sub {
+    from "\u0429"
+    to "SHCH"
+    before any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+
+    sub "\u042B" "Y"
+    sub "\u042D" "E"
+    sub "\u042E" "Iu"
+    sub {
+    from "\u042E"
+    to "IU"
+    after any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+    sub {
+    from "\u042E"
+    to "IU"
+    before any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+
+    sub "\u042F" "Ia"
+    sub {
+    from "\u042F"
+    to "IA"
+    after any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+    sub {
+    from "\u042F"
+    to "IA"
+    before any("АБВГДЕЁЖЗІЙКЛМНОПРСТУU040EФХЦЧШЩЫЭЮЯ")
+  }
+
+    sub "\u0430" "a"
+    sub "\u0431" "b"
+    sub "\u0432" "v"
+    sub "\u0433" "g"
+    sub "\u0434" "d"
+    sub "\u0435" "ie"
+    sub "\u0451" "io"
+    sub "\u0436" "zh"
+    sub "\u0437" "z"
+    sub "\u0456" "i"
+    sub "\u0439" "j"
+    sub "\u043A" "k"
+    sub "\u043B" "l"
+    sub "\u043C" "m"
+    sub "\u043D" "n"
+    sub "\u043E" "o"
+    sub "\u043F" "p"
+    sub "\u0440" "r"
+    sub "\u0441" "s"
+    sub "\u0442" "t"
+    sub "\u0443" "u"
+    sub "\u045E" "w"
+    sub "\u0444" "f"
+    sub "\u0445" "kh"
+    sub "\u0446" "ts"
+    sub "\u0447" "ch"
+    sub "\u0448" "sh"
+    sub "\u0449" "shch"
+    sub "\u044B" "y"
+    sub "\u044D" "e"
+    sub "\u044E" "iu"
+    sub "\u044F" "ia"
+  }
+
+  # POSTRULES
+  sub "\u2019" "j"
+
+  compose
+}
+}

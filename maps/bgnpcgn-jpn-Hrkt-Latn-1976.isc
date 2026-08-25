@@ -1,0 +1,191 @@
+system "BGN-PCGN:jpn-Hrkt:Latn:1976" {
+
+metadata {
+  authority_id bgnpcgn
+  id 1976
+  language iso-639-2:jpn
+  source_script Hrkt
+  destination_script Latn
+  name Romanization of Japanese -- Kana Modified Hepburn (1930)
+  url 
+  creation_date 
+  adoption_date 
+  description 
+
+  notes {
+    note "Segmentation needs to be done before using this map"
+    note "Note 5 in the specification states that when identical repeating vowels\n belong to different kanji characters, they shall be romanized\n individually and an apostrophe (’) shall be placed between the vowels.\n However since this is a map from Kana to Hepburn, there is no way to\n implement this feature."
+    note "The documentation did not specify how the hyphen should be used."
+  }
+}
+
+tests {
+   "てがた-からみでん" ->  "Tegata-karamiden"
+   "てがた-すみよしちょう" ->  "Tegata-sumiyoshichō"
+   "さいのはま" ->  "Sainohama"
+   "てがた-たなか" ->  "Tegata-tanaka"
+   "ほりおでん" ->  "Horioden"
+   "そえがわ" ->  "Soegawa"
+   "ふねがさわ" ->  "Funegasawa"
+   "とくまんだて" ->  "Tokumandate"
+   "たてない" ->  "Tatenai"
+   "つるがさき" ->  "Tsurugasaki"
+   "しもやつせ" ->  "Shimoyatsuse"
+   "かみやつせ" ->  "Kamiyatsuse"
+   "しんとうだ" ->  "Shintōda"
+   "かじのめ" ->  "Kajinome"
+   "まえぎ" ->  "Maegi"
+   "くろさわ やま" ->  "Kurosawa Yama"
+   "いちのさわ がわ" ->  "Ichinosawa Gawa"
+   "はちやまえ" ->  "Hachiyamae"
+   "やち" ->  "Yachi"
+   "たてぬま" ->  "Tatenuma"
+   "しらはま" ->  "Shirahama"
+   "けせんまち" ->  "Kesenmachi"
+   "けいだい-かわら" ->  "Keidai-kawara"
+   "いしやました" ->  "Ishiyamashita"
+   "なえひら-やち" ->  "Naehira-yachi"
+   "とみの" ->  "Tomino"
+   "あらや-たかみまち" ->  "Araya-takamimachi"
+   "ながた" ->  "Nagata"
+   "とどろき おんせん" ->  "Todoroki Onsen"
+   "かしわぎはら" ->  "Kashiwagihara"
+   "とやけもり やま" ->  "Toyakemori Yama"
+   "なかさい" ->  "Nakasai"
+   "たけした" ->  "Takeshita"
+   "みと" ->  "Mito"
+   "みなみなかさと" ->  "Minaminakasato"
+   "みずおし" ->  "Mizuoshi"
+   "なかさと" ->  "Nakasato"
+   "しんかりば" ->  "Shinkariba"
+   "しんかみぬま" ->  "Shinkaminuma"
+   "しんばし" ->  "Shinbashi"
+   "りくぜんやました えき" ->  "Rikuzen’yamashita Eki"
+   "うしじまにし" ->  "Ushijimanishi"
+   "はまえば" ->  "Hamaeba"
+   "ぬまむかい" ->  "Numamukai"
+   "さんげんやち" ->  "Sangen’yachi"
+   "にけんやち" ->  "Niken’yachi"
+   "やちなか" ->  "Yachinaka"
+   "なす がわ" ->  "Nasu Gawa"
+   "おおはらはま" ->  "Ōharahama"
+   "うるご がわ" ->  "Urugo Gawa"
+   "なかばせ" ->  "Nakabase"
+   "うと えき" ->  "Uto Eki"
+   "みずまち" ->  "Mizumachi"
+   "ごんげんどう" ->  "Gongendō"
+   "いとひさ" ->  "Itohisa"
+   "あらおい" ->  "Araoi"
+   "わんめ" ->  "Wanme"
+   "かじろ" ->  "Kajiro"
+   "みやばら" ->  "Miyabara"
+   "いまどみ" ->  "Imadomi"
+   "かいほ" ->  "Kaiho"
+   "かいほ ぼえん" ->  "Kaiho Boen"
+   "ひきだ" ->  "Hikida"
+   "あさい-こむかい" ->  "Asai-komukai"
+   "こうざか" ->  "Kōzaka"
+   "こうふうだい" ->  "Kōfūdai"
+   "たての" ->  "Tateno"
+   "センター" ->  "Sentā"
+   "フィリピン" ->  "Firipin"
+   "ヴィオリン" ->  "Viorin"
+   "クォーター" ->  "Kwōtā"
+   "パッチリ" ->  "Patchiri"
+   "ぽっぽっや" ->  "Poppoyya"
+}
+
+dependency "var-jpn-Hrkt-Latn-hepburn-1954" as hrktlatn
+
+
+stage main {
+
+
+  # CHARACTERS
+  parallel {
+    # Rare sounds, Table 2 & 4
+
+    sub "くぁ" "kwa"
+    sub "クァ" "kwa"
+    sub "ぐぁ" "gwa"
+    sub "グァ" "gwa"
+    sub "くぃ" "kwi"
+    sub "クィ" "kwi"
+    sub "ぐぃ" "gwa"
+    sub "グィ" "gwa"
+    sub "きぇ" "kye"
+    sub "キェ" "kye"
+    sub "ぎぇ" "gye"
+    sub "ギェ" "gye"
+    sub "くぇ" "kwe"
+    sub "クェ" "kwe"
+    sub "ぐぇ" "gwe"
+    sub "グェ" "gwe"
+    sub "くぉ" "kwo"
+    sub "クォ" "kwo"
+    sub "ぐぉ" "gwo"
+    sub "グォ" "gwo"
+    sub "しぇ" "she"
+    sub "シェ" "she"
+    sub "じぇ" "je"
+    sub "ジェ" "je"
+    sub "つぁ" "tsa"
+    sub "ツァ" "tsa"
+    sub "てぃ" "ti"
+    sub "ティ" "ti"
+    sub "でぃ" "di"
+    sub "ディ" "di"
+    sub "てゅ" "tyu"
+    sub "テュ" "tyu"
+    sub "でゅ" "dyu"
+    sub "デュ" "dyu"
+    sub "とゅ" "tu"
+    sub "トュ" "tu"
+    sub "どゅ" "du"
+    sub "ドュ" "du"
+    sub "ちぇ" "che"
+    sub "チェ" "che"
+    sub "ぢぇ" "je"
+    sub "ヂェ" "je"
+    sub "つぇ" "tse"
+    sub "ツェ" "tse"
+    sub "つぉ" "tso"
+    sub "ツォ" "tso"
+    sub "にぇ" "nye"
+    sub "ニェ" "nye"
+    sub "ふぁ" "fa"
+    sub "ファ" "fa"
+    sub "ふぃ" "fi"
+    sub "フィ" "fi"
+    sub "ふぇ" "fe"
+    sub "フェ" "fe"
+    sub "ふぉ" "fo"
+    sub "フォ" "fo"
+    sub "みぇ" "mye"
+    sub "ミェ" "mye"
+    sub "ぃぇ" "ye"
+    sub "ィェ" "ye"
+    sub "りぇ" "rye"
+    sub "リェ" "rye"
+    sub "ゔぁ" "va"
+    sub "ヴァ" "va"
+    sub "うぃ" "wi"
+    sub "ウィ" "wi"
+    sub "ゔぃ" "vi"
+    sub "ヴィ" "vi"
+    sub "うぇ" "we"
+    sub "ウェ" "we"
+    sub "ゔぇ" "ve"
+    sub "ヴェ" "ve"
+    sub "うぉ" "wo"
+    sub "ウォ" "wo"
+    sub "ゔぉ" "vo"
+    sub "ヴォ" "vo"
+    sub "ゔ" "vu"
+    sub "ヴ" "vu"
+  }
+  run  map.hrktlatn.stage.main
+
+  title_case
+}
+}

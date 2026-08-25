@@ -1,0 +1,45 @@
+system "BGN-PCGN:kor-Kore:Latn:rok-2011" {
+
+metadata {
+  authority_id bgnpcgn
+  id rok-2011
+  language iso-639-2:kor
+  source_script Kore
+  destination_script Latn
+  name Romanization of Korean for ROK (Korean-Latin) (2011 Agreement, MOCT System 2000)
+  url https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693724/ROMANIZATION_OF_KOREAN-__MOCT_for_ROK.pdf
+  creation_date 2011
+  adoption_date 2011
+  description {    Establishes a system for the transliteration of the characters of Korean script into Latin characters.
+    Intended to provide a means for international communication of written documents.
+  }
+
+  notes {
+  note "BGN/PCGN 2011 Agreement"
+  }
+}
+
+tests {
+   "佛國寺" ->  "Bulguksa"
+   "묵호" ->  "Mukho"
+   "蔚山" ->  "Ulsan"
+   "獨立門" ->  "Dongnimmun"
+   "江南驛" ->  "Gangnamyeok"
+   "南山里" ->  "Namsan-ri" #Note: no assimilation for -ri even after nasals
+   "내월里" ->  "Naewol-ri"
+   "鬱陵郡" ->  "Ulleung-gun"
+   "雪嶽山" ->  "Seoraksan"
+   "三竹面" ->  "Samjuk-myeon"
+   "坪里1洞" ->  "Pyeongni Il-dong"
+   "坪里2洞" ->  "Pyeongni I-dong"
+   "탑안이" ->  "Tabani"
+}
+
+dependency "var-kor-Kore-Hang-2013" as korehang
+dependency "moct-kor-Hang-Latn-2000" as hanglatn
+
+stage main {
+  run  map.korehang.stage.main
+  run  map.hanglatn.stage.main
+}
+}

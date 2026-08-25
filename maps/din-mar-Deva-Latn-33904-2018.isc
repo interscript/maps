@@ -1,0 +1,55 @@
+system "DIN:mar-Deva:Latn:33904-2018" {
+
+metadata {
+  authority_id din
+  id 33904-2018
+  language iso-639-2:mar
+  source_script Deva
+  destination_script Latn
+  name "DIN 33904:2018-10 Information and documentation -- Romanization Devanagari, Marathi"
+  url https://www.beuth.de/en/standard/din-33904/293049024
+  creation_date 2018
+  description {    Marathi system.
+
+    Information und Dokumentation - Transliteration Devanagari
+
+    This standard specifies the transliteration of all languages of the Devanāgarī characters into Latin letters firmly.
+    It is suitable for any application.
+  }
+
+  notes {
+    note "      Vowels:\n      The Ardhacandra ॅ is often used to denote English vowels:\n      EXAMPLE\n      बॅट     bêṭa       (bat)\n      डॉक्टर  ḍôkṭara (doctor)"
+    note "      Consonants:\n\n      Since the Devanāgarī script is a syllabic script, it becomes -a inherent in the consonant.\n      Always written during transliteration, also in the final part\n      EXAMPLE 1\n      पुस्तक   pustaka\n\n      A line under the consonant, the so-called Virāma, means in the Devanāgarī script that that inherent -a not applicable.\n      EXAMPLE 2\n      वाक्   vāk\n\n      The anusvāra is always represented with -ṃ-.\n      EXAMPLE 3\n      संसकरण saṃskaraṇa\n\n      Before k, kh, g, gh, c, ch, j, jh, ṭ, ṭh, ḍ, ḍh, t, th, d, dh, p, ph, b, bh, the anusvāra becomes the class nasal transformed.\n      EXAMPLE 4\n      तंघी   kaṃghī becomes kaṅghī\n      पंजाबी  paṃjābī becomes pañjābī\n      पंडित  paṃḍita becomes paṇḍita\n      संधी   saṃdhī becomes sandhī\n      दिसंबर  disaṃbara becomes disambara\n\n      Anunāsika or Candrabindu signals the nasalization of vowels\n\n      EXAMPLE 5\n      माँ māṁ"
+  }
+}
+
+tests {
+   "ठाणे - जिल्ह्यात बुधवारी एक हजार रुग्णांची वाढ, तर जणांच्या मृत्यूची नोंद" ->  "ṭhāṇe - jilhyāta budhavārī eka hajāra rugṇāñcī vāḍha, tara jaṇāñcyā mṛtyūcī nonda"
+   "एकता कपूर पुन्हा अडकली वादात, वेबसीरिजमधल्या 'त्या' सीनमुळे जमावाची घरावर दगडफेक" ->  "ekatā kapūra punhā aḍakalī vādāta, vebasīrijamadhalyā 'tyā' sīnamuḷe jamāvācī gharāvara dagaḍapheka"
+   "जाणून घ्या, बीएमसीच्या अधिकाऱ्यांनी कंगना राणौतच्या ऑफिसमधले नक्की काय- काय तोडलं" ->  "jāṇūna ghyā, bīemasīcyā adhikāऱ्yānnī kaṅganā rāṇautacyā ôphisamadhale nakkī kāya- kāya toḍalaṃ"
+   "कंगना मुंबईत दाखल होण्यापूर्वी 'मातोश्री'वरून फर्मान सुटले; प्रवक्त्यांना सक्त आदेश" ->  "kaṅganā mumbaīta dākhala hoṇyāpūrvī 'mātośrī'varūna pharmāna suṭale; pravaktyānnā sakta ādeśa"
+   "मराठा आरक्षणास तात्पुरती स्थगिती; सर्वोच्च न्यायालयाचा निर्णय" ->  "marāṭhā ārakṣaṇāsa tātpuratī sthagitī; sarvocca nyāyālayācā nirṇaya"
+   "भारताच्या तिन्ही लशींचा पहिला टप्पा यशस्वी, वाचा कधी येणार बाजारात" ->  "bhāratācyā tinhī laśīñcā pahilā ṭappā yaśasvī, vācā kadhī yeṇāra bājārāta"
+   "रुग्णवाढीमुळे खाटांची चणचण" ->  "rugṇavāḍhīmuḷe khāṭāñcī caṇacaṇa"
+   "पीएम स्वनिधी कर्ज योजनेला मुंबईतून अल्प प्रतिसाद" ->  "pīema svanidhī karja yojanelā mumbaītūna alpa pratisāda"
+   "सांताक्रूझ-चेंबूर लिंक रोडवरील उन्नत मार्गाला स्थगिती" ->  "sāntākrūjha-cembūra liṅka roḍavarīla unnata mārgālā sthagitī"
+   "संपादक अर्णब गोस्वामी यांच्याविरूद्ध खडक पोलिस ठाण्यात तक्रार" ->  "sampādaka arṇaba gosvāmī yāñcyāvirūddha khaḍaka polisa ṭhāṇyāta takrāra"
+}
+
+dependency "din-san-Deva-Latn-33904-2018" as devalatn
+
+
+stage main {
+
+  run  map.devalatn.stage.main
+
+  # CHARACTERS
+  parallel {
+
+    sub "ॲ" "ê"
+    sub "ऑ" "ô"
+  }
+
+}
+
+}
