@@ -1,0 +1,69 @@
+name: map-artifact
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-map-artifact:
+    name: Build compiled JSON-IR map artifact
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Checkout interscript-ts
+        run: git clone --depth=1 --branch main https://github.com/interscript/interscript-ts.git ../interscript-ts
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+      - name: Install + build TS converter
+        run: |
+          cd ../interscript-ts
+          npm ci
+          npm run build
+      - name: Build map artifact directory
+        run: npx -y tsx scripts/build-json-ir-artifact.mjs ../interscript-ts dist/interscript-maps-ir
+      - name: Validate artifact shape
+        run: |
+          test -f dist/interscript-maps-ir/manifest.json
+          test -f dist/interscript-maps-ir/SHA256SUMS
+          test "$(find dist/interscript-maps-ir/maps -name '*.json' | wc -l | tr -d ' ')" = "289"
+          node - <<'NODE'
+          import { createHash } from 'node:crypto'
+          import { readFileSync } from 'node:fs'
+          for (const line of readFileSync('dist/interscript-maps-ir/SHA256SUMS', 'utf8').trim().split('\n')) {
+            const [expected, path] = line.split(/  /)
+            const actual = createHash('sha256').update(readFileSync(`dist/interscript-maps-ir/${path}`)).digest('hex')
+            if (actual !== expected) throw new Error(`${path}: sha256 mismatch`)
+          }
+          NODE
+      - name: Pack artifact
+        run: |
+          version="$([ "${GITHUB_REF_TYPE}" = "tag" ] && echo "${GITHUB_REF_NAME#v}" || echo "${GITHUB_SHA::12}")"
+          mkdir -p dist/release
+          tar -C dist/interscript-maps-ir -czf "dist/release/interscript-maps-ir-${version}.tar.gz" .
+          node - <<'NODE'
+          import { createHash } from 'node:crypto'
+          import { readFileSync, writeFileSync } from 'node:fs'
+          const version = process.env.GITHUB_REF_TYPE === "tag"
+            ? process.env.GITHUB_REF_NAME.replace(/^v/, '')
+            : process.env.GITHUB_SHA.slice(0, 12)
+          const name = `interscript-maps-ir-${version}.tar.gz`
+          const sha = createHash('sha256').update(readFileSync(`dist/release/${name}`)).digest('hex')
+          writeFileSync(`dist/release/${name}.sha256`, `${sha}  ${name}\n`)
+          NODE
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: interscript-maps-ir
+          path: dist/release/
+      - name: Attach artifact to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "$GITHUB_REF_NAME" dist/release/* --clobber
