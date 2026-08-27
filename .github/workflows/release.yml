@@ -1,4 +1,4 @@
-name: gem-release
+name: release
 
 on:
   push:
