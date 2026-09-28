@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.5.2] — 2026-09-28
+
+- Fixed: the compiled JSON-IR artifact now includes the four dependency
+  libraries (`posix`, `unicode`, `var-Cyrl`, `var-kor`) as ISC sources —
+  the v2.5.1 artifact omitted them and broke 18 library-dependent
+  systems at runtime ("Map dependency missing").
+- Declared the missing `var-kor` dependency in 16 systems whose rules
+  use jamo/hangul aliases.
+
 ## [2.5.0] — 2026-08-26
 
 - Corpus source format migrated from Ruby DSL (`.imp`) to ISC (`.isc`);
