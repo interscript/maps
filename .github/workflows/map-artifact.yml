@@ -32,7 +32,7 @@ jobs:
         run: |
           test -f dist/interscript-maps-ir/manifest.json
           test -f dist/interscript-maps-ir/SHA256SUMS
-          test "$(find dist/interscript-maps-ir/maps -name '*.json' | wc -l | tr -d ' ')" = "289"
+          test "$(find dist/interscript-maps-ir/maps -name '*.json' | wc -l | tr -d ' ')" = "293"
           node - <<'NODE'
           import { createHash } from 'node:crypto'
           import { readFileSync } from 'node:fs'

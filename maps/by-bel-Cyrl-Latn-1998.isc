@@ -69,6 +69,7 @@ tests {
 
 dependency "gost-rus-Cyrl-Latn-16876-71-1983" as cyrllatn
 dependency "var-Cyrl"
+dependency "var-kor"
 
 stage main {
   # RULES

@@ -32,6 +32,7 @@ tests {
 
 dependency "unicode"
 dependency "var-kor-Hang-Hang-jamo" as hanghang
+dependency "var-kor"
 
 aliases {
 
