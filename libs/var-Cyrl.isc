@@ -1,0 +1,8 @@
+system "var-Cyrl" {
+
+aliases {
+  bel_consonant = any("БбВвГгДдЖжЗзЙйКкЛлМмНнПпРрСсТтФфХхЦцЧчШш")
+  cyrl_upper = any('AБBГДЕЁЖЗИЙКЛМНОПРСТУЎФХЦЧШЩЪЫЬЭЮЯІ')
+}
+
+}

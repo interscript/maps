@@ -1,0 +1,14 @@
+system "var-kor" {
+
+aliases {
+  hangul = any("\uac00".."\ud7af")
+  jamo_leading_cons = any([any("\u1100".."\u115e"), any("\ua960".."\ua97c")])
+  jamo_vowel = any([any("\u1161".."\u11a7"), any("\ud7b0".."\ud7c6")])
+  jamo_trailing_cons = any([any("\u11a8".."\u11ff"), any("\ud7cb".."\ud7fb")])
+  jamo = any([jamo_leading_cons, jamo_vowel, jamo_trailing_cons])
+  hangul_or_jamo = any([hangul, jamo])
+  double_cons_jamo = any("ᄁᄄᄈᄍᄊ")
+  aspirated_cons_jamo = any("ᄏᄐᄑᄎ")
+}
+
+}

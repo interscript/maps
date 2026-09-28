@@ -29,7 +29,7 @@ jobs:
             require "interscript/isc"
             total = 0
             failures = []
-            Dir.glob("../maps/maps/*.isc").sort.each do |path|
+            Dir.glob(["../maps/maps/*.isc", "../maps/libs/*.isc"]).sort.each do |path|
               total += 1
               begin
                 tree = Interscript::Isc::Parser.parse(File.read(path), filename: File.basename(path))

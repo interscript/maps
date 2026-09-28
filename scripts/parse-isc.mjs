@@ -1,8 +1,8 @@
-// Parse every maps/*.isc with the interscript-ts ISC parser.
+// Parse every maps/*.isc and libs/*.isc with the interscript-ts ISC parser.
 // Usage: node scripts/parse-isc.mjs <path-to-interscript-ts-checkout>
 import { readdirSync, readFileSync } from "node:fs"
 import { pathToFileURL } from "node:url"
-import { resolve } from "node:path"
+import { basename, join, resolve } from "node:path"
 
 const tsDir = process.argv[2]
 if (!tsDir) {
@@ -13,16 +13,16 @@ if (!tsDir) {
 const mod = await import(pathToFileURL(resolve(tsDir, "src/isc/parser.ts")))
 const parseIsc = mod.parseIsc
 
-const dir = new URL("../maps/", import.meta.url).pathname
-const files = readdirSync(dir).filter((f) => f.endsWith(".isc"))
+const roots = ["../maps/", "../libs/"].map((r) => new URL(r, import.meta.url).pathname)
+const files = roots.flatMap((dir) => readdirSync(dir).filter((f) => f.endsWith(".isc")).map((f) => join(dir, f)))
 let ok = 0
 const failures = []
-for (const f of files.sort()) {
+for (const path of files.sort()) {
   try {
-    parseIsc(readFileSync(resolve(dir, f), "utf8"), f)
+    parseIsc(readFileSync(path, "utf8"), basename(path))
     ok++
   } catch (e) {
-    failures.push(`${f}: ${e.message.slice(0, 120)}`)
+    failures.push(`${basename(path)}: ${e.message.slice(0, 120)}`)
   }
 }
 console.log(`Parsed ${ok}/${files.length} .isc files`)

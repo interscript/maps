@@ -47,6 +47,7 @@ tests {
 }
 
 dependency "var-Cyrl"
+dependency "var-kor"
 
 stage main {
 

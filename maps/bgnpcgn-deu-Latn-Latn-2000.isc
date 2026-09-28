@@ -25,6 +25,7 @@ tests {
 }
 
 dependency "posix"
+dependency "var-kor"
 
 stage main {
 

@@ -31,14 +31,20 @@ const { iscToCompiledMap } = await import(pathToFileURL(resolve(tsDir, "src/isc/
 rmSync(outputRoot, { recursive: true, force: true })
 mkdirSync(outputMaps, { recursive: true })
 
-const files = readdirSync(mapsDir)
+// System maps live in maps/, dependency libraries (posix, unicode,
+// var-Cyrl, var-kor) in libs/ — both compile into the artifact so the
+// runtime can resolve library aliases (18 maps depend on them).
+const files = [
+  ...readdirSync(mapsDir).map((f) => join("maps", f)),
+  ...readdirSync(join(repoRoot, "libs")).map((f) => join("libs", f)),
+]
   .filter((file) => file.endsWith(".isc"))
   .sort()
 
 const systems = []
 for (const file of files) {
   const code = basename(file, ".isc")
-  const source = readFileSync(join(mapsDir, file), "utf8")
+  const source = readFileSync(join(repoRoot, file), "utf8")
   const doc = parseIsc(source, file)
   const compiled = iscToCompiledMap(doc)
   writeFileSync(join(outputMaps, `${code}.json`), `${JSON.stringify(compiled)}\n`)
