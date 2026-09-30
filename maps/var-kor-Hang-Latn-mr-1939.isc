@@ -1502,8 +1502,8 @@ stage main {
   }
   sub "ᅡ" "a"
   sub "ᅣ" "ya"
-  sub "ᅥ" "ŏ"
-  sub "ᅧ" "yŏ"
+  sub "ᅥ" "ŏ"
+  sub "ᅧ" "yŏ"
   sub "ᅩ" "o"
   sub "ᅭ" "yo"
   sub "ᅮ" "u"
@@ -1518,7 +1518,7 @@ stage main {
   sub "ᅱ" "wi"
   sub "ᅴ" "ŭi"
   sub "ᅪ" "wa"
-  sub "ᅯ" "wŏ"
+  sub "ᅯ" "wŏ"
   sub "ᅫ" "wae"
   sub "ᅰ" "we"
   sub {
