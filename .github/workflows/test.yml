@@ -20,7 +20,7 @@ jobs:
         run: |
           git clone --depth=1 https://github.com/interscript/interscript-ruby.git ../interscript
       - name: Install parser dependency
-        run: gem install parslet
+        run: gem install parsanol
       - name: Parse all .isc files
         run: |
           cd ../interscript
