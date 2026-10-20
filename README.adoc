@@ -3,7 +3,18 @@ image:https://github.com/interscript/maps/actions/workflows/test.yml/badge.svg["
 
 == Introduction
 
-This repository contains all Interscript interoperable script conversion schemes.
+This repository is the single source of truth for Interscript's
+transliteration corpus: 293 authority-backed script conversion systems
+encoded in the "Interoperable Script Conversion" language (`.isc`).
+
+Interscript turns the world's transliteration standards from paper
+tables into executable, verifiable software: authority schemes
+(BGN/PCGN, ISO, UN/UNGEGN, ALA-LC, ICAO, ODNI, ...) are encoded once
+here, and every runtime —
+https://github.com/interscript/interscript-ruby[Ruby],
+https://github.com/interscript/interscript-ts[TypeScript],
+https://github.com/interscript/interscript-py[Python], the public API,
+and the website — produces provably identical output.
 
 == Contents
 
@@ -15,14 +26,34 @@ Systems from these authorities are included in this repository:
 * ISO
 * ODNI
 * UN (by UNGEGN)
-* and others systems that do not have a defined authority
+* and other systems that do not have a defined authority
 
 == Organization
 
-All maps are encoded in the "Interoperable Script Conversion" language syntax (extension: `.isc`).
+All maps are encoded in the "Interoperable Script Conversion" language
+syntax (extension: `.isc`).
 
-System file names adhere to the script conversion system code convention
-of ISO 24229.
+System file names adhere to the script conversion system code
+convention of ISO 24229.
+
+== Quality gates
+
+CI runs on every change:
+
+* ISC parse validation in Ruby and TypeScript;
+* each map's own embedded tests;
+* cross-runtime parity (byte-exact agreement between the Ruby
+  interpreter and the TypeScript runtime over the test corpus);
+* the published artifact (`interscript-maps` gem and the maps release
+  artifact) is built from this corpus by CI, never by hand.
+
+== Contributing
+
+New or corrected systems are welcome as `.isc` changes — see
+CONTRIBUTING.md and the Map Editing Guide in the
+https://github.com/interscript/interscript[project monorepo].
+Alias/dependency declarations must be explicit; generated artifacts
+are never edited by hand.
 
 == Copyright and license
 
