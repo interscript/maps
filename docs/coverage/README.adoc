@@ -13,10 +13,10 @@ acadsin, sac, hk, kp, ...).
 |Authority |Official catalog |Source capture |Diff vs corpus
 
 |ALA-LC |78 romanization tables (loc.gov roman.html; exact count after de-noising the page) |alalc-roman.html + alalc-diff.txt |**DIFFED**: 30 tables encoded, 48 gap systems (alalc-diff.txt); gap encodings are follow-on work items
-|BGN/PCGN |current schedule (~55 languages) |pending |corpus encodes 54
-|UN WGRS |~26 languages, 1968-2017 editions |pending |corpus encodes 32 (incl. revisions)
-|ISO |9/233-3/259/7098/843/9984/9985 |pending |corpus encodes 30
-|ICAO 9303 |Doc 9303-3 language set |pending |corpus encodes 8
+|BGN/PCGN |current schedule (~55 languages) |refs repo carries system PDFs (bgn-pcgn/); official consolidated schedule NOT fetchable (geonames.nga.mil unreachable) |corpus encodes 54 -- diff pending the schedule capture
+|UN WGRS |~26 languages, 1968-2017 editions |UNGEGN docs (404 on the attempted path; capture strategy: UNGEGN working-paper series) |corpus encodes 32 (incl. revisions) -- diff pending
+|ISO |9/233/233-3/259/3602/7098/843/9984/9985/11940/11941/15919 (definitional scopes) |iso-diff.txt |**DIFFED**: 9 of 12 standards represented; gaps = ISO 9 non-Russian Cyrillic, 259 Hebrew, 7098 Chinese, 9985 Armenian, 15919 Indic remainder
+|ICAO 9303 |Doc 9303-3 language set |EU publishes a 9303-derived consolidated annex (capture strategy) |corpus encodes 8 -- diff pending
 |ODNI |ODNI standard (2004/2015) |pending |corpus encodes 30
 |===
 
