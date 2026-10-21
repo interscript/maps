@@ -1,0 +1,223 @@
+system "BGN/PCGN:tha-Thai:Latn:2002" {
+
+metadata {
+  authority_id bgnpcgn
+  id 2002
+  language iso-639-2:tha
+  source_script Thai
+  destination_script Latn
+  name BGN/PCGN 2002 agreement — Romanization of Thai (Royal Institute of Thailand system)
+  url https://www.gov.uk/government/publications/romanization-systems
+  creation_date 2000
+  adoption_date 2002
+  description
+
+  notes {
+    "BGN/PCGN 2002 agreement; developed by the Royal Institute of Thailand (2000), endorsed by Thailand and approved for UN use in 2002. Vowel length and tone are not romanized.
+
+    Source: ROMANIZATION OF THAI.pdf (interscript-references/bgn-pcgn, checked November 2017). That PDF's text layer drops Thai combining marks; the vowel-sign inventory was reconstructed from the rendered table and cross-checked against the embedded examples.
+
+    Note 1 of the source: correct romanization requires word identification and pronunciation knowledge -- syllable-internal final consonants are not orthographically decidable. This encoding is the deterministic layer: initial consonants by default, final consonants at word end, the vowel table, numerals, and mark stripping. Pronunciation-dependent cases (silent r in สามารถ, ทร by pronunciation, h as tone mark in หวอ, glottal อ) resolve through the pronunciation-lexicon layer.
+
+    Carrier-interleaved compound vowels (เ-C-า khao, เ-C-ี-ยว class) require capture support in the consumed pattern (WO80) and are pending; adjacent-sign compounds (ก-ล-ั-ว klua, ม-ื-อ mue, เ-า ao) are encoded."
+  }
+}
+
+tests {
+   "ภาษาไทย" ->  "phasathai"
+   "ไทย" ->  "thai"
+   "ใหม่" ->  "mai"
+   "ที่" ->  "thi"
+   "เป็น" ->  "pen"
+   "ใน" ->  "nai"
+   "การ" ->  "kan"
+   "มี" ->  "mi"
+   "๑๒๓" ->  "123"
+   "เขา" ->  "khao"
+   "กลัว" ->  "klua"
+   "มือ" ->  "mue"
+}
+
+
+stage main {
+
+  # MARKS (tone marks are not romanized; the vowel shortening mark ็
+  # has no RTGS effect; the silencing mark ์ removes the consonant it
+  # follows)
+  parallel {
+    sub "่" ""
+    sub "้" ""
+    sub "๊" ""
+    sub "๋" ""
+    sub "็" ""
+    sub "ก์" ""
+    sub "ข์" ""
+    sub "ค์" ""
+    sub "ง์" ""
+    sub "จ์" ""
+    sub "ช์" ""
+    sub "ญ์" ""
+    sub "ด์" ""
+    sub "ต์" ""
+    sub "ถ์" ""
+    sub "ท์" ""
+    sub "น์" ""
+    sub "บ์" ""
+    sub "ป์" ""
+    sub "ผ์" ""
+    sub "ฝ์" ""
+    sub "ฟ์" ""
+    sub "ม์" ""
+    sub "ย์" ""
+    sub "ร์" ""
+    sub "ล์" ""
+    sub "ว์" ""
+    sub "ส์" ""
+    sub "ห์" ""
+    sub "อ์" ""
+  }
+
+  # LEADING SILENT เ (the e-glyph prefixes a carrier consonant in the
+  # compound rows: เ-ป-ี-ย pia, เ-ก-อ-ย koeai...). Thai-glyph context,
+  # so this runs before the consonant pass. Carrier-interleaved
+  # compounds (เ-C-า class) need capture support (WO80).
+  parallel {
+    sub { from "เ" to "" before any("ก".."ฮ") + "ีย" }
+    sub { from "เ" to "" before any("ก".."ฮ") + "ือ" }
+    sub { from "เ" to "" before any("ก".."ฮ") + "อย" }
+  }
+
+  # COMPOUND VOWEL SIGNS (adjacent-sign forms; source rows 10-19)
+  parallel {
+    sub "ีย" "ia"
+    sub "ึย" "ui"
+    sub "อย" "oi"
+    sub "ไย" "ai"
+    sub "าย" "ai"
+    sub "ัวะ" "ua"
+    sub "ัว" "ua"
+    sub "ือะ" "ue"
+    sub "ือ" "ue"
+    sub "เา" "ao"
+  }
+
+  # CONSONANTS — final form at word end
+  # (source table, rows 1-21: the second romanization column)
+  parallel {
+    sub { from "ข" to "k" after boundary }
+    sub { from "ฆ" to "k" after boundary }
+    sub { from "ค" to "k" after boundary }
+    sub { from "ฅ" to "k" after boundary }
+    sub { from "ฃ" to "k" after boundary }
+    sub { from "จ" to "t" after boundary }
+    sub { from "ฉ" to "t" after boundary }
+    sub { from "ช" to "t" after boundary }
+    sub { from "ฌ" to "t" after boundary }
+    sub { from "ญ" to "n" after boundary }
+    sub { from "ฎ" to "t" after boundary }
+    sub { from "ฑ" to "t" after boundary }
+    sub { from "ด" to "t" after boundary }
+    sub { from "ฐ" to "t" after boundary }
+    sub { from "ฒ" to "t" after boundary }
+    sub { from "ถ" to "t" after boundary }
+    sub { from "ท" to "t" after boundary }
+    sub { from "ธ" to "t" after boundary }
+    sub { from "บ" to "p" after boundary }
+    sub { from "ผ" to "p" after boundary }
+    sub { from "พ" to "p" after boundary }
+    sub { from "ภ" to "p" after boundary }
+    sub { from "ฝ" to "p" after boundary }
+    sub { from "ฟ" to "p" after boundary }
+    sub { from "ซ" to "t" after boundary }
+    sub { from "ศ" to "t" after boundary }
+    sub { from "ษ" to "t" after boundary }
+    sub { from "ส" to "t" after boundary }
+    sub { from "ร" to "n" after boundary }
+  }
+
+  # CONSONANTS — initial defaults (source table, rows 1-21, first
+  # romanization column); the standalone carrier อ is silent and
+  # vanishes
+  parallel {
+    sub "ก" "k"
+    sub "ข" "kh"
+    sub "ฆ" "kh"
+    sub "ค" "kh"
+    sub "ฅ" "kh"
+    sub "ฃ" "kh"
+    sub "ง" "ng"
+    sub "จ" "ch"
+    sub "ฉ" "ch"
+    sub "ช" "ch"
+    sub "ฌ" "ch"
+    sub "ญ" "y"
+    sub "ฎ" "d"
+    sub "ฏ" "t"
+    sub "ฑ" "th"
+    sub "ฒ" "th"
+    sub "ด" "d"
+    sub "ต" "t"
+    sub "ฐ" "th"
+    sub "ถ" "th"
+    sub "ท" "th"
+    sub "ธ" "th"
+    sub "ณ" "n"
+    sub "น" "n"
+    sub "บ" "b"
+    sub "ป" "p"
+    sub "ผ" "ph"
+    sub "พ" "ph"
+    sub "ภ" "ph"
+    sub "ฝ" "f"
+    sub "ฟ" "f"
+    sub "ม" "m"
+    sub "ย" "y"
+    sub "ร" "r"
+    sub "ล" "l"
+    sub "ฬ" "l"
+    sub "ว" "w"
+    sub "ซ" "s"
+    sub "ศ" "s"
+    sub "ษ" "s"
+    sub "ส" "s"
+    sub "ห" "h"
+    sub "ฮ" "h"
+    sub "อ" ""
+  }
+
+  # SIMPLE VOWELS (source vowel table, rows 1-9 and 11: single signs;
+  # length is not distinguished)
+  parallel {
+    sub "ะ" "a"
+    sub "ั" "a"
+    sub "า" "a"
+    sub "ๅ" "a"
+    sub "ิ" "i"
+    sub "ี" "i"
+    sub "ึ" "ue"
+    sub "ื" "ue"
+    sub "ุ" "u"
+    sub "ู" "u"
+    sub "เ" "e"
+    sub "แ" "ae"
+    sub "โ" "o"
+    sub "ใ" "ai"
+    sub "ไ" "ai"
+    sub "็" ""
+  }
+
+  # NUMERALS
+  parallel {
+    sub "๐" "0"
+    sub "๑" "1"
+    sub "๒" "2"
+    sub "๓" "3"
+    sub "๔" "4"
+    sub "๕" "5"
+    sub "๖" "6"
+    sub "๗" "7"
+    sub "๘" "8"
+    sub "๙" "9"
+  }
+}
+}
