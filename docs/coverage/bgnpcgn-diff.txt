@@ -1,0 +1,40 @@
+= A1: BGN/PCGN coverage diff (held system documents vs corpus)
+
+Official catalog source: the bgn-pcgn/ system documents held in
+interscript-references (55 PDFs -- each is one system's authoritative
+document). geonames.nga.mil (the consolidated schedule) is unreachable
+from here; the held set is the verifiable catalog.
+
+Corpus encodes ~37 systems across 54 bgnpcgn-* maps (several systems
+carry script/year variants: kor x3, div x2, ell x2, kat x2, mkd x2,
+tuk x2, ukr x2, uzb x2, prs x2, srp x2, bul x2, fao x2, isl x2).
+
+== Held but NOT encoded (gap systems)
+* ADYGHE (ady)
+* AVAR (av)
+* BURMESE (mya)
+* CHUVASH (cv)
+* DZONGKHA (dz)
+* HEBREW (heb)
+* INUKTITUT (iu)
+* KABARDIAN (kbd)
+* KHMER (khm)
+* LAO (lao)
+* OSSETIAN (os)
+* SHAN (shn)
+* THAI (tha)
+* UDMURT (udm)
+* YAKUT (sah)
+* Modern Syriac (syc)
+* KARACHAY-BALKAR (krc)
+
+== Held and encoded (spot-verified)
+Amharic, Arabic, Armenian, Azerbaijani, Bashkir, Baluchi, Belarusian,
+Bulgarian, Chechen, Chinese, Georgian, Greek, Japanese (Kana),
+Kazakh, Korean (3 variants), Kurdish, Kyrgyz, Macedonian, Maldivian,
+Moldovan/Romanian (Cyrillic), Mongolian, Nepali, Pashto, Persian,
+Russian, Rusyn, Serbian, Tatar, Tajik, Thai-NOT, Tigrinya, Turkmen,
+Ukrainian, Urdu, Uzbek -- i.e. every other held system.
+
+Each gap system's PDF is the encoding source: whole-document
+transcription, embedded test rows, authority-cited.
