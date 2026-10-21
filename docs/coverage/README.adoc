@@ -1,0 +1,33 @@
+= A1: authority-completeness audit (WO57) — workboard
+
+== Corpus census (verified)
+
+289 `.isc` systems by authority prefix (ISO 24229): alalc 55, bgnpcgn
+54, un 32, iso 30, odni 30, var 17, bis 10, din 9, icao 8, then 23
+single-system national authorities (elot, mvd, gost, mext, moct, lshk,
+acadsin, sac, hk, kp, ...).
+
+== Authority catalog status
+
+|===
+|Authority |Official catalog |Source capture |Diff vs corpus
+
+|ALA-LC |94 romanization tables (loc.gov roman.html) |alalc-roman.html (raw capture) |PENDING transcription: table names -> ISO 24229 codes; corpus encodes 55
+|BGN/PCGN |current schedule (~55 languages) |pending |corpus encodes 54
+|UN WGRS |~26 languages, 1968-2017 editions |pending |corpus encodes 32 (incl. revisions)
+|ISO |9/233-3/259/7098/843/9984/9985 |pending |corpus encodes 30
+|ICAO 9303 |Doc 9303-3 language set |pending |corpus encodes 8
+|ODNI |ODNI standard (2004/2015) |pending |corpus encodes 30
+|===
+
+== Method (the law: transcribe whole documents)
+
+1. Capture each authority's official system list from the primary
+   source (raw capture committed here, never paraphrased from memory).
+2. Transcribe table names -> ISO 24229 codes (authority-language-
+   SrcScript-DstScript-year) with the name->code evidence inline.
+3. Diff against the corpus; every gap becomes either an encoding PR
+   (whole-document transcription) or an out-of-scope citation with the
+   authority reference.
+
+Acceptance: zero unexplained gaps.
