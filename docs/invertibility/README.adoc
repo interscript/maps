@@ -1,0 +1,29 @@
+= Invertibility ledger (A2, phase 1)
+
+Generated 2026-10-21T02:12:23Z by scripts/invertibility_probe.rb against runtime
+3.2.0 over the live maps corpus. Raw data: ledger.json.
+
+== Round-trip: explicit authority reverse pairs
+
+[cols="4,3,2,2"]
+|===
+|map |reverse |tests |round-trip
+|bgnpcgn-deu-Latn-Latn-2000 |bgnpcgn-deu-Latn-Latn-2000 |5 |0/5 (LOSSY)
+|bgnpcgn-fao-Latn-Latn-1964 |bgnpcgn-fao-Latn-Latn-1964 |2 |1/2 (LOSSY)
+|bgnpcgn-fao-Latn-Latn-1968 |bgnpcgn-fao-Latn-Latn-1968 |2 |1/2 (LOSSY)
+|bgnpcgn-isl-Latn-Latn-1964 |bgnpcgn-isl-Latn-Latn-1964 |4 |0/4 (LOSSY)
+|bgnpcgn-isl-Latn-Latn-1968 |bgnpcgn-isl-Latn-Latn-1968 |4 |0/4 (LOSSY)
+|bgnpcgn-sme-Latn-Latn-1984 |bgnpcgn-sme-Latn-Latn-1984 |10 |8/10 (LOSSY)
+|masm-mon-Cyrl-Latn-5217-2012 |masm-mon-Latn-Cyrl-5217-2012 |35 |31/35 (LOSSY)
+|masm-mon-Latn-Cyrl-5217-2012 |masm-mon-Cyrl-Latn-5217-2012 |37 |37/37 (lossless)
+|var-ara-Arab-Arab-rababa |var-ara-Arab-Arab-rababa |3 |2/3 (LOSSY)
+|var-kor-Hang-Hang-jamo |var-kor-Hang-Hang-jamo |1 |0/1 (LOSSY)
+|===
+
+Phase-1 verdict: of 10 explicit authority reverse pairs, 1 round-trip losslessly on the forward map's own embedded tests; 9 are lossy. Distinguishing examples are in ledger.json.
+
+== Injectivity probe (embedded test inputs)
+
+39 of 278 probed maps map two or more of their OWN test inputs to the same output — an upper-bound witness against invertibility (case merger, digraph collapse, diacritic stripping). Full data in ledger.json.
+
+Phase 2 (pending): reverse-map generation for provably bijective systems (grammar-derived, then validated), per the A2 WO acceptance.
