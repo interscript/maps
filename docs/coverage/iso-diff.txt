@@ -1,0 +1,28 @@
+= A1: ISO coverage diff (definitional scopes vs corpus)
+
+Per-standard scopes are definitional (the ISO standards' own subject
+coverage); no external capture needed.
+
+== Encoded
+* ISO 9:1995 (Cyrillic) -> rus  [PARTIAL: ISO 9 covers the Cyrillic
+  script broadly -- abk/bel/bul/kaz/kir/mkd/mon/srp/tgk/tuk/ukr/uzb and
+  more remain to be encoded]
+* ISO 233:1984 + 233-2 (Arabic) -> ara
+* ISO 233-3:1999 (Persian/Dari) -> prs
+* ISO 3602:1989 (Japanese, kunrei-siki) -> jpn
+* ISO 843:1997 (Greek) -> ell (t1 + t2)
+* ISO 9984:1996 (Georgian) -> kat
+* ISO/TR 11941:1996 (Korean, both methods) -> kor
+* ISO 11940:1998 (Thai) -> tha
+* ISO 15919:2001 (Indic) -> asm/ben/guj/hin/inc/kan/mal/mar/nep/ori/
+  pan/pli (Beng,Deva,Sinh,Thai)/pra/san/tam/tel
+
+== GAP systems
+* ISO 9 (Cyrillic): bel, bul, kaz, kir, mkd, mon, srp, tgk, tuk, ukr,
+  uzb, and other Cyrillic-script systems (one ISO 9 encoding per
+  language)
+* ISO 259 (Hebrew): heb
+* ISO 7098 (Chinese): zho
+* ISO 9985 (Armenian): hye
+* ISO 15919 (Indic, beyond the encoded): sin, mni, kok, ks, sd, doi,
+  mai, and the script-generic variants not yet represented
