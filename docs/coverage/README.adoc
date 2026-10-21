@@ -16,7 +16,7 @@ acadsin, sac, hk, kp, ...).
 |BGN/PCGN |current schedule (~55 languages) |refs repo carries system PDFs (bgn-pcgn/); official consolidated schedule NOT fetchable (geonames.nga.mil unreachable) |corpus encodes 54 -- diff pending the schedule capture
 |UN WGRS |~26 languages, 1968-2017 editions |UNGEGN docs (404 on the attempted path; capture strategy: UNGEGN working-paper series) |corpus encodes 32 (incl. revisions) -- diff pending
 |ISO |9/233/233-3/259/3602/7098/843/9984/9985/11940/11941/15919 (definitional scopes) |iso-diff.txt |**DIFFED**: 9 of 12 standards represented; gaps = ISO 9 non-Russian Cyrillic, 259 Hebrew, 7098 Chinese, 9985 Armenian, 15919 Indic remainder
-|ICAO 9303 |Doc 9303-3 language set |EU publishes a 9303-derived consolidated annex (capture strategy) |corpus encodes 8 -- diff pending
+|ICAO 9303 |the language transliteration tables |held Amd1 (9303_p3_cons) VERIFIED ABSENT of the tables -- they live in another 9303 part/edition (9303-13 or the annexed edition); capture strategy: obtain that document |corpus encodes 8 -- diff pending source
 |ODNI |ODNI standard (2004/2015) |pending |corpus encodes 30
 |===
 

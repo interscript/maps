@@ -33,7 +33,7 @@ Amharic, Arabic, Armenian, Azerbaijani, Bashkir, Baluchi, Belarusian,
 Bulgarian, Chechen, Chinese, Georgian, Greek, Japanese (Kana),
 Kazakh, Korean (3 variants), Kurdish, Kyrgyz, Macedonian, Maldivian,
 Moldovan/Romanian (Cyrillic), Mongolian, Nepali, Pashto, Persian,
-Russian, Rusyn, Serbian, Tatar, Tajik, Thai-NOT, Tigrinya, Turkmen,
+Russian, Rusyn, Serbian, Tatar, Tajik, Tigrinya, Turkmen,
 Ukrainian, Urdu, Uzbek -- i.e. every other held system.
 
 Each gap system's PDF is the encoding source: whole-document
