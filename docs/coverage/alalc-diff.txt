@@ -1,0 +1,99 @@
+= A1: ALA-LC coverage diff (official catalog vs corpus)
+
+Official catalog: the 78 romanization tables currently listed on
+loc.gov/catdir/cpso/roman.html (raw capture: alalc-roman.html).
+Name -> code transcription: table names resolved to ISO 639 codes;
+each gap encoding must re-verify against the table document itself
+(refs/alalc/1997 + loc.gov) before encoding.
+
+Encoded tables: 30  |  GAP tables: 47  |
+corpus alalc maps: 55 (several tables carry multiple
+script/year variants; some tables span multiple codes).
+
+== Encoded
+
+* Amharic -> alalc-amh-Ethi-Latn-1997, alalc-amh-Ethi-Latn-2011
+* Arabic -> alalc-ara-Arab-Latn-1997
+* Assamese -> alalc-asm-Deva-Latn-1997, alalc-asm-Deva-Latn-2012
+* Azerbaijani -> alalc-aze-Arab-Latn-1997, alalc-aze-Cyrl-Latn-1997
+* Belarusian -> alalc-bel-Cyrl-Latn-1997
+* Bengali -> alalc-ben-Beng-Latn-1997, alalc-ben-Beng-Latn-2017
+* Bulgarian -> alalc-bul-Cyrl-Latn-1997
+* Divehi -> alalc-div-Thaa-Latn-1997, alalc-div-Thaa-Latn-2012
+* Georgian -> alalc-kat-Geok-Latn-1997, alalc-kat-Geok-Latn-2011, alalc-kat-Geor-Latn-1997, alalc-kat-Geor-Latn-2011
+* Greek -> alalc-ell-Grek-Latn-1997, alalc-ell-Grek-Latn-2010
+* Gujarati -> alalc-guj-Gujr-Latn-1997, alalc-guj-Gujr-Latn-2011
+* Hindi -> alalc-hin-Deva-Latn-1997, alalc-hin-Deva-Latn-2011
+* Kannada -> alalc-kan-Kana-Latn-1997, alalc-kan-Kana-Latn-2011
+* Korean -> alalc-kor-Hang-Latn-1997
+* Macedonian -> alalc-mkd-Cyrl-Latn-1997, alalc-mkd-Cyrl-Latn-2013
+* Malayalam -> alalc-mal-Mlym-Latn-1997, alalc-mal-Mlym-Latn-2012
+* Marathi -> alalc-mar-Deva-Latn-1997, alalc-mar-Deva-Latn-2011
+* Mongolian -> alalc-mon-Cyrl-Latn-1997
+* Odia (Oriya) -> alalc-ori-Orya-Latn-1997, alalc-ori-Orya-Latn-2011
+* Pali -> alalc-pli-Deva-Latn-2012
+* Panjabi -> alalc-pan-Guru-Latn-1997, alalc-pan-Guru-Latn-2011
+* Persian -> alalc-fas-Arab-Latn-1997
+* Russian -> alalc-rus-Cyrl-Latn-1997, alalc-rus-Cyrl-Latn-2012
+* Sanskrit and Prakrit -> alalc-pra-Deva-Latn-2012, alalc-san-Deva-Latn-2012
+* Serbian -> alalc-srp-Cyrl-Latn-1997, alalc-srp-Cyrl-Latn-2013
+* Sinhalese -> alalc-sin-Sinh-Latn-1997, alalc-sin-Sinh-Latn-2011
+* Tamil -> alalc-tam-Taml-Latn-1997, alalc-tam-Taml-Latn-2011
+* Telugu -> alalc-tel-Telu-Latn-1997, alalc-tel-Telu-Latn-2011
+* Tigrinya -> alalc-tir-Ethi-Latn-1997, alalc-tir-Ethi-Latn-2011
+* Ukrainian -> alalc-ukr-Cyrl-Latn-1997, alalc-ukr-Cyrl-Latn-2011
+
+== GAP systems (official tables with no corpus encoding)
+
+* Armenian -> hye, arm
+* Balinese -> ban
+* Batak -> btk
+* Burmese -> mya
+* Cham -> cjm
+* Cherokee -> chr
+* Chinese -> zho, chi
+* Church Slavic -> chu
+* Coptic -> cop
+* Deseret -> deseret
+* Hebrew and Yiddish -> heb, yid
+* Inuktitut -> iku
+* Japanese -> jpn
+* Javanese, Sundanese, and Madurese -> jav, sun, mad
+* Jawi-Pegon -> msa, jawi-pegon
+* Judeo-Arabic -> jrb
+* Kashmiri -> kas
+* Kazakh (in Arabic script) -> kaz
+* Khmer -> khm
+* Kurdish -> kur
+* Ladino -> lad
+* Lao -> lao
+* Lepcha -> lep
+* Limbu -> lif
+* Malay (in Jawi-Arabic script) -> msa, zlm
+* Manchu -> mnc
+* Mandekan languages (in N'ko script) -> man
+* Manipuri, Modern (Meitei script) -> mni
+* Moplah -> mop
+* Moroccan Tamazight -> shi
+* Non-Slavic Languages (in Cyrillic Script) -> cyr-nonslavic
+* Ottoman Turkish -> ota
+* Pushto -> pus
+* Romanian (in Cyrillic script) -> ron
+* Rusyn, Carpatho-Rusyn -> ruc
+* Santali (in Ol script) -> sat
+* Shan -> shn
+* Sindhi -> snd
+* Syriac -> syr
+* Tamashek -> tmh
+* Thai -> tha
+* Tibetan -> bod, tib
+* Tod-Oirat-Old Kalmyk -> xal
+* Uighur -> uig
+* Urdu -> urd
+* Uzbek -> uzb
+* Vai -> vai
+
+Each gap row is an encoding work item: transcribe the ALA-LC table
+document in full, encode as `alalc-<code>-<Src>-Latn-<year>`, embed
+the table's own test rows, and note script requirements beyond the
+basic Latin target.
