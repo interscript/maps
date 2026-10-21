@@ -12,7 +12,7 @@ acadsin, sac, hk, kp, ...).
 |===
 |Authority |Official catalog |Source capture |Diff vs corpus
 
-|ALA-LC |94 romanization tables (loc.gov roman.html) |alalc-roman.html (raw capture) |PENDING transcription: table names -> ISO 24229 codes; corpus encodes 55
+|ALA-LC |78 romanization tables (loc.gov roman.html; exact count after de-noising the page) |alalc-roman.html + alalc-diff.txt |**DIFFED**: 30 tables encoded, 48 gap systems (alalc-diff.txt); gap encodings are follow-on work items
 |BGN/PCGN |current schedule (~55 languages) |pending |corpus encodes 54
 |UN WGRS |~26 languages, 1968-2017 editions |pending |corpus encodes 32 (incl. revisions)
 |ISO |9/233-3/259/7098/843/9984/9985 |pending |corpus encodes 30
