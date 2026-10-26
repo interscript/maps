@@ -48,7 +48,6 @@ stage main {
 
   # CHARACTERS
   parallel {
-s
     sub "\u0626" ""
     sub "\u0624" ""
 
