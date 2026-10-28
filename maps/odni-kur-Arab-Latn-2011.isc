@@ -1,0 +1,280 @@
+system "ODNI:kur-Arab:Latn:2011" {
+
+metadata {
+  authority_id odni
+  id 2011
+  language iso-639-2:kur
+  source_script Arab
+  destination_script Latn
+  name ICS-630-01 Romanization of Kurdish Personal Names (2011)
+  source ICS-630-01 Annex G
+  creation_date 2011
+  confirmation_date 2011-12
+  description {    This system is the Intelligence Community standard for the
+    transliteration of Kurdish names that will be applied to all
+    final written reports and products for IC consumers. It is
+    not intended to eliminate variations of a name that can
+    contribute forensic information. Rather, it is to provide an
+    IC standard Romanized (English) transliteration from Kurdish
+    that can then be linked to forensic information in ways that
+    will help identify the referent of a name.
+
+    The system uses the 26 letters of the standard (English)
+    Roman alphabet plus the apostrophe. Some ambiguities in the
+    Romanized form will occur without the use of diacritics.
+    Within the context of a report, where additional information
+    about the individual is provided, the referent will be
+    clearly identified. The system is used in conjunction with
+    on-line tools, name dictionaries, and lists containing
+    conventional spellings of names of well-known individuals.
+
+    This system does not apply to names of Kurds from Turkey or
+    other regions where Roman script is used. For non-Kurdish
+    names, use the relevant IC transliteration standard for
+    names from that language. Names of individuals from
+    languages written in Roman letters are spelled as they are
+    spelled in those languages.
+
+    In cases where an individual's name has already been
+    transliterated in a variant spelling, that variant is
+    indicated in parentheses immediately following its rendition
+    in the transliteration standard. If the original Cyrillic or
+    Perso-Arabic-script spelling is known, that spelling should
+    also appear in parentheses following the name, following
+    best practices of the issuing organization and taking into
+    consideration information system capabilities. This
+    convention is designed to ensure that vital forensic
+    information is not lost.
+
+    For active senior government officials listed in the online
+    CIA World Factbook and the online directory of Chiefs of
+    State and Cabinet Members of Foreign Governments, the
+    spellings given in those reference works are used in place
+    of the IC Standard. For individuals no longer listed, the IC
+    Standard spelling appears first, with the previous reference
+    spelling in parentheses at first usage.
+
+    There is an effort in the region to purge Kurdish of Arabic
+    vocabulary, influencing how Kurdish names borrowed from
+    Arabic appear, especially in official publications. Defer to
+    the Kurdish IC Standard in these cases.
+  }
+
+  notes {
+    # Remark A — Arabic borrowings
+    note "Transliteration of names and titles borrowed from other\n languages, such as Islamic names, is based on the modified\n Kurdish spelling used in formal Kurdish publications. A\n transliteration based on the Arabic spelling standard (for\n Kurds from Iraq) or the Persian spelling standard (for Kurds\n from Iran) may be used in parentheses. For uniquely Arabic\n consonants, ث and ص transliterate as 's,' ط transliterates\n as 't' and ذ, ض, ظ transliterate as 'z.' (For example, the\n modified Kurdish spelling of عثمان is عوسمان and\n transliterates as 'Usman.)\n\n Vowels/diacritics that are unwritten in Arabic are\n represented by vowels in modified Kurdish spellings as\n follows: fatha = ه, kasra = ی, dhamma = و. Diphthongs based\n on the combination of a diacritic and a written vowel in the\n original Arabic should be fully represented even for cases\n in which some Kurdish spelling conventions adopt a single\n letter. (For example, the diphthong for the Arabic name\n حسين is based on the modified Kurdish spelling of حوسهين\n 'Husayn' rather than the alternate modified Kurdish of\n حوسێن 'Husen.')\n\n As an exception, religious titles follow this pattern:\n fatha + ێ = 'e' instead of هی 'ay' (شيخ transliterates\n according to the Kurdish spelling شێخ 'Shekh,' and درويش as\n دهروێش 'Darwesh'); fatha + ۆ = 'o' instead of هو 'aw'\n (صوفي transliterates according to the Kurdish spelling سۆفی\n 'Sofi').\n\n In names borrowed from Arabic, doubled consonants with an\n explicit or implicit shaddah in Arabic are written without\n shaddah in modified Kurdish spellings and are generally\n viewed as having single consonants. They should be\n transliterated as single, not double (e.g., عهباس Abas,\n دهباغ Dabagh, سهيد Sayid, عهمار 'Amar, جهبار Jabar,\n موحهرهم Muharam). The name محمد (spelled موحهممهد in\n Kurdish) is an exception: Muhammad.\n\n Exceptions to the doubling rule include compound names formed\n with 'Allah' (e.g., 'Abdulla) or with 'al' (the definite\n article) before names beginning with 'lam' (e.g.,\n 'Abdullatif).\n\n In Kurdish, all vowels are written with the exception of the\n short 'i' sound, which is understood as a hidden (unwritten)\n kasra under the preceding consonant. The kasra most often\n occurs when there are two or three consonants in a row.\n While the kasra is rarely typed in the original Kurdish\n Perso-Arabic script, in transliteration it is represented by\n the letter 'i': كرن Kirin, گرد Gird, فازل Fazil."
+    # Remark B
+    note "When a name is composed of multiple parts (e.g.,\n abd-al-rahman), the name is transliterated as one block\n rather than as separate parts with hyphens (e.g.,\n Abdulrahman)."
+    # Remark C
+    note "The ل of ال (al-, Arabic 'the', -ul in compound Arabic\n names) is retained in the Romanized form (e.g., Abdulrahman,\n not Abdurrahman). Compound names which contained 'الدين'\n (al din) in the original Arabic show up in Kurdish without\n the l, and should be transliterated as such (e.g.,\n نهجمهدين Najmadin, سهالحهدين Salahadin)."
+    # Remark D
+    note "The Arabic article ال (al-, Arabic 'the') is not added to\n Kurdish names (e.g., خالد شوانی Khalid Shwani, not\n خالد الشوانی Khalid al Shwani)."
+    # Remark E
+    note "Two letter sequences in Kurdish (e.g., سه) are\n transliterated the same as single characters. For example,\n سه (sh) is transliterated the same as ش (sh). Example:\n ئهسهی 'Ashi.'"
+    # Remark F
+    note "Because access to Kurdish keyboards is limited, the\n following substitutions frequently occur in informal Kurdish\n writing for non-Arabic characters. Arabic-keyboard variants\n are ب for پ, ج for چ, ر for ڕ, ز for ژ, ف for ڤ, ك for گ,\n ل for ڵ, و for ۆ, and ی for ێ. Persian-keyboard variants are\n ب for پ, ج for چ, ر for ڕ, ز for ژ, ف for ڤ, ك for گ,\n ل for ڵ, و for ۆ, and ی for ێ. Observing which Kurdish\n characters are present in a given text helps in deciphering\n the correct transliteration for names taken from that text.\n\n As a result, names such as گوالڤ 'Gulav', پێژان 'Pezhan',\n ڕاگر 'Ragir', ژيڤان 'Zhivan', چۆپی 'Chopi' and گواڵسۆر\n 'Gulasor' would be typed as كوالف, بيزان, راكر, زيفان, جوبى\n and كوالسور on an Arabic keyboard, and as گوالف, پيژان,\n راگر, ژيفان, چوپی and گوالسور on a Persian keyboard.\n\n The letter ه used as a vowel may show up in modified connected\n forms: ھه وار / ھهوار / ھةوار for ھهوار 'Hawar'; ئه وين /\n ئهوين / ئةوين for ئهوين 'Awin'; به رزين / بهرزين / بةرزين\n for پهرژين 'Parzhin'; جه له نك / جهلهنك / جةلةنك for\n چهلهنگ 'Chalang'; ره زى / رھزى / رةزى for ڕهزێ 'Raze';\n به رويز / بهرويز / بةرويز for پهروێز 'Parwez'; به يتو /\n بهيتو / بةيتو for بهيتۆ 'Bayto.'"
+    # Remark G
+    note "Because word processors do not already include fonts with\n uniquely Kurdish letters, official publications are often\n drafted using specialized Kurdish fonts. Most of these fonts\n superimpose the uniquely Kurdish letters over uniquely Arabic\n letters, so a document read without the original font shows\n Arabic letters in place of Kurdish ones: ث for پ, ذ for ژ,\n ر for ڕ, ص for ێ, ض for چ, ط for گ, ظ for ڤ, ل for ڵ,\n ل for اڵ, ؤ for ۆ, ي for ی, ي for ێ, and ة for ه. Thus\n names such as گوالڤ 'Gulav', پێژان 'Pezhan', ڕاگر 'Ragir',\n ژيڤان 'Zhivan', چۆپی 'Chopi', پهروێز 'Parwez', چهلهنگ\n 'Chalang' and گواڵسۆر 'Gulasor' could be displayed as طوالظ,\n (ثصذان or ثيذان), راطر, ذيظان, ضؤثي, (ثةروصز or ثةرويز),\n ضةلةنط and طوالسؤر."
+    # Remark H
+    note "The letter و (wau) may show up as a 'v' in alternate\n Romanizations due to the influence of Persian. In such cases,\n the alternate may be placed within parentheses to maintain\n forensic information: پهروين Parwin (Parvin), پهروانه Parwana\n (Parvaneh), ھاوناز Hawnaz (Havnaz), ھهمهوهندی Hamawandi\n (Homavandi), ئاواره Awara (Avareh), ئهڵوهن Alwan (Alvan),\n والی Wali (Vali), وهلی Wali (Vali), ھاونار Hawnaz (Havnaz),\n كاروان Karwan (Karvan), جهواد Jawad (Javad), پهروێز Parwez\n (Parviz)."
+    # Remark I
+    note "Follow this standard for personal names that are based on\n place names even when it may differ from the BGN standard;\n for example, Galali instead of Gełałî, Garmiyani instead of\n Germiyanî, Karkuki instead of Kerkukî, Khanaqini instead of\n Xaneqînî, Penjweni instead of Pênicwênî, Shinki instead of\n Şînkî."
+    # Remark J
+    note "The double vowel combination وو can transliterate to either\n a diphthong ('wu' or 'uw') or a single vowel ('u'). For the\n diphthong cases, transliteration depends on whether the وو\n directly follows or immediately precedes another vowel. If\n it directly follows the vowel, it transliterates to 'wu' (as\n in تاووس 'Tawus'). If it immediately precedes the vowel, it\n transliterates to 'uw' (as in ڕووانگه 'Ruwanga'). When a word\n starts with وو (without a seated hamza) and is followed by a\n consonant, it transliterates to 'wu' (as in ووریا 'Wuriya').\n\n In general there is inconsistency in the use of وو for both\n the vowel and diphthong cases. When writers use only one و\n it is understood that there is a hidden or implied second و\n similar to the hidden kasra described in Remarks A and K.\n Because of this, a single و may follow the double وو\n transliteration pattern above: the alternate spelling of\n ڕوانگه still transliterates to 'Ruwanga,' and the alternate\n spelling of وریا still transliterates to 'Wuriya.'"
+    # Remark K
+    note "The double vowel combination یی transliterates to a\n diphthong ('yi' or 'iy'). Transliteration depends on whether\n the یی directly follows or immediately precedes another\n vowel. If it directly follows the vowel, it transliterates\n to 'yi' (as in حهمایيل 'Hamayil'). If it immediately\n precedes the vowel, it transliterates to 'iy' (as in دیيه\n 'Diya'). There is some inconsistency in the use of یی in\n informal contexts. For cases in which a vowel follows the ی,\n a hidden kasra preserves the 'iy' transliteration. For cases\n in which the vowel precedes the ی (as in حهمایل/حهمایيل),\n the transliteration follows the double یی pattern described\n above: حهمایل still transliterates as 'Hamayil' even though\n it is written with a single ی."
+  }
+}
+
+tests {
+   # Examples printed in the annex and its remarks.
+   "ئومێد" ->  "Umed"
+   "ئيران" ->  "Iran"
+   "ئيمان" ->  "Iman"
+   "پێژان" ->  "Pezhan"
+   "چۆپی" ->  "Chopi"
+   "ژيڤان" ->  "Zhivan"
+   "ھهوار" ->  "Hawar"
+   "ئهوين" ->  "Awin"
+   "پهروانه" ->  "Parwana"
+   "پهروين" ->  "Parwin"
+   "تاووس" ->  "Tawus"
+   "ڕووانگه" ->  "Ruwanga"
+   "ووریا" ->  "Wuriya"
+   "حهمایيل" ->  "Hamayil"
+   "دیيه" ->  "Diya"
+   "ئاواره" ->  "Awara"
+   "ئهڵوهن" ->  "Alwan"
+   "ھهمهوهندی" ->  "Hamawandi"
+   "والی" ->  "Wali"
+   "وهلی" ->  "Wali"
+   "كاروان" ->  "Karwan"
+   "جهواد" ->  "Jawad"
+   "پهروێز" ->  "Parwez"
+   "ڕهزێ" ->  "Raze"
+   "بهيتۆ" ->  "Bayto"
+   "نهجمهدين" ->  "Najmadin"
+   # Arabic spelling with the modified-Kurdish reading given in Remark A
+   "عوسمان" ->  "’Usman"
+   "موحهممهد" ->  "Muhammad"
+   # The annex prints these two in visual RTL order; the logical
+   # spelling is tested here.
+   "گوڵاڤ" ->  "Gulav"
+   "گوڵاسۆر" ->  "Gulasor"
+   # Not tested: ئاگر (Agir) and ڕاگر (Ragir). Both depend on the
+   # unwritten short i of Remark A, which is lexical: the script
+   # omits it and only a Kurdish name dictionary can restore it.
+}
+
+stage main {
+  # CHARACTERS
+  # Declare multi-character rules first: in a parallel group the longest
+  # match wins, and declaration order breaks ties.
+  parallel {
+
+    # Diphthongs written with a seated hamza
+    sub "ئاو" "aw"
+    sub "ئاى" "ay"
+    sub "ئاي" "ay"
+    sub "ئوو" "u"
+    sub { from "ئهو" to "aw" not_after any("اويىۆێهە") }
+    sub { from "ئهي" to "ay" not_after any("اويىۆێهە") }
+    sub { from "ئهی" to "ay" not_after any("اويىۆێهە") }
+    sub "ئه" "a"
+    sub "ئا" "a"
+    sub "ئو" "u"
+    sub "ئۆ" "o"
+    sub "ئێ" "e"
+    sub "ئي" "i"
+    sub "ئى" "i"
+    sub "ئی" "i"
+
+    # Double waw: wu / uw / u (Remark J)
+    sub "اوو" "awu"
+    sub { from "وو" to "wu" before any("اويىۆێهە") }
+    sub { from "وو" to "uw" after any("اويىۆێهە") }
+    sub { from "وو" to "wu" before boundary }
+    sub "وو" "u"
+
+    # Diphthongs written with heh or yeh with small v
+    sub { from "هو" to "aw" not_after any("اويىۆێهە") }
+    sub { from "هي" to "ay" not_after any("اويىۆێهە") }
+    sub { from "هی" to "ay" not_after any("اويىۆێهە") }
+    sub { from "ێو" to "ew" not_after any("اويىۆێهە") }
+    sub { from "ێي" to "ey" not_after any("اويىۆێهە") }
+    sub { from "ێی" to "ey" not_after any("اويىۆێهە") }
+
+    # Double yeh: yi / iy (Remark K)
+    sub { from "يي" to "yi" before any("اويىۆێهە") }
+    sub { from "يی" to "yi" before any("اويىۆێهە") }
+    sub { from "یي" to "yi" before any("اويىۆێهە") }
+    sub { from "یی" to "yi" before any("اويىۆێهە") }
+    sub { from "يي" to "iy" after any("اويىۆێهە") }
+    sub { from "يی" to "iy" after any("اويىۆێهە") }
+    sub { from "یي" to "iy" after any("اويىۆێهە") }
+    sub { from "یی" to "iy" after any("اويىۆێهە") }
+    sub "يي" "i"
+    sub "يی" "i"
+    sub "یي" "i"
+    sub "یی" "i"
+
+    # Waw and yeh as consonants or vowels (Remarks H-J)
+    sub { from "ه" to "h" before boundary }
+    sub { from "و" to "w" before any("اويىۆێهە") }
+    sub { from "و" to "w" after any("اويىۆێهە") }
+    sub { from "و" to "w" before boundary }
+    sub { from "ي" to "y" before boundary }
+    sub { from "ی" to "y" before boundary }
+    sub { from "ى" to "y" before boundary }
+    sub { from "ي" to "yi" before any("ايىۆێهی") }
+    sub { from "ی" to "yi" before any("ايىۆێهی") }
+    sub { from "ى" to "yi" before any("ايىۆێهی") }
+    sub { from "ي" to "iy" after any("اويىۆێهە") }
+    sub { from "ی" to "iy" after any("اويىۆێهە") }
+    sub { from "ى" to "iy" after any("اويىۆێهە") }
+
+    # Consonants
+    sub "ء" ""
+    sub "ب" "b"
+    sub "پ" "p"
+    sub "ت" "t"
+    sub "ث" "s"
+    sub "ج" "j"
+    sub "چ" "ch"
+    sub "ح" "h"
+    sub "خ" "kh"
+    sub "د" "d"
+    sub "ذ" "z"
+    sub "ر" "r"
+    sub "ڕ" "r"
+    sub "ز" "z"
+    sub "ژ" "zh"
+    sub "س" "s"
+    sub "ش" "sh"
+    sub "ص" "s"
+    sub "ض" "z"
+    sub "ط" "t"
+    sub "ظ" "z"
+    sub "ع" "’"
+    sub "غ" "gh"
+    sub "ف" "f"
+    sub "ڤ" "v"
+    sub "ق" "q"
+    sub "ك" "k"
+    sub "ک" "k"
+    sub "گ" "g"
+    sub "ل" "l"
+    sub "ڵ" "l"
+    sub "م" "m"
+    sub "ن" "n"
+    sub "ه" "a"
+    sub "ھ" "h"
+    sub "و" "u"
+    sub "ي" "i"
+    sub "ی" "i"
+    sub "ى" "i"
+
+    # Vowels
+    sub "ا" "a"
+    sub "ة" "a"
+    sub "ە" "a"
+    sub "آ" "a"
+    sub "أ" "a"
+    sub "إ" "i"
+    sub "ؤ" "u"
+    sub "ۆ" "o"
+    sub "ێ" "e"
+
+    # Diacritics: the ICS system reads modified Kurdish spelling, so
+    # Arabic vowel points are dropped; the short i is written in the
+    # transliteration when the kasra is present.
+    sub "ِ" "i"
+    sub "َ" ""
+    sub "ُ" ""
+    sub "ّ" ""
+    sub "ْ" ""
+    sub "ً" ""
+    sub "ٌ" ""
+    sub "ٍ" ""
+    sub "ًَ" ""
+    sub "ـ" ""
+    sub "‌" ""
+    sub "‍" ""
+  }
+
+  # POSTRULES
+  # Capitalize the first letter of a word, including a word that begins
+  # with the apostrophe of an initial ayin.
+  sub {
+    from any("a".."￿")
+    to upcase
+    before boundary
+    not_before boundary + any("‘’'")
+  }
+  sub {
+    from any("a".."￿")
+    to upcase
+    before boundary + any("‘’'")
+  }
+}
+}
