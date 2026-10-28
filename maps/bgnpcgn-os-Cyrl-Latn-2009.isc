@@ -1,0 +1,187 @@
+system "BGN-PCGN:os-Cyrl:Latn:2009" {
+
+metadata {
+  authority_id bgnpcgn
+  id 2009
+  language iso-639-2:oss
+  source_script Cyrl
+  destination_script Latn
+  name Romanization of Ossetian (BGN/PCGN 2009 System)
+  url https://geonames.nga.mil/gns/html/Romanization/ROMANIZATION%20OF%20OSSETIAN.pdf
+  creation_date 2009
+  confirmation_date 2017-11
+  description {    The BGN/PCGN system for Ossetian is designed for use in romanizing names written
+    in the Ossetian Cyrillic alphabet. Ossetian is a member of the north-eastern Iranian language
+    group and has over half a million speakers. It has principally been written in a modified
+    Cyrillic alphabet though a Roman alphabet was used between 1923 and 1938. The BGN/PCGN
+    Romanization System is derived from the correspondences between that Roman alphabet and
+    the Cyrillic alphabet used for Ossetian today, with modifications to suit an
+    English-language user.
+  }
+
+  notes {
+    note "The characters ё, ж, ш, щ, ъ, ь, э, ю, and я appear only in loan words and their romanizations in the Ossetian System are therefore as they appear in the BGN/PCGN Romanization System for Russian Cyrillic."
+    note "У has several different functions:\n\n• In combination with another vowel (either preceding or following) У is a ‘semi-vowel’ and should be romanized ‘w’ [e.g. Дзау → Dzaw (=Java)]\n\n• У also serves to labialize the consonants Г, Гъ, К, Къ, Х and Хъ and should also be romanized ‘w’ after each of these [e.g. Гуырдзы → Gwyrdzy (=Georgia)]\n\n• elsewhere У should be romanized ‘u’ [e.g. Республикӕ → Respublikӕ (=Republic)]."
+    note "Ъ should be represented with ”, except as it occurs in the digraph combinations гъ, къ, пъ, тъ, хъ or чъ representing the glottal consonants as shown separately in the table."
+    note "An inventory of letter-diacritic combinations, with their Unicode encoding, in addition to the unmodified letters of the basic Roman script is:\n\nAll apostrophes appearing in romanization are U+2019\n\nÆ (U+00C6) æ (U+00E6)\nË (U+00CB) ë (U+00EB)"
+    note "The Roman-script columns show only lowercase forms but, when applying the table, uppercase and lowercase Roman letters as appropriate should be used."
+    note "Table footnotes: (1) Formerly /j/ in the Ossetian Roman-script alphabet. (2) Formerly /kh/ in the Ossetian Roman-script alphabet. (3) Formerly /h/ in the Ossetian Roman-script alphabet. (4) Formerly /dž/ in the Ossetian Roman-script alphabet. (5) Formerly /ph/ in the Ossetian Roman-script alphabet. (6) Formerly /th/ in the Ossetian Roman-script alphabet. (7) Formerly /x/ in the Ossetian Roman-script alphabet. (8) Formerly /c/ in the Ossetian Roman-script alphabet. (9) Formerly /ch/ in the Ossetian Roman-script alphabet. (10) Formerly /č/ in the Ossetian Roman-script alphabet. (11) Formerly /čh/ in the Ossetian Roman-script alphabet."
+    note "The source table’s Romanization column renders Е (U+0415, U+0435) with the Cyrillic glyph е; this is a typographical error in the source — Е is romanized as the Latin letter e, per the Russian-Cyrillic convention noted above."
+  }
+}
+
+tests {
+   "Дзау" ->  "Dzaw"
+   "Гуырдзы" ->  "Gwyrdzy"
+   "Республикӕ" ->  "Respublikæ"
+   "Ирыстон" ->  "Iryston"
+   "Цхинвал" ->  "Tskhinval"
+   "фӕндаг" ->  "fændag"
+   "хӕдзар" ->  "khædzar"
+   "мад" ->  "mad"
+   "дзуар" ->  "dzwar"
+   "куывд" ->  "kwyvd"
+   "къах" ->  "k’akh"
+   "цъити" ->  "ts’iti"
+   "чъыри" ->  "ch’yri"
+   "къуыри" ->  "k’wyri"
+   "хъӕу" ->  "qæw"
+   "объект" ->  "ob”ekt"
+   "адъютант" ->  "ad”yutant"
+   "машина" ->  "mashina"
+   "ӕвзаг" ->  "ævzag"
+}
+
+aliases {
+  os_vowel = any("АаІиЕеЁёОоЭэЮюЯяӔӕЫы")
+}
+
+stage main {
+
+  # RULES
+  # note[2]: У is a semi-vowel ‘w’ in combination with another vowel,
+  # either preceding or following
+  sub {
+    from "у"
+    to "w"
+    before os_vowel
+  }
+  sub {
+    from "у"
+    to "w"
+    after os_vowel
+  }
+  sub {
+    from "У"
+    to "W"
+    before os_vowel
+  }
+  sub {
+    from "У"
+    to "W"
+    after os_vowel
+  }
+
+  # CHARACTERS
+  parallel {
+    sub "А" "A"
+    sub "а" "a"
+    sub "Ӕ" "Æ"
+    sub "ӕ" "æ"
+    sub "Б" "B"
+    sub "б" "b"
+    sub "В" "V"
+    sub "в" "v"
+    sub "Г" "G"
+    sub "г" "g"
+    sub "Гу" "Gw"
+    sub "гу" "gw"
+    sub "Гъ" "Gh"
+    sub "гъ" "gh"
+    sub "Гъу" "Ghw"
+    sub "гъу" "ghw"
+    sub "Д" "D"
+    sub "д" "d"
+    sub "Дж" "J"
+    sub "дж" "j"
+    sub "Дз" "Dz"
+    sub "дз" "dz"
+    sub "Е" "E"
+    sub "е" "e"
+    sub "Ё" "Ë"
+    sub "ё" "ë"
+    sub "Ж" "Zh"
+    sub "ж" "zh"
+    sub "З" "Z"
+    sub "з" "z"
+    sub "И" "I"
+    sub "и" "i"
+    sub "Й" "Y"
+    sub "й" "y"
+    sub "К" "K"
+    sub "к" "k"
+    sub "Ку" "Kw"
+    sub "ку" "kw"
+    sub "Къ" "K’"
+    sub "къ" "k’"
+    sub "Къу" "K’w"
+    sub "къу" "k’w"
+    sub "Л" "L"
+    sub "л" "l"
+    sub "М" "M"
+    sub "м" "m"
+    sub "Н" "N"
+    sub "н" "n"
+    sub "О" "O"
+    sub "о" "o"
+    sub "П" "P"
+    sub "п" "p"
+    sub "Пъ" "P’"
+    sub "пъ" "p’"
+    sub "Р" "R"
+    sub "р" "r"
+    sub "С" "S"
+    sub "с" "s"
+    sub "Т" "T"
+    sub "т" "t"
+    sub "Тъ" "T’"
+    sub "тъ" "t’"
+    sub "У" "U"
+    sub "у" "u"
+    sub "Ф" "F"
+    sub "ф" "f"
+    sub "Х" "Kh"
+    sub "х" "kh"
+    sub "Ху" "Khw"
+    sub "ху" "khw"
+    sub "Хъ" "Q"
+    sub "хъ" "q"
+    sub "Хъу" "Qw"
+    sub "хъу" "qw"
+    sub "Ц" "Ts"
+    sub "ц" "ts"
+    sub "Цъ" "Ts’"
+    sub "цъ" "ts’"
+    sub "Ч" "Ch"
+    sub "ч" "ch"
+    sub "Чъ" "Ch’"
+    sub "чъ" "ch’"
+    sub "Ш" "Sh"
+    sub "ш" "sh"
+    sub "Щ" "Shch"
+    sub "щ" "shch"
+    sub "Ъ" "”"
+    sub "ъ" "”"
+    sub "Ы" "Y"
+    sub "ы" "y"
+    sub "Ь" "’"
+    sub "ь" "’"
+    sub "Э" "E"
+    sub "э" "e"
+    sub "Ю" "Yu"
+    sub "ю" "yu"
+    sub "Я" "Ya"
+    sub "я" "ya"
+  }
+}
+}
