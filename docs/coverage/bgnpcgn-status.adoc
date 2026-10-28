@@ -32,3 +32,24 @@ ady, av, cv, kbd, os, udm, sah, krc, syc — deterministic-only tables
 encoded from PDFs, then reverted per the policy above (they are
 abugida/abjad-adjacent systems where the table alone is insufficient).
 Re-encode if a model or corpus unblocks them.
+
+
+== Data-supply search results (2026-10-27, HuggingFace)
+
+Searched for romanization/transliteration training data per language.
+Result: **no gold (script → romanization) pairs exist** for any of the
+5 blocked languages. What exists is raw text (OCR corpora, translation
+pairs, segmentation datasets) — not supervised training signal.
+
+| language | HF datasets found | usable for training |
+|---|---|---|
+| Burmese | OCR, text segmentation, translation pairs | No — no romanization gold |
+| Dzongkha | None | No |
+| Inuktitut | None | No |
+| Lao | 1 raw text corpus | No — no romanization gold |
+| Shan | None | No |
+
+**These 5 systems are permanently BLOCKED** until gold training data
+is created (manually or via a linguistic project). This is a data-supply
+ask per language — not an engineering problem we can solve with the
+tools we have.
