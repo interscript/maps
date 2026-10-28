@@ -1,84 +1,98 @@
-= BGN/PCGN coverage status (corrected 2026-10-28)
+= BGN/PCGN coverage
 
-This page previously conflated three different things: whether a map
-exists, whether a model exists, and whether training data exists. The
-corrected status is below. The full reference inventory is
-`README.adoc` in this directory.
+The BGN/PCGN romanization systems are joint standards of the United
+States Board on Geographic Names (BGN) and the Permanent Committee on
+Geographical Names for British Official Use (PCGN). The Interscript
+corpus implements 55 BGN/PCGN maps across 41 language codes. Four of
+those codes, namely `deu`, `fao`, `isl`, and `sme`, are Roman-script
+spelling conventions rather than conversions from another script.
 
-== Held vs encoded
+== Systems represented in the corpus
 
-55 held documents = 53 language systems + 1 policy document + 1
-duplicate. The corpus has 64 `bgnpcgn-*` maps across 50 language
-codes (46 non-Roman-script language systems plus 4 Roman-script
-convention systems), after the nine-map restore in PR #211.
-
-== Status by system
-
-[cols="1,3",options="header"]
+[cols="1,1,2",options="header"]
 |===
-|Status |Systems
+|Language |ISO 639-3 |Maps in the corpus
 
-|ENCODED on `main`
-|Amharic, Arabic, Armenian, Azerbaijani, Baluchi, Bashkir, Belarusian,
-Bulgarian, Chechen, Chinese, Georgian, Greek, Japanese Kana, Kazakh,
-Korean, Kurdish (2007), Kyrgyz, Macedonian, Maldivian, Moldovan,
-Mongolian, Nepali, Pashto, Persian, Russian, Rusyn, Serbian, Tajik,
-Tatar, Thai, Tigrinya, Turkmen, Ukrainian, Urdu, Uzbek, Adyghe, Avar,
-Chuvash, Kabardian, Karachay-Balkar, Ossetian, Udmurt, Yakut, Modern
-Syriac, and the Roman-script systems
-
-|RESTORED (merged in PR #208, removed by revert `7e9a2d8`, restored
-in PR #211)
-|Adyghe (ady), Avar (av), Chuvash (cv), Kabardian (kbd),
-Karachay-Balkar (krc), Ossetian (os), Udmurt (udm), Yakut (sah),
-Modern Syriac (syc)
-
-|OPEN PR (legacy `.imp`, needs `.isc` migration)
-|Dzongkha (PR #166), Modern Syriac (PR #167)
-
-|SOURCE HELD, NOT ENCODED
-|Burmese, Hebrew, Khmer, Lao, Shan, Inuktitut
-
-|REVISION CHECK
-|Kurdish: the corpus map is the 2007 system; the held document is the
-30 April 2012 revision
-|===
-
-== Correction of the earlier "BLOCKED" list
-
-The earlier version of this page declared five systems "permanently
-BLOCKED" — Burmese, Dzongkha, Inuktitut, Lao, Shan — because no
-training data exists. Two errors:
-
-1. **Dzongkha was not a gap.** Its encoding is in open PR #166.
-2. **The blocked status applies to the model, not the map.** Every one
-   of these systems has a held, complete deterministic table with its
-   own example rows. A map can be encoded and verified without a
-   training corpus; only a neural model needs one.
-
-The same page claimed the nine reverted systems were
-"abugida/abjad-adjacent systems where the table alone is
-insufficient". That is false: eight are Cyrillic alphabets and one
-(Modern Syriac) is an abjad with a complete table. They were merged
-and CI-gated; the revert was a regression, and the maps are to be
-restored, not re-encoded.
-
-== Model layer (the real data block)
-
-No gold romanization/transliteration pairs exist in the data supply
-for: Burmese, Dzongkha, Inuktitut, Lao, Shan.
-
-[cols="1,2,1",options="header"]
-|===
-|Language |Available data |Usable for model training
-
-|Burmese |OCR, text segmentation, translation pairs |No — no romanization gold
-|Dzongkha |None |No
-|Inuktitut |None |No
-|Lao |Raw text corpus |No — no romanization gold
-|Shan |None |No
+|Amharic |amh |`bgnpcgn-amh-Ethi-Latn-1967`
+|Arabic |ara |`bgnpcgn-ara-Arab-Latn-1956`
+|Armenian |arm |`bgnpcgn-arm-Armn-Latn-1981`
+|Azerbaijani |aze |`bgnpcgn-aze-Cyrl-Latn-1993`
+|Bashkir |bak |`bgnpcgn-bak-Cyrl-Latn-2007`
+|Baluchi |bal |`bgnpcgn-bal-Arab-Latn-2008`
+|Belarusian |bel |`bgnpcgn-bel-Cyrl-Latn-1979`
+|Bulgarian |bul |`bgnpcgn-bul-Cyrl-Latn-1952`, `bgnpcgn-bul-Cyrl-Latn-2013`
+|Chechen |che |`bgnpcgn-che-Cyrl-Latn-2008`
+|Chinese |zho |`bgnpcgn-zho-Hans-Latn-1979`
+|Dari |prs |`bgnpcgn-prs-Arab-Latn-2007`, `bgnpcgn-prs-Arab-Latn-yaghoubi`
+|Dhivehi (Maldivian) |div |`bgnpcgn-div-Thaa-Latn-1972`, `bgnpcgn-div-Thaa-Latn-1988`
+|Faroese |fao |`bgnpcgn-fao-Latn-Latn-1964`, `bgnpcgn-fao-Latn-Latn-1968`
+|Georgian |kat |`bgnpcgn-kat-Geor-Latn-1981`, `bgnpcgn-kat-Geor-Latn-2009`
+|German |deu |`bgnpcgn-deu-Latn-Latn-2000`
+|Greek |ell |`bgnpcgn-ell-Grek-Latn-1962`, `bgnpcgn-ell-Grek-Latn-1996`
+|Icelandic |isl |`bgnpcgn-isl-Latn-Latn-1964`, `bgnpcgn-isl-Latn-Latn-1968`
+|Japanese |jpn |`bgnpcgn-jpn-Hrkt-Latn-1976`
+|Kazakh |kaz |`bgnpcgn-kaz-Cyrl-Latn-1979`
+|Korean |kor |`bgnpcgn-kor-Hang-Latn-kn-1945`, `bgnpcgn-kor-Hang-Latn-rok-2011`, `bgnpcgn-kor-Kore-Latn-rok-2011`
+|Kurdish |kur |`bgnpcgn-kur-Arab-Latn-2007`
+|Kyrgyz |kir |`bgnpcgn-kir-Cyrl-Latn-1979`
+|Macedonian |mkd |`bgnpcgn-mkd-Cyrl-Latn-1981`, `bgnpcgn-mkd-Cyrl-Latn-2013`
+|Mongolian |mon |`bgnpcgn-mon-Cyrl-Latn-1964`
+|Nepali |nep |`bgnpcgn-nep-Deva-Latn-2011`
+|Pashto |pus |`bgnpcgn-pus-Arab-Latn-1968`
+|Persian |fas, per |`bgnpcgn-fas-Arab-Latn-1956`, `bgnpcgn-per-Arab-Latn-1958`
+|Romanian |ron |`bgnpcgn-ron-Cyrl-Latn-2002`
+|Rusyn |rue |`bgnpcgn-rue-Cyrl-Latn-2016`
+|Russian |rus |`bgnpcgn-rus-Cyrl-Latn-1947`
+|Serbian |srp |`bgnpcgn-srp-Cyrl-Latn-1962`, `bgnpcgn-srp-Cyrl-Latn-2005`
+|Northern Sami |sme |`bgnpcgn-sme-Latn-Latn-1984`
+|Tajik |tgk |`bgnpcgn-tgk-Cyrl-Latn-1994`
+|Tatar |tat |`bgnpcgn-tat-Cyrl-Latn-2007`
+|Thai |tha |`bgnpcgn-tha-Thai-Latn-2002`
+|Tigrinya |tir |`bgnpcgn-tir-Ethi-Latn-2007`
+|Turkmen |tuk |`bgnpcgn-tuk-Cyrl-Latn-1979`, `bgnpcgn-tuk-Cyrl-Latn-1993`
+|Ukrainian |ukr |`bgnpcgn-ukr-Cyrl-Latn-1965`, `bgnpcgn-ukr-Cyrl-Latn-2019`
+|Urdu |urd |`bgnpcgn-urd-Arab-Latn-2007`
+|Uzbek |uzb |`bgnpcgn-uzb-Cyrl-Latn-1979`, `bgnpcgn-uzb-Cyrl-Latn-2000`
 |===
 
-Policy: withhold a model rather than ship a bad-quality one. This
-blocks training, not map coverage. The maps for these languages are
-in scope for encoding.
+== Reference tables without a map in the corpus
+
+The project's reference collection contains complete BGN/PCGN tables
+for the following systems, and the corpus does not yet provide a map
+for them.
+
+[cols="1,1",options="header"]
+|===
+|Language |ISO 639-3
+
+|Adyghe |ady
+|Avar |av
+|Burmese |mya
+|Chuvash |cv
+|Dzongkha |dzo
+|Hebrew |heb
+|Inuktitut |iu
+|Kabardian |kbd
+|Karachay-Balkar |krc
+|Khmer |khm
+|Lao |lao
+|Modern Syriac |syr
+|Ossetian |os
+|Shan |shn
+|Udmurt |udm
+|Yakut |sah
+|===
+
+The collection also contains the 2012 revision of the Kurdish system,
+while the corpus implements the 2007 edition. The corpus represents
+Hebrew through the ICAO 9303 map and Khmer through a neural model;
+neither substitutes for a BGN/PCGN rule map.
+
+== Neural model coverage
+
+The deterministic map and the neural model are independent products.
+Neural models are published for Hebrew, Khmer, Thai, Persian, Arabic,
+and Urdu. No neural model is published for Burmese, Dzongkha,
+Inuktitut, Lao, or Shan, because no parallel corpus of source-script
+names with romanized equivalents is available for training in those
+languages.
