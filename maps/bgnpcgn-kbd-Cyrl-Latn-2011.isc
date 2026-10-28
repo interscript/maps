@@ -1,0 +1,191 @@
+system "BGN-PCGN:kbd-Cyrl:Latn:2011" {
+
+metadata {
+  authority_id bgnpcgn
+  id 2011
+  language iso-639-2:kbd
+  source_script Cyrl
+  destination_script Latn
+  name Romanization of Kabardian (BGN/PCGN 2011 System)
+  url https://geonames.nga.mil/gns/html/Romanization/ROMANIZATION%20OF%20KABARDIAN.pdf
+  creation_date 2011
+  confirmation_date 2017-10
+  description {    The BGN/PCGN system for Kabardian is designed for use in romanizing names written
+    in the Kabardian Cyrillic alphabet. Kabardian, of the north-western Caucasian language family,
+    is principally spoken in Russia’s republics of Kabardino-Balkariya and Karachayevo-Cherkesiya
+    and has been written in a modified Cyrillic script since 1936. Also known as East Circassian,
+    Kabardian is, as other languages of this family, notable for its rich density of consonant
+    phonemes (most commentators agree on an inventory of 47 or 48) and corresponding paucity of
+    vowels. Given the language’s phonological complexity, Kabardian letters have been addressed
+    in the romanizations below as per their articulation, rather than necessarily reflecting
+    their orthography or the BGN/PCGN romanization of Russian Cyrillic: specifically glottalised
+    consonants have been marked with an apostrophe, and labialized consonants with /w/.
+  }
+
+  notes {
+    note "West Circassian, or Adyghe, is sufficiently different to be regarded a separate language. See also the BGN/PCGN Romanization System for Adyghe."
+    note "У should be romanized as /w/ or /u/ according to context: /w/ should be used word-initially, and /u/ used elsewhere, except as in combinations occurring elsewhere in the table above."
+    note "The characters Ё, Ъ, Ы & Ь (except as they occur in character combinations addressed elsewhere in the table) appear only in Russian loan words, and are thus romanized in the same style as in the BGN/PCGN Romanization System for Russian."
+    note "An inventory of letter-diacritic combinations, with their Unicode encoding, in addition to the unmodified letters of the basic Roman script is:\n\nAll apostrophes appearing in romanization are U+2019\n\nÄ (U+00C4) ä (U+00E4)\nŹ (U+0179) ź (U+017A)\nŚ (U+015A) ś (U+015B)\nË (U+00CB) ë (U+00EB)\nH̱ (0048+0031) ẖ (0068+0031)"
+    note "The Romanization column shows only lowercase forms but, when romanizing, uppercase and lowercase Roman letters as appropriate should be used."
+  }
+}
+
+tests {
+   "Налшык" ->  "Nalshyk"
+   "щӀымахуэ" ->  "ś’ymakhwä"
+   "дыжьын" ->  "dyźyn"
+   "уэрэд" ->  "wäräd"
+   "псалъэ" ->  "psalhä"
+   "шы" ->  "shy"
+   "макъ" ->  "maq’"
+   "дыдэ" ->  "dydä"
+   "лӀы" ->  "l’y"
+   "цӀыкӀу" ->  "ts’ykw’"
+   "мэз" ->  "mäz"
+   "кхъуэ" ->  "qwä"
+   "пщащӀэ" ->  "pśaś’ä"
+   "тхылъ" ->  "tkhylh"
+   "Балъкъэр" ->  "Balhq’är"
+   "джэду" ->  "jädu"
+   "хьэ" ->  "ẖä"
+   "бжьыхьэ" ->  "bźyẖä"
+   "къуэ" ->  "qw’ä"
+   "Джэгу" ->  "Jägw"
+   "цӀыху" ->  "ts’ykhw"
+}
+
+stage main {
+
+  # RULES
+  # note: /w/ word-initially, /u/ elsewhere
+  sub {
+    from boundary + "У"
+    to "W"
+  }
+  sub {
+    from boundary + "у"
+    to "w"
+  }
+
+  # CHARACTERS
+  parallel {
+    sub "А" "A"
+    sub "а" "a"
+    sub "Э" "Ä"
+    sub "э" "ä"
+    sub "Б" "B"
+    sub "б" "b"
+    sub "В" "V"
+    sub "в" "v"
+    sub "Г" "G"
+    sub "г" "g"
+    sub "Гу" "Gw"
+    sub "гу" "gw"
+    sub "Гъ" "Gh"
+    sub "гъ" "gh"
+    sub "Гъу" "Ghw"
+    sub "гъу" "ghw"
+    sub "Д" "D"
+    sub "д" "d"
+    sub "Дж" "J"
+    sub "дж" "j"
+    sub "Дз" "Dz"
+    sub "дз" "dz"
+    sub "Е" "E"
+    sub "е" "e"
+    sub "Ё" "Ë"
+    sub "ё" "ë"
+    sub "Ж" "Zh"
+    sub "ж" "zh"
+    sub "Жь" "Ź"
+    sub "жь" "ź"
+    sub "З" "Z"
+    sub "з" "z"
+    sub "И" "I"
+    sub "и" "i"
+    sub "Й" "Y"
+    sub "й" "y"
+    sub "К" "K"
+    sub "к" "k"
+    sub "Ку" "Kw"
+    sub "ку" "kw"
+    sub "КӀ" "K’"
+    sub "кӀ" "k’"
+    sub "КӀу" "Kw’"
+    sub "кӀу" "kw’"
+    sub "Къ" "Q’"
+    sub "къ" "q’"
+    sub "Къу" "Qw’"
+    sub "къу" "qw’"
+    sub "Кхъ" "Q"
+    sub "кхъ" "q"
+    sub "Кхъу" "Qw"
+    sub "кхъу" "qw"
+    sub "Л" "L"
+    sub "л" "l"
+    sub "Лъ" "Lh"
+    sub "лъ" "lh"
+    sub "ЛӀ" "L’"
+    sub "лӀ" "l’"
+    sub "М" "M"
+    sub "м" "m"
+    sub "Н" "N"
+    sub "н" "n"
+    sub "О" "O"
+    sub "о" "o"
+    sub "П" "P"
+    sub "п" "p"
+    sub "ПӀ" "P’"
+    sub "пӀ" "p’"
+    sub "Р" "R"
+    sub "р" "r"
+    sub "С" "S"
+    sub "с" "s"
+    sub "Т" "T"
+    sub "т" "t"
+    sub "ТӀ" "T’"
+    sub "тӀ" "t’"
+    sub "У" "U"
+    sub "у" "u"
+    sub "Ф" "F"
+    sub "ф" "f"
+    sub "ФӀ" "F’"
+    sub "фӀ" "f’"
+    sub "Х" "Kh"
+    sub "х" "kh"
+    sub "Ху" "Khw"
+    sub "ху" "khw"
+    sub "Хь" "H̱"
+    sub "хь" "ẖ"
+    sub "Хъ" "X"
+    sub "хъ" "x"
+    sub "Хъу" "Xw"
+    sub "хъу" "xw"
+    sub "Ц" "Ts"
+    sub "ц" "ts"
+    sub "ЦӀ" "Ts’"
+    sub "цӀ" "ts’"
+    sub "Ч" "Ch"
+    sub "ч" "ch"
+    sub "Ш" "Sh"
+    sub "ш" "sh"
+    sub "Щ" "Ś"
+    sub "щ" "ś"
+    sub "ЩӀ" "Ś’"
+    sub "щӀ" "ś’"
+    sub "Ъ" "’’"
+    sub "ъ" "’’"
+    sub "Ы" "Y"
+    sub "ы" "y"
+    sub "Ь" "’"
+    sub "ь" "’"
+    sub "Ю" "Yu"
+    sub "ю" "yu"
+    sub "Я" "Ya"
+    sub "я" "ya"
+    sub "Ӏ" "’"
+    sub "Ӏу" "’w"
+  }
+}
+}
