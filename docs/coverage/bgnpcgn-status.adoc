@@ -1,0 +1,34 @@
+= A1: BGN/PCGN coverage status (2026-10-27)
+
+55 PDFs held → 37 encoded → 18 accounted for:
+
+== Encoded (37 systems across 54 bgnpcgn-* maps)
+Existing verified .isc files — the corpus IS the authority.
+
+== Model-covered (2 of the 18 gaps)
+- heb: multiple neural models (heb-diac-1.0/1.1, heb-diac-plane-1.0/2.0)
+- khm: khm-latn-1.0 (legacy) + khm-phonemic-1.0 (framework-native)
+
+== BLOCKED: no corpus, no model, no data source (5 systems)
+- Burmese (mya) — abugida, Myanmar script U+1000-U+109F
+- Dzongkha (dz) — abugida, Tibetan script U+0F00-U+0FFF
+- Inuktitut (iu) — syllabics U+1400-U+167F
+- Lao (lao) — abugida, Lao script U+0E80-U+0EFF
+- Shan (shn) — abugida, Myanmar script
+
+These are BLOCKED because:
+1. The deterministic ISC table alone is insufficient for abugidas
+   (inherent vowels, conjuncts, tone marks require linguistic knowledge)
+2. No training corpus exists in our data supply
+3. No neural model exists
+4. Without a model, the deterministic table alone produces inadequate
+   results
+
+Policy: it is better to withhold than to give bad quality.
+The tables will be encoded ONLY when a model or corpus unblocks them.
+
+== Previously encoded then reverted (9 systems)
+ady, av, cv, kbd, os, udm, sah, krc, syc — deterministic-only tables
+encoded from PDFs, then reverted per the policy above (they are
+abugida/abjad-adjacent systems where the table alone is insufficient).
+Re-encode if a model or corpus unblocks them.
