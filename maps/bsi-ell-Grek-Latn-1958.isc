@@ -1,0 +1,445 @@
+system "BSI:ell-Grek:Latn:1958" {
+
+metadata {
+  authority_id bsi
+  id 1958
+  language iso-639-2:ell
+  source_script Grek
+  destination_script Latn
+  name "BS 2979:1958 Transliteration of Cyrillic and Greek characters - Table G, Transliteration of Greek characters"
+  url https://www.bsigroup.com
+  creation_date 1958
+  confirmation_date 2000-05
+  description {    BS 2979:1958, Table G: a letter-for-letter system for Greek, aimed at
+    cataloguers and providing a one-to-one correspondence between Greek and
+    Roman characters in both directions.
+  }
+
+  notes {
+    note "Special signs (a): the rough breathing sign is transliterated by the comma, or by an apostrophe over the preceding initial vowel or diphthong (e.g. 'E, 'Ou); over rho it is disregarded. This map renders the rough breathing as the apostrophe preceding its vowel, and deletes it over rho."
+    note "Special signs (b): the smooth breathing sign is not transliterated; its presence in Greek is implied where the rough breathing sign is considered to be part of the transliterated text. This map deletes the smooth breathing sign."
+    note "Special signs (c): a diaeresis in the original Greek text is always reproduced in the transliterated text; this map leaves diaeresis marks in place."
+    note "Special signs (d): the acute, grave and circumflex accent signs may, also, if desired, be rendered as in the Greek; this map leaves accent marks in place."
+    note "Special signs (e): iota subscript, even when adscripted (a subscript in capitalized Greek texts), is always rendered by positional i (small); this map renders the iota subscript sign as i following its vowel."
+    note "The numerical values of the ancient Greek characters run parallel with the Church Slavonic Cyrillic (Table D), distinguished up to 999 by a postliteral sign above the line and from 1000 onwards by a preliteral sign below the line; this map renders letters, not numeral values."
+    note "The English-to-Greek column notes that Ch, ch is rendered via eta (see H) and Kh, kh likewise; Ph, ph is rendered via phi (see F), which this table romanizes f."
+    note "Transcribed visually from the scanned table pages of the digitized BS 2979:1958 (BSI 05-2000 reprint); the source's own text layer for this table stores the Greek letters in a legacy 8-bit font and was not used."
+  }
+}
+
+tests {
+  # every table row, upper and lower
+   "Α" ->  "A"
+   "α" ->  "a"
+   "Β" ->  "B"
+   "β" ->  "b"
+   "Γ" ->  "G"
+   "γ" ->  "g"
+   "Δ" ->  "D"
+   "δ" ->  "d"
+   "Ε" ->  "E"
+   "ε" ->  "e"
+   "Ζ" ->  "Z"
+   "ζ" ->  "z"
+   "Η" ->  "Ē"
+   "η" ->  "ē"
+   "Θ" ->  "Th"
+   "θ" ->  "th"
+   "Ι" ->  "I"
+   "ι" ->  "i"
+   "Κ" ->  "K"
+   "κ" ->  "k"
+   "Λ" ->  "L"
+   "λ" ->  "l"
+   "Μ" ->  "M"
+   "μ" ->  "m"
+   "Ν" ->  "N"
+   "ν" ->  "n"
+   "Ξ" ->  "X"
+   "ξ" ->  "x"
+   "Ο" ->  "O"
+   "ο" ->  "o"
+   "Π" ->  "P"
+   "π" ->  "p"
+   "Ρ" ->  "R"
+   "ρ" ->  "r"
+   "Σ" ->  "S"
+   "σ" ->  "s"
+   "ς" ->  "s"
+   "Τ" ->  "T"
+   "τ" ->  "t"
+   "Υ" ->  "U"
+   "υ" ->  "u"
+   "Φ" ->  "F"
+   "φ" ->  "f"
+   "Χ" ->  "Kh"
+   "χ" ->  "kh"
+   "Ψ" ->  "Ps"
+   "ψ" ->  "ps"
+   "Ω" ->  "Ō"
+   "ω" ->  "ō"
+  # special signs: rough breathing precedes its vowel; disregarded over rho;
+  # smooth breathing not transliterated; iota subscript as positional i
+   "Ἑν" ->  "’En"
+   "Ὁυ" ->  "’Ou"
+   "ῥ" ->  "r"
+   "ἀ" ->  "a"
+   "ῳ" ->  "ōi"
+}
+
+stage main {
+
+  # RULES
+  # special sign (a): rough breathing is disregarded over rho
+  sub {
+    from "ρ"
+    to "r"
+    after "̔"
+  }
+  sub {
+    from "Ρ"
+    to "R"
+    after "̔"
+  }
+  # special sign (a): rough breathing precedes its vowel
+  sub {
+    from "Α"
+    to "’Α"
+    after "̔"
+  }
+  sub {
+    from "α"
+    to "’α"
+    after "̔"
+  }
+  sub {
+    from "Ε"
+    to "’Ε"
+    after "̔"
+  }
+  sub {
+    from "ε"
+    to "’ε"
+    after "̔"
+  }
+  sub {
+    from "Η"
+    to "’Η"
+    after "̔"
+  }
+  sub {
+    from "η"
+    to "’η"
+    after "̔"
+  }
+  sub {
+    from "Ι"
+    to "’Ι"
+    after "̔"
+  }
+  sub {
+    from "ι"
+    to "’ι"
+    after "̔"
+  }
+  sub {
+    from "Ο"
+    to "’Ο"
+    after "̔"
+  }
+  sub {
+    from "ο"
+    to "’ο"
+    after "̔"
+  }
+  sub {
+    from "Υ"
+    to "’Υ"
+    after "̔"
+  }
+  sub {
+    from "υ"
+    to "’υ"
+    after "̔"
+  }
+  sub {
+    from "Ω"
+    to "’Ω"
+    after "̔"
+  }
+  sub {
+    from "ω"
+    to "’ω"
+    after "̔"
+  }
+  # the same special signs in their precomposed Greek-Extended forms
+  sub {
+    from "ῥ"
+    to "r"
+  }
+  sub {
+    from "ῤ"
+    to "r"
+  }
+  sub {
+    from "Ἁ"
+    to "’Α"
+  }
+  sub {
+    from "ἁ"
+    to "’α"
+  }
+  sub {
+    from "Ἑ"
+    to "’Ε"
+  }
+  sub {
+    from "ἑ"
+    to "’ε"
+  }
+  sub {
+    from "Ἡ"
+    to "’Η"
+  }
+  sub {
+    from "ἡ"
+    to "’η"
+  }
+  sub {
+    from "Ἱ"
+    to "’Ι"
+  }
+  sub {
+    from "ἱ"
+    to "’ι"
+  }
+  sub {
+    from "Ὁ"
+    to "’Ο"
+  }
+  sub {
+    from "ὁ"
+    to "’ο"
+  }
+  sub {
+    from "Ὑ"
+    to "’Υ"
+  }
+  sub {
+    from "ὑ"
+    to "’υ"
+  }
+  sub {
+    from "Ὡ"
+    to "’Ω"
+  }
+  sub {
+    from "ὡ"
+    to "’ω"
+  }
+  sub {
+    from "ᾼ"
+    to "Ai"
+  }
+  sub {
+    from "ᾳ"
+    to "ai"
+  }
+  sub {
+    from "ῌ"
+    to "Ēi"
+  }
+  sub {
+    from "ῃ"
+    to "ēi"
+  }
+  sub {
+    from "ῼ"
+    to "Ōi"
+  }
+  sub {
+    from "ῳ"
+    to "ōi"
+  }
+  sub {
+    from "Ἀ"
+    to "Α"
+  }
+  sub {
+    from "ἀ"
+    to "α"
+  }
+  sub {
+    from "Ἐ"
+    to "Ε"
+  }
+  sub {
+    from "ἐ"
+    to "ε"
+  }
+  sub {
+    from "Ἠ"
+    to "Η"
+  }
+  sub {
+    from "ἠ"
+    to "η"
+  }
+  sub {
+    from "Ἰ"
+    to "Ι"
+  }
+  sub {
+    from "ἰ"
+    to "ι"
+  }
+  sub {
+    from "Ὀ"
+    to "Ο"
+  }
+  sub {
+    from "ὀ"
+    to "ο"
+  }
+  sub {
+    from "Ὑ"
+    to "Υ"
+  }
+  sub {
+    from "ὐ"
+    to "υ"
+  }
+  sub {
+    from "Ὠ"
+    to "Ω"
+  }
+  sub {
+    from "ὠ"
+    to "ω"
+  }
+  sub {
+    from "Ἀ"
+    to "Α"
+  }
+  sub {
+    from "ἀ"
+    to "α"
+  }
+  sub {
+    from "Ἀ"
+    to "Α"
+  }
+  sub {
+    from "ἐ"
+    to "ε"
+  }
+  sub {
+    from "Ἠ"
+    to "Η"
+  }
+  sub {
+    from "ἠ"
+    to "η"
+  }
+  sub {
+    from "Ἰ"
+    to "Ι"
+  }
+  sub {
+    from "ἰ"
+    to "ι"
+  }
+  sub {
+    from "Ὀ"
+    to "Ο"
+  }
+  sub {
+    from "ὀ"
+    to "ο"
+  }
+  sub {
+    from "ὐ"
+    to "υ"
+  }
+  sub {
+    from "Ὠ"
+    to "Ω"
+  }
+  sub {
+    from "ὠ"
+    to "ω"
+  }
+
+  # special sign (e): iota subscript is positional i
+  sub {
+    from "ͅ"
+    to "i"
+  }
+  # special sign (b): the smooth breathing sign is not transliterated
+  sub {
+    from "̓"
+    to ""
+  }
+  # remaining rough breathings (not on a vowel handled above)
+  sub {
+    from "̔"
+    to "’"
+  }
+
+  # CHARACTERS
+  parallel {
+    sub "Θ" "Th"
+    sub "Χ" "Kh"
+    sub "Ψ" "Ps"
+    sub "Η" "Ē"
+    sub "Ω" "Ō"
+    sub "Α" "A"
+    sub "Β" "B"
+    sub "Γ" "G"
+    sub "Δ" "D"
+    sub "Ε" "E"
+    sub "Ζ" "Z"
+    sub "Ι" "I"
+    sub "Κ" "K"
+    sub "Λ" "L"
+    sub "Μ" "M"
+    sub "Ν" "N"
+    sub "Ξ" "X"
+    sub "Ο" "O"
+    sub "Π" "P"
+    sub "Ρ" "R"
+    sub "Σ" "S"
+    sub "Τ" "T"
+    sub "Υ" "U"
+    sub "Φ" "F"
+
+    sub "θ" "th"
+    sub "χ" "kh"
+    sub "ψ" "ps"
+    sub "η" "ē"
+    sub "ω" "ō"
+    sub "α" "a"
+    sub "β" "b"
+    sub "γ" "g"
+    sub "δ" "d"
+    sub "ε" "e"
+    sub "ζ" "z"
+    sub "ι" "i"
+    sub "κ" "k"
+    sub "λ" "l"
+    sub "μ" "m"
+    sub "ν" "n"
+    sub "ξ" "x"
+    sub "ο" "o"
+    sub "π" "p"
+    sub "ρ" "r"
+    sub "σ" "s"
+    sub "ς" "s"
+    sub "τ" "t"
+    sub "υ" "u"
+    sub "φ" "f"
+  }
+
+}
+
+}
