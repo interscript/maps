@@ -1,0 +1,242 @@
+system "BGN-PCGN:chv-Cyrl:Latn:2011" {
+
+metadata {
+  authority_id bgnpcgn
+  id 2011
+  language iso-639-2:chv
+  source_script Cyrl
+  destination_script Latn
+  name Romanization of Chuvash (2011)
+  url https://www.gov.uk/government/organisations/permanent-committee-on-geographical-names
+  creation_date 2011
+  confirmation_date 2017-10
+  description {
+    The BGN/PCGN system for Chuvash is designed for use in romanizing names written in the
+    Chuvash Cyrillic alphabet. Chuvash is an official language within Chuvashiya, one of the
+    republics of the Russian Federation.
+  }
+
+  notes {
+    note "The character е should be romanized ye initially, after the vowel characters а, е, ё, и, о, у, ы, э, ю, and я, and after й, ъ, and ь. In all other instances, it should be romanized e."
+    note "The character ё should be romanized yë initially, after the vowel characters а, е, ё, и, о, у, ы, э, ю, and я, and after й, ъ, and ь. In all other instances, it should be romanized ё. Often the diaeresis is not shown in Cyrillic, and in this case, the character should be romanized as ë/yë, as outlined above, if known to be relevant, or otherwise e/ye as described in the first note."
+    note "The source document presents the letter Ҫ/ҫ with the codepoints U+00C7/U+00E7 (Latin C with cedilla) in its text layer; the standard Chuvash Cyrillic codepoints are U+04AA/U+04AB. This map accepts both pairs and romanizes them ś."
+    note "An inventory of letter-diacritic combinations, with their Unicode encoding, in addition to the unmodified letters of the basic Roman script is:"
+    note "Ă (U+0102)  ă (U+0103)  Ë (U+00CB)  ë (U+00EB)  Ĕ (U+0114)  ĕ (U+0115)  Ś (U+015A)  ś (U+015B)  Ü (U+00DC)  ü (U+00FC)  Ė (U+0116)  ė (U+0117)"
+    note "The Romanization columns show only lowercase forms but, when romanizing, uppercase and lowercase Roman letters as appropriate should be used."
+  }
+}
+
+tests {
+  # every table row, upper and lower
+   "А" ->  "A"
+   "а" ->  "a"
+   "Ӑ" ->  "Ă"
+   "ӑ" ->  "ă"
+   "Б" ->  "B"
+   "б" ->  "b"
+   "В" ->  "V"
+   "в" ->  "v"
+   "Г" ->  "G"
+   "г" ->  "g"
+   "Д" ->  "D"
+   "д" ->  "d"
+   "Е" ->  "Ye"
+   "е" ->  "ye"
+   "Ё" ->  "Yë"
+   "ё" ->  "yë"
+   "Ӗ" ->  "Ĕ"
+   "ӗ" ->  "ĕ"
+   "Ж" ->  "Zh"
+   "ж" ->  "zh"
+   "З" ->  "Z"
+   "з" ->  "z"
+   "И" ->  "I"
+   "и" ->  "i"
+   "Й" ->  "Y"
+   "й" ->  "y"
+   "К" ->  "K"
+   "к" ->  "k"
+   "Л" ->  "L"
+   "л" ->  "l"
+   "М" ->  "M"
+   "м" ->  "m"
+   "Н" ->  "N"
+   "н" ->  "n"
+   "О" ->  "O"
+   "о" ->  "o"
+   "П" ->  "P"
+   "п" ->  "p"
+   "Р" ->  "R"
+   "р" ->  "r"
+   "С" ->  "S"
+   "с" ->  "s"
+   "Ç" ->  "Ś"
+   "ç" ->  "ś"
+   "Ҫ" ->  "Ś"
+   "ҫ" ->  "ś"
+   "Т" ->  "T"
+   "т" ->  "t"
+   "У" ->  "U"
+   "у" ->  "u"
+   "Ӳ" ->  "Ü"
+   "ӳ" ->  "ü"
+   "Ф" ->  "F"
+   "ф" ->  "f"
+   "Х" ->  "Kh"
+   "х" ->  "kh"
+   "Ц" ->  "Ts"
+   "ц" ->  "ts"
+   "Ч" ->  "Ch"
+   "ч" ->  "ch"
+   "Ш" ->  "Sh"
+   "ш" ->  "sh"
+   "Щ" ->  "Shch"
+   "щ" ->  "shch"
+   "Ъ" ->  "”"
+   "ъ" ->  "”"
+   "Ы" ->  "Y"
+   "ы" ->  "y"
+   "Ь" ->  "’"
+   "ь" ->  "’"
+   "Э" ->  "Ė"
+   "э" ->  "ė"
+   "Ю" ->  "Yu"
+   "ю" ->  "yu"
+   "Я" ->  "Ya"
+   "я" ->  "ya"
+  # notes 1-2: ye/yë contexts; ӑ is not in the vowel set
+   "бе" ->  "be"
+   "ае" ->  "aye"
+   "йе" ->  "yye"
+   "ъе" ->  "”ye"
+   "ье" ->  "’ye"
+   "ӑе" ->  "ăe"
+   "йё" ->  "yyë"
+   "бё" ->  "bë"
+}
+
+stage main {
+
+  # RULES
+  # notes 1-2: е and ё initially, after the listed vowels, and after й, ъ, ь
+  sub {
+    from boundary + "Е"
+    to "Ye"
+  }
+  sub {
+    from boundary + "е"
+    to "ye"
+  }
+  sub {
+    from "Е"
+    to "Ye"
+    before any("АаЕеЁёИиОоУуЫыЭэЮюЯяЙйЪъЬь")
+  }
+  sub {
+    from "е"
+    to "ye"
+    before any("АаЕеЁёИиОоУуЫыЭэЮюЯяЙйЪъЬь")
+  }
+  sub {
+    from boundary + "Ё"
+    to "Yë"
+  }
+  sub {
+    from boundary + "ё"
+    to "yë"
+  }
+  sub {
+    from "Ё"
+    to "Yë"
+    before any("АаЕеЁёИиОоУуЫыЭэЮюЯяЙйЪъЬь")
+  }
+  sub {
+    from "ё"
+    to "yë"
+    before any("АаЕеЁёИиОоУуЫыЭэЮюЯяЙйЪъЬь")
+  }
+
+  # CHARACTERS
+  parallel {
+    sub "Щ" "Shch"
+    sub "Ӳ" "Ü"
+    sub "Ӗ" "Ĕ"
+    sub "Ӑ" "Ă"
+    sub "Ҫ" "Ś"
+    sub "Ç" "Ś"
+    sub "Ъ" "”"
+    sub "Ы" "Y"
+    sub "Ь" "’"
+    sub "Э" "Ė"
+    sub "Ю" "Yu"
+    sub "Я" "Ya"
+    sub "А" "A"
+    sub "Б" "B"
+    sub "В" "V"
+    sub "Г" "G"
+    sub "Д" "D"
+    sub "Е" "E"
+    sub "Ё" "Ë"
+    sub "Ж" "Zh"
+    sub "З" "Z"
+    sub "И" "I"
+    sub "Й" "Y"
+    sub "К" "K"
+    sub "Л" "L"
+    sub "М" "M"
+    sub "Н" "N"
+    sub "О" "O"
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "У" "U"
+    sub "Ф" "F"
+    sub "Х" "Kh"
+    sub "Ц" "Ts"
+    sub "Ч" "Ch"
+    sub "Ш" "Sh"
+
+    sub "щ" "shch"
+    sub "ӳ" "ü"
+    sub "ӗ" "ĕ"
+    sub "ӑ" "ă"
+    sub "ҫ" "ś"
+    sub "ç" "ś"
+    sub "ъ" "”"
+    sub "ы" "y"
+    sub "ь" "’"
+    sub "э" "ė"
+    sub "ю" "yu"
+    sub "я" "ya"
+    sub "а" "a"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "g"
+    sub "д" "d"
+    sub "е" "e"
+    sub "ё" "ë"
+    sub "ж" "zh"
+    sub "з" "z"
+    sub "и" "i"
+    sub "й" "y"
+    sub "к" "k"
+    sub "л" "l"
+    sub "м" "m"
+    sub "н" "n"
+    sub "о" "o"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "у" "u"
+    sub "ф" "f"
+    sub "х" "kh"
+    sub "ц" "ts"
+    sub "ч" "ch"
+    sub "ш" "sh"
+  }
+
+}
+
+}

@@ -1,0 +1,259 @@
+system "BGN-PCGN:oss-Cyrl:Latn:2009" {
+
+metadata {
+  authority_id bgnpcgn
+  id 2009
+  language iso-639-2:oss
+  source_script Cyrl
+  destination_script Latn
+  name Romanization of Ossetian (2009)
+  url https://www.gov.uk/government/organisations/permanent-committee-on-geographical-names
+  creation_date 2009
+  confirmation_date 2017-11
+  description {
+    The BGN/PCGN system for Ossetian is designed for use in romanizing names written in the
+    Ossetian Cyrillic alphabet. Ossetian is a member of the north-eastern Iranian language
+    group and has over half a million speakers. It has principally been written in a modified
+    Cyrillic alphabet, though a Roman alphabet was used between 1923 and 1938. The
+    BGN/PCGN Romanization System is derived from the correspondences between that Roman
+    alphabet and the Cyrillic alphabet used for Ossetian today, with modifications to suit
+    an English-language user.
+  }
+
+  notes {
+    note "The characters ё, ж, ш, щ, ъ, ь, э, ю, я appear only in loan words and their romanizations in the Ossetian System are therefore as they appear in the BGN/PCGN Romanization System for Russian Cyrillic."
+    note "У has several different functions: in combination with another vowel (either preceding or following) У is a semi-vowel and should be romanized w (e.g. Дзау → Dzaw (=Java)); У also serves to labialize the consonants Г, Гъ, К, Къ, Х and Хъ and should also be romanized w after each of these (e.g. Гуырдзы → Gwyrdzy (=Georgia)); elsewhere У should be romanized u (e.g. Республикӕ → Respublikæ (=Republic))."
+    note "The source document prints the third example output as Respublikӕ, with the Cyrillic ӕ where the Roman æ (U+00E6) belongs; this map applies the table, which romanizes ӕ as æ."
+    note "Ъ should be represented with ” (U+201D), except as it occurs in the digraph combinations гъ, къ, пъ, тъ, хъ or чъ representing the glottal consonants as shown separately in the table."
+    note "An inventory of letter-diacritic combinations, with their Unicode encoding, in addition to the unmodified letters of the basic Roman script is:"
+    note "All apostrophes appearing in romanization are U+2019"
+    note "Æ (U+00C6)  æ (U+00E6)  Ë (U+00CB)  ë (U+00EB)"
+    note "The Roman-script columns show only lowercase forms but, when applying the table, uppercase and lowercase Roman letters as appropriate should be used."
+  }
+}
+
+tests {
+  # every table row, upper and lower
+   "А" ->  "A"
+   "а" ->  "a"
+   "Ӕ" ->  "Æ"
+   "ӕ" ->  "æ"
+   "Б" ->  "B"
+   "б" ->  "b"
+   "В" ->  "V"
+   "в" ->  "v"
+   "Г" ->  "G"
+   "г" ->  "g"
+   "Гъ" ->  "Gh"
+   "гъ" ->  "gh"
+   "Д" ->  "D"
+   "д" ->  "d"
+   "Дж" ->  "J"
+   "дж" ->  "j"
+   "Дз" ->  "Dz"
+   "дз" ->  "dz"
+   "Е" ->  "E"
+   "е" ->  "e"
+   "Ё" ->  "Ë"
+   "ё" ->  "ë"
+   "Ж" ->  "Zh"
+   "ж" ->  "zh"
+   "З" ->  "Z"
+   "з" ->  "z"
+   "И" ->  "I"
+   "и" ->  "i"
+   "Й" ->  "Y"
+   "й" ->  "y"
+   "К" ->  "K"
+   "к" ->  "k"
+   "Къ" ->  "K’"
+   "къ" ->  "k’"
+   "Л" ->  "L"
+   "л" ->  "l"
+   "М" ->  "M"
+   "м" ->  "m"
+   "Н" ->  "N"
+   "н" ->  "n"
+   "О" ->  "O"
+   "о" ->  "o"
+   "П" ->  "P"
+   "п" ->  "p"
+   "Пъ" ->  "P’"
+   "пъ" ->  "p’"
+   "Р" ->  "R"
+   "р" ->  "r"
+   "С" ->  "S"
+   "с" ->  "s"
+   "Т" ->  "T"
+   "т" ->  "t"
+   "Тъ" ->  "T’"
+   "тъ" ->  "t’"
+   "Ф" ->  "F"
+   "ф" ->  "f"
+   "Х" ->  "Kh"
+   "х" ->  "kh"
+   "Хъ" ->  "Q"
+   "хъ" ->  "q"
+   "Ц" ->  "Ts"
+   "ц" ->  "ts"
+   "Цъ" ->  "Ts’"
+   "цъ" ->  "ts’"
+   "Ч" ->  "Ch"
+   "ч" ->  "ch"
+   "Чъ" ->  "Ch’"
+   "чъ" ->  "ch’"
+   "Ш" ->  "Sh"
+   "ш" ->  "sh"
+   "Щ" ->  "Shch"
+   "щ" ->  "shch"
+   "Ъ" ->  "”"
+   "ъ" ->  "”"
+   "Ы" ->  "Y"
+   "ы" ->  "y"
+   "Ь" ->  "’"
+   "ь" ->  "’"
+   "Э" ->  "E"
+   "э" ->  "e"
+   "Ю" ->  "Yu"
+   "ю" ->  "yu"
+   "Я" ->  "Ya"
+   "я" ->  "ya"
+  # note 2: three-way У; source examples
+   "Дзау" ->  "Dzaw"
+   "Гуырдзы" ->  "Gwyrdzy"
+   "Республикӕ" ->  "Respublikæ"
+   "у" ->  "u"
+   "уа" ->  "wa"
+   "ау" ->  "aw"
+}
+
+stage main {
+
+  # RULES
+  # note 2: У is w adjacent to another vowel, after the labializing
+  # consonants Г, Гъ, К, Къ, Х and Хъ, and u elsewhere
+  sub {
+    from "У"
+    to "W"
+    before any("АаЕеЁёИиОоУуЫыЭэЮюЯяӔӕ")
+  }
+  sub {
+    from "у"
+    to "w"
+    before any("АаЕеЁёИиОоУуЫыЭэЮюЯяӔӕ")
+  }
+  sub {
+    from "У"
+    to "W"
+    after any("АаЕеЁёИиОоУуЫыЭэЮюЯяӔӕ")
+  }
+  sub {
+    from "у"
+    to "w"
+    after any("АаЕеЁёИиОоУуЫыЭэЮюЯяӔӕ")
+  }
+  sub {
+    from "ъу"
+    to "ъw"
+    before any("ГгКкХх")
+  }
+  sub {
+    from "у"
+    to "w"
+    before any("ГгКкХх")
+  }
+
+  # CHARACTERS
+  parallel {
+    sub "Щ" "Shch"
+    sub "Гъ" "Gh"
+    sub "Дж" "J"
+    sub "Дз" "Dz"
+    sub "Къ" "K’"
+    sub "Пъ" "P’"
+    sub "Тъ" "T’"
+    sub "Хъ" "Q"
+    sub "Цъ" "Ts’"
+    sub "Чъ" "Ch’"
+    sub "Ӕ" "Æ"
+    sub "Ы" "Y"
+    sub "Ъ" "”"
+    sub "Ь" "’"
+    sub "Ё" "Ë"
+    sub "Ж" "Zh"
+    sub "Ш" "Sh"
+    sub "Ю" "Yu"
+    sub "Я" "Ya"
+    sub "А" "A"
+    sub "Б" "B"
+    sub "В" "V"
+    sub "Г" "G"
+    sub "Д" "D"
+    sub "Е" "E"
+    sub "З" "Z"
+    sub "И" "I"
+    sub "Й" "Y"
+    sub "К" "K"
+    sub "Л" "L"
+    sub "М" "M"
+    sub "Н" "N"
+    sub "О" "O"
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "У" "U"
+    sub "Ф" "F"
+    sub "Х" "Kh"
+    sub "Ц" "Ts"
+    sub "Ч" "Ch"
+    sub "Э" "E"
+
+    sub "щ" "shch"
+    sub "гъ" "gh"
+    sub "дж" "j"
+    sub "дз" "dz"
+    sub "къ" "k’"
+    sub "пъ" "p’"
+    sub "тъ" "t’"
+    sub "хъ" "q"
+    sub "цъ" "ts’"
+    sub "чъ" "ch’"
+    sub "ӕ" "æ"
+    sub "ы" "y"
+    sub "ъ" "”"
+    sub "ь" "’"
+    sub "ё" "ë"
+    sub "ж" "zh"
+    sub "ш" "sh"
+    sub "ю" "yu"
+    sub "я" "ya"
+    sub "а" "a"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "g"
+    sub "д" "d"
+    sub "е" "e"
+    sub "з" "z"
+    sub "и" "i"
+    sub "й" "y"
+    sub "к" "k"
+    sub "л" "l"
+    sub "м" "m"
+    sub "н" "n"
+    sub "о" "o"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "у" "u"
+    sub "ф" "f"
+    sub "х" "kh"
+    sub "ц" "ts"
+    sub "ч" "ch"
+    sub "э" "e"
+  }
+
+}
+
+}

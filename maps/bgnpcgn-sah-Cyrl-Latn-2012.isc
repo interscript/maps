@@ -6,177 +6,252 @@ metadata {
   language iso-639-2:sah
   source_script Cyrl
   destination_script Latn
-  name Romanization of Yakut (BGN/PCGN 2012 System)
-  url https://geonames.nga.mil/gns/html/Romanization/ROMANIZATION%20OF%20YAKUT.pdf
+  name Romanization of Yakut (2012)
+  url https://www.gov.uk/government/organisations/permanent-committee-on-geographical-names
   creation_date 2012
   confirmation_date 2017-11
-  description {    Yakut, or Sakha, is a Turkic language spoken by the Yakut people of the Sakha (Yakutiya)
-    Republic of the Russian Federation. The BGN/PCGN 2012 System romanizes names written in
-    the Yakut Cyrillic alphabet, whose letters ҕ, ҥ, ө, ү and the letter combinations дь and
-    нь distinguish it from the Russian alphabet.
+  description {
+    Yakut, or Sakha, is a Turkic language spoken by the Yakut people of the Sakha
+    (Yakutiya) Republic of the Russian Federation. The BGN/PCGN system romanizes names
+    written in the Yakut Cyrillic alphabet.
   }
 
   notes {
-    note "Rows В, Ж, З, Ф, Ш, Щ, Ъ, Ь, Е, Ё, Ю and Я occur only in loanwords, and are represented in the same style as in the BGN/PCGN Romanization System for Russian."
-    note "Е and Ё should be Romanized ye or yë word-initially and after vowels. In all other instances, they should be Romanized e or ë."
-    note "An inventory of letter-diacritic combinations, with their Unicode encoding, in addition to the unmodified letters of the basic Roman script is:\n\nAll apostrophes appearing in romanization are U+2019\n\nË (U+00CB) ë (U+00EB)\nÖ (U+00D6) ö (U+00F6)\nÜ (U+00DC) ü (U+00FC)"
+    note "The characters в, ж, з, ф, ш, щ, ъ, ь, ю and я occur only in loanwords, and are represented in the same style as in the BGN/PCGN Romanization System for Russian."
+    note "Е and Ё should be romanized ye and yë word-initially and after vowels. In all other instances, they should be romanized e and ë."
+    note "The source document pairs the capital Ѳ (text-layer codepoint U+0472, FITA) with the lowercase ө (U+04E9); the standard Yakut capital is Ө (U+04E8). This map accepts both capitals and romanizes them Ö."
+    note "The source document prints the lowercase form of НЬ as the ligature њ (U+045A); this map maps нь (U+043D+044C), Нь, НЬ and њ to ny."
+    note "An inventory of letter-diacritic combinations, with their Unicode encoding, in addition to the unmodified letters of the basic Roman script is:"
+    note "All apostrophes appearing in romanization are U+2019"
+    note "Ë (U+00CB)  ë (U+00EB)  Ö (U+00D6)  ö (U+00F6)  Ü (U+00DC)  ü (U+00FC)"
     note "The Roman-script columns show only lowercase forms but, when applying the table, uppercase and lowercase Roman letters as appropriate should be used."
-    note "Source document glyph notes: the source table prints row 21’s capital with the Cyrillic Fita glyph Ѳ (U+0472) — the Yakut letter is Ө (U+04E8), whose lowercase ө (U+04E9) the table prints correctly; this map encodes Ө/ө (U+04E8/U+04E9). The source table prints row 19’s lowercase with the precomposed Serbian glyph њ (U+045A) — the Yakut letter combination is нь (U+043D+U+044C), matching the uppercase НЬ the table prints; this map encodes the combination Нь/нь (U+041D+U+042C / U+043D+U+044C)."
   }
 }
 
 tests {
-   "Дьокуускай" ->  "Djokuuskay"
-   "Саха сирэ" ->  "Sakha sire"
-   "Ньурба" ->  "Nyurba"
-   "Ытык-Күөл" ->  "Ytyk-Küöl"
-   "Туймаада" ->  "Tuymaada"
-   "Өлүөхүмэ" ->  "Ölüökhüme"
-   "тыаҕа" ->  "tyagha"
-   "күн" ->  "kün"
-   "дьон" ->  "djon"
-   "тыл" ->  "tyl"
-   "уу" ->  "uu"
-   "сайын" ->  "sayyn"
-   "үрэх" ->  "ürekh"
-   "өрөспүүбүлүкэ" ->  "öröspüübülüke"
-   "Европа" ->  "Yevropa"
-   "телефон" ->  "telefon"
-   "ёлка" ->  "yëlka"
-   "объект" ->  "ob”ekt"
-}
-
-aliases {
-  sah_vowel = any("АаЕеЁёИиОоУуҮүЫыЭэЮюЯяӨө")
+  # every table row, upper and lower
+   "А" ->  "A"
+   "а" ->  "a"
+   "Б" ->  "B"
+   "б" ->  "b"
+   "В" ->  "V"
+   "в" ->  "v"
+   "Г" ->  "G"
+   "г" ->  "g"
+   "Ҕ" ->  "Gh"
+   "ҕ" ->  "gh"
+   "Д" ->  "D"
+   "д" ->  "d"
+   "ДЬ" ->  "DJ"
+   "Дь" ->  "Dj"
+   "дь" ->  "dj"
+   "Е" ->  "Ye"
+   "е" ->  "ye"
+   "Ё" ->  "Yë"
+   "ё" ->  "yë"
+   "Ж" ->  "Zh"
+   "ж" ->  "zh"
+   "З" ->  "Z"
+   "з" ->  "z"
+   "И" ->  "I"
+   "и" ->  "i"
+   "Й" ->  "Y"
+   "й" ->  "y"
+   "К" ->  "K"
+   "к" ->  "k"
+   "Л" ->  "L"
+   "л" ->  "l"
+   "М" ->  "M"
+   "м" ->  "m"
+   "Н" ->  "N"
+   "н" ->  "n"
+   "Ҥ" ->  "Ng"
+   "ҥ" ->  "ng"
+   "НЬ" ->  "NY"
+   "Нь" ->  "Ny"
+   "нь" ->  "ny"
+   "њ" ->  "ny"
+   "О" ->  "O"
+   "о" ->  "o"
+   "Ѳ" ->  "Ö"
+   "Ө" ->  "Ö"
+   "ө" ->  "ö"
+   "П" ->  "P"
+   "п" ->  "p"
+   "Р" ->  "R"
+   "р" ->  "r"
+   "С" ->  "S"
+   "с" ->  "s"
+   "Һ" ->  "H"
+   "һ" ->  "h"
+   "Т" ->  "T"
+   "т" ->  "t"
+   "У" ->  "U"
+   "у" ->  "u"
+   "Ү" ->  "Ü"
+   "ү" ->  "ü"
+   "Ф" ->  "F"
+   "ф" ->  "f"
+   "Х" ->  "Kh"
+   "х" ->  "kh"
+   "Ц" ->  "Ts"
+   "ц" ->  "ts"
+   "Ч" ->  "Ch"
+   "ч" ->  "ch"
+   "Ш" ->  "Sh"
+   "ш" ->  "sh"
+   "Щ" ->  "Shch"
+   "щ" ->  "shch"
+   "Ъ" ->  "”"
+   "ъ" ->  "”"
+   "Ы" ->  "Y"
+   "ы" ->  "y"
+   "Ь" ->  "’"
+   "ь" ->  "’"
+   "Э" ->  "E"
+   "э" ->  "e"
+   "Ю" ->  "Yu"
+   "ю" ->  "yu"
+   "Я" ->  "Ya"
+   "я" ->  "ya"
+  # notes 1-2: ye/yë word-initially and after vowels; e/ë elsewhere
+   "бе" ->  "be"
+   "үе" ->  "üye"
+   "ое" ->  "oye"
+   "кё" ->  "kë"
+   "үё" ->  "üyë"
 }
 
 stage main {
 
   # RULES
-  # note[2]: Е/Ё romanized ye/yë word-initially and after vowels,
-  # e/ë elsewhere. The sub rules prepend Y/y and leave the letter
-  # itself to the CHARACTERS pass below.
+  # notes 1-2: е and ё word-initially and after vowels
   sub {
-    from "Е"
-    to "YЕ"
-    before sah_vowel
+    from boundary + "Е"
+    to "Ye"
+  }
+  sub {
+    from boundary + "е"
+    to "ye"
   }
   sub {
     from "Е"
-    to "Yе"
-    before boundary
+    to "Ye"
+    before any("АаЕеЁёИиОоУуҮүЫыЭэЮюЯя")
   }
   sub {
     from "е"
-    to "yе"
-    before sah_vowel
+    to "ye"
+    before any("АаЕеЁёИиОоУуҮүЫыЭэЮюЯя")
   }
   sub {
-    from "е"
-    to "yе"
-    before boundary
+    from boundary + "Ё"
+    to "Yë"
+  }
+  sub {
+    from boundary + "ё"
+    to "yë"
   }
   sub {
     from "Ё"
-    to "YЁ"
-    before sah_vowel
-  }
-  sub {
-    from "Ё"
-    to "Yё"
-    before boundary
+    to "Yë"
+    before any("АаЕеЁёИиОоУуҮүЫыЭэЮюЯя")
   }
   sub {
     from "ё"
-    to "yё"
-    before sah_vowel
-  }
-  sub {
-    from "ё"
-    to "yё"
-    before boundary
+    to "yë"
+    before any("АаЕеЁёИиОоУуҮүЫыЭэЮюЯя")
   }
 
   # CHARACTERS
   parallel {
-    sub "А" "A"
-    sub "а" "a"
-    sub "Б" "B"
-    sub "б" "b"
-    sub "В" "V"
-    sub "в" "v"
-    sub "Г" "G"
-    sub "г" "g"
-    sub "Ҕ" "Gh"
-    sub "ҕ" "gh"
-    sub "Д" "D"
-    sub "д" "d"
+    sub "ДЬ" "DJ"
     sub "Дь" "Dj"
-    sub "дь" "dj"
-    sub "Е" "E"
-    sub "е" "e"
-    sub "Ё" "Ë"
-    sub "ё" "ë"
-    sub "Ж" "Zh"
-    sub "ж" "zh"
-    sub "З" "Z"
-    sub "з" "z"
-    sub "И" "I"
-    sub "и" "i"
-    sub "Й" "Y"
-    sub "й" "y"
-    sub "К" "K"
-    sub "к" "k"
-    sub "Л" "L"
-    sub "л" "l"
-    sub "М" "M"
-    sub "м" "m"
-    sub "Н" "N"
-    sub "н" "n"
-    sub "Ҥ" "Ng"
-    sub "ҥ" "ng"
+    sub "НЬ" "NY"
     sub "Нь" "Ny"
-    sub "нь" "ny"
-    sub "О" "O"
-    sub "о" "o"
+    sub "Ҕ" "Gh"
+    sub "Ҥ" "Ng"
+    sub "Ѳ" "Ö"
     sub "Ө" "Ö"
-    sub "ө" "ö"
-    sub "П" "P"
-    sub "п" "p"
-    sub "Р" "R"
-    sub "р" "r"
-    sub "С" "S"
-    sub "с" "s"
-    sub "Т" "T"
-    sub "т" "t"
-    sub "У" "U"
-    sub "у" "u"
     sub "Ү" "Ü"
-    sub "ү" "ü"
-    sub "Ф" "F"
-    sub "ф" "f"
-    sub "Х" "Kh"
-    sub "х" "kh"
-    sub "Ц" "Ts"
-    sub "ц" "ts"
-    sub "Ч" "Ch"
-    sub "ч" "ch"
-    sub "Ш" "Sh"
-    sub "ш" "sh"
+    sub "Һ" "H"
     sub "Щ" "Shch"
-    sub "щ" "shch"
-    sub "Ъ" "”"
-    sub "ъ" "”"
     sub "Ы" "Y"
-    sub "ы" "y"
+    sub "Ъ" "”"
     sub "Ь" "’"
-    sub "ь" "’"
-    sub "Э" "E"
-    sub "э" "e"
     sub "Ю" "Yu"
-    sub "ю" "yu"
     sub "Я" "Ya"
+    sub "А" "A"
+    sub "Б" "B"
+    sub "В" "V"
+    sub "Г" "G"
+    sub "Д" "D"
+    sub "Е" "E"
+    sub "Ё" "Ë"
+    sub "Ж" "Zh"
+    sub "З" "Z"
+    sub "И" "I"
+    sub "Й" "Y"
+    sub "К" "K"
+    sub "Л" "L"
+    sub "М" "M"
+    sub "Н" "N"
+    sub "О" "O"
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "У" "U"
+    sub "Ф" "F"
+    sub "Х" "Kh"
+    sub "Ц" "Ts"
+    sub "Ч" "Ch"
+    sub "Ш" "Sh"
+    sub "Э" "E"
+
+    sub "дь" "dj"
+    sub "нь" "ny"
+    sub "њ" "ny"
+    sub "ҕ" "gh"
+    sub "ҥ" "ng"
+    sub "ө" "ö"
+    sub "ү" "ü"
+    sub "һ" "h"
+    sub "щ" "shch"
+    sub "ы" "y"
+    sub "ъ" "”"
+    sub "ь" "’"
+    sub "ю" "yu"
     sub "я" "ya"
+    sub "а" "a"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "g"
+    sub "д" "d"
+    sub "е" "e"
+    sub "ё" "ë"
+    sub "ж" "zh"
+    sub "з" "z"
+    sub "и" "i"
+    sub "й" "y"
+    sub "к" "k"
+    sub "л" "l"
+    sub "м" "m"
+    sub "н" "n"
+    sub "о" "o"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "у" "u"
+    sub "ф" "f"
+    sub "х" "kh"
+    sub "ц" "ts"
+    sub "ч" "ch"
+    sub "ш" "sh"
+    sub "э" "e"
   }
+
 }
+
 }
