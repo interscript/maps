@@ -1,0 +1,402 @@
+system "DIN:ara-Arab:Latn:31635-2011" {
+
+metadata {
+  authority_id din
+  id 31635-2011
+  language iso-639-2:ara
+  source_script Arab
+  destination_script Latn
+  name "DIN 31635:2011-07 Transliteration des arabischen Alphabets"
+  url https://www.din.de
+  creation_date 2011
+  confirmation_date 2011-07
+  description {    DIN 31635:2011-07, section 6: transliteration of the Arabic alphabet, applicable
+    to classical and modern standard Arabic. Based on the 1935 recommendation of the
+    International Orientalists' Congress and nearly identical to ISO 233:1984, with
+    additional provisions in the notes for transliteration work. The norm's Persian,
+    Kurdish and Urdu sections are separate maps; its Ottoman-Turkish section gives
+    references only.
+  }
+
+  notes {
+    note "Vowel system (6.1.1): short vowels a, i, u; long vowels a-macron, i-macron, u-macron; diphthongs au, ai."
+    note "The Arabic article (6.1.2): the article forms are transliterated only with the short vowel a; the assimilation of the article consonant l to the sun letters is expressed (al-, ad-, an-, ar-, as-, at-, az- and the diacritic-modified ad-, adh-, at-, ath-, as-, ash-, az-); the article is always joined to the following word by a hyphen. This map renders the word-initial article with the hyphen and the sun-letter assimilation; the elision of the article's a after a vowel-final preceding word (rule d) and the loss of length in a preceding long vowel (rule e) require the vocalization of the preceding word and are not implemented; the exception of the word Allah is lexical and not implemented."
+    note "Individual remarks (6.1.3): (a) sukun is never transliterated; (b) tashdid is expressed by doubling the consonant under the shadda, this map implements the doubled renderings for every consonant letter, while the shadda combinations with waw (-uw, -auw-) and ya (-iy, -aiy-, word-finally -i after i) are vocalization-dependent and not implemented; (c) the rendering of alif is omitted word-initially; (d) the rendering of hamza is omitted word-initially; (e) the hamza carriers alif, waw and ya are not transliterated as such - the hamza renders as the right half-ring and the carrier letter contributes nothing, so hamza-plus-short-vowel-mark renders the mark's vowel; (f) alif with madda renders as a-macron, word-internally as right-half-ring plus a-macron; (g) alif maqsura renders as a-macron; (h) hamzat al-wasl elision behavior requires the preceding context's vocalization and is not implemented; (i) the pausal form is transliterated: nunation and short final vowels fall, with the exception of the accusative ending -an of indeterminate nouns and adjectives - this map renders fathatan as an and the other tanwin forms as empty, per the remark's default; (j) the completion of case endings of verbs, pronouns, suffixes and prepositions is grammatical and not implemented; (k) the hyphenation rules for particles are syntactic and not implemented; (l) ta marbuta after the long vowel a-macron renders h, otherwise it is not expressed (the construct-state -t is morphological and not implemented)."
+    note "Waw and ya (rows 27 and 28) render as consonant w / y by default; over vocalized input the long-vowel renderings u-macron / i-macron apply via the vowel-mark combinations. Unvocalized text is an underspecified skeleton: the waw/ya long-vowel readings, the article elision and the pausal forms are resolved by a vocalization model, after which this map applies (composition, not duplication)."
+    note "Transliteration is not aimed at being reversible (section 4); for alphabetical ordering the diacritics and apostrophes are not considered (section 5)."
+  }
+}
+
+tests {
+  # every table row
+   "ء" ->  ""  # word-initial hamza is not rendered (6.1.3 d)
+   "ا" ->  ""  # word-initial alif is not rendered (6.1.3 c)
+   "بَاب" ->  "bāb"
+   "ب" ->  "b"
+   "ت" ->  "t"
+   "ث" ->  "ṯ"
+   "ج" ->  "ǧ"
+   "ح" ->  "ḥ"
+   "خ" ->  "ḫ"
+   "د" ->  "d"
+   "ذ" ->  "ḏ"
+   "ر" ->  "r"
+   "ز" ->  "z"
+   "س" ->  "s"
+   "ش" ->  "š"
+   "ص" ->  "ṣ"
+   "ض" ->  "ḍ"
+   "ط" ->  "ṭ"
+   "ظ" ->  "ẓ"
+   "ع" ->  "ʿ"
+   "غ" ->  "ġ"
+   "ف" ->  "f"
+   "ق" ->  "q"
+   "ک" ->  "k"
+   "ك" ->  "k"
+   "ل" ->  "l"
+   "م" ->  "m"
+   "ن" ->  "n"
+   "ه" ->  "h"
+   "ھ" ->  "h"
+   "و" ->  "w"
+   "ي" ->  "y"
+   "ى" ->  "ā"
+   "آ" ->  "ā"
+   "رَآ" ->  "raʾā"
+  # vowel signs
+   "بَ" ->  "ba"
+   "بِ" ->  "bi"
+   "بُ" ->  "bu"
+   "بً" ->  "ban"
+   "وُ" ->  "ū"
+   "يِ" ->  "ī"
+  # remarks: anlaut alif and hamza omitted; madda; carriers; sukun; taa marbuta
+   "اِبْن" ->  "ibn"
+   "أَسَد" ->  "asad"
+   "آدَم" ->  "ādam"
+   "رَأَى" ->  "raʾā"
+   "سَأَلَ" ->  "saʾala"
+   "شَمْس" ->  "šams"
+   "مَسْجِد" ->  "masǧid"
+   "حَائِط" ->  "ḥāʾiṭ"
+   "قَالَ" ->  "qāla"
+   "كِتَاب" ->  "kitāb"
+   "كُتُب" ->  "kutub"
+   "صَلَاة" ->  "ṣalāh"
+   "فِرْقَة" ->  "firqa"
+  # article with sun letters and moon letters
+   "الشَّمْس" ->  "aš-šams"
+   "الْكِتَاب" ->  "al-kitāb"
+   "الْقَمَر" ->  "al-qamar"
+   "التِّلْمِيذ" ->  "at-tilmīḏ"
+   "الرَّجُل" ->  "ar-raǧul"
+}
+
+stage main {
+
+  # RULES
+  # 6.1.3 (a): sukun is never transliterated; removing it first keeps the
+  # article rules adjacent
+  sub {
+    from "ْ"
+    to ""
+  }
+  # mark-order normalization: the shadda belongs to its consonant even when
+  # a short-vowel sign is typed between them
+  sub {
+    from "َّ"
+    to "َّ"
+  }
+  sub {
+    from "ِّ"
+    to "ِّ"
+  }
+  sub {
+    from "ُّ"
+    to "ُّ"
+  }
+
+  # long vowels: the short-vowel sign plus the lengthening letter merge
+  sub {
+    from "َا"
+    to "ā"
+  }
+  sub {
+    from "َى"
+    to "ā"
+  }
+  sub {
+    from "ِي"
+    to "ī"
+  }
+  sub {
+    from "ُو"
+    to "ū"
+  }
+  # diphthongs
+  sub {
+    from "َو"
+    to "aw"
+  }
+  sub {
+    from "َي"
+    to "ay"
+  }
+
+  # 6.1.2: the word-initial article with sun-letter assimilation, hyphenated;
+  # the shadda form doubles the assimilated consonant
+  sub {
+    from boundary + "الثّ"
+    to "aṯ-ṯ"
+  }
+  sub {
+    from boundary + "الذّ"
+    to "aḏ-ḏ"
+  }
+  sub {
+    from boundary + "الصّ"
+    to "aṣ-ṣ"
+  }
+  sub {
+    from boundary + "الضّ"
+    to "aḍ-ḍ"
+  }
+  sub {
+    from boundary + "الطّ"
+    to "aṭ-ṭ"
+  }
+  sub {
+    from boundary + "الظّ"
+    to "aẓ-ẓ"
+  }
+  sub {
+    from boundary + "الشّ"
+    to "aš-š"
+  }
+  sub {
+    from boundary + "السّ"
+    to "as-s"
+  }
+  sub {
+    from boundary + "الزّ"
+    to "az-z"
+  }
+  sub {
+    from boundary + "الرّ"
+    to "ar-r"
+  }
+  sub {
+    from boundary + "الدّ"
+    to "ad-d"
+  }
+  sub {
+    from boundary + "التّ"
+    to "at-t"
+  }
+  sub {
+    from boundary + "النّ"
+    to "an-n"
+  }
+  sub {
+    from boundary + "اللّ"
+    to "al-l"
+  }
+  sub {
+    from boundary + "ال" + "ث"
+    to "aṯ-"
+  }
+  sub {
+    from boundary + "ال" + "ذ"
+    to "aḏ-"
+  }
+  sub {
+    from boundary + "ال" + "ص"
+    to "aṣ-"
+  }
+  sub {
+    from boundary + "ال" + "ض"
+    to "aḍ-"
+  }
+  sub {
+    from boundary + "ال" + "ط"
+    to "aṭ-"
+  }
+  sub {
+    from boundary + "ال" + "ظ"
+    to "aẓ-"
+  }
+  sub {
+    from boundary + "ال" + "ش"
+    to "aš-"
+  }
+  sub {
+    from boundary + "ال" + "س"
+    to "as-"
+  }
+  sub {
+    from boundary + "ال" + "ز"
+    to "az-"
+  }
+  sub {
+    from boundary + "ال" + "ر"
+    to "ar-"
+  }
+  sub {
+    from boundary + "ال" + "د"
+    to "ad-"
+  }
+  sub {
+    from boundary + "ال" + "ت"
+    to "at-"
+  }
+  sub {
+    from boundary + "ال" + "ن"
+    to "an-"
+  }
+  sub {
+    from boundary + "ال" + "ل"
+    to "al-"
+  }
+  sub {
+    from boundary + "ال"
+    to "al-"
+  }
+
+  # 6.1.3 (c) and (d): alif and hamza word-initially are not rendered; the
+  # hamza carriers contribute nothing of their own
+  sub {
+    from boundary + "ا"
+    to ""
+  }
+  sub {
+    from boundary + "ء"
+    to ""
+  }
+  sub {
+    from boundary + "أ"
+    to ""
+  }
+  sub {
+    from boundary + "إ"
+    to ""
+  }
+  sub {
+    from boundary + "ؤ"
+    to ""
+  }
+  sub {
+    from boundary + "ئ"
+    to ""
+  }
+
+  # 6.1.3 (f): alif with madda is a-macron word-initially,
+  # right-half-ring plus a-macron word-internally
+  sub {
+    from boundary + "آ"
+    to "ā"
+  }
+  sub {
+    from "آ"
+    to "ʾā"
+  }
+
+  # 6.1.3 (l): taa marbuta renders h after the long vowel a-macron,
+  # otherwise it is not expressed
+  sub {
+    from "ة"
+    to "h"
+    before any("اā")
+  }
+  sub {
+    from "ة"
+    to ""
+  }
+
+  # CHARACTERS
+  parallel {
+    sub "بّ" "bb"
+    sub "تّ" "tt"
+    sub "ثّ" "ṯṯ"
+    sub "جّ" "ǧǧ"
+    sub "حّ" "ḥḥ"
+    sub "خّ" "ḫḫ"
+    sub "دّ" "dd"
+    sub "ذّ" "ḏḏ"
+    sub "رّ" "rr"
+    sub "زّ" "zz"
+    sub "سّ" "ss"
+    sub "شّ" "šš"
+    sub "صّ" "ṣṣ"
+    sub "ضّ" "ḍḍ"
+    sub "طّ" "ṭṭ"
+    sub "ظّ" "ẓẓ"
+    sub "عّ" "ʿʿ"
+    sub "غّ" "ġġ"
+    sub "فّ" "ff"
+    sub "قّ" "qq"
+    sub "کّ" "kk"
+    sub "كّ" "kk"
+    sub "لّ" "ll"
+    sub "مّ" "mm"
+    sub "نّ" "nn"
+    sub "هّ" "hh"
+    sub "وّ" "ww"
+    sub "يّ" "yy"
+    sub "وُ" "ū"
+    sub "يِ" "ī"
+    sub "أَ" "ʾa"
+    sub "إِ" "ʾi"
+    sub "ؤُ" "ʾu"
+    sub "ئِ" "ʾi"
+    sub "أُ" "ʾu"
+    sub "ئَ" "ʾa"
+    sub "ء" "ʾ"
+    sub "أ" "ʾ"
+    sub "إ" "ʾ"
+    sub "ؤ" "ʾ"
+    sub "ئ" "ʾ"
+    sub "ا" "ā"
+    sub "ب" "b"
+    sub "ت" "t"
+    sub "ث" "ṯ"
+    sub "ج" "ǧ"
+    sub "ح" "ḥ"
+    sub "خ" "ḫ"
+    sub "د" "d"
+    sub "ذ" "ḏ"
+    sub "ر" "r"
+    sub "ز" "z"
+    sub "س" "s"
+    sub "ش" "š"
+    sub "ص" "ṣ"
+    sub "ض" "ḍ"
+    sub "ط" "ṭ"
+    sub "ظ" "ẓ"
+    sub "ع" "ʿ"
+    sub "غ" "ġ"
+    sub "ف" "f"
+    sub "ق" "q"
+    sub "ک" "k"
+    sub "ك" "k"
+    sub "ل" "l"
+    sub "م" "m"
+    sub "ن" "n"
+    sub "ه" "h"
+    sub "ھ" "h"
+    sub "و" "w"
+    sub "ي" "y"
+    sub "ى" "ā"
+    sub "َ" "a"
+    sub "ِ" "i"
+    sub "ُ" "u"
+    sub "ً" "an"
+    sub "ٌ" ""
+    sub "ٍ" ""
+    sub "ّ" ""
+    sub "ٰ" "ā"
+  }
+
+}
+
+}
