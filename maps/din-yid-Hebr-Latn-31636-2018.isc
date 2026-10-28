@@ -1,0 +1,208 @@
+system "DIN:yid-Hebr:Latn:31636-2018" {
+
+metadata {
+  authority_id din
+  id 31636-2018-yid
+  language iso-639-2:yid
+  source_script Hebr
+  destination_script Latn
+  name "DIN 31636:2018-10 Information und Dokumentation - Umschrift des hebraeischen Alphabets (jiddische Spalte)"
+  url https://www.din.de
+  creation_date 2018
+  confirmation_date 2018-10
+  description {    Information and documentation -- Romanization of the Hebrew alphabet, Yiddish
+    column. 2018-10 edition, replacing DIN 31636:2011-01. This map implements the
+    Yiddish column of Table 1 with the Yiddish vowel table (Table 4) and the Yiddish
+    notes (section 9) of the norm. The Hebrew column is a separate map.
+  }
+
+  notes {
+    note "Consonants (Table 1, Yiddish column): alef is rendered with the right half-ring U+02BE or as the vowel a/o via the vowel spellings; bet with dagesh b, bet v; gimel g; dalet d; he h; vav v with dot below (U+1E7F); double vav (U+05F0) is annotated als Konsonant and shares the row's consonantal rendering; zayin z; het h with dot below (U+1E25); tet t with dot below (U+1E6D); yod y; double yod (U+05F2) is annotated als Konsonant when consonantal, and as a vowel per Table 4 (ay or ey); kaf with dagesh k, khaf kh; lamed l; mem m; nun n; samekh s; ayin e; pe p, fe f; tsadi ts; kof k with dot below (k + U+0323); resh r; shin sh, sin s with acute (U+015B); tav s with grave (U+0073+0300) per section 9(c) - the voiceless-s pronunciation of tav."
+    note "Vowels (Table 4): alef with patach (U+FB2A? no - U+05D0+05B7) a; alef with qamats (U+05D0+05B8) a or o - this map renders a, the o-reading is a pronunciation-side determination; ayin e; vav or alef-vav u or o - this map renders u, the norm's own section 9(a) examples use the o-reading (moyre, koyles); vav-yod (U+05F1) or alef-vav-yod oy; yod or alef-yod i; yod-yod (U+05F2) or alef-yod-yod ay or ey, je nach Aussprache - this map renders ay and documents ey as the alternative reading of the same spelling."
+    note "Section 9(a): Hebrew words occurring in a Yiddish context are verified for Yiddish pronunciation in Weinreich and then transliterated with Table 1 (Yiddish) and Table 4; Hebrew proper names in a Yiddish context follow the Yiddish pronunciation. The distinction between tav/tet, kof/khaf and khaf/het is made with the underdots, and word-final he is rendered h."
+    note "Section 9(c): tav pronounced as voiceless s is rendered with the grave (s + U+0300), e.g. bes (beyt-yod-tav)."
+    note "Section 9(d): vowels not written in Old Yiddish may optionally be marked with a stroke above the vowel; this map does not add such marks."
+    note "Words whose vowels are not written in the spelling (loshn-koydesh items such as the norm's own mehaber/moyre examples) are an underspecified skeleton: the unwritten vowels are resolved by a vocalization model, after which this map applies (composition, not duplication)."
+    note "Capitalization and hyphenation follow the rules given for Hebrew (rule 8i/b); this map outputs lower case."
+  }
+}
+
+tests {
+  # table 1 Yiddish column rows
+   "א" ->  "ʾ"
+   "בּ" ->  "b"
+   "בּ" ->  "b"
+   "ב" ->  "v"
+   "ג" ->  "g"
+   "ד" ->  "d"
+   "ה" ->  "h"
+   "ו" ->  "ṿ"
+   "װ" ->  "ṿ"
+   "ז" ->  "z"
+   "ח" ->  "ḥ"
+   "ט" ->  "ṭ"
+   "י" ->  "y"
+   "כּ" ->  "k"
+   "כּ" ->  "k"
+   "כ" ->  "kh"
+   "ך" ->  "kh"
+   "ל" ->  "l"
+   "מ" ->  "m"
+   "ם" ->  "m"
+   "נ" ->  "n"
+   "ן" ->  "n"
+   "ס" ->  "s"
+   "ע" ->  "e"
+   "פּ" ->  "p"
+   "פּ" ->  "p"
+   "פ" ->  "f"
+   "ף" ->  "f"
+   "צ" ->  "ts"
+   "ץ" ->  "ts"
+   "ק" ->  "ḳ"
+   "ר" ->  "r"
+   "שׁ" ->  "sh"
+   "שׁ" ->  "sh"
+   "שׂ" ->  "ś"
+   "שׂ" ->  "ś"
+   "תּ" ->  "t"
+   "תּ" ->  "t"
+   "ת" ->  "s̀"
+  # table 2 rows (geresh-marked, same as Hebrew column)
+   "גʹ" ->  "gʹ"
+   "דʹ" ->  "dʹ"
+   "זʹ" ->  "zʹ"
+   "חʹ" ->  "ḥʹ"
+   "טʹ" ->  "ṭʹ"
+   "עʹ" ->  "ġ"
+   "צʹ" ->  "tsʹ"
+  # table 4 rows
+   "אַ" ->  "a"
+   "אָ" ->  "a"
+   "ע" ->  "e"
+   "ױ" ->  "oy"
+   "אױ" ->  "oy"
+   "ײ" ->  "ay"
+   "אײ" ->  "ay"
+   "אי" ->  "i"
+   "או" ->  "u"
+}
+
+stage main {
+
+  # RULES
+  # table 4: the Yiddish vowel spellings are sequences of letters and
+  # must be matched before their single letters
+  sub {
+    from "אַ"
+    to "a"
+  }
+  sub {
+    from "אָ"
+    to "a"
+  }
+  sub {
+    from "אױ"
+    to "oy"
+  }
+  sub {
+    from "או"
+    to "u"
+  }
+  sub {
+    from "אי"
+    to "i"
+  }
+  sub {
+    from "אײ"
+    to "ay"
+  }
+  sub {
+    from "ױ"
+    to "oy"
+  }
+  sub {
+    from "ײ"
+    to "ay"
+  }
+
+  # sin and shin dots
+  sub {
+    from "שׂ"
+    to "ś"
+  }
+  sub {
+    from "שׁ"
+    to "sh"
+  }
+
+  # CHARACTERS
+  parallel {
+    sub "גʹ" "gʹ"
+    sub "דʹ" "dʹ"
+    sub "זʹ" "zʹ"
+    sub "חʹ" "ḥʹ"
+    sub "טʹ" "ṭʹ"
+    sub "עʹ" "ġ"
+    sub "צʹ" "tsʹ"
+    sub "שׂ" "ś"
+    sub "שׁ" "sh"
+    sub "בּ" "b"
+    sub "כּ" "k"
+    sub "פּ" "p"
+    sub "וּ" "u"
+    sub "בּ" "b"
+    sub "כּ" "k"
+    sub "פּ" "p"
+    sub "וּ" "u"
+    sub "וֹ" "o"
+    sub "שׁ" "sh"
+    sub "שׂ" "ś"
+    sub "תּ" "t"
+    sub "אַ" "a"
+    sub "אָ" "a"
+    sub "װ" "ṿ"
+    sub "ך" "kh"
+    sub "כ" "kh"
+    sub "ם" "m"
+    sub "מ" "m"
+    sub "ן" "n"
+    sub "נ" "n"
+    sub "ף" "f"
+    sub "פ" "f"
+    sub "ץ" "ts"
+    sub "צ" "ts"
+    sub "א" "ʾ"
+    sub "ב" "v"
+    sub "ג" "g"
+    sub "ד" "d"
+    sub "ה" "h"
+    sub "ו" "ṿ"
+    sub "ז" "z"
+    sub "ח" "ḥ"
+    sub "ט" "ṭ"
+    sub "י" "y"
+    sub "ל" "l"
+    sub "ס" "s"
+    sub "ע" "e"
+    sub "ק" "ḳ"
+    sub "ר" "r"
+    sub "ש" "sh"
+    sub "תּ" "t"
+    sub "ת" "s̀"
+    sub "ַ" "a"
+    sub "ָ" "a"
+    sub "ֶ" "e"
+    sub "ֵ" "e"
+    sub "ִ" "i"
+    sub "ֹ" "o"
+    sub "ֻ" "u"
+    sub "ֲ" "a"
+    sub "ֱ" "e"
+    sub "ֳ" "o"
+    sub "ּ" ""
+  }
+
+}
+
+}
