@@ -4,7 +4,7 @@ image:https://github.com/interscript/maps/actions/workflows/test.yml/badge.svg["
 == Introduction
 
 This repository is the single source of truth for Interscript's
-transliteration corpus: 293 authority-backed script conversion systems
+transliteration corpus: 300 authority-backed script conversion systems
 encoded in the "Interoperable Script Conversion" language (`.isc`).
 
 Interscript turns the world's transliteration standards from paper
@@ -46,6 +46,46 @@ CI runs on every change:
   interpreter and the TypeScript runtime over the test corpus);
 * the published artifact (`interscript-maps` gem and the maps release
   artifact) is built from this corpus by CI, never by hand.
+
+== Coverage and known gaps
+
+Every authority document the project holds has been audited against
+the corpus. The complete reference-to-corpus inventory — including
+which standard produced which map, and what remains — is
+link:docs/coverage/README.adoc[docs/coverage/README.adoc].
+
+=== Held standards not yet encoded
+
+Fifteen deterministic tables are held but not yet encoded. Each is a
+complete table with its own example rows; none needs training data to
+encode:
+
+* **ODNI / ICS 630-01** — Kurdish (Annex G: Perso-Arabic to Latin for
+  personal names, no diacritics) and Chinese (Annex D: not a
+  Han-character romanizer, but an IC standard for names already
+  written in Hanyu Pinyin, with Wade-Giles and Yale conversion
+  appendices).
+* **DIN** — 31635 (Arabic, Ottoman Turkish, Persian, Kurdish, Urdu),
+  31636 (Hebrew), 32706 (Armenian), 32708 (Japanese), and 1460-2
+  (non-Slavic Cyrillic).
+* **BSI** — BS 2979:1958 (Cyrillic and Greek) and PD 6505:1982
+  (Korean romanization).
+* **BGN/PCGN** — Burmese, Hebrew, Khmer, Lao, Shan, and Inuktitut.
+
+=== Not doing: neural models for five languages
+
+Burmese, Dzongkha, Inuktitut, Lao, and Shan have complete BGN/PCGN
+tables, but no gold script-to-romanization data exists to train a
+neural model. Interscript withholds a model rather than ship a
+bad-quality one; the deterministic maps are still in scope.
+
+=== Source documents not held
+
+Some verified maps have no archived source document in the project:
+most ALA-LC tables (one table document is held of the 78 in the
+catalogue), most ISO standards (only ISO 9, ISO 9984 and ISO/TR 11941
+are held), and the UN/UNGEGN schedules. These are archival gaps, not
+encoding gaps.
 
 == Contributing
 
