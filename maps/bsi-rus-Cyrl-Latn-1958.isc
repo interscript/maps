@@ -1,0 +1,199 @@
+system "BSI:rus-Cyrl:Latn:1958" {
+
+metadata {
+  authority_id bsi
+  id 1958
+  language iso-639-2:rus
+  source_script Cyrl
+  destination_script Latn
+  name "BS 2979:1958 Transliteration of Cyrillic and Greek characters - Table A, Russian column (the British system)"
+  url https://www.bsigroup.com
+  creation_date 1958
+  confirmation_date 2000-05
+  description {    BS 2979:1958, Table A, Russian column: the "British" system for (modern) Cyrillic.
+    Table A is a five-column family table (East Slavonic: Russian, Ukrainian,
+    Byelorussian; South Slavonic: Bulgarian, Serbian and Macedonian); this map is the
+    Russian column. The Serbian and Macedonian column gives the latinica, the existing
+    Latin alphabet of Serbo-Croat. British Standard confirmed December 1998; the BSI
+    05-2000 reprint is the digitized edition.
+  }
+
+  notes {
+    note "NOTE 1. For extreme simplicity, when avoidance of ambiguity in back transliteration is not a paramount consideration, all accents, diacritics, etc., may be omitted in the English rendering; the document's own examples apply this (e.g. the example rendering of Khozyaistvo shows й without the breve). This map applies the table as printed, with the diacritics."
+    note "NOTE 2. Cyrillic characters for which the transliteration is given in parentheses (і, ѣ), though no longer in official use, are sometimes found in the literature, e.g. in emigre or the older literature. This map renders them as given in the parentheses."
+    note "NOTE 4. For transliteration of Moldavian, see Table C in Section 2 (ISO/R9)."
+    note "Rows 45 (the little yus), 46 (fita) and 47 (izhitsa) carry parenthesized obsolete romanizations whose exact diacritics the scan does not resolve unambiguously; this map does not render those three characters rather than guess them."
+    note "Row 38: the table gives the choice of right double quotation mark or straight double quotation mark for ъ; this map renders the right double quotation mark (U+201D). Row 40 likewise offers two apostrophe forms for ь; this map renders the right single quotation mark (U+2019)."
+    note "Row 28+27: the character sequence тс is romanized t-s with a hyphen, distinguishing it from ц, romanized ts. Footnote to Table A: final ъ, now obsolete in Russian, is disregarded when encountered (this map deletes it, per the row 38 rendering choice above)."
+    note "Other columns of Table A (Ukrainian, Byelorussian, Bulgarian, Serbian and Macedonian) are separate maps."
+  }
+}
+
+tests {
+  # document examples (Russian items, British column)
+   "Бюллетень" ->  "Byulleten’"
+   "Известия" ->  "Izvestiya"
+   "Академии Наук" ->  "Akademii Nauk"
+   "Ленинград" ->  "Leningrad"
+   # the document's example prints Promyshlennost' (NOTE 1 permits dropping diacritics);
+  # the table specifies ȳ for ы and this map follows the table
+   "Техника Промышленность и Торговля" ->  "Tekhnika Promȳshlennost’ i Torgovlya"
+   "Москва" ->  "Moskva"
+  # table rows, upper and lower
+   "А" ->  "A"
+   "а" ->  "a"
+   "Б" ->  "B"
+   "б" ->  "b"
+   "В" ->  "V"
+   "в" ->  "v"
+   "Г" ->  "G"
+   "г" ->  "g"
+   "Д" ->  "D"
+   "д" ->  "d"
+   "Е" ->  "E"
+   "е" ->  "e"
+   "Ё" ->  "Ě"
+   "ё" ->  "ě"
+   "Ж" ->  "Zh"
+   "ж" ->  "zh"
+   "З" ->  "Z"
+   "з" ->  "z"
+   "И" ->  "I"
+   "и" ->  "i"
+   "Й" ->  "Ĭ"
+   "й" ->  "ĭ"
+   "К" ->  "K"
+   "к" ->  "k"
+   "Л" ->  "L"
+   "л" ->  "l"
+   "М" ->  "M"
+   "м" ->  "m"
+   "Н" ->  "N"
+   "н" ->  "n"
+   "О" ->  "O"
+   "о" ->  "o"
+   "П" ->  "P"
+   "п" ->  "p"
+   "Р" ->  "R"
+   "р" ->  "r"
+   "С" ->  "S"
+   "с" ->  "s"
+   "Т" ->  "T"
+   "т" ->  "t"
+   "Тс" ->  "T-s"
+   "тс" ->  "t-s"
+   "У" ->  "U"
+   "у" ->  "u"
+   "Ф" ->  "F"
+   "ф" ->  "f"
+   "Х" ->  "Kh"
+   "х" ->  "kh"
+   "Ц" ->  "Ts"
+   "ц" ->  "ts"
+   "Ч" ->  "Ch"
+   "ч" ->  "ch"
+   "Ш" ->  "Sh"
+   "ш" ->  "sh"
+   "Щ" ->  "Shch"
+   "щ" ->  "shch"
+   "Ъ" ->  "”"
+   "ъ" ->  "”"
+   "Ы" ->  "Ȳ"
+   "ы" ->  "ȳ"
+   "Ь" ->  "’"
+   "ь" ->  "’"
+   "Э" ->  "É"
+   "э" ->  "é"
+   "Ю" ->  "Yu"
+   "ю" ->  "yu"
+   "Я" ->  "Ya"
+   "я" ->  "ya"
+   "І" ->  "I"
+   "і" ->  "i"
+   "Ѣ" ->  "Ě"
+   "ѣ" ->  "ě"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "Тс" "T-s"
+    sub "тс" "t-s"
+    sub "Щ" "Shch"
+    sub "Ё" "Ě"
+    sub "Ж" "Zh"
+    sub "Й" "Ĭ"
+    sub "Х" "Kh"
+    sub "Ц" "Ts"
+    sub "Ч" "Ch"
+    sub "Ш" "Sh"
+    sub "Ы" "Ȳ"
+    sub "Э" "É"
+    sub "Ю" "Yu"
+    sub "Я" "Ya"
+    sub "Ѣ" "Ě"
+    sub "Ъ" "”"
+    sub "Ь" "’"
+    sub "А" "A"
+    sub "Б" "B"
+    sub "В" "V"
+    sub "Г" "G"
+    sub "Д" "D"
+    sub "Е" "E"
+    sub "З" "Z"
+    sub "И" "I"
+    sub "І" "I"
+    sub "К" "K"
+    sub "Л" "L"
+    sub "М" "M"
+    sub "Н" "N"
+    sub "О" "O"
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "У" "U"
+    sub "Ф" "F"
+
+    sub "щ" "shch"
+    sub "тс" "t-s"
+    sub "ё" "ě"
+    sub "ж" "zh"
+    sub "й" "ĭ"
+    sub "х" "kh"
+    sub "ц" "ts"
+    sub "ч" "ch"
+    sub "ш" "sh"
+    sub "ы" "ȳ"
+    sub "э" "é"
+    sub "ю" "yu"
+    sub "я" "ya"
+    sub "ѣ" "ě"
+    sub "ъ" "”"
+    sub "ь" "’"
+    sub "а" "a"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "g"
+    sub "д" "d"
+    sub "е" "e"
+    sub "з" "z"
+    sub "и" "i"
+    sub "і" "i"
+    sub "к" "k"
+    sub "л" "l"
+    sub "м" "m"
+    sub "н" "n"
+    sub "о" "o"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "у" "u"
+    sub "ф" "f"
+  }
+
+}
+
+}
