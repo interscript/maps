@@ -1,0 +1,140 @@
+system "BSI:mkd-Cyrl:Latn:1958" {
+
+metadata {
+  authority_id bsi
+  id 1958
+  language iso-639-2:mkd
+  source_script Cyrl
+  destination_script Latn
+  name "BS 2979:1958 Transliteration of Cyrillic and Greek characters - Table A, Serbian & Macedonian (Macedonian) column (the British system)"
+  url https://www.bsigroup.com
+  creation_date 1958
+  confirmation_date 2000-05
+  description {    BS 2979:1958, Table A, Serbian & Macedonian (Macedonian) column: the "British" system for (modern) Cyrillic.
+    Table A is a five-column family table (East Slavonic: Russian, Ukrainian,
+    Byelorussian; South Slavonic: Bulgarian, Serbian and Macedonian).
+    The column is shared with Serbian; this map adds the Macedonian-specific
+    letters ѓ, ѕ and ќ to the shared rows.
+  }
+
+  notes {
+    note "NOTE 1 of Section 1: for extreme simplicity, when avoidance of ambiguity in back transliteration is not a paramount consideration, all accents, diacritics, etc., may be omitted in the English rendering; the document's own examples apply this (the document's own examples apply it). This map applies the table as printed, with the diacritics."
+    note "NOTE 2 of Section 1: Cyrillic characters for which the transliteration is given in parentheses, though no longer in official use, are sometimes found in the literature of the relevant language; this map renders them as given in the parentheses."
+    note "Footnote to Table A: in latinica, dj and gj are still sometimes found as alternatives to d-with-caron (Ђ and Ѓ), but the practice is disappearing; this map renders both ѓ and ђ as d-with-caron."
+    note "Rows 45 to 47 of Table A (the little yus, fita, izhitsa) are not rendered: their parenthesized cells are not legible beyond doubt in the scan and this map does not guess them. Table B (back transliteration) is out of scope; Table C is ISO/R9 and is cited against the existing iso corpus maps."
+    note "Row 38/40 choices: this map renders the hard sign with the right double quotation mark (U+201D) and the soft sign with the right single quotation mark (U+2019), the first option of each cell."
+    note "The Serbian and Macedonian column gives the latinica, the existing Latin alphabet of Serbo-Croat, to avoid the confusion of an English transliteration. The footnote to Table A: in latinica, dj and gj are still sometimes found as alternatives to d with caron, but the practice is disappearing."
+  }
+}
+
+tests {
+   "Македонски Јазик" ->  "Makedonski Jazik"
+   "Ѓ" ->  "Đ"
+   "ѓ" ->  "đ"
+   "Ѕ" ->  "Dz"
+   "ѕ" ->  "dz"
+   "Ќ" ->  "Ć"
+   "ќ" ->  "ć"
+   "а" ->  "a"
+   "б" ->  "b"
+   "в" ->  "v"
+   "г" ->  "g"
+   "д" ->  "d"
+   "ђ" ->  "đ"
+   "е" ->  "e"
+   "ж" ->  "ž"
+   "з" ->  "z"
+   "и" ->  "i"
+   "ј" ->  "j"
+   "к" ->  "k"
+   "л" ->  "l"
+   "љ" ->  "lj"
+   "м" ->  "m"
+   "н" ->  "n"
+   "њ" ->  "nj"
+   "о" ->  "o"
+   "п" ->  "p"
+   "р" ->  "r"
+   "с" ->  "s"
+   "т" ->  "t"
+   "ћ" ->  "ć"
+   "ц" ->  "c"
+   "ч" ->  "č"
+   "џ" ->  "dž"
+   "ш" ->  "š"
+   "х" ->  "h"
+
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "А" "A"
+    sub "Б" "B"
+    sub "В" "V"
+    sub "Г" "G"
+    sub "Д" "D"
+    sub "Ђ" "Đ"
+    sub "Е" "E"
+    sub "Ж" "Ž"
+    sub "З" "Z"
+    sub "И" "I"
+    sub "Ј" "J"
+    sub "К" "K"
+    sub "Л" "L"
+    sub "Љ" "Lj"
+    sub "М" "M"
+    sub "Н" "N"
+    sub "Њ" "Nj"
+    sub "О" "O"
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "Ћ" "Ć"
+    sub "Ц" "C"
+    sub "Ч" "Č"
+    sub "Џ" "Dž"
+    sub "Ш" "Š"
+    sub "Х" "H"
+    sub "Ѓ" "Đ"
+    sub "Ѕ" "Dz"
+    sub "Ќ" "Ć"
+
+    sub "а" "a"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "g"
+    sub "д" "d"
+    sub "ђ" "đ"
+    sub "е" "e"
+    sub "ж" "ž"
+    sub "з" "z"
+    sub "и" "i"
+    sub "ј" "j"
+    sub "к" "k"
+    sub "л" "l"
+    sub "љ" "lj"
+    sub "м" "m"
+    sub "н" "n"
+    sub "њ" "nj"
+    sub "о" "o"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "ћ" "ć"
+    sub "ц" "c"
+    sub "ч" "č"
+    sub "џ" "dž"
+    sub "ш" "š"
+    sub "х" "h"
+    sub "ѓ" "đ"
+    sub "ѕ" "dz"
+    sub "ќ" "ć"
+  }
+
+}
+
+}
