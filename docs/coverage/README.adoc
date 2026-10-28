@@ -47,13 +47,14 @@ ML layer, never to the map.
 
 == Corpus census (2026-10-28, `main`)
 
-291 `.isc` systems. By authority prefix:
+300 `.isc` systems (291 before the nine-map restore in PR #211). By
+authority prefix:
 
 [cols="1,1",options="header"]
 |===
 |Authority prefix |Maps
 
-|bgnpcgn |55
+|bgnpcgn |64
 |alalc |55
 |un |32
 |odni |30
@@ -238,22 +239,24 @@ owed.
 CONVENTIONS`) + 1 duplicate (`TABLE OF CORRESPONDENCES FOR
 AZERBAIJANI` appears twice).
 
-Corpus: 55 `bgnpcgn-*` maps across 41 language codes. Four of those
+Corpus: 64 `bgnpcgn-*` maps across 50 language codes. Four of those
 codes are Roman-script convention systems (deu, fao, isl, sme); the
-remaining 37 language codes correspond to held BGN/PCGN systems.
+remaining 46 language codes correspond to held BGN/PCGN systems.
 
 [cols="1,3",options="header"]
 |===
 |Status |Systems
 
-|ENCODED on `main` (37 language codes; 55 maps)
+|ENCODED on `main` (46 language codes; 64 maps)
 |Amharic, Arabic, Armenian, Azerbaijani, Baluchi, Bashkir, Belarusian,
 Bulgarian, Chechen, Chinese, Georgian, Greek, Japanese Kana, Kazakh,
 Korean, Kurdish (2007), Kyrgyz, Macedonian, Maldivian, Moldovan,
 Mongolian, Nepali, Pashto, Persian, Russian, Rusyn, Serbian, Tajik,
 Tatar, Thai (landed via PR #204), Tigrinya, Turkmen, Ukrainian, Urdu,
-Uzbek, plus the Roman-script systems
-|RECOVERABLE — merged in PR #208, then reverted by commit `7e9a2d8`
+Uzbek, Adyghe, Avar, Chuvash, Kabardian, Karachay-Balkar, Ossetian,
+Udmurt, Yakut, Modern Syriac, plus the Roman-script systems
+|RESTORED — merged in PR #208, removed by revert `7e9a2d8`, restored
+in PR #211
 |Adyghe (ady), Avar (av), Chuvash (cv), Kabardian (kbd),
 Karachay-Balkar (krc), Ossetian (os), Udmurt (udm), Yakut (sah),
 Modern Syriac (syc)
@@ -268,7 +271,7 @@ Inuktitut (iu)
 30 April 2012 revision. Diff the two tables before claiming coverage.
 |===
 
-The nine RECOVERABLE systems are not abugidas or abjads: eight are
+The nine restored systems are not abugidas or abjads: eight are
 Cyrillic alphabets whose BGN/PCGN tables are complete and carry their
 own example rows; one (Modern Syriac) is an abjad with a complete
 table. They were merged, CI-gated, and then removed by a revert whose
@@ -354,8 +357,8 @@ required only to *train a model* on top of the map.
 
 == Recoverable work (do not re-encode)
 
-* Restore the nine PR #208 maps from
-  `origin/feat/a1-cyrillic-encodings` onto `main`.
+* The nine PR #208 maps were restored in PR #211. Do not re-encode
+  them from the PDFs.
 * Migrate PR #166 (`bgnpcgn-dzo-Tibt-Latn-2010.imp`) and PR #167
   (`bgnpcgn-syr-Syrc-Latn-2011.imp`) from `.imp` to `.isc`, verify the
   embedded tests, and land them. Resolve the language code: the ISO

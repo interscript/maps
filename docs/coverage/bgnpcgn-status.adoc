@@ -8,9 +8,9 @@ corrected status is below. The full reference inventory is
 == Held vs encoded
 
 55 held documents = 53 language systems + 1 policy document + 1
-duplicate. The corpus has 55 `bgnpcgn-*` maps across 41 language
-codes (37 non-Roman-script language systems plus 4 Roman-script
-convention systems).
+duplicate. The corpus has 64 `bgnpcgn-*` maps across 50 language
+codes (46 non-Roman-script language systems plus 4 Roman-script
+convention systems), after the nine-map restore in PR #211.
 
 == Status by system
 
@@ -23,10 +23,12 @@ convention systems).
 Bulgarian, Chechen, Chinese, Georgian, Greek, Japanese Kana, Kazakh,
 Korean, Kurdish (2007), Kyrgyz, Macedonian, Maldivian, Moldovan,
 Mongolian, Nepali, Pashto, Persian, Russian, Rusyn, Serbian, Tajik,
-Tatar, Thai, Tigrinya, Turkmen, Ukrainian, Urdu, Uzbek, and the
-Roman-script systems
+Tatar, Thai, Tigrinya, Turkmen, Ukrainian, Urdu, Uzbek, Adyghe, Avar,
+Chuvash, Kabardian, Karachay-Balkar, Ossetian, Udmurt, Yakut, Modern
+Syriac, and the Roman-script systems
 
-|RECOVERABLE (merged in PR #208, removed by revert `7e9a2d8`)
+|RESTORED (merged in PR #208, removed by revert `7e9a2d8`, restored
+in PR #211)
 |Adyghe (ady), Avar (av), Chuvash (cv), Kabardian (kbd),
 Karachay-Balkar (krc), Ossetian (os), Udmurt (udm), Yakut (sah),
 Modern Syriac (syc)
