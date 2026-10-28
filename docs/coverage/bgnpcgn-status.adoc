@@ -1,55 +1,82 @@
-= A1: BGN/PCGN coverage status (2026-10-27)
+= BGN/PCGN coverage status (corrected 2026-10-28)
 
-55 PDFs held → 37 encoded → 18 accounted for:
+This page previously conflated three different things: whether a map
+exists, whether a model exists, and whether training data exists. The
+corrected status is below. The full reference inventory is
+`README.adoc` in this directory.
 
-== Encoded (37 systems across 54 bgnpcgn-* maps)
-Existing verified .isc files — the corpus IS the authority.
+== Held vs encoded
 
-== Model-covered (2 of the 18 gaps)
-- heb: multiple neural models (heb-diac-1.0/1.1, heb-diac-plane-1.0/2.0)
-- khm: khm-latn-1.0 (legacy) + khm-phonemic-1.0 (framework-native)
+55 held documents = 53 language systems + 1 policy document + 1
+duplicate. The corpus has 55 `bgnpcgn-*` maps across 41 language
+codes (37 non-Roman-script language systems plus 4 Roman-script
+convention systems).
 
-== BLOCKED: no corpus, no model, no data source (5 systems)
-- Burmese (mya) — abugida, Myanmar script U+1000-U+109F
-- Dzongkha (dz) — abugida, Tibetan script U+0F00-U+0FFF
-- Inuktitut (iu) — syllabics U+1400-U+167F
-- Lao (lao) — abugida, Lao script U+0E80-U+0EFF
-- Shan (shn) — abugida, Myanmar script
+== Status by system
 
-These are BLOCKED because:
-1. The deterministic ISC table alone is insufficient for abugidas
-   (inherent vowels, conjuncts, tone marks require linguistic knowledge)
-2. No training corpus exists in our data supply
-3. No neural model exists
-4. Without a model, the deterministic table alone produces inadequate
-   results
+[cols="1,3",options="header"]
+|===
+|Status |Systems
 
-Policy: it is better to withhold than to give bad quality.
-The tables will be encoded ONLY when a model or corpus unblocks them.
+|ENCODED on `main`
+|Amharic, Arabic, Armenian, Azerbaijani, Baluchi, Bashkir, Belarusian,
+Bulgarian, Chechen, Chinese, Georgian, Greek, Japanese Kana, Kazakh,
+Korean, Kurdish (2007), Kyrgyz, Macedonian, Maldivian, Moldovan,
+Mongolian, Nepali, Pashto, Persian, Russian, Rusyn, Serbian, Tajik,
+Tatar, Thai, Tigrinya, Turkmen, Ukrainian, Urdu, Uzbek, and the
+Roman-script systems
 
-== Previously encoded then reverted (9 systems)
-ady, av, cv, kbd, os, udm, sah, krc, syc — deterministic-only tables
-encoded from PDFs, then reverted per the policy above (they are
-abugida/abjad-adjacent systems where the table alone is insufficient).
-Re-encode if a model or corpus unblocks them.
+|RECOVERABLE (merged in PR #208, removed by revert `7e9a2d8`)
+|Adyghe (ady), Avar (av), Chuvash (cv), Kabardian (kbd),
+Karachay-Balkar (krc), Ossetian (os), Udmurt (udm), Yakut (sah),
+Modern Syriac (syc)
 
+|OPEN PR (legacy `.imp`, needs `.isc` migration)
+|Dzongkha (PR #166), Modern Syriac (PR #167)
 
-== Data-supply search results (2026-10-27, HuggingFace)
+|SOURCE HELD, NOT ENCODED
+|Burmese, Hebrew, Khmer, Lao, Shan, Inuktitut
 
-Searched for romanization/transliteration training data per language.
-Result: **no gold (script → romanization) pairs exist** for any of the
-5 blocked languages. What exists is raw text (OCR corpora, translation
-pairs, segmentation datasets) — not supervised training signal.
+|REVISION CHECK
+|Kurdish: the corpus map is the 2007 system; the held document is the
+30 April 2012 revision
+|===
 
-| language | HF datasets found | usable for training |
-|---|---|---|
-| Burmese | OCR, text segmentation, translation pairs | No — no romanization gold |
-| Dzongkha | None | No |
-| Inuktitut | None | No |
-| Lao | 1 raw text corpus | No — no romanization gold |
-| Shan | None | No |
+== Correction of the earlier "BLOCKED" list
 
-**These 5 systems are permanently BLOCKED** until gold training data
-is created (manually or via a linguistic project). This is a data-supply
-ask per language — not an engineering problem we can solve with the
-tools we have.
+The earlier version of this page declared five systems "permanently
+BLOCKED" — Burmese, Dzongkha, Inuktitut, Lao, Shan — because no
+training data exists. Two errors:
+
+1. **Dzongkha was not a gap.** Its encoding is in open PR #166.
+2. **The blocked status applies to the model, not the map.** Every one
+   of these systems has a held, complete deterministic table with its
+   own example rows. A map can be encoded and verified without a
+   training corpus; only a neural model needs one.
+
+The same page claimed the nine reverted systems were
+"abugida/abjad-adjacent systems where the table alone is
+insufficient". That is false: eight are Cyrillic alphabets and one
+(Modern Syriac) is an abjad with a complete table. They were merged
+and CI-gated; the revert was a regression, and the maps are to be
+restored, not re-encoded.
+
+== Model layer (the real data block)
+
+No gold romanization/transliteration pairs exist in the data supply
+for: Burmese, Dzongkha, Inuktitut, Lao, Shan.
+
+[cols="1,2,1",options="header"]
+|===
+|Language |Available data |Usable for model training
+
+|Burmese |OCR, text segmentation, translation pairs |No — no romanization gold
+|Dzongkha |None |No
+|Inuktitut |None |No
+|Lao |Raw text corpus |No — no romanization gold
+|Shan |None |No
+|===
+
+Policy: withhold a model rather than ship a bad-quality one. This
+blocks training, not map coverage. The maps for these languages are
+in scope for encoding.

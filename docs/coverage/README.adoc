@@ -1,33 +1,397 @@
-= A1: authority-completeness audit (WO57) — workboard
+= Reference-to-corpus inventory: what exists, what is recoverable, what is a gap
 
-== Corpus census (verified)
+:toc:
+:toclevels: 3
 
-289 `.isc` systems by authority prefix (ISO 24229): alalc 55, bgnpcgn
-54, un 32, iso 30, odni 30, var 17, bis 10, din 9, icao 8, then 23
-single-system national authorities (elot, mvd, gost, mext, moct, lshk,
-acadsin, sac, hk, kp, ...).
+Status date: 2026-10-28.
 
-== Authority catalog status
+This document is the authority-by-authority answer to one question:
+**for every reference document the project holds, what is the state of
+its encoding, and what is genuinely missing?** It supersedes the A1
+workboard. The corpus on `main` is the authority for what is encoded;
+this document records where every held source document stands against
+it.
 
+== Status vocabulary
+
+[cols="1,3",options="header"]
 |===
-|Authority |Official catalog |Source capture |Diff vs corpus
+|Status |Meaning
 
-|ALA-LC |78 romanization tables (loc.gov roman.html; exact count after de-noising the page) |alalc-roman.html + alalc-diff.txt |**DIFFED**: 30 tables encoded, 48 gap systems (alalc-diff.txt); gap encodings are follow-on work items
-|BGN/PCGN |current schedule (~55 languages) |refs repo carries system PDFs (bgn-pcgn/); official consolidated schedule NOT fetchable (geonames.nga.mil unreachable) |corpus encodes 54 -- diff pending the schedule capture
-|UN WGRS |~26 languages, 1968-2017 editions |UNGEGN docs (404 on the attempted path; capture strategy: UNGEGN working-paper series) |corpus encodes 32 (incl. revisions) -- diff pending
-|ISO |9/233/233-3/259/3602/7098/843/9984/9985/11940/11941/15919 (definitional scopes) |iso-diff.txt |**DIFFED**: 9 of 12 standards represented; gaps = ISO 9 non-Russian Cyrillic, 259 Hebrew, 7098 Chinese, 9985 Armenian, 15919 Indic remainder
-|ICAO 9303 |the language transliteration tables |held Amd1 (9303_p3_cons) VERIFIED ABSENT of the tables -- they live in another 9303 part/edition (9303-13 or the annexed edition); capture strategy: obtain that document |corpus encodes 8 -- diff pending source
-|ODNI |ODNI standard (2004/2015) |pending |corpus encodes 30
+|ENCODED
+|A verified `.isc` exists on `main` (CI gates: ISC parse, embedded
+tests, cross-runtime parity).
+
+|RECOVERABLE
+|The encoding exists in git history or on a merged/PR branch, but is
+not on `main`. Restore or land it; do not re-encode from the PDF.
+
+|OPEN PR
+|A contributor PR carries an encoding in the legacy `.imp` format.
+Migrate to `.isc`, verify, and land.
+
+|SOURCE HELD, NOT ENCODED
+|The authority document is held and no encoding exists anywhere. This
+is a real encoding gap.
+
+|SOURCE NOT HELD
+|The corpus has an encoding (verified) but the project does not hold
+the source document. An archival/verification gap, not an encoding
+gap.
+
+|DATA-BLOCKED (model layer only)
+|No gold parallel data exists for training a neural model. The
+deterministic map may still be encodable; this status applies to the
+ML layer, never to the map.
 |===
 
-== Method (the law: transcribe whole documents)
+== Corpus census (2026-10-28, `main`)
 
-1. Capture each authority's official system list from the primary
-   source (raw capture committed here, never paraphrased from memory).
-2. Transcribe table names -> ISO 24229 codes (authority-language-
-   SrcScript-DstScript-year) with the name->code evidence inline.
-3. Diff against the corpus; every gap becomes either an encoding PR
-   (whole-document transcription) or an out-of-scope citation with the
-   authority reference.
+291 `.isc` systems. By authority prefix:
 
-Acceptance: zero unexplained gaps.
+[cols="1,1",options="header"]
+|===
+|Authority prefix |Maps
+
+|bgnpcgn |55
+|alalc |55
+|un |32
+|odni |30
+|iso |30
+|var |17
+|bis |10
+|din |9
+|icao |8
+|mvd |4
+|elot |4
+|ua |3
+|bgn |3
+|`sasm`, `masm`, `gost`, `gki`, `by`, `bgna`, `bas`, `az` |2 each (16)
+|`stategeocadastre`, `ses`, `sac`, `royin`, `mv`, `mofa`, `moct`,
+`mext`, `lshk`, `kp`, `hk`, `ggg`, `dos`, `apcbg`, `acadsin` |1 each (15)
+|===
+
+== interscript-private-references
+
+=== ICS 630-01 — the Intelligence Community Standard (23 language annexes)
+
+29 held documents: the standard, 23 language annexes (A–W), three
+Chinese appendices, and revisions for Annexes J and M.
+
+[cols="1,1,1,2",options="header"]
+|===
+|Annex |Language |Corpus |Status
+
+|A |Arabic |odni-ara 2004, 2015 |ENCODED
+|B |Belarusian |odni-bel 2015 |ENCODED
+|C |Chechen |odni-che 2015 |ENCODED
+|D |Chinese |— |**SOURCE HELD, NOT ENCODED** (see below)
+|E |Georgian |odni-kat 2015 |ENCODED
+|F |Hindi / Urdu |odni-hin 2004, 2015; odni-urd 2015 |ENCODED
+|G |Kurdish |— |**SOURCE HELD, NOT ENCODED**
+|H |Macedonian |odni-mkd 2005, 2015 |ENCODED
+|I |Pashto |odni-pus 2011 |ENCODED
+|J |Persian / Dari |odni-fas 2004, 2015; odni-prs 2004, 2015 |ENCODED
+|K |Russian |odni-rus 2015 |ENCODED
+|L |Serbian |odni-srp 2005, 2015 |ENCODED
+|M |Ukrainian |odni-ukr 2015 |ENCODED
+|N |Tajik |odni-tgk 2015 |ENCODED
+|O |Bulgarian |odni-bul 2005, 2015 |ENCODED
+|P |Azeri |odni-aze 2015 |ENCODED
+|Q |Kazakh |odni-kaz 2015 |ENCODED
+|R |Kyrgyz |odni-kir 2015 |ENCODED
+|S |Tatar |odni-tat 2015 |ENCODED
+|T |Turkmen |odni-tuk 2015 |ENCODED
+|U |Uyghur |odni-uig 2015 |ENCODED
+|V |Uzbek |odni-uzb 2015 |ENCODED
+|W |Korean |odni-kor 2015 |ENCODED
+|===
+
+21 of 23 language annexes are encoded (30 maps, because several
+annexes carry both the 2004/2005 and 2015 editions).
+
+==== The Chinese annex is not a Han-character romanizer
+
+Annex D states its scope explicitly: it applies to personal names
+**already rendered in Hanyu Pinyin** and standardises that rendering
+(surname title case, no umlauted `ü`, spacing, apostrophes). It
+assumes the pinyin form; it does not supply a Han → pinyin lexicon.
+Its three appendices are:
+
+* Appendix A — the IC transliteration table (pinyin inventory);
+* Appendix B — conversion tables from Wade-Giles, Yale and Mandarin
+  Phonetic to pinyin;
+* Appendix C — a list of common Chinese surnames.
+
+Consequences for encoding:
+
+* an `odni-zho-Latn-Latn` normalisation map (pinyin in, IC style out)
+  is encodable from the annex;
+* the Appendix B conversion tables are encodable as Latn→Latn maps;
+* a Han → pinyin map (`odni-zho-Hans-Latn`) is **out of scope of this
+  document** — it needs a character lexicon, not a rule table. The
+  corpus already has `bgnpcgn-zho-Hans-Latn-1979` (Hanyu Pinyin) for
+  that need.
+
+==== The Kurdish annex
+
+Annex G is a Perso-Arabic (Sorani) → Latin table for personal names,
+using the 26 Latin letters plus the apostrophe, deliberately without
+diacritics. It is a full table and is encodable as
+`odni-kur-Arab-Latn-2011`. The corpus's `bgnpcgn-kur-Arab-Latn-2007`
+is a different authority and does not substitute for it.
+
+=== ODNI folder (11 documents)
+
+Arabic, Belarusian, Bulgarian, Farsi/Persian & Dari, Hindi/Urdu,
+Korean, Kurdish, Macedonian, Pashto, Serbian, Ukrainian.
+
+10 of 11 languages are encoded (`odni-*` on `main`). The Kurdish PDF
+is the only unencoded document; it is the same system as Annex G
+above. The Chinese annex is not in this folder — it lives in
+`ics-630-01/`.
+
+=== DIN (8 held German standards)
+
+[cols="1,2,1,1",options="header"]
+|===
+|Standard |Title |Corpus |Status
+
+|DIN 1460-2:2011 |Romanization of Cyrillic alphabets, Part 2:
+non-Slavic languages |— |**SOURCE HELD, NOT ENCODED**
+|DIN 31635:2011 |Romanization of the Arabic alphabet for Arabic,
+Ottoman Turkish, Persian, Kurdish, Urdu |— |**SOURCE HELD, NOT ENCODED**
+|DIN 31636:2018 |Romanization of the Hebrew alphabet |— |**SOURCE HELD, NOT ENCODED**
+|DIN 32706:2010 |Romanization of the Armenian alphabet |— |**SOURCE HELD, NOT ENCODED**
+|DIN 32707:2010 |Romanization of the Georgian alphabet |din-kat 2010 |ENCODED
+|DIN 32708:2014 |Romanization of Japanese |— |**SOURCE HELD, NOT ENCODED**
+|DIN 33903:2016 |Romanization of Tamil |din-tam 2016 |ENCODED
+|DIN 33904:2018 |Transliteration of Devanagari |din-hin/mar/nep/pli/pra/san 2018 |ENCODED
+|===
+
+Five of eight held DIN standards are unencoded. Separately, the corpus
+holds `din-grc-Grek-Latn-31634-2011-t1` (DIN 31634, Greek) whose
+source document is **not** in the private references — an archival gap.
+
+=== ISO (3 held standards)
+
+[cols="1,2,1,1",options="header"]
+|===
+|Standard |Scope |Corpus |Status
+
+|ISO 9:1995 |Cyrillic → Latin |iso-rus-Cyrl-Latn-9-1995 |ENCODED
+|ISO 9984:1996 |Georgian → Latin |iso-kat-Geor-Latn-9984-1996 |ENCODED
+|ISO/TR 11941:1996 |Korean → Latin, both methods |iso-kor-Hang-Latn-1996-method1, -method2 |ENCODED
+|===
+
+All three held ISO documents are encoded. The corpus's other 27 ISO
+maps (ISO 233, 843, 3602, 11940, 15919 and their language variants)
+have **no source document in the project** — an archival gap.
+
+=== BSI (2 held British standards)
+
+[cols="1,2,1",options="header"]
+|===
+|Standard |Title |Status
+
+|BS 2979:1958 |Transliteration of Cyrillic and Greek characters |**SOURCE HELD, NOT ENCODED**
+|PD 6505:1982 |Guide to the romanization of Korean |**SOURCE HELD, NOT ENCODED**
+|===
+
+Neither is encoded. PD 6505 is a Korean guide (the scanned cover does
+not carry the title; the OCR of its foreword and Part One establishes
+the scope), not a Chinese guide.
+
+=== BGN (5 items)
+
+* `1972-maldivian.pdf` (and its JPG scan) — the BGN/PCGN Maldivian
+  1972 system, encoded as `bgnpcgn-div-Thaa-Latn-1972` (and the 1988
+  revision as `-1988`). ENCODED.
+* `Afghanistan Master Glossary of Terms` and
+  `ara-dari-pashto-turkic-samples.xlsx` — data/reference samples, not
+  standards. No map owed.
+* `20201228-stage-code-question.xlsx` — an internal corpus question,
+  not a source document.
+
+=== AUTOROM (BGN automated romanization package)
+
+`32-BGN-10.5-Geographic Names Automated Romanization Script` (the BGN
+conference paper), the `Romanize.py` implementation, the Hanyu
+Pinyinizer workbook, and per-language data (`arm_data.py`, ...).
+
+This is not a romanization standard and owes no map. It is a
+**validation oracle**: an independent BGN implementation against which
+our BGN/PCGN maps (notably Chinese/pinyin and Armenian) can be
+differentially tested.
+
+=== data/thai-nectec.or.th
+
+`TransliterationCorpusFinal.xml` — the Thai NEC transliteration
+corpus, the data provenance for the Thai work. Not a standard; no map
+owed.
+
+== interscript-references
+
+=== BGN/PCGN (55 held documents)
+
+53 language systems + 1 policy document (`ROMAN-SCRIPT SPELLING
+CONVENTIONS`) + 1 duplicate (`TABLE OF CORRESPONDENCES FOR
+AZERBAIJANI` appears twice).
+
+Corpus: 55 `bgnpcgn-*` maps across 41 language codes. Four of those
+codes are Roman-script convention systems (deu, fao, isl, sme); the
+remaining 37 language codes correspond to held BGN/PCGN systems.
+
+[cols="1,3",options="header"]
+|===
+|Status |Systems
+
+|ENCODED on `main` (37 language codes; 55 maps)
+|Amharic, Arabic, Armenian, Azerbaijani, Baluchi, Bashkir, Belarusian,
+Bulgarian, Chechen, Chinese, Georgian, Greek, Japanese Kana, Kazakh,
+Korean, Kurdish (2007), Kyrgyz, Macedonian, Maldivian, Moldovan,
+Mongolian, Nepali, Pashto, Persian, Russian, Rusyn, Serbian, Tajik,
+Tatar, Thai (landed via PR #204), Tigrinya, Turkmen, Ukrainian, Urdu,
+Uzbek, plus the Roman-script systems
+|RECOVERABLE — merged in PR #208, then reverted by commit `7e9a2d8`
+|Adyghe (ady), Avar (av), Chuvash (cv), Kabardian (kbd),
+Karachay-Balkar (krc), Ossetian (os), Udmurt (udm), Yakut (sah),
+Modern Syriac (syc)
+|OPEN PR
+|Dzongkha (`bgnpcgn-dzo-Tibt-Latn-2010.imp`, PR #166); Modern Syriac
+(`bgnpcgn-syr-Syrc-Latn-2011.imp`, PR #167)
+|SOURCE HELD, NOT ENCODED
+|Burmese (mya), Hebrew (heb), Khmer (khm), Lao (lao), Shan (shn),
+Inuktitut (iu)
+|REVISION CHECK
+|Kurdish: corpus encodes the 2007 system; the held document is the
+30 April 2012 revision. Diff the two tables before claiming coverage.
+|===
+
+The nine RECOVERABLE systems are not abugidas or abjads: eight are
+Cyrillic alphabets whose BGN/PCGN tables are complete and carry their
+own example rows; one (Modern Syriac) is an abjad with a complete
+table. They were merged, CI-gated, and then removed by a revert whose
+commit message wrongly described them as "abugida/abjad-adjacent
+systems where the table alone is insufficient". That characterisation
+is false and is corrected here.
+
+=== BGN 1964 and USBGN 1994 historical editions
+
+`BGN_Romanization_Guide_1964` (16 documents) and
+`USBGN_Romanization_1994` (30 documents) hold the historical editions
+of the same systems. They are the source documents for the systems
+whose current BGN/PCGN sheet is also held — including Hebrew 1962,
+Burmese 1970, Khmer 1972 and Lao 1966. They do not create new gaps;
+they make the four historical systems encodable.
+
+=== ALA-LC
+
+The official catalogue of 78 romanization tables is captured
+(`alalc-roman.html`); the diff is in `alalc-diff.txt` (30 tables
+encoded, 47 catalog systems not encoded).
+
+**Availability gap:** the project holds only one table document,
+`alalc/1997/mongolia.pdf`. The 55 ALA-LC maps on `main` are verified
+corpus entries, but their source tables are not archived here.
+Encoding any of the 47 catalog gaps requires acquiring the table
+documents first. Several ALA-LC gaps overlap languages we already
+encode under other authorities (Burmese, Khmer, Lao, Shan, Hebrew,
+Pashto, Thai, Urdu, Uyghur, Uzbek, Kurdish), which lowers their
+priority: a new authority is only worth encoding when a consumer needs
+that authority's output, not merely the script conversion.
+
+=== ICAO
+
+Held: 9303 Part 3 (Amd 1) and the 9303 Arabic helper. The corpus has
+8 `icao-*` maps. The held Part 3 was verified **not** to contain the
+language transliteration tables (they live in another 9303 part or
+edition) — a documented capture finding, not an encoding gap.
+
+=== BAS, UN, and the remaining authorities
+
+* `bas/` — 2 documents, both encoded (`bas-eng-Latn-Latn-rpa`,
+  `bas-rus-Cyrl-Latn`).
+* UN (32 maps) — no UNGEGN source documents are held; the official
+  schedule capture attempt 404'd. Archival gap.
+* All other single-system authorities (elot, mvd, gost, mext, moct,
+  lshk, acadsin, sac, hk, kp, ...) are verified corpus entries with no
+  held source document.
+
+== The genuine encoding gap list
+
+Fifteen systems have a held source document and no encoding anywhere
+in the project. They are ordered by tractability.
+
+[cols="1,2,2,1",options="header"]
+|===
+|# |Gap |What the document is |Source
+
+|1 |`odni-kur-Arab-Latn-2011` |IC Kurdish personal-name table
+(Perso-Arabic → Latin, no diacritics) |ICS Annex G / ODNI PDF
+|2 |`odni-zho-Latn-Latn-2011` + Appendix B conversions |IC pinyin
+normalisation (surname case, no ü, spacing) + Wade-Giles/Yale →
+pinyin tables |ICS Annex D + Appendices
+|3 |`din-31635` |DIN Arabic: Arabic, Ottoman Turkish, Persian, Kurdish,
+Urdu |DIN 31635:2011
+|4 |`din-31636` |DIN Hebrew |DIN 31636:2018
+|5 |`din-32706` |DIN Armenian |DIN 32706:2010
+|6 |`din-32708` |DIN Japanese |DIN 32708:2014
+|7 |`din-1460-2` |DIN non-Slavic Cyrillic (Abkhaz, Bashkir, ...) |DIN 1460-2:2011
+|8 |`bsi-2979` |British transliteration of Cyrillic and Greek |BS 2979:1958
+|9 |`pd-6505` |British guide to Korean romanization |PD 6505:1982
+|10 |`bgnpcgn-mya` |BGN/PCGN Burmese |BGN/PCGN + USBGN 1970
+|11 |`bgnpcgn-lao` |BGN/PCGN Lao |BGN/PCGN + USBGN 1966
+|12 |`bgnpcgn-shn` |BGN/PCGN Shan |BGN/PCGN
+|13 |`bgnpcgn-iu` |BGN/PCGN Inuktitut syllabics |BGN/PCGN table
+|14 |`bgnpcgn-heb` |BGN/PCGN Hebrew |BGN 1962 / USBGN 1962
+|15 |`bgnpcgn-khm` |BGN/PCGN Khmer |BGN/PCGN + USBGN 1972
+|===
+
+Every one of these is a deterministic table with its own example
+rows. None requires a training corpus to *encode*; the corpus is
+required only to *train a model* on top of the map.
+
+== Recoverable work (do not re-encode)
+
+* Restore the nine PR #208 maps from
+  `origin/feat/a1-cyrillic-encodings` onto `main`.
+* Migrate PR #166 (`bgnpcgn-dzo-Tibt-Latn-2010.imp`) and PR #167
+  (`bgnpcgn-syr-Syrc-Latn-2011.imp`) from `.imp` to `.isc`, verify the
+  embedded tests, and land them. Resolve the language code: the ISO
+  639-3 code for Classical Syriac is `syc`; Modern Syriac/Assyrian is
+  `aii`/`syr`. The BGN document is Modern Syriac — pick the code with
+  evidence, not by analogy.
+
+== Model layer (separate from map coverage)
+
+The deterministic map and the neural model are independent products.
+A language can have a map and no model; that is the normal state for
+most of the corpus.
+
+Model-covered romanization/diacritization today: Hebrew, Khmer, Thai,
+Persian, Arabic, Urdu (see `interscript-models/models.yaml`).
+
+**DATA-BLOCKED models** — no gold romanization/transliteration pairs
+exist in the data supply: Burmese, Dzongkha, Inuktitut, Lao, Shan.
+This blocks *training*, not encoding. Policy: withhold a model rather
+than ship a bad-quality one.
+
+== Why the earlier workboard was wrong
+
+The A1 workboard diffed a catalogue of held PDFs against the corpus
+files on `main` and concluded that 17 BGN/PCGN systems were missing.
+Three facts were not checked:
+
+1. **Merged history.** Nine of the systems had already been merged in
+   PR #208. A later revert removed them; the workboard then counted
+  them as gaps again.
+2. **Open PRs.** Dzongkha and Modern Syriac were already encoded in
+   open contributor PRs #166 and #167.
+3. **Authority overlap.** Hebrew was covered by an ICAO map; Khmer by
+   a shipped model; Thai had just landed in PR #204.
+
+The correct method — used in this document — is: check `main`, check
+open PRs, check merged history, check other authority prefixes, and
+only then call a system missing. The corpus is the authority for what
+is encoded; a PDF diff alone never is.
