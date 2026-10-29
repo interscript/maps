@@ -1,0 +1,523 @@
+system "BGN-PCGN:dzo-Tibt:Latn:2010" {
+
+metadata {
+  authority_id bgnpcgn
+  id 2010
+  language iso-639-2:dzo
+  source_script Tibt
+  destination_script Latn
+  name Romanization of Dzongkha (2010 Agreement)
+  url https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693691/ROMANIZATION_OF_DZONGKHA.pdf
+  creation_date 2010
+  confirmation_date 2017-10
+  description {
+    This romanization system for Dzongkha was developed by the Dzongkha Development
+    Commission. Bhutan's Ministry of Home Affairs approved this system in 1997 and
+    mandated that the Bhutanese government use standardized spellings of geographical
+    names and official guidelines for romanization. The tabulation is derived from the
+    version available on the UNGEGN Working Group on Romanization Systems website.
+  }
+
+  notes {
+    note "Dzongkha words are divided into syllables by a special symbol called tsheg, as in the word thim-phu: Thimphu. Geographical names greater than three syllables are divided after the second syllable: e.g. the four-syllable name tra-shi-yang-tse: Trashi Yangtse. This map renders the tsheg as empty, so syllables concatenate; the greater-than-three-syllables division rule is not implemented."
+    note "A syllable may be composed of several elements, including prefixed, superscript, subscript and suffixed consonant characters often stacked upon one another, e.g. s (superscript) upon k upon ya (subscript) generating skya."
+    note "Prefixed consonants are not romanized, e.g. Dungna and Gasa. Prefix stripping requires the syllable-stack analysis of the written form; this map renders the letters linearly and does not strip prefixes - the source's own examples Dungna, Gasa, Trashi Yangtse and Tangsibji begin with prefixed forms and are therefore not embedded as tests."
+    note "Superscript consonants are not romanized with the exception of lha; this map drops the superscript letter before a subjoined root and romanizes the subjoined root with its inherent vowel. The subscript wa (wa-zur) is not romanized: ka, da, tsha."
+    note "Suffixed consonants are romanized or not romanized based on local pronunciation; this map applies the suffix reading when the letter stands before a tsheg or at the end of the text (ga as g, nga as ng, da unromanized, na as n, ba as b, ma as m, a-chung unromanized, ra as r, la as l, sa unromanized), and the source's alternatives (k for ga, omission for nga, na, ra and la, p for ba) are pronunciation-side. A syllable consisting only of a root letter that is also a suffix letter renders with the suffix reading; the root reading of such syllables requires the stack analysis."
+    note "Secondary suffixed consonants are not romanized; however, there are exceptions, e.g. Bartsham, Dangchhu, and Zhemgang is an exception in which the suffix is not romanized but the secondary suffix is romanized. The secondary-suffix decisions are pronunciation-side and not implemented."
+    note "Pronunciation of Dzongkha names may vary according to local usage and there are several exceptions to the present romanization guidelines."
+    note "The palatal variants ch, chh, j of the ya-subscript combinations are generally used before a, o, and u; this map applies the non-palatal readings (ka, kha, gya, pcha, pchha, bja). The source's combination row romanized hra has no Unicode encoding in the source's glyph forms and is not encoded."
+    note "The character ba is romanized as either ba or wa depending on dialect; this map applies ba. The source's special note on additional characters found mainly in words of Indic provenance gives retroflex and serifed letters the readings tra, thra, dra, na, kha and chha; their codepoints are not given by the source and are not encoded."
+    note "The Romanization columns show lowercase forms; capitalization follows the rules of the user community, and this map outputs lower case (the source's examples Thimphu, Trashi Yangtse are presented capitalized)."
+  }
+}
+
+tests {
+  # source example (prefix-free syllables)
+   "ཐིམ་ཕུ" ->  "thimphu"
+  # alphabet rows (root reading via the i-vowel for the suffix letters)
+   "ཀ" ->  "ka"
+   "ཁ" ->  "kha"
+   "ཅ" ->  "cha"
+   "ཆ" ->  "chha"
+   "ཇ" ->  "ja"
+   "ཉ" ->  "nya"
+   "ཏ" ->  "ta"
+   "ཐ" ->  "tha"
+   "པ" ->  "pa"
+   "ཕ" ->  "pha"
+   "ཙ" ->  "tsa"
+   "ཚ" ->  "tsha"
+   "ཛ" ->  "dza"
+   "ཝ" ->  "wa"
+   "ཞ" ->  "zha"
+   "ཟ" ->  "za"
+   "ཡ" ->  "ya"
+   "ཤ" ->  "sha"
+   "ཧ" ->  "ha"
+   "ཨ" ->  "a"
+   "གི" ->  "gi"
+   "ངི" ->  "ngi"
+   "དི" ->  "di"
+   "ནི" ->  "ni"
+   "བི" ->  "bi"
+   "མི" ->  "mi"
+   "འི" ->  "i"
+   "རི" ->  "ri"
+   "ལི" ->  "li"
+   "སི" ->  "si"
+  # vowel signs on a root
+   "ཀི" ->  "ki"
+   "ཀུ" ->  "ku"
+   "ཀེ" ->  "ke"
+   "ཀོ" ->  "ko"
+   "ཨི" ->  "i"
+   "ཨུ" ->  "u"
+   "ཨེ" ->  "e"
+   "ཨོ" ->  "o"
+  # syllable-initial consonant combinations
+   "ཀྱ" ->  "ka"
+   "ཁྱ" ->  "kha"
+   "གྱ" ->  "gya"
+   "པྱ" ->  "pcha"
+   "ཕྱ" ->  "pchha"
+   "བྱ" ->  "bja"
+   "མྱ" ->  "nya"
+   "དབྱ" ->  "ya"
+   "དབ" ->  "wa"
+   "ཀྲ" ->  "tra"
+   "ཁྲ" ->  "thra"
+   "གྲ" ->  "dra"
+   "ཐྲ" ->  "thra"
+   "དྲ" ->  "dra"
+   "པྲ" ->  "tra"
+   "ཕྲ" ->  "thra"
+   "བྲ" ->  "dra"
+   "ཤྲ" ->  "shra"
+   "སྲ" ->  "sa"
+   "ཟྨ" ->  "da"
+   "ལྷ" ->  "lha"
+  # suffixes before the tsheg and word-finally
+   "ཐིམ་" ->  "thim"
+   "ག" ->  "g"
+   "ང" ->  "ng"
+   "ད" ->  ""
+   "ན" ->  "n"
+   "བ" ->  "b"
+   "མ" ->  "m"
+   "འ" ->  ""
+   "ར" ->  "r"
+   "ལ" ->  "l"
+   "ས" ->  ""
+}
+
+stage main {
+
+  # RULES
+  # syllable-initial consonant combinations with non-standard romanizations
+  sub {
+    from "དབྱ"
+    to "ya"
+  }
+  sub {
+    from "དབ"
+    to "wa"
+  }
+  sub {
+    from "གྱ"
+    to "gya"
+  }
+  sub {
+    from "པྱ"
+    to "pcha"
+  }
+  sub {
+    from "ཕྱ"
+    to "pchha"
+  }
+  sub {
+    from "བྱ"
+    to "bja"
+  }
+  sub {
+    from "མྱ"
+    to "nya"
+  }
+  sub {
+    from "ཀྲ"
+    to "tra"
+  }
+  sub {
+    from "ཁྲ"
+    to "thra"
+  }
+  sub {
+    from "གྲ"
+    to "dra"
+  }
+  sub {
+    from "ཐྲ"
+    to "thra"
+  }
+  sub {
+    from "དྲ"
+    to "dra"
+  }
+  sub {
+    from "པྲ"
+    to "tra"
+  }
+  sub {
+    from "ཕྲ"
+    to "thra"
+  }
+  sub {
+    from "བྲ"
+    to "dra"
+  }
+  sub {
+    from "ཤྲ"
+    to "shra"
+  }
+  sub {
+    from "སྲ"
+    to "sa"
+  }
+  sub {
+    from "ཟྨ"
+    to "da"
+  }
+  sub {
+    from "ལྷ"
+    to "lha"
+  }
+
+  # superscript consonants are not romanized: drop the superscript letter
+  # before a subjoined root
+  sub {
+    from "ར"
+    to ""
+    after any("ྐྑྒྔྕྖྗྙྟྠྡྣྤྥྦྨྩྪྫྵྶྷ")
+  }
+  sub {
+    from "ལ"
+    to ""
+    after any("ྐྑྒྔྕྖྗྙྟྠྡྣྤྥྦྨྩྪྫྵྶྷ")
+  }
+  sub {
+    from "ས"
+    to ""
+    after any("ྐྑྒྔྕྖྗྙྟྠྡྣྤཕྦྨྩཚྫྵྶྷ")
+  }
+  sub {
+    from "ཅ"
+    to ""
+    after any("ྐྑྒྔྕྖྗྙྟྠྡྣྤྥྦྨྩྪྫྵྶྷ")
+  }
+
+  # root letters before a vowel sign render as the bare consonant
+  sub {
+    from "ཀ"
+    to "k"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཁ"
+    to "kh"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ག"
+    to "g"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ང"
+    to "ng"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཅ"
+    to "ch"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཆ"
+    to "chh"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཇ"
+    to "j"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཉ"
+    to "ny"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཏ"
+    to "t"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཐ"
+    to "th"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ད"
+    to "d"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ན"
+    to "n"
+    after any("ིེོུ")
+  }
+  sub {
+    from "པ"
+    to "p"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཕ"
+    to "ph"
+    after any("ིེོུ")
+  }
+  sub {
+    from "བ"
+    to "b"
+    after any("ིེོུ")
+  }
+  sub {
+    from "མ"
+    to "m"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཙ"
+    to "ts"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཚ"
+    to "tsh"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཛ"
+    to "dz"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཝ"
+    to "w"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཞ"
+    to "zh"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཟ"
+    to "z"
+    after any("ིེོུ")
+  }
+  sub {
+    from "འ"
+    to ""
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཡ"
+    to "y"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ར"
+    to "r"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ལ"
+    to "l"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཤ"
+    to "sh"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ས"
+    to "s"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཧ"
+    to "h"
+    after any("ིེོུ")
+  }
+  sub {
+    from "ཨ"
+    to ""
+    after any("ིེོུ")
+  }
+
+  # suffixes (Syllable Endings): the letter before a tsheg or at the end of
+  # the text takes the suffix reading
+  sub {
+    from "ག"
+    to "g"
+    after any("་")
+  }
+  sub {
+    from "ག"
+    to "g"
+    after boundary
+  }
+  sub {
+    from "ང"
+    to "ng"
+    after any("་")
+  }
+  sub {
+    from "ང"
+    to "ng"
+    after boundary
+  }
+  sub {
+    from "ད"
+    to ""
+    after any("་")
+  }
+  sub {
+    from "ད"
+    to ""
+    after boundary
+  }
+  sub {
+    from "ན"
+    to "n"
+    after any("་")
+  }
+  sub {
+    from "ན"
+    to "n"
+    after boundary
+  }
+  sub {
+    from "བ"
+    to "b"
+    after any("་")
+  }
+  sub {
+    from "བ"
+    to "b"
+    after boundary
+  }
+  sub {
+    from "མ"
+    to "m"
+    after any("་")
+  }
+  sub {
+    from "མ"
+    to "m"
+    after boundary
+  }
+  sub {
+    from "འ"
+    to ""
+    after any("་")
+  }
+  sub {
+    from "འ"
+    to ""
+    after boundary
+  }
+  sub {
+    from "ར"
+    to "r"
+    after any("་")
+  }
+  sub {
+    from "ར"
+    to "r"
+    after boundary
+  }
+  sub {
+    from "ལ"
+    to "l"
+    after any("་")
+  }
+  sub {
+    from "ལ"
+    to "l"
+    after boundary
+  }
+  sub {
+    from "ས"
+    to ""
+    after any("་")
+  }
+  sub {
+    from "ས"
+    to ""
+    after boundary
+  }
+
+  # CHARACTERS
+  parallel {
+    sub "ཀ" "ka"
+    sub "ཁ" "kha"
+    sub "ག" "ga"
+    sub "ང" "nga"
+    sub "ཅ" "cha"
+    sub "ཆ" "chha"
+    sub "ཇ" "ja"
+    sub "ཉ" "nya"
+    sub "ཏ" "ta"
+    sub "ཐ" "tha"
+    sub "ད" "da"
+    sub "ན" "na"
+    sub "པ" "pa"
+    sub "ཕ" "pha"
+    sub "བ" "ba"
+    sub "མ" "ma"
+    sub "ཙ" "tsa"
+    sub "ཚ" "tsha"
+    sub "ཛ" "dza"
+    sub "ཝ" "wa"
+    sub "ཞ" "zha"
+    sub "ཟ" "za"
+    sub "འ" "z"
+    sub "ཡ" "ya"
+    sub "ར" "ra"
+    sub "ལ" "la"
+    sub "ཤ" "sha"
+    sub "ས" "sa"
+    sub "ཧ" "ha"
+    sub "ཨ" "a"
+    sub "ི" "i"
+    sub "ུ" "u"
+    sub "ེ" "e"
+    sub "ོ" "o"
+    sub "་" ""
+    sub "༌" ""
+    sub "ྭ" ""
+    sub "ྱ" ""
+    sub "ྲ" ""
+    sub "ྨ" "ma"
+    sub "ྐ" "ka"
+    sub "ྡ" "da"
+    sub "ྤ" "pa"
+    sub "ྥ" "pha"
+  }
+
+}
+
+}
