@@ -25,22 +25,89 @@ metadata {
 }
 
 tests {
+   "Олександр" ->  "Oleksandr"
+   "Євген" ->  "YEvhen"
+   "їжак" ->  "yizhak"
+   "Микола" ->  "Mykola"
+   "Юрій" ->  "YUrii"
+   "Яків" ->  "YAkiv"
 }
 
 # https://www.icao.int/publications/Documents/9303_p3_cons_en.pdf
 stage main {
 
+  # RULES
+  # word-initial renderings, except after the word-initial apostrophe
+  sub {
+    from "Є"
+    to "YE"
+    before boundary
+    not_before boundary + "’"
+  }
+  sub {
+    from "є"
+    to "ye"
+    before boundary
+    not_before boundary + "’"
+  }
+  sub {
+    from "Ї"
+    to "YI"
+    before boundary
+    not_before boundary + "’"
+  }
+  sub {
+    from "ї"
+    to "yi"
+    before boundary
+    not_before boundary + "’"
+  }
+  sub {
+    from "Й"
+    to "Y"
+    before boundary
+    not_before boundary + "’"
+  }
+  sub {
+    from "й"
+    to "y"
+    before boundary
+    not_before boundary + "’"
+  }
+  sub {
+    from "Ю"
+    to "YU"
+    before boundary
+    not_before boundary + "’"
+  }
+  sub {
+    from "Я"
+    to "YA"
+    before boundary
+    not_before boundary + "’"
+  }
   # CHARACTERS
   parallel {
-    sub "'" ""
+    sub "Ђ" "D"
+    sub "Є" "IE"
+    sub "Ѕ" "DZ"
+    sub "І" "I"
+    sub "Ї" "I"
+    sub "Ј" "J"
+    sub "Љ" "LJ"
+    sub "Њ" "NJ"
+    sub "Ќ" "K"
+    sub "Ў" "U"
+    sub "Џ" "DZ"
+    sub "Ё" "E"
     sub "А" "A"
     sub "Б" "B"
+    sub "В" "V"
+    sub "Г" "H"
     sub "Д" "D"
-    sub "Ё" "E"
     sub "Е" "E"
-    sub "Э" "E"
-    sub "Ф" "F"
-    sub "Г" "G"
+    sub "Ж" "ZH"
+    sub "З" "Z"
     sub "И" "Y"
     sub "Й" "I"
     sub "К" "K"
@@ -53,40 +120,44 @@ stage main {
     sub "С" "S"
     sub "Т" "T"
     sub "У" "U"
-    sub "В" "V"
-    sub "Ы" "Y"
-    sub "З" "Z"
-    sub "Ч" "CH"
-    sub "Я" "IA"
-    sub "Ю" "IU"
+    sub "Ф" "F"
     sub "Х" "KH"
+    sub "Ц" "TS"
+    sub "Ч" "CH"
     sub "Ш" "SH"
     sub "Щ" "SHCH"
-    sub "Ц" "TS"
-    sub "Ж" "ZH"
-    sub "Ґ" "G"
-    sub "Ў" "U"
+    sub "Ъ" "IE"
+    sub "Ы" "Y"
+    sub "Ь" ""
+    sub "Э" "E"
+    sub "Ю" "IU"
+    sub "Я" "IA"
     sub "Ѫ" "U"
-    sub "Ђ" "D"
-    sub "Ѕ" "DZ"
-    sub "Ј" "J"
-    sub "Љ" "LJ"
-    sub "Њ" "NJ"
+    sub "Ѵ" "Y"
+    sub "Ґ" "G"
+    sub "Ғ" "G"
     sub "Һ" "C"
-    sub "Џ" "DZ"
-    sub "Є" "IE"
-    sub "Ї" "I"
-    sub "Ѓ" "G"
-    sub "І" "I"
 
+    sub "ђ" "d"
+    sub "є" "ie"
+    sub "ѕ" "dz"
+    sub "і" "i"
+    sub "ї" "i"
+    sub "ј" "j"
+    sub "љ" "lj"
+    sub "њ" "nj"
+    sub "ќ" "k"
+    sub "ў" "u"
+    sub "џ" "dz"
+    sub "ё" "e"
     sub "а" "a"
     sub "б" "b"
+    sub "в" "v"
+    sub "г" "h"
     sub "д" "d"
-    sub "ё" "e"
     sub "е" "e"
-    sub "э" "e"
-    sub "ф" "f"
-    sub "г" "g"
+    sub "ж" "zh"
+    sub "з" "z"
     sub "и" "y"
     sub "й" "i"
     sub "к" "k"
@@ -98,31 +169,24 @@ stage main {
     sub "р" "r"
     sub "с" "s"
     sub "т" "t"
-    sub "у" ""
-    sub "в" "v"
-    sub "ы" "y"
-    sub "з" "z"
-    sub "ч" "ch"
-    sub "я" "ia"
-    sub "ю" "i"
+    sub "у" "u"
+    sub "ф" "f"
     sub "х" "kh"
+    sub "ц" "ts"
+    sub "ч" "ch"
     sub "ш" "sh"
     sub "щ" "shch"
-    sub "ц" "ts"
-    sub "ж" "zh"
+    sub "ъ" "ie"
+    sub "ы" "y"
+    sub "ь" ""
+    sub "э" "e"
+    sub "ю" "yu"
+    sub "я" "ya"
+    sub "ѫ" "u"
+    sub "ѵ" "y"
     sub "ґ" "g"
-    sub "ў" ""
-    sub "ѫ" ""
-    sub "ђ" "d"
-    sub "ѕ" "dz"
-    sub "ј" "j"
-    sub "љ" "lj"
-    sub "њ" "nj"
+    sub "ғ" "g"
     sub "һ" "c"
-    sub "џ" "dz"
-    sub "є" "ie"
-    sub "ї" "i"
-    sub "ѓ" "g"
   }
 
 }
