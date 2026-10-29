@@ -1,0 +1,118 @@
+system "BGN-PCGN:syr-Syrc:Latn:2011" {
+
+metadata {
+  authority_id bgnpcgn
+  id 2011
+  language iso-639-2:syr
+  source_script Syrc
+  destination_script Latn
+  name Romanization of modern Syriac script (2011)
+  url https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693736/ROMANIZATION_OF_MODERN_SYRIAC.pdf
+  creation_date 2011
+  confirmation_date 2017-11
+  description {
+    The modern Syriac script is used today by Assyrian writers of the neo-Aramaic
+    language. This Romanization System may be applied to any toponyms written in
+    this script as may be encountered in parts of northern Iraq, Syria, northern
+    Iran and eastern Turkey. The Neo-Aramaic language has a degree of locally
+    official status within Iraq, and accordingly some bilingual Arabic and modern
+    Syriac signage may be encountered.
+
+    The script is closely aligned to that of both Hebrew and Arabic, and, as these,
+    is written from right to left. In this Romanization System, 'strong' consonants
+    have been marked with a sub-dot so as not to give a closer visual relation to
+    either Arabic (which marks such consonants with a cedilla) or Hebrew (which
+    marks these with an underbar). The equivalences where they exist in the Arabic
+    and Hebrew scripts have also been shown only for a guide to the cognate root.
+  }
+
+  notes {
+    note "Letters connect to the following letter (to the left) except those referenced to this note."
+    note "This is the form in independent or word-final position. The form initially and medially differs but this is not included in a standalone form in the Unicode Standard. The initial/medial form will however be automatically generated in using the letter's Unicode encoding initially or medially in a word. To illustrate the different forms, using the Unicode encoding twice gives: U+071F; U+0721; and U+0722."
+    note "Ālap (U+0710) has a number of functions in modern Syriac script: it appears word-initially to denote a vowel, and is sometimes followed by yod or waw to denote i-macron or u-macron respectively; it appears word-medially to denote what historically was a glottal stop, which is understood not to function as a stop in speech now, though the alap still appears in the written form, and is romanized '.'; it appears word-medially and word-finally to denote the long vowel a-macron or e-macron. Given the ambiguity in its function, it is recommended that a reference source be consulted for further guidance as to the appropriate romanization."
+    note "Taw (U+072C) should be romanized t when unaspirated, and th when aspirated. A reference source should be consulted for further guidance as to the appropriate romanization."
+    note "Numerals in modern Syriac script are represented by letters of the alphabet: alap, bet, gamal = 1, 2, 3 etc.; yod = 10, kap = 20, lamad = 30 etc.; qop = 100, resh = 200, shin = 300 and finally taw = 400. Unlike Arabic, composite numerals are written from right to left, so for instance 12 is written bet then yod. Given the limited number of single-character numerals, other numbers are naturally quite elaborately composed: for instance, 999 may be written as (90x10)+90+9 or as 400+400+100+90+9. Arabic numerals are also used."
+    note "An inventory of letter-diacritic combinations, with their Unicode encoding, in addition to the unmodified letters of the basic Roman script is:"
+    note "Right single quotation mark U+2019, left single quotation mark U+2018; A with macron U+0100, a with macron U+0101; E with macron U+0112, e with macron U+0113; U with macron U+016A, u with macron U+016B; H with dot below U+0048+0323, h with dot below U+0068+0323; T with dot below U+0054+0323, t with dot below U+0074+0323; I with macron U+012A, i with macron U+012B; S with dot below U+0053+0323, s with dot below U+0073+0323."
+    note "The Romanization column shows only lowercase forms but, when romanizing, uppercase and lowercase Roman letters as appropriate should be used."
+    note "The source table gives waw as w or u-macron, yod as y or i-macron, and taw as t or th. This map renders w, y and t; the alternatives are the vocalization-dependent readings (the pointing marks are frequently omitted), the composition point for a vocalization model."
+  }
+}
+
+tests {
+  # every table row; the vowel pointing marks
+   "ܐ" ->  ""
+   "ܒ" ->  "b"
+   "ܓ" ->  "g"
+   "ܕ" ->  "d"
+   "ܗ" ->  "h"
+   "ܘ" ->  "w"
+   "ܙ" ->  "z"
+   "ܚ" ->  "ḥ"
+   "ܛ" ->  "ṭ"
+   "ܝ" ->  "y"
+   "ܟ" ->  "k"
+   "ܠ" ->  "l"
+   "ܡ" ->  "m"
+   "ܢ" ->  "n"
+   "ܣ" ->  "s"
+   "ܤ" ->  "s"
+   "ܥ" ->  "‘"
+   "ܦ" ->  "p"
+   "ܨ" ->  "ṣ"
+   "ܩ" ->  "q"
+   "ܪ" ->  "r"
+   "ܫ" ->  "sh"
+   "ܬ" ->  "t"
+   "ܒܲ" ->  "ba"
+   "ܒܳ" ->  "bo"
+   "ܒܴ" ->  "bu"
+   "ܒܵ" ->  "bā"
+   "ܒܸ" ->  "bi"
+   "ܒܹ" ->  "bē"
+   "ܒܼ" ->  "bī"
+}
+
+
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "ܐ" ""  # Alap. See note
+    sub "ܒ" "b"  # Bet
+    sub "ܓ" "g"  # Gamal
+    sub "ܕ" "d"  # Dalat. See note
+    sub "ܗ" "h"  # He. See note
+    sub "ܘ" "w"  # Waw. See note
+    sub "ܙ" "z"  # Zayn. See note
+    sub "ܚ" "ḥ"  # Het
+    sub "ܛ" "ṭ"  # Tet
+    sub "ܝ" "y"  # Yod
+    sub "ܟ" "k"  # Kap. See note
+    sub "ܠ" "l"  # Lamad
+    sub "ܡ" "m"  # Mim. See note
+    sub "ܢ" "n"  # Nun. See note
+    sub "ܣ" "s"  # Semkat
+    sub "ܤ" "s"  # Semkat (final form)
+    sub "ܥ" "‘"  # E
+    sub "ܦ" "p"  # Pe
+    sub "ܨ" "ṣ"  # Sade. See note
+    sub "ܩ" "q"  # Qop
+    sub "ܪ" "r"  # Resh
+    sub "ܫ" "sh"  # Shin
+    sub "ܬ" "t"  # Taw. See note
+
+    # Vowel pointing marks
+    sub "ܲ" "a"
+    sub "ܳ" "o"
+    sub "ܴ" "u"
+    sub "ܵ" "ā"
+    sub "ܸ" "i"
+    sub "ܹ" "ē"
+    sub "ܼ" "ī"
+  }
+
+}
+
+}
