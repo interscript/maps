@@ -51,6 +51,8 @@ metadata {
 
     note "In pure Kurdish words, the vowel ى is always long î, e.g. كانى ماسێ\n Kanî Masê. When it represents îzafe, it is also romanized î and joined\n by means of a hyphen to its preceding word e.g. پارێزگاى دهۆك Parêzga-î\n Dihok."
 
+    note "The rare vowel row (waw with the combining macron above, U+0648+0304) is romanized ö; the source marks it rare and notes that it was previously written waw-waw. This map renders the marked sequence; the plain waw renders u per the vowel table."
+
     note "      An inventory of letter-diacritic combinations, used in addition to\n      the unmodified letters of the basic Roman script in the Romanization of\n      Kurdish, with their Unicode encoding, is:\n\n        '‘': '\\u2018' , '’': '2019'\n        'Ç': '00C7' , 'ç': '00E7'\n        'Ḍ': '1E0C' , 'ḍ': '1E0D'\n        'Ê': '00CA' , 'ê': '00EA'\n\n        # There is no single Unicode encoding for these letter-diacritic combinations.\n        'Ḧ': '0048+0308' , 'ḧ': '0068+0308'\n        'Î': '00CE' , 'î': '00EE'\n        'Ł': '0141' , 'ł': '0142'\n        'Ö': '00D6' , 'ö': '00F6'\n        'Ṟ': '1E5E' , 'ṟ': '1E5F'\n        'Ş': '015E' , 'ş': '015F'\n        'Ṣ': '1E62' , 'ṣ': '1E63'\n        'Ṭ': '1E6C' , 'ṭ': '1E6D'\n        'Û': '00DB' , 'û': '00FB'\n        'Ü': '00DC' , 'ü': '00FC'\n        'Ẍ': '1E8C' , 'ẍ': '1E8D'"
 
     note "The Romanization column shows only lowercase forms but, when\n romanizing, uppercase and lowercase Roman letters as appropriate should\n be used."
@@ -78,6 +80,7 @@ tests {
    "كِرِن" ->  "Kirin"
    "ئاگِر" ->  "Agir"
    "موحەممەد" ->  "Muḧemmed"
+   "و̄" ->  "Ö"  # waw + combining macron above (the rare vowel row; word-initial upcase applies)
   # - source: موسەننا # issue 604
   #   expected: Musanna
    "لەكوردِستانێ" ->  "Le Kurdistanê"
@@ -169,7 +172,7 @@ stage main {
     sub "\u0626\u0648\u0648" "û"
     sub "\u06C6" "o"
     sub "\u0626\u06C6" "o"
-    sub "\u0648" "ö"
+    sub "\u0648\u0304" "ö"
     sub "\u06CA" "ü"
   }
 
