@@ -1,0 +1,8308 @@
+{
+ "acadsin-zho-Hani-Latn-2002": {
+  "system": "ACADSIN:zho-Hani:Latn:2002",
+  "file": "acadsin-zho-Hani-Latn-2002.isc",
+  "pairs": 22411,
+  "context_rules": 5081,
+  "many_to_one": 396,
+  "many_to_one_examples": {
+   "ai": [
+    "㕌",
+    "㗒",
+    "㤅",
+    "㱯"
+   ],
+   "an": [
+    "㞄",
+    "㟁",
+    "㫨",
+    "㸩"
+   ],
+   "ang": [
+    "㭿",
+    "㼜",
+    "䀚",
+    "䩕"
+   ],
+   "ao": [
+    "㑃",
+    "㕭",
+    "㜜",
+    "㜩"
+   ],
+   "ba": [
+    "㧞",
+    "㶚",
+    "㸭",
+    "㺩"
+   ],
+   "bai": [
+    "㓦",
+    "㠔",
+    "㤳",
+    "㶔"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-amh-Ethi-Latn-1997": {
+  "system": "ALA-LC:amh-Ethi:Latn:1997",
+  "file": "alalc-amh-Ethi-Latn-1997.isc",
+  "pairs": 268,
+  "context_rules": 32,
+  "many_to_one": 7,
+  "many_to_one_examples": {
+   "ha": [
+    "ሀ",
+    "ኀ"
+   ],
+   "hi": [
+    "ሂ",
+    "ኂ"
+   ],
+   "ho": [
+    "ሆ",
+    "ኆ"
+   ],
+   "hu": [
+    "ሁ",
+    "ኁ"
+   ],
+   "hé": [
+    "ሄ",
+    "ኄ"
+   ],
+   "hā": [
+    "ሃ",
+    "ኃ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-amh-Ethi-Latn-2011": {
+  "system": "ALA-LC:amh-Ethi:Latn:2011",
+  "file": "alalc-amh-Ethi-Latn-2011.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-ara-Arab-Latn-1997": {
+  "system": "ALA-LC:ara-Arab:Latn:1997",
+  "file": "alalc-ara-Arab-Latn-1997.isc",
+  "pairs": 360,
+  "context_rules": 22,
+  "many_to_one": 41,
+  "many_to_one_examples": {
+   "": [
+    "ْ",
+    "ا",
+    "آ",
+    "؀"
+   ],
+   "a": [
+    "َ",
+    "َ"
+   ],
+   "an": [
+    "ً",
+    "ًى",
+    "ًا",
+    "ىً"
+   ],
+   "aw": [
+    "َوْ",
+    "أو",
+    "َوْ"
+   ],
+   "ay": [
+    "َيْ",
+    "أي",
+    "َيْ"
+   ],
+   "b": [
+    "ب",
+    "ﺑ",
+    "ﺒ",
+    "ﺐ"
+   ]
+  },
+  "one_to_many": 39,
+  "one_to_many_examples": {
+   "ب": 2,
+   "ت": 2,
+   "ث": 2,
+   "ج": 2,
+   "ح": 2,
+   "خ": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-asm-Deva-Latn-1997": {
+  "system": "ALA-LC:asm-Deva:Latn:1997",
+  "file": "alalc-asm-Deva-Latn-1997.isc",
+  "pairs": 78,
+  "context_rules": 39,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "": [
+    "्",
+    "্"
+   ],
+   "ai": [
+    "ঐ",
+    "ৈ"
+   ],
+   "au": [
+    "ঔ",
+    "ৌ"
+   ],
+   "e": [
+    "এ",
+    "ে"
+   ],
+   "i": [
+    "ই",
+    "ি"
+   ],
+   "o": [
+    "ও",
+    "ো"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-asm-Deva-Latn-2012": {
+  "system": "ALA-LC:asm-Deva:Latn:2012",
+  "file": "alalc-asm-Deva-Latn-2012.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-aze-Arab-Latn-1997": {
+  "system": "ALA-LC:aze-Arab:Latn:1997",
+  "file": "alalc-aze-Arab-Latn-1997.isc",
+  "pairs": 95,
+  "context_rules": 19,
+  "many_to_one": 9,
+  "many_to_one_examples": {
+   "": [
+    "أ",
+    "آ"
+   ],
+   "an": [
+    "ً",
+    "ًى",
+    "ًا",
+    "ىً"
+   ],
+   "k": [
+    "ک",
+    "ك"
+   ],
+   "kk": [
+    "کّ",
+    "كّ"
+   ],
+   "t": [
+    "ت",
+    "ة"
+   ],
+   "ā": [
+    "َا",
+    "آ",
+    "َآ"
+   ]
+  },
+  "one_to_many": 1,
+  "one_to_many_examples": {
+   "آ": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-aze-Cyrl-Latn-1997": {
+  "system": "ALA-LC:aze-Cyrl:Latn:1997",
+  "file": "alalc-aze-Cyrl-Latn-1997.isc",
+  "pairs": 67,
+  "context_rules": 0,
+  "many_to_one": 2,
+  "many_to_one_examples": {
+   "Y": [
+    "Ы",
+    "Й",
+    "Й"
+   ],
+   "y": [
+    "ы",
+    "й"
+   ]
+  },
+  "one_to_many": 1,
+  "one_to_many_examples": {
+   "Й": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-bel-Cyrl-Latn-1997": {
+  "system": "ALA-LC:bel-Cyrl:Latn:1997",
+  "file": "alalc-bel-Cyrl-Latn-1997.isc",
+  "pairs": 69,
+  "context_rules": 0,
+  "many_to_one": 2,
+  "many_to_one_examples": {
+   "": [
+    "´",
+    "ʼ",
+    "'"
+   ],
+   "ʹ": [
+    "Ь",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-ben-Beng-Latn-1997": {
+  "system": "ALA-LC:ben-Beng:Latn:1997",
+  "file": "alalc-ben-Beng-Latn-1997.isc",
+  "pairs": 76,
+  "context_rules": 40,
+  "many_to_one": 9,
+  "many_to_one_examples": {
+   "ai": [
+    "ঐ",
+    "ৈ"
+   ],
+   "au": [
+    "ঔ",
+    "ৌ"
+   ],
+   "e": [
+    "এ",
+    "ে"
+   ],
+   "i": [
+    "ই",
+    "ি"
+   ],
+   "o": [
+    "ও",
+    "ো"
+   ],
+   "ṛa": [
+    "ড়",
+    "ড়"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-ben-Beng-Latn-2017": {
+  "system": "ALA-LC:ben-Beng:Latn:2017",
+  "file": "alalc-ben-Beng-Latn-2017.isc",
+  "pairs": 53,
+  "context_rules": 0,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "ba": [
+    "ব",
+    "ব"
+   ]
+  },
+  "one_to_many": 1,
+  "one_to_many_examples": {
+   "ব": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-bul-Cyrl-Latn-1997": {
+  "system": "ALA-LC:bul-Cyrl:Latn:1997",
+  "file": "alalc-bul-Cyrl-Latn-1997.isc",
+  "pairs": 64,
+  "context_rules": 2,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "ʹ": [
+    "Ь",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-div-Thaa-Latn-1997": {
+  "system": "ALA-LC:div-Thaa:Latn:1997",
+  "file": "alalc-div-Thaa-Latn-1997.isc",
+  "pairs": 48,
+  "context_rules": 28,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "": [
+    "ް",
+    "އ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-div-Thaa-Latn-2012": {
+  "system": "ALA-LC:div-Thaa:Latn:2012",
+  "file": "alalc-div-Thaa-Latn-2012.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-ell-Grek-Latn-1997": {
+  "system": "ALA-LC:ell-Grek:Latn:1997",
+  "file": "alalc-ell-Grek-Latn-1997.isc",
+  "pairs": 74,
+  "context_rules": 21,
+  "many_to_one": 17,
+  "many_to_one_examples": {
+   ";": [
+    "·",
+    "·"
+   ],
+   "?": [
+    ";",
+    ";"
+   ],
+   "A": [
+    "Ά",
+    "Α"
+   ],
+   "E": [
+    "Ε",
+    "Έ"
+   ],
+   "I": [
+    "Ι",
+    "Ί",
+    "Ϊ"
+   ],
+   "O": [
+    "Ο",
+    "Ό"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-ell-Grek-Latn-2010": {
+  "system": "ALA-LC:ell-Grek:Latn:2010",
+  "file": "alalc-ell-Grek-Latn-2010.isc",
+  "pairs": 74,
+  "context_rules": 25,
+  "many_to_one": 17,
+  "many_to_one_examples": {
+   ";": [
+    "·",
+    "·"
+   ],
+   "?": [
+    ";",
+    ";"
+   ],
+   "A": [
+    "Ά",
+    "Α"
+   ],
+   "E": [
+    "Ε",
+    "Έ"
+   ],
+   "I": [
+    "Ι",
+    "Ί",
+    "Ϊ"
+   ],
+   "O": [
+    "Ο",
+    "Ό"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-fas-Arab-Latn-1997": {
+  "system": "ALA-LC:fas-Arab:Latn:1997",
+  "file": "alalc-fas-Arab-Latn-1997.isc",
+  "pairs": 88,
+  "context_rules": 20,
+  "many_to_one": 7,
+  "many_to_one_examples": {
+   "": [
+    "ْ",
+    "أ",
+    "إ"
+   ],
+   "an": [
+    "ً",
+    "ًا"
+   ],
+   "k": [
+    "ك",
+    "ک"
+   ],
+   "kk": [
+    "كّ",
+    "کّ"
+   ],
+   "á": [
+    "َى",
+    "ىٰ"
+   ],
+   "ā": [
+    "َا",
+    "ا"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-guj-Gujr-Latn-1997": {
+  "system": "ALA-LC:guj-Gujr:Latn:1997",
+  "file": "alalc-guj-Gujr-Latn-1997.isc",
+  "pairs": 77,
+  "context_rules": 39,
+  "many_to_one": 13,
+  "many_to_one_examples": {
+   "": [
+    "્",
+    "઼",
+    "্",
+    "‍"
+   ],
+   "ai": [
+    "ઐ",
+    "ૈ"
+   ],
+   "au": [
+    "ઔ",
+    "ૌ"
+   ],
+   "e": [
+    "ઍ",
+    "ૅ"
+   ],
+   "i": [
+    "ઇ",
+    "િ"
+   ],
+   "o": [
+    "ઑ",
+    "ૉ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-guj-Gujr-Latn-2011": {
+  "system": "ALA-LC:guj-Gujr:Latn:2011",
+  "file": "alalc-guj-Gujr-Latn-2011.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-hin-Deva-Latn-1997": {
+  "system": "ALA-LC:hin-Deva:Latn:1997",
+  "file": "alalc-hin-Deva-Latn-1997.isc",
+  "pairs": 91,
+  "context_rules": 5,
+  "many_to_one": 20,
+  "many_to_one_examples": {
+   "": [
+    "्",
+    "़"
+   ],
+   "ai": [
+    "ऐ",
+    "ै"
+   ],
+   "e": [
+    "ए",
+    "े"
+   ],
+   "gha": [
+    "ग़",
+    "घ"
+   ],
+   "ha": [
+    "ह",
+    "ह़"
+   ],
+   "i": [
+    "इ",
+    "ि"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-hin-Deva-Latn-2011": {
+  "system": "ALA-LC:hin-Deva:Latn:2011",
+  "file": "alalc-hin-Deva-Latn-2011.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-kan-Kana-Latn-1997": {
+  "system": "ALA-LC:kan-Kana:Latn:1997",
+  "file": "alalc-kan-Kana-Latn-1997.isc",
+  "pairs": 83,
+  "context_rules": 40,
+  "many_to_one": 15,
+  "many_to_one_examples": {
+   "": [
+    "಼",
+    "्",
+    "़",
+    "್"
+   ],
+   "ai": [
+    "ಐ",
+    "ೈ"
+   ],
+   "au": [
+    "ಔ",
+    "ೌ"
+   ],
+   "e": [
+    "ಎ",
+    "ೆ"
+   ],
+   "i": [
+    "ಇ",
+    "ಿ"
+   ],
+   "o": [
+    "ಒ",
+    "ೊ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-kan-Kana-Latn-2011": {
+  "system": "ALA-LC:kan-Kana:Latn:2011",
+  "file": "alalc-kan-Kana-Latn-2011.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-kat-Geok-Latn-1997": {
+  "system": "ALA-LC:kat-Geok:Latn:1997",
+  "file": "alalc-kat-Geok-Latn-1997.isc",
+  "pairs": 76,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-kat-Geok-Latn-2011": {
+  "system": "ALA-LC:kat-Geok:Latn:2011",
+  "file": "alalc-kat-Geok-Latn-2011.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-kat-Geor-Latn-1997": {
+  "system": "ALA-LC:kat-Geor:Latn:1997",
+  "file": "alalc-kat-Geor-Latn-1997.isc",
+  "pairs": 41,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-kat-Geor-Latn-2011": {
+  "system": "ALA-LC:kat-Geor:Latn:2011",
+  "file": "alalc-kat-Geor-Latn-2011.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-kor-Hang-Latn-1997": {
+  "system": "ALA-LC:kor-Hang:Latn:1997",
+  "file": "alalc-kor-Hang-Latn-1997.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-mal-Mlym-Latn-1997": {
+  "system": "ALA-LC:mal-Mlym:Latn:1997",
+  "file": "alalc-mal-Mlym-Latn-1997.isc",
+  "pairs": 99,
+  "context_rules": 41,
+  "many_to_one": 16,
+  "many_to_one_examples": {
+   "": [
+    "्",
+    "़",
+    "ൗ",
+    "‍"
+   ],
+   "ai": [
+    "ഐ",
+    "ൈ"
+   ],
+   "au": [
+    "ഔ",
+    "ൌ"
+   ],
+   "e": [
+    "എ",
+    "െ"
+   ],
+   "i": [
+    "ഇ",
+    "ി"
+   ],
+   "o": [
+    "ഒ",
+    "ൊ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-mal-Mlym-Latn-2012": {
+  "system": "ALA-LC:mal-Mlym:Latn:2012",
+  "file": "alalc-mal-Mlym-Latn-2012.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-mar-Deva-Latn-1997": {
+  "system": "ALA-LC:mar-Deva:Latn:1997",
+  "file": "alalc-mar-Deva-Latn-1997.isc",
+  "pairs": 73,
+  "context_rules": 4,
+  "many_to_one": 8,
+  "many_to_one_examples": {
+   "e": [
+    "ए",
+    "े"
+   ],
+   "i": [
+    "इ",
+    "ि"
+   ],
+   "la": [
+    "ल",
+    "ळ"
+   ],
+   "o": [
+    "ओ",
+    "ो"
+   ],
+   "u": [
+    "उ",
+    "ु"
+   ],
+   "ā": [
+    "आ",
+    "ा"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-mar-Deva-Latn-2011": {
+  "system": "ALA-LC:mar-Deva:Latn:2011",
+  "file": "alalc-mar-Deva-Latn-2011.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-mkd-Cyrl-Latn-1997": {
+  "system": "ALA-LC:mkd-Cyrl:Latn:1997",
+  "file": "alalc-mkd-Cyrl-Latn-1997.isc",
+  "pairs": 66,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-mkd-Cyrl-Latn-2013": {
+  "system": "ALA-LC:mkd-Cyrl:Latn:2013",
+  "file": "alalc-mkd-Cyrl-Latn-2013.isc",
+  "pairs": 64,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-mon-Cyrl-Latn-1997": {
+  "system": "ALA-LC:mon-Cyrl:Latn:1997",
+  "file": "alalc-mon-Cyrl-Latn-1997.isc",
+  "pairs": 70,
+  "context_rules": 0,
+  "many_to_one": 3,
+  "many_to_one_examples": {
+   "I": [
+    "И",
+    "Ь"
+   ],
+   "i": [
+    "и",
+    "ь"
+   ],
+   "“": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-ori-Orya-Latn-1997": {
+  "system": "ALA-LC:ori-Orya:Latn:1997",
+  "file": "alalc-ori-Orya-Latn-1997.isc",
+  "pairs": 81,
+  "context_rules": 44,
+  "many_to_one": 11,
+  "many_to_one_examples": {
+   "": [
+    "्",
+    "୍",
+    "़",
+    "଼"
+   ],
+   "ai": [
+    "ଐ",
+    "ୈ"
+   ],
+   "au": [
+    "ଔ",
+    "ୌ"
+   ],
+   "e": [
+    "ଏ",
+    "େ"
+   ],
+   "i": [
+    "ଇ",
+    "ି"
+   ],
+   "o": [
+    "ଓ",
+    "ୋ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-ori-Orya-Latn-2011": {
+  "system": "ALA-LC:ori-Orya:Latn:2011",
+  "file": "alalc-ori-Orya-Latn-2011.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-pan-Guru-Latn-1997": {
+  "system": "ALA-LC:pan-Guru:Latn:1997",
+  "file": "alalc-pan-Guru-Latn-1997.isc",
+  "pairs": 108,
+  "context_rules": 8,
+  "many_to_one": 14,
+  "many_to_one_examples": {
+   "ai": [
+    "ਐ",
+    "ੈ"
+   ],
+   "au": [
+    "ਔ",
+    "ੌ"
+   ],
+   "e": [
+    "ਏ",
+    "ੇ"
+   ],
+   "ggha": [
+    "ੱਗ਼",
+    "ੱਘ"
+   ],
+   "gha": [
+    "ਗ਼",
+    "ਘ"
+   ],
+   "i": [
+    "ਇ",
+    "ਿ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-pan-Guru-Latn-2011": {
+  "system": "ALA-LC:pan-Guru:Latn:2011",
+  "file": "alalc-pan-Guru-Latn-2011.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-pli-Deva-Latn-2012": {
+  "system": "ALA-LC:pli-Deva:Latn:2012",
+  "file": "alalc-pli-Deva-Latn-2012.isc",
+  "pairs": 53,
+  "context_rules": 4,
+  "many_to_one": 8,
+  "many_to_one_examples": {
+   "": [
+    "्",
+    "‍"
+   ],
+   "e": [
+    "ए",
+    "े"
+   ],
+   "i": [
+    "इ",
+    "ि"
+   ],
+   "o": [
+    "ओ",
+    "ो"
+   ],
+   "u": [
+    "उ",
+    "ु"
+   ],
+   "ā": [
+    "आ",
+    "ा"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-pra-Deva-Latn-2012": {
+  "system": "ALA-LC:pra-Deva:Latn:2012",
+  "file": "alalc-pra-Deva-Latn-2012.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-rus-Cyrl-Latn-1997": {
+  "system": "ALA-LC:rus-Cyrl:Latn:1997",
+  "file": "alalc-rus-Cyrl-Latn-1997.isc",
+  "pairs": 67,
+  "context_rules": 0,
+  "many_to_one": 2,
+  "many_to_one_examples": {
+   "ʹ": [
+    "Ь",
+    "ь"
+   ],
+   "ʺ": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-rus-Cyrl-Latn-2012": {
+  "system": "ALA-LC:rus-Cyrl:Latn:2012",
+  "file": "alalc-rus-Cyrl-Latn-2012.isc",
+  "pairs": 8,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-san-Deva-Latn-2012": {
+  "system": "ALA-LC:san-Deva:Latn:2012",
+  "file": "alalc-san-Deva-Latn-2012.isc",
+  "pairs": 66,
+  "context_rules": 38,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "": [
+    "्",
+    "‍"
+   ],
+   "ai": [
+    "ऐ",
+    "ै"
+   ],
+   "au": [
+    "औ",
+    "ौ"
+   ],
+   "e": [
+    "ए",
+    "े"
+   ],
+   "i": [
+    "इ",
+    "ि"
+   ],
+   "o": [
+    "ओ",
+    "ो"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-sin-Sinh-Latn-1997": {
+  "system": "ALA-LC:sin-Sinh:Latn:1997",
+  "file": "alalc-sin-Sinh-Latn-1997.isc",
+  "pairs": 89,
+  "context_rules": 43,
+  "many_to_one": 18,
+  "many_to_one_examples": {
+   "": [
+    "‍",
+    "‌",
+    "්"
+   ],
+   "ai": [
+    "ඓ",
+    "ෛ"
+   ],
+   "au": [
+    "ඖ",
+    "ෞ"
+   ],
+   "e": [
+    "එ",
+    "ෙ"
+   ],
+   "i": [
+    "ඉ",
+    "ි"
+   ],
+   "o": [
+    "ඔ",
+    "ො"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-sin-Sinh-Latn-2011": {
+  "system": "ALA-LC:sin-Sinh:Latn:2011",
+  "file": "alalc-sin-Sinh-Latn-2011.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-srp-Cyrl-Latn-1997": {
+  "system": "ALA-LC:srp-Cyrl:Latn:1997",
+  "file": "alalc-srp-Cyrl-Latn-1997.isc",
+  "pairs": 66,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-srp-Cyrl-Latn-2013": {
+  "system": "ALA-LC:srp-Cyrl:Latn:2013",
+  "file": "alalc-srp-Cyrl-Latn-2013.isc",
+  "pairs": 60,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-tam-Taml-Latn-1997": {
+  "system": "ALA-LC:tam-Taml:Latn:1997",
+  "file": "alalc-tam-Taml-Latn-1997.isc",
+  "pairs": 1,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-tam-Taml-Latn-2011": {
+  "system": "ALA-LC:tam-Taml:Latn:2011",
+  "file": "alalc-tam-Taml-Latn-2011.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-tel-Telu-Latn-1997": {
+  "system": "ALA-LC:tel-Telu:Latn:1997",
+  "file": "alalc-tel-Telu-Latn-1997.isc",
+  "pairs": 86,
+  "context_rules": 43,
+  "many_to_one": 13,
+  "many_to_one_examples": {
+   "": [
+    "্",
+    "్",
+    "ౕ\\t",
+    "ౖ\\t"
+   ],
+   "ai": [
+    "ఐ",
+    "ై"
+   ],
+   "au": [
+    "ఔ",
+    "ౌ"
+   ],
+   "e": [
+    "ఎ",
+    "ె"
+   ],
+   "i": [
+    "ఇ",
+    "ి"
+   ],
+   "m̐": [
+    "ঁ",
+    "ఁ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-tel-Telu-Latn-2011": {
+  "system": "ALA-LC:tel-Telu:Latn:2011",
+  "file": "alalc-tel-Telu-Latn-2011.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-tir-Ethi-Latn-1997": {
+  "system": "ALA-LC:tir-Ethi:Latn:1997",
+  "file": "alalc-tir-Ethi-Latn-1997.isc",
+  "pairs": 261,
+  "context_rules": 33,
+  "many_to_one": 6,
+  "many_to_one_examples": {
+   "ha": [
+    "ሀ",
+    "ኀ"
+   ],
+   "hi": [
+    "ሂ",
+    "ኂ"
+   ],
+   "ho": [
+    "ሆ",
+    "ኆ"
+   ],
+   "hu": [
+    "ሁ",
+    "ኁ"
+   ],
+   "hé": [
+    "ሄ",
+    "ኄ"
+   ],
+   "hā": [
+    "ሃ",
+    "ኃ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-tir-Ethi-Latn-2011": {
+  "system": "ALA-LC:tir-Ethi:Latn:2011",
+  "file": "alalc-tir-Ethi-Latn-2011.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "alalc-ukr-Cyrl-Latn-1997": {
+  "system": "ALA-LC:ukr-Cyrl:Latn:1997",
+  "file": "alalc-ukr-Cyrl-Latn-1997.isc",
+  "pairs": 66,
+  "context_rules": 0,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "ʹ": [
+    "Ь",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "alalc-ukr-Cyrl-Latn-2011": {
+  "system": "ALA-LC:ukr-Cyrl:Latn:2011",
+  "file": "alalc-ukr-Cyrl-Latn-2011.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "apcbg-bul-Cyrl-Latn-1995": {
+  "system": "APCBG:bul-Cyrl:Latn:1995",
+  "file": "apcbg-bul-Cyrl-Latn-1995.isc",
+  "pairs": 64,
+  "context_rules": 0,
+  "many_to_one": 4,
+  "many_to_one_examples": {
+   "A": [
+    "А",
+    "Ъ"
+   ],
+   "Y": [
+    "Й",
+    "Ь"
+   ],
+   "a": [
+    "а",
+    "ъ"
+   ],
+   "y": [
+    "й",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "az-aze-Cyrl-Latn-1939": {
+  "system": "AZ:aze-Cyrl:Latn:1939",
+  "file": "az-aze-Cyrl-Latn-1939.isc",
+  "pairs": 73,
+  "context_rules": 0,
+  "many_to_one": 3,
+  "many_to_one_examples": {
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "e": [
+    "е",
+    "э"
+   ],
+   "s": [
+    "Ц",
+    "с",
+    "ц"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "az-aze-Cyrl-Latn-1958": {
+  "system": "AZ:aze-Cyrl:Latn:1958",
+  "file": "az-aze-Cyrl-Latn-1958.isc",
+  "pairs": 12,
+  "context_rules": 0,
+  "many_to_one": 3,
+  "many_to_one_examples": {
+   "": [
+    "Ц",
+    "Э",
+    "Ю",
+    "Я"
+   ],
+   "J": [
+    "Й",
+    "Й"
+   ],
+   "j": [
+    "й",
+    "й"
+   ]
+  },
+  "one_to_many": 2,
+  "one_to_many_examples": {
+   "Й": 2,
+   "й": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bas-rus-Cyrl-Latn-2017-bss": {
+  "system": "BAS:rus-Cyrl:Latn:2017-bss",
+  "file": "bas-rus-Cyrl-Latn-2017-bss.isc",
+  "pairs": 66,
+  "context_rules": 16,
+  "many_to_one": 5,
+  "many_to_one_examples": {
+   "": [
+    "Ь",
+    "Ъ",
+    "ь",
+    "ъ"
+   ],
+   "E": [
+    "Ё",
+    "Е",
+    "Э"
+   ],
+   "I": [
+    "И",
+    "Ы"
+   ],
+   "e": [
+    "ё",
+    "е",
+    "э"
+   ],
+   "i": [
+    "и",
+    "ы"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bas-rus-Cyrl-Latn-2017-oss": {
+  "system": "BAS:rus-Cyrl:Latn:2017-oss",
+  "file": "bas-rus-Cyrl-Latn-2017-oss.isc",
+  "pairs": 64,
+  "context_rules": 18,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "'": [
+    "Ь",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgn-jpn-Hrkt-Latn-1962": {
+  "system": "BGN:jpn-Hrkt:Latn:1962",
+  "file": "bgn-jpn-Hrkt-Latn-1962.isc",
+  "pairs": 12,
+  "context_rules": 13,
+  "many_to_one": 6,
+  "many_to_one_examples": {
+   "e": [
+    "ゑ",
+    "ヱ"
+   ],
+   "ga": [
+    "ぐわ",
+    "グワ"
+   ],
+   "gō": [
+    "ぐわう",
+    "グワウ"
+   ],
+   "i": [
+    "ゐ",
+    "ヰ"
+   ],
+   "ka": [
+    "くわ",
+    "クワ"
+   ],
+   "kō": [
+    "くわう",
+    "クワウ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgn-kor-Hang-Latn-1943": {
+  "system": "BGN:kor-Hang:Latn:1943",
+  "file": "bgn-kor-Hang-Latn-1943.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgn-kor-Kore-Latn-1943": {
+  "system": "BGN:kor-Kore:Latn:1943",
+  "file": "bgn-kor-Kore-Latn-1943.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgna-bul-Cyrl-Latn-2006": {
+  "system": "BGNA:bul-Cyrl:Latn:2006",
+  "file": "bgna-bul-Cyrl-Latn-2006.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgna-bul-Cyrl-Latn-2009": {
+  "system": "BGNA:bul-Cyrl:Latn:2009",
+  "file": "bgna-bul-Cyrl-Latn-2009.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-ady-Cyrl-Latn-2012": {
+  "system": "BGN-PCGN:ady-Cyrl:Latn:2012",
+  "file": "bgnpcgn-ady-Cyrl-Latn-2012.isc",
+  "pairs": 134,
+  "context_rules": 0,
+  "many_to_one": 4,
+  "many_to_one_examples": {
+   "Y": [
+    "Ы",
+    "Й"
+   ],
+   "y": [
+    "ы",
+    "й"
+   ],
+   "’": [
+    "Ь",
+    "Ӏ",
+    "ь"
+   ],
+   "’’": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-amh-Ethi-Latn-1967": {
+  "system": "BGN-PCGN:amh-Ethi:Latn:1967",
+  "file": "bgnpcgn-amh-Ethi-Latn-1967.isc",
+  "pairs": 246,
+  "context_rules": 40,
+  "many_to_one": 21,
+  "many_to_one_examples": {
+   "go": [
+    "ጎ",
+    "ጐ"
+   ],
+   "ha": [
+    "ሃ",
+    "ሓ",
+    "ኃ",
+    "ኻ"
+   ],
+   "ho": [
+    "ሆ",
+    "ሖ",
+    "ኆ",
+    "ኈ"
+   ],
+   "hu": [
+    "ሁ",
+    "ሑ",
+    "ኁ",
+    "ኹ"
+   ],
+   "hā": [
+    "ሀ",
+    "ሐ",
+    "ኀ"
+   ],
+   "hē": [
+    "ሄ",
+    "ሔ",
+    "ኄ",
+    "ኼ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-ara-Arab-Latn-1956": {
+  "system": "BGN-PCGN:ara-Arab:Latn:1956",
+  "file": "bgnpcgn-ara-Arab-Latn-1956.isc",
+  "pairs": 185,
+  "context_rules": 19,
+  "many_to_one": 33,
+  "many_to_one_examples": {
+   "": [
+    "ْ",
+    "ً",
+    "ٍ",
+    "ٌ"
+   ],
+   "b": [
+    "ب",
+    "ﺑ",
+    "ﺒ",
+    "ﺐ"
+   ],
+   "d": [
+    "د",
+    "ﺪ"
+   ],
+   "dh": [
+    "ذ",
+    "ﺬ"
+   ],
+   "f": [
+    "ف",
+    "ﻓ",
+    "ﻔ",
+    "ﻒ"
+   ],
+   "g": [
+    "ڨ",
+    "گ",
+    "ڴ",
+    "ڭ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-arm-Armn-Latn-1981": {
+  "system": "BGN-PCGN:arm-Armn:Latn:1981",
+  "file": "bgnpcgn-arm-Armn-Latn-1981.isc",
+  "pairs": 78,
+  "context_rules": 0,
+  "many_to_one": 6,
+  "many_to_one_examples": {
+   "O": [
+    "Ո",
+    "Օ"
+   ],
+   "U": [
+    "ՈՒ",
+    "Ու"
+   ],
+   "Y": [
+    "Ը",
+    "Յ"
+   ],
+   "e": [
+    "ե",
+    "է"
+   ],
+   "o": [
+    "ո",
+    "օ"
+   ],
+   "y": [
+    "ը",
+    "յ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-av-Cyrl-Latn-2011": {
+  "system": "BGN-PCGN:av-Cyrl:Latn:2011",
+  "file": "bgnpcgn-av-Cyrl-Latn-2011.isc",
+  "pairs": 94,
+  "context_rules": 4,
+  "many_to_one": 6,
+  "many_to_one_examples": {
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "Y": [
+    "Й",
+    "Ы"
+   ],
+   "e": [
+    "е",
+    "э"
+   ],
+   "y": [
+    "й",
+    "ы"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ],
+   "’’": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-ava-Cyrl-Latn-2011": {
+  "system": "BGN-PCGN:ava-Cyrl:Latn:2011",
+  "file": "bgnpcgn-ava-Cyrl-Latn-2011.isc",
+  "pairs": 98,
+  "context_rules": 2,
+  "many_to_one": 6,
+  "many_to_one_examples": {
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "Y": [
+    "Ы",
+    "Й"
+   ],
+   "e": [
+    "е",
+    "э"
+   ],
+   "y": [
+    "ы",
+    "й"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ],
+   "’’": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-aze-Cyrl-Latn-1993": {
+  "system": "BGN-PCGN:aze-Cyrl:Latn:1993",
+  "file": "bgnpcgn-aze-Cyrl-Latn-1993.isc",
+  "pairs": 64,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-bak-Cyrl-Latn-2007": {
+  "system": "BGN-PCGN:bak-Cyrl:Latn:2007",
+  "file": "bgnpcgn-bak-Cyrl-Latn-2007.isc",
+  "pairs": 84,
+  "context_rules": 2,
+  "many_to_one": 4,
+  "many_to_one_examples": {
+   "": [
+    "Ъ",
+    "Ь",
+    "ъ",
+    "ь"
+   ],
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "I": [
+    "И",
+    "Ы"
+   ],
+   "e": [
+    "е",
+    "э"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-bal-Arab-Latn-2008": {
+  "system": "BGN-PCGN:bal-Arab:Latn:2008",
+  "file": "bgnpcgn-bal-Arab-Latn-2008.isc",
+  "pairs": 129,
+  "context_rules": 0,
+  "many_to_one": 16,
+  "many_to_one_examples": {
+   "h": [
+    "ه",
+    "ہ",
+    "ھ"
+   ],
+   "hh": [
+    "هّ",
+    "ہّ",
+    "ھّ"
+   ],
+   "k": [
+    "ك",
+    "ک"
+   ],
+   "kk": [
+    "كّ",
+    "کّ"
+   ],
+   "t͟h": [
+    "ث",
+    "ٿ"
+   ],
+   "t͟ht͟h": [
+    "ثّ",
+    "ٿّ"
+   ]
+  },
+  "one_to_many": 1,
+  "one_to_many_examples": {
+   "و": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-bel-Cyrl-Latn-1979": {
+  "system": "BGN-PCGN:bel-Cyrl:Latn:1979",
+  "file": "bgnpcgn-bel-Cyrl-Latn-1979.isc",
+  "pairs": 79,
+  "context_rules": 0,
+  "many_to_one": 4,
+  "many_to_one_examples": {
+   "Y": [
+    "Й",
+    "Ы"
+   ],
+   "y": [
+    "й",
+    "ы"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ],
+   "”": [
+    "´",
+    "ʼ",
+    "’"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-bul-Cyrl-Latn-1952": {
+  "system": "BGN-PCGN:bul-Cyrl:Latn:1952",
+  "file": "bgnpcgn-bul-Cyrl-Latn-1952.isc",
+  "pairs": 67,
+  "context_rules": 18,
+  "many_to_one": 3,
+  "many_to_one_examples": {
+   "Ŭ": [
+    "Ъ",
+    "Ѫ"
+   ],
+   "\\\\'": [
+    "Ь",
+    "ь"
+   ],
+   "ŭ": [
+    "ъ",
+    "ѫ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-bul-Cyrl-Latn-2013": {
+  "system": "BGN-PCGN:bul-Cyrl:Latn:2013",
+  "file": "bgnpcgn-bul-Cyrl-Latn-2013.isc",
+  "pairs": 1,
+  "context_rules": 2,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-che-Cyrl-Latn-2008": {
+  "system": "BGN-PCGN:che-Cyrl:Latn:2008",
+  "file": "bgnpcgn-che-Cyrl-Latn-2008.isc",
+  "pairs": 94,
+  "context_rules": 4,
+  "many_to_one": 6,
+  "many_to_one_examples": {
+   "": [
+    "Ь",
+    "ь"
+   ],
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "Y": [
+    "Ы",
+    "Ы"
+   ],
+   "e": [
+    "е",
+    "э"
+   ],
+   "y": [
+    "й",
+    "ы"
+   ],
+   "’": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 3,
+  "one_to_many_examples": {
+   "Ы": 2,
+   "ю": 2,
+   "я": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-chv-Cyrl-Latn-2011": {
+  "system": "BGN-PCGN:chv-Cyrl:Latn:2011",
+  "file": "bgnpcgn-chv-Cyrl-Latn-2011.isc",
+  "pairs": 76,
+  "context_rules": 4,
+  "many_to_one": 6,
+  "many_to_one_examples": {
+   "Y": [
+    "Ы",
+    "Й"
+   ],
+   "y": [
+    "ы",
+    "й"
+   ],
+   "Ś": [
+    "Ҫ",
+    "Ç"
+   ],
+   "ś": [
+    "ҫ",
+    "ç"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ],
+   "”": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-cv-Cyrl-Latn-2011": {
+  "system": "BGN-PCGN:cv-Cyrl:Latn:2011",
+  "file": "bgnpcgn-cv-Cyrl-Latn-2011.isc",
+  "pairs": 74,
+  "context_rules": 8,
+  "many_to_one": 4,
+  "many_to_one_examples": {
+   "Y": [
+    "Й",
+    "Ы"
+   ],
+   "y": [
+    "й",
+    "ы"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ],
+   "”": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-deu-Latn-Latn-2000": {
+  "system": "BGN-PCGN:deu-Latn:Latn:2000",
+  "file": "bgnpcgn-deu-Latn-Latn-2000.isc",
+  "pairs": 7,
+  "context_rules": 4,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-div-Thaa-Latn-1972": {
+  "system": "BGN-PCGN:div-Thaa:Latn:1972",
+  "file": "bgnpcgn-div-Thaa-Latn-1972.isc",
+  "pairs": 36,
+  "context_rules": 4,
+  "many_to_one": 2,
+  "many_to_one_examples": {
+   "": [
+    "ް",
+    "އ"
+   ],
+   "sh": [
+    "ށ",
+    "ޝ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-div-Thaa-Latn-1988": {
+  "system": "BGN-PCGN:div-Thaa:Latn:1988",
+  "file": "bgnpcgn-div-Thaa-Latn-1988.isc",
+  "pairs": 14,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-ell-Grek-Latn-1962": {
+  "system": "BGN-PCGN:ell-Grek:Latn:1962",
+  "file": "bgnpcgn-ell-Grek-Latn-1962.isc",
+  "pairs": 92,
+  "context_rules": 61,
+  "many_to_one": 17,
+  "many_to_one_examples": {
+   ";": [
+    "·",
+    "·"
+   ],
+   "?": [
+    ";",
+    ";"
+   ],
+   "Eï": [
+    "ΕΪ",
+    "Εϊ"
+   ],
+   "I": [
+    "ΕΙ",
+    "Ει",
+    "Η",
+    "Ι"
+   ],
+   "O": [
+    "Ο",
+    "Ω"
+   ],
+   "i": [
+    "ει",
+    "η",
+    "ι",
+    "υ"
+   ]
+  },
+  "one_to_many": 1,
+  "one_to_many_examples": {
+   "Έϊ": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-ell-Grek-Latn-1996": {
+  "system": "BGN-PCGN:ell-Grek:Latn:1996",
+  "file": "bgnpcgn-ell-Grek-Latn-1996.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-fao-Latn-Latn-1964": {
+  "system": "BGN-PCGN:fao-Latn:Latn:1964",
+  "file": "bgnpcgn-fao-Latn-Latn-1964.isc",
+  "pairs": 4,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-fao-Latn-Latn-1968": {
+  "system": "BGN-PCGN:fao-Latn:Latn:1968",
+  "file": "bgnpcgn-fao-Latn-Latn-1968.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-fas-Arab-Latn-1956": {
+  "system": "BGN-PCGN:fas-Arab:Latn:1956",
+  "file": "bgnpcgn-fas-Arab-Latn-1956.isc",
+  "pairs": 30,
+  "context_rules": 0,
+  "many_to_one": 4,
+  "many_to_one_examples": {
+   "h": [
+    "ح",
+    "ه"
+   ],
+   "s": [
+    "ث",
+    "س",
+    "ص"
+   ],
+   "t": [
+    "ت",
+    "ط"
+   ],
+   "z": [
+    "ذ",
+    "ز",
+    "ض",
+    "ظ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-isl-Latn-Latn-1964": {
+  "system": "BGN-PCGN:isl-Latn:Latn:1964",
+  "file": "bgnpcgn-isl-Latn-Latn-1964.isc",
+  "pairs": 4,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-isl-Latn-Latn-1968": {
+  "system": "BGN-PCGN:isl-Latn:Latn:1968",
+  "file": "bgnpcgn-isl-Latn-Latn-1968.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-iu-Cans-Latn-2013": {
+  "system": "BGN-PCGN:iu-Cans:Latn:2013",
+  "file": "bgnpcgn-iu-Cans-Latn-2013.isc",
+  "pairs": 114,
+  "context_rules": 0,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "h": [
+    "H",
+    "h"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-jpn-Hrkt-Latn-1976": {
+  "system": "BGN-PCGN:jpn-Hrkt:Latn:1976",
+  "file": "bgnpcgn-jpn-Hrkt-Latn-1976.isc",
+  "pairs": 78,
+  "context_rules": 0,
+  "many_to_one": 37,
+  "many_to_one_examples": {
+   "che": [
+    "ちぇ",
+    "チェ"
+   ],
+   "di": [
+    "でぃ",
+    "ディ"
+   ],
+   "du": [
+    "どゅ",
+    "ドュ"
+   ],
+   "dyu": [
+    "でゅ",
+    "デュ"
+   ],
+   "fa": [
+    "ふぁ",
+    "ファ"
+   ],
+   "fe": [
+    "ふぇ",
+    "フェ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-kat-Geor-Latn-1981": {
+  "system": "BGN-PCGN:kat-Geor:Latn:1981",
+  "file": "bgnpcgn-kat-Geor-Latn-1981.isc",
+  "pairs": 36,
+  "context_rules": 0,
+  "many_to_one": 2,
+  "many_to_one_examples": {
+   "j": [
+    "ჲ",
+    "ჯ"
+   ],
+   "k’": [
+    "კ",
+    "ქ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-kat-Geor-Latn-2009": {
+  "system": "BGN-PCGN:kat-Geor:Latn:2009",
+  "file": "bgnpcgn-kat-Geor-Latn-2009.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-kaz-Cyrl-Latn-1979": {
+  "system": "BGN-PCGN:kaz-Cyrl:Latn:1979",
+  "file": "bgnpcgn-kaz-Cyrl-Latn-1979.isc",
+  "pairs": 84,
+  "context_rules": 0,
+  "many_to_one": 4,
+  "many_to_one_examples": {
+   "Y": [
+    "Й",
+    "Ы"
+   ],
+   "y": [
+    "й",
+    "ы"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ],
+   "”": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-kbd-Cyrl-Latn-2011": {
+  "system": "BGN-PCGN:kbd-Cyrl:Latn:2011",
+  "file": "bgnpcgn-kbd-Cyrl-Latn-2011.isc",
+  "pairs": 116,
+  "context_rules": 0,
+  "many_to_one": 4,
+  "many_to_one_examples": {
+   "Y": [
+    "Ы",
+    "Й"
+   ],
+   "y": [
+    "ы",
+    "й"
+   ],
+   "’": [
+    "Ь",
+    "Ӏ",
+    "ь"
+   ],
+   "’’": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-kir-Cyrl-Latn-1979": {
+  "system": "BGN-PCGN:kir-Cyrl:Latn:1979",
+  "file": "bgnpcgn-kir-Cyrl-Latn-1979.isc",
+  "pairs": 72,
+  "context_rules": 0,
+  "many_to_one": 6,
+  "many_to_one_examples": {
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "Y": [
+    "Й",
+    "Ы"
+   ],
+   "e": [
+    "е",
+    "э"
+   ],
+   "y": [
+    "й",
+    "ы"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ],
+   "”": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-kor-Hang-Latn-kn-1945": {
+  "system": "BGN-PCGN:kor-Hang:Latn:kn-1945",
+  "file": "bgnpcgn-kor-Hang-Latn-kn-1945.isc",
+  "pairs": 10,
+  "context_rules": 28,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-kor-Hang-Latn-rok-2011": {
+  "system": "BGN-PCGN:kor-Hang:Latn:rok-2011",
+  "file": "bgnpcgn-kor-Hang-Latn-rok-2011.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-kor-Kore-Latn-rok-2011": {
+  "system": "BGN-PCGN:kor-Kore:Latn:rok-2011",
+  "file": "bgnpcgn-kor-Kore-Latn-rok-2011.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-krc-Cyrl-Latn-2008": {
+  "system": "BGN-PCGN:krc-Cyrl:Latn:2008",
+  "file": "bgnpcgn-krc-Cyrl-Latn-2008.isc",
+  "pairs": 79,
+  "context_rules": 2,
+  "many_to_one": 7,
+  "many_to_one_examples": {
+   "": [
+    "Ъ",
+    "Ь",
+    "ъ",
+    "ь"
+   ],
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "Ng": [
+    "Нг",
+    "Нъ"
+   ],
+   "S": [
+    "С",
+    "Ц"
+   ],
+   "e": [
+    "е",
+    "э"
+   ],
+   "ng": [
+    "нг",
+    "нъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-kur-Arab-Latn-2007": {
+  "system": "BGN-PCGN:kur-Arab:Latn:2007",
+  "file": "bgnpcgn-kur-Arab-Latn-2007.isc",
+  "pairs": 49,
+  "context_rules": 6,
+  "many_to_one": 10,
+  "many_to_one_examples": {
+   "a": [
+    "ا",
+    "ئا"
+   ],
+   "e": [
+    "ە",
+    "ئە"
+   ],
+   "i": [
+    "ِ",
+    "ئ"
+   ],
+   "k": [
+    "ک",
+    "ك"
+   ],
+   "o": [
+    "ۆ",
+    "ئۆ"
+   ],
+   "u": [
+    "و",
+    "ئو"
+   ]
+  },
+  "one_to_many": 4,
+  "one_to_many_examples": {
+   "ء": 2,
+   "ئ": 2,
+   "و": 2,
+   "ي": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-mkd-Cyrl-Latn-1981": {
+  "system": "BGN-PCGN:mkd-Cyrl:Latn:1981",
+  "file": "bgnpcgn-mkd-Cyrl-Latn-1981.isc",
+  "pairs": 62,
+  "context_rules": 4,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-mkd-Cyrl-Latn-2013": {
+  "system": "BGN-PCGN:mkd-Cyrl:Latn:2013",
+  "file": "bgnpcgn-mkd-Cyrl-Latn-2013.isc",
+  "pairs": 62,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-mon-Cyrl-Latn-1964": {
+  "system": "BGN-PCGN:mon-Cyrl:Latn:1964",
+  "file": "bgnpcgn-mon-Cyrl-Latn-1964.isc",
+  "pairs": 70,
+  "context_rules": 4,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "’": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-nep-Deva-Latn-2011": {
+  "system": "BGN-PCGN:nep-Deva:Latn:2011",
+  "file": "bgnpcgn-nep-Deva-Latn-2011.isc",
+  "pairs": 75,
+  "context_rules": 4,
+  "many_to_one": 13,
+  "many_to_one_examples": {
+   "a": [
+    "अ",
+    "्"
+   ],
+   "ai": [
+    "ऐ",
+    "ै"
+   ],
+   "au": [
+    "औ",
+    "ौ"
+   ],
+   "e": [
+    "ए",
+    "े"
+   ],
+   "i": [
+    "इ",
+    "ि"
+   ],
+   "o": [
+    "ओ",
+    "ो"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-os-Cyrl-Latn-2009": {
+  "system": "BGN-PCGN:os-Cyrl:Latn:2009",
+  "file": "bgnpcgn-os-Cyrl-Latn-2009.isc",
+  "pairs": 98,
+  "context_rules": 4,
+  "many_to_one": 6,
+  "many_to_one_examples": {
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "Y": [
+    "Й",
+    "Ы"
+   ],
+   "e": [
+    "е",
+    "э"
+   ],
+   "y": [
+    "й",
+    "ы"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ],
+   "”": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-oss-Cyrl-Latn-2009": {
+  "system": "BGN-PCGN:oss-Cyrl:Latn:2009",
+  "file": "bgnpcgn-oss-Cyrl-Latn-2009.isc",
+  "pairs": 86,
+  "context_rules": 6,
+  "many_to_one": 6,
+  "many_to_one_examples": {
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "Y": [
+    "Ы",
+    "Й"
+   ],
+   "e": [
+    "е",
+    "э"
+   ],
+   "y": [
+    "ы",
+    "й"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ],
+   "”": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-per-Arab-Latn-1958": {
+  "system": "BGN-PCGN:per-Arab:Latn:1958",
+  "file": "bgnpcgn-per-Arab-Latn-1958.isc",
+  "pairs": 81,
+  "context_rules": 7,
+  "many_to_one": 9,
+  "many_to_one_examples": {
+   "": [
+    "ْ",
+    "أ",
+    "إ"
+   ],
+   "Allāh": [
+    "ﷲ",
+    "اللَّه"
+   ],
+   "gh": [
+    "غّ",
+    "غ"
+   ],
+   "k": [
+    "ك",
+    "ک"
+   ],
+   "kh": [
+    "خّ",
+    "خ"
+   ],
+   "sh": [
+    "شّ",
+    "ش"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-prs-Arab-Latn-2007": {
+  "system": "BGN-PCGN:prs-Arab:Latn:2007",
+  "file": "bgnpcgn-prs-Arab-Latn-2007.isc",
+  "pairs": 114,
+  "context_rules": 19,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "": [
+    "ْ",
+    "أ",
+    "إ"
+   ],
+   "-e": [
+    "ٴ",
+    "ٔ"
+   ],
+   "ay": [
+    "َى",
+    "َيْ"
+   ],
+   "aī": [
+    "َي",
+    "َی"
+   ],
+   "k": [
+    "ك",
+    "ک"
+   ],
+   "sh": [
+    "شّ",
+    "ش"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-prs-Arab-Latn-yaghoubi": {
+  "system": "BGN-PCGN:prs-Arab:Latn:yaghoubi",
+  "file": "bgnpcgn-prs-Arab-Latn-yaghoubi.isc",
+  "pairs": 98,
+  "context_rules": 24,
+  "many_to_one": 13,
+  "many_to_one_examples": {
+   "": [
+    "ْ",
+    "أ",
+    "إ"
+   ],
+   "-e": [
+    "ٴ",
+    "ٔ"
+   ],
+   "ay": [
+    "ی",
+    "ی",
+    "ا",
+    "َى"
+   ],
+   "aī": [
+    "َي",
+    "َی"
+   ],
+   "k": [
+    "ك",
+    "ک"
+   ],
+   "w": [
+    "و",
+    "و"
+   ]
+  },
+  "one_to_many": 4,
+  "one_to_many_examples": {
+   "ء": 2,
+   "ا": 2,
+   "و": 3,
+   "ی": 5
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-pus-Arab-Latn-1968": {
+  "system": "BGN-PCGN:pus-Arab:Latn:1968",
+  "file": "bgnpcgn-pus-Arab-Latn-1968.isc",
+  "pairs": 20,
+  "context_rules": 1,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   " us S": [
+    " Us S",
+    " As S"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-ron-Cyrl-Latn-2002": {
+  "system": "BGN-PCGN:ron-Cyrl:Latn:2002",
+  "file": "bgnpcgn-ron-Cyrl-Latn-2002.isc",
+  "pairs": 62,
+  "context_rules": 15,
+  "many_to_one": 3,
+  "many_to_one_examples": {
+   "I": [
+    "И",
+    "Й"
+   ],
+   "i": [
+    "и",
+    "й"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-rue-Cyrl-Latn-2016": {
+  "system": "BGN-PCGN:rue-Cyrl:Latn:2016",
+  "file": "bgnpcgn-rue-Cyrl-Latn-2016.isc",
+  "pairs": 70,
+  "context_rules": 0,
+  "many_to_one": 3,
+  "many_to_one_examples": {
+   "'": [
+    "Ь",
+    "Ъ",
+    "ь",
+    "ъ"
+   ],
+   "Y": [
+    "И",
+    "Ы"
+   ],
+   "y": [
+    "и",
+    "ы"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-rus-Cyrl-Latn-1947": {
+  "system": "BGN-PCGN:rus-Cyrl:Latn:1947",
+  "file": "bgnpcgn-rus-Cyrl-Latn-1947.isc",
+  "pairs": 64,
+  "context_rules": 24,
+  "many_to_one": 5,
+  "many_to_one_examples": {
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "Y": [
+    "Й",
+    "Ы"
+   ],
+   "e": [
+    "е",
+    "э"
+   ],
+   "y": [
+    "й",
+    "ы"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-sah-Cyrl-Latn-2012": {
+  "system": "BGN-PCGN:sah-Cyrl:Latn:2012",
+  "file": "bgnpcgn-sah-Cyrl-Latn-2012.isc",
+  "pairs": 84,
+  "context_rules": 4,
+  "many_to_one": 8,
+  "many_to_one_examples": {
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "Y": [
+    "Ы",
+    "Й"
+   ],
+   "e": [
+    "е",
+    "э"
+   ],
+   "ny": [
+    "нь",
+    "њ"
+   ],
+   "y": [
+    "ы",
+    "й"
+   ],
+   "Ö": [
+    "Ѳ",
+    "Ө"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-sme-Latn-Latn-1984": {
+  "system": "BGN-PCGN:sme-Latn:Latn:1984",
+  "file": "bgnpcgn-sme-Latn-Latn-1984.isc",
+  "pairs": 2,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-srp-Cyrl-Latn-1962": {
+  "system": "BGN-PCGN:srp-Cyrl:Latn:1962",
+  "file": "bgnpcgn-srp-Cyrl-Latn-1962.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-srp-Cyrl-Latn-2005": {
+  "system": "BGN-PCGN:srp-Cyrl:Latn:2005",
+  "file": "bgnpcgn-srp-Cyrl-Latn-2005.isc",
+  "pairs": 60,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-syc-Syrc-Latn-2011": {
+  "system": "BGN-PCGN:syc-Syrc:Latn:2011",
+  "file": "bgnpcgn-syc-Syrc-Latn-2011.isc",
+  "pairs": 7,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-tat-Cyrl-Latn-2007": {
+  "system": "BGN-PCGN:tat-Cyrl:Latn:2007",
+  "file": "bgnpcgn-tat-Cyrl-Latn-2007.isc",
+  "pairs": 68,
+  "context_rules": 27,
+  "many_to_one": 4,
+  "many_to_one_examples": {
+   "": [
+    "Ъ",
+    "ъ"
+   ],
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "e": [
+    "е",
+    "э"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-tgk-Cyrl-Latn-1994": {
+  "system": "BGN-PCGN:tgk-Cyrl:Latn:1994",
+  "file": "bgnpcgn-tgk-Cyrl-Latn-1994.isc",
+  "pairs": 78,
+  "context_rules": 4,
+  "many_to_one": 6,
+  "many_to_one_examples": {
+   "": [
+    "Ь",
+    "ь"
+   ],
+   "I": [
+    "И",
+    "Ы"
+   ],
+   "Sh": [
+    "Ш",
+    "Щ"
+   ],
+   "i": [
+    "и",
+    "ы"
+   ],
+   "sh": [
+    "ш",
+    "щ"
+   ],
+   "’": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-tha-Thai-Latn-2002": {
+  "system": "BGN/PCGN:tha-Thai:Latn:2002",
+  "file": "bgnpcgn-tha-Thai-Latn-2002.isc",
+  "pairs": 109,
+  "context_rules": 0,
+  "many_to_one": 19,
+  "many_to_one_examples": {
+   "": [
+    "่",
+    "้",
+    "๊",
+    "๋"
+   ],
+   "a": [
+    "ะ",
+    "ั",
+    "า",
+    "ๅ"
+   ],
+   "ai": [
+    "ไย",
+    "าย",
+    "ใ",
+    "ไ"
+   ],
+   "ch": [
+    "จ",
+    "ฉ",
+    "ช",
+    "ฌ"
+   ],
+   "d": [
+    "ฎ",
+    "ด"
+   ],
+   "f": [
+    "ฝ",
+    "ฟ"
+   ]
+  },
+  "one_to_many": 1,
+  "one_to_many_examples": {
+   "็": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-tir-Ethi-Latn-2007": {
+  "system": "BGN-PCGN:tir-Ethi:Latn:2007",
+  "file": "bgnpcgn-tir-Ethi-Latn-2007.isc",
+  "pairs": 276,
+  "context_rules": 41,
+  "many_to_one": 16,
+  "many_to_one_examples": {
+   "kh’a": [
+    "ቓ",
+    "ቛ"
+   ],
+   "kh’e": [
+    "ቐ",
+    "ቘ"
+   ],
+   "kh’i": [
+    "ቒ",
+    "ቚ"
+   ],
+   "kh’ie": [
+    "ቔ",
+    "ቜ"
+   ],
+   "sa": [
+    "ሣ",
+    "ሳ"
+   ],
+   "se": [
+    "ሠ",
+    "ሰ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-tuk-Cyrl-Latn-1979": {
+  "system": "BGN-PCGN:tuk-Cyrl:Latn:1979",
+  "file": "bgnpcgn-tuk-Cyrl-Latn-1979.isc",
+  "pairs": 74,
+  "context_rules": 4,
+  "many_to_one": 5,
+  "many_to_one_examples": {
+   "'": [
+    "Ь",
+    "ь"
+   ],
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "Y": [
+    "Й",
+    "Ы"
+   ],
+   "e": [
+    "е",
+    "э"
+   ],
+   "y": [
+    "й",
+    "ы"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-tuk-Cyrl-Latn-1993": {
+  "system": "BGN-PCGN:tuk-Cyrl:Latn:1993",
+  "file": "bgnpcgn-tuk-Cyrl-Latn-1993.isc",
+  "pairs": 30,
+  "context_rules": 2,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "": [
+    "Ъ",
+    "Ь",
+    "ъ",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-udm-Cyrl-Latn-2011": {
+  "system": "BGN-PCGN:udm-Cyrl:Latn:2011",
+  "file": "bgnpcgn-udm-Cyrl-Latn-2011.isc",
+  "pairs": 76,
+  "context_rules": 2,
+  "many_to_one": 6,
+  "many_to_one_examples": {
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "Y": [
+    "Ы",
+    "Й"
+   ],
+   "e": [
+    "е",
+    "э"
+   ],
+   "y": [
+    "ы",
+    "й"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ],
+   "”": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-ukr-Cyrl-Latn-1965": {
+  "system": "BGN-PCGN:ukr-Cyrl:Latn:1965",
+  "file": "bgnpcgn-ukr-Cyrl-Latn-1965.isc",
+  "pairs": 67,
+  "context_rules": 0,
+  "many_to_one": 3,
+  "many_to_one_examples": {
+   "Y": [
+    "И",
+    "Й"
+   ],
+   "y": [
+    "и",
+    "й"
+   ],
+   "’": [
+    "ь",
+    "Ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-ukr-Cyrl-Latn-2019": {
+  "system": "BGN-PCGN:ukr-Cyrl:Latn:2019",
+  "file": "bgnpcgn-ukr-Cyrl-Latn-2019.isc",
+  "pairs": 1,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bgnpcgn-urd-Arab-Latn-2007": {
+  "system": "BGN-PCGN:urd-Arab:Latn:2007",
+  "file": "bgnpcgn-urd-Arab-Latn-2007.isc",
+  "pairs": 107,
+  "context_rules": 19,
+  "many_to_one": 10,
+  "many_to_one_examples": {
+   "": [
+    "ْ",
+    "أ",
+    "إ"
+   ],
+   "-e": [
+    "ٴ",
+    "ٔ"
+   ],
+   "ay": [
+    "َى",
+    "َيْ"
+   ],
+   "aī": [
+    "َي",
+    "َی"
+   ],
+   "k": [
+    "ك",
+    "ک"
+   ],
+   "sh": [
+    "شّ",
+    "ش"
+   ]
+  },
+  "one_to_many": 2,
+  "one_to_many_examples": {
+   "و": 2,
+   "َي": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-uzb-Cyrl-Latn-1979": {
+  "system": "BGN-PCGN:uzb-Cyrl:Latn:1979",
+  "file": "bgnpcgn-uzb-Cyrl-Latn-1979.isc",
+  "pairs": 70,
+  "context_rules": 18,
+  "many_to_one": 3,
+  "many_to_one_examples": {
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "e": [
+    "е",
+    "э"
+   ],
+   "ʼ": [
+    "Ъ",
+    "Ь",
+    "ъ",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-uzb-Cyrl-Latn-2000": {
+  "system": "BGN-PCGN:uzb-Cyrl:Latn:2000",
+  "file": "bgnpcgn-uzb-Cyrl-Latn-2000.isc",
+  "pairs": 14,
+  "context_rules": 2,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "’": [
+    "Ъ",
+    "Ь",
+    "ъ",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bgnpcgn-zho-Hans-Latn-1979": {
+  "system": "BGN-PCGN:zho-Hans:Latn:1979",
+  "file": "bgnpcgn-zho-Hans-Latn-1979.isc",
+  "pairs": 7341,
+  "context_rules": 3,
+  "many_to_one": 384,
+  "many_to_one_examples": {
+   "'a": [
+    "啊",
+    "吖",
+    "锕"
+   ],
+   "'ai": [
+    "愛",
+    "塧",
+    "叆",
+    "埃"
+   ],
+   "'an": [
+    "峎",
+    "屵",
+    "鞍",
+    "氨"
+   ],
+   "'ang": [
+    "枊",
+    "肮",
+    "昂",
+    "盎"
+   ],
+   "'ao": [
+    "鰲",
+    "圫",
+    "嶅",
+    "墺"
+   ],
+   "ba": [
+    "鮁",
+    "芭",
+    "壩",
+    "捌"
+   ]
+  },
+  "one_to_many": 3,
+  "one_to_many_examples": {
+   "嵠": 2,
+   "槟": 2,
+   "焘": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bis-asm-Beng-Latn-13194-1991": {
+  "system": "BIS:asm-Beng:Latn:13194-1991",
+  "file": "bis-asm-Beng-Latn-13194-1991.isc",
+  "pairs": 68,
+  "context_rules": 5,
+  "many_to_one": 14,
+  "many_to_one_examples": {
+   "": [
+    "্",
+    "्",
+    "़",
+    "‍"
+   ],
+   "ai": [
+    "ঐ",
+    "ৈ"
+   ],
+   "au": [
+    "ঔ",
+    "ৌ"
+   ],
+   "i": [
+    "ই",
+    "ি"
+   ],
+   "m": [
+    "ম",
+    "ঁ"
+   ],
+   "t": [
+    "ত",
+    "ৎ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bis-ben-Beng-Latn-13194-1991": {
+  "system": "BIS:ben-Beng:Latn:13194-1991",
+  "file": "bis-ben-Beng-Latn-13194-1991.isc",
+  "pairs": 67,
+  "context_rules": 5,
+  "many_to_one": 14,
+  "many_to_one_examples": {
+   "": [
+    "্",
+    "्",
+    "़",
+    "‍"
+   ],
+   "ai": [
+    "ঐ",
+    "ৈ"
+   ],
+   "au": [
+    "ঔ",
+    "ৌ"
+   ],
+   "i": [
+    "ই",
+    "ি"
+   ],
+   "m": [
+    "ম",
+    "ঁ"
+   ],
+   "t": [
+    "ত",
+    "ৎ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bis-dev-Deva-Latn-13194-1991": {
+  "system": "BIS:dev-Deva:Latn:13194-1991",
+  "file": "bis-dev-Deva-Latn-13194-1991.isc",
+  "pairs": 83,
+  "context_rules": 5,
+  "many_to_one": 14,
+  "many_to_one_examples": {
+   "": [
+    "्",
+    "़",
+    "‍"
+   ],
+   "ai": [
+    "ऐ",
+    "ै"
+   ],
+   "au": [
+    "औ",
+    "ौ"
+   ],
+   "i": [
+    "इ",
+    "ि"
+   ],
+   "m": [
+    "म",
+    "ँ"
+   ],
+   "o": [
+    "ऒ",
+    "ॊ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bis-guj-Gujr-Latn-13194-1991": {
+  "system": "BIS:guj-Gujr:Latn:13194-1991",
+  "file": "bis-guj-Gujr-Latn-13194-1991.isc",
+  "pairs": 77,
+  "context_rules": 5,
+  "many_to_one": 13,
+  "many_to_one_examples": {
+   "": [
+    "্",
+    "્",
+    "઼",
+    "‍"
+   ],
+   "ai": [
+    "ઐ",
+    "ૈ"
+   ],
+   "au": [
+    "ઔ",
+    "ૌ"
+   ],
+   "e": [
+    "ઍ",
+    "ૅ"
+   ],
+   "i": [
+    "ઇ",
+    "િ"
+   ],
+   "m": [
+    "મ",
+    "ઁ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bis-kan-Kana-Latn-13194-1991": {
+  "system": "BIS:kan-Kana:Latn:13194-1991",
+  "file": "bis-kan-Kana-Latn-13194-1991.isc",
+  "pairs": 72,
+  "context_rules": 5,
+  "many_to_one": 13,
+  "many_to_one_examples": {
+   "": [
+    "$಼",
+    "्",
+    "़",
+    "್"
+   ],
+   "ai": [
+    "ಐ",
+    "ೈ"
+   ],
+   "au": [
+    "ಔ",
+    "ೌ"
+   ],
+   "e": [
+    "ಎ",
+    "ೆ"
+   ],
+   "i": [
+    "ಇ",
+    "ಿ"
+   ],
+   "m": [
+    "ಮ",
+    "ಀ",
+    "ಁ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bis-mlm-Mlym-Latn-13194-1991": {
+  "system": "BIS:mlm-Mlym:Latn:13194-1991",
+  "file": "bis-mlm-Mlym-Latn-13194-1991.isc",
+  "pairs": 78,
+  "context_rules": 5,
+  "many_to_one": 19,
+  "many_to_one_examples": {
+   "": [
+    "्",
+    "്",
+    "़",
+    "ൗ"
+   ],
+   "ai": [
+    "ഐ",
+    "ൈ"
+   ],
+   "au": [
+    "ഔ",
+    "ൌ"
+   ],
+   "e": [
+    "എ",
+    "െ"
+   ],
+   "i": [
+    "ഇ",
+    "ി"
+   ],
+   "k": [
+    "ക",
+    "ൿ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bis-ori-Orya-Latn-13194-1991": {
+  "system": "BIS:ori-Orya:Latn:13194-1991",
+  "file": "bis-ori-Orya-Latn-13194-1991.isc",
+  "pairs": 79,
+  "context_rules": 5,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "": [
+    "्",
+    "୍",
+    "़",
+    "଼"
+   ],
+   "ai": [
+    "ଐ",
+    "ୈ"
+   ],
+   "au": [
+    "ଔ",
+    "ୌ"
+   ],
+   "i": [
+    "ଇ",
+    "ି"
+   ],
+   "m": [
+    "ମ",
+    "ଁ"
+   ],
+   "u": [
+    "ଉ",
+    "ୁ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bis-pnj-Guru-Latn-13194-1991": {
+  "system": "BIS:pnj-Guru:Latn:13194-1991",
+  "file": "bis-pnj-Guru-Latn-13194-1991.isc",
+  "pairs": 70,
+  "context_rules": 5,
+  "many_to_one": 11,
+  "many_to_one_examples": {
+   "": [
+    "੍",
+    "਼",
+    "ੱ",
+    "‍"
+   ],
+   "ai": [
+    "ਐ",
+    "ੈ"
+   ],
+   "au": [
+    "ਔ",
+    "ੌ"
+   ],
+   "i": [
+    "ਇ",
+    "ਿ"
+   ],
+   "m": [
+    "ਮ",
+    "ँ"
+   ],
+   "u": [
+    "ਉ",
+    "ੁ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bis-tel-Telu-Latn-13194-1991": {
+  "system": "BIS:tel-Telu:Latn:13194-1991",
+  "file": "bis-tel-Telu-Latn-13194-1991.isc",
+  "pairs": 74,
+  "context_rules": 5,
+  "many_to_one": 15,
+  "many_to_one_examples": {
+   "": [
+    "্",
+    "్",
+    "ౕ\\t",
+    "ౖ\\t"
+   ],
+   "ai": [
+    "ఐ",
+    "ై"
+   ],
+   "au": [
+    "ఔ",
+    "ౌ"
+   ],
+   "e": [
+    "ఎ",
+    "ె"
+   ],
+   "i": [
+    "ఇ",
+    "ి"
+   ],
+   "m": [
+    "మ",
+    "ঁ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bis-tml-Taml-Latn-13194-1991": {
+  "system": "BIS:tml-Taml:Latn:13194-1991",
+  "file": "bis-tml-Taml-Latn-13194-1991.isc",
+  "pairs": 58,
+  "context_rules": 5,
+  "many_to_one": 13,
+  "many_to_one_examples": {
+   "": [
+    "्",
+    "്",
+    "்",
+    "ൗ"
+   ],
+   "ai": [
+    "ஐ",
+    "ை"
+   ],
+   "au": [
+    "ஔ",
+    "ௌ"
+   ],
+   "e": [
+    "எ",
+    "ெ"
+   ],
+   "i": [
+    "இ",
+    "ி"
+   ],
+   "n": [
+    "ந",
+    "ൺ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bsi-bel-Cyrl-Latn-1958": {
+  "system": "BSI:bel-Cyrl:Latn:1958",
+  "file": "bsi-bel-Cyrl-Latn-1958.isc",
+  "pairs": 70,
+  "context_rules": 0,
+  "many_to_one": 4,
+  "many_to_one_examples": {
+   "Ě": [
+    "Ё",
+    "Ѣ"
+   ],
+   "ě": [
+    "ё",
+    "ѣ"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ],
+   "”": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bsi-bul-Cyrl-Latn-1958": {
+  "system": "BSI:bul-Cyrl:Latn:1958",
+  "file": "bsi-bul-Cyrl-Latn-1958.isc",
+  "pairs": 64,
+  "context_rules": 0,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "’": [
+    "Ь",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bsi-chu-Cyrl-Latn-1958": {
+  "system": "BSI:chu-Cyrl:Latn:1958",
+  "file": "bsi-chu-Cyrl-Latn-1958.isc",
+  "pairs": 94,
+  "context_rules": 0,
+  "many_to_one": 4,
+  "many_to_one_examples": {
+   "Ĭ": [
+    "Й",
+    "Ь"
+   ],
+   "ĭ": [
+    "й",
+    "ь"
+   ],
+   "Ū": [
+    "ОУ",
+    "Ѹ"
+   ],
+   "ū": [
+    "оу",
+    "ѹ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bsi-ell-Grek-Latn-1958": {
+  "system": "BSI:ell-Grek:Latn:1958",
+  "file": "bsi-ell-Grek-Latn-1958.isc",
+  "pairs": 49,
+  "context_rules": 68,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "s": [
+    "σ",
+    "ς"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bsi-mkd-Cyrl-Latn-1958": {
+  "system": "BSI:mkd-Cyrl:Latn:1958",
+  "file": "bsi-mkd-Cyrl-Latn-1958.isc",
+  "pairs": 62,
+  "context_rules": 0,
+  "many_to_one": 4,
+  "many_to_one_examples": {
+   "Ć": [
+    "Ћ",
+    "Ќ"
+   ],
+   "ć": [
+    "ћ",
+    "ќ"
+   ],
+   "Đ": [
+    "Ђ",
+    "Ѓ"
+   ],
+   "đ": [
+    "ђ",
+    "ѓ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bsi-ron-Cyrl-Latn-1958": {
+  "system": "BSI:ron-Cyrl:Latn:1958",
+  "file": "bsi-ron-Cyrl-Latn-1958.isc",
+  "pairs": 94,
+  "context_rules": 2,
+  "many_to_one": 10,
+  "many_to_one_examples": {
+   "C": [
+    "К",
+    "Ч"
+   ],
+   "E": [
+    "Є",
+    "Е"
+   ],
+   "G": [
+    "Г",
+    "Џ"
+   ],
+   "I": [
+    "И",
+    "І"
+   ],
+   "c": [
+    "к",
+    "ч"
+   ],
+   "e": [
+    "є",
+    "е"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bsi-rus-Cyrl-Latn-1958": {
+  "system": "BSI:rus-Cyrl:Latn:1958",
+  "file": "bsi-rus-Cyrl-Latn-1958.isc",
+  "pairs": 72,
+  "context_rules": 0,
+  "many_to_one": 7,
+  "many_to_one_examples": {
+   "I": [
+    "И",
+    "І"
+   ],
+   "i": [
+    "и",
+    "і"
+   ],
+   "t-s": [
+    "тс",
+    "тс"
+   ],
+   "Ě": [
+    "Ё",
+    "Ѣ"
+   ],
+   "ě": [
+    "ё",
+    "ѣ"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ]
+  },
+  "one_to_many": 1,
+  "one_to_many_examples": {
+   "тс": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "bsi-srp-Cyrl-Latn-1958": {
+  "system": "BSI:srp-Cyrl:Latn:1958",
+  "file": "bsi-srp-Cyrl-Latn-1958.isc",
+  "pairs": 56,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "bsi-ukr-Cyrl-Latn-1958": {
+  "system": "BSI:ukr-Cyrl:Latn:1958",
+  "file": "bsi-ukr-Cyrl-Latn-1958.isc",
+  "pairs": 72,
+  "context_rules": 0,
+  "many_to_one": 2,
+  "many_to_one_examples": {
+   "’": [
+    "Ь",
+    "ь"
+   ],
+   "”": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "by-bel-Cyrl-Latn-1998": {
+  "system": "BY:bel-Cyrl:Latn:1998",
+  "file": "by-bel-Cyrl-Latn-1998.isc",
+  "pairs": 31,
+  "context_rules": 8,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "": [
+    "Ь",
+    "ь",
+    "'"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "by-bel-Cyrl-Latn-2007": {
+  "system": "BY:bel-Cyrl:Latn:2007",
+  "file": "by-bel-Cyrl-Latn-2007.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "din-ara-Arab-Latn-31635-2011": {
+  "system": "DIN:ara-Arab:Latn:31635-2011",
+  "file": "din-ara-Arab-Latn-31635-2011.isc",
+  "pairs": 80,
+  "context_rules": 13,
+  "many_to_one": 9,
+  "many_to_one_examples": {
+   "": [
+    "ٌ",
+    "ٍ",
+    "ّ"
+   ],
+   "h": [
+    "ه",
+    "ھ"
+   ],
+   "k": [
+    "ک",
+    "ك"
+   ],
+   "kk": [
+    "کّ",
+    "كّ"
+   ],
+   "ā": [
+    "ا",
+    "ى",
+    "ٰ"
+   ],
+   "ʾ": [
+    "ء",
+    "أ",
+    "إ",
+    "ؤ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "din-grc-Grek-Latn-31634-2011-t1": {
+  "system": "DIN:grc-Grek:Latn:31634-2011-t1",
+  "file": "din-grc-Grek-Latn-31634-2011-t1.isc",
+  "pairs": 283,
+  "context_rules": 20,
+  "many_to_one": 36,
+  "many_to_one_examples": {
+   ";": [
+    "·",
+    "·"
+   ],
+   "?": [
+    ";",
+    ";"
+   ],
+   "A": [
+    "Α",
+    "Ά",
+    "Ὰ",
+    "Ᾰ"
+   ],
+   "E": [
+    "Ε",
+    "Έ",
+    "Ἐ",
+    "Ὲ"
+   ],
+   "Ha": [
+    "Ἁ",
+    "Ἅ",
+    "Ἃ",
+    "Ἇ"
+   ],
+   "He": [
+    "Ἑ",
+    "Ἓ",
+    "Ἕ"
+   ]
+  },
+  "one_to_many": 2,
+  "one_to_many_examples": {
+   "·": 2,
+   "ό": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "din-heb-Hebr-Latn-31636-2018": {
+  "system": "DIN:heb-Hebr:Latn:31636-2018",
+  "file": "din-heb-Hebr-Latn-31636-2018.isc",
+  "pairs": 59,
+  "context_rules": 39,
+  "many_to_one": 16,
+  "many_to_one_examples": {
+   "a": [
+    "ַ",
+    "ָ",
+    "ֲ"
+   ],
+   "b": [
+    "בּ",
+    "בּ"
+   ],
+   "e": [
+    "ֶ",
+    "ֵ",
+    "ֱ"
+   ],
+   "f": [
+    "ף",
+    "פ"
+   ],
+   "k": [
+    "כּ",
+    "כּ"
+   ],
+   "kh": [
+    "ך",
+    "כ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "din-hin-Deva-Latn-33904-2018": {
+  "system": "DIN:hin-Deva:Latn:33904-2018",
+  "file": "din-hin-Deva-Latn-33904-2018.isc",
+  "pairs": 20,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "din-hye-Armn-Latn-32706-2010": {
+  "system": "DIN:arm-Armn:Latn:32706-2010",
+  "file": "din-hye-Armn-Latn-32706-2010.isc",
+  "pairs": 77,
+  "context_rules": 0,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "ew͡": [
+    "և",
+    "և"
+   ]
+  },
+  "one_to_many": 1,
+  "one_to_many_examples": {
+   "և": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "din-kat-Geor-Latn-32707-2010": {
+  "system": "DIN:kat-Geor:Latn:32707-2010",
+  "file": "din-kat-Geor-Latn-32707-2010.isc",
+  "pairs": 41,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "din-mar-Deva-Latn-33904-2018": {
+  "system": "DIN:mar-Deva:Latn:33904-2018",
+  "file": "din-mar-Deva-Latn-33904-2018.isc",
+  "pairs": 2,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "din-nep-Deva-Latn-33904-2018": {
+  "system": "DIN:nep-Deva:Latn:33904-2018",
+  "file": "din-nep-Deva-Latn-33904-2018.isc",
+  "pairs": 21,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "din-pli-Deva-Latn-33904-2018": {
+  "system": "DIN:pli-Deva:Latn:33904-2018",
+  "file": "din-pli-Deva-Latn-33904-2018.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "din-pra-Deva-Latn-33904-2018": {
+  "system": "DIN:pra-Deva:Latn:33904-2018",
+  "file": "din-pra-Deva-Latn-33904-2018.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "din-san-Deva-Latn-33904-2018": {
+  "system": "DIN:san-Deva:Latn:33904-2018",
+  "file": "din-san-Deva-Latn-33904-2018.isc",
+  "pairs": 113,
+  "context_rules": 40,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "ai": [
+    "ऐ",
+    "ै"
+   ],
+   "au": [
+    "औ",
+    "ौ"
+   ],
+   "e": [
+    "ए",
+    "े"
+   ],
+   "i": [
+    "इ",
+    "ि"
+   ],
+   "o": [
+    "ओ",
+    "ो"
+   ],
+   "u": [
+    "उ",
+    "ु"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "din-tam-Taml-Latn-33903-2016": {
+  "system": "DIN:tam-Taml:Latn:33903-2016",
+  "file": "din-tam-Taml-Latn-33903-2016.isc",
+  "pairs": 85,
+  "context_rules": 23,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "": [
+    "‍",
+    "‌"
+   ],
+   "ai": [
+    "ஐ",
+    "ை"
+   ],
+   "au": [
+    "ஔ",
+    "ௌ"
+   ],
+   "e": [
+    "ெ",
+    "எ"
+   ],
+   "i": [
+    "இ",
+    "ி"
+   ],
+   "o": [
+    "ஒ",
+    "ொ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "din-yid-Hebr-Latn-31636-2018": {
+  "system": "DIN:yid-Hebr:Latn:31636-2018",
+  "file": "din-yid-Hebr-Latn-31636-2018.isc",
+  "pairs": 63,
+  "context_rules": 10,
+  "many_to_one": 16,
+  "many_to_one_examples": {
+   "a": [
+    "אַ",
+    "אָ",
+    "ַ",
+    "ָ"
+   ],
+   "b": [
+    "בּ",
+    "בּ"
+   ],
+   "e": [
+    "ע",
+    "ֶ",
+    "ֵ",
+    "ֱ"
+   ],
+   "f": [
+    "ף",
+    "פ"
+   ],
+   "k": [
+    "כּ",
+    "כּ"
+   ],
+   "kh": [
+    "ך",
+    "כ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "dos-nep-Deva-Latn-1997": {
+  "system": "DOS:nep-Deva:Latn:1997",
+  "file": "dos-nep-Deva-Latn-1997.isc",
+  "pairs": 1,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "elot-ell-Grek-Latn-743-1982-tl": {
+  "system": "ELOT:ell-Grek:Latn:743-1982-tl",
+  "file": "elot-ell-Grek-Latn-743-1982-tl.isc",
+  "pairs": 81,
+  "context_rules": 40,
+  "many_to_one": 6,
+  "many_to_one_examples": {
+   ";": [
+    "·",
+    "·"
+   ],
+   "?": [
+    ";",
+    ";"
+   ],
+   "Eï": [
+    "ΕΪ",
+    "Εϊ"
+   ],
+   "s": [
+    "σ",
+    "ς"
+   ],
+   "Éï": [
+    "Έϊ",
+    "Έϊ"
+   ],
+   "éï": [
+    "έϊ",
+    "έι"
+   ]
+  },
+  "one_to_many": 1,
+  "one_to_many_examples": {
+   "Έϊ": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "elot-ell-Grek-Latn-743-1982-ts": {
+  "system": "ELOT:ell-Grek:Latn:743-1982-ts",
+  "file": "elot-ell-Grek-Latn-743-1982-ts.isc",
+  "pairs": 87,
+  "context_rules": 34,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   ";": [
+    "·",
+    "·"
+   ],
+   "?": [
+    ";",
+    ";"
+   ],
+   "Eï": [
+    "ΕΪ",
+    "Εϊ"
+   ],
+   "I": [
+    "Η",
+    "Ι"
+   ],
+   "O": [
+    "Ο",
+    "Ω"
+   ],
+   "i": [
+    "η",
+    "ι"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "elot-ell-Grek-Latn-743-2001-tl": {
+  "system": "ELOT:ell-Grek:Latn:743-2001-tl",
+  "file": "elot-ell-Grek-Latn-743-2001-tl.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "elot-ell-Grek-Latn-743-2001-ts": {
+  "system": "ELOT:ell-Grek:Latn:743-2001-ts",
+  "file": "elot-ell-Grek-Latn-743-2001-ts.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "ggg-kat-Geor-Latn-2002": {
+  "system": "GGG:kat-Geor:Latn:2002",
+  "file": "ggg-kat-Geor-Latn-2002.isc",
+  "pairs": 33,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "gki-bel-Cyrl-Latn-1992": {
+  "system": "GKI:bel-Cyrl:Latn:1992",
+  "file": "gki-bel-Cyrl-Latn-1992.isc",
+  "pairs": 10,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "gki-bel-Cyrl-Latn-2000": {
+  "system": "GKI:bel-Cyrl:Latn:2000",
+  "file": "gki-bel-Cyrl-Latn-2000.isc",
+  "pairs": 65,
+  "context_rules": 8,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "'": [
+    "Ь",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "gost-rus-Cyrl-Latn-16876-71-1983": {
+  "system": "GOST:rus-Cyrl:Latn:16876-71-1983",
+  "file": "gost-rus-Cyrl-Latn-16876-71-1983.isc",
+  "pairs": 64,
+  "context_rules": 3,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "´": [
+    "Ь",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "gost-rus-Cyrl-Latn-7.79-2000-2002": {
+  "system": "GOST:rus-Cyrl:Latn:7.79-2000-2002",
+  "file": "gost-rus-Cyrl-Latn-7.79-2000-2002.isc",
+  "pairs": 64,
+  "context_rules": 2,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "´": [
+    "Ь",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "hk-yue-Hani-Latn-1888": {
+  "system": "HK:yue-Hani:Latn:1888",
+  "file": "hk-yue-Hani-Latn-1888.isc",
+  "pairs": 24932,
+  "context_rules": 4212,
+  "many_to_one": 376,
+  "many_to_one_examples": {
+   "cha": [
+    "㪥",
+    "嗏",
+    "奼",
+    "岔"
+   ],
+   "chai": [
+    "債",
+    "儕",
+    "制",
+    "寨"
+   ],
+   "chak": [
+    "仄",
+    "側",
+    "冊",
+    "坼"
+   ],
+   "cham": [
+    "儳",
+    "怎",
+    "懺",
+    "攙"
+   ],
+   "chan": [
+    "侲",
+    "剗",
+    "剷",
+    "圳"
+   ],
+   "chang": [
+    "㬹",
+    "崢",
+    "掙",
+    "撐"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "icao-bel-Cyrl-Latn-9303": {
+  "system": "ICAO:bel-Cyrl:Latn:9303",
+  "file": "icao-bel-Cyrl-Latn-9303.isc",
+  "pairs": 91,
+  "context_rules": 0,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "": [
+    "'",
+    "у",
+    "ў",
+    "ѫ"
+   ],
+   "D": [
+    "Д",
+    "Ђ"
+   ],
+   "DZ": [
+    "Ѕ",
+    "Џ"
+   ],
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "G": [
+    "Ґ",
+    "Ѓ"
+   ],
+   "I": [
+    "И",
+    "Й",
+    "Ї",
+    "І"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "icao-bul-Cyrl-Latn-9303": {
+  "system": "ICAO:bul-Cyrl:Latn:9303",
+  "file": "icao-bul-Cyrl-Latn-9303.isc",
+  "pairs": 89,
+  "context_rules": 0,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "": [
+    "'",
+    "'",
+    "у",
+    "ў"
+   ],
+   "D": [
+    "Д",
+    "Ђ"
+   ],
+   "DZ": [
+    "Ѕ",
+    "Џ"
+   ],
+   "E": [
+    "Ё",
+    "Е",
+    "Э"
+   ],
+   "G": [
+    "Г",
+    "Ґ",
+    "Ѓ"
+   ],
+   "I": [
+    "И",
+    "Й",
+    "Ї"
+   ]
+  },
+  "one_to_many": 1,
+  "one_to_many_examples": {
+   "'": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "icao-fas-Arab-Latn-9303": {
+  "system": "ICAO:fas-Arab:Latn:9303",
+  "file": "icao-fas-Arab-Latn-9303.isc",
+  "pairs": 75,
+  "context_rules": 0,
+  "many_to_one": 9,
+  "many_to_one_examples": {
+   "": [
+    "'",
+    "ٰ"
+   ],
+   "A": [
+    "ا",
+    "َ"
+   ],
+   "F": [
+    "ف",
+    "ً"
+   ],
+   "I": [
+    "إ",
+    "ِ"
+   ],
+   "K": [
+    "ك",
+    "ٍ"
+   ],
+   "N": [
+    "ن",
+    "ٌ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "icao-heb-Hebr-Latn-9303": {
+  "system": "ICAO:heb-Hebr:Latn:9303",
+  "file": "icao-heb-Hebr-Latn-9303.isc",
+  "pairs": 115,
+  "context_rules": 0,
+  "many_to_one": 29,
+  "many_to_one_examples": {
+   "": [
+    "'",
+    "א",
+    "ע"
+   ],
+   "A": [
+    "ֲ",
+    "ַ"
+   ],
+   "AI": [
+    "ַי",
+    "ַיְ",
+    "ַיְ‬",
+    "ָי"
+   ],
+   "B": [
+    "בּ",
+    "בּ"
+   ],
+   "CH": [
+    "ח",
+    "כ",
+    "כּ",
+    "כּ‬"
+   ],
+   "D": [
+    "ד",
+    "דּ",
+    "דּ"
+   ]
+  },
+  "one_to_many": 1,
+  "one_to_many_examples": {
+   "וּ": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "icao-mkd-Cyrl-Latn-9303": {
+  "system": "ICAO:mkd-Cyrl:Latn:9303",
+  "file": "icao-mkd-Cyrl-Latn-9303.isc",
+  "pairs": 89,
+  "context_rules": 0,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "": [
+    "'",
+    "у",
+    "ў",
+    "ѫ"
+   ],
+   "C": [
+    "Ц",
+    "Һ"
+   ],
+   "D": [
+    "Д",
+    "Ђ"
+   ],
+   "E": [
+    "Ё",
+    "Е",
+    "Э"
+   ],
+   "G": [
+    "Г",
+    "Ґ"
+   ],
+   "I": [
+    "И",
+    "Й",
+    "Ї"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "icao-rus-Cyrl-Latn-9303": {
+  "system": "ICAO:rus-Cyrl:Latn:9303",
+  "file": "icao-rus-Cyrl-Latn-9303.isc",
+  "pairs": 89,
+  "context_rules": 0,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "D": [
+    "Д",
+    "Ђ"
+   ],
+   "DZ": [
+    "Ѕ",
+    "Џ"
+   ],
+   "E": [
+    "Ё",
+    "Е",
+    "Э"
+   ],
+   "G": [
+    "Г",
+    "Ґ",
+    "Ѓ"
+   ],
+   "I": [
+    "И",
+    "Й",
+    "Ї"
+   ],
+   "U": [
+    "У",
+    "Ў",
+    "Ѫ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "icao-srp-Cyrl-Latn-9303": {
+  "system": "ICAO:srp-Cyrl:Latn:9303",
+  "file": "icao-srp-Cyrl-Latn-9303.isc",
+  "pairs": 89,
+  "context_rules": 0,
+  "many_to_one": 20,
+  "many_to_one_examples": {
+   "": [
+    "'",
+    "у",
+    "ў",
+    "ѫ"
+   ],
+   "C": [
+    "Ч",
+    "Ц",
+    "Һ"
+   ],
+   "D": [
+    "Д",
+    "Ђ"
+   ],
+   "DZ": [
+    "Ѕ",
+    "Џ"
+   ],
+   "E": [
+    "Ё",
+    "Е",
+    "Э"
+   ],
+   "G": [
+    "Ґ",
+    "Ѓ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "icao-ukr-Cyrl-Latn-9303": {
+  "system": "ICAO:ukr-Cyrl:Latn:9303",
+  "file": "icao-ukr-Cyrl-Latn-9303.isc",
+  "pairs": 90,
+  "context_rules": 0,
+  "many_to_one": 14,
+  "many_to_one_examples": {
+   "": [
+    "'",
+    "у",
+    "ў",
+    "ѫ"
+   ],
+   "D": [
+    "Д",
+    "Ђ"
+   ],
+   "DZ": [
+    "Ѕ",
+    "Џ"
+   ],
+   "E": [
+    "Ё",
+    "Е",
+    "Э"
+   ],
+   "G": [
+    "Г",
+    "Ґ",
+    "Ѓ"
+   ],
+   "I": [
+    "Й",
+    "Ї",
+    "І"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-ara-Arab-Latn-233-1984": {
+  "system": "ISO:ara-Arab:Latn:233-1984",
+  "file": "iso-ara-Arab-Latn-233-1984.isc",
+  "pairs": 160,
+  "context_rules": 3,
+  "many_to_one": 30,
+  "many_to_one_examples": {
+   "a": [
+    "َ",
+    "أ"
+   ],
+   "b": [
+    "ب",
+    "ﺑ",
+    "ﺒ",
+    "ﺐ"
+   ],
+   "d": [
+    "د",
+    "ﺪ"
+   ],
+   "f": [
+    "ف",
+    "ﻓ",
+    "ﻔ",
+    "ﻒ"
+   ],
+   "h": [
+    "ه",
+    "ﻫ",
+    "ﻬ",
+    "ﻪ"
+   ],
+   "iy": [
+    "ِي",
+    "ِيَّ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-ara-Arab-Latn-233-2-1993": {
+  "system": "ISO:ara-Arab:Latn:233-2-1993",
+  "file": "iso-ara-Arab-Latn-233-2-1993.isc",
+  "pairs": 153,
+  "context_rules": 6,
+  "many_to_one": 29,
+  "many_to_one_examples": {
+   "b": [
+    "ب",
+    "ﺑ",
+    "ﺒ",
+    "ﺐ"
+   ],
+   "d": [
+    "د",
+    "ﺪ"
+   ],
+   "f": [
+    "ف",
+    "ﻓ",
+    "ﻔ",
+    "ﻒ"
+   ],
+   "h": [
+    "ه",
+    "ﻫ",
+    "ﻬ",
+    "ﻪ"
+   ],
+   "k": [
+    "ك",
+    "ﻛ",
+    "ﻜ",
+    "ﻚ"
+   ],
+   "l": [
+    "ل",
+    "ﻟ",
+    "ﻠ",
+    "ﻞ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-asm-Beng-Latn-15919-2001": {
+  "system": "ISO:asm-Beng:Latn:15919-2001",
+  "file": "iso-asm-Beng-Latn-15919-2001.isc",
+  "pairs": 2,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "iso-ben-Beng-Latn-15919-2001": {
+  "system": "ISO:ben-Beng:Latn:15919-2001",
+  "file": "iso-ben-Beng-Latn-15919-2001.isc",
+  "pairs": 81,
+  "context_rules": 0,
+  "many_to_one": 13,
+  "many_to_one_examples": {
+   "ai": [
+    "ঐ",
+    "ৈ"
+   ],
+   "au": [
+    "ঔ",
+    "ৌ"
+   ],
+   "e": [
+    "এ",
+    "ে"
+   ],
+   "i": [
+    "ই",
+    "ি"
+   ],
+   "o": [
+    "ও",
+    "ো"
+   ],
+   "u": [
+    "উ",
+    "ু"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-ell-Grek-Latn-843-1997-t1": {
+  "system": "ISO:ell-Grek:Latn:843-1997-t1",
+  "file": "iso-ell-Grek-Latn-843-1997-t1.isc",
+  "pairs": 78,
+  "context_rules": 3,
+  "many_to_one": 4,
+  "many_to_one_examples": {
+   ";": [
+    "·",
+    "·"
+   ],
+   "?": [
+    ";",
+    ";"
+   ],
+   "S": [
+    "Σ",
+    "Ϲ"
+   ],
+   "s": [
+    "σ",
+    "ς",
+    "ϲ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-ell-Grek-Latn-843-1997-t2": {
+  "system": "ISO:ell-Grek:Latn:843-1997-t2",
+  "file": "iso-ell-Grek-Latn-843-1997-t2.isc",
+  "pairs": 6,
+  "context_rules": 0,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "j": [
+    "ϳ",
+    "Ϳ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-guj-Gujr-Latn-15919-2001": {
+  "system": "ISO:guj-Gujr:Latn:15919-2001",
+  "file": "iso-guj-Gujr-Latn-15919-2001.isc",
+  "pairs": 94,
+  "context_rules": 0,
+  "many_to_one": 16,
+  "many_to_one_examples": {
+   "": [
+    "্",
+    "્",
+    "઼",
+    "‍"
+   ],
+   "ai": [
+    "ઐ",
+    "ૈ"
+   ],
+   "au": [
+    "ઔ",
+    "ૌ"
+   ],
+   "e": [
+    "એ",
+    "ે"
+   ],
+   "i": [
+    "ઇ",
+    "િ"
+   ],
+   "o": [
+    "ઓ",
+    "ો"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-hin-Deva-Latn-15919-2001": {
+  "system": "ISO:hin-Deva:Latn:15919-2001",
+  "file": "iso-hin-Deva-Latn-15919-2001.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "iso-inc-Deva-Latn-15919-2001": {
+  "system": "ISO:inc-Deva:Latn:15919-2001",
+  "file": "iso-inc-Deva-Latn-15919-2001.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "iso-jpn-Hrkt-Latn-3602-1989": {
+  "system": "ISO:jpn-Hrkt:Latn:3602-1989",
+  "file": "iso-jpn-Hrkt-Latn-3602-1989.isc",
+  "pairs": 2,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "iso-kan-Kana-Latn-15919-2001": {
+  "system": "ISO:kan-Kana:Latn:15919-2001",
+  "file": "iso-kan-Kana-Latn-15919-2001.isc",
+  "pairs": 97,
+  "context_rules": 0,
+  "many_to_one": 16,
+  "many_to_one_examples": {
+   "": [
+    "಼",
+    "्",
+    "़",
+    "್"
+   ],
+   "ai": [
+    "ಐ",
+    "ೈ"
+   ],
+   "au": [
+    "ಔ",
+    "ೌ"
+   ],
+   "e": [
+    "ಎ",
+    "ೆ"
+   ],
+   "i": [
+    "ಇ",
+    "ಿ"
+   ],
+   "m̐": [
+    "ಀ",
+    "ಁ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-kat-Geor-Latn-9984-1996": {
+  "system": "ISO:kat-Geor:Latn:9984-1996",
+  "file": "iso-kat-Geor-Latn-9984-1996.isc",
+  "pairs": 39,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "iso-kor-Hang-Latn-1996-method1": {
+  "system": "ISO:kor-Hang:Latn:1996-method1",
+  "file": "iso-kor-Hang-Latn-1996-method1.isc",
+  "pairs": 38,
+  "context_rules": 1,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "iso-kor-Hang-Latn-1996-method2": {
+  "system": "ISO:kor-Hang:Latn:1996-method2",
+  "file": "iso-kor-Hang-Latn-1996-method2.isc",
+  "pairs": 23,
+  "context_rules": 1,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "iso-mal-Mlym-Latn-15919-2001": {
+  "system": "ISO:mal-Mlym:Latn:15919-2001",
+  "file": "iso-mal-Mlym-Latn-15919-2001.isc",
+  "pairs": 133,
+  "context_rules": 3,
+  "many_to_one": 17,
+  "many_to_one_examples": {
+   "": [
+    "्",
+    "़",
+    "ൗ",
+    "‍"
+   ],
+   "ai": [
+    "ഐ",
+    "ൈ"
+   ],
+   "au": [
+    "ഔ",
+    "ൌ"
+   ],
+   "e": [
+    "എ",
+    "െ"
+   ],
+   "i": [
+    "ഇ",
+    "ി"
+   ],
+   "o": [
+    "ഒ",
+    "ൊ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-mar-Deva-Latn-15919-2001": {
+  "system": "ISO:mar-Deva:Latn:15919-2001",
+  "file": "iso-mar-Deva-Latn-15919-2001.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "iso-nep-Deva-Latn-15919-2001": {
+  "system": "ISO:nep-Deva:Latn:15919-2001",
+  "file": "iso-nep-Deva-Latn-15919-2001.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "iso-ori-Orya-Latn-15919-2001": {
+  "system": "ISO:ori-Orya:Latn:15919-2001",
+  "file": "iso-ori-Orya-Latn-15919-2001.isc",
+  "pairs": 82,
+  "context_rules": 0,
+  "many_to_one": 14,
+  "many_to_one_examples": {
+   "": [
+    "्",
+    "୍",
+    "़",
+    "଼"
+   ],
+   "ai": [
+    "ଐ",
+    "ୈ"
+   ],
+   "au": [
+    "ଔ",
+    "ୌ"
+   ],
+   "e": [
+    "ଏ",
+    "େ"
+   ],
+   "i": [
+    "ଇ",
+    "ି"
+   ],
+   "o": [
+    "ଓ",
+    "ୋ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-pan-Guru-Latn-15919-2001": {
+  "system": "ISO:pan-Guru:Latn:15919-2001",
+  "file": "iso-pan-Guru-Latn-15919-2001.isc",
+  "pairs": 94,
+  "context_rules": 0,
+  "many_to_one": 18,
+  "many_to_one_examples": {
+   ":ai": [
+    "ੱਐ",
+    "ੱੈ"
+   ],
+   ":au": [
+    "ੱਔ",
+    "ੱੌ"
+   ],
+   ":e": [
+    "ੱਏ",
+    "ੱੇ"
+   ],
+   ":i": [
+    "ੱਇ",
+    "ੱਿ"
+   ],
+   ":o": [
+    "ੱਓ",
+    "ੱੋ"
+   ],
+   ":u": [
+    "ੱਉ",
+    "ੱੁ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-pli-Beng-Latn-15919-2001": {
+  "system": "ISO:pli-Beng:Latn:15919-2001",
+  "file": "iso-pli-Beng-Latn-15919-2001.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "iso-pli-Deva-Latn-15919-2001": {
+  "system": "ISO:pli-Deva:Latn:15919-2001",
+  "file": "iso-pli-Deva-Latn-15919-2001.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "iso-pli-Sinh-Latn-15919-2001": {
+  "system": "ISO:pli-Sinh:Latn:15919-2001",
+  "file": "iso-pli-Sinh-Latn-15919-2001.isc",
+  "pairs": 97,
+  "context_rules": 0,
+  "many_to_one": 18,
+  "many_to_one_examples": {
+   "": [
+    "্",
+    "‍",
+    "‌",
+    "්"
+   ],
+   "ai": [
+    "ඓ",
+    "ෛ"
+   ],
+   "au": [
+    "ඖ",
+    "ෞ"
+   ],
+   "e": [
+    "එ",
+    "ෙ"
+   ],
+   "i": [
+    "ඉ",
+    "ි"
+   ],
+   "o": [
+    "ඔ",
+    "ො"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-pli-Thai-Latn-15919-2001": {
+  "system": "ISO:pli-Thai:Latn:15919-2001",
+  "file": "iso-pli-Thai-Latn-15919-2001.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "iso-pra-Deva-Latn-15919-2001": {
+  "system": "ISO:pra-Deva:Latn:15919-2001",
+  "file": "iso-pra-Deva-Latn-15919-2001.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "iso-prs-Arab-Latn-233-3-1999": {
+  "system": "ISO:prs-Arab:Latn:233-3-1999",
+  "file": "iso-prs-Arab-Latn-233-3-1999.isc",
+  "pairs": 72,
+  "context_rules": 17,
+  "many_to_one": 16,
+  "many_to_one_examples": {
+   "": [
+    "ْ",
+    "ٌ",
+    "ٍ",
+    "إ"
+   ],
+   "-e": [
+    "ٴ",
+    "ٔ"
+   ],
+   "ay": [
+    "َى",
+    "َيْ"
+   ],
+   "aī": [
+    "َي",
+    "َی"
+   ],
+   "gh": [
+    "غ",
+    "غ"
+   ],
+   "t": [
+    "ة",
+    "ت"
+   ]
+  },
+  "one_to_many": 35,
+  "one_to_many_examples": {
+   "ب": 2,
+   "ت": 2,
+   "ث": 2,
+   "ج": 2,
+   "ح": 2,
+   "خ": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-rus-Cyrl-Latn-9-1995": {
+  "system": "ISO:rus-Cyrl:Latn:9-1995",
+  "file": "iso-rus-Cyrl-Latn-9-1995.isc",
+  "pairs": 251,
+  "context_rules": 0,
+  "many_to_one": 2,
+  "many_to_one_examples": {
+   "ʹ": [
+    "Ь",
+    "ь"
+   ],
+   "ʺ": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-san-Deva-Latn-15919-2001": {
+  "system": "ISO:san-Deva:Latn:15919-2001",
+  "file": "iso-san-Deva-Latn-15919-2001.isc",
+  "pairs": 99,
+  "context_rules": 0,
+  "many_to_one": 16,
+  "many_to_one_examples": {
+   "": [
+    "्",
+    "‍"
+   ],
+   "ai": [
+    "ऐ",
+    "ै"
+   ],
+   "au": [
+    "औ",
+    "ौ"
+   ],
+   "e": [
+    "ए",
+    "े"
+   ],
+   "i": [
+    "इ",
+    "ि"
+   ],
+   "o": [
+    "ओ",
+    "ो"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-tam-Taml-Latn-15919-2001": {
+  "system": "ISO:tam-Taml:Latn:15919-2001",
+  "file": "iso-tam-Taml-Latn-15919-2001.isc",
+  "pairs": 62,
+  "context_rules": 0,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "": [
+    "்",
+    "‍",
+    "‌"
+   ],
+   "ai": [
+    "ஐ",
+    "ை"
+   ],
+   "au": [
+    "ஔ",
+    "ௌ"
+   ],
+   "e": [
+    "ெ",
+    "எ"
+   ],
+   "i": [
+    "இ",
+    "ி"
+   ],
+   "o": [
+    "ஒ",
+    "ொ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-tel-Telu-Latn-15919-2001": {
+  "system": "ISO:tel-Telu:Latn:15919-2001",
+  "file": "iso-tel-Telu-Latn-15919-2001.isc",
+  "pairs": 99,
+  "context_rules": 0,
+  "many_to_one": 15,
+  "many_to_one_examples": {
+   "": [
+    "్",
+    "ౕ\\t",
+    "ౖ\\t",
+    "्"
+   ],
+   "ai": [
+    "ఐ",
+    "ై"
+   ],
+   "au": [
+    "ఔ",
+    "ౌ"
+   ],
+   "e": [
+    "ఎ",
+    "ె"
+   ],
+   "i": [
+    "ఇ",
+    "ి"
+   ],
+   "o": [
+    "ఒ",
+    "ొ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "iso-tha-Thai-Latn-11940-1998": {
+  "system": "ISO:tha-Thai:Latn:11940-1998",
+  "file": "iso-tha-Thai-Latn-11940-1998.isc",
+  "pairs": 86,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "kp-kor-Hang-Latn-2002": {
+  "system": "KP:kor-Hang:Latn:2002",
+  "file": "kp-kor-Hang-Latn-2002.isc",
+  "pairs": 253,
+  "context_rules": 80,
+  "many_to_one": 58,
+  "many_to_one_examples": {
+   "kch": [
+    "ᆨᄎ",
+    "ᆰᄎ"
+   ],
+   "kj": [
+    "ᆨᄌ",
+    "ᆰᄌ"
+   ],
+   "kjj": [
+    "ᆨᄍ",
+    "ᆰᄍ"
+   ],
+   "kp": [
+    "ᆨᄇ",
+    "ᆨᄑ",
+    "ᆰᄇ"
+   ],
+   "kpp": [
+    "ᆨᄈ",
+    "ᆰᄈ"
+   ],
+   "ks": [
+    "ᆨᄉ",
+    "ᆰᄉ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "lshk-yue-Hani-Latn-jyutping-1993": {
+  "system": "LSHK:yue-Hani:Latn:jyutping-1993",
+  "file": "lshk-yue-Hani-Latn-jyutping-1993.isc",
+  "pairs": 22276,
+  "context_rules": 6678,
+  "many_to_one": 1363,
+  "many_to_one_examples": {
+   "baa1": [
+    "㸭",
+    "㿬",
+    "叭",
+    "夿"
+   ],
+   "baa3": [
+    "㶚",
+    "䃻",
+    "䩗",
+    "䩻"
+   ],
+   "baa6": [
+    "㔥",
+    "䆉",
+    "䇑",
+    "䶕"
+   ],
+   "baai2": [
+    "捭",
+    "擺"
+   ],
+   "baai3": [
+    "㗑",
+    "㠔",
+    "䒔",
+    "庍"
+   ],
+   "baai6": [
+    "㶔",
+    "䢙",
+    "敗",
+    "薭"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "masm-mon-Cyrl-Latn-5217-2012": {
+  "system": "MASM:mon-Cyrl:Latn:5217-2012",
+  "file": "masm-mon-Cyrl-Latn-5217-2012.isc",
+  "pairs": 70,
+  "context_rules": 0,
+  "many_to_one": 4,
+  "many_to_one_examples": {
+   "I": [
+    "И",
+    "Й",
+    "Ъ",
+    "Ь"
+   ],
+   "Sh": [
+    "Ш",
+    "Щ"
+   ],
+   "i": [
+    "и",
+    "й",
+    "ъ",
+    "ь"
+   ],
+   "sh": [
+    "ш",
+    "щ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "masm-mon-Latn-Cyrl-5217-2012": {
+  "system": "MASM:mon-Latn:Cyrl:5217-2012",
+  "file": "masm-mon-Latn-Cyrl-5217-2012.isc",
+  "pairs": 72,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 4,
+  "one_to_many_examples": {
+   "I": 4,
+   "Sh": 2,
+   "i": 4,
+   "sh": 2
+  },
+  "verdict": "CONTEXT_ONLY"
+ },
+ "mext-jpn-Hrkt-Latn-1954": {
+  "system": "MEXT:jpn-Hrkt:Latn:1954",
+  "file": "mext-jpn-Hrkt-Latn-1954.isc",
+  "pairs": 267,
+  "context_rules": 5,
+  "many_to_one": 126,
+  "many_to_one_examples": {
+   "a": [
+    "あ",
+    "ア"
+   ],
+   "ba": [
+    "ば",
+    "バ"
+   ],
+   "be": [
+    "べ",
+    "ベ"
+   ],
+   "bi": [
+    "び",
+    "ビ"
+   ],
+   "bo": [
+    "ぼ",
+    "ボ"
+   ],
+   "bu": [
+    "ぶ",
+    "ブ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "moct-kor-Hang-Latn-2000": {
+  "system": "MOCT:kor-Hang:Latn:2000",
+  "file": "moct-kor-Hang-Latn-2000.isc",
+  "pairs": 262,
+  "context_rules": 60,
+  "many_to_one": 59,
+  "many_to_one_examples": {
+   "kb": [
+    "ᆨᄇ",
+    "ᆰᄇ"
+   ],
+   "kch": [
+    "ᆨᄎ",
+    "ᆰᄎ"
+   ],
+   "kd": [
+    "ᆨᄃ",
+    "ᆰᄃ"
+   ],
+   "kj": [
+    "ᆨᄌ",
+    "ᆰᄌ"
+   ],
+   "kjj": [
+    "ᆨᄍ",
+    "ᆰᄍ"
+   ],
+   "kp": [
+    "ᆨᄑ",
+    "ᆰᄑ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "mofa-jpn-Hrkt-Latn-1989": {
+  "system": "MOFA:jpn-Hrkt:Latn:1989",
+  "file": "mofa-jpn-Hrkt-Latn-1989.isc",
+  "pairs": 301,
+  "context_rules": 8,
+  "many_to_one": 116,
+  "many_to_one_examples": {
+   "A": [
+    "あ",
+    "ア"
+   ],
+   "BA": [
+    "ば",
+    "バ"
+   ],
+   "BE": [
+    "べ",
+    "ベ"
+   ],
+   "BI": [
+    "び",
+    "ビ"
+   ],
+   "BO": [
+    "ぼ",
+    "ぼう",
+    "ボ",
+    "ボウ"
+   ],
+   "BU": [
+    "ぶ",
+    "ブ",
+    "ゔ",
+    "ヴ"
+   ]
+  },
+  "one_to_many": 1,
+  "one_to_many_examples": {
+   "コウ": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "mv-div-Thaa-Latn-1987": {
+  "system": "MV:div-Thaa:Latn:1987",
+  "file": "mv-div-Thaa-Latn-1987.isc",
+  "pairs": 35,
+  "context_rules": 50,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "": [
+    "ް",
+    "އ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "mvd-bel-Cyrl-Latn-2008": {
+  "system": "MVD:bel-Cyrl:Latn:2008",
+  "file": "mvd-bel-Cyrl-Latn-2008.isc",
+  "pairs": 73,
+  "context_rules": 30,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "j": [
+    "й",
+    "’"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "mvd-bel-Cyrl-Latn-2010": {
+  "system": "MVD:bel-Cyrl:Latn:2010",
+  "file": "mvd-bel-Cyrl-Latn-2010.isc",
+  "pairs": 4,
+  "context_rules": 2,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "": [
+    "Ь",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "mvd-rus-Cyrl-Latn-2008": {
+  "system": "MVD:rus-Cyrl:Latn:2008",
+  "file": "mvd-rus-Cyrl-Latn-2008.isc",
+  "pairs": 69,
+  "context_rules": 2,
+  "many_to_one": 5,
+  "many_to_one_examples": {
+   "": [
+    "Ь",
+    "ь"
+   ],
+   "E": [
+    "Е",
+    "Ё",
+    "Э"
+   ],
+   "J": [
+    "Й",
+    "Ъ"
+   ],
+   "e": [
+    "е",
+    "ё",
+    "э"
+   ],
+   "j": [
+    "’",
+    "й",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "mvd-rus-Cyrl-Latn-2010": {
+  "system": "MVD:rus-Cyrl:Latn:2010",
+  "file": "mvd-rus-Cyrl-Latn-2010.isc",
+  "pairs": 1,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "odni-ara-Arab-Latn-2004": {
+  "system": "ODNI:ara-Arab:Latn:2004",
+  "file": "odni-ara-Arab-Latn-2004.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "odni-ara-Arab-Latn-2015": {
+  "system": "ODNI:ara-Arab:Latn:2015",
+  "file": "odni-ara-Arab-Latn-2015.isc",
+  "pairs": 70,
+  "context_rules": 17,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "": [
+    "ْ",
+    "أ"
+   ],
+   "a": [
+    "َ",
+    "َا",
+    "آ",
+    "ا"
+   ],
+   "dh": [
+    "ذّ",
+    "ذ"
+   ],
+   "gh": [
+    "غّ",
+    "غ"
+   ],
+   "h": [
+    "ح",
+    "ه"
+   ],
+   "hh": [
+    "حّ",
+    "هّ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-aze-Cyrl-Latn-2015": {
+  "system": "ODNI:aze-Cyrl:Latn:2015",
+  "file": "odni-aze-Cyrl-Latn-2015.isc",
+  "pairs": 76,
+  "context_rules": 0,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "A": [
+    "А",
+    "Ә"
+   ],
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "G": [
+    "Г",
+    "Ҝ"
+   ],
+   "O": [
+    "О",
+    "Ө"
+   ],
+   "U": [
+    "У",
+    "Ү"
+   ],
+   "Y": [
+    "Й",
+    "Ј",
+    "Ы"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-bel-Cyrl-Latn-2015": {
+  "system": "ODNI:bel-Cyrl:Latn:2015",
+  "file": "odni-bel-Cyrl-Latn-2015.isc",
+  "pairs": 67,
+  "context_rules": 0,
+  "many_to_one": 3,
+  "many_to_one_examples": {
+   "": [
+    "'",
+    "Ь",
+    "ь"
+   ],
+   "Y": [
+    "Й",
+    "Ы"
+   ],
+   "y": [
+    "й",
+    "ы"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-bul-Cyrl-Latn-2005": {
+  "system": "ODNI:bul-Cyrl:Latn:2005",
+  "file": "odni-bul-Cyrl-Latn-2005.isc",
+  "pairs": 60,
+  "context_rules": 0,
+  "many_to_one": 4,
+  "many_to_one_examples": {
+   "U": [
+    "У",
+    "Ъ"
+   ],
+   "Y": [
+    "Й",
+    "Ь"
+   ],
+   "u": [
+    "у",
+    "ъ"
+   ],
+   "y": [
+    "й",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-bul-Cyrl-Latn-2015": {
+  "system": "ODNI:bul-Cyrl:Latn:2015",
+  "file": "odni-bul-Cyrl-Latn-2015.isc",
+  "pairs": 16,
+  "context_rules": 0,
+  "many_to_one": 2,
+  "many_to_one_examples": {
+   "ch": [
+    "ч",
+    "чч",
+    "ччч",
+    "чччч"
+   ],
+   "sh": [
+    "ш",
+    "шш",
+    "шшш",
+    "шшшш"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-che-Cyrl-Latn-2015": {
+  "system": "ODNI:che-Cyrl:Latn:2015",
+  "file": "odni-che-Cyrl-Latn-2015.isc",
+  "pairs": 4,
+  "context_rules": 3,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "'": [
+    "Ъ",
+    "Ӏ",
+    "ъ",
+    "ӏ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-fas-Arab-Latn-2004": {
+  "system": "ODNI:fas-Arab:Latn:2004",
+  "file": "odni-fas-Arab-Latn-2004.isc",
+  "pairs": 86,
+  "context_rules": 7,
+  "many_to_one": 20,
+  "many_to_one_examples": {
+   "": [
+    "ْ",
+    "أ",
+    "إ"
+   ],
+   "-e": [
+    "ٴ",
+    "ٔ"
+   ],
+   "a": [
+    "آ",
+    "َ",
+    "َى",
+    "ى"
+   ],
+   "gh": [
+    "غّ",
+    "قّ",
+    "غ",
+    "ق"
+   ],
+   "h": [
+    "ح",
+    "ه"
+   ],
+   "hh": [
+    "حّ",
+    "هّ"
+   ]
+  },
+  "one_to_many": 1,
+  "one_to_many_examples": {
+   "ى": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-fas-Arab-Latn-2015": {
+  "system": "ODNI:fas-Arab:Latn:2015",
+  "file": "odni-fas-Arab-Latn-2015.isc",
+  "pairs": 85,
+  "context_rules": 7,
+  "many_to_one": 19,
+  "many_to_one_examples": {
+   "": [
+    "ْ",
+    "أ",
+    "إ"
+   ],
+   "-e": [
+    "ٴ",
+    "ٔ"
+   ],
+   "a": [
+    "آ",
+    "َ",
+    "َى",
+    "ى"
+   ],
+   "gh": [
+    "غّ",
+    "قّ",
+    "غ",
+    "ق"
+   ],
+   "h": [
+    "ح",
+    "ه"
+   ],
+   "hh": [
+    "حّ",
+    "هّ"
+   ]
+  },
+  "one_to_many": 1,
+  "one_to_many_examples": {
+   "ى": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-hin-Deva-Latn-2004": {
+  "system": "ODNI:hin-Deva:Latn:2004",
+  "file": "odni-hin-Deva-Latn-2004.isc",
+  "pairs": 71,
+  "context_rules": 0,
+  "many_to_one": 20,
+  "many_to_one_examples": {
+   "": [
+    "्",
+    "़"
+   ],
+   "a": [
+    "अ",
+    "आ",
+    "ा"
+   ],
+   "ai": [
+    "ऐ",
+    "ै",
+    "ॅ"
+   ],
+   "au": [
+    "ऑ",
+    "औ",
+    "ौ",
+    "ॉ"
+   ],
+   "ch": [
+    "च",
+    "छ"
+   ],
+   "d": [
+    "ड",
+    "द"
+   ]
+  },
+  "one_to_many": 1,
+  "one_to_many_examples": {
+   "झ": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-hin-Deva-Latn-2015": {
+  "system": "ODNI:hin-Deva:Latn:2015",
+  "file": "odni-hin-Deva-Latn-2015.isc",
+  "pairs": 70,
+  "context_rules": 0,
+  "many_to_one": 20,
+  "many_to_one_examples": {
+   "": [
+    "़",
+    "्"
+   ],
+   "a": [
+    "अ",
+    "आ",
+    "ा"
+   ],
+   "ai": [
+    "ऐ",
+    "ै",
+    "ॅ"
+   ],
+   "au": [
+    "ओ",
+    "ौ",
+    "ॉ"
+   ],
+   "ch": [
+    "च",
+    "छ"
+   ],
+   "d": [
+    "ड",
+    "द"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-kat-Geor-Latn-2015": {
+  "system": "ODNI:kat-Geor:Latn:2015",
+  "file": "odni-kat-Geor-Latn-2015.isc",
+  "pairs": 33,
+  "context_rules": 0,
+  "many_to_one": 5,
+  "many_to_one_examples": {
+   "ch": [
+    "ჩ",
+    "ჭ"
+   ],
+   "k": [
+    "კ",
+    "ქ"
+   ],
+   "p": [
+    "პ",
+    "ფ"
+   ],
+   "t": [
+    "თ",
+    "ტ"
+   ],
+   "ts": [
+    "ც",
+    "წ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-kaz-Cyrl-Latn-2015": {
+  "system": "ODNI:kaz-Cyrl:Latn:2015",
+  "file": "odni-kaz-Cyrl-Latn-2015.isc",
+  "pairs": 80,
+  "context_rules": 0,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "A": [
+    "А",
+    "Ә"
+   ],
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "I": [
+    "И",
+    "І"
+   ],
+   "O": [
+    "О",
+    "Ө"
+   ],
+   "U": [
+    "У",
+    "Ү",
+    "Ұ"
+   ],
+   "Y": [
+    "Й",
+    "Ы"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-kir-Cyrl-Latn-2015": {
+  "system": "ODNI:kir-Cyrl:Latn:2015",
+  "file": "odni-kir-Cyrl-Latn-2015.isc",
+  "pairs": 68,
+  "context_rules": 0,
+  "many_to_one": 8,
+  "many_to_one_examples": {
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "O": [
+    "О",
+    "Ө"
+   ],
+   "U": [
+    "У",
+    "Ү"
+   ],
+   "Y": [
+    "Й",
+    "Ы"
+   ],
+   "e": [
+    "е",
+    "э"
+   ],
+   "o": [
+    "о",
+    "ө"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-kor-Hang-Latn-2015": {
+  "system": "ODNI:kor-Hang:Latn:2015",
+  "file": "odni-kor-Hang-Latn-2015.isc",
+  "pairs": 70,
+  "context_rules": 1,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "l": [
+    "ᆳ",
+    "ᆯ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-kur-Arab-Latn-2011": {
+  "system": "ODNI:kur-Arab:Latn:2011",
+  "file": "odni-kur-Arab-Latn-2011.isc",
+  "pairs": 78,
+  "context_rules": 0,
+  "many_to_one": 14,
+  "many_to_one_examples": {
+   "": [
+    "ء",
+    "َ",
+    "ُ",
+    "ّ"
+   ],
+   "a": [
+    "ئه",
+    "ئا",
+    "ه",
+    "ا"
+   ],
+   "ay": [
+    "ئاى",
+    "ئاي"
+   ],
+   "e": [
+    "ئێ",
+    "ێ"
+   ],
+   "h": [
+    "ح",
+    "ھ"
+   ],
+   "i": [
+    "ئي",
+    "ئى",
+    "ئی",
+    "يي"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-mkd-Cyrl-Latn-2005": {
+  "system": "ODNI:mkd-Cyrl:Latn:2005",
+  "file": "odni-mkd-Cyrl-Latn-2005.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "odni-mkd-Cyrl-Latn-2015": {
+  "system": "ODNI:mkd-Cyrl:Latn:2015",
+  "file": "odni-mkd-Cyrl-Latn-2015.isc",
+  "pairs": 63,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "odni-prs-Arab-Latn-2004": {
+  "system": "ODNI:prs-Arab:Latn:2004",
+  "file": "odni-prs-Arab-Latn-2004.isc",
+  "pairs": 11,
+  "context_rules": 2,
+  "many_to_one": 2,
+  "many_to_one_examples": {
+   "": [
+    "ئ",
+    "ؤ",
+    "ء",
+    "ع"
+   ],
+   "i": [
+    "يي",
+    "یی"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-prs-Arab-Latn-2015": {
+  "system": "ODNI:prs-Arab:Latn:2015",
+  "file": "odni-prs-Arab-Latn-2015.isc",
+  "pairs": 12,
+  "context_rules": 2,
+  "many_to_one": 2,
+  "many_to_one_examples": {
+   "": [
+    "ئ",
+    "ؤ",
+    "ء",
+    "ع"
+   ],
+   "i": [
+    "يي",
+    "یی"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-pus-Arab-Latn-2011": {
+  "system": "ODNI:pus-Arab:Latn:2011",
+  "file": "odni-pus-Arab-Latn-2011.isc",
+  "pairs": 46,
+  "context_rules": 9,
+  "many_to_one": 7,
+  "many_to_one_examples": {
+   "": [
+    "ْ",
+    "أ"
+   ],
+   "a": [
+    "آ",
+    "ا",
+    "ی"
+   ],
+   "k": [
+    "ك",
+    "ک"
+   ],
+   "kk": [
+    "كّ",
+    "کّ"
+   ],
+   "u": [
+    "ُ",
+    "ُو",
+    "ؤو"
+   ],
+   "y": [
+    "ي",
+    "ى"
+   ]
+  },
+  "one_to_many": 1,
+  "one_to_many_examples": {
+   "و": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-rus-Cyrl-Latn-2015": {
+  "system": "ODNI:rus-Cyrl:Latn:2015",
+  "file": "odni-rus-Cyrl-Latn-2015.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "odni-srp-Cyrl-Latn-2005": {
+  "system": "ODNI:srp-Cyrl:Latn:2005",
+  "file": "odni-srp-Cyrl-Latn-2005.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "odni-srp-Cyrl-Latn-2015": {
+  "system": "ODNI:srp-Cyrl:Latn:2015",
+  "file": "odni-srp-Cyrl-Latn-2015.isc",
+  "pairs": 60,
+  "context_rules": 0,
+  "many_to_one": 6,
+  "many_to_one_examples": {
+   "C": [
+    "Ћ",
+    "Ц",
+    "Ч"
+   ],
+   "S": [
+    "С",
+    "Ш"
+   ],
+   "Z": [
+    "Ж",
+    "З"
+   ],
+   "c": [
+    "ћ",
+    "ц",
+    "ч"
+   ],
+   "s": [
+    "с",
+    "ш"
+   ],
+   "z": [
+    "ж",
+    "з"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-tat-Cyrl-Latn-2015": {
+  "system": "ODNI:tat-Cyrl:Latn:2015",
+  "file": "odni-tat-Cyrl-Latn-2015.isc",
+  "pairs": 74,
+  "context_rules": 0,
+  "many_to_one": 10,
+  "many_to_one_examples": {
+   "A": [
+    "А",
+    "Ә"
+   ],
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "O": [
+    "О",
+    "Ө"
+   ],
+   "U": [
+    "У",
+    "Ү"
+   ],
+   "Y": [
+    "Й",
+    "Ы"
+   ],
+   "a": [
+    "а",
+    "ә"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-tgk-Cyrl-Latn-2015": {
+  "system": "ODNI:tgk-Cyrl:Latn:2015",
+  "file": "odni-tgk-Cyrl-Latn-2015.isc",
+  "pairs": 74,
+  "context_rules": 0,
+  "many_to_one": 8,
+  "many_to_one_examples": {
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "I": [
+    "И",
+    "Ӣ"
+   ],
+   "U": [
+    "У",
+    "Ӯ"
+   ],
+   "Y": [
+    "Й",
+    "Ы"
+   ],
+   "e": [
+    "е",
+    "э"
+   ],
+   "i": [
+    "и",
+    "ӣ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-tuk-Cyrl-Latn-2015": {
+  "system": "ODNI:tuk-Cyrl:Latn:2015",
+  "file": "odni-tuk-Cyrl-Latn-2015.isc",
+  "pairs": 76,
+  "context_rules": 0,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "A": [
+    "А",
+    "Ә"
+   ],
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "O": [
+    "О",
+    "Ө"
+   ],
+   "Sh": [
+    "Шш",
+    "Ш"
+   ],
+   "U": [
+    "У",
+    "Ү"
+   ],
+   "Y": [
+    "Й",
+    "Ы"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-uig-Cyrl-Latn-2015": {
+  "system": "ODNI:uig-Cyrl:Latn:2015",
+  "file": "odni-uig-Cyrl-Latn-2015.isc",
+  "pairs": 70,
+  "context_rules": 0,
+  "many_to_one": 6,
+  "many_to_one_examples": {
+   "E": [
+    "Ә",
+    "Е"
+   ],
+   "O": [
+    "О",
+    "Ө"
+   ],
+   "U": [
+    "У",
+    "Ү"
+   ],
+   "e": [
+    "ә",
+    "е"
+   ],
+   "o": [
+    "о",
+    "ө"
+   ],
+   "u": [
+    "у",
+    "ү"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-ukr-Cyrl-Latn-2015": {
+  "system": "ODNI:ukr-Cyrl:Latn:2015",
+  "file": "odni-ukr-Cyrl-Latn-2015.isc",
+  "pairs": 66,
+  "context_rules": 0,
+  "many_to_one": 3,
+  "many_to_one_examples": {
+   "": [
+    "Ь",
+    "ь"
+   ],
+   "Y": [
+    "И",
+    "Й"
+   ],
+   "y": [
+    "и",
+    "й"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-urd-Arab-Latn-2015": {
+  "system": "ODNI:urd-Arab:Latn:2015",
+  "file": "odni-urd-Arab-Latn-2015.isc",
+  "pairs": 54,
+  "context_rules": 0,
+  "many_to_one": 10,
+  "many_to_one_examples": {
+   "": [
+    "ء",
+    "ْ",
+    "ّ"
+   ],
+   "a": [
+    "آ",
+    "ا",
+    "وٰ",
+    "ٰ"
+   ],
+   "d": [
+    "ڈ",
+    "د"
+   ],
+   "e": [
+    "ے",
+    "ِ",
+    "ع"
+   ],
+   "i": [
+    "ی",
+    "و",
+    "اِ",
+    "عِ"
+   ],
+   "n": [
+    "ن",
+    "ں",
+    "ً",
+    "َ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "odni-uzb-Cyrl-Latn-2015": {
+  "system": "ODNI:uzb-Cyrl:Latn:2015",
+  "file": "odni-uzb-Cyrl-Latn-2015.isc",
+  "pairs": 84,
+  "context_rules": 0,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "": [
+    "Ъ",
+    "Ь",
+    "ъ",
+    "ь"
+   ],
+   "E": [
+    "Е",
+    "Э"
+   ],
+   "O": [
+    "О",
+    "Ў"
+   ],
+   "d": [
+    "д",
+    "ђ"
+   ],
+   "dz": [
+    "ѕ",
+    "џ"
+   ],
+   "e": [
+    "е",
+    "э"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "royin-tha-Thai-Latn-1999": {
+  "system": "ROYIN:tha-Thai:Latn:1999",
+  "file": "royin-tha-Thai-Latn-1999.isc",
+  "pairs": 20,
+  "context_rules": 0,
+  "many_to_one": 2,
+  "many_to_one_examples": {
+   "": [
+    "ʔ",
+    "̚",
+    "ː",
+    "˨"
+   ],
+   "ch": [
+    "t͡ɕʰ",
+    "t͡ɕ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "sac-zho-Hans-Latn-1979": {
+  "system": "SAC:zho-Hans:Latn:1979",
+  "file": "sac-zho-Hans-Latn-1979.isc",
+  "pairs": 18617,
+  "context_rules": 1818,
+  "many_to_one": 1131,
+  "many_to_one_examples": {
+   "a1": [
+    "吖",
+    "锕"
+   ],
+   "ai1": [
+    "哀",
+    "哎",
+    "埃",
+    "銰"
+   ],
+   "ai2": [
+    "凒",
+    "啀",
+    "娾",
+    "嵦"
+   ],
+   "ai3": [
+    "佁",
+    "昹",
+    "毐",
+    "矮"
+   ],
+   "ai4": [
+    "伌",
+    "僾",
+    "叆",
+    "塧"
+   ],
+   "an1": [
+    "侒",
+    "垵",
+    "媕",
+    "安"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "sasm-mon-Mong-Latn-general-1978": {
+  "system": "SASM:mon-Mong:Latn:general-1978",
+  "file": "sasm-mon-Mong-Latn-general-1978.isc",
+  "pairs": 32,
+  "context_rules": 0,
+  "many_to_one": 5,
+  "many_to_one_examples": {
+   "-": [
+    "᠎",
+    " "
+   ],
+   "e": [
+    "ᠡ",
+    "ᠧ"
+   ],
+   "h": [
+    "ᠬ",
+    "ᠾ"
+   ],
+   "o": [
+    "ᠥ",
+    "ᠣ"
+   ],
+   "u": [
+    "ᠦ",
+    "ᠤ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "sasm-mon-Mong-Latn-phonetic-1978": {
+  "system": "SASM:mon-Mong:Latn:phonetic-1978",
+  "file": "sasm-mon-Mong-Latn-phonetic-1978.isc",
+  "pairs": 2,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "ses-ara-Arab-Latn-1930": {
+  "system": "SES:ara-Arab:Latn:1930",
+  "file": "ses-ara-Arab-Latn-1930.isc",
+  "pairs": 38,
+  "context_rules": 40,
+  "many_to_one": 7,
+  "many_to_one_examples": {
+   "kh": [
+    "خ",
+    "ﺧ",
+    "ﺨ",
+    "ﺦ"
+   ],
+   "ḍ": [
+    "ض",
+    "ﺿ",
+    "ﻀ",
+    "ﺾ"
+   ],
+   "ḥ": [
+    "ح",
+    "ﺣ",
+    "ﺤ",
+    "ﺢ"
+   ],
+   "ṣ": [
+    "ص",
+    "ﺻ",
+    "ﺼ",
+    "ﺺ"
+   ],
+   "ṭ": [
+    "ط",
+    "ﻃ",
+    "ﻄ",
+    "ﻂ"
+   ],
+   "‛": [
+    "ع",
+    "ﻋ",
+    "ﻌ",
+    "ﻊ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "stategeocadastre-ukr-Cyrl-Latn-1993": {
+  "system": "STATEGEOCADASTRE:ukr-Cyrl:Latn:1993",
+  "file": "stategeocadastre-ukr-Cyrl-Latn-1993.isc",
+  "pairs": 68,
+  "context_rules": 0,
+  "many_to_one": 3,
+  "many_to_one_examples": {
+   "I": [
+    "І",
+    "Й"
+   ],
+   "i": [
+    "і",
+    "ї",
+    "й"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "ua-ukr-Cyrl-Latn-1996": {
+  "system": "UA:ukr-Cyrl:Latn:1996",
+  "file": "ua-ukr-Cyrl-Latn-1996.isc",
+  "pairs": 66,
+  "context_rules": 2,
+  "many_to_one": 3,
+  "many_to_one_examples": {
+   "I": [
+    "І",
+    "Ї",
+    "Й"
+   ],
+   "i": [
+    "і",
+    "ї",
+    "й"
+   ],
+   "’": [
+    "Ь",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "ua-ukr-Cyrl-Latn-2007": {
+  "system": "UA:ukr-Cyrl:Latn:2007",
+  "file": "ua-ukr-Cyrl-Latn-2007.isc",
+  "pairs": 20,
+  "context_rules": 1,
+  "many_to_one": 3,
+  "many_to_one_examples": {
+   "": [
+    "'",
+    "’",
+    "Ь",
+    "ь"
+   ],
+   "G": [
+    "Г",
+    "Ґ"
+   ],
+   "g": [
+    "г",
+    "ґ"
+   ]
+  },
+  "one_to_many": 2,
+  "one_to_many_examples": {
+   "'": 2,
+   "’": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "ua-ukr-Cyrl-Latn-2010": {
+  "system": "UA:ukr-Cyrl:Latn:2010",
+  "file": "ua-ukr-Cyrl-Latn-2010.isc",
+  "pairs": 8,
+  "context_rules": 0,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "": [
+    "'",
+    "’",
+    "ь",
+    "Ь"
+   ]
+  },
+  "one_to_many": 2,
+  "one_to_many_examples": {
+   "'": 2,
+   "’": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-amh-Ethi-Latn-2016": {
+  "system": "UN:amh-Ethi:Latn:2016",
+  "file": "un-amh-Ethi-Latn-2016.isc",
+  "pairs": 249,
+  "context_rules": 32,
+  "many_to_one": 24,
+  "many_to_one_examples": {
+   "a": [
+    "አ",
+    "ኣ",
+    "ዐ",
+    "ዓ"
+   ],
+   "e": [
+    "ኤ",
+    "ዔ"
+   ],
+   "ha": [
+    "ሀ",
+    "ሃ",
+    "ሐ",
+    "ሓ"
+   ],
+   "he": [
+    "ሄ",
+    "ሔ",
+    "ኄ",
+    "ኼ"
+   ],
+   "hi": [
+    "ሂ",
+    "ሒ",
+    "ኂ",
+    "ኺ"
+   ],
+   "ho": [
+    "ሆ",
+    "ሖ",
+    "ኆ",
+    "ኾ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-ara-Arab-Latn-1971": {
+  "system": "UN:ara-Arab:Latn:1971",
+  "file": "un-ara-Arab-Latn-1971.isc",
+  "pairs": 31,
+  "context_rules": 0,
+  "many_to_one": 6,
+  "many_to_one_examples": {
+   "d͟h": [
+    "ذ",
+    "ﺬ"
+   ],
+   "g͟h": [
+    "غ",
+    "ﻏ",
+    "ﻐ",
+    "ﻎ"
+   ],
+   "k͟h": [
+    "خ",
+    "ﺧ",
+    "ﺨ",
+    "ﺦ"
+   ],
+   "s͟h": [
+    "شّ",
+    "ش",
+    "ﺷ",
+    "ﺸ"
+   ],
+   "t͟h": [
+    "ث",
+    "ﺛ",
+    "ﺜ",
+    "ﺚ"
+   ],
+   "z͟h": [
+    "ظ",
+    "ﻇ",
+    "ﻈ",
+    "ﻆ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-ara-Arab-Latn-1972": {
+  "system": "UN:ara-Arab:Latn:1972",
+  "file": "un-ara-Arab-Latn-1972.isc",
+  "pairs": 28,
+  "context_rules": 0,
+  "many_to_one": 5,
+  "many_to_one_examples": {
+   "ţ": [
+    "ط",
+    "ﻃ",
+    "ﻄ",
+    "ﻂ"
+   ],
+   "z̧": [
+    "ظ",
+    "ﻇ",
+    "ﻈ",
+    "ﻆ"
+   ],
+   "ş": [
+    "ص",
+    "ﺻ",
+    "ﺼ",
+    "ﺺ"
+   ],
+   "ḑ": [
+    "ض",
+    "ﺿ",
+    "ﻀ",
+    "ﺾ"
+   ],
+   "ḩ": [
+    "ح",
+    "ﺣ",
+    "ﺤ",
+    "ﺢ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-ara-Arab-Latn-2017": {
+  "system": "UN:ara-Arab:Latn:2017",
+  "file": "un-ara-Arab-Latn-2017.isc",
+  "pairs": 159,
+  "context_rules": 17,
+  "many_to_one": 30,
+  "many_to_one_examples": {
+   "a": [
+    "َ",
+    "أ"
+   ],
+   "b": [
+    "ب",
+    "ﺑ",
+    "ﺒ",
+    "ﺐ"
+   ],
+   "d": [
+    "د",
+    "ﺪ"
+   ],
+   "dh": [
+    "ذ",
+    "ﺬ"
+   ],
+   "ḏ": [
+    "ض",
+    "ﺿ",
+    "ﻀ",
+    "ﺾ"
+   ],
+   "d͟h": [
+    "ظ",
+    "ﻇ",
+    "ﻈ",
+    "ﻆ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-asm-Beng-Latn-1972": {
+  "system": "UN:asm-Beng:Latn:1972",
+  "file": "un-asm-Beng-Latn-1972.isc",
+  "pairs": 65,
+  "context_rules": 39,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "ai": [
+    "ঐ",
+    "ৈ"
+   ],
+   "au": [
+    "ঔ",
+    "ৌ"
+   ],
+   "e": [
+    "এ",
+    "ে"
+   ],
+   "i": [
+    "ই",
+    "ি"
+   ],
+   "o": [
+    "ও",
+    "ো"
+   ],
+   "u": [
+    "উ",
+    "ু"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-bel-Cyrl-Latn-2007": {
+  "system": "UN:bel-Cyrl:Latn:2007",
+  "file": "un-bel-Cyrl-Latn-2007.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "un-ben-Beng-Latn-2016": {
+  "system": "UN:ben-Beng:Latn:2016",
+  "file": "un-ben-Beng-Latn-2016.isc",
+  "pairs": 363,
+  "context_rules": 0,
+  "many_to_one": 15,
+  "many_to_one_examples": {
+   "ai": [
+    "ঐ",
+    "ৈ"
+   ],
+   "au": [
+    "ঔ",
+    "ৌ"
+   ],
+   "dya": [
+    "দ্য",
+    "ধ্য"
+   ],
+   "e": [
+    "এ",
+    "ে"
+   ],
+   "gna": [
+    "গ্ন",
+    "গ্ন"
+   ],
+   "i": [
+    "ই",
+    "ি"
+   ]
+  },
+  "one_to_many": 2,
+  "one_to_many_examples": {
+   "ক্ষ্ম": 2,
+   "গ্ন": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-bul-Cyrl-Latn-1977": {
+  "system": "UN:bul-Cyrl:Latn:1977",
+  "file": "un-bul-Cyrl-Latn-1977.isc",
+  "pairs": 60,
+  "context_rules": 0,
+  "many_to_one": 2,
+  "many_to_one_examples": {
+   "J": [
+    "Й",
+    "Ь"
+   ],
+   "j": [
+    "й",
+    "ь"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-ell-Grek-Latn-1987-phonetic": {
+  "system": "UN:ell-Grek:Latn:1987-phonetic",
+  "file": "un-ell-Grek-Latn-1987-phonetic.isc",
+  "pairs": 99,
+  "context_rules": 50,
+  "many_to_one": 27,
+  "many_to_one_examples": {
+   ";": [
+    "·",
+    "·"
+   ],
+   "?": [
+    ";",
+    ";"
+   ],
+   "f": [
+    "Φ",
+    "φ",
+    "ff"
+   ],
+   "i": [
+    "Η",
+    "Ι",
+    "Υ",
+    "Ή"
+   ],
+   "iv": [
+    "Ηύ",
+    "ηύ"
+   ],
+   "k": [
+    "Κ",
+    "κ",
+    "kk"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-ell-Grek-Latn-1987-tl": {
+  "system": "UN:ell-Grek:Latn:1987-tl",
+  "file": "un-ell-Grek-Latn-1987-tl.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "un-ell-Grek-Latn-1987-ts": {
+  "system": "UN:ell-Grek:Latn:1987-ts",
+  "file": "un-ell-Grek-Latn-1987-ts.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "un-guj-Gujr-Latn-1972": {
+  "system": "UN:guj-Gujr:Latn:1972",
+  "file": "un-guj-Gujr-Latn-1972.isc",
+  "pairs": 77,
+  "context_rules": 34,
+  "many_to_one": 13,
+  "many_to_one_examples": {
+   "": [
+    "્",
+    "઼",
+    "্",
+    "‍"
+   ],
+   "ai": [
+    "ઐ",
+    "ૈ"
+   ],
+   "au": [
+    "ઔ",
+    "ૌ"
+   ],
+   "e": [
+    "ઍ",
+    "ૅ"
+   ],
+   "i": [
+    "ઇ",
+    "િ"
+   ],
+   "o": [
+    "ઑ",
+    "ૉ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-hin-Deva-Latn-2016": {
+  "system": "UN:hin-Deva:Latn:2016",
+  "file": "un-hin-Deva-Latn-2016.isc",
+  "pairs": 107,
+  "context_rules": 80,
+  "many_to_one": 10,
+  "many_to_one_examples": {
+   "ai": [
+    "ऐ",
+    "ै"
+   ],
+   "au": [
+    "औ",
+    "ौ"
+   ],
+   "e": [
+    "ए",
+    "े"
+   ],
+   "i": [
+    "इ",
+    "ि"
+   ],
+   "o": [
+    "ओ",
+    "ो"
+   ],
+   "u": [
+    "उ",
+    "ु"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-kan-Kana-Latn-2016": {
+  "system": "UN:kan-Kana:Latn:2016",
+  "file": "un-kan-Kana-Latn-2016.isc",
+  "pairs": 77,
+  "context_rules": 34,
+  "many_to_one": 13,
+  "many_to_one_examples": {
+   "": [
+    "಼",
+    "्",
+    "़",
+    "್"
+   ],
+   "ai": [
+    "ಐ",
+    "ೈ"
+   ],
+   "au": [
+    "ಔ",
+    "ೌ"
+   ],
+   "e": [
+    "ಏ",
+    "ೇ"
+   ],
+   "i": [
+    "ಇ",
+    "ಿ"
+   ],
+   "o": [
+    "ಓ",
+    "ೋ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-mal-Mlym-Latn-1972": {
+  "system": "UN:mal-Mlym:Latn:1972",
+  "file": "un-mal-Mlym-Latn-1972.isc",
+  "pairs": 91,
+  "context_rules": 37,
+  "many_to_one": 13,
+  "many_to_one_examples": {
+   "": [
+    "്",
+    "्",
+    "़",
+    "ൗ"
+   ],
+   "ai": [
+    "ഐ",
+    "ൈ"
+   ],
+   "au": [
+    "ഔ",
+    "ൌ"
+   ],
+   "e": [
+    "ഏ",
+    "േ"
+   ],
+   "i": [
+    "ഇ",
+    "ി"
+   ],
+   "o": [
+    "ഓ",
+    "ോ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-mar-Deva-Latn-2016": {
+  "system": "UN:mar-Deva:Latn:2016",
+  "file": "un-mar-Deva-Latn-2016.isc",
+  "pairs": 11,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "un-mkd-Cyrl-Latn-1977": {
+  "system": "UN:mkd-Cyrl:Latn:1977",
+  "file": "un-mkd-Cyrl-Latn-1977.isc",
+  "pairs": 62,
+  "context_rules": 4,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "un-mon-Mong-Latn-general-2013": {
+  "system": "UN:mon-Mong:Latn:general-2013",
+  "file": "un-mon-Mong-Latn-general-2013.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "un-mon-Mong-Latn-phonetic-2013": {
+  "system": "UN:mon-Mong:Latn:phonetic-2013",
+  "file": "un-mon-Mong-Latn-phonetic-2013.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "un-nep-Deva-Latn-1972": {
+  "system": "UN:nep-Deva:Latn:1972",
+  "file": "un-nep-Deva-Latn-1972.isc",
+  "pairs": 66,
+  "context_rules": 80,
+  "many_to_one": 11,
+  "many_to_one_examples": {
+   "ai": [
+    "ऐ",
+    "ै"
+   ],
+   "au": [
+    "औ",
+    "ौ"
+   ],
+   "e": [
+    "ए",
+    "े"
+   ],
+   "ga": [
+    "ग",
+    "ग़"
+   ],
+   "i": [
+    "इ",
+    "ि"
+   ],
+   "o": [
+    "ओ",
+    "ो"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-nep-Deva-Latn-2013": {
+  "system": "UN:nep-Deva:Latn:2013",
+  "file": "un-nep-Deva-Latn-2013.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "un-ori-Orya-Latn-1972": {
+  "system": "UN:ori-Orya:Latn:1972",
+  "file": "un-ori-Orya-Latn-1972.isc",
+  "pairs": 81,
+  "context_rules": 37,
+  "many_to_one": 11,
+  "many_to_one_examples": {
+   "": [
+    "्",
+    "୍",
+    "़",
+    "଼"
+   ],
+   "ai": [
+    "ଐ",
+    "ୈ"
+   ],
+   "au": [
+    "ଔ",
+    "ୌ"
+   ],
+   "e": [
+    "ଏ",
+    "େ"
+   ],
+   "i": [
+    "ଇ",
+    "ି"
+   ],
+   "o": [
+    "ଓ",
+    "ୋ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-pan-Guru-Latn-1972": {
+  "system": "UN:pan-Guru:Latn:1972",
+  "file": "un-pan-Guru-Latn-1972.isc",
+  "pairs": 155,
+  "context_rules": 66,
+  "many_to_one": 16,
+  "many_to_one_examples": {
+   "": [
+    "੍",
+    "ੱ",
+    "਼"
+   ],
+   "ai": [
+    "ਐ",
+    "ੈ"
+   ],
+   "au": [
+    "ਔ",
+    "ੌ"
+   ],
+   "e": [
+    "ਏ",
+    "ੇ"
+   ],
+   "hh": [
+    "ੱਹ",
+    "ੱਹ੍"
+   ],
+   "i": [
+    "ਇ",
+    "ਿ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-prs-Arab-Latn-1967": {
+  "system": "UN:prs-Arab:Latn:1967",
+  "file": "un-prs-Arab-Latn-1967.isc",
+  "pairs": 75,
+  "context_rules": 19,
+  "many_to_one": 7,
+  "many_to_one_examples": {
+   "gh": [
+    "غّ",
+    "غ"
+   ],
+   "k": [
+    "ك",
+    "ک"
+   ],
+   "kh": [
+    "خّ",
+    "خ"
+   ],
+   "sh": [
+    "شّ",
+    "ش"
+   ],
+   "y": [
+    "ى",
+    "ي"
+   ],
+   "ā": [
+    "َا",
+    "ا"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-rus-Cyrl-Latn-1987": {
+  "system": "UN:rus-Cyrl:Latn:1987",
+  "file": "un-rus-Cyrl-Latn-1987.isc",
+  "pairs": 8,
+  "context_rules": 0,
+  "many_to_one": 2,
+  "many_to_one_examples": {
+   "’": [
+    "Ь",
+    "ь"
+   ],
+   "”": [
+    "Ъ",
+    "ъ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-sin-Sinh-Latn-1972": {
+  "system": "UN:sin-Sinh:Latn:1972",
+  "file": "un-sin-Sinh-Latn-1972.isc",
+  "pairs": 89,
+  "context_rules": 35,
+  "many_to_one": 16,
+  "many_to_one_examples": {
+   "": [
+    "්",
+    "‍",
+    "‌"
+   ],
+   "ai": [
+    "ඓ",
+    "ෛ"
+   ],
+   "au": [
+    "ඖ",
+    "ෞ"
+   ],
+   "e": [
+    "ඒ",
+    "ේ"
+   ],
+   "i": [
+    "ඉ",
+    "ි"
+   ],
+   "o": [
+    "ඕ",
+    "ෝ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-srp-Cyrl-Latn-1997": {
+  "system": "UN:srp-Cyrl:Latn:1997",
+  "file": "un-srp-Cyrl-Latn-1997.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "un-tam-Taml-Latn-1972": {
+  "system": "UN:tam-Taml:Latn:1972",
+  "file": "un-tam-Taml-Latn-1972.isc",
+  "pairs": 66,
+  "context_rules": 23,
+  "many_to_one": 12,
+  "many_to_one_examples": {
+   "": [
+    "்",
+    "‍",
+    "‌"
+   ],
+   "ai": [
+    "ஐ",
+    "ை"
+   ],
+   "au": [
+    "ஔ",
+    "ௌ"
+   ],
+   "e": [
+    "ே",
+    "ஏ"
+   ],
+   "i": [
+    "இ",
+    "ி"
+   ],
+   "o": [
+    "ோ",
+    "ஓ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-tel-Telu-Latn-1972": {
+  "system": "UN:tel-Telu:Latn:1972",
+  "file": "un-tel-Telu-Latn-1972.isc",
+  "pairs": 83,
+  "context_rules": 35,
+  "many_to_one": 14,
+  "many_to_one_examples": {
+   "": [
+    "్",
+    "্",
+    "ౕ\\t",
+    "ౖ\\t"
+   ],
+   "ai": [
+    "ఐ",
+    "ై"
+   ],
+   "au": [
+    "ఔ",
+    "ౌ"
+   ],
+   "e": [
+    "ఏ",
+    "ే"
+   ],
+   "i": [
+    "ఇ",
+    "ి"
+   ],
+   "o": [
+    "ఓ",
+    "ో"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-ukr-Cyrl-Latn-1998": {
+  "system": "UN:ukr-Cyrl:Latn:1998",
+  "file": "un-ukr-Cyrl-Latn-1998.isc",
+  "pairs": 6,
+  "context_rules": 0,
+  "many_to_one": 2,
+  "many_to_one_examples": {
+   "Ì": [
+    "І",
+    "Ї"
+   ],
+   "ı̀": [
+    "і",
+    "ї"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "un-ukr-Cyrl-Latn-2012": {
+  "system": "UN:ukr-Cyrl:Latn:2012",
+  "file": "un-ukr-Cyrl-Latn-2012.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "un-urd-Arab-Latn-1972": {
+  "system": "UN:urd-Arab:Latn:1972",
+  "file": "un-urd-Arab-Latn-1972.isc",
+  "pairs": 105,
+  "context_rules": 19,
+  "many_to_one": 21,
+  "many_to_one_examples": {
+   "": [
+    "ْ",
+    "أ",
+    "إ"
+   ],
+   " as S": [
+    " As S",
+    " As S"
+   ],
+   " at T": [
+    " At T",
+    " At T"
+   ],
+   " az Z": [
+    " Az Z",
+    " Az Z",
+    " Az Z",
+    " Az Z"
+   ],
+   "-": [
+    "ء",
+    "ؤ",
+    "ئ"
+   ],
+   "-e": [
+    "ٴ",
+    "ٔ"
+   ]
+  },
+  "one_to_many": 3,
+  "one_to_many_examples": {
+   " As S": 2,
+   " At T": 2,
+   " Az Z": 4
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "var-amh-Ethi-Latn-eae-2003": {
+  "system": "VAR:amh-Ethi:Latn:eae-2003",
+  "file": "var-amh-Ethi-Latn-eae-2003.isc",
+  "pairs": 288,
+  "context_rules": 0,
+  "many_to_one": 5,
+  "many_to_one_examples": {
+   "ha": [
+    "ሀ",
+    "ሃ"
+   ],
+   "ʾa": [
+    "አ",
+    "ኣ"
+   ],
+   "ʿa": [
+    "ዐ",
+    "ዓ"
+   ],
+   "ḥa": [
+    "ሐ",
+    "ሓ"
+   ],
+   "ḫa": [
+    "ኀ",
+    "ኃ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "var-ara-Arab-Arab-rababa": {
+  "system": "VAR:ara-Arab:Arab:rababa",
+  "file": "var-ara-Arab-Arab-rababa.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "var-gez-Ethi-Latn-eae-2003": {
+  "system": "VAR:gez-Ethi:Latn:eae-2003",
+  "file": "var-gez-Ethi-Latn-eae-2003.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "var-hin-Deva-Latn-hunterian-1872": {
+  "system": "VAR:hin-Deva:Latn:hunterian-1872",
+  "file": "var-hin-Deva-Latn-hunterian-1872.isc",
+  "pairs": 108,
+  "context_rules": 4,
+  "many_to_one": 28,
+  "many_to_one_examples": {
+   "ai": [
+    "ऐ",
+    "ै"
+   ],
+   "au": [
+    "औ",
+    "ौ"
+   ],
+   "d": [
+    "ड्",
+    "द्"
+   ],
+   "da": [
+    "ड",
+    "द"
+   ],
+   "dh": [
+    "ढ्",
+    "ध्"
+   ],
+   "dha": [
+    "ढ",
+    "ध"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "var-jpn-Hrkt-Latn-hepburn-1886": {
+  "system": "VAR:jpn-Hrkt:Latn:hepburn-1886",
+  "file": "var-jpn-Hrkt-Latn-hepburn-1886.isc",
+  "pairs": 264,
+  "context_rules": 5,
+  "many_to_one": 127,
+  "many_to_one_examples": {
+   "a": [
+    "あ",
+    "ア"
+   ],
+   "ba": [
+    "ば",
+    "バ"
+   ],
+   "be": [
+    "べ",
+    "ベ"
+   ],
+   "bi": [
+    "び",
+    "ビ"
+   ],
+   "bo": [
+    "ぼ",
+    "ボ"
+   ],
+   "bu": [
+    "ぶ",
+    "ブ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "var-jpn-Hrkt-Latn-hepburn-1954": {
+  "system": "VAR:jpn-Hrkt:Latn:hepburn-1954",
+  "file": "var-jpn-Hrkt-Latn-hepburn-1954.isc",
+  "pairs": 264,
+  "context_rules": 5,
+  "many_to_one": 126,
+  "many_to_one_examples": {
+   "a": [
+    "あ",
+    "ア"
+   ],
+   "ba": [
+    "ば",
+    "バ"
+   ],
+   "be": [
+    "べ",
+    "ベ"
+   ],
+   "bi": [
+    "び",
+    "ビ"
+   ],
+   "bo": [
+    "ぼ",
+    "ボ"
+   ],
+   "bu": [
+    "ぶ",
+    "ブ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "var-kor-Hang-Hang-jamo": {
+  "system": "VAR:kor-Hang:Hang:jamo",
+  "file": "var-kor-Hang-Hang-jamo.isc",
+  "pairs": 11172,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "var-kor-Hang-Latn-mr-1939": {
+  "system": "VAR:kor-Hang:Latn:mr-1939",
+  "file": "var-kor-Hang-Latn-mr-1939.isc",
+  "pairs": 23,
+  "context_rules": 295,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "var-kor-Kore-Hang-2013": {
+  "system": "VAR:kor-Kore:Hang:2013",
+  "file": "var-kor-Kore-Hang-2013.isc",
+  "pairs": 59616,
+  "context_rules": 0,
+  "many_to_one": 2422,
+  "many_to_one_examples": {
+   "가": [
+    "仮",
+    "伽",
+    "佳",
+    "価"
+   ],
+   "가격": [
+    "價格",
+    "加擊"
+   ],
+   "가계": [
+    "家系",
+    "家計"
+   ],
+   "가공": [
+    "加工",
+    "可恐",
+    "架空"
+   ],
+   "가구": [
+    "家具",
+    "家口"
+   ],
+   "가동": [
+    "可動",
+    "稼動"
+   ]
+  },
+  "one_to_many": 114,
+  "one_to_many_examples": {
+   "一切": 2,
+   "一攫千金": 2,
+   "一絲不亂": 2,
+   "下校": 2,
+   "不偏不黨": 2,
+   "不文律": 2
+  },
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "var-kor-Kore-Latn-mr-1939": {
+  "system": "VAR:kor-Kore:Latn:mr-1939",
+  "file": "var-kor-Kore-Latn-mr-1939.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "var-mar-Deva-Latn-hunterian-1872": {
+  "system": "VAR:mar-Deva:Latn:hunterian-1872",
+  "file": "var-mar-Deva-Latn-hunterian-1872.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "var-mon-Mong-Latn-1930": {
+  "system": "VAR:mon-Mong:Latn:1930",
+  "file": "var-mon-Mong-Latn-1930.isc",
+  "pairs": 28,
+  "context_rules": 2,
+  "many_to_one": 2,
+  "many_to_one_examples": {
+   "-": [
+    "᠎",
+    " "
+   ],
+   "k": [
+    "ᠻ",
+    "ᠬ"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "var-mon-Mong-Latn-lessing": {
+  "system": "VAR:mon-Mong:Latn:lessing",
+  "file": "var-mon-Mong-Latn-lessing.isc",
+  "pairs": 35,
+  "context_rules": 2,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "-": [
+    "᠎",
+    " "
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "var-mon-Mong-Latn-vpmc": {
+  "system": "VAR:mon-Mong:Latn:vpmc",
+  "file": "var-mon-Mong-Latn-vpmc.isc",
+  "pairs": 33,
+  "context_rules": 2,
+  "many_to_one": 1,
+  "many_to_one_examples": {
+   "-": [
+    "᠎",
+    " "
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "var-pra-Deva-Latn-iast-1912": {
+  "system": "VAR:pra-Deva:Latn:iast-1912",
+  "file": "var-pra-Deva-Latn-iast-1912.isc",
+  "pairs": 0,
+  "context_rules": 0,
+  "many_to_one": 0,
+  "many_to_one_examples": {},
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSLESS_ONE_TO_ONE"
+ },
+ "var-san-Deva-Latn-iast-1912": {
+  "system": "VAR:san-Deva:Latn:iast-1912",
+  "file": "var-san-Deva-Latn-iast-1912.isc",
+  "pairs": 69,
+  "context_rules": 0,
+  "many_to_one": 17,
+  "many_to_one_examples": {
+   "": [
+    "्",
+    "‍"
+   ],
+   "ai": [
+    "ऐ",
+    "ै"
+   ],
+   "au": [
+    "औ",
+    "ौ"
+   ],
+   "e": [
+    "ए",
+    "े"
+   ],
+   "ḥ": [
+    "ः",
+    "अः"
+   ],
+   "i": [
+    "इ",
+    "ि"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ },
+ "var-zho-Hani-Latn-wd-1979": {
+  "system": "VAR:zho-Hani:Latn:wd-1979",
+  "file": "var-zho-Hani-Latn-wd-1979.isc",
+  "pairs": 22412,
+  "context_rules": 5081,
+  "many_to_one": 396,
+  "many_to_one_examples": {
+   "ai": [
+    "㕌",
+    "㗒",
+    "㤅",
+    "㱯"
+   ],
+   "an": [
+    "㞄",
+    "㟁",
+    "㫨",
+    "㸩"
+   ],
+   "ang": [
+    "㭿",
+    "㼜",
+    "䀚",
+    "䩕"
+   ],
+   "ao": [
+    "㑃",
+    "㕭",
+    "㜜",
+    "㜩"
+   ],
+   "cha": [
+    "㜁",
+    "㦋",
+    "㪥",
+    "㱜"
+   ],
+   "chai": [
+    "㗍",
+    "㩟",
+    "㪰",
+    "䍉"
+   ]
+  },
+  "one_to_many": 0,
+  "one_to_many_examples": {},
+  "verdict": "LOSSY_MANY_TO_ONE"
+ }
+}
