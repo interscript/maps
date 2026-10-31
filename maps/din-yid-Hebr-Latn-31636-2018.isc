@@ -2,7 +2,7 @@ system "DIN:yid-Hebr:Latn:31636-2018" {
 
 metadata {
   authority_id din
-  id 31636-2018-yid
+  id 31636-2018
   language iso-639-2:yid
   source_script Hebr
   destination_script Latn
