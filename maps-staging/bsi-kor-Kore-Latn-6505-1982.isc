@@ -21,13 +21,17 @@ metadata {
   }
 
   notes {
-    note "DRAFT: sections 13-15 of the source (basic romanization word
-    rules, phonetic detail, letter names) are not yet transcribed; the
-    map implements the captured letter tables and syllable mechanics.
-    Tense consonants (\u1101 etc.) follow member-doubling; a few rare
-    trailing clusters are provisional. Tests are limited to examples
-    read unambiguously at high zoom. In maps-staging pending the
-    remaining rule sections."
+    note "DRAFT in staging. Sections 13-15 and 7-9 of the source have
+    now been read at working zoom: 14.1's full vowel table CONFIRMS
+    this map's values (ai/ei/yai/yei, w for the horizontal-stroke
+    vowel, compound concatenation); 15 letter names are explicitly
+    'not needed for transliteration'; 7-9 are word-division and
+    punctuation conventions that pass through unchanged. Tense
+    consonants follow member-doubling; a few rare trailing clusters
+    are provisional. Remaining before leaving staging: a full
+    pass over the deep subsections (through 11.15) for any word-level
+    rule that affects romanization, and the North/South example pairs
+    of 13.2-13.3 as tests."
   }
 }
 
@@ -36,10 +40,20 @@ tests {
    "\uC57C" ->  "ya"
    "\uC5B4" ->  "e"
    "\uC640" ->  "oa"
-   "\uC65C" ->  "uei"
+   "\uC654" ->  "oai"
+   "\uC678" ->  "oi"
    "\uC704" ->  "ui"
+   "\uC758" ->  "wi"
    "\uD558" ->  "ha"
    "\uB300" ->  "tai"
+   "\uD55C\uAD6D" ->  "hankuk"
+   "\uC0AC\uB791" ->  "sarang"
+   "\uC544\uB4E4" ->  "atwl"
+   "\uD3C9\uC591" ->  "phyengyang"
+   "\uCC28" ->  "cha"
+   "\uD0A5" ->  "khik"
+   "\uD0C4" ->  "than"
+   "\uD30C" ->  "pha"
 }
 
 stage main {
