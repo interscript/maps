@@ -1,0 +1,1847 @@
+Thai Romanization Table 
+2011 version 
+ 
+2011 
+ 
+1 
+ 
+Earlier versions: 1997 
+ 
+Thai 
+Vowels and Diphthongs 
+ Vernacular 
+Romanization 
+Vernacular 
+Romanization 
+ 
+อะ, อั 
+a 
+อัวะ 
+ua 
+ 
+อา 
+ā 
+อัว, ว 
+ūa   
+ 
+อํา 
+am 
+ใอ, ไอ, อัย, ไอย 
+ai 
+ 
+อิ 
+i 
+อาย 
+āi   
+ 
+อี 
+ī 
+เอา 
+ao 
+ 
+อึ 
+ư 
+อาว 
+āo 
+ 
+อื 
+ư̄ 
+อุย 
+ui 
+ 
+อุ 
+u 
+โอย 
+ōi 
+ 
+อู 
+ū 
+ออย 
+ǭi 
+ 
+เอะ, เอ็  
+e 
+เอย 
+œ̄i 
+ 
+เอ 
+ē 
+เอือย 
+ư̄ai 
+ 
+แอะ, แอ็ 
+æ 
+อวย 
+ūai 
+ 
+แอ 
+ǣ 
+อิว  
+iu 
+ 
+โอะ, อ 
+o 
+เอ็ว 
+eo 
+ 
+โอ 
+ō 
+เอว 
+ēo 
+ 
+เอาะ 
+ǫ 
+แอว 
+ǣo 
+ 
+ออ 
+ǭ 
+เอียว 
+īeo 
+ 
+เออะ 
+œ 
+ฤ 
+rư 
+ 
+เออ, เอิ 
+œ̄ 
+ฤ 
+ri 
+ 
+เอียะ 
+ia 
+ฤ 
+rœ̄ 
+ 
+เอีย 
+īa 
+ฤา 
+rư̄ 
+ 
+เอือะ                     
+ưa 
+ฦ 
+lư 
+ 
+เอือ 
+ư̄a 
+ฦา 
+lư̄ 
+ 
+ 
+Page 2  
+ 
+ 
+ 
+ 
+ 
+ 
+               Thai Romanization Table 
+Consonants 
+ 
+ 
+Vernacular 
+Romanization 
+Romanization 
+ 
+ 
+when initial 
+when final 
+ 
+ 
+and medial 
+ 
+ก 
+ 
+k 
+k 
+ 
+ข, ฃ, ค, ฅ, ฆ  
+kh 
+k 
+ 
+ง 
+ 
+ng 
+ng 
+ 
+จ 
+ 
+čh 
+t 
+ 
+ฉ, ช, ฌ 
+ 
+ch 
+t 
+ 
+ญ 
+ 
+y 
+n 
+ 
+ด, ฎ, ฑ 
+(see Note 1) 
+d 
+t 
+ 
+ 
+ 
+ต, ฏ 
+ 
+t 
+t 
+ 
+ถ, ฐ, ท, ฑ, ธ, ฒ (see Note 1) 
+th 
+t 
+ 
+ 
+น, ณ 
+ 
+n 
+n 
+ 
+บ 
+ 
+b 
+p 
+ 
+ป 
+ 
+p 
+p 
+ 
+ผ, พ, ภ 
+ 
+ph 
+p 
+ 
+ฝ, ฟ 
+ 
+f 
+p 
+ 
+ม 
+ 
+m 
+m 
+ 
+ย 
+ 
+y 
+- 
+ 
+ร 
+(see Note 2) 
+r 
+n 
+ 
+ 
+ล, ฬ 
+ 
+l 
+n 
+ 
+ว 
+ 
+w 
+- 
+ 
+ซ, ทร, ศ, ษ, ส  
+s 
+t 
+ 
+อ   
+(see Note 3) 
+‘ (ayn) 
+- 
+ 
+ 
+ห, ฮ 
+(see Note 4) 
+h 
+- 
+ 
+Notes 
+1. 
+ฑ is usually romanized th, occasionally d, depending on the pronunciation as determined from 
+an authoritative dictionary. 
+2. 
+When ร follows another consonant and ends a syllable, it is romanized n, and the inherent vowel 
+of the preceding consonant is represented by ǭ (e.g., นคร nakhǭn). 
+Thai Romanization Table 
+2011 version 
+ 
+2011 
+ 
+3 
+ 
+When รร follows another consonant and no other pronounced consonant follows in the same 
+syllable, it is romanized an (e.g., สวรรค์ sawan), but if a pronounced consonant follows, it is 
+represented by a (e.g., กรรม kam). 
+3. 
+In four common words  อ  occurs preceding another consonant to mark a certain tone and is then 
+not romanized. 
+4. 
+When  ห  occurs preceding another consonant to mark a certain tone, it is not romanized.  
+ 
+ 
+RULES OF APPLICATION 
+Romanization 
+1. Tonal marks are not romanized. 
+2. The symbol ฯ  indicates omission and is shown in romanization by “ … ” the conventional sign for 
+ellipsis. 
+3. When the repeat symbol ๆ  is used, the syllable is repeated in romanization. 
+4. The symbol ฯลฯ is romanized Ia. 
+5. Thai consonants are sometimes purely consonantal and sometimes followed by an inherent vowel 
+romanized o, a, or ǭ depending on the pronunciation as determined from an authoritative 
+dictionary, such as the Royal Institute's latest edition (1999). 
+6. Silent consonants, with their accompanying vowels, if any, are not romanized. 
+7. When the pronunciation requires one consonant to serve a double function – at the end of 
+one syllable and the beginning of the next – it is romanized twice according to the 
+respective values. 
+8. The numerals are: ๐ (0), ๑ (1), ๒ (2), ๓ (3), ๔ (4), ๕ (5), ๖ (6), ๗ (7), ๘ (8), and ๙ (9). 
+9. In Thai, words are not written separately. In romanization, however, text is divided into words 
+according to the guidelines provided in Word Division below. 
+Word Division    
+ 
+1. In general, Thai words formulated by romanization are made up of a single syllable (คํา kham; ไทย 
+Thai), and thus each syllable is considered a separate word, with a space between each. 
+(Exceptions are covered by rules 2 through 43.) This is in contrast to many multisyllabic words 
+that are foreign to Thai but that are found written in the Thai script. These multisyllabic foreign 
+words are written with the space closed up between the syllables as appropriate. Prominent 
+examples are words of Pali and Sanskrit origin, as well as some words that are Thai in origin 
+but have been formed according to the grammar of Pali or Sanskrit. 
+Examples of monosyllabic Thai words: 
+ 
+ 
+คํา 
+ 
+ 
+ 
+kham 
+ไทย 
+ 
+ 
+ 
+Thai 
+พูด 
+ 
+ 
+ 
+phūt 
+ 
+Page 4  
+ 
+ 
+ 
+ 
+ 
+ 
+               Thai Romanization Table 
+ 
+Examples of multisyllabic Thai words formed according to the rules of other languages: 
+ 
+ 
+ 
+กระทรวง 
+ 
+ 
+krasūang 
+ภาษา  
+ 
+ 
+phāsā 
+ปัญญา  
+ 
+ 
+panyā 
+Examples of multisyllabic words of Pali or Sanskrit origin:  
+วัฒนธรรม 
+ 
+ 
+watthanatham 
+มหาวิทยาลัย  
+ 
+mahāwitthayālai 
+กษัตริย์  
+ 
+ 
+kasat 
+พลเมือง 
+ 
+ 
+phonlamư̄ang 
+ภารโรง  
+ 
+ 
+phānrōng 
+2. In contrast to the preceding statement that Thai words are monosyllabic, note that there are 
+multisyllabic Thai words in which the first syllable is used as a prefix; write the prefix and the 
+succeeding element as a single word. 
+(a) Words with การ (kān) prefixed 
+การเดินทาง 
+ 
+ 
+kāndœ̄nthāng  
+การแปล 
+ 
+ 
+kānplǣ  
+การต่างประเทศ  
+ 
+kāntāngprathēt 
+ 
+(b) Words with ความ (khwām) prefixed 
+ความจริง 
+ 
+ 
+khwāmčhing 
+ความหมาย 
+ 
+ 
+khwāmmāi 
+ความเห็น 
+ 
+ 
+khwāmhen 
+ 
+(c) Miscellaneous cases with various words used as prefixes.  The most common are: 
+ 
+ 
+ 
+ 
+พ่อ 
+ 
+phǭ   
+นาย 
+ 
+nāi 
+แม่ 
+ 
+mǣ   
+นาง 
+ 
+nāng 
+ลูก 
+ 
+lūk 
+ 
+ข้อ 
+ 
+khǭ  
+พี่ 
+ 
+phī 
+ 
+คํา 
+ 
+kham 
+น้อง 
+ 
+nǭng  
+บท 
+ 
+bot 
+ 
+Thai Romanization Table 
+2011 version 
+ 
+2011 
+ 
+5 
+ 
+ 
+ 
+ 
+ผู้ 
+phū 
+เครื่อง 
+khrư̄ang 
+ 
+นัก 
+nak 
+แผน 
+phǣn 
+ 
+คน 
+khon 
+ท้อง 
+thǭng 
+ 
+ชาว 
+chāo 
+ขี้ 
+khī 
+ 
+เด็ก 
+dek 
+ใจ 
+čhai 
+ 
+ข้า 
+khā 
+ช่าง 
+chāng 
+ 
+ราย 
+rāi 
+วัย 
+wai 
+ 
+ต้น 
+ton 
+ดวง 
+dūang 
+ 
+ลาย 
+lāi 
+หมอ 
+mǭ 
+Note that the listing of miscellaneous cases covers only the most common ones. Other, 
+less common cases may be handled in the same way. 
+ 
+บุญ 
+bun 
+Note also that some words, reflecting a transposition in normal Thai word order and 
+consisting of a principal word and one or more words used with it as a prefix, may be 
+considered as belonging to this category. 
+ 
+ราชบัณฑิตยสถาน 
+Rātchabandittayasathān 
+ 
+โบราณคดีวิทยา 
+bōrānnakhadīwitthayā 
+             but   ไทยคดีศึกษา 
+ 
+ 
+           Thai khadīsưksā 
+ 
+3. 
+Compounds. Write compounds as a single word. 
+(a)  General: Identifying a compound is largely a matter of knowledge of the language 
+together with the use of good judgment. Note that compounds generally result in concepts 
+to one degree or another different from the meaning of either of the component words 
+when used alone. 
+ 
+ใกล้ชิด 
+klaichit 
+ค้นหา  
+ khonhā 
+ 
+เข้มงวด 
+khēmngūat 
+ทดลอง  
+ thotlǭng  
+ 
+ภายนอก 
+phāinǭk  
+มองดู 
+ mǭngdū  
+ 
+ชัดเจน  
+chatčhēn 
+อดทน  
+ ‘otthon  
+ 
+ชั่วคราว  
+ chūakhrāo 
+กลางแจ้ง  
+ klāngčhǣng  
+ 
+กล้าหาญ  
+ klāhān 
+ครบถ้วน  
+ khropthūan 
+ 
+เกี่ยวข้อง 
+kīeokhǭng   
+สุดท้าย  
+sutthāi   
+ 
+Page 6  
+ 
+ 
+ 
+ 
+ 
+ 
+               Thai Romanization Table 
+ 
+หมู่บ้าน  
+mūbān   
+ผลไม้  
+phonlamai 
+ 
+รถไฟ  
+rotfai 
+เสื้อผ้า  
+sư̄aphā 
+ 
+เงินเดือน 
+ngœ̄ndư̄an   
+ตนเอง 
+ton‘ēng   
+ 
+จัดทํา 
+čhattham   
+พูดคุย 
+phūtkhui 
+ 
+รับใช้  
+rapchai 
+ไปเยี่ยม  
+paiyīam   
+ 
+บอกรับ  
+bǭkrap 
+ตีพิมพ์  
+tīphim  
+ 
+ต่อสู้  
+tǭsū 
+จัดพิมพ์  
+čhatphim 
+ 
+รบกวน 
+ropkūan 
+N.B.: Do not consider as compounds repeated words sometimes referred to as “reduplicated 
+compounds.” 
+ต่างๆ  
+ 
+tāng tāng  
+ช้าๆ 
+ 
+ 
+chā chā 
+เร็วๆ 
+ 
+ 
+reo reo 
+(b) Reduplicated Doublets: When words are strung together for sound, write them as a single  
+     word. 
+เปลี่ยนแปลง 
+ 
+plīanplǣng 
+เรียบร้อย 
+ 
+rīaprǭi 
+อึกทึก  
+ 
+‘ưkkathưk 
+รอบคอบ 
+ 
+rǭpkhǭp 
+4. 
+Geographical Names. Divide geographical names into separate words according to the 
+decisions of the U.S. Board on Geographic Names, as expressed in the Gazetteer of 
+Thailand. 
+5. 
+Royal Language (rāchāsap). Write as a separate word any word found as an entry in either of 
+the following dictionaries unless otherwise directed by these rules. 
+Rāchāsap chabap sombūn / Rātchamānop. (Bangkok: Kāonā, 1965) 
+ 
+ 
+Rāchāsap chabap sombūn / Sangūan ‘Ankhong. (Bangkok: Kāonā, 1964) 
+ 
+6. 
+Generally separate all elements in terms of rank, privilege, address, etc., associated with 
+names of persons unless another rule directs otherwise. 
+             
+นายทหารตํารวจ 
+ 
+ 
+Nāithahān Tamrūat 
+ผู้ช่วยศาสตราจารย์ 
+ 
+ 
+Phūchūai Sāttrāčhān 
+Thai Romanization Table 
+2011 version 
+ 
+2011 
+ 
+7 
+ 
+หม่อมราชวงศ์  
+ 
+ 
+Mǭm Rātchawong 
+รองอํามาตย์โท  
+ 
+ 
+Rǭng  ‘Ammāt Thō 
+ 
+ 
+รองอมาตย์โท  
+ 
+ 
+Rǭng  ‘Amāt Thō 
+พลตํารวจเอก  
+ 
+ 
+Phon Tamrūat ‘Ēk 
+พระมหา 
+Phra Mahā 
+ 
+ 
+รองประธานาธิบดี 
+ 
+ 
+Rǭng Prathānāthibǭdī 
+พระปรมินทรมหา 
+ 
+ 
+Phraparaminthra Mahā 
+พระเทพรัตนราชสุดาฯ 
+ 
+ 
+Phrathēppharatrātsudā  
+     
+      สยามบรมราชกุมารี  
+               Sayāmbǭrommarātchakumārī 
+พระบาทสมเด็จพระเจ้าอยู่หัว 
+ 
+Phrabāt Somdet Phračhaoyūhūa 
+พระนางเจ้าพระบรมราชินีนาถ  
+Phranāng Čhao Phrabǭrommarāchinī Nāt 
+One arbiter of whether official pronunciations of royal ranks with กรม (Krom) require an extra  
+syllable is the officially approved Photčhanānukrom nakrīan chalœ̄m phrakīat, 21st edition, 1997. 
+Another is the Royal Institute’s 1999 dictionary. 
+กรมพระยา 
+ 
+ 
+ 
+Krom Phrayā 
+but 
+กรมหลวง 
+ 
+ 
+ 
+Krommalūang 
+7. 
+ Generally combine elements (covered by terms described in 6. above) which begin with  
+เจ้า (Čhao) and combine elements in ท่านผู้หญิง  (Thānphūying), 
+เจ้าจอมมารดา (Čhaočhǭmmāndā), and พระเจ้าอยู่หัว (Phračhaoyūhūa). 
+เจ้านาย  
+ 
+ 
+ 
+Čhaonāi 
+เจ้าของ  
+ 
+ 
+ 
+Čhaokhǭng 
+เจ้าฟ้า  
+ 
+ 
+ 
+Čhaofā 
+เจ้าพระยา 
+ 
+ 
+ 
+Čhaophrayā 
+ท่านผู้หญิง 
+ 
+ 
+ 
+Thānphūying 
+เจ้าจอมมารดา  
+ 
+ 
+Čhaočhǭmmāndā 
+พระเจ้าอยู่หัว  
+ 
+ 
+Phračhaoyūhūa 
+    
+  but เจ้าฟ้าหญิง 
+ 
+ 
+ 
+Čhaofā Ying 
+ 
+ 
+เจ้าฟ้าชาย 
+ 
+ 
+ 
+Čhaofā Chāi 
+ 
+ 
+พระองค์เจ้าชาย 
+ 
+ 
+Phra‘ong Čhao Chāi 
+ 
+Page 8  
+ 
+ 
+ 
+ 
+ 
+ 
+               Thai Romanization Table 
+หม่อมเจ้าหญิง  
+ 
+ 
+Mǭm Čhao Ying 
+เจ้าเมืองแปร 
+ 
+ 
+ 
+Čhao Mư̄ang Prǣ 
+8. 
+ Generally separate elements in personal royal titles and corporate names beginning with กรม 
+(Krom) except as listed below. For these excepted cases only, although pronunciations with 
+or without the extra syllable are correct in popular usage, proclamations of the Prime 
+Minister’s Office in recent years have approved pronunciations with the extra syllable 
+(effectively combining the elements) as the only officially correct pronunciations. 
+ 
+กรมพระ 
+ 
+ 
+ 
+Krommaphra 
+กรมหลวง 
+ 
+ 
+ 
+Krommalūang  
+กรมหมื่น 
+ 
+ 
+ 
+Krommamư̄n 
+กรมวัง  
+ 
+ 
+ 
+Krommawang 
+กรมท่า  
+ 
+ 
+ 
+Krommathā 
+ 
+but  กรมพระยา 
+ 
+ 
+ 
+Krom Phrayā 
+9. 
+ Keep separate the Buddhist samanasak ranks พระมหา (Phra Mahā) and พระครู  (Phra Khrū) as 
+well as the conventional religious terms of address พระ (Phra) and  
+พระอาจารย์ (Phra ‘Āčhān). 
+พระมหาประยุทย์ 
+ 
+ 
+Phra Mahā Prayut 
+พระครูเลิศ 
+ 
+ 
+ 
+Phra Khrū Lœ̄t 
+พระสมหวัง 
+ 
+ 
+ 
+Phra Somwang 
+พระอาจารย์สมหวัง 
+ 
+ 
+Phra ‘Āčhān Somwang 
+10. 
+พระ  (Phra) should be separate as follows: 
+(a) When connoting the Buddha, his image, a member of the Buddhist Order of the Sangha, 
+etc.;  
+(b) As the only element or one of the elements in a separately written conferred rank, or; 
+(c) As an independent (complimentary, conventional, etc.) element immediately preceding 
+a personal name (except the name of Buddha) but not an integral part of it. 
+Otherwise, it should be written as a combined prefix to words (usually associated with 
+royalty, gods, objects or worship, etc.). 
+พระแก้วมรกต  
+ 
+ 
+Phra Kǣo Mǭrakot 
+พระสยามเทวาธิราช 
+ 
+ 
+Phra Sayāmmathēwāthirāt 
+พระอาจารย์สมหวัง 
+ 
+ 
+Phra ‘Āčhān Somwang 
+พระอภัยมณี 
+ 
+ 
+ 
+Phra ‘Aphaimanī 
+พระมหาประยุทย์ 
+ 
+ 
+Phra Mahā Prayut 
+Thai Romanization Table 
+2011 version 
+ 
+2011 
+ 
+9 
+ 
+พระครูเลิศ 
+ 
+ 
+ 
+Phra Khrū Lœ̄t 
+ 
+ 
+พระพุทธยอดฟ้าจุฬาโลก  
+ 
+Phra Phutthayǭtfā Čhulālōk 
+ 
+ 
+พระนั่งเกล้าเจ้าอยู่หัว  
+ 
+Phra Nangklao Čhaoyūhūa 
+ 
+ 
+สมเด็จพระวรรณรัตน์ 
+ 
+ 
+Somdet Phra Wannarat 
+but 
+พระพุทธเจ้า 
+ 
+ 
+ 
+Phraphutthačhao 
+พระปรมินทรมหามงกุฎ  
+ 
+Phraparaminthra Mahā Mongkut 
+กรมพระมหิดล  
+ 
+ 
+Krommaphra Mahidon 
+กรมพระราชวังบวร 
+ 
+ 
+Krom Phrarātchawangbǭwǭn 
+พระสังฆราช 
+ 
+ 
+ 
+Phrasangkharāt 
+11. มหา  (Mahā) should be separate when as an independent (complimentary, conventional, etc.) 
+element it immediately precedes and is not an integral part of a personal name. Otherwise, it 
+should be treated as specified in paragraph 12. below. 
+ 
+พระปรมินทรมหามงกุฎ  
+ 
+Phraparaminthra Mahā Mongkut 
+พระปรมินทรมหาภูมิพลอดุลยเดช 
+Phraparaminthra Mahā Phūmiphon ‘Adunlayadēt 
+มหาธาตุ 
+ 
+ 
+ 
+mahāthāt 
+ 
+12. พระมหา (Phra Mahā)  is a samanasak rank conferred on a lower-level Buddhist religious who 
+has finished at least the third grade of parīan (Buddhist theology). It should not be confused 
+with มหา- (mahā-) or พระมหา- (phramahā-), which are prefixes added to words associated with 
+royalty, religious, gods, objects of worship, etc., such as titles of the supreme patriarch. The 
+rank should be written separately; the prefix, combined. 
+ 
+พระมหาประยุทย์ 
+ 
+ 
+Phra Mahā Prayut 
+พระมหาสังฆราชเจ้า 
+ 
+ 
+Phramahāsangkharāt Čhao 
+พระมหาสมณเจ้า 
+ 
+ 
+Phramahāsamanačhao 
+มหาเถระ 
+ 
+ 
+ 
+Mahāthēra 
+13. Titles of honor with เจ้า (čhao) as the last element should be written separate or combined in 
+accordance with whether the immediately preceding element is commonly used as a prefix. 
+พระองค์เจ้า 
+ 
+ 
+ 
+Phra‘ong Čhao 
+พระสังฆราชเจ้า  
+ 
+ 
+Phrasangkharāt Čhao 
+พระพุทธเจ้า 
+ 
+ 
+ 
+Phraphutthačhao 
+พระมหาสมณเจ้า 
+ 
+ 
+Phramahāsamanačhao 
+ 
+Page 10 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+               Thai Romanization Table 
+พระนางเจ้า 
+ 
+ 
+ 
+Phranāng Čhao 
+พระเจ้าวรวงศ์เธอพระองค์เจ้า 
+ 
+Phračhao Wǭrawongthœ̄ Phra‘ong Čhao 
+14.  Combine หลวง (Lūang) when used as a simple (non-conferred) title in combination preceding 
+words for relatives supposed to be Buddhist priests. 
+ 
+หลวงพ่อ 
+ 
+ 
+ 
+Lūangphǭ 
+หลวงพี่  
+ 
+ 
+ 
+Lūangphī 
+หลวงพ่อปู่ 
+ 
+ 
+ 
+Lūangphǭpū 
+หลวงลุง 
+ 
+ 
+ 
+Lūanglung 
+15.  Generally separate คุณ  (Khun)  as first element, except in the courtesy titles  คุณหญิง 
+(Khunying)  and คุณนาย  (Khunnāi).  
+คุณแม่  
+ 
+ 
+ 
+Khun Mǣ 
+คุณพ่อ  
+ 
+ 
+ 
+Khun Phǭ 
+ 
+ 
+คุณหนู  
+ 
+ 
+ 
+Khun Nū 
+but 
+คุณหญิง 
+ 
+ 
+ 
+Khunying 
+ 
+ 
+คุณนาย 
+ 
+ 
+ 
+Khunnāi 
+16. Combine elements in personal pronouns or their equivalents. 
+ข้าพระพุทธเจ้า  
+ 
+ 
+khāphraphutthačhao 
+ข้าพเจ้า  
+ 
+ 
+ 
+khāphačhao 
+หม่อมฉัน 
+ 
+ 
+ 
+mǭmchan 
+กระผม  
+ 
+ 
+ 
+kraphom 
+ 
+ 
+ใต้ฝ่าละอองธุลีพระบาท  
+ 
+taifāla‘ǭngthulīphrabāt 
+17. Elements in royal or noble titles and names are generally combined but should be separate 
+when two distinct terms can be isolated in a noun/modifier or noun/noun-in-apposition 
+configuration if the terms would not otherwise be combined, or if there is doubt about whether 
+to combine them. 
+ดํารงราชานุภาพ 
+ 
+ 
+Damrongrāchānuphāp 
+ปราสาททอง 
+ 
+ 
+ 
+Prāsāt Thǭng 
+พุทธยอดฟ้าจุฬาโลก 
+ 
+ 
+Phutthayǭtfā Čhulālōk 
+พุทธเลิศหล้านภาลัย 
+ 
+ 
+Phutthalœ̄tlā Naphālai 
+ตากสิน  
+ 
+ 
+ 
+Tāk Sin 
+Thai Romanization Table 
+2011 version 
+ 
+2011 
+ 
+11 
+ 
+18. Elements ordinarily combined should be separate when immediately followed by a proper name 
+or its substitute. 
+แม่ทัพใหญ่ 
+ 
+ 
+ 
+Mǣthap Yai 
+รองแม่กองงานพระธรรมทูต 
+ 
+Rǭng Mǣ Kǭng Ngān Phrathammathūt 
+เจ้าอาวาส 
+ 
+ 
+ 
+čhao‘āwāt 
+เจ้าคณะภาค ๗  
+ 
+ 
+Čhao Khana Phāk 7 
+นายสุชาติ 
+ 
+ 
+ 
+Nāi Suchāt 
+ 
+ 
+เจ้าเมืองแปร 
+ 
+ 
+ 
+Čhao Mư̄ang Prǣ 
+ 
+ 
+เจ้าเมือง 
+ 
+ 
+ 
+čhaomư̄ang 
+19. นาย (Nāi)  before a proper name as a bandasak or roughly equivalent to Mister should be 
+separate. Otherwise, it is combined as a prefix in accordance with paragraph 2.(c) above. 
+นายสุชาติ 
+ 
+ 
+ 
+Nāi Suchāt 
+นายร้อย 
+ 
+ 
+ 
+Nāirǭi 
+นายทหารตํารวจ 
+ 
+ 
+Nāithahān Tamrūat 
+นายแพทย์ปรัดเลย์ 
+ 
+ 
+Nāiphǣt Pratlē 
+นายพิทักษ์ราชา (โจ) 
+ 
+ 
+Nāi Phithakrāchā (Čhō) 
+20. In cases of doubt about whether miscellaneous words listed under 2.(c) above are functioning as 
+prefixes, generally separate elements unless sufficient conventional usage has bestowed word status 
+on the configuration. Always separate demonstrative adjectives, relative pronouns, and numerals 
+from the first element. 
+คนพ้นคุก 
+ 
+ 
+ 
+khon phon khuk 
+ผู้ก่อการร้าย 
+ 
+ 
+ 
+phūkǭkānrāi 
+คนนั้น  
+ 
+ 
+ 
+khon nan 
+ผู้ลี้ภัย  
+ 
+ 
+ 
+phūlīphai 
+เครื่องนี้  
+ 
+ 
+ 
+khrư̄ang nī 
+ข้อหนึ่ง  
+ 
+ 
+ 
+khǭ nưng 
+but 
+คนสีเทา 
+ 
+ 
+ 
+khonsīthao 
+ 
+21. Combine elements in colors, days of the week, but not months of the year.  
+สีเหลือง  
+ 
+ 
+ 
+sīlư̄ang  
+ 
+Page 12 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+               Thai Romanization Table 
+วันจันทร์  
+ 
+ 
+ 
+Wančhan  
+เดือนพฤศจิกายน  
+ 
+ 
+Dư̄an Phrưtsačhikāyon 
+22.  Combine numerals in the same way as in English; i.e., combine teens, combine first elements, 
+and separate from the digital element if any in twenty through ninety-nine, etc. Separate  ที่ (thī) 
+in ordinals. 
+สิบสาม  
+ 
+ 
+ 
+sipsām  
+ยี่สิบสอง  
+ 
+ 
+ 
+yīsip sǭng 
+ร้อยเอ็ด  
+ 
+ 
+ 
+rǭi ‘et 
+วันที่สิบเจ็ด  
+ 
+ 
+ 
+wan thī sipčhet 
+ 
+23. 
+ Generally separate royal introductory verbs and verbs indicating royal courtesy, but combine 
+elements in conventional phrases of courtesy. 
+ทรงประกอบพิธีเปิด 
+ 
+ 
+song prakǭp phithī pœ̄t    
+ทรงพระเจริญ  
+ 
+ 
+song phračharœ̄n    
+ทรงพระกรุณาโปรดเกล้า  
+ 
+song phrakarunā prōt klao    
+ขอบใจ  
+ 
+ 
+ 
+khǭpčhai 
+24. 
+In most cases separate  หลาย (lāi),ชั่ว  (chūa),  ทั่ว  (thūa),  ทุก  (thuk),   ทั้ง  (thang),  
+ บาง  (bāng),   ต่าง (tāng), etc.,   preceding words. 
+ทั้งประเทศ 
+ 
+ 
+ 
+thang prathēt   
+ทั่วราชอาณาจักร 
+ 
+ 
+thūa rātcha‘ānāčhak 
+ชั่วชีวิต  
+ 
+ 
+ 
+chūa chīwit 
+ทุกสิ่ง  
+ 
+ 
+ 
+thuk sing   
+ต่างมารดา 
+ 
+ 
+ 
+tāng māndā     
+หลายคน 
+ 
+ 
+ 
+lāi khon    
+     
+but บางคราว 
+ 
+ 
+ 
+bāngkhrāo 
+ชั่วคราว  
+ 
+ 
+ 
+chūakhrāo   
+ทั่วไป  
+ 
+ 
+ 
+thūapai   
+ทั้งหมด  
+ 
+ 
+ 
+thangmot   
+ชั่วโมง  
+ 
+ 
+ 
+chūamōng    
+ต่างประเทศ 
+ 
+ 
+ 
+tāngprathēt 
+25. 
+ Generally separate  งาน  (ngān) preceding a word or phrase except in cases denoting literary 
+or research activity when only two elements are present. 
+ 
+ 
+งานพระราชทานเพลิงศพ  
+ 
+ngān phrarātchathān phlœ̄ng sop 
+Thai Romanization Table 
+2011 version 
+ 
+2011 
+ 
+13 
+ 
+งานธุรกิจ 
+ 
+ 
+ 
+ngān thurakit    
+งานเขียน 
+ 
+ 
+ 
+ngānkhīan    
+งานวิจัย 
+ 
+ 
+ 
+ngānwičhai 
+26. Combine or separate the following miscellaneous phrases as shown. 
+ 
+เนื่องใน  
+nư̄ang nai     
+แค่ไหน  
+khǣ nai    
+ 
+ว่าด้วย  
+wādūai    
+ 
+ล่วงหน้า 
+lūangnā    
+ร่วมกับ  
+rūam kap    
+ 
+เบื้องต้น 
+bư̄angton    
+ครบรอบ 
+khrop rǭp    
+ 
+ต่อไป  
+tǭpai    
+พร้อมด้วย 
+phrǭm dūai     
+ตั้งแต่  
+tangtǣ    
+ตนเอง  
+ton‘ēng    
+ 
+จนกระทั่ง 
+čhonkrathang    
+ 
+ 
+เนื่องจาก 
+  nư̄angčhāk 
+ 
+จนถึง 
+ čhonthưng 
+27. Combine   ตะวัน  (tawan) not   เฉียง  (chīang) in compass points. 
+ตะวันออกเฉียงเหนือ 
+ 
+ 
+tawan‘ǭk chīang nư̄a    
+ตะวันตกเฉียงใต้  
+ 
+ 
+tawantok chīang tai    
+ตะวันตกเฉียงเหนือ 
+ 
+ 
+tawantok chīang nư̄a    
+ตะวันออกเฉียงใต้ 
+ 
+ 
+tawan‘ǭk chīang tai 
+28. Generally separate geographical designations with   เมือง (mư̄ang).  
+เมืองเหนือ 
+ 
+ 
+ 
+mư̄ang nư̄a    
+เมืองใต้  
+ 
+ 
+ 
+mư̄ang tai    
+     but  เมืองนอก 
+ 
+ 
+ 
+mư̄angnǭk 
+29. 
+ When  ความ  (khwām) is used in the legal context meaning “case” or “matter”, it should be 
+separate.  
+ความแพ่ง 
+ 
+ 
+ 
+khwām phǣng    
+ความอาญา 
+ 
+ 
+ 
+khwām ‘āyā 
+ 
+30. 
+ Those elements equivalent to English hyphenated adjectival phrases (not clauses) should be 
+combined although kept separate from any noun (not included under paragraph 2.(c)) that they 
+might modify, the latter clause applying only to phrases that are clearly adjectival in nature and not 
+including the phrase words whose role Thai syntax makes doubtful. 
+หนังสือปกสีขาว  
+ 
+ 
+nangsư̄ poksīkhāo      
+เรือชายฝั่งทะเล  
+ 
+ 
+rư̄a chāifangthalē      
+ข้าวประดับดิน  
+ 
+ 
+khāopradapdin      
+ 
+Page 14 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+               Thai Romanization Table 
+สินค้าส่งออก 
+ 
+ 
+ 
+sinkhāsong‘ǭk      
+พ่อค้าส่งออก  
+ 
+ 
+phǭkhāsong‘ǭk   
+การเจรจาการค้าหลายฝ่าย 
+ 
+kānčhēnračhā kānkhā lāifāi 
+ 
+31. 
+Many phrases consisting of predicate and object have attained single word status. But if there is 
+doubt that the elements have attained single word status, do not combine them unless 30. above 
+applies. 
+ 
+ 
+ประเมินผล 
+ 
+ 
+ 
+pramœ̄nphon    
+ 
+ทํางาน  
+ 
+ 
+ 
+thamngān     
+วางแผน 
+ 
+ 
+ 
+wāngphǣn    
+อวยพร  
+ 
+ 
+ 
+‘ūaiphǭn    
+but  
+การย้ายถิ่น 
+ 
+ 
+ 
+kānyāi thin     
+การย้ายถิ่นฐาน  
+ 
+ 
+kānyāi thinthān      
+ถิ่นใต้  
+ 
+ 
+ 
+thin tai 
+32. Generally separate phrases with   ส่วน (sūan). 
+ส่วนพระองค์ 
+ 
+ 
+ 
+sūan phra‘ong      
+ส่วนพลเมือง 
+ 
+ 
+ 
+sūan phonlamư̄ang      
+but       ส่วนตัว  
+ 
+ 
+ 
+sūantūa      
+ส่วนรวม 
+ 
+ 
+ 
+sūanrūam      
+ 
+33. 
+Phrases with words indicating buildings as first element are generally combined.  
+หอศิลปะ 
+ 
+ 
+ 
+hǭsinlapa      
+ห้องประชุม 
+ 
+ 
+ 
+hǭngprachum      
+โรงพิมพ์ 
+ 
+ 
+ 
+rōngphim      
+หอสมุด  
+ 
+ 
+ 
+hǭsamut      
+โรงเรียน 
+ 
+ 
+ 
+rōngrīan 
+ 
+34. 
+ For terms not of rank, privilege, address, etc., generally do not combine elements that might 
+otherwise be candidates for combining when the second element is a proper name unless the first 
+element appears in the list under 2.(c) above. Nevertheless, capitalize the first element in any 
+case. 
+หอภูมิพล 
+ 
+ 
+ 
+Hǭ  Phūmiphon      
+รถเบ็นซ์ 
+ 
+ 
+ 
+Rot Ben      
+คัมภีร์พระเวท  
+ 
+ 
+Khamphī Phrawēt      
+               
+ คนไทย 
+ 
+ 
+ 
+Khon Thai      
+Thai Romanization Table 
+2011 version 
+ 
+2011 
+ 
+15 
+ 
+ 
+35. For phrases consisting of a verb and  งาน (ngān), generally do not combine. 
+ประสานงาน 
+ 
+ 
+ 
+prasān ngān      
+รวมงาน 
+ 
+ 
+ 
+rūam ngān      
+ปฎิบัติงาน 
+ 
+ 
+ 
+patibat ngān      
+    but     ทํางาน  
+ 
+ 
+ 
+thamngān 
+ 
+36. รวม (rūam) as initial or final element should generally be separate. 
+รวมเล่ม  
+ 
+ 
+ 
+rūam lēm      
+รวมอยู่ด้วย 
+ 
+ 
+ 
+rūam yū dūai      
+    but   ส่วนร่วม 
+ 
+ 
+ 
+sūanrūam      
+ 
+37. Keep separate elements that purport to be translated phrases from other languages. 
+ 
+นครวัด  
+ 
+ 
+ 
+Nakhǭn Wat      
+สยามสแควร์ 
+ 
+ 
+ 
+Sayām Sakhwǣ 
+38. 
+ Generally, when applying word division rules, retain word division appearing in the Thai script 
+only if there is doubt about the exact mean of the configuration. Otherwise, ignore the division in 
+Thai script. 
+ 
+โครงการ พุทธ-ไทย ปริทรรศน์ 
+ 
+Khrōngkān Phut-Thai Parithat      
+39. 
+Phrases beginning with น่า (nā) should only be combined if convention has conferred word 
+status on the configuration. 
+ 
+ 
+น่าเสียดาย 
+ 
+ 
+ 
+nāsīadāi      
+น่าสนใจ 
+ 
+ 
+ 
+nāsončhai      
+but  
+น่าจับตา 
+ 
+ 
+ 
+nā čhap tā      
+น่ารับรอง 
+ 
+ 
+ 
+nā raprǭng      
+ 
+40. Separate words beginning with   ทหาร (thahān) for military, etc. 
+ทหารบก 
+ 
+ 
+ 
+thahān bok      
+ทหารเรือ 
+ 
+ 
+ 
+thahān rư̄a      
+ทหารอากาศ 
+ 
+ 
+ 
+thahān ‘ākāt      
+ทหารตํารวจ 
+ 
+ 
+ 
+thahān tamrūat 
+ 
+41. 
+ Combine the generic element with all elements of a name for plants, animals, vegetables, 
+etc. 
+นกขุนทอง 
+ 
+ 
+ 
+nokkhunthǭng      
+ 
+Page 16 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+               Thai Romanization Table 
+แตงกวา 
+ 
+ 
+ 
+tǣngkwā      
+สุนัขจิ้งจอก 
+ 
+ 
+ 
+sunakčhingčhǭk      
+ผักกาดหัว 
+ 
+ 
+ 
+phakkāthūa      
+ 
+ 
+ต้นหมาก 
+ 
+ 
+ 
+tonmāk      
+ 
+42. 
+ For diseases, combine the generic term  โรค  (rōk) only if it appears as the final element of the 
+configuration. 
+กาฬโรค 
+ 
+ 
+ 
+kānlarōk      
+กามโรค  
+ 
+ 
+ 
+kāmmarōk      
+โรคมะเร็ง 
+ 
+ 
+ 
+rōk mareng      
+โรคโลหิตน้อย  
+ 
+ 
+rōk lōhit nǭi      
+โรคทรพิษ 
+ 
+ 
+ 
+rōk thǭraphit      
+อหิวาตกโรค   
+ 
+ 
+‘ahiwātakarōk      
+โรคฝีดาษ 
+ 
+ 
+ 
+rōk fīdāt 
+43. Combine adjectival phrases with   ใจ  (čhai) as final element. 
+ร้อนใจ  
+ 
+ 
+ 
+rǭnčhai      
+เกรงใจ  
+ 
+ 
+ 
+krēngčhai      
+สุขภาพใจ 
+ 
+ 
+ 
+sukkhaphāpčhai      
+ดีใจ 
+ 
+ 
+ 
+ 
+dīčhai  
