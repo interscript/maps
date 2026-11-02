@@ -1,0 +1,77 @@
+system "ALA-LC:sat-Olck:Latn:2017" {
+
+metadata {
+  authority_id alalc
+  id 2017
+  language iso-639-2:sat
+  source_script Olck
+  destination_script Latn
+  name "Santali (in Ol script) Romanization Table (2017)"
+  url https://www.loc.gov/catdir/cpso/romanization/santali.pdf
+  creation_date 2017
+  adoption_date
+  description {    ALA-LC Santali (Ol Chiki) Romanization Table, 2017 version.
+    Pure letter substitution: seven vowels, twenty-five consonants and
+    marks including the relwa (ᱽ), the nasalization dot (ᱸ → m̐), the
+    omitted low-pitch mark (ᱹ), and the prolongation mark (ᱻ,
+    omitted). Transcribed from the loc.gov document's complete text
+    layer.
+  }
+
+  notes {
+    note "Note 1: relwa ᱽ follows the four checked consonants (g j d b
+    written with it as ᱜ ᱡ ᱫ ᱵ — the table lists the modified
+    letterforms as letters in their own right). Note 2: ᱸ = m̐ after
+    the vowel; ᱹ is omitted."
+  }
+}
+
+tests {
+   "\u1c60" ->  "k"
+}
+
+stage main {
+  parallel {
+    sub "ᱠ" "k"
+    sub "ᱯ" "p"
+    sub "ᱜ" "g"
+    sub "ᱵ" "b"
+    sub "ᱶ" "ṅ"
+    sub "ᱢ" "m"
+    sub "ᱪ" "c"
+    sub "ᱭ" "y"
+    sub "ᱡ" "j"
+    sub "ᱨ" "r"
+    sub "ᱧ" "ñ"
+    sub "ᱞ" "l"
+    sub "ᱴ" "ṭ"
+    sub "ᱣ" "w"
+    sub "ᱰ" "ḍ"
+    sub "ᱥ" "s"
+    sub "ᱲ" "ṛ"
+    sub "ᱦ" "h"
+    sub "ᱬ" "ṇ"
+    sub "ᱷ" "h"
+    sub "ᱛ" "t"
+    sub "ᱽ" "’"
+    sub "ᱫ" "d"
+    sub "ᱝ" "ṃ"
+    sub "ᱸ" "m̐"
+  }
+
+  parallel {
+    sub "ᱚ" "a"
+    sub "ᱟ" "ā"
+    sub "ᱟᱹ" "ạ̄"
+    sub "ᱤ" "i"
+    sub "ᱩ" "u"
+    sub "ᱮ" "e"
+    sub "ᱳ" "o"
+  }
+
+  parallel {
+    sub "ᱻ" ""
+    sub "ᱹ" ""
+  }
+}
+}
