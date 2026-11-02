@@ -1,0 +1,290 @@
+=== p10
+DIN 31635:2011-07 
+Tabelle 2 (fortgesetzt) 
+Lfd. Nr 
+Persisch 
+Umschrift 
+Beispiele 
+wenn in Vorlage vorhanden, 
+wird mit ʾ wiedergegeben  آئینāʾīn 
+8 
+   ء 
+(hamza) 
+wenn in Vorlage statt hamza 
+der Konsonant  ﯼantritt, wird 
+mit y wiedergegeben  آیینāyīn 
+wenn in Vorlage mit hamza 
+oder alif angefügt: ʾī  زیبائیzībāʾī 
+ḫānaʾī ای خانه
+ 
+yā-i maṣdarī, yā-i waḥdat, 
+yā-i nisbat etc. nach 
+auslautenden Vokalen 
+wenn in Vorlage mit dem 
+Konsonant  ﯼangefügt: yī 
+9 
+ زیباییzībāyī 
+10 ( وwāw) 
+als Kurzvokal: u 
+als Langvokal: ū 
+als Konsonant: w 
+du 
+dūr 
+dīw 
+11 
+stilles ( وwāw) nach ( خḫāʾ) 
+(Ausdruck der Labialisierung) 
+beibehalten 
+ḫwāhar 
+12 ( وwa) (Verbindungspartikel) 
+immer getrennt 
+wa 
+13 
+alif-i maqṣūra 
+wie im Arabischen: ā 
+Muṣṭafā 
+14 
+tanwīn (nur Akkusativfall) 
+wie im Arabischen: an 
+maṯalan 
+15 
+hā-i muḫtafī (nicht aspiriert) 
+als Zeichen des Auslautes a 
+(manchmal auch i) entfällt 
+nāma; gufta; ki 
+Hā-i ġair-i muḫtafī (aspiriert) 
+16 
+beibehalten 
+mah; māh 
+17  جات، ان ،هاmit dem Wort verbunden  
+(hā, ān, ǧāt) (Pluralsuffix) 
+(ohne Bindestrich) 
+mardān; nāmahā 
+mīwaǧāt 
+immer getrennt 
+wiedergegeben 
+kitāb rā 
+18 ( راrā) 
+Ausnahme: wenn 
+orthographisch zusammen 
+geschrieben, wird mit dem 
+Wort verbunden (ohne 
+Bindestrich) 
+ مراmarā 
+turā 
+(Postposition) 
+ ترا
+ با صفا استimmer getrennt 
+wiedergegeben 
+bā ṣafā ast 
+19 ( استast) 
+Ausnahme: 
+(Kopula) 
+wenn das alif elidiert ist, so 
+wird -st mit Bindestrich 
+angehängt 
+ با صفاستbā ṣafā-st 
+10 
+Normen-Download-Beuth-Ribose-KdNr.8161524-LfNr.9475154001-2020-09-22 11:46
+
+=== p11
+DIN 31635:2011-07 
+Tabelle 2 (fortgesetzt) 
+Lfd. Nr 
+Persisch 
+Umschrift 
+Beispiele 
+ بـba-/bi/ 
+bi-ihtimām ب
+اهتما
+م
+  (Präposition) 
+mit Bindestrich vorangestellt 
+ba-ihtimām 
+20 
+ بهba/bi 
+bi ihtimām  به اهتمام(Präposition) 
+getrennt geschrieben 
+ba ihtimām 
+Immer als ein Wort zusammen 
+geschrieben 
+ روانکاوی
+داری خانه
+ 
+rawānkāwī 
+ḫānadārī 
+21 
+Komposita 
+Ausnahme: 
+trotz orthographischer 
+Möglichkeit des Zusammen-
+schreibens: falls in der Vorlage 
+getrennt geschrieben wird, 
+dann wird mit Bindestrich 
+verbunden 
+اسلام
+ 
+شناسی
+ islām-šināsī 
+ميگفته
+اند 
+ 
+Immer zusammen geschrieben  گفتند
+mīguftaand 
+guftand 
+22 
+Verbalpräfix und -suffix 
+Ausnahme: 
+trotz orthographischer 
+Möglichkeit des 
+Zusammenschreibens: falls in 
+der Vorlage der Verbalpräfix 
+getrennt geschrieben steht, 
+dann wird mit Bindestrich 
+vorangestellt  
+ می
+اند گفته
+ mī-guftaand 
+ 
+11 
+Normen-Download-Beuth-Ribose-KdNr.8161524-LfNr.9475154001-2020-09-22 11:46
+
+=== p12
+DIN 31635:2011-07 
+8.3 Umschrifttabelle 
+Tabelle 3 — Umschrifttabelle Persisch 
+Lfd. 
+Nr 
+Arabischer Buchstabe 
+Umschrift 
+ ء / ا1 
+0621, 0627
+ʾ, ā 
+02BE, 0101 
+2  ب0628
+b 
+ 
+ پp 
+3 
+067E
+ 
+4  ت062A
+t 
+ 
+5  ث062B
+ṯ 
+1E6F 
+ ج6 
+062C
+ǧ 
+01E7 
+7  چ0686
+č 
+010D 
+ حḥ 
+8 
+062D
+1E25 
+9  خ062E
+ḫ 
+1E2B 
+10  د062F
+d 
+ 
+ ذ11 
+0630
+ḏ 
+1E0F 
+12  ر0631
+r 
+ 
+ زz 
+13 
+0632
+ 
+14  ژ0698
+ž 
+017E 
+15  س0633
+s 
+ 
+ ش16 
+0634
+š 
+0161 
+17  ص0635
+ṣ 
+1E63 
+ ضḍ 
+18 
+0636
+1E0D 
+19  ط0637
+ṭ 
+1E6D 
+20  ظ0638
+ẓ 
+1E93 
+ ع0639
+ʿ 
+02BF 
+21 
+ غ22 
+063A
+ġ 
+0121 
+12 
+Normen-Download-Beuth-Ribose-KdNr.8161524-LfNr.9475154001-2020-09-22 11:46
+
+=== p13
+DIN 31635:2011-07 
+Tabelle 3 (fortgesetzt) 
+Lfd. 
+Nr 
+Arabischer Buchstabe 
+Umschrift 
+23  ف0641
+f 
+ 
+24  ق0642
+q 
+ 
+25  ک06A9
+k 
+ 
+26  گ06AF
+g 
+ 
+27  ل0644
+l 
+ 
+28  م0645
+m 
+ 
+ ن29 
+0646
+n 
+ 
+30  و0648
+w, ū 
+016B 
+31 
+  ھ / هh 
+06BE, 0647
+ 
+32  ى0649
+y, ī 
+012B 
+ 
+9 
+Transliteration des Kurdischen (Soranî und Kurmancî) 
+9.1 Hinweise zur Transliterationsarbeit 
+9.1.1 
+Allgemeines 
+Im Irak und Iran wird Zentralkurdisch (hauptsächlich Soranî), aber auch Nordkurdisch (Kurmancî) gesprochen 
+und in arabischem Alphabet geschrieben. Dagegen wird in der Türkei, Syrien, in den ehemaligen 
+Sowjetrepubliken wie Armenien und Aserbaidschan Nordkurdisch (Kurmancî) gesprochen, aber in lateinischer 
+bzw. kyrillischer Schrift geschrieben. Die Transliteration des Kurdischen stimmt mit der in [5] verwendeten 
+Umschrift überein. 
+13 
+Normen-Download-Beuth-Ribose-KdNr.8161524-LfNr.9475154001-2020-09-22 11:46
