@@ -1,0 +1,196 @@
+system "DIN:kur-Arab:Latn:31635-2011" {
+
+metadata {
+  authority_id din
+  id 31635-2011-9
+  language iso-639-2:kur
+  source_script Arab
+  destination_script Latn
+  name "DIN 31635:2011-07 section 9: Transliteration des Kurdischen (Soranî und Kurmancî)"
+  url https://www.din.de
+  creation_date 2011
+  confirmation_date 2011-07
+  description {    DIN 31635:2011-07, section 9: transliteration of Kurdish (Soranî and
+    Kurmancî) in the Arabic script, agreeing with the transcription of
+    the cited reference [5]. Tabelle 4 (vowels), Tabelle 5
+    (semivowels), the remarks 9.1.3 a-g and Tabelle 6 (the 32-row
+    letter table) are encoded. The section covers Soranî and Kurmancî
+    as written in Iraq and Iran; the Latin- and Cyrillic-script
+    Kurmancî of Turkey, Syria and the former Soviet republics is out of
+    scope by the norm's own statement.
+  }
+
+  notes {
+    note "Remark a: the word- or syllable-initial vowel carrier is not
+    transliterated (this map omits the initial carrier). Remark b: the
+    epenthetic vowel (Murmelvokal) is not written in the orthography
+    but is rendered i in the transcription — its placement is
+    morphological (kirdin, jin) and cannot be recovered from the
+    skeleton; recorded here, not mechanically encoded. Remarks c-d:
+    yeh renders the vowel î by default and the semiconsonant y
+    typically word- or syllable-initially; waw renders u by default
+    and w as semiconsonant — this map encodes the semiconsonant
+    readings after vowel letters (ew, aw) and the vowel readings
+    elsewhere; the syllable-initial readings that depend on the
+    unwritten epenthetic vowel (diyar) are recorded here. Remark g:
+    the conjunction waw renders w after a vocalic ending and u after a
+    consonantal one — the preceding word's ending is required and the
+    rule is recorded; the letter-level pair rows cover the within-word
+    cases."
+    note "Remark e: heh (06BE) always renders h (cah), and heh (06C1)
+    renders e (row 30) — neither carries the Arabic final-h rules.
+    Remark f: foreign names, especially Arabic proper names, are
+    usually rewritten in Kurdish orthography (the Arabic letters dh,
+    z with bar, dad through z; th and sad through s; ta through t);
+    when they do occur in Arabic orthography they are transliterated
+    as in Arabic — the substitution is lexical and recorded here, and
+    this map keeps the Arabic letter values of Tabelle 6 for the
+    letters it lists. Row 35's j-stroke digraph (0648+0648, not
+    precomposed in Unicode per the table's own footnote) renders
+    u-circumflex and is encoded as the two-waw sequence."
+  }
+}
+
+tests {
+  # every table row (Tabelle 6)
+   "ا" ->  "a"
+   "ب" ->  "b"
+   "پ" ->  "p"
+   "ت" ->  "t"
+   "ج" ->  "c"
+   "چ" ->  "ç"
+   "ح" ->  "ẖ"
+   "خ" ->  "x"
+   "د" ->  "d"
+   "ر" ->  "r"
+   "ڕ" ->  "ṟ"
+   "ز" ->  "z"
+   "ژ" ->  "j"
+   "س" ->  "s"
+   "ش" ->  "ş"
+   "ع" ->  "ʿ"
+   "غ" ->  "x̱"
+   "ف" ->  "f"
+   "ڤ" ->  "v"
+   "ق" ->  "q"
+   "ک" ->  "k"
+   "گ" ->  "g"
+   "ل" ->  "l"
+   "ڵ" ->  "ḻ"
+   "م" ->  "m"
+   "ن" ->  "n"
+   "و" ->  "w"
+   "وو" ->  "û"
+   "ۆ" ->  "o"
+   "ھ" ->  "h"
+   "ہ" ->  "e"
+   "ێ" ->  "ê"
+  # vowel-letter pairs (remarks c-d: semiconsonant after a vowel)
+   "ەو" ->  "ew"
+   "او" ->  "aw"
+   "ۆو" ->  "ow"
+   "ێو" ->  "êw"
+   "ئیو" ->  "îw"
+  # the norm's examples (remarks a, e; Tabelle 4/5)
+   "من" ->  "mn"
+   "گوڵ" ->  "guḻ"
+   "ژوور" ->  "jûr"
+   "تۆ" ->  "to"
+   "شین" ->  "şîn"
+   "لادێ" ->  "ladê"
+   "ئێستا" ->  "êsta"
+   "ئیتر" ->  "îtr"
+   "ئەژنۆ" ->  "ejno"
+   "ئەو" ->  "ew"
+   "ئاو" ->  "aw"
+   "هاوین" ->  "hawîn"
+   "نیهان" ->  "nîhan"
+   "جاھ" ->  "cah"
+   "یار" ->  "yar"
+   "شایان" ->  "şayan"
+   "ئیسماعیل" ->  "îsmaʿîl"
+}
+
+stage main {
+
+  # remark a: the initial carrier is silent; carrier + vowel rows emit
+  # the vowel's own reading (and the semiconsonant where a waw follows)
+  parallel {
+    sub "وو" "û"
+    sub "ئاو" "aw"
+    sub "ئێو" "êw"
+    sub "ئیو" "îw"
+    sub "ئەو" "ew"
+    sub "ئۆو" "ow"
+    sub "ئێ" "ê"
+    sub "ئی" "î"
+    sub "ئە" "e"
+    sub "ئۆ" "o"
+    sub "ئا" "a"
+  }
+  # remarks c-d: word-initial semiconsonant readings
+  sub {
+    from boundary + "ی"
+    to "y"
+  }
+  sub {
+    from boundary + "و"
+    to "w"
+  }
+
+  # waw/yeh after a vowel letter render the semiconsonant (explicit
+  # pair rows; the murmel-dependent syllable-initial cases are recorded
+  # in the notes)
+  parallel {
+    sub "ای" "ay"
+    sub "ەو" "ew"
+    sub "او" "aw"
+    sub "ۆو" "ow"
+    sub "ێو" "êw"
+    sub "اوا" "awa"
+  }
+
+  # characters
+  parallel {
+    sub "ا" "a"
+    sub "ب" "b"
+    sub "پ" "p"
+    sub "ت" "t"
+    sub "ج" "c"
+    sub "چ" "ç"
+    sub "ح" "ẖ"
+    sub "خ" "x"
+    sub "د" "d"
+    sub "ر" "r"
+    sub "ڕ" "ṟ"
+    sub "ز" "z"
+    sub "ژ" "j"
+    sub "س" "s"
+    sub "ش" "ş"
+    sub "ع" "ʿ"
+    sub "غ" "x̱"
+    sub "ف" "f"
+    sub "ڤ" "v"
+    sub "ق" "q"
+    sub "ک" "k"
+    sub "ك" "k"
+    sub "گ" "g"
+    sub "ل" "l"
+    sub "ڵ" "ḻ"
+    sub "م" "m"
+    sub "ن" "n"
+    sub "ە" "e"
+    sub "و" "u"
+    sub "ۆ" "o"
+    sub "ھ" "h"
+    sub "ه" "h"
+    sub "ہ" "e"
+    sub "ی" "î"
+    sub "ي" "î"
+    sub "ى" "î"
+    sub "ێ" "ê"
+  }
+
+}
+
+}
