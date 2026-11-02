@@ -21,17 +21,34 @@ metadata {
   }
 
   notes {
-    note "DRAFT in staging. Sections 13-15 and 7-9 of the source have
-    now been read at working zoom: 14.1's full vowel table CONFIRMS
-    this map's values (ai/ei/yai/yei, w for the horizontal-stroke
-    vowel, compound concatenation); 15 letter names are explicitly
-    'not needed for transliteration'; 7-9 are word-division and
-    punctuation conventions that pass through unchanged. Tense
-    consonants follow member-doubling; a few rare trailing clusters
-    are provisional. Remaining before leaving staging: a full
-    pass over the deep subsections (through 11.15) for any word-level
-    rule that affects romanization, and the North/South example pairs
-    of 13.2-13.3 as tests."
+    note "STATUS: deep pass over Parts Three and Four complete at
+    working zoom (renders of all 49 pages; key sections at 8-10x).
+    \u00A77.7 consonant-between-syllables examples verified against this
+    map's mechanical readings and added as tests (kunui, namuen,
+    paikun). \u00A77.8 (organic relaxed consonants after /l/ /n/, tensed
+    sounds, and the later MR simplification of lss) is pronunciation
+    and MR history \u2014 the mechanical system's own abnormal-value
+    sequences are the Table I/\u00A710 grid, which this map encodes.
+    \u00A78 Non-Korean words, \u00A79 punctuation and \u00A710 syllable-by-syllable
+    decomposition are conventions that pass through unchanged. \u00A710.4
+    confirms the basic vowel values used here (ai ei yai yei and the
+    compound concatenation oa oai oi ue uei ui wi)."
+    note "PART-LAYER DISCOVERY (recorded for the owner): Table VIII
+    (The Romanization of All Letters in Sino-Korean Words, source
+    p26) is a Sino-Korean-specific layer whose compound vowel
+    readings differ from this mechanical system \u2014 verified at 10x:
+    \uC640 wa, \uC65C wae, \uC678 oe, \uC6CC wo with breve, \uC6E8 we (the Sino-Korean
+    layer uses w-forms and breves), whereas the Part Four mechanical
+    system encodes plain concatenation (oa oai oi ue). The guide also
+    states that letters not in Table VIII and all vernacular words
+    are covered in its Parts ii and iii. Encoding the Sino-Korean
+    layer would be a separate system id \u2014 an owner decision, recorded
+    here rather than merged silently into this map. The /r/-/l/
+    guidance in the same section is stated by the source itself to
+    have no single satisfactory rule and is not mechanically
+    encodable; the r- initial row (foreign words in the South, North
+    Korean spelling in the North) is recorded here rather than
+    guessed."
   }
 }
 
@@ -40,7 +57,7 @@ tests {
    "\uC57C" ->  "ya"
    "\uC5B4" ->  "e"
    "\uC640" ->  "oa"
-   "\uC654" ->  "oai"
+   "\uC65C" ->  "oai"
    "\uC678" ->  "oi"
    "\uC704" ->  "ui"
    "\uC758" ->  "wi"
@@ -54,6 +71,11 @@ tests {
    "\uD0A5" ->  "khik"
    "\uD0C4" ->  "than"
    "\uD30C" ->  "pha"
+   "\uAD70\uC704" ->  "kunui"
+   "\uB0A8\uC6D0" ->  "namuen"
+   "\uBC31\uC6B4" ->  "paikun"
+   "\uC0BC" ->  "sam"
+   "\uC2ED" ->  "sip"
 }
 
 stage main {
