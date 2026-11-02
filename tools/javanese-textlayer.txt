@@ -1,0 +1,344 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Javanese, Sundanese, and Madurese  
+Principal consonants1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Other consonant forms4 
+ 
+ꦬ 
+ 
+(h)a2 
+N 
+na 
+ 
+ca 
+ 
+ra 
+ 
+ka 
+ 
+da 
+ 
+ta 
+ 
+sa 
+W 
+wa 
+ 
+la 
+ 
+pa 
+ 
+dha 
+ 
+ja 
+ 
+ya 
+V 
+nya3 
+ 
+ma 
+ 
+ga 
+ 
+ba 
+ 
+tha 
+ 
+nga 
+na (ṇa) 
+ 
+ca (cha) 
+ra 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ka (kha)   
+ 
+° 
+ta (tha) 
+ 
+sa (śa) 
+ 
+sa (ṣa) 
+ 
+pa (pha) 
+ 
+nya (jña) 
+ 
+ga (gha) 
+ 
+ba (bha) 
+ 
+ 
+ha 
+ 
+ 
+kha 
+ 
+ 
+fa 
+ 
+ 
+za 
+ 
+ 
+gha 
+ 
+ 
+’a 
+Vowels and other agglutinating signs5 
+Vowels 
+6 
+7
+a 
+
+ 
+ 
+e 
+ 
+ 
+ĕ 
+
+ 
+ 
+i 
+ 
+ 
+ 
+o8 
+᮵
+ 
+ 
+u 
+Other 
+ 
+h 
+ 
+r ᭱
+ 
+ra 
+ 
+rĕ 
+ 
+lĕ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ᯌ 
+ya9 
+ 
+ng 
+Numerals 
+ 
+1 
+ 
+2 
+ 
+3 
+ 
+4 
+ 
+5 
+ 
+6 
+ 
+7 
+ 
+8 
+ 
+9 
+ 
+0 
+1 Each consonant has two forms, the regular and the appended, shown on the left and right 
+respectively in the romanization table.  The vowel a is implicit after all consonants and consonant 
+clusters and should be supplied in transliteration, unless: (a) another vowel is indicated by the 
+appropriate sign; or (b) the absence of any vowel is indicated by the use of a paten or pangkon 
+sign (). 
+2 This character often serves as a neutral seat for a vowel, in which case the h is not transcribed.  
+Generally speaking, ha in word-initial or vowel-medial position in a root word is romanized without 
+the h. Root word-final ha followed by suffixal vowels, on the other hand, is always romanized with 
+h. When questions arise as to whether the h should be represented, consult a standard 
+dictionary of Javanese in Latin script, especially Pigeaud, Poerwodarminto, or Horne. 
+3 The letter nya before the letters ja and ca should be romanized as n, not ny, as in the words 
+panca, prenjak, and so forth. 
+4 “Other consonant forms” refers to aksara murda (“on the left”) and aksara rekan (“on the right”).  
+The former are similar to capital letters and have an honorific effect which is not preserved in 
+standard romanization.  The aksara rekan are used to indicate phonemes alien to Javanese, 
+particularly in words of Arabic and Dutch origin.  Nonce forms or idiosyncratic usages may also 
+be encountered.  These are best romanized in accordance with the spelling of the foreign word 
+intended. In words of Old Javanese origin, the same characters represent aspirated or other 
+consonants and should be romanized with the alternative equivalents provided in parentheses. 
+5 Vowels are almost always indicated by one of a class of agglutinating signs (sandangan) added 
+above, below, before, or after the consonant or consonant cluster which they affect.  Other signs 
+are used to indicate the various forms of the semi-vowels r, l, and y, as well as the consonants h 
+and ng, when they occur in certain positions within a syllable.  Free-standing vowels (shown to 
+the right in romanization table) are rare, usually occurring in the initial position in words of foreign 
+origin. No difference between vowels indicated by free-standing characters and those 
+represented by agglutinating signs is preserved in romanization. 
+6 The various dirga marks, which in Old Javanese represented long vowels, are used as 
+colometric devices in New Javanese.  They are not represented by macrons in romanization. 
+                                                                                                                                                 
+ 
+ 
+ 
+ 
+7 Sometimes this character, the a-kara, is used as a neutral seat that, when marked with the 
+appropriate sign, can also be transliterated as i, u, etc. Thus  is romanized i, and so forth. 
+8 Penultimate o in an open syllable, when the final syllable is also open, is romanized as a, as in 
+the words panca, angka, rangga, and so forth. 
+9 This character, the ya-pengkal, is used in consonant clusters within words.  Consonant clusters 
+between words formed when the second word begins with y use the ordinary appended form of 
+ya. In romanization these two forms are not distinguished. 
