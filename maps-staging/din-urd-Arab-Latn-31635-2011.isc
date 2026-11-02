@@ -1,0 +1,300 @@
+system "DIN:urd-Arab:Latn:31635-2011" {
+
+metadata {
+  authority_id din
+  id 31635-2011-10
+  language iso-639-2:urd
+  source_script Arab
+  destination_script Latn
+  name "DIN 31635:2011-07 section 10: Transliteration von Urdu"
+  url https://www.din.de
+  creation_date 2011
+  confirmation_date 2011-07
+  description {    DIN 31635:2011-07, section 10: transliteration of Urdu. Tabelle 7
+    (the 37-row letter table, including the four retroflex letters,
+    the nasal letter and the badi ye) plus the transliteration hints
+    10.1 a-d: the vowel system (short a i u; long a-macron e i-macron
+    o u-macron; diphthongs ai au), the dropped word-initial alif
+    short-vowel carrier, nasal vowels marked by the following nasal
+    letter, and aspiration written as in the original script.
+  }
+
+  notes {
+    note "Waw (row 34) renders v as consonant by default — the norm's
+    consonantal value is v, not w — and u-macron over vocalized input;
+    the o reading is a pronunciation fact of the vowel system and is
+    recorded here. Yeh (row 36, given as 064A/0649) renders y by
+    default and i-macron over vocalized input; Urdu texts commonly
+    write the yeh with the Persian codepoint (06CC), which this map
+    accepts as the same letter. The badi ye (row 37) renders e.
+    Remark d: aspiration is written as in the original script (bh and
+    the like), which follows mechanically from the heh's constant h —
+    the aspirate digraphs need no separate rules. Remark b: the
+    word-initial alif as a short-vowel carrier is not transliterated;
+    remark c: nasal vowels are marked by the following nasal letter,
+    whose own value is n-with-below-descender (row 33). The alif's
+    long-vowel a-macron and the hamza rules follow section 6 as in the
+    Persian and Kurdish columns."
+  }
+}
+
+tests {
+  # every table row (Tabelle 7)
+   "ء" ->  ""  # word-initial hamza is not rendered (remark b)
+   "ب" ->  "b"
+   "پ" ->  "p"
+   "ت" ->  "t"
+   "ٹ" ->  "ṭ"
+   "ث" ->  "s̱"
+   "ج" ->  "j"
+   "چ" ->  "c"
+   "ح" ->  "ḥ"
+   "خ" ->  "ẖ"
+   "د" ->  "d"
+   "ڈ" ->  "ḍ"
+   "ذ" ->  "ẕ"
+   "ر" ->  "r"
+   "ڑ" ->  "ṛ"
+   "ز" ->  "z"
+   "ژ" ->  "ž"
+   "س" ->  "s"
+   "ش" ->  "š"
+   "ص" ->  "ṣ"
+   "ض" ->  "z̤"
+   "ط" ->  "t̤"
+   "ظ" ->  "ẓ"
+   "ع" ->  "ʿ"
+   "غ" ->  "ġ"
+   "ف" ->  "f"
+   "ق" ->  "q"
+   "ک" ->  "k"
+   "گ" ->  "g"
+   "ل" ->  "l"
+   "م" ->  "m"
+   "ن" ->  "n"
+   "ں" ->  "ṉ"
+   "و" ->  "v"
+   "ه" ->  "h"
+   "ھ" ->  "h"
+   "ی" ->  "y"
+   "ي" ->  "y"
+   "ى" ->  "y"
+   "ے" ->  "e"
+  # vocalized readings and merges
+   "بَ" ->  "ba"
+   "بِ" ->  "bi"
+   "بُ" ->  "bu"
+   "وُ" ->  "ū"
+   "یِ" ->  "ī"
+   "بَاب" ->  "bāb"
+  # remark d: aspiration as in the original script
+   "بھ" ->  "bh"
+   "پھ" ->  "ph"
+  # remark c: nasal vowel marking
+   "وُں" ->  "ūṉ"
+  # madda and initial omission
+   "آ" ->  "ā"
+   "آب" ->  "āb"
+   "اُردُو" ->  "urdū"
+}
+
+stage main {
+
+  # sukun is never transliterated (carried over from section 6)
+  sub {
+    from "ْ"
+    to ""
+  }
+  # mark-order normalization: shadda before vowel sign
+  sub {
+    from "َّ"
+    to "َّ"
+  }
+  sub {
+    from "ِّ"
+    to "ِّ"
+  }
+  sub {
+    from "ُّ"
+    to "ُّ"
+  }
+
+  # long vowels: short-vowel sign plus lengthening letter merge
+  sub {
+    from "َا"
+    to "ā"
+  }
+  sub {
+    from "ِی"
+    to "ī"
+  }
+  sub {
+    from "ِي"
+    to "ī"
+  }
+  sub {
+    from "ِى"
+    to "ī"
+  }
+  sub {
+    from "ُو"
+    to "ū"
+  }
+  # diphthongs
+  sub {
+    from "َو"
+    to "au"
+  }
+  sub {
+    from "َی"
+    to "ai"
+  }
+  sub {
+    from "َي"
+    to "ai"
+  }
+
+  # madda: a-macron word-initially, ʾ plus a-macron internally
+  sub {
+    from boundary + "آ"
+    to "ā"
+  }
+  sub {
+    from "آ"
+    to "ʾā"
+  }
+
+  # remark b: alif and hamza word-initially are not rendered
+  sub {
+    from boundary + "ا"
+    to ""
+  }
+  sub {
+    from boundary + "ء"
+    to ""
+  }
+  sub {
+    from boundary + "أ"
+    to ""
+  }
+  sub {
+    from boundary + "إ"
+    to ""
+  }
+  sub {
+    from boundary + "ؤ"
+    to ""
+  }
+  sub {
+    from boundary + "ئ"
+    to ""
+  }
+
+  # CHARACTERS
+  parallel {
+    sub "بّ" "bb"
+    sub "پّ" "pp"
+    sub "تّ" "tt"
+    sub "ٹّ" "ṭṭ"
+    sub "ثّ" "s̱s̱"
+    sub "جّ" "jj"
+    sub "چّ" "cc"
+    sub "حّ" "ḥḥ"
+    sub "خّ" "ẖẖ"
+    sub "دّ" "dd"
+    sub "ڈّ" "ḍḍ"
+    sub "ذّ" "ẕẕ"
+    sub "رّ" "rr"
+    sub "ڑّ" "ṛṛ"
+    sub "زّ" "zz"
+    sub "ژّ" "žž"
+    sub "سّ" "ss"
+    sub "شّ" "šš"
+    sub "صّ" "ṣṣ"
+    sub "ضّ" "z̤z̤"
+    sub "طّ" "t̤t̤"
+    sub "ظّ" "ẓẓ"
+    sub "عّ" "ʿʿ"
+    sub "غّ" "ġġ"
+    sub "فّ" "ff"
+    sub "قّ" "qq"
+    sub "کّ" "kk"
+    sub "گّ" "gg"
+    sub "لّ" "ll"
+    sub "مّ" "mm"
+    sub "نّ" "nn"
+    sub "ںّ" "ṉṉ"
+    sub "وّ" "vv"
+    sub "هّ" "hh"
+    sub "ھّ" "hh"
+    sub "يّ" "yy"
+    sub "یّ" "yy"
+    sub "وُ" "ū"
+    sub "يِ" "ī"
+    sub "یِ" "ī"
+    sub "أَ" "ʾa"
+    sub "إِ" "ʾi"
+    sub "ؤُ" "ʾu"
+    sub "ئِ" "ʾi"
+    sub "ئُ" "ʾu"
+    sub "ئَ" "ʾa"
+    sub "أُ" "ʾu"
+    sub "ء" "ʾ"
+    sub "أ" "ʾ"
+    sub "إ" "ʾ"
+    sub "ؤ" "ʾ"
+    sub "ئ" "ʾ"
+    sub "پ" "p"
+    sub "ٹ" "ṭ"
+    sub "چ" "c"
+    sub "ڈ" "ḍ"
+    sub "ژ" "ž"
+    sub "ڑ" "ṛ"
+    sub "گ" "g"
+    sub "ں" "ṉ"
+    sub "ے" "e"
+    sub "ا" "ā"
+    sub "ب" "b"
+    sub "ت" "t"
+    sub "ث" "s̱"
+    sub "ج" "j"
+    sub "ح" "ḥ"
+    sub "خ" "ẖ"
+    sub "د" "d"
+    sub "ذ" "ẕ"
+    sub "ر" "r"
+    sub "ز" "z"
+    sub "س" "s"
+    sub "ش" "š"
+    sub "ص" "ṣ"
+    sub "ض" "z̤"
+    sub "ط" "t̤"
+    sub "ظ" "ẓ"
+    sub "ع" "ʿ"
+    sub "غ" "ġ"
+    sub "ف" "f"
+    sub "ق" "q"
+    sub "ک" "k"
+    sub "ك" "k"
+    sub "ل" "l"
+    sub "م" "m"
+    sub "ن" "n"
+    sub "و" "v"
+    sub "ه" "h"
+    sub "ھ" "h"
+    sub "ي" "y"
+    sub "ی" "y"
+    sub "ى" "y"
+    sub "َ" "a"
+    sub "ِ" "i"
+    sub "ُ" "u"
+    sub "ً" "an"
+    sub "ٌ" ""
+    sub "ٍ" ""
+    sub "ّ" ""
+    sub "ٰ" "ā"
+  }
+
+}
+
+}
