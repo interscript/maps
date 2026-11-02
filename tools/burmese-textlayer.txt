@@ -1,0 +1,334 @@
+Burmese Romanization Table 
+2011 version 
+ 
+2011 
+ 
+1 
+ 
+Earlier versions: 1997 
+Consonants 
+က 
+ka 
+ဋ 
+ṭa 
+ပ 
+pa 
+ခ 
+kha 
+ဌ 
+ṭha 
+ဖ 
+pha 
+ဂ 
+ga 
+ဍ 
+ḍa 
+ဗ 
+ba 
+ဃ 
+gha 
+ဎ 
+ḍha 
+ဘ 
+bha 
+င 
+ṅa 
+ဏ 
+ṇa 
+မ 
+ma 
+စ 
+ca 
+တ 
+ta 
+ယ 
+ya 
+ဆ 
+cha 
+ထ 
+tha 
+ရ 
+ra 
+ဇ 
+ja 
+ဒ 
+da 
+လ 
+la 
+ဈ 
+jha 
+ဓ 
+dha 
+ဝ 
+va 
+ည 
+ñña 
+န 
+na 
+သ 
+sa 
+ဉ 
+ña 
+ 
+ 
+ဟ 
+ha 
+ 
+ 
+ 
+ 
+ဠ 
+ḷa 
+ 
+ 
+ 
+ 
+အ 
+’a 
+ 
+Vowels (see Note 1) 
+◌ာ, ◌ါ 
+◌ā 
+ေ◌ 
+◌e 
+ဣ 
+i 
+◌ိ 
+◌i 
+◌ဲ 
+◌ai 
+ဤ 
+ī 
+◌ီ 
+◌ī 
+ေ◌◌ာ, ေ◌◌ါ 
+◌o 
+ဥ 
+u 
+◌ု , 
+ 
+◌u 
+ေ◌◌ာ◌်, 
+ေ◌◌ါ◌် 
+◌oʻ 
+ဦ 
+ū 
+◌ူ , l 
+◌ū 
+◌ိ◌ု , ◌ိ 
+◌ui 
+ဧ 
+e 
+ 
+ 
+ 
+ 
+ဩ 
+o 
+ 
+ 
+ 
+ 
+ဪ 
+oʻ 
+ 
+Medials 
+◌ျ 
+◌y 
+ြ◌ 
+◌r 
+ 
+ 
+Burmese Romanization Table 
+2011 version 
+ 
+2011 
+ 
+2 
+ 
+◌ွ 
+◌v 
+◌ှ 
+◌h 
+ 
+ 
+ 
+Medials are written in the order y or r - v - h; for example: 
+မȂ 
+myha 
+Ǥက 
+krva 
+လȄ 
+lvha 
+ြမˊင်း 
+mrvhaṅʻʺ 
+ 
+Burmese Romanization Table 
+2011 version 
+ 
+2011 
+ 
+3 
+ 
+Notes 
+1. 
+Some symbols in the Burmese script are attached above, below, or beside a consonant.  
+Where such symbols are listed in this table, the symbol “◌” is used to represent the 
+consonant. 
+2. 
+Absence of a vowel symbol in the script is represented by a in romanization, with the 
+following exceptions: 
+(a) 
+when a different vowel is indicated by its appropriate symbol (see Vowels); 
+(b) 
+when the absence of any vowel is indicated by the symbol ◌် (see Final symbols). 
+ 
+Conjunct consonants 
+Romanize an upper consonant before a lower one: 
+ 
+တကȒ သိုလ် 
+takkasuilʻ 
+တိရစȘာန် 
+tiracchānʻ 
+ကမȪာ 
+kambhā 
+ 
+Note that the following consonants have modified forms when conjunct: 
+ 
+◌င်္ 
+ṅ◌ 
+ǵ̃ 
+◌ñjh 
+Ȉ 
+◌ḍḍh 
+ȋ 
+◌ṇḍ 
+ဇȚ 
+◌jjh 
+Ȏ 
+◌ṭṭh 
+Ȋ 
+◌ṇṭh 
+ဿ 
+◌ss 
+ 
+ 
+ 
+Final symbols 
+◌် 
+◌ʻ 
+◌ံ 
+◌ṃ 
+ 
+Tone marks 
+◌့ 
+◌ʹ 
+◌း 
+◌ʺ 
+Examples: 
+ပို့ 
+puiʹ 
+ပိုး 
+puiʺ 
+ 
+Punctuation 
+၊ 
+, (comma) 
+။ 
+. (period) 
+ 
+Burmese Romanization Table 
+2011 version 
+ 
+2011 
+ 
+4 
+ 
+Numerals 
+The numerals are: ၀ (0), ၁ (1), ၂ (2), ၃ (3), ၄ (4), ၅ (5), ၆ (6), ၇ (7), ၈ (8), ၉ (9). 
+ 
+Abbreviations 
+၏ 
+e* 
+၍ 
+r* 
+၌ 
+n* 
+၎ 
+l* 
+ 
+ 
+Word division 
+For Burmese words, leave a space after each syllable. 
+For loanwords, use the same word division as in the original language.  Apply the same 
+practice to loanwords with modified forms in Burmese. 
+ေကာ်မီတီ  
+ 
+ 
+koʻmītī  
+(English) 
+ဥပုသ်  
+ 
+ 
+upusʻ   
+(modified Pali) 
+ပန်းကန် 
+ 
+ 
+ 
+panʻʺkanʻ  
+(Mon) 
+ေကာ်ြပန့် 
+ 
+ 
+koʻpranʻʹ  
+(Chinese) 
+ 
+Capitalization 
+Capitalize words according to the rules that apply to English. 
+For personal names composed of Burmese elements, or of elements treated as Burmese, 
+capitalize the initial letter of each syllable. 
+ 
+ေမာင်ေမာင်စိုးတင့် 
+ 
+Moṅʻ Moṅʻ Cuiʺ Taṅʻʹ 
+ 
+ေစာစိုင်ေမာင်  
+ 
+Co Cuiṅʻ Moṅʻ 
+ 
+ချန်ရီစိန် 
+ 
+ 
+ 
+Khyanʻ Rī Cinʻ 
+ 
+Note the following names with non-Burmese elements: 
+ကဲနက်ဘစိန် 
+ 
+ 
+Kainakʻ Bha Cinʻ  
+ြမသီတာ 
+ 
+ 
+Mra Sītā 
+ပေဒသရာဇာ 
+ 
+ 
+Padesarājā 
+Burmese Romanization Table 
+2011 version 
+ 
+2011 
+ 
+5 
+ 
+ 
+Examples 
+မဟာသမိုင်းေတာ်ƳကီးǷွန့်ေပါင်း 
+Mahā samuiṅʻʺ toʻ krīʺ ññvanʻʹ poṅʻʺ 
+ေယာအတွင်းဝန်ဦးဖိုးလ˪ိင် 
+ 
+Yo ’A tvaṅʻʺ vanʻ Ūʺ Phuiʺ Lhuiṅʻ 
+ဒုȎဂါမဏိမင်းƳကီးဝတȣု  
+Duṭṭhagāmaṇi maṅʻʺ krīʺ vatthu 
