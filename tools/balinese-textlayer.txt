@@ -1,0 +1,392 @@
+Balinese Romanization Table 
+2025 version 
+2025 
+1 
+Earlier versions: 2012, 1997 
+Preamble 
+The Balinese script is an abugida belonging to the Indic (a.k.a Brahmic) family of scripts. It is very closely related 
+to the modern Javanese script, with minimal differences of form. The Balinese script consists of a core inventory 
+of consonant graphemes (corresponding to native phonemes in the Balinese language), two sets of additional 
+consonant graphemes (representing phonemes of Indic and non-Indic origin that are not distinct in the Balinese 
+language), and an inventory of vowel signs, as well as numerals and punctuation. Balinese script is traditionally 
+used for representing text in Balinese, Javanese, Sasak1, Sanskrit, Malay, Arabic and other languages of central 
+Indonesia. It was the mainstream script used in Bali until Dutch colonization from 1849, when Latin script began 
+to predominate. 
+As in other Indic scripts, most Balinese consonant and vowel graphemes have two forms: a full form and a 
+combining form. Here, the full and combining forms are considered two allographs of a single grapheme, and 
+are therefore represented by a single Latin character in transliteration. Each graphic unit (aksara) consists of 
+one full character, to which some combining characters may or may not be attached—this represents a segment 
+of one or more graphemes. The full character is positioned centrally between the top and bottom lines, while 
+combining characters may be placed below, above, to the left or right of the central full character. The full 
+character represents the leading grapheme of the segment, while the combining characters denote subsequent 
+graphemes within the segment. For example, the graphic unit ᬲ᭄ᬢ᭄ᬭ᭄ᬬᭀᬄ stryoḥ consists of the full character ᬲ sa
+surrounded by a group of combining characters representing the remaining segment tryoḥ (which replaces the 
+inherent a of the full character). In the tables below, the full and combining forms for each consonant and vowel 
+are shown respectively on the left and right columns. 
+The vowel a is inherent after all consonants except terminal consonants and must therefore be included in 
+transliteration, unless: 
+(a) it is replaced by a following combining character; or,
+(b) it is cancelled by use of the vowel-suppressant sign ᭄ , which is transliterated as the middle dot (·). 
+The romanization tables below follow the principle of strict transliteration, which aims (as far as practically 
+possible) for one-to-one mapping between the graphemes of the Balinese script and the Latin alphabet. Since 
+the Balinese script belongs to the Indic family, this romanization scheme is primarily based on ISO 15919:2001 
+(cf. DHARMA project transliteration guide), with some modifications based on the Puri Kauhan Ubud (PKU) 
+standard used on Balinese Wikisource and more broadly in the Balinese community. 
+Some examples to illustrate this romanization scheme: 
+•
+ᬗ᭄ᬭᬶᬜ᭄ᬘᬶᬗᬧᬸᬭᬩᬕᬸᬭ᭄ᬬᬃᬱ᭞ ᬭᬶᬲ᭄ᬢ᭄ᭀᬫ᭄ᬳᬲ᭄ᬢ᭄ᬗᬕᭀᬦ᭄ᬫᬜ᭄ᬮᬶᬦ᭄ᬶᬦ᭄ ᭞ (Balinese language)
+= ṅriñci ṅapus bagus dyaŕṣa, sinom haṅgon mañalinin·, 
+•
+ᬳᬦ᭄ᬭᬶᬭᬭᬢᬸᬤᬶᬩ᭄ᬬᬋᬗ ᭀᬦ᭄ ᭞ ᬧ᭄ᬭᬰᬵᬭ᭄ᬭᬶᬂᬭᬵᬢᬫᬸᬭᬸᬳᬦᬶᬭᬧ᭄ᬭᬡᬢ᭞ (Old Javanese language)
+= hana sira ratu dibya r̥ṅə̄n·, praśāsta riŋ rāt musuhnira praṇata, 
+•
+ᬫ᭄ ᬫ᭄ᬩᬯᬅ  ᬭᬬᬸᬭᬦ᭄  ᬭᬶᬓᬶᬢ ᭞ ᬲ᭄ᬢ᭄ᭀᬦ᭄᭄ᬭᬢᬸᬧᬸᬗᬕ ᬮ  ᬭᬚᬅ  ᭞ (Malay language)
+= məmbawaq· sayuran· sikit·, gonda satu puṅgəl· sajaq·, 
+Balinese Romanization Table 
+2025 version 
+2025 
+ 
+2 
+ 
+Balinese consonants (aksara wresastra) 
+Full form 
+Combining form 
+Transliteration 
+ᬳ 
+᭄ᬳ 
+ha2 
+ᬦ᭄ 
+᭄ᬦ 
+na 
+ᬘ 
+᭄ᬘ 
+ca 
+ᬭ 
+᭄ᬭ 
+ra 
+ᬓ 
+᭄ᬓ 
+ka 
+ᬤ 
+᭄᭄ 
+da 
+ᬢ 
+᭄᭄ 
+ta 
+ᬭ 
+᭄ᬲ 
+sa 
+ᬯ 
+᭄ᬯ 
+wa3 
+ᬮ 
+᭄ᬮ 
+la 
+ᬫ᭄ 
+᭄ᬫ 
+ma 
+ᬕ 
+᭄ᬕ 
+ga 
+ᬩ᭄ 
+᭄ᬩ 
+ba 
+ᬗ 
+᭄ᬗ 
+ṅa 
+ᬧ 
+᭄ᬧ 
+pa 
+ᬚ4 
+᭄ᬚ 
+ja 
+ᬬ 
+᭄ᬬ 
+ya 
+ᬜ᭄ 
+᭄ᬜ 
+ña5 
+Terminal consonants6 
+Full form 
+Combining form 
+Transliteration 
+ 
+᭄  
+ṃ7 
+Balinese Romanization Table 
+2025 version 
+2025 
+ 
+3 
+ 
+ 
+᭄  
+m̐ 
+ 
+᭄  
+ŋ8 
+ 
+᭄ᬃ 
+ŕ9 
+ 
+᭄ᭀᬄ 
+ḥ 
+Indic consonants (aksara swalalita)10 
+Full form 
+Combining form 
+Transliteration 
+ᬡ 
+᭄ᬡ 
+ṇa 
+ᬙ 
+᭄ᬙ 
+cha 
+ᬔ 
+᭄ᬔ 
+kha 
+ᬥ 
+᭄ᬥ 
+dha 
+ᬟ 
+᭄ᬟ 
+ḍa 
+ᬠ 
+᭄ᬠ 
+ḍha 
+ᬣ 
+᭄ᬣ 
+tha 
+ᬝ 
+᭄ᬝ 
+ṭa 
+ᬞ 
+᭄ᬞ 
+ṭha 
+ᬰ 
+᭄ᬰ 
+śa 
+ᬱ 
+᭄ᬱ 
+ṣa 
+ᬖ 
+᭄ᬖ 
+gha 
+ᬪ 
+᭄ᬪ 
+bha 
+ᬨ 
+᭄ᬨ 
+pha 
+ᬛ 
+᭄ᬛ 
+jha 
+ 
+ 
+ 
+Balinese Romanization Table 
+2025 version 
+2025 
+ 
+4 
+ 
+Non-Indic consonants (aksara rekan)11 12 
+Full form 
+Combining form 
+Transliteration 
+ᬧ᬴ 
+᭄ᬧ᬴ 
+fa 
+ᬚ᬴ 
+᭄ᬚ᬴ 
+za 
+ᬗ᬴ 
+᭄ᬗ᬴ 
+‘a 
+ᬅ  
+ 
+q·13 
+Vowels14 
+Full form 
+Combining form 
+Transliteration 
+ᬅ 
+ 
+a15 
+ᬆ 
+᭄ᭀ 
+ā 
+ᬇ 
+᭄ᬶ 
+i16 
+ᬈ 
+ ᭄ 
+ī 
+ᬉ 
+᭄ᬸ 
+u 
+ᬊ 
+᭄ 
+ū 
+ᬋ 
+᭄ 17 
+r̥18 
+ᬌ 
+᭄ ᭀ19 
+r̥̥̄ 
+ᬍ 
+ ᭄ᬍ 
+l̥20 
+ᬎ 
+ ᭄ᬎ 
+l̥̥̄ 
+ᬏ 
+ᬲ᭄ᬢ᭄᭄ 
+e 
+ᬐ 
+ᬿ᭄ 
+ai 
+ᬑ 
+ᬲ᭄ᬢ᭄᭄ᭀ 
+o 
+ᬒ 
+ᬿ᭄ᭀ  
+au 
+ 
+᭄ 
+ə21  
+ 
+᭄ ᭀ 
+ə̥̄22  
+Balinese Romanization Table 
+2025 version 
+2025 
+ 
+5 
+ 
+ 
+Numerals 
+᭑ 
+1 
+᭒ 
+2 
+᭓ 
+3 
+᭔ 
+4 
+᭕ 
+5 
+᭖ 
+6 
+᭗ 
+7 
+᭘ 
+8 
+᭙ 
+9 
+᭐ 
+0 
+Punctuation 
+᭞ 
+, 
+᭟ 
+. 
+᭠ 
+- 
+᭝ 
+: 
+᭜ 
+ø 
+᭿ 
+|~ 
+᭚ 
+||~ 
+᭽ |||~ 
+᭛ 
+//~ 
+᭾ ///~ 
+᭎ 
+; 
+᭏ 
+;; 
+ 
+ 
+ 
+ 
+ 
+ 
+Changes from the 2012 version 
+1. Explanatory preamble added. 
+2. Principle of strict transliteration applied, based on ISO 15919:2001 with modifications. 
+3. Explanatory footnotes revised throughout. 
+4. Changed representative typeface to Noto Sans Balinese (available at Google Fonts under SIL OFL 1.1 
+license). 
+5. Changed character glyphs with rendering issues. 
+6. Corrected erroneous Balinese character glyphs. 
+7. Added new and specified existing categories in the table: terminal consonants, Indic consonants, non-
+Indic consonants, punctuation. 
+Notes 
+ 
+1 There is contention over the identity of the script traditionally used to write the Sasak language. It has been variously 
+described as (1) Balinese script with additional special characters for Sasak sounds, (2) an independent script closely 
+related to Balinese, (3) a variant of Javanese script used for Sasak. 
+2 In phonemic transcription, this character may serve as a zero consonant; for example, the word ampun may be written 
+either as ᬳᬫ᭄ᬧᬸᬦ᭄  hampun· or as ᬅᬫ᭄ᬧᬸᬦ᭄  ampun·. In the strict transliteration scheme presented here, ᬳ is always 
+represented by ha. 
+3 The transliteration of this character as wa instead of va follows the PKU standard and is a deviation from the ISO 
+15919:2001 standard. It is motivated by the near-universal use of wa by Balinese communities, though va has gained some 
+currency in scholarly contexts. 
+4 The Unicode block for Balinese includes the character ᭌ (U+1B4C) as a special variant of the graphic unit typically 
+written as ᬚ᭄ᬜ jña. 
+5 This character represents the palatal nasal. In phonemic transcription practices current in Bali, the character is often 
+transcribed as ny when followed by a vowel (e.g. ᬧ᭄ᬭᬚ᭄ᬜ prajnya) but n when followed by a consonant (e.g. ᬧᬜ᭄ᬘ panca). In 
+the strict transliteration scheme presented here, the character ᬜ᭄ is always represented by ña regardless of position (e.g. 
+ᬧ᭄ᬭᬚ᭄ᬜ prajña, ᬧᬜ᭄ᬘ pañca). 
+6 This group of characters has the special function of terminating a graphic unit; they therefore exist only in combining 
+forms and have no inherent vowel. 
+7 The transliteration of this character (ulu ricem) as ṃ follows the PKU standard. 
+Balinese Romanization Table 
+2025 version 
+2025 
+ 
+6 
+ 
+ 
+8 The transliteration of this character (cecek) as ŋ follows the PKU standard, instead of the ṁ offered as the ‘simplified 
+nasalization’ option in ISO 15919:2001. This is motivated by the fact that cecek in Balinese texts consistently represents the 
+velar nasal phoneme. If input is limited to MARC-8 character set (as in certain Latin-script library cataloging work), use ṁ. 
+9 The transliteration of this character (surang) as ŕ follows the PKU standard, as it is not covered by ISO 15919:2001. 
+10 These characters represent graphemes in the inherited Indic inventory that do not correspond to distinct phonemes in 
+the modern Balinese language. They are usually employed when Balinese script is used to represent Sanskrit or Old 
+Javanese text. 
+11 This group of characters, used primarily to represent phonemes of Arabic origin, are formed by adding the rerekan (triple 
+dot) above a Balinese character. Other characters besides the four listed here may have the rerekan applied to them, in 
+which case, the character is underlined in transliteration; for example, ᬓ᬴ ka, ᬲ᬴ sa. This practice follows the principle 
+outlined in ISO 15919:2001 (Annex C “Recommended transliteration of Indic schemes for Perso-Arabic characters”). 
+12 A group of aksara rekan characters (ᭅ, ᭆ, ᭇ, ᭈ, ᭉ, ᭊ, ᭋ) are present in the Unicode Balinese range (U+1B45 to 
+U+1B48) supposedly to accommodate Sasak orthography. However, Perdana (2023: 15-17) noted that there is no strong 
+evidence that they were ever used beyond Unicode proposals. They may have been part of an experimental orthography, 
+which did not see meaningful implementation but was prematurely included in Unicode. They are not included in this 
+scheme. 
+13 This character, a combination of the vowel ᬅ a and the vowel suppressant ᭄ , represents a syllable-final glottal stop 
+which may be encountered in Malay and Sasak language texts. In standard modern spelling, this glottal stop is represented 
+by k in Malay (baik), and by q or ’ in Sasak (amaq or ama’). In this strict transliteration scheme, ᬅ ᭄‌ is represented by q· in 
+all cases, thus ᬩᬇᬅ ᭄‌ baiq· and ᬳᬫᬅ ᭄‌ hamaq· in these examples. 
+14 The long-vowel characters (swara dirgha) are used primarily for representing vowel length in Sanskrit and Old Javanese 
+texts, since vowel length is not phonemic in the modern Balinese language. Long vowels are transliterated by adding a 
+macron above. 
+15 The full character ᬅ (known as akara in Balinese) can be used as a zero vowel (or “vowel support”) whose phonemic 
+value is determined by a combining vowel character other than ᭄ . In such cases, the akara is transliterated as q, in line 
+with the DHARMA transliteration guide (§3.3.4). Thus ᬅᬶ, representing the phoneme i, is transliterated here as qi. 
+16 The combining characters ᭄ᬶ i and ᭄ u can be attached to a single full character to indicate a cancelled character due to 
+scribal error. This instance should be transliterated by enclosing the original full character within brackets; thus an 
+erroneous ᬩᬶ is transliterated {ba}. 
+17 This character has an alternative combining form ᭄ᬋ due to reanalysis of the independent vowel letter as a consonant in 
+Balinese (Everson & Suatjana 2005: 2), which is also transliterated as r̥ in this scheme. 
+18 In additional to representing the rare instances of the Sanskrit vocalic rhotic phoneme r̥, this character is often used to 
+represent the segment rə or ər in Balinese and Javanese texts.  
+19 This character has an alternative combining form ᭄ᬌ (see note 17), which is also transliterated as r̥̥̄ in this scheme. 
+20 As instances of the Sanskrit vocalic liquid phoneme l̥ are almost non-existent in texts from Bali, besides manuals about 
+the Sanskrit language itself, this character is instead used to represent the segment lə or əl in Balinese and Javanese texts. 
+21 The transliteration of this character (pepet) as ə (short) follows the DHARMA transliteration guide (§3.1), since it is not 
+covered by ISO 15919:2001. It only possesses a combining form. If input is limited to MARC-8 character set, use ĕ. 
+22 If input is limited to MARC-8 character set, use e ̥̄. 
