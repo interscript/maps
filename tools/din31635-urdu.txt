@@ -1,0 +1,204 @@
+=== p18
+DIN 31635:2011-07 
+Tabelle 6 (fortgesetzt) 
+Lfd. Nr 
+Arabischer Buchstabe 
+Umschrift 
+ ڵ24 
+06B5
+ḻ 
+1E3B 
+25  م0645
+m 
+ 
+ نn 
+26 
+0646
+ 
+ و0648
+u, w 
+ 
+27  وو0648+0648 a
+û 
+00FB 
+ ۆ28 
+06C6
+o 
+ 
+29  ھ06BE
+h 
+ 
+ ہe 
+30 
+06C1
+ 
+31  ى0649
+î, y 
+00EE 
+32  ێ06CE
+ê 
+00EA 
+a 
+Zur Zeit nicht als „precomposed character“ in Unicode vorhanden. 
+ 
+10 Transliteration von Urdu 
+10.1 Hinweise zur Transliterationsarbeit 
+a) 
+kurze Vokale: a, i, u 
+lange Vokale: ā, e, ī, o, ū 
+Diphtonge: ai, au 
+b) Wiedergabe des alif als Kurzvokalträger am Wortanfang entfällt 
+c) Nasalvokale werden durch nachgestelltes -ṉ (Buchstabe 33) markiert. 
+d) 
+Die Aspiration bei Konsonanten wird wie in der Originalschrift wiedergegeben, z. B. bh. 
+18 
+Normen-Download-Beuth-Ribose-KdNr.8161524-LfNr.9475154001-2020-09-22 11:46
+
+=== p19
+DIN 31635:2011-07 
+10.2 Umschrifttabelle 
+Tabelle 7 — Umschrifttabelle Urdu 
+Lfd. Nr 
+Arabischer Buchstabe 
+Umschrift 
+1 
+  ء / اʾ, ā 
+0621, 0627
+02BE; 0101 
+2  ب0628
+b 
+ 
+3  پ067E
+p 
+ 
+4  ت062A
+t 
+ 
+5  ٹ0679
+ṭ 
+1E6D 
+ ثs̱ 
+6 
+062B
+0073+0331a  
+7  ج062C
+j 
+ 
+8  چ0686
+c 
+ 
+ ح9 
+062D
+ḥ 
+1E25 
+10  خ062E
+ẖ 
+1E96 
+ دd 
+11 
+062F
+ 
+12  ڈ0688
+ḍ 
+1E0D 
+13  ذ0630
+ẕ 
+1E95 
+ ر0631
+r 
+ 
+14 
+ ڑ15 
+0691
+ṛ 
+1E5B 
+16  ز0632
+z 
+ 
+ ژ17 
+0698
+ž 
+017E 
+18  س0633
+s 
+ 
+19  ش0634
+š 
+0161 
+20  ص0635
+ṣ 
+1E63 
+21  ض0636
+z̤ 
+007A+0324 a 
+22  ط0637
+t̤ 
+0074+0324a  
+19 
+Normen-Download-Beuth-Ribose-KdNr.8161524-LfNr.9475154001-2020-09-22 11:46
+
+=== p20
+DIN 31635:2011-07 
+Tabelle 7 (fortgesetzt) 
+Lfd. Nr 
+Arabischer Buchstabe 
+Umschrift 
+23  ظ0638
+ẓ 
+1E93 
+24  ع0639
+ʿ 
+02BF 
+25  غ063A
+ġ 
+0121 
+26  ف0641
+f 
+ 
+27  ق0642
+q 
+ 
+28  ک06A9
+k 
+ 
+29  گ06AF
+g 
+ 
+30  ل0644
+l 
+ 
+31  م0645
+m 
+ 
+32  ن0646
+n 
+ 
+33  ں06BC
+ṉ 
+1E49 
+34  و0648
+v, ū, o 
+016B 
+35 
+  ھ / ه06BE, 0647
+h 
+ 
+36  ي/ى0649, 064A y, ī 
+012B 
+37  ے06D2
+e 
+ 
+a 
+Zur Zeit nicht als „precomposed character“ in Unicode vorhanden. 
+ 
+11 Transliteration von Paschtu4) 
+11.1 Hinweise zur Transliterationsarbeit 
+Die Norm für die Transliteration des Paschtu ist an die des Arabischen und Persischen angelehnt. Die für das 
+Arabische und Persische entwickelten Vorgaben zur Transliteration sind in allen betreffenden Fällen auch für 
+das Paschtu anzuwenden. Ausnahmen sowie Festlegungen für paschtuspezifische Formen werden unten 
+beschrieben. 
+                                                     
+4) Alternative Schreibweisen sind außerdem Paschto, Pakhto oder Pukhto. Als Fremdbezeichnung ist auch Afghanisch 
+(Afghani/Aughani) anzutreffen. 
+20 
+Normen-Download-Beuth-Ribose-KdNr.8161524-LfNr.9475154001-2020-09-22 11:46
