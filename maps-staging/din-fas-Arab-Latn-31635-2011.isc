@@ -1,0 +1,326 @@
+system "DIN:fas-Arab:Latn:31635-2011" {
+
+metadata {
+  authority_id din
+  id 31635-2011-8
+  language iso-639-2:fas
+  source_script Arab
+  destination_script Latn
+  name "DIN 31635:2011-07 section 8: Transliteration des Persischen (Farsi, Dari)"
+  url https://www.din.de
+  creation_date 2011
+  confirmation_date 2011-07
+  description {    DIN 31635:2011-07, section 8: transliteration of Persian (Farsi,
+    Dari). Section 8.1 states the norm is historically strongly tied to
+    the Arabic transliteration of section 6 (shipped as
+    din-ara-Arab-Latn-31635-2011); Tabelle 2 (rows 1-22, transliteration
+    guidance) and Tabelle 3 (the 32-row letter table) are encoded here.
+    The Persian letters pe gaf che zhe and the Persian kaf and yeh are
+    included; the yeh is accepted in its Arabic (064A), Persian (06CC)
+    and alif-maqsura (0649) forms.
+  }
+
+  notes {
+    note "Letter table (Tabelle 3): the 32 rows render as in section 6
+    where identical; hamza/alif render ʾ / a-macron with the
+    word-initial omission of section 6 carried over (the norm ties the
+    Persian section to the Arabic one). Waw renders w as consonant by
+    default and u-macron over vocalized input (row 10: short-vowel u
+    and long-vowel u-macron readings are pronunciation/vocalization
+    facts); yeh renders y by default and i-macron over vocalized input
+    (rows 8-9, 32). The yeh is accepted as 064A, 06CC and 0649."
+    note "Row 13 (alif-i maqsura) renders a-macron as in Arabic, and
+    row 32 assigns y / i-macron to the same codepoint in Persian -ie
+    endings; the two readings of one letter are lexical (the norm's own
+    examples give both Muṣṭafā with a-macron and zībāʾī ending in
+    i-macron) and are recorded here: this map renders the maqsura
+    a-macron by default, the i-macron reading arising over vocalized
+    input. Rows 8-9 (hamza and yeh variants of the ezāfe/yā-i maṣdarī)
+    follow the same vocalization dependence."
+    note "Row 15-16 (hā-i muḫtafī): the word-final non-aspirated he is
+    the sign of the final vowel and its h falls — this map renders the
+    word-final he as a (the stated default; the i reading is lexical).
+    The aspirated he (mah, māh) is lexically determined and cannot be
+    separated mechanically; the aspiration reading is recorded here,
+    and row 16's h applies wherever the he is not word-final. The
+    zero-width non-joiner is dropped. Row 11's silent waw after kha is
+    kept (ḫwāhar), which is the default consonant rendering."
+    note "Rows 12, 17-22 (the wa particle, ra, the copula ast, the
+    ba-/bi- preposition, compound and verbal affix orthography) are
+    word-division and morphological conventions of the transcription
+    record; the letter-level map passes the characters through and the
+    conventions are not mechanically decidable from the skeleton. Row
+    14: tanwin is rendered an (the accusative form is the only one
+    Persian uses). Rows 18-19: ra and the elided-alif copula (-st)
+    require word identity and are recorded here. The ta marbuta of
+    section 6 has no row in the Persian table and is not encoded."
+  }
+}
+
+tests {
+  # every table row (Tabelle 3)
+   "ء" ->  "ʾ"
+   "ب" ->  "b"
+   "پ" ->  "p"
+   "ت" ->  "t"
+   "ث" ->  "ṯ"
+   "ج" ->  "ǧ"
+   "چ" ->  "č"
+   "ح" ->  "ḥ"
+   "خ" ->  "ḫ"
+   "د" ->  "d"
+   "ذ" ->  "ḏ"
+   "ر" ->  "r"
+   "ز" ->  "z"
+   "ژ" ->  "ž"
+   "س" ->  "s"
+   "ش" ->  "š"
+   "ص" ->  "ṣ"
+   "ض" ->  "ḍ"
+   "ط" ->  "ṭ"
+   "ظ" ->  "ẓ"
+   "ع" ->  "ʿ"
+   "غ" ->  "ġ"
+   "ف" ->  "f"
+   "ق" ->  "q"
+   "ک" ->  "k"
+   "گ" ->  "g"
+   "ل" ->  "l"
+   "م" ->  "m"
+   "ن" ->  "n"
+   "هم" ->  "hm"
+   "ھم" ->  "hm"
+   "و" ->  "w"
+   "ی" ->  "y"
+  # vocalized readings
+   "بَ" ->  "ba"
+   "بِ" ->  "bi"
+   "بُ" ->  "bu"
+   "وُ" ->  "ū"
+   "یِ" ->  "ī"
+   "يِ" ->  "ī"
+  # merges and defaults
+   "مَردان" ->  "mardān"
+   "خواهر" ->  "ḫwāhar"
+   "گُفته" ->  "gufta"
+   "نامه‌ها" ->  "nāmahā"
+   "باصَفا" ->  "bāṣafā"
+  # hamza and madda
+   "آ" ->  "ā"
+   "آباد" ->  "ābād"
+   "مَسئله" ->  "masʾala"
+}
+
+stage main {
+
+  # sukun is never transliterated (carried over from section 6)
+  sub {
+    from "ْ"
+    to ""
+  }
+  # mark-order normalization: shadda before vowel sign
+  sub {
+    from "َّ"
+    to "َّ"
+  }
+  sub {
+    from "ِّ"
+    to "ِّ"
+  }
+  sub {
+    from "ُّ"
+    to "ُّ"
+  }
+
+  # long vowels: short-vowel sign plus lengthening letter merge
+  sub {
+    from "َا"
+    to "ā"
+  }
+  sub {
+    from "ِی"
+    to "ī"
+  }
+  sub {
+    from "ِي"
+    to "ī"
+  }
+  sub {
+    from "ِى"
+    to "ī"
+  }
+  sub {
+    from "ُو"
+    to "ū"
+  }
+  # diphthongs
+  sub {
+    from "َو"
+    to "aw"
+  }
+  sub {
+    from "َی"
+    to "ay"
+  }
+  sub {
+    from "َي"
+    to "ay"
+  }
+
+  # row 15: the word-final he is the sign of the final vowel a; its h
+  # falls (the aspirated and i readings are lexical, see notes). The he
+  # is non-final before the ZWNJ of compounds like نامه‌ها.
+  sub {
+    from "ه"
+    to "a"
+    before boundary
+  }
+  sub {
+    from "ه‌"
+    to "a"
+  }
+  sub {
+    from "ھ"
+    to "a"
+    before boundary
+  }
+  # the zero-width non-joiner itself is not transliterated
+  sub {
+    from "‌"
+    to ""
+  }
+
+  # madda: a-macron word-initially, ʾ plus a-macron internally
+  sub {
+    from boundary + "آ"
+    to "ā"
+  }
+  sub {
+    from "آ"
+    to "ʾā"
+  }
+
+  # alif and hamza word-initially are not rendered (carried over)
+  sub {
+    from boundary + "ا"
+    to ""
+  }
+  sub {
+    from boundary + "ء"
+    to ""
+  }
+  sub {
+    from boundary + "أ"
+    to ""
+  }
+  sub {
+    from boundary + "إ"
+    to ""
+  }
+  sub {
+    from boundary + "ؤ"
+    to ""
+  }
+  sub {
+    from boundary + "ئ"
+    to ""
+  }
+
+  # CHARACTERS
+  parallel {
+    sub "بّ" "bb"
+    sub "پّ" "pp"
+    sub "تّ" "tt"
+    sub "ثّ" "ṯṯ"
+    sub "جّ" "ǧǧ"
+    sub "چّ" "čč"
+    sub "حّ" "ḥḥ"
+    sub "خّ" "ḫḫ"
+    sub "دّ" "dd"
+    sub "ذّ" "ḏḏ"
+    sub "رّ" "rr"
+    sub "زّ" "zz"
+    sub "ژّ" "žž"
+    sub "سّ" "ss"
+    sub "شّ" "šš"
+    sub "صّ" "ṣṣ"
+    sub "ضّ" "ḍḍ"
+    sub "طّ" "ṭṭ"
+    sub "ظّ" "ẓẓ"
+    sub "عّ" "ʿʿ"
+    sub "غّ" "ġġ"
+    sub "فّ" "ff"
+    sub "قّ" "qq"
+    sub "کّ" "kk"
+    sub "گّ" "gg"
+    sub "لّ" "ll"
+    sub "مّ" "mm"
+    sub "نّ" "nn"
+    sub "هّ" "hh"
+    sub "وّ" "ww"
+    sub "يّ" "yy"
+    sub "یّ" "yy"
+    sub "وُ" "ū"
+    sub "يِ" "ī"
+    sub "یِ" "ī"
+    sub "أَ" "ʾa"
+    sub "إِ" "ʾi"
+    sub "ؤُ" "ʾu"
+    sub "ئِ" "ʾi"
+    sub "ئُ" "ʾu"
+    sub "ئَ" "ʾa"
+    sub "أُ" "ʾu"
+    sub "ء" "ʾ"
+    sub "أ" "ʾ"
+    sub "إ" "ʾ"
+    sub "ؤ" "ʾ"
+    sub "ئ" "ʾ"
+    sub "پ" "p"
+    sub "چ" "č"
+    sub "ژ" "ž"
+    sub "گ" "g"
+    sub "ا" "ā"
+    sub "ب" "b"
+    sub "ت" "t"
+    sub "ث" "ṯ"
+    sub "ج" "ǧ"
+    sub "ح" "ḥ"
+    sub "خ" "ḫ"
+    sub "د" "d"
+    sub "ذ" "ḏ"
+    sub "ر" "r"
+    sub "ز" "z"
+    sub "س" "s"
+    sub "ش" "š"
+    sub "ص" "ṣ"
+    sub "ض" "ḍ"
+    sub "ط" "ṭ"
+    sub "ظ" "ẓ"
+    sub "ع" "ʿ"
+    sub "غ" "ġ"
+    sub "ف" "f"
+    sub "ق" "q"
+    sub "ک" "k"
+    sub "ك" "k"
+    sub "ل" "l"
+    sub "م" "m"
+    sub "ن" "n"
+    sub "ه" "h"
+    sub "ھ" "h"
+    sub "و" "w"
+    sub "ي" "y"
+    sub "ی" "y"
+    sub "ى" "ā"
+    sub "َ" "a"
+    sub "ِ" "i"
+    sub "ُ" "u"
+    sub "ً" "an"
+    sub "ٌ" ""
+    sub "ٍ" ""
+    sub "ّ" ""
+    sub "ٰ" "ā"
+  }
+
+}
+
+}
