@@ -1,0 +1,239 @@
+Limbu Romanization Table 
+2011 version 
+ 
+2011 
+ 
+1 
+ 
+Earlier versions: 1997 
+Limbu 
+Vowels and Diphthongs (see Note 1) 
+ 
+a 
+ 
+ai 
+ 
+ā 
+ 
+o 
+ 
+i 
+ 
+au 
+ 
+u 
+ 
+ŏ 
+ 
+e 
+ 
+ĕ 
+Consonants (see Note 2) 
+Gutturals 
+Palatals 
+Dentals 
+ 
+ka 
+ 
+ca 
+ 
+ta 
+ 
+kha 
+ 
+cha 
+ 
+tha 
+ 
+ga 
+ 
+ja 
+ 
+da 
+ 
+gha 
+ 
+jha 
+ 
+dha 
+ 
+ṅa 
+ 
+ña 
+ 
+na 
+ 
+Labials 
+Semivowels 
+Sibilants 
+Aspirate 
+ 
+pa 
+ 
+ya 
+ 
+śa 
+ 
+ha 
+ 
+pha 
+ 
+ra 
+ 
+sa 
+ 
+ 
+ 
+ba 
+ 
+la 
+ 
+ 
+ 
+ 
+ 
+bha 
+ 
+va 
+ 
+ 
+ 
+ 
+ 
+ma 
+ 
+ 
+ 
+ 
+ 
+ 
+Notes 
+1. 
+Only the vowel forms that appear at the beginning of a syllable are listed; the forms used 
+for vowels following a consonant exclude  .  No distinction between the two is made in 
+romanization. 
+ 
+ 
+ 
+  
+ 
+kā 
+ 
+ 
+ 
+ki 
+2. 
+The vowel a is implicit after all consonants and consonant clusters and is supplied in 
+romanization, with the following exceptions: 
+(a) 
+when another vowel is indicated by its appropriate sign; and 
+Limbu Romanization Table 
+2011 version 
+ 
+2011 
+ 
+2 
+ 
+(b) 
+when the absence of any vowel is indicated by the subscript sign (   ◌ ) called 
+sa-i. 
+RULES OF APPLICATION 
+1. 
+◌ (mukphreṅ) is used to indicate a slight breathing after a vowel.  It is romanized ḥ. 
+ 
+ 
+ 
+ 
+ 
+kaḥyo  
+ 
+ 
+piḥrĕ 
+ 
+ 
+ 
+ 
+tāḥmā  
+ 
+ 
+muḥlā 
+2. 
+◌ (kemphreṅ) is used to make a vowel slightly longer than usual.  It is romanized ’. 
+ 
+ 
+ 
+ ◌ 
+ 
+yu’mā  
+ 
+ 
+thā’bĕ 
+3. 
+When  ,  ,  ,  ,  ,  ,  , and  are used in the final position (i.e., preceded by a vowel but not 
+followed by one), they assume different shapes and are used as superscripts above the 
+preceding syllables. 
+ 
+ 
+ 
+ 
+ 
+kak 
+ 
+ 
+ 
+kap 
+ 
+ 
+ 
+ 
+ 
+kaṅ 
+ 
+ 
+ 
+kam 
+ 
+ 
+ 
+ 
+ 
+ 
+kat 
+ 
+ 
+ 
+kar 
+ 
+ 
+ 
+ 
+ 
+ 
+kan 
+ 
+ 
+ 
+kal 
+4. 
+When  is added to another consonant or consonants in a cluster (i.e., without any 
+intervening vowel), it assumes the shape  and is added to the preceding consonant or 
+consonants.  
+ 
+kya 
+5. 
+When  is added to another consonant or consonants in a cluster (i.e., without any 
+intervening vowel), it assumes the shape ◌ and is added to the preceding consonant or 
+consonants. 
+ 
+kra 
+6. 
+When  is added to another consonant or consonants in a cluster (i.e., without any 
+intervening vowel), it assumes the shape ◌ and is added to the preceding consonant or 
+consonants. 
+ 
+ 
+ 
+ 
+ 
+kva 
+ 
