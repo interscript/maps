@@ -1,0 +1,82 @@
+system "DIN:xal-Cyrl:Latn:1460-2-2011" {
+
+metadata {
+  authority_id din
+  id 1460-2-2011-21
+  language iso-639-3:xal
+  source_script Cyrl
+  destination_script Latn
+  name "DIN 1460-2:2011-10, Tabelle 1 row 21: Kalmückisch (Mongolic)"
+  url https://www.beuth.de/de/norm/din-1460-2/134564104
+  creation_date 2011
+  adoption_date
+  description {
+    DIN 1460-2:2011-10, Romanization of Cyrillic alphabets of
+    non-Slavic languages, Tabelle 1, language row 21
+    (Kalmückisch). The table assigns each Cyrillic letter of the
+    language's alphabet a Latin letter or letter group; the column
+    order follows DIN 1460:1982 (Slavic). Extracted mechanically from
+    the standard's text layer; the mapping rows below are the table's
+    own cells.
+  }
+
+  notes {
+    note "Extraction provenance: the PDF's text layer carries the full
+    grid; columns were anchored on the per-page position-number row and
+    each cell matched by x-coordinate to its Cyrillic header letter.
+    Position 13's header glyph is PUA (U+E519) in the text layer and
+    was visually identified at 10x as h with comma below (U+0068 + U+0322), the plain-h counterpart of position 12's hooktop-h symbol."
+  }
+}
+
+tests {
+   "a" ->  "a"
+   "ä" ->  "ä"
+   "б" ->  "b"
+   "в" ->  "v"
+}
+
+stage main {
+  parallel {
+    sub "a" "a"
+    sub "ä" "ä"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "g"
+    sub "h" "h"
+    sub "д" "d"
+    sub "е" "e"
+    sub "ё" "ё"
+    sub "ж" "ž"
+    sub "ж̢" "ǧ"
+    sub "з" "z"
+    sub "и" "i"
+    sub "й" "j"
+    sub "к" "k"
+    sub "л" "l"
+    sub "м" "m"
+    sub "н" "n"
+    sub "ң" "n"
+    sub "о" "o"
+    sub "ӧ" "ö"
+    sub "ө" "ö"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "у" "u"
+    sub "ӱ" "ü"
+    sub "ү" "ü"
+    sub "ф" "f"
+    sub "х" "h"
+    sub "ц" "c"
+    sub "ч" "č"
+    sub "ш" "š"
+    sub "щ" "šč"
+    sub "ъ" "\""
+    sub "ы" "y"
+    sub "ь" "'"
+    sub "э" "ė"
+  }
+}
+}
