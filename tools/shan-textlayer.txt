@@ -1,0 +1,288 @@
+Shan Romanization Table 
+2012 version 
+ 
+2012 
+ 
+1 
+ 
+No earlier versions.  
+Shan 
+Consonants 
+u  ka 
+c  kha 
+U ga 
+C gha 
+i  ṅa  
+q ca 
+! cha 
+Q  za 
+@ jha 
+n ña 
+# ṭa 
+$ ṭha 
+% ḍa 
+^ ḍha 
+E ṇa 
+w ta 
+x tha 
+W da 
+X dha 
+e na 
+y  pa 
+z pha 
+Y ba 
+Z bha 
+r  ma 
+b ya 
+I  ra 
+v la 
+o  va  
+O sa 
+p  ha 
+V ḷa 
+t ’a 
+ 
+ႀ  xa  
+ၾ  fa 
+ 
+Vowels (see Note 1)  
+◌◌ႃ / ◌◌ၢ   
+◌ā  
+◌◌ိ   
+ 
+ 
+◌i 
+◌◌ီ   
+ 
+ 
+◌ī 
+◌ ◌ု / ◌◌ု    
+◌u  
+◌ ◌ူ / ◌◌ူ    
+◌ū  
+ေ◌◌ / ◌◌ဵ   
+◌e  
+ႄ◌◌ / ◌◌ႅ / ေ◌ေ◌◌  
+◌è 
+ေ◌◌◌ႃ◌်   
+◌ò  
+ေ◌◌◌ႃ 
+/ ေ◌◌◌ါ 
+ 
+◌o 
+◌◌ူဝ် 
+ 
+◌ō  
+◌◌ႆ  
+ 
+◌ai 
+◌◌ႆ◌ႃ / ◌◌ႆ◌ၢ 
+ 
+◌āi  
+◌◌ႂ◌် 
+ 
+ 
+◌ái  
+◌◌ႆ◌ွ 
+ 
+ 
+◌oi 
+◌◌ွ  
+ 
+◌au   
+◌◌ု◌ိ 
+ 
+ 
+◌ui  
+ 
+◌◌ူ◌ိ 
+ 
+ 
+◌ūi 
+ 
+Medials 
+◌◌ျ 
+ 
+◌y 
+ြ◌◌ 
+ 
+◌r 
+◌◌ႂ  
+ 
+◌v  
+Notes  
+1. Some symbols in the Shan script are attached above, below, or beside a 
+consonant. Where such symbols are listed in this table, the symbol “◌” is 
+used to represent the consonant.  
+2. Absence of a vowel symbol in the script is represented by a in 
+romanization, with the following exceptions:  
+(a) When a different vowel is indicated by its appropriate symbol (see 
+Vowels);  
+Shan Romanization Table 
+2012 version 
+ 
+2012 
+ 
+3 
+ 
+(b) When the absence of any vowel is indicated by the symbol ◌် (see Final 
+Symbols). 
+Final Symbols 
+◌◌်  
+ 
+◌ʻ (ayn) 
+◌◌ံ  
+ 
+◌ṃ   
+Tone Marks 
+◌◌ႇ 
+ 
+◌̢  (right hook) 
+◌◌ႈ 
+ 
+◌̐  (candrabindu) 
+◌း  
+ 
+◌″ (double prime) 
+◌◌ႉ 
+ 
+◌´  (prime) 
+◌◌ႊ 
+ 
+ 
+◌˝  (double acute) 
+Punctuation 
+၊ 
+ 
+ 
+, (comma) 
+။   
+ 
+. (period) 
+Numerals  (Burmese numerals [right column] sometimes found) 
+႐   
+0  
+၀ 
+ 
+ 
+႑  
+1 
+၁ 
+ 
+ 
+႒  
+2 
+၂ 
+ 
+ 
+႓  
+3 
+၃ 
+ 
+ 
+႔  
+4 
+၄ 
+ 
+ 
+႕  
+5 
+၅ 
+ 
+ 
+႖   
+6 
+၆ 
+ 
+ 
+႗  
+7 
+၇ 
+ 
+ 
+႘  
+8 
+၈ 
+ 
+ 
+႙  
+9 
+၉ 
+ 
+ 
+Abbreviations 
+႟  
+u* 
+႞ 
+ 
+n* 
+Word Division 
+For Shan words, leave a space after each syllable. For loanwords, use the same 
+word division as in the original language. 
+Sample romanizations 
+ြ◌တႃးေ◌တႃ်ၸဝ်သုၵ်သီလၶၼ်း 
+ 
+trā″ tò cavʻ sukʻ sīla khanʻ″ 
+မဵတ်ႉတႃႇၸႅတ်ႈ 
+ 
+ 
+ 
+metʻ´ tā̢  cètʻ̐  
+ေ◌လႃးၵီႇၵတ်းယဵၼ် 
+ 
+ 
+lo″ kī̢  katʻ″ yenʻ 
+မွင်းဝၼ်းၶိုၼ်းႁၼ် 
+ 
+ 
+mauṅʻ″ vanʻ″ khuinʻ″ hanʻ 
+တႃႇႁဵတ်းၵၢၼ်ၶိုၼ်ႈယႂ်ႇ  
+ 
+tā̢  hètʻ″ kānʻ khuinʻ̐  yái̢  
+ယိင်းမူၺ်သႅင်လိူၼ် 
+ 
+ 
+yiṅʻ″ mūñʻ sèṅʻ lūinʻ 
+ဢမ်ႇၶႂ်ႈၼွၼ်းၽၼ် 
+ 
+ 
+’amʻ̢  khái̐  naunʻ″ phanʻ 
+ၸိူင်းပွတ်းၽွမ်ႉႁူမ်ႈ 
+ 
+ 
+cūiṅʻ″ pautʻ″ phaumʻ´ hūmʻ̐ 
+မႆၢၼိုင်ႈ  
+ 
+ 
+ 
+māi nuiṅʻ̐ 
+ၼင်းၸံးပူးဝွၵ်း  
+ 
+ 
+naṅʻ″ caṃ″ pū″ vaukʻ″ 
+ပိုၼ်းြ◌ၽႃးတႃႇလုၵ်ႈႁဵၼ်းပၢၼ်မႂ်ႇ 
+ 
+puinʻ″ phrā″ tā̢ lukʻ̐  henʻ″ pānʻ mái̢ 
+Shan Romanization Table 
+2012 version 
+ 
+2012 
+ 
+5 
+ 
+ပပ်ႉၽိုၵ်းလၢတ်ႈၵႂႃမ်း ႁႃႈၽႃႇသႃႇ 
+papʻ´ phuikʻ″ lātʻ̐  kvāmʻ″  hā̐  phā̢  sā̢ 
+ၸၢတ်ႈၸဝ်ႈသုဝၼ်ႇၼသၢမ်ႇ  
+cātʻ̐  cavʻ̐  su vanʻ̢  na sāmʻ̢ 
+ပရိတ်တပႃႇလိႄ◌လႈေ◌ၶႃႈပွင်ႇၽႆၢႇတႆး 
+paritʻ ta pā̢  li lè̐  kho̐  pauṅʻ̢  phāi̢  Tai″ 
+လႅင်းမုၼ်းမႂ်ႇ 
+ 
+ 
+ 
+lènʻ″ munʻ″ mái̢ 
+ၼံ့ၵံ◌ႂ◌းၸဝ်သင်လုင်ဝၼ်ဢႆ 
+ 
+naṃ´ kvaṃ″ cavʻsaṅʻ luṅʻ vanʻ ’aai 
+ၶႅပ်းမၢင်ၸဝ်ႈXမ်ႇမW◌ႃ◌ႇၼ  
+khèpʻ″ māṅʻ cavʻ̐ dhamʻ̢ma dā̢ na 
