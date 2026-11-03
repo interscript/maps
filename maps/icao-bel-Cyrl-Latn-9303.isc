@@ -22,6 +22,15 @@ metadata {
     This document defines the transliteration mappings used to produce
     this transcription or transliteration.
   }
+
+  notes {
+    note "Diffed against ICAO Doc 9303 Part 3 Amd 1 (16/09/16), Section 6.B: the rows for Ќ, Ъ, Ѵ and Ғ were missing and were added with their source values. U+2019 right single quotation mark is now dropped alongside the ASCII apostrophe per Section 4.6 (apostrophes shall be omitted in the MRZ)."
+    note "Divergences corrected against the same source: the lowercase rows for у, ю, ў and ѫ were emptied or truncated (to nothing and to i); the source gives У to U, Ю to IU, Ў to U and Ѫ to U regardless of case, so the lowercase rows now mirror their uppercase rows."
+    note "Belarusian exceptions applied per the source: Ё renders IO and Г renders H."
+    note "The map carries a row for Ѓ (U+0403) to G, which has no row in the Amd 1 Section 6.B table (the table has Ғ, U+0492, to G); kept as a practical extension."
+    note "Soft sign Ь has no row in the Amd 1 Section 6.B table and is left unmapped."
+    note "The Amd 1 table prints row 04BA Һ (Cyrillic shha) as C; the map follows the source as printed, though C rather than H may be a source-side erratum."
+  }
 }
 
 tests {
@@ -33,6 +42,25 @@ tests {
    "Ігар" ->  "Ihar"
    "Палто Алена" ->  "Palto Alena"
    "Мікалай" ->  "Mikalai"
+   "Магілёў" ->  "Mahiliou"
+   "Гродна" ->  "Hrodna"
+   "Ё" ->  "IO"
+   "ё" ->  "io"
+   "Г" ->  "H"
+   "г" ->  "h"
+   "Ў" ->  "U"
+   "ў" ->  "u"
+   "у" ->  "u"
+   "Ю" ->  "IU"
+   "ю" ->  "iu"
+   "Ъ" ->  "IE"
+   "ъ" ->  "ie"
+   "Ѵ" ->  "Y"
+   "ѷ" ->  "y"
+   "Ғ" ->  "G"
+   "ғ" ->  "g"
+   "Ќ" ->  "K"
+   "ќ" ->  "k"
 }
 
 # https://www.icao.int/publications/Documents/9303_p3_cons_en.pdf
@@ -41,6 +69,7 @@ stage main {
   # CHARACTERS
   parallel {
     sub "'" ""
+    sub "’" ""
     sub "А" "A"
     sub "Б" "B"
     sub "Д" "D"
@@ -52,6 +81,7 @@ stage main {
     sub "И" "I"
     sub "Й" "I"
     sub "К" "K"
+    sub "Ќ" "K"
     sub "Л" "L"
     sub "М" "M"
     sub "Н" "N"
@@ -70,11 +100,14 @@ stage main {
     sub "Х" "KH"
     sub "Ш" "SH"
     sub "Щ" "SHCH"
+    sub "Ъ" "IE"
     sub "Ц" "TS"
     sub "Ж" "ZH"
     sub "Ґ" "G"
+    sub "Ғ" "G"
     sub "Ў" "U"
     sub "Ѫ" "U"
+    sub "Ѵ" "Y"
     sub "Ђ" "D"
     sub "Ѕ" "DZ"
     sub "Ј" "J"
@@ -106,21 +139,24 @@ stage main {
     sub "р" "r"
     sub "с" "s"
     sub "т" "t"
-    sub "у" ""
+    sub "у" "u"
     sub "в" "v"
     sub "ы" "y"
     sub "з" "z"
     sub "ч" "ch"
     sub "я" "ia"
-    sub "ю" "i"
+    sub "ю" "iu"
     sub "х" "kh"
     sub "ш" "sh"
     sub "щ" "shch"
+    sub "ъ" "ie"
     sub "ц" "ts"
     sub "ж" "zh"
     sub "ґ" "g"
-    sub "ў" ""
-    sub "ѫ" ""
+    sub "ғ" "g"
+    sub "ў" "u"
+    sub "ѫ" "u"
+    sub "ѷ" "y"
     sub "ђ" "d"
     sub "ѕ" "dz"
     sub "ј" "j"
@@ -132,6 +168,7 @@ stage main {
     sub "ї" "i"
     sub "ѓ" "g"
     sub "і" "i"
+    sub "ќ" "k"
   }
 
 }
