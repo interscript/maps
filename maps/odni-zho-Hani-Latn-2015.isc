@@ -1,0 +1,457 @@
+system "ODNI:zho-Hani:Latn:2015" {
+
+metadata {
+  authority_id odni
+  id 2015
+  language iso-639-2:zho
+  source_script Hani
+  destination_script Latn
+  name ICS-630-01 Romanization of Chinese Personal Names (2015)
+  source ICS-630-01 Annex D
+  creation_date 2015
+  confirmation_date 2015-08
+  description {    This system applies to personal names rendered in Modern Chinese as
+    represented in the Hanyu Pinyin Romanization System. It does not
+    apply to names that are represented in other systems or in
+    Romanization schemes or practices that are used to represent
+    personal names in Chinese dialects.
+
+    The Intelligence Community (IC) standard for transliterating Chinese
+    personal names into English is the Hanyu Pinyin Romanization System
+    (or pinyin), officially known as the Scheme of the Chinese Phonetic
+    Alphabet (汉语拼音方案), with several modifications as specified in
+    this document (e.g., absence of umlauted ü, title case for
+    surnames). In 1982 the International Organization for
+    Standardization (ISO) codified the Hanyu Pinyin Romanization System
+    as ISO 7098, Information and Documentation – Romanization of Chinese
+    (Second Edition, 12-15-1991).
+
+    The primary purpose for designating a singular system is to allow
+    for a consistent transcription of names that is specifically
+    readable to the English-speaking non-specialist. It is not intended
+    to be fully "reversible". Disambiguation should be accomplished by
+    providing additional information following best practices of the
+    issuing organization: the Unicode-encoded form of the original
+    Chinese characters, the original encoding scheme if other than
+    Unicode (e.g., Big5 or GB), whether traditional or simplified
+    characters were used, and Standard Telegraphic Code (标准电码)
+    representations (The Standard Telegraph Codebook, revised edition,
+    PRC Ministry of Post and Telecommunications) — e.g., Ma Yingjiu
+    (STC: 7456/5391/0036). Use simplified (or short form) characters as
+    the default; traditional (or long form) characters may be used for
+    non-Mainland persons.
+
+    Personal names in Chinese should be transliterated into the IC
+    Standard in accordance with the following criteria:
+
+    a. the surname (family name) should appear first, followed by the
+       given name
+    b. the surname should be separated from the given name and be
+       followed by the given name. The initial letter of each name
+       should be capitalized, with the rest in lower case letters
+    c. commas should not be placed between the surname and given name
+    d. syllables should not be separated in the given name
+    e. hyphens should not be used between any syllables (except as
+       noted in paragraph 12)
+    f. apostrophes should not be used between any syllables (see
+       paragraph 14 for details)
+    g. compound surnames should be capitalized with no space between
+       the characters
+
+    Examples include Zhang Wei, Hu Jintao, Ouyang Xiu, Zhou Youguang,
+    and Ouyang Qianqing. If an official spelling of a name differs from
+    the IC Standard, it may be used throughout the document, with the
+    IC Standard spelling included where capabilities allow.
+
+    When a married woman uses both her surname and her husband's
+    surname, both surnames are capitalized, but a hyphen should be used
+    to separate the surnames (e.g., Chen-Li Meiling; the first surname
+    is the husband's, the second the wife's maiden name).
+
+    The umlaut (ü), as in Lü and Nü, should not be used. The standard
+    uses u for the ü character: Lu, Nu. No apostrophe (’) should be
+    used between syllables; other forensic information (e.g. original
+    Chinese characters, STC codes) should be used where necessary to
+    disambiguate syllable combinations. Any additional ambiguity should
+    be addressed in a Translator's Comment.
+  }
+
+  notes {
+    # Encoded transformation
+    note "This map encodes the character-level data of the annex: the
+    surname characters of Appendix C (List of Common Chinese Surnames,
+    116 printed entries over 115 distinct characters), the umlaut fold
+    (u for ü), the apostrophe prohibition (criterion f, paragraph 14),
+    and word-initial capitalization of each name part (criterion b),
+    applied through boundary postrules. The name-formation rules
+    (criteria a, c, d, g) operate above the character level and are not
+    encoded. Given-name characters have no character mapping: the annex
+    provides no general hanzi-to-pinyin character table — its hanzi
+    data is the surname list of Appendix C only. Given names must
+    already be in pinyin orthography (the standard's stated domain) and
+    pass through the orthographic rules unchanged apart from the fold,
+    the apostrophe removal and the capitalization."
+    # Appendix A — IC Transliteration Table (D-4)
+    note "Appendix A is the IC syllable inventory: 411 initial-final
+    cells over 39 printed final columns and 25 initial rows (the
+    zero-initial row and b c ch d f g h j k l m n p q r s sh t w x y z
+    zh). Its cells print the IC syllable forms, title-cased; this map
+    realizes them through the word-initial capitalization postrule —
+    orthographically the cells are standard pinyin except the umlaut
+    columns (lü, lüe, nü, nüe printed as Lu, Lue, Nu, Nue) and the
+    anomalies recorded here, all as printed and none silently
+    corrected: the header prints two adjacent columns both labeled
+    'i' — the cells of the z, c, s and y rows (Zi Ci Si Yi) sit under
+    the first and those of the zh, ch, sh and r rows (Zhi Chi Shi Ri)
+    under the second, distinguishing the two apical vowel readings of
+    the letter i; the w- row carries a 'Wong' cell under the ong column
+    alongside 'Weng' under eng — wong is not a standard pinyin syllable
+    (the dialectal surname form); the k- row carries 'Kei', which the
+    standard orthography does not list; the standard syllables wen
+    (present in Appendix B), nun, len and nia are absent from the
+    table, as are the interjection syllables (m, n, ng, hm, hng, fiao);
+    and the two printed columns 'uen' and 'ueng' carry no cells in any
+    row. The complete grid is preserved in
+    tools/ics-630-01-annexd.json (cells: initial, final, input syllable,
+    IC form)."
+    # Appendix B — Conversion Table (D-5..D-18)
+    note "Appendix B is a Conversion Table of Common Chinese
+    Romanization Systems: 397 rows of IC (Based on Pinyin), Wade-Giles,
+    Yale and Mandarin Phonetic (Zhuyin) syllable correspondences. It is
+    a cross-romanization reference, outside the scope of a
+    Hani-to-Latin character map, and is preserved in full in
+    tools/ics-630-01-annexd.json. As printed it contradicts the
+    normative umlaut rule: its IC column spells lü, lüe, nü, nüe as
+    'lyu', 'lue', 'nyu', 'nue' (Wade-Giles lü, lüeh, nü, nüeh), where
+    the main text and Appendix A prescribe Lu, Lue, Nu, Nue — the
+    normative forms are encoded here. Its bo row prints the Zhuyin cell
+    ㄅㄠㄛ where the standard spelling is ㄅㄛ. It additionally
+    contains wen and yai rows absent from Appendix A, and omits the
+    Appendix A cells chua, dei, den, dia, ei, eng, kei, lia, lo, me, o,
+    rua, shei, tei, wong, zhei and the umlaut spellings lü, lüe, nü,
+    nüe."
+    # Appendix C — anomalies
+    note "Appendix C anomalies, as printed: 范 appears twice, both
+    times with STC 5400 and the IC primary Fan (the second entry adds
+    the alternate Farn); the list prints the traditional forms 呂 (0712
+    Lu), 萬 (5502 Wan) and 葉 (5509 Ye) alongside simplified forms,
+    although the main text directs to use simplified characters as the
+    default — the characters are mapped exactly as printed; the 柯 cell
+    prints 'Ke, Ker, and Quah' with a literal 'and', which is preserved
+    in the rule comment. Each rule comment carries the entry's Standard
+    Telegraphic Code (标准电码) and the non-IC alternate renditions
+    printed after the IC form; the alternates are other common
+    renditions, not IC Standard outputs, and do not participate in the
+    mapping."
+    # Main-text rules outside the character mapping
+    note "Main-text rules recorded but not encoded: persons who have
+    adopted English names give the English name first (David Dai Ho,
+    Elaine L. Chao, Gary F. Locke — IC Standard Luo Jiahui, STC
+    7482/1367/6540); variant spellings are retained in parentheses
+    (Huang Haoran, also seen as Wong Hoi-yin and Raymond Wong); an
+    official spelling may override the IC Standard spelling; residual
+    ambiguity (nicknames, former married names) is addressed in a
+    Translator's Comment."
+    # Parent standard memo (ICS 630-01 cover)
+    note "The annex is issued under ICS 630-01, Foreign Language
+    Transliteration Standards (Intelligence Community Standard
+    630-01): transliteration is standardized within the IC on all
+    finished analytical reports and products; FLTS for individual
+    languages are developed and reviewed by each IC element's Senior
+    Language Authority, promulgated as annexes titled Standards for
+    the Transliteration of Personal Names in Written Reports and
+    Products, issued by the ADNI through the Foreign Language Program
+    Office. The standard is effective 10 August 2015, the date of
+    signature (Deana A. Krichter, ADNI for Human Capital)."
+  }
+}
+
+tests {
+   # Appendix C: List of Common Chinese Surnames — one test per printed entry, IC primary form.
+   "丁" ->  "Ding"  # STC 0002
+   "于" ->  "Yu"  # STC 0060
+   "方" ->  "Fang"  # STC 2455
+   "孔" ->  "Kong"  # STC 1313
+   "毛" ->  "Mao"  # STC 3029
+   "王" ->  "Wang"  # STC 3769
+   "文" ->  "Wen"  # STC 2429
+   "尹" ->  "Yin"  # STC 1438
+   "白" ->  "Bai"  # STC 4101
+   "石" ->  "Shi"  # STC 4258
+   "史" ->  "Shi"  # STC 0670
+   "田" ->  "Tian"  # STC 3944
+   "池" ->  "Chi"  # STC 3069
+   "江" ->  "Jiang"  # STC 3068
+   "任" ->  "Ren"  # STC 0117
+   "伊" ->  "Yi"  # STC 0122
+   "朱" ->  "Zhu"  # STC 2612
+   "阮" ->  "Ruan"  # STC 7086
+   "杜" ->  "Du"  # STC 2629
+   "何" ->  "He"  # STC 0149
+   "李" ->  "Li"  # STC 2621
+   "呂" ->  "Lu"  # STC 0712
+   "邱" ->  "Qiu"  # STC 6726
+   "邵" ->  "Shao"  # STC 6730
+   "沈" ->  "Shen"  # STC 3088
+   "宋" ->  "Song"  # STC 1345
+   "巫" ->  "Wu"  # STC 1566
+   "吴" ->  "Wu"  # STC 0702
+   "余" ->  "Yu"  # STC 0151
+   "金" ->  "Jin"  # STC 6855
+   "林" ->  "Lin"  # STC 2651
+   "孟" ->  "Meng"  # STC 1322
+   "汪" ->  "Wang"  # STC 3076
+   "易" ->  "Yi"  # STC 2496
+   "周" ->  "Zhou"  # STC 0719
+   "花" ->  "Hua"  # STC 5363
+   "段" ->  "Duan"  # STC 3008
+   "范" ->  "Fan"  # STC 5400
+   "郝" ->  "Hao"  # STC 6787
+   "胡" ->  "Hu"  # STC 5170
+   "侯" ->  "Hou"  # STC 0186
+   "姜" ->  "Jiang"  # STC 1203
+   "马" ->  "Ma"  # STC 7456
+   "姚" ->  "Yao"  # STC 1202
+   "柯" ->  "Ke"  # STC 2688
+   "洪" ->  "Hong"  # STC 3163
+   "陈" ->  "Chen"  # STC 7115
+   "高" ->  "Gao"  # STC 7559
+   "郭" ->  "Guo"  # STC 6753
+   "姬" ->  "Ji"  # STC 1213
+   "康" ->  "Kang"  # STC 1660
+   "陆" ->  "Lu"  # STC 7120
+   "秦" ->  "Qin"  # STC 4440
+   "孙" ->  "Sun"  # STC 1327
+   "唐" ->  "Tang"  # STC 0781
+   "夏" ->  "Xia"  # STC 1115
+   "徐" ->  "Xu"  # STC 1776
+   "袁" ->  "Yuan"  # STC 5913
+   "曹" ->  "Cao"  # STC 2580
+   "常" ->  "Chang"  # STC 1603
+   "崔" ->  "Cui"  # STC 1508
+   "冯" ->  "Feng"  # STC 7458
+   "黄" ->  "Huang"  # STC 7806
+   "梁" ->  "Liang"  # STC 2733
+   "梅" ->  "Mei"  # STC 2734
+   "许" ->  "Xu"  # STC 6079
+   "张" ->  "Zhang"  # STC 1728
+   "程" ->  "Cheng"  # STC 4453
+   "傅" ->  "Fu"  # STC 0265
+   "贺" ->  "He"  # STC 6320
+   "彭" ->  "Peng"  # STC 1756
+   "汤" ->  "Tang"  # STC 3282
+   "萬" ->  "Wan"  # STC 5502
+   "葉" ->  "Ye"  # STC 5509
+   "曾" ->  "Zeng"  # STC 2582
+   "邹" ->  "Zou"  # STC 6760
+   "焦" ->  "Jiao"  # STC 3542
+   "项" ->  "Xiang"  # STC 7309
+   "邓" ->  "Deng"  # STC 6772
+   "董" ->  "Dong"  # STC 5516
+   "贾" ->  "Jia"  # STC 6328
+   "雷" ->  "Lei"  # STC 7191
+   "乔" ->  "Qiao"  # STC 0829
+   "杨" ->  "Yang"  # STC 2799
+   "潘" ->  "Pan"  # STC 3382
+   "熊" ->  "Xiong"  # STC 3574
+   "赵" ->  "Zhao"  # STC 6392
+   "郑" ->  "Zheng"  # STC 6774
+   "蔡" ->  "Cai"  # STC 5591
+   "范" ->  "Fan"  # STC 5400
+   "蒋" ->  "Jiang"  # STC 5592
+   "黎" ->  "Li"  # STC 7812
+   "刘" ->  "Liu"  # STC 0491
+   "骆" ->  "Luo"  # STC 7482
+   "阎" ->  "Yan"  # STC 7051
+   "欧" ->  "Ou"  # STC 2962
+   "赖" ->  "Lai"  # STC 6351
+   "霍" ->  "Huo"  # STC 7202
+   "卢" ->  "Lu"  # STC 4151
+   "钱" ->  "Qian"  # STC 6929
+   "萧" ->  "Xiao"  # STC 5618
+   "韩" ->  "Han"  # STC 7281
+   "龙" ->  "Long"  # STC 7893
+   "魏" ->  "Wei"  # STC 7614
+   "谢" ->  "Xie"  # STC 6200
+   "薛" ->  "Xue"  # STC 5641
+   "戴" ->  "Dai"  # STC 1601
+   "聂" ->  "Nie"  # STC 5119
+   "谭" ->  "Tan"  # STC 6223
+   "罗" ->  "Luo"  # STC 5012
+   "苏" ->  "Su"  # STC 5685
+   "锺" ->  "Zhong"  # STC 6945
+   "关" ->  "Guan"  # STC 7070
+   "顾" ->  "Gu"  # STC 7357
+   "龚" ->  "Gong"  # STC 7895
+   "栾" ->  "Luan"  # STC 2940
+   # Umlaut fold and apostrophe rules (main text; Appendix A).
+   "lü" ->  "Lu"
+   "nü" ->  "Nu"
+   "lüe" ->  "Lue"
+   "nüe" ->  "Nue"
+   "Lü Lin" ->  "Lu Lin"
+   "xi’an" ->  "Xian"
+   "xi'an" ->  "Xian"
+   # Document examples through the orthographic rules (criteria b, e, g): Zhang Wei, Hu Jintao, Ouyang Xiu, Zhou Youguang, Ouyang Qianqing, Ma Yingjiu (STC: 7456/5391/0036), Luo Jiahui [IC Standard: Luo Jiahui, STC: 7482/1367/6540], Huang Haoran (also Wong Hoi-yin), Chen-Li Meiling.
+   "zhang wei" ->  "Zhang Wei"
+   "hu jintao" ->  "Hu Jintao"
+   "ouyang xiu" ->  "Ouyang Xiu"
+   "zhou youguang" ->  "Zhou Youguang"
+   "ouyang qianqing" ->  "Ouyang Qianqing"
+   "ma yingjiu" ->  "Ma Yingjiu"
+   "luo jiahui" ->  "Luo Jiahui"
+   "huang haoran" ->  "Huang Haoran"
+   "chen-li meiling" ->  "Chen-Li Meiling"
+}
+
+stage main {
+  parallel {
+    # APPENDIX C — List of Common Chinese Surnames (D-19..D-22)
+    # Each rule: character -> IC transliteration; comment carries the
+    # printed STC code and the non-IC alternate renditions.
+    sub "丁" "Ding"  # STC 0002
+    sub "于" "Yu"  # STC 0060
+    sub "方" "Fang"  # STC 2455; as printed: Fang, Fong
+    sub "孔" "Kong"  # STC 1313; as printed: Kong, Kung, Hung
+    sub "毛" "Mao"  # STC 3029; as printed: Mao, Mo
+    sub "王" "Wang"  # STC 3769; as printed: Wang, Wong, Voung, Ong, Heng
+    sub "文" "Wen"  # STC 2429; as printed: Wen, Man
+    sub "尹" "Yin"  # STC 1438
+    sub "白" "Bai"  # STC 4101; as printed: Bai, Ba
+    sub "石" "Shi"  # STC 4258; as printed: Shi, Shek
+    sub "史" "Shi"  # STC 0670; as printed: Shi, Zee
+    sub "田" "Tian"  # STC 3944; as printed: Tian, Tien
+    sub "池" "Chi"  # STC 3069; as printed: Chi, Chea
+    sub "江" "Jiang"  # STC 3068; as printed: Jiang, Chiang, Gong, Giang
+    sub "任" "Ren"  # STC 0117; as printed: Ren, Yum
+    sub "伊" "Yi"  # STC 0122; as printed: Yi, Yee
+    sub "朱" "Zhu"  # STC 2612; as printed: Zhu, Chew, Choo, Chu, Gee
+    sub "阮" "Ruan"  # STC 7086; as printed: Ruan, Yuen, Nguyen
+    sub "杜" "Du"  # STC 2629; as printed: Du, Tu, Do
+    sub "何" "He"  # STC 0149; as printed: He, Ho, Ko
+    sub "李" "Li"  # STC 2621; as printed: Li, Lee
+    sub "呂" "Lu"  # STC 0712
+    sub "邱" "Qiu"  # STC 6726; as printed: Qiu, Khu, Kau
+    sub "邵" "Shao"  # STC 6730; as printed: Shao, Chiu
+    sub "沈" "Shen"  # STC 3088; as printed: Shen, Sun, Sung
+    sub "宋" "Song"  # STC 1345; as printed: Song, Sung
+    sub "巫" "Wu"  # STC 1566; as printed: Wu, Mo
+    sub "吴" "Wu"  # STC 0702; as printed: Wu, Woo, Ng, Ang, Eng, Ing
+    sub "余" "Yu"  # STC 0151; as printed: Yu, Yue
+    sub "金" "Jin"  # STC 6855; as printed: Jin, Ching, King
+    sub "林" "Lin"  # STC 2651; as printed: Lin, Lim, Lam, Lum
+    sub "孟" "Meng"  # STC 1322; as printed: Meng, Man
+    sub "汪" "Wang"  # STC 3076; as printed: Wang, Wong
+    sub "易" "Yi"  # STC 2496; as printed: Yi, Yee
+    sub "周" "Zhou"  # STC 0719; as printed: Zhou, Chau, Chow, Chou, Joe
+    sub "花" "Hua"  # STC 5363; as printed: Hua, Fa, Far
+    sub "段" "Duan"  # STC 3008
+    sub "范" "Fan"  # STC 5400; character printed twice in the list (both STC 5400); first entry as printed: Fan, Fang; second entry as printed: Fan, Fang, Farn
+    sub "郝" "Hao"  # STC 6787
+    sub "胡" "Hu"  # STC 5170; as printed: Hu, Wu, Woo
+    sub "侯" "Hou"  # STC 0186
+    sub "姜" "Jiang"  # STC 1203; as printed: Jiang, Giang
+    sub "马" "Ma"  # STC 7456; as printed: Ma, Mah, Mar
+    sub "姚" "Yao"  # STC 1202; as printed: Yao, Yew
+    sub "柯" "Ke"  # STC 2688; as printed: Ke, Ker, and Quah
+    sub "洪" "Hong"  # STC 3163; as printed: Hong, Hung
+    sub "陈" "Chen"  # STC 7115; as printed: Chen, Chan, Tan
+    sub "高" "Gao"  # STC 7559; as printed: Gao, Kao, Ko
+    sub "郭" "Guo"  # STC 6753; as printed: Guo, Kuo, Kuok, Kwok
+    sub "姬" "Ji"  # STC 1213
+    sub "康" "Kang"  # STC 1660; as printed: Kang, Hong
+    sub "陆" "Lu"  # STC 7120; as printed: Lu, Loc, Lok
+    sub "秦" "Qin"  # STC 4440; as printed: Qin, Chin
+    sub "孙" "Sun"  # STC 1327; as printed: Sun, Suen
+    sub "唐" "Tang"  # STC 0781; as printed: Tang, Tong
+    sub "夏" "Xia"  # STC 1115; as printed: Xia, Hsia, Ha
+    sub "徐" "Xu"  # STC 1776; as printed: Xu, Hsu, Shaw, Seah, Shu
+    sub "袁" "Yuan"  # STC 5913; as printed: Yuan, Yuen
+    sub "曹" "Cao"  # STC 2580; as printed: Cao, Tsao, Tso, Cho, Tow
+    sub "常" "Chang"  # STC 1603
+    sub "崔" "Cui"  # STC 1508; as printed: Cui, Chui
+    sub "冯" "Feng"  # STC 7458; as printed: Feng, Fung, Foong
+    sub "黄" "Huang"  # STC 7806; as printed: Huang, Wong, Hwang, Oei, Ooi
+    sub "梁" "Liang"  # STC 2733; as printed: Liang, Leong, Leung, Liong, Leon, Loeung
+    sub "梅" "Mei"  # STC 2734; as printed: Mei, Mai, May, Mey, Mui, Mue
+    sub "许" "Xu"  # STC 6079; as printed: Xu, Hsu, Hui
+    sub "张" "Zhang"  # STC 1728; as printed: Zhang, Chang, Cheung, Jung, Cheong, Jong, Teo, Teoh
+    sub "程" "Cheng"  # STC 4453; as printed: Cheng, Tsen
+    sub "傅" "Fu"  # STC 0265; as printed: Fu, Foo
+    sub "贺" "He"  # STC 6320
+    sub "彭" "Peng"  # STC 1756; as printed: Peng, Pang
+    sub "汤" "Tang"  # STC 3282; as printed: Tang, Tong
+    sub "萬" "Wan"  # STC 5502; as printed: Wan, Man, Mon, Won
+    sub "葉" "Ye"  # STC 5509; as printed: Ye, Yip, Ip, Yap, Yep
+    sub "曾" "Zeng"  # STC 2582; as printed: Zeng, Tseng, Jeng
+    sub "邹" "Zou"  # STC 6760; as printed: Zou, Chou
+    sub "焦" "Jiao"  # STC 3542; as printed: Jiao, Jiu
+    sub "项" "Xiang"  # STC 7309; as printed: Xiang, Hong
+    sub "邓" "Deng"  # STC 6772; as printed: Deng, Tang, Teng, Thien, Thean, Thian
+    sub "董" "Dong"  # STC 5516; as printed: Dong, Tong
+    sub "贾" "Jia"  # STC 6328; as printed: Jia, Chia
+    sub "雷" "Lei"  # STC 7191; as printed: Lei, Louie
+    sub "乔" "Qiao"  # STC 0829; as printed: Qiao, Chiao, Kiu
+    sub "杨" "Yang"  # STC 2799; as printed: Yang, Young, Yeung, Yeo, Yong
+    sub "潘" "Pan"  # STC 3382; as printed: Pan, Poon
+    sub "熊" "Xiong"  # STC 3574; as printed: Xiong, Hong, Hung
+    sub "赵" "Zhao"  # STC 6392; as printed: Zhao, Chao, Chiu, Chew, Chieu, Chu
+    sub "郑" "Zheng"  # STC 6774; as printed: Zheng, Cheng, Chung
+    sub "蔡" "Cai"  # STC 5591; as printed: Cai, Tsai, Choi, Chua, Chai, Chye, Choy
+    sub "蒋" "Jiang"  # STC 5592; as printed: Jiang, Chiang
+    sub "黎" "Li"  # STC 7812; as printed: Li, Lai
+    sub "刘" "Liu"  # STC 0491; as printed: Liu, Lau
+    sub "骆" "Luo"  # STC 7482
+    sub "阎" "Yan"  # STC 7051
+    sub "欧" "Ou"  # STC 2962; as printed: Ou, Au
+    sub "赖" "Lai"  # STC 6351
+    sub "霍" "Huo"  # STC 7202; as printed: Huo, Fuo
+    sub "卢" "Lu"  # STC 4151; as printed: Lu, Loh, Low
+    sub "钱" "Qian"  # STC 6929; as printed: Qian, Chian, Chin
+    sub "萧" "Xiao"  # STC 5618; as printed: Xiao, Siu, Siew, Seow, Hsiao
+    sub "韩" "Han"  # STC 7281; as printed: Han, Hon
+    sub "龙" "Long"  # STC 7893; as printed: Long, Lung
+    sub "魏" "Wei"  # STC 7614; as printed: Wei, Ngai
+    sub "谢" "Xie"  # STC 6200; as printed: Xie, Tsia, Che, She, Tse, Tze, Hsieh
+    sub "薛" "Xue"  # STC 5641
+    sub "戴" "Dai"  # STC 1601; as printed: Dai, Tai
+    sub "聂" "Nie"  # STC 5119; as printed: Nie, Ni, Nye, Ny
+    sub "谭" "Tan"  # STC 6223; as printed: Tan, Tam
+    sub "罗" "Luo"  # STC 5012; as printed: Luo, Law
+    sub "苏" "Su"  # STC 5685; as printed: Su, Soo, So
+    sub "锺" "Zhong"  # STC 6945; as printed: Zhong, Chong
+    sub "关" "Guan"  # STC 7070; as printed: Guan, Kwan, Kuan, Kwuan, Quan
+    sub "顾" "Gu"  # STC 7357; as printed: Gu, Ku
+    sub "龚" "Gong"  # STC 7895
+    sub "栾" "Luan"  # STC 2940
+
+    # The umlaut (ü), as in Lü and Nü, should not be used: the standard
+    # uses u for the ü character (main text; Appendix A cells Lu, Lue,
+    # Nu, Nue).
+    sub "ü" "u"
+    # No apostrophe (’) should be used between syllables; other
+    # forensic information disambiguates instead (criterion f, para 14).
+    sub "’" ""
+    sub "'" ""
+  }
+
+  # POSTRULES
+  # Capitalize the first letter of each name part (criterion b): the
+  # surname and the given-name block are each capitalized, the rest of
+  # the letters stay lower case. Word boundaries include the space
+  # between surname and given name and the hyphen of the married double
+  # surname (both surnames capitalized). The set is spelled out in
+  # single characters: only the lower case ASCII letters carry case.
+  sub {
+    from any("abcdefghijklmnopqrstuvwxyz")
+    to upcase
+    before boundary
+    not_before boundary + any("‘’'")
+  }
+  sub {
+    from any("abcdefghijklmnopqrstuvwxyz")
+    to upcase
+    before boundary + any("‘’'")
+  }
+}
+}
