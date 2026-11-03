@@ -33,10 +33,16 @@ metadata {
     note "      ടൗ In the older spelling: ൌ."
     note "      ട്‌  Indicates absence of the inherent short [a] vowel, e.g. ക്‌ k , സ്‌ s. Special, co-called chillu-forms of consonants with that symbol: ണ്‍ ṇ, ന്‍ n, ര്‍ r, ല്‍ l, ള്‍ ḷ."
     note "      റ  Special ligature: റ്റ ṭ̈."
+    note "Diffed against the UN Romanization of Malayalam for Geographical Names table\n as published in the WGRS Report on the Current Status of UN Romanization Systems\n for Geographical Names, version 4.0 (February 2013) (eki.ee/wgrs/rom1_ml.htm;\n also unstats wgrr4malayalam): all independent vowels, vowel signs, other symbols\n and consonants verified."
+
+    note "Fixed against the source: the au vowel sign ൗ (U+0D57) mapped to the empty\n string, so ടൗ rendered ṭa instead of ṭau; it now renders au per table II.13."
   }
+
 }
 
 tests {
+   "ടൗ" ->  "ṭau"
+   "ഔ" ->  "au"
    "ചൈനയ്ക്കെതിരെ ലഡാക്കിൽ സദാസജ്ജം; യുഎസിൽനിന്ന് ൭൨,൫൦൦ സിഗ്–൧൬ റൈഫിൾ" ->  "chainaykkĕtirĕ laḍākkil sadāsajjaṃ; yuĕsilninn 72,500 sig–16 ṟaiphiḷ"
    "സർഗഭൂമിക’യ്ക്കില്ല; ലളിതച്ചേച്ചി അങ്ങനെ പറഞ്ഞിട്ടുണ്ടാവില്ല: ആർഎൽവി രാമകൃഷ്ണൻ" ->  "sargabhūmika’ykkilla; laḷitachchechchi aṅṅanĕ paṟaññiṭṭuṇṭāvilla: ārĕlvi rāmakṛṣhṇan"
    "സ്വർണക്കടത്ത്‌: ഫൈസൽ ഫരീദും റബിന്‍സും ദുബായിൽ അറസ്റ്റിലായെന്ന്‌ എന്‍ഐഎ" ->  "svarṇakkaṭatt: phaisal pharīduṃ ṟabinsuṃ dubāyil aṟasṟṟilāyĕnn ĕnaiĕ"
@@ -55,7 +61,7 @@ tests {
 }
 
 aliases {
-  mlym_chars_1 = any("\u0d3e\u0d3f\u0d40\u0d41\u0d42\u0d43\u0d46\u0d47\u0d48\u0d4a\u0d4b\u0d4c\u0d4d")
+  mlym_chars_1 = any("\u0d3e\u0d3f\u0d40\u0d41\u0d42\u0d43\u0d46\u0d47\u0d48\u0d4a\u0d4b\u0d4c\u0d4d\u0d57")
 }
 
 stage main {
@@ -327,7 +333,7 @@ stage main {
 
     sub "्" ""
     sub "़" ""
-    sub "ൗ" ""
+    sub "ൗ" "au"
     sub "‍" ""
     sub "‌" ""
 

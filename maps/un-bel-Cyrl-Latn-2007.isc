@@ -20,6 +20,13 @@ metadata {
     approved by the Decree of the Council of Ministers of the Republic of Belarus dated July 29, 2006
     No. 958 "Issues of the State Committee on Property of the Republic of Belarus"
   }
+  notes {
+    note "Diffed against the Romanization of Belarusian for Geographical Names\n table as published in the WGRS Report on the Current Status of UN Romanization\n Systems for Geographical Names, version 4.0 (February 2013)\n (eki.ee/wgrs/rom1_be.htm; also unstats wgrr4belarusian): all 33 rows verified.\n The map's edition claim (national system adopted 11 June 2007, State Committee\n on Property resolution No. 38; presented as E/CONF.98/CRP.21) is the same table\n the UN approved in 2012 (X/6); no newer edition exists in the reference library."
+
+    note "The apostrophe of row 28, printed ’ (U+2019), is not romanized; the map\n now deletes U+2019 alongside the ASCII apostrophe (U+0027)."
+
+    note "Ь is romanized with a combining acute on the preceding letter only in the\n six combinations listed in the source footnote (дзь→dź, зь→ź, ль→ĺ, нь→ń,\n сь→ś, ць→ć), encoded by the dependency's digraph rows; an ь outside these\n combinations has no source equivalent and is dropped."
+  }
 }
 
 tests {
@@ -69,6 +76,11 @@ tests {
    "Баяры" ->  "Bajary"
    "Валяр'яны" ->  "Valiarjany"
    "Вязынка" ->  "Viazynka"
+   "Вераб’ёвічы" ->  "Vierabjovičy"
+   "сь" ->  "ś"
+   "ль" ->  "ĺ"
+   "ць" ->  "ć"
+   "дзь" ->  "dź"
 }
 
 dependency "by-bel-Cyrl-Latn-2007" as cyrllatn
@@ -76,6 +88,11 @@ dependency "by-bel-Cyrl-Latn-2007" as cyrllatn
 stage main {
 
   run  map.cyrllatn.stage.main
+
+  parallel {
+    # row 28: ’ (U+2019) is not romanized
+    sub "’" ""
+  }
 
 }
 }

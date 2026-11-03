@@ -36,7 +36,13 @@ metadata {
     #    we found that actually when a word ends with a consonant it should be transliterated without the vowel in it.  #
     #    so we are applying this rule as if a word ends with a consonant, in this case we are removing the ending 'a'.  #
     #####################################################################################################################
+    note "Diffed against the UN Romanization of Hindi for Geographical Names table as\n published in the WGRS Report on the Current Status of UN Romanization Systems\n for Geographical Names, version 4.0 (February 2013) (eki.ee/wgrs/rom1_hi.htm;\n also unstats wgrr4hindi): all 13 independent vowels, 11 vowel signs, 3 other\n symbols, 33 consonants and the 7 dotted variants verified; no gaps or\n divergences."
+
+    note "Source-side erratum: rows I.7 and I.8 print ॠ (U+0960) for ṛ and ॠृ for ṝ;\n the map follows the linguistic standard (ऋ ṛ, ॠ ṝ) and is kept as printed in\n the source's value column."
+
+    note "The source note recommends dropping the inherent a word-finally in names\n (Kānapur, not Kānapura; जगत् Jagaṯ with a sub-macron on the final consonant);\n the map implements the a-drop, while the exceptional sub-macron of Jagaṯ is\n lexical and not encoded."
   }
+
 }
 
 tests {

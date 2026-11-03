@@ -39,7 +39,9 @@ metadata {
     note "      (ਂ) Used in all other occasions, e.g. ਝੋਂਕਾ jhoṁkā."
     note "      (ੱ) Marks doubling of the following consonant: ਨਿੱਕਾ nikkā, ਲੱਭਣਾ labhbhṇā, ਕੁੱਤਾ kuttā, ਹਿੱਸਾ hissā, ਲੱਮਾ lammā."
     note "      Absence of the inherent vowel (-a) is not marked in the spelling in any way except for the combinations\n      with subscript characters and those which are doubled by ੱ (adhaka)."
+    note "Diffed against the UN Romanization of Panjabi for Geographical Names table\n as published in the WGRS Report on the Current Status of UN Romanization Systems\n for Geographical Names, version 4.0 (February 2013) (eki.ee/wgrs/rom1_pa.htm;\n also unstats wgrr4punjabi): all independent vowels, vowel signs, other symbols,\n consonants and adscript forms verified; no gaps or divergences."
   }
+
 }
 
 tests {

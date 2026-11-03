@@ -13,6 +13,8 @@ metadata {
 
   notes {
     note "Ge (ґ) was officially banned in the Soviet Ukraine from 1933 to 1990; https://en.wikipedia.org/wiki/Ukrainian_alphabet#ref_2b"
+
+    note "The claimed source, 7th UNCSGN document E/CONF.91/3/Add.1 (1998), is not\n in the reference library; the 1998 combined Belarusian-Russian-Ukrainian table\n could not be verified row-by-row and no rows were changed in the WO09 UNGEGN\n diff. The current UN Ukrainian system (2010/2012) is a different table and is\n encoded by un-ukr-Cyrl-Latn-2012."
   }
 }
 

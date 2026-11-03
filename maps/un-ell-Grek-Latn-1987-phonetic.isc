@@ -25,6 +25,7 @@ metadata {
     note "Followed specification in treating final μπ as b, but final ντ as nd. That distinction is dubious. (In ELOT 743:1982, both d and nd are erroneously marked as initial, and no final is given.)"
     note "τζ is not correctly transcribed as dz: fixed"
     note "not reducing geminated consonants: fixed"
+    note "The claimed source — the phonetic-transcription version of the Greek table\n (Fifth UNCSGN paper submitted by Greece and Cyprus; ELOT 743:1982 column 5, as\n in ISO 843:1997 Annex B column 5) — is not in the reference library (the WGRS\n documents index lists the paper as 'digital copy not yet available'); the rows\n follow the map's own notes and are unchanged in the WO09 UNGEGN diff."
   }
 }
 

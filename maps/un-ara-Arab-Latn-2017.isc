@@ -66,6 +66,9 @@ metadata {
 }
 
 tests {
+   "بِيَا" ->  "Biyā"
+   "مَدِينَة" ->  "Madīnah"
+   "الْمَدِينَة" ->  "Al Madīnah"
   # Examples taken from:
   # https://unstats.un.org/unsd/geoinfo/geonames/
    "مِصر" ->  "Mis̱r"
@@ -85,6 +88,12 @@ tests {
    "جِدَّة" ->  "Jiddah"
    "مَكَّة" ->  "Makkah"
    "الرِيَاض" ->  "Ar Riyāḏ"
+}
+
+aliases {
+  # every character of the Arabic block U+0600..U+06FF (letters, harakat,
+  # marks) — used by the ta' marboota lookbehind chains below
+  arab_block = any('؀؁؂؃؄؅؆؇؈؉؊؋،؍؎؏ؘؙؚؐؑؒؓؔؕؖؗ؛؜؝؞؟ؠءآأؤإئابةتثجحخدذرزسشصضطظعغػؼؽؾؿـفقكلمنهوىيًٌٍَُِّْٕٖٜٟٓٔٗ٘ٙٚٛٝٞ٠١٢٣٤٥٦٧٨٩٪٫٬٭ٮٯٰٱٲٳٴٵٶٷٸٹٺٻټٽپٿڀځڂڃڄڅچڇڈډڊڋڌڍڎڏڐڑڒړڔڕږڗژڙښڛڜڝڞڟڠڡڢڣڤڥڦڧڨکڪګڬڭڮگڰڱڲڳڴڵڶڷڸڹںڻڼڽھڿۀہۂۃۄۅۆۇۈۉۊۋیۍێۏېۑےۓ۔ەۖۗۘۙۚۛۜ۝۞ۣ۟۠ۡۢۤۥۦۧۨ۩۪ۭ۫۬ۮۯ۰۱۲۳۴۵۶۷۸۹ۺۻۼ۽۾ۿ')
 }
 
 stage main {
@@ -120,6 +129,7 @@ stage main {
 
     sub "\u0650\u064a" "ī"
     sub "\u0650\u064a\u0651\u064e" "īy"
+    sub "\u0650\u064a\u064e\u0627" "iyā"
     sub {
     from "\u0650\u064a"
     to "iy"
@@ -193,72 +203,176 @@ stage main {
     to "an n"
   }
 
-    # TODO: shorten this fragment
-    # ta' marboota
-    sub "\u0629" "at"
+    # ta' marboota (footnote C: romanized h, except in the construct form
+    # of feminine nouns, where it is romanized t; a preceding fatha already
+    # carries its own "a"):
+    #   word-final: ah (fatha+ah when vocalized)
+    sub {
+    from "\u064e\u0629" + line_end
+    to "ah"
+  }
     sub {
     from "\u0629" + line_end
     to "ah"
   }
     sub {
-    from "\u0629"
+    from "\u064e\u0629"
     to "ah"
-    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+    before "\u0627\u0644" + arab_block + arab_block
   }
     sub {
     from "\u0629"
     to "ah"
-    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+    before "\u0627\u0644" + arab_block + arab_block
+  }
+    sub {
+    from "\u064e\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block
   }
     sub {
     from "\u0629"
     to "ah"
-    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+    before "\u0627\u0644" + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u064e\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block
   }
     sub {
     from "\u0629"
     to "ah"
-    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u064e\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block
   }
     sub {
     from "\u0629"
     to "ah"
-    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u064e\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
   }
     sub {
     from "\u0629"
     to "ah"
-    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u064e\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
   }
     sub {
     from "\u0629"
     to "ah"
-    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u064e\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
   }
     sub {
     from "\u0629"
     to "ah"
-    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u064e\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
   }
     sub {
     from "\u0629"
     to "ah"
-    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u064e\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
   }
     sub {
     from "\u0629"
     to "ah"
-    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u064e\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
   }
     sub {
     from "\u0629"
     to "ah"
-    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u064e\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
   }
     sub {
     from "\u0629"
     to "ah"
-    before boundary + "\u0627\u0644" + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff") + any("\u0600".."\u06ff")
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u064e\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u064e\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u064e\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u064e\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
+  }
+    sub {
+    from "\u0629"
+    to "ah"
+    before "\u0627\u0644" + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block + arab_block
+  }
+    #   construct form (default):
+    sub {
+    from "\u064e\u0629"
+    to "at"
+  }
+    sub {
+    from "\u0629"
+    to "at"
   }
 
     # shadda

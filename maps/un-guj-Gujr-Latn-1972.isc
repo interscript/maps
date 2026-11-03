@@ -39,7 +39,9 @@ metadata {
     note "      Exception of ી : જી jī."
     note "      Exception of ૂ : રૂ rū."
     note "      ્‌ indicates pronunciation without a vowel."
+    note "Diffed against the UN Romanization of Gujarati for Geographical Names table\n as published in the WGRS Report on the Current Status of UN Romanization Systems\n for Geographical Names, version 4.0 (February 2013) (eki.ee/wgrs/rom1_gu.htm;\n also unstats wgrr4gujarati): all independent vowels, vowel signs, other symbols\n and consonants verified against the stage rules; no gaps or divergences."
   }
+
 }
 
 tests {

@@ -12,17 +12,32 @@ metadata {
   description {    The System of Transliteration and Transcription of Bulgarian Geographical Names into Roman letters,
     as shown in the annex below, be adopted as the international system for the romanization of Bulgarian geographical names.
   }
+
+  notes {
+    note "Diffed against the UN WGRS Report on the Current Status of UN Romanization\n Systems for Geographical Names, version 4.0 (February 2013)\n (eki.ee/wgrs/rom1_bg.htm; also unstats wgrr4bulgarian): the 1977 system\n (res. III/10, adopting the 1972 Council of Orthography system) is printed there\n as a comparison against the superseding 2009/2012 system; all 30 rows verified."
+
+    note "Rows ю and я now render ju/ja per the 1977 system; the map previously\n carried yu/ya, the values of the superseding current system (2009 Transliteration\n Act, UN-approved 2012 X/7). Reissue note: the current system differs from 1977\n in zh/j/ts/ch/sh/sht/a/y/yu/ya; it is NOT encoded here."
+
+    note "The full text of res. III/10 (eki.ee/wgrs/res/res_3_10.htm) is not in the\n reference library; the 1977 rows were verified against the UN WGRS 4.0\n comparison section, which lists every row in which the 1977 system differs\n from the current one. The -iya -> -ia word-final footnote of the current table\n is likewise not attested for the 1977 system and is not encoded."
+  }
 }
 
 tests {
+   "ю" ->  "ju"
+   "я" ->  "ja"
+   "Ю" ->  "Ju"
+   "Я" ->  "Ja"
+   "ь" ->  "j"
+   "ъ" ->  "ǎ"
+   "щ" ->  "št"
    "нунатак Абрит" ->  "nunatak Abrit"
-   "връх Академия" ->  "vrǎh Akademiya"
+   "връх Академия" ->  "vrǎh Akademija"
    "връх Ами Буе" ->  "vrǎh Ami Bue"
    "нос Айтос" ->  "nos Ajtos"
    "залив Баба Тонка" ->  "zaliv Baba Tonka"
    "Балабански камък" ->  "Balabanski kamǎk"
    "Бедечки поток" ->  "Bedečki potok"
-   "нос Бяга БЯГА" ->  "nos Byaga BYAGA"
+   "нос Бяга БЯГА" ->  "nos Bjaga BJAGA"
    "остров Качо" ->  "ostrov Kačo" # wiki ostrov Cacho
    "Чакъров остров" ->  "Čakǎrov ostrov"
    "връх Дъбник" ->  "vrǎh Dǎbnik"
@@ -32,10 +47,10 @@ tests {
    "Нунатак Едуард" ->  "Nunatak Eduard"
    "Елховска седловина" ->  "Elhovska sedlovina"
    "ледник Етър" ->  "lednik Etǎr"
-   "нунатак Филип Тотю" ->  "nunatak Filip Totyu"
+   "нунатак Филип Тотю" ->  "nunatak Filip Totju"
    "ледник Габаре" ->  "lednik Gabare"
    "риф Гергини" ->  "rif Gergini"
-   "Гяуров връх" ->  "Gyaurov vrǎh"
+   "Гяуров връх" ->  "Gjaurov vrǎh"
    "Гуцалски рид" ->  "Gucalski rid" # not found
    "Хараламбиев остров" ->  "Haralambiev ostrov"
    "връх Ичера" ->  "vrǎh Ičera"
@@ -45,36 +60,36 @@ tests {
    "нос Кърджали" ->  "nos Kǎrdžali"
    "седловина Кърнаре" ->  "sedlovina Kǎrnare"
    "нунатак Керсеблепт" ->  "nunatak Kerseblept"
-   "Кондофрейски възвишения" ->  "Kondofrejski vǎzvišeniya"
+   "Кондофрейски възвишения" ->  "Kondofrejski vǎzvišenija"
    "Костинбродски проход" ->  "Kostinbrodski prohod"
    "връх Кожух" ->  "vrǎh Kožuh"
    "Кукерски нунатаци" ->  "Kukerski nunataci"
-   "залив Лазурен бряг" ->  "zaliv Lazuren bryag"
+   "залив Лазурен бряг" ->  "zaliv Lazuren brjag"
    "връх Лудогорие" ->  "vrǎh Ludogorie"
-   "Лютибродски скали" ->  "Lyutibrodski skali"
+   "Лютибродски скали" ->  "Ljutibrodski skali"
    "Масларов нунатак" ->  "Maslarov nunatak"
    "Михневски връх" ->  "Mihnevski vrǎh"
    "рид Митино" ->  "rid Mitino"
-   "езеро Наяда" ->  "ezero Nayada"
-   "нос Никюп НИКЮП" ->  "nos Nikyup NIKYUP"
+   "езеро Наяда" ->  "ezero Najada"
+   "нос Никюп НИКЮП" ->  "nos Nikjup NIKJUP"
    "рид Оборище ОБОРИЩЕ" ->  "rid Oborište OBORIŠTE"
    "залив Олуша" ->  "zaliv Oluša"
-   "Оряховски възвишения" ->  "Oryahovski vǎzvišeniya"
+   "Оряховски възвишения" ->  "Orjahovski vǎzvišenija"
    "нунатак Памидово" ->  "nunatak Pamidovo"
    "връх Парангалица" ->  "vrǎh Parangalica"
    "Първомайски провлак" ->  "Pǎrvomajski provlak"
    "ледник Патлейна" ->  "lednik Patlejna"
    "полуостров Перник" ->  "poluostrov Pernik"
    "връх Петко Войвода" ->  "vrǎh Petko Vojvoda"
-   "остров Фанагория" ->  "ostrov Fanagoriya"
+   "остров Фанагория" ->  "ostrov Fanagorija"
    "нос Плас" ->  "nos Plas"
-   "Пресиянов рид" ->  "Presiyanov rid"
+   "Пресиянов рид" ->  "Presijanov rid"
    "връх Принсипе де Астуриас" ->  "vrǎh Prinsipe de Asturias" # wiki: vrǎh Príncipe de Asturias
    "нунатак Ръченица" ->  "nunatak Rǎčenica"
-   "връх Райна Княгиня" ->  "vrǎh Rajna Knyaginya"
+   "връх Райна Княгиня" ->  "vrǎh Rajna Knjaginja"
    "Рид Ръжана" ->  "Rid Rǎžana"
    "връх Ригс" ->  "vrǎh Rigs"
-   "остров Рогулят" ->  "ostrov Rogulyat"
+   "остров Рогулят" ->  "ostrov Roguljat"
    "ледник Сабазий" ->  "lednik Sabazij"
    "ледник Съединение" ->  "lednik Sǎedinenie"
    "нунатак Сенокос" ->  "nunatak Senokos"
@@ -84,37 +99,37 @@ tests {
    "ледник Сигмен" ->  "lednik Sigmen"
    "Седловина Синитово" ->  "Sedlovina Sinitovo"
    "Ледник Скаплизо" ->  "Lednik Skaplizo"
-   "залив Слънчев бряг" ->  "zaliv Slǎnčev bryag"
+   "залив Слънчев бряг" ->  "zaliv Slǎnčev brjag"
    "остров Соатрис" ->  "ostrov Soatris"
    "планина Софийски Университет" ->  "planina Sofijski Universitet"
    "ледник Сребърна" ->  "lednik Srebǎrna"
-   "Средногорски възвишения" ->  "Srednogorski vǎzvišeniya"
+   "Средногорски възвишения" ->  "Srednogorski vǎzvišenija"
    "Св. Евтимиев камък" ->  "Sv. Evtimiev kamǎk"
    "база Св. Климент Охридски" ->  "baza Sv. Kliment Ohridski"
    "връх Стъргел" ->  "vrǎh Stǎrgel"
-   "нунатак Сторгозия" ->  "nunatak Storgoziya" # nunatak Storgozia according to wiki
+   "нунатак Сторгозия" ->  "nunatak Storgozija" # nunatak Storgozia according to wiki
    "нунатак Сурвакари" ->  "nunatak Survakari"
    "ледник Световрачене" ->  "lednik Svetovračene"
    "остров Теменуга" ->  "ostrov Temenuga"
-   "Тракийски възвишения" ->  "Trakijski vǎzvišeniya"
+   "Тракийски възвишения" ->  "Trakijski vǎzvišenija"
    "хълм Цамблак" ->  "hǎlm Camblak"
    "ледник Урдовиза" ->  "lednik Urdoviza"
    "остров Вълчедръм" ->  "ostrov Vǎlčedrǎm"
    "острови Вардим" ->  "ostrovi Vardim"
    "Владигеров проток" ->  "Vladigerov protok"
-   "ледник Ябланица" ->  "lednik Yablanica"
-   "залив Ямфорина" ->  "zaliv Yamforina"
+   "ледник Ябланица" ->  "lednik Jablanica"
+   "залив Ямфорина" ->  "zaliv Jamforina"
    "Йовков нос" ->  "Jovkov nos"
    "рид Заберново" ->  "rid Zabernovo"
    "ледник Збелсурд" ->  "lednik Zbelsurd"
    "Жефарович камък" ->  "Žefarovič kamǎk"
    "връх Зиези" ->  "vrǎh Ziezi"
-   "залив Златни пясъци" ->  "zaliv Zlatni pyasǎci"
+   "залив Златни пясъци" ->  "zaliv Zlatni pjasǎci"
    "ледник Злокучене" ->  "lednik Zlokučene"
    "проток Злогош" ->  "protok Zlogoš"
 
   # UN card tests
-   "Република България" ->  "Republika Bǎlgariya"
+   "Република България" ->  "Republika Bǎlgarija"
 }
 
 dependency "posix"
@@ -152,8 +167,8 @@ stage main {
     sub "Щ" "Št"
     sub "Ъ" "Ǎ"
     sub "Ь" "J"
-    sub "Ю" "Yu"
-    sub "Я" "Ya"
+    sub "Ю" "Ju"
+    sub "Я" "Ja"
 
     sub "а" "a"
     sub "б" "b"
@@ -183,8 +198,8 @@ stage main {
     sub "щ" "št"
     sub "ъ" "ǎ"
     sub "ь" "j"
-    sub "ю" "yu"
-    sub "я" "ya"
+    sub "ю" "ju"
+    sub "я" "ja"
 
   }
 
@@ -200,22 +215,22 @@ stage main {
 
   # YU
   sub {
-    from capture(maybe(upper)) + "Yu" + capture(upper)
-    to ref(1) + "YU" + ref(2)
+    from capture(maybe(upper)) + "Ju" + capture(upper)
+    to ref(1) + "JU" + ref(2)
   }
   sub {
-    from capture(upper) + "Yu" + capture(maybe(upper))
-    to ref(1) + "YU" + ref(2)
+    from capture(upper) + "Ju" + capture(maybe(upper))
+    to ref(1) + "JU" + ref(2)
   }
 
   # YA
   sub {
-    from capture(maybe(upper)) + "Ya" + capture(upper)
-    to ref(1) + "YA" + ref(2)
+    from capture(maybe(upper)) + "Ja" + capture(upper)
+    to ref(1) + "JA" + ref(2)
   }
   sub {
-    from capture(upper) + "Ya" + capture(maybe(upper))
-    to ref(1) + "YA" + ref(2)
+    from capture(upper) + "Ja" + capture(maybe(upper))
+    to ref(1) + "JA" + ref(2)
   }
 }
 

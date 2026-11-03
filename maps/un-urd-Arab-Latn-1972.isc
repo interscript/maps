@@ -6,9 +6,9 @@ metadata {
   language iso-639-2:urd
   source_script Arab
   destination_script Latn
-  name Romanization of Arabic (2017)
+  name Romanization of Urdu (1972)
   url https://www.eki.ee/wgrs/rom1_ur.htm
-  creation_date 2017
+  creation_date 1972
   confirmation_date 2018-06
   description {    The United Nations recommended system was approved in 1972 (
     II/11) and amended in 1977 (III/12), based on a report
@@ -35,6 +35,12 @@ metadata {
     note "C Word-finally after a short vowel."
     note "D Marks aspiration of consonants."
     note "E The character ے is used only word-finally."
+
+    note "Diffed against the UN Romanization of Urdu for Geographical Names (1972)\n table as published in the WGRS Report on the Current Status of UN Romanization\n Systems for Geographical Names, version 4.0 (March 2016)\n (eki.ee/wgrs/rom1_ur.htm; also unstats wgrr4urdu): all 37 consonant rows, the\n 16 vowel/diacritic rows and notes A-E verified."
+
+    note "Rows fixed against the source: the word-initial capitalization postrule now\n covers the diacritic letter forms (ā ī ū ḍ ḳ ṭ ṙ ỵ ḥ ẉ) that the previous\n sparse enumeration missed, fixing e.g. خَان Ḳhān, ڈَنگِیلا Ḍangīlā, ژوب Ỵvb,\n آگرَہ Āgraḥ."
+
+    note "The metadata previously carried the name 'Romanization of Arabic (2017)'\n and creation_date 2017 — a carry-over from un-ara-Arab-Latn-2017; the file\n encodes the UN Urdu system approved in 1972 (II/11) and amended in 1977\n (III/12). The id/filename year 1972 is retained."
   }
 }
 
@@ -422,7 +428,7 @@ stage main {
 
   # POSTRULES
   sub {
-    from any("\u0061".."\uFFFF")
+    from any(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "y", "z", "ā", "ī", "ū", "ḍ", "ḳ", "ṭ", "ṙ", "ỵ", "ḥ", "ẉ"])
     to upcase
     before boundary
     not_before boundary + any("‘’'-")

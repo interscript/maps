@@ -13,6 +13,12 @@ metadata {
     The system is used in The former Yugoslav Republic of Macedonia (see e.g. Report of The former Yugoslav Republic of Macedonia. Seventh United Nations Conference on the Standardization of Geographical Names. New York, 13-22 January 1998. Document E/CONF.91/CRP.23) and in international cartographic products.
     The Cyrillic alphabet is used. The romanization table is unambiguous and can be applied automatically. The system is on the whole reversible with the exception of the characters ѓ and ќ. These are romanized as g and k, respectively, before е and и. But also г and к are occasionally used before е and и, so, for example, the name Makedonija is reconstituted as Македонија, not Маќедонија in the Cyrillic source script.
   }
+
+  notes {
+    note "Diffed against the UN Romanization of Macedonian Cyrillic for Geographical\n Names (1977) table as published in the WGRS Report on the Current Status of UN\n Romanization Systems for Geographical Names, version 4.0 (February 2013)\n (eki.ee/wgrs/rom1_mk.htm; also unstats wgrr4macedonian): all 32 rows verified.\n The map's claimed URL (the older v2_2 site revision) presents the same 1977\n (III/11) table; no newer edition exists."
+
+    note "Row 32, the apostrophe letter ’, romanized ’, is now encoded explicitly;\n it previously passed through unromanized."
+  }
 }
 
 tests {
@@ -22,6 +28,11 @@ tests {
    "ЛУЃЕ луѓе" ->  "LUGE luge"
    "ЅВЕЗДА ѕвезда Ѕвезда" ->  "DZVEZDA dzvezda Dzvezda"
    "ЌАРУВАЊЕ ќарување" ->  "ĆARUVANJE ćaruvanje"
+   "Ѓорче Петров" ->  "Đorče Petrov"
+   "Ѓе" ->  "Ge"
+   "Ќесендре" ->  "Kesendre"
+   "Ќулаш" ->  "Ćulaš"
+   "п’етка" ->  "p’etka"
 
   # UN card tests
    "Скопје" ->  "Skopje"

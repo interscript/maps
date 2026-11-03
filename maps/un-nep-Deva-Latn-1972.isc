@@ -34,7 +34,9 @@ metadata {
     #    we found that actually when a word ends with a consonant it should be transliterated without the vowel in it.  #
     #    so we are applying this rule as if a word ends with a consonant, in this case we are removing the ending 'a'.  #
     #####################################################################################################################
+    note "Diffed against the UN Romanization System of Nepali for Geographical Names\n (1972) table as published in the WGRS Report on the Current Status of UN\n Romanization Systems for Geographical Names, version 4.0 (February 2013)\n (eki.ee/wgrs/rom1_ne.htm; also unstats wgrr4nepali): all rows verified; no gaps\n or divergences. The source's rows I.7/I.8 print ॠ for ṛ and ॠृ for ṝ (source-side\n glyph erratum); the map follows the linguistic standard."
   }
+
 }
 
 tests {

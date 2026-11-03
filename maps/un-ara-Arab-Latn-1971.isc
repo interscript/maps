@@ -57,6 +57,8 @@ metadata {
   }
   notes {
     note "      ث is t͟h (th with sub marcon)\n      خ is k͟h (kh with sub marcon)\n      ذ is d͟h (dh with sub marcon)\n      ش is s͟h (sh with sub marcon)\n      ظ is z͟h (zh with sub marcon)\n      غ is g͟h (gh witg sub marcon)\n      The previous UN 1972 System had the following differences:\n      the character (ظ) was romanized as z̧ instead of d͟h;\n      the cedilla (¸) was used instead of sub-macron (_) in all characters with sub-macrons.  - |"
+
+    note "The claimed source, 2nd UNCSGN document E/CONF.61/4/Add.1 (1971, the\n original Beirut system with sub-macron digraph pairs t͟h k͟h d͟h s͟h z͟h g͟h), is not\n in the reference library; the rows encoded here follow the notes above and the\n examples in the tests, and no rows were changed in the WO09 UNGEGN diff. The\n iyā and ta' marbūṭah fixes recorded in un-ara-Arab-Latn-2017 flow through the\n shared stage."
   }
 }
 

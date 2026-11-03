@@ -26,10 +26,18 @@ metadata {
 
   notes {
     note "Combinations with r as the first component are written with a special superscript symbol, e.g. ର୍କ rka."
+    note "Diffed against the UN Romanization of Oriya for Geographical Names table as\n published in the WGRS Report on the Current Status of UN Romanization Systems\n for Geographical Names, version 4.0 (February 2013) (eki.ee/wgrs/rom1_or.htm;\n also unstats wgrr4oriya): all independent vowels, vowel signs, other symbols\n and consonants verified."
+
+    note "Fixed against the source: the anusvara ଂ rendered m with a dot below instead\n of the printed ṁ (dot above); the candrabindu ଁ dropped its combining mark (m →\n m̐); and the alternate ai/au signs ୖ (U+0B56) and ୗ (U+0B57), printed in the\n source as (କୖ)/(କୗ), were unencoded and passed through raw. All four now follow\n table rows II.9/II.11 and III.1/III.2."
   }
+
 }
 
 tests {
+   "କଂ" ->  "kaṁ"
+   "କଁ" ->  "kam̐"
+   "କୖ" ->  "kai"
+   "କୗ" ->  "kau"
    "ର୍କ" ->  "rka"
    "ଓଡ଼ିଆ" ->  "oṙiā"
    "ଓଡ଼ିଶା" ->  "oṙishā"
@@ -37,10 +45,10 @@ tests {
    "ଆଇପିଏଲ୍‌-୧୩: ଦିଲ୍ଲୀ କ୍ୟାପିଟାଲ୍ସକୁ ୮୮ ରନ୍‌ ପରାସ୍ତ କଲା ସନରାଇଜର୍ସ ହାଇଦ୍ରାବାଦ" ->  "āipiel-13: dillī kyāpiṭālsaku 88 ran parāsta kalā sanarāijarsa hāidrābāda"
    "ପ୍ରେମ ସମ୍ପର୍କରେ ଭଟ୍ଟା: ରାଗରେ ପ୍ରେମିକାର ତଣ୍ଟି କାଟି ନିଜେ ବିଷ ପିଇଲା ପ୍ରେମିକ" ->  "prema samparkare bhaṭṭā: rāgare premikāra taṇṭi kāṭi nije biṣha piilā premika"
    "ପ୍ରେମ ସମ୍ପର୍କରେ ଭଟ୍ଟା: ରାଗରେ ପ୍ରେମିକାର ତଣ୍ଟି କାଟି ନିଜେ ବିଷ ପିଇଲା ପ୍ରେମିକ" ->  "prema samparkare bhaṭṭā: rāgare premikāra taṇṭi kāṭi nije biṣha piilā premika"
-   "ହୋଟେଲ, ଲଜ୍‌ରେ ରୁମ୍‌ ମିଳୁନି: ନେତା‌ଙ୍କ ନାଁରେ ଆଗୁଆ ହୋଇଯାଇଛି ବୁକିଂ" ->  "heāṭela, lajre rum miḷuni: netāṅka nāmre āguā heāiỵāichhhi bukiṃ"
+   "ହୋଟେଲ, ଲଜ୍‌ରେ ରୁମ୍‌ ମିଳୁନି: ନେତା‌ଙ୍କ ନାଁରେ ଆଗୁଆ ହୋଇଯାଇଛି ବୁକିଂ" ->  "heāṭela, lajre rum miḷuni: netāṅka nām̐re āguā heāiỵāichhhi bukiṁ"
    "ପର୍ଯ୍ୟଟକମାନଙ୍କ ନିମନ୍ତେ ନଭେମ୍ବର ୧ରୁ ଖୋଲିବ ଶିମିଳିପାଳ ଅଭୟାରଣ୍ୟ" ->  "parỵyaṭakamānaṅka nimante nabhembara 1ru kholiba shimiḷipāḷa abhayāraṇya"
-   "ପାରିବାରିକ ଅଶାନ୍ତିର କରୁଣ ପରିଣତି: କୂଅକୁ ଡେଇଁଲେ ମା’-ଝିଅ, ଝିଅ ମୃତ" ->  "pāribārika ashāntira karuṇa pariṇati: kūaku ḍeimle mā’-jhia, jhia mṛta"
-   "‘ଭ୍ରଷ୍ଟାଚାରର ବଂଶବାଦ’ ଏବେ ସାଜିଛି ଦେଶ ପାଇଁ ନୂଆ ସମସ୍ୟା; ପ୍ରଧାନମନ୍ତ୍ରୀ ମୋଦୀ" ->  "‘bhraṣhṭāchārara baṃshabāda’ ebe sājichhhi desha pāim nūā samasyā; pradhānamantrī modī"
+   "ପାରିବାରିକ ଅଶାନ୍ତିର କରୁଣ ପରିଣତି: କୂଅକୁ ଡେଇଁଲେ ମା’-ଝିଅ, ଝିଅ ମୃତ" ->  "pāribārika ashāntira karuṇa pariṇati: kūaku ḍeim̐le mā’-jhia, jhia mṛta"
+   "‘ଭ୍ରଷ୍ଟାଚାରର ବଂଶବାଦ’ ଏବେ ସାଜିଛି ଦେଶ ପାଇଁ ନୂଆ ସମସ୍ୟା; ପ୍ରଧାନମନ୍ତ୍ରୀ ମୋଦୀ" ->  "‘bhraṣhṭāchārara baṁshabāda’ ebe sājichhhi desha pāim̐ nūā samasyā; pradhānamantrī modī"
    "ପାହାଡ଼ି ଇଲାକାବାସୀଙ୍କ ଆଶାର ବତୀ ‘ପାର୍ବତୀ’" ->  "pāhāṙi ilākābāsīṅka āshāra batī ‘pārbatī’"
 
   # Note: UN card expects this to start with an uppercase letter, but that would break other tests
@@ -49,7 +57,7 @@ tests {
 }
 
 aliases {
-  orya_chars_1 = any("\u0b4d\u0b3e\u0b3f\u0b40\u0b41\u0b42\u0b43\u0b47\u0b48\u0b4b\u0b4c")
+  orya_chars_1 = any("\u0b4d\u0b3e\u0b3f\u0b40\u0b41\u0b42\u0b43\u0b47\u0b48\u0b4b\u0b4c\u0b56\u0b57")
 }
 
 stage main {
@@ -316,13 +324,13 @@ stage main {
     sub "କ୍ଷ" "kṣha"
 
     # Chandrabindu
-    sub "ଁ" "m"
+    sub "ଁ" "m̐"
 
     # Bisarga
     sub "ଃ" "ḥ"
 
     # Anusvāra
-    sub "ଂ" "ṃ"
+    sub "ଂ" "ṁ"
 
     # Medials # Needed for connecting constants
 
@@ -334,8 +342,10 @@ stage main {
     sub "ୃ" "ṛ"
     sub "େ" "e"
     sub "ୈ" "ai"
+    sub "ୖ" "ai"
     sub "ୋ" "o"
     sub "ୌ" "au"
+    sub "ୗ" "au"
 
     sub "्" ""
     sub "୍" ""

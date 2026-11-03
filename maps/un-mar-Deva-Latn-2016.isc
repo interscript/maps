@@ -32,10 +32,18 @@ metadata {
     #    we found that actually when a word ends with a consonant it should be transliterated without the vowel in it.  #
     #    so we are applying this rule as if a word ends with a consonant, in this case we are removing the ending 'a'.  #
     #####################################################################################################################
+    note "Diffed against the UN Romanization of Marathi for Geographical Names table as\n published in the WGRS Report on the Current Status of UN Romanization Systems\n for Geographical Names, version 4.0 (March 2016) (eki.ee/wgrs/rom1_mr.htm;\n also unstats wgrr4marathi), which gives the Hindi table plus the Marathi\n additions: ळ ḷa, ऍ ă (abbreviated कॅ kă), the ऱ्य/ऱ्ह and -h ligatures, and the\n independent अि i … series."
+
+    note "Fixed against the source: the abbreviated ऍ form कॅ (U+0945) was not encoded\n and is now rendered ă; the corrupt 'note[3]' rule (from some + 0939) was\n removed. The ॲ ê and ऑ ô rows have no row in the source table and are kept as\n practical extensions; the ऱ row likewise extends the source's ligature-only\n use of ऱ."
   }
+
 }
 
 tests {
+   "कॅ" ->  "kă"
+   "ळ" ->  "ḷa"
+   "ऍ" ->  "ă"
+   "ऱ्या" ->  "ryā"
    "महाराष्ट्र" ->  "mahārāṣhṭr"
    "मुंबई" ->  "muṁbaī"
    "परिपक्क" ->  "paripakk"
@@ -65,15 +73,6 @@ stage main {
 
   run  map.devalatn.stage.main
 
-  # RULES
-  # note[3]
-  sub {
-    from some("\U") + "0939"
-    to "h"
-    before ""
-    after boundary
-  }
-
 
   # CHARACTERS
   parallel {
@@ -81,6 +80,8 @@ stage main {
     # Note 1
     sub "ळ" "ḷa"
     sub "ऍ" "ă"
+    # abbreviated form of ऍ (कॅ kă): consonant + U+0945
+    sub "\u0945" "ă"
 
     # Note 2
     sub "ऱ" "r"

@@ -38,10 +38,18 @@ metadata {
      note "       ৃ Exceptions: হৃ hṛ."
      note "       ্‌  Pronunciation without a vowel; special form: ৎ t."
      note "       Dotted variants of the characters: ড় ṙa; ঢ় ṙha; য় ya."
+    note "Diffed against the UN Romanization of Assamese for Geographical Names table\n as published in the WGRS Report on the Current Status of UN Romanization Systems\n for Geographical Names, version 4.0 (February 2013) (eki.ee/wgrs/rom1_as.htm;\n also unstats wgrr4assamese): all 11 independent vowels, 11 vowel signs, 3 other\n symbols, 34 consonants and the dotted variants verified. The ligature section\n is shared with Bengali (rom1_bn)."
+
+    note "Fixed against the source: the decomposed dotted variant ঢ় (U+09A2 U+09BC)\n rendered ya; source footnote A gives ṙha for ঢ় (corrected)."
   }
+
 }
 
 tests {
+   "ঢ়" ->  "ṙha"
+   "ড়" ->  "ṙa"
+   "য়" ->  "ya"
+   "ৱ" ->  "va"
    "অসমীয়া কবিতা" ->  "asamīyā kabitā"
    "কবিৰ আজি জন্মদিন" ->  "kabira āji janmadina"
    "বেৰুটত এমাহৰ পাছতে পুনৰ ভয়ংকৰ অগ্নিকাণ্ড" ->  "beruṭata emāhara pāchhate punara bhayaṁkara agnikāṇḍa"
@@ -338,7 +346,7 @@ stage main {
     sub "য়" "ya"
     sub "য়" "ya"
     sub "ড়" "ṙa"
-    sub "ঢ়" "ya"
+    sub "ঢ়" "ṙha"
   }
 
   compose

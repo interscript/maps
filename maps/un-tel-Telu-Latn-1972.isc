@@ -29,7 +29,9 @@ metadata {
     note "      The vowel a is implicit after all consonants and consonant clusters and is supplied in\n      transliteration, with the following exceptions:\n      a) when another vowel is indicated by its appropriate sign; and\n      b) when the absence of any vowel is indicated by the superscript sign ( ౬ ) called valapalagilaka."
     note "      Exception: Sunna is transliterated by:\n      a) ṅ before gutturals,\n      b) ñ before palatals,\n      c) ṇ before cerebrals,\n      d) n before dentals, and\n      e) m before labials."
     note "      Ardhasunna before gutturals and palatal, cerebral, and dental occlusives is transliterated n̐.\n      Before labials, sibilants, semivowels, the aspirate, vowels, and in final position it is\n      transliterated m"
+    note "Diffed against the UN Romanization of Telugu for Geographical Names table as\n published in the WGRS Report on the Current Status of UN Romanization Systems\n for Geographical Names, version 4.0 (February 2013) (eki.ee/wgrs/rom1_te.htm;\n also unstats wgrr4telugu): all independent vowels, vowel signs, other symbols\n and consonants verified; the ligature rows are compositional. No gaps or\n divergences."
   }
+
 }
 
 tests {
