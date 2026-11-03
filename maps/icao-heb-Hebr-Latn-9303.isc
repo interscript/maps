@@ -22,6 +22,11 @@ metadata {
     This document defines the transliteration mappings used to produce
     this transcription or transliteration.
   }
+
+  notes {
+    note "NOT DIFFABLE against ICAO Doc 9303 Part 3 Amd 1 (16/09/16): its Section 6 (Transliterations Recommended for Use by States) provides tables only for the Latin, Cyrillic and Arabic families of languages; there is no Hebrew table in that source, and no Appendix covering Hebrew."
+    note "The mapping in this file follows the Wikipedia Romanization of Hebrew (see the comment above the stage), not any ICAO Doc 9303 table in hand; its attribution to Doc 9303 is unverified. No values were changed in the WO09 diff because no ICAO Hebrew source was available to diff against."
+  }
 }
 
 tests {

@@ -22,9 +22,28 @@ metadata {
     This document defines the transliteration mappings used to produce
     this transcription or transliteration.
   }
+
+  notes {
+    note "Diffed against ICAO Doc 9303 Part 3 Amd 1 (16/09/16), Section 6.C (Transliteration of Arabic Script)."
+    note "Divergence corrected against the source: teh marbuta was rendered P, which is the value of peh; the source's row 0629 renders teh marbuta XTA. The other divergences corrected: the vowel-sign rows fathatan, dammatan, kasratan, fatha, damma, kasra and sukun were rendered F, N, K, A, U, I and O, but the source marks all of them (and tatwheel and superscript alef) as Not encoded; they now drop from the output instead of injecting Latin letters."
+    note "NOT ENCODED -- teh marbuta word-final variant. Source footnote 1: XTA is used generally except if teh marbuta occurs at the end of the name component, in which case XAH is used. This positional rule needs an after-boundary constraint, which the current Ruby ISC runtime drops (Interscript::Isc::NodeAdapter reads constraint :value while the DocumentBuilder emits :item), so it would silently never fire; once fixed, encode it as sub { from \"ة\" to \"XAH\" after boundary } before the parallel block."
+    note "NOT ENCODED -- shadda (U+0651). Source footnote 2: shadda denotes doubling, the Latin character or sequence is repeated (e.g. abbas with shadda becomes EBBAS). Doubling the previous output is not expressible as a parallel substitution, so shadda is left unmapped rather than guessed."
+    note "The four further Not encoded rows of the source table (069C, 06A2, 06A7, 06A8) are likewise left unmapped."
+  }
 }
 
 tests {
+   "ة" ->  "XTA"
+   "پ" ->  "P"
+   "چ" ->  "XC"
+   "ژ" ->  "XJ"
+   "گ" ->  "XGG"
+   "ک" ->  "XKK"
+   "ی" ->  "XYA"
+   "َ" ->  ""
+   "ْ" ->  ""
+   "ـ" ->  ""
+   "پاکستان" ->  "PAXKKSTAN"
 }
 
 # https://www.icao.int/publications/Documents/9303_p3_cons_en.pdf
@@ -42,7 +61,7 @@ stage main {
     sub "ئ" "XI"
     sub "ا" "A"
     sub "ب" "B"
-    sub "ة" "P"
+    sub "ة" "XTA"
     sub "ت" "T"
     sub "ث" "XTH"
     sub "ج" "J"
@@ -60,6 +79,7 @@ stage main {
     sub "ظ" "XZZ"
     sub "ع" "E"
     sub "غ" "G"
+    sub "ـ" ""
     sub "ف" "F"
     sub "ق" "Q"
     sub "ك" "K"
@@ -70,13 +90,13 @@ stage main {
     sub "و" "W"
     sub "ى" "XAY"
     sub "ي" "Y"
-    sub "ً" "F"
-    sub "ٌ" "N"
-    sub "ٍ" "K"
-    sub "َ" "A"
-    sub "ُ" "U"
-    sub "ِ" "I"
-    sub "ْ" "O"
+    sub "ً" ""
+    sub "ٌ" ""
+    sub "ٍ" ""
+    sub "َ" ""
+    sub "ُ" ""
+    sub "ِ" ""
+    sub "ْ" ""
     sub "ٰ" ""
     sub "ٱ" "XXA"
     sub "ٹ" "XXT"
