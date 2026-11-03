@@ -3,7 +3,7 @@ system "BGN-PCGN:os-Cyrl:Latn:2009" {
 metadata {
   authority_id bgnpcgn
   id 2009
-  language iso-639-2:oss
+  language iso-639-1:os
   source_script Cyrl
   destination_script Latn
   name Romanization of Ossetian (BGN/PCGN 2009 System)

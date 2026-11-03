@@ -3,7 +3,7 @@ system "BGN-PCGN:av-Cyrl:Latn:2011" {
 metadata {
   authority_id bgnpcgn
   id 2011
-  language iso-639-2:ava
+  language iso-639-1:av
   source_script Cyrl
   destination_script Latn
   name Romanization of Avar (BGN/PCGN 2011 System)
