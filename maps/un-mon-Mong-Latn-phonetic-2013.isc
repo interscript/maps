@@ -33,6 +33,9 @@ metadata {
     note "Where two Roman equivalents are given, the second (in brackets) is\n used for recording the pronunciation of place-names while the first\n form is for general use."
     note "In the table only word-initial character variants are shown.\n Depending on the position in the word many variants of the characters\n are used as well as some ligatures. These features are not covered here."
     note "For technical reasons the characters of the Mongolian script are\n turned 90˚ anti-clockwise."
+    note "Diffed against the UN Romanization of Mongolian (in China) for Geographical\n Names table as published in the WGRS Report on the Current Status of UN\n Romanization Systems for Geographical Names, version 4.0 (September 2013)\n (eki.ee/wgrs/rom1_mnc.htm): all 27 rows verified; rows 26/27 use the bracketed\n place-name-recording forms ô and û of source note 2, encoded by the dependency\n sasm-mon-Mong-Latn-phonetic-1978."
+
+    note "Source-side ambiguities, recorded not changed: the printed table lists ᠲ in\n both row 4 (d) and row 20 (t), and ᠺ in both row 7 (g) and row 11 (k); the map\n resolves ᠲ to t and ᠺ to k. The rows for ᠧ e, ᠩ ng, the Mongolian vowel separator\n and the space have no row in the printed table and are kept as practical\n extensions."
   }
 
   implementation_notes {

@@ -82,6 +82,10 @@ metadata {
   }
   notes {
     note "      The previous UN 1972 System had the following differences:\n      the character (ظ) was romanized as z̧ instead of d͟h;\n      ح, ص, ض the cedilla (¸) was used instead of sub-macron (_) in all characters with sub-macrons.  - |\n      When the definite article al precedes a word beginning with one of the \"sun letters\" (t,\n      th, d, dh, r, z, s, sh, ş, ḑ, ţ, z, l, n ̧ ) the l of the definite article is assimilated with the first\n      consonant of the word: ash-Sh الشارقة āriqah."
+
+    note "Diffed against the UN Romanization of Arabic for Geographical Names\n (1972/2017) table as published in the WGRS Report on the Current Status of UN\n Romanization Systems for Geographical Names, version 5.0 (June 2018)\n (eki.ee/wgrs/rom1_ar.htm; also unstats wgrr5arabic), whose 'Other systems'\n section records every row in which the previous UN 1972 system (II/8) differs\n from the current one: (ظ) romanized z̧ instead of d͟h, and the cedilla instead\n of the sub-macron in all sub-macron characters (ح ḩ, ص ş, ض ḑ, ط ţ, ظ z̧).\n Those rows are encoded as overrides over the shared stage; the iyā and\n ta' marbūṭah fixes recorded in un-ara-Arab-Latn-2017 flow through."
+
+    note "The claimed table (the obsolete EKI path obs_rom_vers/rom1_ar_v4_0.pdf) is\n not in the reference library; the 1972 rows were verified against the 5.0\n comparison section. Reissue note: the current UN system (XI/3, 2017) is\n encoded separately in un-ara-Arab-Latn-2017 and is NOT merged here."
   }
 }
 

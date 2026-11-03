@@ -14,10 +14,18 @@ metadata {
 
   notes {
     note "Transliteration version (reversible). Also appears in annex B of ISO 843:1997. Originates in v1.0 of UNGEGN transliteration, 1987. This likely was the intended system in ELOT 743:1982 for transliteration, but the reversible character diacritics are missing from the document, and the document does not indicate what there was supposed to be."
+    note "Diffed against the UN Romanization of Greek for Geographical Names (1987)\n table, transliteration version, as published in the WGRS Report on the Current\n Status of UN Romanization Systems for Geographical Names, version 4.0 (March\n 2016) (eki.ee/wgrs/rom1_el.htm). The transliteration version differs from the\n transcription only by the sub-macron of source note 1: αυ av̱/af̱, γγ ṉg,\n γξ ṉx, γχ ṉch, ευ ev̱/ef̱, η i̱, ηυ i̱v̱/i̱f̱, ω o̱ — all encoded by the dependency\n elot-ell-Grek-Latn-743-1982-tl and verified."
+
+    note "Glyph variant, recorded not changed: the source prints the sub-macron as\n U+0320 (combining minus sign below); the map uses U+0331 (combining macron\n below), the conventional sub-macron character of the 1987 resolution."
   }
 }
 
 tests {
+   "ναυτικό" ->  "naf̱tikó"
+   "Ευρώπη" ->  "Ev̱ró̱pi̱"
+   "Αγγλία" ->  "Aṉglía"
+   "η" ->  "i̱"
+   "ω" ->  "o̱"
    "Ένα πράμα μόνον με παρακίνησε κι εμένα να γράψω ότι τούτην την πατρίδα την έχομεν όλοι μαζί, και σοφοί κι αμαθείς και πλούσιοι και φτωχοί και πολιτικοί και στρατιωτικοί και οι πλέον μικρότεροι άνθρωποι· όσοι αγωνιστήκαμεν, αναλόγως ο καθείς, έχομεν να ζήσομεν εδώ. Το λοιπόν δουλέψαμεν όλοι μαζί, να την φυλάμεν κι όλοι μαζί και να μην λέγει ούτε ο δυνατός «εγώ» ούτε ο αδύνατος. Ξέρετε πότε να λέγει ο καθείς «εγώ»; Όταν αγωνιστεί μόνος του και φκιάσει ή χαλάσει, να λέγει «εγώ»· όταν όμως αγωνίζονται πολλοί και φκιάνουν, τότε να λένε «εμείς». Είμαστε εις το «εμείς» κι όχι εις το «εγώ». Και εις το εξής να μάθομεν γνώση, αν θέλομεν να φκιάσομεν χωριόν, να ζήσομεν όλοι μαζί.\n\nΓιάννης Μακρυγιάννης.\n" ->  "Éna práma mónon me parakíni̱se ki eména na grápso̱ óti toúti̱n ti̱n patrída ti̱n échomen óloi mazí, kai sofoí ki amatheís kai ploúsioi kai fto̱choí kai politikoí kai stratio̱tikoí kai oi pléon mikróteroi ánthro̱poi; ósoi ago̱nistí̱kamen, analógo̱s o katheís, échomen na zí̱somen edó̱. To loipón doulépsamen óloi mazí, na ti̱n fylámen ki óloi mazí kai na mi̱n légei oúte o dynatós «egó̱» oúte o adýnatos. Xérete póte na légei o katheís «egó̱»? Ótan ago̱nisteí mónos tou kai fkiásei í̱ chalásei, na légei «egó̱»; ótan ómo̱s ago̱nízontai polloí kai fkiánoun, tóte na léne «emeís». Eímaste eis to «emeís» ki óchi eis to «egó̱». Kai eis to exí̱s na máthomen gnó̱si̱, an thélomen na fkiásomen cho̱rión, na zí̱somen óloi mazí.\n\nGiánni̱s Makrygiánni̱s.\n"
 
   # UN card tests

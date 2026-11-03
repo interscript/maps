@@ -52,18 +52,27 @@ metadata {
     note "Where two Roman equivalents are given, the second (in brackets) is\n used for recording the pronunciation of place-names while the first\n form is for general use."
     note "In the table only word-initial character variants are shown.\n Depending on the position in the word many variants of the characters\n are used as well as some ligatures. These features are not covered here."
     note "For technical reasons the characters of the Mongolian script are\n turned 90˚ anti-clockwise."
+    note "Diffed against the UN Romanization of Bengali for Geographical Names table\n as published in the WGRS Report on the Current Status of UN Romanization Systems\n for Geographical Names, version 4.0 (February 2013) (eki.ee/wgrs/rom1_bn.htm;\n also unstats wgrr4bengali): all 11 independent vowels, 11 vowel signs, 3 other\n symbols, 32 consonants and the dotted variants verified, plus the ligature\n section."
+
+    note "Repaired against the source: the map had no inherent-vowel suppression, so a\n consonant followed by a vowel sign kept its inherent a (ঢাকা → ḍhaākaā instead\n of ḍhākā). Added the source-table II machinery (a consonant loses its inherent\n a before a vowel sign or virama) and a plain-virama row; the explicit ligature\n rows now compose. Also: the য row's value carried the footnote marker (j̱aA →\n j̱a); the decomposed dotted variants ড় ঢ় য় (base + U+09BC) were missing and are\n now encoded."
   }
+
 }
 
 tests {
+   "য" ->  "j̱a"
+   "য়" ->  "ya"
+   "ড়" ->  "ṙa"
+   "ঢ়" ->  "ṙha"
+   "কলকাতা" ->  "kalakātā"
    "র্ক" ->  "rka"
    "গ্র" ->  "gra"
-   "ত্য" ->  "tya"
-   "আমার সোনার বাংলা, আমি তোমায় ভালোবাসি।\nচিরদিন তোমার আকাশ, তোমার বাতাস, আমার প্রাণে বাজায় বাঁশি॥\nও মা, ফাগুনে তোর আমের বনে ঘ্রাণে পাগল করে, মরি হায়, হায় রে—\nও মা, অঘ্রাণে তোর ভরা ক্ষেতে আমি কী দেখেছি মধুর হাসি॥\n\nকী শোভা, কী ছায়া গো, কী স্নেহ, কী মায়া গো—\nকী আঁচল বিছায়েছ বটের মূলে, নদীর কূলে কূলে।\nমা, তোর মুখের বাণী আমার কানে লাগে সুধার মতো,\nমরি হায়, হায় রে—\nমা, তোর বদনখানি মলিন হলে, ও মা, আমি নয়নজলে ভাসি॥" ->  "āmaāra saonaāra baāṁlaā, āmai taomaāj̱aA় bhaālaobaāsai।\nchairadaina taomaāra ākaāsha, taomaāra baātaāsa, āmaāra praāṇae baājaāj̱aA় baām̐shai॥\no maā, phaāgaunae taora āmaera banae ghraāṇae paāgala karae, marai haāj̱aA়, haāj̱aA় rae—\no maā, aghraāṇae taora bharaā kṣhaetae āmai kaī daekhaechhai madhaura haāsai॥\n\nkaī shaobhaā, kaī chhaāj̱aA়ā gao, kaī snaeha, kaī maāj̱aA়ā gao—\nkaī ām̐chala baichhaāj̱aA়echha baṭaera maūlae, nadaīra kaūlae kaūlae।\nmaā, taora maukhaera baāṇaī āmaāra kaānae laāgae saudhaāra matao,\nmarai haāj̱aA়, haāj̱aA় rae—\nmaā, taora badanakhaānai malaina halae, o maā, āmai naj̱aA়najalae bhaāsai॥"
+   "ত্য" ->  "tj̱a"
+   "আমার সোনার বাংলা, আমি তোমায় ভালোবাসি।\nচিরদিন তোমার আকাশ, তোমার বাতাস, আমার প্রাণে বাজায় বাঁশি॥\nও মা, ফাগুনে তোর আমের বনে ঘ্রাণে পাগল করে, মরি হায়, হায় রে—\nও মা, অঘ্রাণে তোর ভরা ক্ষেতে আমি কী দেখেছি মধুর হাসি॥\n\nকী শোভা, কী ছায়া গো, কী স্নেহ, কী মায়া গো—\nকী আঁচল বিছায়েছ বটের মূলে, নদীর কূলে কূলে।\nমা, তোর মুখের বাণী আমার কানে লাগে সুধার মতো,\nমরি হায়, হায় রে—\nমা, তোর বদনখানি মলিন হলে, ও মা, আমি নয়নজলে ভাসি॥" ->  "āmāra sonāra bāṁlā, āmi tomāya bhālobāsi।\nchiradina tomāra ākāsha, tomāra bātāsa, āmāra prāṇe bājāya bām̐shi॥\no mā, phāgune tora āmera bane ghrāṇe pāgala kare, mari hāya, hāya re—\no mā, aghrāṇe tora bharā kṣhete āmi kī dekhechhi madhura hāsi॥\n\nkī shobhā, kī chhāyaā go, kī sneha, kī māyaā go—\nkī ām̐chala bichhāyaechha baṭera mūle, nadīra kūle kūle।\nmā, tora mukhera bāṇī āmāra kāne lāge sudhāra mato,\nmari hāya, hāya re—\nmā, tora badanakhāni malina hale, o mā, āmi nayanajale bhāsi॥"
 
   # Note: UN card expects this to start with an uppercase letter, but it would break other tests
-   "বাংলাদেশ" ->  "baāṁlaādaesha"
-   "ঢাকা" ->  "ḍhaākaā"
+   "বাংলাদেশ" ->  "bāṁlādesha"
+   "ঢাকা" ->  "ḍhākā"
 
     # Note: There are still couple of improvements we can do in the
     # transilation system, but for now this could work
@@ -73,7 +82,176 @@ tests {
     #
 }
 
+aliases {
+  beng_signs = any("\u09be\u09bf\u09c0\u09c1\u09c2\u09c3\u09c7\u09c8\u09cb\u09cc\u09cd")
+}
+
 stage main {
+
+  # RULES
+  # A consonant followed by a vowel sign or virama loses its inherent a
+  # (source table II: the abbreviated vowel characters are romanized by the
+  # sign alone, the consonant carrying no vowel).
+    sub {
+    from "ক"
+    to "k"
+    after beng_signs
+  }
+    sub {
+    from "খ"
+    to "kh"
+    after beng_signs
+  }
+    sub {
+    from "গ"
+    to "g"
+    after beng_signs
+  }
+    sub {
+    from "ঘ"
+    to "gh"
+    after beng_signs
+  }
+    sub {
+    from "ঙ"
+    to "ṅ"
+    after beng_signs
+  }
+    sub {
+    from "চ"
+    to "ch"
+    after beng_signs
+  }
+    sub {
+    from "ছ"
+    to "chh"
+    after beng_signs
+  }
+    sub {
+    from "জ"
+    to "j"
+    after beng_signs
+  }
+    sub {
+    from "ঝ"
+    to "jh"
+    after beng_signs
+  }
+    sub {
+    from "ঞ"
+    to "ñ"
+    after beng_signs
+  }
+    sub {
+    from "ট"
+    to "ṭ"
+    after beng_signs
+  }
+    sub {
+    from "ঠ"
+    to "ṭh"
+    after beng_signs
+  }
+    sub {
+    from "ড"
+    to "ḍ"
+    after beng_signs
+  }
+    sub {
+    from "ঢ"
+    to "ḍh"
+    after beng_signs
+  }
+    sub {
+    from "ণ"
+    to "ṇ"
+    after beng_signs
+  }
+    sub {
+    from "ত"
+    to "t"
+    after beng_signs
+  }
+    sub {
+    from "থ"
+    to "th"
+    after beng_signs
+  }
+    sub {
+    from "দ"
+    to "d"
+    after beng_signs
+  }
+    sub {
+    from "ধ"
+    to "dh"
+    after beng_signs
+  }
+    sub {
+    from "ন"
+    to "n"
+    after beng_signs
+  }
+    sub {
+    from "প"
+    to "p"
+    after beng_signs
+  }
+    sub {
+    from "ফ"
+    to "ph"
+    after beng_signs
+  }
+    sub {
+    from "ব"
+    to "b"
+    after beng_signs
+  }
+    sub {
+    from "ভ"
+    to "bh"
+    after beng_signs
+  }
+    sub {
+    from "ম"
+    to "m"
+    after beng_signs
+  }
+    sub {
+    from "য"
+    to "j̱"
+    after beng_signs
+  }
+    sub {
+    from "র"
+    to "r"
+    after beng_signs
+  }
+    sub {
+    from "ল"
+    to "l"
+    after beng_signs
+  }
+    sub {
+    from "শ"
+    to "sh"
+    after beng_signs
+  }
+    sub {
+    from "ষ"
+    to "ṣh"
+    after beng_signs
+  }
+    sub {
+    from "স"
+    to "s"
+    after beng_signs
+  }
+    sub {
+    from "হ"
+    to "h"
+    after beng_signs
+  }
 
   # CHARACTERS
   parallel {
@@ -124,6 +302,7 @@ stage main {
     sub "\u0981" "m̐"
     sub "\u0983" "ḥ"
     sub "\u09cd\u200c" ""
+    sub "\u09cd" ""
 
     # III 4 special form
     sub "ৎ" "t"
@@ -155,7 +334,7 @@ stage main {
     sub "ব" "ba"
     sub "ভ" "bha"
     sub "ম" "ma"
-    sub "য" "j̱aA"
+    sub "য" "j̱a"
     sub "র" "ra"
     sub "ল" "la"
     sub "শ" "sha"
@@ -163,10 +342,13 @@ stage main {
     sub "স" "sa"
     sub "হ" "ha"
 
-    # IV 13, 14
+    # IV 13, 14 (precomposed and decomposed dotted variants)
     sub "ড়" "ṙa"
     sub "ঢ়" "ṙha"
     sub "য়" "ya"
+    sub "\u09a1\u09bc" "ṙa"
+    sub "\u09a2\u09bc" "ṙha"
+    sub "\u09af\u09bc" "ya"
 
 
     # V. Ligatures

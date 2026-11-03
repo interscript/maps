@@ -30,7 +30,9 @@ metadata {
     note "      ் Pronunciation without a vowel: க் k."
     note "      ஜ, ஶ, ஸ, ன Characters borrowed from the Grantha script."
     note "      ஸ Special syllable character: ஸ்ரீ srī."
+    note "Diffed against the UN Romanization of Tamil for Geographical Names table as\n published in the WGRS Report on the Current Status of UN Romanization Systems\n for Geographical Names, version 4.0 (February 2013) (eki.ee/wgrs/rom1_ta.htm;\n also unstats wgrr4tamil): all independent vowels, vowel signs, other symbols and\n consonants verified; no gaps or divergences."
   }
+
 }
 
 tests {

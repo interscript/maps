@@ -28,7 +28,9 @@ metadata {
 
     note "In normal spelling ṙ and ṙh are not marked, instead dotless ड ḍa, ढ ḍha are used to denote these sounds."
     note "      Ligatures may be formed with r as the first component: ~ह rha."
+    note "Diffed against the UN Romanization System of Nepali for Geographical Names\n (1972) table (WGRS Report, version 4.0, February 2013; eki.ee/wgrs/rom1_ne.htm;\n also unstats wgrr4nepali). Reissue note: no 2013 Nepali system exists — the UN\n system was approved only in 1972 (II/11); '2013' is the WGRS report revision\n year carried in the map's metadata. This map therefore delegates entirely to\n un-nep-Deva-Latn-1972 and encodes no separate edition."
   }
+
 }
 
 tests {

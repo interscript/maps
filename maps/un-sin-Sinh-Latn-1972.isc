@@ -28,7 +28,11 @@ metadata {
     note "      ූ Exceptions: කූ kū, ගූ gū, තූ tū, භූ bhū, රූ rū, ශූ shū"
     note "      ් Marks absence of the inherent vowel. Special forms: ඛ් kh, ඞ් ṅ, ච් ch, ට් ṭ, ඩ් ḍ, ධ් dh, බ් b, ම් m, ව් v."
     note "      ඛ ඝ ඞ ච ඡ ඣ ඤ ඨ ඪ ථ ධ ඵ භ ශ ෂ These consonants are used only in Sanskrit and Pali loanwords."
+    note "The claimed source (Second UNCSGN, London 1972, vol. II, pp. 151-152 — the\n D. N. Sharma table) is not in the reference library; the rows follow the notes\n above and are unchanged in the WO09 UNGEGN diff. Reissue note: the library's\n current Sinhala page (WGRS 5.0, October 2021; eki.ee/wgrs/rom2_si.htm; also\n unstats wgrr5sinhala) states that no UN romanization system for Sinhala has\n been approved and documents the Sri Lanka Survey Department system approved\n 4 September 2018 (ISO 15919-based, amended); that 2018/2021 system is NOT\n encoded here."
+
+    note "Metadata erratum: the url field points at rom1_ml.htm (Malayalam); the\n Sinhala table is rom2_si. Left unchanged to keep the map's declared edition\n intact, and recorded here."
   }
+
 }
 
 tests {

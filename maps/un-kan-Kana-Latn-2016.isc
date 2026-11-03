@@ -28,7 +28,9 @@ metadata {
   notes {
     note "      While most consonants have a diacritic in the upper right corner of the character (like ಕ),\n      some do not, e.g. ಖ kha, ಜ ja, ನ na, ಬ ba, ಲ la."
     note "      Combinations with r as the first component are written by adding a special symbol after the\n      second consonant: ರ್ಗ rga."
+    note "Diffed against the UN Romanization of Kannada for Geographical Names table\n as published in the WGRS Report on the Current Status of UN Romanization Systems\n for Geographical Names, version 4.0 (February 2013) (eki.ee/wgrs/rom1_kn.pdf;\n also unstats wgrr4kannada): all independent vowels, vowel signs, other symbols\n and consonants verified. The source's ligature rows are compositional (first\n consonant bare + next consonant with inherent a); the map's rules reproduce\n them. No gaps or divergences."
   }
+
 }
 
 tests {

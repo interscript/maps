@@ -14,6 +14,7 @@ metadata {
 
   notes {
     note "Transcription version"
+    note "Diffed against the UN Romanization of Greek for Geographical Names (1987)\n table, transcription version, as published in the WGRS Report on the Current\n Status of UN Romanization Systems for Geographical Names, version 4.0 (March\n 2016) (eki.ee/wgrs/rom1_el.htm; also unstats wgrr4greek): all 24 rows, the\n eight context combinations (αυ av/af, ευ ev/ef, ηυ iv/if, γγ ng, γξ nx, γχ nch,\n μπ b/mp) with footnotes A-D, and notes 1-4 verified. The context-dependent\n variants are encoded by the dependency elot-ell-Grek-Latn-743-1982-ts, whose\n table implements the ELOT 743 rules the UN system is based on (res. V/19)."
   }
 }
 
