@@ -1,0 +1,6507 @@
+{
+  "source": "ICS 630-01, Foreign Language Transliteration Standards, Annex D: Standards for the Transliteration of Chinese Personal Names in Written Reports and Products (effective 10 August 2015)",
+  "cover_memo": {
+    "extraction_method": "single scanned page, no text layer; transcribed from a 200 dpi render (visual read)",
+    "title": "Foreign Language Transliteration Standards",
+    "standard": "Intelligence Community Standard 630-01",
+    "authority": "National Security Act of 1947, as amended; the Reform and Terrorism Prevention Act of 2004; Executive Order 12333, as amended; and IC Directive Number 607, Intelligence Community Foreign Language Capability",
+    "policy": "Standardized transliteration within the IC on all finished analytical reports and products. Foreign Language Transliteration Standards (FLTS) for individual languages are developed and reviewed by each IC element's Senior Language Authority (SLA), promulgated as annexes titled 'Standards for the Transliteration of Personal Names in Written Reports and Products'.",
+    "approval": "ADNI, through the Foreign Language Program Office (FLPO), and approved IC FLTS are issued as ICS 630-01; Heads of IC elements review and approve ICS 630-01 within their respective IC element",
+    "effective": "10 August 2015 (date of signature, Deana A. Krichter, ADNI for Human Capital)"
+  },
+  "extraction": {
+    "annex_d_prose": "pypdf text layer, 3 pages, complete",
+    "appendix_a": "pdfplumber table grid (40x50 incl. separators) from the text layer; spot-checked visually at 600 dpi (duplicate i/i header columns, w- row 'Wong', y- row alignment)",
+    "appendix_b": "pypdf text layer, all 14 pages, one row per line",
+    "appendix_c": "pypdf text layer regex per entry; spot-checked visually at 300 dpi"
+  },
+  "appendix_a": {
+    "title": "Appendix A: IC Transliteration Table",
+    "note_as_printed": "Notes: this table includes initial-final combinations to form acceptable Chinese syllables.",
+    "columns": [
+      "a",
+      "o",
+      "e",
+      "i",
+      "i",
+      "ai",
+      "ei",
+      "ou",
+      "ao",
+      "an",
+      "en",
+      "ang",
+      "eng",
+      "ong",
+      "er",
+      "i",
+      "ia",
+      "iao",
+      "ie",
+      "iu",
+      "ian",
+      "iang",
+      "in",
+      "ing",
+      "iong",
+      "u",
+      "ua",
+      "uo",
+      "uai",
+      "ui",
+      "uan",
+      "un",
+      "uang",
+      "uen",
+      "ueng",
+      "yu",
+      "ue",
+      "uan",
+      "un"
+    ],
+    "rows": {
+      "-": {
+        "1": "a",
+        "2": "o",
+        "3": "e",
+        "6": "ai",
+        "7": "ei",
+        "8": "ou",
+        "9": "ao",
+        "10": "an",
+        "11": "en",
+        "12": "ang",
+        "13": "eng",
+        "15": "er"
+      },
+      "b-": {
+        "1": "Ba",
+        "2": "Bo",
+        "6": "Bai",
+        "7": "Bei",
+        "9": "Bao",
+        "10": "Ban",
+        "11": "Ben",
+        "12": "Bang",
+        "13": "Beng",
+        "16": "Bi",
+        "18": "Biao",
+        "19": "Bie",
+        "21": "Bian",
+        "23": "Bin",
+        "24": "Bing",
+        "26": "Bu"
+      },
+      "c-": {
+        "1": "Ca",
+        "3": "Ce",
+        "4": "Ci",
+        "6": "Cai",
+        "8": "Cou",
+        "9": "Cao",
+        "10": "Can",
+        "11": "Cen",
+        "12": "Cang",
+        "13": "Ceng",
+        "14": "Cong",
+        "26": "Cu",
+        "28": "Cuo",
+        "30": "Cui",
+        "31": "Cuan",
+        "32": "Cun"
+      },
+      "ch-": {
+        "1": "Cha",
+        "3": "Che",
+        "5": "Chi",
+        "6": "Chai",
+        "8": "Chou",
+        "9": "Chao",
+        "10": "Chan",
+        "11": "Chen",
+        "12": "Chang",
+        "13": "Cheng",
+        "14": "Chong",
+        "26": "Chu",
+        "27": "Chua",
+        "28": "Chuo",
+        "29": "Chuai",
+        "30": "Chui",
+        "31": "Chuan",
+        "32": "Chun",
+        "33": "Chuang"
+      },
+      "d-": {
+        "1": "Da",
+        "3": "De",
+        "6": "Dai",
+        "7": "Dei",
+        "8": "Dou",
+        "9": "Dao",
+        "10": "Dan",
+        "11": "Den",
+        "12": "Dang",
+        "13": "Deng",
+        "14": "Dong",
+        "16": "Di",
+        "17": "Dia",
+        "18": "Diao",
+        "19": "Die",
+        "20": "Diu",
+        "21": "Dian",
+        "24": "Ding",
+        "26": "Du",
+        "28": "Duo",
+        "30": "Dui",
+        "31": "Duan",
+        "32": "Dun"
+      },
+      "f-": {
+        "1": "Fa",
+        "2": "Fo",
+        "7": "Fei",
+        "8": "Fou",
+        "10": "Fan",
+        "11": "Fen",
+        "12": "Fang",
+        "13": "Feng",
+        "26": "Fu"
+      },
+      "g-": {
+        "1": "Ga",
+        "3": "Ge",
+        "6": "Gai",
+        "7": "Gei",
+        "8": "Gou",
+        "9": "Gao",
+        "10": "Gan",
+        "11": "Gen",
+        "12": "Gang",
+        "13": "Geng",
+        "14": "Gong",
+        "26": "Gu",
+        "27": "Gua",
+        "28": "Guo",
+        "29": "Guai",
+        "30": "Gui",
+        "31": "Guan",
+        "32": "Gun",
+        "33": "Guang"
+      },
+      "h-": {
+        "1": "Ha",
+        "3": "He",
+        "6": "Hai",
+        "7": "Hei",
+        "8": "Hou",
+        "9": "Hao",
+        "10": "Han",
+        "11": "Hen",
+        "12": "Hang",
+        "13": "Heng",
+        "14": "Hong",
+        "26": "Hu",
+        "27": "Hua",
+        "28": "Huo",
+        "29": "Huai",
+        "30": "Hui",
+        "31": "Huan",
+        "32": "Hun",
+        "33": "Huang"
+      },
+      "j-": {
+        "16": "Ji",
+        "17": "Jia",
+        "18": "Jiao",
+        "19": "Jie",
+        "20": "Jiu",
+        "21": "Jian",
+        "22": "Jiang",
+        "23": "Jin",
+        "24": "Jing",
+        "25": "Jiong",
+        "36": "Ju",
+        "37": "Jue",
+        "38": "Juan",
+        "39": "Jun"
+      },
+      "k-": {
+        "1": "Ka",
+        "3": "Ke",
+        "6": "Kai",
+        "7": "Kei",
+        "8": "Kou",
+        "9": "Kao",
+        "10": "Kan",
+        "11": "Ken",
+        "12": "Kang",
+        "13": "Keng",
+        "14": "Kong",
+        "26": "Ku",
+        "27": "Kua",
+        "28": "Kuo",
+        "29": "Kuai",
+        "30": "Kui",
+        "31": "Kuan",
+        "32": "Kun",
+        "33": "Kuang"
+      },
+      "l-": {
+        "1": "La",
+        "2": "Lo",
+        "3": "Le",
+        "6": "Lai",
+        "7": "Lei",
+        "8": "Lou",
+        "9": "Lao",
+        "10": "Lan",
+        "12": "Lang",
+        "13": "Leng",
+        "14": "Long",
+        "16": "Li",
+        "17": "Lia",
+        "18": "Liao",
+        "19": "Lie",
+        "20": "Liu",
+        "21": "Lian",
+        "22": "Liang",
+        "23": "Lin",
+        "24": "Ling",
+        "26": "Lu",
+        "28": "Luo",
+        "31": "Luan",
+        "32": "Lun",
+        "36": "Lu",
+        "37": "Lue"
+      },
+      "m-": {
+        "1": "Ma",
+        "2": "Mo",
+        "3": "Me",
+        "6": "Mai",
+        "7": "Mei",
+        "8": "Mou",
+        "9": "Mao",
+        "10": "Man",
+        "11": "Men",
+        "12": "Mang",
+        "13": "Meng",
+        "16": "Mi",
+        "18": "Miao",
+        "19": "Mie",
+        "20": "Miu",
+        "21": "Mian",
+        "23": "Min",
+        "24": "Ming",
+        "26": "Mu"
+      },
+      "n-": {
+        "1": "Na",
+        "3": "Ne",
+        "6": "Nai",
+        "7": "Nei",
+        "8": "Nou",
+        "9": "Nao",
+        "10": "Nan",
+        "11": "Nen",
+        "12": "Nang",
+        "13": "Neng",
+        "14": "Nong",
+        "16": "Ni",
+        "18": "Niao",
+        "19": "Nie",
+        "20": "Niu",
+        "21": "Nian",
+        "22": "Niang",
+        "23": "Nin",
+        "24": "Ning",
+        "26": "Nu",
+        "28": "Nuo",
+        "31": "Nuan",
+        "36": "Nu",
+        "37": "Nue"
+      },
+      "p-": {
+        "1": "Pa",
+        "2": "Po",
+        "6": "Pai",
+        "7": "Pei",
+        "8": "Pou",
+        "9": "Pao",
+        "10": "Pan",
+        "11": "Pen",
+        "12": "Pang",
+        "13": "Peng",
+        "16": "Pi",
+        "18": "Piao",
+        "19": "Pie",
+        "21": "Pian",
+        "23": "Pin",
+        "24": "Ping",
+        "26": "Pu"
+      },
+      "q-": {
+        "16": "Qi",
+        "17": "Qia",
+        "18": "Qiao",
+        "19": "Qie",
+        "20": "Qiu",
+        "21": "Qian",
+        "22": "Qiang",
+        "23": "Qin",
+        "24": "Qing",
+        "25": "Qiong",
+        "36": "Qu",
+        "37": "Que",
+        "38": "Quan",
+        "39": "Qun"
+      },
+      "r-": {
+        "3": "Re",
+        "5": "Ri",
+        "8": "Rou",
+        "9": "Rao",
+        "10": "Ran",
+        "11": "Ren",
+        "12": "Rang",
+        "13": "Reng",
+        "14": "Rong",
+        "26": "Ru",
+        "27": "Rua",
+        "28": "Ruo",
+        "30": "Rui",
+        "31": "Ruan",
+        "32": "Run"
+      },
+      "s-": {
+        "1": "Sa",
+        "3": "Se",
+        "4": "Si",
+        "6": "Sai",
+        "8": "Sou",
+        "9": "Sao",
+        "10": "San",
+        "11": "Sen",
+        "12": "Sang",
+        "13": "Seng",
+        "14": "Song",
+        "26": "Su",
+        "28": "Suo",
+        "30": "Sui",
+        "31": "Suan",
+        "32": "Sun"
+      },
+      "sh-": {
+        "1": "Sha",
+        "3": "She",
+        "5": "Shi",
+        "6": "Shai",
+        "7": "Shei",
+        "8": "Shou",
+        "9": "Shao",
+        "10": "Shan",
+        "11": "Shen",
+        "12": "Shang",
+        "13": "Sheng",
+        "26": "Shu",
+        "27": "Shua",
+        "28": "Shuo",
+        "29": "Shuai",
+        "30": "Shui",
+        "31": "Shuan",
+        "32": "Shun",
+        "33": "Shuang"
+      },
+      "t-": {
+        "1": "Ta",
+        "3": "Te",
+        "6": "Tai",
+        "7": "Tei",
+        "8": "Tou",
+        "9": "Tao",
+        "10": "Tan",
+        "12": "Tang",
+        "13": "Teng",
+        "14": "Tong",
+        "16": "Ti",
+        "18": "Tiao",
+        "19": "Tie",
+        "21": "Tian",
+        "24": "Ting",
+        "26": "Tu",
+        "28": "Tuo",
+        "30": "Tui",
+        "31": "Tuan",
+        "32": "Tun"
+      },
+      "w-": {
+        "1": "Wa",
+        "2": "Wo",
+        "6": "Wai",
+        "7": "Wei",
+        "10": "Wan",
+        "12": "Wang",
+        "13": "Weng",
+        "14": "Wong",
+        "26": "Wu"
+      },
+      "x-": {
+        "16": "Xi",
+        "17": "Xia",
+        "18": "Xiao",
+        "19": "Xie",
+        "20": "Xiu",
+        "21": "Xian",
+        "22": "Xiang",
+        "23": "Xin",
+        "24": "Xing",
+        "25": "Xiong",
+        "36": "Xu",
+        "37": "Xue",
+        "38": "Xuan",
+        "39": "Xun"
+      },
+      "y-": {
+        "1": "Ya",
+        "2": "Yo",
+        "3": "Ye",
+        "4": "Yi",
+        "8": "You",
+        "9": "Yao",
+        "10": "Yan",
+        "12": "Yang",
+        "14": "Yong",
+        "23": "Yin",
+        "24": "Ying",
+        "36": "Yu",
+        "37": "Yue",
+        "38": "Yuan",
+        "39": "Yun"
+      },
+      "z-": {
+        "1": "Za",
+        "3": "Ze",
+        "4": "Zi",
+        "6": "Zai",
+        "7": "Zei",
+        "8": "Zou",
+        "9": "Zao",
+        "10": "Zan",
+        "11": "Zen",
+        "12": "Zang",
+        "13": "Zeng",
+        "14": "Zong",
+        "26": "Zu",
+        "28": "Zuo",
+        "30": "Zui",
+        "31": "Zuan",
+        "32": "Zun"
+      },
+      "zh-": {
+        "1": "Zha",
+        "3": "Zhe",
+        "5": "Zhi",
+        "6": "Zhai",
+        "7": "Zhei",
+        "8": "Zhou",
+        "9": "Zhao",
+        "10": "Zhan",
+        "11": "Zhen",
+        "12": "Zhang",
+        "13": "Zheng",
+        "14": "Zhong",
+        "26": "Zhu",
+        "27": "Zhua",
+        "28": "Zhuo",
+        "29": "Zhuai",
+        "30": "Zhui",
+        "31": "Zhuan",
+        "32": "Zhun",
+        "33": "Zhuang"
+      }
+    },
+    "cells": [
+      {
+        "initial": "-",
+        "final": "a",
+        "input": "a",
+        "ic": "a"
+      },
+      {
+        "initial": "-",
+        "final": "o",
+        "input": "o",
+        "ic": "o"
+      },
+      {
+        "initial": "-",
+        "final": "e",
+        "input": "e",
+        "ic": "e"
+      },
+      {
+        "initial": "-",
+        "final": "ai",
+        "input": "ai",
+        "ic": "ai"
+      },
+      {
+        "initial": "-",
+        "final": "ei",
+        "input": "ei",
+        "ic": "ei"
+      },
+      {
+        "initial": "-",
+        "final": "ou",
+        "input": "ou",
+        "ic": "ou"
+      },
+      {
+        "initial": "-",
+        "final": "ao",
+        "input": "ao",
+        "ic": "ao"
+      },
+      {
+        "initial": "-",
+        "final": "an",
+        "input": "an",
+        "ic": "an"
+      },
+      {
+        "initial": "-",
+        "final": "en",
+        "input": "en",
+        "ic": "en"
+      },
+      {
+        "initial": "-",
+        "final": "ang",
+        "input": "ang",
+        "ic": "ang"
+      },
+      {
+        "initial": "-",
+        "final": "eng",
+        "input": "eng",
+        "ic": "eng"
+      },
+      {
+        "initial": "-",
+        "final": "er",
+        "input": "er",
+        "ic": "er"
+      },
+      {
+        "initial": "b-",
+        "final": "a",
+        "input": "ba",
+        "ic": "Ba"
+      },
+      {
+        "initial": "b-",
+        "final": "o",
+        "input": "bo",
+        "ic": "Bo"
+      },
+      {
+        "initial": "b-",
+        "final": "ai",
+        "input": "bai",
+        "ic": "Bai"
+      },
+      {
+        "initial": "b-",
+        "final": "ei",
+        "input": "bei",
+        "ic": "Bei"
+      },
+      {
+        "initial": "b-",
+        "final": "ao",
+        "input": "bao",
+        "ic": "Bao"
+      },
+      {
+        "initial": "b-",
+        "final": "an",
+        "input": "ban",
+        "ic": "Ban"
+      },
+      {
+        "initial": "b-",
+        "final": "en",
+        "input": "ben",
+        "ic": "Ben"
+      },
+      {
+        "initial": "b-",
+        "final": "ang",
+        "input": "bang",
+        "ic": "Bang"
+      },
+      {
+        "initial": "b-",
+        "final": "eng",
+        "input": "beng",
+        "ic": "Beng"
+      },
+      {
+        "initial": "b-",
+        "final": "i",
+        "input": "bi",
+        "ic": "Bi"
+      },
+      {
+        "initial": "b-",
+        "final": "iao",
+        "input": "biao",
+        "ic": "Biao"
+      },
+      {
+        "initial": "b-",
+        "final": "ie",
+        "input": "bie",
+        "ic": "Bie"
+      },
+      {
+        "initial": "b-",
+        "final": "ian",
+        "input": "bian",
+        "ic": "Bian"
+      },
+      {
+        "initial": "b-",
+        "final": "in",
+        "input": "bin",
+        "ic": "Bin"
+      },
+      {
+        "initial": "b-",
+        "final": "ing",
+        "input": "bing",
+        "ic": "Bing"
+      },
+      {
+        "initial": "b-",
+        "final": "u",
+        "input": "bu",
+        "ic": "Bu"
+      },
+      {
+        "initial": "c-",
+        "final": "a",
+        "input": "ca",
+        "ic": "Ca"
+      },
+      {
+        "initial": "c-",
+        "final": "e",
+        "input": "ce",
+        "ic": "Ce"
+      },
+      {
+        "initial": "c-",
+        "final": "i",
+        "input": "ci",
+        "ic": "Ci"
+      },
+      {
+        "initial": "c-",
+        "final": "ai",
+        "input": "cai",
+        "ic": "Cai"
+      },
+      {
+        "initial": "c-",
+        "final": "ou",
+        "input": "cou",
+        "ic": "Cou"
+      },
+      {
+        "initial": "c-",
+        "final": "ao",
+        "input": "cao",
+        "ic": "Cao"
+      },
+      {
+        "initial": "c-",
+        "final": "an",
+        "input": "can",
+        "ic": "Can"
+      },
+      {
+        "initial": "c-",
+        "final": "en",
+        "input": "cen",
+        "ic": "Cen"
+      },
+      {
+        "initial": "c-",
+        "final": "ang",
+        "input": "cang",
+        "ic": "Cang"
+      },
+      {
+        "initial": "c-",
+        "final": "eng",
+        "input": "ceng",
+        "ic": "Ceng"
+      },
+      {
+        "initial": "c-",
+        "final": "ong",
+        "input": "cong",
+        "ic": "Cong"
+      },
+      {
+        "initial": "c-",
+        "final": "u",
+        "input": "cu",
+        "ic": "Cu"
+      },
+      {
+        "initial": "c-",
+        "final": "uo",
+        "input": "cuo",
+        "ic": "Cuo"
+      },
+      {
+        "initial": "c-",
+        "final": "ui",
+        "input": "cui",
+        "ic": "Cui"
+      },
+      {
+        "initial": "c-",
+        "final": "uan",
+        "input": "cuan",
+        "ic": "Cuan"
+      },
+      {
+        "initial": "c-",
+        "final": "un",
+        "input": "cun",
+        "ic": "Cun"
+      },
+      {
+        "initial": "ch-",
+        "final": "a",
+        "input": "cha",
+        "ic": "Cha"
+      },
+      {
+        "initial": "ch-",
+        "final": "e",
+        "input": "che",
+        "ic": "Che"
+      },
+      {
+        "initial": "ch-",
+        "final": "i",
+        "input": "chi",
+        "ic": "Chi"
+      },
+      {
+        "initial": "ch-",
+        "final": "ai",
+        "input": "chai",
+        "ic": "Chai"
+      },
+      {
+        "initial": "ch-",
+        "final": "ou",
+        "input": "chou",
+        "ic": "Chou"
+      },
+      {
+        "initial": "ch-",
+        "final": "ao",
+        "input": "chao",
+        "ic": "Chao"
+      },
+      {
+        "initial": "ch-",
+        "final": "an",
+        "input": "chan",
+        "ic": "Chan"
+      },
+      {
+        "initial": "ch-",
+        "final": "en",
+        "input": "chen",
+        "ic": "Chen"
+      },
+      {
+        "initial": "ch-",
+        "final": "ang",
+        "input": "chang",
+        "ic": "Chang"
+      },
+      {
+        "initial": "ch-",
+        "final": "eng",
+        "input": "cheng",
+        "ic": "Cheng"
+      },
+      {
+        "initial": "ch-",
+        "final": "ong",
+        "input": "chong",
+        "ic": "Chong"
+      },
+      {
+        "initial": "ch-",
+        "final": "u",
+        "input": "chu",
+        "ic": "Chu"
+      },
+      {
+        "initial": "ch-",
+        "final": "ua",
+        "input": "chua",
+        "ic": "Chua"
+      },
+      {
+        "initial": "ch-",
+        "final": "uo",
+        "input": "chuo",
+        "ic": "Chuo"
+      },
+      {
+        "initial": "ch-",
+        "final": "uai",
+        "input": "chuai",
+        "ic": "Chuai"
+      },
+      {
+        "initial": "ch-",
+        "final": "ui",
+        "input": "chui",
+        "ic": "Chui"
+      },
+      {
+        "initial": "ch-",
+        "final": "uan",
+        "input": "chuan",
+        "ic": "Chuan"
+      },
+      {
+        "initial": "ch-",
+        "final": "un",
+        "input": "chun",
+        "ic": "Chun"
+      },
+      {
+        "initial": "ch-",
+        "final": "uang",
+        "input": "chuang",
+        "ic": "Chuang"
+      },
+      {
+        "initial": "d-",
+        "final": "a",
+        "input": "da",
+        "ic": "Da"
+      },
+      {
+        "initial": "d-",
+        "final": "e",
+        "input": "de",
+        "ic": "De"
+      },
+      {
+        "initial": "d-",
+        "final": "ai",
+        "input": "dai",
+        "ic": "Dai"
+      },
+      {
+        "initial": "d-",
+        "final": "ei",
+        "input": "dei",
+        "ic": "Dei"
+      },
+      {
+        "initial": "d-",
+        "final": "ou",
+        "input": "dou",
+        "ic": "Dou"
+      },
+      {
+        "initial": "d-",
+        "final": "ao",
+        "input": "dao",
+        "ic": "Dao"
+      },
+      {
+        "initial": "d-",
+        "final": "an",
+        "input": "dan",
+        "ic": "Dan"
+      },
+      {
+        "initial": "d-",
+        "final": "en",
+        "input": "den",
+        "ic": "Den"
+      },
+      {
+        "initial": "d-",
+        "final": "ang",
+        "input": "dang",
+        "ic": "Dang"
+      },
+      {
+        "initial": "d-",
+        "final": "eng",
+        "input": "deng",
+        "ic": "Deng"
+      },
+      {
+        "initial": "d-",
+        "final": "ong",
+        "input": "dong",
+        "ic": "Dong"
+      },
+      {
+        "initial": "d-",
+        "final": "i",
+        "input": "di",
+        "ic": "Di"
+      },
+      {
+        "initial": "d-",
+        "final": "ia",
+        "input": "dia",
+        "ic": "Dia"
+      },
+      {
+        "initial": "d-",
+        "final": "iao",
+        "input": "diao",
+        "ic": "Diao"
+      },
+      {
+        "initial": "d-",
+        "final": "ie",
+        "input": "die",
+        "ic": "Die"
+      },
+      {
+        "initial": "d-",
+        "final": "iu",
+        "input": "diu",
+        "ic": "Diu"
+      },
+      {
+        "initial": "d-",
+        "final": "ian",
+        "input": "dian",
+        "ic": "Dian"
+      },
+      {
+        "initial": "d-",
+        "final": "ing",
+        "input": "ding",
+        "ic": "Ding"
+      },
+      {
+        "initial": "d-",
+        "final": "u",
+        "input": "du",
+        "ic": "Du"
+      },
+      {
+        "initial": "d-",
+        "final": "uo",
+        "input": "duo",
+        "ic": "Duo"
+      },
+      {
+        "initial": "d-",
+        "final": "ui",
+        "input": "dui",
+        "ic": "Dui"
+      },
+      {
+        "initial": "d-",
+        "final": "uan",
+        "input": "duan",
+        "ic": "Duan"
+      },
+      {
+        "initial": "d-",
+        "final": "un",
+        "input": "dun",
+        "ic": "Dun"
+      },
+      {
+        "initial": "f-",
+        "final": "a",
+        "input": "fa",
+        "ic": "Fa"
+      },
+      {
+        "initial": "f-",
+        "final": "o",
+        "input": "fo",
+        "ic": "Fo"
+      },
+      {
+        "initial": "f-",
+        "final": "ei",
+        "input": "fei",
+        "ic": "Fei"
+      },
+      {
+        "initial": "f-",
+        "final": "ou",
+        "input": "fou",
+        "ic": "Fou"
+      },
+      {
+        "initial": "f-",
+        "final": "an",
+        "input": "fan",
+        "ic": "Fan"
+      },
+      {
+        "initial": "f-",
+        "final": "en",
+        "input": "fen",
+        "ic": "Fen"
+      },
+      {
+        "initial": "f-",
+        "final": "ang",
+        "input": "fang",
+        "ic": "Fang"
+      },
+      {
+        "initial": "f-",
+        "final": "eng",
+        "input": "feng",
+        "ic": "Feng"
+      },
+      {
+        "initial": "f-",
+        "final": "u",
+        "input": "fu",
+        "ic": "Fu"
+      },
+      {
+        "initial": "g-",
+        "final": "a",
+        "input": "ga",
+        "ic": "Ga"
+      },
+      {
+        "initial": "g-",
+        "final": "e",
+        "input": "ge",
+        "ic": "Ge"
+      },
+      {
+        "initial": "g-",
+        "final": "ai",
+        "input": "gai",
+        "ic": "Gai"
+      },
+      {
+        "initial": "g-",
+        "final": "ei",
+        "input": "gei",
+        "ic": "Gei"
+      },
+      {
+        "initial": "g-",
+        "final": "ou",
+        "input": "gou",
+        "ic": "Gou"
+      },
+      {
+        "initial": "g-",
+        "final": "ao",
+        "input": "gao",
+        "ic": "Gao"
+      },
+      {
+        "initial": "g-",
+        "final": "an",
+        "input": "gan",
+        "ic": "Gan"
+      },
+      {
+        "initial": "g-",
+        "final": "en",
+        "input": "gen",
+        "ic": "Gen"
+      },
+      {
+        "initial": "g-",
+        "final": "ang",
+        "input": "gang",
+        "ic": "Gang"
+      },
+      {
+        "initial": "g-",
+        "final": "eng",
+        "input": "geng",
+        "ic": "Geng"
+      },
+      {
+        "initial": "g-",
+        "final": "ong",
+        "input": "gong",
+        "ic": "Gong"
+      },
+      {
+        "initial": "g-",
+        "final": "u",
+        "input": "gu",
+        "ic": "Gu"
+      },
+      {
+        "initial": "g-",
+        "final": "ua",
+        "input": "gua",
+        "ic": "Gua"
+      },
+      {
+        "initial": "g-",
+        "final": "uo",
+        "input": "guo",
+        "ic": "Guo"
+      },
+      {
+        "initial": "g-",
+        "final": "uai",
+        "input": "guai",
+        "ic": "Guai"
+      },
+      {
+        "initial": "g-",
+        "final": "ui",
+        "input": "gui",
+        "ic": "Gui"
+      },
+      {
+        "initial": "g-",
+        "final": "uan",
+        "input": "guan",
+        "ic": "Guan"
+      },
+      {
+        "initial": "g-",
+        "final": "un",
+        "input": "gun",
+        "ic": "Gun"
+      },
+      {
+        "initial": "g-",
+        "final": "uang",
+        "input": "guang",
+        "ic": "Guang"
+      },
+      {
+        "initial": "h-",
+        "final": "a",
+        "input": "ha",
+        "ic": "Ha"
+      },
+      {
+        "initial": "h-",
+        "final": "e",
+        "input": "he",
+        "ic": "He"
+      },
+      {
+        "initial": "h-",
+        "final": "ai",
+        "input": "hai",
+        "ic": "Hai"
+      },
+      {
+        "initial": "h-",
+        "final": "ei",
+        "input": "hei",
+        "ic": "Hei"
+      },
+      {
+        "initial": "h-",
+        "final": "ou",
+        "input": "hou",
+        "ic": "Hou"
+      },
+      {
+        "initial": "h-",
+        "final": "ao",
+        "input": "hao",
+        "ic": "Hao"
+      },
+      {
+        "initial": "h-",
+        "final": "an",
+        "input": "han",
+        "ic": "Han"
+      },
+      {
+        "initial": "h-",
+        "final": "en",
+        "input": "hen",
+        "ic": "Hen"
+      },
+      {
+        "initial": "h-",
+        "final": "ang",
+        "input": "hang",
+        "ic": "Hang"
+      },
+      {
+        "initial": "h-",
+        "final": "eng",
+        "input": "heng",
+        "ic": "Heng"
+      },
+      {
+        "initial": "h-",
+        "final": "ong",
+        "input": "hong",
+        "ic": "Hong"
+      },
+      {
+        "initial": "h-",
+        "final": "u",
+        "input": "hu",
+        "ic": "Hu"
+      },
+      {
+        "initial": "h-",
+        "final": "ua",
+        "input": "hua",
+        "ic": "Hua"
+      },
+      {
+        "initial": "h-",
+        "final": "uo",
+        "input": "huo",
+        "ic": "Huo"
+      },
+      {
+        "initial": "h-",
+        "final": "uai",
+        "input": "huai",
+        "ic": "Huai"
+      },
+      {
+        "initial": "h-",
+        "final": "ui",
+        "input": "hui",
+        "ic": "Hui"
+      },
+      {
+        "initial": "h-",
+        "final": "uan",
+        "input": "huan",
+        "ic": "Huan"
+      },
+      {
+        "initial": "h-",
+        "final": "un",
+        "input": "hun",
+        "ic": "Hun"
+      },
+      {
+        "initial": "h-",
+        "final": "uang",
+        "input": "huang",
+        "ic": "Huang"
+      },
+      {
+        "initial": "j-",
+        "final": "i",
+        "input": "ji",
+        "ic": "Ji"
+      },
+      {
+        "initial": "j-",
+        "final": "ia",
+        "input": "jia",
+        "ic": "Jia"
+      },
+      {
+        "initial": "j-",
+        "final": "iao",
+        "input": "jiao",
+        "ic": "Jiao"
+      },
+      {
+        "initial": "j-",
+        "final": "ie",
+        "input": "jie",
+        "ic": "Jie"
+      },
+      {
+        "initial": "j-",
+        "final": "iu",
+        "input": "jiu",
+        "ic": "Jiu"
+      },
+      {
+        "initial": "j-",
+        "final": "ian",
+        "input": "jian",
+        "ic": "Jian"
+      },
+      {
+        "initial": "j-",
+        "final": "iang",
+        "input": "jiang",
+        "ic": "Jiang"
+      },
+      {
+        "initial": "j-",
+        "final": "in",
+        "input": "jin",
+        "ic": "Jin"
+      },
+      {
+        "initial": "j-",
+        "final": "ing",
+        "input": "jing",
+        "ic": "Jing"
+      },
+      {
+        "initial": "j-",
+        "final": "iong",
+        "input": "jiong",
+        "ic": "Jiong"
+      },
+      {
+        "initial": "j-",
+        "final": "yu",
+        "input": "ju",
+        "ic": "Ju"
+      },
+      {
+        "initial": "j-",
+        "final": "ue",
+        "input": "jue",
+        "ic": "Jue"
+      },
+      {
+        "initial": "j-",
+        "final": "uan",
+        "input": "juan",
+        "ic": "Juan"
+      },
+      {
+        "initial": "j-",
+        "final": "un",
+        "input": "jun",
+        "ic": "Jun"
+      },
+      {
+        "initial": "k-",
+        "final": "a",
+        "input": "ka",
+        "ic": "Ka"
+      },
+      {
+        "initial": "k-",
+        "final": "e",
+        "input": "ke",
+        "ic": "Ke"
+      },
+      {
+        "initial": "k-",
+        "final": "ai",
+        "input": "kai",
+        "ic": "Kai"
+      },
+      {
+        "initial": "k-",
+        "final": "ei",
+        "input": "kei",
+        "ic": "Kei"
+      },
+      {
+        "initial": "k-",
+        "final": "ou",
+        "input": "kou",
+        "ic": "Kou"
+      },
+      {
+        "initial": "k-",
+        "final": "ao",
+        "input": "kao",
+        "ic": "Kao"
+      },
+      {
+        "initial": "k-",
+        "final": "an",
+        "input": "kan",
+        "ic": "Kan"
+      },
+      {
+        "initial": "k-",
+        "final": "en",
+        "input": "ken",
+        "ic": "Ken"
+      },
+      {
+        "initial": "k-",
+        "final": "ang",
+        "input": "kang",
+        "ic": "Kang"
+      },
+      {
+        "initial": "k-",
+        "final": "eng",
+        "input": "keng",
+        "ic": "Keng"
+      },
+      {
+        "initial": "k-",
+        "final": "ong",
+        "input": "kong",
+        "ic": "Kong"
+      },
+      {
+        "initial": "k-",
+        "final": "u",
+        "input": "ku",
+        "ic": "Ku"
+      },
+      {
+        "initial": "k-",
+        "final": "ua",
+        "input": "kua",
+        "ic": "Kua"
+      },
+      {
+        "initial": "k-",
+        "final": "uo",
+        "input": "kuo",
+        "ic": "Kuo"
+      },
+      {
+        "initial": "k-",
+        "final": "uai",
+        "input": "kuai",
+        "ic": "Kuai"
+      },
+      {
+        "initial": "k-",
+        "final": "ui",
+        "input": "kui",
+        "ic": "Kui"
+      },
+      {
+        "initial": "k-",
+        "final": "uan",
+        "input": "kuan",
+        "ic": "Kuan"
+      },
+      {
+        "initial": "k-",
+        "final": "un",
+        "input": "kun",
+        "ic": "Kun"
+      },
+      {
+        "initial": "k-",
+        "final": "uang",
+        "input": "kuang",
+        "ic": "Kuang"
+      },
+      {
+        "initial": "l-",
+        "final": "a",
+        "input": "la",
+        "ic": "La"
+      },
+      {
+        "initial": "l-",
+        "final": "o",
+        "input": "lo",
+        "ic": "Lo"
+      },
+      {
+        "initial": "l-",
+        "final": "e",
+        "input": "le",
+        "ic": "Le"
+      },
+      {
+        "initial": "l-",
+        "final": "ai",
+        "input": "lai",
+        "ic": "Lai"
+      },
+      {
+        "initial": "l-",
+        "final": "ei",
+        "input": "lei",
+        "ic": "Lei"
+      },
+      {
+        "initial": "l-",
+        "final": "ou",
+        "input": "lou",
+        "ic": "Lou"
+      },
+      {
+        "initial": "l-",
+        "final": "ao",
+        "input": "lao",
+        "ic": "Lao"
+      },
+      {
+        "initial": "l-",
+        "final": "an",
+        "input": "lan",
+        "ic": "Lan"
+      },
+      {
+        "initial": "l-",
+        "final": "ang",
+        "input": "lang",
+        "ic": "Lang"
+      },
+      {
+        "initial": "l-",
+        "final": "eng",
+        "input": "leng",
+        "ic": "Leng"
+      },
+      {
+        "initial": "l-",
+        "final": "ong",
+        "input": "long",
+        "ic": "Long"
+      },
+      {
+        "initial": "l-",
+        "final": "i",
+        "input": "li",
+        "ic": "Li"
+      },
+      {
+        "initial": "l-",
+        "final": "ia",
+        "input": "lia",
+        "ic": "Lia"
+      },
+      {
+        "initial": "l-",
+        "final": "iao",
+        "input": "liao",
+        "ic": "Liao"
+      },
+      {
+        "initial": "l-",
+        "final": "ie",
+        "input": "lie",
+        "ic": "Lie"
+      },
+      {
+        "initial": "l-",
+        "final": "iu",
+        "input": "liu",
+        "ic": "Liu"
+      },
+      {
+        "initial": "l-",
+        "final": "ian",
+        "input": "lian",
+        "ic": "Lian"
+      },
+      {
+        "initial": "l-",
+        "final": "iang",
+        "input": "liang",
+        "ic": "Liang"
+      },
+      {
+        "initial": "l-",
+        "final": "in",
+        "input": "lin",
+        "ic": "Lin"
+      },
+      {
+        "initial": "l-",
+        "final": "ing",
+        "input": "ling",
+        "ic": "Ling"
+      },
+      {
+        "initial": "l-",
+        "final": "u",
+        "input": "lu",
+        "ic": "Lu"
+      },
+      {
+        "initial": "l-",
+        "final": "uo",
+        "input": "luo",
+        "ic": "Luo"
+      },
+      {
+        "initial": "l-",
+        "final": "uan",
+        "input": "luan",
+        "ic": "Luan"
+      },
+      {
+        "initial": "l-",
+        "final": "un",
+        "input": "lun",
+        "ic": "Lun"
+      },
+      {
+        "initial": "l-",
+        "final": "yu",
+        "input": "lü",
+        "ic": "Lu"
+      },
+      {
+        "initial": "l-",
+        "final": "ue",
+        "input": "lüe",
+        "ic": "Lue"
+      },
+      {
+        "initial": "m-",
+        "final": "a",
+        "input": "ma",
+        "ic": "Ma"
+      },
+      {
+        "initial": "m-",
+        "final": "o",
+        "input": "mo",
+        "ic": "Mo"
+      },
+      {
+        "initial": "m-",
+        "final": "e",
+        "input": "me",
+        "ic": "Me"
+      },
+      {
+        "initial": "m-",
+        "final": "ai",
+        "input": "mai",
+        "ic": "Mai"
+      },
+      {
+        "initial": "m-",
+        "final": "ei",
+        "input": "mei",
+        "ic": "Mei"
+      },
+      {
+        "initial": "m-",
+        "final": "ou",
+        "input": "mou",
+        "ic": "Mou"
+      },
+      {
+        "initial": "m-",
+        "final": "ao",
+        "input": "mao",
+        "ic": "Mao"
+      },
+      {
+        "initial": "m-",
+        "final": "an",
+        "input": "man",
+        "ic": "Man"
+      },
+      {
+        "initial": "m-",
+        "final": "en",
+        "input": "men",
+        "ic": "Men"
+      },
+      {
+        "initial": "m-",
+        "final": "ang",
+        "input": "mang",
+        "ic": "Mang"
+      },
+      {
+        "initial": "m-",
+        "final": "eng",
+        "input": "meng",
+        "ic": "Meng"
+      },
+      {
+        "initial": "m-",
+        "final": "i",
+        "input": "mi",
+        "ic": "Mi"
+      },
+      {
+        "initial": "m-",
+        "final": "iao",
+        "input": "miao",
+        "ic": "Miao"
+      },
+      {
+        "initial": "m-",
+        "final": "ie",
+        "input": "mie",
+        "ic": "Mie"
+      },
+      {
+        "initial": "m-",
+        "final": "iu",
+        "input": "miu",
+        "ic": "Miu"
+      },
+      {
+        "initial": "m-",
+        "final": "ian",
+        "input": "mian",
+        "ic": "Mian"
+      },
+      {
+        "initial": "m-",
+        "final": "in",
+        "input": "min",
+        "ic": "Min"
+      },
+      {
+        "initial": "m-",
+        "final": "ing",
+        "input": "ming",
+        "ic": "Ming"
+      },
+      {
+        "initial": "m-",
+        "final": "u",
+        "input": "mu",
+        "ic": "Mu"
+      },
+      {
+        "initial": "n-",
+        "final": "a",
+        "input": "na",
+        "ic": "Na"
+      },
+      {
+        "initial": "n-",
+        "final": "e",
+        "input": "ne",
+        "ic": "Ne"
+      },
+      {
+        "initial": "n-",
+        "final": "ai",
+        "input": "nai",
+        "ic": "Nai"
+      },
+      {
+        "initial": "n-",
+        "final": "ei",
+        "input": "nei",
+        "ic": "Nei"
+      },
+      {
+        "initial": "n-",
+        "final": "ou",
+        "input": "nou",
+        "ic": "Nou"
+      },
+      {
+        "initial": "n-",
+        "final": "ao",
+        "input": "nao",
+        "ic": "Nao"
+      },
+      {
+        "initial": "n-",
+        "final": "an",
+        "input": "nan",
+        "ic": "Nan"
+      },
+      {
+        "initial": "n-",
+        "final": "en",
+        "input": "nen",
+        "ic": "Nen"
+      },
+      {
+        "initial": "n-",
+        "final": "ang",
+        "input": "nang",
+        "ic": "Nang"
+      },
+      {
+        "initial": "n-",
+        "final": "eng",
+        "input": "neng",
+        "ic": "Neng"
+      },
+      {
+        "initial": "n-",
+        "final": "ong",
+        "input": "nong",
+        "ic": "Nong"
+      },
+      {
+        "initial": "n-",
+        "final": "i",
+        "input": "ni",
+        "ic": "Ni"
+      },
+      {
+        "initial": "n-",
+        "final": "iao",
+        "input": "niao",
+        "ic": "Niao"
+      },
+      {
+        "initial": "n-",
+        "final": "ie",
+        "input": "nie",
+        "ic": "Nie"
+      },
+      {
+        "initial": "n-",
+        "final": "iu",
+        "input": "niu",
+        "ic": "Niu"
+      },
+      {
+        "initial": "n-",
+        "final": "ian",
+        "input": "nian",
+        "ic": "Nian"
+      },
+      {
+        "initial": "n-",
+        "final": "iang",
+        "input": "niang",
+        "ic": "Niang"
+      },
+      {
+        "initial": "n-",
+        "final": "in",
+        "input": "nin",
+        "ic": "Nin"
+      },
+      {
+        "initial": "n-",
+        "final": "ing",
+        "input": "ning",
+        "ic": "Ning"
+      },
+      {
+        "initial": "n-",
+        "final": "u",
+        "input": "nu",
+        "ic": "Nu"
+      },
+      {
+        "initial": "n-",
+        "final": "uo",
+        "input": "nuo",
+        "ic": "Nuo"
+      },
+      {
+        "initial": "n-",
+        "final": "uan",
+        "input": "nuan",
+        "ic": "Nuan"
+      },
+      {
+        "initial": "n-",
+        "final": "yu",
+        "input": "nü",
+        "ic": "Nu"
+      },
+      {
+        "initial": "n-",
+        "final": "ue",
+        "input": "nüe",
+        "ic": "Nue"
+      },
+      {
+        "initial": "p-",
+        "final": "a",
+        "input": "pa",
+        "ic": "Pa"
+      },
+      {
+        "initial": "p-",
+        "final": "o",
+        "input": "po",
+        "ic": "Po"
+      },
+      {
+        "initial": "p-",
+        "final": "ai",
+        "input": "pai",
+        "ic": "Pai"
+      },
+      {
+        "initial": "p-",
+        "final": "ei",
+        "input": "pei",
+        "ic": "Pei"
+      },
+      {
+        "initial": "p-",
+        "final": "ou",
+        "input": "pou",
+        "ic": "Pou"
+      },
+      {
+        "initial": "p-",
+        "final": "ao",
+        "input": "pao",
+        "ic": "Pao"
+      },
+      {
+        "initial": "p-",
+        "final": "an",
+        "input": "pan",
+        "ic": "Pan"
+      },
+      {
+        "initial": "p-",
+        "final": "en",
+        "input": "pen",
+        "ic": "Pen"
+      },
+      {
+        "initial": "p-",
+        "final": "ang",
+        "input": "pang",
+        "ic": "Pang"
+      },
+      {
+        "initial": "p-",
+        "final": "eng",
+        "input": "peng",
+        "ic": "Peng"
+      },
+      {
+        "initial": "p-",
+        "final": "i",
+        "input": "pi",
+        "ic": "Pi"
+      },
+      {
+        "initial": "p-",
+        "final": "iao",
+        "input": "piao",
+        "ic": "Piao"
+      },
+      {
+        "initial": "p-",
+        "final": "ie",
+        "input": "pie",
+        "ic": "Pie"
+      },
+      {
+        "initial": "p-",
+        "final": "ian",
+        "input": "pian",
+        "ic": "Pian"
+      },
+      {
+        "initial": "p-",
+        "final": "in",
+        "input": "pin",
+        "ic": "Pin"
+      },
+      {
+        "initial": "p-",
+        "final": "ing",
+        "input": "ping",
+        "ic": "Ping"
+      },
+      {
+        "initial": "p-",
+        "final": "u",
+        "input": "pu",
+        "ic": "Pu"
+      },
+      {
+        "initial": "q-",
+        "final": "i",
+        "input": "qi",
+        "ic": "Qi"
+      },
+      {
+        "initial": "q-",
+        "final": "ia",
+        "input": "qia",
+        "ic": "Qia"
+      },
+      {
+        "initial": "q-",
+        "final": "iao",
+        "input": "qiao",
+        "ic": "Qiao"
+      },
+      {
+        "initial": "q-",
+        "final": "ie",
+        "input": "qie",
+        "ic": "Qie"
+      },
+      {
+        "initial": "q-",
+        "final": "iu",
+        "input": "qiu",
+        "ic": "Qiu"
+      },
+      {
+        "initial": "q-",
+        "final": "ian",
+        "input": "qian",
+        "ic": "Qian"
+      },
+      {
+        "initial": "q-",
+        "final": "iang",
+        "input": "qiang",
+        "ic": "Qiang"
+      },
+      {
+        "initial": "q-",
+        "final": "in",
+        "input": "qin",
+        "ic": "Qin"
+      },
+      {
+        "initial": "q-",
+        "final": "ing",
+        "input": "qing",
+        "ic": "Qing"
+      },
+      {
+        "initial": "q-",
+        "final": "iong",
+        "input": "qiong",
+        "ic": "Qiong"
+      },
+      {
+        "initial": "q-",
+        "final": "yu",
+        "input": "qu",
+        "ic": "Qu"
+      },
+      {
+        "initial": "q-",
+        "final": "ue",
+        "input": "que",
+        "ic": "Que"
+      },
+      {
+        "initial": "q-",
+        "final": "uan",
+        "input": "quan",
+        "ic": "Quan"
+      },
+      {
+        "initial": "q-",
+        "final": "un",
+        "input": "qun",
+        "ic": "Qun"
+      },
+      {
+        "initial": "r-",
+        "final": "e",
+        "input": "re",
+        "ic": "Re"
+      },
+      {
+        "initial": "r-",
+        "final": "i",
+        "input": "ri",
+        "ic": "Ri"
+      },
+      {
+        "initial": "r-",
+        "final": "ou",
+        "input": "rou",
+        "ic": "Rou"
+      },
+      {
+        "initial": "r-",
+        "final": "ao",
+        "input": "rao",
+        "ic": "Rao"
+      },
+      {
+        "initial": "r-",
+        "final": "an",
+        "input": "ran",
+        "ic": "Ran"
+      },
+      {
+        "initial": "r-",
+        "final": "en",
+        "input": "ren",
+        "ic": "Ren"
+      },
+      {
+        "initial": "r-",
+        "final": "ang",
+        "input": "rang",
+        "ic": "Rang"
+      },
+      {
+        "initial": "r-",
+        "final": "eng",
+        "input": "reng",
+        "ic": "Reng"
+      },
+      {
+        "initial": "r-",
+        "final": "ong",
+        "input": "rong",
+        "ic": "Rong"
+      },
+      {
+        "initial": "r-",
+        "final": "u",
+        "input": "ru",
+        "ic": "Ru"
+      },
+      {
+        "initial": "r-",
+        "final": "ua",
+        "input": "rua",
+        "ic": "Rua"
+      },
+      {
+        "initial": "r-",
+        "final": "uo",
+        "input": "ruo",
+        "ic": "Ruo"
+      },
+      {
+        "initial": "r-",
+        "final": "ui",
+        "input": "rui",
+        "ic": "Rui"
+      },
+      {
+        "initial": "r-",
+        "final": "uan",
+        "input": "ruan",
+        "ic": "Ruan"
+      },
+      {
+        "initial": "r-",
+        "final": "un",
+        "input": "run",
+        "ic": "Run"
+      },
+      {
+        "initial": "s-",
+        "final": "a",
+        "input": "sa",
+        "ic": "Sa"
+      },
+      {
+        "initial": "s-",
+        "final": "e",
+        "input": "se",
+        "ic": "Se"
+      },
+      {
+        "initial": "s-",
+        "final": "i",
+        "input": "si",
+        "ic": "Si"
+      },
+      {
+        "initial": "s-",
+        "final": "ai",
+        "input": "sai",
+        "ic": "Sai"
+      },
+      {
+        "initial": "s-",
+        "final": "ou",
+        "input": "sou",
+        "ic": "Sou"
+      },
+      {
+        "initial": "s-",
+        "final": "ao",
+        "input": "sao",
+        "ic": "Sao"
+      },
+      {
+        "initial": "s-",
+        "final": "an",
+        "input": "san",
+        "ic": "San"
+      },
+      {
+        "initial": "s-",
+        "final": "en",
+        "input": "sen",
+        "ic": "Sen"
+      },
+      {
+        "initial": "s-",
+        "final": "ang",
+        "input": "sang",
+        "ic": "Sang"
+      },
+      {
+        "initial": "s-",
+        "final": "eng",
+        "input": "seng",
+        "ic": "Seng"
+      },
+      {
+        "initial": "s-",
+        "final": "ong",
+        "input": "song",
+        "ic": "Song"
+      },
+      {
+        "initial": "s-",
+        "final": "u",
+        "input": "su",
+        "ic": "Su"
+      },
+      {
+        "initial": "s-",
+        "final": "uo",
+        "input": "suo",
+        "ic": "Suo"
+      },
+      {
+        "initial": "s-",
+        "final": "ui",
+        "input": "sui",
+        "ic": "Sui"
+      },
+      {
+        "initial": "s-",
+        "final": "uan",
+        "input": "suan",
+        "ic": "Suan"
+      },
+      {
+        "initial": "s-",
+        "final": "un",
+        "input": "sun",
+        "ic": "Sun"
+      },
+      {
+        "initial": "sh-",
+        "final": "a",
+        "input": "sha",
+        "ic": "Sha"
+      },
+      {
+        "initial": "sh-",
+        "final": "e",
+        "input": "she",
+        "ic": "She"
+      },
+      {
+        "initial": "sh-",
+        "final": "i",
+        "input": "shi",
+        "ic": "Shi"
+      },
+      {
+        "initial": "sh-",
+        "final": "ai",
+        "input": "shai",
+        "ic": "Shai"
+      },
+      {
+        "initial": "sh-",
+        "final": "ei",
+        "input": "shei",
+        "ic": "Shei"
+      },
+      {
+        "initial": "sh-",
+        "final": "ou",
+        "input": "shou",
+        "ic": "Shou"
+      },
+      {
+        "initial": "sh-",
+        "final": "ao",
+        "input": "shao",
+        "ic": "Shao"
+      },
+      {
+        "initial": "sh-",
+        "final": "an",
+        "input": "shan",
+        "ic": "Shan"
+      },
+      {
+        "initial": "sh-",
+        "final": "en",
+        "input": "shen",
+        "ic": "Shen"
+      },
+      {
+        "initial": "sh-",
+        "final": "ang",
+        "input": "shang",
+        "ic": "Shang"
+      },
+      {
+        "initial": "sh-",
+        "final": "eng",
+        "input": "sheng",
+        "ic": "Sheng"
+      },
+      {
+        "initial": "sh-",
+        "final": "u",
+        "input": "shu",
+        "ic": "Shu"
+      },
+      {
+        "initial": "sh-",
+        "final": "ua",
+        "input": "shua",
+        "ic": "Shua"
+      },
+      {
+        "initial": "sh-",
+        "final": "uo",
+        "input": "shuo",
+        "ic": "Shuo"
+      },
+      {
+        "initial": "sh-",
+        "final": "uai",
+        "input": "shuai",
+        "ic": "Shuai"
+      },
+      {
+        "initial": "sh-",
+        "final": "ui",
+        "input": "shui",
+        "ic": "Shui"
+      },
+      {
+        "initial": "sh-",
+        "final": "uan",
+        "input": "shuan",
+        "ic": "Shuan"
+      },
+      {
+        "initial": "sh-",
+        "final": "un",
+        "input": "shun",
+        "ic": "Shun"
+      },
+      {
+        "initial": "sh-",
+        "final": "uang",
+        "input": "shuang",
+        "ic": "Shuang"
+      },
+      {
+        "initial": "t-",
+        "final": "a",
+        "input": "ta",
+        "ic": "Ta"
+      },
+      {
+        "initial": "t-",
+        "final": "e",
+        "input": "te",
+        "ic": "Te"
+      },
+      {
+        "initial": "t-",
+        "final": "ai",
+        "input": "tai",
+        "ic": "Tai"
+      },
+      {
+        "initial": "t-",
+        "final": "ei",
+        "input": "tei",
+        "ic": "Tei"
+      },
+      {
+        "initial": "t-",
+        "final": "ou",
+        "input": "tou",
+        "ic": "Tou"
+      },
+      {
+        "initial": "t-",
+        "final": "ao",
+        "input": "tao",
+        "ic": "Tao"
+      },
+      {
+        "initial": "t-",
+        "final": "an",
+        "input": "tan",
+        "ic": "Tan"
+      },
+      {
+        "initial": "t-",
+        "final": "ang",
+        "input": "tang",
+        "ic": "Tang"
+      },
+      {
+        "initial": "t-",
+        "final": "eng",
+        "input": "teng",
+        "ic": "Teng"
+      },
+      {
+        "initial": "t-",
+        "final": "ong",
+        "input": "tong",
+        "ic": "Tong"
+      },
+      {
+        "initial": "t-",
+        "final": "i",
+        "input": "ti",
+        "ic": "Ti"
+      },
+      {
+        "initial": "t-",
+        "final": "iao",
+        "input": "tiao",
+        "ic": "Tiao"
+      },
+      {
+        "initial": "t-",
+        "final": "ie",
+        "input": "tie",
+        "ic": "Tie"
+      },
+      {
+        "initial": "t-",
+        "final": "ian",
+        "input": "tian",
+        "ic": "Tian"
+      },
+      {
+        "initial": "t-",
+        "final": "ing",
+        "input": "ting",
+        "ic": "Ting"
+      },
+      {
+        "initial": "t-",
+        "final": "u",
+        "input": "tu",
+        "ic": "Tu"
+      },
+      {
+        "initial": "t-",
+        "final": "uo",
+        "input": "tuo",
+        "ic": "Tuo"
+      },
+      {
+        "initial": "t-",
+        "final": "ui",
+        "input": "tui",
+        "ic": "Tui"
+      },
+      {
+        "initial": "t-",
+        "final": "uan",
+        "input": "tuan",
+        "ic": "Tuan"
+      },
+      {
+        "initial": "t-",
+        "final": "un",
+        "input": "tun",
+        "ic": "Tun"
+      },
+      {
+        "initial": "w-",
+        "final": "a",
+        "input": "wa",
+        "ic": "Wa"
+      },
+      {
+        "initial": "w-",
+        "final": "o",
+        "input": "wo",
+        "ic": "Wo"
+      },
+      {
+        "initial": "w-",
+        "final": "ai",
+        "input": "wai",
+        "ic": "Wai"
+      },
+      {
+        "initial": "w-",
+        "final": "ei",
+        "input": "wei",
+        "ic": "Wei"
+      },
+      {
+        "initial": "w-",
+        "final": "an",
+        "input": "wan",
+        "ic": "Wan"
+      },
+      {
+        "initial": "w-",
+        "final": "ang",
+        "input": "wang",
+        "ic": "Wang"
+      },
+      {
+        "initial": "w-",
+        "final": "eng",
+        "input": "weng",
+        "ic": "Weng"
+      },
+      {
+        "initial": "w-",
+        "final": "ong",
+        "input": "wong",
+        "ic": "Wong"
+      },
+      {
+        "initial": "w-",
+        "final": "u",
+        "input": "wu",
+        "ic": "Wu"
+      },
+      {
+        "initial": "x-",
+        "final": "i",
+        "input": "xi",
+        "ic": "Xi"
+      },
+      {
+        "initial": "x-",
+        "final": "ia",
+        "input": "xia",
+        "ic": "Xia"
+      },
+      {
+        "initial": "x-",
+        "final": "iao",
+        "input": "xiao",
+        "ic": "Xiao"
+      },
+      {
+        "initial": "x-",
+        "final": "ie",
+        "input": "xie",
+        "ic": "Xie"
+      },
+      {
+        "initial": "x-",
+        "final": "iu",
+        "input": "xiu",
+        "ic": "Xiu"
+      },
+      {
+        "initial": "x-",
+        "final": "ian",
+        "input": "xian",
+        "ic": "Xian"
+      },
+      {
+        "initial": "x-",
+        "final": "iang",
+        "input": "xiang",
+        "ic": "Xiang"
+      },
+      {
+        "initial": "x-",
+        "final": "in",
+        "input": "xin",
+        "ic": "Xin"
+      },
+      {
+        "initial": "x-",
+        "final": "ing",
+        "input": "xing",
+        "ic": "Xing"
+      },
+      {
+        "initial": "x-",
+        "final": "iong",
+        "input": "xiong",
+        "ic": "Xiong"
+      },
+      {
+        "initial": "x-",
+        "final": "yu",
+        "input": "xu",
+        "ic": "Xu"
+      },
+      {
+        "initial": "x-",
+        "final": "ue",
+        "input": "xue",
+        "ic": "Xue"
+      },
+      {
+        "initial": "x-",
+        "final": "uan",
+        "input": "xuan",
+        "ic": "Xuan"
+      },
+      {
+        "initial": "x-",
+        "final": "un",
+        "input": "xun",
+        "ic": "Xun"
+      },
+      {
+        "initial": "y-",
+        "final": "a",
+        "input": "ya",
+        "ic": "Ya"
+      },
+      {
+        "initial": "y-",
+        "final": "o",
+        "input": "yo",
+        "ic": "Yo"
+      },
+      {
+        "initial": "y-",
+        "final": "e",
+        "input": "ye",
+        "ic": "Ye"
+      },
+      {
+        "initial": "y-",
+        "final": "i",
+        "input": "yi",
+        "ic": "Yi"
+      },
+      {
+        "initial": "y-",
+        "final": "ou",
+        "input": "you",
+        "ic": "You"
+      },
+      {
+        "initial": "y-",
+        "final": "ao",
+        "input": "yao",
+        "ic": "Yao"
+      },
+      {
+        "initial": "y-",
+        "final": "an",
+        "input": "yan",
+        "ic": "Yan"
+      },
+      {
+        "initial": "y-",
+        "final": "ang",
+        "input": "yang",
+        "ic": "Yang"
+      },
+      {
+        "initial": "y-",
+        "final": "ong",
+        "input": "yong",
+        "ic": "Yong"
+      },
+      {
+        "initial": "y-",
+        "final": "in",
+        "input": "yin",
+        "ic": "Yin"
+      },
+      {
+        "initial": "y-",
+        "final": "ing",
+        "input": "ying",
+        "ic": "Ying"
+      },
+      {
+        "initial": "y-",
+        "final": "yu",
+        "input": "yu",
+        "ic": "Yu"
+      },
+      {
+        "initial": "y-",
+        "final": "ue",
+        "input": "yue",
+        "ic": "Yue"
+      },
+      {
+        "initial": "y-",
+        "final": "uan",
+        "input": "yuan",
+        "ic": "Yuan"
+      },
+      {
+        "initial": "y-",
+        "final": "un",
+        "input": "yun",
+        "ic": "Yun"
+      },
+      {
+        "initial": "z-",
+        "final": "a",
+        "input": "za",
+        "ic": "Za"
+      },
+      {
+        "initial": "z-",
+        "final": "e",
+        "input": "ze",
+        "ic": "Ze"
+      },
+      {
+        "initial": "z-",
+        "final": "i",
+        "input": "zi",
+        "ic": "Zi"
+      },
+      {
+        "initial": "z-",
+        "final": "ai",
+        "input": "zai",
+        "ic": "Zai"
+      },
+      {
+        "initial": "z-",
+        "final": "ei",
+        "input": "zei",
+        "ic": "Zei"
+      },
+      {
+        "initial": "z-",
+        "final": "ou",
+        "input": "zou",
+        "ic": "Zou"
+      },
+      {
+        "initial": "z-",
+        "final": "ao",
+        "input": "zao",
+        "ic": "Zao"
+      },
+      {
+        "initial": "z-",
+        "final": "an",
+        "input": "zan",
+        "ic": "Zan"
+      },
+      {
+        "initial": "z-",
+        "final": "en",
+        "input": "zen",
+        "ic": "Zen"
+      },
+      {
+        "initial": "z-",
+        "final": "ang",
+        "input": "zang",
+        "ic": "Zang"
+      },
+      {
+        "initial": "z-",
+        "final": "eng",
+        "input": "zeng",
+        "ic": "Zeng"
+      },
+      {
+        "initial": "z-",
+        "final": "ong",
+        "input": "zong",
+        "ic": "Zong"
+      },
+      {
+        "initial": "z-",
+        "final": "u",
+        "input": "zu",
+        "ic": "Zu"
+      },
+      {
+        "initial": "z-",
+        "final": "uo",
+        "input": "zuo",
+        "ic": "Zuo"
+      },
+      {
+        "initial": "z-",
+        "final": "ui",
+        "input": "zui",
+        "ic": "Zui"
+      },
+      {
+        "initial": "z-",
+        "final": "uan",
+        "input": "zuan",
+        "ic": "Zuan"
+      },
+      {
+        "initial": "z-",
+        "final": "un",
+        "input": "zun",
+        "ic": "Zun"
+      },
+      {
+        "initial": "zh-",
+        "final": "a",
+        "input": "zha",
+        "ic": "Zha"
+      },
+      {
+        "initial": "zh-",
+        "final": "e",
+        "input": "zhe",
+        "ic": "Zhe"
+      },
+      {
+        "initial": "zh-",
+        "final": "i",
+        "input": "zhi",
+        "ic": "Zhi"
+      },
+      {
+        "initial": "zh-",
+        "final": "ai",
+        "input": "zhai",
+        "ic": "Zhai"
+      },
+      {
+        "initial": "zh-",
+        "final": "ei",
+        "input": "zhei",
+        "ic": "Zhei"
+      },
+      {
+        "initial": "zh-",
+        "final": "ou",
+        "input": "zhou",
+        "ic": "Zhou"
+      },
+      {
+        "initial": "zh-",
+        "final": "ao",
+        "input": "zhao",
+        "ic": "Zhao"
+      },
+      {
+        "initial": "zh-",
+        "final": "an",
+        "input": "zhan",
+        "ic": "Zhan"
+      },
+      {
+        "initial": "zh-",
+        "final": "en",
+        "input": "zhen",
+        "ic": "Zhen"
+      },
+      {
+        "initial": "zh-",
+        "final": "ang",
+        "input": "zhang",
+        "ic": "Zhang"
+      },
+      {
+        "initial": "zh-",
+        "final": "eng",
+        "input": "zheng",
+        "ic": "Zheng"
+      },
+      {
+        "initial": "zh-",
+        "final": "ong",
+        "input": "zhong",
+        "ic": "Zhong"
+      },
+      {
+        "initial": "zh-",
+        "final": "u",
+        "input": "zhu",
+        "ic": "Zhu"
+      },
+      {
+        "initial": "zh-",
+        "final": "ua",
+        "input": "zhua",
+        "ic": "Zhua"
+      },
+      {
+        "initial": "zh-",
+        "final": "uo",
+        "input": "zhuo",
+        "ic": "Zhuo"
+      },
+      {
+        "initial": "zh-",
+        "final": "uai",
+        "input": "zhuai",
+        "ic": "Zhuai"
+      },
+      {
+        "initial": "zh-",
+        "final": "ui",
+        "input": "zhui",
+        "ic": "Zhui"
+      },
+      {
+        "initial": "zh-",
+        "final": "uan",
+        "input": "zhuan",
+        "ic": "Zhuan"
+      },
+      {
+        "initial": "zh-",
+        "final": "un",
+        "input": "zhun",
+        "ic": "Zhun"
+      },
+      {
+        "initial": "zh-",
+        "final": "uang",
+        "input": "zhuang",
+        "ic": "Zhuang"
+      }
+    ],
+    "cell_count": 411
+  },
+  "appendix_b": {
+    "title": "Appendix B: Conversion Table of Common Chinese Romanization Systems",
+    "columns_as_printed": [
+      "IC Transliteraion (Based on Pinyin)",
+      "Wade-Giles",
+      "Yale",
+      "Mandarin Phonetic (Zhuyin) Symbols"
+    ],
+    "rows": [
+      {
+        "ic": "a",
+        "wade_giles": "a",
+        "yale": "a",
+        "zhuyin": "ㄚ"
+      },
+      {
+        "ic": "ai",
+        "wade_giles": "ai",
+        "yale": "ai",
+        "zhuyin": "ㄞ"
+      },
+      {
+        "ic": "an",
+        "wade_giles": "an",
+        "yale": "an",
+        "zhuyin": "ㄢ"
+      },
+      {
+        "ic": "ang",
+        "wade_giles": "ang",
+        "yale": "ang",
+        "zhuyin": "ㄤ"
+      },
+      {
+        "ic": "ao",
+        "wade_giles": "ao",
+        "yale": "au",
+        "zhuyin": "ㄠ"
+      },
+      {
+        "ic": "ba",
+        "wade_giles": "pa",
+        "yale": "ba",
+        "zhuyin": "ㄅㄚ"
+      },
+      {
+        "ic": "bai",
+        "wade_giles": "pai",
+        "yale": "bai",
+        "zhuyin": "ㄅㄞ"
+      },
+      {
+        "ic": "ban",
+        "wade_giles": "pan",
+        "yale": "ban",
+        "zhuyin": "ㄅㄢ"
+      },
+      {
+        "ic": "bang",
+        "wade_giles": "pang",
+        "yale": "bang",
+        "zhuyin": "ㄅㄤ"
+      },
+      {
+        "ic": "bao",
+        "wade_giles": "pao",
+        "yale": "bau",
+        "zhuyin": "ㄅㄠ"
+      },
+      {
+        "ic": "bei",
+        "wade_giles": "pei",
+        "yale": "bei",
+        "zhuyin": "ㄅㄟ"
+      },
+      {
+        "ic": "ben",
+        "wade_giles": "pen",
+        "yale": "ben",
+        "zhuyin": "ㄅㄣ"
+      },
+      {
+        "ic": "beng",
+        "wade_giles": "peng",
+        "yale": "beng",
+        "zhuyin": "ㄅㄥ"
+      },
+      {
+        "ic": "bi",
+        "wade_giles": "pi",
+        "yale": "bi",
+        "zhuyin": "ㄅㄧ"
+      },
+      {
+        "ic": "bian",
+        "wade_giles": "pien",
+        "yale": "byan",
+        "zhuyin": "ㄅㄧㄢ"
+      },
+      {
+        "ic": "biao",
+        "wade_giles": "piao",
+        "yale": "byau",
+        "zhuyin": "ㄅㄧㄠ"
+      },
+      {
+        "ic": "bie",
+        "wade_giles": "pieh",
+        "yale": "bye",
+        "zhuyin": "ㄅㄧㄝ"
+      },
+      {
+        "ic": "bin",
+        "wade_giles": "pin",
+        "yale": "bin",
+        "zhuyin": "ㄅㄧㄣ"
+      },
+      {
+        "ic": "bing",
+        "wade_giles": "ping",
+        "yale": "bing",
+        "zhuyin": "ㄅㄧㄥ"
+      },
+      {
+        "ic": "bo",
+        "wade_giles": "po",
+        "yale": "bwo",
+        "zhuyin": "ㄅㄠㄛ"
+      },
+      {
+        "ic": "bu",
+        "wade_giles": "pu",
+        "yale": "bu",
+        "zhuyin": "ㄅㄨ"
+      },
+      {
+        "ic": "ca",
+        "wade_giles": "ts’a",
+        "yale": "tsa",
+        "zhuyin": "ㄘㄚ"
+      },
+      {
+        "ic": "cai",
+        "wade_giles": "ts’ai",
+        "yale": "tsai",
+        "zhuyin": "ㄘㄞ"
+      },
+      {
+        "ic": "can",
+        "wade_giles": "ts’an",
+        "yale": "tsan",
+        "zhuyin": "ㄘㄢ"
+      },
+      {
+        "ic": "cang",
+        "wade_giles": "ts’ang",
+        "yale": "tsang",
+        "zhuyin": "ㄘㄤ"
+      },
+      {
+        "ic": "cao",
+        "wade_giles": "ts’ao",
+        "yale": "tsau",
+        "zhuyin": "ㄘㄠ"
+      },
+      {
+        "ic": "ce",
+        "wade_giles": "ts’e",
+        "yale": "tse",
+        "zhuyin": "ㄘㄜ"
+      },
+      {
+        "ic": "cen",
+        "wade_giles": "ts’en",
+        "yale": "tsen",
+        "zhuyin": "ㄘㄣ"
+      },
+      {
+        "ic": "ceng",
+        "wade_giles": "ts’eng",
+        "yale": "tseng",
+        "zhuyin": "ㄘㄥ"
+      },
+      {
+        "ic": "cha",
+        "wade_giles": "ch’a",
+        "yale": "cha",
+        "zhuyin": "ㄔㄚ"
+      },
+      {
+        "ic": "chai",
+        "wade_giles": "ch’ai",
+        "yale": "chai",
+        "zhuyin": "ㄔㄞ"
+      },
+      {
+        "ic": "chan",
+        "wade_giles": "ch’an",
+        "yale": "chan",
+        "zhuyin": "ㄔㄢ"
+      },
+      {
+        "ic": "chang",
+        "wade_giles": "ch’ang",
+        "yale": "chang",
+        "zhuyin": "ㄔㄤ"
+      },
+      {
+        "ic": "chao",
+        "wade_giles": "ch’ao",
+        "yale": "chau",
+        "zhuyin": "ㄔㄠ"
+      },
+      {
+        "ic": "che",
+        "wade_giles": "ch’e",
+        "yale": "che",
+        "zhuyin": "ㄔㄜ"
+      },
+      {
+        "ic": "chen",
+        "wade_giles": "ch’en",
+        "yale": "chen",
+        "zhuyin": "ㄔㄣ"
+      },
+      {
+        "ic": "cheng",
+        "wade_giles": "ch’eng",
+        "yale": "cheng",
+        "zhuyin": "ㄔㄥ"
+      },
+      {
+        "ic": "chi",
+        "wade_giles": "ch’ih",
+        "yale": "chr",
+        "zhuyin": "ㄔ"
+      },
+      {
+        "ic": "chong",
+        "wade_giles": "ch’ung",
+        "yale": "chung",
+        "zhuyin": "ㄔㄨㄥ"
+      },
+      {
+        "ic": "chou",
+        "wade_giles": "ch’ou",
+        "yale": "chou",
+        "zhuyin": "ㄔㄡ"
+      },
+      {
+        "ic": "chu",
+        "wade_giles": "ch’u",
+        "yale": "chu",
+        "zhuyin": "ㄔㄨ"
+      },
+      {
+        "ic": "chuai",
+        "wade_giles": "ch’uai",
+        "yale": "chwai",
+        "zhuyin": "ㄔㄨㄞ"
+      },
+      {
+        "ic": "chuan",
+        "wade_giles": "ch’uan",
+        "yale": "chwan",
+        "zhuyin": "ㄔㄨㄢ"
+      },
+      {
+        "ic": "chuang",
+        "wade_giles": "ch’uang",
+        "yale": "chwang",
+        "zhuyin": "ㄔㄨㄤ"
+      },
+      {
+        "ic": "chui",
+        "wade_giles": "ch’ui",
+        "yale": "chwei",
+        "zhuyin": "ㄔㄨㄟ"
+      },
+      {
+        "ic": "chun",
+        "wade_giles": "ch’un",
+        "yale": "chwun",
+        "zhuyin": "ㄔㄨㄣ"
+      },
+      {
+        "ic": "chuo",
+        "wade_giles": "ch’o",
+        "yale": "chwo",
+        "zhuyin": "ㄔㄨㄛ"
+      },
+      {
+        "ic": "ci",
+        "wade_giles": "tz’u",
+        "yale": "tsz",
+        "zhuyin": "ㄘ"
+      },
+      {
+        "ic": "cong",
+        "wade_giles": "ts’ung",
+        "yale": "tsung",
+        "zhuyin": "ㄘㄨㄥ"
+      },
+      {
+        "ic": "cou",
+        "wade_giles": "ts’ou",
+        "yale": "tsou",
+        "zhuyin": "ㄘㄡ"
+      },
+      {
+        "ic": "cu",
+        "wade_giles": "ts’u",
+        "yale": "tsu",
+        "zhuyin": "ㄘㄨ"
+      },
+      {
+        "ic": "cuan",
+        "wade_giles": "ts’uan",
+        "yale": "tswan",
+        "zhuyin": "ㄘㄨㄢ"
+      },
+      {
+        "ic": "cui",
+        "wade_giles": "ts’ui",
+        "yale": "tswei",
+        "zhuyin": "ㄘㄨㄟ"
+      },
+      {
+        "ic": "cun",
+        "wade_giles": "ts’un",
+        "yale": "tswun",
+        "zhuyin": "ㄘㄨㄣ"
+      },
+      {
+        "ic": "cuo",
+        "wade_giles": "ts’o",
+        "yale": "tswo",
+        "zhuyin": "ㄘㄨㄛ"
+      },
+      {
+        "ic": "da",
+        "wade_giles": "ta",
+        "yale": "da",
+        "zhuyin": "ㄉㄚ"
+      },
+      {
+        "ic": "dai",
+        "wade_giles": "tai",
+        "yale": "dai",
+        "zhuyin": "ㄉㄞ"
+      },
+      {
+        "ic": "dan",
+        "wade_giles": "tan",
+        "yale": "dan",
+        "zhuyin": "ㄉㄢ"
+      },
+      {
+        "ic": "dang",
+        "wade_giles": "tang",
+        "yale": "dang",
+        "zhuyin": "ㄉㄤ"
+      },
+      {
+        "ic": "dao",
+        "wade_giles": "tao",
+        "yale": "dau",
+        "zhuyin": "ㄉㄠ"
+      },
+      {
+        "ic": "de",
+        "wade_giles": "te",
+        "yale": "de",
+        "zhuyin": "ㄉㄜ"
+      },
+      {
+        "ic": "deng",
+        "wade_giles": "teng",
+        "yale": "deng",
+        "zhuyin": "ㄉㄥ"
+      },
+      {
+        "ic": "di",
+        "wade_giles": "ti",
+        "yale": "di",
+        "zhuyin": "ㄉㄧ"
+      },
+      {
+        "ic": "dian",
+        "wade_giles": "tien",
+        "yale": "dyan",
+        "zhuyin": "ㄉㄧㄢ"
+      },
+      {
+        "ic": "diao",
+        "wade_giles": "tiao",
+        "yale": "dyau",
+        "zhuyin": "ㄉㄧㄠ"
+      },
+      {
+        "ic": "die",
+        "wade_giles": "tieh",
+        "yale": "dye",
+        "zhuyin": "ㄉㄧㄝ"
+      },
+      {
+        "ic": "ding",
+        "wade_giles": "ting",
+        "yale": "ding",
+        "zhuyin": "ㄉㄧㄥ"
+      },
+      {
+        "ic": "diu",
+        "wade_giles": "tiu",
+        "yale": "dyou",
+        "zhuyin": "ㄉㄧㄡ"
+      },
+      {
+        "ic": "dong",
+        "wade_giles": "tung",
+        "yale": "dung",
+        "zhuyin": "ㄉㄨㄥ"
+      },
+      {
+        "ic": "dou",
+        "wade_giles": "tou",
+        "yale": "dou",
+        "zhuyin": "ㄉㄡ"
+      },
+      {
+        "ic": "du",
+        "wade_giles": "tu",
+        "yale": "du",
+        "zhuyin": "ㄉㄨ"
+      },
+      {
+        "ic": "duan",
+        "wade_giles": "tuan",
+        "yale": "dwan",
+        "zhuyin": "ㄉㄨㄢ"
+      },
+      {
+        "ic": "dui",
+        "wade_giles": "tui",
+        "yale": "dwei",
+        "zhuyin": "ㄉㄨㄟ"
+      },
+      {
+        "ic": "dun",
+        "wade_giles": "tun",
+        "yale": "dwun",
+        "zhuyin": "ㄉㄨㄣ"
+      },
+      {
+        "ic": "duo",
+        "wade_giles": "to",
+        "yale": "dwo",
+        "zhuyin": "ㄉㄨㄛ"
+      },
+      {
+        "ic": "e",
+        "wade_giles": "o",
+        "yale": "e",
+        "zhuyin": "ㄜ"
+      },
+      {
+        "ic": "en",
+        "wade_giles": "en",
+        "yale": "en",
+        "zhuyin": "ㄣ"
+      },
+      {
+        "ic": "er",
+        "wade_giles": "erh",
+        "yale": "er",
+        "zhuyin": "ㄦ"
+      },
+      {
+        "ic": "fa",
+        "wade_giles": "fa",
+        "yale": "fa",
+        "zhuyin": "ㄈㄚ"
+      },
+      {
+        "ic": "fan",
+        "wade_giles": "fan",
+        "yale": "fan",
+        "zhuyin": "ㄈㄢ"
+      },
+      {
+        "ic": "fang",
+        "wade_giles": "fang",
+        "yale": "fang",
+        "zhuyin": "ㄈㄤ"
+      },
+      {
+        "ic": "fei",
+        "wade_giles": "fei",
+        "yale": "fei",
+        "zhuyin": "ㄈㄟ"
+      },
+      {
+        "ic": "fen",
+        "wade_giles": "fen",
+        "yale": "fen",
+        "zhuyin": "ㄈㄣ"
+      },
+      {
+        "ic": "feng",
+        "wade_giles": "feng",
+        "yale": "feng",
+        "zhuyin": "ㄈㄥ"
+      },
+      {
+        "ic": "fo",
+        "wade_giles": "fo",
+        "yale": "fwo",
+        "zhuyin": "ㄈㄛ"
+      },
+      {
+        "ic": "fou",
+        "wade_giles": "fou",
+        "yale": "fou",
+        "zhuyin": "ㄈㄡ"
+      },
+      {
+        "ic": "fu",
+        "wade_giles": "fu",
+        "yale": "fu",
+        "zhuyin": "ㄈㄨ"
+      },
+      {
+        "ic": "ga",
+        "wade_giles": "ka",
+        "yale": "ga",
+        "zhuyin": "ㄍㄚ"
+      },
+      {
+        "ic": "gai",
+        "wade_giles": "kai",
+        "yale": "gai",
+        "zhuyin": "ㄍㄞ"
+      },
+      {
+        "ic": "gan",
+        "wade_giles": "kan",
+        "yale": "gan",
+        "zhuyin": "ㄍㄢ"
+      },
+      {
+        "ic": "gang",
+        "wade_giles": "kang",
+        "yale": "gang",
+        "zhuyin": "ㄍㄤ"
+      },
+      {
+        "ic": "gao",
+        "wade_giles": "kao",
+        "yale": "gau",
+        "zhuyin": "ㄍㄠ"
+      },
+      {
+        "ic": "ge",
+        "wade_giles": "ko",
+        "yale": "ge",
+        "zhuyin": "ㄍㄜ"
+      },
+      {
+        "ic": "gei",
+        "wade_giles": "kei",
+        "yale": "gei",
+        "zhuyin": "ㄍㄟ"
+      },
+      {
+        "ic": "gen",
+        "wade_giles": "ken",
+        "yale": "gen",
+        "zhuyin": "ㄍㄣ"
+      },
+      {
+        "ic": "geng",
+        "wade_giles": "keng",
+        "yale": "geng",
+        "zhuyin": "ㄍㄥ"
+      },
+      {
+        "ic": "gong",
+        "wade_giles": "kung",
+        "yale": "gung",
+        "zhuyin": "ㄍㄨㄥ"
+      },
+      {
+        "ic": "gou",
+        "wade_giles": "kou",
+        "yale": "gou",
+        "zhuyin": "ㄍㄡ"
+      },
+      {
+        "ic": "gu",
+        "wade_giles": "ku",
+        "yale": "gu",
+        "zhuyin": "ㄍㄨ"
+      },
+      {
+        "ic": "gua",
+        "wade_giles": "kua",
+        "yale": "gwa",
+        "zhuyin": "ㄍㄨㄚ"
+      },
+      {
+        "ic": "guai",
+        "wade_giles": "kuai",
+        "yale": "gwai",
+        "zhuyin": "ㄍㄨㄞ"
+      },
+      {
+        "ic": "guan",
+        "wade_giles": "kuan",
+        "yale": "gwan",
+        "zhuyin": "ㄍㄨㄢ"
+      },
+      {
+        "ic": "guang",
+        "wade_giles": "kuang",
+        "yale": "gwang",
+        "zhuyin": "ㄍㄨㄤ"
+      },
+      {
+        "ic": "gui",
+        "wade_giles": "kuei",
+        "yale": "gwei",
+        "zhuyin": "ㄍㄨㄟ"
+      },
+      {
+        "ic": "gun",
+        "wade_giles": "kun",
+        "yale": "gwun",
+        "zhuyin": "ㄍㄨㄣ"
+      },
+      {
+        "ic": "guo",
+        "wade_giles": "kuo",
+        "yale": "gwo",
+        "zhuyin": "ㄍㄨㄛ"
+      },
+      {
+        "ic": "ha",
+        "wade_giles": "ha",
+        "yale": "ha",
+        "zhuyin": "ㄏㄚ"
+      },
+      {
+        "ic": "hai",
+        "wade_giles": "hai",
+        "yale": "hai",
+        "zhuyin": "ㄏㄞ"
+      },
+      {
+        "ic": "han",
+        "wade_giles": "han",
+        "yale": "han",
+        "zhuyin": "ㄏㄢ"
+      },
+      {
+        "ic": "hang",
+        "wade_giles": "hang",
+        "yale": "hang",
+        "zhuyin": "ㄏㄤ"
+      },
+      {
+        "ic": "hao",
+        "wade_giles": "hao",
+        "yale": "hau",
+        "zhuyin": "ㄏㄠ"
+      },
+      {
+        "ic": "he",
+        "wade_giles": "ho",
+        "yale": "he",
+        "zhuyin": "ㄏㄜ"
+      },
+      {
+        "ic": "hei",
+        "wade_giles": "hei",
+        "yale": "hei",
+        "zhuyin": "ㄏㄟ"
+      },
+      {
+        "ic": "hen",
+        "wade_giles": "hen",
+        "yale": "hen",
+        "zhuyin": "ㄏㄣ"
+      },
+      {
+        "ic": "heng",
+        "wade_giles": "heng",
+        "yale": "heng",
+        "zhuyin": "ㄏㄥ"
+      },
+      {
+        "ic": "hong",
+        "wade_giles": "hung",
+        "yale": "hung",
+        "zhuyin": "ㄏㄨㄥ"
+      },
+      {
+        "ic": "hou",
+        "wade_giles": "hou",
+        "yale": "hou",
+        "zhuyin": "ㄏㄡ"
+      },
+      {
+        "ic": "hu",
+        "wade_giles": "hu",
+        "yale": "hu",
+        "zhuyin": "ㄏㄨ"
+      },
+      {
+        "ic": "hua",
+        "wade_giles": "hua",
+        "yale": "hwa",
+        "zhuyin": "ㄏㄨㄚ"
+      },
+      {
+        "ic": "huai",
+        "wade_giles": "huai",
+        "yale": "hwai",
+        "zhuyin": "ㄏㄨㄞ"
+      },
+      {
+        "ic": "huan",
+        "wade_giles": "huan",
+        "yale": "hwan",
+        "zhuyin": "ㄏㄨㄢ"
+      },
+      {
+        "ic": "huang",
+        "wade_giles": "huang",
+        "yale": "hwang",
+        "zhuyin": "ㄏㄨㄤ"
+      },
+      {
+        "ic": "hui",
+        "wade_giles": "hui",
+        "yale": "hwei",
+        "zhuyin": "ㄏㄨㄟ"
+      },
+      {
+        "ic": "hun",
+        "wade_giles": "hun",
+        "yale": "hwun",
+        "zhuyin": "ㄏㄨㄣ"
+      },
+      {
+        "ic": "huo",
+        "wade_giles": "huo",
+        "yale": "hwo",
+        "zhuyin": "ㄏㄨㄛ"
+      },
+      {
+        "ic": "ji",
+        "wade_giles": "chi",
+        "yale": "ji",
+        "zhuyin": "ㄐㄧ"
+      },
+      {
+        "ic": "jia",
+        "wade_giles": "chia",
+        "yale": "jya",
+        "zhuyin": "ㄐㄧㄚ"
+      },
+      {
+        "ic": "jian",
+        "wade_giles": "chien",
+        "yale": "jyan",
+        "zhuyin": "ㄐㄧㄢ"
+      },
+      {
+        "ic": "jiang",
+        "wade_giles": "chiang",
+        "yale": "jyang",
+        "zhuyin": "ㄐㄧㄤ"
+      },
+      {
+        "ic": "jiao",
+        "wade_giles": "chiao",
+        "yale": "jyau",
+        "zhuyin": "ㄐㄧㄠ"
+      },
+      {
+        "ic": "jie",
+        "wade_giles": "chieh",
+        "yale": "jyang",
+        "zhuyin": "ㄐㄧㄝ"
+      },
+      {
+        "ic": "jin",
+        "wade_giles": "chin",
+        "yale": "jin",
+        "zhuyin": "ㄐㄧㄣ"
+      },
+      {
+        "ic": "jing",
+        "wade_giles": "ching",
+        "yale": "jing",
+        "zhuyin": "ㄐㄧㄥ"
+      },
+      {
+        "ic": "jiong",
+        "wade_giles": "chiung",
+        "yale": "jyung",
+        "zhuyin": "ㄐㄩㄥ"
+      },
+      {
+        "ic": "jiu",
+        "wade_giles": "chiu",
+        "yale": "jyou",
+        "zhuyin": "ㄐㄧㄡ"
+      },
+      {
+        "ic": "ju",
+        "wade_giles": "chü",
+        "yale": "jyu",
+        "zhuyin": "ㄐㄩ"
+      },
+      {
+        "ic": "juan",
+        "wade_giles": "chüan",
+        "yale": "jywan",
+        "zhuyin": "ㄐㄩㄢ"
+      },
+      {
+        "ic": "jue",
+        "wade_giles": "chüeh",
+        "yale": "jywe",
+        "zhuyin": "ㄐㄩㄝ"
+      },
+      {
+        "ic": "jun",
+        "wade_giles": "chün",
+        "yale": "jyun",
+        "zhuyin": "ㄐㄩㄣ"
+      },
+      {
+        "ic": "ka",
+        "wade_giles": "k’a",
+        "yale": "ka",
+        "zhuyin": "ㄎㄚ"
+      },
+      {
+        "ic": "kai",
+        "wade_giles": "k’ai",
+        "yale": "kai",
+        "zhuyin": "ㄎㄞ"
+      },
+      {
+        "ic": "kan",
+        "wade_giles": "k’an",
+        "yale": "kan",
+        "zhuyin": "ㄎㄢ"
+      },
+      {
+        "ic": "kang",
+        "wade_giles": "k’ang",
+        "yale": "kang",
+        "zhuyin": "ㄎㄤ"
+      },
+      {
+        "ic": "kao",
+        "wade_giles": "k’ao",
+        "yale": "kau",
+        "zhuyin": "ㄎㄠ"
+      },
+      {
+        "ic": "ke",
+        "wade_giles": "k’o",
+        "yale": "ke",
+        "zhuyin": "ㄎㄜ"
+      },
+      {
+        "ic": "ken",
+        "wade_giles": "k’en",
+        "yale": "ken",
+        "zhuyin": "ㄎㄣ"
+      },
+      {
+        "ic": "keng",
+        "wade_giles": "k’eng",
+        "yale": "keng",
+        "zhuyin": "ㄎㄥ"
+      },
+      {
+        "ic": "kong",
+        "wade_giles": "k’ung",
+        "yale": "kung",
+        "zhuyin": "ㄎㄨㄥ"
+      },
+      {
+        "ic": "kou",
+        "wade_giles": "k’ou",
+        "yale": "kou",
+        "zhuyin": "ㄎㄨㄡ"
+      },
+      {
+        "ic": "ku",
+        "wade_giles": "k’u",
+        "yale": "ku",
+        "zhuyin": "ㄎㄨ"
+      },
+      {
+        "ic": "kua",
+        "wade_giles": "k’ua",
+        "yale": "kwa",
+        "zhuyin": "ㄎㄨㄚ"
+      },
+      {
+        "ic": "kuai",
+        "wade_giles": "k’uai",
+        "yale": "kwai",
+        "zhuyin": "ㄎㄨㄞ"
+      },
+      {
+        "ic": "kuan",
+        "wade_giles": "k’uan",
+        "yale": "kwan",
+        "zhuyin": "ㄎㄨㄢ"
+      },
+      {
+        "ic": "kuang",
+        "wade_giles": "k’uang",
+        "yale": "kwang",
+        "zhuyin": "ㄎㄨㄤ"
+      },
+      {
+        "ic": "kui",
+        "wade_giles": "k’uei",
+        "yale": "kwei",
+        "zhuyin": "ㄎㄨㄟ"
+      },
+      {
+        "ic": "kun",
+        "wade_giles": "k’un",
+        "yale": "kwun",
+        "zhuyin": "ㄎㄨㄣ"
+      },
+      {
+        "ic": "kuo",
+        "wade_giles": "k’uo",
+        "yale": "kwo",
+        "zhuyin": "ㄎㄨㄛ"
+      },
+      {
+        "ic": "la",
+        "wade_giles": "la",
+        "yale": "la",
+        "zhuyin": "ㄌㄚ"
+      },
+      {
+        "ic": "lai",
+        "wade_giles": "lai",
+        "yale": "lai",
+        "zhuyin": "ㄌㄞ"
+      },
+      {
+        "ic": "lan",
+        "wade_giles": "lan",
+        "yale": "lan",
+        "zhuyin": "ㄌㄢ"
+      },
+      {
+        "ic": "lang",
+        "wade_giles": "lang",
+        "yale": "lang",
+        "zhuyin": "ㄌㄤ"
+      },
+      {
+        "ic": "lao",
+        "wade_giles": "lao",
+        "yale": "lau",
+        "zhuyin": "ㄌㄠ"
+      },
+      {
+        "ic": "le",
+        "wade_giles": "le",
+        "yale": "le",
+        "zhuyin": "ㄌㄜ"
+      },
+      {
+        "ic": "lei",
+        "wade_giles": "lei",
+        "yale": "lei",
+        "zhuyin": "ㄌㄟ"
+      },
+      {
+        "ic": "leng",
+        "wade_giles": "leng",
+        "yale": "leng",
+        "zhuyin": "ㄌㄥ"
+      },
+      {
+        "ic": "li",
+        "wade_giles": "li",
+        "yale": "li",
+        "zhuyin": "ㄌㄧ"
+      },
+      {
+        "ic": "lian",
+        "wade_giles": "lien",
+        "yale": "lya",
+        "zhuyin": "ㄌㄧㄢ"
+      },
+      {
+        "ic": "liang",
+        "wade_giles": "liang",
+        "yale": "lyan",
+        "zhuyin": "ㄌㄧㄤ"
+      },
+      {
+        "ic": "liao",
+        "wade_giles": "liao",
+        "yale": "lyau",
+        "zhuyin": "ㄌㄧㄠ"
+      },
+      {
+        "ic": "lie",
+        "wade_giles": "lieh",
+        "yale": "lye",
+        "zhuyin": "ㄌㄧㄝ"
+      },
+      {
+        "ic": "lin",
+        "wade_giles": "lin",
+        "yale": "lin",
+        "zhuyin": "ㄌㄧㄣ"
+      },
+      {
+        "ic": "ling",
+        "wade_giles": "ling",
+        "yale": "ling",
+        "zhuyin": "ㄌㄧㄥ"
+      },
+      {
+        "ic": "liu",
+        "wade_giles": "liu",
+        "yale": "lyou",
+        "zhuyin": "ㄌㄧㄡ"
+      },
+      {
+        "ic": "long",
+        "wade_giles": "lung",
+        "yale": "lo",
+        "zhuyin": "ㄌㄨㄥ"
+      },
+      {
+        "ic": "lou",
+        "wade_giles": "lou",
+        "yale": "lung",
+        "zhuyin": "ㄌㄡ"
+      },
+      {
+        "ic": "lu",
+        "wade_giles": "lu",
+        "yale": "lou",
+        "zhuyin": "ㄌㄨ"
+      },
+      {
+        "ic": "lyu",
+        "wade_giles": "lü",
+        "yale": "lyu",
+        "zhuyin": "ㄌㄩ"
+      },
+      {
+        "ic": "luan",
+        "wade_giles": "luan",
+        "yale": "lwan",
+        "zhuyin": "ㄌㄨㄢ"
+      },
+      {
+        "ic": "lue",
+        "wade_giles": "lüeh",
+        "yale": "lywe",
+        "zhuyin": "ㄌㄩㄝ"
+      },
+      {
+        "ic": "lun",
+        "wade_giles": "lun",
+        "yale": "lwun",
+        "zhuyin": "ㄌㄨㄣ"
+      },
+      {
+        "ic": "luo",
+        "wade_giles": "lo",
+        "yale": "lwo",
+        "zhuyin": "ㄌㄨㄛ"
+      },
+      {
+        "ic": "ma",
+        "wade_giles": "ma",
+        "yale": "ma",
+        "zhuyin": "ㄇㄚ"
+      },
+      {
+        "ic": "mai",
+        "wade_giles": "mai",
+        "yale": "mai",
+        "zhuyin": "ㄇㄞ"
+      },
+      {
+        "ic": "man",
+        "wade_giles": "man",
+        "yale": "man",
+        "zhuyin": "ㄇㄢ"
+      },
+      {
+        "ic": "mang",
+        "wade_giles": "mang",
+        "yale": "mang",
+        "zhuyin": "ㄇㄤ"
+      },
+      {
+        "ic": "mao",
+        "wade_giles": "mao",
+        "yale": "mau",
+        "zhuyin": "ㄇㄠ"
+      },
+      {
+        "ic": "mei",
+        "wade_giles": "mei",
+        "yale": "mei",
+        "zhuyin": "ㄇㄟ"
+      },
+      {
+        "ic": "men",
+        "wade_giles": "men",
+        "yale": "men",
+        "zhuyin": "ㄇㄣ"
+      },
+      {
+        "ic": "meng",
+        "wade_giles": "meng",
+        "yale": "meng",
+        "zhuyin": "ㄇㄥ"
+      },
+      {
+        "ic": "mi",
+        "wade_giles": "mi",
+        "yale": "mi",
+        "zhuyin": "ㄇㄧ"
+      },
+      {
+        "ic": "mian",
+        "wade_giles": "mien",
+        "yale": "myan",
+        "zhuyin": "ㄇㄧㄢ"
+      },
+      {
+        "ic": "miao",
+        "wade_giles": "miao",
+        "yale": "myau",
+        "zhuyin": "ㄇㄧㄠ"
+      },
+      {
+        "ic": "mie",
+        "wade_giles": "mieh",
+        "yale": "mye",
+        "zhuyin": "ㄇㄧㄝ"
+      },
+      {
+        "ic": "min",
+        "wade_giles": "min",
+        "yale": "ming",
+        "zhuyin": "ㄇㄧㄣ"
+      },
+      {
+        "ic": "ming",
+        "wade_giles": "ming",
+        "yale": "ming",
+        "zhuyin": "ㄇㄧㄥ"
+      },
+      {
+        "ic": "miu",
+        "wade_giles": "miu",
+        "yale": "myou",
+        "zhuyin": "ㄇㄧㄡ"
+      },
+      {
+        "ic": "mo",
+        "wade_giles": "mo",
+        "yale": "mwo",
+        "zhuyin": "ㄇㄨㄛ"
+      },
+      {
+        "ic": "mou",
+        "wade_giles": "mou",
+        "yale": "mou",
+        "zhuyin": "ㄇㄡ"
+      },
+      {
+        "ic": "mu",
+        "wade_giles": "mu",
+        "yale": "mu",
+        "zhuyin": "ㄇㄨ"
+      },
+      {
+        "ic": "na",
+        "wade_giles": "na",
+        "yale": "na",
+        "zhuyin": "ㄋㄚ"
+      },
+      {
+        "ic": "nai",
+        "wade_giles": "nai",
+        "yale": "nai",
+        "zhuyin": "ㄋㄞ"
+      },
+      {
+        "ic": "nan",
+        "wade_giles": "nan",
+        "yale": "nan",
+        "zhuyin": "ㄋㄢ"
+      },
+      {
+        "ic": "nang",
+        "wade_giles": "nang",
+        "yale": "nang",
+        "zhuyin": "ㄋㄤ"
+      },
+      {
+        "ic": "nao",
+        "wade_giles": "nao",
+        "yale": "nau",
+        "zhuyin": "ㄋㄠ"
+      },
+      {
+        "ic": "ne",
+        "wade_giles": "ne",
+        "yale": "ne",
+        "zhuyin": "ㄋㄜ"
+      },
+      {
+        "ic": "nei",
+        "wade_giles": "nei",
+        "yale": "nei",
+        "zhuyin": "ㄋㄟ"
+      },
+      {
+        "ic": "nen",
+        "wade_giles": "nen",
+        "yale": "nen",
+        "zhuyin": "ㄋㄣ"
+      },
+      {
+        "ic": "neng",
+        "wade_giles": "neng",
+        "yale": "neng",
+        "zhuyin": "ㄋㄥ"
+      },
+      {
+        "ic": "ni",
+        "wade_giles": "ni",
+        "yale": "ni",
+        "zhuyin": "ㄋㄧ"
+      },
+      {
+        "ic": "nian",
+        "wade_giles": "nien",
+        "yale": "nyan",
+        "zhuyin": "ㄋㄧㄢ"
+      },
+      {
+        "ic": "niang",
+        "wade_giles": "niang",
+        "yale": "nyang",
+        "zhuyin": "ㄋㄧㄤ"
+      },
+      {
+        "ic": "niao",
+        "wade_giles": "niao",
+        "yale": "nyau",
+        "zhuyin": "ㄋㄧㄠ"
+      },
+      {
+        "ic": "nie",
+        "wade_giles": "nieh",
+        "yale": "nye",
+        "zhuyin": "ㄋㄧㄝ"
+      },
+      {
+        "ic": "nin",
+        "wade_giles": "nin",
+        "yale": "nin",
+        "zhuyin": "ㄋㄧㄣ"
+      },
+      {
+        "ic": "ning",
+        "wade_giles": "ning",
+        "yale": "ning",
+        "zhuyin": "ㄋㄧㄥ"
+      },
+      {
+        "ic": "niu",
+        "wade_giles": "niu",
+        "yale": "nyou",
+        "zhuyin": "ㄋㄧㄡ"
+      },
+      {
+        "ic": "nong",
+        "wade_giles": "nung",
+        "yale": "nung",
+        "zhuyin": "ㄋㄨㄥ"
+      },
+      {
+        "ic": "nou",
+        "wade_giles": "nou",
+        "yale": "nou",
+        "zhuyin": "ㄋㄡ"
+      },
+      {
+        "ic": "nu",
+        "wade_giles": "nu",
+        "yale": "nu",
+        "zhuyin": "ㄋㄨ"
+      },
+      {
+        "ic": "nyu",
+        "wade_giles": "nü",
+        "yale": "nyu",
+        "zhuyin": "ㄋㄩ"
+      },
+      {
+        "ic": "nuan",
+        "wade_giles": "nuan",
+        "yale": "nwan",
+        "zhuyin": "ㄋㄨㄢ"
+      },
+      {
+        "ic": "nue",
+        "wade_giles": "nüeh",
+        "yale": "nywe",
+        "zhuyin": "ㄋㄩㄝ"
+      },
+      {
+        "ic": "nuo",
+        "wade_giles": "no",
+        "yale": "now",
+        "zhuyin": "ㄋㄨㄛ"
+      },
+      {
+        "ic": "ou",
+        "wade_giles": "ou",
+        "yale": "ou",
+        "zhuyin": "ㄡ"
+      },
+      {
+        "ic": "pa",
+        "wade_giles": "p’a",
+        "yale": "pa",
+        "zhuyin": "ㄆㄚ"
+      },
+      {
+        "ic": "pai",
+        "wade_giles": "p’ai",
+        "yale": "pai",
+        "zhuyin": "ㄆㄞ"
+      },
+      {
+        "ic": "pan",
+        "wade_giles": "p’an",
+        "yale": "pan",
+        "zhuyin": "ㄆㄢ"
+      },
+      {
+        "ic": "pang",
+        "wade_giles": "p’ang",
+        "yale": "pang",
+        "zhuyin": "ㄆㄤ"
+      },
+      {
+        "ic": "pao",
+        "wade_giles": "p’ao",
+        "yale": "pau",
+        "zhuyin": "ㄆㄠ"
+      },
+      {
+        "ic": "pei",
+        "wade_giles": "p’ei",
+        "yale": "pei",
+        "zhuyin": "ㄆㄟ"
+      },
+      {
+        "ic": "pen",
+        "wade_giles": "p’en",
+        "yale": "pen",
+        "zhuyin": "ㄆㄣ"
+      },
+      {
+        "ic": "peng",
+        "wade_giles": "p’eng",
+        "yale": "peng",
+        "zhuyin": "ㄆㄥ"
+      },
+      {
+        "ic": "pi",
+        "wade_giles": "p’i",
+        "yale": "pi",
+        "zhuyin": "ㄆㄧ"
+      },
+      {
+        "ic": "pian",
+        "wade_giles": "p’ien",
+        "yale": "pyan",
+        "zhuyin": "ㄆㄧㄢ"
+      },
+      {
+        "ic": "piao",
+        "wade_giles": "p’iao",
+        "yale": "pyau",
+        "zhuyin": "ㄆㄧㄠ"
+      },
+      {
+        "ic": "pie",
+        "wade_giles": "p’ieh",
+        "yale": "pye",
+        "zhuyin": "ㄆㄧㄝ"
+      },
+      {
+        "ic": "pin",
+        "wade_giles": "p’in",
+        "yale": "Pin",
+        "zhuyin": "ㄆㄧㄣ"
+      },
+      {
+        "ic": "ping",
+        "wade_giles": "p’ing",
+        "yale": "ping",
+        "zhuyin": "ㄆㄧㄥ"
+      },
+      {
+        "ic": "po",
+        "wade_giles": "p’o",
+        "yale": "pwo",
+        "zhuyin": "ㄆㄠㄛ"
+      },
+      {
+        "ic": "pou",
+        "wade_giles": "p’ou",
+        "yale": "Pou",
+        "zhuyin": "ㄆㄡ"
+      },
+      {
+        "ic": "pu",
+        "wade_giles": "p’u",
+        "yale": "Pu",
+        "zhuyin": "ㄆㄨ"
+      },
+      {
+        "ic": "qi",
+        "wade_giles": "ch’i",
+        "yale": "chi",
+        "zhuyin": "ㄑㄧ"
+      },
+      {
+        "ic": "qia",
+        "wade_giles": "ch’ia",
+        "yale": "chya",
+        "zhuyin": "ㄑㄧㄚ"
+      },
+      {
+        "ic": "qian",
+        "wade_giles": "ch’ien",
+        "yale": "chyan",
+        "zhuyin": "ㄑㄧㄢ"
+      },
+      {
+        "ic": "qiang",
+        "wade_giles": "ch’iang",
+        "yale": "chyang",
+        "zhuyin": "ㄑㄧㄤ"
+      },
+      {
+        "ic": "qiao",
+        "wade_giles": "ch’iao",
+        "yale": "chyau",
+        "zhuyin": "ㄑㄧㄠ"
+      },
+      {
+        "ic": "qie",
+        "wade_giles": "ch’ieh",
+        "yale": "chye",
+        "zhuyin": "ㄑㄧㄝ"
+      },
+      {
+        "ic": "qin",
+        "wade_giles": "ch’in",
+        "yale": "chin",
+        "zhuyin": "ㄑㄧㄣ"
+      },
+      {
+        "ic": "qing",
+        "wade_giles": "ch’ing",
+        "yale": "ching",
+        "zhuyin": "ㄑㄧㄥ"
+      },
+      {
+        "ic": "qiong",
+        "wade_giles": "ch’iung",
+        "yale": "chyung",
+        "zhuyin": "ㄑㄩㄥ"
+      },
+      {
+        "ic": "qiu",
+        "wade_giles": "ch’iu",
+        "yale": "chyou",
+        "zhuyin": "ㄑㄧㄡ"
+      },
+      {
+        "ic": "qu",
+        "wade_giles": "ch’ü",
+        "yale": "chyu",
+        "zhuyin": "ㄑㄩ"
+      },
+      {
+        "ic": "quan",
+        "wade_giles": "ch’üan",
+        "yale": "chywan",
+        "zhuyin": "ㄑㄩㄢ"
+      },
+      {
+        "ic": "que",
+        "wade_giles": "ch’üeh",
+        "yale": "chywe",
+        "zhuyin": "ㄑㄩㄝ"
+      },
+      {
+        "ic": "qun",
+        "wade_giles": "ch’ün",
+        "yale": "chyun",
+        "zhuyin": "ㄑㄩㄣ"
+      },
+      {
+        "ic": "ran",
+        "wade_giles": "jan",
+        "yale": "ran",
+        "zhuyin": "ㄖㄢ"
+      },
+      {
+        "ic": "rang",
+        "wade_giles": "jang",
+        "yale": "rang",
+        "zhuyin": "ㄖㄤ"
+      },
+      {
+        "ic": "rao",
+        "wade_giles": "jao",
+        "yale": "rau",
+        "zhuyin": "ㄖㄠ"
+      },
+      {
+        "ic": "re",
+        "wade_giles": "je",
+        "yale": "re",
+        "zhuyin": "ㄖㄜ"
+      },
+      {
+        "ic": "ren",
+        "wade_giles": "jen",
+        "yale": "ren",
+        "zhuyin": "ㄖㄣ"
+      },
+      {
+        "ic": "reng",
+        "wade_giles": "jeng",
+        "yale": "reng",
+        "zhuyin": "ㄖㄥ"
+      },
+      {
+        "ic": "ri",
+        "wade_giles": "jih",
+        "yale": "r",
+        "zhuyin": "ㄖ"
+      },
+      {
+        "ic": "rong",
+        "wade_giles": "jung",
+        "yale": "rung",
+        "zhuyin": "ㄖㄨㄥ"
+      },
+      {
+        "ic": "rou",
+        "wade_giles": "jou",
+        "yale": "rou",
+        "zhuyin": "ㄖㄡ"
+      },
+      {
+        "ic": "ru",
+        "wade_giles": "ju",
+        "yale": "ru",
+        "zhuyin": "ㄖㄨ"
+      },
+      {
+        "ic": "ruan",
+        "wade_giles": "juan",
+        "yale": "rwan",
+        "zhuyin": "ㄖㄨㄢ"
+      },
+      {
+        "ic": "rui",
+        "wade_giles": "jui",
+        "yale": "rwei",
+        "zhuyin": "ㄖㄨㄟ"
+      },
+      {
+        "ic": "run",
+        "wade_giles": "jun",
+        "yale": "rwun",
+        "zhuyin": "ㄖㄨㄣ"
+      },
+      {
+        "ic": "ruo",
+        "wade_giles": "jo",
+        "yale": "rwo",
+        "zhuyin": "ㄖㄨㄛ"
+      },
+      {
+        "ic": "sa",
+        "wade_giles": "sa",
+        "yale": "sa",
+        "zhuyin": "ㄙㄚ"
+      },
+      {
+        "ic": "sai",
+        "wade_giles": "sai",
+        "yale": "sai",
+        "zhuyin": "ㄙㄞ"
+      },
+      {
+        "ic": "san",
+        "wade_giles": "san",
+        "yale": "san",
+        "zhuyin": "ㄙㄢ"
+      },
+      {
+        "ic": "sang",
+        "wade_giles": "sang",
+        "yale": "sang",
+        "zhuyin": "ㄙㄤ"
+      },
+      {
+        "ic": "sao",
+        "wade_giles": "sao",
+        "yale": "sau",
+        "zhuyin": "ㄙㄠ"
+      },
+      {
+        "ic": "se",
+        "wade_giles": "se",
+        "yale": "se",
+        "zhuyin": "ㄙㄜ"
+      },
+      {
+        "ic": "sen",
+        "wade_giles": "sen",
+        "yale": "sen",
+        "zhuyin": "ㄙㄣ"
+      },
+      {
+        "ic": "seng",
+        "wade_giles": "seng",
+        "yale": "seng",
+        "zhuyin": "ㄙㄥ"
+      },
+      {
+        "ic": "sha",
+        "wade_giles": "sha",
+        "yale": "sha",
+        "zhuyin": "ㄕㄚ"
+      },
+      {
+        "ic": "shai",
+        "wade_giles": "shai",
+        "yale": "shai",
+        "zhuyin": "ㄕㄞ"
+      },
+      {
+        "ic": "shan",
+        "wade_giles": "shan",
+        "yale": "shan",
+        "zhuyin": "ㄕㄢ"
+      },
+      {
+        "ic": "shang",
+        "wade_giles": "shang",
+        "yale": "shang",
+        "zhuyin": "ㄕㄤ"
+      },
+      {
+        "ic": "shao",
+        "wade_giles": "shao",
+        "yale": "shau",
+        "zhuyin": "ㄕㄠ"
+      },
+      {
+        "ic": "she",
+        "wade_giles": "she",
+        "yale": "she",
+        "zhuyin": "ㄕㄜ"
+      },
+      {
+        "ic": "shen",
+        "wade_giles": "shen",
+        "yale": "shen",
+        "zhuyin": "ㄕㄣ"
+      },
+      {
+        "ic": "sheng",
+        "wade_giles": "sheng",
+        "yale": "sheng",
+        "zhuyin": "ㄕㄥ"
+      },
+      {
+        "ic": "shi",
+        "wade_giles": "shih",
+        "yale": "shr",
+        "zhuyin": "ㄕ"
+      },
+      {
+        "ic": "shou",
+        "wade_giles": "shou",
+        "yale": "shou",
+        "zhuyin": "ㄕㄡ"
+      },
+      {
+        "ic": "shu",
+        "wade_giles": "shu",
+        "yale": "shu",
+        "zhuyin": "ㄕㄨ"
+      },
+      {
+        "ic": "shua",
+        "wade_giles": "shua",
+        "yale": "shwa",
+        "zhuyin": "ㄕㄨㄚ"
+      },
+      {
+        "ic": "shuai",
+        "wade_giles": "shuai",
+        "yale": "shwai",
+        "zhuyin": "ㄕㄨㄞ"
+      },
+      {
+        "ic": "shuan",
+        "wade_giles": "shuan",
+        "yale": "shwan",
+        "zhuyin": "ㄕㄨㄢ"
+      },
+      {
+        "ic": "shuang",
+        "wade_giles": "shuang",
+        "yale": "shwang",
+        "zhuyin": "ㄕㄨㄤ"
+      },
+      {
+        "ic": "shui",
+        "wade_giles": "shui",
+        "yale": "shwei",
+        "zhuyin": "ㄕㄨㄟ"
+      },
+      {
+        "ic": "shun",
+        "wade_giles": "shun",
+        "yale": "shwun",
+        "zhuyin": "ㄕㄨㄣ"
+      },
+      {
+        "ic": "shuo",
+        "wade_giles": "shuo",
+        "yale": "shwo",
+        "zhuyin": "ㄕㄨㄛ"
+      },
+      {
+        "ic": "si",
+        "wade_giles": "ssu",
+        "yale": "sz",
+        "zhuyin": "ㄙ"
+      },
+      {
+        "ic": "song",
+        "wade_giles": "sung",
+        "yale": "sung",
+        "zhuyin": "ㄙㄨㄥ"
+      },
+      {
+        "ic": "sou",
+        "wade_giles": "sou",
+        "yale": "sou",
+        "zhuyin": "ㄙㄡ"
+      },
+      {
+        "ic": "su",
+        "wade_giles": "su",
+        "yale": "su",
+        "zhuyin": "ㄙㄨ"
+      },
+      {
+        "ic": "suan",
+        "wade_giles": "suan",
+        "yale": "swan",
+        "zhuyin": "ㄙㄨㄢ"
+      },
+      {
+        "ic": "sui",
+        "wade_giles": "sui",
+        "yale": "swei",
+        "zhuyin": "ㄙㄨㄟ"
+      },
+      {
+        "ic": "sun",
+        "wade_giles": "sun",
+        "yale": "swun",
+        "zhuyin": "ㄙㄨㄣ"
+      },
+      {
+        "ic": "suo",
+        "wade_giles": "so",
+        "yale": "swo",
+        "zhuyin": "ㄙㄨㄛ"
+      },
+      {
+        "ic": "ta",
+        "wade_giles": "t’a",
+        "yale": "ta",
+        "zhuyin": "ㄊㄚ"
+      },
+      {
+        "ic": "tai",
+        "wade_giles": "t’ai",
+        "yale": "tai",
+        "zhuyin": "ㄊㄞ"
+      },
+      {
+        "ic": "tan",
+        "wade_giles": "t’an",
+        "yale": "tan",
+        "zhuyin": "ㄊㄢ"
+      },
+      {
+        "ic": "tang",
+        "wade_giles": "t’ang",
+        "yale": "tang",
+        "zhuyin": "ㄊㄤ"
+      },
+      {
+        "ic": "tao",
+        "wade_giles": "t’ao",
+        "yale": "tau",
+        "zhuyin": "ㄊㄠ"
+      },
+      {
+        "ic": "te",
+        "wade_giles": "t’e",
+        "yale": "te",
+        "zhuyin": "ㄊㄜ"
+      },
+      {
+        "ic": "teng",
+        "wade_giles": "t’eng",
+        "yale": "teng",
+        "zhuyin": "ㄊㄥ"
+      },
+      {
+        "ic": "ti",
+        "wade_giles": "t’i",
+        "yale": "ti",
+        "zhuyin": "ㄊㄧ"
+      },
+      {
+        "ic": "tian",
+        "wade_giles": "t’ien",
+        "yale": "tyan",
+        "zhuyin": "ㄊㄧㄢ"
+      },
+      {
+        "ic": "tiao",
+        "wade_giles": "t’iao",
+        "yale": "tyau",
+        "zhuyin": "ㄊㄧㄠ"
+      },
+      {
+        "ic": "tie",
+        "wade_giles": "t’ieh",
+        "yale": "tye",
+        "zhuyin": "ㄊㄧㄝ"
+      },
+      {
+        "ic": "ting",
+        "wade_giles": "t’ing",
+        "yale": "ting",
+        "zhuyin": "ㄊㄧㄥ"
+      },
+      {
+        "ic": "tong",
+        "wade_giles": "t’ung",
+        "yale": "tung",
+        "zhuyin": "ㄊㄨㄥ"
+      },
+      {
+        "ic": "tou",
+        "wade_giles": "t’ou",
+        "yale": "tou",
+        "zhuyin": "ㄊㄡ"
+      },
+      {
+        "ic": "tu",
+        "wade_giles": "t’u",
+        "yale": "tu",
+        "zhuyin": "ㄊㄨ"
+      },
+      {
+        "ic": "tuan",
+        "wade_giles": "t’uan",
+        "yale": "twan",
+        "zhuyin": "ㄊㄨㄢ"
+      },
+      {
+        "ic": "tui",
+        "wade_giles": "t’ui",
+        "yale": "twei",
+        "zhuyin": "ㄊㄨㄟ"
+      },
+      {
+        "ic": "tun",
+        "wade_giles": "t’un",
+        "yale": "twun",
+        "zhuyin": "ㄊㄨㄣ"
+      },
+      {
+        "ic": "tuo",
+        "wade_giles": "t’o",
+        "yale": "two",
+        "zhuyin": "ㄊㄨㄛ"
+      },
+      {
+        "ic": "wa",
+        "wade_giles": "wa",
+        "yale": "wa",
+        "zhuyin": "ㄨㄚ"
+      },
+      {
+        "ic": "wai",
+        "wade_giles": "wai",
+        "yale": "wai",
+        "zhuyin": "ㄨㄞ"
+      },
+      {
+        "ic": "wan",
+        "wade_giles": "wan",
+        "yale": "wan",
+        "zhuyin": "ㄨㄢ"
+      },
+      {
+        "ic": "wang",
+        "wade_giles": "wang",
+        "yale": "wang",
+        "zhuyin": "ㄨㄤ"
+      },
+      {
+        "ic": "wei",
+        "wade_giles": "wei",
+        "yale": "wei",
+        "zhuyin": "ㄨㄟ"
+      },
+      {
+        "ic": "wen",
+        "wade_giles": "wen",
+        "yale": "wen",
+        "zhuyin": "ㄨㄣ"
+      },
+      {
+        "ic": "weng",
+        "wade_giles": "weng",
+        "yale": "weng",
+        "zhuyin": "ㄨㄥ"
+      },
+      {
+        "ic": "wo",
+        "wade_giles": "wo",
+        "yale": "wo",
+        "zhuyin": "ㄨㄛ"
+      },
+      {
+        "ic": "wu",
+        "wade_giles": "wu",
+        "yale": "wu",
+        "zhuyin": "ㄨ"
+      },
+      {
+        "ic": "xi",
+        "wade_giles": "hsi",
+        "yale": "xyi",
+        "zhuyin": "ㄒㄧ"
+      },
+      {
+        "ic": "xia",
+        "wade_giles": "hsia",
+        "yale": "sya",
+        "zhuyin": "ㄒㄧㄚ"
+      },
+      {
+        "ic": "xian",
+        "wade_giles": "hsien",
+        "yale": "syan",
+        "zhuyin": "ㄒㄧㄢ"
+      },
+      {
+        "ic": "xiang",
+        "wade_giles": "hsiang",
+        "yale": "syang",
+        "zhuyin": "ㄒㄧㄤ"
+      },
+      {
+        "ic": "xiao",
+        "wade_giles": "hsiao",
+        "yale": "syau",
+        "zhuyin": "ㄒㄧㄠ"
+      },
+      {
+        "ic": "xie",
+        "wade_giles": "hsieh",
+        "yale": "sye",
+        "zhuyin": "ㄒㄧㄝ"
+      },
+      {
+        "ic": "xin",
+        "wade_giles": "hsin",
+        "yale": "syin",
+        "zhuyin": "ㄒㄧㄣ"
+      },
+      {
+        "ic": "xing",
+        "wade_giles": "hsing",
+        "yale": "sying",
+        "zhuyin": "ㄒㄧㄥ"
+      },
+      {
+        "ic": "xiong",
+        "wade_giles": "hsiung",
+        "yale": "syung",
+        "zhuyin": "ㄒㄩㄥ"
+      },
+      {
+        "ic": "xiu",
+        "wade_giles": "hsiu",
+        "yale": "syou",
+        "zhuyin": "ㄒㄧㄡ"
+      },
+      {
+        "ic": "xu",
+        "wade_giles": "hsü",
+        "yale": "syu",
+        "zhuyin": "ㄒㄩ"
+      },
+      {
+        "ic": "xuan",
+        "wade_giles": "hsüan",
+        "yale": "sywan",
+        "zhuyin": "ㄒㄩㄢ"
+      },
+      {
+        "ic": "xue",
+        "wade_giles": "hsüeh",
+        "yale": "sywe",
+        "zhuyin": "ㄒㄩㄝ"
+      },
+      {
+        "ic": "xun",
+        "wade_giles": "hsün",
+        "yale": "syun",
+        "zhuyin": "ㄒㄩㄣ"
+      },
+      {
+        "ic": "ya",
+        "wade_giles": "ya",
+        "yale": "ya",
+        "zhuyin": "ㄧㄚ"
+      },
+      {
+        "ic": "yai",
+        "wade_giles": "yai",
+        "yale": "yai",
+        "zhuyin": "ㄧㄞ"
+      },
+      {
+        "ic": "yan",
+        "wade_giles": "yen",
+        "yale": "yan",
+        "zhuyin": "ㄧㄢ"
+      },
+      {
+        "ic": "yang",
+        "wade_giles": "yang",
+        "yale": "yang",
+        "zhuyin": "ㄧㄤ"
+      },
+      {
+        "ic": "yao",
+        "wade_giles": "yao",
+        "yale": "yau",
+        "zhuyin": "ㄧㄠ"
+      },
+      {
+        "ic": "ye",
+        "wade_giles": "yeh",
+        "yale": "ye",
+        "zhuyin": "ㄧㄝ"
+      },
+      {
+        "ic": "yi",
+        "wade_giles": "i",
+        "yale": "yi",
+        "zhuyin": "ㄧ"
+      },
+      {
+        "ic": "yin",
+        "wade_giles": "yin",
+        "yale": "yin",
+        "zhuyin": "ㄧㄣ"
+      },
+      {
+        "ic": "ying",
+        "wade_giles": "ying",
+        "yale": "ying",
+        "zhuyin": "ㄧㄥ"
+      },
+      {
+        "ic": "yo",
+        "wade_giles": "yo",
+        "yale": "Yo",
+        "zhuyin": "ㄧㄛ"
+      },
+      {
+        "ic": "yong",
+        "wade_giles": "yung",
+        "yale": "yung",
+        "zhuyin": "ㄩㄥ"
+      },
+      {
+        "ic": "you",
+        "wade_giles": "yu",
+        "yale": "you",
+        "zhuyin": "ㄧㄡ"
+      },
+      {
+        "ic": "yu",
+        "wade_giles": "yü",
+        "yale": "yu",
+        "zhuyin": "ㄩ"
+      },
+      {
+        "ic": "yuan",
+        "wade_giles": "yüan",
+        "yale": "ywan",
+        "zhuyin": "ㄩㄢ"
+      },
+      {
+        "ic": "yue",
+        "wade_giles": "yüeh",
+        "yale": "ywe",
+        "zhuyin": "ㄩㄝ"
+      },
+      {
+        "ic": "yun",
+        "wade_giles": "yün",
+        "yale": "yun",
+        "zhuyin": "ㄩㄣ"
+      },
+      {
+        "ic": "za",
+        "wade_giles": "tsa",
+        "yale": "dza",
+        "zhuyin": "ㄗㄚ"
+      },
+      {
+        "ic": "zai",
+        "wade_giles": "tsai",
+        "yale": "dzai",
+        "zhuyin": "ㄗㄞ"
+      },
+      {
+        "ic": "zan",
+        "wade_giles": "tsan",
+        "yale": "dzan",
+        "zhuyin": "ㄗㄢ"
+      },
+      {
+        "ic": "zang",
+        "wade_giles": "tsang",
+        "yale": "dzang",
+        "zhuyin": "ㄗㄤ"
+      },
+      {
+        "ic": "zao",
+        "wade_giles": "tsao",
+        "yale": "dzau",
+        "zhuyin": "ㄗㄠ"
+      },
+      {
+        "ic": "ze",
+        "wade_giles": "tse",
+        "yale": "dze",
+        "zhuyin": "ㄗㄜ"
+      },
+      {
+        "ic": "zei",
+        "wade_giles": "tsei",
+        "yale": "dzei",
+        "zhuyin": "ㄗㄟ"
+      },
+      {
+        "ic": "zen",
+        "wade_giles": "tsen",
+        "yale": "dzen",
+        "zhuyin": "ㄗㄣ"
+      },
+      {
+        "ic": "zeng",
+        "wade_giles": "tseng",
+        "yale": "dzeng",
+        "zhuyin": "ㄗㄥ"
+      },
+      {
+        "ic": "zha",
+        "wade_giles": "cha",
+        "yale": "ja",
+        "zhuyin": "ㄓㄚ"
+      },
+      {
+        "ic": "zhai",
+        "wade_giles": "chai",
+        "yale": "jai",
+        "zhuyin": "ㄓㄞ"
+      },
+      {
+        "ic": "zhan",
+        "wade_giles": "chan",
+        "yale": "jan",
+        "zhuyin": "ㄓㄢ"
+      },
+      {
+        "ic": "zhang",
+        "wade_giles": "chang",
+        "yale": "jang",
+        "zhuyin": "ㄓㄤ"
+      },
+      {
+        "ic": "zhao",
+        "wade_giles": "chao",
+        "yale": "jau",
+        "zhuyin": "ㄓㄠ"
+      },
+      {
+        "ic": "zhe",
+        "wade_giles": "che",
+        "yale": "je",
+        "zhuyin": "ㄓㄜ"
+      },
+      {
+        "ic": "zhen",
+        "wade_giles": "chen",
+        "yale": "jen",
+        "zhuyin": "ㄓㄣ"
+      },
+      {
+        "ic": "zheng",
+        "wade_giles": "cheng",
+        "yale": "jeng",
+        "zhuyin": "ㄓㄥ"
+      },
+      {
+        "ic": "zhi",
+        "wade_giles": "chih",
+        "yale": "jr",
+        "zhuyin": "ㄓ"
+      },
+      {
+        "ic": "zhong",
+        "wade_giles": "chung",
+        "yale": "jung",
+        "zhuyin": "ㄓㄨㄥ"
+      },
+      {
+        "ic": "zhou",
+        "wade_giles": "chou",
+        "yale": "jou",
+        "zhuyin": "ㄓㄡ"
+      },
+      {
+        "ic": "zhu",
+        "wade_giles": "chu",
+        "yale": "ju",
+        "zhuyin": "ㄓㄨ"
+      },
+      {
+        "ic": "zhua",
+        "wade_giles": "chua",
+        "yale": "jwa",
+        "zhuyin": "ㄓㄨㄚ"
+      },
+      {
+        "ic": "zhuai",
+        "wade_giles": "chuai",
+        "yale": "jwai",
+        "zhuyin": "ㄓㄨㄞ"
+      },
+      {
+        "ic": "zhuan",
+        "wade_giles": "chuan",
+        "yale": "jwan",
+        "zhuyin": "ㄓㄨㄢ"
+      },
+      {
+        "ic": "zhuang",
+        "wade_giles": "chuang",
+        "yale": "jwang",
+        "zhuyin": "ㄓㄨㄤ"
+      },
+      {
+        "ic": "zhui",
+        "wade_giles": "chui",
+        "yale": "jwei",
+        "zhuyin": "ㄓㄨㄟ"
+      },
+      {
+        "ic": "zhun",
+        "wade_giles": "chun",
+        "yale": "jwun",
+        "zhuyin": "ㄓㄨㄣ"
+      },
+      {
+        "ic": "zhuo",
+        "wade_giles": "cho",
+        "yale": "jwo",
+        "zhuyin": "ㄓㄨㄛ"
+      },
+      {
+        "ic": "zi",
+        "wade_giles": "tzu",
+        "yale": "dz",
+        "zhuyin": "ㄗ"
+      },
+      {
+        "ic": "zong",
+        "wade_giles": "tsung",
+        "yale": "dzung",
+        "zhuyin": "ㄗㄨㄥ"
+      },
+      {
+        "ic": "zou",
+        "wade_giles": "tsou",
+        "yale": "dzou",
+        "zhuyin": "ㄗㄡ"
+      },
+      {
+        "ic": "zu",
+        "wade_giles": "tsu",
+        "yale": "dzu",
+        "zhuyin": "ㄗㄨ"
+      },
+      {
+        "ic": "zuan",
+        "wade_giles": "tsuan",
+        "yale": "dzwan",
+        "zhuyin": "ㄗㄨㄢ"
+      },
+      {
+        "ic": "zui",
+        "wade_giles": "tsui",
+        "yale": "dzwei",
+        "zhuyin": "ㄗㄨㄟ"
+      },
+      {
+        "ic": "zun",
+        "wade_giles": "tsun",
+        "yale": "dzwun",
+        "zhuyin": "ㄗㄨㄣ"
+      },
+      {
+        "ic": "zuo",
+        "wade_giles": "tso",
+        "yale": "dzwo",
+        "zhuyin": "ㄗㄨㄛ"
+      }
+    ],
+    "row_count": 397
+  },
+  "appendix_c": {
+    "title": "Appendix C: List of Common Chinese Surnames",
+    "note_as_printed": "Chinese STC Transliteration per IC (IC first, followed by other common renditions); partially adapted from http://en.wikipedia.org/wiki/List_of_common_Chinese_surnames",
+    "entries": [
+      {
+        "char": "丁",
+        "stc": "0002",
+        "ic": "Ding",
+        "alternates": [],
+        "page": 1
+      },
+      {
+        "char": "于",
+        "stc": "0060",
+        "ic": "Yu",
+        "alternates": [],
+        "page": 1
+      },
+      {
+        "char": "方",
+        "stc": "2455",
+        "ic": "Fang",
+        "alternates": [
+          "Fong"
+        ],
+        "page": 1
+      },
+      {
+        "char": "孔",
+        "stc": "1313",
+        "ic": "Kong",
+        "alternates": [
+          "Kung",
+          "Hung"
+        ],
+        "page": 1
+      },
+      {
+        "char": "毛",
+        "stc": "3029",
+        "ic": "Mao",
+        "alternates": [
+          "Mo"
+        ],
+        "page": 1
+      },
+      {
+        "char": "王",
+        "stc": "3769",
+        "ic": "Wang",
+        "alternates": [
+          "Wong",
+          "Voung",
+          "Ong",
+          "Heng"
+        ],
+        "page": 1
+      },
+      {
+        "char": "文",
+        "stc": "2429",
+        "ic": "Wen",
+        "alternates": [
+          "Man"
+        ],
+        "page": 1
+      },
+      {
+        "char": "尹",
+        "stc": "1438",
+        "ic": "Yin",
+        "alternates": [],
+        "page": 1
+      },
+      {
+        "char": "白",
+        "stc": "4101",
+        "ic": "Bai",
+        "alternates": [
+          "Ba"
+        ],
+        "page": 1
+      },
+      {
+        "char": "石",
+        "stc": "4258",
+        "ic": "Shi",
+        "alternates": [
+          "Shek"
+        ],
+        "page": 1
+      },
+      {
+        "char": "史",
+        "stc": "0670",
+        "ic": "Shi",
+        "alternates": [
+          "Zee"
+        ],
+        "page": 1
+      },
+      {
+        "char": "田",
+        "stc": "3944",
+        "ic": "Tian",
+        "alternates": [
+          "Tien"
+        ],
+        "page": 1
+      },
+      {
+        "char": "池",
+        "stc": "3069",
+        "ic": "Chi",
+        "alternates": [
+          "Chea"
+        ],
+        "page": 1
+      },
+      {
+        "char": "江",
+        "stc": "3068",
+        "ic": "Jiang",
+        "alternates": [
+          "Chiang",
+          "Gong",
+          "Giang"
+        ],
+        "page": 1
+      },
+      {
+        "char": "任",
+        "stc": "0117",
+        "ic": "Ren",
+        "alternates": [
+          "Yum"
+        ],
+        "page": 1
+      },
+      {
+        "char": "伊",
+        "stc": "0122",
+        "ic": "Yi",
+        "alternates": [
+          "Yee"
+        ],
+        "page": 1
+      },
+      {
+        "char": "朱",
+        "stc": "2612",
+        "ic": "Zhu",
+        "alternates": [
+          "Chew",
+          "Choo",
+          "Chu",
+          "Gee"
+        ],
+        "page": 1
+      },
+      {
+        "char": "阮",
+        "stc": "7086",
+        "ic": "Ruan",
+        "alternates": [
+          "Yuen",
+          "Nguyen"
+        ],
+        "page": 1
+      },
+      {
+        "char": "杜",
+        "stc": "2629",
+        "ic": "Du",
+        "alternates": [
+          "Tu",
+          "Do"
+        ],
+        "page": 1
+      },
+      {
+        "char": "何",
+        "stc": "0149",
+        "ic": "He",
+        "alternates": [
+          "Ho",
+          "Ko"
+        ],
+        "page": 1
+      },
+      {
+        "char": "李",
+        "stc": "2621",
+        "ic": "Li",
+        "alternates": [
+          "Lee"
+        ],
+        "page": 1
+      },
+      {
+        "char": "呂",
+        "stc": "0712",
+        "ic": "Lu",
+        "alternates": [],
+        "page": 1
+      },
+      {
+        "char": "邱",
+        "stc": "6726",
+        "ic": "Qiu",
+        "alternates": [
+          "Khu",
+          "Kau"
+        ],
+        "page": 1
+      },
+      {
+        "char": "邵",
+        "stc": "6730",
+        "ic": "Shao",
+        "alternates": [
+          "Chiu"
+        ],
+        "page": 1
+      },
+      {
+        "char": "沈",
+        "stc": "3088",
+        "ic": "Shen",
+        "alternates": [
+          "Sun",
+          "Sung"
+        ],
+        "page": 1
+      },
+      {
+        "char": "宋",
+        "stc": "1345",
+        "ic": "Song",
+        "alternates": [
+          "Sung"
+        ],
+        "page": 1
+      },
+      {
+        "char": "巫",
+        "stc": "1566",
+        "ic": "Wu",
+        "alternates": [
+          "Mo"
+        ],
+        "page": 1
+      },
+      {
+        "char": "吴",
+        "stc": "0702",
+        "ic": "Wu",
+        "alternates": [
+          "Woo",
+          "Ng",
+          "Ang",
+          "Eng",
+          "Ing"
+        ],
+        "page": 1
+      },
+      {
+        "char": "余",
+        "stc": "0151",
+        "ic": "Yu",
+        "alternates": [
+          "Yue"
+        ],
+        "page": 1
+      },
+      {
+        "char": "金",
+        "stc": "6855",
+        "ic": "Jin",
+        "alternates": [
+          "Ching",
+          "King"
+        ],
+        "page": 1
+      },
+      {
+        "char": "林",
+        "stc": "2651",
+        "ic": "Lin",
+        "alternates": [
+          "Lim",
+          "Lam",
+          "Lum"
+        ],
+        "page": 1
+      },
+      {
+        "char": "孟",
+        "stc": "1322",
+        "ic": "Meng",
+        "alternates": [
+          "Man"
+        ],
+        "page": 1
+      },
+      {
+        "char": "汪",
+        "stc": "3076",
+        "ic": "Wang",
+        "alternates": [
+          "Wong"
+        ],
+        "page": 1
+      },
+      {
+        "char": "易",
+        "stc": "2496",
+        "ic": "Yi",
+        "alternates": [
+          "Yee"
+        ],
+        "page": 1
+      },
+      {
+        "char": "周",
+        "stc": "0719",
+        "ic": "Zhou",
+        "alternates": [
+          "Chau",
+          "Chow",
+          "Chou",
+          "Joe"
+        ],
+        "page": 1
+      },
+      {
+        "char": "花",
+        "stc": "5363",
+        "ic": "Hua",
+        "alternates": [
+          "Fa",
+          "Far"
+        ],
+        "page": 1
+      },
+      {
+        "char": "段",
+        "stc": "3008",
+        "ic": "Duan",
+        "alternates": [],
+        "page": 2
+      },
+      {
+        "char": "范",
+        "stc": "5400",
+        "ic": "Fan",
+        "alternates": [
+          "Fang"
+        ],
+        "page": 2
+      },
+      {
+        "char": "郝",
+        "stc": "6787",
+        "ic": "Hao",
+        "alternates": [],
+        "page": 2
+      },
+      {
+        "char": "胡",
+        "stc": "5170",
+        "ic": "Hu",
+        "alternates": [
+          "Wu",
+          "Woo"
+        ],
+        "page": 2
+      },
+      {
+        "char": "侯",
+        "stc": "0186",
+        "ic": "Hou",
+        "alternates": [],
+        "page": 2
+      },
+      {
+        "char": "姜",
+        "stc": "1203",
+        "ic": "Jiang",
+        "alternates": [
+          "Giang"
+        ],
+        "page": 2
+      },
+      {
+        "char": "马",
+        "stc": "7456",
+        "ic": "Ma",
+        "alternates": [
+          "Mah",
+          "Mar"
+        ],
+        "page": 2
+      },
+      {
+        "char": "姚",
+        "stc": "1202",
+        "ic": "Yao",
+        "alternates": [
+          "Yew"
+        ],
+        "page": 2
+      },
+      {
+        "char": "柯",
+        "stc": "2688",
+        "ic": "Ke",
+        "alternates": [
+          "Ker",
+          "and Quah"
+        ],
+        "page": 2
+      },
+      {
+        "char": "洪",
+        "stc": "3163",
+        "ic": "Hong",
+        "alternates": [
+          "Hung"
+        ],
+        "page": 2
+      },
+      {
+        "char": "陈",
+        "stc": "7115",
+        "ic": "Chen",
+        "alternates": [
+          "Chan",
+          "Tan"
+        ],
+        "page": 2
+      },
+      {
+        "char": "高",
+        "stc": "7559",
+        "ic": "Gao",
+        "alternates": [
+          "Kao",
+          "Ko"
+        ],
+        "page": 2
+      },
+      {
+        "char": "郭",
+        "stc": "6753",
+        "ic": "Guo",
+        "alternates": [
+          "Kuo",
+          "Kuok",
+          "Kwok"
+        ],
+        "page": 2
+      },
+      {
+        "char": "姬",
+        "stc": "1213",
+        "ic": "Ji",
+        "alternates": [],
+        "page": 2
+      },
+      {
+        "char": "康",
+        "stc": "1660",
+        "ic": "Kang",
+        "alternates": [
+          "Hong"
+        ],
+        "page": 2
+      },
+      {
+        "char": "陆",
+        "stc": "7120",
+        "ic": "Lu",
+        "alternates": [
+          "Loc",
+          "Lok"
+        ],
+        "page": 2
+      },
+      {
+        "char": "秦",
+        "stc": "4440",
+        "ic": "Qin",
+        "alternates": [
+          "Chin"
+        ],
+        "page": 2
+      },
+      {
+        "char": "孙",
+        "stc": "1327",
+        "ic": "Sun",
+        "alternates": [
+          "Suen"
+        ],
+        "page": 2
+      },
+      {
+        "char": "唐",
+        "stc": "0781",
+        "ic": "Tang",
+        "alternates": [
+          "Tong"
+        ],
+        "page": 2
+      },
+      {
+        "char": "夏",
+        "stc": "1115",
+        "ic": "Xia",
+        "alternates": [
+          "Hsia",
+          "Ha"
+        ],
+        "page": 2
+      },
+      {
+        "char": "徐",
+        "stc": "1776",
+        "ic": "Xu",
+        "alternates": [
+          "Hsu",
+          "Shaw",
+          "Seah",
+          "Shu"
+        ],
+        "page": 2
+      },
+      {
+        "char": "袁",
+        "stc": "5913",
+        "ic": "Yuan",
+        "alternates": [
+          "Yuen"
+        ],
+        "page": 2
+      },
+      {
+        "char": "曹",
+        "stc": "2580",
+        "ic": "Cao",
+        "alternates": [
+          "Tsao",
+          "Tso",
+          "Cho",
+          "Tow"
+        ],
+        "page": 2
+      },
+      {
+        "char": "常",
+        "stc": "1603",
+        "ic": "Chang",
+        "alternates": [],
+        "page": 2
+      },
+      {
+        "char": "崔",
+        "stc": "1508",
+        "ic": "Cui",
+        "alternates": [
+          "Chui"
+        ],
+        "page": 2
+      },
+      {
+        "char": "冯",
+        "stc": "7458",
+        "ic": "Feng",
+        "alternates": [
+          "Fung",
+          "Foong"
+        ],
+        "page": 2
+      },
+      {
+        "char": "黄",
+        "stc": "7806",
+        "ic": "Huang",
+        "alternates": [
+          "Wong",
+          "Hwang",
+          "Oei",
+          "Ooi"
+        ],
+        "page": 2
+      },
+      {
+        "char": "梁",
+        "stc": "2733",
+        "ic": "Liang",
+        "alternates": [
+          "Leong",
+          "Leung",
+          "Liong",
+          "Leon",
+          "Loeung"
+        ],
+        "page": 2
+      },
+      {
+        "char": "梅",
+        "stc": "2734",
+        "ic": "Mei",
+        "alternates": [
+          "Mai",
+          "May",
+          "Mey",
+          "Mui",
+          "Mue"
+        ],
+        "page": 2
+      },
+      {
+        "char": "许",
+        "stc": "6079",
+        "ic": "Xu",
+        "alternates": [
+          "Hsu",
+          "Hui"
+        ],
+        "page": 2
+      },
+      {
+        "char": "张",
+        "stc": "1728",
+        "ic": "Zhang",
+        "alternates": [
+          "Chang",
+          "Cheung",
+          "Jung",
+          "Cheong",
+          "Jong",
+          "Teo",
+          "Teoh"
+        ],
+        "page": 2
+      },
+      {
+        "char": "程",
+        "stc": "4453",
+        "ic": "Cheng",
+        "alternates": [
+          "Tsen"
+        ],
+        "page": 2
+      },
+      {
+        "char": "傅",
+        "stc": "0265",
+        "ic": "Fu",
+        "alternates": [
+          "Foo"
+        ],
+        "page": 2
+      },
+      {
+        "char": "贺",
+        "stc": "6320",
+        "ic": "He",
+        "alternates": [],
+        "page": 2
+      },
+      {
+        "char": "彭",
+        "stc": "1756",
+        "ic": "Peng",
+        "alternates": [
+          "Pang"
+        ],
+        "page": 2
+      },
+      {
+        "char": "汤",
+        "stc": "3282",
+        "ic": "Tang",
+        "alternates": [
+          "Tong"
+        ],
+        "page": 2
+      },
+      {
+        "char": "萬",
+        "stc": "5502",
+        "ic": "Wan",
+        "alternates": [
+          "Man",
+          "Mon",
+          "Won"
+        ],
+        "page": 2
+      },
+      {
+        "char": "葉",
+        "stc": "5509",
+        "ic": "Ye",
+        "alternates": [
+          "Yip",
+          "Ip",
+          "Yap",
+          "Yep"
+        ],
+        "page": 2
+      },
+      {
+        "char": "曾",
+        "stc": "2582",
+        "ic": "Zeng",
+        "alternates": [
+          "Tseng",
+          "Jeng"
+        ],
+        "page": 2
+      },
+      {
+        "char": "邹",
+        "stc": "6760",
+        "ic": "Zou",
+        "alternates": [
+          "Chou"
+        ],
+        "page": 3
+      },
+      {
+        "char": "焦",
+        "stc": "3542",
+        "ic": "Jiao",
+        "alternates": [
+          "Jiu"
+        ],
+        "page": 3
+      },
+      {
+        "char": "项",
+        "stc": "7309",
+        "ic": "Xiang",
+        "alternates": [
+          "Hong"
+        ],
+        "page": 3
+      },
+      {
+        "char": "邓",
+        "stc": "6772",
+        "ic": "Deng",
+        "alternates": [
+          "Tang",
+          "Teng",
+          "Thien",
+          "Thean",
+          "Thian"
+        ],
+        "page": 3
+      },
+      {
+        "char": "董",
+        "stc": "5516",
+        "ic": "Dong",
+        "alternates": [
+          "Tong"
+        ],
+        "page": 3
+      },
+      {
+        "char": "贾",
+        "stc": "6328",
+        "ic": "Jia",
+        "alternates": [
+          "Chia"
+        ],
+        "page": 3
+      },
+      {
+        "char": "雷",
+        "stc": "7191",
+        "ic": "Lei",
+        "alternates": [
+          "Louie"
+        ],
+        "page": 3
+      },
+      {
+        "char": "乔",
+        "stc": "0829",
+        "ic": "Qiao",
+        "alternates": [
+          "Chiao",
+          "Kiu"
+        ],
+        "page": 3
+      },
+      {
+        "char": "杨",
+        "stc": "2799",
+        "ic": "Yang",
+        "alternates": [
+          "Young",
+          "Yeung",
+          "Yeo",
+          "Yong"
+        ],
+        "page": 3
+      },
+      {
+        "char": "潘",
+        "stc": "3382",
+        "ic": "Pan",
+        "alternates": [
+          "Poon"
+        ],
+        "page": 3
+      },
+      {
+        "char": "熊",
+        "stc": "3574",
+        "ic": "Xiong",
+        "alternates": [
+          "Hong",
+          "Hung"
+        ],
+        "page": 3
+      },
+      {
+        "char": "赵",
+        "stc": "6392",
+        "ic": "Zhao",
+        "alternates": [
+          "Chao",
+          "Chiu",
+          "Chew",
+          "Chieu",
+          "Chu"
+        ],
+        "page": 3
+      },
+      {
+        "char": "郑",
+        "stc": "6774",
+        "ic": "Zheng",
+        "alternates": [
+          "Cheng",
+          "Chung"
+        ],
+        "page": 3
+      },
+      {
+        "char": "蔡",
+        "stc": "5591",
+        "ic": "Cai",
+        "alternates": [
+          "Tsai",
+          "Choi",
+          "Chua",
+          "Chai",
+          "Chye",
+          "Choy"
+        ],
+        "page": 3
+      },
+      {
+        "char": "范",
+        "stc": "5400",
+        "ic": "Fan",
+        "alternates": [
+          "Fang",
+          "Farn"
+        ],
+        "page": 3
+      },
+      {
+        "char": "蒋",
+        "stc": "5592",
+        "ic": "Jiang",
+        "alternates": [
+          "Chiang"
+        ],
+        "page": 3
+      },
+      {
+        "char": "黎",
+        "stc": "7812",
+        "ic": "Li",
+        "alternates": [
+          "Lai"
+        ],
+        "page": 3
+      },
+      {
+        "char": "刘",
+        "stc": "0491",
+        "ic": "Liu",
+        "alternates": [
+          "Lau"
+        ],
+        "page": 3
+      },
+      {
+        "char": "骆",
+        "stc": "7482",
+        "ic": "Luo",
+        "alternates": [],
+        "page": 3
+      },
+      {
+        "char": "阎",
+        "stc": "7051",
+        "ic": "Yan",
+        "alternates": [],
+        "page": 3
+      },
+      {
+        "char": "欧",
+        "stc": "2962",
+        "ic": "Ou",
+        "alternates": [
+          "Au"
+        ],
+        "page": 3
+      },
+      {
+        "char": "赖",
+        "stc": "6351",
+        "ic": "Lai",
+        "alternates": [],
+        "page": 3
+      },
+      {
+        "char": "霍",
+        "stc": "7202",
+        "ic": "Huo",
+        "alternates": [
+          "Fuo"
+        ],
+        "page": 3
+      },
+      {
+        "char": "卢",
+        "stc": "4151",
+        "ic": "Lu",
+        "alternates": [
+          "Loh",
+          "Low"
+        ],
+        "page": 3
+      },
+      {
+        "char": "钱",
+        "stc": "6929",
+        "ic": "Qian",
+        "alternates": [
+          "Chian",
+          "Chin"
+        ],
+        "page": 3
+      },
+      {
+        "char": "萧",
+        "stc": "5618",
+        "ic": "Xiao",
+        "alternates": [
+          "Siu",
+          "Siew",
+          "Seow",
+          "Hsiao"
+        ],
+        "page": 3
+      },
+      {
+        "char": "韩",
+        "stc": "7281",
+        "ic": "Han",
+        "alternates": [
+          "Hon"
+        ],
+        "page": 3
+      },
+      {
+        "char": "龙",
+        "stc": "7893",
+        "ic": "Long",
+        "alternates": [
+          "Lung"
+        ],
+        "page": 3
+      },
+      {
+        "char": "魏",
+        "stc": "7614",
+        "ic": "Wei",
+        "alternates": [
+          "Ngai"
+        ],
+        "page": 3
+      },
+      {
+        "char": "谢",
+        "stc": "6200",
+        "ic": "Xie",
+        "alternates": [
+          "Tsia",
+          "Che",
+          "She",
+          "Tse",
+          "Tze",
+          "Hsieh"
+        ],
+        "page": 3
+      },
+      {
+        "char": "薛",
+        "stc": "5641",
+        "ic": "Xue",
+        "alternates": [],
+        "page": 3
+      },
+      {
+        "char": "戴",
+        "stc": "1601",
+        "ic": "Dai",
+        "alternates": [
+          "Tai"
+        ],
+        "page": 3
+      },
+      {
+        "char": "聂",
+        "stc": "5119",
+        "ic": "Nie",
+        "alternates": [
+          "Ni",
+          "Nye",
+          "Ny"
+        ],
+        "page": 3
+      },
+      {
+        "char": "谭",
+        "stc": "6223",
+        "ic": "Tan",
+        "alternates": [
+          "Tam"
+        ],
+        "page": 3
+      },
+      {
+        "char": "罗",
+        "stc": "5012",
+        "ic": "Luo",
+        "alternates": [
+          "Law"
+        ],
+        "page": 3
+      },
+      {
+        "char": "苏",
+        "stc": "5685",
+        "ic": "Su",
+        "alternates": [
+          "Soo",
+          "So"
+        ],
+        "page": 3
+      },
+      {
+        "char": "锺",
+        "stc": "6945",
+        "ic": "Zhong",
+        "alternates": [
+          "Chong"
+        ],
+        "page": 3
+      },
+      {
+        "char": "关",
+        "stc": "7070",
+        "ic": "Guan",
+        "alternates": [
+          "Kwan",
+          "Kuan",
+          "Kwuan",
+          "Quan"
+        ],
+        "page": 3
+      },
+      {
+        "char": "顾",
+        "stc": "7357",
+        "ic": "Gu",
+        "alternates": [
+          "Ku"
+        ],
+        "page": 3
+      },
+      {
+        "char": "龚",
+        "stc": "7895",
+        "ic": "Gong",
+        "alternates": [],
+        "page": 4
+      },
+      {
+        "char": "栾",
+        "stc": "2940",
+        "ic": "Luan",
+        "alternates": [],
+        "page": 4
+      }
+    ],
+    "entry_count": 116
+  }
+}
