@@ -1,0 +1,179 @@
+=== p7
+DIN 32708:2014-08 
+7 
+ Tōten (、) als Komma (,); 
+ Nakaten (・): 
+ in Aufzählungen gleichwertiger Einheiten als Komma (,); 
+ in allen anderen Fällen in der Regel als Spatium (schmales Leerzeichen); 
+ in Fällen, wo die japanische Typographie nachgebildet werden soll, kann ein Bindestrich (-) gesetzt 
+werden. 
+ Namidasshu (〜; wave dash, Unicode U+301C), falls erforderlich, je nach typographischer Notwendigkeit 
+in der Regel als Bindestrich (-) oder Gedankenstrich (–); 
+ Tōgō (=): 
+ bei westlichen Doppelnamen, deren Teile in der Katakana-Umschrift durch ein Gleichheitszeichen 
+verbunden sind, als Bindestrich (マイヤー=アービッヒ Maiyā-Ābihhi); 
+ in allen anderen Fällen als Spatium (マルクス=レーニン主義 Marukusu Rēnin shugi). 
+ Kagikakko (「」) in der Regel als doppelte Anführungszeichen („ bzw. “); 
+ Nijū kagikakko (『』) in der Regel als einfache Anführungszeichen („ bzw. “); 
+ sonstige kakko (〈〉,《》, 〔〕,〖〗,〘〙,〚〛), falls erforderlich, in der Regel als Klammern (()). 
+5.4 Langvokale 
+Langvokale werden durch ein Makron ausgedrückt (ā, ē, ī, ō, ū), gleichgültig ob sie in Kana mittels eines „う“ 
+(z. B. おう = ō, とう = tō), einer Vokalverdoppelung (z. B. おお, おぉ) oder eines Katakana-Längungszeichens 
+(z. B. アー) dargestellt sind. 
+Von Langvokalen zu unterscheiden sind japanische Doppelvokale, in denen auf ein i い, ki き, shi し, chi ち 
+usw. ein i い folgt. Diese werden immer ii geschrieben (Niigata 新潟, chiisai 小さい, oniisan お兄さん im 
+Gegensatz zu enerugī エネルギー, chīzu チーズ, shirīzu シリーズ, karorī カロリー). Vokale, die zu beiden 
+Seiten einer Kanji- oder Morphemgrenze liegen (問う = とう = tou, 本居 = もとおり = Motoori, 子牛 = こうし 
+= koushi im Gegensatz zu 孔子 = こうし = Kōshi) werden nie zu einem Langvokal zusammengezogen. 
+Historisch bedingte Kontraktionen werden dagegen übernommen (Murō Saisei 室生犀星, nicht Muroo Saisei). 
+5.5 n am Silbenende innerhalb eines Wortes 
+Nach einem n (ん/ン) am Silbenende, das innerhalb eines Wortes steht, ist ein Apostroph zu setzen, wenn 
+ihm ein Vokal oder ein y folgt (hon‘yaku 翻訳). Empfohlen wird der Modifikationsbuchstabe Apostroph 
+(modifier letter apostrophe, Unicode U+02BC), da dieser jedoch nicht in allen Fonts vorhanden ist, kann in 
+solchen Fällen der Standard-Apostroph verwendet werden. Vor b, m und p ist es immer als n zu schreiben 
+(Kanbun, nicht Kambun 漢文; ganmon, nicht gammon 願文; Kanpō, nicht Kampō 漢方). Dies gilt auch für 
+Zeitungstitel wie Asahi shinbun 朝日新聞 und Yomiuri shinbun 読売新聞 und deren Verlage, die eine 
+abweichende Schreibung bevorzugen ((The) Asahi/Yomiuri Shimbun(sha) 朝日/読売新聞(社)). Die Schreibung 
+mb ist nur im Falle eines direkten, in dieser lateinschriftlichen Form stehenden Zitats zulässig.  
+Normen-Download-Beuth-Ribose-KdNr.8161524-LfNr.9475154001-2020-09-22 11:46
+
+=== p8
+DIN 32708:2014-08 
+8 
+5.6 Sokuon vor einem Konsonanten 
+Sokuon vor einem Konsonanten (angezeigt durch untergestelltes tsu っ/ッ) wird durch eine Verdoppelung des 
+entsprechenden Konsonanten wiedergegeben (nakatta なかった, rettō 列島), im Falle eines ch als tch (Nitchū 
+日中), eines sh als ssh (hassha 発車) und eines tsu als ttsu (ittsū 一通). 
+5.7 Sokuon am Wortende 
+Sokuon am Wortende (durch untergestelltes tsu っ/ッ am Wortende angezeigt und als stimmloser glottaler 
+Implosiv realisiert) wird durch einen Apostroph wiedergegeben (a‘ アッ). Empfohlen wird der 
+Modifikationsbuchstabe Apostroph (modifier letter apostrophe, Unicode U+02BC); da dieser jedoch nicht in 
+allen Fonts vorhanden ist, kann in solchen Fällen der Standard-Apostroph verwendet werden. 
+5.8 Postpositionen 
+ Die Postposition へ/ヘ wird e, nicht he umschrieben. 
+ Die Postposition は/ハ wird wa, nicht ha umschrieben. 
+ Die Postposition を/ヲ wird o, nicht wo umschrieben. 
+6 
+Getrennt- und Zusammenschreibung 
+6.1 Nomina 
+6.1.1 
+Sino-japanische (on‘yomi-)Komposita 
+Komposita mit on-Lesung, die aus zwei oder drei Kanji bestehen, werden zusammengeschrieben (josei 女性, 
+shakai 社会, kikensei 危険性, netsurikigaku 熱力学). Komposita, die aus vier und mehr Kanji bestehen, 
+werden getrennt geschrieben (josei bungaku 女性文学, shakai shugi 社会主義, sūri tōkeigaku 数理統計学, 
+shakai minshu shugi 社会民主主義). Komposita von bis zu vier Kanji, die nicht sinnvoll getrennt werden 
+können, werden jedoch zusammengeschrieben (toshokan‘in 図書館員, sakkyokushamei 作曲者名, todōfuken 
+都道府県, denjikigaku 電磁気学). Siehe 6.8 (Affixe). 
+6.1.2 
+Komposita mit japanischer Lesung (kun‘yomi) oder Mischlesung (jūbakoyomi, yutōyomi) 
+Komposita mit kun-Lesung oder Mischlesung werden zusammengeschrieben (ukiyoe 浮世絵, sakezukuri 
+酒づくり, chichihaha 父母, hitobito 人々, tokorodokoro 所々, Yamatodamashii 大和魂, Yamatoe 大和絵,  
+on'yomi 音読み, onnatenka 女天下, kogirei 小綺麗). 
+Nomina, die aus einem Kanji in kun-Lesung bestehen, werden von dem Kompositum, das sie näher 
+bestimmen, getrennt geschrieben (onna ekaki 女絵かき, yume handan 夢判断, sakana ryōri 魚料理, hitsuji 
+jiten 羊事典, kami baitai 紙媒体, mizu osen 水汚染). 
+6.1.3 
+Fremdwörter (gairaigo), Lehn- und Pseudo-Lehnwörter 
+Fremd-, Lehn- und Pseudo-Lehnwörter werden entsprechend der japanischen Vorlage zusammen- oder 
+getrennt geschrieben.  
+Bilden Fremd- und Lehnwörter zusammen mit einem Kanji (in on- oder kun-Lesung) ein Kompositum, werden 
+sie mit ihm zusammengeschrieben. Bilden sie mit mehreren Kanji ein Kompositum, werden sie von ihnen 
+getrennt geschrieben (gasutō ガス灯, デジタル化 dejitaruka, aber kyanpu seikatsu キャンプ生活, dejitaru jidai 
+デジタル時代). 
+Normen-Download-Beuth-Ribose-KdNr.8161524-LfNr.9475154001-2020-09-22 11:46
+
+=== p9
+DIN 32708:2014-08 
+9 
+6.2 Verben 
+6.2.1 
+Nomen + suru 
+Verbalisierungen von Nomina durch suru werden in der Regel getrennt geschrieben (bunseki suru 分析する, 
+doraibu suru ドライブする). Verben, die aus einem Kanji + suru gebildet werden, werden 
+zusammengeschrieben (kansuru 関する). 
+6.2.2 
+Einfaches Verb + Endung 
+Einfache Verben werden mit ihren Endungen zusammengeschrieben (omou 思う, mita 見た, taberareru 
+食べられる, yomanai 読まない, tobasaseru 飛ばさせる).  
+6.2.3 
+Verbalkompositum + Endung 
+Verbalkomposita aus zwei zusammengesetzten Verben und deren Endungen werden zusammengeschrieben 
+(tobidasu 飛び出す, iiarawasu 言い表す, kakinaoshimasu 書き直します, tabeowaranai 食べ終わらない, 
+omoitsuita 思いついた). 
+6.2.4 
+Finite Verben, Adverbien, flektierte Adjektive + Verben 
+Folgt ein Verb auf ein finites Verb (kaette kuru 帰って来る), ein Adverb (sō suru そうする) oder ein flektiertes 
+Adjektiv (tadashiku naru 正しくなる), wird getrennt geschrieben. 
+6.3 Kopulas 
+Kopulas wie da だ, desu です und de aru である bzw. (aus der klassischen Schriftsprache) nari なり, sowie 
+ihre konjugierten Formen einschließlich der Attributivform na な, werden von anderen Wörtern getrennt 
+geschrieben (hon desu 本です, torimasen deshita 取りませんでした, taihen na 大変な, yunīku na ユニークな, 
+hitsuyō naru 必要なる). 
+6.4 Flektierte Adjektive und zusammengesetzte flektierte Adjektive 
+Flektierte Adjektive und zusammengesetzte flektierte Adjektive werden zusammengeschrieben (karai 辛い, 
+takakunai 高くない, samukunakatta 寒くなかった, osorubeki 恐るべき, wakariyasui 分り易い). 
+6.5 Adverbien 
+Mittels einer Postposition gebildete Adverbien werden in einem Wort geschrieben (tokuni 特に, tomoni 共に). 
+6.6 Konjunktionen 
+Mittels einer Postposition gebildete Konjunktionen werden in einem Wort geschrieben (matawa 又は). 
+6.7 Postpositionen 
+Postpositionen werden von anderen Wörtern und voneinander getrennt geschrieben (asu e no michi 
+明日への道, bungaku no tame ni 文学のために, „kokugo“ tte nani? 「国語」ってなに?). Entsteht durch ihre 
+Verknüpfung jedoch eine erweiterte Postposition, wird diese zusammengeschrieben (demo でも, node ので, 
+toshite として, toshitemo としても, towa とは, nishite にして). 
+Normen-Download-Beuth-Ribose-KdNr.8161524-LfNr.9475154001-2020-09-22 11:46
+
+=== p10
+DIN 32708:2014-08 
+10 
+6.8 Affixe 
+Affixe (Präfixe und Suffixe einschließlich Höflichkeitspräfixen wie o- お, go- 御, Pluralsuffixen wie -tachi たち 
+und dem Adjektivierungssuffix -rashii らしい) werden in der Regel mit dem Wort, vor dem bzw. hinter dem sie 
+stehen, zusammengeschrieben. Beziehen sie sich auf ein mehrteiliges Kompositum oder ist nicht klar, ob sie 
+sich nur auf das Wort beziehen, vor dem bzw. hinter dem sie stehen, werden sie von diesem getrennt 
+geschrieben (daijiten 大辞典, aber Dai kokugo jiten 大国語辞典, shakai shugi teki 社会主義的, kokka shugi 
+sha 国家主義者). 
+6.9 Eigennamen 
+6.9.1 Allgemeines 
+Mehrteilige Eigennamen werden getrennt geschrieben (Tokugawa Ieyasu 徳川家康, Murasaki Shikibu 紫式部, 
+Ō Yōmei 王陽明, Nihon Rettō 日本列島). Nähere Regelungen, Abweichungen und Besonderheiten im 
+Folgenden. 
+6.9.2 Eigennamen, die Postpositionen enthalten 
+Postpositionen zwischen einzelnen Namensbestandteilen werden von diesen getrennt geschrieben (Ki no 
+Tsurayuki 紀貫之, Sugawara no Takasue no Musume 菅原孝標女, Musashi no Kuni 武蔵国 bzw. 武蔵の国). 
+Steht 
+eine 
+Postposition 
+jedoch 
+(ausgeschrieben 
+oder 
+nicht) 
+innerhalb 
+eines 
+Namens 
+oder 
+Namensbestandteils, der als Einheit aufzufassen ist, erfolgt eine Zusammenschreibung (Mikasanomiya 
+Takahito 三笠宮崇仁, Musha(no)kōji Saneatsu 武者小路実篤, Akutagawa Ryūnosuke 芥川龍之介, Sekigahara 
+関ガ原/関ヶ原). 
+6.9.3 Eigenname + Affix  
+6.9.3.1 
+Allgemeines 
+Affixe zu Eigennamen, die aus einem einzelnen Kanji bestehen, werden mit diesen zusammengeschrieben 
+(Tōkyōto 東京都, Kyōtoshi 京都市, Ogawamachi 小川町, Kariforuniashū カリフォルニア州, Tōkyōeki 東京駅, 
+Yokohamakō 横浜港, Yodogawa 淀川, Biwako 琵琶湖, Nihonteki 日本的, Edojō 江戸城, Yamaguchigumi 
+山口組, Amerikajin アメリカ人, Amerikashi アメリカ史, Kanōha 狩野派, Hokusaiten 北斎展, Amidabutsu 
+阿弥陀仏, Fujiwarashi 藤原氏, Meijiki 明治期, Tōdai 唐代, Shimanemaru 島根丸/しまね丸, Asahimaru 
+朝日丸/あさひ丸, Bisumarkugō ビスマルク号, Minamiajia 南アジア, Nishiyōroppa 西ヨーロッパ, Zennihon 
+全日本, Higashinihon 東日本, Zensoren 全ソ連, Daitōa 大東亜, tainichi 対日, Kantaiheiyō 環太平洋, Gotoba 
+後鳥羽, Kamikitayamamura 上北山村, Higashiizuchō 東伊豆町).  
+Umfassen sie mehrere Kanji, werden sie von ihnen getrennt geschrieben (Hokutō Shiberia 北東シベリア, 
+Seinan Taiheiyō 西南太平洋, Kantō Heiya 関東平野, Biwa Kohan 琵琶湖畔, zaitai Nihonjin 在台日本人, 
+kyōbeibyō/sha 恐米病/者, Ōsaka Furitsu Daigaku 大阪府立大学, Yokohama Kōwan 横浜港湾). 
+6.9.3.2 
+Ausnahmen: Werktitel mit Affix, mehrteiliger Eigenname + Affix 
+Affixe, welche sich auf den gesamten Titel eines Werkes beziehen, werden vom Titel getrennt geschrieben 
+(Shoku Nihon kōki 続日本後記, Gēte den ゲーテ伝, Tanizaki Jun'ichirō shū 谷崎潤一郎集, Zoku gunsho ruijū 
+續群書類従, Ise monogatari shō 伊勢物語抄). 
+Suffixe nach mehrteiligen Eigennamen werden von diesen getrennt geschrieben (Tanaka Chiyo shiki 
+田中千代式). 
+Normen-Download-Beuth-Ribose-KdNr.8161524-LfNr.9475154001-2020-09-22 11:46
