@@ -18,6 +18,11 @@ metadata {
 }
 
 tests {
+  "Ӧ̄ ӧ̄" -> "Ọ̈ ọ̈"
+  "І̆ і̆" -> "Ĭ ĭ"
+  "Ј́ ј́" -> "J́ j́"
+  "У̊ у̊" -> "Ů ů"
+  "ъ ь ʼ ˮ Ӏ" -> "ʺ ʹ ʼ ˮ ‡"
 }
 
 stage main {
@@ -61,8 +66,9 @@ stage main {
     sub "І" "Ì"
     sub "Ї" "Ï"
     sub "І̄" "Ǐ"
+    sub "І̆" "Ĭ"
     sub "Ј" "J̌"
-    sub "Ј̵" "J́"
+    sub "Ј́" "J́"
     sub "К" "K"
     sub "Ќ" "Ḱ"
     sub "Ӄ" "Ḳ"
@@ -112,6 +118,7 @@ stage main {
     sub "Ў" "Ŭ"
     sub "Ӳ" "Ű"
     sub "У́" "Ú"
+    sub "У̊" "Ů"
     sub "Ӱ̄" "Ụ̈"
     sub "Ү" "Ù"
     sub "Ұ" "U̇"
@@ -185,8 +192,9 @@ stage main {
     sub "і" "ì"
     sub "ї" "ï"
     sub "і̄" "ǐ"
+    sub "і̆" "ĭ"
     sub "ј" "ǰ"
-    sub "ј̵" "j́"
+    sub "ј́" "j́"
     sub "к" "k"
     sub "ќ" "ḱ"
     sub "ӄ" "ḳ"
@@ -214,6 +222,7 @@ stage main {
     sub "ө" "ô"
     sub "ӫ" "ő"
     sub "о̄̈" "ọ̈"
+    sub "ӧ̄" "ọ̈"
     sub "ҩ" "ò"
     sub "о́" "ó"
     sub "о̄" "ō"
@@ -236,6 +245,7 @@ stage main {
     sub "ў" "ŭ"
     sub "ӳ" "ű"
     sub "у́" "ú"
+    sub "у̊" "ů"
     sub "ӱ̄" "ụ̈"
     sub "ү" "ù"
     sub "ұ" "u̇"
@@ -273,8 +283,8 @@ stage main {
     sub "ѳ" "f̀"
     sub "ѵ" "ỳ"
     sub "Ӏ" "‡"
-    sub "ʼ" "`"
-    sub "ˮ" "¨"
+    sub "ʼ" "ʼ"
+    sub "ˮ" "ˮ"
   }
 
 }
