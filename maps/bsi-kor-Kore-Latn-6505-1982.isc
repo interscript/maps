@@ -41,14 +41,9 @@ metadata {
     layer uses w-forms and breves), whereas the Part Four mechanical
     system encodes plain concatenation (oa oai oi ue). The guide also
     states that letters not in Table VIII and all vernacular words
-    are covered in its Parts ii and iii. Encoding the Sino-Korean
-    layer would be a separate system id \u2014 an owner decision, recorded
-    here rather than merged silently into this map. The /r/-/l/
-    guidance in the same section is stated by the source itself to
-    have no single satisfactory rule and is not mechanically
-    encodable; the r- initial row (foreign words in the South, North
-    Korean spelling in the North) is recorded here rather than
-    guessed."
+    are covered in its Parts ii and iii.     layer has since been encoded as its own system,
+    bsi-kor-Kore-Latn-6505-1982-t8 (Table VIII transcribed at 8-10x;
+    maps PR #251).
   }
 }
 
