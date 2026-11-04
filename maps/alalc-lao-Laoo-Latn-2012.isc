@@ -36,7 +36,7 @@ tests {
    "\u0e9a\u0eb8\u0ea7\u0e81" ->  "būak"
    "\u0e99\u0eb2\u0ea7" ->  "nāo"
    "\u0ec1\u0e81\u0ec9\u0ea7" ->  "kǣo"
-   "\u0eab\u0ecd\u0e8d\u0eb2" ->  "nyā"
+   "\u0eab\u0e8d\u0ec9\u0eb2" ->  "nyā"
    "\u0eab\u0ebc\u0eb2\u0e8d" ->  "lāi"
    "\u0ead\u0eb5\u0e81" ->  "ʻīk"
    "\u0e84\u0eb4\u0e94\u0eaa\u0eb0\u0e95\u0ebd\u0e99" ->  "khitsatīan"
@@ -1878,6 +1878,16 @@ stage main {
     sub { from "ຟ" to "p" after any("ກຂຄງຈສຊດຕຖທນບປຜຝພຟມຢຣລຮ") }
     sub { from "ຣ" to "n" after any("ກຂຄງຈສຊດຕຖທນບປຜຝພຟມຢຣລຮ") }
     sub { from "ລ" to "n" after any("ກຂຄງຈສຊດຕຖທນບປຜຝພຟມຢຣລຮ") }
+  }
+
+  # O ANG word-initially carries a vowel-initial syllable and
+  # romanizes as the ayn (Note 6: "ອ is used in initial position for
+  # syllables beginning with a vowel, thus: ອີກ (ʻīk)"); this runs
+  # before the consonant+vowel pair rows so the vowel-syllable carriers
+  # ອັ ອາ ອິ ອີ ... render ʻ plus the vowel. Elsewhere ອ is the vowel
+  # ǭ (default row below).
+  parallel {
+    sub { from "ອ" to "ʻ" before boundary }
   }
 
   parallel {
