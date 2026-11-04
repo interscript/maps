@@ -41,8 +41,8 @@ tests {
    "\u1780\u17b6\u1780\u17cb" ->  "kâk"
    "\u179f\u17b6\u1780\u17cb" ->  "sâk"
    "\u1798\u17bb\u1793" ->  "mun"
-   "\u1794\u17bc\u17b8" ->  "p˝ī"
-   "\u179f\u17bc\u17b8" ->  "sʹī"
+   "\u1794\u17bb\u17b8" ->  "p˝ī"
+   "\u179f\u17bb\u17b8" ->  "sʹī"
 }
 
 stage main {
@@ -3328,42 +3328,94 @@ stage main {
     sub "អៅ" "‛au"
   }
 
+  # BANTAC FRAME, FIRST CONSONANT (page 4 notes): "◌់ is a Khmer
+  # diacritic called Banták that shortens the preceding vowel" and
+  # "◌◌់ is a combined form of consonant sound and Banták as in កក់
+  # (kák); សក់ (sák)". In the two-consonant frame C1+C2+់ the bantac
+  # shortens the INHERENT vowel of the first consonant, so the vowel
+  # slot renders á and the second consonant is syllable-final: the
+  # first consonant carries no inherent vowel of its own. Khmer-glyph
+  # context, so this runs before the inherent-vowel pass; the
+  # vowel+bantac compounds (◌ា◌់ -> â, rows above) are already
+  # consumed.
   parallel {
-    sub "ក់" "ká"
-    sub "ខ់" "khá"
-    sub "គ់" "gá"
-    sub "ឃ់" "ghá"
-    sub "ង់" "ngá"
-    sub "ច់" "cá"
-    sub "ឆ់" "chá"
-    sub "ជ់" "já"
-    sub "ឈ់" "jhá"
-    sub "ញ់" "ñá"
-    sub "ដ់" "ṭá"
-    sub "ឋ់" "ṭhá"
-    sub "ឌ់" "ḍá"
-    sub "ឍ់" "ḍhá"
-    sub "ណ់" "ṇá"
-    sub "ត់" "tá"
-    sub "ថ់" "thá"
-    sub "ទ់" "dá"
-    sub "ធ់" "dhá"
-    sub "ន់" "ná"
-    sub "ប់" "pá"
-    sub "ផ់" "phá"
-    sub "ព់" "bá"
-    sub "ភ់" "bhá"
-    sub "ម់" "má"
-    sub "យ់" "yá"
-    sub "រ់" "rá"
-    sub "ល់" "lá"
-    sub "វ់" "vá"
-    sub "ឝ់" "śá"
-    sub "ឞ់" "ṣá"
-    sub "ស់" "sá"
-    sub "ហ់" "há"
-    sub "ឡ់" "ḷá"
-    sub "អ់" "‛á"
+    sub { from "ក" to "k" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ខ" to "kh" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "គ" to "g" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ឃ" to "gh" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ង" to "ng" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ច" to "c" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ឆ" to "ch" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ជ" to "j" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ឈ" to "jh" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ញ" to "ñ" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ដ" to "ṭ" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ឋ" to "ṭh" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ឌ" to "ḍ" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ឍ" to "ḍh" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ណ" to "ṇ" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ត" to "t" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ថ" to "th" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ទ" to "d" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ធ" to "dh" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ន" to "n" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ប" to "p" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ផ" to "ph" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ព" to "b" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ភ" to "bh" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ម" to "m" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "យ" to "y" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "រ" to "r" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ល" to "l" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "វ" to "v" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ឝ" to "ś" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ឞ" to "ṣ" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ស" to "s" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ហ" to "h" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "ឡ" to "ḷ" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+    sub { from "អ" to "‛" after any("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ") + "់" }
+  }
+
+  # BANTAC, SECOND CONSONANT: the shortened inherent vowel á plus the
+  # syllable-final consonant (vowel table row ◌◌់ -> á combining acute
+  # accent; page 4 examples kák, sák). A bantac with no preceding
+  # consonant frame is unattested in the source.
+  parallel {
+    sub "ក់" "ák"
+    sub "ខ់" "ákh"
+    sub "គ់" "ág"
+    sub "ឃ់" "ágh"
+    sub "ង់" "áng"
+    sub "ច់" "ác"
+    sub "ឆ់" "ách"
+    sub "ជ់" "áj"
+    sub "ឈ់" "ájh"
+    sub "ញ់" "áñ"
+    sub "ដ់" "áṭ"
+    sub "ឋ់" "áṭh"
+    sub "ឌ់" "áḍ"
+    sub "ឍ់" "áḍh"
+    sub "ណ់" "áṇ"
+    sub "ត់" "át"
+    sub "ថ់" "áth"
+    sub "ទ់" "ád"
+    sub "ធ់" "ádh"
+    sub "ន់" "án"
+    sub "ប់" "áp"
+    sub "ផ់" "áph"
+    sub "ព់" "áb"
+    sub "ភ់" "ábh"
+    sub "ម់" "ám"
+    sub "យ់" "áy"
+    sub "រ់" "ár"
+    sub "ល់" "ál"
+    sub "វ់" "áv"
+    sub "ឝ់" "áś"
+    sub "ឞ់" "áṣ"
+    sub "ស់" "ás"
+    sub "ហ់" "áh"
+    sub "ឡ់" "áḷ"
+    sub "អ់" "‛ák"
   }
 
   parallel {
