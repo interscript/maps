@@ -23,12 +23,24 @@ metadata {
     note "Note 1: only the syllable-initial vowel forms are listed in
     the source; the dependent-sign values follow Limbu grammar
     practice (ĕ and ō mark the short vowels the script distinguishes)."
+    note "2025 corpus repair: the test ᤁᤠ expecting ke was corrected to
+    ka. U+1920 is the Limbu vowel sign A; the source (p. 1, Note 1)
+    states that no distinction is made in romanization between the
+    syllable-initial vowel forms and the forms following a consonant,
+    and Note 2 supplies the inherent vowel a unless another vowel sign
+    follows. Anomaly recorded, behavior unchanged: the source vowel
+    table (p. 1) lists a, ai, ā, o, i, au, u, ŏ, e, ĕ — the values ē
+    and ō carried by the ᤣ and ᤥ rules below do not occur in the
+    source inventory, and the E (ᤧ) and O (ᤨ) signs are unmapped.
+    The pairing of the script's short/long e and o glyphs to these
+    values could not be verified because the Limbu glyphs of both
+    archived copies of the source document do not render."
   }
 }
 
 tests {
    "\u1901" ->  "ka"
-   "\u1901\u1920" ->  "ke"
+   "\u1901\u1920" ->  "ka"
 }
 
 stage main {
