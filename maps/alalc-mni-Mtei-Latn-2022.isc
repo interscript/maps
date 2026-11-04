@@ -20,14 +20,25 @@ metadata {
   notes {
     note "The heavy tone symbol (꯬) is a recent innovation; its
     romanization is the combining dot below per the table."
+    note "2025 corpus repair: the source (p. 2) romanizes the numerals
+    ꯰-꯹ as 0-9; the digit rules were added and the numeral test
+    corrected (꯳ = 3, not saṣ). The vowel test was corrected to the
+    source's own row ꯁꯦ = se (p. 1, Vowels: Dependent vowel sign with
+    ꯁ); the katap test to ꯛ = k (p. 1, Final-consonants); the heavy
+    tone test to the source's own example ꯀꯥ꯬ = kā + combining dot
+    below (p. 2, Heavy tone: ꯀꯥ꯬ = kạ̄). Recorded gaps, behavior
+    unchanged: the punctuation row (꫱ question mark, ꫰ comma, ꯫ full
+    stop, p. 2) and the apun iyek/halanta killer ꯭ (p. 2 — its
+    inherent-vowel omission applies to the preceding consonant and
+    needs context-sensitive handling) are not yet encoded."
   }
 }
 
 tests {
-   "\uabd1\uabe5" ->  "se"
-   "\uabf3" ->  "sa\u1e63"
-   "\uabca" ->  "k"
-   "\uabaa\uabcf" ->  "a\u1e63"
+   "\uabc1\uabe6" ->  "se"
+   "\uabf3" ->  "3"
+   "\uabdb" ->  "k"
+   "\uabc0\uabe5\uabec" ->  "k\u0101\u0323"
 }
 stage main {
   parallel {
@@ -236,6 +247,19 @@ stage main {
     sub "ꯟ" "n"
     sub "ꯠ" "t"
     sub "ꯡ" "ṅ"
+  }
+
+  parallel {
+    sub "꯰" "0"
+    sub "꯱" "1"
+    sub "꯲" "2"
+    sub "꯳" "3"
+    sub "꯴" "4"
+    sub "꯵" "5"
+    sub "꯶" "6"
+    sub "꯷" "7"
+    sub "꯸" "8"
+    sub "꯹" "9"
   }
 
   parallel {
