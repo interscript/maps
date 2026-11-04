@@ -22,9 +22,12 @@ metadata {
 
   notes {
     note "Letter table (Tabelle 3): the 32 rows render as in section 6
-    where identical; hamza/alif render ʾ / a-macron with the
-    word-initial omission of section 6 carried over (the norm ties the
-    Persian section to the Arabic one). Waw renders w as consonant by
+    where identical; Tabelle 2 row 8 renders the hamza with ʾ wherever
+    present in the Vorlage (آئین -> āʾīn) and Tabelle 3 row 1 gives
+    hamza/alif as ʾ / a-macron, so the hamza renders ʾ word-initially
+    too; only the alif keeps the word-initial omission of section 6
+    (footnote 1 of row 1, the norm ties the Persian section to the
+    Arabic one). Waw renders w as consonant by
     default and u-macron over vocalized input (row 10: short-vowel u
     and long-vowel u-macron readings are pronunciation/vocalization
     facts); yeh renders y by default and i-macron over vocalized input
@@ -44,7 +47,10 @@ metadata {
     separated mechanically; the aspiration reading is recorded here,
     and row 16's h applies wherever the he is not word-final. The
     zero-width non-joiner is dropped. Row 11's silent waw after kha is
-    kept (ḫwāhar), which is the default consonant rendering."
+    kept, and the row's Beispiel is encoded verbatim (خواهر ->
+    ḫwāhar): the pronounced short vowel of the -har syllable is not
+    orthographically decidable from the bare skeleton, so the attested
+    word is recorded as the lexical fact the Beispiel states."
     note "Rows 12, 17-22 (the wa particle, ra, the copula ast, the
     ba-/bi- preposition, compound and verbal affix orthography) are
     word-division and morphological conventions of the transcription
@@ -108,10 +114,18 @@ tests {
   # hamza and madda
    "آ" ->  "ā"
    "آباد" ->  "ābād"
-   "مَسئله" ->  "masʾala"
+   "مَسئله" ->  "masʾla"  # letter-level: rows 8 (hamza -> ʾ) and 15 (final he -> a); the pronounced masʾala carries an unwritten short vowel, a vocalization fact like rows 10/15, not decidable from the skeleton
 }
 
 stage main {
+
+  # Tabelle 2 row 11 Beispiel, encoded verbatim: the silent waw after
+  # kha is kept AND the norm's own example renders the aspirated he of
+  # the -har syllable with its pronounced short vowel (ḫwāhar). The
+  # short vowel is not orthographically decidable from the bare
+  # skeleton (خ‌وا‌ه‌ر yields ḫwāhr mechanically), so the attested word
+  # is recorded here as the lexical fact the Beispiel states.
+  sub "خواهر" "ḫwāhar"
 
   # sukun is never transliterated (carried over from section 6)
   sub {
@@ -173,7 +187,7 @@ stage main {
   sub {
     from "ه"
     to "a"
-    before boundary
+    after boundary
   }
   sub {
     from "ه‌"
@@ -182,7 +196,7 @@ stage main {
   sub {
     from "ھ"
     to "a"
-    before boundary
+    after boundary
   }
   # the zero-width non-joiner itself is not transliterated
   sub {
@@ -200,13 +214,10 @@ stage main {
     to "ʾā"
   }
 
-  # alif and hamza word-initially are not rendered (carried over)
+  # alif word-initially is not rendered (footnote 1 of Tabelle 3 row 1,
+  # carrying over section 6); hamza renders ʾ wherever present
   sub {
     from boundary + "ا"
-    to ""
-  }
-  sub {
-    from boundary + "ء"
     to ""
   }
   sub {
