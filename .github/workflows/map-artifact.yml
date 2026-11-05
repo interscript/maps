@@ -57,6 +57,20 @@ jobs:
           const sha = createHash('sha256').update(readFileSync(`dist/release/${name}`)).digest('hex')
           writeFileSync(`dist/release/${name}.sha256`, `${sha}  ${name}\n`)
           NODE
+      - name: Pack raw corpus artifact
+        run: |
+          version="$([ "${GITHUB_REF_TYPE}" = "tag" ] && echo "${GITHUB_REF_NAME#v}" || echo "${GITHUB_SHA::12}")"
+          git archive --format=tar.gz -o "dist/release/interscript-maps-isc-${version}.tar.gz" "${GITHUB_SHA}" maps libs
+          node - <<'NODE'
+          import { createHash } from 'node:crypto'
+          import { readFileSync, writeFileSync } from 'node:fs'
+          const version = process.env.GITHUB_REF_TYPE === "tag"
+            ? process.env.GITHUB_REF_NAME.replace(/^v/, '')
+            : process.env.GITHUB_SHA.slice(0, 12)
+          const name = `interscript-maps-isc-${version}.tar.gz`
+          const sha = createHash('sha256').update(readFileSync(`dist/release/${name}`)).digest('hex')
+          writeFileSync(`dist/release/${name}.sha256`, `${sha}  ${name}\n`)
+          NODE
       - name: Upload workflow artifact
         uses: actions/upload-artifact@v7
         with:
