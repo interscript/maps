@@ -1,0 +1,233 @@
+system "ALA-LC:hye-Armn:Latn:2022" {
+
+metadata {
+  authority_id alalc
+  id 2022
+  language iso-639-2:hye
+  source_script Armn
+  destination_script Latn
+  name "Armenian Romanization Table (2022)"
+  url https://www.loc.gov/catdir/cpso/romanization/armenian.pdf
+  creation_date 2022
+  adoption_date
+  description {    ALA-LC Armenian Romanization Table, 2022 version (earlier
+    versions: 2011, 1997). The table is based on the phonetic values of
+    Classical and East Armenian; the bracketed West Armenian variant
+    values (B [P], G [K], D [T], Ts [Dz], K [G], Dz [Ts], Ch [J], P [B],
+    J [Ch]) are intended solely for preparing references from West
+    Armenian forms and are not encoded here — the primary rendering is
+    encoded per row. The table covers the complete letter inventory
+    (including the ու digraph, the Եւ/Եվ/և forms), the Note 3 soft-sign
+    (prime) combinations, the punctuation transcription rules, and the
+    letter-numeral table. The aspiration mark is U+02BB (ʻ); the soft
+    sign is U+02B9 (ʹ).
+  }
+
+  notes {
+    note "Note 2 (position-dependent, not encodable as a character rule):
+    the value Y (y) of ը/ը and Յ/յ applies only when the letter is in
+    initial position of a name and followed by a vowel, in Classical
+    orthography. The default value encoded here for ը/ը is Ě/ě (the
+    letter's general value per the table); Յ/յ defaults to Y/y."
+    note "Note 4 (position-dependent, not encodable): Յ/յ carries Ḥ/ḥ
+    when in initial position of a word or of a stem in a compound, in
+    Classical orthography. The general value Y/y is encoded."
+    note "Note 6: the prime is placed between e and v for a closed set
+    of exception words written with եվ/եւ in the lower case (dpreʹvankʻ,
+    ageʹvaz, Kʻareʹvankʻ, hogeʹvarkʻ, hogeʹvichak, oskeʹvaz, osokeʹvars,
+    ugheʹvchar, gereʹvarel, gineʹvachaṛ, gineʹvarpet, dapʻneʹvard,
+    kareʹver); word-initially eʹv, except ևեթ evetʻ and ևս evs. All-caps
+    ԵՎ is transliterated ev without the prime (Երևան/ԵՐԵՎԱΝ Erevan).
+    The map encodes the table's plain row values (Եւ Ew, եւ ew,
+    Եվ/եվ Ev/ev); the word-dependent prime cannot be encoded."
+    note "և (ech-yiwn ligature) is encoded to ev, per the romanized
+    examples in the table itself (ev ayl erker; ev imě; evetʻ; evs).
+    Note 5 hedges that in Classical orthography the ew value sometimes
+    appears written with this ligature. The all-caps digraph spellings
+    ՈՒ and ԵՒ (the yiwn has no separate capital) carry the values of
+    Ու and Եւ."
+    note "The Armenian question mark (՞) and exclamation mark (՜) are
+    transcribed at the END of the sentence in the Latin transcription
+    regardless of their position on the Armenian word (they sit over a
+    vowel), so their repositioning cannot be expressed as a character
+    rule and they are not encoded. The shesht (՛) is not transcribed
+    (encoded to empty). The verjaket (։) becomes a period. Angle
+    brackets «» used as quotation marks become “”."
+    note "The letter-numeral table is encoded as letter followed by the
+    one-dot leader (U+2024) exactly as printed in the source. In real
+    texts the numeral mark may also appear as other dot punctuation,
+    which this map romanizes as the punctuation output of that mark."
+    note "Armenian numerals: Ա 1, Բ 2, Գ 3, Դ 4, Ե 5, Զ 6, Է 7, Ը 8,
+    Թ 9, Ժ 10, Ի 20, Լ 30, Խ 40, Ծ 50, Կ 60, Հ 70, Ձ 80, Ղ 90, Ճ 100,
+    Մ 200, Յ 300, Ն 400, Շ 500, Ո 600, Չ 700, Պ 800, Ջ 900, Ռ 1000,
+    Ս 2000, Վ 3000, Տ 4000, Ր 5000, Ց 6000, Ւ 7000, Փ 8000, Ք 9000."
+  }
+}
+
+tests {
+  "Երևան" -> "Erevan"
+  "Հայաստան" -> "Hayastan"
+  "գհ" -> "gʹh"
+  "թ" -> "tʻ"
+  "ռ" -> "ṛ"
+  "ը" -> "ě"
+  "և" -> "ev"
+  "թափ" -> "tʻapʻ"
+  "Ա․" -> "1"
+  "Ռ․" -> "1000"
+  "Կարդա՛, գրի՛ր տարին բոլոր" -> "Karda, grir tarin bolor"
+  "Բարձրանում է աշխարհ մի անեզր, որ քոնն է անշուշտ և իմը." -> "Bardzranum ē ashkharh mi anezr, or kʻonn ē anshusht ev imě."
+}
+
+stage main {
+  parallel {
+    sub "Ա․" "1"
+    sub "Բ․" "2"
+    sub "Գ․" "3"
+    sub "Դ․" "4"
+    sub "Ե․" "5"
+    sub "Զ․" "6"
+    sub "Է․" "7"
+    sub "Ը․" "8"
+    sub "Թ․" "9"
+    sub "Ժ․" "10"
+    sub "Ի․" "20"
+    sub "Լ․" "30"
+    sub "Խ․" "40"
+    sub "Ծ․" "50"
+    sub "Կ․" "60"
+    sub "Հ․" "70"
+    sub "Ձ․" "80"
+    sub "Ղ․" "90"
+    sub "Ճ․" "100"
+    sub "Մ․" "200"
+    sub "Յ․" "300"
+    sub "Ն․" "400"
+    sub "Շ․" "500"
+    sub "Ո․" "600"
+    sub "Չ․" "700"
+    sub "Պ․" "800"
+    sub "Ջ․" "900"
+    sub "Ռ․" "1000"
+    sub "Ս․" "2000"
+    sub "Վ․" "3000"
+    sub "Տ․" "4000"
+    sub "Ր․" "5000"
+    sub "Ց․" "6000"
+    sub "Ւ․" "7000"
+    sub "Փ․" "8000"
+    sub "Ք․" "9000"
+  }
+
+  parallel {
+    sub "Գհ" "Gʹh"
+    sub "գհ" "gʹh"
+    sub "Դզ" "Dʹz"
+    sub "դզ" "dʹz"
+    sub "Կհ" "Kʹh"
+    sub "կհ" "kʹh"
+    sub "Սհ" "Sʹh"
+    sub "սհ" "sʹh"
+    sub "Տս" "Tʹs"
+    sub "տս" "tʹs"
+  }
+
+  parallel {
+    sub "Ու" "U"
+    sub "ՈՒ" "U"
+    sub "ու" "u"
+    sub "Եւ" "Ew"
+    sub "ԵՒ" "Ew"
+    sub "եւ" "ew"
+    sub "Եվ" "Ev"
+    sub "եվ" "ev"
+    sub "և" "ev"
+  }
+
+  parallel {
+    sub "Ա" "A"
+    sub "ա" "a"
+    sub "Բ" "B"
+    sub "բ" "b"
+    sub "Գ" "G"
+    sub "գ" "g"
+    sub "Դ" "D"
+    sub "դ" "d"
+    sub "Ե" "E"
+    sub "ե" "e"
+    sub "Ը" "Ě"
+    sub "ը" "ě"
+    sub "Յ" "Y"
+    sub "յ" "y"
+    sub "Զ" "Z"
+    sub "զ" "z"
+    sub "Է" "Ē"
+    sub "է" "ē"
+    sub "Թ" "Tʻ"
+    sub "թ" "tʻ"
+    sub "Ժ" "Zh"
+    sub "ժ" "zh"
+    sub "Ի" "I"
+    sub "ի" "i"
+    sub "Լ" "L"
+    sub "լ" "l"
+    sub "Խ" "Kh"
+    sub "խ" "kh"
+    sub "Ծ" "Ts"
+    sub "ծ" "ts"
+    sub "Կ" "K"
+    sub "կ" "k"
+    sub "Հ" "H"
+    sub "հ" "h"
+    sub "Ձ" "Dz"
+    sub "ձ" "dz"
+    sub "Ղ" "Gh"
+    sub "ղ" "gh"
+    sub "Ճ" "Ch"
+    sub "ճ" "ch"
+    sub "Մ" "M"
+    sub "մ" "m"
+    sub "Ն" "N"
+    sub "ն" "n"
+    sub "Շ" "Sh"
+    sub "շ" "sh"
+    sub "Ո" "O"
+    sub "ո" "o"
+    sub "Չ" "Chʻ"
+    sub "չ" "chʻ"
+    sub "Պ" "P"
+    sub "պ" "p"
+    sub "Ջ" "J"
+    sub "ջ" "j"
+    sub "Ռ" "Ṛ"
+    sub "ռ" "ṛ"
+    sub "Ս" "S"
+    sub "ս" "s"
+    sub "Վ" "V"
+    sub "վ" "v"
+    sub "Տ" "T"
+    sub "տ" "t"
+    sub "Ր" "R"
+    sub "ր" "r"
+    sub "Ց" "Tsʻ"
+    sub "ց" "tsʻ"
+    sub "Ւ" "W"
+    sub "ւ" "w"
+    sub "Փ" "Pʻ"
+    sub "փ" "pʻ"
+    sub "Ք" "Kʻ"
+    sub "ք" "kʻ"
+    sub "Օ" "Ō"
+    sub "օ" "ō"
+    sub "Ֆ" "F"
+    sub "ֆ" "f"
+  }
+
+  parallel {
+    sub "«" "“"
+    sub "»" "”"
+    sub "՛" ""
+    sub "։" "."
+  }
+}
+}

@@ -1,0 +1,203 @@
+system "ALA-LC:und-Dsrt:Latn:2016" {
+
+metadata {
+  authority_id alalc
+  id 2016
+  language iso-639-2:und
+  source_script Dsrt
+  destination_script Latn
+  name "Deseret Romanization Table (2016)"
+  url https://www.loc.gov/catdir/cpso/romanization/deseret.pdf
+  creation_date 2016
+  adoption_date
+  description {    ALA-LC Deseret Romanization Table, 2016 version (no earlier
+    versions). The table is scoped to the Deseret script (the Deseret
+    alphabet), not to any one language, so the language field carries
+    the undetermined code; the alphabet was devised in the 1850s for
+    English. Forty letters (six vowels and thirty-four consonants and
+    vowel-length and diphthong forms), each mapping one-to-one; the
+    letter values follow the printed table. The source document's
+    text layer doubles every letter glyph in the vernacular column; a
+    visual check of the rendered pages confirms a single letter per
+    row, and the codepoints below are the Unicode Deseret block values
+    corresponding to the table's letter order.
+  }
+
+  notes {
+    note "Vowel-length letters: Ē (𐐀/𐐨), Ī (𐐌/𐐴), Ō (𐐄/𐐬), Ū (𐐅/𐐭),
+    Ā (𐐁/𐐩) are the long-vowel letters; Ä (𐐂/𐐪), Ô (𐐉/𐐱), Ü (𐐋/𐐳)
+    the broad-vowel letters. The digraph values Dh Zh Th Sh Ch and the
+    diphthong values Aw Oy and the letter Yū (𐐧/𐑏) are single letters
+    in the script."
+  }
+}
+
+tests {
+  "𐐀" -> "Ē"
+  "𐐨" -> "ē"
+  "𐐄" -> "Ō"
+  "𐐬" -> "ō"
+  "𐐈" -> "A"
+  "𐐰" -> "a"
+  "𐐌" -> "Ī"
+  "𐐴" -> "ī"
+  "𐐐" -> "H"
+  "𐐸" -> "h"
+  "𐐔" -> "D"
+  "𐐼" -> "d"
+  "𐐘" -> "G"
+  "𐑀" -> "g"
+  "𐐜" -> "Dh"
+  "𐑄" -> "dh"
+  "𐐠" -> "Zh"
+  "𐑈" -> "zh"
+  "𐐤" -> "N"
+  "𐑌" -> "n"
+  "𐐁" -> "Ā"
+  "𐐩" -> "ā"
+  "𐐅" -> "Ū"
+  "𐐭" -> "ū"
+  "𐐉" -> "Ô"
+  "𐐱" -> "ô"
+  "𐐍" -> "Aw"
+  "𐐵" -> "aw"
+  "𐐑" -> "P"
+  "𐐹" -> "p"
+  "𐐕" -> "Ch"
+  "𐐽" -> "ch"
+  "𐐙" -> "F"
+  "𐑁" -> "f"
+  "𐐝" -> "S"
+  "𐑅" -> "s"
+  "𐐡" -> "R"
+  "𐑉" -> "r"
+  "𐐥" -> "Ng"
+  "𐑍" -> "ng"
+  "𐐂" -> "Ä"
+  "𐐪" -> "ä"
+  "𐐆" -> "I"
+  "𐐮" -> "i"
+  "𐐊" -> "U"
+  "𐐲" -> "u"
+  "𐐎" -> "W"
+  "𐐶" -> "w"
+  "𐐒" -> "B"
+  "𐐺" -> "b"
+  "𐐖" -> "J"
+  "𐐾" -> "j"
+  "𐐚" -> "V"
+  "𐑂" -> "v"
+  "𐐞" -> "Z"
+  "𐑆" -> "z"
+  "𐐢" -> "L"
+  "𐑊" -> "l"
+  "𐐦" -> "Oy"
+  "𐑎" -> "oy"
+  "𐐃" -> "O"
+  "𐐫" -> "o"
+  "𐐇" -> "E"
+  "𐐯" -> "e"
+  "𐐋" -> "Ü"
+  "𐐳" -> "ü"
+  "𐐏" -> "Y"
+  "𐐷" -> "y"
+  "𐐓" -> "T"
+  "𐐻" -> "t"
+  "𐐗" -> "K"
+  "𐐿" -> "k"
+  "𐐛" -> "Th"
+  "𐑃" -> "th"
+  "𐐟" -> "Sh"
+  "𐑇" -> "sh"
+  "𐐣" -> "M"
+  "𐑋" -> "m"
+  "𐐧" -> "Yū"
+  "𐑏" -> "yū"
+  "𐐒𐐮𐐺" -> "Bib"
+}
+
+stage main {
+  parallel {
+    sub "𐐀" "Ē"
+    sub "𐐨" "ē"
+    sub "𐐄" "Ō"
+    sub "𐐬" "ō"
+    sub "𐐈" "A"
+    sub "𐐰" "a"
+    sub "𐐌" "Ī"
+    sub "𐐴" "ī"
+    sub "𐐐" "H"
+    sub "𐐸" "h"
+    sub "𐐔" "D"
+    sub "𐐼" "d"
+    sub "𐐘" "G"
+    sub "𐑀" "g"
+    sub "𐐜" "Dh"
+    sub "𐑄" "dh"
+    sub "𐐠" "Zh"
+    sub "𐑈" "zh"
+    sub "𐐤" "N"
+    sub "𐑌" "n"
+    sub "𐐁" "Ā"
+    sub "𐐩" "ā"
+    sub "𐐅" "Ū"
+    sub "𐐭" "ū"
+    sub "𐐉" "Ô"
+    sub "𐐱" "ô"
+    sub "𐐍" "Aw"
+    sub "𐐵" "aw"
+    sub "𐐑" "P"
+    sub "𐐹" "p"
+    sub "𐐕" "Ch"
+    sub "𐐽" "ch"
+    sub "𐐙" "F"
+    sub "𐑁" "f"
+    sub "𐐝" "S"
+    sub "𐑅" "s"
+    sub "𐐡" "R"
+    sub "𐑉" "r"
+    sub "𐐥" "Ng"
+    sub "𐑍" "ng"
+    sub "𐐂" "Ä"
+    sub "𐐪" "ä"
+    sub "𐐆" "I"
+    sub "𐐮" "i"
+    sub "𐐊" "U"
+    sub "𐐲" "u"
+    sub "𐐎" "W"
+    sub "𐐶" "w"
+    sub "𐐒" "B"
+    sub "𐐺" "b"
+    sub "𐐖" "J"
+    sub "𐐾" "j"
+    sub "𐐚" "V"
+    sub "𐑂" "v"
+    sub "𐐞" "Z"
+    sub "𐑆" "z"
+    sub "𐐢" "L"
+    sub "𐑊" "l"
+    sub "𐐦" "Oy"
+    sub "𐑎" "oy"
+    sub "𐐃" "O"
+    sub "𐐫" "o"
+    sub "𐐇" "E"
+    sub "𐐯" "e"
+    sub "𐐋" "Ü"
+    sub "𐐳" "ü"
+    sub "𐐏" "Y"
+    sub "𐐷" "y"
+    sub "𐐓" "T"
+    sub "𐐻" "t"
+    sub "𐐗" "K"
+    sub "𐐿" "k"
+    sub "𐐛" "Th"
+    sub "𐑃" "th"
+    sub "𐐟" "Sh"
+    sub "𐑇" "sh"
+    sub "𐐣" "M"
+    sub "𐑋" "m"
+    sub "𐐧" "Yū"
+    sub "𐑏" "yū"
+  }
+}
+}

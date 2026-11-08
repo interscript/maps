@@ -1,0 +1,141 @@
+system "ALA-LC:chr-Cher:Latn:2012" {
+
+metadata {
+  authority_id alalc
+  id 2012
+  language iso-639-2:chr
+  source_script Cher
+  destination_script Latn
+  name "Cherokee Romanization Table (2012)"
+  url https://www.loc.gov/catdir/cpso/romanization/cherokee.pdf
+  creation_date 2012
+  adoption_date
+  description {    ALA-LC Cherokee Romanization Table, 2012 version (no earlier
+    versions). One-to-one romanization of the complete Cherokee
+    syllabary: six vowels, the twenty consonant series with their
+    vowel-series syllables, the s letter, the hna/nah letters, and the
+    digraph series qua/que/qui/quo/quu/quv, dla/tla and its series,
+    tsa series, and the w and y series. Eighty-five syllabary
+    characters, transcribed from the loc.gov document.
+  }
+
+  notes {
+    note "The syllabary letters are enumerated in the traditional
+    order; the Latin values are given per syllable, not as consonant +
+    vowel decomposition, so each character carries a single rule. The
+    syllable transcribed v (Ꭵ Ꭼ Ꮂ Ꮈ Ꮕ Ꮫ Ꮲ Ꮸ Ꮾ Ᏼ) is the nasal vowel
+    rendered v in this table's practice."
+  }
+}
+
+tests {
+  "Ꭰ" -> "a"
+  "Ꭵ" -> "v"
+  "Ꭶ" -> "ga"
+  "Ꭷ" -> "ka"
+  "Ꮏ" -> "hna"
+  "Ꮐ" -> "nah"
+  "Ꮖ" -> "qua"
+  "Ꮚ" -> "quu"
+  "Ꮝ" -> "s"
+  "Ꮣ" -> "da"
+  "Ꮤ" -> "ta"
+  "Ꮬ" -> "dla"
+  "Ꮭ" -> "tla"
+  "Ꮳ" -> "tsa"
+  "Ꮹ" -> "wa"
+  "Ꮿ" -> "ya"
+  "ᎣᏏᏲ" -> "osiyo"
+  "ᏣᎳᎩ" -> "tsalagi"
+}
+
+stage main {
+  parallel {
+    sub "Ꭰ" "a"
+    sub "Ꭱ" "e"
+    sub "Ꭲ" "i"
+    sub "Ꭳ" "o"
+    sub "Ꭴ" "u"
+    sub "Ꭵ" "v"
+    sub "Ꭶ" "ga"
+    sub "Ꭷ" "ka"
+    sub "Ꭸ" "ge"
+    sub "Ꭹ" "gi"
+    sub "Ꭺ" "go"
+    sub "Ꭻ" "gu"
+    sub "Ꭼ" "gv"
+    sub "Ꭽ" "ha"
+    sub "Ꭾ" "he"
+    sub "Ꭿ" "hi"
+    sub "Ꮀ" "ho"
+    sub "Ꮁ" "hu"
+    sub "Ꮂ" "hv"
+    sub "Ꮃ" "la"
+    sub "Ꮄ" "le"
+    sub "Ꮅ" "li"
+    sub "Ꮆ" "lo"
+    sub "Ꮇ" "lu"
+    sub "Ꮈ" "lv"
+    sub "Ꮉ" "ma"
+    sub "Ꮊ" "me"
+    sub "Ꮋ" "mi"
+    sub "Ꮌ" "mo"
+    sub "Ꮍ" "mu"
+    sub "Ꮎ" "na"
+    sub "Ꮏ" "hna"
+    sub "Ꮐ" "nah"
+    sub "Ꮑ" "ne"
+    sub "Ꮒ" "ni"
+    sub "Ꮓ" "no"
+    sub "Ꮔ" "nu"
+    sub "Ꮕ" "nv"
+    sub "Ꮖ" "qua"
+    sub "Ꮗ" "que"
+    sub "Ꮘ" "qui"
+    sub "Ꮙ" "quo"
+    sub "Ꮚ" "quu"
+    sub "Ꮛ" "quv"
+    sub "Ꮜ" "sa"
+    sub "Ꮝ" "s"
+    sub "Ꮞ" "se"
+    sub "Ꮟ" "si"
+    sub "Ꮠ" "so"
+    sub "Ꮡ" "su"
+    sub "Ꮢ" "sv"
+    sub "Ꮣ" "da"
+    sub "Ꮤ" "ta"
+    sub "Ꮥ" "de"
+    sub "Ꮦ" "te"
+    sub "Ꮧ" "di"
+    sub "Ꮨ" "ti"
+    sub "Ꮩ" "do"
+    sub "Ꮪ" "du"
+    sub "Ꮫ" "dv"
+    sub "Ꮬ" "dla"
+    sub "Ꮭ" "tla"
+    sub "Ꮮ" "tle"
+    sub "Ꮯ" "tli"
+    sub "Ꮰ" "tlo"
+    sub "Ꮱ" "tlu"
+    sub "Ꮲ" "tlv"
+    sub "Ꮳ" "tsa"
+    sub "Ꮴ" "tse"
+    sub "Ꮵ" "tsi"
+    sub "Ꮶ" "tso"
+    sub "Ꮷ" "tsu"
+    sub "Ꮸ" "tsv"
+    sub "Ꮹ" "wa"
+    sub "Ꮺ" "we"
+    sub "Ꮻ" "wi"
+    sub "Ꮼ" "wo"
+    sub "Ꮽ" "wu"
+    sub "Ꮾ" "wv"
+    sub "Ꮿ" "ya"
+    sub "Ᏸ" "ye"
+    sub "Ᏹ" "yi"
+    sub "Ᏺ" "yo"
+    sub "Ᏻ" "yu"
+    sub "Ᏼ" "yv"
+  }
+}
+}

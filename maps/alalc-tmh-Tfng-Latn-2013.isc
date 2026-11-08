@@ -1,0 +1,131 @@
+system "ALA-LC:tmh-Tfng:Latn:2013" {
+
+metadata {
+  authority_id alalc
+  id 2013
+  language iso-639-2:tmh
+  source_script Tfng
+  destination_script Latn
+  name "Tamashek Romanization Table (2013)"
+  url https://www.loc.gov/catdir/cpso/romanization/tamashek.pdf
+  creation_date 2013
+  adoption_date
+  description {    ALA-LC Tamashek Romanization Table, 2013 version (no earlier
+    versions). The Tuareg Tifinagh alphabet as used for Tamashek:
+    five vowel letters plus schwa, the consonant inventory including
+    the geminate letters (nn, ll) and the two dialect letters, the
+    Ahaggar ǰ (U+2D4B) and the Tawellemmet ž (U+2D64). The source
+    document renders the vernacular glyphs through a substitute font
+    with no text layer for most cells; the codepoint assignments
+    follow the Tuareg letter-to-codepoint unification, grounded on the
+    twenty-one cells whose codepoints the text layer does carry
+    (ⵀ ⵛ ⴹ ⵒ ⵗ ⵆ ⵘ ⵔ ⵙ ⴼ ⴶ ⵐ ⵂ ⵌ ⴾ ⵎ ⵏ ⵠ ⵣ ⵋ ⵤ).
+  }
+
+  notes {
+    note "Vowel letters: ⴰ a, ⴻ ə (the schwa letter YEY), ⵉ i,
+    ⵧ o, ⵓ u. The long vowels â ê î ô û are written in Tuareg
+    Tifinagh practice by doubling the vowel letter, so they are
+    encoded as doubled-letter rules (ⴰⴰ â, ⵦⵦ ê, ⵉⵉ î, ⵧⵧ ô,
+    ⵓⵓ û). The source prints them as single glyphs with a length
+    mark that has no Unicode encoding (flagged for review). The ă
+    row likewise carries an unencodable mark over ⴰ and is covered
+    by the bare ⴰ rule."
+    note "The e vowel is encoded as ⵦ (TIFINAGH LETTER YE, added in
+    Unicode 4.1 for Tuareg and Songhay usage); its long form ê as
+    ⵦⵦ."
+    note "The letter romanized c (between ṭ and u in the table) is
+    assigned ⵞ (TIFINAGH LETTER YACH); the source glyph renders
+    through the substitute font and carries no text layer (flagged
+    for review). The emphatic letters use the dotted-codepoint
+    letters ⴸ ḍ, ⵚ ṣ, ⵟ ṭ, ⵥ ẓ."
+    note "The geminate letters nn and ll are written as doubled
+    letters (ⵏⵏ, ⵍⵍ) and are encoded explicitly; the ḷ row carries
+    an underdot mark over ⵍ with no Unicode encoding and is covered
+    by the bare ⵍ rule."
+    note "Dialect letters: ⵋ = ǰ (Ahaggar dialect), ⵤ = ž (Tawellemet
+    dialect), as headed in the source."
+  }
+}
+
+tests {
+  "ⴰ" -> "a"
+  "ⴻ" -> "ə"
+  "ⵉ" -> "i"
+  "ⵧ" -> "o"
+  "ⵓ" -> "u"
+  "ⴰⴰ" -> "â"
+  "ⵉⵉ" -> "î"
+  "ⵧⵧ" -> "ô"
+  "ⵓⵓ" -> "û"
+  "ⵏⵏ" -> "nn"
+  "ⵍⵍ" -> "ll"
+  "ⵀ" -> "b"
+  "ⵛ" -> "š"
+  "ⴸ" -> "ḍ"
+  "ⵌ" -> "j"
+  "ⴾ" -> "k"
+  "ⵐ" -> "ŋ"
+  "ⵗ" -> "q"
+  "ⵘ" -> "ɣ"
+  "ⵚ" -> "ṣ"
+  "ⵟ" -> "ṭ"
+  "ⵞ" -> "c"
+  "ⵋ" -> "ǰ"
+  "ⵤ" -> "ž"
+  "ⵣ" -> "z"
+  "ⵥ" -> "ẓ"
+}
+
+stage main {
+  parallel {
+    sub "ⴰⴰ" "â"
+    sub "ⵦⵦ" "ê"
+    sub "ⵉⵉ" "î"
+    sub "ⵧⵧ" "ô"
+    sub "ⵓⵓ" "û"
+  }
+
+  parallel {
+    sub "ⵏⵏ" "nn"
+    sub "ⵍⵍ" "ll"
+  }
+
+  parallel {
+    sub "ⴰ" "a"
+    sub "ⴻ" "ə"
+    sub "ⵉ" "i"
+    sub "ⵧ" "o"
+    sub "ⵓ" "u"
+    sub "ⵀ" "b"
+    sub "ⵛ" "š"
+    sub "ⴹ" "d"
+    sub "ⴸ" "ḍ"
+    sub "ⴼ" "f"
+    sub "ⴶ" "g"
+    sub "ⵐ" "ŋ"
+    sub "ⵂ" "h"
+    sub "ⵌ" "j"
+    sub "ⴾ" "k"
+    sub "ⵍ" "l"
+    sub "ⵎ" "m"
+    sub "ⵏ" "n"
+    sub "ⵒ" "p"
+    sub "ⵗ" "q"
+    sub "ⵆ" "x"
+    sub "ⵘ" "ɣ"
+    sub "ⵔ" "r"
+    sub "ⵙ" "s"
+    sub "ⵚ" "ṣ"
+    sub "ⵜ" "t"
+    sub "ⵟ" "ṭ"
+    sub "ⵞ" "c"
+    sub "ⵠ" "v"
+    sub "ⵡ" "w"
+    sub "ⵣ" "z"
+    sub "ⵥ" "ẓ"
+    sub "ⵋ" "ǰ"
+    sub "ⵤ" "ž"
+  }
+}
+}

@@ -1,0 +1,231 @@
+system "ALA-LC:cop-Copt:Latn:2014" {
+
+metadata {
+  authority_id alalc
+  id 2014
+  language iso-639-2:cop
+  source_script Copt
+  destination_script Latn
+  name "Coptic Romanization Table (2014)"
+  url https://www.loc.gov/catdir/cpso/romanization/coptic.pdf
+  creation_date 2014
+  adoption_date
+  description {    ALA-LC Coptic Romanization Table, 2014 version (no earlier
+    versions). Covers the Coptic alphabet (Greek-derived and Demotic
+    letters), the Old Coptic letters with their diacritic romanizations
+    (diaeresis forms Ï Ü Ẍ, the K-diaeresis-below and dialect-p ni and
+    crossed shei letters, the dialect-p alef to a modifier-letter
+    apostrophe), the Old Nubian letters (ŋ ɲ w), the letter-numeral
+    table (macron above for units, overline for thousands), and the
+    note rules: the single prime inserted between two letters that
+    could be misread as a digraph, and the ignoring of diacritics per
+    the practice of the Journal of Coptic Studies except the iaude (ⲓ)
+    and ua (ⲩ) diaereses.
+  }
+
+  notes {
+    note "The upper-case romanization cells for Ⲻ (dialect-p ni) and
+    Ⳃ (crossed shei) are blank in the source document; the lower-case
+    cells carry n̈ and ç̈. The map supplies the upper-case forms N̈ and
+    Ç̈ as the mechanical case counterparts (flagged for review)."
+    note "Note 1 (MARC-8): within a strictly MARC-8 environment the
+    double underscore may be applied to a base character n following
+    LC-PCC PS 1.4 for ŋ and ɲ; the resulting ambiguity of n̳ illustrates
+    the advantage of extended Latin."
+    note "Note 2: a single prime (ʹ, U+02B9) is inserted between two
+    letters representing two distinct consonantal sounds when the
+    combination might otherwise be read as a digraph. The document's
+    examples give ⲙⲛ̅ⲧϩⲗ̅ⲗⲟ = mntʹhllo (prime in ⲧϩ, since th is a
+    digraph) versus ⲙⲛ̅ⲑⲗ̅ⲗⲟ = mnthllo (ⲑ is itself the th digraph).
+    The ⲧϩ combination is encoded in both cases."
+    note "Note 3: diacritics are ignored when romanizing Coptic,
+    following the practice of the Journal of Coptic Studies, with the
+    exception of the iaude (ⲓ) and ua (ⲩ) diaereses, which carry Ï/ï
+    and Ü/ü. The strip rules at the end of the stage delete the
+    remaining combining marks (macron, overline, diaeresis on other
+    letters, accents, breathing marks, dot marks)."
+    note "Numerals: units and tens and hundreds are letter + combining
+    macron (U+0304): ⲁ̄ 1, ⲃ̄ 2, ⲅ̄ 3, ⲇ̄ 4, ⲉ̄ 5, ⲋ̄ 6, ⲍ̄ 7, ⲏ̄ 8,
+    ⲑ̄ 9, ⲓ̄ 10, ⲕ̄ 20, ⲗ̄ 30, ⲙ̄ 40, ⲛ̄ 50, ⲝ̄ 60, ⲟ̄ 70, ⲡ̄ 80,
+    ϥ̄ 90, ⲣ̄ 100, ⲥ̄ 200, ⲧ̄ 300, ⲩ̄ 400, ⲫ̄ 500, ⲭ̄ 600, ⲯ̄ 700,
+    ⲱ̄ 800, ⳁ 900 (the sampi numeral is bare, without macron, as
+    printed). Thousands are letter + combining overline (U+0305):
+    ⲁ̅ 1000 through ⲑ̅ 9000. The source shows the 6 and 6000 forms
+    with an alternate glyph (rendered through a substitute font and
+    absent from the text layer) identified visually as the Greek
+    stigma; the stigma forms are encoded as alternates alongside ⲋ."
+    note "The superlinear stroke (overline, U+0305) also marks
+    abbreviation/nominal strokes over letters inside words; on the
+    nine thousands letters the numeral value wins per the table, so
+    e.g. word-internal ⲁ̅ romanizes as 1000."
+  }
+}
+
+tests {
+  "ⲙⲛ̅ⲧϩⲗ̅ⲗⲟ" -> "mntʹhllo"
+  "ⲙⲛ̅ⲑⲗ̅ⲗⲟ" -> "mnthllo"
+  "ⲁ̄" -> "1"
+  "ⲁ̅" -> "1000"
+  "ⲓ̈" -> "ï"
+  "ⲩ̈" -> "ü"
+  "ϩⲏ" -> "hē"
+  "Ϣ" -> "Š"
+  "ϧ" -> "ḥ"
+  "ⳟ" -> "ŋ"
+  "ⳣ" -> "w"
+  "Ⲳ" -> "ʼ"
+  "ⲁ̈" -> "a"
+  "ⳁ" -> "900"
+  "ⲋ̄" -> "6"
+  "ϛ̄" -> "6"
+}
+
+stage main {
+  parallel {
+    sub "ⲁ̄" "1"
+    sub "ⲃ̄" "2"
+    sub "ⲅ̄" "3"
+    sub "ⲇ̄" "4"
+    sub "ⲉ̄" "5"
+    sub "ⲋ̄" "6"
+    sub "ϛ̄" "6"
+    sub "ⲍ̄" "7"
+    sub "ⲏ̄" "8"
+    sub "ⲑ̄" "9"
+    sub "ⲓ̄" "10"
+    sub "ⲕ̄" "20"
+    sub "ⲗ̄" "30"
+    sub "ⲙ̄" "40"
+    sub "ⲛ̄" "50"
+    sub "ⲝ̄" "60"
+    sub "ⲟ̄" "70"
+    sub "ⲡ̄" "80"
+    sub "ϥ̄" "90"
+    sub "ⲣ̄" "100"
+    sub "ⲥ̄" "200"
+    sub "ⲧ̄" "300"
+    sub "ⲩ̄" "400"
+    sub "ⲫ̄" "500"
+    sub "ⲭ̄" "600"
+    sub "ⲯ̄" "700"
+    sub "ⲱ̄" "800"
+    sub "ⳁ" "900"
+    sub "ⲁ̅" "1000"
+    sub "ⲃ̅" "2000"
+    sub "ⲅ̅" "3000"
+    sub "ⲇ̅" "4000"
+    sub "ⲉ̅" "5000"
+    sub "ⲋ̅" "6000"
+    sub "ϛ̅" "6000"
+    sub "ⲍ̅" "7000"
+    sub "ⲏ̅" "8000"
+    sub "ⲑ̅" "9000"
+  }
+
+  parallel {
+    sub "Ⲧϩ" "Tʹh"
+    sub "ⲧϩ" "tʹh"
+  }
+
+  parallel {
+    sub "Ⲓ̈" "Ï"
+    sub "ⲓ̈" "ï"
+    sub "Ⲩ̈" "Ü"
+    sub "ⲩ̈" "ü"
+    sub "Ⳉ" "Ẍ"
+    sub "ⳉ" "ẍ"
+    sub "Ϧ" "Ḥ"
+    sub "ϧ" "ḥ"
+    sub "Ⲹ" "K̤"
+    sub "ⲹ" "k̤"
+    sub "Ⲻ" "N̈"
+    sub "ⲻ" "n̈"
+    sub "Ⳃ" "Ç̈"
+    sub "ⳃ" "ç̈"
+    sub "Ⲳ" "ʼ"
+    sub "ⳳ" "ʼ"
+    sub "Ⳟ" "Ŋ"
+    sub "ⳟ" "ŋ"
+    sub "Ⳡ" "Ɲ"
+    sub "ⳡ" "ɲ"
+    sub "Ⳣ" "W"
+    sub "ⳣ" "w"
+  }
+
+  parallel {
+    sub "Ⲁ" "A"
+    sub "ⲁ" "a"
+    sub "Ⲃ" "B"
+    sub "ⲃ" "b"
+    sub "Ⲅ" "G"
+    sub "ⲅ" "g"
+    sub "Ⲇ" "D"
+    sub "ⲇ" "d"
+    sub "Ⲉ" "E"
+    sub "ⲉ" "e"
+    sub "Ⲍ" "Z"
+    sub "ⲍ" "z"
+    sub "Ⲏ" "Ē"
+    sub "ⲏ" "ē"
+    sub "Ⲑ" "Th"
+    sub "ⲑ" "th"
+    sub "Ⲓ" "I"
+    sub "ⲓ" "i"
+    sub "Ⲕ" "K"
+    sub "ⲕ" "k"
+    sub "Ⲗ" "L"
+    sub "ⲗ" "l"
+    sub "Ⲙ" "M"
+    sub "ⲙ" "m"
+    sub "Ⲛ" "N"
+    sub "ⲛ" "n"
+    sub "Ⲝ" "X"
+    sub "ⲝ" "x"
+    sub "Ⲟ" "O"
+    sub "ⲟ" "o"
+    sub "Ⲡ" "P"
+    sub "ⲡ" "p"
+    sub "Ⲣ" "R"
+    sub "ⲣ" "r"
+    sub "Ⲥ" "S"
+    sub "ⲥ" "s"
+    sub "Ⲧ" "T"
+    sub "ⲧ" "t"
+    sub "Ⲩ" "U"
+    sub "ⲩ" "u"
+    sub "Ⲫ" "Ph"
+    sub "ⲫ" "ph"
+    sub "Ⲭ" "Ch"
+    sub "ⲭ" "ch"
+    sub "Ⲯ" "Ps"
+    sub "ⲯ" "ps"
+    sub "Ⲱ" "Ō"
+    sub "ⲱ" "ō"
+    sub "Ϣ" "Š"
+    sub "ϣ" "š"
+    sub "Ϥ" "F"
+    sub "ϥ" "f"
+    sub "Ϩ" "H"
+    sub "ϩ" "h"
+    sub "Ϫ" "Č"
+    sub "ϫ" "č"
+    sub "Ϭ" "Ky"
+    sub "ϭ" "ky"
+    sub "Ϯ" "Ti"
+    sub "ϯ" "ti"
+  }
+
+  parallel {
+    sub "̄" ""
+    sub "̅" ""
+    sub "̈" ""
+    sub "̀" ""
+    sub "́" ""
+    sub "ͅ" ""
+    sub "̓" ""
+    sub "̔" ""
+    sub "̣" ""
+    sub "̤" ""
+  }
+}
+}
