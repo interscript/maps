@@ -1,0 +1,147 @@
+system "ALA-LC:uig-Arab:Latn:2015" {
+
+metadata {
+  authority_id alalc
+  id 2015
+  language iso-639-2:uig
+  source_script Arab
+  destination_script Latn
+  name "Romanization Table -- Uighur (2015)"
+  url http://catdir.loc.gov/catdir/cpso/romanization/uighur.pdf
+  creation_date 2015
+  confirmation_date 2015
+  description {    ALA-LC Romanization table for Uighur, 2015 version (earlier versions: 2011, 1997)
+  }
+
+  notes {
+    note "Letters of the Alphabet: alif ا, word-initial ئا a; he ه, word-initial ئه ă; ب b; پ p; ت t; ج j; چ ch; خ kh; د d; ر r; ز z; ژ zh; س s; ش sh; غ gh; ف f; ق q; ك k; گ g; ڭ ng; ل l; م m; ن n; teh marbuta ة h; و, word-initial ئو o; ۇ, word-initial ئۇ u; ۆ, word-initial ئۆ ö; ۈ, word-initial ئۈ ü; ۋ v; ې, word-initial ئې e; ی ى, word-initial ئ i; ي y. Each vowel letter is unambiguous; the dotted yad ي is the consonant y and the undotted ی/ى are the vowel i."
+
+    note "Rule 1. Use the single prime (ʹ) to separate two letters representing two distinct consonantal sounds when the combination might be read as a digraph: uzʹhal ئۇزهال. The prime placement is syntactic and is not implemented."
+
+    note "Rule 2. Romanize foreign words that occur in a Uighur context and are written in Uighur letters according to these rules for romanizing Uighur: Vena (not Vienna) ۋېنا, jughrapi (not geography) جۇغراپى, stăyn (not stein) ستهین."
+
+    note "Rule 3. When hamzah is initial it is not represented in romanization; when medial it is romanized ʼ (alif): ayroport ئايروپورت [initial], qarghaʼi قارغائی [medial]. This map renders word-initial ئ as empty and other ئ as ʼ; the hamzah-carrier readings of the word-initial vowel spellings (ئا ئه ئو ئۇ ئۆ ئۈ ئې ئ) fall out of the initial rule."
+
+    note "Rule 4. Follow the rules for the capitalization of English. This map leaves case untouched; the proper-noun capital of the Vena example is lexical."
+
+    note "NOTE: The following examples from the old Uighur romanization table are romanized differently in the new table: ay ئاي, bilishinggă بىلىشىڭگه, jănggă جەڭگه, shojanggă شوجاڭگه, bayiliq بايىلىق, băytulla بهيتۇللا, păyishănbă پەيىشەنبه, dăyfu دهیفو. The values shown are the new-table readings and are encoded."
+
+    note "The he ه is listed both in the ă row and (with teh marbuta ة) in the h row. This map defaults ه to ă (the schwa reading exercised by the note examples) and ة to h; the h reading of ه (as in uzʹhal) is lexical, like the vowel points of the Kazakh he."
+
+    note "The source document's text layer renders the letters in Unicode presentation forms (joining shapes); these carry no letter-identity information in Uighur and are normalized to base codepoints before this map applies."
+  }
+}
+
+tests {
+  # Letters of the Alphabet
+   "ا" ->  "a"
+   "ئا" ->  "a"
+   "ه" ->  "ă"
+   "ئه" ->  "ă"
+   "ب" ->  "b"
+   "پ" ->  "p"
+   "ت" ->  "t"
+   "ج" ->  "j"
+   "چ" ->  "ch"
+   "خ" ->  "kh"
+   "د" ->  "d"
+   "ر" ->  "r"
+   "ز" ->  "z"
+   "ژ" ->  "zh"
+   "س" ->  "s"
+   "ش" ->  "sh"
+   "غ" ->  "gh"
+   "ف" ->  "f"
+   "ق" ->  "q"
+   "ك" ->  "k"
+   "گ" ->  "g"
+   "ڭ" ->  "ng"
+   "ل" ->  "l"
+   "م" ->  "m"
+   "ن" ->  "n"
+   "ة" ->  "h"
+   "و" ->  "o"
+   "ئو" ->  "o"
+   "ۇ" ->  "u"
+   "ئۇ" ->  "u"
+   "ۆ" ->  "ö"
+   "ئۆ" ->  "ö"
+   "ۈ" ->  "ü"
+   "ئۈ" ->  "ü"
+   "ۋ" ->  "v"
+   "ې" ->  "e"
+   "ئې" ->  "e"
+   "ی" ->  "i"
+   "ى" ->  "i"
+   "ئ" ->  ""  # rule 3: initial hamzah not represented
+   "ي" ->  "y"
+  # Rule 1 (the prime is syntactic; the h reading of he is lexical)
+  # - source: ئۇزهال, expected: uzʹhal (mechanical: uzăal)
+  # Rule 2 examples
+   "جۇغراپى" ->  "jughrapi"
+   "ستهين" ->  "stăyn"
+  # - source: ۋېنا, expected: Vena (proper-noun capital)
+  # Rule 3 examples
+   "ئايروپورت" ->  "ayroport"
+   "قارغائی" ->  "qarghaʼi"
+  # NOTE examples (old-table words, new-table readings)
+   "ئاي" ->  "ay"
+   "بىلىشىڭگه" ->  "bilishinggă"
+   "جهڭگه" ->  "jănggă"
+   "شوجاڭگه" ->  "shojanggă"
+   "بايىلىق" ->  "bayiliq"
+   "بهيتۇللا" ->  "băytulla"
+   "پهيىشهنبه" ->  "păyishănbă"
+  # - source: دهيفو (text-layer final glyph و), expected: dăyfu (the romanization
+  #   requires final ۇ; the source glyph is ambiguous و/ۇ)
+}
+
+stage main {
+  parallel {
+    # Rule 3 - hamzah: word-initial carrier not represented, medial ʼ
+    sub {
+    from boundary + "ئ"
+    to ""
+  }
+    sub "ئ" "ʼ"
+
+    # Letters of the Alphabet
+    sub "ه" "ă"
+    sub "ة" "h"
+    sub "ا" "a"
+    sub "ب" "b"
+    sub "پ" "p"
+    sub "ت" "t"
+    sub "ج" "j"
+    sub "چ" "ch"
+    sub "خ" "kh"
+    sub "د" "d"
+    sub "ر" "r"
+    sub "ز" "z"
+    sub "ژ" "zh"
+    sub "س" "s"
+    sub "ش" "sh"
+    sub "غ" "gh"
+    sub "ف" "f"
+    sub "ق" "q"
+    sub "ك" "k"
+    sub "گ" "g"
+    sub "ڭ" "ng"
+    sub "ل" "l"
+    sub "م" "m"
+    sub "ن" "n"
+    sub "و" "o"
+    sub "ۇ" "u"
+    sub "ۆ" "ö"
+    sub "ۈ" "ü"
+    sub "ۋ" "v"
+    sub "ې" "e"
+    sub "ی" "i"
+    sub "ى" "i"
+    sub "ي" "y"
+    sub "ـ" ""
+  }
+
+}
+
+}

@@ -1,0 +1,442 @@
+system "ALA-LC:urd-Arab:Latn:2013" {
+
+metadata {
+  authority_id alalc
+  id 2013
+  language iso-639-2:urd
+  source_script Arab
+  destination_script Latn
+  name "Romanization Table -- Urdu (2013)"
+  url http://catdir.loc.gov/catdir/cpso/romanization/urdu.pdf
+  creation_date 2013
+  confirmation_date 2013
+  description {    ALA-LC Romanization table for Urdu (in Arabic script), 2013 version (earlier versions: 2011, 1997)
+  }
+
+  notes {
+    note "Letters of the Alphabet: alif ا omit (see Note 1); ب b; پ p; ت t; ٹ ṭ; ث s; ج j; چ c; ح ḥ; خ kh; د d; ڈ ḍ; ذ z; ر r; ڑ ṛ; ز z; ژ zh; س s; ش sh; ص ṣ; ض ẓ; ط t̤; ظ z̤; ع ‘ (ayn); غ gh; ف f; ق q; ك k; گ g; ل l; م m; ن n; ں n (see Note 2; rule 6 romanizes undotted and dotted noon alike n); و v; ه h; ة t (see Rule 10); ي/ے/ى y (see Note 3)."
+
+    note "Digraphs Representing Urdu Aspirates (see Note 4): bh به; ph په; th ته; ṭh ٹه; jh جھ; ch چھ; dh ده; ḍh ڋه; ṛh ڑه; kh كه; gh گه. Each is the consonant letter followed by he; this map renders the aspirate mechanically as the letter value plus h."
+
+    note "Urdu Vowels and Diphthongs (see Note 5): fatha a; damma u; kasra i; alif with fatha اَ ā; yad with fatha یَ á, alif maqsura with superscript alif ىٰ á; waw with damma وُ ū; yad with kasra یِ ī; waw و o; yad ی, bari yad ے e; waw with sukun and fatha وَْ au; bari yad ے ai."
+
+    note "Note 1. For the use of ا (alif) to support ء (hamzah) and آ (maddah), see rules 1 and 2, respectively. For the romanization of ء by ʼ (alif), see rule 12. For other orthographic uses of ا see rules 3-4."
+
+    note "Note 2. For the distinction between ن and ں, see rule 6."
+
+    note "Note 3. For the distinction between ى and ے, see rule 11(c) and (e)."
+
+    note "Note 4. For the form of the letter ه in these digraphs, see rule 9."
+
+    note "Note 5. Vowel points are used sparingly, and for romanization must be supplied from a dictionary. Accordingly, over unvocalized text the readings of bare و (v/o/au), bare ی (y/i/e), and unwritten short vowels are lexical; this map encodes the alphabet-row consonant readings as the bare-letter defaults (bare و v, word-initial bare ی y, other bare ی e), the marked vowels mechanically, and the rules-of-application contexts below. The source's examples whose romanization requires lexically supplied vowels are carried as comments in the tests block."
+
+    note "Rule 1. ا (alif), و and ی are used to support ء (hamzah); see rule 12. When so used, these letters are not represented in romanization."
+
+    note "Rule 2. ا (alif) is used to support آ (maddah); see rule 13. When so used, it is not represented in romanization."
+
+    note "Rule 3. ا (alif) is used after a consonant to indicate the long vowel romanized ā: rāj راج; karnā کرنا. In some words of Arabic origin this alif appears as a superscript letter over ی representing the alif maqṣūrah: daʻvá دعویٰ. The alif is sometimes omitted in writing. It is always represented in romanization: ʻAbdurraḥmān عبد الرحمن, عبد الرحمان."
+
+    note "Rule 4. ا (alif) may be used as an orthographic sign without phonetic significance. In these cases it is not represented in romanization. See rule 16: ʻamlan عملاً."
+
+    note "Rule 5. ط appears as a superscript letter over ت, د, and ر when the latter represent the cerebral sounds romanized ṭ, ḍ, and ṛ, respectively. (In modern text these are the single letters ٹ, ڈ, ڑ.)"
+
+    note "Rule 6. Regardless of pronunciation, undotted forms of the letter ن are romanized n and dotted forms are romanized n: jahān جهاں."
+
+    note "Rule 7. و is used: (a) to represent the consonant sound romanized v: dev دیو, vujūd وجود, khvīsh خویش; in some words of Persian origin this consonant, though written, has ceased to be pronounced; it is retained in romanization (khvīsh); (b) to represent the long vowel romanized ū: Urdū اردو; (c) to represent the long vowel romanized o: os اوس, dost دوست; for the romanization of the conjunction و as o see rule 19; (d) to represent the diphthong romanized au: aur اور, qaumī قومی; (e) to support ء (hamzah), see rule 12; for the use of shaddah with و see rule 14."
+
+    note "Rule 8. ه is used to represent the consonantal sound romanized h: ham هم, gāh گاه. Final ه, though not pronounced, is normally retained in romanization: kih که, guldastah گلدسته. Exception is made in the case of words whose final syllable ends in an aspirated consonant; when final ه is added to the letter ه in this position, it is not represented in romanization: mukh مکهه."
+
+    note "Rule 9. ه (usually written in the form ہ) is used to represent the aspirated element of the sounds romanized bh, ph, th, ṭh, jh, ch, dh, ḍh, ṛh, kh, gh: phūl پهول, acchā اچها. For the writing and romanization of words ending in an aspirated consonant, see rule 8."
+
+    note "Rule 10. ة and ت, which are sometimes used interchangeably, are both romanized t: ḥikmat حکمة, حکمت."
+
+    note "Rule 11. ی is used: (a) to represent the consonant romanized y: siyāsat سیاست, diyā دیا; (b) to represent the long vowel romanized ī: taṣvīr تصویر; (c) to represent the long vowel romanized e: sher شیر, nevā نیوا; when ی with this value is final, the form ے generally replaces ی: se سے, laṛke لڑکے; (d) to represent the long vowel romanized á, see rule 3: daʻvá دعویٰ, ʻuqbá عقبی; (e) to represent the diphthong romanized ai: maidān میدان, bail بیل; when ی with this value is final, it is generally written ے: hai ہے; (f) to support ء (hamzah); in this position ی is usually undotted, see rule 12. For the use of shaddah with ی see rule 14; for the use of ی in a muẓāf see rule 17. The ī/e and e/ai choices of the bare yad and bari yad are lexical (note 5); this map defaults to e."
+
+    note "Rule 12. ء (hamzah): (a) in initial position ء is not represented in romanization; (b) in medial and final position, when ء represents a consonant, it is romanized ʼ (alif): muʼmin مؤمن, liʼe لئے, bhāʼī بهائی; (c) when ء represents the connective syllable joining a muẓāf to what follows, it is romanized -yi, see rule 17: malikah-yi Inglistān ملکۀ Inglistān. This map renders the heh-with-hamza ۀ as h-yi and the hamza-on-yeh-plus-bari-yad ئے as yi."
+
+    note "Rule 13. آ (maddah): (a) at the beginning of a word, or following the Arabic article ال, آ is romanized ā: āb آب; (b) at the beginning of a syllable within a word, آ is romanized ʼā: mirʼāt مرآت, Qurʼān قرآن; (c) آ is otherwise omitted in romanization."
+
+    note "Rule 14. Shaddah (tashdīd) indicates the doubling in pronunciation of the letter over which it is written. It is represented in romanization by doubling the letter or digraph concerned: caccā چچّا, khaṭṭā کهٹّا, makkhī مکّهی. When shaddah occurs over و and ی, these letters are regarded as representing consonants; they are romanized vv and yy, respectively: quvvat قوّت, sayyid سیّد, Zakariyyā زکریّا."
+
+    note "Rule 15. Sukūn (jazm) indicates the absence of a vowel following the letter over which it is written. It is not represented in romanization."
+
+    note "Rule 16. Tanvīn (written ٌ, ٍ, ً (اً)) is romanized un, in, an, respectively, when it occurs in a word or expression borrowed from Arabic; otherwise it is not represented in romanization: fauran فوراً, ʻamlan عملاً. This map encodes the tanvīn values; the borrowed-from-Arabic condition is lexical."
+
+    note "Rule 17. Iẓāfat: (a) when the muẓāf ends in a consonant, -i is added to it in the romanization: tārīkh-i Hindūstān تاریخِ ہندوستان; (b) when the muẓāf ends in a vowel or in silent ه, -yi is added: daryā-yi shor دریائے شور, zabān-i Urdū-yi muʻallá زبانِ اردو معلی, malikah-yi Inglistān ملکۂ انگلستان. For the use of ء (hamzah) to indicate the muẓāf, see rule 12(c). The iẓāfat kasra renders mechanically as the word-final i; the -yi after vowels and silent he requires the hamzah spellings."
+
+    note "Rule 18. The Arabic article ال is romanized differently depending on the letters and context with which it is associated: (a) when it is prefixed to a word beginning with a 'moon letter' (ا ب ج ح خ ع غ ف ق ك م و ه ی), it is romanized al: al-Qurʼān القران; (b) when it is prefixed to a word beginning with a 'sun letter' (ت ث د ذ ر ز س ش ص ض ط ظ ل ن), the l of the article is replaced in romanization by the same letter or digraph as that which begins the following word: as-sijill السجل; (c) when it occurs before the second element in a name, the vowel of the article is replaced by the final vowel of the preceding word: ʻAbdulʻazīz عبد العزیز, ʻAbdurrashīd عبد الرشید, Abūlfaẓl ابو الفضل, Zūlqarnain ذو القرنین, Faẓlullāhفضل الله. Rules (a) and (b) are encoded; (c) is syntactic and not implemented."
+
+    note "Rule 19. The conjunction و, when used to join two closely associated members of a phrase, is romanized o: māl o asbāb مال و اسباب. Otherwise و is romanized va. The conjunction reading is syntactic and not implemented; bare و defaults to v (the alphabet row)."
+
+    note "Rule 20. Rules for the capitalization of English are followed, except that the Arabic article al is lowercased in all positions. This map leaves case untouched; the source's proper-noun capitals are lexical."
+
+    note "Rule 21. The macron is used with both capital and lowercase letters."
+
+    note "Rule 22. The hyphen is used: (a) to connect a muẓāf with the following vowel or syllable, see rule 17; (b) to connect the Arabic article al with the following word, see rule 18. The article hyphen is encoded; the muẓāf hyphen rides on the -i/-yi spellings."
+
+    note "Rule 23. Foreign words in an Urdu context, including Arabic and Persian words, are romanized according to the rules for Urdu: Janāb-i Heḍ Māsṭar ṣāḥib-i Gavarnmanṭ Hāʼī Iskūl جناب هیڈ ماسٹر صاحب گورنمنٹ ہائی اسکول. For short vowels not indicated in the script, the Urdu vowels nearest the original pronunciation of the word concerned are supplied in romanization."
+
+    note "Rule 24. A quotation in another language using the Arabic script is romanized according to the rules for the language concerned."
+  }
+}
+
+tests {
+  # Letters of the Alphabet
+   "ب" ->  "b"
+   "پ" ->  "p"
+   "ت" ->  "t"
+   "ٹ" ->  "ṭ"
+   "ث" ->  "s"
+   "ج" ->  "j"
+   "چ" ->  "c"
+   "ح" ->  "ḥ"
+   "خ" ->  "kh"
+   "د" ->  "d"
+   "ڈ" ->  "ḍ"
+   "ذ" ->  "z"
+   "ر" ->  "r"
+   "ڑ" ->  "ṛ"
+   "ز" ->  "z"
+   "ژ" ->  "zh"
+   "س" ->  "s"
+   "ش" ->  "sh"
+   "ص" ->  "ṣ"
+   "ض" ->  "ẓ"
+   "ط" ->  "t̤"
+   "ظ" ->  "z̤"
+   "ع" ->  "ʻ"
+   "غ" ->  "gh"
+   "ف" ->  "f"
+   "ق" ->  "q"
+   "ك" ->  "k"
+   "گ" ->  "g"
+   "ل" ->  "l"
+   "م" ->  "m"
+   "ن" ->  "n"
+   "ں" ->  "n"
+   "و" ->  "v"
+   "ه" ->  "h"
+   "ہ" ->  "h"
+   "ة" ->  "t"
+   "ی" ->  "y"
+   "ے" ->  "e"
+  # Urdu Vowels and Diphthongs
+   "اَ" ->  "ā"
+   "یَ" ->  "á"
+   "ىٰ" ->  "á"
+   "وُ" ->  "ū"
+   "یِ" ->  "ī"
+   "وَ" ->  "o"
+   "وَْ" ->  "au"
+  # Rule 3 (alif after a consonant = ā)
+   "راج" ->  "rāj"
+  # - source: کرنا, expected: karnā (rule 3 final alif = ā; the a is
+  #   unwritten; mechanical: krnā)
+  # Rule 17(a) (iẓāfat kasra = word-final -i)
+  # - source: زبانِ, expected: zabān-i (the first alif reads the lexically
+  #   short a; mechanical per rule 3: zābāni)
+  # Rule 7(d) (wau after a vowel = the au nucleus)
+   "اور" ->  "aur"
+  # Rule 7(a) (wau consonant v; word-final)
+   "دیو" ->  "dev"
+  # Rule 8 (he = h)
+  # - source: هم, expected: ham (rule 8; the a is unwritten; mechanical: hm)
+   "گاه" ->  "gāh"
+  # Rule 6 (both noons = n)
+  # - source: جهاں, expected: jahān (rule 6; the a is unwritten;
+  #   mechanical: jhān)
+  # Rule 9 + 3 (aspirate he; word-initial maddah = ā)
+  # - source: اچها, expected: acchā (rule 9; the doc's romanization implies
+  #   the geminate spelling اچّها whose shaddah the text layer does not
+  #   carry; mechanical per the aspirate digraph: achā)
+   "آب" ->  "āb"
+  # Examples requiring lexically supplied vowels or proper-noun capitals
+  #   (note 5; the mechanical renderings are shown)
+  # - source: که, expected: kih (unwritten i; mechanical: kh)
+  # - source: گلدسته, expected: guldastah (unwritten vowels)
+  # - source: مکهه, expected: mukh (unwritten u; the final he after the
+  #   aspirate he is silent per rule 8: mechanical: mkh)
+  # - source: چچّا, expected: caccā (shaddah doubling; unwritten a)
+  # - source: کهٹّا, expected: khaṭṭā (shaddah doubling; unwritten a)
+  # - source: مکّهی, expected: makkhī (shaddah doubling; unwritten a, i)
+  # - source: قوّت, expected: quvvat (wau shaddah = vv; unwritten u, a)
+  # - source: سیّد, expected: sayyid (yad shaddah = yy; unwritten a, i)
+  # - source: زکریّا, expected: Zakariyyā (yad shaddah = yy; capital,
+  #   unwritten a, i)
+  # - source: پهول, expected: phūl (aspirate ph; unwritten ū)
+  # - source: مؤمن, expected: muʼmin (rule 12b medial hamzah = ʼ; unwritten u)
+  # - source: لئے, expected: liʼe (rule 12b; unwritten i)
+  # - source: بهائی, expected: bhāʼī (rule 12b; unwritten i)
+  # - source: مرآت, expected: mirʼāt (rule 13b medial maddah = ʼā; unwritten i)
+  # - source: قرآن, expected: Qurʼān (rule 13b; capital, unwritten u)
+  # - source: القران, expected: al-Qurʼān (rule 18a moon-letter article;
+  #   capital, unwritten u)
+  # - source: السجل, expected: as-sijill (rule 18b sun-letter assimilation;
+  #   unwritten i's; mechanical: as-sjll)
+  # - source: اوس, expected: os (bare wau after alif read o; mechanical: aus)
+  # - source: دوست, expected: dost (bare wau read o; mechanical: dvst)
+  # - source: اردو, expected: Urdū (word-final bare wau read ū; capital;
+  #   mechanical: ardv)
+  # - source: وجود, expected: vujūd (initial wau v, medial wau ū; unwritten u)
+  # - source: خویش, expected: khvīsh (medial wau v; unwritten ī)
+  # - source: قومی, expected: qaumī (wau au after unwritten a; unwritten i)
+  # - source: سیاست, expected: siyāsat (rule 11a yad = y; unwritten i, a)
+  # - source: دیا, expected: diyā (rule 11a; unwritten i)
+  # - source: تصویر, expected: taṣvīr (rule 11b yad = ī; unwritten a)
+  # - source: شیر, expected: sher (rule 11c bare yad = e)
+   "شیر" ->  "sher"
+  # - source: نیوا, expected: nevā (unwritten e)
+  # - source: سے, expected: se (rule 11c final bari yad = e)
+   "سے" ->  "se"
+  # - source: لڑکے, expected: laṛke (rule 11c)
+  # - source: لڑکے, expected: laṛke (rule 11c; the a is unwritten;
+  #   mechanical: lṛke)
+  # - source: دعویٰ, expected: daʻvá (rule 11d; unwritten a)
+  # - source: عقبی, expected: ʻuqbá (rule 11d; unwritten u, á)
+  # - source: میدان, expected: maidān (rule 11e ai; unwritten a)
+  # - source: بیل, expected: bail (rule 11e; unwritten a, i)
+  # - source: ہے, expected: hai (rule 11e final bari yad read ai;
+  #   mechanical: he)
+  # - source: ملکۂ, expected: malikah-yi (rule 12c/17b; unwritten i)
+  # - source: دریائے, expected: daryā-yi (rule 17b; unwritten a)
+  # - source: تاریخِ, expected: tārīkh-i Hindūstān (unwritten i)
+  # - source: فوراً, expected: fauran (rule 16 tanvin; unwritten u)
+  # - source: عملاً, expected: ʻamlan (rule 16; unwritten a)
+  # - source: حکمة, expected: ḥikmat (rule 10; unwritten i, a)
+  # - source: مال و اسباب, expected: māl o asbāb (rule 19 conjunction wau = o,
+  #   syntactic)
+  # - source: جناب هیڈ ماسٹر صاحب گورنمنٹ ہائی اسکول, expected: Janāb-i Heḍ
+  #   Māsṭar ṣāḥib-i Gavarnmanṭ Hāʼī Iskūl (rule 23 foreign words; unwritten
+  #   vowels throughout)
+}
+
+stage main {
+  sequence {
+    # Marked vowels and diphthongs (Urdu Vowels and Diphthongs table)
+    sub "وَْ" "au"
+    sub "وَ" "o"
+    sub "وُ" "ū"
+    sub "یَ" "á"
+    sub "یِ" "ī"
+    sub "اَ" "ā"
+    sub "ےَ" "ai"
+    sub "ىٰ" "á"
+
+    # Rule 12 - hamzah (a initial silent; b medial/final ʼ; c muẓāf -yi)
+    sub "ئے" "yi"
+    sub "ۀ" "h-yi"
+    sub {
+    from boundary + "ء"
+    to ""
+  }
+    sub {
+    from boundary + "أ"
+    to ""
+  }
+    sub "ء" "ʼ"
+    sub "أ" "ʼ"
+    sub "ؤ" "ʼ"
+    sub "ئ" "ʼ"
+
+    # Rule 13 - maddah (a word-initial ā; b syllable-initial ʼā)
+    sub {
+    from boundary + "آ"
+    to "ā"
+  }
+    sub "آ" "ʼā"
+
+    # Rule 18 - the Arabic article al (moon letters) and its assimilation
+    # (sun letters)
+    sub {
+    from boundary + "الت"
+    to "at-"
+  }
+    sub {
+    from boundary + "الث"
+    to "as-"
+  }
+    sub {
+    from boundary + "الد"
+    to "ad-"
+  }
+    sub {
+    from boundary + "الذ"
+    to "az-"
+  }
+    sub {
+    from boundary + "الر"
+    to "ar-"
+  }
+    sub {
+    from boundary + "الز"
+    to "az-"
+  }
+    sub {
+    from boundary + "الس"
+    to "as-"
+  }
+    sub {
+    from boundary + "الش"
+    to "ash-"
+  }
+    sub {
+    from boundary + "الص"
+    to "aṣ-"
+  }
+    sub {
+    from boundary + "الض"
+    to "aẓ-"
+  }
+    sub {
+    from boundary + "الط"
+    to "at̤-"
+  }
+    sub {
+    from boundary + "الظ"
+    to "az̤-"
+  }
+    sub {
+    from boundary + "الل"
+    to "al-"
+  }
+    sub {
+    from boundary + "الن"
+    to "an-"
+  }
+    sub {
+    from boundary + "ال"
+    to "al-"
+  }
+
+    # Rule 16 - tanvin (borrowed-from-Arabic words)
+    sub "اً" "an"
+    sub "ً" "an"
+    sub "ٌ" "un"
+    sub "ٍ" "in"
+
+    # Rule 14 - shaddah doubling (waw and yad render as consonants vv, yy)
+    sub "بّ" "bb"
+    sub "پّ" "pp"
+    sub "تّ" "tt"
+    sub "ٹّ" "ṭṭ"
+    sub "ثّ" "ss"
+    sub "جّ" "jj"
+    sub "چّ" "cc"
+    sub "حّ" "ḥḥ"
+    sub "خّ" "khkh"
+    sub "دّ" "dd"
+    sub "ڈّ" "ḍḍ"
+    sub "ذّ" "zz"
+    sub "رّ" "rr"
+    sub "ڑّ" "ṛṛ"
+    sub "زّ" "zz"
+    sub "ژّ" "zhzh"
+    sub "سّ" "ss"
+    sub "شّ" "shsh"
+    sub "صّ" "ṣṣ"
+    sub "ضّ" "ẓẓ"
+    sub "طّ" "t̤t̤"
+    sub "ظّ" "z̤z̤"
+    sub "عّ" "ʻʻ"
+    sub "غّ" "ghgh"
+    sub "فّ" "ff"
+    sub "قّ" "qq"
+    sub "كّ" "kk"
+    sub "کّ" "kk"
+    sub "ڪّ" "kk"
+    sub "گّ" "gg"
+    sub "لّ" "ll"
+    sub "مّ" "mm"
+    sub "نّ" "nn"
+    sub "ںّ" "nn"
+    sub "وّ" "vv"
+    sub "یّ" "yy"
+
+    # Letters of the Alphabet
+    sub "ب" "b"
+    sub "پ" "p"
+    sub "ت" "t"
+    sub "ٹ" "ṭ"
+    sub "ث" "s"
+    sub "ج" "j"
+    sub "چ" "c"
+    sub "ح" "ḥ"
+    sub "خ" "kh"
+    sub "د" "d"
+    sub "ڈ" "ḍ"
+    sub "ذ" "z"
+    sub "ر" "r"
+    sub "ڑ" "ṛ"
+    sub "ز" "z"
+    sub "ژ" "zh"
+    sub "س" "s"
+    sub "ش" "sh"
+    sub "ص" "ṣ"
+    sub "ض" "ẓ"
+    sub "ط" "t̤"
+    sub "ظ" "z̤"
+    sub "ع" "ʻ"
+    sub "غ" "gh"
+    sub "ف" "f"
+    sub "ق" "q"
+    sub "ك" "k"
+    sub "ک" "k"
+    sub "ڪ" "k"
+    sub "گ" "g"
+    sub "ل" "l"
+    sub "م" "m"
+    sub "ن" "n"
+    sub "ں" "n"
+    sub "ة" "t"
+    sub "ه" "h"
+    sub "ہ" "h"
+    sub "ھ" "h"
+
+    # Rule 3 - bare alif: word-initial short a, after a consonant ā
+    sub {
+    from boundary + "ا"
+    to "a"
+  }
+    sub "ا" "ā"
+
+    # Rule 15 and leftover marks
+    sub "ْ" ""
+    sub "ّ" ""
+    sub "َ" "a"
+    sub "ُ" "u"
+    sub "ِ" "i"
+
+    # Rule 11 - yad: word-initial y, other bare yad e (note 5; the i and ai
+    # readings are marked or lexical)
+    sub {
+    from boundary + "ی"
+    to "y"
+  }
+    sub {
+    from boundary + "ي"
+    to "y"
+  }
+    sub "ی" "e"
+    sub "ي" "e"
+    sub "ے" "e"
+    sub "ى" "e"
+
+    # Rule 7 - wau: word-finally the consonant v (dev); after a vowel it is
+    # the diphthong nucleus (aur); the bare alphabet-row reading is the
+    # consonant v (the ū/o readings are marked or lexical)
+    sub {
+    from "و"
+    to "v"
+    after boundary
+  }
+    sub {
+    from "و"
+    to "u"
+    before any(["a", "ā", "e", "i", "ī", "o", "u", "ū", "á"])
+  }
+    sub "و" "v"
+  }
+
+}
+
+}
