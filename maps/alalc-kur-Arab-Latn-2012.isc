@@ -1,0 +1,335 @@
+system "ALA-LC:kur-Arab:Latn:2012" {
+
+metadata {
+  authority_id alalc
+  id 2012
+  language iso-639-2:kur
+  source_script Arab
+  destination_script Latn
+  name "Romanization Table -- Kurdish (2012)"
+  url http://catdir.loc.gov/catdir/cpso/romanization/kurdish.pdf
+  creation_date 2012
+  confirmation_date 2012
+  description {    ALA-LC Romanization table for Kurdish, 2012 version (earlier versions: 2004, 2002).
+    Trilingual table (Roman Hawar / Cyrillic / Arabic); this map encodes the Arabic column into the Roman (Hawar) column.
+  }
+
+  notes {
+    note "Vowels (Roman/Cyrillic/Arabic): A a / А а / ا or word-initial ئا; E e / Ә ә / ه or word-initial ئه; Ê ê / Е е / ێ or word-initial ئێ; I i / Ь ь / kasrah (◌ِ) under the preceding consonant, or word-initial ئِ; Î î / И и / ي [vowel] or word-initial ئي; O o / О о / ۆ or word-initial ئۆ; U u / Ӧ ӧ / و [vowel] or word-initial ئو; Û û / У у / وو or word-initial ئوو; ‘E (E') / Ә' ә' / عه. Footnote to the vowel rows: initial vowels begin with a kursi hamza (ئ)."
+
+    note "Consonants: B b ب; C c ج; Ç ç چ; Ç' ç' چ; D d د; [Ḍ] [ḍ] ض; ‘E (E') عه; F f ف; G g گ; H h ھ; Ḧ (H') ح; J j ژ; K k ك; K' k' ك; L l ل; Ł ł ڵ; M m م; N n ن; P p پ; P' p' پ; Q q ق; R r ر; R̄ r̄ ڕ; S s س; Ş ş ش; Ṣ ṣ ص; T t ت; T' t' ت; Ṭ ṭ ط; V v ڤ; W w و [consonant]; X x خ; Ẍ ẍ غ; Y y ي [consonant]; Z z ز; and the final row - / ‘ / ع (the ‘ayin, written ‘ in roman)."
+
+    note "Note 1. In Sorani, the conjunction 'and' (و) should be rendered u if the preceding word ends in a consonant, and w following a vowel. In Kurmanji, it is spelled û in Latin orthography and should be romanized that way as well. The conjunction is a word-level, context-dependent particle; this map renders و by the general waw rules."
+
+    note "Note 2. In the Arabic orthography for Kurdish, all vowels are written out, with the exception of i (short i), which is expressed by a kasrah under the preceding consonant, although that kasrah is rarely written. At the beginning of a word, the i is preceded by a kursi hamza (see note 3). Examples: kirin ('to do') كرن; k'ir̄īn ('to buy') كڕين; int'īn ('to sigh') ئنتين. The rarely-written kasrah must be supplied for a mechanical romanization: this map renders the kasrah as i, and word-initial ئ before a consonant as i. The unvocalized spellings كرن and كڕين additionally carry information this map cannot invent (see note 6 on aspiration)."
+
+    note "Note 3. In the Arabic orthography for Kurdish, when a vowel comes at the beginning of a word, or when a vowel directly follows another vowel, a kursi hamza precedes it. Examples: agir ('fire') ئاگر; oxir ('luck') ئۆغر; exte ('nag horse') ئهخته; naêm ('I don't come') نائێم. The kursi hamza itself is not romanized: this map strips it before a vowel letter and renders it as i before a consonant."
+
+    note "Note 4. In the Arabic orthography for Kurdish, the four forms of the Arabic letter hā' (هههه) have been reinterpreted. Two forms (initial ﻫ and medial ﻬ) are the letter H, while two forms (final ﻪ and independent ه) are the letter E. Final and independent H are both expressed by the initial form (ﻫ). Hence, the full paradigm for H is: initial ﻫ; medial ﻬ; final ﻫ; independent ﻫ. Examples: initial ﻫ: her ('each') ﻫﻪر, hatin ('to come') ﻫﺎﺗﻦ, lehī ('flood') ﻟﻪﻫﻲ; medial ﻬ: bihīstin ('to hear') ﺑﻬﻴﺴﺘﻦ; final ﻫ: cih ('place; bed') ﺟﻫ; independent ﻫ: meh ('month') ﻣﻪﻫ. E (ه) behaves like the letters alif (ا), wāw (و), dāl (د), and rā (ر) in that it never joins to the following letter. The full paradigm for E is: initial ﺋﻪ; [medial: replaced by final, as with alif, wāw, etc.]; final ﻪ; independent ﻪ. Examples: initial ﺋﻪ: enī ('forehead') ﺋﻪﻧﻲ, esp ('horse' (Sorani)) ﺋﻪﺳﭙ; final ﻪ: lehī ﻟﻪﻫﻲ, ç'em ('river') ﭼﻪم, ême ('we' (Sorani)) ﺋێﻤﮫ, p'īne ('patch') ﭘﻴﻨﻪ; independent ﻪ: dest ('hand') دﻩﺳﺖ, wek ('like, as') وهك. Because the H/E distinction rides on the joining form of the heh, this map renders the heh presentation forms exactly (ﻫ ﻬ → h; ﻪ ﻩ → e; the heh-doachashmee forms accordingly, with the isolated ﮪ of the alphabet table as h and the final ﮫ as e, per the ême example). Plain (unshaped) heh codepoints are resolved by context: word-initial he and he before a dual-joining letter read h, otherwise e. Adjacent plain heh letter pairs (an E followed by an H, as in lehī) cannot be resolved from codepoints alone and require shaped input or a zero-width non-joiner; shaped input romanizes exactly."
+
+    note "Note 5. The Arabic letter yā' (ي) has two equivalents in the roman orthography: it can be the vowel î and the consonant y. Likewise, the Arabic letter wāw (و) can be both the vowel u and the consonant w. If preceded by a consonant, yā' and wāw are the vowels î and u respectively. Examples: dītī ('s/he saw' (Sorani)) ديتي; bībīnim ('if I see it' (Sorani)) بيبينم; Soranī سۆراني; K'urd كورد; tu ('thou, you') تو. Likewise yā' and wāw are the consonants y and w respectively: (a) at the beginning of a word: yarmetī ('help' (Sorani)) يارمهتي; witin ('to say' (Sorani)) وتن; wutin ('to say' (Sorani)) ووتن. (b) if preceded by a vowel (including short i, which is not written): şayan ('worthy' (Sorani)) شايان; naybīnim ('I don't see it' (Sorani)) نايبينم; aw ('water' (Sorani)) ئاو; bedew ('beautiful') ﺑﻪدهو; diwēre ('s/he dares') دوێره; biyanī ('foreign') بياني; şiyan ('to be able') شيان. Footnote: also bīyanī (بيياني). (c) if preceded by a consonant and followed by a vowel: birwa ('belief' (Sorani)) بروا; xwarin ('to eat') خوارن; dītyan ('they saw' (Sorani)) ديتيان; asyaw ('mill' (Sorani)) ئاسياو. This map applies the note-5 rules mechanically: word-initial ي/و → y/w; after a vowel → y/w; after a consonant and before a vowel → y/w; otherwise (after a consonant, not before a vowel) → î/u. Mid-word وو reads û (the û vowel row); word-initial وو reads w+u (the wutin example), since word-initial û is written with the kursi hamza carrier ئوو."
+
+    note "Note 6. In the Cyrillic orthography for Kurdish, the distinction between aspirated stops (ç', k', p', t') and unaspirated stops (ç, k, p, t) is always written, and Soviet scholars also preserve this distinction in the roman orthography. Elsewhere it is generally ignored, and consequently this distinction does not exist in the Arabic orthography for Kurdish. Accordingly the Arabic-script source cannot carry the aspiration apostrophe: examples that the source documents with aspirated romanizations (k'ir̄īn كڕين, int'īn ئنتين, K'urd كورد, ç'em ﭼﻪم, p'īne ﭘﻴﻨﻪ) romanize here without it."
+
+    note "Note 7. Soviet scholars created the e' (Cyrillic ә'), which represents two different sounds. When the sound is ['ayin] + e, as at the beginning of a word (in Arabic script written عه), a preferable spelling is 'e, placing the apostrophe before the vowel. By analogy, one also finds 'a (ءا), 'ī (ءي), 'o (ءۆ), 'û (ءوو). The original e' (with the apostrophe after the vowel) is reserved for cases where the vowel [e] is followed by the ['ayin], as in the word me'r (مهءر), a dialectal variant of mar ('snake'). Since e' could be identified either as a vowel or as a consonant, it has been added to both categories in the Kurdish orthographic table."
+
+    note "Standard reference dictionaries for Kurdish include: Kurmanji (northern dialects): Michael L. Chyet. Kurdish-English dictionary = Ferhenga Kurmancî-Inglîzî (New Haven and London: Yale University Press, 2003); Ferdîdon Çelebî and Danko Sipka. Kurmanji Kurdish-English glossary (Springfield, VA: Dunwoody, 2002). Sorani (central dialects): Shafiq Qazzaz. The Sharezoor: Kurdish-English dictionary (Erbil: Aras, 2000)."
+
+    note "The source document's text layer encodes most Arabic letters in Unicode presentation forms (joining shapes); this map normalizes those to their base codepoints, except the heh family whose joining forms carry the H/E distinction of note 4 and are rendered semantically. A zero-width non-joiner is removed (it controls shaping, not content)."
+  }
+}
+
+tests {
+  # Vowel rows (Arabic column). The cell marked * (word-initial with the
+  # kursi hamza carrier) is the mechanically testable form of each vowel.
+   "ئا" ->  "a"
+   "ئه" ->  "e"
+   "ئێ" ->  "ê"
+   "ئِ" ->  "i"
+   "ئي" ->  "î"
+   "ئۆ" ->  "o"
+   "ئو" ->  "u"
+   "ئوو" ->  "û"
+   "عه" ->  "‘e"
+  # plain vowel letters
+   "ا" ->  "a"
+   "ۆ" ->  "o"
+   "ێ" ->  "ê"
+   "ِ" ->  "i"  # the kasrah of the I row
+  # Consonant rows (Arabic column, every row)
+   "ب" ->  "b"
+   "ج" ->  "c"
+   "چ" ->  "ç"
+   "د" ->  "d"
+   "ض" ->  "ḍ"
+   "ف" ->  "f"
+   "گ" ->  "g"
+   "ﮪ" ->  "h"  # H row: heh doachashmee, isolated form
+   "ح" ->  "ḧ"
+   "ژ" ->  "j"
+   "ك" ->  "k"
+   "ل" ->  "l"
+   "ڵ" ->  "ł"
+   "م" ->  "m"
+   "ن" ->  "n"
+   "پ" ->  "p"
+   "ق" ->  "q"
+   "ر" ->  "r"
+   "ڕ" ->  "r̄"
+   "س" ->  "s"
+   "ش" ->  "ş"
+   "ص" ->  "ṣ"
+   "ت" ->  "t"
+   "ط" ->  "ṭ"
+   "ڤ" ->  "v"
+   "و" ->  "w"  # W row: و [consonant]
+   "خ" ->  "x"
+   "غ" ->  "ẍ"
+   "ي" ->  "y"  # Y row: ي [consonant]
+   "ز" ->  "z"
+   "ع" ->  "‘"
+  # Note 2 examples. The rarely-written kasrah of the short i is supplied
+  # per note 2's orthographic rule (under each consonant that precedes an
+  # unwritten i); the source prints كرن كڕين unvocalized.
+  # - source: كرن (unvocalized), expected: kirin
+   "كِرِن" ->  "kirin"
+  # - source: كڕين (unvocalized), expected: k’ir̄în (aspiration per note 6
+  #   is not carried by the Arabic script); mechanical: kir̄in
+  # - source: ئنتين, expected: int’în (aspiration; mechanical: intîn)
+   "ئنتين" ->  "intîn"
+  # Note 3 examples
+  # - source: ئاگر (unvocalized), expected: agir
+   "ئاگِر" ->  "agir"
+  # - source: ئۆغر (unvocalized), expected: oẍir
+   "ئۆغِر" ->  "oẍir"
+   "ئهخته" ->  "exte"
+   "نائێم" ->  "naêm"
+  # Note 4 examples (source text-layer encodings carried verbatim)
+   "ﻫﻪر" ->  "her"
+  # - source: ﻫﺎﺗﻦ (unvocalized), expected: hatin
+   "ﻫﺎﺗِﻦ" ->  "hatin"
+   "ﻟﻪﻫﻲ" ->  "lehî"
+  # - source: ﺑﻬﻴﺴﺘﻦ (unvocalized), expected: bihîstin
+   "ﺑِﻬﻴﺴﺘِﻦ" ->  "bihîstin"
+  # - source: ﺟﻫ (unvocalized), expected: cih
+   "ﺟِﻫ" ->  "cih"
+   "ﻣﻪﻫ" ->  "meh"
+   "دﻩﺳﺖ" ->  "dest"
+   "وﻩك" ->  "wek"
+   "ﭼﻪم" ->  "çem"  # ç'em in Kurmanji romanization (aspiration, note 6)
+   "ﺋێﻤﮫ" ->  "ême"
+   "ﺋﻪﻧﻲ" ->  "enî"
+   "ﺋﻪﺳﭙ" ->  "esp"
+  # - source: ﭘﻴﻨﻪ, expected: p’îne (aspiration; mechanical: pîne)
+   "ﭘﻴﻨﻪ" ->  "pîne"
+  # Note 5 examples
+   "ديتي" ->  "dîtî"
+   "بيبينِم" ->  "bîbînim"
+   "سۆراني" ->  "soranî"
+  # - source: كورد, expected: K’urd (aspiration; mechanical: kurd)
+   "كورد" ->  "kurd"
+   "تو" ->  "tu"
+   "ﻳﺎرﻣﻪﺗﻲ" ->  "yarmetî"
+  # - source: وتن (unvocalized), expected: witin
+   "وِتِن" ->  "witin"
+  # - source: ووتن (unvocalized), expected: wutin
+   "ووتِن" ->  "wutin"
+   "شايان" ->  "şayan"
+   "نايبينِم" ->  "naybînim"
+   "ئاو" ->  "aw"
+   "ﺑﻪدهو" ->  "bedew"
+  # - source: دوێره (unvocalized), expected: diwêre
+   "دِوێره" ->  "diwêre"
+  # - source: بياني (unvocalized), expected: biyanî
+   "بِياني" ->  "biyanî"
+   "بيياني" ->  "bîyanî"  # the footnote's alternate spelling, romanized as printed
+  # - source: شيان (unvocalized), expected: şiyan
+   "شِيان" ->  "şiyan"
+  # - source: بروا (unvocalized), expected: birwa
+   "بِروا" ->  "birwa"
+  # - source: خوارن (unvocalized), expected: xwarin
+   "خوارِن" ->  "xwarin"
+   "ديتيان" ->  "dîtyan"
+   "ئاسياو" ->  "asyaw"
+}
+
+stage main {
+  sequence {
+    # 1. Presentation-form normalization (the source document's text layer
+    #    encodes joining shapes). The heh family (ﻫ ﻬ ﻪ ﻩ ﮪ ﮫ) is excluded
+    #    here - its forms carry the H/E distinction of note 4 and are
+    #    rendered semantically below.
+    sub "ﭗ" "پ"
+    sub "ﭘ" "پ"
+    sub "ﭼ" "چ"
+    sub "ﮔ" "گ"
+    sub "ﯪ" "ئا"
+    sub "ﯮ" "ئو"
+    sub "ﯲ" "ئۆ"
+    sub "ﰄ" "ئي"
+    sub "ﺋ" "ئ"
+    sub "ﺎ" "ا"
+    sub "ﺑ" "ب"
+    sub "ﺒ" "ب"
+    sub "ﺖ" "ت"
+    sub "ﺗ" "ت"
+    sub "ﺘ" "ت"
+    sub "ﺟ" "ج"
+    sub "ﺧ" "خ"
+    sub "ﺮ" "ر"
+    sub "ﺳ" "س"
+    sub "ﺴ" "س"
+    sub "ﺷ" "ش"
+    sub "ﻋ" "ع"
+    sub "ﻏ" "غ"
+    sub "ﻛ" "ك"
+    sub "ﻟ" "ل"
+    sub "ﻢ" "م"
+    sub "ﻣ" "م"
+    sub "ﻤ" "م"
+    sub "ﻦ" "ن"
+    sub "ﻧ" "ن"
+    sub "ﻨ" "ن"
+    sub "ﻮ" "و"
+    sub "ﻲ" "ي"
+    sub "ﻳ" "ي"
+    sub "ﻴ" "ي"
+    sub "ﭙ" "پ"
+    sub "ﭻ" "چ"
+
+    # 2. Vowel carriers (kursi hamza + vowel letter) and the kasrah
+    sub "ئوو" "û"
+    sub "ئو" "u"
+    sub "ئا" "a"
+    sub "ئﻪ" "e"
+    sub "ئه" "e"
+    sub "ئێ" "ê"
+    sub "ئي" "î"
+    sub "ئۆ" "o"
+    sub "ئِ" "i"
+    sub "ِ" "i"
+
+    # 3. Note 4 - the heh family. Shaped forms first (exact), then the
+    #    plain-codepoint context fallback.
+    sub "ﻫ" "h"
+    sub "ﻬ" "h"
+    sub "ﮬ" "h"
+    sub "ﮭ" "h"
+    sub "ﮪ" "h"
+    sub "ﻪ" "e"
+    sub "ﻩ" "e"
+    sub "ﮫ" "e"
+    sub {
+    from boundary + "ه"
+    to "h"
+    after any("بجچحخسشصطعغفقكلمنپيڵڤهھئ")
+  }
+    sub {
+    from boundary + "ھ"
+    to "h"
+    after any("بجچحخسشصطعغفقكلمنپيڵڤهھئ")
+  }
+    sub {
+    from "ه"
+    to "h"
+    after any("بجچحخسشصطعغفقكلمنپيڵڤهھئ")
+  }
+    sub {
+    from "ھ"
+    to "h"
+    after any("بجچحخسشصطعغفقكلمنپيڵڤهھئ")
+  }
+    sub "ه" "e"
+    sub "ھ" "e"
+
+    # 4. Consonant letters with a single reading
+    sub "ا" "a"
+    sub "ب" "b"
+    sub "ج" "c"
+    sub "چ" "ç"
+    sub "د" "d"
+    sub "ض" "ḍ"
+    sub "ع" "‘"
+    sub "ف" "f"
+    sub "گ" "g"
+    sub "ح" "ḧ"
+    sub "ژ" "j"
+    sub "ك" "k"
+    sub "ل" "l"
+    sub "ڵ" "ł"
+    sub "م" "m"
+    sub "ن" "n"
+    sub "پ" "p"
+    sub "ق" "q"
+    sub "ر" "r"
+    sub "ڕ" "r̄"
+    sub "س" "s"
+    sub "ش" "ş"
+    sub "ص" "ṣ"
+    sub "ت" "t"
+    sub "ط" "ṭ"
+    sub "ڤ" "v"
+    sub "خ" "x"
+    sub "غ" "ẍ"
+    sub "ز" "z"
+    sub "ێ" "ê"
+    sub "ۆ" "o"
+
+    # 5. Kursi hamza leftovers: word-initial carrier of the short i
+    #    (note 2/3); elsewhere an unromanized carrier
+    sub {
+    from boundary + "ئ"
+    to "i"
+  }
+    sub "ئ" ""
+
+    # 6. Shaping control character
+    sub "‌" ""
+
+    # 7. Note 5 - waw: word-initial and post-vocalic w; after a consonant
+    #    before a vowel w; otherwise the vowel u. Mid-word وو reads û;
+    #    word-initial وو reads w+u (wutin), since word-initial û is
+    #    written ئوو.
+    sub {
+    from boundary + "وو"
+    to "wu"
+  }
+    sub "وو" "û"
+    sub {
+    from boundary + "و"
+    to "w"
+  }
+    sub {
+    from "و"
+    to "w"
+    before any(["a", "e", "ê", "i", "î", "o", "u", "û"])
+  }
+    sub {
+    from "و"
+    to "w"
+    after any(["a", "e", "ê", "i", "î", "o", "u", "û"])
+  }
+    sub "و" "u"
+
+    # 8. Note 5 - yeh: word-initial and post-vocalic y; after a consonant
+    #    before a vowel y; otherwise the vowel î
+    sub {
+    from boundary + "ي"
+    to "y"
+  }
+    sub {
+    from "ي"
+    to "y"
+    before any(["a", "e", "ê", "i", "î", "o", "u", "û"])
+  }
+    sub {
+    from "ي"
+    to "y"
+    after any(["a", "e", "ê", "i", "î", "o", "u", "û"])
+  }
+    sub "ي" "î"
+  }
+
+}
+
+}

@@ -1,0 +1,321 @@
+system "ALA-LC:pus-Arab:Latn:2013" {
+
+metadata {
+  authority_id alalc
+  id 2013
+  language iso-639-2:pus
+  source_script Arab
+  destination_script Latn
+  name "Romanization Table -- Pushto (2013)"
+  url http://catdir.loc.gov/catdir/cpso/romanization/pushto.pdf
+  creation_date 2013
+  confirmation_date 2013
+  description {    ALA-LC Romanization table for Pushto, 2013 version (earlier versions: 2012, 1997)
+  }
+
+  notes {
+    note "Letters of the Alphabet: alif ا omit (see Note 1); ب b; پ p; ت t; ټ ṭ; ث ṣ; ج j; چ ch; ح ḥ; څ ṡ; ځ ż; خ kh; د d; ډ ḍ; ذ z; ر r; ړ ṛ; ز z; ژ zh; ږ ẓh; س s; ش sh; ښ ṣh; ص ṣ; ض ẓ; ط ṭ (the 2013 source's romanization cell for this row is not legible in the extraction; the value follows the earlier ALA-LC Pushto tables and the universal Arabic-script reading); ظ z̤; ع ‘ (ayn); غ gh; ف f; ق q; ك k; گ g; ګ g; ل l; م m; ن n; ڼ ṇ (its final/alone forms render like نړ in the source font); و w (see Note 2); ه ة ھ h; ي ى y (see Note 3)."
+
+    note "Note 1. For the use of ا (alif) see the table of vowels and diphthongs, and rules 1-4."
+
+    note "Note 2. For other uses of و see the table of vowels and diphthongs, and rule 5."
+
+    note "Note 3. For other forms and uses of ى see the table of vowels and diphthongs, and rules 6 and 7."
+
+    note "Note 4. Vowel points are rarely found in Pushto writing and printing. Vowels not indicated in the script are supplied in romanization. Accordingly this map encodes the consonant letters, the written vowel marks (damma u, kasra i, fatha a), and the rules-of-application contexts; the unwritten short vowels and the vowel readings of bare و (w/ū/o/u/aw) and bare ی/ى (y/ī/e/ay) are lexical. The source's examples whose romanization requires lexically supplied vowels are carried as comments in the tests block."
+
+    note "Rule 5 (with the vowel table). و represents the consonant w (wror ورور; in Persian words silent و following خ is retained: khwushḥāl خوشحال), the long vowels ū (nūm نوم) and o (kor كور), the diphthong aw (yaw یو), and rarely the short vowel u (u او). In the vowel table the ū spelling is و with damma, the o spelling و with fatha, the aw spelling و with sukun and fatha; the unwritten readings are lexical. This map defaults bare و to w and renders the marked vowels."
+
+    note "Rule 6 (with the vowel table). ي represents the consonant y (yaw یو), the long vowels ī (mīnah مینھ) and e (ḍer ډیر, ډٻر; dre درى, درې, درے), and the diphthong ay (shay شى). Medial ـیـ supporting a hamzah is usually written without dots (ئ) and is not represented; see rule 8(b) and (c). This map defaults bare ي/ى to y and renders the marked vowels."
+
+    note "Rule 7. ى when final may represent the long vowel á, confined to words of Arabic origin (Mustafá مصطفى), or the diphthong ạy, written ۓ in Peshawar and ـۍ in Afghanistan (ḍoḍạy ډوډۍ, ډوډۓ). This map renders the final yeh-with-tail ۍ as ạy and word-final hamza-on-yeh ئ as ạy (rule 8(c)); the á reading is marked (ى with fatha) or lexical."
+
+    note "Rule 8. ء (hamzah): (a) in initial position ء is not represented in romanization; (b) in words of Arabic origin, ء when medial or final is romanized ʼ (alif): suʼāl سؤال, dāʼimī دائمى, masʼalah مسٲلھ; (c) when written over final ى or ـۍ, ء indicates the diphthong ạy: ghwāṛạy غواړئ; (d) in the orthography of Peshawar, ء over final ه (the letter ۀ) indicates the short central vowel ạ: nạh نۀ. This map renders ۀ as ạh, word-final ئ as ạy, word-initial hamzah as empty, and other hamzah as ʼ."
+
+    note "Rule 5 of the notes. Pushto possesses a short, central vowel whose sign is sometimes written; both it and fatha may be romanized a. When the central vowel is indicated by ء (hamzah), the vowel is romanized ạ and the hamzah is not represented. This map renders the ۀ spelling mechanically (ạh) and the hamzah-indicated ạ is otherwise lexical."
+
+    note "Rule 9. Maddah is written over ا (alif) to indicate the long vowel ā: ākhir آخر. This map renders آ as ā."
+
+    note "Rule 10. Tanwīn (ً) occurs in words of Arabic origin and represents a final syllable romanized an; it is usually associated with ا (alif), which is not represented: fiṭratan فطرتً. This map renders اً and ً as an."
+
+    note "Rule 11. Tashdīd (ّ) is represented by doubling the letter or digraph concerned: awwal اولّ. This map encodes the doubling for the letters of the alphabet; the waw renders ww as a consonant doubling."
+
+    note "Rule 1. ا (alif) is used: (a) to indicate the presence of any of the short vowels a, u, i (atạh اتۀ, ūlas اولس, inʻām انعام); (b) to represent the long vowel ā, usually written with maddah (ādam آدم); (c) with و or ى: (1) the long vowels ū (ūṣh اوښ) and ī (Īrān ایران); (2) the long vowels o (os اوس) and e (eṣhal ایښل); (3) the diphthongs aw (awwal اولّ) and ay (ayyām ایام). Rule 2: ا when medial or final represents the long vowel ā (bābā بابا). Rule 3: ا when final sometimes represents an, confined to a few words of Arabic origin. Rule 4: ا supporting ء is not represented. This map renders word-initial bare alif as a, other bare alif as ā (rules 2-3's an reading is lexical), and the marked vowels."
+
+    note "Rule 12. Iẓāfah: (a) an unmarked muẓāf is followed by -i (dars-i ʻibrat درس عبرت, ṣāḥib-i mubārak صاحب مبارك); (b) a muẓāf marked by ء is followed by -ʼi (khānah-ʼi farhang خانۀ فرهنګ); (c) a muẓāf marked by ى is followed by -yi (khānah-yi buzurg خانه ى بزرګ). The iẓāfat construction is syntactic and not implemented; the ۀ default renders ạh."
+
+    note "Rule 13. Affixes: an affix written separately from its word is separated in romanization by a single prime (ʹ): nāʹashnā نااشنا, warʹastawī وراستوى. Note 1: the particle د (da), meaning 'of,' is always written as a separate word (da dạh د ډۀ). Note 2: the Arabic article al is separated by a hyphen and its l is retained regardless of assimilation: ʻAbd al-Rashīd عبد الرشید, Faẓl al-Ḥaqq فضل الحق, Niz̤ām al-Dīn نظام الدین. The prime and hyphen placements are syntactic and not implemented."
+
+    note "Rule 14. Compounds: the elements of a compound (except a compound personal name) are separated in romanization by a single prime (ʹ): kitābʹkhānah کتابخانھ, but marīẓkhānah مریضخانھ. Syntactic; not implemented."
+
+    note "Rule 15. Capitalization: rules for the capitalization of English are followed, except that the Arabic article al is lowercased in all positions; diacritics are used with both capital and lowercase letters. This map leaves case untouched."
+
+    note "Rule 16. Foreign words in a Pushto context, including Arabic, Persian, and Urdu words, are romanized according to the rules for Pushto, with the nearest Pushto vowels supplied: Yūnīwarsiṭī Buk Ejạnsī یونیورسټى بك ایجنسى (not University Book Agency), Dārmastatar (not Darmesteter) دارمستتر."
+  }
+}
+
+tests {
+  # Letters of the Alphabet
+   "ب" ->  "b"
+   "پ" ->  "p"
+   "ت" ->  "t"
+   "ټ" ->  "ṭ"
+   "ث" ->  "ṣ"
+   "ج" ->  "j"
+   "چ" ->  "ch"
+   "ح" ->  "ḥ"
+   "څ" ->  "ṡ"
+   "ځ" ->  "ż"
+   "خ" ->  "kh"
+   "د" ->  "d"
+   "ډ" ->  "ḍ"
+   "ذ" ->  "z"
+   "ر" ->  "r"
+   "ړ" ->  "ṛ"
+   "ز" ->  "z"
+   "ژ" ->  "zh"
+   "ږ" ->  "ẓh"
+   "س" ->  "s"
+   "ش" ->  "sh"
+   "ښ" ->  "ṣh"
+   "ص" ->  "ṣ"
+   "ض" ->  "ẓ"
+   "ظ" ->  "z̤"
+   "ع" ->  "ʻ"
+   "غ" ->  "gh"
+   "ف" ->  "f"
+   "ق" ->  "q"
+   "ك" ->  "k"
+   "گ" ->  "g"
+   "ګ" ->  "g"
+   "ل" ->  "l"
+   "م" ->  "m"
+   "ن" ->  "n"
+   "ڼ" ->  "ṇ"
+   "و" ->  "w"
+   "ه" ->  "h"
+   "ھ" ->  "h"
+   "ة" ->  "h"
+   "ي" ->  "y"
+   "ى" ->  "y"
+  # Vowels and Diphthongs (written marks)
+   "ُ" ->  "u"
+   "ِ" ->  "i"
+   "آ" ->  "ā"
+   "وُ" ->  "ū"
+   "يِ" ->  "ī"
+   "وَ" ->  "o"
+   "وَْ" ->  "aw"
+   "ۍ" ->  "ạy"
+   "ۀ" ->  "ạh"
+  # Rule 1(a)/8(d): initial alif as the short-vowel carrier; final ۀ = ạh
+   "اتۀ" ->  "atạh"
+   "نۀ" ->  "nạh"
+  # Rule 1(b)/9: maddah = ā
+  # - source: آدم, expected: ādam (rule 1(b)/9; the a is unwritten;
+  #   mechanical: ādm)
+  # Rule 2: medial and final alif = ā
+   "بابا" ->  "bābā"
+  # Rule 5(a)/6(a): the consonant defaults of bare و and bare ی
+   "ورور" ->  "wrwr"  # the doc's wror reads the medial wau o, lexical
+  # - source: خوشحال, expected: khwushḥāl (rule 5(a); the u is unwritten;
+  #   mechanical: khwshḥāl)
+  # - source: یو, expected: yaw (rules 5(d)/6(a); the a is unwritten;
+  #   mechanical: yw)
+  # Rule 8(c): hamza over final yeh = ạy
+   "غواړئ" ->  "ghwāṛạy"
+  # Rule 11: tashdid doubling (waw as consonant)
+   "وّ" ->  "ww"
+  # Examples requiring lexically supplied vowels (note 4) or syntactic
+  # conventions; mechanical renderings noted
+  # - source: اولس, expected: ūlas (unwritten ū; mechanical: awls)
+  # - source: انعام, expected: inʻām (unwritten i; mechanical: anʻām)
+  # - source: اوښ, expected: ūṣh (unwritten ū)
+  # - source: ایران, expected: Īrān (capital; unwritten ī)
+  # - source: اوس, expected: os (bare wau read o)
+  # - source: ایښل, expected: eṣhal (bare yad read e)
+  # - source: اولّ, expected: awwal (tashdid ww; unwritten a)
+  # - source: ایام, expected: ayyām (unwritten a)
+  # - source: نوم, expected: nūm (bare wau read ū)
+  # - source: كور, expected: kor (bare wau read o)
+  # - source: او, expected: u (rule 5(e), rare)
+  # - source: مینھ, expected: mīnah (bare yad read ī; unwritten a)
+  # - source: ډیر, ډٻر, expected: ḍer (bare yad read e)
+  # - source: درى, درې, درے, expected: dre
+  # - source: شى, expected: shay (final yad read ay)
+  # - source: مصطفى, expected: Mustafá (rule 7(a); capital; unwritten u, a)
+  # - source: ډوډۍ, ډوډۓ, expected: ḍoḍạy (rule 7(b); unwritten o's;
+  #   mechanical: ḍwḍạy)
+  # - source: سؤال, expected: suʼāl (rule 8(b); unwritten u)
+  # - source: دائمى, expected: dāʼimī (rule 8(b); unwritten i)
+  # - source: مسٲلھ, expected: masʼalah (rule 8(b); unwritten vowels)
+  # - source: آخر, expected: ākhir (unwritten i)
+  # - source: فطرتً, expected: fiṭratan (rule 10; unwritten i, a)
+  # - source: درس عبرت, expected: dars-i ʻibrat (rule 12(a), syntactic)
+  # - source: صاحب مبارك, expected: ṣāḥib-i mubārak (rule 12(a))
+  # - source: خانۀ فرهنګ, expected: khānah-ʼi farhang (rule 12(b),
+  #   syntactic; the ۀ default renders ạh)
+  # - source: خانه ى بزرګ, expected: khānah-yi buzurg (rule 12(c))
+  # - source: نااشنا, expected: nāʹashnā (rule 13 prime)
+  # - source: وراستوى, expected: warʹastawī (rule 13 prime)
+  # - source: د ډۀ, expected: da dạh (rule 13 note 1)
+  # - source: عبد الرشید, expected: ʻAbd al-Rashīd (rule 13 note 2)
+  # - source: فضل الحق, expected: Faẓl al-Ḥaqq (rule 13 note 2)
+  # - source: نظام الدین, expected: Niz̤ām al-Dīn (rule 13 note 2)
+  # - source: کتابخانھ, expected: kitābʹkhānah (rule 14 prime; unwritten a)
+  # - source: مریضخانھ, expected: marīẓkhānah (rule 14)
+  # - source: یونیورسټى بك ایجنسى, expected: Yūnīwarsiṭī Buk Ejạnsī (rule 16)
+  # - source: دارمستتر, expected: Dārmastatar (rule 16)
+}
+
+stage main {
+  sequence {
+    # Written vowels and diphthongs (table of vowels and diphthongs)
+    sub "وَْ" "aw"
+    sub "وَ" "o"
+    sub "وُ" "ū"
+    sub "يِ" "ī"
+    sub "يَ" "á"
+
+    # Rule 8 - hamzah: final hamza-on-yeh ạy; initial silent; else ʼ
+    sub {
+    from "ئ"
+    to "ạy"
+    after boundary
+  }
+    sub {
+    from boundary + "ء"
+    to ""
+  }
+    sub {
+    from boundary + "ئ"
+    to ""
+  }
+    sub "ء" "ʼ"
+    sub "ئ" "ʼ"
+    sub "ؤ" "ʼ"
+    sub "أ" "ʼ"
+
+    # Rule 8(d)/5 - the Peshawar heh-with-hamza ۀ = the central vowel ạ + h
+    sub "ۀ" "ạh"
+
+    # Rules 9-10 - maddah and tanvin
+    sub "آ" "ā"
+    sub "اً" "an"
+    sub "ً" "an"
+
+    # Rule 11 - tashdid doubling
+    sub "بّ" "bb"
+    sub "پّ" "pp"
+    sub "تّ" "tt"
+    sub "ټّ" "ṭṭ"
+    sub "ثّ" "ṣṣ"
+    sub "جّ" "jj"
+    sub "چّ" "chch"
+    sub "حّ" "ḥḥ"
+    sub "څّ" "ṡṡ"
+    sub "ځّ" "żż"
+    sub "خّ" "khkh"
+    sub "دّ" "dd"
+    sub "ډّ" "ḍḍ"
+    sub "ذّ" "zz"
+    sub "رّ" "rr"
+    sub "ړّ" "ṛṛ"
+    sub "زّ" "zz"
+    sub "ژّ" "zhzh"
+    sub "ږّ" "ẓhẓh"
+    sub "سّ" "ss"
+    sub "شّ" "shsh"
+    sub "ښّ" "ṣhṣh"
+    sub "صّ" "ṣṣ"
+    sub "ضّ" "ẓẓ"
+    sub "طّ" "ṭṭ"
+    sub "ظّ" "z̤z̤"
+    sub "عّ" "ʻʻ"
+    sub "غّ" "ghgh"
+    sub "فّ" "ff"
+    sub "قّ" "qq"
+    sub "كّ" "kk"
+    sub "گّ" "gg"
+    sub "ګّ" "gg"
+    sub "لّ" "ll"
+    sub "مّ" "mm"
+    sub "نّ" "nn"
+    sub "ڼّ" "ṇṇ"
+    sub "وّ" "ww"
+    sub "يّ" "yy"
+
+    # Letters of the Alphabet
+    sub "ب" "b"
+    sub "پ" "p"
+    sub "ت" "t"
+    sub "ټ" "ṭ"
+    sub "ث" "ṣ"
+    sub "ج" "j"
+    sub "چ" "ch"
+    sub "ح" "ḥ"
+    sub "څ" "ṡ"
+    sub "ځ" "ż"
+    sub "خ" "kh"
+    sub "د" "d"
+    sub "ډ" "ḍ"
+    sub "ذ" "z"
+    sub "ر" "r"
+    sub "ړ" "ṛ"
+    sub "ز" "z"
+    sub "ژ" "zh"
+    sub "ږ" "ẓh"
+    sub "س" "s"
+    sub "ش" "sh"
+    sub "ښ" "ṣh"
+    sub "ص" "ṣ"
+    sub "ض" "ẓ"
+    sub "ط" "ṭ"
+    sub "ظ" "z̤"
+    sub "ع" "ʻ"
+    sub "غ" "gh"
+    sub "ف" "f"
+    sub "ق" "q"
+    sub "ك" "k"
+    sub "گ" "g"
+    sub "ګ" "g"
+    sub "ل" "l"
+    sub "م" "m"
+    sub "ن" "n"
+    sub "ڼ" "ṇ"
+    sub "ة" "h"
+    sub "ه" "h"
+    sub "ھ" "h"
+
+    # Rules 1-2 - bare alif: word-initial the short-vowel carrier a,
+    # elsewhere the long vowel ā
+    sub {
+    from boundary + "ا"
+    to "a"
+  }
+    sub "ا" "ā"
+
+    # Marks not represented, and the short-vowel signs
+    sub "ْ" ""
+    sub "ّ" ""
+    sub "َ" "a"
+    sub "ُ" "u"
+    sub "ِ" "i"
+    sub "ٓ" ""
+
+    # Bare yad and bari yad defaults (the vowel readings are lexical)
+    sub "ي" "y"
+    sub "ى" "y"
+    sub "ی" "y"
+    sub "ۍ" "ạy"
+    sub "ے" "e"
+    sub "ۓ" "e"
+
+    # Bare waw default (the alphabet-row consonant reading)
+    sub "و" "w"
+    sub "ـ" ""
+  }
+
+}
+
+}

@@ -1,0 +1,232 @@
+system "ALA-LC:ota-Arab:Latn:1997" {
+
+metadata {
+  authority_id alalc
+  id 1997
+  language iso-639-2:ota
+  source_script Arab
+  destination_script Latn
+  name "Romanization Table for Ottoman Turkish"
+  url http://catdir.loc.gov/catdir/cpso/romanization/ottoman.pdf
+  creation_date 1997
+  description {    ALA-LC Romanization table for Ottoman Turkish, based on the romanization system published by Eleazer Birnbaum in the Journal of the American Oriental Society, volume 87 (1967), with slight modifications. The source document carries no edition date; the 1997 attribute follows the ALA-LC 1997 system edition in which the table appears.
+  }
+
+  notes {
+    note "NOTE on the table: use the table if the principle of conversion cannot be applied (see rule 2 of the rules of application). Rule 2: in romanizing Ottoman Turkish the principle of conversion is applied as far as possible, i.e., the word, phrase, name, or title being romanized is represented, if possible, by the form it has in modern Turkish orthography, even if that means converting some letters to their modern equivalents. Foreign words, or words of non-Turkish origin that have become loan-words in Turkish, are converted like Ottoman Turkish. Modern Turkish usage in capitalization is followed."
+
+    note "Rule 9: when conversion is impractical the original is romanized letter by letter. If the Ottoman Turkish original is written in the Arabic alphabet, the consonants are romanized as in the Ottoman Turkish table. The vowels and orthographic symbols other than the vowel signs (hemze, shedde, medde, tenvin) are romanized according to the rules for Arabic or Persian, as appropriate; they are supplied if omitted from the Turkish original. No attempt is made to represent the Ottoman Turkish pronunciation of vowels beyond what is conveyed by the orthography of the original. This map therefore carries the letter table below and the Arabic/Persian vowel-sign machinery (fatha a, damma u, kasra i, the long vowels, diphthongs, tanvin, shaddah doubling, the article al-, and the hamzah rules)."
+
+    note "Letters of the Alphabet: alif ا omit (see Note 1); ب b; پ p; ت t; ث s; ج c; چ ç; ح ḥ; خ ḫ; د d; ذ z; ر r; ز z; ژ j; س s; ش ş; ص ṣ; ض ż; ط ṭ; ظ ẓ; ع ‘ (ayn); غ ġ; ف f; ق ḳ; ك k; گ g (see Note 2); ڭ ñ (see Note 3); ل l; م m; ن n; و v (see Note 4); ه ة h (see Note 5); ي y (see Note 6)."
+
+    note "Note 1. For orthographic uses of alif, see the Arabic and Persian romanization tables."
+
+    note "Note 2. The letter گ is frequently written without the distinguishing upper strokes (i.e., as ك). Both spellings are encoded, ك as k and گ as g; which reading a stroke-less kaf carries is lexical (the conversion principle of rule 2)."
+
+    note "Note 3. The letter ڭ is frequently written without the distinguishing dots (i.e., as ن). Both spellings are encoded, ن as n and ڭ as ñ; which reading an undotted noon carries is lexical."
+
+    note "Note 4. For the uses of و other than to represent the consonantal sound v, see the Persian romanization table. This map renders bare و as v and the marked vowel readings via the Arabic/Persian vowel-sign machinery."
+
+    note "Note 5. For the distinction between ه and ة see the Arabic romanization table."
+
+    note "Note 6. For the uses of ي other than to represent the consonantal sound y, see the Persian romanization table."
+
+    note "Rule 5. Phonetic considerations (final -p versus -b, final -t versus -d, final -k versus -g, final -ç versus -c, medial -tt- versus -dd-, medial -iy- versus -iyy-) govern the conversion spelling: tıp not tıb, harp not harb, Ratip not Ratib, mevcut not mevcud, Ahmet not Ahmed, renk not reng, burç not burc, Bedreddin not Bedrettin, harbiye not harbiyye, cumhuriyet not cumhuriyyet. These conversion spellings are lexical and not implemented mechanically."
+
+    note "Rule 6. (a) Izafet: -i is added to a word ending in a consonant, -yi when it ends in a vowel; vowel harmony is disregarded (Devlet-i Âliye-yi Osmaniye). Izafet is not indicated between the elements of a personal name except when expressly indicated in the Ottoman Turkish orthography. (b) The Arabic article al, romanized in modern Turkish, may take various forms (al, el, ur, ül, ʼl, üs, ed, en, et); when the article functions as the middle element of a phrase or compound within a Turkish context it is converted per predominant modern usage (alelumum, bilhassa, maalesef, darülfünun, Abdüssettar, Abdurrahman, Ebülgazi); when it occurs in an Arabic title it is romanized according to the rules for Arabic. (c) Diacritics: a diaeresis is retained if commonly used in Turkish; a circumflex is retained where found in modern Turkish usage and is always placed over the final long i of the relative adjective (nisbe) and names derived from it. (d) An apostrophe (ʼ) is inserted between a proper noun, or a number, and a suffixed inflection: Mustafa'nın vakfı, 1975'te, 1976'da. All of rule 6 is lexical/syntactic and not implemented mechanically."
+
+    note "Rule 8(b): the Arabic word ibn ('son of') appears in modern Turkish orthography as Ibn at the beginning of a name and as bin in the middle; the abbreviation b. is not used. Lexical; not implemented."
+
+    note "Rule 10: the romanization table is based on the system published by Eleazer Birnbaum in the Journal of the American Oriental Society, volume 87 (1967), with a few slight modifications."
+  }
+}
+
+tests {
+  # Letters of the Alphabet
+   "ب" ->  "b"
+   "پ" ->  "p"
+   "ت" ->  "t"
+   "ث" ->  "s"
+   "ج" ->  "c"
+   "چ" ->  "ç"
+   "ح" ->  "ḥ"
+   "خ" ->  "ḫ"
+   "د" ->  "d"
+   "ذ" ->  "z"
+   "ر" ->  "r"
+   "ز" ->  "z"
+   "ژ" ->  "j"
+   "س" ->  "s"
+   "ش" ->  "ş"
+   "ص" ->  "ṣ"
+   "ض" ->  "ż"
+   "ط" ->  "ṭ"
+   "ظ" ->  "ẓ"
+   "ع" ->  "‘"
+   "غ" ->  "ġ"
+   "ف" ->  "f"
+   "ق" ->  "ḳ"
+   "ك" ->  "k"
+   "گ" ->  "g"
+   "ڭ" ->  "ñ"
+   "ل" ->  "l"
+   "م" ->  "m"
+   "ن" ->  "n"
+   "و" ->  "v"
+   "ه" ->  "h"
+   "ة" ->  "h"
+   "ي" ->  "y"
+   "ى" ->  "y"
+  # Vowel signs, romanized per rule 9 according to the rules for Arabic and
+  # Persian (which this table defers to)
+   "اَ" ->  "ā"
+   "وُ" ->  "ū"
+   "یِ" ->  "ī"
+   "ىٰ" ->  "á"
+   "وَْ" ->  "aw"
+   "یَْ" ->  "ay"
+   "آ" ->  "ā"
+   "وّ" ->  "vv"
+   "یّ" ->  "yy"
+}
+
+stage main {
+  parallel {
+    # Pointing and vowel signs (rule 9, per the Arabic and Persian tables)
+    sub "وَْ" "aw"
+    sub "یَْ" "ay"
+    sub "وَ" "o"
+    sub "وُ" "ū"
+    sub "یَ" "á"
+    sub "یِ" "ī"
+    sub "اَ" "ā"
+    sub "ےَ" "ai"
+    sub "ىٰ" "á"
+
+    # Hemze (rule 12 of the Arabic rules, deferred)
+    sub {
+    from boundary + "ء"
+    to ""
+  }
+    sub {
+    from boundary + "أ"
+    to ""
+  }
+    sub "ء" "ʼ"
+    sub "أ" "ʼ"
+    sub "ؤ" "ʼ"
+    sub "ئ" "ʼ"
+
+    # Medde
+    sub {
+    from boundary + "آ"
+    to "ā"
+  }
+    sub "آ" "ʼā"
+
+    # The Arabic article al- (rule 6(b), the Arabic-title reading)
+    sub {
+    from boundary + "ال"
+    to "al-"
+  }
+
+    # Tenvin
+    sub "اً" "an"
+    sub "ً" "an"
+    sub "ٌ" "un"
+    sub "ٍ" "in"
+
+    # Sheddah doubling
+    sub "بّ" "bb"
+    sub "پّ" "pp"
+    sub "تّ" "tt"
+    sub "ثّ" "ss"
+    sub "جّ" "cc"
+    sub "چّ" "çç"
+    sub "حّ" "ḥḥ"
+    sub "خّ" "ḫḫ"
+    sub "دّ" "dd"
+    sub "ذّ" "zz"
+    sub "رّ" "rr"
+    sub "زّ" "zz"
+    sub "ژّ" "jj"
+    sub "سّ" "ss"
+    sub "شّ" "şş"
+    sub "صّ" "ṣṣ"
+    sub "ضّ" "żż"
+    sub "طّ" "ṭṭ"
+    sub "ظّ" "ẓẓ"
+    sub "عّ" "‘‘"
+    sub "غّ" "ġġ"
+    sub "فّ" "ff"
+    sub "قّ" "ḳḳ"
+    sub "كّ" "kk"
+    sub "گّ" "gg"
+    sub "ڭّ" "ññ"
+    sub "لّ" "ll"
+    sub "مّ" "mm"
+    sub "نّ" "nn"
+    sub "وّ" "vv"
+    sub "یّ" "yy"
+
+    # Letters of the Alphabet
+    sub "ب" "b"
+    sub "پ" "p"
+    sub "ت" "t"
+    sub "ث" "s"
+    sub "ج" "c"
+    sub "چ" "ç"
+    sub "ح" "ḥ"
+    sub "خ" "ḫ"
+    sub "د" "d"
+    sub "ذ" "z"
+    sub "ر" "r"
+    sub "ز" "z"
+    sub "ژ" "j"
+    sub "س" "s"
+    sub "ش" "ş"
+    sub "ص" "ṣ"
+    sub "ض" "ż"
+    sub "ط" "ṭ"
+    sub "ظ" "ẓ"
+    sub "ع" "‘"
+    sub "غ" "ġ"
+    sub "ف" "f"
+    sub "ق" "ḳ"
+    sub "ك" "k"
+    sub "گ" "g"
+    sub "ڭ" "ñ"
+    sub "ل" "l"
+    sub "م" "m"
+    sub "ن" "n"
+    sub "ة" "h"
+    sub "ه" "h"
+    sub "ھ" "h"
+
+    # Bare alif: word-initial silent-carrier reading per the Persian table,
+    # elsewhere the long vowel
+    sub {
+    from boundary + "ا"
+    to ""
+  }
+    sub "ا" "ā"
+
+    # Leftover marks
+    sub "ْ" ""
+    sub "ّ" ""
+    sub "َ" "a"
+    sub "ُ" "u"
+    sub "ِ" "i"
+
+    # Bare yad and waw defaults (Notes 4 and 6)
+    sub "ی" "y"
+    sub "ي" "y"
+    sub "ى" "y"
+    sub "ے" "e"
+    sub "و" "v"
+    sub "ـ" ""
+  }
+
+}
+
+}

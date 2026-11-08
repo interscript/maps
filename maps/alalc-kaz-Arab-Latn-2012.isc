@@ -1,0 +1,240 @@
+system "ALA-LC:kaz-Arab:Latn:2012" {
+
+metadata {
+  authority_id alalc
+  id 2012
+  language iso-639-2:kaz
+  source_script Arab
+  destination_script Latn
+  name "Romanization Table -- Kazakh (2012)"
+  url http://catdir.loc.gov/catdir/cpso/romanization/kazakh.pdf
+  creation_date 2012
+  confirmation_date 2012
+  description {    ALA-LC Romanization table for Kazakh (in Arabic Script), 2012 version (no earlier versions)
+  }
+
+  notes {
+    note "Letters of the Alphabet: 37 rows transcribed in full. Letters joining on both sides carry initial/medial/final/alone forms; letters that do not join to the following (alif, dal, reh, zain, waw, and the hamza-bearing vowel letters) carry final/alone forms only, shown as '--' in the table."
+
+    note "Rule 1. When a hamzah appears as part of the vowel ٵ (ä), ٶ (ö), ٷ (ü), or ٴى (ï), it is not romanized separately. When a high hamzah (ٴ) appears with any other letter at the beginning of a word, it is romanized as alif (ʼ)."
+
+    note "Rule 2. Romanize foreign words that occur in a Kazakh context and are written in Kazakh letters according to these rules for romanizing Kazakh."
+
+    note "Rule 3. Follow the rules for the capitalization of English. This is a convention for writers of romanization; the source document's own examples are lowercase, so this map leaves case untouched."
+
+    note "The vowel letter he (ه) is listed twice in the alphabet: row 8 romanizes it e and row 29 romanizes it h. The two readings are homographs in the Arabic script and cannot be distinguished without vocalization; this map encodes the e reading, which is the one exercised by the document's own example (evfemyzm) and is the common reading of word-final he."
+
+    note "The source document's text layer encodes the Arabic letters in their Unicode presentation forms (joining shapes). This map carries those presentation forms so that input transcribed from the source document romanizes exactly; plain (unshaped) codepoints are handled by the base-letter rules."
+  }
+}
+
+tests {
+  # Letters of the Alphabet (2012 version, every row)
+   "ا" ->  "a"
+   "ٵ" ->  "ä"
+   "ب" ->  "b"
+   "ۆ" ->  "v"
+   "گ" ->  "g"
+   "ع" ->  "ğ"
+   "د" ->  "d"
+   "ه" ->  "e"
+   "ج" ->  "j"
+   "ز" ->  "z"
+   "ي" ->  "y"
+   "ك" ->  "k"
+   "ق" ->  "q"
+   "ل" ->  "l"
+   "م" ->  "m"
+   "ن" ->  "n"
+   "ڭ" ->  "ñ"
+   "و" ->  "o"
+   "ٶ" ->  "ö"
+   "پ" ->  "p"
+   "ر" ->  "r"
+   "س" ->  "s"
+   "ت" ->  "t"
+   "ۋ" ->  "w"
+   "ۇ" ->  "u"
+   "ٷ" ->  "ü"
+   "ف" ->  "f"
+   "ح" ->  "x"
+   # row 29: he romanized h (homograph of row 8, see notes)
+   "چ" ->  "č"
+   "ش" ->  "š"
+   "ى" ->  "i"
+   "ٴى" ->  "ï"
+   "ٴ" ->  "ʼ"  # romanized as alif
+  # Rule 1 examples (hamzah as part of a vowel is not romanized separately)
+   "ٵﺭ" ->  "är"
+   "ٶﺯﻯ" ->  "özi"
+   "ﯝﺷﯩﻨﺸﻰ" ->  "üšinši"
+   "ٴﯨﻠﯩﻢ" ->  "ïlim"
+  # Rule 1, continued (high hamzah word-initially romanized as alif)
+   "ٴﻣﺎﻟﯩﻢ" ->  "ʼmalim"
+   "ٴﺳﻮﺯ" ->  "ʼsoz"
+   "ٴﺗﯘﺒﯩﺮ" ->  "ʼtubir"
+   "ٴﺗﯩﻠﻰ" ->  "ʼtili"
+  # Rule 2 example (foreign word romanized per Kazakh rules)
+   "هﯙﻓﻪﻣﻴﺰﻡ" ->  "evfemyzm"
+}
+
+stage main {
+
+  # CHARACTERS
+  parallel {
+    # Unicode presentation forms carried by the source document's text
+    # layer (joining shapes), mapped to the romanization of their base
+    # letter
+    sub "ﺍ" "a"
+    sub "ﺎ" "a"
+    sub "ٵ" "ä"
+    sub "ٶ" "ö"
+    sub "ٷ" "ü"
+    sub "ﯝ" "ü"
+    sub "ﺏ" "b"
+    sub "ﺐ" "b"
+    sub "ﺑ" "b"
+    sub "ﺒ" "b"
+    sub "ﭖ" "p"
+    sub "ﭗ" "p"
+    sub "ﭘ" "p"
+    sub "ﭙ" "p"
+    sub "ﭺ" "č"
+    sub "ﭻ" "č"
+    sub "ﭼ" "č"
+    sub "ﭽ" "č"
+    sub "ح" "x"
+    sub "ﺡ" "x"
+    sub "ﺢ" "x"
+    sub "ﺣ" "x"
+    sub "ﺤ" "x"
+    sub "ش" "š"
+    sub "ﺵ" "š"
+    sub "ﺶ" "š"
+    sub "ﺷ" "š"
+    sub "ﺸ" "š"
+    sub "ﻙ" "k"
+    sub "ﻚ" "k"
+    sub "ﻛ" "k"
+    sub "ﻜ" "k"
+    sub "ﮒ" "g"
+    sub "ﮓ" "g"
+    sub "ﮔ" "g"
+    sub "ﮕ" "g"
+    sub "ﻉ" "ğ"
+    sub "ﻊ" "ğ"
+    sub "ﻋ" "ğ"
+    sub "ﻌ" "ğ"
+    sub "ﺩ" "d"
+    sub "ﺪ" "d"
+    sub "ﻩ" "e"
+    sub "ﻪ" "e"
+    sub "ﻫ" "e"
+    sub "ﻬ" "e"
+    sub "ﺝ" "j"
+    sub "ﺞ" "j"
+    sub "ﺟ" "j"
+    sub "ﺠ" "j"
+    sub "ﺯ" "z"
+    sub "ﺰ" "z"
+    sub "ﻱ" "y"
+    sub "ﻲ" "y"
+    sub "ﻳ" "y"
+    sub "ﻴ" "y"
+    sub "ﻯ" "i"
+    sub "ﻰ" "i"
+    sub "ﯨ" "i"
+    sub "ﯩ" "i"
+    sub "ﯓ" "ñ"
+    sub "ﯔ" "ñ"
+    sub "ﯕ" "ñ"
+    sub "ﯖ" "ñ"
+    sub "ﻭ" "o"
+    sub "ﻮ" "o"
+    sub "ﯙ" "v"
+    sub "ﯚ" "v"
+    sub "پ" "p"
+    sub "ر" "r"
+    sub "ﺭ" "r"
+    sub "ﺮ" "r"
+    sub "س" "s"
+    sub "ﺱ" "s"
+    sub "ﺲ" "s"
+    sub "ﺳ" "s"
+    sub "ﺴ" "s"
+    sub "ت" "t"
+    sub "ﺕ" "t"
+    sub "ﺖ" "t"
+    sub "ﺗ" "t"
+    sub "ﺘ" "t"
+    sub "ۋ" "w"
+    sub "ﯞ" "w"
+    sub "ﯟ" "w"
+    sub "ۇ" "u"
+    sub "ﯗ" "u"
+    sub "ﯘ" "u"
+    sub "ف" "f"
+    sub "ﻑ" "f"
+    sub "ﻒ" "f"
+    sub "ﻓ" "f"
+    sub "ﻔ" "f"
+    sub "ق" "q"
+    sub "ﻕ" "q"
+    sub "ﻖ" "q"
+    sub "ﻗ" "q"
+    sub "ﻘ" "q"
+    sub "ل" "l"
+    sub "ﻝ" "l"
+    sub "ﻞ" "l"
+    sub "ﻟ" "l"
+    sub "ﻠ" "l"
+    sub "م" "m"
+    sub "ﻡ" "m"
+    sub "ﻢ" "m"
+    sub "ﻣ" "m"
+    sub "ﻤ" "m"
+    sub "ن" "n"
+    sub "ﻥ" "n"
+    sub "ﻦ" "n"
+    sub "ﻧ" "n"
+    sub "ﻨ" "n"
+    sub "ڭ" "ñ"
+    sub "ب" "b"
+    sub "ج" "j"
+    sub "ز" "z"
+    sub "ي" "y"
+    sub "ك" "k"
+    sub "ى" "i"
+    sub "ا" "a"
+    sub "و" "o"
+    sub "د" "d"
+    sub "ع" "ğ"
+    sub "ح" "x"
+    sub "ه" "e"
+    sub "چ" "č"
+    sub "ش" "š"
+    sub "گ" "g"
+    sub "ۆ" "v"
+
+    # Rule 1: high hamzah. As part of the vowel letter ( فى the sequence
+    # ٴى) it is not romanized separately; with any other letter at the
+    # beginning of a word it is romanized as alif (ʼ). The vowel letter
+    # ى appears in the source text both as the plain codepoint and as
+    # presentation forms, so the sequence carries all four shapes.
+    sub "ٴى" "ï"
+    sub "ٴﯨ" "ï"
+    sub "ٴﯩ" "ï"
+    sub "ٴﻯ" "ï"
+    sub "ٴﻰ" "ï"
+    sub "ٴ" "ʼ"
+
+    # Rule 1: composed spellings of the hamza-bearing vowel letters
+    # (compatibility decompositions of ٵ, ٶ, ٷ)
+    sub "اٴ" "ä"
+    sub "وٴ" "ö"
+    sub "ۇٴ" "ü"
+  }
+
+}
+
+}

@@ -1,0 +1,293 @@
+system "ALA-LC:lad-Hebr:Latn:2025" {
+
+metadata {
+  authority_id alalc
+  id 2025
+  language iso-639-2:lad
+  source_script Hebr
+  destination_script Latn
+  name "Romanization Table -- Ladino (2025)"
+  url http://catdir.loc.gov/catdir/cpso/romanization/ladino.pdf
+  creation_date 2025
+  confirmation_date 2025
+  description {    ALA-LC Romanization table for Ladino, 2025 version (earlier versions: 2011, 2005)
+  }
+
+  notes {
+    note "Letters of the alphabet (Ladino / Roman / Examples): alef א (-) a- , amar אמאר; ʼ, peʼah פאה; alef-yod-yod איי ay, tramvay טראמב׳איי; bet בּ ב b, bushḳar בוּשקאר; bet geresh bet rafe ב׳ בֿ v, aḥarvar אחארב׳אר; gimel גּ ג g, sangre סאנגּרי; gimel geresh gimel rafe ג׳ גֿ j, ajusṭar אג׳וּסטאר; gimel with upper dot גׄ ch, chiḳes גׄיקיס; dalet דּ ד d, din דין; dalet geresh dalet rafe ד׳ דֿ dh, sudhor סוּד׳ור; he ה (see note 4) -ah, salah סאלה; vav ו (see note 4) ṿ, ṿesheṭ ושט; o, dos דוס; w, agwah אגּואה; vav with shuruq וּ u, ḳarpus קארפוּס; vav alef yod ואי (see note 2) we, mwes מואיס; vav alef yod with hiriq ואִי wi, swivar סואִיב׳אר; vav with shuruq yod yod וּיי uy, muy מוּיי; vav with holam yod yod וֹיי oy, boy בוֹיי; zayin ז z, ḳazal קאזאל; zayin geresh zayin rafe ז׳ זֿ zh, muzher מוּז׳יר; het ח ḥ, ḥaber חאביר; tet ט ṭ, ṭadhre טאד׳רי; yod י y, Yosef יוסף; e, bel ביל; yod with hiriq יִ i, purimliḳ פוּרימליק; yod yod יי (see note 3) y, yo ייו; ye, yevar ייב׳אר, dyes דייס; yod yod with hiriq ייִ yi, segyir סיגּיִיר; yod yod with tsere ייֵ ey, rey רייֵ; kaf ךּ כּ k, kavod כּב׳וד; kaf final kaf ך כ kh, berakhah ברכה, melekh מלך; lamed ל l, lamber לאמביר; mem ם מ m, myel מייל, ḥamam חאמאם; nun ן נ n, nah! נה!, ladhron לאד׳רון; samekh ס s, suṭlach סוּטלאגׄ; ayin ע (see note 4) ʻ, meʻarah מערה; pe ף פּ פ p, paras פּאראס, ḳasap קאסאפּ; pe geresh pe final geresh pe rafe pe final rafe פ׳ ף׳ פֿ ףֿ f, fin פ׳ין, ḥarif חריף׳; tsadi ץ צ ts, tsedaḳah צדקה; qof ק ḳ, ḳavzar קאב׳זאר; resh ר r, raḳi ראקי; shin ש sh, shavon שאב׳ון; shin with sin dot שׂ ś, beśorah בשׂורה; tav תּ t, Torah תּורה. Ligature: alef lamed אל al, balṭah באלטה."
+
+    note "General note 1. א is not represented in romanization when it precedes ו, ויי, or י at the beginning of a word or when it appears between any combination of the vowels /e/ or /i/ (both spelled י), /o/ or /u/ (both spelled ו) when they are adjacent. In words of Hebrew or Aramaic derivation, it is represented by /ʼ/. This map encodes the two silencing contexts mechanically and renders alef as a elsewhere; the Hebrew-Aramaic ʼ reading is lexical (the peʼah and meʻarah examples carry vowel points supplied from Hebrew vocalization that the unvocalized spellings do not carry)."
+
+    note "General note 2. At the beginning of a word, ואי is always preceded by -ג, as in גואירטה /gwerṭah/ 'garden'."
+
+    note "General note 3. יי may sometimes be spelled ליי when it represents /y/ and /ye/, as in ייו /yo/ 'I'. This spelling variant is not encoded; input with the literal ליי spelling romanizes the ל."
+
+    note "General note 4. Words of Hebrew-Aramaic origin usually retain their traditional spellings in Ladino. Such words are romanized according to the ALA/LC Hebrew romanization table. Initial ו (not וו), י (not יי), non-final ה, כ (kh), ע, צ, ש (ś), and ת are usually found only in words of Hebrew-Aramaic derivation; in rare instances they may also appear in words borrowed from Arabic or Turkish. In some traditions, ש may appear where other traditions use the letter ס. Accordingly: non-final ה renders h (the Hebrew-table reading), plain ת renders t, bare pe פ ף renders p (Ladino reading) while Hebrew-Aramaic words may read it f per the Hebrew table (Yosef יוסף), and the e/i and o/u vowel qualities of the matres לא ביל ו that are unmarked in the script are lexical (the table itself directs problematic e/i and o/u cases to dictionaries)."
+
+    note "Notes on pronunciation: גׄ /ch/ as in 'chop'; ש /sh/ as in 'shop'; ד׳ /dh/ as in 'lather'; כ /kh/ as in German 'ach'; ג׳ /j/ as in 'gentle'; ז׳ /zh/ as in 'azure'. The pairs ב /v/ and ו /ṿ/, ח /ḥ/ and כ /kh/, ס /s/ and שׂ /ś/, כּ /k/ and ק /ḳ/ are distinguished in the script but not in pronunciation."
+
+    note "Notes on Ladino/Judezmo diacritics: No standard orthography for Ladino/Judezmo has ever been formally adopted. Words of Hebrew or Aramaic derivation usually maintain their traditional spellings. However, Ladino/Judezmo words of non-Semitic derivation do use a number of consonants no longer found in Castilian Spanish. These diacritics, such as rafe, geresh or a superscript dot, may be found with varying consistencies in publications."
+
+    note "Reference sources: At present, no single dictionary constitutes an authoritative or normative source for the romanization of Ladino/Judezmo. For words of Spanish derivation, refer to the 4200+ word Judezmo/Hebrew glossary at the end of David Bunis's Leshon G'udezmo (Jerusalem, 1999), which employs a vocalization system devised by the author employing ḥiriḳ, tsere, ḥolam and shuruḳ as vowel marks. Ladino/Judezmo words of Hebrew or Aramaic origin written in Hebrew characters appear in written texts either in traditional etymological spellings, or in phonetic or partially phonetic spellings. These words should be romanized according to the Library of Congress Hebrew romanization table. In problematic cases, where, for example, it is impossible to differentiate between 'e' and 'i', or 'o' and 'u,' or when words of non-Spanish, non-Hebraic origin are in question, refer to such dictionaries as those by Joseph Nehama (Dictionnaire du judéo-espagnol), Elli Kohen (Ladino-English, English-Ladino: Concise Encyclopedic Dictionary (Judeo-Spanish)), and Pascual Pascual Recuero (Diccionario básico ladino-español)."
+
+    note "References. 1. Bunis, David M. [Leshon G'udezmo]. Jerusalem: Magnes Press, The Hebrew University, c1999: p. 465-551; [transcription system for 'yod', 'double yod', p. 56-57]. 2. Bunis, David M. A Lexicon of the Hebrew and Aramaic Elements in Modern Judezmo. Jerusalem: Magnes Press, The Hebrew University; Misgav Yerushalayim, Institute for Research on the Sephardi and Oriental Jewish Heritage, 1993. 3. Nehama, Joseph. Dictionnaire du judéo-espagnol. Madrid: Consejo Superior de Investigaciones Científicas, Instituto 'Benito Arias Montano', 1977. 4. Kohen, Elli. Ladino-English, English-Ladino: Concise Encyclopedic Dictionary (Judeo-Spanish). New York: Hippocrene, 2000. 5. Pascual Recuero, Pascual. Ortografía del Ladino: soluciones y evolución. Granada: Universidad de Granada, Departamento de Estudios Semíticos, 1988. 6. Pascual Recuero, Pascual. Diccionario básico ladino-español. Barcelona: Ameller, 1977."
+
+    note "Proper-noun capitalization in the source examples (Yosef, Torah) is a lexical convention and is not implemented; this map leaves case untouched."
+  }
+}
+
+tests {
+  # Alphabet rows
+   "א" ->  "a"
+  # - row איי ay (the ay reading is exemplified only medially, in
+  #   tramvay; word-initial alef before a yod is silent per note 1)
+   "ב" ->  "b"
+   "בּ" ->  "b"
+   "בֿ" ->  "v"
+   "ג" ->  "g"
+   "גּ" ->  "g"
+   "גֿ" ->  "j"
+   "גׄ" ->  "ch"
+   "ד" ->  "d"
+   "דּ" ->  "d"
+   "דֿ" ->  "dh"
+   "ה" ->  "ah"
+   "ו" ->  "ṿ"
+   "וּ" ->  "u"
+   "וֹ" ->  "o"
+   "ז" ->  "z"
+   "זֿ" ->  "zh"
+   "ח" ->  "ḥ"
+   "ט" ->  "ṭ"
+   "י" ->  "y"
+   "יִ" ->  "i"
+   "יי" ->  "y"
+   "ייִ" ->  "yi"
+   "ייֵ" ->  "ey"
+   "ךּ" ->  "k"
+   "כּ" ->  "k"
+   "כ" ->  "kh"
+   "ך" ->  "kh"
+   "ל" ->  "l"
+   "מ" ->  "m"
+   "ם" ->  "m"
+   "נ" ->  "n"
+   "ן" ->  "n"
+   "ס" ->  "s"
+   "ע" ->  "ʻ"
+   "פ" ->  "p"
+   "ף" ->  "p"
+   "פּ" ->  "p"
+   "פֿ" ->  "f"
+   "ףֿ" ->  "f"
+   "צ" ->  "ts"
+   "ץ" ->  "ts"
+   "ק" ->  "ḳ"
+   "ר" ->  "r"
+   "ש" ->  "sh"
+   "שׂ" ->  "ś"
+   "תּ" ->  "t"
+   "ת" ->  "t"
+   "ﭏ" ->  "al"
+  # Alphabet examples
+   "אמאר" ->  "amar"
+   "טראמב׳איי" ->  "ṭramvay"
+   "בוּשקאר" ->  "bushḳar"
+   "אחארב׳אר" ->  "aḥarvar"
+   "סאנגּרי" ->  "sangre"
+   "אג׳וּסטאר" ->  "ajusṭar"
+   "סאלה" ->  "salah"
+  # - source carries unwritten Hebrew-Aramaic vowels, expected: ṿesheṭ
+   "דוס" ->  "dos"
+   "אגּואה" ->  "agwah"
+   "קארפוּס" ->  "ḳarpus"
+   "מואיס" ->  "mwes"
+   "סואִיב׳אר" ->  "swivar"
+   "מוּיי" ->  "muy"
+   "בוֹיי" ->  "boy"
+   "קאזאל" ->  "ḳazal"
+   "מוּז׳יר" ->  "muzher"
+   "חאביר" ->  "ḥaber"
+   "טאד׳רי" ->  "ṭadhre"
+   "ביל" ->  "bel"
+   "ייו" ->  "yo"
+   "ייב׳אר" ->  "yevar"
+   "דייס" ->  "dyes"
+   "סיגּיִיר" ->  "segyir"
+   "רייֵ" ->  "rey"
+  # - source carries unwritten Hebrew-Aramaic vowels, expected: kavod
+  # - source carries unwritten Hebrew-Aramaic vowels, expected: berakhah
+  # - source carries unwritten Hebrew-Aramaic vowels, expected: melekh
+   "לאמביר" ->  "lamber"
+   "מייל" ->  "myel"
+   "חאמאם" ->  "ḥamam"
+   "נה!" ->  "nah!"
+   "לאד׳רון" ->  "ladhron"
+   "סוּטלאגׄ" ->  "suṭlach"
+  # - source carries unwritten Hebrew-Aramaic vowels, expected: tsedaḳah
+   "קאב׳זאר" ->  "ḳavzar"
+   "שאב׳ון" ->  "shavon"
+   "תּורה" ->  "torah"
+   "בﭏטה" ->  "balṭah"
+   "פּאראס" ->  "paras"
+   "קאסאפּ" ->  "ḳasap"
+   "גואירטה" ->  "gwerṭah"  # note 2 example
+  # Examples requiring lexical information the unvocalized spelling does
+  # not carry (Hebrew-Aramaic vocalization per note 4; the e/i vowel
+  # quality of unmarked yod; the f reading of bare pe in Hebrew words;
+  # proper-noun capitals):
+  # - source: פאה, expected: peʼah (Hebrew vocalization + the ʼ of note 1)
+  # - source: דין, expected: din (unmarked i)
+  # - source: סוּד׳וד (text layer), expected: sudhor (the romanization
+  #   requires final resh ר; the text-layer final glyph is ambiguous ד/ר)
+  # - source: גׄיקיס, expected: chiḳes (unmarked i)
+  # - source: יוסף, expected: Yosef (Hebrew-table f reading of bare ף;
+  #   mechanical reading: yosep; capital is a proper-noun convention)
+  # - source: פוּרימליק, expected: purimliḳ (final unmarked i)
+  # - source: חריף׳, expected: ḥarif (unwritten a, unmarked i)
+  # - source: פ׳ין, expected: fin (unmarked i)
+  # - source: ראקי, expected: raḳi (unmarked i)
+  # - source: מערה, expected: meʻarah (Hebrew vocalization)
+  # - source: בשׂורה, expected: beśorah (unwritten e)
+  # - source: תּורה, expected: Torah (proper-noun capital)
+}
+
+stage main {
+  sequence {
+    # 1. Clusters of yod and vav carrying point marks (the e/i and ey/yi
+    #    distinctions). Both logical and text-extraction byte orders are
+    #    covered for the marked double-yod clusters.
+    sub "ואִי" "wi"
+    sub "ייִ" "yi"
+    sub "יִי" "yi"
+    sub "ייֵ" "ey"
+    sub "יֵי" "ey"
+    sub "יִ" "i"
+
+    # 2. Geresh and rafe letter forms (rafé/geresh diacritics)
+    sub "ב׳" "v"
+    sub "בֿ" "v"
+    sub "ג׳" "j"
+    sub "גֿ" "j"
+    sub "ד׳" "dh"
+    sub "דֿ" "dh"
+    sub "ז׳" "zh"
+    sub "זֿ" "zh"
+    sub "פ׳" "f"
+    sub "ף׳" "f"
+    sub "פֿ" "f"
+    sub "ףֿ" "f"
+
+    # 3. Gimel with the superscript dot (ch)
+    sub "גׄ" "ch"
+
+    # 4. Pointed vav (shuruq, holam) - presentation forms and composed
+    sub "וּ" "u"
+    sub "וּ" "u"
+    sub "וֹ" "o"
+    sub "וֹ" "o"
+
+    # 5. Dagesh presentation forms and composed spellings
+    sub "בּ" "b"
+    sub "בּ" "b"
+    sub "גּ" "g"
+    sub "גּ" "g"
+    sub "דּ" "d"
+    sub "דּ" "d"
+    sub "כּ" "k"
+    sub "כּ" "k"
+    sub "ךּ" "k"
+    sub "ךּ" "k"
+    sub "פּ" "p"
+    sub "פּ" "p"
+    sub "תּ" "t"
+    sub "תּ" "t"
+    sub "שׂ" "ś"
+    sub "שׂ" "ś"
+    sub "ﭏ" "al"
+
+    # 6. Alef (general note 1): silent between adjacent matres and
+    #    word-initially before a vav/yod; a elsewhere. Word-final alef+he
+    #    carries the vowel cluster together (agwah: the alef is the a,
+    #    the he only h).
+    sub "אה" "ah"
+    sub {
+    from "א"
+    to ""
+    before any("יו")
+    after any("יו")
+  }
+    sub {
+    from boundary + "א"
+    to ""
+    after any("יו")
+  }
+    sub "א" "a"
+
+    # 7. He: word-final -ah (the row value), otherwise h (note 4, the
+    #    Hebrew-table reading of non-final he)
+    sub {
+    from "ה"
+    to "ah"
+    after boundary
+  }
+    sub "ה" "h"
+
+    # 8. Consonants with a single reading
+    sub "ב" "b"
+    sub "ג" "g"
+    sub "ד" "d"
+    sub "ז" "z"
+    sub "ח" "ḥ"
+    sub "ט" "ṭ"
+    sub "כ" "kh"
+    sub "ך" "kh"
+    sub "ל" "l"
+    sub "מ" "m"
+    sub "ם" "m"
+    sub "נ" "n"
+    sub "ן" "n"
+    sub "ס" "s"
+    sub "ע" "ʻ"
+    sub "פ" "p"
+    sub "ף" "p"
+    sub "צ" "ts"
+    sub "ץ" "ts"
+    sub "ק" "ḳ"
+    sub "ר" "r"
+    sub "ש" "sh"
+    sub "ת" "t"
+
+    # 9. Double yod: ye before a consonant, y otherwise (note 3)
+    sub {
+    from "יי"
+    to "ye"
+    after any("bcdfghjklmnpqrstvwxyz")
+  }
+    sub "יי" "y"
+
+    # 10. Yod: word-initial consonant y, otherwise the vowel e (the
+    #     unmarked i quality is lexical, see notes)
+    sub {
+    from boundary + "י"
+    to "y"
+  }
+    sub "י" "e"
+
+    # 11. Vav: word-initial ṿ (note 4); consonantal w between a consonant
+    #     and a following vowel letter; otherwise the vowel o
+    sub {
+    from boundary + "ו"
+    to "ṿ"
+  }
+    sub {
+    from "ו"
+    to "w"
+    after any(["a", "e", "i", "o", "u", "י", "ו"])
+  }
+    sub "ו" "o"
+  }
+
+}
+
+}

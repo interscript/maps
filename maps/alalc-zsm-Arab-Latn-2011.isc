@@ -1,0 +1,246 @@
+system "ALA-LC:zsm-Arab:Latn:2011" {
+
+metadata {
+  authority_id alalc
+  id 2011
+  language iso-639-2:zsm
+  source_script Arab
+  destination_script Latn
+  name "Romanization Table -- Malay (in Jawi-Arabic script) (2011)"
+  url http://catdir.loc.gov/catdir/cpso/romanization/malay.pdf
+  creation_date 2011
+  confirmation_date 2011
+  description {    ALA-LC Romanization table for Malay (in Jawi-Arabic script), 2011 version (earlier version: 1997)
+  }
+
+  notes {
+    note "Letters of the Alphabet (Romanization column; Jawi orthography is rendered with Unicode presentation forms in the source, normalized here to base codepoints): alif ا omit (see Note 1; per Rule 4 a word-initial alif or an alif following a consonant represents the vowel a); ب b; ت t; ث *th, s (see Note 2); ج j; چ c; ح h; خ kh; د d; ذ *dh, z (see Notes 2 and 3); ر r; ز z (see Note 3); س s; ش sy (see Note 3); ص *ṣ, s (see Notes 2 and 3); ض *ḍ, d (see Notes 2 and 3); ط *ṭ, t (see Notes 2 and 3); ظ *ẓ, l, z (see Notes 3 and 4); ع omit (see Note 3); غ gh (see Note 3); ڠ ng; ف *f, p (see Notes 3 and 5); ق *q, k (see Note 2); ڤ p; ك k; kaf with superscript dot ك̇ g; ل l; م m; ن n; ڽ ny; ه ة h. و w, u, o, au (see Note 6); ي y, i, e, ai (see Note 7)."
+
+    note "Vowels and Diphthongs: alif with fatha اَ a; waw with damma وُ u; yad with kasra يِ i; unwritten ĕ (the schwa is not written in Jawi and must be supplied lexically); yad with fatha يَ e, ai; waw with fatha وَ o, au. This map encodes the marked vowel rows; the unmarked schwa reading is lexical."
+
+    note "Note 1. For the use of alif see rules 3-5."
+
+    note "Note 2. Letters in the romanization column marked with an asterisk (*) represent the romanized value of the equivalent Jawi letter when it occurs in Arabic words (not Arabic loan words): th (ث), dh (ذ), ṣ (ص), ḍ (ض), ṭ (ط), ẓ (ظ), f (ف), q (ق). The letter not designated with an asterisk represents the proper romanization value for the letter when it occurs in Malay words: s, z, s, d, t, l/z, p, k respectively. This map encodes the Malay values; the Arabic-word values are lexical (Rule 2: the boundary between Arabic loans and foreign Arabic terms is not always easy to draw; common usage should always be followed)."
+
+    note "Note 3. Jawi letters typically found only in Arabic and Arabic loan words: ث ذ ص ض ط ظ ع غ ش ف ق (and the dotted-g kaf)."
+
+    note "Note 4. Some words of Arabic origin with the letter ظ have come into the language with the equivalent l (e.g., lahir), others with the equivalent z (e.g., zalim). The l/z choice is lexical; this map defaults to z."
+
+    note "Note 5. The letter ف is often used as a shorthand way of writing ڤ. When this is clearly the case, the letter ف should be romanized as p. This map encodes ف as p (the Malay value; the Arabic-word value f is lexical per note 2)."
+
+    note "Note 6. On و (wau), see rules 6 and 8b."
+
+    note "Note 7. On ي (yad), see rules 7 and 8b."
+
+    note "Rule 1. Jawi orthography is far from standard, particularly in handwritten documents. Nevertheless, for the purposes of cataloging, it is essential to standardize the romanized form of every lexeme. Two widely accepted standards for writing Malay in the Latin script exist: the Indonesian and the Malaysian. In this table, the Indonesian standard, referred to as Ejaan Bahasa Indonesia yang Disempurnakan, has been employed."
+
+    note "Rule 2. Arabic words (not Arabic loan words) appearing in a Malay text are analogous to French words and expressions in a Russian novel or Latin phrases in a Catholic theology text, and their distinctness should be preserved by transliterating them in accordance with the rules governing the romanization of the relevant language, Arabic or Malay. Malay words of Arabic origin whose orthography is the same as the Arabic might therefore be romanized differently at different points in the same text. Thus the word قدوس will be romanized kudus when it appears as a Malay word, but qudūs when it is used as an Arabic term or in an Arabic phrase. This map encodes the Malay reading."
+
+    note "Rule 3. ا (alif), و (wau), and ي (yad) are used to support ء (hamzah); when so used these letters are not represented in romanization. See rule 8b."
+
+    note "Rule 4. At the beginning of a word, alif represents an initial vowel or diphthong and is romanized accordingly as a, e, i, u, o (او), au (او), e (ايـ), or ai (ايـ). Following a consonant, alif represents the vowel romanized as a. This map renders bare alif as a (the rule-4 vocalic reading); the alif that merely supports a hamzah or carries no vowel value is the rule-3/rule-8 case."
+
+    note "Rule 5. The optional alif gantung (for example, in the word tiang تيڠٰ), when used, does not change the romanized form of the word. This map renders the superscript alif as a."
+
+    note "Rule 6. The letter و (wau) is used: (a) to represent the consonant romanized as w; (b) to represent the vowels and diphthong romanized as u, o, and au; and (c) to support ء (hamzah) (see rule 8b). Mechanically: word-initially and after a vowel it is the consonant w; word-finally and after a consonant it is the vowel u (the bare alif+wau spelling of the au diphthong renders as a+u); with fatha it is o."
+
+    note "Rule 7. The letter ي (yad) is used: (a) to represent the consonant romanized as y; (b) to represent the vowels and diphthong romanized as i, e, and ai; and (c) to support ء (hamzah) (see rule 8b). Mechanically: word-initially and between vowels it is the consonant y; elsewhere it is the vowel i (the word-final yad after a vowel is the ai diphthong, rendered i); with fatha it is e; with kasra it is i."
+
+    note "Rule 8. ء (hamzah): (a) In Arabic words, and most Arabic loans where it is found, hamzah is romanized according to the rules for Arabic (including use of the non-alphabetic mark ʼ (alif)). (b) Hamzah used to separate contiguous vowels, supported by ا, or و or ي, is not represented in romanization (for example, lain لاين, laut لاؤت, permintaan ڤرمنتأن). (c) Hamzah replacing initial alif in vowel-initial words to which the prefix ke- or se- has been attached is represented by the vowel value that it elided (keenam كئنم, seindah سئنده, seorang سئورڠ). (d) A hamzah used after the reduplicating numeral 2 in vowel-final roots followed by the suffixes -an or -i is not represented in romanization. (e) The occasional use of hamzah to represent a word-final glottal stop (for example, tidak تيداء) is romanized as k. This map renders: the high-hamza separator mark, alef-hamza أ and yeh-hamza ئ as silent; waw-hamza ؤ as u; word-final hamzah as k (rule 8e); other hamzah as ʼ (rule 8a). The rule-8c vowel value is lexical, so the keenam/seindah/seorang examples carry unwritten short vowels and are romanized here without them."
+
+    note "Rule 9. Words doubled with the number 2 should be written out in full (for example, mata-mata مات٢). When the root word ends in a consonant such that an appended -an or -i suffix must reduplicate the final consonant, the doubled consonant is not represented in the romanization (for example: rumput-rumputan رمڤت٢ن). The reduplication numeral ٢ is a lexical instruction and is not expanded mechanically."
+
+    note "Rule 10. In cases where the postpositive itu or prepositive yang are joined to the preceding or following word, they should be romanized as separate words. (Syntactic; not implemented mechanically.)"
+
+    note "Rule 11. Alif maqsūrah, waṣlah, maddah, shaddah, and tanwīn are not commonly used in Jawi script except in Arabic words or phrases. If they do not appear as adornment on Malay words, they are not represented in the romanization. Ta marbutah, romanized as t, is not properly a Jawi script character either, but sometimes it may be found in Malay texts. The alphabet row assigns ه and ة the value h, which this map encodes; the rule-11 remark on t describes the Arabic-word treatment."
+
+    note "The source document's text layer renders Jawi in Unicode presentation forms (joining shapes); these carry no letter-identity information in Jawi and are normalized to base codepoints before this map applies. Unwritten short vowels (the ĕ of the vowel table and the unwritten i/a of many lexemes) must be supplied lexically."
+  }
+}
+
+tests {
+  # Alphabet rows (Malay values; asterisked Arabic values are lexical, note 2)
+   "ب" ->  "b"
+   "ت" ->  "t"
+   "ث" ->  "s"
+   "ج" ->  "j"
+   "چ" ->  "c"
+   "ح" ->  "h"
+   "خ" ->  "kh"
+   "د" ->  "d"
+   "ذ" ->  "z"
+   "ر" ->  "r"
+   "ز" ->  "z"
+   "س" ->  "s"
+   "ش" ->  "sy"
+   "ص" ->  "s"
+   "ض" ->  "d"
+   "ط" ->  "t"
+   "ظ" ->  "z"  # l/z is lexical (note 4)
+   "ع" ->  ""
+   "غ" ->  "gh"
+   "ڠ" ->  "ng"
+   "ف" ->  "p"  # note 5
+   "ق" ->  "k"
+   "ڤ" ->  "p"
+   "ك" ->  "k"
+   "ك̇" ->  "g"
+   "ک̇" ->  "g"
+   "ل" ->  "l"
+   "م" ->  "m"
+   "ن" ->  "n"
+   "ڽ" ->  "ny"
+   "ه" ->  "h"
+   "ة" ->  "h"
+   "و" ->  "w"
+   "ي" ->  "y"
+  # Vowels and Diphthongs rows
+   "اَ" ->  "a"
+   "وُ" ->  "u"
+   "يِ" ->  "i"
+   "يَ" ->  "e"
+   "وَ" ->  "o"
+  # Rule 2 example (Malay word reading)
+   "قودوس" ->  "kudus"
+  # - the same word as an Arabic term is romanized qudūs (lexical, note 2)
+  # Rule 5 example (alif gantung)
+   "تيڠٰ" ->  "tiang"
+  # Rule 8b examples
+   "لاين" ->  "lain"
+   "لاؤت" ->  "laut"
+  # - source: ڤرمنتأن, expected: permintaan (unwritten short vowels are
+  #   lexical; mechanical: prmntn)
+  # Rule 8c examples (unwritten short vowels; mechanical without them)
+  # - source: كئنم, expected: keenam
+  # - source: سئنده, expected: seindah
+  # - source: سئورڠ, expected: seorang
+  # Rule 8e example (word-final glottal stop hamzah)
+   "تيداء" ->  "tidak"
+  # Rule 9 examples (reduplication numeral ٢ is lexical)
+  # - source: مات٢, expected: mata-mata
+  # - source: رمڤت٢ن, expected: rumput-rumputan
+  # Bare alif as the vowel a (rule 4)
+   "سايا" ->  "saya"
+   "باڤا" ->  "bapa"
+  # Wau and yad context readings (rules 6-7)
+   "واڠ" ->  "wang"
+   "کاوان" ->  "kawan"
+   "سورات" ->  "surat"
+   "دوا" ->  "dua"
+   "بوکو" ->  "buku"
+   "تاهو" ->  "tahu"
+   "ياڠ" ->  "yang"
+   "سيني" ->  "sini"
+   "راماي" ->  "ramai"
+}
+
+stage main {
+  sequence {
+    # Marked vowels (Vowels and Diphthongs rows)
+    sub "وُ" "u"
+    sub "وَ" "o"
+    sub "يِ" "i"
+    sub "يَ" "e"
+
+    # Rule 8 - hamzah
+    sub "ٴ" ""  # the high-hamza separator mark (rule 8b) is not represented
+    sub "أ" ""  # alef-hamza separator (rule 8b)
+    sub "ئ" ""  # yeh-hamza (rule 8b/8c; the elided vowel value is lexical)
+    sub "ؤ" "u"  # waw-hamza
+    sub {
+    from "ء"
+    to "k"
+    after boundary
+  }  # rule 8e word-final glottal stop
+    sub "ء" "ʼ"  # rule 8a Arabic reading
+
+    # Rule 5 - alif gantung: the superscript alif marks the final a of the
+    # word, which romanizes before the nasal it sits over (tiang); swap the
+    # mark order before the letters convert
+    sub "ڠٰ" "aڠ"
+    sub "ٰ" "a"
+
+    # Marks not represented (rule 11) and leftover vowel signs
+    sub "ْ" ""
+    sub "ّ" ""
+    sub "َ" ""
+    sub "ُ" ""
+    sub "ِ" ""
+    sub "ـ" ""
+
+    # Final-form yad (alef maksura codepoint) joins the yad rules
+    sub "ى" "ي"
+
+    # Letters of the alphabet (Malay values)
+    sub "ب" "b"
+    sub "ت" "t"
+    sub "ث" "s"
+    sub "ج" "j"
+    sub "چ" "c"
+    sub "ح" "h"
+    sub "خ" "kh"
+    sub "د" "d"
+    sub "ذ" "z"
+    sub "ر" "r"
+    sub "ز" "z"
+    sub "س" "s"
+    sub "ش" "sy"
+    sub "ص" "s"
+    sub "ض" "d"
+    sub "ط" "t"
+    sub "ظ" "z"
+    sub "ع" ""
+    sub "غ" "gh"
+    sub "ڠ" "ng"
+    sub "ف" "p"
+    sub "ق" "k"
+    sub "ڤ" "p"
+    sub "ك̇" "g"
+    sub "ک̇" "g"
+    sub "ك" "k"
+    sub "ک" "k"
+    sub "ل" "l"
+    sub "م" "m"
+    sub "ن" "n"
+    sub "ڽ" "ny"
+    sub "ه" "h"
+    sub "ة" "h"
+
+    # Rule 4 - bare alif as the vowel a
+    sub "ا" "a"
+
+    # Rule 7 - yad: word-initial and inter-vocalic y, else the vowel i
+    sub {
+    from boundary + "ي"
+    to "y"
+  }
+    sub {
+    from "ي"
+    to "y"
+    before any(["a", "e", "i", "o", "u"])
+    after any(["a", "e", "i", "o", "u"])
+  }
+    sub "ي" "i"
+
+    # Rule 6 - wau: word-initial and post-vocalic w, word-final and
+    # post-consonantal u
+    sub {
+    from boundary + "و"
+    to "w"
+  }
+    sub {
+    from "و"
+    to "u"
+    after boundary
+  }
+    sub {
+    from "و"
+    to "w"
+    before any(["a", "e", "i", "o", "u"])
+  }
+    sub "و" "u"
+  }
+
+}
+
+}

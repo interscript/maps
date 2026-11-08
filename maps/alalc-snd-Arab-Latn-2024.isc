@@ -1,0 +1,332 @@
+system "ALA-LC:snd-Arab:Latn:2024" {
+
+metadata {
+  authority_id alalc
+  id 2024
+  language iso-639-2:snd
+  source_script Arab
+  destination_script Latn
+  name "Romanization Table -- Sindhi (2024)"
+  url http://catdir.loc.gov/catdir/cpso/romanization/sindhi.pdf
+  creation_date 2024
+  confirmation_date 2024
+  description {    ALA-LC Romanization table for Sindhi (in Arabic script), 2024 version (earlier versions: 2013, 2012, 1997)
+  }
+
+  notes {
+    note "Letters of the Alphabet: alif ا (omit); ب b; ٻ b̤; ڀ bh; ت t; ٿ th; ٽ ṭ; ٺ ṭh; ث s; پ p; ج j; ڄ j̈; جھ jh; ڃ ñ; چ c; ڇ ch; ح ḥ; خ kh; د d; ڌ dh; ڏ d̤; ڊ ḍ; ڍ ḍh; ذ z; ر r; ڙ ṛ; ز z; س s; ش sh; ص ṣ; ض ẓ; ط ṭ; ظ z̤; ع ‘ (ayn); غ gh; ف f; ڦ ph; ق q; ڪ k; ک kh; گ g; ڳ g̈; گھ gh; ڱ ṅ; ل l; م m; ن n; ڻ ṇ; و v; ه ہ ة h; ء (omit); ي ي y. The aspirate digraphs bh ڀ, jh جھ, ch ڇ, dh ڌ, ḍh ڍ, ph ڦ, and gh گھ are single letters except جھ and گھ, which render mechanically as their consonant plus h."
+
+    note "Note 1. When Sindhi is written in the Devanagari script, it is romanized according to the Hindi table. The letters ब़, ज़, द़, and ग़ are romanized b̤, j̈, d̤, and g̈ respectively."
+
+    note "Note 2. The rules of application for Urdu are to be used for Sindhi. Vocalization is that used for entries in Mewaram's A Sindhi English Dictionary (1st ed., Hyderabad, 1910), Sindhī Ūrdū Lughāt (Haidarābād, 1959), and Jāmiʻ-i Sindhī Lughāt (Karācī, 1931). This map therefore carries the Urdu rules-of-application machinery (marked vowels, hamzah, maddah, the article al with its sun-letter assimilation, tanvīn, shaddah doubling, bare-letter defaults), with the Sindhi letter values; over unvocalized text the readings of bare و and ی and unwritten short vowels remain lexical."
+
+    note "Vowels and Diphthongs: fatha a; damma u; kasra i; yad with kasra یِ ī; waw و o; bari yad ے, yad ی e; waw with sukun and fatha وَْ au; yad with sukun and fatha یَْ, bari yad ے ai; alif with fatha اَ, yad with fatha یَ, alif maqsura with superscript alif ىٰ ā; waw with damma وُ ū."
+  }
+}
+
+tests {
+  # Letters of the Alphabet
+   "ب" ->  "b"
+   "ٻ" ->  "b̤"
+   "ڀ" ->  "bh"
+   "ت" ->  "t"
+   "ٿ" ->  "th"
+   "ٽ" ->  "ṭ"
+   "ٺ" ->  "ṭh"
+   "ث" ->  "s"
+   "پ" ->  "p"
+   "ج" ->  "j"
+   "ڄ" ->  "j̈"
+   "ڃ" ->  "ñ"
+   "چ" ->  "c"
+   "ڇ" ->  "ch"
+   "ح" ->  "ḥ"
+   "خ" ->  "kh"
+   "د" ->  "d"
+   "ڌ" ->  "dh"
+   "ڏ" ->  "d̤"
+   "ڊ" ->  "ḍ"
+   "ڍ" ->  "ḍh"
+   "ذ" ->  "z"
+   "ر" ->  "r"
+   "ڙ" ->  "ṛ"
+   "ز" ->  "z"
+   "س" ->  "s"
+   "ش" ->  "sh"
+   "ص" ->  "ṣ"
+   "ض" ->  "ẓ"
+   "ط" ->  "ṭ"
+   "ظ" ->  "z̤"
+   "ع" ->  "ʻ"
+   "غ" ->  "gh"
+   "ف" ->  "f"
+   "ڦ" ->  "ph"
+   "ق" ->  "q"
+   "ڪ" ->  "k"
+   "ک" ->  "kh"
+   "گ" ->  "g"
+   "ڳ" ->  "g̈"
+   "ڱ" ->  "ṅ"
+   "ل" ->  "l"
+   "م" ->  "m"
+   "ن" ->  "n"
+   "ڻ" ->  "ṇ"
+   "و" ->  "v"
+   "ه" ->  "h"
+   "ہ" ->  "h"
+   "ة" ->  "h"
+   "ي" ->  "y"
+   "ی" ->  "y"
+   "ے" ->  "e"
+  # Vowels and Diphthongs
+   "اَ" ->  "ā"
+   "یَ" ->  "ā"
+   "ىٰ" ->  "ā"
+   "وُ" ->  "ū"
+   "یِ" ->  "ī"
+   "وَ" ->  "o"
+   "وَْ" ->  "au"
+   "یَْ" ->  "ai"
+   "ےَ" ->  "ai"
+}
+
+stage main {
+  sequence {
+    # Marked vowels and diphthongs (Vowels and Diphthongs table)
+    sub "وَْ" "au"
+    sub "یَْ" "ai"
+    sub "وَ" "o"
+    sub "وُ" "ū"
+    sub "یَ" "ā"
+    sub "یِ" "ī"
+    sub "اَ" "ā"
+    sub "ےَ" "ai"
+    sub "ىٰ" "ā"
+
+    # Rule 12 of the Urdu rules - hamzah
+    sub "ئے" "yi"
+    sub "ۀ" "h-yi"
+    sub {
+    from boundary + "ء"
+    to ""
+  }
+    sub {
+    from boundary + "أ"
+    to ""
+  }
+    sub "ء" "ʼ"
+    sub "أ" "ʼ"
+    sub "ؤ" "ʼ"
+    sub "ئ" "ʼ"
+
+    # Rule 13 - maddah
+    sub {
+    from boundary + "آ"
+    to "ā"
+  }
+    sub "آ" "ʼā"
+
+    # Rule 18 - the Arabic article al (moon letters) and its assimilation
+    # (sun letters)
+    sub {
+    from boundary + "الت"
+    to "at-"
+  }
+    sub {
+    from boundary + "الث"
+    to "as-"
+  }
+    sub {
+    from boundary + "الد"
+    to "ad-"
+  }
+    sub {
+    from boundary + "الذ"
+    to "az-"
+  }
+    sub {
+    from boundary + "الر"
+    to "ar-"
+  }
+    sub {
+    from boundary + "الز"
+    to "az-"
+  }
+    sub {
+    from boundary + "الس"
+    to "as-"
+  }
+    sub {
+    from boundary + "الش"
+    to "ash-"
+  }
+    sub {
+    from boundary + "الص"
+    to "aṣ-"
+  }
+    sub {
+    from boundary + "الض"
+    to "aẓ-"
+  }
+    sub {
+    from boundary + "الط"
+    to "aṭ-"
+  }
+    sub {
+    from boundary + "الظ"
+    to "az̤-"
+  }
+    sub {
+    from boundary + "الل"
+    to "al-"
+  }
+    sub {
+    from boundary + "الن"
+    to "an-"
+  }
+    sub {
+    from boundary + "ال"
+    to "al-"
+  }
+
+    # Rule 16 - tanvin
+    sub "اً" "an"
+    sub "ً" "an"
+    sub "ٌ" "un"
+    sub "ٍ" "in"
+
+    # Rule 14 - shaddah doubling
+    sub "بّ" "bb"
+    sub "ٻّ" "b̤b̤"
+    sub "ڀّ" "bhbh"
+    sub "تّ" "tt"
+    sub "ٿّ" "thth"
+    sub "ٽّ" "ṭṭ"
+    sub "ٺّ" "ṭhṭh"
+    sub "ثّ" "ss"
+    sub "پّ" "pp"
+    sub "جّ" "jj"
+    sub "ڄّ" "j̈j̈"
+    sub "ڃّ" "ññ"
+    sub "چّ" "cc"
+    sub "ڇّ" "chch"
+    sub "حّ" "ḥḥ"
+    sub "خّ" "khkh"
+    sub "دّ" "dd"
+    sub "ڌّ" "dhdh"
+    sub "ڏّ" "d̤d̤"
+    sub "ڊّ" "ḍḍ"
+    sub "ڍّ" "ḍhḍh"
+    sub "ذّ" "zz"
+    sub "رّ" "rr"
+    sub "ڙّ" "ṛṛ"
+    sub "زّ" "zz"
+    sub "سّ" "ss"
+    sub "شّ" "shsh"
+    sub "صّ" "ṣṣ"
+    sub "ضّ" "ẓẓ"
+    sub "طّ" "ṭṭ"
+    sub "ظّ" "z̤z̤"
+    sub "عّ" "ʻʻ"
+    sub "غّ" "ghgh"
+    sub "فّ" "ff"
+    sub "ڦّ" "phph"
+    sub "قّ" "qq"
+    sub "ڪّ" "kk"
+    sub "کّ" "khkh"
+    sub "گّ" "gg"
+    sub "ڳّ" "g̈g̈"
+    sub "ڱّ" "ṅṅ"
+    sub "لّ" "ll"
+    sub "مّ" "mm"
+    sub "نّ" "nn"
+    sub "ڻّ" "ṇṇ"
+    sub "وّ" "vv"
+    sub "یّ" "yy"
+
+    # Letters of the Alphabet
+    sub "ب" "b"
+    sub "ٻ" "b̤"
+    sub "ڀ" "bh"
+    sub "ت" "t"
+    sub "ٿ" "th"
+    sub "ٽ" "ṭ"
+    sub "ٺ" "ṭh"
+    sub "ث" "s"
+    sub "پ" "p"
+    sub "ج" "j"
+    sub "ڄ" "j̈"
+    sub "ڃ" "ñ"
+    sub "چ" "c"
+    sub "ڇ" "ch"
+    sub "ح" "ḥ"
+    sub "خ" "kh"
+    sub "د" "d"
+    sub "ڌ" "dh"
+    sub "ڏ" "d̤"
+    sub "ڊ" "ḍ"
+    sub "ڍ" "ḍh"
+    sub "ذ" "z"
+    sub "ر" "r"
+    sub "ڙ" "ṛ"
+    sub "ز" "z"
+    sub "س" "s"
+    sub "ش" "sh"
+    sub "ص" "ṣ"
+    sub "ض" "ẓ"
+    sub "ط" "ṭ"
+    sub "ظ" "z̤"
+    sub "ع" "ʻ"
+    sub "غ" "gh"
+    sub "ف" "f"
+    sub "ڦ" "ph"
+    sub "ق" "q"
+    sub "ڪ" "k"
+    sub "ک" "kh"
+    sub "گ" "g"
+    sub "ڳ" "g̈"
+    sub "ڱ" "ṅ"
+    sub "ل" "l"
+    sub "م" "m"
+    sub "ن" "n"
+    sub "ڻ" "ṇ"
+    sub "ة" "h"
+    sub "ه" "h"
+    sub "ہ" "h"
+    sub "ھ" "h"
+
+    # Bare alif: word-initial short a, after a consonant ā (Urdu rule 3)
+    sub {
+    from boundary + "ا"
+    to "a"
+  }
+    sub "ا" "ā"
+
+    # Marks not represented, and the short-vowel signs
+    sub "ْ" ""
+    sub "ّ" ""
+    sub "َ" "a"
+    sub "ُ" "u"
+    sub "ِ" "i"
+
+    # Bare yad: word-initial y, other bare yad e; bare bari yad e
+    sub {
+    from boundary + "ی"
+    to "y"
+  }
+    sub {
+    from boundary + "ي"
+    to "y"
+  }
+    sub "ی" "e"
+    sub "ي" "e"
+    sub "ے" "e"
+    sub "ى" "e"
+
+    # Bare waw: the alphabet-row consonant v
+    sub "و" "v"
+  }
+
+}
+
+}

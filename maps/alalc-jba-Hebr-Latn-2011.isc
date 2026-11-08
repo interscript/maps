@@ -1,0 +1,226 @@
+system "ALA-LC:jba-Hebr:Latn:2011" {
+
+metadata {
+  authority_id alalc
+  id 2011
+  language iso-639-2:jba
+  source_script Hebr
+  destination_script Latn
+  name "ALA/LC Systematic Romanization for Judeo-Arabic (2011)"
+  url http://catdir.loc.gov/catdir/cpso/romanization/judeo-arabic.pdf
+  creation_date 2011
+  confirmation_date 2011-01-31
+  description {    ALA/LC Systematic Romanization for Judeo-Arabic, Jan. 31, 2011 (no earlier versions)
+  }
+
+  notes {
+    note "Letters of the alphabet (Judeo-Arabic / Roman / Examples): alef א ʼ, ʼl אל 'the', ʼbn אבן 'son'; bet ב בּ b, bnyn בנין 'sons', ʼrb‘ ארבע 'four'; gimel ג גּ (gimel with superscript dot) g, grq גרק 'he suffocates' (cf. Standard /ghariqa/); gimel geresh ג׳ ḡ, ḡynʼ ג׳ינא 'we came' (cf. Standard Arabic /jīnā/); dalet ד d, dm דם 'blood' (cf. Standard Arabic /dam/), dkrt דכרת 'she remembered' (cf. Standard Arabic /dhakarat/); dalet geresh ד׳ ḏ, ḏhb ד׳הב 'gold'; he ה h, hwm הום 'they'; he with diaeresis ה̈ ḧ, mdynḧ מדינה̈ 'city (of)'; vav ו w, wʼḥd ואחד 'one', ʼrwʼḥ ארואח 'spirits'; double vav וו ww, kwwʼkb כוואכב 'stars', nbwwʼ נבווא 'prophecy', l-wwrʼ לוורא 'after, behind'; zayin ז z, zwḡtw זוג׳תו 'his wife'; het ח ḥ, ḥyyʼt חייאת 'life', bḥr בחר 'sea'; tet ט ṭ, ṭwl טול 'length', ‘ṭʼ עטא 'he gave'; tet with superscript dot ט̇ ẓ, ẓhr ט̇הר 'he appeared'; yod י y, yd יד 'hand', bywt ביות 'house', ydy ידי 'my hand'; double yod יי yy, ʼyyʼm אייאם 'days', l-yyḡyb לייג׳יב 'that he may bring', rḡlyy רג׳ליי 'my (two) feet'; kaf כּ ךּ כ ך k, kʼnt כּאנת 'she was', ḏʼlk ד׳אלךּ 'that', kbz כבז 'bread' (cf. Standard Arabic /khubz/); lamed ל l, lyyʼly לייאלי 'nights'; mem ם מ m, mn מן 'from', ʼsm אסם 'name'; nun ן נ n, nfs נפס 'soul', byn בין 'between'; samekh ס s, sm‘ סמע 'he heard', Ysrʼyl יסראיל 'Israel'; ayin ע ‘, ‘byd עביד 'servants'; pe ף פ pe geresh pe final geresh פ׳ ף׳ f, fy פי 'in'; tsadi צ ṣ, ṣn‘ צנע 'he did'; tsadi geresh tsadi final geresh צ׳ ץ׳ ṣ̄, ʼrṣ̄ ארץ׳ 'earth' (cf. Standard Arabic /ard/), ṣ̄ʼlm צ׳אלם 'wicked' (cf. Standard Arabic /z̄ālim/); qof ק q, qʼl קאל 'he said', mqds מקדס 'holy'; resh ר r, rby רבי 'rabbi' (lit., 'my lord'); shin ש shin with dot שׁ š, š‘b שעב 'nation', mšrq משרק 'east'; shin with sin dot שׂ ś, Yśrʼyl ישׂראל 'Israel' (only in Hebrew loan words); tav ת תּ t, tqwl תּקול 'you say', sbt סבתּ 'Sabbath'; with no diacritic, the character ת may correspond etymologically with Standard Arabic ث /th/, e.g., in mṯl מתל 'proverb'. Ligature alef lamed אל initial: ʼl, ʼl אל 'the', mʼl מאל 'property'."
+
+    note "Note 1. The ALA/LC system of romanization for Judeo-Arabic provides a one-to-one representation of the consonants in the text, including 'alif' (א), 'y' (י) and 'w' (ו) which sometimes represent long vowels and sometimes consonants."
+
+    note "Note 2. Judeo-Arabic texts are produced both with and without vocalization. Because of the multiglossic nature of Judeo-Arabic and its texts, when the short vowels are not represented in the text, there no way to treat them that would be useful and reliable across all dialects. It is also not practical for catalogers to attempt to provide vowels matching those of Standard Arabic, because of the frequent difficulty of matching Judeo-Arabic lexical items to equivalent Standard Arabic forms. Even if there were an attempt to provide a complete 'normalization' of Judeo-Arabic morphology for all the parts of speech, a kind of artificial 'cataloging dialect,' neither catalogers nor patrons could be expected to study it in enough depth to make it useful, nor could it agree in all points with any actual dialect."
+
+    note "Note 3. Because Hebrew script as used for the Hebrew language does not contain characters for all the phonemes in the Judeo-Arabic dialect(s), Judeo-Arabic texts usually differentiate several Hebrew characters to show the different intended pronunciations. Thus 'plain' ג usually corresponds to Standard Arabic غ (ghayn), while 'differentiated' ג followed by geresh (ג׳) or with a superscript dot or other marking usually corresponds to Standard Arabic ج (jīm). The table does not represent all the possibilities for 'differentiation' in Judeo-Arabic texts but the common ones that are cited may stand for any of the others. This map encodes the differentiated forms the table cites: gimel geresh ḡ, dalet geresh ḏ, tet with superscript dot ẓ, tsadi geresh ṣ̄, and renders further differentiated forms (dot-marked gimel, dot-marked kaf) by their plain readings per the note's 'may stand for any of the others'."
+
+    note "Note 4. If the text to be romanized is vocalized with Tiberian Hebrew vowel points, represent the full text with vowels in the transcribed fields of the bibliographic record (MARC fields 245, 250, 260, 4XX). Add a 246 'variant title' field to such records with the consonantal romanization of the 245+a as provided in this table."
+
+    note "Note 5. When Hebrew words or phrases are embedded in a Judeo-Arabic context, romanize them in Judeo-Arabic style--that is, without short vowels and with Judeo-Arabic consonantal values (thus /Hgdh šl Fsḥ/ not /Hagadah shel Pesaḥ/). An independent string of Hebrew words, e.g., in the title proper of a work, may be romanized as Hebrew, but catalogers have the option to add a 246 giving the Judeo-Arabic consonantal transcription: 245 10 Sefer Ṿa-tagid li-vene Yiśraʼel; 246 3 Sfr W-tgyd l-bny Yśrʼl."
+
+    note "Note 6. For romanizing Hebrew text with vowels, including abbreviated honorifics or religious formulae, use the guide to ALA/LC Hebrew romanization prepared by Paul Maher in Hebraica Cataloging (Washington, D.C.: Cataloging Distribution Service, Library of Congress, 1987); online edition, slightly revised, http://www-sul.stanford.edu/hebraicafunnel/Hebraica_Cataloging_Manual/Hebraica%20Cat%20Manual%20Feb%202006%20Draft.pdf. Examples of honorifics: w-hwwʼ sefer Eliyahu ha-Navi, zal (והווא ספר אליהו הנביא ז\"ל); he-ḥakham k. mo. ha-r. R. Yehudah Śitrug, y. ts. ṿ. (החכם כמהר\"ר יהודה שתרוג, יצ\"ו)."
+
+    note "Note 7. In cases where it is possible, that is when the Judeo-Arabic consonants of the text can be matched with a Standard Arabic interpretation, a 246 'variant title' field in Standard Arabic may be provided for additional access. Narrative texts in particular may have standard Arabic titles and may indeed be direct adaptations of standard Arabic originals."
+
+    note "Note 8. Name authority work presents a problem when specifically Judeo-Arabic names are involved--e.g., the forename /Mqyqṣ/. A group such as the Association of Jewish libraries may choose to keep an online list of found romanizations and code such headings (romanized as seems reasonable) 'provisional' until they can be added to the list of authorized forms. Robert Attal's 'ha-Sifrut ha-ʻArvit-ha-Yehudit be-Tunisyah : meʼah shenot yetsirah (1861-1961) : tsiyunim bibliyografiyim' (Yerushalayim: Mekhon Ben-Tsevi le-ḥeḳer ḳehilot Yiśraʼel ba-Mizraḥ, 2007) provides a name index to Tunisian authors that includes French forms as they appear on added title pages. This may serve as a tool to establish forms for authors such as: בשירי, חיים = Bsiri, Haïm, not Bashiri, Hayim."
+
+    note "Note 9. Establish Hebrew or Standard Arabic forenames and surnames according to the rules in AACR2/RDA and the LCRIs/LCPSs for those languages; provide references in systematic ALA/LC Judeo-Arabic romanization. (Numbered examples in notes 10-12 are from Robert Attal's ha-Sifrut ha-ʻArvit-ha-Yehudit be-Tunisyah: meʼah shenot yetsirah (1861-1961): tsiyunim bibliyografiyim, Yerushalayim: Mekhon Ben-Tsevi le-ḥeḳer ḳehilot Yiśraʼel ba-Mizraḥ, 2007.)"
+
+    note "Note 10. As in the ALA/LC romanization tables for (Standard) Arabic and Hebrew, follow all conjunctions and prepositions prefixed to other words with a hyphen in romanization: w-ʼbn (ואבן); qṣt Ywsf h-ṣdyq (קצת יוסף הצדיק); b-byʼn (בביאן), cf. Standard Arabic /bi-bayān/. The hyphenation is syntactic (it requires identifying the prefixed conjunction, preposition, or article); this map renders the consonants and leaves the hyphen to the writer."
+
+    note "Note 11. The filing indicator in a 245 field beginning with the definite article /ʼl-/ is set to 2 (the alif diacritic is not counted): ʼl-ṭywr (אלטיור)."
+
+    note "Note 12. Doubled consonants (marked in Standard Arabic with the diacritical mark shaddah) are represented as doubled in Judeo-Arabic romanization only if the letter is printed twice in the source: ʼl-gddʼr ʼl-kwwʼn (אלגדדאר אלכׄוואן). BUT: ḥkʼyt Mḥmd (חכאית מחמד), cf. Standard Arabic /ḥikāyat Muḥammad/."
+
+    note "This map leaves case untouched: the source's proper-noun capitals (Ysrʼyl, Yśrʼyl, Mḥmd) are lexical."
+  }
+}
+
+tests {
+  # Alphabet rows
+   "א" ->  "ʼ"
+   "ב" ->  "b"
+   "בּ" ->  "b"
+   "ג" ->  "g"
+   "גׄ" ->  "g"  # gimel with superscript dot (note 3 fallback)
+   "ג׳" ->  "ḡ"
+   "ד" ->  "d"
+   "ד׳" ->  "ḏ"
+   "ה" ->  "h"
+   "ה̈" ->  "ḧ"
+   "ו" ->  "w"
+   "וו" ->  "ww"
+   "ז" ->  "z"
+   "ח" ->  "ḥ"
+   "ט" ->  "ṭ"
+   "ט̇" ->  "ẓ"
+   "י" ->  "y"
+   "יי" ->  "yy"
+   "כ" ->  "k"
+   "ך" ->  "k"
+   "כּ" ->  "k"
+   "ךּ" ->  "k"
+   "כׄ" ->  "k"  # dot-marked kaf, note 12 example
+   "ל" ->  "l"
+   "מ" ->  "m"
+   "ם" ->  "m"
+   "נ" ->  "n"
+   "ן" ->  "n"
+   "ס" ->  "s"
+   "ע" ->  "‘"
+   "פ" ->  "f"
+   "ף" ->  "f"
+   "פ׳" ->  "f"
+   "ף׳" ->  "f"
+   "צ" ->  "ṣ"
+   "צ׳" ->  "ṣ̄"
+   "ץ׳" ->  "ṣ̄"
+   "ק" ->  "q"
+   "ר" ->  "r"
+   "ש" ->  "š"
+   "שׁ" ->  "š"
+   "שׂ" ->  "ś"
+   "ת" ->  "t"
+   "תּ" ->  "t"
+   "ﭏ" ->  "ʼl"
+  # Alphabet examples
+   "אל" ->  "ʼl"
+   "אבן" ->  "ʼbn"
+   "בנין" ->  "bnyn"
+   "ארבע" ->  "ʼrb‘"
+   "גרק" ->  "grq"
+   "ג׳ינא" ->  "ḡynʼ"
+   "דם" ->  "dm"
+   "דכרת" ->  "dkrt"
+   "ד׳הב" ->  "ḏhb"
+   "הום" ->  "hwm"
+   "מדינה̈" ->  "mdynḧ"
+   "ואחד" ->  "wʼḥd"
+   "ארואח" ->  "ʼrwʼḥ"
+   "כוואכב" ->  "kwwʼkb"
+   "נבווא" ->  "nbwwʼ"
+  # - source: לוורא, expected: l-wwrʼ (note 10 prefixed-preposition
+  #   hyphenation is syntactic; mechanical: lwwrʼ)
+   "זוג׳תו" ->  "zwḡtw"
+   "חייאת" ->  "ḥyyʼt"
+   "בחר" ->  "bḥr"
+   "טול" ->  "ṭwl"
+   "עטא" ->  "‘ṭʼ"
+   "ט̇הר" ->  "ẓhr"
+   "יד" ->  "yd"
+   "ביות" ->  "bywt"
+   "ידי" ->  "ydy"
+   "אייאם" ->  "ʼyyʼm"
+  # - source: לייג׳יב, expected: l-yyḡyb (note 10 hyphenation; mechanical: lyyḡyb)
+   "רג׳ליי" ->  "rḡlyy"
+   "כּאנת" ->  "kʼnt"
+   "ד׳אלךּ" ->  "ḏʼlk"
+   "כבז" ->  "kbz"
+   "לייאלי" ->  "lyyʼly"
+   "מן" ->  "mn"
+   "אסם" ->  "ʼsm"
+   "נפס" ->  "nfs"
+   "בין" ->  "byn"
+   "סמע" ->  "sm‘"
+  # - source: יסראיל, expected: Ysrʼyl (proper-noun capital)
+  # - source: עביד, expected: ‘byd
+   "עביד" ->  "‘byd"
+   "פי" ->  "fy"
+   "צנע" ->  "ṣn‘"
+   "ארץ׳" ->  "ʼrṣ̄"
+   "צ׳אלם" ->  "ṣ̄ʼlm"
+   "קאל" ->  "qʼl"
+   "מקדס" ->  "mqds"
+   "רבי" ->  "rby"
+   "שעב" ->  "š‘b"
+   "משרק" ->  "mšrq"
+  # - source: ישׂראל, expected: Yśrʼyl (proper-noun capital; 'only in
+  #   Hebrew loan words')
+   "סבתּ" ->  "sbt"
+   "תּקול" ->  "tqwl"
+  # - source: מתל, expected: mṯl (the etymological th reading of the
+  #   undifferentiated tav is lexical; mechanical: mtl)
+  # - source: ואבן, expected: w-ʼbn (note 10 hyphenation; mechanical: wʼbn)
+  # - source: קצת יוסף הצדיק, expected: qṣt Ywsf h-ṣdyq (note 10)
+  # - source: בביאן, expected: b-byʼn (note 10; mechanical: bbyʼn)
+  # - source: אלטיור, expected: ʼl-ṭywr (note 11 article hyphenation;
+  #   mechanical: ʼlṭywr)
+}
+
+stage main {
+  parallel {
+    # Ligature alef-lamed
+    sub "ﭏ" "ʼl"
+
+    # Geresh-differentiated letters (note 3)
+    sub "ג׳" "ḡ"
+    sub "ד׳" "ḏ"
+    sub "פ׳" "f"
+    sub "ף׳" "f"
+    sub "צ׳" "ṣ̄"
+    sub "ץ׳" "ṣ̄"
+
+    # Dot-differentiated letters (note 3; kaf per note 12)
+    sub "גׄ" "g"
+    sub "ט̇" "ẓ"
+    sub "ה̈" "ḧ"
+    sub "כׄ" "k"
+
+    # Presentation and composed forms
+    sub "בּ" "b"
+    sub "בּ" "b"
+    sub "כּ" "k"
+    sub "כּ" "k"
+    sub "ךּ" "k"
+    sub "ךּ" "k"
+    sub "תּ" "t"
+    sub "תּ" "t"
+    sub "שׁ" "š"
+    sub "שׁ" "š"
+    sub "שׂ" "ś"
+    sub "שׂ" "ś"
+
+    # Doubled vav and yod (one-to-one consonant representation, note 1)
+    sub "וו" "ww"
+    sub "יי" "yy"
+
+    # Letters
+    sub "א" "ʼ"
+    sub "ב" "b"
+    sub "ג" "g"
+    sub "ד" "d"
+    sub "ה" "h"
+    sub "ו" "w"
+    sub "ז" "z"
+    sub "ח" "ḥ"
+    sub "ט" "ṭ"
+    sub "י" "y"
+    sub "כ" "k"
+    sub "ך" "k"
+    sub "ל" "l"
+    sub "מ" "m"
+    sub "ם" "m"
+    sub "נ" "n"
+    sub "ן" "n"
+    sub "ס" "s"
+    sub "ע" "‘"
+    sub "פ" "f"
+    sub "ף" "f"
+    sub "צ" "ṣ"
+    sub "ק" "q"
+    sub "ר" "r"
+    sub "ש" "š"
+    sub "ת" "t"
+  }
+
+}
+
+}
