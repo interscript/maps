@@ -41,12 +41,27 @@ const files = [
   .filter((file) => file.endsWith(".isc"))
   .sort()
 
+// Parse every corpus file up front so ISC-WF-1 ruleset uses across a
+// dependency boundary (`use <alias>.<ruleset>`, spec docs/isc-wf-1.md
+// §3.3) can resolve at build time. Declared dependencies only.
+const parsedByCode = new Map()
+for (const file of files) {
+  const code = basename(file, ".isc")
+  parsedByCode.set(code, parseIsc(readFileSync(join(repoRoot, file), "utf8"), file))
+}
+const resolveDependency = (target) => parsedByCode.get(target)
+
 const systems = []
 for (const file of files) {
   const code = basename(file, ".isc")
-  const source = readFileSync(join(repoRoot, file), "utf8")
-  const doc = parseIsc(source, file)
-  const compiled = iscToCompiledMap(doc)
+  // ISC-WF-1: the converter expands ruleset uses at build time and emits
+  // a FLAT IR — expanded rules only, no ruleset/use nodes. The IR format
+  // (interscript.maps.ir.v1) gains exactly two additive fields: optional
+  // document-level `languages: string[]` and optional rule-level
+  // `when: string[]`. Maps using none of the WF-1 constructs compile to
+  // byte-identical JSON as before (additivity gate, spec §7).
+  const doc = parsedByCode.get(code)
+  const compiled = iscToCompiledMap(doc, { resolveDependency })
   writeFileSync(join(outputMaps, `${code}.json`), `${JSON.stringify(compiled)}\n`)
   systems.push(code)
 }
