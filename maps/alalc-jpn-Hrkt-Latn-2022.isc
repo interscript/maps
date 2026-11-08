@@ -1,0 +1,673 @@
+system "ALA-LC:jpn-Hrkt:Latn:2022" {
+
+metadata {
+  authority_id alalc
+  id 2022
+  language iso-639-2:jpn
+  source_script Hrkt
+  destination_script Latn
+  name "Japanese Romanization Table (2022)"
+  url https://www.loc.gov/catdir/cpso/romanization/japanese.pdf
+  creation_date 2022
+  adoption_date
+  description {    ALA-LC Japanese Romanization Table, 2022 version
+    (McCune-Reischauer). Encodes the Romanized/Kana Equivalent Charts
+    (chart A, Standard; chart B, Non-traditional Japanese for foreign
+    words) kana-by-kana, per section 2.1 ("words and parts of words
+    written only in hiragana or katakana should be romanized as they
+    appear") and section 2.4.2.1 ("Romanize kana-by-kana"), together
+    with the deterministic orthographic rules of the same document: the
+    lengthening-bar macron rule (2.5.1), the sokuon doubling rule
+    (chart A note ii), the n-apostrophe rule (5.2), the kana repetition
+    markers (4.4.1) and the punctuation and typographical equivalents
+    (4.2-4.3). Transcribed from the loc.gov document's complete text
+    layer. }
+
+  notes {
+    note "Kanji readings are the non-deterministic remainder of this
+    system (kanji entries were marked M for multiple readings in
+    earlier editions of this table): sections 2.2-2.4 direct the
+    cataloger to preferred readings from standard dictionaries,
+    well-established readings of proper names, and loan-word
+    conventions. This map covers the deterministic kana tables only."
+    note "Long vowels written without a lengthening bar are a
+    documented remainder: they merge into a macron only within a
+    morpheme (2.5.5), and the document itself attests identical kana
+    strings with different outputs (こうし as Kōshi in 孔子, merged, and
+    as koushi in 子牛, unmerged). This map therefore romanizes
+    kana-by-kana (こう -> ou), which is the document's stated primary
+    mode for kana (2.4.2.1; e.g. スタア sutaa, ジイサン jiisan, びいどろ
+    biidoro, ジウム jiumu). The lengthening bar ー is deterministic
+    (2.5.1: vowels written with a lengthening bar are romanized with a
+    macron) and is encoded; long i is doubled ii except after the bar
+    (2.5.4: ジイサン jiisan, ビードロ bīdoro)."
+    note "Particle readings are a documented remainder: は and へ used
+    as grammatical particles romanize wa and e (chart A note i; section
+    2.3.1). Reading the particle requires parsing, so this map gives
+    the chart values ha and he."
+    note "Capitalization (section 3) and word division (section 6) are
+    cataloging-level rules operating above the character mapping and
+    are not encoded; this map outputs lowercase romanization with no
+    word division."
+    note "Chart A 'Other Romanization Styles' footnote markers, shown
+    for reference only and not encoded: 1 shi (si in Kunrei, Nippon);
+    2 chi, tsu (ti, tu in Kunrei, Nippon); 3 fu (hu in Kunrei, Nippon);
+    4 を/ヲ 'Always o regardless of usage'; 5 ん/ン 'Always n (Do not
+    change to m as in Hepburn)'; 6 ji (zi in Kunrei, Nippon); 7 ji, zu
+    (zi, zu in Kunrei; di, du in Nippon); 8 sha, shu, sho (sya, syu,
+    syo in Kunrei, Nippon); 9 cha, chu, cho (tya, tyu, tyo in Kunrei,
+    Nippon); 10 ja, ju, jo (zya, zyu, zyo in Kunrei, Nippon); 11 ja,
+    ju, jo (zya, zyu, zyo in Kunrei; dya, dyu, dyo in Nippon). The
+    ALA-LC forms are the ones encoded."
+    note "Chart A also maps the C + small-い cells to a macron i as
+    printed (きぃ/キィ ki with macron; likewise ni, hi, mi, ri, gi, bi,
+    pi rows), and the ぁ/ぉ small-kana cells of the ki, hi, bi, pi rows
+    (きぁ kya, ひぉ hyo, びぉ byo, ぴぉ pyo). Chart B note iii directs
+    that large character-small character sequences not found in the
+    tables be romanized as if the added small characters were regular
+    characters (e.g. アィ ai, スェ sue, ヴィァ via); this map realizes
+    the rule by folding the standalone small vowels ぁぃぅぇぉ ァィゥェォ
+    to their regular equivalents."
+    note "Recorded but not encoded: the middle dot (4.1: comma plus
+    space or only a space, depending on clarity), the kanji iteration
+    mark 々 of the 4.4.1 examples (chōchō, hibi, nennen - kanji-level
+    repetition), and the geta placeholder (4.4.2, cataloger supplies
+    the reading in brackets). Section 2.3.2 (historical kana usage) is
+    covered by the kana-by-kana mode: direct kana-by-kana reading gives
+    the suggested variant forms (てふてふ tefutefu)."
+    note "The document contradicts itself on スェ: chart B prints the
+    row すぇ/スェ -> swe, while chart B note iii's worked example
+    prints スェ | sue. The chart row is operative here (swe); the note
+    iii examples アィ -> ai and ヴィァ -> via are consistent and encoded
+    through the small-kana fold."
+  }
+}
+
+tests {
+  # Chart A cells (the table itself; distinctive rows).
+   "きゃ" ->  "kya"
+   "きぁ" ->  "kya"
+   "きぃ" ->  "kī"
+   "キィ" ->  "kī"
+   "しゃ" ->  "sha"
+   "しぇ" ->  "she"
+   "ちゃ" ->  "cha"
+   "ちぇ" ->  "che"
+   "にぃ" ->  "nī"
+   "にぇ" ->  "nye"
+   "ひぇ" ->  "hye"
+   "ひぉ" ->  "hyo"
+   "みぃ" ->  "mī"
+   "りぃ" ->  "rī"
+   "ぎぃ" ->  "gī"
+   "ぢゃ" ->  "ja"
+   "ぢゅ" ->  "ju"
+   "ぢぇ" ->  "je"
+   "びぃ" ->  "bī"
+   "びぉ" ->  "byo"
+   "ぴぃ" ->  "pī"
+   "ぴょ" ->  "pyo"
+   "ぴぉ" ->  "pyo"
+   "ゐ" ->  "i"
+   "ゑ" ->  "e"
+   "ヰ" ->  "i"
+   "ヱ" ->  "e"
+   "を" ->  "o"
+   "ヲ" ->  "o"
+   "ぢ" ->  "ji"
+   "づ" ->  "zu"
+   "ヂ" ->  "ji"
+   "ヅ" ->  "zu"
+   "ふ" ->  "fu"
+   "し" ->  "shi"
+   "ち" ->  "chi"
+   "つ" ->  "tsu"
+   "じ" ->  "ji"
+   "ん" ->  "n"
+   "ン" ->  "n"
+   "ア" ->  "a"
+   "シ" ->  "shi"
+  # Chart B cells.
+   "いぇ" ->  "ye"
+   "うぁ" ->  "wa"
+   "うぃ" ->  "wi"
+   "うぇ" ->  "we"
+   "うぉ" ->  "wo"
+   "くぁ" ->  "kwa"
+   "くぃ" ->  "kwi"
+   "くぇ" ->  "kwe"
+   "くぉ" ->  "kwo"
+   "すぃ" ->  "si"
+   "すぇ" ->  "swe"
+   "ぐぁ" ->  "gwa"
+   "ぐぃ" ->  "gwi"
+   "ぐぇ" ->  "gwe"
+   "ぐぉ" ->  "gwo"
+   "ずぃ" ->  "zi"
+   "つぁ" ->  "tsa"
+   "つぃ" ->  "tsi"
+   "つぇ" ->  "tse"
+   "つぉ" ->  "tso"
+   "てぃ" ->  "ti"
+   "とぅ" ->  "tu"
+   "てゅ" ->  "tyu"
+   "ふぁ" ->  "fa"
+   "ふぃ" ->  "fi"
+   "ふゅ" ->  "fyu"
+   "ふぇ" ->  "fe"
+   "ふぉ" ->  "fo"
+   "ふぃぇ" ->  "fye"
+   "ふょ" ->  "fyo"
+   "ヴァ" ->  "va"
+   "ヴィ" ->  "vi"
+   "ヴ" ->  "vu"
+   "ヴェ" ->  "ve"
+   "ヴォ" ->  "vo"
+   "ヴュ" ->  "vyu"
+   "でぃ" ->  "di"
+   "どぅ" ->  "du"
+   "でゅ" ->  "dyu"
+  # Chart B note iii examples (as printed; the スェ example contradicts
+  # the chart B row swe - see notes).
+   "アィ" ->  "ai"
+   "ヴィァ" ->  "via"
+  # Document examples, 2.4.2.1 (kana-by-kana primary forms).
+   "コミユニテイ" ->  "komiyunitei"
+   "スタア" ->  "sutaa"
+   "テレビジオン" ->  "terebijion"
+   "シンポジウム" ->  "shinpojiumu"
+   "シンポジューム" ->  "shinpojūmu"
+  # 2.5.1 lengthening bar -> macron.
+   "コンピュータ" ->  "konpyūta"
+   "ウィーク" ->  "wīku"
+   "ビードロ" ->  "bīdoro"
+   "そーっと" ->  "sōtto"
+  # 2.5.4 long i doubled; after the bar, the macron i.
+   "ジイサン" ->  "jiisan"
+   "びいどろ" ->  "biidoro"
+   "ものいい" ->  "monoii"
+  # 2.5.5.2.1 morphemic final u verbs (unmerged).
+   "ぬう" ->  "nuu"
+   "とう" ->  "tou"
+   "おもう" ->  "omou"
+  # 2.5.5.1 morpheme-boundary examples (unmerged; the 本居 example is
+  # kanji-level - Moto+ori - and the contracted kana もとい reads
+  # motoi kana-by-kana, so only the kana-expressible cases are tested).
+   "こうし" ->  "koushi"
+   "ながあめ" ->  "nagaame"
+   "かいしゃあん" ->  "kaishaan"
+   "くされえん" ->  "kusareen"
+  # 5.2 n-apostrophe examples.
+   "しんえつ" ->  "shin'etsu"
+   "ほんやく" ->  "hon'yaku"
+   "しんあいなる" ->  "shin'ainaru"
+   "さんおくえん" ->  "san'okuen"
+   "しんうち" ->  "shin'uchi"
+  # Chart A note ii sokuon examples.
+   "あっぱく" ->  "appaku"
+   "がっかい" ->  "gakkai"
+   "とっしん" ->  "tosshin"
+   "みっちゃく" ->  "mitchaku"
+}
+
+stage main {
+
+  # RULES
+  # 4.4.1: the repetition markers ゝ and ゞ indicate repetition of the
+  # previous syllable; the kana is doubled so the charts romanize it
+  # twice.
+  sub {
+    from capture(any("あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわゐゑをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽアイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヰヱヲンガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポ")) + any("ゝゞ")
+    to ref( 1 ) + ref( 1 )
+  }
+
+  # 5.2: transcribe the apostrophe between syllables when the first
+  # syllable ends with n and the following syllable begins with a
+  # vowel (a, i, u, e, o) or y.
+  sub {
+    from capture(any("んン"))
+    to ref( 1 ) + "'"
+    after any("あいうえおやゆよゐゑアイウエオヤユヨヰヱ")
+  }
+
+  # CHARACTERS
+  parallel {
+
+    # Chart A - Standard Chart
+
+    # Hiragana gojūon
+    sub "あ" "a"
+    sub "い" "i"
+    sub "う" "u"
+    sub "え" "e"
+    sub "お" "o"
+    sub "か" "ka"
+    sub "き" "ki"
+    sub "く" "ku"
+    sub "け" "ke"
+    sub "こ" "ko"
+    sub "さ" "sa"
+    sub "し" "shi"  # footnote 1: si (Kunrei, Nippon)
+    sub "す" "su"
+    sub "せ" "se"
+    sub "そ" "so"
+    sub "た" "ta"
+    sub "ち" "chi"  # footnote 2: ti, tu (Kunrei, Nippon)
+    sub "つ" "tsu"  # footnote 2
+    sub "て" "te"
+    sub "と" "to"
+    sub "な" "na"
+    sub "に" "ni"
+    sub "ぬ" "nu"
+    sub "ね" "ne"
+    sub "の" "no"
+    sub "は" "ha"  # chart note i: wa as particle (not encoded, see notes)
+    sub "ひ" "hi"
+    sub "ふ" "fu"  # footnote 3: hu (Kunrei, Nippon)
+    sub "へ" "he"  # chart note i: e as particle (not encoded, see notes)
+    sub "ほ" "ho"
+    sub "ま" "ma"
+    sub "み" "mi"
+    sub "む" "mu"
+    sub "め" "me"
+    sub "も" "mo"
+    sub "や" "ya"
+    sub "ゆ" "yu"
+    sub "よ" "yo"
+    sub "ら" "ra"
+    sub "り" "ri"
+    sub "る" "ru"
+    sub "れ" "re"
+    sub "ろ" "ro"
+    sub "わ" "wa"
+    sub "ゐ" "i"
+    sub "ゑ" "e"
+    sub "を" "o"  # footnote 4: always o regardless of usage
+    sub "ん" "n"  # footnote 5: always n, never m
+
+    # Hiragana dakuten/handakuten
+    sub "が" "ga"
+    sub "ぎ" "gi"
+    sub "ぐ" "gu"
+    sub "げ" "ge"
+    sub "ご" "go"
+    sub "ざ" "za"
+    sub "じ" "ji"  # footnote 6: zi (Kunrei, Nippon)
+    sub "ず" "zu"
+    sub "ぜ" "ze"
+    sub "ぞ" "zo"
+    sub "だ" "da"
+    sub "ぢ" "ji"  # footnote 7: zi, zu (Kunrei); di, du (Nippon)
+    sub "づ" "zu"  # footnote 7
+    sub "で" "de"
+    sub "ど" "do"
+    sub "ば" "ba"
+    sub "び" "bi"
+    sub "ぶ" "bu"
+    sub "べ" "be"
+    sub "ぼ" "bo"
+    sub "ぱ" "pa"
+    sub "ぴ" "pi"
+    sub "ぷ" "pu"
+    sub "ぺ" "pe"
+    sub "ぽ" "po"
+
+    # Katakana gojūon
+    sub "ア" "a"
+    sub "イ" "i"
+    sub "ウ" "u"
+    sub "エ" "e"
+    sub "オ" "o"
+    sub "カ" "ka"
+    sub "キ" "ki"
+    sub "ク" "ku"
+    sub "ケ" "ke"
+    sub "コ" "ko"
+    sub "サ" "sa"
+    sub "シ" "shi"  # footnote 1
+    sub "ス" "su"
+    sub "セ" "se"
+    sub "ソ" "so"
+    sub "タ" "ta"
+    sub "チ" "chi"  # footnote 2
+    sub "ツ" "tsu"  # footnote 2
+    sub "テ" "te"
+    sub "ト" "to"
+    sub "ナ" "na"
+    sub "ニ" "ni"
+    sub "ヌ" "nu"
+    sub "ネ" "ne"
+    sub "ノ" "no"
+    sub "ハ" "ha"  # chart note i
+    sub "ヒ" "hi"
+    sub "フ" "fu"  # footnote 3
+    sub "ヘ" "he"  # chart note i
+    sub "ホ" "ho"
+    sub "マ" "ma"
+    sub "ミ" "mi"
+    sub "ム" "mu"
+    sub "メ" "me"
+    sub "モ" "mo"
+    sub "ヤ" "ya"
+    sub "ユ" "yu"
+    sub "ヨ" "yo"
+    sub "ラ" "ra"
+    sub "リ" "ri"
+    sub "ル" "ru"
+    sub "レ" "re"
+    sub "ロ" "ro"
+    sub "ワ" "wa"
+    sub "ヰ" "i"
+    sub "ヱ" "e"
+    sub "ヲ" "o"  # footnote 4
+    sub "ン" "n"  # footnote 5
+
+    # Katakana dakuten/handakuten
+    sub "ガ" "ga"
+    sub "ギ" "gi"
+    sub "グ" "gu"
+    sub "ゲ" "ge"
+    sub "ゴ" "go"
+    sub "ザ" "za"
+    sub "ジ" "ji"  # footnote 6
+    sub "ズ" "zu"
+    sub "ゼ" "ze"
+    sub "ゾ" "zo"
+    sub "ダ" "da"
+    sub "ヂ" "ji"  # footnote 7
+    sub "ヅ" "zu"  # footnote 7
+    sub "デ" "de"
+    sub "ド" "do"
+    sub "バ" "ba"
+    sub "ビ" "bi"
+    sub "ブ" "bu"
+    sub "ベ" "be"
+    sub "ボ" "bo"
+    sub "パ" "pa"
+    sub "ピ" "pi"
+    sub "プ" "pu"
+    sub "ペ" "pe"
+    sub "ポ" "po"
+
+    # Chart A yōon (contracted sounds)
+    sub "きゃ" "kya"
+    sub "キャ" "kya"
+    sub "きぁ" "kya"
+    sub "キァ" "kya"
+    sub "きぃ" "kī"
+    sub "キィ" "kī"
+    sub "きゅ" "kyu"
+    sub "キュ" "kyu"
+    sub "きぇ" "kye"
+    sub "キェ" "kye"
+    sub "きょ" "kyo"
+    sub "キョ" "kyo"
+    sub "しゃ" "sha"  # footnote 8: sya, syu, syo (Kunrei, Nippon)
+    sub "シャ" "sha"  # footnote 8
+    sub "しゅ" "shu"  # footnote 8
+    sub "シュ" "shu"  # footnote 8
+    sub "しぇ" "she"
+    sub "シェ" "she"
+    sub "しょ" "sho"  # footnote 8
+    sub "ショ" "sho"  # footnote 8
+    sub "ちゃ" "cha"  # footnote 9: tya, tyu, tyo (Kunrei, Nippon)
+    sub "チャ" "cha"  # footnote 9
+    sub "ちゅ" "chu"  # footnote 9
+    sub "チュ" "chu"  # footnote 9
+    sub "ちぇ" "che"
+    sub "チェ" "che"
+    sub "ちょ" "cho"  # footnote 9
+    sub "チョ" "cho"  # footnote 9
+    sub "にゃ" "nya"
+    sub "ニャ" "nya"
+    sub "にぃ" "nī"
+    sub "ニィ" "nī"
+    sub "にゅ" "nyu"
+    sub "ニュ" "nyu"
+    sub "にぇ" "nye"
+    sub "ニェ" "nye"
+    sub "にょ" "nyo"
+    sub "ニョ" "nyo"
+    sub "ひゃ" "hya"
+    sub "ヒャ" "hya"
+    sub "ひぃ" "hī"
+    sub "ヒィ" "hī"
+    sub "ひゅ" "hyu"
+    sub "ヒュ" "hyu"
+    sub "ひぇ" "hye"
+    sub "ヒェ" "hye"
+    sub "ひょ" "hyo"
+    sub "ヒョ" "hyo"
+    sub "ひぉ" "hyo"
+    sub "ヒォ" "hyo"
+    sub "みゃ" "mya"
+    sub "ミャ" "mya"
+    sub "みぃ" "mī"
+    sub "ミィ" "mī"
+    sub "みゅ" "myu"
+    sub "ミュ" "myu"
+    sub "みぇ" "mye"
+    sub "ミェ" "mye"
+    sub "みょ" "myo"
+    sub "ミョ" "myo"
+    sub "りゃ" "rya"
+    sub "リャ" "rya"
+    sub "りぃ" "rī"
+    sub "リィ" "rī"
+    sub "りゅ" "ryu"
+    sub "リュ" "ryu"
+    sub "りぇ" "rye"
+    sub "リェ" "rye"
+    sub "りょ" "ryo"
+    sub "リョ" "ryo"
+    sub "ぎゃ" "gya"
+    sub "ギャ" "gya"
+    sub "ぎぃ" "gī"
+    sub "ギィ" "gī"
+    sub "ぎゅ" "gyu"
+    sub "ギュ" "gyu"
+    sub "ぎぇ" "gye"
+    sub "ギェ" "gye"
+    sub "ぎょ" "gyo"
+    sub "ギョ" "gyo"
+    sub "じゃ" "ja"  # footnote 10: zya, zyu, zyo (Kunrei, Nippon)
+    sub "ジャ" "ja"  # footnote 10
+    sub "じゅ" "ju"  # footnote 10
+    sub "ジュ" "ju"  # footnote 10
+    sub "じぇ" "je"
+    sub "ジェ" "je"
+    sub "じょ" "jo"  # footnote 10
+    sub "ジョ" "jo"  # footnote 10
+    sub "ぢゃ" "ja"  # footnote 11: zya, zyu, zyo (Kunrei); dya, dyu, dyo (Nippon)
+    sub "ヂャ" "ja"  # footnote 11
+    sub "ぢゅ" "ju"  # footnote 11
+    sub "ヂュ" "ju"  # footnote 11
+    sub "ぢぇ" "je"
+    sub "ヂェ" "je"
+    sub "ぢょ" "jo"  # footnote 11
+    sub "ヂョ" "jo"  # footnote 11
+    sub "びゃ" "bya"
+    sub "ビャ" "bya"
+    sub "びぃ" "bī"
+    sub "ビィ" "bī"
+    sub "びゅ" "byu"
+    sub "ビュ" "byu"
+    sub "びぇ" "bye"
+    sub "ビェ" "bye"
+    sub "びょ" "byo"
+    sub "ビョ" "byo"
+    sub "びぉ" "byo"
+    sub "ビォ" "byo"
+    sub "ぴゃ" "pya"
+    sub "ピャ" "pya"
+    sub "ぴぃ" "pī"
+    sub "ピィ" "pī"
+    sub "ぴゅ" "pyu"
+    sub "ピュ" "pyu"
+    sub "ぴぇ" "pye"
+    sub "ピェ" "pye"
+    sub "ぴょ" "pyo"
+    sub "ピョ" "pyo"
+    sub "ぴぉ" "pyo"
+    sub "ピォ" "pyo"
+
+    # Chart B - Non-traditional Japanese Chart (Foreign Words, etc.)
+    sub "いぇ" "ye"
+    sub "イェ" "ye"
+    sub "うぁ" "wa"
+    sub "ウァ" "wa"
+    sub "うぃ" "wi"
+    sub "ウィ" "wi"
+    sub "うぇ" "we"
+    sub "ウェ" "we"
+    sub "うぉ" "wo"
+    sub "ウォ" "wo"
+    sub "くぁ" "kwa"
+    sub "クァ" "kwa"
+    sub "くぃ" "kwi"
+    sub "クィ" "kwi"
+    sub "くぇ" "kwe"
+    sub "クェ" "kwe"
+    sub "くぉ" "kwo"
+    sub "クォ" "kwo"
+    sub "すぃ" "si"
+    sub "スィ" "si"
+    sub "すぇ" "swe"
+    sub "スェ" "swe"
+    sub "ぐぁ" "gwa"
+    sub "グァ" "gwa"
+    sub "ぐぃ" "gwi"
+    sub "グィ" "gwi"
+    sub "ぐぇ" "gwe"
+    sub "グェ" "gwe"
+    sub "ぐぉ" "gwo"
+    sub "グォ" "gwo"
+    sub "ずぃ" "zi"
+    sub "ズィ" "zi"
+    sub "つぁ" "tsa"
+    sub "ツァ" "tsa"
+    sub "つぃ" "tsi"
+    sub "ツィ" "tsi"
+    sub "つぇ" "tse"
+    sub "ツェ" "tse"
+    sub "つぉ" "tso"
+    sub "ツォ" "tso"
+    sub "てぃ" "ti"
+    sub "ティ" "ti"
+    sub "とぅ" "tu"
+    sub "トゥ" "tu"
+    sub "てゅ" "tyu"
+    sub "テュ" "tyu"
+    sub "ふぁ" "fa"
+    sub "ファ" "fa"
+    sub "ふぃ" "fi"
+    sub "フィ" "fi"
+    sub "ふゅ" "fyu"
+    sub "フュ" "fyu"
+    sub "ふぇ" "fe"
+    sub "フェ" "fe"
+    sub "ふぉ" "fo"
+    sub "フォ" "fo"
+    sub "ふぃぇ" "fye"
+    sub "フィェ" "fye"
+    sub "ふょ" "fyo"
+    sub "フョ" "fyo"
+    sub "ヴァ" "va"
+    sub "ヴィ" "vi"
+    sub "ヴ" "vu"
+    sub "ヴェ" "ve"
+    sub "ヴォ" "vo"
+    sub "ヴュ" "vyu"
+    sub "でぃ" "di"
+    sub "ディ" "di"
+    sub "どぅ" "du"
+    sub "ドゥ" "du"
+    sub "でゅ" "dyu"
+    sub "デュ" "dyu"
+
+    # Chart B note iii: sequences not found in the tables romanize as
+    # if the added small characters were regular characters
+    # (e.g. アィ ai, スェ sue, ヴィァ via).
+    sub "ぁ" "a"
+    sub "ぃ" "i"
+    sub "ぅ" "u"
+    sub "ぇ" "e"
+    sub "ぉ" "o"
+    sub "ァ" "a"
+    sub "ィ" "i"
+    sub "ゥ" "u"
+    sub "ェ" "e"
+    sub "ォ" "o"
+
+    # 4.2 punctuation and typographical marks with roman equivalents
+    sub "、" ","
+    sub "。" "."
+    sub "？" "?"
+    sub "！" "!"
+    sub "〜" "-"  # tilde: hyphen between dates, from ... to ...
+    # 4.2 quotation mark types 1 and 2
+    sub "「" "\""
+    sub "」" "\""
+    sub "『" "\""
+    sub "』" "\""
+    # 4.3 brackets and parentheses
+    sub "〈" "<"
+    sub "〉" ">"
+    sub "《" "<"  # double angle brackets
+    sub "》" ">"
+    sub "〔" "["
+    sub "〕" "]"
+    sub "〘" "["
+    sub "〙" "]"
+    sub "〚" "["
+    sub "〛" "]"
+    sub "（" "("
+    sub "）" ")"
+  }
+
+  # POSTRULES
+  # Chart A note ii: double consonants (促音) are represented by a
+  # doubling of the corresponding consonant (e.g. 圧迫 appaku, 学会
+  # gakkai, 突進 tosshin); if a double consonant occurs with ch-, add
+  # t instead of doubling c (e.g. 密着 mitchaku, 熱中 netchū, 出張
+  # shutchō).
+  sub {
+    from any("っッ") + capture(any("BbDdFfGgHhJjKkLlMmNnPpQqRrSsTtVvWwXxYyZz"))
+    to ref( 1 ) + ref( 1 )
+  }
+  sub {
+    from any("っッ") + capture(any("Cc"))
+    to "t" + ref( 1 )
+  }
+  # A sokuon not followed by a consonant has no romanization in the
+  # document; it is realized as an abrupt stop and is dropped here.
+  sub {
+    from any("っッ")
+    to ""
+  }
+
+  # 2.5.1: vowels written with a lengthening bar are romanized with a
+  # macron (e.g. コンピュータ konpyūta, ニューヨーク Nyū Yōku, そーっと
+  # sōtto); 2.5.4: long i after the bar is the macron ī.
+  sub {
+    from "a" + "ー"
+    to "ā"
+  }
+  sub {
+    from "i" + "ー"
+    to "ī"
+  }
+  sub {
+    from "u" + "ー"
+    to "ū"
+  }
+  sub {
+    from "e" + "ー"
+    to "ē"
+  }
+  sub {
+    from "o" + "ー"
+    to "ō"
+  }
+}
+}
