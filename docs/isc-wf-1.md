@@ -47,10 +47,13 @@ sub_rule      = ... ( "when" ident ( "," ident )* )?
   alongside `metadata`.
 - `when` attaches to a `sub` rule only (not to blocks).
 - New keywords `use`, `override`, `languages`, `when` join the
-  keyword table; maps using them as identifiers retain pass-through
-  behavior only via the existing quoted-string forms (no corpus map
-  uses these four words as bare identifiers; verified against the
-  404-map corpus at adoption time).
+  keyword table, as does `ruleset` (the block head; the ruby/ts/py
+  grammars keyword it, the rs grammar keeps it out of its table with
+  equivalent corpus behavior). Maps using them as identifiers retain
+  pass-through behavior only via the existing quoted-string forms (no
+  corpus map uses any of these five words as bare identifiers;
+  verified against the corpus at adoption time, re-verified including
+  the libraries at the pilot landing).
 
 ## 3. W1 — named rulesets
 
