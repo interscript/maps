@@ -1,0 +1,159 @@
+system "ALA-LC:mnc-Mong:Latn:2012" {
+
+metadata {
+  authority_id alalc
+  id 2012
+  language iso-639-2:mnc
+  source_script Mong
+  destination_script Latn
+  name "Manchu Romanization Table (2012)"
+  url https://www.loc.gov/catdir/cpso/romanization/manchu.pdf
+  creation_date 2012
+  adoption_date
+  description {    ALA-LC Manchu Romanization Table, 2012 version (no earlier
+    versions). The printed table gives each letter in its isolated,
+    initial, medial and final forms; Manchu is a cursive script and all
+    positional forms of a letter share one Unicode codepoint, so each
+    row encodes one rule. The before-vowel variant letters of the
+    printed table are distinct letters of the script and carry distinct
+    codepoints: k (1) before a, o, and ū / k (2) before e, i, and u;
+    likewise g (1)/(2), h (1)/(2), t (1)/(2), d (1)/(2), and f (3)
+    before a and e only versus f. The letters and digraphs used in
+    foreign words (kʻ, gʻ, hʻ before a and o; ts, dz, ž, sy, cy, jy per
+    Chinese pinyin values) are shown in the table in isolated form.
+    The Unicode correspondence follows the standard Mongolian block
+    model: shared Mongolian letters, the Sibe letterforms that coincide
+    with the Manchu forms, and the five Manchu-specific codepoints
+    (Manchu I, KA, RA, FA, ZHA); the three foreign-letter forms kʻ gʻ
+    hʻ correspond to the Todo KA/GAA/HAA codepoints, and ts, dz, ž to
+    the Sibe TSA/ZA/ZHA codepoints.
+  }
+
+  notes {
+    note "Positional variant letters and their codepoints: k (1) ᡴ,
+    k (2) ᠺ, g (1) ᠭ, g (2) ᡤ, h (1) ᠬ, h (2) ᡥ, t (1) ᡨ, t (2) ᠲ,
+    d (1) ᡩ, d (2) ᠳ, f (3) ᠹ, f ᡶ. Vowels: a ᠠ, e ᡝ, i ᡳ, o ᠣ,
+    u ᡠ, ū ᡡ. The vowels e, u, ū and the consonants g (2), h (2),
+    p, š, t (1), d (1) use the codepoints of the Sibe letters whose
+    forms coincide with the Manchu letterforms (Unicode Mongolian
+    block, Manchu section)."
+    note "The foreign-word digraphs sy, cy, jy (Chinese pinyin si, chi,
+    zhi) are written with the s/c/j letter followed by the i letter.
+    cy (ᠴᡳ) and jy (ᠵᡳ) are encoded as digraph rules: the letters c
+    and j do not occur before i in native Manchu. sy (ᠰᡳ) is not
+    encoded as a digraph because the same sequence spells the native
+    word si (you); the pinyin value sy applies only to Chinese loan
+    syllables and cannot be distinguished at the character level."
+    note "The diphthongs listed in the table (ai, ei, ui, oi, ūi) are
+    sequences of the vowel letters and romanize automatically; ūi is
+    written with the vowel letters ū + i."
+    note "Case endings separated from the word are attached with a
+    hyphen (e.g. gurun-i, gisun-i); the hyphen is retained as written."
+    note "Old Manchu (tongki fuka akū hergen) is romanized as if it
+    had the added diacritics (tongki fuka sindaha hergen), i.e. as the
+    corresponding modern letter values."
+    note "Capitalization: all proper nouns (personal names, corporate
+    names, ethnonyms, geographical names, names of dynasties and
+    reigns, e.g. Abkai Wehiyehe) are capitalized; the first word of the
+    title of a book, periodical, or series is capitalized."
+    note "Sources cited by the table: Norman, J. A concise
+    Manchu-English lexicon (Seattle: University of Washington Press,
+    c1978); Li, G.R. Manchu: a textbook for reading documents
+    (Honolulu: University of Hawaiʻi Press, c2000), which follows the
+    Norman transcription system used by this table."
+  }
+}
+
+tests {
+  "ᠮᠠᠨᠵᡠ" -> "manju"
+  "ᡤᡳᠰᡠᠨ" -> "gisun"
+  "ᠮᠠᠨᠵᡠ ᡤᡳᠰᡠᠨ" -> "manju gisun"
+  "ᠠ" -> "a"
+  "ᡝ" -> "e"
+  "ᡳ" -> "i"
+  "ᠣ" -> "o"
+  "ᡠ" -> "u"
+  "ᡡ" -> "ū"
+  "ᠨ" -> "n"
+  "ᡴ" -> "k"
+  "ᠺ" -> "k"
+  "ᠭ" -> "g"
+  "ᡤ" -> "g"
+  "ᠬ" -> "h"
+  "ᡥ" -> "h"
+  "ᠪ" -> "b"
+  "ᡦ" -> "p"
+  "ᠰ" -> "s"
+  "ᡧ" -> "š"
+  "ᡨ" -> "t"
+  "ᠲ" -> "t"
+  "ᡩ" -> "d"
+  "ᠳ" -> "d"
+  "ᠯ" -> "l"
+  "ᠮ" -> "m"
+  "ᠴ" -> "c"
+  "ᠵ" -> "j"
+  "ᠶ" -> "y"
+  "ᡵ" -> "r"
+  "ᠹ" -> "f"
+  "ᡶ" -> "f"
+  "ᠸ" -> "w"
+  "ᠩ" -> "ng"
+  "ᡗ" -> "kʻ"
+  "ᡘ" -> "gʻ"
+  "ᡙ" -> "hʻ"
+  "ᡮ" -> "ts"
+  "ᡯ" -> "dz"
+  "ᡲ" -> "ž"
+  "ᠴᡳ" -> "cy"
+  "ᠵᡳ" -> "jy"
+  "ᠰᡳ" -> "si"
+}
+
+stage main {
+  parallel {
+    sub "ᠴᡳ" "cy"
+    sub "ᠵᡳ" "jy"
+  }
+
+  parallel {
+    sub "ᠠ" "a"
+    sub "ᡝ" "e"
+    sub "ᡳ" "i"
+    sub "ᠣ" "o"
+    sub "ᡠ" "u"
+    sub "ᡡ" "ū"
+    sub "ᠨ" "n"
+    sub "ᡴ" "k"
+    sub "ᠺ" "k"
+    sub "ᠭ" "g"
+    sub "ᡤ" "g"
+    sub "ᠬ" "h"
+    sub "ᡥ" "h"
+    sub "ᠪ" "b"
+    sub "ᡦ" "p"
+    sub "ᠰ" "s"
+    sub "ᡧ" "š"
+    sub "ᡨ" "t"
+    sub "ᠲ" "t"
+    sub "ᡩ" "d"
+    sub "ᠳ" "d"
+    sub "ᠯ" "l"
+    sub "ᠮ" "m"
+    sub "ᠴ" "c"
+    sub "ᠵ" "j"
+    sub "ᠶ" "y"
+    sub "ᡵ" "r"
+    sub "ᠹ" "f"
+    sub "ᡶ" "f"
+    sub "ᠸ" "w"
+    sub "ᠩ" "ng"
+    sub "ᡗ" "kʻ"
+    sub "ᡘ" "gʻ"
+    sub "ᡙ" "hʻ"
+    sub "ᡮ" "ts"
+    sub "ᡯ" "dz"
+    sub "ᡲ" "ž"
+  }
+}
+}

@@ -1,0 +1,114 @@
+system "ALA-LC:zgh-Tfng:Latn:2012" {
+
+metadata {
+  authority_id alalc
+  id 2012
+  language iso-639-2:zgh
+  source_script Tfng
+  destination_script Latn
+  name "Moroccan Tamazight Romanization Table (2012)"
+  url https://www.loc.gov/catdir/cpso/romanization/tamazight.pdf
+  creation_date 2012
+  adoption_date
+  description {    ALA-LC Moroccan Tamazight Romanization Table, approved by
+    CC:AAM 2012-01-22 (no version year printed on the document; the
+    approval date is from the PDF metadata). The table follows, with
+    minimal exceptions, the romanization method used by the Institut
+    Royal de la Culture Amazighe (IRCAM) for texts published in the
+    Central Atlas Tamazight and Standard Tamazight languages of
+    Morocco, using neo-Tifinagh script. Characters needed to support
+    the Tachelhit and Tarifit languages have also been included, so
+    the scope covers all living Moroccan Tamazight languages in
+    neo-Tifinagh. Forty-two letter rules plus the labialized digraphs
+    and the labialization mark (tamatart). The spirant letters romanize
+    with a macron below (ḇ ḡ ḏ ṯ, U+0331); the emphatic letters with a
+    dot below (ḍ ḥ ṛ ṣ ṭ ẓ); the Tachelhit emphatic d with both marks.
+  }
+
+  notes {
+    note "The document example romanizes ⴰⵖⵍⵢⴰⵙ as Aɣlyas, or as
+    Aglyas if applying LCRI 1.0E / LCPS 1.4 (Note 1: extended Latin
+    characters are used in the standard orthography; apply LCRI 1.0E /
+    LCPS 1.4 as needed). The initial capital in the example is proper-
+    noun capitalization, not a script property; the map yields the
+    mechanical aɣlyas."
+    note "Note 2: the Tifinagh modifier letter labialization mark
+    (tamatart, ⵯ) romanizes as the superscript degree sign (°); the
+    labialized digraphs ⴳⵯ and ⴽⵯ carry it as g° and k°."
+    note "ⴺ (YADDH) romanizes as d with dot below and macron below
+    (ḏ with underdot), per the printed table; the mark order in the
+    encoded output is dot below (U+0323) then macron below (U+0331)."
+  }
+}
+
+tests {
+  "ⴰⵖⵍⵢⴰⵙ" -> "aɣlyas"
+  "ⴲ" -> "ḇ"
+  "ⴴ" -> "g̱"
+  "ⴸ" -> "ḏ"
+  "ⴹ" -> "ḍ"
+  "ⴺ" -> "ḍ̱"
+  "ⵃ" -> "ḥ"
+  "ⵕ" -> "ṛ"
+  "ⵚ" -> "ṣ"
+  "ⵝ" -> "ṯ"
+  "ⵟ" -> "ṭ"
+  "ⵥ" -> "ẓ"
+  "ⴳⵯ" -> "g°"
+  "ⵯ" -> "°"
+}
+
+stage main {
+  parallel {
+    sub "ⴳⵯ" "g°"
+    sub "ⴽⵯ" "k°"
+  }
+
+  parallel {
+    sub "ⴰ" "a"
+    sub "ⴱ" "b"
+    sub "ⴲ" "ḇ"
+    sub "ⴳ" "g"
+    sub "ⴴ" "g̱"
+    sub "ⴵ" "ğ"
+    sub "ⴷ" "d"
+    sub "ⴸ" "ḏ"
+    sub "ⴹ" "ḍ"
+    sub "ⴺ" "ḍ̱"
+    sub "ⴻ" "e"
+    sub "ⴼ" "f"
+    sub "ⴽ" "k"
+    sub "ⴿ" "k"
+    sub "ⵀ" "h"
+    sub "ⵃ" "ḥ"
+    sub "ⵄ" "ɛ"
+    sub "ⵅ" "x"
+    sub "ⵇ" "q"
+    sub "ⵉ" "i"
+    sub "ⵊ" "j"
+    sub "ⵍ" "l"
+    sub "ⵎ" "m"
+    sub "ⵏ" "n"
+    sub "ⵓ" "u"
+    sub "ⵔ" "r"
+    sub "ⵕ" "ṛ"
+    sub "ⵖ" "ɣ"
+    sub "ⵙ" "s"
+    sub "ⵚ" "ṣ"
+    sub "ⵛ" "c"
+    sub "ⵜ" "t"
+    sub "ⵝ" "ṯ"
+    sub "ⵞ" "č"
+    sub "ⵟ" "ṭ"
+    sub "ⵠ" "v"
+    sub "ⵡ" "w"
+    sub "ⵢ" "y"
+    sub "ⵣ" "z"
+    sub "ⵥ" "ẓ"
+  }
+
+  parallel {
+    sub "ⵯ" "°"
+  }
+}
+}
