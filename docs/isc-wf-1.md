@@ -127,6 +127,10 @@ Let R = the ordered list of rules produced by expanding the ruleset
    added (row 3 covers them — they appear at the end).
 5. The whole expansion (R_kept + O) participates in the enclosing
    stage's single longest-match pass like any other rules.
+6. Placement of O: when the expansion ends with a parallel block, O's
+   rows join that block, so R_kept and O share one longest-match pass
+   (replacement acts on the source-script pass, §4.3). Otherwise O
+   appends after R_kept as stage-level rows.
 
 ### 4.3 Rationale notes (non-normative)
 
