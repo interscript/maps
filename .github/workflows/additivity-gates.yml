@@ -41,6 +41,16 @@ jobs:
         run: |
           rustup toolchain install stable --profile minimal
           rustup default stable
+      # The rs crate keeps parsanol as a dev path+version dual spec; the
+      # path is the maintainer's machine. Rewrite to the version
+      # requirement (mirrors interscript-rs publish.yml) so the crate
+      # resolves parsanol from crates.io in CI.
+      - name: Rewrite the parsanol path dep to its version requirement
+        working-directory: interscript-rs
+        run: |
+          sed -i.bak -E 's/\{ path = "[^"]*", version = /{ version = /' Cargo.toml
+          rm Cargo.toml.bak
+          grep -n 'parsanol = ' Cargo.toml
       - name: Golden additivity (rs)
         working-directory: interscript-rs
         run: cargo test --release --test golden_capture
@@ -95,7 +105,7 @@ jobs:
       - name: Golden additivity (ruby)
         working-directory: interscript-ruby
         run: |
-          ruby -Ilib tools/isc_wf1_golden_gate.rb \
+          bundle exec ruby -Ilib tools/isc_wf1_golden_gate.rb \
             --golden ../interscript-rs/tests/golden/isc-wf0.jsonl \
             --maps-root "${GITHUB_WORKSPACE}/maps"
 
