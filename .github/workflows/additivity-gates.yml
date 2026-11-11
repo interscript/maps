@@ -1,0 +1,126 @@
+name: additivity-gates
+
+# WO17 step 2 — the golden-capture additivity gate as maps-CI
+# infrastructure. On every PR (and every main push) each of the four
+# runtimes replays the RS-captured golden capture
+# (interscript-rs tests/golden/isc-wf0.jsonl, 12,337 rows / 428 maps)
+# byte-identically:
+#
+#   rs   tests/golden_capture.rs            (cargo)
+#   ts   test/golden-isc-wf0.test.ts        (vitest)
+#   ruby tools/isc_wf1_golden_gate.rb       (parsanol runtime)
+#   py   interscript-py tests/test_golden_capture.py
+#
+# Sibling layout (all gates resolve the golden + corpus relative to
+# this workspace): $GITHUB_WORKSPACE/{maps, interscript-rs,
+# interscript-ruby, interscript-ts}. A delta on a non-adopting map
+# blocks the merge exactly like any test failure.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rs-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: maps
+      - name: Checkout interscript-rs (golden capture + gate)
+        uses: actions/checkout@v7
+        with:
+          repository: interscript/interscript-rs
+          path: interscript-rs
+      - name: Install stable Rust
+        run: |
+          rustup toolchain install stable --profile minimal
+          rustup default stable
+      - name: Golden additivity (rs)
+        working-directory: interscript-rs
+        run: cargo test --release --test golden_capture
+
+  ts-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: maps
+      - name: Checkout interscript-rs (golden capture file)
+        uses: actions/checkout@v7
+        with:
+          repository: interscript/interscript-rs
+          path: interscript-rs
+      - name: Checkout interscript-ts (gate test)
+        uses: actions/checkout@v7
+        with:
+          repository: interscript/interscript-ts
+          path: interscript-ts
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+      - name: Install ts deps
+        working-directory: interscript-ts
+        run: npm ci --ignore-scripts
+      - name: Golden additivity (ts)
+        working-directory: interscript-ts
+        run: npx vitest run test/golden-isc-wf0.test.ts
+
+  ruby-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: maps
+      - name: Checkout interscript-ruby (reference runtime + gate tool)
+        uses: actions/checkout@v7
+        with:
+          repository: interscript/interscript-ruby
+          path: interscript-ruby
+      - name: Checkout interscript-rs (golden capture file)
+        uses: actions/checkout@v7
+        with:
+          repository: interscript/interscript-rs
+          path: interscript-rs
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+          bundler-cache: true
+          working-directory: interscript-ruby
+      - name: Golden additivity (ruby)
+        working-directory: interscript-ruby
+        run: |
+          ruby -Ilib tools/isc_wf1_golden_gate.rb \
+            --golden ../interscript-rs/tests/golden/isc-wf0.jsonl \
+            --maps-root "${GITHUB_WORKSPACE}/maps"
+
+  py-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: maps
+      - name: Checkout interscript-ruby (interscript-py subtree + gate)
+        uses: actions/checkout@v7
+        with:
+          repository: interscript/interscript-ruby
+          path: interscript-ruby
+      - name: Checkout interscript-rs (golden capture file)
+        uses: actions/checkout@v7
+        with:
+          repository: interscript/interscript-rs
+          path: interscript-rs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install interscript-py + pytest
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ./interscript-ruby/interscript-py pytest
+      - name: Golden additivity (py)
+        run: pytest interscript-ruby/interscript-py/tests/test_golden_capture.py -q
