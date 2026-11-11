@@ -134,113 +134,11 @@ tests {
    "راماي" ->  "ramai"
 }
 
+dependency "jawi-latn" as jawi
+
 stage main {
-  sequence {
-    # Marked vowels (Vowels and Diphthongs rows)
-    sub "وُ" "u"
-    sub "وَ" "o"
-    sub "يِ" "i"
-    sub "يَ" "e"
-
-    # Rule 8 - hamzah
-    sub "ٴ" ""  # the high-hamza separator mark (rule 8b) is not represented
-    sub "أ" ""  # alef-hamza separator (rule 8b)
-    sub "ئ" ""  # yeh-hamza (rule 8b/8c; the elided vowel value is lexical)
-    sub "ؤ" "u"  # waw-hamza
-    sub {
-    from "ء"
-    to "k"
-    after boundary
-  }  # rule 8e word-final glottal stop
-    sub "ء" "ʼ"  # rule 8a Arabic reading
-
-    # Rule 5 - alif gantung: the superscript alif marks the final a of the
-    # word, which romanizes before the nasal it sits over (tiang); swap the
-    # mark order before the letters convert
-    sub "ڠٰ" "aڠ"
-    sub "ٰ" "a"
-
-    # Marks not represented (rule 11) and leftover vowel signs
-    sub "ْ" ""
-    sub "ّ" ""
-    sub "َ" ""
-    sub "ُ" ""
-    sub "ِ" ""
-    sub "ـ" ""
-
-    # Final-form yad (alef maksura codepoint) joins the yad rules
-    sub "ى" "ي"
-
-    # Letters of the alphabet (Malay values)
-    sub "ب" "b"
-    sub "ت" "t"
-    sub "ث" "s"
-    sub "ج" "j"
-    sub "چ" "c"
-    sub "ح" "h"
-    sub "خ" "kh"
-    sub "د" "d"
-    sub "ذ" "z"
-    sub "ر" "r"
-    sub "ز" "z"
-    sub "س" "s"
-    sub "ش" "sy"
-    sub "ص" "s"
-    sub "ض" "d"
-    sub "ط" "t"
-    sub "ظ" "z"
-    sub "ع" ""
-    sub "غ" "gh"
-    sub "ڠ" "ng"
-    sub "ف" "p"
-    sub "ق" "k"
-    sub "ڤ" "p"
-    sub "ك̇" "g"
-    sub "ک̇" "g"
-    sub "ك" "k"
-    sub "ک" "k"
-    sub "ل" "l"
-    sub "م" "m"
-    sub "ن" "n"
-    sub "ڽ" "ny"
-    sub "ه" "h"
-    sub "ة" "h"
-
-    # Rule 4 - bare alif as the vowel a
-    sub "ا" "a"
-
-    # Rule 7 - yad: word-initial and inter-vocalic y, else the vowel i
-    sub {
-    from boundary + "ي"
-    to "y"
-  }
-    sub {
-    from "ي"
-    to "y"
-    before any(["a", "e", "i", "o", "u"])
-    after any(["a", "e", "i", "o", "u"])
-  }
-    sub "ي" "i"
-
-    # Rule 6 - wau: word-initial and post-vocalic w, word-final and
-    # post-consonantal u
-    sub {
-    from boundary + "و"
-    to "w"
-  }
-    sub {
-    from "و"
-    to "u"
-    after boundary
-  }
-    sub {
-    from "و"
-    to "w"
-    before any(["a", "e", "i", "o", "u"])
-  }
-    sub "و" "u"
-  }
-
+  use jawi.malay_jawi_common_a
+  use jawi.malay_jawi_common_b
 }
 
 }
