@@ -125,7 +125,7 @@ jobs:
         with:
           repository: interscript/interscript-rs
           path: interscript-rs
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - name: Install interscript-py + pytest
