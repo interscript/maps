@@ -155,71 +155,55 @@ tests {
   #   mechanical: ʼlṭywr)
 }
 
+dependency "hebr-latn" as hebr
+
 stage main {
-  parallel {
-    # Ligature alef-lamed
-    sub "ﭏ" "ʼl"
+  # Ligature alef-lamed
+  sub "ﭏ" "ʼl"
 
-    # Geresh-differentiated letters (note 3)
-    sub "ג׳" "ḡ"
-    sub "ד׳" "ḏ"
-    sub "פ׳" "f"
-    sub "ף׳" "f"
-    sub "צ׳" "ṣ̄"
-    sub "ץ׳" "ṣ̄"
+  # Geresh-differentiated letters (note 3)
+  sub "ג׳" "ḡ"
+  sub "ד׳" "ḏ"
+  use hebr.hebr_common_a
+  sub "צ׳" "ṣ̄"
+  sub "ץ׳" "ṣ̄"
 
-    # Dot-differentiated letters (note 3; kaf per note 12)
-    sub "גׄ" "g"
-    sub "ט̇" "ẓ"
-    sub "ה̈" "ḧ"
-    sub "כׄ" "k"
+  # Dot-differentiated letters (note 3; kaf per note 12)
+  sub "גׄ" "g"
+  sub "ט̇" "ẓ"
+  sub "ה̈" "ḧ"
+  sub "כׄ" "k"
 
-    # Presentation and composed forms
-    sub "בּ" "b"
-    sub "בּ" "b"
-    sub "כּ" "k"
-    sub "כּ" "k"
-    sub "ךּ" "k"
-    sub "ךּ" "k"
-    sub "תּ" "t"
-    sub "תּ" "t"
-    sub "שׁ" "š"
-    sub "שׁ" "š"
-    sub "שׂ" "ś"
-    sub "שׂ" "ś"
+  # Presentation and composed forms
+  use hebr.hebr_common_b
+  use hebr.hebr_common_c
+  use hebr.hebr_common_d
+  sub "שׁ" "š"
+  sub "שׁ" "š"
+  use hebr.hebr_common_e
 
-    # Doubled vav and yod (one-to-one consonant representation, note 1)
-    sub "וו" "ww"
-    sub "יי" "yy"
+  # Doubled vav and yod (one-to-one consonant representation, note 1)
+  sub "וו" "ww"
+  sub "יי" "yy"
 
-    # Letters
-    sub "א" "ʼ"
-    sub "ב" "b"
-    sub "ג" "g"
-    sub "ד" "d"
-    sub "ה" "h"
-    sub "ו" "w"
-    sub "ז" "z"
-    sub "ח" "ḥ"
-    sub "ט" "ṭ"
-    sub "י" "y"
-    sub "כ" "k"
-    sub "ך" "k"
-    sub "ל" "l"
-    sub "מ" "m"
-    sub "ם" "m"
-    sub "נ" "n"
-    sub "ן" "n"
-    sub "ס" "s"
-    sub "ע" "‘"
-    sub "פ" "f"
-    sub "ף" "f"
-    sub "צ" "ṣ"
-    sub "ק" "q"
-    sub "ר" "r"
-    sub "ש" "š"
-    sub "ת" "t"
-  }
+  # Letters
+  sub "א" "ʼ"
+  use hebr.hebr_common_g
+  use hebr.hebr_common_f
+  sub "ו" "w"
+  use hebr.hebr_common_h
+  sub "י" "y"
+  sub "כ" "k"
+  sub "ך" "k"
+  use hebr.hebr_common_i
+  sub "ע" "‘"
+  sub "פ" "f"
+  sub "ף" "f"
+  sub "צ" "ṣ"
+  sub "ק" "q"
+  use hebr.hebr_common_j
+  sub "ש" "š"
+  use hebr.hebr_common_k
 
 }
 

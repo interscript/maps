@@ -1,0 +1,84 @@
+system "hebr-latn" {
+
+# Shared ALA-LC Hebrew-script machinery: rows byte-identical between the
+# Ladino (alalc-lad-Hebr-Latn-2025) and Judeo-Arabic (alalc-jba-Hebr-Latn-2011)
+# romanization tables. The runs are split at every point where either map
+# carries a map-specific row, so each map splices the rulesets at its own
+# document positions; the two tables order he differently (Ladino before
+# bet/gimel/dalet, Judeo-Arabic after), so hebr_common_f is referenced on
+# either side of hebr_common_g.
+
+ruleset hebr_common_a {
+    # ALA-LC pe with geresh reads f in both the Ladino and the
+    # Judeo-Arabic tables
+    sub "פ׳" "f"
+    sub "ף׳" "f"
+}
+
+ruleset hebr_common_b {
+    # bet with dagesh (ligature and composed forms)
+    sub "בּ" "b"
+    sub "בּ" "b"
+}
+
+ruleset hebr_common_c {
+    # kaf with dagesh, including the final forms
+    sub "כּ" "k"
+    sub "כּ" "k"
+    sub "ךּ" "k"
+    sub "ךּ" "k"
+}
+
+ruleset hebr_common_d {
+    # tav with dagesh (ligature and composed forms)
+    sub "תּ" "t"
+    sub "תּ" "t"
+}
+
+ruleset hebr_common_e {
+    # shin with sin dot reads ś in both tables
+    sub "שׂ" "ś"
+    sub "שׂ" "ś"
+}
+
+ruleset hebr_common_f {
+    # pointless he reads h; the Ladino word-final -ah reading is a
+    # map-local row that runs before this
+    sub "ה" "h"
+}
+
+ruleset hebr_common_g {
+    # plain bet, gimel, dalet
+    sub "ב" "b"
+    sub "ג" "g"
+    sub "ד" "d"
+}
+
+ruleset hebr_common_h {
+    # zayin, het, tet
+    sub "ז" "z"
+    sub "ח" "ḥ"
+    sub "ט" "ṭ"
+}
+
+ruleset hebr_common_i {
+    # lamed, mem and nun (with their final forms), samekh
+    sub "ל" "l"
+    sub "מ" "m"
+    sub "ם" "m"
+    sub "נ" "n"
+    sub "ן" "n"
+    sub "ס" "s"
+}
+
+ruleset hebr_common_j {
+    # resh
+    sub "ר" "r"
+}
+
+ruleset hebr_common_k {
+    # tav
+    sub "ת" "t"
+}
+
+}

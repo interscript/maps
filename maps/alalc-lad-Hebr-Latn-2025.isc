@@ -152,141 +152,125 @@ tests {
   # - source: תּורה, expected: Torah (proper-noun capital)
 }
 
+dependency "hebr-latn" as hebr
+
 stage main {
-  sequence {
-    # 1. Clusters of yod and vav carrying point marks (the e/i and ey/yi
-    #    distinctions). Both logical and text-extraction byte orders are
-    #    covered for the marked double-yod clusters.
-    sub "ואִי" "wi"
-    sub "ייִ" "yi"
-    sub "יִי" "yi"
-    sub "ייֵ" "ey"
-    sub "יֵי" "ey"
-    sub "יִ" "i"
+  # 1. Clusters of yod and vav carrying point marks (the e/i and ey/yi
+  #    distinctions). Both logical and text-extraction byte orders are
+  #    covered for the marked double-yod clusters.
+  sub "ואִי" "wi"
+  sub "ייִ" "yi"
+  sub "יִי" "yi"
+  sub "ייֵ" "ey"
+  sub "יֵי" "ey"
+  sub "יִ" "i"
 
-    # 2. Geresh and rafe letter forms (rafé/geresh diacritics)
-    sub "ב׳" "v"
-    sub "בֿ" "v"
-    sub "ג׳" "j"
-    sub "גֿ" "j"
-    sub "ד׳" "dh"
-    sub "דֿ" "dh"
-    sub "ז׳" "zh"
-    sub "זֿ" "zh"
-    sub "פ׳" "f"
-    sub "ף׳" "f"
-    sub "פֿ" "f"
-    sub "ףֿ" "f"
+  # 2. Geresh and rafe letter forms (rafé/geresh diacritics)
+  sub "ב׳" "v"
+  sub "בֿ" "v"
+  sub "ג׳" "j"
+  sub "גֿ" "j"
+  sub "ד׳" "dh"
+  sub "דֿ" "dh"
+  sub "ז׳" "zh"
+  sub "זֿ" "zh"
+  use hebr.hebr_common_a
+  sub "פֿ" "f"
+  sub "ףֿ" "f"
 
-    # 3. Gimel with the superscript dot (ch)
-    sub "גׄ" "ch"
+  # 3. Gimel with the superscript dot (ch)
+  sub "גׄ" "ch"
 
-    # 4. Pointed vav (shuruq, holam) - presentation forms and composed
-    sub "וּ" "u"
-    sub "וּ" "u"
-    sub "וֹ" "o"
-    sub "וֹ" "o"
+  # 4. Pointed vav (shuruq, holam) - presentation forms and composed
+  sub "וּ" "u"
+  sub "וּ" "u"
+  sub "וֹ" "o"
+  sub "וֹ" "o"
 
-    # 5. Dagesh presentation forms and composed spellings
-    sub "בּ" "b"
-    sub "בּ" "b"
-    sub "גּ" "g"
-    sub "גּ" "g"
-    sub "דּ" "d"
-    sub "דּ" "d"
-    sub "כּ" "k"
-    sub "כּ" "k"
-    sub "ךּ" "k"
-    sub "ךּ" "k"
-    sub "פּ" "p"
-    sub "פּ" "p"
-    sub "תּ" "t"
-    sub "תּ" "t"
-    sub "שׂ" "ś"
-    sub "שׂ" "ś"
-    sub "ﭏ" "al"
+  # 5. Dagesh presentation forms and composed spellings
+  use hebr.hebr_common_b
+  sub "גּ" "g"
+  sub "גּ" "g"
+  sub "דּ" "d"
+  sub "דּ" "d"
+  use hebr.hebr_common_c
+  sub "פּ" "p"
+  sub "פּ" "p"
+  use hebr.hebr_common_d
+  use hebr.hebr_common_e
+  sub "ﭏ" "al"
 
-    # 6. Alef (general note 1): silent between adjacent matres and
-    #    word-initially before a vav/yod; a elsewhere. Word-final alef+he
-    #    carries the vowel cluster together (agwah: the alef is the a,
-    #    the he only h).
-    sub "אה" "ah"
-    sub {
+  # 6. Alef (general note 1): silent between adjacent matres and
+  #    word-initially before a vav/yod; a elsewhere. Word-final alef+he
+  #    carries the vowel cluster together (agwah: the alef is the a,
+  #    the he only h).
+  sub "אה" "ah"
+  sub {
     from "א"
     to ""
     before any("יו")
     after any("יו")
   }
-    sub {
+  sub {
     from boundary + "א"
     to ""
     after any("יו")
   }
-    sub "א" "a"
+  sub "א" "a"
 
-    # 7. He: word-final -ah (the row value), otherwise h (note 4, the
-    #    Hebrew-table reading of non-final he)
-    sub {
+  # 7. He: word-final -ah (the row value), otherwise h (note 4, the
+  #    Hebrew-table reading of non-final he)
+  sub {
     from "ה"
     to "ah"
     after boundary
   }
-    sub "ה" "h"
+  use hebr.hebr_common_f
 
-    # 8. Consonants with a single reading
-    sub "ב" "b"
-    sub "ג" "g"
-    sub "ד" "d"
-    sub "ז" "z"
-    sub "ח" "ḥ"
-    sub "ט" "ṭ"
-    sub "כ" "kh"
-    sub "ך" "kh"
-    sub "ל" "l"
-    sub "מ" "m"
-    sub "ם" "m"
-    sub "נ" "n"
-    sub "ן" "n"
-    sub "ס" "s"
-    sub "ע" "ʻ"
-    sub "פ" "p"
-    sub "ף" "p"
-    sub "צ" "ts"
-    sub "ץ" "ts"
-    sub "ק" "ḳ"
-    sub "ר" "r"
-    sub "ש" "sh"
-    sub "ת" "t"
+  # 8. Consonants with a single reading
+  use hebr.hebr_common_g
+  use hebr.hebr_common_h
+  sub "כ" "kh"
+  sub "ך" "kh"
+  use hebr.hebr_common_i
+  sub "ע" "ʻ"
+  sub "פ" "p"
+  sub "ף" "p"
+  sub "צ" "ts"
+  sub "ץ" "ts"
+  sub "ק" "ḳ"
+  use hebr.hebr_common_j
+  sub "ש" "sh"
+  use hebr.hebr_common_k
 
-    # 9. Double yod: ye before a consonant, y otherwise (note 3)
-    sub {
+  # 9. Double yod: ye before a consonant, y otherwise (note 3)
+  sub {
     from "יי"
     to "ye"
     after any("bcdfghjklmnpqrstvwxyz")
   }
-    sub "יי" "y"
+  sub "יי" "y"
 
-    # 10. Yod: word-initial consonant y, otherwise the vowel e (the
-    #     unmarked i quality is lexical, see notes)
-    sub {
+  # 10. Yod: word-initial consonant y, otherwise the vowel e (the
+  #     unmarked i quality is lexical, see notes)
+  sub {
     from boundary + "י"
     to "y"
   }
-    sub "י" "e"
+  sub "י" "e"
 
-    # 11. Vav: word-initial ṿ (note 4); consonantal w between a consonant
-    #     and a following vowel letter; otherwise the vowel o
-    sub {
+  # 11. Vav: word-initial ṿ (note 4); consonantal w between a consonant
+  #     and a following vowel letter; otherwise the vowel o
+  sub {
     from boundary + "ו"
     to "ṿ"
   }
-    sub {
+  sub {
     from "ו"
     to "w"
     after any(["a", "e", "i", "o", "u", "י", "ו"])
   }
-    sub "ו" "o"
-  }
+  sub "ו" "o"
 
 }
 
