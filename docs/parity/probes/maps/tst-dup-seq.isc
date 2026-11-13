@@ -1,0 +1,9 @@
+# P4b: duplicate froms inside a sequence block.
+system "T:tst-dup-seq:1" {
+  stage main {
+    sequence {
+      sub "a" "1"
+      sub "a" "2"
+    }
+  }
+}

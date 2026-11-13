@@ -1,0 +1,8 @@
+system "T:pp-ruleset-local:1" {
+  ruleset r1 {
+    parallel { sub "a" "b" }
+  }
+  stage main {
+    use r1
+  }
+}

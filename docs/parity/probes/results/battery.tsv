@@ -1,0 +1,152 @@
+sanity-basic	ruby	OK	bcQ
+sanity-basic	ts	OK	bcQ
+sanity-basic	py	OK	bcQ
+sanity-basic	rs	OK	bcQ
+sanity-basic-empty-input	ruby	OK	
+sanity-basic-empty-input	ts	OK	
+sanity-basic-empty-input	py	OK	
+sanity-basic-empty-input	rs	OK	
+sanity-basic-stage-second	ruby	OK	aBk
+sanity-basic-stage-second	ts	OK	aBk
+sanity-basic-stage-second	py	OK	aBk
+sanity-basic-stage-second	rs	OK	aBk
+missing-main-stage	ruby	ERR	NoMethodError	undefined method 'reverse_run' for nil
+missing-main-stage	ts	OK	aaa
+missing-main-stage	py	OK	aaa
+missing-main-stage	rs	ERR	MapLogicError	stage "main" not found in tst-nomain
+missing-dependency	ruby	ERR	Interscript::MapNotFoundError	Couldn't locate nonexistent-map-xyz
+missing-dependency	ts	ERR	MapNotFoundError	Map not found: nonexistent-map-xyz
+missing-dependency	py	ERR	MapNotFoundError	"map not found: 'nonexistent-map-xyz' (load paths: /tmp/parity-probes/maps/_ir)"
+missing-dependency	rs	ERR	MapNotFoundError	map "nonexistent-map-xyz"
+dependency-run-ok	ruby	OK	AKA
+dependency-run-ok	ts	OK	AKA
+dependency-run-ok	py	OK	AKA
+dependency-run-ok	rs	OK	AKA
+dependency-missing-stage	ruby	ERR	NoMethodError	undefined method 'reverse_run' for nil
+dependency-missing-stage	ts	ERR	MapLogicError	Stage not found: nothere
+dependency-missing-stage	py	ERR	MapLogicError	stage not found: nothere
+dependency-missing-stage	rs	ERR	MapLogicError	stage "nothere" not found in tst-dep-lib
+dup-parallel	ruby	OK	X
+dup-parallel	ts	OK	X
+dup-parallel	py	OK	X
+dup-parallel	rs	OK	X
+dup-sequence	ruby	OK	1
+dup-sequence	ts	OK	1
+dup-sequence	py	OK	1
+dup-sequence	rs	OK	1
+unknown-alias	ruby	ERR	Interscript::SystemConversionError	Alias undefined_alias not found
+unknown-alias	ts	OK	XaX
+unknown-alias	py	OK	XbX
+unknown-alias	rs	ERR	MapLogicError	alias "undefined_alias" not found during expansion
+ruleset-cycle	ruby	ERR	Interscript::Isc::ParseError	tst-rscycle.isc: Failed to match: expected one of [(?-mix:\s), '#', 'sub', '}'] at line 10 char 7.
+ruleset-cycle	ts	ERR	IscParseError	ISC parse error at line 10:10: tst-rscycle.isc: Failed to match isc_source at line 10 char 10
+ruleset-cycle	py	ERR	IscParseError	ISC parse error at line 26:1: tst-rscycle.isc: ruleset declared more than once: a
+ruleset-cycle	rs	OK	1yz
+override-basics	ruby	OK	qtC
+override-basics	ts	OK	qtC
+override-basics	py	OK	qtC
+override-basics	rs	OK	qtC
+override-absent-row	ruby	OK	Z
+override-absent-row	ts	OK	Z
+override-absent-row	py	OK	Z
+override-absent-row	rs	OK	Z
+lang-selected-declared	ruby	OK	Q
+lang-selected-declared	ts	OK	Q
+lang-selected-declared	py	OK	Q
+lang-selected-declared	rs	OK	Q
+lang-selected-undeclared	ruby	OK	K
+lang-selected-undeclared	ts	OK	K
+lang-selected-undeclared	py	OK	K
+lang-selected-undeclared	rs	OK	K
+lang-no-selection	ruby	OK	K
+lang-no-selection	ts	OK	K
+lang-no-selection	py	OK	K
+lang-no-selection	rs	OK	K
+lang-selected-nodeclaration	ruby	OK	K
+lang-selected-nodeclaration	ts	OK	K
+lang-selected-nodeclaration	py	OK	K
+lang-selected-nodeclaration	rs	OK	Q
+capture-parallel	ruby	ERR	NoMethodError	undefined method 'max_length' for an instance of Interscript::Node::Item::CaptureGroup
+capture-parallel	ts	OK	axXB
+capture-parallel	py	OK	axXB
+capture-parallel	rs	OK	aXB
+capture-parallel-match	ruby	ERR	NoMethodError	undefined method 'max_length' for an instance of Interscript::Node::Item::CaptureGroup
+capture-parallel-match	ts	OK	axX
+capture-parallel-match	py	OK	axX
+capture-parallel-match	rs	OK	aX
+reverse-lossy	ruby	OK	ac
+reverse-lossy	ts	ERR	Unsupported	reverse not implemented in ts runtime (no reverse module in src/)
+reverse-lossy	py	ERR	Unsupported	reverse not implemented in py runtime
+reverse-lossy	rs	OK	ac
+reverse-nonlossy-control	ruby	OK	bak
+reverse-nonlossy-control	ts	ERR	Unsupported	reverse not implemented in ts runtime (no reverse module in src/)
+reverse-nonlossy-control	py	ERR	Unsupported	reverse not implemented in py runtime
+reverse-nonlossy-control	rs	OK	bak
+ml-funcall-rababa	ruby	OK	Ka
+ml-funcall-rababa	ts	ERR	Error	Stage "main" contains ML function calls (rababa/secryst). Use transliterateAsync() instead of transliterate().
+ml-funcall-rababa	py	ERR	AsyncFunctionError	map calls ML function 'rababa'; the model layer is not mounted (install interscript-py[ml] and load a model, see interscript.models)
+ml-funcall-rababa	rs	ERR	Unsupported	funcall "rababa" (rababa/secryst need external ML engines; not in slice 1)
+ml-funcall-rababa-bare	ruby	ERR	ArgumentError	missing keyword: :config
+ml-funcall-rababa-bare	ts	ERR	Error	Stage "main" contains ML function calls (rababa/secryst). Use transliterateAsync() instead of transliterate().
+ml-funcall-rababa-bare	py	ERR	AsyncFunctionError	map calls ML function 'rababa'; the model layer is not mounted (install interscript-py[ml] and load a model, see interscript.models)
+ml-funcall-rababa-bare	rs	ERR	Unsupported	funcall "rababa" (rababa/secryst need external ML engines; not in slice 1)
+alias-defined	ruby	OK	VVV
+alias-defined	ts	OK	VVV
+alias-defined	py	OK	VVV
+alias-defined	rs	OK	VVV
+fnlit-in-from	ruby	ERR	Interscript::MapLogicError	Wrong type Symbol, expected I::Node::Item
+fnlit-in-from	ts	OK	XdXoXwXnXcXaXsXeX
+fnlit-in-from	py	OK	XdXoXwXnXcXaXsXeX
+fnlit-in-from	rs	OK	downcase
+missing-map	ruby	ERR	Interscript::MapNotFoundError	Couldn't locate nonexistent-probe-map
+missing-map	ts	ERR	MapNotFoundError	Map not found: nonexistent-probe-map
+missing-map	py	ERR	MapNotFoundError	"map not found: 'nonexistent-probe-map' (load paths: /tmp/parity-probes/maps/_ir)"
+missing-map	rs	ERR	MapNotFoundError	map "nonexistent-probe-map"
+use-in-sequence	ruby	ERR	Interscript::Isc::ParseError	tst-use-inseq.isc: Failed to match: expected one of [(?-mix:\s), '#', 'sub', '}'] at line 10 char 7.
+use-in-sequence	ts	ERR	IscParseError	ISC parse error at line 10:10: tst-use-inseq.isc: Failed to match isc_source at line 10 char 10
+use-in-sequence	py	ERR	IscParseError	ISC parse error at line 15:1: tst-use-inseq.isc: a ruleset containing a parallel/sequence block cannot be used inside a parallel/sequence block
+use-in-sequence	rs	OK	12
+use-stage-level	ruby	OK	12
+use-stage-level	ts	OK	12
+use-stage-level	py	OK	12
+use-stage-level	rs	OK	12
+rs-cycle-bare	ruby	ERR	Interscript::MapLogicError	use cycle: ruleset a revisited through a -> b
+rs-cycle-bare	ts	ERR	IscLoadError	ISC load error: use cycle: T:tst-cycle-bare:1::a -> T:tst-cycle-bare:1::b -> T:tst-cycle-bare:1::a
+rs-cycle-bare	py	ERR	IscParseError	ISC parse error at line 19:1: tst-cycle-bare.isc: use cycle: T:tst-cycle-bare:1/a -> T:tst-cycle-bare:1/b -> T:tst-cycle-bare:1/a
+rs-cycle-bare	rs	ERR	MapLogicError	use cycle: a -> b -> a
+rs-duplicate-def	ruby	OK	1z
+rs-duplicate-def	ts	OK	1z
+rs-duplicate-def	py	ERR	IscParseError	ISC parse error at line 17:1: tst-rsdup2.isc: ruleset declared more than once: a
+rs-duplicate-def	rs	OK	1z
+rs-cycle-in-blocks	ruby	ERR	Interscript::Isc::ParseError	tst-rscycle2.isc: Failed to match: expected one of [(?-mix:\s), '#', 'sub', '}'] at line 5 char 7.
+rs-cycle-in-blocks	ts	ERR	IscParseError	ISC parse error at line 5:10: tst-rscycle2.isc: Failed to match isc_source at line 5 char 10
+rs-cycle-in-blocks	py	ERR	IscParseError	ISC parse error at line 21:1: tst-rscycle2.isc: use cycle: T:tst-rscycle2:1/a -> T:tst-rscycle2:1/b -> T:tst-rscycle2:1/a
+rs-cycle-in-blocks	rs	ERR	MapLogicError	use cycle: a -> b -> a
+use-dep-ruleset-missing	ruby	ERR	Interscript::MapNotFoundError	Couldn't locate nonexistent-map-xyz
+use-dep-ruleset-missing	ts	ERR	IscLoadError	ISC load error: use: cannot resolve dependency "nonexistent-map-xyz" (needed for ruleset "base")
+use-dep-ruleset-missing	py	ERR	IscParseError	ISC parse error at line 8:1: tst-usedep-missing.isc: cannot resolve dependency: nonexistent-map-xyz
+use-dep-ruleset-missing	rs	ERR	MapNotFoundError	map "nonexistent-map-xyz"
+capture-in-sequence	ruby	OK	aXb
+capture-in-sequence	ts	OK	aXb
+capture-in-sequence	py	OK	aXb
+capture-in-sequence	rs	OK	aXb
+capture-par2-shift	ruby	ERR	NoMethodError	undefined method 'max_length' for an instance of Interscript::Node::Item::CaptureGroup
+capture-par2-shift	ts	OK	kk3a
+capture-par2-shift	py	OK	kk3a
+capture-par2-shift	rs	OK	3ka
+funcall-upcase-exec	ruby	ERR	NoMethodError	undefined method 'upcase' for module Interscript::Stdlib::Functions
+funcall-upcase-exec	ts	OK	 ABC
+funcall-upcase-exec	py	OK	 ABC
+funcall-upcase-exec	rs	OK	 ABC
+funcall-battery-exec	ruby	OK	  h e a t i n g
+funcall-battery-exec	ts	OK	  h e a t i n g
+funcall-battery-exec	py	OK	  h e a t i n g
+funcall-battery-exec	rs	OK	  h e a t i n g
+longest-match	ruby	OK	1
+longest-match	ts	OK	1
+longest-match	py	OK	1
+longest-match	rs	OK	1
+library-dep-alias	ruby	OK	X
+library-dep-alias	ts	OK	X
+library-dep-alias	py	OK	X
+library-dep-alias	rs	OK	X

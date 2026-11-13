@@ -1,0 +1,10 @@
+# P4: duplicate froms inside ONE parallel block (tree mode ordering).
+system "T:tst-dup-parallel:1" {
+  stage main {
+    parallel {
+      sub "a" "1"
+      sub "a" "2"
+      sub "ab" "X"
+    }
+  }
+}

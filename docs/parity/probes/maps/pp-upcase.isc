@@ -1,0 +1,6 @@
+system "T:pp-upcase:1" {
+  stage main {
+    parallel { sub "a" "b" }
+    upcase
+  }
+}

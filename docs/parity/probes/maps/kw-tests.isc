@@ -1,0 +1,10 @@
+system "T:kw-tests:1" {
+  aliases {
+    tests = any("a")
+  }
+  stage main {
+    parallel {
+      sub tests "X"
+    }
+  }
+}

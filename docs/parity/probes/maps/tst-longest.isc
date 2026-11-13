@@ -1,0 +1,12 @@
+# P19: longest-match precedence in a parallel block.
+system "T:tst-longest:1" {
+  stage main {
+    parallel {
+      sub "a" "2"
+      sub "ab" "1"
+    }
+  }
+  tests {
+    "ab" -> "1"
+  }
+}

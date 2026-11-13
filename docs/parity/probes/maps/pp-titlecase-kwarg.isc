@@ -1,0 +1,6 @@
+system "T:pp-titlecase-kwarg:1" {
+  stage main {
+    parallel { sub "a" "b" }
+    title_case word_separator: "-"
+  }
+}

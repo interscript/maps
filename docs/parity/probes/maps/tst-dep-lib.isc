@@ -1,0 +1,8 @@
+# P2-control: the dependency that exists.
+system "T:tst-dep-lib:1" {
+  stage main {
+    parallel {
+      sub "a" "A"
+    }
+  }
+}

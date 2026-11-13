@@ -1,0 +1,10 @@
+system "T:kw-languages:1" {
+  aliases {
+    languages = any("a")
+  }
+  stage main {
+    parallel {
+      sub languages "X"
+    }
+  }
+}

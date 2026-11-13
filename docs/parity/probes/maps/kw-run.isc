@@ -1,0 +1,10 @@
+system "T:kw-run:1" {
+  aliases {
+    run = any("a")
+  }
+  stage main {
+    parallel {
+      sub run "X"
+    }
+  }
+}

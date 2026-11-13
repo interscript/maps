@@ -1,0 +1,10 @@
+# P15: upcase funcall execution (ruby Stdlib::Functions has no upcase).
+system "T:tst-upcase-exec:1" {
+  stage main {
+    parallel { sub "§" " " }
+    upcase
+  }
+  tests {
+    "§abc" -> " ABC"
+  }
+}

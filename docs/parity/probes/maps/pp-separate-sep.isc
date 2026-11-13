@@ -1,0 +1,5 @@
+system "T:pp-separate-sep:1" {
+  stage main {
+    separate separator "-"
+  }
+}

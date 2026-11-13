@@ -1,0 +1,10 @@
+system "T:kw-metadata:1" {
+  aliases {
+    metadata = any("a")
+  }
+  stage main {
+    parallel {
+      sub metadata "X"
+    }
+  }
+}

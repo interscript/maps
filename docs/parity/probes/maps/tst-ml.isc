@@ -1,0 +1,7 @@
+# P12: ML funcall in canonical corpus form (rababa with config kwarg).
+system "T:tst-ml:1" {
+  stage main {
+    sub "k" "K"
+    rababa config: "200"
+  }
+}

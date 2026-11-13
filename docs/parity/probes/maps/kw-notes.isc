@@ -1,0 +1,10 @@
+system "T:kw-notes:1" {
+  aliases {
+    notes = any("a")
+  }
+  stage main {
+    parallel {
+      sub notes "X"
+    }
+  }
+}

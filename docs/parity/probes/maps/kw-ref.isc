@@ -1,0 +1,10 @@
+system "T:kw-ref:1" {
+  aliases {
+    ref = any("a")
+  }
+  stage main {
+    parallel {
+      sub ref "X"
+    }
+  }
+}

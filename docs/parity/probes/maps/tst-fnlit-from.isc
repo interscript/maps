@@ -1,0 +1,8 @@
+# P13: a funcall literal (downcase) in FROM position — keyword/fn_lit overlap.
+system "T:tst-fnlit-from:1" {
+  stage main {
+    parallel {
+      sub downcase "X"
+    }
+  }
+}

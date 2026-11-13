@@ -1,0 +1,10 @@
+system "T:kw-reverse:1" {
+  aliases {
+    reverse = any("a")
+  }
+  stage main {
+    parallel {
+      sub reverse "X"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+# P6b: pure ruleset cycle, single definitions (a -> b -> a).
+system "T:tst-rscycle2:1" {
+  ruleset a {
+    sequence {
+      use b
+      sub "x" "1"
+    }
+  }
+  ruleset b {
+    sequence {
+      use a
+      sub "y" "2"
+    }
+  }
+  stage main {
+    sequence {
+      use a
+    }
+  }
+}

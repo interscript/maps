@@ -1,0 +1,13 @@
+system "T:pp-funcall-battery:1" {
+  stage main {
+    parallel { sub "§" " " }
+    title_case
+    downcase
+    separate
+    compose
+    decompose
+  }
+  tests {
+    "§heating" -> "  h e a t i n g"
+  }
+}

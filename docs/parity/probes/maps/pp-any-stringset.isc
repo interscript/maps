@@ -1,0 +1,12 @@
+system "T:pp-any-stringset:1" {
+  aliases {
+    set1 = any(["ab", "cd", "ef"])
+    rng = any("a".."z")
+  }
+  stage main {
+    parallel {
+      sub set1 "X"
+      sub rng "y"
+    }
+  }
+}

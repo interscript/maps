@@ -1,0 +1,12 @@
+# P6f: DIRECT self-cycle a -> a (stage-level use only).
+system "T:tst-use-cycle-direct:1" {
+  ruleset a {
+    parallel {
+      use a
+      sub "x" "1"
+    }
+  }
+  stage main {
+    use a
+  }
+}

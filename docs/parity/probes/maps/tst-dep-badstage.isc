@@ -1,0 +1,8 @@
+# P3: dependency exists, but the run targets a stage it does not have.
+system "T:tst-dep-badstage:1" {
+  dependency "tst-dep-lib" as dep
+  stage main {
+    sub "k" "K"
+    run map.dep.stage.nothere
+  }
+}

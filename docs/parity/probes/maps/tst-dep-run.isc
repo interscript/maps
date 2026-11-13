@@ -1,0 +1,8 @@
+# P2-control: run into an existing dependency stage (stage-level run).
+system "T:tst-dep-run:1" {
+  dependency "tst-dep-lib" as dep
+  stage main {
+    sub "k" "K"
+    run map.dep.stage.main
+  }
+}

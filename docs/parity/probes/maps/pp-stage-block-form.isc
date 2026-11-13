@@ -1,0 +1,5 @@
+system "T:pp-stage-block-form:1" {
+  stage(main) {
+    parallel { sub "a" "b" }
+  }
+}

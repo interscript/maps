@@ -1,0 +1,11 @@
+# identifier "ruleset" used as an ALIAS name — the keyword-table probe.
+system "T:pp-ruleset-ident:1" {
+  aliases {
+    ruleset = any("a")
+  }
+  stage main {
+    parallel {
+      sub ruleset "X"
+    }
+  }
+}

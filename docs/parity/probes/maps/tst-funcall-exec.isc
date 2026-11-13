@@ -1,0 +1,14 @@
+# P18: stage funcall execution parity (corpus rs-funcalls pattern).
+system "T:tst-funcall-exec:1" {
+  stage main {
+    parallel { sub "§" " " }
+    title_case
+    downcase
+    separate
+    compose
+    decompose
+  }
+  tests {
+    "§heating" -> "  h e a t i n g"
+  }
+}

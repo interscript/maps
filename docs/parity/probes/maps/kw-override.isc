@@ -1,0 +1,10 @@
+system "T:kw-override:1" {
+  aliases {
+    override = any("a")
+  }
+  stage main {
+    parallel {
+      sub override "X"
+    }
+  }
+}

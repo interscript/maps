@@ -1,0 +1,10 @@
+system "T:kw-capture:1" {
+  aliases {
+    capture = any("a")
+  }
+  stage main {
+    parallel {
+      sub capture "X"
+    }
+  }
+}

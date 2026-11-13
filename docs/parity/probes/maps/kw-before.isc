@@ -1,0 +1,10 @@
+system "T:kw-before:1" {
+  aliases {
+    before = any("a")
+  }
+  stage main {
+    parallel {
+      sub before "X"
+    }
+  }
+}

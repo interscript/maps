@@ -1,0 +1,8 @@
+# P1: document with no "main" stage (only "other").
+system "T:tst-nomain:1" {
+  stage other {
+    parallel {
+      sub "a" "b"
+    }
+  }
+}

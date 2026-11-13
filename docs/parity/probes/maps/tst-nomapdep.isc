@@ -1,0 +1,8 @@
+# P2: dependency on a map that does not exist anywhere on the load path.
+system "T:tst-nomapdep:1" {
+  dependency "nonexistent-map-xyz" as dep
+  stage main {
+    sub "k" "K"
+    run map.dep.stage.main
+  }
+}

@@ -1,0 +1,10 @@
+system "T:kw-when:1" {
+  aliases {
+    when = any("a")
+  }
+  stage main {
+    parallel {
+      sub when "X"
+    }
+  }
+}
