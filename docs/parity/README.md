@@ -173,6 +173,15 @@ Scripts: `probes/time-ruby.sh`, `time-ts.mjs`, `time-py.py`; rs via
 | rs (`iscrs parse`, release, wall) | 81410 / 79220 / 77490 | **79220 ms (~79.2 s)** | ~185 ms |
 | ruby (`Interscript::Interpreter.parse_isc`) | 186029.0 / 156782.2 / 161449.9 | **161450 ms (~161.5 s)** | ~377 ms |
 
+**WO18 update (2026-11-13):** py's generated parser is now
+closure-compiled (interscript-ruby: rules compile once into Python
+closures at load; capture values folded where the flattener would).
+Controlled before/after in the perf session: **~78 s → ~22 s per
+corpus pass (~3.5x)**, byte-identical output (py-vs-py parity driver
+435/435 on both projections; embedded suite unchanged; golden green
+in-suite). The table above records the audit-day baseline and is kept
+for comparability; py's current expectation is the ~22 s line.
+
 Single-map spot checks (clean, cold):
 
 - rs, `bgnpcgn-rus-Cyrl-Latn-1947.isc`: **0.03 s**;
