@@ -1,0 +1,7 @@
+# P17: use of a ruleset in a MISSING dependency (W2 dependency flavor).
+system "T:tst-usedep-missing:1" {
+  dependency "nonexistent-map-xyz" as dep
+  stage main {
+    use dep.base
+  }
+}

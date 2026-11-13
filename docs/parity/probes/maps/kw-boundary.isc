@@ -1,0 +1,10 @@
+system "T:kw-boundary:1" {
+  aliases {
+    boundary = any("a")
+  }
+  stage main {
+    parallel {
+      sub boundary "X"
+    }
+  }
+}

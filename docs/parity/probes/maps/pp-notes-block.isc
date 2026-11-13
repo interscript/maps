@@ -1,0 +1,10 @@
+system "T:pp-notes-block:1" {
+  metadata {
+    notes {
+      note "n1"
+    }
+  }
+  stage main {
+    parallel { sub "a" "b" }
+  }
+}

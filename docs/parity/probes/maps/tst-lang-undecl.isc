@@ -1,0 +1,10 @@
+# P8: map declares languages kur; caller selects chv (not declared).
+system "T:tst-lang-undecl:1" {
+  languages kur
+  stage main {
+    parallel {
+      sub "k" "K"
+      sub "k" "Q" when kur
+    }
+  }
+}

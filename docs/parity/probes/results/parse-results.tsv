@@ -1,0 +1,68 @@
+pp-alias-reffwd	ruby	OK
+pp-alias-reffwd	ts	OK
+pp-alias-reffwd	py	OK
+pp-alias-reffwd	rs	OK
+pp-any-stringset	ruby	OK
+pp-any-stringset	ts	OK
+pp-any-stringset	py	OK
+pp-any-stringset	rs	OK
+pp-block-sub-full	ruby	OK
+pp-block-sub-full	ts	OK
+pp-block-sub-full	py	OK
+pp-block-sub-full	rs	OK
+pp-boundary-prims	ruby	OK
+pp-boundary-prims	ts	OK
+pp-boundary-prims	py	OK
+pp-boundary-prims	rs	OK
+pp-funcall-battery	ruby	OK
+pp-funcall-battery	ts	OK
+pp-funcall-battery	py	OK
+pp-funcall-battery	rs	OK
+pp-langs-when	ruby	OK
+pp-langs-when	ts	OK
+pp-langs-when	py	OK
+pp-langs-when	rs	OK
+pp-nested-blocks	ruby	ERR	Interscript::Isc::ParseError	pp-nested-blocks.isc: Failed to match: expected one of [(?-mix:\s), '#', 'before', 'after', 'not_before', 'not_after', 'when', 'sub', '}'] at line 8 char 7.
+pp-nested-blocks	ts	ERR	IscParseError	ISC parse error at line 8:15: pp-nested-blocks: Failed to match isc_source at line 8 char 15
+pp-nested-blocks	py	ERR	IscParseError	ISC parse error at line 8:15: pp-nested-blocks: Failed to match isc_source at line 8 char 15
+pp-nested-blocks	rs	ERR	FAIL /tmp/parity-probes/maps/pp-nested-blocks.isc (offset 292, expected ["[ ]", "[\\x09]", "[\\x0a]", "[\\x0b]", "[\\x0c]", "[\\x0d]", "'#'", "'before'", "'after'", "'not_before'", "'not_after'", "'when'", "'sub'", "'use'", "'}'"])
+pp-notes-block	ruby	OK
+pp-notes-block	ts	OK
+pp-notes-block	py	OK
+pp-notes-block	rs	OK
+pp-ruleset-ident	ruby	ERR	Interscript::Isc::ParseError	pp-ruleset-ident.isc: Failed to match: expected one of [(?-mix:\s), '#', '{', '"', ''', 'none', 'boundary', 'line_start', 'line_end', 'word_boundary', 'space', 'non_boundary', 'any_character', 'any(', 'capture(', 'maybe(', 'some(', 'upcase', 'downcase', 'title_case', 'reverse', 'strip', 'swapcase', 'ref(', 'parallel', 'sequence', 'stage', 'compose', 'separate', 'system', 'metadata', 'aliases', 'tests', 'notes', 'description', 'name', 'authority', 'dependency', 'run', 'sub', 'before', 'after', 'not_before', 'not_after', 'any', 'capture', 'maybe', 'some', 'ref'] at line 8 char 11.
+pp-ruleset-ident	ts	ERR	IscParseError	ISC parse error at line 8:18: pp-ruleset-ident: Failed to match isc_source at line 8 char 18
+pp-ruleset-ident	py	ERR	IscParseError	ISC parse error at line 8:11: pp-ruleset-ident: Unexpected keyword in item position: ruleset
+pp-ruleset-ident	rs	OK
+pp-ruleset-local	ruby	OK
+pp-ruleset-local	ts	OK
+pp-ruleset-local	py	OK
+pp-ruleset-local	rs	OK
+pp-run-local	ruby	OK
+pp-run-local	ts	OK
+pp-run-local	py	OK
+pp-run-local	rs	OK
+pp-separate-sep	ruby	OK
+pp-separate-sep	ts	OK
+pp-separate-sep	py	OK
+pp-separate-sep	rs	OK
+pp-stage-block-form	ruby	OK
+pp-stage-block-form	ts	OK
+pp-stage-block-form	py	OK
+pp-stage-block-form	rs	OK
+pp-tests-meta	ruby	OK
+pp-tests-meta	ts	OK
+pp-tests-meta	py	OK
+pp-tests-meta	rs	OK
+pp-titlecase-kwarg	ruby	OK
+pp-titlecase-kwarg	ts	OK
+pp-titlecase-kwarg	py	OK
+pp-titlecase-kwarg	rs	OK
+pp-upcase	ruby	OK
+pp-upcase	ts	OK
+pp-upcase	py	OK
+pp-upcase	rs	OK
+pp-use-dep-ruleset	ruby	OK
+pp-use-dep-ruleset	ts	OK
+pp-use-dep-ruleset	py	OK
+pp-use-dep-ruleset	rs	OK

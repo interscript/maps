@@ -1,0 +1,10 @@
+system "T:kw-ruleset:1" {
+  aliases {
+    ruleset = any("a")
+  }
+  stage main {
+    parallel {
+      sub ruleset "X"
+    }
+  }
+}

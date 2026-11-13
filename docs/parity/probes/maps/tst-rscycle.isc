@@ -1,0 +1,25 @@
+# P6: W1 ruleset cycle (a uses b, b uses a).
+system "T:tst-rscycle:1" {
+  ruleset a {
+    sequence {
+      sub "x" "1"
+    }
+  }
+  ruleset b {
+    sequence {
+      use a
+      sub "y" "2"
+    }
+  }
+  ruleset a {
+    sequence {
+      use b
+      sub "z" "3"
+    }
+  }
+  stage main {
+    sequence {
+      use a
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# P10b: same capture/ref rule in a SEQUENCE block (isolation).
+system "T:tst-capture-seq:1" {
+  stage main {
+    sequence {
+      sub {
+        from capture(any("a".."z")) + "x"
+        to ref(1) + "X"
+      }
+    }
+  }
+}

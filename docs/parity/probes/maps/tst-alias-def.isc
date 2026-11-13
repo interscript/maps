@@ -1,0 +1,13 @@
+system "T:tst-alias-def:1" {
+  aliases {
+    myvowel = any("a".."e")
+  }
+  stage main {
+    parallel {
+      sub myvowel "V"
+    }
+  }
+  tests {
+    "abc" -> "Vbc"
+  }
+}

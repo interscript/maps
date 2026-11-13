@@ -1,0 +1,10 @@
+system "T:kw-maybe:1" {
+  aliases {
+    maybe = any("a")
+  }
+  stage main {
+    parallel {
+      sub maybe "X"
+    }
+  }
+}

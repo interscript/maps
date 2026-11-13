@@ -1,0 +1,18 @@
+# P6g: pure cycle through bare use at ruleset-body top level (a -> b -> a).
+system "T:tst-cycle-bare:1" {
+  ruleset a {
+    use b
+    parallel {
+      sub "x" "1"
+    }
+  }
+  ruleset b {
+    use a
+    parallel {
+      sub "y" "2"
+    }
+  }
+  stage main {
+    use a
+  }
+}

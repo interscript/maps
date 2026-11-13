@@ -1,0 +1,10 @@
+system "T:kw-title_case:1" {
+  aliases {
+    title_case = any("a")
+  }
+  stage main {
+    parallel {
+      sub title_case "X"
+    }
+  }
+}

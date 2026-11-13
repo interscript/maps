@@ -1,0 +1,10 @@
+system "T:kw-system:1" {
+  aliases {
+    system = any("a")
+  }
+  stage main {
+    parallel {
+      sub system "X"
+    }
+  }
+}

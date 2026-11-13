@@ -1,0 +1,10 @@
+system "T:kw-description:1" {
+  aliases {
+    description = any("a")
+  }
+  stage main {
+    parallel {
+      sub description "X"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+system "T:kw-dependency:1" {
+  aliases {
+    dependency = any("a")
+  }
+  stage main {
+    parallel {
+      sub dependency "X"
+    }
+  }
+}

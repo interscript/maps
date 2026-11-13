@@ -1,0 +1,9 @@
+# P5: from references an alias that is never defined.
+system "T:tst-unknownalias:1" {
+  stage main {
+    parallel {
+      sub undefined_alias "X"
+      sub "a" "b"
+    }
+  }
+}

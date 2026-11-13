@@ -1,0 +1,10 @@
+system "T:kw-not_before:1" {
+  aliases {
+    not_before = any("a")
+  }
+  stage main {
+    parallel {
+      sub not_before "X"
+    }
+  }
+}

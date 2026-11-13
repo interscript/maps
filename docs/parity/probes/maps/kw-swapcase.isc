@@ -1,0 +1,10 @@
+system "T:kw-swapcase:1" {
+  aliases {
+    swapcase = any("a")
+  }
+  stage main {
+    parallel {
+      sub swapcase "X"
+    }
+  }
+}

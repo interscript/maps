@@ -1,0 +1,18 @@
+# P6c: duplicate ruleset definition (a defined twice) - no cycle.
+system "T:tst-rsdupdef:1" {
+  ruleset a {
+    sequence {
+      sub "x" "1"
+    }
+  }
+  ruleset a {
+    sequence {
+      sub "z" "3"
+    }
+  }
+  stage main {
+    sequence {
+      use a
+    }
+  }
+}

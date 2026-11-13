@@ -1,0 +1,16 @@
+# P6d: duplicate ruleset definition, use at STAGE level only.
+system "T:tst-rsdup2:1" {
+  ruleset a {
+    parallel {
+      sub "x" "1"
+    }
+  }
+  ruleset a {
+    parallel {
+      sub "z" "3"
+    }
+  }
+  stage main {
+    use a
+  }
+}

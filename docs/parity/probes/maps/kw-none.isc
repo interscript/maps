@@ -1,0 +1,10 @@
+system "T:kw-none:1" {
+  aliases {
+    none = any("a")
+  }
+  stage main {
+    parallel {
+      sub none "X"
+    }
+  }
+}

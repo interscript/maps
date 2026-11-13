@@ -1,0 +1,12 @@
+# P10: capture/ref inside a parallel block (block-rule form).
+system "T:tst-capture-parallel:1" {
+  stage main {
+    parallel {
+      sub {
+        from capture(any("a".."z")) + "x"
+        to ref(1) + "X"
+      }
+      sub "b" "B"
+    }
+  }
+}

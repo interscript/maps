@@ -1,0 +1,19 @@
+system "T:pp-block-sub-full:1" {
+  aliases {
+    up = any("A".."Z")
+    lo = any("a".."z")
+    both = up + lo
+  }
+  stage main {
+    parallel {
+      sub {
+        from maybe("k") + capture(both) + some("x")
+        to "R" + ref(1)
+        before boundary
+        after any("z")
+        not_before "q"
+        not_after "j"
+      }
+    }
+  }
+}

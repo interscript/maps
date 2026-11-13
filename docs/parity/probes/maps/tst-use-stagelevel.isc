@@ -1,0 +1,12 @@
+# P14-control: use at STAGE level (all grammars allow this).
+system "T:tst-use-stagelevel:1" {
+  ruleset r1 {
+    parallel {
+      sub "a" "1"
+    }
+  }
+  stage main {
+    use r1
+    sub "b" "2"
+  }
+}

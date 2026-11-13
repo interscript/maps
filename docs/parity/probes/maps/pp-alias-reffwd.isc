@@ -1,0 +1,13 @@
+system "T:pp-alias-reffwd:1" {
+  aliases {
+    upper = any("A".."Z")
+  }
+  stage main {
+    parallel {
+      sub {
+        from capture(upper) + "x"
+        to ref(1) + "X"
+      }
+    }
+  }
+}

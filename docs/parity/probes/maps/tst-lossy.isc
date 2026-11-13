@@ -1,0 +1,10 @@
+# P11: lossy map (two froms -> one to) for reverse probes.
+system "T:tst-lossy:1" {
+  stage main {
+    parallel {
+      sub "a" "x"
+      sub "b" "x"
+      sub "c" "k"
+    }
+  }
+}

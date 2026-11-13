@@ -1,0 +1,10 @@
+system "T:pp-boundary-prims:1" {
+  stage main {
+    parallel {
+      sub { from boundary + "a" to "A" }
+      sub { from "b" + line_end to "B" }
+      sub { from line_start + "c" to "C" }
+      sub { from "d" + word_boundary to "D" }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+# Intentionally INVALID: a parallel block inside a sequence block.
+# Grammar: rule_items inside sequence/parallel hold only sub rules
+# (block-in-block is rejected 4/4 — kept as a pinned negative probe).
+system "T:pp-nested-blocks:1" {
+  stage main {
+    sequence {
+      sub "a" "b"
+      parallel {
+        sub "b" "c"
+      }
+    }
+  }
+}

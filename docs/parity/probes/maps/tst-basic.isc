@@ -1,0 +1,20 @@
+system "T:tst-basic:1" {
+  stage main {
+    parallel {
+      sub "a" "b"
+      sub "b" "c"
+      sub "k" "x"
+    }
+    sequence {
+      sub "x" "Q"
+    }
+  }
+  stage second {
+    sequence {
+      sub "b" "B"
+    }
+  }
+  tests {
+    "abk" -> "bcQ"
+  }
+}

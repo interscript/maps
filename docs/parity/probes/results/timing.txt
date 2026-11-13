@@ -1,0 +1,20 @@
+=== rs (iscrs parse, wall; incl. ~20ms process startup) ===
+428/428/428 files parsed
+real 81.41
+428/428/428 files parsed
+real 79.22
+428/428/428 files parsed
+real 77.49
+=== ruby (in-process, parse_isc sweep) ===
+ruby parse 428/428 maps in 186029.0 ms
+ruby parse 428/428 maps in 156782.2 ms
+ruby parse 428/428 maps in 161449.9 ms
+ruby first-map warm parse: 6467.4 ms
+=== ts (in-process, parseIsc sweep) ===
+ts parse 428/428 maps in 16742.8 ms
+ts parse 428/428 maps in 15826.8 ms
+ts parse 428/428 maps in 15986.5 ms
+=== py (in-process, parse_isc+resolver sweep) ===
+py parse 428/428 maps in 77839.3 ms
+py parse 428/428 maps in 80709.3 ms
+py parse 428/428 maps in 81024.7 ms

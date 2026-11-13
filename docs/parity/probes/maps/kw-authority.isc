@@ -1,0 +1,10 @@
+system "T:kw-authority:1" {
+  aliases {
+    authority = any("a")
+  }
+  stage main {
+    parallel {
+      sub authority "X"
+    }
+  }
+}

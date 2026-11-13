@@ -1,0 +1,10 @@
+system "T:kw-use:1" {
+  aliases {
+    use = any("a")
+  }
+  stage main {
+    parallel {
+      sub use "X"
+    }
+  }
+}

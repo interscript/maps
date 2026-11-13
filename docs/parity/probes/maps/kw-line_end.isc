@@ -1,0 +1,10 @@
+system "T:kw-line_end:1" {
+  aliases {
+    line_end = any("a")
+  }
+  stage main {
+    parallel {
+      sub line_end "X"
+    }
+  }
+}

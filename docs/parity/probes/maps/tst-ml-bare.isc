@@ -1,0 +1,7 @@
+# P12b: ML funcall with no kwargs (grammar-legal; provisioning shape).
+system "T:tst-ml-bare:1" {
+  stage main {
+    sub "k" "K"
+    rababa
+  }
+}

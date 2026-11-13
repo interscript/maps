@@ -1,0 +1,12 @@
+# P16: unaliased dependency = library import (aliases merge into scope).
+system "T:tst-libdep:1" {
+  dependency "unicode"
+  stage main {
+    parallel {
+      sub unicode_hangul "X"
+    }
+  }
+  tests {
+    "ᄀ" -> "X"
+  }
+}

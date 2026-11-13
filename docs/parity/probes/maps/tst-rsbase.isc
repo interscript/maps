@@ -1,0 +1,19 @@
+# P7 base: a local ruleset for use+override probes.
+system "T:tst-rsbase:1" {
+  ruleset base {
+    parallel {
+      sub "k" "q"
+      sub "t" "t"
+    }
+  }
+  stage main {
+    use base override {
+      sub "c" "C"
+    }
+  }
+  stage absrow {
+    use base override {
+      sub "zzz" "Z"
+    }
+  }
+}

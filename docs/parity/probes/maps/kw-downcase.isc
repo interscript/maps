@@ -1,0 +1,10 @@
+system "T:kw-downcase:1" {
+  aliases {
+    downcase = any("a")
+  }
+  stage main {
+    parallel {
+      sub downcase "X"
+    }
+  }
+}

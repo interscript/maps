@@ -1,0 +1,10 @@
+system "T:kw-separate:1" {
+  aliases {
+    separate = any("a")
+  }
+  stage main {
+    parallel {
+      sub separate "X"
+    }
+  }
+}

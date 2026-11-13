@@ -1,0 +1,9 @@
+# P9: map declares NO languages; caller still passes a selection.
+system "T:tst-lang-nodecl:1" {
+  stage main {
+    parallel {
+      sub "k" "K"
+      sub "k" "Q" when kur
+    }
+  }
+}

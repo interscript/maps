@@ -1,0 +1,14 @@
+# P14: use directive INSIDE a sequence block (grammar-position probe).
+system "T:tst-use-inseq:1" {
+  ruleset r1 {
+    parallel {
+      sub "a" "1"
+    }
+  }
+  stage main {
+    sequence {
+      use r1
+      sub "b" "2"
+    }
+  }
+}

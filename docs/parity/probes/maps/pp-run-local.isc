@@ -1,0 +1,9 @@
+system "T:pp-run-local:1" {
+  stage pre { sequence { sub "a" "b" } }
+  stage main {
+    sequence {
+      sub "x" "y"
+    }
+    run stage.pre
+  }
+}
