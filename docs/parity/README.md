@@ -484,6 +484,16 @@ fail-loud divergence > feature absence > surface asymmetry.
   handles `to == :upcase/:downcase` as special-case symbols
   (`interpreter.rb:195-199`) — the legacy compiler paths cover some of
   this; the Interpreter path does not.
+- **ERRATA (2026-11-13, WO18 G8 execution):** the opening claim is
+  TRUE only for `upcase`. Probe-verified during the fix: `reverse`,
+  `strip`, and `swapcase` are NOT stage directives outside ruby's
+  grammar — ts/py SKIP rules carrying them and rs REJECTS them at
+  load; none of the three parse them as directives or `to` funcalls.
+  The ruby fix (interscript-ruby #849) therefore adds the three with
+  plain String semantics (no cross-runtime reference to mirror), and
+  `upcase` with ts semantics. A fn-literal grammar round — which of
+  the six fn names are portable directives vs ruby-only keywords — is
+  owner-held, adjacent to the G6 keyword-table ruling.
 - **Fix scope.** ruby: add the four functions to
   `Stdlib::Functions` (upcase/reverse/strip/swapcase) with the ts
   semantics as reference.
