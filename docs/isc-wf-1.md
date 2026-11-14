@@ -259,3 +259,53 @@ system "ALALC:tha-Thai:Latn:2011" {
 ### 8.2 Language-conditioned variants (ISO 9 pattern)
 
 See §5.4.
+
+## 9. Canonical-adopted rs grammar extensions
+
+The interscript-rs portable grammar (`grammar/isc.parg`) extends the
+ruby-DSL concern grammar with four constructs. They are the canonical
+spelling of the workflow extension — every other runtime adopts them
+(ts/py through the sha-pinned portable grammar, ruby through the
+concern layer). All four are parse-additive and corpus-dormant at
+adoption: no map in the corpus uses any of them at a position the
+pre-WF-1 grammar would have parsed differently (verified against the
+corpus at adoption time, re-verified at the WO19 G6 round).
+
+1. **`ruleset_decl`** — a named rule collection at document level
+   (`ruleset <ident> { stage-items }`). A ruleset body is a stage
+   body: it carries rules and rule-line items only — a funcall or
+   stage `run` inside a ruleset is a load error, because ruleset
+   content joins passes through W1 expansion (§3) where non-rule items
+   cannot participate. Duplicate ruleset declarations in one document
+   are a load error (WO18 G7).
+
+2. **`use_directive`** — `use <ident>[.<ident>] [override { … }]`
+   (§4). The bare form flattens the referenced ruleset's rules at this
+   position; the `override` form replaces rows whose collapsed from-key
+   matches, appending the survivors after the kept rows (§4.2, the
+   trailing-parallel join of §4.2.6). A stage-line `use` participates
+   in the stage like any other item; a `use` inside a
+   `parallel`/`sequence` block joins that block's single pass (§3.2,
+   ruby concern `rule_line`).
+
+3. **`languages_decl`** — `languages <ident> (","? <ident>)*` at
+   document level (§5.1). Declared once per map; a second declaration
+   is a parse error. The declaration gates §5.1: a caller's language
+   selection outside the declaration makes every `when` guard inert.
+
+4. **`when` guard on `sub` rules** — a trailing ident list on a rule,
+   inside the rule's own braces for the block form
+   (`sub { from … to … when kur }`; canonical binding, ruby parses the
+   inside form only — the ts/py outside-form tolerance was retired at
+   WO19 G6 item 5) and after the constraints for the compact form
+   (`sub "a" "b" when kur`). The list is comma- or whitespace-
+   separated, keyword-guarded so it never swallows the next rule (§5.2).
+
+The four new keywords (`use`, `override`, `languages`, `when`) join
+the keyword table, as does `ruleset` (the block head; the ident-list
+guards need every sibling block head keyworded). WO19 G6 item 1
+completed the table alignment: the six fn-literal names
+(`upcase` `downcase` `title_case` `reverse` `strip` `swapcase`) are
+reserved in every runtime's keyword table, while `name = any(...)`
+alias declarations remain valid (the `alias_decl` production has no
+keyword guard).

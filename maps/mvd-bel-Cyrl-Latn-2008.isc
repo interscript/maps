@@ -36,6 +36,10 @@ tests {
    "Чарняк" ->  "Charniak"
    "Лябецкая" ->  "Liabietskaja" # in reference doc it's Liabetskaja CAMOBAP waiting confirmation from officials
    "Дар’я" ->  "Darja"
+   # WO19 G6 item 4: pin the capital-\U escape row (the sub below
+   # spells "\U040E", which decodes to Ў; the generated ts/py parsers
+   # carried the literal "U040E" text and the row never fired).
+   "Ў" ->  "W"
 }
 
 stage main {

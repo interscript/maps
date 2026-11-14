@@ -68,6 +68,11 @@ tests {
    "Баяры" ->  "Bajary"
    "Вязынка" ->  "Viazynka"
    "Валяр'яны" ->  "Valiarjany"
+   # WO19 G6 item 4: pin the capital-\U escape row — the sub below
+   # spells "\U040E", which decodes to Ў (ruby/rs always decoded it;
+   # the generated ts/py parsers carried the literal "U040E" text and
+   # the row never fired).
+   "Ў" ->  "Ŭ"
 }
 
 dependency "var-Cyrl"
