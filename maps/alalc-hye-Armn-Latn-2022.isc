@@ -77,6 +77,166 @@ tests {
   "Ռ․" -> "1000"
   "Կարդա՛, գրի՛ր տարին բոլոր" -> "Karda, grir tarin bolor"
   "Բարձրանում է աշխարհ մի անեզր, որ քոնն է անշուշտ և իմը." -> "Bardzranum ē ashkharh mi anezr, or kʻonn ē anshusht ev imě."
+
+# Exhaustive per-row tests for alalc-hye-Armn-Latn-2022, generated from the source
+# document's table.
+# Source: ALA-LC Armenian Romanization Table (2022 version; earlier
+# versions: 2011, 1997)
+# (https://www.loc.gov/catdir/cpso/romanization/armenian.pdf; local source
+# interscript-private-references/alalc/alalc-armenian.pdf). Rows in document
+# order: the letter table pp. 1-2 line by line (upper then lower per printed
+# line), the Note 3 soft-sign combination table (p. 2), then the
+# letter-numeral table (p. 7) as printed column streams (left column
+# top-down, then right). Primary values only: the bracketed West Armenian
+# alternates are excluded per the map's encoding scope. Skipped
+# un-expressible rows: the Ե/ե Y/y alternates (Note 2: initial position of a
+# name followed by a vowel, Classical) and the Յ/յ Ḥ/ḥ alternates (Note 4:
+# initial position of a word or stem in a compound, Classical) are
+# position-dependent; the composite numerals ԺԱ․ ԺԲ․ ԻԱ․ ԻԲ․ ԼԱ․ ԼԲ․ are
+# multi-letter values and the map encodes single-letter numeral rules only;
+# the ․․․ continuation placeholders are not romanization rows. The
+# punctuation section (pp. 5-6) is instruction prose, not a table: «» and ։
+# are encoded as map rules but are not row-transcribed here; ՞ and ՜ require
+# sentence-end repositioning and are un-encodable as character rules; ՛ has
+# empty output, which the generator contract (non-empty to) excludes — it is
+# already encoded as a map rule. The diacritics page (p. 4) repeats
+# letter-table rows and adds none. The Ev row's printed lower-case
+# vernacular cell is the ech-yiwn ligature և; եվ is not a printed table row
+# (the map encodes it additionally). The printed rows for Զ/զ and Ս/ս carry
+# a '(see Note 3)' reference marker; transcribed as plain Z/S values. The
+# aspiration mark is U+02BB, the soft sign U+02B9, the numeral leader
+# U+2024; tilded/macroned/dotted Latin letters are the printed precomposed
+# forms.
+# Provenance artifact: scripts/row-sources/alalc-hye-Armn-Latn-2022.json (128 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-14); regenerate from the artifact, do not hand-edit.
+  "Ա" -> "A"
+  "ա" -> "a"
+  "Բ" -> "B"
+  "բ" -> "b"
+  "Գ" -> "G"
+  "գ" -> "g"
+  "Դ" -> "D"
+  "դ" -> "d"
+  "Ե" -> "E"
+  "ե" -> "e"
+  "Զ" -> "Z"
+  "զ" -> "z"
+  "Է" -> "Ē"
+  "է" -> "ē"
+  "Ը" -> "Ě"
+  "ը" -> "ě"
+  "Թ" -> "Tʻ"
+  "թ" -> "tʻ"
+  "Ժ" -> "Zh"
+  "ժ" -> "zh"
+  "Ի" -> "I"
+  "ի" -> "i"
+  "Լ" -> "L"
+  "լ" -> "l"
+  "Խ" -> "Kh"
+  "խ" -> "kh"
+  "Ծ" -> "Ts"
+  "ծ" -> "ts"
+  "Կ" -> "K"
+  "կ" -> "k"
+  "Հ" -> "H"
+  "հ" -> "h"
+  "Ձ" -> "Dz"
+  "ձ" -> "dz"
+  "Ղ" -> "Gh"
+  "ղ" -> "gh"
+  "Ճ" -> "Ch"
+  "ճ" -> "ch"
+  "Մ" -> "M"
+  "մ" -> "m"
+  "Յ" -> "Y"
+  "յ" -> "y"
+  "Ն" -> "N"
+  "ն" -> "n"
+  "Շ" -> "Sh"
+  "շ" -> "sh"
+  "Ո" -> "O"
+  "ո" -> "o"
+  "Չ" -> "Chʻ"
+  "չ" -> "chʻ"
+  "Պ" -> "P"
+  "պ" -> "p"
+  "Ջ" -> "J"
+  "ջ" -> "j"
+  "Ռ" -> "Ṛ"
+  "ռ" -> "ṛ"
+  "Ս" -> "S"
+  "ս" -> "s"
+  "Վ" -> "V"
+  "վ" -> "v"
+  "Տ" -> "T"
+  "տ" -> "t"
+  "Ր" -> "R"
+  "ր" -> "r"
+  "Ց" -> "Tsʻ"
+  "ց" -> "tsʻ"
+  "Ւ" -> "W"
+  "ւ" -> "w"
+  "Ու" -> "U"
+  "ու" -> "u"
+  "Փ" -> "Pʻ"
+  "փ" -> "pʻ"
+  "Ք" -> "Kʻ"
+  "ք" -> "kʻ"
+  "Եւ" -> "Ew"
+  "եւ" -> "ew"
+  "Եվ" -> "Ev"
+  "և" -> "ev"
+  "Օ" -> "Ō"
+  "օ" -> "ō"
+  "Ֆ" -> "F"
+  "ֆ" -> "f"
+  "Գհ" -> "Gʹh"
+  "գհ" -> "gʹh"
+  "Դզ" -> "Dʹz"
+  "դզ" -> "dʹz"
+  "Կհ" -> "Kʹh"
+  "կհ" -> "kʹh"
+  "Սհ" -> "Sʹh"
+  "սհ" -> "sʹh"
+  "Տս" -> "Tʹs"
+  "տս" -> "tʹs"
+  "Ա․" -> "1"
+  "Բ․" -> "2"
+  "Գ․" -> "3"
+  "Դ․" -> "4"
+  "Ե․" -> "5"
+  "Զ․" -> "6"
+  "Է․" -> "7"
+  "Ը․" -> "8"
+  "Թ․" -> "9"
+  "Ժ․" -> "10"
+  "Ի․" -> "20"
+  "Լ․" -> "30"
+  "Խ․" -> "40"
+  "Ծ․" -> "50"
+  "Կ․" -> "60"
+  "Հ․" -> "70"
+  "Ձ․" -> "80"
+  "Ղ․" -> "90"
+  "Ճ․" -> "100"
+  "Մ․" -> "200"
+  "Յ․" -> "300"
+  "Ն․" -> "400"
+  "Շ․" -> "500"
+  "Ո․" -> "600"
+  "Չ․" -> "700"
+  "Պ․" -> "800"
+  "Ջ․" -> "900"
+  "Ռ․" -> "1000"
+  "Ս․" -> "2000"
+  "Վ․" -> "3000"
+  "Տ․" -> "4000"
+  "Ր․" -> "5000"
+  "Ց․" -> "6000"
+  "Ւ․" -> "7000"
+  "Փ․" -> "8000"
+  "Ք․" -> "9000"
 }
 
 stage main {
