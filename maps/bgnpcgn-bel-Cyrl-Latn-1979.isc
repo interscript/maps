@@ -38,6 +38,10 @@ tests {
    "Беліца" ->  "Byelitsa"
    "Ёдкавічы" ->  "Yodkavichy"
    "Нёман" ->  "Nyoman"
+   # WO19 G6: the map's capital-\U row is spelled with a DOUBLED
+   # backslash ("\\U040E") — not the \U040E escape — so it does NOT
+   # fire on Ў. Pin that dormancy (ruby and rs agree).
+   "Ў" ->  "Ў"
    "Жлобін" ->  "Zhlobin"
    "Ружаны" ->  "Ruzhany"
    "Зоя" ->  "Zoya"

@@ -20,6 +20,11 @@ tests {
    "Ева" ->  "Eva"
    "Васiльева" ->  "Vasiĺeva"
    "Адъютантов" ->  "Adjutantov"
+   # WO19 G6: the capital-\U row lives in stage translit and is
+   # spelled with a DOUBLED backslash ("\\U040E") — not the \U040E
+   # escape — so it does NOT fire on Ў. Pin that dormancy (ruby and
+   # rs agree).
+   "Ў" ->  "Ў"
 }
 
 stage translit {

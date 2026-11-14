@@ -59,6 +59,10 @@ tests {
    "Бэз" ->  "Bez"
    "Чабор" ->  "Chabor"
    "Дзяўчына, дзяўчыначка пасярод гісторыі\nЗ прастадушнай шчырасьцю глядзіць на тэрыторыю.\nУ вакне заўсёды звыклая выява:\nШэры двор, шэры слуп, на слупе аб'явы." ->  "Dzyawchyna, dzyawchynachka pasyarod historyi\nZ prastadushnay shchyrastsyu hlyadzits na terytoryyu.\nU vaknye zawsyody zvyklaya vyyava:\nShery dvor, shery slup, na slupye abyavy."
+   # WO19 G6 item 4: pin the capital-\U escape row (the sub below
+   # spells "\U040E", which decodes to Ў; the generated ts/py parsers
+   # carried the literal "U040E" text and the row never fired).
+   "Ў" ->  "W"
 }
 
 stage main {

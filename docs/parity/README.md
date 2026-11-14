@@ -251,6 +251,20 @@ rs deliberately omits `ruleset` (`interscript-rs/grammar/isc.parg:119-122`
 — "`ruleset` deliberately stays OUT (§2 lists exactly these four)");
 ts and py keyword all of them (`grammar-source.ts` / `grammar_source.py`
 `keyword` production).
+ts and py keyword all of them (`grammar-source.ts` / `grammar_source.py`
+`keyword` production).
+
+**WO19 G6 errata (2026-11-14).** G6 item 1 adopted ruby's table
+everywhere: ts, py and rs now keyword the six fn-literal names
+(`upcase` `downcase` `title_case` `reverse` `strip` `swapcase`), so
+the fn-literal divergence rows above are resolved — all 44 probed
+identifiers agree across the four runtimes. The `ruleset` row was
+already stale at this audit's snapshot: rs joined `ruleset` to its
+keyword table in the G7 round (the block-head guard needs it; the
+`grammar/isc.parg` comment "ruleset joins too" postdates the cited
+line range). Alias declarations NAMED after keywords remain valid
+everywhere (`alias_decl` has no keyword guard); a bare keyword is
+never an alias reference.
 
 Corpus equivalence: a ruby sweep of all 428 corpus maps (alias names +
 stage names + dependency aliases vs the full keyword list) reports

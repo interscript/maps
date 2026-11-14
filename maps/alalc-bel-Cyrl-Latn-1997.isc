@@ -36,6 +36,11 @@ tests {
    "Кастрычніцкая" ->  "Kastrychnitskai͡a"
    "Плошча Леніна" ->  "Ploshcha Lenina"
    "Інстытут Культуры" ->  "Instytut Kulʹtury"
+   # WO19 G6: the map's capital-\U row is spelled with a DOUBLED
+   # backslash ("\\U040E"), i.e. a literal backslash + the raw text
+   # U040E — not the \U040E escape — so it does NOT fire on Ў. Pin
+   # that dormancy (ruby and rs agree Ў passes through unchanged).
+   "Ў" ->  "Ў"
 }
 
 stage main {
