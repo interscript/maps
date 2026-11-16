@@ -39,6 +39,79 @@ tests {
    "\uabf3" ->  "3"
    "\uabdb" ->  "k"
    "\uabc0\uabe5\uabec" ->  "k\u0101\u0323"
+# Exhaustive per-row tests for alalc-mni-Mtei-Latn-2022, generated from the source
+# document's table.
+# Source: ALA-LC Modern Manipuri (Meitei script) Romanization Table, June
+# 2022, pp. 1-2 (vowels, consonants, finals, visarga, anusvara, numerals);
+# held source interscript-private-references/alalc/alalc-manipuri.pdf.
+# Extraction: PDF text layer, every value cell cross-checked against the
+# rendered page image. Vowel rows are transcribed as printed: the table
+# pairs independent signs with romanization. Composite printed cells are
+# transcribed as their printed composites: ꯑꯥ -> ā, ꯑꫵ -> aḥ, ꯁꯪ -> saṃ.
+# Consonants are printed with inherent vowel "a"; final consonants are
+# printed as a separate table (without inherent vowel) and transcribed as
+# their own rows. Skipped printed rows: ꯬ (heavy tone) — printed value cell
+# "◌̣" (a dot applied to the preceding vowel): a mark, not a standalone
+# transliteration string; skipped as un-expressible. | ꯭ (apun iyek /
+# "killer") — instruction cell (omits the preceding consonant's inherent
+# vowel); no romanization value. | Punctuation marks ꫱, ꫰, ꯯ — the printed
+# table names them (question mark, comma, full stop/period) but the value
+# pairing in the text layer is layout-dependent; not transcribed as rows.
+# Provenance artifact: scripts/row-sources/alalc-mni-Mtei-Latn-2022.json (53 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-16); regenerate from the artifact, do not hand-edit.
+  "ꯑ" -> "a"
+  "ꯑꯥ" -> "ā"
+  "ꯏ" -> "i"
+  "ꯎ" -> "u"
+  "ꯑꯦ" -> "e"
+  "ꯑꯩ" -> "ai"
+  "ꯑꯣ" -> "o"
+  "ꯑꯧ" -> "au"
+  "ꯀ" -> "ka"
+  "ꯁ" -> "sa"
+  "ꯂ" -> "la"
+  "ꯃ" -> "ma"
+  "ꯄ" -> "pa"
+  "ꯅ" -> "na"
+  "ꯆ" -> "ca"
+  "ꯇ" -> "ta"
+  "ꯈ" -> "kha"
+  "ꯉ" -> "ṅa"
+  "ꯊ" -> "tha"
+  "ꯋ" -> "va"
+  "ꯌ" -> "ya"
+  "ꯍ" -> "ha"
+  "ꯐ" -> "pha"
+  "ꯒ" -> "ga"
+  "ꯓ" -> "jha"
+  "ꯔ" -> "ra"
+  "ꯕ" -> "ba"
+  "ꯖ" -> "ja"
+  "ꯗ" -> "da"
+  "ꯘ" -> "gha"
+  "ꯙ" -> "dha"
+  "ꯚ" -> "bha"
+  "ꯛ" -> "k"
+  "ꯜ" -> "l"
+  "ꯝ" -> "m"
+  "ꯞ" -> "p"
+  "ꯟ" -> "n"
+  "ꯠ" -> "t"
+  "ꯡ" -> "ṅ"
+  "ꫵ" -> "ḥ"
+  "ꯑꫵ" -> "aḥ"
+  "ꯪ" -> "ṃ"
+  "ꯁꯪ" -> "saṃ"
+  "꯰" -> "0"
+  "꯱" -> "1"
+  "꯲" -> "2"
+  "꯳" -> "3"
+  "꯴" -> "4"
+  "꯵" -> "5"
+  "꯶" -> "6"
+  "꯷" -> "7"
+  "꯸" -> "8"
+  "꯹" -> "9"
 }
 stage main {
   parallel {

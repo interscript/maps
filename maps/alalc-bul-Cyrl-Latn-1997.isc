@@ -18,6 +18,97 @@ metadata {
 
 tests {
   # missing
+# Exhaustive per-row tests for alalc-bul-Cyrl-Latn-1997, generated from the source
+# document's table.
+# Source: ALA-LC Bulgarian Romanization Table, 2013 version, p. 1 (letter
+# table) + p. 2 (notes); held source
+# interscript-private-references/alalc/alalc-bulgarian.pdf. Extraction: PDF
+# text layer, every value cell cross-checked against the rendered page
+# image. The map is the 1997 table; the only locally-held printed source is
+# the 2013 version (the table page lists "Earlier versions: 2012, 2011,
+# 1997"). The letter table and notes match what the map encodes, so the rows
+# pin the map against the held printed page; the version difference is
+# recorded here. The value cells for Ц, Ю, Я, Ѣ print the tesh-ligature
+# digraphs (t͡s, i͡u, i͡a, i͡e, U+0361); the text layer stores lookalike
+# Cyrillic glyphs for these — transcribed from the printed image. The upper
+# Ѫ value cell is blank in the text layer and visually identified at 900 dpi
+# as U̐ (U + U+0310), matching the printed lower u̐. Skipped printed rows:
+# Ъ/ъ — the table gives Ъ two value cells: "Ŭ (see note 1)" (the vowel
+# reading, initial/medial) and "ʺ (hard sign)" (the pre-1945 word-final
+# reading). The map implements note 1 with a word-final rule, so a plain-row
+# test of the standalone letter takes the word-final path; both cells are
+# position-dependent per note 1 and not expressible as plain rows. Only the
+# note-1 context is documented here; the Ŭ/ŭ cells were transcribed and
+# failed only because the standalone string is word-final.
+# Canonical-equivalence notes: Й: printed glyph "Ĭ"; the runtime emits the
+# canonically equivalent byte form 'Ĭ'; the row is stored in the runtime's
+# byte form so the byte-exact embedded test passes. | й: printed glyph "ĭ";
+# the runtime emits the canonically equivalent byte form 'ĭ'; the row is
+# stored in the runtime's byte form so the byte-exact embedded test passes.
+# Provenance artifact: scripts/row-sources/alalc-bul-Cyrl-Latn-1997.json (62 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-16); regenerate from the artifact, do not hand-edit.
+  "А" -> "A"
+  "Б" -> "B"
+  "В" -> "V"
+  "Г" -> "G"
+  "Д" -> "D"
+  "Е" -> "E"
+  "Ж" -> "Zh"
+  "З" -> "Z"
+  "И" -> "I"
+  "Й" -> "Ĭ"
+  "К" -> "K"
+  "Л" -> "L"
+  "М" -> "M"
+  "Н" -> "N"
+  "О" -> "O"
+  "П" -> "P"
+  "Р" -> "R"
+  "С" -> "S"
+  "Т" -> "T"
+  "У" -> "U"
+  "Ф" -> "F"
+  "Х" -> "Kh"
+  "Ц" -> "T͡S"
+  "Ч" -> "Ch"
+  "Ш" -> "Sh"
+  "Щ" -> "Sht"
+  "Ь" -> "ʹ"
+  "Ѣ" -> "I͡E"
+  "Ю" -> "I͡U"
+  "Я" -> "I͡A"
+  "Ѫ" -> "U̐"
+  "а" -> "a"
+  "б" -> "b"
+  "в" -> "v"
+  "г" -> "g"
+  "д" -> "d"
+  "е" -> "e"
+  "ж" -> "zh"
+  "з" -> "z"
+  "и" -> "i"
+  "й" -> "ĭ"
+  "к" -> "k"
+  "л" -> "l"
+  "м" -> "m"
+  "н" -> "n"
+  "о" -> "o"
+  "п" -> "p"
+  "р" -> "r"
+  "с" -> "s"
+  "т" -> "t"
+  "у" -> "u"
+  "ф" -> "f"
+  "х" -> "kh"
+  "ц" -> "t͡s"
+  "ч" -> "ch"
+  "ш" -> "sh"
+  "щ" -> "sht"
+  "ь" -> "ʹ"
+  "ѣ" -> "i͡e"
+  "ю" -> "i͡u"
+  "я" -> "i͡a"
+  "ѫ" -> "u̐"
 }
 
 # This map has been partially converted by the bin/maps_v1_to_v2 script
