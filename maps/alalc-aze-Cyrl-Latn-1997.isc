@@ -22,6 +22,119 @@ tests {
    "Азәрбајҹан дили" ->  "Azărbaı̐jan dili"
    "Бүтүн инсанлар ләјагәт вә һүгугларына ҝөрә азад вә бәрабәр доғулурлар.\nОнларын шүурлары вә виҹданлары вар вә бир-бирләринә мүнасибәтдә гардашлыг руһунда давранмалыдырлар." ->  "Bu̇tu̇n insanlar lăı̐agăt vă ḣu̇guglaryna ġȯră azad vă bărabăr doghulurlar.\nOnlaryn shu̇urlary vă vijdanlary var vă bir-birlărină mu̇nasibătdă gardashlyg ruḣunda davranmalydyrlar."
    "Азәрбајҹан! Азәрбајҹан!\nЕј гәһрәман өвладын шанлы Вәтәни!\nСәндән өтрү ҹан вермәјә ҹүмлә һазырыз!\nСәндән өтрү ган төкмәјә ҹүмлә гадириз!\nҮчрәнҝли бајрағынла мәсуд јаша!\nҮчрәнҝли бајрағынла мәсуд јаша!\nМинләрлә ҹан гурбан олду,\nСинән һәрбә мејдан олду!\nҺүгугундан кечән әсҝәр,\nҺәрә бир гәһрәман олду!\nСән оласан ҝүлүстан,\nСәнә һәр ан ҹан гурбан!\nСәнә мин бир мәһәббәт\nСинәмдә тутмуш мәкан!\nНамусуну һифз етмәјә,\nБајрағыны јүксәлтмәјә\nНамусуну һифз етмәјә,\nҸүмлә ҝәнҹләр мүштагдыр!\nШанлы Вәтән! Шанлы Вәтән!\nАзәрбајҹан! Азәрбајҹан!\nАзәрбајҹан! Азәрбајҹан!" ->  "Azărbaı̐jan! Azărbaı̐jan!\nEı̐ găḣrăman ȯvladyn shanly Vătăni!\nSăndăn ȯtru̇ jan vermăı̐ă ju̇mlă ḣazyryz!\nSăndăn ȯtru̇ gan tȯkmăı̐ă ju̇mlă gadiriz!\nU̇chrănġli baı̐raghynla măsud ı̐asha!\nU̇chrănġli baı̐raghynla măsud ı̐asha!\nMinlărlă jan gurban oldu,\nSinăn ḣărbă meı̐dan oldu!\nḢu̇gugundan kechăn ăsġăr,\nḢără bir găḣrăman oldu!\nSăn olasan ġu̇lu̇stan,\nSănă ḣăr an jan gurban!\nSănă min bir măḣăbbăt\nSinămdă tutmush măkan!\nNamusunu ḣifz etmăı̐ă,\nBaı̐raghyny ı̐u̇ksăltmăı̐ă\nNamusunu ḣifz etmăı̐ă,\nJu̇mlă ġănjlăr mu̇shtagdyr!\nShanly Vătăn! Shanly Vătăn!\nAzărbaı̐jan! Azărbaı̐jan!\nAzărbaı̐jan! Azărbaı̐jan!"
+# Exhaustive per-row tests for alalc-aze-Cyrl-Latn-1997, generated from the source
+# document's table.
+# Source: ALA-LC Azerbaijani Romanization Table, 2017 version, pp. 6-7
+# (Cyrillic script section); held source
+# interscript-private-references/alalc/alalc-azerbaijani.pdf. Extraction:
+# PDF text layer, every value cell cross-checked against the rendered page
+# image. Tesh-ligature digraphs (TS͡/ts͡, IU͡/iu͡, IA͡/ia͡, U+0361) and
+# candrabindu values (I̐/i̐, I + U+0310) transcribed as printed. The
+# lower-case ҝ vernacular cell carries a parenthetical variant glyph that is
+# illegible at 600 dpi and smudged in the print itself; it belongs to the
+# vernacular column, not the romanization, and is documented here rather
+# than transcribed. The map is the 1997 table; the only locally-held printed
+# source is the 2017 version (the table page lists "Earlier versions: 2011,
+# 1997"); the letter table matches the map's encoding and the version
+# difference is recorded here. Skipped printed rows: ъ/ь — the printed value
+# cells read "ʺ (hard sign)" / "ʹ (soft sign)"; the descriptors are stripped
+# and the sign characters transcribed as printed. Canonical-equivalence
+# notes: Ө: printed glyph "Ȯ"; the runtime emits the canonically equivalent
+# byte form 'Ȯ'; the row is stored in the runtime's byte form so the
+# byte-exact embedded test passes. | ө: printed glyph "ȯ"; the runtime
+# emits the canonically equivalent byte form 'ȯ'; the row is stored in the
+# runtime's byte form so the byte-exact embedded test passes. Failing
+# printed rows (findings): Ё — printed cell "Ë"; runtime gives 'Ё'. Failing
+# row, finding below — never forced green. | Й — printed cell "Ĭ"; runtime
+# gives 'Y'. Failing row, finding below — never forced green. | Ц — printed
+# cell "TS͡"; runtime gives 'Ц'. Failing row, finding below — never forced
+# green. | Щ — printed cell "Shch"; runtime gives 'Щ'. Failing row, finding
+# below — never forced green. | Ъ — printed cell "ʺ"; runtime gives 'Ъ'.
+# Failing row, finding below — never forced green. | Ь — printed cell "ʹ";
+# runtime gives 'Ь'. Failing row, finding below — never forced green. | Э —
+# printed cell "Ė"; runtime gives 'Э'. Failing row, finding below — never
+# forced green. | Ю — printed cell "IU͡"; runtime gives 'Ю'. Failing row,
+# finding below — never forced green. | Я — printed cell "IA͡"; runtime
+# gives 'Я'. Failing row, finding below — never forced green. | ё — printed
+# cell "ë"; runtime gives 'ё'. Failing row, finding below — never forced
+# green. | й — printed cell "ĭ"; runtime gives 'y'. Failing row, finding
+# below — never forced green. | ј — printed cell "i̐"; runtime gives 'ı̐'.
+# Failing row, finding below — never forced green. | ц — printed cell "ts͡";
+# runtime gives 'ц'. Failing row, finding below — never forced green. | щ —
+# printed cell "shch"; runtime gives 'щ'. Failing row, finding below — never
+# forced green. | ъ — printed cell "ʺ"; runtime gives 'ъ'. Failing row,
+# finding below — never forced green. | ь — printed cell "ʹ"; runtime gives
+# 'ь'. Failing row, finding below — never forced green. | э — printed cell
+# "ė"; runtime gives 'э'. Failing row, finding below — never forced green. |
+# ю — printed cell "iu͡"; runtime gives 'ю'. Failing row, finding below —
+# never forced green. | я — printed cell "ia͡"; runtime gives 'я'. Failing
+# row, finding below — never forced green.
+# Provenance artifact: scripts/row-sources/alalc-aze-Cyrl-Latn-1997.json (64 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-16); regenerate from the artifact, do not hand-edit.
+  "А" -> "A"
+  "Б" -> "B"
+  "В" -> "V"
+  "Г" -> "G"
+  "Ғ" -> "Gh"
+  "Д" -> "D"
+  "Е" -> "E"
+  "Ә" -> "Ă"
+  "Ж" -> "Zh"
+  "З" -> "Z"
+  "И" -> "I"
+  "Ј" -> "I̐"
+  "К" -> "K"
+  "Ҝ" -> "Ġ"
+  "Л" -> "L"
+  "М" -> "M"
+  "Н" -> "N"
+  "О" -> "O"
+  "Ө" -> "Ȯ"
+  "П" -> "P"
+  "Р" -> "R"
+  "С" -> "S"
+  "Т" -> "T"
+  "У" -> "U"
+  "Ү" -> "U̇"
+  "Ф" -> "F"
+  "Х" -> "Kh"
+  "Һ" -> "Ḣ"
+  "Ч" -> "Ch"
+  "Ҹ" -> "J"
+  "Ш" -> "Sh"
+  "Ы" -> "Y"
+  "а" -> "a"
+  "б" -> "b"
+  "в" -> "v"
+  "г" -> "g"
+  "ғ" -> "gh"
+  "д" -> "d"
+  "е" -> "e"
+  "ә" -> "ă"
+  "ж" -> "zh"
+  "з" -> "z"
+  "и" -> "i"
+  "к" -> "k"
+  "ҝ" -> "ġ"
+  "л" -> "l"
+  "м" -> "m"
+  "н" -> "n"
+  "о" -> "o"
+  "ө" -> "ȯ"
+  "п" -> "p"
+  "р" -> "r"
+  "с" -> "s"
+  "т" -> "t"
+  "у" -> "u"
+  "ү" -> "u̇"
+  "ф" -> "f"
+  "х" -> "kh"
+  "һ" -> "ḣ"
+  "ч" -> "ch"
+  "ҹ" -> "j"
+  "ш" -> "sh"
+  "ы" -> "y"
+  "’" -> "’"
 }
 
 stage main {
