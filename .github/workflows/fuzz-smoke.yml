@@ -1,0 +1,31 @@
+name: fuzz-smoke
+
+on:
+  pull_request:
+    paths:
+      - scripts/fuzz/**
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    name: Seeded differential-fuzz smoke (ruby + ts)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+      - name: Checkout interscript-ruby
+        run: git clone --depth=1 https://github.com/interscript/interscript-ruby.git ../interscript-ruby
+      - name: Install parser dependency
+        run: gem install parsanol
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+      - name: Checkout + build interscript-ts
+        run: |
+          git clone --depth=1 --branch main https://github.com/interscript/interscript-ts.git ../interscript-ts
+          cd ../interscript-ts && npm ci && npm run build
+      - name: Run seeded smoke corpus
+        run: node scripts/fuzz/smoke.mjs --runtimes ruby,ts --jobs 4
