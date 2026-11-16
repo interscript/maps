@@ -3,7 +3,7 @@ name: additivity-gates
 # WO17 step 2 — the golden-capture additivity gate as maps-CI
 # infrastructure. On every PR (and every main push) each of the four
 # runtimes replays the RS-captured golden capture
-# (interscript-rs tests/golden/isc-wf0.jsonl, 12,337 rows / 428 maps)
+# (interscript-rs tests/golden/isc-wf0.jsonl, 13,745 rows / 428 maps)
 # byte-identically:
 #
 #   rs   tests/golden_capture.rs            (cargo)
@@ -11,10 +11,28 @@ name: additivity-gates
 #   ruby tools/isc_wf1_golden_gate.rb       (parsanol runtime)
 #   py   interscript-py tests/test_golden_capture.py
 #
+# WO20 adds the reverse-mode gate alongside the forward one: each
+# runtime also replays the RS-captured reverse golden
+# (interscript-rs tests/golden/isc-reverse.jsonl, 10,024 rows / 313
+# maps — the reversed documents' own embedded tests, captured once by
+# `iscrs capture --reverse`; maps whose reverse still diverges across
+# runtimes live in the rs manifest
+# tests/golden/reverse-divergent-maps.txt and contribute no rows):
+#
+#   rs   tests/golden_reverse_capture.rs    (cargo)
+#   ts   test/golden-isc-reverse.test.ts    (vitest)
+#   ruby tools/isc_wf1_golden_gate.rb --reverse
+#   py   interscript-py tests/test_golden_reverse.py
+#
 # Sibling layout (all gates resolve the golden + corpus relative to
 # this workspace): $GITHUB_WORKSPACE/{maps, interscript-rs,
 # interscript-ruby, interscript-ts}. A delta on a non-adopting map
 # blocks the merge exactly like any test failure.
+#
+# Merge order: the three runtime branches (wo20-reverse-gate-rs/-ruby/
+# -ts) must land before (or with) this workflow change — until the rs
+# branch is on main the reverse gate files are absent and every
+# reverse step no-ops (skip-on-missing is uniform across the four).
 
 on:
   pull_request:
@@ -54,6 +72,9 @@ jobs:
       - name: Golden additivity (rs)
         working-directory: interscript-rs
         run: cargo test --release --test golden_capture
+      - name: Reverse golden additivity (rs)
+        working-directory: interscript-rs
+        run: cargo test --release --test golden_reverse_capture
 
   ts-gate:
     runs-on: ubuntu-latest
@@ -80,6 +101,9 @@ jobs:
       - name: Golden additivity (ts)
         working-directory: interscript-ts
         run: npx vitest run test/golden-isc-wf0.test.ts
+      - name: Reverse golden additivity (ts)
+        working-directory: interscript-ts
+        run: npx vitest run test/golden-isc-reverse.test.ts
 
   ruby-gate:
     runs-on: ubuntu-latest
@@ -108,6 +132,12 @@ jobs:
           bundle exec ruby -Ilib tools/isc_wf1_golden_gate.rb \
             --golden ../interscript-rs/tests/golden/isc-wf0.jsonl \
             --maps-root "${GITHUB_WORKSPACE}/maps"
+      - name: Reverse golden additivity (ruby)
+        working-directory: interscript-ruby
+        run: |
+          bundle exec ruby -Ilib tools/isc_wf1_golden_gate.rb --reverse \
+            --golden ../interscript-rs/tests/golden/isc-reverse.jsonl \
+            --maps-root "${GITHUB_WORKSPACE}/maps"
 
   py-gate:
     runs-on: ubuntu-latest
@@ -134,3 +164,5 @@ jobs:
           python -m pip install -e ./interscript-ruby/interscript-py pytest
       - name: Golden additivity (py)
         run: pytest interscript-ruby/interscript-py/tests/test_golden_capture.py -q
+      - name: Reverse golden additivity (py)
+        run: pytest interscript-ruby/interscript-py/tests/test_golden_reverse.py -q
