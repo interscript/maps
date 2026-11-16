@@ -34,6 +34,69 @@ tests {
    "б" ->  "b"
    "в" ->  "v"
    "г" ->  "g"
+# Exhaustive per-row tests for din-az-Cyrl-Latn-1460-2-2011, generated from the source
+# document's table.
+# Source: DIN 1460-2:2011-10, Tabelle 1, language row 5 (Aserbaidschanisch);
+# held source interscript-private-references/din/din-1460-2.pdf. Rows are
+# the language column's printed cells, taken from the durable mechanical
+# extraction tools/din1460-2-table.json (x-anchored text-layer extraction,
+# maps PR #242 provenance), re-verified cell-by-cell against the printed
+# grid rectangles (pymupdf find_tables re-extraction) and end-to-end through
+# iscrs transliterate. Positions referenced by the table's own position
+# numbers. Cell notes: й (position 32) — the printed cell carries the value
+# parenthesized ("(j)"), DIN's optional-value notation; transcribed without
+# the typographic parentheses; the row passes end-to-end. | к̢ (position 37)
+# — printed cell "(ķ)" (value 'ķ'); runtime gives ''. Failing row, finding
+# below — never forced green. | ҝ (position 38) — printed cell "ķ" (value
+# 'ķ'); runtime gives 'k'. Failing row, finding below — never forced green.
+# | у̅ (position 65) — the printed cell carries the value parenthesized
+# ("(ū)"), DIN's optional-value notation; transcribed without the
+# typographic parentheses; the row passes end-to-end. | ӌ (position 80) —
+# the printed cell carries the value parenthesized ("(ǵ)"), DIN's
+# optional-value notation; transcribed without the typographic parentheses;
+# the row passes end-to-end. | э (position 90) — the printed cell carries
+# the value parenthesized ("(ė)"), DIN's optional-value notation;
+# transcribed without the typographic parentheses; the row passes
+# end-to-end. Findings (map-vs-source, map untouched): к̢ (position 37):
+# printed cell "(ķ)" vs runtime ''. | ҝ (position 38): printed cell "ķ" vs
+# runtime 'k'.
+# Provenance artifact: scripts/row-sources/din-az-Cyrl-Latn-1460-2-2011.json (35 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-16); regenerate from the artifact, do not hand-edit.
+  "a" -> "a"
+  "б" -> "b"
+  "в" -> "v"
+  "г" -> "g"
+  "ғ" -> "ġ"
+  "h" -> "h"
+  "д" -> "d"
+  "е" -> "e"
+  "ж" -> "ž"
+  "з" -> "z"
+  "и" -> "i"
+  "й" -> "j"
+  "j" -> "j"
+  "к" -> "k"
+  "л" -> "l"
+  "м" -> "m"
+  "н" -> "n"
+  "о" -> "o"
+  "ө" -> "ö"
+  "п" -> "p"
+  "р" -> "r"
+  "с" -> "s"
+  "т" -> "t"
+  "у" -> "u"
+  "у̅" -> "ū"
+  "ү" -> "ü"
+  "ф" -> "f"
+  "х" -> "h"
+  "ц" -> "c"
+  "ч" -> "č"
+  "ӌ" -> "ǵ"
+  "ҹ" -> "ǵ"
+  "ш" -> "š"
+  "ы" -> "y"
+  "э" -> "ė"
 }
 
 stage main {

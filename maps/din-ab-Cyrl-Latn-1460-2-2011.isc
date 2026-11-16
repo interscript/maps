@@ -34,6 +34,62 @@ tests {
    "б" ->  "b"
    "в" ->  "v"
    "г" ->  "g"
+# Exhaustive per-row tests for din-ab-Cyrl-Latn-1460-2-2011, generated from the source
+# document's table.
+# Source: DIN 1460-2:2011-10, Tabelle 1, language row 2 (Abchasisch); held
+# source interscript-private-references/din/din-1460-2.pdf. Rows are the
+# language column's printed cells, taken from the durable mechanical
+# extraction tools/din1460-2-table.json (x-anchored text-layer extraction,
+# maps PR #242 provenance), re-verified cell-by-cell against the printed
+# grid rectangles (pymupdf find_tables re-extraction) and end-to-end through
+# iscrs transliterate. Positions referenced by the table's own position
+# numbers. Cell notes: к̢ (position 37) — printed cell "ķ" (value 'ķ');
+# runtime gives 'k'. Failing row, finding below — never forced green. | ѵ
+# (position 71) — the printed cell carries the value parenthesized ("(у̇)"),
+# DIN's optional-value notation; transcribed without the typographic
+# parentheses; the row passes end-to-end. Findings (map-vs-source, map
+# untouched): к̢ (position 37): printed cell "ķ" vs runtime 'k'.
+# Provenance artifact: scripts/row-sources/din-ab-Cyrl-Latn-1460-2-2011.json (39 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-16); regenerate from the artifact, do not hand-edit.
+  "a" -> "a"
+  "б" -> "b"
+  "в" -> "v"
+  "г" -> "g"
+  "ҕ" -> "ġ"
+  "д" -> "d"
+  "е" -> "e"
+  "ҽ" -> "ċ"
+  "ҿ" -> "ć"
+  "ж" -> "ž"
+  "з" -> "z"
+  "ӡ" -> "z̈"
+  "и" -> "i"
+  "к" -> "k"
+  "ҟ" -> "q"
+  "л" -> "l"
+  "м" -> "m"
+  "н" -> "n"
+  "о" -> "o"
+  "ҩ" -> "w"
+  "п" -> "p"
+  "ҧ" -> "р́"
+  "р" -> "r"
+  "с" -> "s"
+  "т" -> "t"
+  "Ђ" -> "ţ"
+  "у" -> "u"
+  "ѵ" -> "у̇"
+  "ф" -> "f"
+  "х" -> "h"
+  "ҳ" -> "ḩ"
+  "ц" -> "c"
+  "ҵ" -> "ç"
+  "џ" -> "ḑž"
+  "ч" -> "č"
+  "ӌ" -> "ǵ"
+  "ш" -> "š"
+  "ы" -> "y"
+  "ь" -> "ĭ"
 }
 
 stage main {

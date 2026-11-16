@@ -34,6 +34,62 @@ tests {
    "б" ->  "b"
    "в" ->  "v"
    "г" ->  "g"
+# Exhaustive per-row tests for din-atv-Cyrl-Latn-1460-2-2011, generated from the source
+# document's table.
+# Source: DIN 1460-2:2011-10, Tabelle 1, language row 4 (Altaisch); held
+# source interscript-private-references/din/din-1460-2.pdf. Rows are the
+# language column's printed cells, taken from the durable mechanical
+# extraction tools/din1460-2-table.json (x-anchored text-layer extraction,
+# maps PR #242 provenance), re-verified cell-by-cell against the printed
+# grid rectangles (pymupdf find_tables re-extraction) and end-to-end through
+# iscrs transliterate. Positions referenced by the table's own position
+# numbers. Cell notes: i (position 33) — the printed cell carries the value
+# parenthesized ("(í)"), DIN's optional-value notation; transcribed without
+# the typographic parentheses; the row passes end-to-end. | j (position 34)
+# — the cell's text-layer glyph is a private-use character (U+E553),
+# visually identified (PR #242) as j-acute; transcribed as "j́"; the row
+# passes end-to-end. | к̢ (position 37) — printed cell "(ķ)" (value 'ķ');
+# runtime gives ''. Failing row, finding below — never forced green.
+# Findings (map-vs-source, map untouched): к̢ (position 37): printed cell
+# "(ķ)" vs runtime ''.
+# Provenance artifact: scripts/row-sources/din-atv-Cyrl-Latn-1460-2-2011.json (36 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-16); regenerate from the artifact, do not hand-edit.
+  "a" -> "a"
+  "б" -> "b"
+  "в" -> "v"
+  "г" -> "g"
+  "д" -> "d"
+  "е" -> "e"
+  "ё" -> "ё"
+  "ж" -> "ž"
+  "з" -> "z"
+  "и" -> "i"
+  "й" -> "j"
+  "i" -> "í"
+  "j" -> "j́"
+  "к" -> "k"
+  "л" -> "l"
+  "м" -> "m"
+  "н" -> "n"
+  "ҥ" -> "ņ"
+  "о" -> "o"
+  "ӧ" -> "ö"
+  "п" -> "p"
+  "р" -> "r"
+  "с" -> "s"
+  "т" -> "t"
+  "у" -> "u"
+  "ӱ" -> "ü"
+  "ф" -> "f"
+  "х" -> "h"
+  "ц" -> "c"
+  "ч" -> "č"
+  "ш" -> "š"
+  "щ" -> "šč"
+  "ъ" -> "\""
+  "ы" -> "y"
+  "ь" -> "'"
+  "э" -> "ė"
 }
 
 stage main {
