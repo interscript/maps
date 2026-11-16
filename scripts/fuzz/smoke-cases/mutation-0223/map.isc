@@ -1,0 +1,109 @@
+system "BGN-PCGN:tuk-Cyrl:Latn:1979" {
+
+metadata {
+  authority_id bgnpcgn
+  id 1979
+  language iso-639-2:tuk
+  source_script Cyrl
+  destination_script Latn
+  name TURKMEN Cyrillic script
+  url https://transliteration.eki.ee/pdf/Turkmen.pdf
+  creation_date 1979
+
+  notes {
+    note "Ye/ye is used initially, after a vowel, й, ъ, and ь."
+  }
+}
+
+tests {
+  # adopted https://assets.publishing.service.gov.uk/media/6329b1638fa8f53cb45763b4/TABLE_OF_CORRESPONDENCES_FOR_TURKMEN_with_examples.pdf
+   "Aшгабат" ->  "Ashgabat"
+   "Лебап" ->  "Lebap"
+   "Ныязов" ->  "Nyyazov"
+   "Тагта" ->  "Tagta"
+   "Дашховуз" ->  "Dashkhovuz"
+   "Небитдаг" ->  "Nebitdag"
+   "Ёлөтен" ->  "Yolöten"
+   "Теҗен" ->  "Tejen"
+   "Газанҗык" ->  "Gazanjyk"
+   "Керки" ->  "Kerki"
+   "Бүзмейин" ->  "Büzmeyin"
+   "Кака" ->  "Kaka"
+   "Челекен" ->  "Cheleken"
+   "Түркменбашы" ->  "Türkmenbashy"
+   "Чаршаңңы" ->  "Charshangngy"
+   "Мургап" ->  "Murgap"
+   "Мары" ->  "Mary"
+   "Сарахс" ->  "Sarakhs"
+   "Фарап" ->  "Farap"
+   "Эсенгулы" ->  "Esenguly"
+   "Әнев" ->  "Änev"
+}
+
+stage main {
+  # RULES
+
+  # note[1]
+  sub {
+    from boundary + "\u0415"
+    to "Ye"
+  }
+  sub {
+    from boundary + "\u0435"
+    to "ye"
+  }
+  sub {
+    from "\u0415"
+    to "Ye"
+    sub a "\u{00E9}" after "\u{00E9}"
+    before any("АаЕеЁёИиЙйОоӨөУуҮүЪъЫыЬьЭэӘәЮюЯя")
+    after boundary
+  }
+  sub {
+    from "\u0435"
+    to "ye"
+    before any("АаЕеЁёИиЙйОоӨөУуҮүЪъЫыЬьЭэӘәЮюЯя")
+    after boundary
+  }
+
+  # CHARACTERS
+  parallel {
+    sub "\u0410" "A"
+    sub "\u0411" "B"
+    sub "\u0412" "V"
+    sub "\u0413" "G"
+    sub "\u0414" "D"
+    sub "\u0415" "E"
+    sub "\u0401" "Yo"
+    sub "\u0416" "Zh"
+    sub "\u0496" "J"
+    sub "\u0417" "Z"
+    sub "\u0418" "I"
+    sub "\u0419" "Y"
+    sub "\u041A" "K"
+    sub "\u041B" "L"
+    sub "\u041C" "M"
+    sub "\u041D" "N"
+    sub "\u04A2" "Ng"
+    sub "\u041E" "O"
+    sub "\u04E8" "Ö"
+    sub "\u041F" "P"
+    sub "\u0420" "R"
+    sub "\u0421" "S"
+    sub "\u0422" "T"
+    sub "\u0423" "U"
+    sub "\u04AE" "Ü"
+    sub "\u0424" "F"
+    sub "\u0425" "Kh"
+    sub "\u0426" "Ts"
+    sub "\u0427" "Ch"
+    sub "\u0428" "Sh"
+    sub "\u0429" "Shch"
+    sub {
+    from "\u042A"
+    to "\""
+  }
+    sub "\u042B" "Y"
+    sub "\u042C" "'"
+    sub "\u042D" "E"
+    sub "\u04D8" "

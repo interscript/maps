@@ -1,0 +1,25 @@
+system "BIS:tel-Telu:Latn:13194-1991" {
+
+metadata {
+  authority_id bis
+  id 13194-1991
+  language iso-639-2:tel
+  source_script Telu
+  destination_script Latn
+  name Indian script code for information interchange (ISCII) -- Telegu Romanization
+
+  #
+  creation_date 1991
+  description {    IS 13194 (1991): Indian script code for information
+    interchange - ISCII [LITD 20: Indian Language Technologies
+    and Products]
+  }
+
+  notes {
+    note "      Exception: Anusvāra is transliterated by:\n\n      a) ṅ before gutturals,\n      b) ñ before palatals,\n      c) ṇ before cerebrals,\n      d) n before dentals, and\n      e) m before labials."
+  }
+}
+
+tests {
+   "ఇప్పుడు ఇదే కోవలో టాలీవుడ్‌లో మరో మల్టీస్టారర్‌ రూపొందనుందని సినీ వర్గాల్లో వార్తలు వినిపిస్తున్నాయి" ->  "ippuḍu idē kŏvlŏ ṭālīvuḍlŏ mrŏ mlṭīsṭārr rūpondnundni sinī vrgāllŏ vārtlu vinipistunnāyi"
+   "అంటే ఉంటాయి, అయితే అవి చాలా పెద్దవై ఉండాల్సిన

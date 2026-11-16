@@ -1,0 +1,44 @@
+system "BGN-PCGN:fao-Latn:Latn:1968" {
+
+metadata {
+  authority_id bgnpcgn
+  language iso-639-2:fao
+  id 1968
+  source_script Latn
+  destination_script Latn
+  name Roman-Script Spelling Convention of Faroese (1968 Agreement)
+  url https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693794/ROMAN-SCRIPT_SPELLING_CONVENTIONS.pdf
+  creation_date 1968
+
+  notes {
+    note "      The special letter Ð, ð, known as edh, [Unicode: 00D0, 00F0] should be reproduced in those forms whenever\n      encountered. In those instances when it cannot be reproduced, however, the digraph Dh dh may be substituted for it."
+  }
+}
+    sub "Щ" "Shch"
+    sub "Ь" "’"
+    sub "Ю" "Iu"
+    sub "Я" "Ia"
+    sub "а" "a"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "h"
+    sub "ґ" "g"
+    sub "д" "d"
+    sub "е" "e"
+    sub "є" "ie"
+    sub "ж" "zh"
+    sub "з" "z"
+
+tests {
+   "Fyrirgefðu" ->  "Fyrirgefdhu"
+   "Þakka" ->  "Þakka"
+}
+
+dependency "bgnpcgn-fao-Latn-Latn-1964" as latnlatn
+
+stage main {
+
+  run  map.latnlatn.stage.main
+
+}
+}

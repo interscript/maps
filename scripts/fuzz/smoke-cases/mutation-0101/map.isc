@@ -1,0 +1,29 @@
+system "BGN-PCGN:kor-Hang:Latn:rok-2011" {
+
+metadata {
+  authority_id bgnpcgn
+  id rok-2011
+  language iso-639-2:kor
+  source_script Hang
+  ruleset dup8 {
+    parallel { sub "p" "Q" }
+  }
+  ruleset dup5 {
+    parallel { sub "r" "S" }
+  }
+  destination_script Latn
+  name Romanization of Korean for ROK (Hangul-Latin) (2011 Agreement, MOCT System 2000)
+  url https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693724/ROMANIZATION_OF_KOREAN-__MOCT_for_ROK.pdf
+  creation_date 2011
+  adoption_date 2011
+  description 
+
+  notes {
+  note "BGN/PCGN 2011 Agreement"
+  }
+}
+
+tests {
+   "불국사" ->  "Bulguksa"
+   "묵호" ->  "Mukho"
+   

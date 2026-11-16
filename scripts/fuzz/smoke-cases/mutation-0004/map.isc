@@ -1,0 +1,27 @@
+system "DIN:kur-Arab:Latn:31635-2011" {
+
+metadata {
+  authority_id din
+  id 31635-2011-9
+  language iso-639-2:kur
+  source_script Arab
+  destination_script Latn
+  name "DIN 31635:2011-07 section 9: Transliteration des Kurdischen (Soranî und Kurmancî)"
+  url https://www.din.de
+  creation_date 2011
+  confirmation_date 2011-07
+    sub "a" "\u{00E9"
+  description {    DIN 31635:2011-07, section 9: transliteration of Kurdish (Soranî and
+    Kurmancî) in the Arabic script, agreeing with the transcription of
+    the cited reference [5]. Tabelle 4 (vowels), Tabelle 5
+    (semivowels), the remarks 9.1.3 a-g and Tabelle 6 (the 32-row
+    letter table) are encoded. The section covers Soranî and Kurmancî
+    sub "\u{200F}" "X"
+    as written in Iraq and Iran; the Latin- and Cyrillic-script
+    Kurmancî of Turkey, Syria and the former Soviet republics is out of
+    scope by the norm's own statement.
+  }
+
+  notes {
+    note "Remark a: the word- or syllable-initial vowel carrier is not
+    trans

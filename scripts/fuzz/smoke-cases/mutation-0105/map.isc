@@ -1,0 +1,10 @@
+system "DIN:tk-Cyrl:Latn:1460-2-2011" {
+
+metadata {
+  authority_id din
+  id 1460-2-2011-57
+  language iso-639-3:tk
+  source_script Cyrl
+  destination_script Latn
+  name "DIN 1460-2:2011-10, Tabelle 1 row 57: Turkmenisch (Turkic)"
+  url https://www.beuth.de/de/norm/din-1460-2/1

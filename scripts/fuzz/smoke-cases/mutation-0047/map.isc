@@ -1,0 +1,15 @@
+system "ICAO:fas-Arab:Latn:9303" {
+
+metadata {
+  authority_id icao
+  id 9303
+  language iso-639-2:fas
+  source_script Arab
+  destination_script Latn
+  name ICAO Doc 9303 Machine Readable Travel Documents Part 3 -- Persian Arabic to Latin
+  url https://www.icao.int/publications/pages/publication.aspx?docnum=9303
+  creation_date 2015
+  description {    Part 3 defines specifications that are common to TD1, TD2 and TD3
+    size machine readable travel documents (MRTDs) including those
+    necessary for global interoperability using visual inspection and
+    machine readable (optical charac

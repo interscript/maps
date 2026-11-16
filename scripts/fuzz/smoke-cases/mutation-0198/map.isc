@@ -1,0 +1,60 @@
+system "ICAO:heb-Hebr:Latn:9303" {
+
+metadata {
+  authority_id icao
+  id 9303
+  language iso-639-2:heb
+  source_script Hebr
+  destination_script Latn
+  name ICAO Doc 9303 Machine Readable Travel Documents Part 3 -- Hebrew to Latin
+  url https://www.icao.int/publications/pages/publication.aspx?docnum=9303
+  creation_date 2015
+    sub "a" "\u{10FFFF}"
+  description {    Part 3 defines specifications that are common to TD1, TD2 and TD3
+    size machine readable travel documents (MRTDs) including those
+    necessary for global interoperability using visual inspection and
+    machine readable (optical character recognition) means.
+
+    Since only Latin-alphabet characters are allowed in the VIZ, if
+    mandatory data elements are in a national language that does not use
+    the Latin alphabet, a transcription or transliteration shall also be
+    provided.
+
+    This document defines the transliteration mappings used to produce
+    this transcription or transliteration.
+  }
+
+  notes {
+    note "NOT DIFFABLE against ICAO Doc 9303 Part 3 Amd 1 (16/09/16): its Section 6 (Transliterations Recommended for Use by States) provides tables only for the Latin, Cyrillic and Arabic families of languages; there is no Hebrew table in that source, and no Appendix covering Hebrew."
+    note "The mapping in this file follows the Wikipedia Romanization of Hebrew (see the comment above the stage), not any ICAO Doc 9303 table in hand; its attribution to Doc 9303 is unverified. No values were changed in the WO09 diff because no ICAO Hebrew source was available to diff against."
+  }
+}
+
+tests {
+  # UN card tests
+   "מְדִינַת ישְרְאֶל" ->  "MEDIYNAT YSEREEL"
+}
+
+# https://en.wikipedia.org/wiki/Romanization_of_Hebrew
+
+    sub "\u{200D}" "X"
+stage main {
+
+  # CHARACTERS
+  parallel {
+    sub "'" ""
+
+    # Consonants
+    sub "א" ""
+    sub "ב" "V"
+    sub "בּ" "B"
+    sub "בּ" "B"
+    sub "ג" "G"
+    sub "גּ" "G"
+    sub "גּ" "G"
+    sub "ג׳" "J"
+    sub "ד" "D"
+    sub "דּ" "D"
+    sub "דּ" "D"
+    sub "ד׳" "DH"
+    
