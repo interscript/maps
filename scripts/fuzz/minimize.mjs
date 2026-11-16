@@ -11,8 +11,8 @@
 //   node minimize.mjs --finding <findings.jsonl> --results <results.jsonl>
 //        --cases <dir> --out-dir <findings-min/> [--runtimes ruby,ts,py,rs] [--timeout 45000]
 
-import { readFileSync, writeFileSync, mkdirSync, readdirSync, statSync, existsSync, mkdtempSync, rmSync } from "node:fs";
-import { join, resolve, dirname } from "node:path";
+import { readFileSync, writeFileSync, mkdirSync, existsSync, mkdtempSync, rmSync } from "node:fs";
+import { join, resolve } from "node:path";
 import { spawn } from "node:child_process";
 import { extractTestInputs, ensureDir, DRIVER_ENV, FUZZ_DIR } from "./lib.mjs";
 import { knownKind } from "./classify.mjs";

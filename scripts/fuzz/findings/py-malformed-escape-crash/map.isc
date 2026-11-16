@@ -1,0 +1,7 @@
+system "T:fz-em6:1" {
+  stage main {
+    sequence {
+      sub "\u{1F600}" "X"
+    }
+  }
+}

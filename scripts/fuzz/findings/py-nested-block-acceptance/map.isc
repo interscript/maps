@@ -1,0 +1,10 @@
+system "T:fz-em7:1" {
+  stage main {
+    sequence {
+      sub "a" "b"
+      parallel {
+        sub "c" "d"
+      }
+    }
+  }
+}

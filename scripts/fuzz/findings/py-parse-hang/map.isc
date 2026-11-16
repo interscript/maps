@@ -1,0 +1,10 @@
+system "VAR:hin-Deva:Latn:hunterian-1872" {
+metadata {
+  notes {
+  }
+}
+tests {
+}
+stage main {
+  sub {
+  }

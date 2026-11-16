@@ -23,26 +23,28 @@ import { makeRng, listCorpus, pickSeedMap, ensureDir } from "./lib.mjs";
 
 const ASCII_STRINGS = ["a", "b", "k", "q", "x", "z", "ab", "kh", "kk", "xy", "1", "3", "-", " ", "."];
 const UNICODE_LITERALS = [
-  "\\u{00E9}", // é
-  "\\u{0301}", // combining acute
-  "\\u{200D}", // ZWJ
-  "\\u{200F}", // RTL mark
-  "\\u{00A0}", // NBSP
-  "\\u{1F600}", // emoji
-  "\\u{10FFFF}", // max plane
-  "\\u{0646}", // arabic noon
-  "\\u{0E01}", // thai ko kai
-  "\\u{10C}", // D with caron
+  // valid ISC escapes: \\uXXXX (exactly 4 hex) and \\U+4-8 hex (isc.parg esc_uni4/esc_uni)
+  "\\u00E9", // é
+  "\\u0301", // combining acute
+  "\\u200D", // ZWJ
+  "\\u200F", // RTL mark
+  "\\u00A0", // NBSP
+  "\\U01F600", // emoji (U-form, 4..8 hex)
+  "\\U10FFFF", // max plane (U-form)
+  "\\u0646", // arabic noon
+  "\\u0E01", // thai ko kai
+  "\\u010C", // D with caron
 ];
 const ESCAPE_EDGE_CASES = [
-  "\\u{110000}", // out of range
-  "\\u{D800}", // lone surrogate
+  "\\u{110000}", // braced form (not in the grammar) + out of range
+  "\\uD800", // lone surrogate (valid shape, invalid scalar)
   "\\u{}", // empty hex
   "\\uZZZZ", // bad hex
   "\\x", // incomplete
   "\\q", // unknown escape
   "\\", // trailing backslash
-  "\\u{00E9", // unterminated brace
+  "\\u00E", // short hex (grammar wants exactly 4)
+  "\\U01F6", // U-form with 3 hex (grammar wants 4..8)
 ];
 const FN_KEYWORDS = ["upcase", "downcase", "title_case", "reverse", "strip", "swapcase"];
 const ZERO_WIDTH = ["boundary", "line_start", "line_end", "word_boundary", "space", "non_boundary"];

@@ -1,0 +1,10 @@
+system "T:fz-em8:1" {
+  stage main {
+    sequence {
+      sub {
+        from some(any(["k", "q"])) + ref(1)
+        to "W" + ref(1)
+      }
+    }
+  }
+}
