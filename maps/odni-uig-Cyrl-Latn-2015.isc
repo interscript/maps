@@ -56,6 +56,60 @@ metadata {
 
 tests {
    "Зордун Сабир" ->  "Zordun Sabir"
+# Exhaustive per-row tests for odni-uig-Cyrl-Latn-2015, generated from the source
+# document's table.
+# Source: ICS 630-01 Annex U (ANNEX U - Uyghur_Personal_Names_FLTS (U).pdf),
+# p. 2 (letter table); held source
+# interscript-private-references/ics-630-01/ANNEX U -
+# Uyghur_Personal_Names_FLTS (U).pdf. Extraction: annex text layer, every
+# value cell cross-checked against the rendered page image. The printed
+# table has three columns: Cyrillic letter, Uyghur Arabic-script spelling,
+# IC Standard (Latin). The middle column is the Arabic-script equivalent and
+# is not part of this Cyrl->Latn map; documented here, not transcribed as
+# rows. Distinctive values verified visually: ә -> e (not a), в -> w (not
+# v), х -> Latin x (not kh). The value cells for е and ә print the Latin
+# letter e and х the Latin letter x; the text layer stores the lookalike
+# Cyrillic glyphs (U+0435 / U+0445) — values transcribed from the printed
+# image. General Notes: double digraphs as a single digraph (шш -> sh).
+# Skipped printed rows: ъ, ь — not table rows; the General Notes state they
+# are not transliterated (left out).
+# Provenance artifact: scripts/row-sources/odni-uig-Cyrl-Latn-2015.json (35 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-16); regenerate from the artifact, do not hand-edit.
+  "а" -> "a"
+  "ә" -> "e"
+  "б" -> "b"
+  "в" -> "w"
+  "г" -> "g"
+  "ғ" -> "gh"
+  "д" -> "d"
+  "е" -> "e"
+  "ё" -> "yo"
+  "ж" -> "j"
+  "җ" -> "zh"
+  "з" -> "z"
+  "и" -> "i"
+  "й" -> "y"
+  "к" -> "k"
+  "қ" -> "q"
+  "л" -> "l"
+  "м" -> "m"
+  "н" -> "n"
+  "ң" -> "ng"
+  "о" -> "o"
+  "ө" -> "o"
+  "п" -> "p"
+  "р" -> "r"
+  "с" -> "s"
+  "т" -> "t"
+  "у" -> "u"
+  "ү" -> "u"
+  "ф" -> "f"
+  "х" -> "x"
+  "һ" -> "h"
+  "ч" -> "ch"
+  "ш" -> "sh"
+  "ю" -> "yu"
+  "я" -> "ya"
 }
 
 stage main {
