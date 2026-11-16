@@ -14,10 +14,14 @@
 // per-parser normalizer (the two IRs render the same source construct
 // differently by design — e.g. the Python parser lowers `none` to an empty
 // string item and lowers `to`-position function atoms to funcall-inline).
-// Where a construct is representable in one parser but NOT the other, or
-// renders under a different kind, the harness reports a divergence instead
-// of force-passing: the first run is an AUDIT of the four hand-synced
-// grammar copies.
+// Where the canonical projection cannot equate a construct — a kind or
+// value one parser derives and the other does not, a rule shape only one
+// can represent — the harness reports a divergence instead of
+// force-passing. Constructs BOTH runtimes lower identically at their
+// compile layers (`none` -> "", `any_character` -> stdlib alias,
+// constraint written order -> fixed kind order) are projected onto that
+// shared lowering (WO20 #285: the audit's 826-row residual was exactly
+// these three mechanical classes).
 //
 // Usage:
 //   node scripts/parse-parity.mjs [--json <report.json>] [--verbose]
@@ -264,7 +268,7 @@ function parseJsonl(stdout) {
 // ---------------------------------------------------------------------------
 // Canonical schema — shared target of the two per-parser normalizers
 //
-// Items:    {t:"s",v} | {t:"none"} | {t:"prim",name} | {t:"fn",name}
+// Items:    {t:"s",v} | {t:"prim",name} | {t:"fn",name}
 //           | {t:"alias",name} | {t:"ref",id} | {t:"cap",inner}
 //           | {t:"cat",parts} | {t:"any",of} | {t:"range",lo,hi}
 //           | {t:"maybe",inner} | {t:"some",inner}
@@ -283,9 +287,25 @@ function canonTsItem(it) {
   if (!it || typeof it !== "object") return { t: "shape", raw: String(it) }
   switch (it.type) {
     case "string": return { t: "s", v: it.value }
-    case "none": return { t: "none" }
+    case "none":
+      // WO20 (#285): `none` lowers to the empty string on both sides —
+      // ts at compile (converter.ts `case "none"` -> StringItem("");
+      // compile-item.ts `none: { re: "", literal: "" }`), py at parse
+      // (actions.py "converter parity: `none` lowers to the empty
+      // string"). py cannot represent `none` distinct from "", so the
+      // canonical form is the shared lowering.
+      return { t: "s", v: "" }
     case "primitive": return { t: "prim", name: it.name }
-    case "function": return { t: "fn", name: it.name }
+    case "function":
+      // WO20 (#285): `any_character` is the any_character primitive
+      // spelled as a function atom (actions.ts lowers the any_char
+      // literal this way). Both runtimes compile it through the
+      // stdlib-alias path — ts converter.ts keeps the alias path
+      // (compile-item.ts `any_character: { re: ".", literal: "" }`),
+      // py represents it as AliasItem (items.py ALIAS_COMPILED
+      // `re: "."`). The canonical form is that shared lowering.
+      if (it.name === "any_character") return { t: "alias", name: it.name }
+      return { t: "fn", name: it.name }
     case "alias_ref": return { t: "alias", name: it.name }
     case "capture": return { t: "ref", id: it.index }
     case "capture_group": return { t: "cap", inner: canonTsItem(it.inner) }
@@ -330,7 +350,9 @@ function canonTsRule(r) {
   return {
     from: canonTsItem(r.from),
     to: canonTsItem(r.to),
-    constraints: (r.constraints ?? []).map((c) => ({ kind: c.kind, item: canonTsItem(c.item) })),
+    constraints: orderConstraints(
+      (r.constraints ?? []).map((c) => ({ kind: c.kind, item: canonTsItem(c.item) })),
+    ),
     ...(r.when ? { when: [...r.when] } : {}),
   }
 }
@@ -339,13 +361,28 @@ function canonTsRule(r) {
 // constraint kinds is lost, and a duplicated kind keeps only the last.
 const PY_CONSTRAINT_ORDER = ["before", "after", "not_before", "not_after"]
 
+// WO20 (#285): the four constraint kinds are simultaneous lookarounds —
+// written order between them carries no semantics, and the py SubRule
+// model stores them as four named fields (written order lost, duplicated
+// kind keeps the last). The canonical schema therefore projects BOTH
+// parsers onto the fixed kind order (stable within a kind). A genuine
+// difference still diverges: a kind present on one side only lands at a
+// different position or changes the array length, and a duplicated kind
+// (ts keeps every written copy, py keeps the last) shows as a length or
+// value mismatch.
+function orderConstraints(cs) {
+  return PY_CONSTRAINT_ORDER.flatMap((k) => cs.filter((c) => c.kind === k))
+}
+
 function canonPyRule(r) {
   return {
     from: canonPyItem(r.from_),
     to: canonPyItem(r.to),
-    constraints: PY_CONSTRAINT_ORDER
-      .filter((k) => r[k] != null)
-      .map((k) => ({ kind: k, item: canonPyItem(r[k]) })),
+    constraints: orderConstraints(
+      PY_CONSTRAINT_ORDER
+        .filter((k) => r[k] != null)
+        .map((k) => ({ kind: k, item: canonPyItem(r[k]) })),
+    ),
     ...(r.when ? { when: [...r.when] } : {}),
   }
 }

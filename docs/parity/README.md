@@ -581,6 +581,70 @@ engine's corpus parse time (rs 6.5 s each of its 79 s total; ruby
 
 ---
 
+## D. WO20 — parse-parity harness residual closure (2026-11-17, #285)
+
+`scripts/parse-parity.mjs` parses the whole corpus (maps/ + libs/)
+with the ts parser (`parseIsc` + `expandDocument`) and the py parser
+(`parse_isc`), projects both documents onto one canonical JSON schema,
+and reports every structural difference with a kind, a path, and both
+renderings. The audit baseline was **412/435 files identical** with
+826 divergence rows in three kinds: item-kind 678, constraints 144,
+item-value 4 — all attributed to the canonical projection, not to
+either parser. WO20 closed all three classes by stating the shared
+lowering each class collapses to; the harness now reports
+**435/435, zero divergence kinds**.
+
+The reconciliation rules (each checkable against the cited code, so a
+future reader can re-derive them):
+
+1. **Constraint written order → fixed kind order** (resolves the 144
+   `constraints` rows plus 138 positional `item-kind` rows and the 4
+   `item-value` rows — e.g. `alalc-ell-Grek-Latn-2010` writes
+   `after "Ν" before "Κ"`: ts preserves written order, while the py
+   SubRule model stores the four kinds as named fields, so the py
+   normalizer emitted them in fixed `before/after/not_before/
+   not_after` order; comparing positionally swapped both the kinds
+   and the values). The four constraint kinds are simultaneous
+   lookarounds — written order between them carries no semantics —
+   so the canonical schema now projects BOTH parsers onto the fixed
+   kind order (stable within a kind). Genuine differences still
+   diverge: a one-sided kind lands at a different position or changes
+   the length; a duplicated kind (ts keeps every written copy, py
+   keeps the last) shows as a length or value mismatch. No corpus
+   rule writes a duplicated kind, so none of the 286 rows hid one.
+2. **`none` → the empty string** (resolves 493 `item-kind` rows —
+   ts kept parse-level `{type:"none"}` where py lowers at parse).
+   Both runtimes lower identically at their compile layers: ts
+   `src/isc/converter.ts` `case "none"` → `StringItem("")` and
+   `src/runtime/compile-item.ts` `none: { re: "", literal: "" }`; py
+   `grammar/actions.py` ("converter parity: `none` lowers to the
+   empty string") → `StringItem("")`. py cannot represent `none`
+   distinct from `""`, so the canonical form is the shared lowering.
+3. **`any_character` → the any_character stdlib alias** (resolves 47
+   `item-kind` rows — ts `grammar/actions.ts` lowers the `any_char`
+   literal to a function atom, py to `AliasItem("any_character")`).
+   Both runtimes compile it through the alias path with the same
+   body: ts `src/isc/converter.ts` keeps the alias path for
+   `any_character` ("the primitive spelled as a function atom"),
+   `src/runtime/compile-item.ts` `any_character: { re: ".",
+   literal: "" }`; py `items.py` `ALIAS_COMPILED["any_character"]`
+   `re: "."`. The canonical form is that shared lowering.
+
+The py-vs-py swap driver (`interscript-py/scripts/parse_parity_py.py`)
+already projected both of its parsers onto the same schema
+(constraints re-sorted into the fixed kind order, `none` lowered);
+its canonical judgment is unchanged by this closure, and its raw
+projection (which includes the written constraint order) never
+compared across grammars.
+
+Gates after the closure: harness 435/435 (zero kinds); py-vs-py
+driver canonical 432/435, raw 432/435 (hand rev `7a84260`,
+unchanged); py rs-golden zero-delta; ts parser-parity (289 maps)
+green. No grammar (`.parg`) edits and no parser/model changes were
+required — the residual was entirely in the canonical projection.
+
+---
+
 ## Reproducing
 
 ```sh
