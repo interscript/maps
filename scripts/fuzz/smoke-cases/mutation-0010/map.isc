@@ -1,0 +1,32 @@
+system "BGN-PCGN:syc-Syrc:Latn:2011" {
+
+metadata {
+  authority_id bgnpcgn
+  id 2011
+  language iso-639-2:syc
+  source_script Syrc
+  destination_script Latn
+  name Romanization System for Modern Syriac Script (BGN/PCGN 2011 System)
+  url https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/693736/ROMANIZATION_OF_MODERN_SYRIAC.pdf
+  creation_date 2011
+  confirmation_date 2017-11
+  description {    The modern Syriac script is used today by Assyrian writers of the neo-Aramaic language.
+    This Romanization System may be applied to any toponyms written in this script as may be
+    encountered in parts of northern Iraq, Syria, northern Iran and eastern Turkey. The
+    Neo-Aramaic language has a degree of locally official status within Iraq, and accordingly
+    some bilingual Arabic and modern Syriac signage may be encountered.
+
+    The script is closely aligned to that of both Hebrew and Arabic, and, as these, is written
+    from right to left. In this Romanization System, “strong” consonants have been marked with
+    a sub-dot so as not to give a closer visual relation to either Arabic (which marks such
+    consonants with a cedilla) or Hebrew (which marks these with an underbar). The equivalences
+    where they exist in the Arabic and Hebrew scripts have also been shown only for a guide to
+    the cognate root.
+  }
+
+  notes {
+    note "Letters connect to the following letter (to the left) except those marked with † in the source table (Ālap, Dālat, Hē, Wāw, Zayn, Ṣādē, Rēsh, Taw)."
+    note "Kāp, Mīm and Nūn: the source table shows the form in independent or word-final position. The form initially and medially differs but this is not included in a standalone form in the Unicode Standard; the initial/medial form will however be automatically generated when using the letter’s Unicode encoding initially or medially in a word. To illustrate the different forms, using the Unicode encoding twice gives: ܟܟ (U+071F); ܡܡ (U+0721); and ܢܢ (U+0722)."
+    note "Ālap (ܐ) has a number of functions in modern Syriac script:\n\n• It appears word-initially to denote a vowel, and is sometimes followed by yōd or wāw to denote ‘ī’ or ‘ū’ respectively.\n• It appears word-medially to denote what historically was a glottal stop. It is understood that this does not now function as a “stop” in speech, though the Ālap still appears in the written form. This is romanized ’.\n• It appears word-medially to denote a long vowel ā or ē.\n• It appears word-finally to denote the long vowel ā or ē.\n\nGiven the ambiguity in its function, it is recommended that a reference source be consulted for further guidance as to the appropriate romanization."
+    note "Taw should be romanized ‘t’ when unaspirated, and ‘th’ when aspirated. A reference source should be consulted for further guidance as to the appropriate romanization."
+    note "Numerals in modern Syriac script are represented by letters of the alphabet: Ālap, Bēt, Gāmal = 1, 2, 3 etc.; Yōd = 10, Kāp = 20, Lāmad = 30 etc.; Qōp = 100, Rēsh = 200, Shīn = 300 and finally Taw = 400. Unlike Arabic, composite numerals are written from right-to-left, so for instance 12 is written ܝܒ (10+2). Given

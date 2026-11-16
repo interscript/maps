@@ -276,11 +276,15 @@ function compareCase(observations, kinds) {
     }
   }
 
-  // Filter known kinds.
+  // Filter known kinds. Hard failures are NEVER explained by a known kind:
+  // hangs (any TIMEOUT) and process-level crashes are always findings.
+  // Only divergences and in-process crash buckets can be explained by a
+  // documented design divergence (e.g. G1's ruby crash, G11's ArgumentError).
   const unexplained = [];
   const explained = [];
   for (const f of findings) {
-    if (kinds.length > 0) explained.push({ ...f, known: kinds });
+    const hard = f.kind === "hang" || (f.kind === "crash" && f.detail.startsWith("process-level crash"));
+    if (!hard && kinds.length > 0) explained.push({ ...f, known: kinds });
     else unexplained.push(f);
   }
   return { unexplained, explained };

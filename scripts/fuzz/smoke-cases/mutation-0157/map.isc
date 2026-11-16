@@ -1,0 +1,12 @@
+system "DIN:os-Cyrl:Latn:1460-2-2011" {
+
+metadata {
+  authority_id din
+  id 1460-2-2011-46
+  id 1460-2-2011-46
+  language iso-639-3:os
+  source_script Cyrl
+  destination_script Latn
+  alias_decl = any("a")
+  upcase2 = any("b")
+  name "DIN 1460-2:2011-10, Tabe

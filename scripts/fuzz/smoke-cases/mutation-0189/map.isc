@@ -1,0 +1,31 @@
+system "jawi-latn" {
+
+ruleset malay_jawi_common_a {
+    # Marked vowels (Vowels and Diphthongs rows)
+    sub "وُ" "u"
+    sub "وَ" "o"
+    sub "يِ" "i"
+    sub "يَ" "e"
+    # Rule 8 - hamzah
+    sub "ٴ" ""
+    # the high-hamza separator mark (rule 8b) is not represented
+    sub "أ" ""
+    # alef-hamza separator (rule 8b)
+    sub "ئ" ""
+    # yeh-hamza (rule 8b/8c; the elided vowel value is lexical)
+    sub "ؤ" "u"
+    # waw-hamza
+    sub {
+        from "ء"
+        to "k"
+        after boundary
+      }
+    # rule 8e word-final glottal stop
+    sub "ء" "ʼ"
+    # rule 8a Arabic reading
+    # Rule 5 - alif gantung: the superscript alif marks the final a of the
+    # word, which romanizes before the nasal it sits over (tiang); swap the
+    # mark order before the letters convert
+    sub "ڠٰ" "aڠ"
+    sub "ٰ" "a"
+    # Marks not represented (rule 11) and leftover v

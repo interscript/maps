@@ -1,0 +1,30 @@
+system "BGNA:bul-Cyrl:Latn:2006" {
+
+metadata {
+  authority_id bgna
+  id 2006
+  language iso-639-2:bul
+  source_script Cyrl
+  destination_script Latn
+  name Republic of Bulgaria system for transliteration of Bulgarian geographical names with Roman letters
+  creation_date 2006
+  adoption_date 2006-10-26
+}
+
+tests {
+   "нунатак Абрит" ->  "nunatak Abrit"
+   "връх Академия" ->  "vrah Akademiya"
+   "връх Ами Буе" ->  "vrah Ami Bue"
+   "нос Айтос" ->  "nos Aytos"
+   "залив Баба Тонка" ->  "zaliv Baba Tonka"
+   "Балабански камък" ->  "Balabanski kamak"
+   "Бедечки поток" ->  "Bedechki potok"
+   "нос Бяга" ->  "nos Byaga"
+   "остров Качо" ->  "ostrov Kacho" # wiki ostrov Cacho
+   "Чакъров остров" ->  "Chakarov ostrov"
+   "връх Дъбник" ->  "vrah Dabnik"
+   "залив Десислава" ->  "zaliv Desislava"
+   "ледник Джераси" ->  "lednik Dzherasi"
+   "Джегова скала" ->  "Dzhegova skala"
+   "Нунатак Едуард" ->  "Nunatak Eduard"
+   "Елховска с

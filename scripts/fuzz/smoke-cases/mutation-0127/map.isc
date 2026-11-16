@@ -1,0 +1,31 @@
+system "ALA-LC:bel-Cyrl:Latn:1997" {
+
+metadata {
+  authority_id alalc
+  id 1997
+  language iso-639-2:bel
+  source_script Cyrl
+  destination_script Latn
+  name Romanization Table -- Byelorussian (1997)
+  url http://catdir.loc.gov/catdir/cpso/romanization/beloruss.pdf
+  creation_date 1997
+
+  notes {
+    note "Ґ letter found in Old Belarusian and in modern publications in Tarashkevitsa orthography."
+    note "Do not confuse with the digraph кг (also romanized as “kh”). Manual review may be needed when transcribing data in vernacular characters in order to distinguish х from кг."
+    note "The apostrophe (´) is not transliterated."
+    note "Soft sign (prime) is USMARC hexadecimal code A7 ~ U+02B9 Unicode character"
+  }
+}
+
+tests {
+  # https://en.wikipedia.org/wiki/Romanization_of_Belarusian#Examples
+  # https://img.tyt.by/n/02/d/belorusskiy_translit.jpg - with issues
+   "Беларусь" ->  "Belarusʹ"
+   "Магілёў" ->  "Mahili͡oŭ"
+   "Лукашэнка" ->  "Lukashėnka"
+   "сям´я" ->  "si͡ami͡a"
+   "Барысаўскі тракт" ->  "Barysaŭski trakt"
+   "Усход" ->  "Uskhod"
+   "Маскоўская" ->  "Maskoŭskai͡a"
+   "Парк Чалюскінцаў" -> 
