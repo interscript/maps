@@ -56,6 +56,58 @@ metadata {
 
 tests {
    "Рашад Садыхов" ->  "Rashad Sadykhov"
+# Exhaustive per-row tests for odni-aze-Cyrl-Latn-2015, generated from the source
+# document's table.
+# Source: ICS 630-01 Annex P (ANNEX P - Azeri_Personal_Names_FLTS (U).pdf),
+# p. 2 (letter table); held source
+# interscript-private-references/ics-630-01/ANNEX P -
+# Azeri_Personal_Names_FLTS (U).pdf. Extraction: annex text layer, every
+# value cell cross-checked against the rendered page image. Cells "г, ҝ",
+# "й, ј" and "у, ү" (one value cell naming two keys) transcribed as two rows
+# each. The value cells for е and э print the Latin letter e; the text layer
+# stores the lookalike Cyrillic е (U+0435) — values transcribed from the
+# printed image. General Notes (below the table): double digraphs as a
+# single digraph (шш -> sh); ъ and ь are not transliterated.
+# Provenance artifact: scripts/row-sources/odni-aze-Cyrl-Latn-2015.json (38 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-16); regenerate from the artifact, do not hand-edit.
+  "а" -> "a"
+  "б" -> "b"
+  "в" -> "v"
+  "г" -> "g"
+  "ҝ" -> "g"
+  "ғ" -> "gh"
+  "д" -> "d"
+  "е" -> "e"
+  "ё" -> "yo"
+  "ә" -> "a"
+  "ж" -> "zh"
+  "з" -> "z"
+  "и" -> "i"
+  "й" -> "y"
+  "ј" -> "y"
+  "к" -> "k"
+  "л" -> "l"
+  "м" -> "m"
+  "н" -> "n"
+  "о" -> "o"
+  "ө" -> "o"
+  "п" -> "p"
+  "р" -> "r"
+  "с" -> "s"
+  "т" -> "t"
+  "у" -> "u"
+  "ү" -> "u"
+  "ф" -> "f"
+  "х" -> "kh"
+  "һ" -> "h"
+  "ч" -> "ch"
+  "ҹ" -> "j"
+  "ш" -> "sh"
+  "щ" -> "shch"
+  "ы" -> "y"
+  "э" -> "e"
+  "ю" -> "yu"
+  "я" -> "ya"
 }
 
 stage main {
