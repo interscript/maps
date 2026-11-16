@@ -1,0 +1,17 @@
+system "FZ:grammar:350509" {
+  metadata {
+    authority_id fz
+    id 2914
+    name "grammar-aware fuzz map"
+  }
+  stage main {
+    sequence {
+      sub {
+        from word_boundary + capture(some("z")) + word_boundary
+        to "W" + ref(1)
+        not_before "j"
+        not_after "k"
+      }
+    }
+  }
+}
