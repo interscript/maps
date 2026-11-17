@@ -70,8 +70,16 @@
       "Z"
     ],
     [
+      "Ѕ",
+      "Dz"
+    ],
+    [
       "з",
       "z"
+    ],
+    [
+      "ѕ",
+      "dz"
     ],
     [
       "И",
@@ -242,5 +250,5 @@
       "sh"
     ]
   ],
-  "note": "ICS 630-01 Annex H (ANNEX H - Macedonian_Personal_Names_FLTS (U).pdf), p. 2 (letter table); held source interscript-private-references/ics-630-01/ANNEX H - Macedonian_Personal_Names_FLTS (U).pdf. Extraction: annex text layer, every value cell cross-checked against the rendered page image. Each printed cell gives both cases (e.g. \"А а | A a\"); transcribed as two rows per cell (upper -> upper value, lower -> lower value). The dze row’s letter cell prints \"S s\" — a substitute-glyph rendering of Cyrillic Ѕ ѕ in this annex (verified visually; the Macedonian alphabet has no Latin S between З and И, and the value Dz dz is the standard dze romanization) — the row is transcribed as Ѕ -> Dz / ѕ -> dz and, failing end-to-end, recorded as a finding. The text layer for the same cell stores \"Ss\"/\"Dz dz\". Skipped printed rows: ’ (apostrophe sign) — printed value cell \"[Not represented]\" — instruction cell, no romanization value. | Ѕ/ѕ (dze) — printed value cell \"Dz dz\" FAILS end-to-end on the Cyrillic key: the map encodes the annex’s substitute glyphs literally (Latin S/s, U+0053/U+0073 -> Dz/dz) while the actual Cyrillic dze letters Ѕ/ѕ (U+0405/U+0455) carry no rule and pass through unchanged (\"Ѕ\" -> \"Ѕ\"). Finding, never forced green. Findings (map-vs-source, map untouched): Ѕ/ѕ (U+0405/U+0455): printed row Dz/dz untestable — the map has no rule for the Cyrillic dze letters; it instead maps Latin S/s -> Dz/dz (the annex’s substituted letter cell taken literally), so Cyrillic dze passes through unencoded AND Latin-letter input is silently rewritten to Dz/dz, against the annex’s own convention of spelling Latin-letter names as-is."
+  "note": "ICS 630-01 Annex H (ANNEX H - Macedonian_Personal_Names_FLTS (U).pdf), p. 2 (letter table); held source interscript-private-references/ics-630-01/ANNEX H - Macedonian_Personal_Names_FLTS (U).pdf. Extraction: annex text layer, every value cell cross-checked against the rendered page image. Each printed cell gives both cases (e.g. \"А а | A a\"); transcribed as two rows per cell (upper -> upper value, lower -> lower value). The dze row’s letter cell prints \"S s\" — a substitute-glyph rendering of Cyrillic Ѕ ѕ in this annex (verified visually; the Macedonian alphabet has no Latin S between З and И, and the value Dz dz is the standard dze romanization) — the row is transcribed as Ѕ -> Dz / ѕ -> dz and, failing end-to-end, recorded as a finding. The text layer for the same cell stores \"Ss\"/\"Dz dz\". Skipped printed rows: ’ (apostrophe sign) — printed value cell \"[Not represented]\" — instruction cell, no romanization value. | Ѕ/ѕ (dze) — printed value cell \"Dz dz\" FAILS end-to-end on the Cyrillic key: the map encodes the annex’s substitute glyphs literally (Latin S/s, U+0053/U+0073 -> Dz/dz) while the actual Cyrillic dze letters Ѕ/ѕ (U+0405/U+0455) carry no rule and pass through unchanged (\"Ѕ\" -> \"Ѕ\"). Finding, never forced green. E3 corpus-fixes round (2026-11-17, maps PR e3-fixes-maps): the dze finding is fixed — the map rules now key the actual Cyrillic dze letters Ѕ/ѕ (U+0405/U+0455) -> Dz/dz; the literal Latin S/s keys (the annex substitute glyphs taken at face value) are removed, so Latin-letter input passes through as-is per the annex convention. The Ѕ/ѕ rows are part of the generated set and this note replaces the findings record."
 }

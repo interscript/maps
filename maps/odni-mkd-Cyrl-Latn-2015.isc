@@ -65,18 +65,13 @@ tests {
 # the row is transcribed as Ѕ -> Dz / ѕ -> dz and, failing end-to-end,
 # recorded as a finding. The text layer for the same cell stores "Ss"/"Dz
 # dz". Skipped printed rows: ’ (apostrophe sign) — printed value cell "[Not
-# represented]" — instruction cell, no romanization value. | Ѕ/ѕ (dze) —
-# printed value cell "Dz dz" FAILS end-to-end on the Cyrillic key: the map
-# encodes the annex’s substitute glyphs literally (Latin S/s, U+0053/U+0073
-# -> Dz/dz) while the actual Cyrillic dze letters Ѕ/ѕ (U+0405/U+0455) carry
-# no rule and pass through unchanged ("Ѕ" -> "Ѕ"). Finding, never forced
-# green. Findings (map-vs-source, map untouched): Ѕ/ѕ (U+0405/U+0455):
-# printed row Dz/dz untestable — the map has no rule for the Cyrillic dze
-# letters; it instead maps Latin S/s -> Dz/dz (the annex’s substituted
-# letter cell taken literally), so Cyrillic dze passes through unencoded AND
-# Latin-letter input is silently rewritten to Dz/dz, against the annex’s own
-# convention of spelling Latin-letter names as-is.
-# Provenance artifact: scripts/row-sources/odni-mkd-Cyrl-Latn-2015.json (60 rows).
+# represented]" — instruction cell, no romanization value.
+# E3 corpus-fixes round (2026-11-17): the dze finding is fixed — the map's
+# rules now key the actual Cyrillic dze letters Ѕ/ѕ (U+0405/U+0455) -> Dz/dz
+# (the annex's letter cell prints "S s" as a substitute-glyph rendering of
+# Ѕ ѕ; the Latin S/s keys the old map encoded literally are removed, so
+# Latin-letter input passes through as-is per the annex's own convention).
+# Provenance artifact: scripts/row-sources/odni-mkd-Cyrl-Latn-2015.json (62 rows).
 # generated-by: maps/scripts/gen-row-tests.mjs (2026-11-16); regenerate from the artifact, do not hand-edit.
   "А" -> "A"
   "а" -> "a"
@@ -96,6 +91,8 @@ tests {
   "ж" -> "zh"
   "З" -> "Z"
   "з" -> "z"
+  "Ѕ" -> "Dz"
+  "ѕ" -> "dz"
   "И" -> "I"
   "и" -> "i"
   "Ј" -> "J"
@@ -142,10 +139,6 @@ tests {
 
 stage main {
   parallel {
-    # RULES
-    sub "\u0053" "Dz"
-    sub "\u0073" "dz"
-
     # CHARACTERS
     sub "\u0410" "A"
     sub "\u0411" "B"
@@ -156,6 +149,7 @@ stage main {
     sub "\u0415" "E"
     sub "\u0416" "Zh"
     sub "\u0417" "Z"
+    sub "\u0405" "Dz"
     sub "\u0418" "I"
     sub "\u0408" "J"
     sub "\u041A" "K"
@@ -188,6 +182,7 @@ stage main {
     sub "\u0435" "e"
     sub "\u0436" "zh"
     sub "\u0437" "z"
+    sub "\u0455" "dz"
     sub "\u0438" "i"
     sub "\u0458" "j"
     sub "\u043A" "k"
