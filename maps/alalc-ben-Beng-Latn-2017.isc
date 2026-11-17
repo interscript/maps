@@ -48,26 +48,22 @@ tests {
 # transcribed; the duplicate printed listing is documented here. | ঁ
 # (candrabindu) — printed value cell "n̐, m̐ (see Note 4)": Note 4 splits
 # the value by the following consonant class — position-dependent,
-# un-expressible as a plain row; skipped. Failing printed rows (findings): ই
-# — printed cell "I"; runtime gives 'i'. Failing row, finding below — never
-# forced green. | চ — printed cell "ca"; runtime gives 'cha'. Failing row,
-# finding below — never forced green. | ছ — printed cell "cha"; runtime
-# gives 'chha'. Failing row, finding below — never forced green. | ড় —
-# printed cell "ṛa"; runtime gives 'ṙa'. Failing row, finding below — never
-# forced green. | ঢ় — printed cell "ṛha"; runtime gives 'ṙha'. Failing row,
-# finding below — never forced green. | য — printed cell "ya"; runtime gives
-# 'j̱a'. Failing row, finding below — never forced green. | য় — printed
-# cell "ẏ"; runtime gives 'ya'. Failing row, finding below — never forced
-# green. | শ — printed cell "śa"; runtime gives 'sha'. Failing row, finding
-# below — never forced green. | ষ — printed cell "sha"; runtime gives 'ṣha'.
-# Failing row, finding below — never forced green. | ং — printed cell "ṃ";
-# runtime gives 'ṁ'. Failing row, finding below — never forced green. | ঽ —
-# printed cell "’"; runtime gives 'ঽ'. Failing row, finding below — never
-# forced green.
-# Provenance artifact: scripts/row-sources/alalc-ben-Beng-Latn-2017.json (41 rows).
+# un-expressible as a plain row; skipped. E3 corpus-fixes round (2026-11-17): all 11 failing rows are fixed. The
+# map's own letter table already carried the printed values but sat AFTER
+# the "run map.benglatn.stage.main" item in stage main — the base stage
+# consumes the Bengali letters, so those rules matched nothing and every
+# divergent cell emitted the base map's 1997-era value. The fix applies the
+# printed values to the raw text BEFORE the base run (a pre-empt parallel
+# with elision variants mirroring the base RULES machinery and both nukta
+# composite forms), so the eleven cells — and every cluster string embedding
+# them — now transliterate per the printed table. The rows are part of the
+# generated set; the provenance artifact's note replaces this findings
+# record.
+# Provenance artifact: scripts/row-sources/alalc-ben-Beng-Latn-2017.json (52 rows).
 # generated-by: maps/scripts/gen-row-tests.mjs (2026-11-16); regenerate from the artifact, do not hand-edit.
   "অ" -> "a"
   "আ" -> "ā"
+  "ই" -> "I"
   "ঈ" -> "ī"
   "উ" -> "u"
   "ঊ" -> "ū"
@@ -83,13 +79,17 @@ tests {
   "গ" -> "ga"
   "ঘ" -> "gha"
   "ঙ" -> "ṅa"
+  "চ" -> "ca"
+  "ছ" -> "cha"
   "জ" -> "ja"
   "ঝ" -> "jha"
   "ঞ" -> "ña"
   "ট" -> "ṭa"
   "ঠ" -> "ṭha"
   "ড" -> "ḍa"
+  "ড়" -> "ṛa"
   "ঢ" -> "ḍha"
+  "ঢ়" -> "ṛha"
   "ণ" -> "ṇa"
   "ত" -> "ta"
   "ৎ" -> "t"
@@ -102,17 +102,68 @@ tests {
   "ব" -> "ba"
   "ভ" -> "bha"
   "ম" -> "ma"
+  "য" -> "ya"
+  "য়" -> "ẏa"
   "র" -> "ra"
   "ল" -> "la"
+  "শ" -> "śa"
+  "ষ" -> "sha"
   "স" -> "sa"
   "হ" -> "ha"
+  "ং" -> "ṃ"
   "ঃ" -> "ḥ"
+  "ঽ" -> "’"
 }
 
 dependency "un-ben-Beng-Latn-2016" as benglatn
 
+aliases {
+  beng_signs = any("\u09be\u09bf\u09c0\u09c1\u09c2\u09c3\u09c7\u09c8\u09cb\u09cc\u09cd")
+}
 
 stage main {
+
+  # E3 corpus-fixes round (2026-11-17): the printed 2017 values for the
+  # eleven letter-table cells where ALA-LC diverges from the UN 2016 base
+  # machinery (the depth-batch findings: ই I, চ ca, ছ cha, ড় ṛa, ঢ় ṛha,
+  # য ya, য় ẏ, শ śa, ষ sha, ং ṃ, ঽ ’) are applied to the RAW text BEFORE
+  # the base stage runs. The base stage consumes the Bengali letters, so a
+  # rule placed after the run can never fire — the map's own table sat
+  # there and matched nothing, leaving the base's 1997-era values in every
+  # divergent cell. Elision variants mirror the base RULES machinery (a
+  # consonant followed by a vowel sign or hasanta loses its inherent a);
+  # the two-glyph nukta composites are keyed in both the precomposed and
+  # the decomposed form; constrained variants precede their unconstrained
+  # forms; longer keys precede their shorter prefixes.
+  parallel {
+    sub "ড়" "ṛa"
+    sub { from "ড়" to "ṛ" after beng_signs }
+    sub "ড়" "ṛa"
+    sub { from "ড়" to "ṛ" after beng_signs }
+    sub "ঢ়" "ṛha"
+    sub { from "ঢ়" to "ṛh" after beng_signs }
+    sub "ঢ়" "ṛha"
+    sub { from "ঢ়" to "ṛh" after beng_signs }
+    sub "য়" "ẏa"
+    sub { from "য়" to "ẏ" after beng_signs }
+    sub "য়" "ẏa"
+    sub { from "য়" to "ẏ" after beng_signs }
+    sub "ই" "I"
+    sub "চ" "ca"
+    sub { from "চ" to "c" after beng_signs }
+    sub "ছ" "cha"
+    sub { from "ছ" to "ch" after beng_signs }
+    sub "য" "ya"
+    sub { from "য" to "y" after beng_signs }
+    sub "শ" "śa"
+    sub { from "শ" to "ś" after beng_signs }
+    sub "ষ" "sha"
+    sub { from "ষ" to "sh" after beng_signs }
+    sub "ং" "ṃ"
+    sub "ঽ" "’"
+    sub "ঽ" "’"
+  }
+
   run  map.benglatn.stage.main
 
   # CHARACTERS
