@@ -30,6 +30,10 @@
       "E"
     ],
     [
+      "Ё",
+      "Ë"
+    ],
+    [
       "Ә",
       "Ă"
     ],
@@ -44,6 +48,10 @@
     [
       "И",
       "I"
+    ],
+    [
+      "Й",
+      "Ĭ"
     ],
     [
       "Ј",
@@ -114,6 +122,10 @@
       "Ḣ"
     ],
     [
+      "Ц",
+      "TS͡"
+    ],
+    [
       "Ч",
       "Ch"
     ],
@@ -126,8 +138,32 @@
       "Sh"
     ],
     [
+      "Щ",
+      "Shch"
+    ],
+    [
+      "Ъ",
+      "ʺ"
+    ],
+    [
       "Ы",
       "Y"
+    ],
+    [
+      "Ь",
+      "ʹ"
+    ],
+    [
+      "Э",
+      "Ė"
+    ],
+    [
+      "Ю",
+      "IU͡"
+    ],
+    [
+      "Я",
+      "IA͡"
     ],
     [
       "а",
@@ -158,6 +194,10 @@
       "e"
     ],
     [
+      "ё",
+      "ë"
+    ],
+    [
       "ә",
       "ă"
     ],
@@ -172,6 +212,14 @@
     [
       "и",
       "i"
+    ],
+    [
+      "й",
+      "ĭ"
+    ],
+    [
+      "ј",
+      "i̐"
     ],
     [
       "к",
@@ -238,6 +286,10 @@
       "ḣ"
     ],
     [
+      "ц",
+      "ts͡"
+    ],
+    [
       "ч",
       "ch"
     ],
@@ -250,13 +302,37 @@
       "sh"
     ],
     [
+      "щ",
+      "shch"
+    ],
+    [
+      "ъ",
+      "ʺ"
+    ],
+    [
       "ы",
       "y"
+    ],
+    [
+      "ь",
+      "ʹ"
+    ],
+    [
+      "э",
+      "ė"
+    ],
+    [
+      "ю",
+      "iu͡"
+    ],
+    [
+      "я",
+      "ia͡"
     ],
     [
       "’",
       "’"
     ]
   ],
-  "note": "ALA-LC Azerbaijani Romanization Table, 2017 version, pp. 6-7 (Cyrillic script section); held source interscript-private-references/alalc/alalc-azerbaijani.pdf. Extraction: PDF text layer, every value cell cross-checked against the rendered page image. Tesh-ligature digraphs (TS͡/ts͡, IU͡/iu͡, IA͡/ia͡, U+0361) and candrabindu values (I̐/i̐, I + U+0310) transcribed as printed. The lower-case ҝ vernacular cell carries a parenthetical variant glyph that is illegible at 600 dpi and smudged in the print itself; it belongs to the vernacular column, not the romanization, and is documented here rather than transcribed. The map is the 1997 table; the only locally-held printed source is the 2017 version (the table page lists \"Earlier versions: 2011, 1997\"); the letter table matches the map's encoding and the version difference is recorded here. Skipped printed rows: ъ/ь — the printed value cells read \"ʺ (hard sign)\" / \"ʹ (soft sign)\"; the descriptors are stripped and the sign characters transcribed as printed. Canonical-equivalence notes: Ө: printed glyph \"Ȯ\"; the runtime emits the canonically equivalent byte form 'Ȯ'; the row is stored in the runtime's byte form so the byte-exact embedded test passes. | ө: printed glyph \"ȯ\"; the runtime emits the canonically equivalent byte form 'ȯ'; the row is stored in the runtime's byte form so the byte-exact embedded test passes. Failing printed rows (findings): Ё — printed cell \"Ë\"; runtime gives 'Ё'. Failing row, finding below — never forced green. | Й — printed cell \"Ĭ\"; runtime gives 'Y'. Failing row, finding below — never forced green. | Ц — printed cell \"TS͡\"; runtime gives 'Ц'. Failing row, finding below — never forced green. | Щ — printed cell \"Shch\"; runtime gives 'Щ'. Failing row, finding below — never forced green. | Ъ — printed cell \"ʺ\"; runtime gives 'Ъ'. Failing row, finding below — never forced green. | Ь — printed cell \"ʹ\"; runtime gives 'Ь'. Failing row, finding below — never forced green. | Э — printed cell \"Ė\"; runtime gives 'Э'. Failing row, finding below — never forced green. | Ю — printed cell \"IU͡\"; runtime gives 'Ю'. Failing row, finding below — never forced green. | Я — printed cell \"IA͡\"; runtime gives 'Я'. Failing row, finding below — never forced green. | ё — printed cell \"ë\"; runtime gives 'ё'. Failing row, finding below — never forced green. | й — printed cell \"ĭ\"; runtime gives 'y'. Failing row, finding below — never forced green. | ј — printed cell \"i̐\"; runtime gives 'ı̐'. Failing row, finding below — never forced green. | ц — printed cell \"ts͡\"; runtime gives 'ц'. Failing row, finding below — never forced green. | щ — printed cell \"shch\"; runtime gives 'щ'. Failing row, finding below — never forced green. | ъ — printed cell \"ʺ\"; runtime gives 'ъ'. Failing row, finding below — never forced green. | ь — printed cell \"ʹ\"; runtime gives 'ь'. Failing row, finding below — never forced green. | э — printed cell \"ė\"; runtime gives 'э'. Failing row, finding below — never forced green. | ю — printed cell \"iu͡\"; runtime gives 'ю'. Failing row, finding below — never forced green. | я — printed cell \"ia͡\"; runtime gives 'я'. Failing row, finding below — never forced green."
+  "note": "ALA-LC Azerbaijani Romanization Table, 2017 version, pp. 6-7 (Cyrillic script section); held source interscript-private-references/alalc/alalc-azerbaijani.pdf. Extraction: PDF text layer, every value cell cross-checked against the rendered page image. Tesh-ligature digraphs (TS͡/ts͡, IU͡/iu͡, IA͡/ia͡, U+0361) and candrabindu values (I̐/i̐, I + U+0310) transcribed as printed. The lower-case ҝ vernacular cell carries a parenthetical variant glyph that is illegible at 600 dpi and smudged in the print itself; it belongs to the vernacular column, not the romanization, and is documented here rather than transcribed. The map is the 1997 table; the only locally-held printed source is the 2017 version (the table page lists \"Earlier versions: 2011, 1997\"); the letter table matches the map's encoding and the version difference is recorded here. Skipped printed rows: ъ/ь — the printed value cells read \"ʺ (hard sign)\" / \"ʹ (soft sign)\"; the descriptors are stripped and the sign characters transcribed as printed. Canonical-equivalence notes: Ө: printed glyph \"Ȯ\"; the runtime emits the canonically equivalent byte form 'Ȯ'; the row is stored in the runtime's byte form so the byte-exact embedded test passes. | ө: printed glyph \"ȯ\"; the runtime emits the canonically equivalent byte form 'ȯ'; the row is stored in the runtime's byte form so the byte-exact embedded test passes. E3 corpus-fixes round (2026-11-17, maps PR e3-fixes-maps): all 19 failing rows above are now encoded in the map and pass — the 8 missing letter pairs (Ё/ё Ë/ë, Ц/ц TS͡/ts͡, Щ/щ Shch/shch, Ъ/ъ ʺ, Ь/ь ʹ, Э/э Ė/ė, Ю/ю IU͡/iu͡, Я/я IA͡/ia͡) added as rules, and the two divergent cells re-voiced to the printed values (Й/й Y/y -> Ĭ/ĭ; ј ı̐ -> i̐); the rows are part of the generated set and this note replaces the per-row findings record. The map's three pre-existing internet-sourced example tests carried the old ı̐ value in their expected strings and were updated to i̐ with the fix."
 }

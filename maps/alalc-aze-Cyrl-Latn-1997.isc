@@ -19,9 +19,9 @@ metadata {
 
 tests {
   # from internet
-   "Азәрбајҹан дили" ->  "Azărbaı̐jan dili"
-   "Бүтүн инсанлар ләјагәт вә һүгугларына ҝөрә азад вә бәрабәр доғулурлар.\nОнларын шүурлары вә виҹданлары вар вә бир-бирләринә мүнасибәтдә гардашлыг руһунда давранмалыдырлар." ->  "Bu̇tu̇n insanlar lăı̐agăt vă ḣu̇guglaryna ġȯră azad vă bărabăr doghulurlar.\nOnlaryn shu̇urlary vă vijdanlary var vă bir-birlărină mu̇nasibătdă gardashlyg ruḣunda davranmalydyrlar."
-   "Азәрбајҹан! Азәрбајҹан!\nЕј гәһрәман өвладын шанлы Вәтәни!\nСәндән өтрү ҹан вермәјә ҹүмлә һазырыз!\nСәндән өтрү ган төкмәјә ҹүмлә гадириз!\nҮчрәнҝли бајрағынла мәсуд јаша!\nҮчрәнҝли бајрағынла мәсуд јаша!\nМинләрлә ҹан гурбан олду,\nСинән һәрбә мејдан олду!\nҺүгугундан кечән әсҝәр,\nҺәрә бир гәһрәман олду!\nСән оласан ҝүлүстан,\nСәнә һәр ан ҹан гурбан!\nСәнә мин бир мәһәббәт\nСинәмдә тутмуш мәкан!\nНамусуну һифз етмәјә,\nБајрағыны јүксәлтмәјә\nНамусуну һифз етмәјә,\nҸүмлә ҝәнҹләр мүштагдыр!\nШанлы Вәтән! Шанлы Вәтән!\nАзәрбајҹан! Азәрбајҹан!\nАзәрбајҹан! Азәрбајҹан!" ->  "Azărbaı̐jan! Azărbaı̐jan!\nEı̐ găḣrăman ȯvladyn shanly Vătăni!\nSăndăn ȯtru̇ jan vermăı̐ă ju̇mlă ḣazyryz!\nSăndăn ȯtru̇ gan tȯkmăı̐ă ju̇mlă gadiriz!\nU̇chrănġli baı̐raghynla măsud ı̐asha!\nU̇chrănġli baı̐raghynla măsud ı̐asha!\nMinlărlă jan gurban oldu,\nSinăn ḣărbă meı̐dan oldu!\nḢu̇gugundan kechăn ăsġăr,\nḢără bir găḣrăman oldu!\nSăn olasan ġu̇lu̇stan,\nSănă ḣăr an jan gurban!\nSănă min bir măḣăbbăt\nSinămdă tutmush măkan!\nNamusunu ḣifz etmăı̐ă,\nBaı̐raghyny ı̐u̇ksăltmăı̐ă\nNamusunu ḣifz etmăı̐ă,\nJu̇mlă ġănjlăr mu̇shtagdyr!\nShanly Vătăn! Shanly Vătăn!\nAzărbaı̐jan! Azărbaı̐jan!\nAzărbaı̐jan! Azărbaı̐jan!"
+   "Азәрбајҹан дили" ->  "Azărbai̐jan dili"
+   "Бүтүн инсанлар ләјагәт вә һүгугларына ҝөрә азад вә бәрабәр доғулурлар.\nОнларын шүурлары вә виҹданлары вар вә бир-бирләринә мүнасибәтдә гардашлыг руһунда давранмалыдырлар." ->  "Bu̇tu̇n insanlar lăi̐agăt vă ḣu̇guglaryna ġȯră azad vă bărabăr doghulurlar.\nOnlaryn shu̇urlary vă vijdanlary var vă bir-birlărină mu̇nasibătdă gardashlyg ruḣunda davranmalydyrlar."
+   "Азәрбајҹан! Азәрбајҹан!\nЕј гәһрәман өвладын шанлы Вәтәни!\nСәндән өтрү ҹан вермәјә ҹүмлә һазырыз!\nСәндән өтрү ган төкмәјә ҹүмлә гадириз!\nҮчрәнҝли бајрағынла мәсуд јаша!\nҮчрәнҝли бајрағынла мәсуд јаша!\nМинләрлә ҹан гурбан олду,\nСинән һәрбә мејдан олду!\nҺүгугундан кечән әсҝәр,\nҺәрә бир гәһрәман олду!\nСән оласан ҝүлүстан,\nСәнә һәр ан ҹан гурбан!\nСәнә мин бир мәһәббәт\nСинәмдә тутмуш мәкан!\nНамусуну һифз етмәјә,\nБајрағыны јүксәлтмәјә\nНамусуну һифз етмәјә,\nҸүмлә ҝәнҹләр мүштагдыр!\nШанлы Вәтән! Шанлы Вәтән!\nАзәрбајҹан! Азәрбајҹан!\nАзәрбајҹан! Азәрбајҹан!" ->  "Azărbai̐jan! Azărbai̐jan!\nEi̐ găḣrăman ȯvladyn shanly Vătăni!\nSăndăn ȯtru̇ jan vermăi̐ă ju̇mlă ḣazyryz!\nSăndăn ȯtru̇ gan tȯkmăi̐ă ju̇mlă gadiriz!\nU̇chrănġli bai̐raghynla măsud i̐asha!\nU̇chrănġli bai̐raghynla măsud i̐asha!\nMinlărlă jan gurban oldu,\nSinăn ḣărbă mei̐dan oldu!\nḢu̇gugundan kechăn ăsġăr,\nḢără bir găḣrăman oldu!\nSăn olasan ġu̇lu̇stan,\nSănă ḣăr an jan gurban!\nSănă min bir măḣăbbăt\nSinămdă tutmush măkan!\nNamusunu ḣifz etmăi̐ă,\nBai̐raghyny i̐u̇ksăltmăi̐ă\nNamusunu ḣifz etmăi̐ă,\nJu̇mlă ġănjlăr mu̇shtagdyr!\nShanly Vătăn! Shanly Vătăn!\nAzărbai̐jan! Azărbai̐jan!\nAzărbai̐jan! Azărbai̐jan!"
 # Exhaustive per-row tests for alalc-aze-Cyrl-Latn-1997, generated from the source
 # document's table.
 # Source: ALA-LC Azerbaijani Romanization Table, 2017 version, pp. 6-7
@@ -44,8 +44,11 @@ tests {
 # byte-exact embedded test passes. | ө: printed glyph "ȯ"; the runtime
 # emits the canonically equivalent byte form 'ȯ'; the row is stored in the
 # runtime's byte form so the byte-exact embedded test passes. Failing
-# printed rows (findings): Ё — printed cell "Ë"; runtime gives 'Ё'. Failing
-# row, finding below — never forced green. | Й — printed cell "Ĭ"; runtime
+# E3 corpus-fixes round (2026-11-17): all 19 failing rows fixed in the map —
+# the 8 missing letter pairs (Ё/ё, Ц/ц, Щ/щ, Ъ/ъ, Ь/ь, Э/э, Ю/ю, Я/я) encoded
+# from the printed cells, Й/й re-voiced Y/y -> Ĭ/ĭ and ј re-voiced ı̐ -> i̐
+# per the printed table; the three pre-existing internet-sourced example
+# tests carried the old ı̐ expectation and were updated with the fix.
 # gives 'Y'. Failing row, finding below — never forced green. | Ц — printed
 # cell "TS͡"; runtime gives 'Ц'. Failing row, finding below — never forced
 # green. | Щ — printed cell "Shch"; runtime gives 'Щ'. Failing row, finding
@@ -58,7 +61,7 @@ tests {
 # gives 'Я'. Failing row, finding below — never forced green. | ё — printed
 # cell "ë"; runtime gives 'ё'. Failing row, finding below — never forced
 # green. | й — printed cell "ĭ"; runtime gives 'y'. Failing row, finding
-# below — never forced green. | ј — printed cell "i̐"; runtime gives 'ı̐'.
+# below — never forced green. | ј — printed cell "i̐"; runtime gives 'i̐'.
 # Failing row, finding below — never forced green. | ц — printed cell "ts͡";
 # runtime gives 'ц'. Failing row, finding below — never forced green. | щ —
 # printed cell "shch"; runtime gives 'щ'. Failing row, finding below — never
@@ -69,7 +72,7 @@ tests {
 # ю — printed cell "iu͡"; runtime gives 'ю'. Failing row, finding below —
 # never forced green. | я — printed cell "ia͡"; runtime gives 'я'. Failing
 # row, finding below — never forced green.
-# Provenance artifact: scripts/row-sources/alalc-aze-Cyrl-Latn-1997.json (64 rows).
+# Provenance artifact: scripts/row-sources/alalc-aze-Cyrl-Latn-1997.json (83 rows).
 # generated-by: maps/scripts/gen-row-tests.mjs (2026-11-16); regenerate from the artifact, do not hand-edit.
   "А" -> "A"
   "Б" -> "B"
@@ -78,10 +81,12 @@ tests {
   "Ғ" -> "Gh"
   "Д" -> "D"
   "Е" -> "E"
+  "Ё" -> "Ë"
   "Ә" -> "Ă"
   "Ж" -> "Zh"
   "З" -> "Z"
   "И" -> "I"
+  "Й" -> "Ĭ"
   "Ј" -> "I̐"
   "К" -> "K"
   "Ҝ" -> "Ġ"
@@ -99,10 +104,17 @@ tests {
   "Ф" -> "F"
   "Х" -> "Kh"
   "Һ" -> "Ḣ"
+  "Ц" -> "TS͡"
   "Ч" -> "Ch"
   "Ҹ" -> "J"
   "Ш" -> "Sh"
+  "Щ" -> "Shch"
+  "Ъ" -> "ʺ"
   "Ы" -> "Y"
+  "Ь" -> "ʹ"
+  "Э" -> "Ė"
+  "Ю" -> "IU͡"
+  "Я" -> "IA͡"
   "а" -> "a"
   "б" -> "b"
   "в" -> "v"
@@ -110,10 +122,13 @@ tests {
   "ғ" -> "gh"
   "д" -> "d"
   "е" -> "e"
+  "ё" -> "ë"
   "ә" -> "ă"
   "ж" -> "zh"
   "з" -> "z"
   "и" -> "i"
+  "й" -> "ĭ"
+  "ј" -> "i̐"
   "к" -> "k"
   "ҝ" -> "ġ"
   "л" -> "l"
@@ -130,10 +145,17 @@ tests {
   "ф" -> "f"
   "х" -> "kh"
   "һ" -> "ḣ"
+  "ц" -> "ts͡"
   "ч" -> "ch"
   "ҹ" -> "j"
   "ш" -> "sh"
+  "щ" -> "shch"
+  "ъ" -> "ʺ"
   "ы" -> "y"
+  "ь" -> "ʹ"
+  "э" -> "ė"
+  "ю" -> "iu͡"
+  "я" -> "ia͡"
   "’" -> "’"
 }
 
@@ -148,14 +170,14 @@ stage main {
     sub "\u0492" "Gh"
     sub "\u0414" "D"
     sub "\u0415" "E"
+    sub "\u0401" "Ë"
     sub "\u04D8" "Ă"
     sub "\u0416" "Zh"
     sub "\u0417" "Z"
     sub "\u0418" "I"
     sub "\u042B" "Y"
     sub "\u0408" "I̐"
-    sub "\u0419" "Y"
-    sub "\u0419" "Y"
+    sub "\u0419" "Ĭ"
     sub "\u041A" "K"
     sub "\u049C" "Ġ"
     sub "\u041B" "L"
@@ -173,8 +195,15 @@ stage main {
     sub "\u0425" "Kh"
     sub "\u04BA" "Ḣ"
     sub "\u0427" "Ch"
+    sub "\u0426" "TS͡"
     sub "\u04B8" "J"
     sub "\u0428" "Sh"
+    sub "\u0429" "Shch"
+    sub "\u042A" "ʺ"
+    sub "\u042C" "ʹ"
+    sub "\u042D" "Ė"
+    sub "\u042E" "IU͡"
+    sub "\u042F" "IA͡"
 
     sub "\u0430" "a"
     sub "\u0431" "b"
@@ -183,13 +212,14 @@ stage main {
     sub "\u0493" "gh"
     sub "\u0434" "d"
     sub "\u0435" "e"
+    sub "\u0451" "ë"
     sub "\u04D9" "ă"
     sub "\u0436" "zh"
     sub "\u0437" "z"
     sub "\u0438" "i"
     sub "\u044B" "y"
-    sub "\u0458" "ı̐"
-    sub "\u0439" "y"
+    sub "\u0458" "i̐"
+    sub "\u0439" "ĭ"
     sub "\u043A" "k"
     sub "\u049D" "ġ"
     sub "\u043B" "l"
@@ -207,8 +237,15 @@ stage main {
     sub "\u0445" "kh"
     sub "\u04BB" "ḣ"
     sub "\u0447" "ch"
+    sub "\u0446" "ts͡"
     sub "\u04B9" "j"
     sub "\u0448" "sh"
+    sub "\u0449" "shch"
+    sub "\u044A" "ʺ"
+    sub "\u044C" "ʹ"
+    sub "\u044D" "ė"
+    sub "\u044E" "iu͡"
+    sub "\u044F" "ia͡"
 
     sub "\u2019" "\u2019"
   }
