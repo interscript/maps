@@ -100,24 +100,16 @@ tests {
 # printed-key reading fails. Finding. | ь — the Other notes state the
 # standalone soft sign is not represented; the map encodes ь -> empty, which
 # the generator contract cannot express as a row (no printed value cell
-# exists either). Findings (map-vs-source, map untouched): пӏ (п +
-# palochka): printed value "p"; map lacks the lowercase digraph rule (falls
-# through to "p'") and encodes uppercase Пӏ as "Ph", which no printed cell
-# supports. | цӏ (ц + palochka, U+0446+U+04CF): printed value "ts"; map
-# encodes the single-codepoint ҹ (U+04B9) instead of the printed glyph
-# sequence, so printed-key input falls through to "ts'". | ц: printed row ц
-# -> ts has NO map rule at all (plain U+0446 passes through unchanged); only
-# ҹ (U+04B9) is encoded. | 1 (palochka-cell ASCII-1 key): map normalization
-# rules do not fire at string edges; standalone "1" unchanged. | ъ: footnote
-# 3 (word-initial ъ dropped) is not implemented in the map (ъ -> '
-# unconditionally); row skipped as context-dependent. | е: footnote 1
-# variant ye is implemented by the map as a word-initial rule; printed
-# wording differs ("preceded by the sound of a 'y' consonant"); row skipped
-# as context-dependent. | Uppercase Ы carries two sub rules in the map (Ы ->
-# Y at the letter table and a second Ы -> Е further down); only the printed
-# lowercase row ы -> e is testable and passes. The duplicate uppercase rule
-# is recorded here as an observation; map untouched this round.
-# Provenance artifact: scripts/row-sources/odni-che-Cyrl-Latn-2015.json (38 rows).
+# exists either). Findings (map-vs-source) resolved in the E3 corpus-fixes round (2026-11-17):
+# the printed ц -> ts row is now encoded (plain U+0446 had no rule at all), the
+# printed цӏ key (the two-glyph sequence U+0446+U+04CF) is now encoded alongside
+# the precomposed ҹ single-codepoint rules the old map carried, and the пӏ
+# digraph is completed (lowercase пӏ -> p added; uppercase Пӏ re-voiced
+# "Ph" -> "P" — no printed cell supports "Ph"). Still recorded, untouched: the
+# "1"-at-string-edge normalization gap (standalone "1" unchanged), footnote 3
+# (word-initial ъ dropped) not implemented, footnote 1's е/ye wording difference,
+# and the duplicate uppercase Ы rules (observation).
+# Provenance artifact: scripts/row-sources/odni-che-Cyrl-Latn-2015.json (41 rows).
 # generated-by: maps/scripts/gen-row-tests.mjs (2026-11-16); regenerate from the artifact, do not hand-edit.
   "а" -> "a"
   "б" -> "b"
@@ -139,6 +131,7 @@ tests {
   "н" -> "n"
   "о" -> "o"
   "п" -> "p"
+  "пӏ" -> "p"
   "р" -> "r"
   "с" -> "s"
   "т" -> "t"
@@ -148,6 +141,8 @@ tests {
   "х" -> "kh"
   "хь" -> "h"
   "хӏ" -> "h"
+  "ц" -> "ts"
+  "цӏ" -> "ts"
   "ч" -> "ch"
   "чӏ" -> "ch"
   "ш" -> "sh"
@@ -211,7 +206,7 @@ stage main {
     sub "\u041D" 'N'
     sub "\u041E" 'O'
     sub "\u041F" 'P'
-    sub "\u041F\u04C0" 'Ph'
+    sub "\u041F\u04C0" 'P'
     sub "\u0420" 'R'
     sub "\u0421" 'S'
     sub "\u0422" 'T'
@@ -221,6 +216,8 @@ stage main {
     sub "\u0425" 'Kh'
     sub "\u0425\u044C" 'H'
     sub "\u0425\u04C0" 'H'
+    sub "\u0426" 'Ts'
+    sub "\u0426\u04C0" 'Ts'
     sub "\u04B8" 'Ts'
     sub "\u04B8\u04C0" 'Ts'
     sub "\u0427" 'Ch'
@@ -255,6 +252,7 @@ stage main {
     sub "\u043D" 'n'
     sub "\u043E" 'o'
     sub "\u043F" 'p'
+    sub "\u043F\u04CF" 'p'
     sub "\u0440" 'r'
     sub "\u0441" 's'
     sub "\u0442" 't'
@@ -264,6 +262,8 @@ stage main {
     sub "\u0445" 'kh'
     sub "\u0445\u044C" 'h'
     sub "\u0445\u04CF" 'h'
+    sub "\u0446" 'ts'
+    sub "\u0446\u04CF" 'ts'
     sub "\u04B9" 'ts'
     sub "\u04B9\u04CF" 'ts'
     sub "\u0447" 'ch'
