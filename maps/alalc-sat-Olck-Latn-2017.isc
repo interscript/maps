@@ -46,9 +46,11 @@ tests {
 # context-dependent. (The composite row ᱟᱹ -> ạ̄ above is the table's own
 # printed composite and is tested.) | The marks ᱻ (vowel prolongation,
 # omitted) and ᱼ (separator, omitted) — instruction rows on p. 2, no
-# romanization values. Failing printed rows (findings): ᱱ — printed cell
-# "n"; runtime gives 'ᱱ'. Failing row, finding below — never forced green.
-# Provenance artifact: scripts/row-sources/alalc-sat-Olck-Latn-2017.json (31 rows).
+# romanization values.
+# E3 corpus-fixes round (2026-11-17): the ᱱ finding is fixed — the map now
+# carries the printed ᱱ -> n rule (the table's last consonant row), and the
+# row is part of the generated set.
+# Provenance artifact: scripts/row-sources/alalc-sat-Olck-Latn-2017.json (32 rows).
 # generated-by: maps/scripts/gen-row-tests.mjs (2026-11-16); regenerate from the artifact, do not hand-edit.
   "ᱚ" -> "a"
   "ᱩ" -> "u"
@@ -80,6 +82,7 @@ tests {
   "ᱛ" -> "t"
   "ᱫ" -> "d"
   "ᱝ" -> "ṃ"
+  "ᱱ" -> "n"
   "ᱽ" -> "’"
 }
 
@@ -109,6 +112,7 @@ stage main {
     sub "ᱽ" "’"
     sub "ᱫ" "d"
     sub "ᱝ" "ṃ"
+    sub "ᱱ" "n"
     sub "ᱸ" "m̐"
   }
 

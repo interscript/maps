@@ -122,9 +122,13 @@
       "ṃ"
     ],
     [
+      "ᱱ",
+      "n"
+    ],
+    [
       "ᱽ",
       "’"
     ]
   ],
-  "note": "ALA-LC Santali (in Ol script) Romanization Table, 2017 version, p. 1 (letter table) + p. 2 (other marks); held source interscript-private-references/alalc/alalc-santali.pdf. Extraction: PDF text layer, every value cell cross-checked against the rendered page image. ᱟᱹ is the table's own composite row (ᱟ + the nasalization dot) with printed value ạ̄ (a + dot below, U+0323). The ᱽ row's printed value is \"’ (apostrophe)\" with \"(see Note 1)\" stripped per the proven pattern; Note 1's statement that the four checked host consonants romanize plain (g/j/d/b) is instruction prose, not a value cell. ᱦ and ᱷ are two distinct printed keys both romanized h. Document order = vowels then consonants, as printed. Skipped printed rows: ᱸ — printed value cell \"m̐ (see Note 2)\": the mark romanizes as m̐ after the vowel it modifies — a mark applied to a preceding vowel, not a standalone transliteration string; skipped as context-dependent. (The composite row ᱟᱹ -> ạ̄ above is the table's own printed composite and is tested.) | The marks ᱻ (vowel prolongation, omitted) and ᱼ (separator, omitted) — instruction rows on p. 2, no romanization values. Failing printed rows (findings): ᱱ — printed cell \"n\"; runtime gives 'ᱱ'. Failing row, finding below — never forced green."
+  "note": "ALA-LC Santali (in Ol script) Romanization Table, 2017 version, p. 1 (letter table) + p. 2 (other marks); held source interscript-private-references/alalc/alalc-santali.pdf. Extraction: PDF text layer, every value cell cross-checked against the rendered page image. ᱟᱹ is the table's own composite row (ᱟ + the nasalization dot) with printed value ạ̄ (a + dot below, U+0323). The ᱽ row's printed value is \"’ (apostrophe)\" with \"(see Note 1)\" stripped per the proven pattern; Note 1's statement that the four checked host consonants romanize plain (g/j/d/b) is instruction prose, not a value cell. ᱦ and ᱷ are two distinct printed keys both romanized h. Document order = vowels then consonants, as printed. Skipped printed rows: ᱸ — printed value cell \"m̐ (see Note 2)\": the mark romanizes as m̐ after the vowel it modifies — a mark applied to a preceding vowel, not a standalone transliteration string; skipped as context-dependent. (The composite row ᱟᱹ -> ạ̄ above is the table's own printed composite and is tested.) | The marks ᱻ (vowel prolongation, omitted) and ᱼ (separator, omitted) — instruction rows on p. 2, no romanization values. E3 corpus-fixes round (2026-11-17, maps PR e3-fixes-maps): the ᱱ finding is fixed — the map now carries the printed ᱱ -> n rule and the row is part of the generated set; this note replaces the findings record."
 }
