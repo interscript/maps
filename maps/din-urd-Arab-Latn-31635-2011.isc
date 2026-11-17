@@ -26,7 +26,10 @@ metadata {
     recorded here. Yeh (row 36, given as 064A/0649) renders y by
     default and i-macron over vocalized input; Urdu texts commonly
     write the yeh with the Persian codepoint (06CC), which this map
-    accepts as the same letter. The badi ye (row 37) renders e.
+    accepts as the same letter. Urdu texts likewise write heh
+    (row 35, 06BE/0647) overwhelmingly in the gol form (06C1), which this
+    map accepts as the same letter (cf. ALA-LC rule 9: heh "usually
+    written in the form" ہ). The badi ye (row 37) renders e.
     Remark d: aspiration is written as in the original script (bh and
     the like), which follows mechanically from the heh's constant h —
     the aspirate digraphs need no separate rules. Remark b: the
@@ -76,6 +79,7 @@ tests {
    "و" ->  "v"
    "ه" ->  "h"
    "ھ" ->  "h"
+   "ہ" ->  "h"
    "ی" ->  "y"
    "ي" ->  "y"
    "ى" ->  "y"
@@ -227,6 +231,7 @@ stage main {
     sub "وّ" "vv"
     sub "هّ" "hh"
     sub "ھّ" "hh"
+    sub "ہّ" "hh"
     sub "يّ" "yy"
     sub "یّ" "yy"
     sub "وُ" "ū"
@@ -282,6 +287,7 @@ stage main {
     sub "و" "v"
     sub "ه" "h"
     sub "ھ" "h"
+    sub "ہ" "h"
     sub "ي" "y"
     sub "ی" "y"
     sub "ى" "y"
