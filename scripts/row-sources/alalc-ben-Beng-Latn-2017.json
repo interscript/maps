@@ -10,6 +10,10 @@
       "ā"
     ],
     [
+      "ই",
+      "I"
+    ],
+    [
       "ঈ",
       "ī"
     ],
@@ -70,6 +74,14 @@
       "ṅa"
     ],
     [
+      "চ",
+      "ca"
+    ],
+    [
+      "ছ",
+      "cha"
+    ],
+    [
       "জ",
       "ja"
     ],
@@ -94,8 +106,16 @@
       "ḍa"
     ],
     [
+      "ড়",
+      "ṛa"
+    ],
+    [
       "ঢ",
       "ḍha"
+    ],
+    [
+      "ঢ়",
+      "ṛha"
     ],
     [
       "ণ",
@@ -146,12 +166,28 @@
       "ma"
     ],
     [
+      "য",
+      "ya"
+    ],
+    [
+      "য়",
+      "ẏa"
+    ],
+    [
       "র",
       "ra"
     ],
     [
       "ল",
       "la"
+    ],
+    [
+      "শ",
+      "śa"
+    ],
+    [
+      "ষ",
+      "sha"
     ],
     [
       "স",
@@ -162,9 +198,17 @@
       "ha"
     ],
     [
+      "ং",
+      "ṃ"
+    ],
+    [
       "ঃ",
       "ḥ"
+    ],
+    [
+      "ঽ",
+      "’"
     ]
   ],
-  "note": "ALA-LC Bengali Romanization Table, 2017 version, p. 1 (vowels and diphthongs, consonants, anusvara/bisarga/candrabindu/abagraha) + p. 2 (notes); held source interscript-private-references/alalc/alalc-bengali.pdf. Extraction: PDF text layer, every value cell cross-checked against the rendered page image. The vowel table prints ই as capital \"I\" (long ī lowercase with macron) — transcribed as printed. ঋ -> ṛ, ৠ -> ṝ, ঌ -> ḹ have no text-layer values; visually identified from the rendered page. ৎ (khanda ta) -> t as printed. The ড়/ঢ়/য় keys are the printed nukta composites. Abagraha ঽ -> ’ (apostrophe) as printed. Skipped printed rows: ব second listing — the printed table lists ব twice (labial column and semivowel column), both \"ba (see Note 3)\"; Note 3's cluster-position value va is context-dependent and un-expressible as a plain row. One ব -> ba row is transcribed; the duplicate printed listing is documented here. | ঁ (candrabindu) — printed value cell \"n̐, m̐ (see Note 4)\": Note 4 splits the value by the following consonant class — position-dependent, un-expressible as a plain row; skipped. Failing printed rows (findings): ই — printed cell \"I\"; runtime gives 'i'. Failing row, finding below — never forced green. | চ — printed cell \"ca\"; runtime gives 'cha'. Failing row, finding below — never forced green. | ছ — printed cell \"cha\"; runtime gives 'chha'. Failing row, finding below — never forced green. | ড় — printed cell \"ṛa\"; runtime gives 'ṙa'. Failing row, finding below — never forced green. | ঢ় — printed cell \"ṛha\"; runtime gives 'ṙha'. Failing row, finding below — never forced green. | য — printed cell \"ya\"; runtime gives 'j̱a'. Failing row, finding below — never forced green. | য় — printed cell \"ẏ\"; runtime gives 'ya'. Failing row, finding below — never forced green. | শ — printed cell \"śa\"; runtime gives 'sha'. Failing row, finding below — never forced green. | ষ — printed cell \"sha\"; runtime gives 'ṣha'. Failing row, finding below — never forced green. | ং — printed cell \"ṃ\"; runtime gives 'ṁ'. Failing row, finding below — never forced green. | ঽ — printed cell \"’\"; runtime gives 'ঽ'. Failing row, finding below — never forced green."
+  "note": "ALA-LC Bengali Romanization Table, 2017 version, p. 1 (vowels and diphthongs, consonants, anusvara/bisarga/candrabindu/abagraha) + p. 2 (notes); held source interscript-private-references/alalc/alalc-bengali.pdf. Extraction: PDF text layer, every value cell cross-checked against the rendered page image. The vowel table prints ই as capital \"I\" (long ī lowercase with macron) — transcribed as printed. ঋ -> ṛ, ৠ -> ṝ, ঌ -> ḹ have no text-layer values; visually identified from the rendered page. ৎ (khanda ta) -> t as printed. The ড়/ঢ়/য় keys are the printed nukta composites. Abagraha ঽ -> ’ (apostrophe) as printed. Skipped printed rows: ব second listing — the printed table lists ব twice (labial column and semivowel column), both \"ba (see Note 3)\"; Note 3's cluster-position value va is context-dependent and un-expressible as a plain row. One ব -> ba row is transcribed; the duplicate printed listing is documented here. | ঁ (candrabindu) — printed value cell \"n̐, m̐ (see Note 4)\": Note 4 splits the value by the following consonant class — position-dependent, un-expressible as a plain row; skipped. E3 corpus-fixes round (2026-11-17, maps PR e3-fixes-maps): all 11 failing rows are now encoded and pass. The map's own letter table already carried the printed values but sat AFTER the \"run map.benglatn.stage.main\" item in stage main — the base stage consumes the Bengali letters, so those rules matched nothing and every divergent cell emitted the base map's 1997-era value. The fix applies the printed values to the raw text BEFORE the base run (with elision variants mirroring the base RULES machinery and both nukta composite forms), so the eleven cells — and every cluster string embedding them — now transliterate per the printed table. The rows are part of the generated set; this note replaces the per-row findings record."
 }
