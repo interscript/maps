@@ -50,9 +50,12 @@ tests {
 # visually identified (PR #242) as j-acute; transcribed as "j́"; the row
 # passes end-to-end. | к̢ (position 37) — printed cell "(ķ)" (value 'ķ');
 # runtime gives ''. Failing row, finding below — never forced green.
-# Findings (map-vs-source, map untouched): к̢ (position 37): printed cell
-# "(ķ)" vs runtime ''.
-# Provenance artifact: scripts/row-sources/din-atv-Cyrl-Latn-1460-2-2011.json (36 rows).
+# Findings (map-vs-source) resolved in the E3 corpus-fixes round (2026-11-17): the
+# map values now carry the printed cedilla (ķ/ņ, the DIN uvular/nasal
+# series letters); the atv/az pos-37 stray-paren empty-target sub rule is
+# replaced by the printed (ķ) value. The rows are part of the generated
+# set; the per-cell notes above record the printed readings.
+# Provenance artifact: scripts/row-sources/din-atv-Cyrl-Latn-1460-2-2011.json (37 rows).
 # generated-by: maps/scripts/gen-row-tests.mjs (2026-11-16); regenerate from the artifact, do not hand-edit.
   "a" -> "a"
   "б" -> "b"
@@ -68,6 +71,7 @@ tests {
   "i" -> "í"
   "j" -> "j́"
   "к" -> "k"
+  "к̢" -> "ķ"
   "л" -> "l"
   "м" -> "m"
   "н" -> "n"
@@ -108,7 +112,7 @@ stage main {
     sub "i" "í"
     sub "j" "j́"
     sub "к" "k"
-    sub "к̢" ""
+    sub "к̢" "ķ"
     sub "л" "l"
     sub "м" "m"
     sub "н" "n"
