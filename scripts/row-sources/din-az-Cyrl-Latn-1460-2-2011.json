@@ -58,6 +58,14 @@
       "k"
     ],
     [
+      "к̢",
+      "ķ"
+    ],
+    [
+      "ҝ",
+      "ķ"
+    ],
+    [
       "л",
       "l"
     ],
@@ -142,5 +150,5 @@
       "ė"
     ]
   ],
-  "note": "DIN 1460-2:2011-10, Tabelle 1, language row 5 (Aserbaidschanisch); held source interscript-private-references/din/din-1460-2.pdf. Rows are the language column's printed cells, taken from the durable mechanical extraction tools/din1460-2-table.json (x-anchored text-layer extraction, maps PR #242 provenance), re-verified cell-by-cell against the printed grid rectangles (pymupdf find_tables re-extraction) and end-to-end through iscrs transliterate. Positions referenced by the table's own position numbers. Cell notes: й (position 32) — the printed cell carries the value parenthesized (\"(j)\"), DIN's optional-value notation; transcribed without the typographic parentheses; the row passes end-to-end. | к̢ (position 37) — printed cell \"(ķ)\" (value 'ķ'); runtime gives ''. Failing row, finding below — never forced green. | ҝ (position 38) — printed cell \"ķ\" (value 'ķ'); runtime gives 'k'. Failing row, finding below — never forced green. | у̅ (position 65) — the printed cell carries the value parenthesized (\"(ū)\"), DIN's optional-value notation; transcribed without the typographic parentheses; the row passes end-to-end. | ӌ (position 80) — the printed cell carries the value parenthesized (\"(ǵ)\"), DIN's optional-value notation; transcribed without the typographic parentheses; the row passes end-to-end. | э (position 90) — the printed cell carries the value parenthesized (\"(ė)\"), DIN's optional-value notation; transcribed without the typographic parentheses; the row passes end-to-end. Findings (map-vs-source, map untouched): к̢ (position 37): printed cell \"(ķ)\" vs runtime ''. | ҝ (position 38): printed cell \"ķ\" vs runtime 'k'."
+  "note": "DIN 1460-2:2011-10, Tabelle 1, language row 5 (Aserbaidschanisch); held source interscript-private-references/din/din-1460-2.pdf. Rows are the language column's printed cells, taken from the durable mechanical extraction tools/din1460-2-table.json (x-anchored text-layer extraction, maps PR #242 provenance), re-verified cell-by-cell against the printed grid rectangles (pymupdf find_tables re-extraction) and end-to-end through iscrs transliterate. Positions referenced by the table's own position numbers. Cell notes: й (position 32) — the printed cell carries the value parenthesized (\"(j)\"), DIN's optional-value notation; transcribed without the typographic parentheses; the row passes end-to-end. | к̢ (position 37) — printed cell \"(ķ)\" (value 'ķ'); runtime gives ''. Failing row, finding below — never forced green. | ҝ (position 38) — printed cell \"ķ\" (value 'ķ'); runtime gives 'k'. Failing row, finding below — never forced green. | у̅ (position 65) — the printed cell carries the value parenthesized (\"(ū)\"), DIN's optional-value notation; transcribed without the typographic parentheses; the row passes end-to-end. | ӌ (position 80) — the printed cell carries the value parenthesized (\"(ǵ)\"), DIN's optional-value notation; transcribed without the typographic parentheses; the row passes end-to-end. | э (position 90) — the printed cell carries the value parenthesized (\"(ė)\"), DIN's optional-value notation; transcribed without the typographic parentheses; the row passes end-to-end. E3 corpus-fixes round (2026-11-17, maps PR e3-fixes-maps): the U+0327 findings are fixed — the map values now carry the printed cedilla (ķ/ņ, the DIN uvular/nasal series letters), and the stray \"(\" recorded as an empty-target sub rule in the atv/az pos-37 cells is replaced by the printed (ķ) value. The fixed rows are part of the generated set; this note replaces the findings record."
 }

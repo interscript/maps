@@ -57,10 +57,12 @@ tests {
 # the row passes end-to-end. | э (position 90) — the printed cell carries
 # the value parenthesized ("(ė)"), DIN's optional-value notation;
 # transcribed without the typographic parentheses; the row passes
-# end-to-end. Findings (map-vs-source, map untouched): к̢ (position 37):
-# printed cell "(ķ)" vs runtime ''. | ҝ (position 38): printed cell "ķ" vs
-# runtime 'k'.
-# Provenance artifact: scripts/row-sources/din-az-Cyrl-Latn-1460-2-2011.json (35 rows).
+# end-to-end. Findings (map-vs-source) resolved in the E3 corpus-fixes round (2026-11-17): the
+# map values now carry the printed cedilla (ķ/ņ, the DIN uvular/nasal
+# series letters); the atv/az pos-37 stray-paren empty-target sub rule is
+# replaced by the printed (ķ) value. The rows are part of the generated
+# set; the per-cell notes above record the printed readings.
+# Provenance artifact: scripts/row-sources/din-az-Cyrl-Latn-1460-2-2011.json (37 rows).
 # generated-by: maps/scripts/gen-row-tests.mjs (2026-11-16); regenerate from the artifact, do not hand-edit.
   "a" -> "a"
   "б" -> "b"
@@ -76,6 +78,8 @@ tests {
   "й" -> "j"
   "j" -> "j"
   "к" -> "k"
+  "к̢" -> "ķ"
+  "ҝ" -> "ķ"
   "л" -> "l"
   "м" -> "m"
   "н" -> "n"
@@ -115,8 +119,8 @@ stage main {
     sub "й" "j"
     sub "j" "j"
     sub "к" "k"
-    sub "к̢" ""
-    sub "ҝ" "k"
+    sub "к̢" "ķ"
+    sub "ҝ" "ķ"
     sub "л" "l"
     sub "м" "m"
     sub "н" "n"

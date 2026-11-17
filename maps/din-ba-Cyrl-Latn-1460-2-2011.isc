@@ -46,10 +46,12 @@ tests {
 # numbers. Cell notes: ҡ (position 39) — printed cell "ķ" (value 'ķ');
 # runtime gives 'k'. Failing row, finding below — never forced green. | ң
 # (position 47) — printed cell "ņ" (value 'ņ'); runtime gives 'n'. Failing
-# row, finding below — never forced green. Findings (map-vs-source, map
-# untouched): ҡ (position 39): printed cell "ķ" vs runtime 'k'. | ң
-# (position 47): printed cell "ņ" vs runtime 'n'.
-# Provenance artifact: scripts/row-sources/din-ba-Cyrl-Latn-1460-2-2011.json (37 rows).
+# row, finding below — never forced green. Findings (map-vs-source) resolved in the E3 corpus-fixes round (2026-11-17): the
+# map values now carry the printed cedilla (ķ/ņ, the DIN uvular/nasal
+# series letters); the atv/az pos-37 stray-paren empty-target sub rule is
+# replaced by the printed (ķ) value. The rows are part of the generated
+# set; the per-cell notes above record the printed readings.
+# Provenance artifact: scripts/row-sources/din-ba-Cyrl-Latn-1460-2-2011.json (39 rows).
 # generated-by: maps/scripts/gen-row-tests.mjs (2026-11-16); regenerate from the artifact, do not hand-edit.
   "a" -> "a"
   "б" -> "b"
@@ -66,9 +68,11 @@ tests {
   "и" -> "i"
   "й" -> "j"
   "к" -> "k"
+  "ҡ" -> "ķ"
   "л" -> "l"
   "м" -> "m"
   "н" -> "n"
+  "ң" -> "ņ"
   "о" -> "o"
   "ө" -> "ö"
   "п" -> "p"
@@ -107,11 +111,11 @@ stage main {
     sub "и" "i"
     sub "й" "j"
     sub "к" "k"
-    sub "ҡ" "k"
+    sub "ҡ" "ķ"
     sub "л" "l"
     sub "м" "m"
     sub "н" "n"
-    sub "ң" "n"
+    sub "ң" "ņ"
     sub "о" "o"
     sub "ө" "ö"
     sub "п" "p"
