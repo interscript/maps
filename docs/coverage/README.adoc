@@ -111,11 +111,15 @@ collection.
 |ISO 9:1995 |Cyrillic to Latin |`iso-rus-Cyrl-Latn-9-1995`
 |ISO 9984:1996 |Georgian to Latin |`iso-kat-Geor-Latn-9984-1996`
 |ISO/TR 11941:1996 |Korean to Latin, two methods |`iso-kor-Hang-Latn-1996-method1`, `iso-kor-Hang-Latn-1996-method2`
+|ISO 3602:1989 |Japanese (kana) to Latin |`iso-jpn-Hrkt-Latn-3602-1989`
 |===
 
-All three ISO documents in the collection have maps in the corpus. The
-corpus's other ISO maps, which implement ISO 233, ISO 843, ISO 3602,
-ISO 11940, and ISO 15919, have no source document in the collection.
+All four ISO documents in the collection have maps in the corpus. The
+held ISO 3602:1989 copy is the official document (Table 1, Table 2,
+Table 3a, Table 3b, clauses 1-6); the earlier truncation constraint is
+lifted - Tables 2/3a/3b were verified against the real text. The
+corpus's other ISO maps, which implement ISO 233, ISO 843, ISO 11940,
+and ISO 15919, have no source document in the collection.
 For ISO 15919 the remaining coverage beyond the corpus's 19 maps, and
 the blocked unlock paths, are recorded in `iso-15919-remainder.adoc`
 in this directory.
