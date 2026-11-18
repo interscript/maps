@@ -1,0 +1,121 @@
+system "ISO:inc-Kthi:Latn:15919-2001" {
+
+metadata {
+  authority_id iso
+  id 15919-2001
+  language iso-639-2:inc
+  source_script Kthi
+  destination_script Latn
+  name "ISO 15919:2001 Information and documentation -- Transliteration of Devanagari and related Indic scripts into Latin characters (Kaithi)"
+  url https://www.chatranjali.fr/Scripts/Standards/ISO15919.pdf
+  creation_date 2001
+  adoption_date 2001
+  description {    ISO 15919:2001 first edition, Transliteration of Devanagari and related Indic scripts
+    into Latin characters. Every printed row of the transcription-source table is encoded
+    and embedded as a test row; see notes for provenance, cross-check rates, and findings.  }
+
+  notes {
+    note "Authority: ISO 15919:2001 first edition (Kaithi listed in its scope annex); the first edition printed no per-script Kaithi table, so the rows follow the transcription source below and are verified against the second edition's Table 7.13 where they overlap."
+    note "Transcription source (owner blessing 2026-11-17): Wikipedia ISO 15919 article table, CC BY-SA, https://en.wikipedia.org/wiki/ISO_15919 - every printed Kaithi cell is encoded and embedded as a test row."
+    note "Verification: all overlapping cells agree with ISO/DIS 15919 (2026) Table 7.13 (N125), which additionally prints vocalic r, candrabindu, anusvara and visarga rows not printed by the transcription source."
+    note "Vowel-sign rows are not printed by the transcription source for Kaithi and are not encoded; see the 15919-2026 Kaithi map for the second edition's full sign inventory."
+  }
+}
+
+tests {
+   "𑂃" ->  "a"
+   "𑂄" ->  "ā"
+   "𑂅" ->  "i"
+   "𑂆" ->  "ī"
+   "𑂇" ->  "u"
+   "𑂈" ->  "ū"
+   "𑂉" ->  "ē"
+   "𑂊" ->  "ai"
+   "𑂋" ->  "ō"
+   "𑂌" ->  "au"
+   "𑂍" ->  "ka"
+   "𑂎" ->  "kha"
+   "𑂏" ->  "ga"
+   "𑂐" ->  "gha"
+   "𑂑" ->  "ṅa"
+   "𑂒" ->  "ca"
+   "𑂓" ->  "cha"
+   "𑂔" ->  "ja"
+   "𑂕" ->  "jha"
+   "𑂖" ->  "ña"
+   "𑂗" ->  "ṭa"
+   "𑂘" ->  "ṭha"
+   "𑂙" ->  "ḍa"
+   "𑂛" ->  "ḍha"
+   "𑂝" ->  "ṇa"
+   "𑂞" ->  "ta"
+   "𑂟" ->  "tha"
+   "𑂠" ->  "da"
+   "𑂡" ->  "dha"
+   "𑂢" ->  "na"
+   "𑂣" ->  "pa"
+   "𑂤" ->  "pha"
+   "𑂥" ->  "ba"
+   "𑂦" ->  "bha"
+   "𑂧" ->  "ma"
+   "𑂨" ->  "ya"
+   "𑂩" ->  "ra"
+   "𑂪" ->  "la"
+   "𑂫" ->  "va"
+   "𑂬" ->  "śa"
+   "𑂭" ->  "ṣa"
+   "𑂮" ->  "sa"
+   "𑂯" ->  "ha"
+}
+
+stage main {
+
+  parallel {
+    sub "𑂃" "a"
+    sub "𑂄" "ā"
+    sub "𑂅" "i"
+    sub "𑂆" "ī"
+    sub "𑂇" "u"
+    sub "𑂈" "ū"
+    sub "𑂉" "ē"
+    sub "𑂊" "ai"
+    sub "𑂋" "ō"
+    sub "𑂌" "au"
+    sub "𑂍" "ka"
+    sub "𑂎" "kha"
+    sub "𑂏" "ga"
+    sub "𑂐" "gha"
+    sub "𑂑" "ṅa"
+    sub "𑂒" "ca"
+    sub "𑂓" "cha"
+    sub "𑂔" "ja"
+    sub "𑂕" "jha"
+    sub "𑂖" "ña"
+    sub "𑂗" "ṭa"
+    sub "𑂘" "ṭha"
+    sub "𑂙" "ḍa"
+    sub "𑂛" "ḍha"
+    sub "𑂝" "ṇa"
+    sub "𑂞" "ta"
+    sub "𑂟" "tha"
+    sub "𑂠" "da"
+    sub "𑂡" "dha"
+    sub "𑂢" "na"
+    sub "𑂣" "pa"
+    sub "𑂤" "pha"
+    sub "𑂥" "ba"
+    sub "𑂦" "bha"
+    sub "𑂧" "ma"
+    sub "𑂨" "ya"
+    sub "𑂩" "ra"
+    sub "𑂪" "la"
+    sub "𑂫" "va"
+    sub "𑂬" "śa"
+    sub "𑂭" "ṣa"
+    sub "𑂮" "sa"
+    sub "𑂯" "ha"
+  }
+
+  compose
+}
+}
