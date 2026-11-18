@@ -111,14 +111,38 @@ collection.
 |ISO 9:1995 |Cyrillic to Latin |`iso-rus-Cyrl-Latn-9-1995`
 |ISO 9984:1996 |Georgian to Latin |`iso-kat-Geor-Latn-9984-1996`
 |ISO/TR 11941:1996 |Korean to Latin, two methods |`iso-kor-Hang-Latn-1996-method1`, `iso-kor-Hang-Latn-1996-method2`
+|ISO 843:1997 |Greek to Latin (official edition) |`iso-ell-Grek-Latn-843-1997-t1`, `iso-ell-Grek-Latn-843-1997-t2`
+|ISO/R 843:1968 |Greek to Latin, superseded Recommendation |`iso-ell-Grek-Latn-r843-1968`
+|IS 13194:1991 (ISCII) |Indian scripts, Annex F/A romanization |`bis-dev-Deva-Latn-13194-1991`, `bis-ben-Beng-Latn-13194-1991`, `bis-asm-Beng-Latn-13194-1991`, `bis-guj-Gujr-Latn-13194-1991`, `bis-pnj-Guru-Latn-13194-1991`, `bis-ori-Orya-Latn-13194-1991`, `bis-tml-Taml-Latn-13194-1991`, `bis-tel-Telu-Latn-13194-1991`, `bis-kan-Kana-Latn-13194-1991`, `bis-mlm-Mlym-Latn-13194-1991`
 |===
 
-All three ISO documents in the collection have maps in the corpus. The
-corpus's other ISO maps, which implement ISO 233, ISO 843, ISO 3602,
-ISO 11940, and ISO 15919, have no source document in the collection.
-For ISO 15919 the remaining coverage beyond the corpus's 19 maps, and
-the blocked unlock paths, are recorded in `iso-15919-remainder.adoc`
-in this directory.
+All three originally held ISO documents have maps in the corpus, and
+the collection now also holds official editions against which further
+maps were verified: ISO 843:1997 (official, Tables 1-5 + Notes 1-14 +
+normative Annex A) for the t1/t2 pair, ISO/R 843:1968 (complete: table,
+special signs, retransliteration) for the new `iso-ell-Grek-Latn-r843-1968`,
+ISO 3602:1989 (official, complete: Table 1-3b, clauses 1-6) for the
+Japanese map, and IS 13194:1991 with Amendment No. 1 (December 2010)
+for the ten ISCII maps. The corpus's remaining ISO maps, which implement
+ISO 233, ISO 11940, and ISO 15919, still have no source document in the
+collection. For ISO 15919 the remaining coverage beyond the corpus's 19
+maps, and the blocked unlock paths, are recorded in
+`iso-15919-remainder.adoc` in this directory.
+
+The held copy of SIST ISO 843:2005 is an identical-text adoption of
+ISO 843:1997 and is recorded as informative only; the verification
+against it adds nothing beyond the official ISO 843:1997 edition.
+
+=== ISO/R 843:1968 held-copy gaps
+
+Two of the recommendation's example lines (clause 1(b) rough-breathing
+demonstration, and the uppercase Myrtoon line of clause 1(d)) are
+partially obscured by the watermark of the held scan; their readings
+are flagged in the map notes and are not pinned as tests. The printed
+lowercase Myrtoion output shows u/y glyphs ambiguous at scan resolution;
+row 20 (Y, y -> U, u) governs. The footnote separator dot (tau-chi,
+tau-sigma) is rendered by the map as a full stop because the printed
+mid dot collides with the ano-teleia -> colon rule.
 
 == BSI
 
