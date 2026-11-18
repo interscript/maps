@@ -1,0 +1,238 @@
+system "ISO:sin-Sinh:Latn:15919-2026" {
+
+metadata {
+  authority_id iso
+  id 15919-2026
+  language iso-639-2:sin
+  source_script Sinh
+  destination_script Latn
+  name "ISO/DIS 15919 (2026) Information and documentation -- Transliteration of Indic scripts into Latin characters (Sinhala; DIS stage)"
+  url https://www.iso.org/committee/48820.html
+  creation_date 2026
+  adoption_date 2026
+  description {    Second edition (DIS stage) of ISO 15919, Transliteration of Indic scripts into Latin characters.
+    Encoded from the committee ballot ISO/TC 46/WG 3 N125; per-script tables of clause 7,
+    numerals of normative Annex A, Rule 17 Vedic accents, and options 9.8/9.9/9.10 as
+    selectable variants (languages opt98 opt99 opt10). See notes for provenance and errata.  }
+
+  notes {
+    note "Encoded from ISO/DIS 15919 (2026), ISO/TC 46/WG 3 N125 (DIS stage draft, 2026-01-26), Table 7.10 plus the numerals of normative Annex A Table A.2; shared-table content verified against ISO/CD 15919 (2025, N108) and ISO 15919 WD (2024, N88). The DIS is not yet a published International Standard."
+    note "Rule 2 convention: inherent a with a consonant is always transliterated (consonant rows carry the inherent a)."
+    note "virama is deleted in the default behavior (clause 6 printed virama hex list); option 9.10 (language selector opt10) instead renders virama as middle dot U+00B7."
+    note "Option selectors (W3 languages, single-select): opt98 = clause 9.8 upper-case for all initial vowels (first letter capitalised for digraph outputs); opt99 = clause 9.9 unusual conjuncts marked with equals sign U+003D via the script's zero-width joiner; opt10 = clause 9.10 explicit virama middle dot. Option 9.1 (non-uniform e/o) is available by character substitution on outputs and is not separately staged."
+    note "Cross-check: all Table 7.10 cells agree with the owner-blessed Wikipedia ISO 15919 table; agreement with the corpus Pali-scoped map iso-pli-Sinh-Latn-15919-2001: 51/60 of printed rows, divergent families recorded as findings (vocalics ṛ-family vs r̥-family; prenasalized bare vs n̆-marked)."
+    note "Row-level source errata encoded per printed text: Table 7.10 row ['ඦ']: latin/hex mismatch: text='n̆ja' hex=006E 0306 0067"
+  }
+}
+
+languages opt98 opt99 opt10
+
+tests {
+   "අ" ->  "a"
+   "ක" ->  "ka"
+   "ආ" ->  "ā"
+   "ා" ->  "ā"
+   "ඛ" ->  "kha"
+   "ඇ" ->  "æ"
+   "ැ" ->  "æ"
+   "ග" ->  "ga"
+   "ඈ" ->  "ǣ"
+   "ෑ" ->  "ǣ"
+   "ඝ" ->  "gha"
+   "ඉ" ->  "i"
+   "ි" ->  "i"
+   "ඞ" ->  "ṅa"
+   "ඊ" ->  "ī"
+   "ී" ->  "ī"
+   "ඟ" ->  "n̆ga"
+   "උ" ->  "u"
+   "ු" ->  "u"
+   "ච" ->  "ca"
+   "ඌ" ->  "ū"
+   "ූ" ->  "ū"
+   "ඡ" ->  "cha"
+   "ඍ" ->  "r̥"
+   "ෘ" ->  "r̥"
+   "ජ" ->  "ja"
+   "ඎ" ->  "r̥̄"
+   "ෲ" ->  "r̥̄"
+   "ඣ" ->  "jha"
+   "ඏ" ->  "l̥"
+   "ෟ" ->  "l̥"
+   "ඤ" ->  "ña"
+   "ඐ" ->  "l̥̄"
+   "ෳ" ->  "l̥̄"
+   "ඦ" ->  "n̆ja"
+   "එ" ->  "e"
+   "ෙ" ->  "e"
+   "ට" ->  "ṭa"
+   "ඒ" ->  "ē"
+   "ේ" ->  "ē"
+   "ඨ" ->  "ṭha"
+   "ඓ" ->  "ai"
+   "ෛ" ->  "ai"
+   "ඩ" ->  "ḍa"
+   "ඔ" ->  "o"
+   "ො" ->  "o"
+   "ඪ" ->  "ḍha"
+   "ඕ" ->  "ō"
+   "ෝ" ->  "ō"
+   "ණ" ->  "ṇa"
+   "ඖ" ->  "au"
+   "ෞ" ->  "au"
+   "ඬ" ->  "n̆ḍa"
+   "ත" ->  "ta"
+   "ශ" ->  "śa"
+   "ථ" ->  "tha"
+   "ෂ" ->  "ṣa"
+   "ද" ->  "da"
+   "ස" ->  "sa"
+   "ධ" ->  "dha"
+   "හ" ->  "ha"
+   "න" ->  "na"
+   "ළ" ->  "ḷa"
+   "ඳ" ->  "n̆da"
+   "ෆ" ->  "fa"
+   "ප" ->  "pa"
+   "ං" ->  "ṁ"
+   "ඵ" ->  "pha"
+   "ඃ" ->  "ḥ"
+   "බ" ->  "ba"
+   "භ" ->  "bha"
+   "ම" ->  "ma"
+   "ඹ" ->  "m̆ba"
+   "ය" ->  "ya"
+   "ර" ->  "ra"
+   "ල" ->  "la"
+   "ව" ->  "va"
+   "෦" ->  "0"
+   "෧" ->  "1"
+   "෨" ->  "2"
+   "෩" ->  "3"
+   "෪" ->  "4"
+   "෫" ->  "5"
+   "෬" ->  "6"
+   "෭" ->  "7"
+   "෮" ->  "8"
+   "෯" ->  "9"
+}
+
+stage main {
+
+  # Table 7.10 rows (clause 7), Table A.2 numerals, clause 6 virama, options 9.8/9.9/9.10
+  parallel {
+
+    sub "අ" "a"
+    sub "අ" "A" when opt98
+    sub "ක" "ka"
+    sub "ආ" "ā"
+    sub "ා" "ā"
+    sub "ආ" "Ā" when opt98
+    sub "ඛ" "kha"
+    sub "ඇ" "æ"
+    sub "ැ" "æ"
+    sub "ඇ" "Æ" when opt98
+    sub "ග" "ga"
+    sub "ඈ" "ǣ"
+    sub "ෑ" "ǣ"
+    sub "ඈ" "Ǣ" when opt98
+    sub "ඝ" "gha"
+    sub "ඉ" "i"
+    sub "ි" "i"
+    sub "ඉ" "I" when opt98
+    sub "ඞ" "ṅa"
+    sub "ඊ" "ī"
+    sub "ී" "ī"
+    sub "ඊ" "Ī" when opt98
+    sub "ඟ" "n̆ga"
+    sub "උ" "u"
+    sub "ු" "u"
+    sub "උ" "U" when opt98
+    sub "ච" "ca"
+    sub "ඌ" "ū"
+    sub "ූ" "ū"
+    sub "ඌ" "Ū" when opt98
+    sub "ඡ" "cha"
+    sub "ඍ" "r̥"
+    sub "ෘ" "r̥"
+    sub "ඍ" "R̥" when opt98
+    sub "ජ" "ja"
+    sub "ඎ" "r̥̄"
+    sub "ෲ" "r̥̄"
+    sub "ඎ" "R̥̄" when opt98
+    sub "ඣ" "jha"
+    sub "ඏ" "l̥"
+    sub "ෟ" "l̥"
+    sub "ඏ" "L̥" when opt98
+    sub "ඤ" "ña"
+    sub "ඐ" "l̥̄"
+    sub "ෳ" "l̥̄"
+    sub "ඐ" "L̥̄" when opt98
+    sub "ඦ" "n̆ja"
+    sub "එ" "e"
+    sub "ෙ" "e"
+    sub "එ" "E" when opt98
+    sub "ට" "ṭa"
+    sub "ඒ" "ē"
+    sub "ේ" "ē"
+    sub "ඒ" "Ē" when opt98
+    sub "ඨ" "ṭha"
+    sub "ඓ" "ai"
+    sub "ෛ" "ai"
+    sub "ඓ" "Ai" when opt98
+    sub "ඩ" "ḍa"
+    sub "ඔ" "o"
+    sub "ො" "o"
+    sub "ඔ" "O" when opt98
+    sub "ඪ" "ḍha"
+    sub "ඕ" "ō"
+    sub "ෝ" "ō"
+    sub "ඕ" "Ō" when opt98
+    sub "ණ" "ṇa"
+    sub "ඖ" "au"
+    sub "ෞ" "au"
+    sub "ඖ" "Au" when opt98
+    sub "ඬ" "n̆ḍa"
+    sub "ත" "ta"
+    sub "ශ" "śa"
+    sub "ථ" "tha"
+    sub "ෂ" "ṣa"
+    sub "ද" "da"
+    sub "ස" "sa"
+    sub "ධ" "dha"
+    sub "හ" "ha"
+    sub "න" "na"
+    sub "ළ" "ḷa"
+    sub "ඳ" "n̆da"
+    sub "ෆ" "fa"
+    sub "ප" "pa"
+    sub "ං" "ṁ"
+    sub "ඵ" "pha"
+    sub "ඃ" "ḥ"
+    sub "බ" "ba"
+    sub "භ" "bha"
+    sub "ම" "ma"
+    sub "ඹ" "m̆ba"
+    sub "ය" "ya"
+    sub "ර" "ra"
+    sub "ල" "la"
+    sub "ව" "va"
+    sub "්" ""
+    sub "්" "·" when opt10
+    sub "‍" ""
+    sub "‍" "=" when opt99
+    sub "෦" "0"
+    sub "෧" "1"
+    sub "෨" "2"
+    sub "෩" "3"
+    sub "෪" "4"
+    sub "෫" "5"
+    sub "෬" "6"
+    sub "෭" "7"
+    sub "෮" "8"
+    sub "෯" "9"
+  }
+
+  compose
+}
+}

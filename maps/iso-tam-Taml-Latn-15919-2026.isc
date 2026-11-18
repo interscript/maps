@@ -1,0 +1,178 @@
+system "ISO:tam-Taml:Latn:15919-2026" {
+
+metadata {
+  authority_id iso
+  id 15919-2026
+  language iso-639-2:tam
+  source_script Taml
+  destination_script Latn
+  name "ISO/DIS 15919 (2026) Information and documentation -- Transliteration of Indic scripts into Latin characters (Tamil; DIS stage)"
+  url https://www.iso.org/committee/48820.html
+  creation_date 2026
+  adoption_date 2026
+  description {    Second edition (DIS stage) of ISO 15919, Transliteration of Indic scripts into Latin characters.
+    Encoded from the committee ballot ISO/TC 46/WG 3 N125; per-script tables of clause 7,
+    numerals of normative Annex A, Rule 17 Vedic accents, and options 9.8/9.9/9.10 as
+    selectable variants (languages opt98 opt99 opt10). See notes for provenance and errata.  }
+
+  notes {
+    note "Encoded from ISO/DIS 15919 (2026), ISO/TC 46/WG 3 N125 (DIS stage draft, 2026-01-26), Table 7.6 plus the numerals of normative Annex A Table A.2; shared-table content verified against ISO/CD 15919 (2025, N108) and ISO 15919 WD (2024, N88). The DIS is not yet a published International Standard."
+    note "Rule 2 convention: inherent a with a consonant is always transliterated (consonant rows carry the inherent a)."
+    note "virama is deleted in the default behavior (clause 6 printed virama hex list); option 9.10 (language selector opt10) instead renders virama as middle dot U+00B7."
+    note "Option selectors (W3 languages, single-select): opt98 = clause 9.8 upper-case for all initial vowels (first letter capitalised for digraph outputs); opt99 = clause 9.9 unusual conjuncts marked with equals sign U+003D via the script's zero-width joiner; opt10 = clause 9.10 explicit virama middle dot. Option 9.1 (non-uniform e/o) is available by character substitution on outputs and is not separately staged."
+    note "Cross-check (audit axis): Wikipedia ISO 15919 table (2001-reflected) vs corpus map agreement 36/37 printed rows; systematic divergences recorded as findings, not fixes: vocalic r/l rows (corpus ṛ-family vs ISO r̥-family), long e/o rows (corpus e/o vs ISO ē/ō), avagraha (corpus :’ vs ISO ')."
+  }
+}
+
+languages opt98 opt99 opt10
+
+tests {
+   "அ" ->  "a"
+   "த" ->  "ta"
+   "ஆ" ->  "ā"
+   "ா" ->  "ā"
+   "ந" ->  "na"
+   "இ" ->  "i"
+   "ி" ->  "i"
+   "ப" ->  "pa"
+   "ஈ" ->  "ī"
+   "ீ" ->  "ī"
+   "ம" ->  "ma"
+   "உ" ->  "u"
+   "ு" ->  "u"
+   "ய" ->  "ya"
+   "ஊ" ->  "ū"
+   "ூ" ->  "ū"
+   "ர" ->  "ra"
+   "எ" ->  "e"
+   "ெ" ->  "e"
+   "ல" ->  "la"
+   "ஏ" ->  "ē"
+   "ே" ->  "ē"
+   "வ" ->  "va"
+   "ஐ" ->  "ai"
+   "ை" ->  "ai"
+   "ழ" ->  "ḻa"
+   "ஒ" ->  "o"
+   "ொ" ->  "o"
+   "ள" ->  "ḷa"
+   "ஓ" ->  "ō"
+   "ோ" ->  "ō"
+   "ற" ->  "ṟa"
+   "ஔ" ->  "au"
+   "ௌ" ->  "au"
+   "ன" ->  "ṉa"
+   "ஃ" ->  "ḵ"
+   "ஜ" ->  "ja"
+   "க" ->  "ka"
+   "ஶ" ->  "śa"
+   "ங" ->  "ṅa"
+   "ஷ" ->  "ṣa"
+   "ச" ->  "ca"
+   "ஸ" ->  "sa"
+   "ஞ" ->  "ña"
+   "ஹ" ->  "ha"
+   "ட" ->  "ṭa"
+   "ண" ->  "ṇa"
+   "௦" ->  "0"
+   "௧" ->  "1"
+   "௨" ->  "2"
+   "௩" ->  "3"
+   "௪" ->  "4"
+   "௫" ->  "5"
+   "௬" ->  "6"
+   "௭" ->  "7"
+   "௮" ->  "8"
+   "௯" ->  "9"
+}
+
+stage main {
+
+  # Table 7.6 rows (clause 7), Table A.2 numerals, clause 6 virama, options 9.8/9.9/9.10
+  parallel {
+
+    sub "அ" "a"
+    sub "அ" "A" when opt98
+    sub "த" "ta"
+    sub "ஆ" "ā"
+    sub "ா" "ā"
+    sub "ஆ" "Ā" when opt98
+    sub "ந" "na"
+    sub "இ" "i"
+    sub "ி" "i"
+    sub "இ" "I" when opt98
+    sub "ப" "pa"
+    sub "ஈ" "ī"
+    sub "ீ" "ī"
+    sub "ஈ" "Ī" when opt98
+    sub "ம" "ma"
+    sub "உ" "u"
+    sub "ு" "u"
+    sub "உ" "U" when opt98
+    sub "ய" "ya"
+    sub "ஊ" "ū"
+    sub "ூ" "ū"
+    sub "ஊ" "Ū" when opt98
+    sub "ர" "ra"
+    sub "எ" "e"
+    sub "ெ" "e"
+    sub "எ" "E" when opt98
+    sub "ல" "la"
+    sub "ஏ" "ē"
+    sub "ே" "ē"
+    sub "ஏ" "Ē" when opt98
+    sub "வ" "va"
+    sub "ஐ" "ai"
+    sub "ை" "ai"
+    sub "ஐ" "Ai" when opt98
+    sub "ழ" "ḻa"
+    sub "ஒ" "o"
+    sub "ொ" "o"
+    sub "ஒ" "O" when opt98
+    sub "ள" "ḷa"
+    sub "ஓ" "ō"
+    sub "ோ" "ō"
+    sub "ஓ" "Ō" when opt98
+    sub "ற" "ṟa"
+    sub "ஔ" "au"
+    sub "ௌ" "au"
+    sub "ஔ" "Au" when opt98
+    sub "ன" "ṉa"
+    sub "ஃ" "ḵ"
+    sub "ஃ" "Ḵ" when opt98
+    sub "ஜ" "ja"
+    sub "க" "ka"
+    sub "க" "Ka" when opt98
+    sub "ஶ" "śa"
+    sub "ங" "ṅa"
+    sub "ங" "Ṅa" when opt98
+    sub "ஷ" "ṣa"
+    sub "ச" "ca"
+    sub "ச" "Ca" when opt98
+    sub "ஸ" "sa"
+    sub "ஞ" "ña"
+    sub "ஞ" "Ña" when opt98
+    sub "ஹ" "ha"
+    sub "ட" "ṭa"
+    sub "ட" "Ṭa" when opt98
+    sub "ண" "ṇa"
+    sub "ண" "Ṇa" when opt98
+    sub "்" ""
+    sub "்" "·" when opt10
+    sub "‍" ""
+    sub "‍" "=" when opt99
+    sub "௦" "0"
+    sub "௧" "1"
+    sub "௨" "2"
+    sub "௩" "3"
+    sub "௪" "4"
+    sub "௫" "5"
+    sub "௬" "6"
+    sub "௭" "7"
+    sub "௮" "8"
+    sub "௯" "9"
+  }
+
+  compose
+}
+}

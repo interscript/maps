@@ -1,0 +1,231 @@
+system "ISO:guj-Gujr:Latn:15919-2026" {
+
+metadata {
+  authority_id iso
+  id 15919-2026
+  language iso-639-2:guj
+  source_script Gujr
+  destination_script Latn
+  name "ISO/DIS 15919 (2026) Information and documentation -- Transliteration of Indic scripts into Latin characters (Gujarati; DIS stage)"
+  url https://www.iso.org/committee/48820.html
+  creation_date 2026
+  adoption_date 2026
+  description {    Second edition (DIS stage) of ISO 15919, Transliteration of Indic scripts into Latin characters.
+    Encoded from the committee ballot ISO/TC 46/WG 3 N125; per-script tables of clause 7,
+    numerals of normative Annex A, Rule 17 Vedic accents, and options 9.8/9.9/9.10 as
+    selectable variants (languages opt98 opt99 opt10). See notes for provenance and errata.  }
+
+  notes {
+    note "Encoded from ISO/DIS 15919 (2026), ISO/TC 46/WG 3 N125 (DIS stage draft, 2026-01-26), Table 7.4 plus the numerals of normative Annex A Table A.2; shared-table content verified against ISO/CD 15919 (2025, N108) and ISO 15919 WD (2024, N88). The DIS is not yet a published International Standard."
+    note "Rule 2 convention: inherent a with a consonant is always transliterated (consonant rows carry the inherent a)."
+    note "virama is deleted in the default behavior (clause 6 printed virama hex list); option 9.10 (language selector opt10) instead renders virama as middle dot U+00B7."
+    note "Option selectors (W3 languages, single-select): opt98 = clause 9.8 upper-case for all initial vowels (first letter capitalised for digraph outputs); opt99 = clause 9.9 unusual conjuncts marked with equals sign U+003D via the script's zero-width joiner; opt10 = clause 9.10 explicit virama middle dot. Option 9.1 (non-uniform e/o) is available by character substitution on outputs and is not separately staged."
+    note "Cross-check (audit axis): Wikipedia ISO 15919 table (2001-reflected) vs corpus map agreement 50/59 printed rows; systematic divergences recorded as findings, not fixes: vocalic r/l rows (corpus ṛ-family vs ISO r̥-family), long e/o rows (corpus e/o vs ISO ē/ō), avagraha (corpus :’ vs ISO ')."
+  }
+}
+
+languages opt98 opt99 opt10
+
+tests {
+   "અ" ->  "a"
+   "ક" ->  "ka"
+   "આ" ->  "ā"
+   "ા" ->  "ā"
+   "ખ" ->  "kha"
+   "ઇ" ->  "i"
+   "િ" ->  "i"
+   "ગ" ->  "ga"
+   "ઈ" ->  "ī"
+   "ી" ->  "ī"
+   "ઘ" ->  "gha"
+   "ઉ" ->  "u"
+   "ુ" ->  "u"
+   "ઙ" ->  "ṅa"
+   "ઊ" ->  "ū"
+   "ૂ" ->  "ū"
+   "ચ" ->  "ca"
+   "ઋ" ->  "r̥"
+   "ૃ" ->  "r̥"
+   "છ" ->  "cha"
+   "ૠ" ->  "r̥̄"
+   "ૄ" ->  "r̥̄"
+   "જ" ->  "ja"
+   "ઌ" ->  "l̥"
+   "ૢ" ->  "l̥"
+   "ઝ" ->  "jha"
+   "ૡ" ->  "l̥̄"
+   "ૣ" ->  "l̥̄"
+   "ઞ" ->  "ña"
+   "એ" ->  "ē"
+   "ે" ->  "ē"
+   "ટ" ->  "ṭa"
+   "ઐ" ->  "ai"
+   "ૈ" ->  "ai"
+   "ઠ" ->  "ṭha"
+   "ઓ" ->  "ō"
+   "ો" ->  "ō"
+   "ડ" ->  "ḍa"
+   "ઔ" ->  "au"
+   "ૌ" ->  "au"
+   "ઢ" ->  "ḍha"
+   "ઍ" ->  "ê"
+   "ૅ" ->  "ê"
+   "ણ" ->  "ṇa"
+   "ઑ" ->  "ô"
+   "ૉ" ->  "ô"
+   "ત" ->  "ta"
+   "શ" ->  "śa"
+   "થ" ->  "tha"
+   "ષ" ->  "ṣa"
+   "દ" ->  "da"
+   "સ" ->  "sa"
+   "ધ" ->  "dha"
+   "હ" ->  "ha"
+   "ન" ->  "na"
+   "ક઼" ->  "qa"
+   "પ" ->  "pa"
+   "ખ઼" ->  "k͟ha"
+   "ફ" ->  "pha"
+   "ગ઼" ->  "ġa"
+   "બ" ->  "ba"
+   "જ઼" ->  "za"
+   "ભ" ->  "bha"
+   "ૹ" ->  "źa"
+   "મ" ->  "ma"
+   "ફ઼" ->  "fa"
+   "ય" ->  "ya"
+   "ં" ->  "ṁ"
+   "ર" ->  "ra"
+   "ઁ" ->  "m̐"
+   "લ" ->  "la"
+   "ઃ" ->  "ḥ"
+   "ળ" ->  "ḷa"
+   "ઽ" ->  "'"
+   "વ" ->  "va"
+   "૦" ->  "0"
+   "૧" ->  "1"
+   "૨" ->  "2"
+   "૩" ->  "3"
+   "૪" ->  "4"
+   "૫" ->  "5"
+   "૬" ->  "6"
+   "૭" ->  "7"
+   "૮" ->  "8"
+   "૯" ->  "9"
+}
+
+stage main {
+
+  # Table 7.4 rows (clause 7), Table A.2 numerals, clause 6 virama, options 9.8/9.9/9.10
+  parallel {
+
+    sub "અ" "a"
+    sub "અ" "A" when opt98
+    sub "ક" "ka"
+    sub "આ" "ā"
+    sub "ા" "ā"
+    sub "આ" "Ā" when opt98
+    sub "ખ" "kha"
+    sub "ઇ" "i"
+    sub "િ" "i"
+    sub "ઇ" "I" when opt98
+    sub "ગ" "ga"
+    sub "ઈ" "ī"
+    sub "ી" "ī"
+    sub "ઈ" "Ī" when opt98
+    sub "ઘ" "gha"
+    sub "ઉ" "u"
+    sub "ુ" "u"
+    sub "ઉ" "U" when opt98
+    sub "ઙ" "ṅa"
+    sub "ઊ" "ū"
+    sub "ૂ" "ū"
+    sub "ઊ" "Ū" when opt98
+    sub "ચ" "ca"
+    sub "ઋ" "r̥"
+    sub "ૃ" "r̥"
+    sub "ઋ" "R̥" when opt98
+    sub "છ" "cha"
+    sub "ૠ" "r̥̄"
+    sub "ૄ" "r̥̄"
+    sub "ૠ" "R̥̄" when opt98
+    sub "જ" "ja"
+    sub "ઌ" "l̥"
+    sub "ૢ" "l̥"
+    sub "ઌ" "L̥" when opt98
+    sub "ઝ" "jha"
+    sub "ૡ" "l̥̄"
+    sub "ૣ" "l̥̄"
+    sub "ૡ" "L̥̄" when opt98
+    sub "ઞ" "ña"
+    sub "એ" "ē"
+    sub "ે" "ē"
+    sub "એ" "Ē" when opt98
+    sub "ટ" "ṭa"
+    sub "ઐ" "ai"
+    sub "ૈ" "ai"
+    sub "ઐ" "Ai" when opt98
+    sub "ઠ" "ṭha"
+    sub "ઓ" "ō"
+    sub "ો" "ō"
+    sub "ઓ" "Ō" when opt98
+    sub "ડ" "ḍa"
+    sub "ઔ" "au"
+    sub "ૌ" "au"
+    sub "ઔ" "Au" when opt98
+    sub "ઢ" "ḍha"
+    sub "ઍ" "ê"
+    sub "ૅ" "ê"
+    sub "ઍ" "Ê" when opt98
+    sub "ણ" "ṇa"
+    sub "ઑ" "ô"
+    sub "ૉ" "ô"
+    sub "ઑ" "Ô" when opt98
+    sub "ત" "ta"
+    sub "શ" "śa"
+    sub "થ" "tha"
+    sub "ષ" "ṣa"
+    sub "દ" "da"
+    sub "સ" "sa"
+    sub "ધ" "dha"
+    sub "હ" "ha"
+    sub "ન" "na"
+    sub "ક઼" "qa"
+    sub "પ" "pa"
+    sub "ખ઼" "k͟ha"
+    sub "ફ" "pha"
+    sub "ગ઼" "ġa"
+    sub "બ" "ba"
+    sub "જ઼" "za"
+    sub "ભ" "bha"
+    sub "ૹ" "źa"
+    sub "મ" "ma"
+    sub "ફ઼" "fa"
+    sub "ય" "ya"
+    sub "ં" "ṁ"
+    sub "ર" "ra"
+    sub "ઁ" "m̐"
+    sub "લ" "la"
+    sub "ઃ" "ḥ"
+    sub "ળ" "ḷa"
+    sub "ઽ" "'"
+    sub "વ" "va"
+    sub "્" ""
+    sub "્" "·" when opt10
+    sub "‍" ""
+    sub "‍" "=" when opt99
+    sub "૦" "0"
+    sub "૧" "1"
+    sub "૨" "2"
+    sub "૩" "3"
+    sub "૪" "4"
+    sub "૫" "5"
+    sub "૬" "6"
+    sub "૭" "7"
+    sub "૮" "8"
+    sub "૯" "9"
+  }
+
+  compose
+}
+}
