@@ -141,6 +141,10 @@ than invented against the source. Amendment No. 1 (December 2010)
 assigns ISCII position FC to the Indian Rupee symbol; the symbol is
 already Latin and passes through unchanged - recorded in every map's
 notes (the amendment postdates the 1991 scope).
+All three ISO documents in the collection have maps in the corpus. The
+corpus's other ISO maps, which implement ISO 233, ISO 843, ISO 3602,
+ISO 11940, ISO 15919, ISO 259, and ISO 259-2, have no source document in
+the collection.
 For ISO 15919 the remaining coverage beyond the corpus's 19 maps, and
 the blocked unlock paths, are recorded in `iso-15919-remainder.adoc`
 in this directory.
