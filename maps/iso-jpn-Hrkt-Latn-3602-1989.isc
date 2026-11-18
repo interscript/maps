@@ -17,6 +17,11 @@ metadata {
   }
 
   notes {
+    note "Verified against the official ISO 3602:1989 document (Table 1: 72 signs, Table 2: 36 digraphs, Table 3a: 83 long-vowel digraphs, Table 3b: 36 trigraphs, clauses 1-6)."
+    note "Kunrei-siki tables are supplied by the mext-jpn-Hrkt-Latn-1954 dependency; this map adds ISO 3602 Table 3a rows absent there (the consonant + i long vowels kei -> ke, sei -> se, tei -> te, nei -> ne, hei -> he, mei -> me, rei -> re, gei -> ge, zei -> ze, dei -> de, bei -> be, pei -> pe with circumflex)."
+    note "Table 1 footnote particle readings (26 ha/wa, 29 he/e, 45 wo) and the NOTE strict-transliteration variants (wo, du, dya/dyu/dyo, macron for the lengthening bar) are language-dependent or strict-scheme alternatives; this map implements the standard transcription values (ha, he, o, zi, zu, zya/zyu/zyo, circumflex)."
+    note "Clause 4: a mid-dot marker separates morphemes to block long-vowel collapse (kou•si vs ko•ushi)."
+    note "Clause 6: Japanese punctuation marks are transcribed (ideographic full stop -> full stop, comma, katakana middle dot -> hyphen, corner brackets -> quotation marks, fullwidth parentheses)."
   }
 }
 
@@ -36,6 +41,14 @@ tests {
    "こう•し" ->  "kôsi" #格子
    "こ•うし" ->  "kousi" #子牛
    "ぎゃあ" ->  "gyâ"
+   "げいじゅつ" ->  "gêzyutu"
+   "えいが" ->  "eiga"
+   "け•いき" ->  "keiki"
+   "げいき" ->  "gêki"
+   "とうきょう、にっぽん。" ->  "tôkyô,nippon."
+   "「がっこう」" ->  "“gakkô”"
+   "ビール" ->  "bîru"
+   "ラーメン" ->  "râmen"
 }
 
 dependency "mext-jpn-Hrkt-Latn-1954" as hrktlatn
@@ -51,6 +64,37 @@ stage main {
   }
 
 
+  # ISO 3602 Table 3a - consonant + i long-vowel digraphs (rows for
+  # kei sei tei nei hei mei rei gei zei dei bei pei). Applied before the
+  # run so a morpheme-boundary marker inside the sequence still blocks
+  # the collapse (ke•i -> kei).
+  parallel {
+    sub "けい" "kê"
+    sub "せい" "sê"
+    sub "てい" "tê"
+    sub "ねい" "nê"
+    sub "へい" "hê"
+    sub "めい" "mê"
+    sub "れい" "rê"
+    sub "げい" "gê"
+    sub "ぜい" "zê"
+    sub "でい" "dê"
+    sub "べい" "bê"
+    sub "ぺい" "pê"
+    sub "ケイ" "Kê"
+    sub "セイ" "Sê"
+    sub "テイ" "Tê"
+    sub "ネイ" "Nê"
+    sub "ヘイ" "Hê"
+    sub "メイ" "Mê"
+    sub "レイ" "Rê"
+    sub "ゲイ" "Gê"
+    sub "ゼイ" "Zê"
+    sub "デイ" "Dê"
+    sub "ベイ" "Bê"
+    sub "ペイ" "Pê"
+  }
+
   run  map.hrktlatn.stage.main
 
 
@@ -60,6 +104,15 @@ stage main {
 
   # Use ’ instead of '
   sub "'" "’"
+
+  # Clause 6 - punctuation
+  sub "。" "."
+  sub "、" ","
+  sub "・" "-"
+  sub "「" "“"
+  sub "」" "”"
+  sub "（" "("
+  sub "）" ")"
 
 
 }
