@@ -32,6 +32,7 @@ metadata {
     note "      A colon: before a Latin character shall be used to resolve ambiguity. Some normative cases are as\n      follows.\n       -  :’ for avagraha in modern text. (The apostrophe in modern text remains unchanged in accordance with previous rule."
     note "If a character in an Indic script is defined in such a way as to be equivalent to another character in any\n script, where the second character has a transliteration in this International Standard, then the first character shall\n be transliterated in the same way as the second character."
     note "Where it is desired to show the Vedic accent Anudatta, it should be transliterated as an underscore. In the case of\n the digraphs ai, au, both Latin vowels should be underscored.\n Where word boundaries are not shown in the original text (as happens commonly in Sanskrit) and a word ends in a\n consonant, the transliteration should show word division by a space; but when phonological processes result in two\n words sharing a common vowel, no attempt should be made to separate them. This will require a good knowledge\n of the language in question."
+    note "Per-script extension cell (ISO 15919:2001 Kannada table, U+0CDE): transliterated la with line below + inherent a (U+1E3B 0061), per the owner-blessed transcription source; the second edition (DIS N125 Table 7.8) also prints this row (hex 1E3B)."
   }
 }
 
@@ -48,6 +49,7 @@ tests {
    "ಕೆಲವು ತಿಂಗಳಿಂದ ರಷ್ಯಾ ದೇಶದ ಏನಾಟೊಲಿ ಇವ್ಯಾನಿಶಿನ್‌ ಮತ್ತು ಇವಾನ್‌ ವ್ಯಾಗನರ್‌ ಹಾಗೂ ಅಮೆರಿಕಾದ ಕ್ರಿಸ್‌ ಕ್ಯಾಸಿಡಿ ಈ ಉಪಗ್ರಹದಲ್ಲಿ ವಾಸಿಸುತ್ತಿದ್ದಾರೆ" ->  "kaelavau taiṁgaḷaiṁda raṣayaā daēśada ēnaāṭaeūlai ivayaānaiśaina matatau ivaāna vayaāganara haāgaū amaeraikaāda karaisa kayaāsaiḍai ī upagarahadalalai vaāsaisautataidadaārae"
    "ಹಾಂಗ್ ಕಾಂಗ್" ->  "haāṁga kaāṁga"
    "೧೮೧೪೦" ->  "18140"
+   "ೞ" ->  "ḻa"
 }
 
 stage main {
@@ -145,6 +147,7 @@ stage main {
     # Anusvāra
     sub "ಂ" "ṁ"
 
+    sub "ೞ" "ḻa"
     sub "಼" ""
 
     # Medials # Needed for connecting constants

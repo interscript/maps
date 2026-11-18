@@ -35,6 +35,7 @@ metadata {
     note "Where it is desired to show the Vedic accent Anudatta, it should be transliterated as an underscore. In the case of\n the digraphs ai, au, both Latin vowels should be underscored.\n Where word boundaries are not shown in the original text (as happens commonly in Sanskrit) and a word ends in a\n consonant, the transliteration should show word division by a space; but when phonological processes result in two\n words sharing a common vowel, no attempt should be made to separate them. This will require a good knowledge\n of the language in question."
     note "In Malayalam text, ് acts as the mātrā for ŭ when final in a word, except when it removes the inherent vowel of a single\n consonant."
     note "The ambiguous pure consonant r/ṟ (ർ) in Malayalam script shall be transliterated into r when combined\n with another consonant; when it is final in a word it shall be transliterated as ṟ in Malayalam language."
+    note "Per-script extension cell (ISO 15919:2001 Malayalam table, U+0D3A MALAYALAM LETTER TTTA): transliterated ta with line below + inherent a (U+1E6F 0061), per the owner-blessed transcription source; the second edition (DIS N125 Table 7.9) does not print this letter."
   }
 }
 
@@ -50,6 +51,7 @@ tests {
    "ഏറ്റവും ചെറുപ്പം ജോയി; ജയലക്ഷ്മി, ദീപ്തി, ജ്യോതി; പട്ടികയിലെ നിര ഇങ്ങനെ‌" ->  "ēṟṟavaum caeṟauppam jaōyai; jayalakṣmai, daīptai, jyaōtai; paṭṭaikayailae naira iṅṅanae"
    "പരിശോധന കുറച്ച് കേരളം; കോവിഡ് ടെസ്റ്റ് പോസിറ്റിവിറ്റി നിരക്ക് എറ്റവും ഉയർന്ന്; ആശങ്ക‌" ->  "paraiśaōdhana kauṟaccaŭ kaēraḷam; kaōvaid̂aŭ ṭaesṟṟaŭ paōsaiṟṟaivaiṟṟai nairakkaŭ eṟṟavaum uyarnnaŭ; āśaṅka"
    "൱" ->  "100"
+   "ഺ" ->  "ṯa"
 }
 
 stage main {
@@ -177,6 +179,7 @@ stage main {
     sub "ോ" "ō"
     sub "ൌ" "au"
 
+    sub "ഺ" "ṯa"
     sub "्" ""
     sub "़" ""
     sub "ൗ" ""
