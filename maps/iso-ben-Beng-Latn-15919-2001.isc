@@ -32,6 +32,7 @@ metadata {
     note "      A colon: before a Latin character shall be used to resolve ambiguity. Some normative cases are as\n      follows.\n       -  :’ for avagraha in modern text. (The apostrophe in modern text remains unchanged in accordance with previous rule.\n       -  Vowel hiatus, not digraph transliteration of diphthongs; as in Bengali ba:i (not bai), “book”.\n       -  Unexpected use of secondary ya/ẏa , as in Bengali r:yāpāra , English “wrapper” (using full r); a:yā (not ayā )."
     note "If a character in an Indic script is defined in such a way as to be equivalent to another character in any\n script, where the second character has a transliteration in this International Standard, then the first character shall\n be transliterated in the same way as the second character."
     note "Where it is desired to show the Vedic accent Anudatta, it should be transliterated as an underscore. In the case of\n the digraphs ai, au, both Latin vowels should be underscored.\n Where word boundaries are not shown in the original text (as happens commonly in Sanskrit) and a word ends in a\n consonant, the transliteration should show word division by a space; but when phonological processes result in two\n words sharing a common vowel, no attempt should be made to separate them. This will require a good knowledge\n of the language in question."
+    note "Adjudicated against the published ISO 15919:2001 edition: Table 2 ref 156a prints ja + nukta -> za and ref 172a prints ba + nukta -> wa (footnote c: used for transliteration of Persian and Arabic words into Bengali script); both combinations are now encoded. The Assamese letters (refs 240/241, footnote b) belong to the Assamese map; the q/kha-line/ga-line/f letters of modern secondary transcriptions are not printed by the official table."
   }
 }
 
@@ -46,6 +47,8 @@ tests {
    "সুয়ারেজকে ‘বের করে দেওয়া’য় বার্সাকে ধুয়ে দিলেন মেসি" ->  "sauẏaāraejakae ‘baera karae daeoẏaā’ẏa baārasaākae dhauẏae dailaena maesai"
    "আমি না থাকলে আর্জেন্টিনা দলে মেসিরও থাকার যোগ্যতা নেই" ->  "āmai naā thaākalae ārajaenaṭainaā dalae maesairao thaākaāra yaogayataā naei"
    "তবে, নিয়মিত মুখগুলোর মধ্যে দলে নেই মেসির দুই ‘প্রিয় বন্ধু’ পিএসজির মিডফিল্ডার আনহেল দি মারিয়া ও ম্যানচেস্টার সিটির সার্জিও আগুয়েরো" ->  "tabae, naiẏamaita maukhagaulaora madhayae dalae naei maesaira daui ‘paraiẏa banadhau’ paiesajaira maiḍaphailaḍaāra ānahaela dai maāraiẏaā o mayaānacaesaṭaāra saiṭaira saārajaio āgauẏaerao"
+   "জ়" ->  "za"
+   "ব়" ->  "wa"
 }
 
 stage main {
@@ -137,6 +140,8 @@ stage main {
     sub "বঁ" "m̐va"
 
     sub "ৎ" "t"
+    sub "জ়" "za"
+    sub "ব়" "wa"
     sub "্" ""
 
 

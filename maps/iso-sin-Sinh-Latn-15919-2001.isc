@@ -20,6 +20,7 @@ metadata {
     note "Verification: every encoded value agrees with ISO/DIS 15919 (2026) Table 7.10 shared content (N125; also N108 CD 2025, N88 WD 2024)."
     note "Cross-check (audit axis) vs corpus map iso-pli-Sinh-Latn-15919-2001: 51/60 printed rows agree; divergent families recorded as findings, not fixes: vocalic rows (corpus ṛ/ṝ/ḻ/ḹ vs ISO r̥/r̥̄/l̥/l̥̄ per the blessed source and DIS Table 7.10), prenasalized consonants (corpus bare clusters vs ISO n̆-marked forms), and the corpus candrabindu rows built on Gujarati U+0A81."
     note "Vowel-sign (mātrā) rows are structural: each sign carries the value of its printed independent vowel row; no invented Latin values."
+    note "Adjudicated against the published ISO 15919:2001 edition: Table 10 refs 141-144 print the vocalic vowels with ring below (r, r + macron, l, l + macron), confirming the encoded values; refs 159/166/172/179/185 print the prenasalized letters with n/m breve forms, matching the encoded values. The official table's Pali-usage alternative readings (refs 159a, 166a, 172a, 179a, 185a: nga, nja, nda-nasal, nda, mba as full sequences) are context-dependent renderings of the same letters and are not separately encodable; the official table's three Tamil-used letters (refs 197a, 187a, 177a) have no Unicode characters and cannot be encoded as inputs."
   }
 }
 

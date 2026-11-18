@@ -33,6 +33,7 @@ metadata {
     note "If a character in an Indic script is defined in such a way as to be equivalent to another character in any\n script, where the second character has a transliteration in this International Standard, then the first character shall\n be transliterated in the same way as the second character."
     note "Where it is desired to show the Vedic accent Anudatta, it should be transliterated as an underscore. In the case of\n the digraphs ai, au, both Latin vowels should be underscored.\n Where word boundaries are not shown in the original text (as happens commonly in Sanskrit) and a word ends in a\n consonant, the transliteration should show word division by a space; but when phonological processes result in two\n words sharing a common vowel, no attempt should be made to separate them. This will require a good knowledge\n of the language in question."
     note "Per-script extension cell (ISO 15919:2001 Kannada table, U+0CDE): transliterated la with line below + inherent a (U+1E3B 0061), per the owner-blessed transcription source; the second edition (DIS N125 Table 7.8) also prints this row (hex 1E3B)."
+    note "Adjudicated against the published ISO 15919:2001 edition: Table 8 refs 131a and 131b print the Kannada jihvamuliya and upadhmaniya signs with the transliterations h with dot below + combining macron below (0068 0331) and h with dot below + combining breve below (0068 032E); the single-character forms 1E96/1E2B are the second edition's Rule 17 values. Table 8 ref 222 prints the letter U+0CDE with la + line below + inherent a (1E3B 0061), confirming the encoded extension row; refs 156a/171a print the za and fa values as ja/pha + nukta combinations, already encoded."
   }
 }
 
@@ -133,8 +134,8 @@ stage main {
     # Bisarga
     sub "ಃ" "ḥ"
 
-    sub "ೱ" "ẖ"
-    sub "ೲ" "ḫ"
+    sub "ೱ" "ḥ̱"
+    sub "ೲ" "ḥ̮"
 
 
     # candrabindu
@@ -159,8 +160,8 @@ stage main {
 
     sub "ೃ" "ṛ"
     sub "ೄ" "ṝ"
-    sub " ೢ" "ḷ"
-    sub " ೣ" "ḹ"
+    sub "ೢ" "ḷ"
+    sub "ೣ" "ḹ"
 
     sub "ೆ" "e"
     sub "ೇ" "ē"
