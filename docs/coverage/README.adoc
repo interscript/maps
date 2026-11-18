@@ -197,6 +197,16 @@ are published in another part or edition of 9303.
   MEXT, MOCT, LSHK, ACADSIN, SAC, HK, and KP, have verified maps in the
   corpus and no source document in the collection.
 
+== Academic sources
+
+The collection's `academic/` folder holds scholarly systems outside the
+standards bodies. The first such document, the University of Tokyo
+Komaba "Recommended System for Romanizing Japanese" (2009), backs the
+new `var-jpn-Hrkt-Latn-komaba-2009`, encoded per the var-* scholarly
+family conventions. Its morpheme-dependent provisions (vowel-sequence
+repeats, word division, honorific hyphenation) are recorded as
+limitations in the map notes.
+
 == Reference tables not yet encoded
 
 Twenty-five reference tables in the collection have no map in the
