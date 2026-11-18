@@ -1,0 +1,440 @@
+system "ISO:heb-Hebr:Latn:259-2-1994" {
+
+metadata {
+  authority_id iso
+  id 259-2-1994
+  language iso-639-2:heb
+  source_script Hebr
+  destination_script Latn
+  name "ISO 259-2:1994 Information and documentation -- Transliteration of Hebrew characters into Latin characters -- Part 2: Simplified transliteration"
+  url https://www.iso.org/standard/4162.html
+  creation_date 1994
+  description {    Specifies a simplified system for the transliteration of Hebrew characters
+    into Latin characters, relaxing the stringent prescriptions of ISO 259:1984;
+    intended for the processing of bibliographic information (catalogues, indexes,
+    references). First edition 1994-12-15, prepared by ISO/TC 46, corrected and
+    reprinted 1995-07-15. This map encodes Table 1 (consonants, 43 rows) and
+    Table 2 (vowel signs, 44-55).
+  }
+
+  notes {
+    note "The simplified system marks the dagesh of rows 3, 5, 7, 9, 11, 13, 18, 20, 24, 26, 28 and 31 with the dot above (U+0307); the dagesh rows 16, 22, 33, 35, 38, 39, 41 and 43 render unmarked and their dagesh sign is absorbed. Clause 3.3: one character of constant form per letter, so final forms take their letter's row. Row 38 is a typographic variant of row 37 (one Unicode sequence U+05E9 U+05C1, raised caron) and maps identically to row 37."
+    note "NOTE to Table 2: the shva (U+05B0) is not rendered and is deleted. Waw+holam renders U+0175 (row 51; input forms U+05D5 U+05B9, U+05BA and U+FB4B); waw+dagesh (shuruq) renders U+1E87 (rows 11 and 52 are the same sequence U+05D5 U+05BC)."
+    note "Unpointed shin U+05E9 renders as shin with sin dot (row 37, U+0161). Alphabetic Presentation Forms equal to their decompositions (U+FB2A-U+FB2D and the point-bearing letter forms U+FB30-U+FB3C, U+FB3E, U+FB40, U+FB41, U+FB43, U+FB44, U+FB46-U+FB4E) are accepted as input and render by their table rows; the rafe forms U+FB4C, U+FB4D and U+FB4E render as the bare letter (no table rafe row). Composed letter+vowel forms and the alef-lamed ligature U+FB4F are out of scope and pass through."
+    note "Marks outside Tables 1-2 are deleted: teamim (U+0591-U+05AF), meteg (U+05BD), rafe (U+05BF), upper dot (U+05C4), lower dot (U+05C5), qamats qatan (U+05C7) and residual dagesh (U+05BC), shin dot (U+05C1) and sin dot (U+05C2). The geresh and gershayim abbreviation rules of the standard were not reachable in the source previews and are not encoded; maqaf U+05BE, paseq U+05C0, sof pasuq U+05C3, nun hafukha U+05C6 and the Hebrew ligatures U+05F0-U+05F2 pass through unchanged."
+    note "Mark-order normalization moves dagesh and the shin/sin dots next to their base letter (canonical combining order places the vowel signs first). Letter-first legacy stacks and canonical NFC stacks are fully handled; a fully non-canonical stack (vowel, shin dot, dagesh) may leave the dagesh unrendered."
+    note "Encoded from the F-edition of ISO 259-2:1994 (corrected and reprinted 1995-07-15) cross-checked against the SIST ISO 259-2:2005(en) E-edition reprint; both source previews end at the tables, so the informative Annexes A and B and the notes beyond the NOTE to Table 2 are not represented."
+  }
+}
+
+tests {
+  # Table 1, consonant rows (the standard's row numbering)
+   "א" ->  "ʾ̲"
+   "ב" ->  "b"
+   "בּ" ->  "ḃ"
+   "ג" ->  "g"
+   "גּ" ->  "ḡ"
+   "ד" ->  "d"
+   "דּ" ->  "ḋ"
+   "ה" ->  "h"
+   "הּ" ->  "ḣ"
+   "ו" ->  "w"
+   "וּ" ->  "ẇ"
+   "ז" ->  "z"
+   "זּ" ->  "ż"
+   "ח" ->  "ḥ"
+   "ט" ->  "ṭ"
+  # row 16 renders unmarked
+   "טּ" ->  "ṭ"
+   "י" ->  "y"
+   "יּ" ->  "ẏ"
+   "כ" ->  "k"
+   "כּ" ->  "k̇"
+   "ל" ->  "l"
+  # row 22 renders unmarked
+   "לּ" ->  "l"
+   "מ" ->  "m"
+   "מּ" ->  "ṁ"
+   "נ" ->  "n"
+   "נּ" ->  "ṅ"
+   "ס" ->  "s"
+   "סּ" ->  "ṡ"
+   "ע" ->  "ʿ̲"
+   "פ" ->  "p"
+   "פּ" ->  "ṗ"
+   "צ" ->  "ṣ"
+  # row 33 renders unmarked
+   "צּ" ->  "ṣ"
+   "ק" ->  "q"
+  # row 35 renders unmarked
+   "קּ" ->  "q"
+   "ר" ->  "r"
+   "שׁ" ->  "š"
+  # row 38, the raised-caron typographic variant, is the same sequence as row 37;
+  # row 39 renders unmarked
+   "שּׁ" ->  "š"
+   "שּׁ" ->  "š"
+   "ש" ->  "š"
+   "שׂ" ->  "ś"
+  # row 41 renders unmarked
+   "שּׂ" ->  "ś"
+   "ת" ->  "t"
+  # row 43 renders unmarked
+   "תּ" ->  "t"
+  # clause 3.3: final forms take their letter's constant character
+   "ך" ->  "k"
+   "ם" ->  "m"
+   "ן" ->  "n"
+   "ף" ->  "p"
+   "ץ" ->  "ṣ"
+  # Table 2, vowel-sign rows (44-55), shown on bet; row 52 = row 11
+   "בַ" ->  "ba"
+   "בָ" ->  "ba"
+   "בֶ" ->  "be"
+   "בֵ" ->  "be"
+   "בִ" ->  "bi"
+   "בֹ" ->  "bo"
+   "בֻ" ->  "bu"
+   "וֹ" ->  "ŵ"
+   "וּ" ->  "ẇ"
+   "בֲ" ->  "ba"
+   "בֱ" ->  "be"
+   "בֳ" ->  "bo"
+  # NOTE to Table 2: the shva is not rendered
+   "בְ" ->  "b"
+  # mark-order normalization: canonical NFC stacks and legacy letter-first stacks
+   "בַּ" ->  "ḃa"
+   "בַּ" ->  "ḃa"
+   "שָׁ" ->  "ša"
+   "שָּׁ" ->  "ša"
+   "הַּ" ->  "ḣa"
+  # words exercising the composition rules
+   "תּוֹרָה" ->  "tŵrah"
+   "בְּרֵאשִׁית" ->  "ḃreʾ̲šiyt"
+  # Alphabetic Presentation Forms, decomposition equivalents of the rows
+   "שׁ" ->  "š"
+   "שׂ" ->  "ś"
+   "שּׁ" ->  "š"
+   "שּׂ" ->  "ś"
+   "בּ" ->  "ḃ"
+   "הּ" ->  "ḣ"
+   "וּ" ->  "ẇ"
+   "וֹ" ->  "ŵ"
+   "בֿ" ->  "b"
+}
+
+stage main {
+
+  # MARK-ORDER NORMALIZATION
+  # The canonical combining order places the vowel signs (ccc 10-20) before
+  # the dagesh (ccc 21) and the shin/sin dots (ccc 24-25). Move the dots back
+  # next to the letter so the letter+dot sequences of Tables 1-2 match.
+  sub {
+    from "ְּ"
+    to "ְּ"
+  }
+  sub {
+    from "ְׁ"
+    to "ְׁ"
+  }
+  sub {
+    from "ְׂ"
+    to "ְׂ"
+  }
+  sub {
+    from "ֱּ"
+    to "ֱּ"
+  }
+  sub {
+    from "ֱׁ"
+    to "ֱׁ"
+  }
+  sub {
+    from "ֱׂ"
+    to "ֱׂ"
+  }
+  sub {
+    from "ֲּ"
+    to "ֲּ"
+  }
+  sub {
+    from "ֲׁ"
+    to "ֲׁ"
+  }
+  sub {
+    from "ֲׂ"
+    to "ֲׂ"
+  }
+  sub {
+    from "ֳּ"
+    to "ֳּ"
+  }
+  sub {
+    from "ֳׁ"
+    to "ֳׁ"
+  }
+  sub {
+    from "ֳׂ"
+    to "ֳׂ"
+  }
+  sub {
+    from "ִּ"
+    to "ִּ"
+  }
+  sub {
+    from "ִׁ"
+    to "ִׁ"
+  }
+  sub {
+    from "ִׂ"
+    to "ִׂ"
+  }
+  sub {
+    from "ֵּ"
+    to "ֵּ"
+  }
+  sub {
+    from "ֵׁ"
+    to "ֵׁ"
+  }
+  sub {
+    from "ֵׂ"
+    to "ֵׂ"
+  }
+  sub {
+    from "ֶּ"
+    to "ֶּ"
+  }
+  sub {
+    from "ֶׁ"
+    to "ֶׁ"
+  }
+  sub {
+    from "ֶׂ"
+    to "ֶׂ"
+  }
+  sub {
+    from "ַּ"
+    to "ַּ"
+  }
+  sub {
+    from "ַׁ"
+    to "ַׁ"
+  }
+  sub {
+    from "ַׂ"
+    to "ַׂ"
+  }
+  sub {
+    from "ָּ"
+    to "ָּ"
+  }
+  sub {
+    from "ָׁ"
+    to "ָׁ"
+  }
+  sub {
+    from "ָׂ"
+    to "ָׂ"
+  }
+  sub {
+    from "ֹּ"
+    to "ֹּ"
+  }
+  sub {
+    from "ֹׁ"
+    to "ֹׁ"
+  }
+  sub {
+    from "ֹׂ"
+    to "ֹׂ"
+  }
+  sub {
+    from "ֺּ"
+    to "ֺּ"
+  }
+  sub {
+    from "ֺׁ"
+    to "ֺׁ"
+  }
+  sub {
+    from "ֺׂ"
+    to "ֺׂ"
+  }
+  sub {
+    from "ֻּ"
+    to "ֻּ"
+  }
+  sub {
+    from "ֻׁ"
+    to "ֻׁ"
+  }
+  sub {
+    from "ֻׂ"
+    to "ֻׂ"
+  }
+  sub {
+    from "ּׁ"
+    to "ּׁ"
+  }
+  sub {
+    from "ּׂ"
+    to "ּׂ"
+  }
+
+  # CHARACTERS
+  parallel {
+    # Table 2, row 51: waw + holam (before bare waw and bare holam)
+    sub "וֹ" "ŵ"
+    # Table 1, rows 1-43: dagesh rows 3, 5, 7, 9, 11, 13, 18, 20, 24, 26, 28
+    # and 31 carry the dot above; rows 16, 22, 33, 35, 39, 41 and 43 render
+    # unmarked and absorb their dagesh
+    sub "א" "ʾ̲"
+    sub "בּ" "ḃ"
+    sub "ב" "b"
+    sub "גּ" "ḡ"
+    sub "ג" "g"
+    sub "דּ" "ḋ"
+    sub "ד" "d"
+    sub "הּ" "ḣ"
+    sub "ה" "h"
+    sub "וּ" "ẇ"
+    sub "ו" "w"
+    sub "זּ" "ż"
+    sub "ז" "z"
+    sub "ח" "ḥ"
+    sub "טּ" "ṭ"
+    sub "ט" "ṭ"
+    sub "יּ" "ẏ"
+    sub "י" "y"
+    sub "כּ" "k̇"
+    sub "כ" "k"
+    sub "לּ" "l"
+    sub "ל" "l"
+    sub "מּ" "ṁ"
+    sub "מ" "m"
+    sub "נּ" "ṅ"
+    sub "נ" "n"
+    sub "סּ" "ṡ"
+    sub "ס" "s"
+    sub "ע" "ʿ̲"
+    sub "פּ" "ṗ"
+    sub "פ" "p"
+    sub "צּ" "ṣ"
+    sub "צ" "ṣ"
+    sub "קּ" "q"
+    sub "ק" "q"
+    sub "ר" "r"
+    # rows 37-41 (row 38 is the raised-caron typographic variant of row 37);
+    # rows 39 and 41 render unmarked
+    sub "שּׁ" "š"
+    sub "שּׁ" "š"
+    sub "שׁ" "š"
+    sub "שּׂ" "ś"
+    sub "שּׂ" "ś"
+    sub "שׂ" "ś"
+    # unpointed shin reads as shin with sin dot (row 37)
+    sub "ש" "š"
+    sub "תּ" "t"
+    sub "ת" "t"
+    # clause 3.3: final forms take their letter's rows
+    sub "ךּ" "k̇"
+    sub "ך" "k"
+    sub "ם" "m"
+    sub "ן" "n"
+    sub "ףּ" "ṗ"
+    sub "ף" "p"
+    sub "ץ" "ṣ"
+    # Alphabetic Presentation Forms, decomposition equivalents of the rows
+    # (the rafe forms render as the bare letter: no table rafe row)
+    sub "שׁ" "š"
+    sub "שׂ" "ś"
+    sub "שּׁ" "š"
+    sub "שּׂ" "ś"
+    sub "אּ" "ʾ̲"
+    sub "בּ" "ḃ"
+    sub "גּ" "ḡ"
+    sub "דּ" "ḋ"
+    sub "הּ" "ḣ"
+    sub "וּ" "ẇ"
+    sub "זּ" "ż"
+    sub "טּ" "ṭ"
+    sub "יּ" "ẏ"
+    sub "ךּ" "k̇"
+    sub "כּ" "k̇"
+    sub "לּ" "l"
+    sub "מּ" "ṁ"
+    sub "נּ" "ṅ"
+    sub "סּ" "ṡ"
+    sub "ףּ" "ṗ"
+    sub "פּ" "ṗ"
+    sub "צּ" "ṣ"
+    sub "קּ" "q"
+    sub "רּ" "r"
+    sub "שּ" "š"
+    sub "תּ" "t"
+    sub "וֹ" "ŵ"
+    sub "בֿ" "b"
+    sub "כֿ" "k"
+    sub "פֿ" "p"
+    # Table 2, vowel signs (rows 44-55; row 51 waw+holam above,
+    # row 52 = row 11)
+    sub "ֺ" "ŵ"
+    sub "ַ" "a"
+    sub "ָ" "a"
+    sub "ֶ" "e"
+    sub "ֵ" "e"
+    sub "ִ" "i"
+    sub "ֹ" "o"
+    sub "ֻ" "u"
+    sub "ֲ" "a"
+    sub "ֱ" "e"
+    sub "ֳ" "o"
+    # NOTE to Table 2: the shva is not rendered
+    sub "ְ" ""
+    # residual marks outside the tables
+    sub "ּ" ""
+    sub "ֽ" ""
+    sub "ֿ" ""
+    sub "ׁ" ""
+    sub "ׂ" ""
+    sub "ׄ" ""
+    sub "ׅ" ""
+    sub "ׇ" ""
+    # teamim (cantillation marks)
+    sub "֑" ""
+    sub "֒" ""
+    sub "֓" ""
+    sub "֔" ""
+    sub "֕" ""
+    sub "֖" ""
+    sub "֗" ""
+    sub "֘" ""
+    sub "֙" ""
+    sub "֚" ""
+    sub "֛" ""
+    sub "֜" ""
+    sub "֝" ""
+    sub "֞" ""
+    sub "֟" ""
+    sub "֠" ""
+    sub "֡" ""
+    sub "֢" ""
+    sub "֣" ""
+    sub "֤" ""
+    sub "֥" ""
+    sub "֦" ""
+    sub "֧" ""
+    sub "֨" ""
+    sub "֩" ""
+    sub "֪" ""
+    sub "֫" ""
+    sub "֬" ""
+    sub "֭" ""
+    sub "֮" ""
+    sub "֯" ""
+  }
+
+}
+
+}
