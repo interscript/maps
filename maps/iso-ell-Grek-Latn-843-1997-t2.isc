@@ -40,7 +40,7 @@ stage main {
     sub "ϲ" "s"
     sub "Ϲ" "S"
     sub "ϳ" "j"
-    sub "Ϳ" "j"
+    sub "Ϳ" "J"
   }
 
 }
