@@ -1,0 +1,231 @@
+system "ISO:pra-Brah:Latn:15919-2026" {
+
+metadata {
+  authority_id iso
+  id 15919-2026
+  language iso-639-2:pra
+  source_script Brah
+  destination_script Latn
+  name "ISO/DIS 15919 (2026) Information and documentation -- Transliteration of Indic scripts into Latin characters (Prakrit (Brahmi); DIS stage)"
+  url https://www.iso.org/committee/48820.html
+  creation_date 2026
+  adoption_date 2026
+  description {    Second edition (DIS stage) of ISO 15919, Transliteration of Indic scripts into Latin characters.
+    Encoded from the committee ballot ISO/TC 46/WG 3 N125; per-script tables of clause 7,
+    numerals of normative Annex A, Rule 17 Vedic accents, and options 9.8/9.9/9.10 as
+    selectable variants (languages opt98 opt99 opt10). See notes for provenance and errata.  }
+
+  notes {
+    note "Encoded from ISO/DIS 15919 (2026), ISO/TC 46/WG 3 N125 (DIS stage draft, 2026-01-26), Table 7.11 plus the numerals of normative Annex A Table A.2; shared-table content verified against ISO/CD 15919 (2025, N108) and ISO 15919 WD (2024, N88). The DIS is not yet a published International Standard."
+    note "Rule 2 convention: inherent a with a consonant is always transliterated (consonant rows carry the inherent a)."
+    note "virama is deleted in the default behavior (clause 6 printed virama hex list); option 9.10 (language selector opt10) instead renders virama as middle dot U+00B7."
+    note "Option selectors (W3 languages, single-select): opt98 = clause 9.8 upper-case for all initial vowels (first letter capitalised for digraph outputs); opt99 = clause 9.9 unusual conjuncts marked with equals sign U+003D via the script's zero-width joiner; opt10 = clause 9.10 explicit virama middle dot. Option 9.1 (non-uniform e/o) is available by character substitution on outputs and is not separately staged."
+    note "Brahmi variants (clause 9.7): default variant encoded (virama 11046); Tamil variant virama 11070 and letter ḷa 11075 are also encoded as printed; Bhattiprolu variant (no virama) is not mechanically separable and is documented only."
+  }
+}
+
+languages opt98 opt99 opt10
+
+tests {
+   "𑀅" ->  "a"
+   "𑀓" ->  "ka"
+   "𑀆" ->  "ā"
+   "𑀸" ->  "ā"
+   "𑀔" ->  "kha"
+   "𑀇" ->  "i"
+   "𑀺" ->  "i"
+   "𑀕" ->  "ga"
+   "𑀈" ->  "ī"
+   "𑀻" ->  "ī"
+   "𑀖" ->  "gha"
+   "𑀉" ->  "u"
+   "𑀼" ->  "u"
+   "𑀗" ->  "ṅa"
+   "𑀊" ->  "ū"
+   "𑀽" ->  "ū"
+   "𑀘" ->  "ca"
+   "𑀋" ->  "r̥"
+   "𑀾" ->  "r̥"
+   "𑀙" ->  "cha"
+   "𑀌" ->  "r̥̄"
+   "𑀿" ->  "r̥̄"
+   "𑀚" ->  "ja"
+   "𑀍" ->  "l̥"
+   "𑁀" ->  "l̥"
+   "𑀛" ->  "jha"
+   "𑀎" ->  "l̥̄"
+   "𑁁" ->  "l̥̄"
+   "𑀜" ->  "ña"
+   "𑁱" ->  "e"
+   "𑁳" ->  "e"
+   "𑀝" ->  "ṭa"
+   "𑀏" ->  "ē"
+   "𑁂" ->  "ē"
+   "𑀞" ->  "ṭha"
+   "𑀐" ->  "ai"
+   "𑁃" ->  "ai"
+   "𑀟" ->  "ḍa"
+   "𑁲" ->  "o"
+   "𑁴" ->  "o"
+   "𑀠" ->  "ḍha"
+   "𑀑" ->  "ō"
+   "𑁄" ->  "ō"
+   "𑀡" ->  "ṇa"
+   "𑀒" ->  "au"
+   "𑁅" ->  "au"
+   "𑀢" ->  "ta"
+   "𑀰" ->  "śa"
+   "𑀣" ->  "tha"
+   "𑀱" ->  "ṣa"
+   "𑀤" ->  "da"
+   "𑀲" ->  "sa"
+   "𑀥" ->  "dha"
+   "𑀳" ->  "ha"
+   "𑀦" ->  "na"
+   "𑀴" ->  "ḷa"
+   "𑀧" ->  "pa"
+   "𑁵" ->  "ḷa"
+   "𑀨" ->  "pha"
+   "𑀵" ->  "ḻa"
+   "𑀩" ->  "ba"
+   "𑀶" ->  "ṟa"
+   "𑀪" ->  "bha"
+   "𑀷" ->  "ṉa"
+   "𑀫" ->  "ma"
+   "𑀬" ->  "ya"
+   "𑀭" ->  "ra"
+   "𑀮" ->  "la"
+   "𑀃" ->  "ẖ"
+   "𑀯" ->  "va"
+   "𑀄" ->  "ḫ"
+   "𑁦" ->  "0"
+   "𑁧" ->  "1"
+   "𑁨" ->  "2"
+   "𑁩" ->  "3"
+   "𑁪" ->  "4"
+   "𑁫" ->  "5"
+   "𑁬" ->  "6"
+   "𑁭" ->  "7"
+   "𑁮" ->  "8"
+   "𑁯" ->  "9"
+   "𑀀" ->  "m̐"
+   "𑀁" ->  "ṁ"
+   "𑀂" ->  "ḥ"
+}
+
+stage main {
+
+  # Table 7.11 rows (clause 7), Table A.2 numerals, clause 6 virama, options 9.8/9.9/9.10
+  parallel {
+
+    sub "𑀅" "a"
+    sub "𑀅" "A" when opt98
+    sub "𑀓" "ka"
+    sub "𑀆" "ā"
+    sub "𑀸" "ā"
+    sub "𑀆" "Ā" when opt98
+    sub "𑀔" "kha"
+    sub "𑀇" "i"
+    sub "𑀺" "i"
+    sub "𑀇" "I" when opt98
+    sub "𑀕" "ga"
+    sub "𑀈" "ī"
+    sub "𑀻" "ī"
+    sub "𑀈" "Ī" when opt98
+    sub "𑀖" "gha"
+    sub "𑀉" "u"
+    sub "𑀼" "u"
+    sub "𑀉" "U" when opt98
+    sub "𑀗" "ṅa"
+    sub "𑀊" "ū"
+    sub "𑀽" "ū"
+    sub "𑀊" "Ū" when opt98
+    sub "𑀘" "ca"
+    sub "𑀋" "r̥"
+    sub "𑀾" "r̥"
+    sub "𑀋" "R̥" when opt98
+    sub "𑀙" "cha"
+    sub "𑀌" "r̥̄"
+    sub "𑀿" "r̥̄"
+    sub "𑀌" "R̥̄" when opt98
+    sub "𑀚" "ja"
+    sub "𑀍" "l̥"
+    sub "𑁀" "l̥"
+    sub "𑀍" "L̥" when opt98
+    sub "𑀛" "jha"
+    sub "𑀎" "l̥̄"
+    sub "𑁁" "l̥̄"
+    sub "𑀎" "L̥̄" when opt98
+    sub "𑀜" "ña"
+    sub "𑁱" "e"
+    sub "𑁳" "e"
+    sub "𑁱" "E" when opt98
+    sub "𑀝" "ṭa"
+    sub "𑀏" "ē"
+    sub "𑁂" "ē"
+    sub "𑀏" "Ē" when opt98
+    sub "𑀞" "ṭha"
+    sub "𑀐" "ai"
+    sub "𑁃" "ai"
+    sub "𑀐" "Ai" when opt98
+    sub "𑀟" "ḍa"
+    sub "𑁲" "o"
+    sub "𑁴" "o"
+    sub "𑁲" "O" when opt98
+    sub "𑀠" "ḍha"
+    sub "𑀑" "ō"
+    sub "𑁄" "ō"
+    sub "𑀑" "Ō" when opt98
+    sub "𑀡" "ṇa"
+    sub "𑀒" "au"
+    sub "𑁅" "au"
+    sub "𑀒" "Au" when opt98
+    sub "𑀢" "ta"
+    sub "𑀰" "śa"
+    sub "𑀣" "tha"
+    sub "𑀱" "ṣa"
+    sub "𑀤" "da"
+    sub "𑀲" "sa"
+    sub "𑀥" "dha"
+    sub "𑀳" "ha"
+    sub "𑀦" "na"
+    sub "𑀴" "ḷa"
+    sub "𑀧" "pa"
+    sub "𑁵" "ḷa"
+    sub "𑀨" "pha"
+    sub "𑀵" "ḻa"
+    sub "𑀩" "ba"
+    sub "𑀶" "ṟa"
+    sub "𑀪" "bha"
+    sub "𑀷" "ṉa"
+    sub "𑀫" "ma"
+    sub "𑀬" "ya"
+    sub "𑀭" "ra"
+    sub "𑀮" "la"
+    sub "𑀃" "ẖ"
+    sub "𑀯" "va"
+    sub "𑀄" "ḫ"
+    sub "𑀀" "m̐"
+    sub "𑀁" "ṁ"
+    sub "𑀂" "ḥ"
+    sub "𑁰" ""
+    sub "𑁰" "·" when opt10
+    sub "𑁆" ""
+    sub "𑁆" "·" when opt10
+    sub "‍" ""
+    sub "‍" "=" when opt99
+    sub "𑁦" "0"
+    sub "𑁧" "1"
+    sub "𑁨" "2"
+    sub "𑁩" "3"
+    sub "𑁪" "4"
+    sub "𑁫" "5"
+    sub "𑁬" "6"
+    sub "𑁭" "7"
+    sub "𑁮" "8"
+    sub "𑁯" "9"
+  }
+
+  compose
+}
+}

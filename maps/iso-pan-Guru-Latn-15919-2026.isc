@@ -1,0 +1,222 @@
+system "ISO:pan-Guru:Latn:15919-2026" {
+
+metadata {
+  authority_id iso
+  id 15919-2026
+  language iso-639-2:pan
+  source_script Guru
+  destination_script Latn
+  name "ISO/DIS 15919 (2026) Information and documentation -- Transliteration of Indic scripts into Latin characters (Punjabi (Gurmukhi); DIS stage)"
+  url https://www.iso.org/committee/48820.html
+  creation_date 2026
+  adoption_date 2026
+  description {    Second edition (DIS stage) of ISO 15919, Transliteration of Indic scripts into Latin characters.
+    Encoded from the committee ballot ISO/TC 46/WG 3 N125; per-script tables of clause 7,
+    numerals of normative Annex A, Rule 17 Vedic accents, and options 9.8/9.9/9.10 as
+    selectable variants (languages opt98 opt99 opt10). See notes for provenance and errata.  }
+
+  notes {
+    note "Encoded from ISO/DIS 15919 (2026), ISO/TC 46/WG 3 N125 (DIS stage draft, 2026-01-26), Table 7.3 plus the numerals of normative Annex A Table A.2; shared-table content verified against ISO/CD 15919 (2025, N108) and ISO 15919 WD (2024, N88). The DIS is not yet a published International Standard."
+    note "Rule 2 convention: inherent a with a consonant is always transliterated (consonant rows carry the inherent a)."
+    note "virama is deleted in the default behavior (clause 6 printed virama hex list); option 9.10 (language selector opt10) instead renders virama as middle dot U+00B7."
+    note "Option selectors (W3 languages, single-select): opt98 = clause 9.8 upper-case for all initial vowels (first letter capitalised for digraph outputs); opt99 = clause 9.9 unusual conjuncts marked with equals sign U+003D via the script's zero-width joiner; opt10 = clause 9.10 explicit virama middle dot. Option 9.1 (non-uniform e/o) is available by character substitution on outputs and is not separately staged."
+    note "Adhak U+0A71 (clause 6 note): before an aspirated stop it indicates insertion of the unaspirated stop; elsewhere it doubles the following consonant. This is context-dependent and outside the substitution IR; no Latin value is printed for it in Table 7.3."
+    note "DIS erratum recorded: Table 7.3 row ja+nukta (0A5B) prints Latin 'za' with Hex 1E63 (contradiction); the Latin text 'za' is encoded."
+    note "Cross-check (audit axis): Wikipedia ISO 15919 table (2001-reflected) vs corpus map agreement 48/54 printed rows; systematic divergences recorded as findings, not fixes: vocalic r/l rows (corpus ṛ-family vs ISO r̥-family), long e/o rows (corpus e/o vs ISO ē/ō), avagraha (corpus :’ vs ISO ')."
+    note "Row-level source errata encoded per printed text: Table 7.3 row ['ਜ਼']: latin/hex mismatch: text='za' hex=1E63"
+    note "The precomposed nukta letters 0A33 0A36 0A59 0A5A 0A5B 0A5E are encoded alongside their decomposed combinations (clause 7.3: precomposed and decomposed characters are treated equally on input); the printed qa row is the combination 0A15 0A3C."
+  }
+}
+
+languages opt98 opt99 opt10
+
+tests {
+   "ਅ" ->  "a"
+   "ਚ" ->  "ca"
+   "ਆ" ->  "ā"
+   "ਾ" ->  "ā"
+   "ਛ" ->  "cha"
+   "ਇ" ->  "i"
+   "ਿ" ->  "i"
+   "ਜ" ->  "ja"
+   "ਈ" ->  "ī"
+   "ੀ" ->  "ī"
+   "ਝ" ->  "jha"
+   "ਉ" ->  "u"
+   "ੁ" ->  "u"
+   "ਞ" ->  "ña"
+   "ਊ" ->  "ū"
+   "ੂ" ->  "ū"
+   "ਟ" ->  "ṭa"
+   "ਏ" ->  "ē"
+   "ੇ" ->  "ē"
+   "ਠ" ->  "ṭha"
+   "ਐ" ->  "ai"
+   "ੈ" ->  "ai"
+   "ਡ" ->  "ḍa"
+   "ਓ" ->  "ō"
+   "ੋ" ->  "ō"
+   "ਢ" ->  "ḍha"
+   "ਔ" ->  "au"
+   "ੌ" ->  "au"
+   "ਣ" ->  "ṇa"
+   "ਸ" ->  "sa"
+   "ਤ" ->  "ta"
+   "ਹ" ->  "ha"
+   "ਥ" ->  "tha"
+   "ਕ" ->  "ka"
+   "ਦ" ->  "da"
+   "ਖ" ->  "kha"
+   "ਧ" ->  "dha"
+   "ਗ" ->  "ga"
+   "ਨ" ->  "na"
+   "ਘ" ->  "gha"
+   "ਙ" ->  "ṅa"
+   "ਪ" ->  "pa"
+   "ਸ਼" ->  "śa"
+   "ਫ" ->  "pha"
+   "ਖ਼" ->  "k͟ha"
+   "ਬ" ->  "ba"
+   "ਗ਼" ->  "ġa"
+   "ਭ" ->  "bha"
+   "ਜ਼" ->  "za"
+   "ਮ" ->  "ma"
+   "ਫ਼" ->  "fa"
+   "ਯ" ->  "ya"
+   "ਰ" ->  "ra"
+   "ਂ" ->  "ṁ"
+   "ਲ" ->  "la"
+   "ੰ" ->  "ṃ"
+   "ਲ਼" ->  "ḷa"
+   "ਁ" ->  "m̐"
+   "ਵ" ->  "va"
+   "ਃ" ->  "ḥ"
+   "ੜ" ->  "ṛa"
+   "੦" ->  "0"
+   "੧" ->  "1"
+   "੨" ->  "2"
+   "੩" ->  "3"
+   "੪" ->  "4"
+   "੫" ->  "5"
+   "੬" ->  "6"
+   "੭" ->  "7"
+   "੮" ->  "8"
+   "੯" ->  "9"
+   "ਲ਼" ->  "ḷa"
+   "ਸ਼" ->  "śa"
+   "ਖ਼" ->  "k͟ha"
+   "ਗ਼" ->  "ġa"
+   "ਜ਼" ->  "za"
+   "ਫ਼" ->  "fa"
+   "ਕ਼" ->  "qa"
+}
+
+stage main {
+
+  # Table 7.3 rows (clause 7), Table A.2 numerals, clause 6 virama, options 9.8/9.9/9.10
+  parallel {
+
+    sub "ਅ" "a"
+    sub "ਅ" "A" when opt98
+    sub "ਚ" "ca"
+    sub "ਆ" "ā"
+    sub "ਾ" "ā"
+    sub "ਆ" "Ā" when opt98
+    sub "ਛ" "cha"
+    sub "ਇ" "i"
+    sub "ਿ" "i"
+    sub "ਇ" "I" when opt98
+    sub "ਜ" "ja"
+    sub "ਈ" "ī"
+    sub "ੀ" "ī"
+    sub "ਈ" "Ī" when opt98
+    sub "ਝ" "jha"
+    sub "ਉ" "u"
+    sub "ੁ" "u"
+    sub "ਉ" "U" when opt98
+    sub "ਞ" "ña"
+    sub "ਊ" "ū"
+    sub "ੂ" "ū"
+    sub "ਊ" "Ū" when opt98
+    sub "ਟ" "ṭa"
+    sub "ਏ" "ē"
+    sub "ੇ" "ē"
+    sub "ਏ" "Ē" when opt98
+    sub "ਠ" "ṭha"
+    sub "ਐ" "ai"
+    sub "ੈ" "ai"
+    sub "ਐ" "Ai" when opt98
+    sub "ਡ" "ḍa"
+    sub "ਓ" "ō"
+    sub "ੋ" "ō"
+    sub "ਓ" "Ō" when opt98
+    sub "ਢ" "ḍha"
+    sub "ਔ" "au"
+    sub "ੌ" "au"
+    sub "ਔ" "Au" when opt98
+    sub "ਣ" "ṇa"
+    sub "ਸ" "sa"
+    sub "ਸ" "Sa" when opt98
+    sub "ਤ" "ta"
+    sub "ਹ" "ha"
+    sub "ਹ" "Ha" when opt98
+    sub "ਥ" "tha"
+    sub "ਕ" "ka"
+    sub "ਕ਼" "qa"
+    sub "ਕ" "Ka" when opt98
+    sub "ਦ" "da"
+    sub "ਖ" "kha"
+    sub "ਖ" "Kha" when opt98
+    sub "ਧ" "dha"
+    sub "ਗ" "ga"
+    sub "ਗ" "Ga" when opt98
+    sub "ਨ" "na"
+    sub "ਘ" "gha"
+    sub "ਘ" "Gha" when opt98
+    sub "ਙ" "ṅa"
+    sub "ਙ" "Ṅa" when opt98
+    sub "ਪ" "pa"
+    sub "ਸ਼" "śa"
+    sub "ਸ਼" "śa"  # precomposed (clause 7.3: precomposed and decomposed equal on input)
+    sub "ਫ" "pha"
+    sub "ਖ਼" "k͟ha"
+    sub "ਖ਼" "k͟ha"  # precomposed (clause 7.3: precomposed and decomposed equal on input)
+    sub "ਬ" "ba"
+    sub "ਗ਼" "ġa"
+    sub "ਗ਼" "ġa"  # precomposed (clause 7.3: precomposed and decomposed equal on input)
+    sub "ਭ" "bha"
+    sub "ਜ਼" "za"
+    sub "ਜ਼" "za"  # precomposed (clause 7.3: precomposed and decomposed equal on input)
+    sub "ਮ" "ma"
+    sub "ਫ਼" "fa"
+    sub "ਫ਼" "fa"  # precomposed (clause 7.3: precomposed and decomposed equal on input)
+    sub "ਯ" "ya"
+    sub "ਰ" "ra"
+    sub "ਂ" "ṁ"
+    sub "ਲ" "la"
+    sub "ਲ਼" "ḷa"
+    sub "ੰ" "ṃ"
+    sub "ਲ਼" "ḷa"
+    sub "ਁ" "m̐"
+    sub "ਵ" "va"
+    sub "ਃ" "ḥ"
+    sub "ੜ" "ṛa"
+    sub "੍" ""
+    sub "੍" "·" when opt10
+    sub "‍" ""
+    sub "‍" "=" when opt99
+    sub "੦" "0"
+    sub "੧" "1"
+    sub "੨" "2"
+    sub "੩" "3"
+    sub "੪" "4"
+    sub "੫" "5"
+    sub "੬" "6"
+    sub "੭" "7"
+    sub "੮" "8"
+    sub "੯" "9"
+  }
+
+  compose
+}
+}

@@ -1,0 +1,197 @@
+system "ISO:inc-Kthi:Latn:15919-2026" {
+
+metadata {
+  authority_id iso
+  id 15919-2026
+  language iso-639-2:inc
+  source_script Kthi
+  destination_script Latn
+  name "ISO/DIS 15919 (2026) Information and documentation -- Transliteration of Indic scripts into Latin characters (Indo-Aryan (Kaithi); DIS stage)"
+  url https://www.iso.org/committee/48820.html
+  creation_date 2026
+  adoption_date 2026
+  description {    Second edition (DIS stage) of ISO 15919, Transliteration of Indic scripts into Latin characters.
+    Encoded from the committee ballot ISO/TC 46/WG 3 N125; per-script tables of clause 7,
+    numerals of normative Annex A, Rule 17 Vedic accents, and options 9.8/9.9/9.10 as
+    selectable variants (languages opt98 opt99 opt10). See notes for provenance and errata.  }
+
+  notes {
+    note "Encoded from ISO/DIS 15919 (2026), ISO/TC 46/WG 3 N125 (DIS stage draft, 2026-01-26), Table 7.13 plus the numerals of normative Annex A Table A.2; shared-table content verified against ISO/CD 15919 (2025, N108) and ISO 15919 WD (2024, N88). The DIS is not yet a published International Standard."
+    note "Rule 2 convention: inherent a with a consonant is always transliterated (consonant rows carry the inherent a)."
+    note "virama is deleted in the default behavior (clause 6 printed virama hex list); option 9.10 (language selector opt10) instead renders virama as middle dot U+00B7."
+    note "Option selectors (W3 languages, single-select): opt98 = clause 9.8 upper-case for all initial vowels (first letter capitalised for digraph outputs); opt99 = clause 9.9 unusual conjuncts marked with equals sign U+003D via the script's zero-width joiner; opt10 = clause 9.10 explicit virama middle dot. Option 9.1 (non-uniform e/o) is available by character substitution on outputs and is not separately staged."
+    note "DIS clause 6 erratum recorded: printed Kai. 110B9 (unassigned); corrected to Kaithi sign virama 110C1."
+    note "DIS erratum recorded: Table 7.13 vocalic r row prints Initial 110A9 110B2 (RA + II sign) with Sign 110C2 (unassigned codepoint; Kaithi sign virama is 110C1). The row is encoded exactly as printed as one three-character sequence mapping to r̥; flagged in the corpus PR for the ISO committee."
+  }
+}
+
+languages opt98 opt99 opt10
+
+tests {
+   "𑂃" ->  "a"
+   "𑂄" ->  "ā"
+   "𑂰" ->  "ā"
+   "𑂅" ->  "i"
+   "𑂱" ->  "i"
+   "𑂆" ->  "ī"
+   "𑂲" ->  "ī"
+   "𑂇" ->  "u"
+   "𑂳" ->  "u"
+   "𑂈" ->  "ū"
+   "𑂴" ->  "ū"
+   "𑂩𑂲" ->  "r̥"
+   "𑃂" ->  "r̥"
+   "𑂉" ->  "ē"
+   "𑂵" ->  "ē"
+   "𑂊" ->  "ai"
+   "𑂶" ->  "ai"
+   "𑂋" ->  "ō"
+   "𑂷" ->  "ō"
+   "𑂌" ->  "au"
+   "𑂸" ->  "au"
+   "𑂍" ->  "ka"
+   "𑂠" ->  "da"
+   "𑂎" ->  "kha"
+   "𑂡" ->  "dha"
+   "𑂏" ->  "ga"
+   "𑂢" ->  "na"
+   "𑂐" ->  "gha"
+   "𑂣" ->  "pa"
+   "𑂑" ->  "ṅa"
+   "𑂤" ->  "pha"
+   "𑂒" ->  "ca"
+   "𑂥" ->  "ba"
+   "𑂓" ->  "cha"
+   "𑂦" ->  "bha"
+   "𑂔" ->  "ja"
+   "𑂧" ->  "ma"
+   "𑂕" ->  "jha"
+   "𑂨" ->  "ya"
+   "𑂖" ->  "ña"
+   "𑂩" ->  "ra"
+   "𑂗" ->  "ṭa"
+   "𑂪" ->  "la"
+   "𑂘" ->  "ṭha"
+   "𑂫" ->  "va"
+   "𑂙" ->  "ḍa"
+   "𑂬" ->  "śa"
+   "𑂚" ->  "ṛa"
+   "𑂭" ->  "ṣa"
+   "𑂛" ->  "ḍha"
+   "𑂮" ->  "sa"
+   "𑂜" ->  "ṛha"
+   "𑂯" ->  "ha"
+   "𑂝" ->  "ṇa"
+   "𑂞" ->  "ta"
+   "𑂟" ->  "tha"
+   "ᄊ9ᄋ2ᄌ2" ->  "r̥"
+   "०" ->  "0"
+   "१" ->  "1"
+   "२" ->  "2"
+   "३" ->  "3"
+   "४" ->  "4"
+   "५" ->  "5"
+   "६" ->  "6"
+   "७" ->  "7"
+   "८" ->  "8"
+   "९" ->  "9"
+   "𑂀" ->  "m̐"
+   "𑂁" ->  "ṁ"
+   "𑂂" ->  "ḥ"
+}
+
+stage main {
+
+  # Table 7.13 rows (clause 7), Table A.2 numerals, clause 6 virama, options 9.8/9.9/9.10
+  parallel {
+
+    sub "𑂃" "a"
+    sub "𑂃" "A" when opt98
+    sub "𑂄" "ā"
+    sub "𑂰" "ā"
+    sub "𑂄" "Ā" when opt98
+    sub "𑂅" "i"
+    sub "𑂱" "i"
+    sub "𑂅" "I" when opt98
+    sub "𑂆" "ī"
+    sub "𑂲" "ī"
+    sub "𑂆" "Ī" when opt98
+    sub "𑂇" "u"
+    sub "𑂳" "u"
+    sub "𑂇" "U" when opt98
+    sub "𑂈" "ū"
+    sub "𑂴" "ū"
+    sub "𑂈" "Ū" when opt98
+    sub "𑂩𑂲" "r̥"
+    sub "𑃂" "r̥"
+    sub "𑂩𑂲" "R̥" when opt98
+    sub "𑂉" "ē"
+    sub "𑂵" "ē"
+    sub "𑂉" "Ē" when opt98
+    sub "𑂊" "ai"
+    sub "𑂶" "ai"
+    sub "𑂊" "Ai" when opt98
+    sub "𑂋" "ō"
+    sub "𑂷" "ō"
+    sub "𑂋" "Ō" when opt98
+    sub "𑂌" "au"
+    sub "𑂸" "au"
+    sub "𑂌" "Au" when opt98
+    sub "𑂍" "ka"
+    sub "𑂠" "da"
+    sub "𑂎" "kha"
+    sub "𑂡" "dha"
+    sub "𑂏" "ga"
+    sub "𑂢" "na"
+    sub "𑂐" "gha"
+    sub "𑂣" "pa"
+    sub "𑂑" "ṅa"
+    sub "𑂤" "pha"
+    sub "𑂒" "ca"
+    sub "𑂥" "ba"
+    sub "𑂓" "cha"
+    sub "𑂦" "bha"
+    sub "𑂔" "ja"
+    sub "𑂧" "ma"
+    sub "𑂕" "jha"
+    sub "𑂨" "ya"
+    sub "𑂖" "ña"
+    sub "𑂩" "ra"
+    sub "𑂗" "ṭa"
+    sub "𑂪" "la"
+    sub "𑂘" "ṭha"
+    sub "𑂫" "va"
+    sub "𑂙" "ḍa"
+    sub "𑂬" "śa"
+    sub "𑂚" "ṛa"
+    sub "𑂭" "ṣa"
+    sub "𑂛" "ḍha"
+    sub "𑂮" "sa"
+    sub "𑂜" "ṛha"
+    sub "𑂯" "ha"
+    sub "𑂝" "ṇa"
+    sub "𑂞" "ta"
+    sub "𑂟" "tha"
+    sub "ᄊ9ᄋ2ᄌ2" "r̥"
+    sub "𑂀" "m̐"
+    sub "𑂁" "ṁ"
+    sub "𑂂" "ḥ"
+    sub "𑃁" ""
+    sub "𑃁" "·" when opt10
+    sub "‍" ""
+    sub "‍" "=" when opt99
+    sub "०" "0"
+    sub "१" "1"
+    sub "२" "2"
+    sub "३" "3"
+    sub "४" "4"
+    sub "५" "5"
+    sub "६" "6"
+    sub "७" "7"
+    sub "८" "8"
+    sub "९" "9"
+  }
+
+  compose
+}
+}

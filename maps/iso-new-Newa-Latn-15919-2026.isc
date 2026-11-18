@@ -1,0 +1,221 @@
+system "ISO:new-Newa:Latn:15919-2026" {
+
+metadata {
+  authority_id iso
+  id 15919-2026
+  language iso-639-2:new
+  source_script Newa
+  destination_script Latn
+  name "ISO/DIS 15919 (2026) Information and documentation -- Transliteration of Indic scripts into Latin characters (Newar (Newa); DIS stage)"
+  url https://www.iso.org/committee/48820.html
+  creation_date 2026
+  adoption_date 2026
+  description {    Second edition (DIS stage) of ISO 15919, Transliteration of Indic scripts into Latin characters.
+    Encoded from the committee ballot ISO/TC 46/WG 3 N125; per-script tables of clause 7,
+    numerals of normative Annex A, Rule 17 Vedic accents, and options 9.8/9.9/9.10 as
+    selectable variants (languages opt98 opt99 opt10). See notes for provenance and errata.  }
+
+  notes {
+    note "Encoded from ISO/DIS 15919 (2026), ISO/TC 46/WG 3 N125 (DIS stage draft, 2026-01-26), Table 7.17 plus the numerals of normative Annex A Table A.2; shared-table content verified against ISO/CD 15919 (2025, N108) and ISO 15919 WD (2024, N88). The DIS is not yet a published International Standard."
+    note "Rule 2 convention: inherent a with a consonant is always transliterated (consonant rows carry the inherent a)."
+    note "virama is deleted in the default behavior (clause 6 printed virama hex list); option 9.10 (language selector opt10) instead renders virama as middle dot U+00B7."
+    note "Option selectors (W3 languages, single-select): opt98 = clause 9.8 upper-case for all initial vowels (first letter capitalised for digraph outputs); opt99 = clause 9.9 unusual conjuncts marked with equals sign U+003D via the script's zero-width joiner; opt10 = clause 9.10 explicit virama middle dot. Option 9.1 (non-uniform e/o) is available by character substitution on outputs and is not separately staged."
+    note "DIS errata recorded: Table 7.17 row NGHA 11413 prints Hex '1445 0324 0067' (leading typo) and row NYHA 11419 prints Hex '00F1 0324 0067' while both Latin text cells read n̤a (n + U+0324 + a); the Latin text is encoded. NGHA, NYHA and NHA 11424 all print n̤a (colliding outputs, as printed)."
+    note "Row-level source errata encoded per printed text: Table 7.17 row ['𑐓']: latin/hex mismatch: text='n̤a' hex=1445 0324 0067 | Table 7.17 row ['𑐙']: latin/hex mismatch: text='n̤a' hex=00F1 0324 0067 | Table 7.17 row ['𑐯']: latin/hex mismatch: text='l̤a' hex=006C 0324"
+    note "Row LLA 1142F is encoded l̤a (006C 0324 0061), matching the printed Latin cell's mark order like the other under-diaeresis rows."
+  }
+}
+
+languages opt98 opt99 opt10
+
+tests {
+   "𑐀" ->  "a"
+   "𑐎" ->  "ka"
+   "𑐁" ->  "ā"
+   "𑐵" ->  "ā"
+   "𑐏" ->  "kha"
+   "𑐂" ->  "i"
+   "𑐶" ->  "i"
+   "𑐐" ->  "ga"
+   "𑐃" ->  "ī"
+   "𑐷" ->  "ī"
+   "𑐑" ->  "gha"
+   "𑐄" ->  "u"
+   "𑐸" ->  "u"
+   "𑐒" ->  "ṅa"
+   "𑐅" ->  "ū"
+   "𑐹" ->  "ū"
+   "𑐓" ->  "n̤a"
+   "𑐆" ->  "r̥"
+   "𑐺" ->  "r̥"
+   "𑐔" ->  "ca"
+   "𑐇" ->  "r̥̄"
+   "𑐻" ->  "r̥̄"
+   "𑐕" ->  "cha"
+   "𑐈" ->  "l̥"
+   "𑐼" ->  "l̥"
+   "𑐖" ->  "ja"
+   "𑐉" ->  "l̥̄"
+   "𑐽" ->  "l̥̄"
+   "𑐗" ->  "jha"
+   "𑐊" ->  "ē"
+   "𑐾" ->  "ē"
+   "𑐘" ->  "ña"
+   "𑐋" ->  "ai"
+   "𑐿" ->  "ai"
+   "𑐙" ->  "n̤a"
+   "𑐌" ->  "ō"
+   "𑑀" ->  "ō"
+   "𑐚" ->  "ṭa"
+   "𑐍" ->  "au"
+   "𑑁" ->  "au"
+   "𑐛" ->  "ṭha"
+   "𑐟" ->  "ta"
+   "𑐬" ->  "ra"
+   "𑐠" ->  "tha"
+   "𑐭" ->  "r̤a"
+   "𑐡" ->  "da"
+   "𑐮" ->  "la"
+   "𑐢" ->  "dha"
+   "𑐯" ->  "l̤a"
+   "𑐣" ->  "na"
+   "𑐰" ->  "va"
+   "𑐤" ->  "n̤a"
+   "𑐱" ->  "śa"
+   "𑐥" ->  "pa"
+   "𑐲" ->  "ṣa"
+   "𑐦" ->  "pha"
+   "𑐳" ->  "sa"
+   "𑐧" ->  "ba"
+   "𑐴" ->  "ha"
+   "𑐨" ->  "bha"
+   "𑑄" ->  "ṁ"
+   "𑐩" ->  "ma"
+   "𑑃" ->  "m̐"
+   "𑐪" ->  "m̤a"
+   "𑑅" ->  "ḥ"
+   "𑐫" ->  "ya"
+   "𑑇" ->  "'"
+   "𑑐" ->  "0"
+   "𑑑" ->  "1"
+   "𑑒" ->  "2"
+   "𑑓" ->  "3"
+   "𑑔" ->  "4"
+   "𑑕" ->  "5"
+   "𑑖" ->  "6"
+   "𑑗" ->  "7"
+   "𑑘" ->  "8"
+   "𑑙" ->  "9"
+   "𑐜" ->  "ḍa"
+   "𑐝" ->  "ḍha"
+   "𑐞" ->  "ṇa"
+}
+
+stage main {
+
+  # Table 7.17 rows (clause 7), Table A.2 numerals, clause 6 virama, options 9.8/9.9/9.10
+  parallel {
+
+    sub "𑐀" "a"
+    sub "𑐀" "A" when opt98
+    sub "𑐎" "ka"
+    sub "𑐁" "ā"
+    sub "𑐵" "ā"
+    sub "𑐁" "Ā" when opt98
+    sub "𑐏" "kha"
+    sub "𑐂" "i"
+    sub "𑐶" "i"
+    sub "𑐂" "I" when opt98
+    sub "𑐐" "ga"
+    sub "𑐃" "ī"
+    sub "𑐷" "ī"
+    sub "𑐃" "Ī" when opt98
+    sub "𑐑" "gha"
+    sub "𑐄" "u"
+    sub "𑐸" "u"
+    sub "𑐄" "U" when opt98
+    sub "𑐒" "ṅa"
+    sub "𑐅" "ū"
+    sub "𑐹" "ū"
+    sub "𑐅" "Ū" when opt98
+    sub "𑐓" "n̤a"
+    sub "𑐆" "r̥"
+    sub "𑐺" "r̥"
+    sub "𑐆" "R̥" when opt98
+    sub "𑐔" "ca"
+    sub "𑐇" "r̥̄"
+    sub "𑐻" "r̥̄"
+    sub "𑐇" "R̥̄" when opt98
+    sub "𑐕" "cha"
+    sub "𑐈" "l̥"
+    sub "𑐼" "l̥"
+    sub "𑐈" "L̥" when opt98
+    sub "𑐖" "ja"
+    sub "𑐉" "l̥̄"
+    sub "𑐽" "l̥̄"
+    sub "𑐉" "L̥̄" when opt98
+    sub "𑐗" "jha"
+    sub "𑐊" "ē"
+    sub "𑐾" "ē"
+    sub "𑐊" "Ē" when opt98
+    sub "𑐘" "ña"
+    sub "𑐋" "ai"
+    sub "𑐿" "ai"
+    sub "𑐋" "Ai" when opt98
+    sub "𑐙" "n̤a"
+    sub "𑐌" "ō"
+    sub "𑑀" "ō"
+    sub "𑐌" "Ō" when opt98
+    sub "𑐚" "ṭa"
+    sub "𑐍" "au"
+    sub "𑑁" "au"
+    sub "𑐍" "Au" when opt98
+    sub "𑐛" "ṭha"
+    sub "𑐟" "ta"
+    sub "𑐬" "ra"
+    sub "𑐠" "tha"
+    sub "𑐭" "r̤a"
+    sub "𑐡" "da"
+    sub "𑐮" "la"
+    sub "𑐢" "dha"
+    sub "𑐯" "l̤a"
+    sub "𑐣" "na"
+    sub "𑐜" "ḍa"
+    sub "𑐰" "va"
+    sub "𑐤" "n̤a"
+    sub "𑐱" "śa"
+    sub "𑐥" "pa"
+    sub "𑐲" "ṣa"
+    sub "𑐦" "pha"
+    sub "𑐳" "sa"
+    sub "𑐧" "ba"
+    sub "𑐴" "ha"
+    sub "𑐨" "bha"
+    sub "𑑄" "ṁ"
+    sub "𑐩" "ma"
+    sub "𑑃" "m̐"
+    sub "𑐪" "m̤a"
+    sub "𑑅" "ḥ"
+    sub "𑐫" "ya"
+    sub "𑑇" "'"
+    sub "𑐝" "ḍha"
+    sub "𑐞" "ṇa"
+    sub "𑑂" ""
+    sub "𑑂" "·" when opt10
+    sub "‍" ""
+    sub "‍" "=" when opt99
+    sub "𑑐" "0"
+    sub "𑑑" "1"
+    sub "𑑒" "2"
+    sub "𑑓" "3"
+    sub "𑑔" "4"
+    sub "𑑕" "5"
+    sub "𑑖" "6"
+    sub "𑑗" "7"
+    sub "𑑘" "8"
+    sub "𑑙" "9"
+  }
+
+  compose
+}
+}
