@@ -1,0 +1,228 @@
+system "ISO:ben-Beng:Latn:15919-2026" {
+
+metadata {
+  authority_id iso
+  id 15919-2026
+  language iso-639-2:ben
+  source_script Beng
+  destination_script Latn
+  name "ISO/DIS 15919 (2026) Information and documentation -- Transliteration of Indic scripts into Latin characters (Bengali (and Assamese); DIS stage)"
+  url https://www.iso.org/committee/48820.html
+  creation_date 2026
+  adoption_date 2026
+  description {    Second edition (DIS stage) of ISO 15919, Transliteration of Indic scripts into Latin characters.
+    Encoded from the committee ballot ISO/TC 46/WG 3 N125; per-script tables of clause 7,
+    numerals of normative Annex A, Rule 17 Vedic accents, and options 9.8/9.9/9.10 as
+    selectable variants (languages opt98 opt99 opt10). See notes for provenance and errata.  }
+
+  notes {
+    note "Encoded from ISO/DIS 15919 (2026), ISO/TC 46/WG 3 N125 (DIS stage draft, 2026-01-26), Table 7.2 plus the numerals of normative Annex A Table A.2; shared-table content verified against ISO/CD 15919 (2025, N108) and ISO 15919 WD (2024, N88). The DIS is not yet a published International Standard."
+    note "Rule 2 convention: inherent a with a consonant is always transliterated (consonant rows carry the inherent a)."
+    note "virama is deleted in the default behavior (clause 6 printed virama hex list); option 9.10 (language selector opt10) instead renders virama as middle dot U+00B7."
+    note "Option selectors (W3 languages, single-select): opt98 = clause 9.8 upper-case for all initial vowels (first letter capitalised for digraph outputs); opt99 = clause 9.9 unusual conjuncts marked with equals sign U+003D via the script's zero-width joiner; opt10 = clause 9.10 explicit virama middle dot. Option 9.1 (non-uniform e/o) is available by character substitution on outputs and is not separately staged."
+    note "DIS erratum recorded: Table 7.2 row ba+nukta (09AC 09BC) prints Latin 'wa' with Hex 0066 (contradiction); the Latin text 'wa' is encoded."
+    note "Cross-check (audit axis): Wikipedia ISO 15919 table (2001-reflected) vs corpus map agreement 44/66 printed rows; systematic divergences recorded as findings, not fixes: vocalic r/l rows (corpus ṛ-family vs ISO r̥-family), long e/o rows (corpus e/o vs ISO ē/ō), avagraha (corpus :’ vs ISO ')."
+    note "Row-level source errata encoded per printed text: Table 7.2 row ['ব়']: latin/hex mismatch: text='wa' hex=0066"
+    note "The precomposed nukta letters 09DC 09DD 09DF are encoded alongside their decomposed combinations (clause 7.3: precomposed and decomposed characters are treated equally on input)."
+  }
+}
+
+languages opt98 opt99 opt10
+
+tests {
+   "অ" ->  "a"
+   "ক" ->  "ka"
+   "আ" ->  "ā"
+   "া" ->  "ā"
+   "খ" ->  "kha"
+   "ই" ->  "i"
+   "ি" ->  "i"
+   "গ" ->  "ga"
+   "ঈ" ->  "ī"
+   "ী" ->  "ī"
+   "ঘ" ->  "gha"
+   "উ" ->  "u"
+   "ু" ->  "u"
+   "ঙ" ->  "ṅa"
+   "ঊ" ->  "ū"
+   "ূ" ->  "ū"
+   "চ" ->  "ca"
+   "ঋ" ->  "r̥"
+   "ৃ" ->  "r̥"
+   "ছ" ->  "cha"
+   "ৠ" ->  "r̥̄"
+   "ৄ" ->  "r̥̄"
+   "জ" ->  "ja"
+   "ঌ" ->  "l̥"
+   "ৢ" ->  "l̥"
+   "ঝ" ->  "jha"
+   "ৡ" ->  "l̥̄"
+   "ৣ" ->  "l̥̄"
+   "ঞ" ->  "ña"
+   "এ" ->  "ē"
+   "ে" ->  "ē"
+   "ট" ->  "ṭa"
+   "ঐ" ->  "ai"
+   "ৈ" ->  "ai"
+   "ঠ" ->  "ṭha"
+   "ও" ->  "ō"
+   "ো" ->  "ō"
+   "ড" ->  "ḍa"
+   "ঔ" ->  "au"
+   "ৌ" ->  "au"
+   "ঢ" ->  "ḍha"
+   "ত" ->  "ta"
+   "ল" ->  "la"
+   "থ" ->  "tha"
+   "ৱ" ->  "va"
+   "দ" ->  "da"
+   "শ" ->  "śa"
+   "ধ" ->  "dha"
+   "ষ" ->  "ṣa"
+   "ন" ->  "na"
+   "স" ->  "sa"
+   "প" ->  "pa"
+   "হ" ->  "ha"
+   "ফ" ->  "pha"
+   "ড়" ->  "ṛa"
+   "ব" ->  "ba"
+   "ঢ়" ->  "ṛha"
+   "ভ" ->  "bha"
+   "জ়" ->  "za"
+   "ম" ->  "ma"
+   "ব়" ->  "wa"
+   "য" ->  "ya"
+   "ং" ->  "ṁ"
+   "য়" ->  "ẏa"
+   "ঁ" ->  "m̐"
+   "র" ->  "ra"
+   "ঃ" ->  "ḥ"
+   "ৰ" ->  "ṟa"
+   "ঽ" ->  "'"
+   "০" ->  "0"
+   "১" ->  "1"
+   "২" ->  "2"
+   "৩" ->  "3"
+   "৪" ->  "4"
+   "৫" ->  "5"
+   "৬" ->  "6"
+   "৭" ->  "7"
+   "৮" ->  "8"
+   "৯" ->  "9"
+   "ণ" ->  "ṇa"
+   "ড়" ->  "ṛa"
+   "ঢ়" ->  "ṛha"
+   "য়" ->  "ẏa"
+}
+
+stage main {
+
+  # Table 7.2 rows (clause 7), Table A.2 numerals, clause 6 virama, options 9.8/9.9/9.10
+  parallel {
+
+    sub "অ" "a"
+    sub "অ" "A" when opt98
+    sub "ক" "ka"
+    sub "আ" "ā"
+    sub "া" "ā"
+    sub "আ" "Ā" when opt98
+    sub "খ" "kha"
+    sub "ই" "i"
+    sub "ি" "i"
+    sub "ই" "I" when opt98
+    sub "গ" "ga"
+    sub "ঈ" "ī"
+    sub "ী" "ī"
+    sub "ঈ" "Ī" when opt98
+    sub "ঘ" "gha"
+    sub "উ" "u"
+    sub "ু" "u"
+    sub "উ" "U" when opt98
+    sub "ঙ" "ṅa"
+    sub "ঊ" "ū"
+    sub "ূ" "ū"
+    sub "ঊ" "Ū" when opt98
+    sub "চ" "ca"
+    sub "ঋ" "r̥"
+    sub "ৃ" "r̥"
+    sub "ঋ" "R̥" when opt98
+    sub "ছ" "cha"
+    sub "ৠ" "r̥̄"
+    sub "ৄ" "r̥̄"
+    sub "ৠ" "R̥̄" when opt98
+    sub "জ" "ja"
+    sub "ঌ" "l̥"
+    sub "ৢ" "l̥"
+    sub "ঌ" "L̥" when opt98
+    sub "ঝ" "jha"
+    sub "ৡ" "l̥̄"
+    sub "ৣ" "l̥̄"
+    sub "ৡ" "L̥̄" when opt98
+    sub "ঞ" "ña"
+    sub "এ" "ē"
+    sub "ে" "ē"
+    sub "এ" "Ē" when opt98
+    sub "ট" "ṭa"
+    sub "ঐ" "ai"
+    sub "ৈ" "ai"
+    sub "ঐ" "Ai" when opt98
+    sub "ঠ" "ṭha"
+    sub "ও" "ō"
+    sub "ো" "ō"
+    sub "ও" "Ō" when opt98
+    sub "ড" "ḍa"
+    sub "ঔ" "au"
+    sub "ৌ" "au"
+    sub "ঔ" "Au" when opt98
+    sub "ঢ" "ḍha"
+    sub "ণ" "ṇa"
+    sub "ত" "ta"
+    sub "ল" "la"
+    sub "থ" "tha"
+    sub "ৱ" "va"
+    sub "দ" "da"
+    sub "শ" "śa"
+    sub "ধ" "dha"
+    sub "ষ" "ṣa"
+    sub "ন" "na"
+    sub "স" "sa"
+    sub "প" "pa"
+    sub "হ" "ha"
+    sub "ফ" "pha"
+    sub "ড়" "ṛa"
+    sub "ড়" "ṛa"  # precomposed (clause 7.3: precomposed and decomposed equal on input)
+    sub "ব" "ba"
+    sub "ঢ়" "ṛha"
+    sub "ঢ়" "ṛha"  # precomposed (clause 7.3: precomposed and decomposed equal on input)
+    sub "ভ" "bha"
+    sub "জ়" "za"
+    sub "ম" "ma"
+    sub "ব়" "wa"
+    sub "য" "ya"
+    sub "ং" "ṁ"
+    sub "য়" "ẏa"
+    sub "য়" "ẏa"  # precomposed (clause 7.3: precomposed and decomposed equal on input)
+    sub "ঁ" "m̐"
+    sub "র" "ra"
+    sub "ঃ" "ḥ"
+    sub "ৰ" "ṟa"
+    sub "ঽ" "'"
+    sub "্" ""
+    sub "্" "·" when opt10
+    sub "‍" ""
+    sub "‍" "=" when opt99
+    sub "০" "0"
+    sub "১" "1"
+    sub "২" "2"
+    sub "৩" "3"
+    sub "৪" "4"
+    sub "৫" "5"
+    sub "৬" "6"
+    sub "৭" "7"
+    sub "৮" "8"
+    sub "৯" "9"
+  }
+
+  compose
+}
+}

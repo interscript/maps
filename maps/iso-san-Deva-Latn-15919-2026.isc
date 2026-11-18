@@ -127,6 +127,14 @@ tests {
    "७" ->  "7"
    "८" ->  "8"
    "९" ->  "9"
+   "य़" ->  "ẏa"
+   "फ़" ->  "fa"
+   "ढ़" ->  "ṛha"
+   "ड़" ->  "ṛa"
+   "ज़" ->  "za"
+   "ग़" ->  "ġa"
+   "ख़" ->  "k͟ha"
+   "क़" ->  "qa"
 }
 
 stage main {
@@ -215,6 +223,7 @@ stage main {
     sub "म" "ma"
     sub "य" "ya"
     sub "य़" "ẏ"
+    sub "य़" "ẏa"  # precomposed (clause 7.3: precomposed and decomposed equal on input)
     sub "र" "ra"
     sub "ऱ" "ṟa"
     sub "ल" "la"
@@ -226,13 +235,20 @@ stage main {
     sub "स" "sa"
     sub "ह" "ha"
     sub "क़" "qa"
+    sub "क़" "qa"  # precomposed (clause 7.3: precomposed and decomposed equal on input)
     sub "ख़" "k͟ha"
+    sub "ख़" "k͟ha"  # precomposed (clause 7.3: precomposed and decomposed equal on input)
     sub "ग़" "ġa"
+    sub "ग़" "ġa"  # precomposed (clause 7.3: precomposed and decomposed equal on input)
     sub "ज़" "za"
+    sub "ज़" "za"  # precomposed (clause 7.3: precomposed and decomposed equal on input)
     sub "ड़" "ṛa"
+    sub "ड़" "ṛa"  # precomposed (clause 7.3: precomposed and decomposed equal on input)
     sub "ॹ" "źa"
     sub "ढ़" "ṛha"
+    sub "ढ़" "ṛha"  # precomposed (clause 7.3: precomposed and decomposed equal on input)
     sub "फ़" "fa"
+    sub "फ़" "fa"  # precomposed (clause 7.3: precomposed and decomposed equal on input)
     sub "ऱ्" "r̆"  # Table 7.1 printed row: ṟa + virāma (0931 094D), footnote b
     sub "र्‍" "r̆"  # footnote b: implementations might also encounter ra + virāma + ZWJ (0930 094D 200D)
     sub "ं" "ṁ"  # Rules 3, 5, 8

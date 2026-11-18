@@ -1,0 +1,208 @@
+system "ISO:kas-Shrd:Latn:15919-2026" {
+
+metadata {
+  authority_id iso
+  id 15919-2026
+  language iso-639-2:kas
+  source_script Shrd
+  destination_script Latn
+  name "ISO/DIS 15919 (2026) Information and documentation -- Transliteration of Indic scripts into Latin characters (Kashmiri (Sharada); DIS stage)"
+  url https://www.iso.org/committee/48820.html
+  creation_date 2026
+  adoption_date 2026
+  description {    Second edition (DIS stage) of ISO 15919, Transliteration of Indic scripts into Latin characters.
+    Encoded from the committee ballot ISO/TC 46/WG 3 N125; per-script tables of clause 7,
+    numerals of normative Annex A, Rule 17 Vedic accents, and options 9.8/9.9/9.10 as
+    selectable variants (languages opt98 opt99 opt10). See notes for provenance and errata.  }
+
+  notes {
+    note "Encoded from ISO/DIS 15919 (2026), ISO/TC 46/WG 3 N125 (DIS stage draft, 2026-01-26), Table 7.15 plus the numerals of normative Annex A Table A.2; shared-table content verified against ISO/CD 15919 (2025, N108) and ISO 15919 WD (2024, N88). The DIS is not yet a published International Standard."
+    note "Rule 2 convention: inherent a with a consonant is always transliterated (consonant rows carry the inherent a)."
+    note "virama is deleted in the default behavior (clause 6 printed virama hex list); option 9.10 (language selector opt10) instead renders virama as middle dot U+00B7."
+    note "Option selectors (W3 languages, single-select): opt98 = clause 9.8 upper-case for all initial vowels (first letter capitalised for digraph outputs); opt99 = clause 9.9 unusual conjuncts marked with equals sign U+003D via the script's zero-width joiner; opt10 = clause 9.10 explicit virama middle dot. Option 9.1 (non-uniform e/o) is available by character substitution on outputs and is not separately staged."
+  }
+}
+
+languages opt98 opt99 opt10
+
+tests {
+   "𑆃" ->  "a"
+   "𑆑" ->  "ka"
+   "𑆄" ->  "ā"
+   "𑆳" ->  "ā"
+   "𑆒" ->  "kha"
+   "𑆅" ->  "i"
+   "𑆴" ->  "i"
+   "𑆓" ->  "ga"
+   "𑆆" ->  "ī"
+   "𑆵" ->  "ī"
+   "𑆔" ->  "gha"
+   "𑆇" ->  "u"
+   "𑆶" ->  "u"
+   "𑆕" ->  "ṅa"
+   "𑆈" ->  "ū"
+   "𑆷" ->  "ū"
+   "𑆖" ->  "ca"
+   "𑆉" ->  "r̥"
+   "𑆸" ->  "r̥"
+   "𑆗" ->  "cha"
+   "𑆊" ->  "r̥̄"
+   "𑆹" ->  "r̥̄"
+   "𑆘" ->  "ja"
+   "𑆋" ->  "l̥"
+   "𑆺" ->  "l̥"
+   "𑆙" ->  "jha"
+   "𑆌" ->  "l̥̄"
+   "𑆻" ->  "l̥̄"
+   "𑆚" ->  "ña"
+   "𑆍" ->  "ē"
+   "𑆼" ->  "ē"
+   "𑆛" ->  "ṭa"
+   "𑆎" ->  "ai"
+   "𑆽" ->  "ai"
+   "𑆜" ->  "ṭha"
+   "𑆏" ->  "ō"
+   "𑆾" ->  "ō"
+   "𑆝" ->  "ḍa"
+   "𑆐" ->  "au"
+   "𑆿" ->  "au"
+   "𑆞" ->  "ḍha"
+   "𑆠" ->  "ta"
+   "𑆪" ->  "ya"
+   "𑆡" ->  "tha"
+   "𑆫" ->  "ra"
+   "𑆢" ->  "da"
+   "𑆬" ->  "la"
+   "𑆣" ->  "dha"
+   "𑆭" ->  "ḷa"
+   "𑆤" ->  "na"
+   "𑆮" ->  "va"
+   "𑆥" ->  "pa"
+   "𑆯" ->  "śa"
+   "𑆦" ->  "pha"
+   "𑆰" ->  "ṣa"
+   "𑆧" ->  "ba"
+   "𑆱" ->  "sa"
+   "𑆨" ->  "bha"
+   "𑆲" ->  "ha"
+   "𑆩" ->  "ma"
+   "𑇐" ->  "0"
+   "𑇑" ->  "1"
+   "𑇒" ->  "2"
+   "𑇓" ->  "3"
+   "𑇔" ->  "4"
+   "𑇕" ->  "5"
+   "𑇖" ->  "6"
+   "𑇗" ->  "7"
+   "𑇘" ->  "8"
+   "𑇙" ->  "9"
+   "𑆟" ->  "ṇa"
+   "𑆀" ->  "m̐"
+   "𑆁" ->  "ṁ"
+   "𑆂" ->  "ḥ"
+   "𑇁" ->  "'"
+}
+
+stage main {
+
+  # Table 7.15 rows (clause 7), Table A.2 numerals, clause 6 virama, options 9.8/9.9/9.10
+  parallel {
+
+    sub "𑆃" "a"
+    sub "𑆃" "A" when opt98
+    sub "𑆑" "ka"
+    sub "𑆄" "ā"
+    sub "𑆳" "ā"
+    sub "𑆄" "Ā" when opt98
+    sub "𑆒" "kha"
+    sub "𑆅" "i"
+    sub "𑆴" "i"
+    sub "𑆅" "I" when opt98
+    sub "𑆓" "ga"
+    sub "𑆆" "ī"
+    sub "𑆵" "ī"
+    sub "𑆆" "Ī" when opt98
+    sub "𑆔" "gha"
+    sub "𑆇" "u"
+    sub "𑆶" "u"
+    sub "𑆇" "U" when opt98
+    sub "𑆕" "ṅa"
+    sub "𑆈" "ū"
+    sub "𑆷" "ū"
+    sub "𑆈" "Ū" when opt98
+    sub "𑆖" "ca"
+    sub "𑆉" "r̥"
+    sub "𑆸" "r̥"
+    sub "𑆉" "R̥" when opt98
+    sub "𑆗" "cha"
+    sub "𑆊" "r̥̄"
+    sub "𑆹" "r̥̄"
+    sub "𑆊" "R̥̄" when opt98
+    sub "𑆘" "ja"
+    sub "𑆋" "l̥"
+    sub "𑆺" "l̥"
+    sub "𑆋" "L̥" when opt98
+    sub "𑆙" "jha"
+    sub "𑆌" "l̥̄"
+    sub "𑆻" "l̥̄"
+    sub "𑆌" "L̥̄" when opt98
+    sub "𑆚" "ña"
+    sub "𑆍" "ē"
+    sub "𑆼" "ē"
+    sub "𑆍" "Ē" when opt98
+    sub "𑆛" "ṭa"
+    sub "𑆎" "ai"
+    sub "𑆽" "ai"
+    sub "𑆎" "Ai" when opt98
+    sub "𑆜" "ṭha"
+    sub "𑆏" "ō"
+    sub "𑆾" "ō"
+    sub "𑆏" "Ō" when opt98
+    sub "𑆝" "ḍa"
+    sub "𑆐" "au"
+    sub "𑆿" "au"
+    sub "𑆐" "Au" when opt98
+    sub "𑆞" "ḍha"
+    sub "𑆟" "ṇa"
+    sub "𑆠" "ta"
+    sub "𑆪" "ya"
+    sub "𑆡" "tha"
+    sub "𑆫" "ra"
+    sub "𑆢" "da"
+    sub "𑆬" "la"
+    sub "𑆣" "dha"
+    sub "𑆭" "ḷa"
+    sub "𑆤" "na"
+    sub "𑆮" "va"
+    sub "𑆥" "pa"
+    sub "𑆯" "śa"
+    sub "𑆦" "pha"
+    sub "𑆰" "ṣa"
+    sub "𑆧" "ba"
+    sub "𑆱" "sa"
+    sub "𑆨" "bha"
+    sub "𑆲" "ha"
+    sub "𑆩" "ma"
+    sub "𑆀" "m̐"
+    sub "𑆁" "ṁ"
+    sub "𑆂" "ḥ"
+    sub "𑇁" "'"  # avagraha
+    sub "𑇀" ""
+    sub "𑇀" "·" when opt10
+    sub "‍" ""
+    sub "‍" "=" when opt99
+    sub "𑇐" "0"
+    sub "𑇑" "1"
+    sub "𑇒" "2"
+    sub "𑇓" "3"
+    sub "𑇔" "4"
+    sub "𑇕" "5"
+    sub "𑇖" "6"
+    sub "𑇗" "7"
+    sub "𑇘" "8"
+    sub "𑇙" "9"
+  }
+
+  compose
+}
+}
