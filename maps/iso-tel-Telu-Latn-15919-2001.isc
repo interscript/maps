@@ -33,6 +33,7 @@ metadata {
     note "If a character in an Indic script is defined in such a way as to be equivalent to another character in any\n script, where the second character has a transliteration in this International Standard, then the first character shall\n be transliterated in the same way as the second character."
     note "When the half-nasal in Telugu script is used for modern nasalization in writing Hindi or\n any other language, it shall be transliterated as a tilde above the transliterated vowel. In the case of the digraphs ai,\n au, the tilde shall be attached to the second vowel"
     note "Where it is desired to show the Vedic accent Anudatta, it should be transliterated as an underscore. In the case of\n the digraphs ai, au, both Latin vowels should be underscored.\n Where word boundaries are not shown in the original text (as happens commonly in Sanskrit) and a word ends in a\n consonant, the transliteration should show word division by a space; but when phonological processes result in two\n words sharing a common vowel, no attempt should be made to separate them. This will require a good knowledge\n of the language in question."
+    note "Adjudicated against the published ISO 15919:2001 edition: Table 7 ref 001 (ardhasunna, U+0C00) prints n with breve, Rule 7; ref 001a (U+0C01, footnote b: used in Sanskrit) prints m with dot below (1E43); ref 052a (U+0C34) prints la with line below + inherent a (1E3B 0061). Ref 026a (ca with nukta, c with circumflex) has no Unicode character and is not encodable; ref 028a (za) is printed via the ja + nukta combination already encoded."
   }
 }
 
@@ -48,6 +49,9 @@ tests {
    "ఇప్పుడు ఆ వీడియో వైరల్‌ అయింది. ‘ఆ కెమెరాను కొనాలనేది చాలాకాలంగా నా కల." ->  "ipapauḍau ā vaīḍaiyaō vaairala ayaiṁdai. ‘ā kaemaeraānau kaonaālanaēdai caālaākaālaṁgaā naā kala."
    "మరో వైపు ఎన్టీఆర్‌, రామ్‌చరణ్‌ కలిసి ట్రిపుల్‌ ఆర్‌ సినిమాలో నటిస్తున్నారు" ->  "maraō vaaipau enaṭaīāra, raāmacaraṇa kalaisai ṭaraipaula āra sainaimaālaō naṭaisataunanaārau"
    "౪౬౨౬౯" ->  "46269"
+   "ఀ" ->  "n̆"
+   "ఁ" ->  "ṃ"
+   "ఴ" ->  "ḻa"
 }
 
 stage main {
@@ -165,6 +169,9 @@ stage main {
     sub "ఽ" ":’"
 
 
+    sub "ఀ" "n̆"
+    sub "ఁ" "ṃ"
+    sub "ఴ" "ḻa"
     sub "\u0c4d" ""
     sub "ౕ\t" ""
     sub "ౖ\t" ""

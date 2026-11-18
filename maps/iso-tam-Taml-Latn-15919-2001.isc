@@ -33,6 +33,7 @@ metadata {
     note "If a character in an Indic script is defined in such a way as to be equivalent to another character in any\n script, where the second character has a transliteration in this International Standard, then the first character shall\n be transliterated in the same way as the second character."
     note "Numerals in Tamil scripts shall be converted into decimal notation on transliteration, where\n necessary."
     note "Where it is desired to show the Vedic accent Anudatta, it should be transliterated as an underscore. In the case of\n the digraphs ai, au, both Latin vowels should be underscored.\n Where word boundaries are not shown in the original text (as happens commonly in Sanskrit) and a word ends in a\n consonant, the transliteration should show word division by a space; but when phonological processes result in two\n words sharing a common vowel, no attempt should be made to separate them. This will require a good knowledge\n of the language in question."
+    note "Adjudicated against the published ISO 15919:2001 edition: Table 6 prints no Tamil anusvara (U+0B82) row and neither does the second edition's Table 7.6; the anusvara row seen in modern secondary transcriptions is out of scope and is not encoded. The official Tamil special rows (refs 177, 169, 180, 131) are all encoded."
   }
 }
 

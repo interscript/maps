@@ -158,6 +158,26 @@ The second edition is encoded from the committee ballot draft and is
 not yet a published International Standard; each map's notes record
 the ballot document and the DIS errata found during encoding.
 
+The published first edition (ISO 15919:2001) is in the project's
+reference collection and adjudicates the 2001-edition maps: the
+Sinhala vocalic vowels are the ring-below family (Table 10 refs
+141-144); the Vedic accent letters jihvamuliya and upadhmaniya are
+transliterated h with dot below + combining macron below and h with
+dot below + combining breve below (Table 1 refs 003a/003b, Table 8
+refs 131a/131b), not the second edition's single-character forms; the
+Devanagari eyelash-ra row (Table 1 ref 048a) prints r with breve; the
+official Devanagari table carries the Perso-Arabic nuqta column
+(refs 088-094, encoded); the official Kannada table prints U+0CDE as
+la with line below (ref 222) and the za/fa values as nukta
+combinations; the official Malayalam table prints no ttta row (the
+U+0D3A row of modern secondary transcriptions is out of scope); the
+official Telugu table prints ardhasunna as n with breve (ref 001,
+Rule 7), candrabindu as m with dot below (ref 001a) and la with line
+below (ref 052a); the official Tamil table prints no anusvara row.
+Rows of the official tables that use characters outside ISO/IEC
+10646-1:2000 which Unicode never adopted, and the Sinhala table's
+Pali-usage alternative readings, are documented in the maps' notes.
+
 == BSI
 
 [cols="1,2,2",options="header"]
