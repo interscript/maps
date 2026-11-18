@@ -13,17 +13,19 @@ metadata {
     into Latin characters, relaxing the stringent prescriptions of ISO 259:1984;
     intended for the processing of bibliographic information (catalogues, indexes,
     references). First edition 1994-12-15, prepared by ISO/TC 46, corrected and
-    reprinted 1995-07-15. This map encodes Table 1 (consonants, 43 rows) and
-    Table 2 (vowel signs, 44-55).
+    reprinted 1995-07-15. This map encodes Table 1 (consonants, 43 rows),
+    Table 2 (vowel signs, 44-55) and Table 3 (non-Hebrew phonemes and
+    abbreviation symbols).
   }
 
   notes {
-    note "The simplified system marks the dagesh of rows 3, 5, 7, 9, 11, 13, 18, 20, 24, 26, 28 and 31 with the dot above (U+0307); the dagesh rows 16, 22, 33, 35, 38, 39, 41 and 43 render unmarked and their dagesh sign is absorbed. Clause 3.3: one character of constant form per letter, so final forms take their letter's row. Row 38 is a typographic variant of row 37 (one Unicode sequence U+05E9 U+05C1, raised caron) and maps identically to row 37."
+    note "The simplified system marks the dagesh of rows 3, 9, 20 and 31 with the dot above (Annex A, 4/7), and row 11 (shuruq) renders U+1E87 as row 52 of Table 2 (the same sequence U+05D5 U+05BC, Annex A 4/7). The dagesh of rows 5, 7, 13, 18, 24, 26 and 28 is not marked (plain letter); rows 16 and 33 keep only the dot below of their base output, rows 39 and 41 only the caron or acute, and rows 22, 35 and 43 render the plain letter. Clause 3.3: one character of constant form per letter, so final forms take their letter's row. Row 38 is a typographic variant of row 37 (one Unicode sequence U+05E9 U+05C1, raised caron, Annex A 4/15) and maps identically to row 37."
     note "NOTE to Table 2: the shva (U+05B0) is not rendered and is deleted. Waw+holam renders U+0175 (row 51; input forms U+05D5 U+05B9, U+05BA and U+FB4B); waw+dagesh (shuruq) renders U+1E87 (rows 11 and 52 are the same sequence U+05D5 U+05BC)."
+    note "Table 3: gimel-geresh, zayin-geresh and tsadi-geresh render as their Table 1 letters plus U+02B9 (g + U+02B9, z + U+02B9, U+1E63 + U+02B9), per the recommendation to use the table 1 letters marked with the same diacritical mark as the original. Geresh U+05F3 renders as U+02B9 at the end of an abbreviation; gershayim U+05F4 renders as U+02BA between the last two letters (the Hebrew placement is preserved by pass-through); the period passes through unchanged. The standard's own unpointed examples read Gʹin / Zʹan (yod and alef as vowel bearers); this map renders the table rows strictly (g + U+02B9 + y + n; z + U+02B9 + alef + n)."
     note "Unpointed shin U+05E9 renders as shin with sin dot (row 37, U+0161). Alphabetic Presentation Forms equal to their decompositions (U+FB2A-U+FB2D and the point-bearing letter forms U+FB30-U+FB3C, U+FB3E, U+FB40, U+FB41, U+FB43, U+FB44, U+FB46-U+FB4E) are accepted as input and render by their table rows; the rafe forms U+FB4C, U+FB4D and U+FB4E render as the bare letter (no table rafe row). Composed letter+vowel forms and the alef-lamed ligature U+FB4F are out of scope and pass through."
-    note "Marks outside Tables 1-2 are deleted: teamim (U+0591-U+05AF), meteg (U+05BD), rafe (U+05BF), upper dot (U+05C4), lower dot (U+05C5), qamats qatan (U+05C7) and residual dagesh (U+05BC), shin dot (U+05C1) and sin dot (U+05C2). The geresh and gershayim abbreviation rules of the standard were not reachable in the source previews and are not encoded; maqaf U+05BE, paseq U+05C0, sof pasuq U+05C3, nun hafukha U+05C6 and the Hebrew ligatures U+05F0-U+05F2 pass through unchanged."
+    note "Marks outside Tables 1-3 are deleted: teamim (U+0591-U+05AF), meteg (U+05BD), rafe (U+05BF), upper dot (U+05C4), lower dot (U+05C5), qamats qatan (U+05C7) and residual dagesh (U+05BC), shin dot (U+05C1) and sin dot (U+05C2). Maqaf U+05BE, paseq U+05C0, sof pasuq U+05C3, nun hafukha U+05C6 and the Hebrew ligatures U+05F0-U+05F2 are outside the standard's tables and pass through unchanged."
     note "Mark-order normalization moves dagesh and the shin/sin dots next to their base letter (canonical combining order places the vowel signs first). Letter-first legacy stacks and canonical NFC stacks are fully handled; a fully non-canonical stack (vowel, shin dot, dagesh) may leave the dagesh unrendered."
-    note "Encoded from the F-edition of ISO 259-2:1994 (corrected and reprinted 1995-07-15) cross-checked against the SIST ISO 259-2:2005(en) E-edition reprint; both source previews end at the tables, so the informative Annexes A and B and the notes beyond the NOTE to Table 2 are not represented."
+    note "Encoded from the official ISO 259-2:1994(E) edition (corrected and reprinted 1995-07-15) and verified cell for cell against its Tables 1-3 and Annex A; the official text supersedes earlier preview-derived readings (the preview renders had been read as dotting the dagesh of rows 5, 7, 13, 18, 24, 26 and 28, which the official text shows plain). The informative Annex A (diacritical-sign positions) and Annex B (names of the Hebrew characters) are covered by the official text; clause 2.8 capitalization follows national usage and is not applied by this map."
   }
 }
 
@@ -33,32 +35,39 @@ tests {
    "ב" ->  "b"
    "בּ" ->  "ḃ"
    "ג" ->  "g"
-   "גּ" ->  "ḡ"
+  # row 5 renders unmarked
+   "גּ" ->  "g"
    "ד" ->  "d"
-   "דּ" ->  "ḋ"
+  # row 7 renders unmarked
+   "דּ" ->  "d"
    "ה" ->  "h"
    "הּ" ->  "ḣ"
    "ו" ->  "w"
    "וּ" ->  "ẇ"
    "ז" ->  "z"
-   "זּ" ->  "ż"
+  # row 13 renders unmarked
+   "זּ" ->  "z"
    "ח" ->  "ḥ"
    "ט" ->  "ṭ"
   # row 16 renders unmarked
    "טּ" ->  "ṭ"
    "י" ->  "y"
-   "יּ" ->  "ẏ"
+  # row 18 renders unmarked
+   "יּ" ->  "y"
    "כ" ->  "k"
    "כּ" ->  "k̇"
    "ל" ->  "l"
   # row 22 renders unmarked
    "לּ" ->  "l"
    "מ" ->  "m"
-   "מּ" ->  "ṁ"
+  # row 24 renders unmarked
+   "מּ" ->  "m"
    "נ" ->  "n"
-   "נּ" ->  "ṅ"
+  # row 26 renders unmarked
+   "נּ" ->  "n"
    "ס" ->  "s"
-   "סּ" ->  "ṡ"
+  # row 28 renders unmarked
+   "סּ" ->  "s"
    "ע" ->  "ʿ̲"
    "פ" ->  "p"
    "פּ" ->  "ṗ"
@@ -117,10 +126,26 @@ tests {
    "שּׁ" ->  "š"
    "שּׂ" ->  "ś"
    "בּ" ->  "ḃ"
+   "גּ" ->  "g"
+   "דּ" ->  "d"
+   "זּ" ->  "z"
+   "יּ" ->  "y"
+   "מּ" ->  "m"
+   "נּ" ->  "n"
+   "סּ" ->  "s"
    "הּ" ->  "ḣ"
    "וּ" ->  "ẇ"
    "וֹ" ->  "ŵ"
    "בֿ" ->  "b"
+  # Table 3: non-Hebrew phonemes and abbreviation symbols
+  # (the print shows sentence-initial capitals and mater-vowel readings for
+  # the first two examples; this map renders the table rows strictly, yod
+  # row 17 -> y and alef row 1 -> alef mark + low line)
+   "ג׳ין" ->  "gʹyn"
+   "ז׳אן" ->  "zʹʾ̲n"
+   "פרופ׳" ->  "prwpʹ"
+   "ק״מ" ->  "qʺm"
+   "ד." ->  "d."
 }
 
 stage main {
@@ -286,36 +311,37 @@ stage main {
   parallel {
     # Table 2, row 51: waw + holam (before bare waw and bare holam)
     sub "וֹ" "ŵ"
-    # Table 1, rows 1-43: dagesh rows 3, 5, 7, 9, 11, 13, 18, 20, 24, 26, 28
-    # and 31 carry the dot above; rows 16, 22, 33, 35, 39, 41 and 43 render
-    # unmarked and absorb their dagesh
+    # Table 1, rows 1-43: dagesh rows 3, 9, 20 and 31 carry the dot above
+    # (row 11 shuruq renders as Table 2 row 52, U+1E87); the dagesh of rows
+    # 5, 7, 13, 16, 18, 22, 24, 26, 28, 33, 35, 39, 41 and 43 renders
+    # unmarked and is absorbed
     sub "א" "ʾ̲"
     sub "בּ" "ḃ"
     sub "ב" "b"
-    sub "גּ" "ḡ"
+    sub "גּ" "g"
     sub "ג" "g"
-    sub "דּ" "ḋ"
+    sub "דּ" "d"
     sub "ד" "d"
     sub "הּ" "ḣ"
     sub "ה" "h"
     sub "וּ" "ẇ"
     sub "ו" "w"
-    sub "זּ" "ż"
+    sub "זּ" "z"
     sub "ז" "z"
     sub "ח" "ḥ"
     sub "טּ" "ṭ"
     sub "ט" "ṭ"
-    sub "יּ" "ẏ"
+    sub "יּ" "y"
     sub "י" "y"
     sub "כּ" "k̇"
     sub "כ" "k"
     sub "לּ" "l"
     sub "ל" "l"
-    sub "מּ" "ṁ"
+    sub "מּ" "m"
     sub "מ" "m"
-    sub "נּ" "ṅ"
+    sub "נּ" "n"
     sub "נ" "n"
-    sub "סּ" "ṡ"
+    sub "סּ" "s"
     sub "ס" "s"
     sub "ע" "ʿ̲"
     sub "פּ" "ṗ"
@@ -353,19 +379,19 @@ stage main {
     sub "שּׂ" "ś"
     sub "אּ" "ʾ̲"
     sub "בּ" "ḃ"
-    sub "גּ" "ḡ"
-    sub "דּ" "ḋ"
+    sub "גּ" "g"
+    sub "דּ" "d"
     sub "הּ" "ḣ"
     sub "וּ" "ẇ"
-    sub "זּ" "ż"
+    sub "זּ" "z"
     sub "טּ" "ṭ"
-    sub "יּ" "ẏ"
+    sub "יּ" "y"
     sub "ךּ" "k̇"
     sub "כּ" "k̇"
     sub "לּ" "l"
-    sub "מּ" "ṁ"
-    sub "נּ" "ṅ"
-    sub "סּ" "ṡ"
+    sub "מּ" "m"
+    sub "נּ" "n"
+    sub "סּ" "s"
     sub "ףּ" "ṗ"
     sub "פּ" "ṗ"
     sub "צּ" "ṣ"
@@ -377,6 +403,9 @@ stage main {
     sub "בֿ" "b"
     sub "כֿ" "k"
     sub "פֿ" "p"
+    # Table 3: non-Hebrew phonemes and abbreviation symbols
+    sub "׳" "ʹ"
+    sub "״" "ʺ"
     # Table 2, vowel signs (rows 44-55; row 51 waw+holam above,
     # row 52 = row 11)
     sub "ֺ" "ŵ"
