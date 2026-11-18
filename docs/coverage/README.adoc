@@ -111,11 +111,27 @@ collection.
 |ISO 9:1995 |Cyrillic to Latin |`iso-rus-Cyrl-Latn-9-1995`
 |ISO 9984:1996 |Georgian to Latin |`iso-kat-Geor-Latn-9984-1996`
 |ISO/TR 11941:1996 |Korean to Latin, two methods |`iso-kor-Hang-Latn-1996-method1`, `iso-kor-Hang-Latn-1996-method2`
+|IS 13194:1991 (ISCII) |Indian scripts, Annex F/A romanization |`bis-dev-Deva-Latn-13194-1991`, `bis-ben-Beng-Latn-13194-1991`, `bis-asm-Beng-Latn-13194-1991`, `bis-guj-Gujr-Latn-13194-1991`, `bis-pnj-Guru-Latn-13194-1991`, `bis-ori-Orya-Latn-13194-1991`, `bis-tml-Taml-Latn-13194-1991`, `bis-tel-Telu-Latn-13194-1991`, `bis-kan-Kana-Latn-13194-1991`, `bis-mlm-Mlym-Latn-13194-1991`
 |===
 
-All three ISO documents in the collection have maps in the corpus. The
-corpus's other ISO maps, which implement ISO 233, ISO 843, ISO 3602,
-ISO 11940, and ISO 15919, have no source document in the collection.
+All three ISO documents in the collection have maps in the corpus, and
+the collection now also holds IS 13194:1991 (with Amendment No. 1,
+December 2010), the Indian script code standard whose Annex A alphabet
+correspondence and Annex F Roman script transliteration back the ten
+bis maps. The corpus's other ISO maps, which implement ISO 233, ISO 843,
+ISO 3602, ISO 11940, and ISO 15919, have no source document in the
+collection.
+
+=== IS 13194:1991 decisions
+
+The Annex F scheme renders Tamil/Malayalam zha and Devanagari
+lla-nukta with a dotted z; the maps use the dotted-z forms consistently.
+Gurmukhi letters with no Annex A correspondence (the standalone vowel
+carriers) keep the corpus's prior readings, flagged in the maps rather
+than invented against the source. Amendment No. 1 (December 2010)
+assigns ISCII position FC to the Indian Rupee symbol; the symbol is
+already Latin and passes through unchanged - recorded in every map's
+notes (the amendment postdates the 1991 scope).
 For ISO 15919 the remaining coverage beyond the corpus's 19 maps, and
 the blocked unlock paths, are recorded in `iso-15919-remainder.adoc`
 in this directory.
