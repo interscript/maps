@@ -117,6 +117,44 @@ All three ISO documents in the collection have maps in the corpus. The
 corpus's other ISO maps, which implement ISO 233, ISO 843, ISO 3602,
 ISO 11940, and ISO 15919, have no source document in the collection.
 
+=== ISO 15919, both editions
+
+ISO 15919 transliterates Devanagari and related Indic scripts into
+Latin. The corpus implements both editions:
+
+* First edition (2001): 19 language-scoped maps for the ten main
+  scripts (Devanagari, Bengali, Assamese, Gurmukhi, Gujarati, Odia,
+  Tamil, Telugu, Kannada, Malayalam) and the Pali/Prakrit/Sanskrit/
+  Hindi/Marathi/Nepali language maps, plus the 2026-11 remainder round:
+  the generic Sinhala map `iso-sin-Sinh-Latn-15919-2001` (the vocalic
+  vowel rows follow the ISO r-ring-below family per the normative
+  sources, with the corpus's Pali-scoped divergences recorded as
+  findings, not fixes), the Kaithi map `iso-inc-Kthi-Latn-15919-2001`,
+  and the per-script extension cells Malayalam U+0D3A → ṯa and
+  Kannada U+0CDE → ḻa added to `iso-mal-Mlym-Latn-15919-2001` and
+  `iso-kan-Kana-Latn-15919-2001`. The first edition's Vedic accents
+  (udatta acute, independent svarita grave, anudatta underscore over
+  the transliterated vowel) are output-accent rules rather than static
+  substitutions; they are documented in the notes of the corpus's
+  2001 Devanagari maps. The Perso-Arabic nuqta column of the first
+  edition is encoded in `iso-san-Deva-Latn-15919-2001`.
+* Second edition (DIS stage, ISO/TC 46/WG 3 N125): 17 script tables
+  7.1-7.17 encoded as `iso-*-15919-2026` maps (Devanagari, Bengali and
+  Assamese, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada,
+  Malayalam, Sinhala, Brahmi, Grantha, Kaithi, Modi, Sharada, Takri,
+  Newa), including the clause-6 virama list, Rule 17 Vedic accents
+  (U+1CF5 → U+1E96, U+1CF6 → U+1E2B, encoded in the Devanagari map),
+  the Annex A numerals, and options 9.8/9.9/9.10 as selectable
+  variants (`languages opt98 opt99 opt10`). Lao, Khmer, Thai, and
+  Tibetan do not appear anywhere in the DIS text (verified by
+  full-document scan against audit #300); Annex B scripts are
+  informative and clause 11 places their mappings outside the scope of
+  the standard.
+
+The second edition is encoded from the committee ballot draft and is
+not yet a published International Standard; each map's notes record
+the ballot document and the DIS errata found during encoding.
+
 == BSI
 
 [cols="1,2,2",options="header"]
