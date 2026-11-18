@@ -1,0 +1,233 @@
+system "BSI:rus-Cyrl:Latn:2979-1958" {
+
+metadata {
+  authority_id bsi
+  id 2979-1958
+  language iso-639-2:rus
+  source_script Cyrl
+  destination_script Latn
+  name "BS 2979:1958 Transliteration of Cyrillic and Greek characters - Table A, Russian column (the British system)"
+  url https://www.bsigroup.com
+  creation_date 1958
+  confirmation_date 1998-12
+  description {    BS 2979:1958, Table A, Russian column: the "British" system for (modern) Cyrillic.
+    Table A is a five-column family table (East Slavonic: Russian, Ukrainian,
+    Byelorussian; South Slavonic: Bulgarian, Serbian and Macedonian); this map is the
+    Russian column, all 48 rows of which are transcribed here (including the two the
+    scan previously could not resolve: 46 fita and 47 izhitsa as parenthesized obsolete
+    values; 45 is the old Bulgarian big-yus ligature with an empty Russian cell).
+    British Standard approved 30 July 1958, confirmed December 1998; the BSI 05-2000
+    reprint is the digitized edition.
+  }
+
+  notes {
+    note "PROVENANCE: transcribed visually from the held scan of BS 2979:1958 (BSI 05-2000 reprint; 24 PDF pages = printed inside front cover and pages i-v, 1-15). Every cell of the Russian column was read from the rendered pages at 6-30x zoom and cross-checked against the Table B (back transliteration) rows that cite the same Table A row numbers."
+    note "SCOPE: Section 1 (the British system for (modern) Cyrillic), Table A (Cyrillic-English transliteration, British system), Russian column, rows 1-48 upper and lower case plus digraph row 28+27 (Тс тс romanized t-s). The document's own Russian periodical-title examples (items 1-6 of the examples section inside the front cover) are embedded as tests. Section 1 NOTE 3 (the Serbian and Macedonian column gives the latinica) does not apply to this column; the other four columns of Table A are separate maps."
+    note "Section 1 NOTE 1. For extreme simplicity, when avoidance of ambiguity in back transliteration is not a paramount consideration, all accents, diacritics, etc., may be omitted in the English rendering. This map applies the table as printed, with the diacritics (the printed examples keep them too: ȳ in Promȳshlennost, Ĭ in Khozyaĭstvo)."
+    note "Section 1 NOTE 2. Cyrillic characters for which the transliteration is given in parentheses (і, ѣ, Ѳ, Ѵ, and the row 48 apostrophe), though no longer in official use, are sometimes found in the literature of the relevant language, e.g. in emigre or the older literature. This map renders them as given in the parentheses."
+    note "Section 1 NOTE 4. For transliteration of Moldavian, see Table C in Section 2 (ISO/R9). Sections 2 and 3 of the standard (the International system, Tables C/D/E/F, and Greek, Table G) are separate systems, not encoded here."
+    note "Row 38: the table gives the choice of right double quotation mark or straight double quotation mark for ъ; this map renders the right double quotation mark (U+201D). Row 40 likewise offers two apostrophe forms for ь; this map renders the right single quotation mark (U+2019)."
+    note "Row 28+27: the character sequence тс is romanized t-s with a hyphen, distinguishing it from ц, romanized ts."
+    note "Table A footnote: final ъ, now obsolete in Russian (and Bulgarian), is disregarded when encountered — implemented as a word-final rule deleting ъ/Ъ; non-final ъ carries the row 38 rendering."
+    note "Row 41 (ѣ, yat): the printed value is parenthesized ê (e with circumflex), cross-checked against Table B (Ë ë back-transliterates to Ѣ ѣ, row 41); row 8b (Ё) carries the caron ě — the two must not be conflated (an earlier transcription of this map had them swapped)."
+    note "Row 45 is the old Bulgarian ligature form of the big yus Ѫ, abandoned at the 1945 Bulgarian spelling reform (per the standard's Appendix: the characters ѣ and ѫ were abandoned at the time of the spelling reform of 1945); its Russian column cell is EMPTY (the parenthesized ū belongs to the Bulgarian column only) and it is therefore absent from this map. Row 46 (Ѳ ѳ, fita) is the parenthesized Ḟ ḟ — f with DOT above, not a macron, per Table B (F Ḟ / f ḟ back-transliterates to Ѳ ѳ). Row 47 (Ѵ ѵ, izhitsa) is the parenthesized Ŷ ŷ — y with CIRCUMFLEX (U+0176 U+0177), per Table A row 47 and Table B (Ŷ ŷ back-transliterates to Ѵ ѵ, row 47); the breve family belongs to row 17 (Ĭ ĭ) only."
+    note "Table B (Back transliteration: English-Cyrillic) is a separate Latin-to-Cyrillic table. Its Russian-relevant rows are recorded here: A to А (1), B to Б (2), C to Ц (33), Ĉ/Č/Ch to Ч (34), D to Д (6), E to Е (8a), Ě to Ё (8b), Ê to Э (42), Ë to Ѣ (41), F to Ф (31), Ḟ to Ѳ (46), G to Г (4), I to И (13), Ī to І (14), Ĭ to Й (17), K to К (18), Kh to Х (32), L to Л (19), M to М (21), N to Н (22), O to О (24), P to П (25), R to Р (26), S to С (27), Sh to Ш (36), Shch to Щ (37), T to Т (28), t-s to Тс (28+27), Ȳ to Ы (39), Ŷ to Ѵ (47), Ya to Я (44), Yu to Ю (43), Z to З (11), Ž/Zh to Ж (10), the double-quotation-mark forms to Ъ (38) and the apostrophe forms to Ь (40). The corpus encodes the forward direction only."
+    note "Examples section (Examples of titles of periodicals in Cyrillic with their British and International transliterations for comparison), items 1-6 Russian, British lines: transcribed as tests. Item 4's printed British rendering Sobranie departs from the table's я to ya (row 44; the same examples print Torgovlya, Khimiya, Observatoriya) — a 1958 typesetting inconsistency; the table governs and the word is not embedded as a test."
+  }
+}
+
+tests {
+  # document examples (Russian items 1-6, British lines)
+   "Бюллетень" ->  "Byulleten’"
+   "Энгельгардтовская Астрономическая Обсерватория" ->  "Éngel’gardtovskaya Astronomicheskaya Observatoriya"
+   "Гидротехническое Строительство. Москва" ->  "Gidrotekhnicheskoe Stroitel’stvo. Moskva"
+   "Извѣстія Общества Археологіи, Исторіи и Этнографіи" ->  "Izvêstiya Obshchestva Arkheologii, Istorii i Étnografii"
+   "Техника, Промышленность и Торговля" ->  "Tekhnika, Promȳshlennost’ i Torgovlya"
+   "Химия и социалистическое Хозяйство. Москва" ->  "Khimiya i sotsialisticheskoe Khozyaĭstvo. Moskva"
+  # item 4 fragment (Академии Наук, Ленинград table-consistent; printed Sobranie deviates, see notes)
+   "Академии Наук" ->  "Akademii Nauk"
+   "Ленинград" ->  "Leningrad"
+   "Известия" ->  "Izvestiya"
+   "Москва" ->  "Moskva"
+  # final-ъ footnote: final ъ is disregarded; non-final ъ carries row 38
+   "Херсонъ" ->  "Kherson"
+   "объект" ->  "ob”ekt"
+   "подъезд" ->  "pod”ezd"
+  # table rows, upper and lower
+   "А" ->  "A"
+   "а" ->  "a"
+   "Б" ->  "B"
+   "б" ->  "b"
+   "В" ->  "V"
+   "в" ->  "v"
+   "Г" ->  "G"
+   "г" ->  "g"
+   "Д" ->  "D"
+   "д" ->  "d"
+   "Е" ->  "E"
+   "е" ->  "e"
+   "Ё" ->  "Ě"
+   "ё" ->  "ě"
+   "Ж" ->  "Zh"
+   "ж" ->  "zh"
+   "З" ->  "Z"
+   "з" ->  "z"
+   "И" ->  "I"
+   "и" ->  "i"
+   "Й" ->  "Ĭ"
+   "й" ->  "ĭ"
+   "К" ->  "K"
+   "к" ->  "k"
+   "Л" ->  "L"
+   "л" ->  "l"
+   "М" ->  "M"
+   "м" ->  "m"
+   "Н" ->  "N"
+   "н" ->  "n"
+   "О" ->  "O"
+   "о" ->  "o"
+   "П" ->  "P"
+   "п" ->  "p"
+   "Р" ->  "R"
+   "р" ->  "r"
+   "С" ->  "S"
+   "с" ->  "s"
+   "Т" ->  "T"
+   "т" ->  "t"
+   "Тс" ->  "T-s"
+   "тс" ->  "t-s"
+   "У" ->  "U"
+   "у" ->  "u"
+   "Ф" ->  "F"
+   "ф" ->  "f"
+   "Х" ->  "Kh"
+   "х" ->  "kh"
+   "Ц" ->  "Ts"
+   "ц" ->  "ts"
+   "Ч" ->  "Ch"
+   "ч" ->  "ch"
+   "Ш" ->  "Sh"
+   "ш" ->  "sh"
+   "Щ" ->  "Shch"
+   "щ" ->  "shch"
+   # standalone ъ is word-final: the Table A footnote disregards it (row 38 shows in non-final position only)
+   "Ъ" ->  ""
+   "ъ" ->  ""
+   "Ы" ->  "Ȳ"
+   "ы" ->  "ȳ"
+   "Ь" ->  "’"
+   "ь" ->  "’"
+   "Э" ->  "É"
+   "э" ->  "é"
+   "Ю" ->  "Yu"
+   "ю" ->  "yu"
+   "Я" ->  "Ya"
+   "я" ->  "ya"
+   "І" ->  "I"
+   "і" ->  "i"
+   "Ѣ" ->  "Ê"
+   "ѣ" ->  "ê"
+   "Ѳ" ->  "Ḟ"
+   "ѳ" ->  "ḟ"
+   "Ѵ" ->  "Ŷ"
+   "ѵ" ->  "ŷ"
+}
+
+stage main {
+
+  # TABLE A FOOTNOTE: final ъ, now obsolete in Russian, is disregarded when encountered
+  sub {
+    from "ъ"
+    to ""
+    after boundary
+  }
+  sub {
+    from "Ъ"
+    to ""
+    after boundary
+  }
+
+  # CHARACTERS (Table A, Russian column)
+  parallel {
+    sub "Тс" "T-s"
+    sub "тс" "t-s"
+    sub "Щ" "Shch"
+    sub "Ё" "Ě"
+    sub "Ж" "Zh"
+    sub "Й" "Ĭ"
+    sub "Х" "Kh"
+    sub "Ц" "Ts"
+    sub "Ч" "Ch"
+    sub "Ш" "Sh"
+    sub "Ы" "Ȳ"
+    sub "Э" "É"
+    sub "Ю" "Yu"
+    sub "Я" "Ya"
+    sub "Ѣ" "Ê"
+    sub "Ѳ" "Ḟ"
+    sub "Ѵ" "Ŷ"
+    sub "Ъ" "”"
+    sub "Ь" "’"
+    sub "А" "A"
+    sub "Б" "B"
+    sub "В" "V"
+    sub "Г" "G"
+    sub "Д" "D"
+    sub "Е" "E"
+    sub "З" "Z"
+    sub "И" "I"
+    sub "І" "I"
+    sub "К" "K"
+    sub "Л" "L"
+    sub "М" "M"
+    sub "Н" "N"
+    sub "О" "O"
+    sub "П" "P"
+    sub "Р" "R"
+    sub "С" "S"
+    sub "Т" "T"
+    sub "У" "U"
+    sub "Ф" "F"
+
+    sub "щ" "shch"
+    sub "ё" "ě"
+    sub "ж" "zh"
+    sub "й" "ĭ"
+    sub "х" "kh"
+    sub "ц" "ts"
+    sub "ч" "ch"
+    sub "ш" "sh"
+    sub "ы" "ȳ"
+    sub "э" "é"
+    sub "ю" "yu"
+    sub "я" "ya"
+    sub "ѣ" "ê"
+    sub "ѳ" "ḟ"
+    sub "ѵ" "ŷ"
+    sub "ъ" "”"
+    sub "ь" "’"
+    sub "а" "a"
+    sub "б" "b"
+    sub "в" "v"
+    sub "г" "g"
+    sub "д" "d"
+    sub "е" "e"
+    sub "з" "z"
+    sub "и" "i"
+    sub "і" "i"
+    sub "к" "k"
+    sub "л" "l"
+    sub "м" "m"
+    sub "н" "n"
+    sub "о" "o"
+    sub "п" "p"
+    sub "р" "r"
+    sub "с" "s"
+    sub "т" "t"
+    sub "у" "u"
+    sub "ф" "f"
+  }
+
+}
+
+}

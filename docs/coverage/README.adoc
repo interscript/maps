@@ -126,7 +126,7 @@ in this directory.
 |===
 |Standard |Title |Maps in the corpus
 
-|BS 2979:1958 |Transliteration of Cyrillic and Greek characters |None
+|BS 2979:1958 |Transliteration of Cyrillic and Greek characters |`bsi-rus-Cyrl-Latn-2979-1958`, `bsi-ukr-Cyrl-Latn-1958`, `bsi-bel-Cyrl-Latn-1958`, `bsi-bul-Cyrl-Latn-1958`, `bsi-srp-Cyrl-Latn-1958`, `bsi-mkd-Cyrl-Latn-1958`, `bsi-chu-Cyrl-Latn-1958`, `bsi-ell-Grek-Latn-1958`, `bsi-ron-Cyrl-Latn-1958`
 |PD 6505:1982 |Guide to the romanization of Korean |None
 |===
 
