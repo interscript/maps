@@ -1,5 +1,8 @@
 system "BIS:kan-Kana:Latn:13194-1991" {
 
+# Source document: interscript-private-references/iso/IS-13194-1991.pdf
+# (complete, incl. Amendment No. 1 December 2010).
+
 metadata {
   authority_id bis
   id 13194-1991
@@ -16,6 +19,7 @@ metadata {
   }
 
   notes {
+    note "Amendment No. 1 (December 2010) to IS 13194:1991 assigns the code position FC to the Indian Rupee symbol; the symbol itself is already a Latin-script mark and needs no transliteration value, so it passes through unchanged. The amendment postdates this 1991 map; the decision is recorded rather than applied."
     note "      Exception: Anusvāra is transliterated by:\n\n      a) ṅ before gutturals,\n      b) ñ before palatals,\n      c) ṇ before cerebrals,\n      d) n before dentals, and\n      e) m before labials."
   }
 }
@@ -80,7 +84,7 @@ stage main {
     sub "ಐ" "ai"
 
     sub "ಒ" "o"
-    sub "ಓ" "ŏ"
+    sub "ಓ" "ō"
     sub "ಔ" "au"
 
     # II. Consonants (see Note 2)
@@ -148,6 +152,7 @@ stage main {
     sub "ಃ" "ḥ"
 
     # Anusvāra
+    sub "ಁ" "ṁ"
     sub "ಂ" "ṃ"
 
     sub "$಼" ""

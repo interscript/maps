@@ -1,5 +1,8 @@
 system "BIS:ori-Orya:Latn:13194-1991" {
 
+# Source document: interscript-private-references/iso/IS-13194-1991.pdf
+# (complete, incl. Amendment No. 1 December 2010).
+
 metadata {
   authority_id bis
   id 13194-1991
@@ -16,19 +19,20 @@ metadata {
   }
 
   notes {
+    note "Amendment No. 1 (December 2010) to IS 13194:1991 assigns the code position FC to the Indian Rupee symbol; the symbol itself is already a Latin-script mark and needs no transliteration value, so it passes through unchanged. The amendment postdates this 1991 map; the decision is recorded rather than applied."
     note "      Exception: Anusvāra is transliterated by:\n\n      a) ṅ before gutturals,\n      b) ñ before palatals,\n      c) ṇ before cerebrals,\n      d) n before dentals, and\n      e) m before labials."
   }
 }
 
 tests {
-   "ସାମ୍ପ୍ରତିକ ବିଶ୍ବ ସ୍ଥିତାବସ୍ଥାକୁ ଚାଲେଞ୍ଜ୍‌ କରୁଥିବା ଦୁଇ ମୁଖ୍ୟ ପ୍ରତିଦ୍ବନ୍ଦ୍ବୀ ହେଉଛନ୍ତି ଚୀନ୍‌ ଓ ରୁଷ୍: ଇଂଲଣ୍ଡ୍‌ ଗୁଇନ୍ଦା ଅଧିକାରୀ" ->  "sāmprtik biśb sthitābsthāku cālēñj kruthibā dui mukhẏ prtidbndbī hēuchnti cīn ŏ ruṣ: iṃlṇḍ guindā adhikārī"
-   "ଏଣିକି ଏହି ଗାଡ଼ି ଚଳାଇଲେ ପୁଲିସ କାଟି ପାରିବ ନାହିଁ ଫାଇନ୍" ->  "ēṇiki ēhi gād̂i cḷāilē pulis kāṭi pārib nāhim phāin"
+   "ସାମ୍ପ୍ରତିକ ବିଶ୍ବ ସ୍ଥିତାବସ୍ଥାକୁ ଚାଲେଞ୍ଜ୍‌ କରୁଥିବା ଦୁଇ ମୁଖ୍ୟ ପ୍ରତିଦ୍ବନ୍ଦ୍ବୀ ହେଉଛନ୍ତି ଚୀନ୍‌ ଓ ରୁଷ୍: ଇଂଲଣ୍ଡ୍‌ ଗୁଇନ୍ଦା ଅଧିକାରୀ" ->  "sāmprtik biśb sthitābsthāku cālēñj kruthibā dui mukhẏ prtidbndbī hēuchnti cīn ō ruṣ: iṃlṇḍ guindā adhikārī"
+   "ଏଣିକି ଏହି ଗାଡ଼ି ଚଳାଇଲେ ପୁଲିସ କାଟି ପାରିବ ନାହିଁ ଫାଇନ୍" ->  "ēṇiki ēhi gād̂i cḷāilē pulis kāṭi pārib nāhiṁ phāin"
    "ପିସି କାରବାର ଘଟଣା, ନିଲମ୍ବନ ହେଲେ ପଞ୍ଚାୟତ ଅଧିକାରୀ" ->  "pisi kārbār ghṭṇā, nilmbn hēlē pñcāẏt adhikārī"
-   "ବରିଷ୍ଠ ଓଡ଼ିଆ ଚଳଚ୍ଚିତ୍ର ଅଭିନେତା ଅଜିତ ଦାସଙ୍କ" ->  "briṣṭh ŏḍiā cḷccitr abhinētā ajit dāsṅk"
-   "ସଞ୍ଚୟ କରିବାରେ କେଉଁ ରାଶି ଅଧିକ ସତର୍କ ?" ->  "sñcẏ kribārē kēum rāśi adhik strk ?"
-   "କର୍କଟ ରାଶିର ଅଧିକାରୀ ନିଜ ଜ୍ଞାତିପରିଜନଙ୍କ ପାଇଁ ଟଙ୍କା ଖର୍ଚ୍ଚ କରିବାକୁ ପସନ୍ଦ କରିଥାନ୍ତି।" ->  "krkṭ rāśir adhikārī nij jñātiprijnṅk pāim ṭṅkā khrcc kribāku psnd krithānti."
+   "ବରିଷ୍ଠ ଓଡ଼ିଆ ଚଳଚ୍ଚିତ୍ର ଅଭିନେତା ଅଜିତ ଦାସଙ୍କ" ->  "briṣṭh ōḍiā cḷccitr abhinētā ajit dāsṅk"
+   "ସଞ୍ଚୟ କରିବାରେ କେଉଁ ରାଶି ଅଧିକ ସତର୍କ ?" ->  "sñcẏ kribārē kēuṁ rāśi adhik strk ?"
+   "କର୍କଟ ରାଶିର ଅଧିକାରୀ ନିଜ ଜ୍ଞାତିପରିଜନଙ୍କ ପାଇଁ ଟଙ୍କା ଖର୍ଚ୍ଚ କରିବାକୁ ପସନ୍ଦ କରିଥାନ୍ତି।" ->  "krkṭ rāśir adhikārī nij jñātiprijnṅk pāiṁ ṭṅkā khrcc kribāku psnd krithānti."
    "ବୃଷ ରାଶିର ବ୍ୟକ୍ତିମାନେ ସ୍ବଭାବରେ କଞ୍ଜୁସ୍ କିମ୍ବା କୃପଣ ନୁହନ୍ତି" ->  "bṛṣ rāśir bẏktimānē sbbhābrē kñjus kimbā kṛpṇ nuhnti"
-   "ନବନିଯୁକ୍ତ ଓଡିଶା କଂଗ୍ରେସ ପ୍ରଭାରୀ ଏ.ଚେଲ୍ଲା କୁମାରଙ୍କୁ କରୋନା" ->  "nbniyukt ŏḍiśā kṅgrēs prbhārī ē.cēllā kumārṅku krŏnā"
+   "ନବନିଯୁକ୍ତ ଓଡିଶା କଂଗ୍ରେସ ପ୍ରଭାରୀ ଏ.ଚେଲ୍ଲା କୁମାରଙ୍କୁ କରୋନା" ->  "nbniyukt ōḍiśā kṅgrēs prbhārī ē.cēllā kumārṅku krōnā"
    "ଦିଲ୍ଲୀ: ଦିନ ଦ୍ବିପହରରେ ଗାଡ଼ି ଉପରକୁ ଦୁର୍ବୃତ୍ତ ଚଳାଇଲେ ୮ ରାଉଣ୍ଡ ଗୁଳି: ଚାଳକଙ୍କ ମୃତ୍ୟୁ" ->  "dillī: din dbiphrrē gād̂i uprku durbṛtt cḷāilē 8 rāuṇḍ guḷi: cāḷkṅk mṛtẏu"
    "ବୟସରେ ଆର ପାରିକୁ ଚାଲିଗଲେ କଣ୍ଠଶିଳ୍ପୀ ଅନୁରାଧା ପୋଡୱାଲଙ୍କ ପୁଅ ଆଦିତ୍ୟ" ->  "bẏsrē ār pāriku cāliglē kṇṭhśiḷpī anurādhā pēāḍୱālṅk pua āditẏ"
    "୦୧୭୧୬୪୨୯୭୦୦" ->  "01716429700"
@@ -78,7 +82,7 @@ stage main {
     sub "ଌ" "ḻ"
     sub "ଏ" "ē"
     sub "ଐ" "ai"
-    sub "ଓ" "ŏ"
+    sub "ଓ" "ō"
     sub "ଔ" "au"
 
     # II. Consonants (see Note 2)
@@ -137,7 +141,7 @@ stage main {
     sub "ହ" "h"
 
     # Chandrabindu
-    sub "ଁ" "m"
+    sub "ଁ" "ṁ"
 
     # Bisarga
     sub "ଃ" "ḥ"
@@ -155,7 +159,7 @@ stage main {
     sub "ୃ" "ṛ"
     sub "େ" "ē"
     sub "ୈ" "ai"
-    sub "ୋ" "ŏ"
+    sub "ୋ" "ō"
     sub "ୌ" "au"
 
     sub "्" ""
