@@ -1,5 +1,8 @@
 system "BIS:tml-Taml:Latn:13194-1991" {
 
+# Source document: interscript-private-references/iso/IS-13194-1991.pdf
+# (complete, incl. Amendment No. 1 December 2010).
+
 metadata {
   authority_id bis
   id 13194-1991
@@ -16,6 +19,7 @@ metadata {
   }
 
   notes {
+    note "Amendment No. 1 (December 2010) to IS 13194:1991 assigns the code position FC to the Indian Rupee symbol; the symbol itself is already a Latin-script mark and needs no transliteration value, so it passes through unchanged. The amendment postdates this 1991 map; the decision is recorded rather than applied."
     note "      Exception: Anusvāra is transliterated by:\n\n      a) ṅ before gutturals,\n      b) ñ before palatals,\n      c) ṇ before cerebrals,\n      d) n before dentals, and\n      e) m before labials."
   }
 }
@@ -25,9 +29,9 @@ tests {
    "நாடாளுமன்றத்தில் 4 மசோதாக்களை எதிர்க்க காங்கிரஸ் முடிவு - ஜெயராம் ரமேஷ்" ->  "nāṭāḷumṉṟttil 4 mcōtākkḷai etirkk kāṅkirs muṭivu - jeyrām rmēṣ"
    "கர்நாடகாவில் மேலும் 9,894 பேருக்கு கொரோனா தொற்று உறுதி" ->  "krnāṭkāvil mēlum 9,894 pērukku korōṉā toṟṟu uṟuti"
    "ஐதராபாத்துக்கு கைகொடுக்குமா அதிரடி?" ->  "aitrāpāttukku kaikoṭukkumā atirṭi?"
-   "அமெரிக்க ஓபன் டென்னிஸ்: இறுதிப்போட்டியில் டொமினிக்-ஸ்வெரேவ்" ->  "amerikk ŏpṉ ṭeṉṉis: iṟutippōṭṭiyil ṭomiṉik-sverēv"
+   "அமெரிக்க ஓபன் டென்னிஸ்: இறுதிப்போட்டியில் டொமினிக்-ஸ்வெரேவ்" ->  "amerikk ōpṉ ṭeṉṉis: iṟutippōṭṭiyil ṭomiṉik-sverēv"
    "ஐ.பி.எல். கிரிக்கெட்டில் களம் இறங்கும் அமெரிக்க வீரர்" ->  "ai.pi.el. kirikkeṭṭil kḷm iṟṅkum amerikk vīrr"
-   "அமெரிக்க ஓபன் டென்னிஸ்; நவோமி ஒசாகா சாம்பியன் பட்டம் வென்றார்" ->  "amerikk ŏpṉ ṭeṉṉis; nvōmi ocākā cāmpiyṉ pṭṭm veṉṟār"
+   "அமெரிக்க ஓபன் டென்னிஸ்; நவோமி ஒசாகா சாம்பியன் பட்டம் வென்றார்" ->  "amerikk ōpṉ ṭeṉṉis; nvōmi ocākā cāmpiyṉ pṭṭm veṉṟār"
    "புதிய கல்விக்கொள்கைக்கு எதிர்ப்பு: முன்னாள் துணைவேந்தர்கள் 20 பேர் பிரதமருக்கு கடிதம்" ->  "putiy klvikkoḷkaikku etirppu: muṉṉāḷ tuṇaivēntrkḷ 20 pēr pirtmrukku kṭitm"
    "இந்த ஆண்டு ஐ.பி.எல். கோப்பையை எந்த அணி வெல்லும்? - கெவின் பீட்டர்சன் கணிப்பு" ->  "int āṇṭu ai.pi.el. kōppaiyai ent aṇi vellum? - keviṉ pīṭṭrcṉ kṇippu"
    "இந்திய எண்ணெய் கப்பலில் தீ: விபத்து குறித்த எச்சரிக்கையை கப்பல் அதிகாரிகள் புறக்கணித்தனர் - இலங்கை கோர்ட்டு தகவல்" ->  "intiy eṇṇey kpplil tī: vipttu kuṟitt eccrikkaiyai kppl atikārikḷ puṟkkṇittṉr - ilṅkai kōrṭṭu tkvl"
@@ -78,7 +82,7 @@ stage main {
     sub "ஐ" "ai"
 
     sub "ஒ" "o"
-    sub "ஓ" "ŏ"
+    sub "ஓ" "ō"
     sub "ஔ" "au"
 
     # II. Consonants (see Note 2)

@@ -1,5 +1,8 @@
 system "BIS:tel-Telu:Latn:13194-1991" {
 
+# Source document: interscript-private-references/iso/IS-13194-1991.pdf
+# (complete, incl. Amendment No. 1 December 2010).
+
 metadata {
   authority_id bis
   id 13194-1991
@@ -16,21 +19,22 @@ metadata {
   }
 
   notes {
+    note "Amendment No. 1 (December 2010) to IS 13194:1991 assigns the code position FC to the Indian Rupee symbol; the symbol itself is already a Latin-script mark and needs no transliteration value, so it passes through unchanged. The amendment postdates this 1991 map; the decision is recorded rather than applied."
     note "      Exception: Anusvāra is transliterated by:\n\n      a) ṅ before gutturals,\n      b) ñ before palatals,\n      c) ṇ before cerebrals,\n      d) n before dentals, and\n      e) m before labials."
   }
 }
 
 tests {
-   "ఇప్పుడు ఇదే కోవలో టాలీవుడ్‌లో మరో మల్టీస్టారర్‌ రూపొందనుందని సినీ వర్గాల్లో వార్తలు వినిపిస్తున్నాయి" ->  "ippuḍu idē kŏvlŏ ṭālīvuḍlŏ mrŏ mlṭīsṭārr rūpondnundni sinī vrgāllŏ vārtlu vinipistunnāyi"
+   "ఇప్పుడు ఇదే కోవలో టాలీవుడ్‌లో మరో మల్టీస్టారర్‌ రూపొందనుందని సినీ వర్గాల్లో వార్తలు వినిపిస్తున్నాయి" ->  "ippuḍu idē kōvlō ṭālīvuḍlō mrō mlṭīsṭārr rūpondnundni sinī vrgāllō vārtlu vinipistunnāyi"
    "అంటే ఉంటాయి, అయితే అవి చాలా పెద్దవై ఉండాల్సిన అవసరం లేదు అంటున్నారు మమ్ముట్టి" ->  "aṇṭē uṇṭāyi, ayitē avi cālā peddvai uṇḍālsin avsrṃ lēdu aṇṭunnāru mmmuṭṭi"
-   "ఆ సంతోషాన్ని అభిమానులతో పంచుకున్నారు" ->  "ā sntŏṣānni abhimānultŏ pñcukunnāru"
-   "కెమెరాను అన్‌బాక్స్‌ చేసే వీడియోను సోషల్‌ మీడియాలో అభిమానులతో పంచుకున్నారు" ->  "kemerānu anbāks cēsē vīḍiyŏnu sŏṣl mīḍiyālŏ abhimānultŏ pñcukunnāru"
-   "ఇన్నాళ్లకు నిజమయింది. ఇక ఇప్పటి నుంచి దీంతో ఫొటోలు క్లిక్‌ మనిపిస్తా’’ అని ఆ వీడియోలో పేర్కొన్నారు" ->  "innāḷlku nijmyindi. ik ippṭi nuñci dīntŏ phoṭŏlu klik mnipistā’’ ani ā vīḍiyŏlŏ pērkonnāru"
-   "గవర్నర్‌తో కంగనా భేటీ" ->  "gvrnrtŏ kṅgnā bhēṭī"
-   "శ్రియ సినిమా సెట్‌లో అడుగుపెట్టి ఆరు నెలలు కావొస్తోంది" ->  "śriy sinimā seṭlŏ aḍugupeṭṭi āru nellu kāvostŏndi"
-   "ఇప్పుడు తను కోరుకున్న కెమెరా చేతికి రావడంతో త్వరలో మమ్ముట్టి నుంచి స్టన్నింగ్‌ ఫొటోస్‌ రావడం ఖాయం అంటున్నారు ఆయన అభిమానులు" ->  "ippuḍu tnu kŏrukunn kemerā cētiki rāvḍntŏ tvrlŏ mmmuṭṭi nuñci sṭnniṅg phoṭŏs rāvḍṃ khāyṃ aṇṭunnāru āyn abhimānulu"
-   "ఇప్పుడు ఆ వీడియో వైరల్‌ అయింది. ‘ఆ కెమెరాను కొనాలనేది చాలాకాలంగా నా కల." ->  "ippuḍu ā vīḍiyŏ vairl ayindi. ‘ā kemerānu konālnēdi cālākālṅgā nā kl."
-   "మరో వైపు ఎన్టీఆర్‌, రామ్‌చరణ్‌ కలిసి ట్రిపుల్‌ ఆర్‌ సినిమాలో నటిస్తున్నారు" ->  "mrŏ vaipu enṭīār, rāmcrṇ klisi ṭripul ār sinimālŏ nṭistunnāru"
+   "ఆ సంతోషాన్ని అభిమానులతో పంచుకున్నారు" ->  "ā sntōṣānni abhimānultō pñcukunnāru"
+   "కెమెరాను అన్‌బాక్స్‌ చేసే వీడియోను సోషల్‌ మీడియాలో అభిమానులతో పంచుకున్నారు" ->  "kemerānu anbāks cēsē vīḍiyōnu sōṣl mīḍiyālō abhimānultō pñcukunnāru"
+   "ఇన్నాళ్లకు నిజమయింది. ఇక ఇప్పటి నుంచి దీంతో ఫొటోలు క్లిక్‌ మనిపిస్తా’’ అని ఆ వీడియోలో పేర్కొన్నారు" ->  "innāḷlku nijmyindi. ik ippṭi nuñci dīntō phoṭōlu klik mnipistā’’ ani ā vīḍiyōlō pērkonnāru"
+   "గవర్నర్‌తో కంగనా భేటీ" ->  "gvrnrtō kṅgnā bhēṭī"
+   "శ్రియ సినిమా సెట్‌లో అడుగుపెట్టి ఆరు నెలలు కావొస్తోంది" ->  "śriy sinimā seṭlō aḍugupeṭṭi āru nellu kāvostōndi"
+   "ఇప్పుడు తను కోరుకున్న కెమెరా చేతికి రావడంతో త్వరలో మమ్ముట్టి నుంచి స్టన్నింగ్‌ ఫొటోస్‌ రావడం ఖాయం అంటున్నారు ఆయన అభిమానులు" ->  "ippuḍu tnu kōrukunn kemerā cētiki rāvḍntō tvrlō mmmuṭṭi nuñci sṭnniṅg phoṭōs rāvḍṃ khāyṃ aṇṭunnāru āyn abhimānulu"
+   "ఇప్పుడు ఆ వీడియో వైరల్‌ అయింది. ‘ఆ కెమెరాను కొనాలనేది చాలాకాలంగా నా కల." ->  "ippuḍu ā vīḍiyō vairl ayindi. ‘ā kemerānu konālnēdi cālākālṅgā nā kl."
+   "మరో వైపు ఎన్టీఆర్‌, రామ్‌చరణ్‌ కలిసి ట్రిపుల్‌ ఆర్‌ సినిమాలో నటిస్తున్నారు" ->  "mrō vaipu enṭīār, rāmcrṇ klisi ṭripul ār sinimālō nṭistunnāru"
 }
 
 stage main {
@@ -75,12 +79,12 @@ stage main {
     sub "ఊ" "ū"
     sub "ఋ" "ṛ"
     sub "ఌ" "ḻ"
-    sub "ౡ" "ḻ"
+    sub "ౡ" "ḹ"
     sub "ఎ" "e"
     sub "ఏ" "ē"
     sub "ఐ" "ai"
     sub "ఒ" "o"
-    sub "ఓ" "ŏ"
+    sub "ఓ" "ō"
     sub "ఔ" "au"
 
     # II. Consonants (see Note 2)
@@ -123,7 +127,7 @@ stage main {
     # Semivowels య ర ల వ
     sub "య" "y"
     sub "ర" "r"
-    sub "ఱ" "ṛ"
+    sub "ఱ" "ṟ"
     sub "ల" "l"
     sub "ళ" "ḷ"
     sub "వ" "v"
@@ -143,7 +147,7 @@ stage main {
 
 
     # Chandrabindu
-    sub "ঁ" "m"
+    sub "ఁ" "ṁ"
 
     # Bisarga
     sub "ః" "ḥ"
@@ -163,7 +167,7 @@ stage main {
     sub "ే" "ē"
     sub "ై" "ai"
     sub "ొ" "o"
-    sub "ో" "ŏ"
+    sub "ో" "ō"
     sub "ౌ" "au"
     sub "\u09CD" ""
 

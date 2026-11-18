@@ -1,5 +1,8 @@
 system "BIS:dev-Deva:Latn:13194-1991" {
 
+# Source document: interscript-private-references/iso/IS-13194-1991.pdf
+# (complete, incl. Amendment No. 1 December 2010).
+
 metadata {
   authority_id bis
   id 13194-1991
@@ -16,6 +19,7 @@ metadata {
   }
 
   notes {
+    note "Amendment No. 1 (December 2010) to IS 13194:1991 assigns the code position FC to the Indian Rupee symbol; the symbol itself is already a Latin-script mark and needs no transliteration value, so it passes through unchanged. The amendment postdates this 1991 map; the decision is recorded rather than applied."
     note "      Exception: Anusvāra is transliterated by:\n\n      a) ṅ before gutturals,\n      b) ñ before palatals,\n      c) ṇ before cerebrals,\n      d) n before dentals, and\n      e) m before labials."
   }
 }
@@ -24,7 +28,7 @@ tests {
    "हम" ->  "hm"
    "मीन" ->  "mīn"
    "औसत" ->  "aust"
-   "माँ" ->  "mām"
+   "माँ" ->  "māṁ"
    "ट्रंप बोले, चीन को देश बेच देगा बिडेन परिवार, वैक्सीन लाने की कोशिशों में अड़ंगा डालने का लगाया आरोप" ->  "ṭrmp bōlē, cīn kō dēś bēc dēgā biḍēn privār, vaiksīn lānē kī kōśiśōṃ mēṃ aḍṅgā ḍālnē kā lgāyā ārōp"
    "चालबाज चीन से तनातनी के बीच पश्चिमी मोर्चे को लगातार मजबूत कर रही वायुसेना" ->  "cālbāj cīn sē tnātnī kē bīc pścimī mōrcē kō lgātār mjbūt kr rhī vāyusēnā"
    "चीन ने पांचों भारतीय नागरिकों को रिहा किया, PLA ने किया था अगवा" ->  "cīn nē pāñcōṃ bhārtīy nāgrikōṃ kō rihā kiyā, PLA nē kiyā thā agvā"
@@ -83,7 +87,7 @@ stage main {
     sub "ऍ" "ê"
 
     sub "ऒ" "o"
-    sub "ओ" "ŏ"
+    sub "ओ" "ō"
     sub "औ" "au"
     sub "ऑ" "ô"
 
@@ -157,10 +161,10 @@ stage main {
     sub "फ़" "f"
 
     # Chandrabindu
-    sub "ँ" "m"
+    sub "ँ" "ṁ"
 
     # Bisarga
-    sub "ः " "ḥ"
+    sub "ः" "ḥ"
 
     # Anusvāra
     sub "ं" "ṃ"

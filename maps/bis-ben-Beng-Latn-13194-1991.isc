@@ -1,5 +1,8 @@
 system "BIS:ben-Beng:Latn:13194-1991" {
 
+# Source document: interscript-private-references/iso/IS-13194-1991.pdf
+# (complete, incl. Amendment No. 1 December 2010).
+
 metadata {
   authority_id bis
   id 13194-1991
@@ -16,6 +19,7 @@ metadata {
   }
 
   notes {
+    note "Amendment No. 1 (December 2010) to IS 13194:1991 assigns the code position FC to the Indian Rupee symbol; the symbol itself is already a Latin-script mark and needs no transliteration value, so it passes through unchanged. The amendment postdates this 1991 map; the decision is recorded rather than applied."
     note "      Exception: Anusvāra is transliterated by:\n\n      a) ṅ before gutturals,\n      b) ñ before palatals,\n      c) ṇ before cerebrals,\n      d) n before dentals, and\n      e) m before labials."
   }
 }
@@ -23,14 +27,14 @@ metadata {
 tests {
    "টিকা" ->  "ṭikā"
    "শুরু" ->  "śuru"
-   "করোনাভাইরাসের উপসর্গ রয়েছে এমন ভ্রমণকারীদের শনাক্ত করতেই এ ব্যবস্থা নেওয়া হয়" ->  "krŏnābhāirāsēr upsrg rẏēchē ēmn bhrmṇkārīdēr śnākt krtēi ē bybsthā nēŏẏā hẏ"
-   "চীন এ ভাইরাসের সংক্রমণ ছড়িয়ে পড়ার বিষয়টি নিশ্চিত করার পর এ অঞ্চলের দেশগুলো নিজেদের বন্দরগুলোতে নজরদারি শুরু করে" ->  "cīn ē bhāirāsēr sṅkrmṇ chd̂iẏē pd̂ār biṣẏṭi niścit krār pr ē añclēr dēśgulŏ nijēdēr bndrgulŏtē njrdāri śuru krē"
-   "আপনার কি মনে হয়, দক্ষিণ এশিয়ার দেশগুলো সফলভাবে এ সুযোগের সদ্ব্যবহার করতে পেরেছে?" ->  "āpnār ki mnē hẏ, dkṣiṇ ēśiẏār dēśgulŏ sphlbhābē ē suyŏgēr sdbybhār krtē pērēchē?"
-   "এরপর এ ভাইরাসের সংক্রমণ দক্ষিণ এশিয়ায় ছড়িয়ে পড়ার আগে এ অঞ্চলের দেশগুলো চলতি বছরের শুরুর দিকে মহামারি মোকাবিলায় কয়েক মাস সময় পেয়েছিল" ->  "ērpr ē bhāirāsēr sṅkrmṇ dkṣiṇ ēśiẏāẏ chd̂iẏē pd̂ār āgē ē añclēr dēśgulŏ clti bchrēr śurur dikē mhāmāri mŏkābilāẏ kẏēk mās smẏ pēẏēchil"
+   "করোনাভাইরাসের উপসর্গ রয়েছে এমন ভ্রমণকারীদের শনাক্ত করতেই এ ব্যবস্থা নেওয়া হয়" ->  "krōnābhāirāsēr upsrg rẏēchē ēmn bhrmṇkārīdēr śnākt krtēi ē bybsthā nēōẏā hẏ"
+   "চীন এ ভাইরাসের সংক্রমণ ছড়িয়ে পড়ার বিষয়টি নিশ্চিত করার পর এ অঞ্চলের দেশগুলো নিজেদের বন্দরগুলোতে নজরদারি শুরু করে" ->  "cīn ē bhāirāsēr sṅkrmṇ chd̂iẏē pd̂ār biṣẏṭi niścit krār pr ē añclēr dēśgulō nijēdēr bndrgulōtē njrdāri śuru krē"
+   "আপনার কি মনে হয়, দক্ষিণ এশিয়ার দেশগুলো সফলভাবে এ সুযোগের সদ্ব্যবহার করতে পেরেছে?" ->  "āpnār ki mnē hẏ, dkṣiṇ ēśiẏār dēśgulō sphlbhābē ē suyōgēr sdbybhār krtē pērēchē?"
+   "এরপর এ ভাইরাসের সংক্রমণ দক্ষিণ এশিয়ায় ছড়িয়ে পড়ার আগে এ অঞ্চলের দেশগুলো চলতি বছরের শুরুর দিকে মহামারি মোকাবিলায় কয়েক মাস সময় পেয়েছিল" ->  "ērpr ē bhāirāsēr sṅkrmṇ dkṣiṇ ēśiẏāẏ chd̂iẏē pd̂ār āgē ē añclēr dēśgulō clti bchrēr śurur dikē mhāmāri mōkābilāẏ kẏēk mās smẏ pēẏēchil"
    "ন্যূনতম শেয়ার না থাকলে ছাড়তেই হবে পরিচালক পদ" ->  "nyūntm śēẏār nā thāklē chād̂tēi hbē pricālk pd"
-   "বিজন কুমার শীলের ‘ওয়ার্ক পারমিট’ পেতে অনিশ্চয়তা" ->  "bijn kumār śīlēr ‘ŏẏārk pārmiṭ’ pētē aniścẏtā"
-   "বাংলাদেশে হার্ড ইমিউনিটি তৈরি হওয়ার তথ্য–প্রমাণ মেলেনি" ->  "bāṃlādēśē hārḍ imiuniṭi tairi hŏẏār tthy–prmāṇ mēlēni"
-   "চীনে গত বছর করোনাভাইরাসের মহামারির সূত্রপাত হয়" ->  "cīnē gt bchr krŏnābhāirāsēr mhāmārir sūtrpāt hẏ"
+   "বিজন কুমার শীলের ‘ওয়ার্ক পারমিট’ পেতে অনিশ্চয়তা" ->  "bijn kumār śīlēr ‘ōẏārk pārmiṭ’ pētē aniścẏtā"
+   "বাংলাদেশে হার্ড ইমিউনিটি তৈরি হওয়ার তথ্য–প্রমাণ মেলেনি" ->  "bāṃlādēśē hārḍ imiuniṭi tairi hōẏār tthy–prmāṇ mēlēni"
+   "চীনে গত বছর করোনাভাইরাসের মহামারির সূত্রপাত হয়" ->  "cīnē gt bchr krōnābhāirāsēr mhāmārir sūtrpāt hẏ"
 }
 
 stage main {
@@ -73,11 +77,12 @@ stage main {
     sub "ঈ" "ī"
     sub "উ" "u"
     sub "ঊ" "ū"
-    sub "ৠ" "ṛ"
+    sub "ঋ" "ṛ"
+    sub "ৠ" "ṝ"
     sub "ঌ" "ḻ"
     sub "এ" "ē"
     sub "ঐ" "ai"
-    sub "ও" "ŏ"
+    sub "ও" "ō"
     sub "ঔ" "au"
 
     # II. Consonants (see Note 2)
@@ -136,10 +141,10 @@ stage main {
     sub "হ" "h"
 
     # Chandrabindu
-    sub "ঁ" "m"
+    sub "ঁ" "ṁ"
 
     # Bisarga
-    sub "ঃ " "ḥ"
+    sub "ঃ" "ḥ"
 
     # Anusvāra
     sub "ং" "ṃ"
@@ -154,7 +159,7 @@ stage main {
     sub "\u09c3" "ṛ"
     sub "\u09c7" "ē"
     sub "\u09c8" "ai"
-    sub "\u09cb" "ŏ"
+    sub "\u09cb" "ō"
     sub "\u09cc" "au"
     sub "\u09CD" ""
     sub "्" ""
