@@ -116,6 +116,9 @@ collection.
 All three ISO documents in the collection have maps in the corpus. The
 corpus's other ISO maps, which implement ISO 233, ISO 843, ISO 3602,
 ISO 11940, and ISO 15919, have no source document in the collection.
+For ISO 15919 the remaining coverage beyond the corpus's 19 maps, and
+the blocked unlock paths, are recorded in `iso-15919-remainder.adoc`
+in this directory.
 
 == BSI
 

@@ -1,0 +1,286 @@
+= ISO 15919 remainder audit
+
+This document records, as of 2026-11-18, the audit of the ISO
+15919:2001 coverage in the corpus: what the corpus's ISO 15919 maps
+cover, what remains uncovered, the status of candidate secondary
+sources for encoding the remainder, and the paths by which the
+remainder can be unlocked. Encoding is BLOCKED: the normative source
+(ISO 15919:2001 PDF) is not in the reference collection, and no
+licensed secondary source examined is sufficient on its own. This is
+an enumeration document only; it encodes no table content.
+
+== Encoded inventory
+
+The corpus holds 19 maps implementing ISO 15919:2001:
+
+[cols="2,2,3",options="header"]
+|===
+|Script |Maps |Scope
+
+|Devanagari
+|`iso-inc-Deva-Latn-15919-2001`, `iso-hin-Deva-Latn-15919-2001`, `iso-mar-Deva-Latn-15919-2001`, `iso-nep-Deva-Latn-15919-2001`, `iso-san-Deva-Latn-15919-2001`, `iso-pli-Deva-Latn-15919-2001`, `iso-pra-Deva-Latn-15919-2001`
+|Language-scoped systems for generic Indic (`inc`), Hindi, Marathi,
+Nepali, Sanskrit, Pali, and Prakrit.
+
+|Bengali
+|`iso-ben-Beng-Latn-15919-2001`, `iso-asm-Beng-Latn-15919-2001`, `iso-pli-Beng-Latn-15919-2001`
+|Bengali (the `asm` map carries the Assamese letters, e.g. ৰ/ৱ).
+
+|Gujarati
+|`iso-guj-Gujr-Latn-15919-2001`
+|
+
+|Gurmukhi
+|`iso-pan-Guru-Latn-15919-2001`
+|
+
+|Oriya
+|`iso-ori-Orya-Latn-15919-2001`
+|
+
+|Tamil
+|`iso-tam-Taml-Latn-15919-2001`
+|
+
+|Telugu
+|`iso-tel-Telu-Latn-15919-2001`
+|
+
+|Kannada
+|`iso-kan-Kana-Latn-15919-2001`
+|
+
+|Malayalam
+|`iso-mal-Mlym-Latn-15919-2001`
+|
+
+|Sinhala
+|`iso-pli-Sinh-Latn-15919-2001`
+|Pali-scoped only (see R1).
+
+|Thai
+|`iso-pli-Thai-Latn-15919-2001`
+|Pali-scoped only; rests on the standard's
+equivalent-character provision, not a Thai table.
+|===
+
+The scripts named on the ISO TC 46/WG 3 page for ISO 15919:2001 are
+"Devanagari and related Indic scripts": Bengali, Gujarati, Gurmukhi,
+Kannada, Malayalam, Oriya, Sinhala, Tamil, and Telugu in addition to
+Devanagari (https://eki.ee/isotc46wg3, accessed 2026-11-18). All ten
+scripts have at least a partial corpus system; Sinhala exists only in
+the Pali-scoped map.
+
+== Remainder enumeration
+
+=== R1 — Sinhala as a language-level system
+
+The only Sinhala-script map is `iso-pli-Sinh-Latn-15919-2001`, scoped
+to Pali. There is no generic Sinhala system (`iso-sin-Sinh-Latn-…`)
+under this standard, corresponding to the Sinhala column of the
+standard's main table. The Pali map does already carry most
+Sinhala-specific cells (the æ/ǣ vowel letters ඇ/ඈ and signs ැ/ෑ, the
+prenasalized letters ඟ ඦ ඳ ඬ ඹ, ෆ `fa`, ළ `ḷa`), so the practical gap is
+the generic system itself plus value-level verification below.
+
+Value flag (adjudication needed, do not fix blind): the corpus maps
+the Sinhala vocalic series ඍ ඎ ඏ ඐ to `ṛ ṝ ḻ ḹ`, and Sanskrit ऋ ॠ ऌ
+likewise to `ṛ ṝ ḷ` (`iso-san-Deva-Latn-15919-2001`). The publicly
+documented ISO 15919 values for these letters are `r̥ r̥̄ l̥ l̥̄` (with
+`ṛ` reserved for the nuqta ड़), per the Wikipedia ISO 15919 table
+(https://en.wikipedia.org/wiki/ISO_15919, accessed 2026-11-18) and
+Pedersen's EKI Hindi-Marathi-Nepali system. Without the PDF this
+cannot be adjudicated; if the public sources are right, the vocalic
+series across several maps is a systematic value error.
+
+=== R2 — Per-script extension cells
+
+Verification that every per-script column cell is encoded is blocked
+on the PDF. Spot checks on the current corpus found cells absent that
+public tables show:
+
+* Malayalam ഺ = `ṯ` (the alveolar option; the Stone guide's Main Table
+  explanation states the table "also shows the Latin character for the
+  Malayalam alveolar option") — ഺ does not appear in
+  `iso-mal-Mlym-Latn-15919-2001` (ഩ `ṉ` and ഴ `ḻ` do).
+* Kannada ೞ = `ḻ` — does not appear in `iso-kan-Kana-Latn-15919-2001`
+  (ೱ `ẖ` and ೲ `ḫ` do).
+* Devanagari Vedic ẖ/ḫ (U+1B95/U+1B96 ᳵ ᳶ) — not found in
+  `iso-inc-Deva-Latn-15919-2001`.
+
+=== R3 — Table A (Vedic accents)
+
+The udatta (acute) / anudatta (underscore) provisions are present in
+the maps as metadata notes but their rule-level encoding completeness
+against Table A is unverified without the PDF.
+
+=== R4 — Table B (modified Indic characters for Perso-Arabic)
+
+Nuqta/Perso-Arabic scheme letters (q, kh, g, z, f, ṛ, ḍh …) are
+partially present across the Devanagari, Bengali, Gurmukhi, Gujarati,
+and Oriya maps. Completeness against Table B is unverified without
+the PDF.
+
+=== Not a remainder — scope correction
+
+The working assumption that ISO 15919:2001 "also covers Sinhala, Lao,
+Khmer, Tibetan" splits as follows:
+
+* Sinhala — in scope (see R1; named on the ISO TC 46/WG 3 page).
+* Lao, Khmer — no public source examined lists them among the
+  standard's scripts; the ISO TC 46/WG 3 page does not mention them.
+  Their romanization belongs to other authorities (UNGEGN systems and
+  ALA-LC tables in the corpus's collection; BGN/PCGN sheets).
+* Tibetan, Thai — the Wikipedia ISO 15919 article's consolidated table
+  shows Tibetan and Thai columns, but this is the article's extension
+  of the standard's equivalent-character provision ("If a character in
+  an Indic script is defined in such a way as to be equivalent to
+  another character …"), the same provision the corpus's Pali-in-Thai
+  map already rests on; the WG 3 scope page does not list Tibetan or
+  Thai. Whether ISO 15919:2001 itself carries Tibetan/Thai provisions
+  cannot be settled from open sources and requires the PDF.
+* Note also that ISO 15919 is under revision (ISO/AWI 15919, per the
+  ISO TC 46/WG 3 page); acquisition of the 2001 edition remains the
+  unlock for current tables regardless.
+
+== Candidate-source survey
+
+All findings verified against the repositories on 2026-11-18.
+
+[cols="3,1,2,2,2",options="header"]
+|===
+|Source |License |Per-script ISO 15919 coverage |Usability verdict |Evidence
+
+|cjolowicz/iso15919
+|NOASSERTION
+|Devanagari only ("the Devanāgarī part of ISO 15919", per its own
+README)
+|Unusable without owner blessing; does not cover the remainder in any
+case. LICENCE.md says "same terms as Python itself" (PSF terms by
+reference, copyright "Mublin 2008") but ships no license text, hence
+GitHub reports NOASSERTION.
+|https://github.com/cjolowicz/iso15919 (repo metadata, README,
+LICENCE.md)
+
+|davidmjones/brahmic-maps
+|LPPL-1.3c
+|TECkit mappings for 10 scripts: deva, beng, gujr, guru, knda, mlym,
+orya, sinh, taml, telu — including Sinhala
+|STRONGEST CANDIDATE. Real, OSI-recognized license; covers every
+remaining script including Sinhala; includes Sanskrit/Vedic
+extensions. Caveats: reverse direction (Latin → Indic), so letter
+equivalences must be re-verified; it is a derived table, not the
+standard; owner blessing on LPPL terms still required.
+|src/brahmic.dtx "Supported scripts" section;
+https://github.com/davidmjones/brahmic-maps
+
+|google-research/nisaba (nisaba/scripts/brahmic/iso.py)
+|Apache-2.0
+|ISO 15919 2-way FSTs over 20 Brahmic scripts including Sinh (Sinhala)
+|USABLE FOR SINHALA with owner blessing. Provenance caveat: its
+docstring cites the Wikipedia ISO 15919 article as the reference, so
+its chain of trust also ends below the standard.
+|https://github.com/google-research/nisaba (util.py SCRIPTS list,
+iso.py docstring)
+
+|virtualvinodh/aksharamukha(-python)
+|Declared AGPL-3.0 in setup.py; repo ships gpl-3.0.txt — declaration
+inconsistent; GitHub detects no license
+|ISO romanization target with explicit Sinhala vowel/consonant maps;
+~20 source scripts
+|Not a clean-license candidate. Strong copyleft plus an inconsistent
+license declaration; use only under explicit owner direction.
+|aksharamukha/ScriptMap/Roman/ISO.py; setup.py; gpl-3.0.txt
+
+|indic-transliteration/indic_transliteration_py
+|MIT
+|ISO and ISO_VEDIC roman schemes; source scripts are 9 Brahmic
+(devanagari, bengali, gujarati, gurmukhi, oriya, kannada, malayalam,
+tamil, telugu) — no Sinhala
+|Does not cover the remainder; useful as a cross-check for the 9
+already-encoded scripts.
+|schemes/brahmic/__init__.py script constants; schemes/roman.py
+
+|Unicode ICU / CLDR (unicode-org/icu)
+|ICU License (permissive; Unicode, Inc.)
+|CLDR states Indic transliteration follows ISO 15919; current icu4c
+translit data has InterIndic pivots for the same 9 scripts only — no
+Sinhala, no ISO15919-named per-script transliterators
+|Does not cover the remainder; usable as cross-check for the 9
+scripts.
+|icu4c/source/data/translit listing;
+https://cldr.unicode.org/index/cldr-spec/transliteration-guidelines
+
+|Minor unlicensed implementations (Vyshantha/*, shrirambhat/
+om_transliterator, shyamvlmna/indictranslit, et al.)
+|None/NOASSERTION
+|Single-script or Devanagari-only
+|Not candidates.
+|GitHub search "15919", 2026-11-18
+|===
+
+Bottom line: no examined implementation is (a) licensed cleanly, (b)
+covering Sinhala, and (c) grounded above Wikipedia-level provenance,
+all at once. The remainder cannot be encoded from these sources
+alone.
+
+== Unlock paths
+
+1. *Acquire ISO 15919:2001 (normative source).* Owner purchase from
+   ISO or a national body; the standard is a ~12-page document. This
+   resolves every item in R1–R4 including the vocalic-series value
+   adjudication and the per-script cell inventory, and settles the
+   Tibetan/Thai scope question definitively. The ISO/AWI 15919
+   revision does not remove the need for the 2001 edition.
+
+2. *Owner-blessed licensed secondary source.* Per-source blessing
+   decision on the survey above, most plausibly brahmic-maps
+   (LPPL-1.3c, Sinhala included) for structure cross-check and nisaba
+   (Apache-2.0) for Sinhala. Requires legal sign-off that the license
+   terms are acceptable for corpus derivation, and acceptance that
+   their provenance is itself below the standard.
+
+3. *Per-table scholarly secondary sources.* Anthony P. Stone's
+   "Transliteration of Indic scripts: How to use ISO 15919" (Stone was
+   the standard's editor; archived at
+   https://web.archive.org/web/2016/http://homepage.ntlworld.com/stone-catend/trind.htm)
+   documents the main-table options, Table A (Vedic accents), and
+   Table B (modified Indic characters for P-A.) but its tables are
+   distributed as images and the site itself states "Nothing on this
+   site is a standards document". The EKI/UNGEGN working-group
+   materials (e.g. Pedersen, Hindi-Marathi-Nepali,
+   https://transliteration.eki.ee/pdf/Hindi-Marathi-Nepali.pdf) cover
+   Devanagari-family only. Usable for cross-checks and the
+   vocalic-series flag; not sufficient alone for a normative
+   encoding.
+
+== Citations
+
+* ISO TC 46/WG 3 main page (ISO 15919 script list; revision status):
+  https://eki.ee/isotc46wg3 — accessed 2026-11-18.
+* Wikipedia, "ISO 15919" (consolidated table incl. Sinhala, Tibetan,
+  Thai columns; equivalent-character provision; vocalic values):
+  https://en.wikipedia.org/wiki/ISO_15919 — accessed 2026-11-18.
+* cjolowicz/iso15919 — https://github.com/cjolowicz/iso15919
+  (README: "the Devanāgarī part of ISO 15919"; LICENCE.md; GitHub
+  license metadata NOASSERTION) — accessed 2026-11-18.
+* davidmjones/brahmic-maps —
+  https://github.com/davidmjones/brahmic-maps (src/brahmic.dtx,
+  "Supported scripts") — accessed 2026-11-18.
+* google-research/nisaba —
+  https://github.com/google-research/nisaba (nisaba/scripts/brahmic/
+  iso.py; util.py SCRIPTS) — accessed 2026-11-18.
+* virtualvinodh/aksharamukha-python —
+  https://github.com/virtualvinodh/aksharamukha-python (setup.py;
+  ScriptMap/Roman/ISO.py) — accessed 2026-11-18.
+* indic-transliteration/indic_transliteration_py —
+  https://github.com/indic-transliteration/indic_transliteration_py —
+  accessed 2026-11-18.
+* unicode-org/icu translit data —
+  https://github.com/unicode-org/icu (icu4c/source/data/translit);
+  CLDR transliteration guidelines:
+  https://cldr.unicode.org/index/cldr-spec/transliteration-guidelines
+  — accessed 2026-11-18.
+* Stone, "Transliteration of Indic scripts: how to use ISO 15919"
+  (archived) — Main Table explanation; Table B page (trip-a.htm) —
+  accessed 2026-11-18 via the Internet Archive.
