@@ -235,6 +235,16 @@ Rows of the official tables that use characters outside ISO/IEC
 10646-1:2000 which Unicode never adopted, and the Sinhala table's
 Pali-usage alternative readings, are documented in the maps' notes.
 
+ISO/TR 11941:1996 source note: the corpus's two method maps are encoded
+from the owner-held complete document (`iso/ISO-TR-11941-1996.pdf`,
+11 pp., including section 4 transliteration tables with their notes and
+sections 5-7). The Slovenian adoption file SIST-TP ISO/TR 11941:2005
+held outside the collection is an iTeh STANDARD PREVIEW containing only
+sections 1-3 (the scope and the general conversion principles, printed
+pages 1-3 of 6) and none of the transliteration tables; it cannot
+support encoding and must not be used as a substitute for the complete
+document.
+
 == BSI
 
 [cols="1,2,2",options="header"]
