@@ -1,0 +1,212 @@
+system "ISO:kat-Geor:Latn:9984-2026" {
+
+metadata {
+  authority_id iso
+  id 9984-2026
+  language iso-639-2:kat
+  source_script Geor
+  destination_script Latn
+  name "ISO 9984:2026 Information and documentation -- Transliteration of Georgian characters into Latin characters"
+  url https://www.iso.org/committee/48820.html
+  # Source document: interscript-private-references/iso/ISO-9984-2026.pdf
+  # (purchased published edition, ISO Store order OP-1130631, downloaded
+  # 2026-11-19; verification-grade provenance).
+  creation_date 2026
+  adoption_date 2026
+  description {    Second edition. The main system (Table 4) is limited to the 33
+    characters of the current Georgian alphabet and is now based on the
+    Georgian national system of 2002 (presidential decree of 2011), with
+    modifications incorporated to ensure reversibility. Ten romanizations
+    changed from the 1996 edition: the digraph letters now romanize as
+    zh (ჟ), gh (ღ), sh (შ), ch (ჩ), ts (ც), dz (ძ), kh (ხ); ჯ loses its
+    caron (ǰ -> j); the glottalized consonants კ პ ტ ყ წ ჭ gain the
+    neutral (vertical line) apostrophe U+0027 (k' p' t' q' ts' ch'),
+    which the aspirated თ ფ ქ ჩ ც lose. Obsolete letters are retained
+    for reference in Table 5 (its rows 1-6 are unchanged from 1996). A
+    new digraph-disambiguation provision (4.2) inserts a middle dot
+    U+00B7 between adjoining source characters whose romanization would
+    form a digraph.
+  }
+
+  notes {
+    note "Encoded from the purchased published edition (ISO Store order OP-1130631, downloaded 2026-11-19); the PDF text layer is clean and the hex column is authoritative over the printed glyphs. Extracted 2026-11-19."
+    note "Table 4 rows are single-character parallel subs (33 rows). Table 5 (other characters, 14 rows) is in the same parallel stage; its rows 1-6 (ჱ ჲ ჳ ჴ ჵ ჶ) are noted by the standard as unchanged from the 1996 edition, which the corpus's legacy map iso-kat-Geor-Latn-9984-1996 encodes identically."
+    note "Section 4.2 digraph disambiguation: for the six adjoining source pairs გჰ ზჰ სჰ ქჰ თს დზ (g/z/s/k followed by h; t followed by s; d followed by z) the romanization inserts a middle dot U+00B7 between the two romanized tokens so they cannot be read as the digraphs gh zh sh kh ts dz. Encoded as the document's pair rows, which run before the parallel stage."
+    note "Reverse-direction limitation, flagged: the transliteration engine inverts rows with a single-character source or target; these six pair rows are multi-character on both sides, so a reversed run does not consume the middle dot (reversed z-dot-h yields zed plus dot plus he instead of zedil-he, and reversed zh resolves to zhet as the digraph row governs). Dotted forward output is unambiguous and round-trips through the forward direction; the limitation only affects reconstruction of the pair form from undotted reverse input and is documented here rather than hacked around."
+    note "Residual digraph ambiguity, flagged per the source: the standard dots only the six listed pairs, so e.g. შჰ romanizes shh and the reverse direction resolves it by longest match to შ+ჰ; a source ს+ჰ+ჰ would be dotted (s·hh) and round-trips, but undotted reverse input shh cannot distinguish სჰჰ. The document itself provides no provision beyond the six pairs."
+    note "Edition difference (1996 -> 2026), from the 2026 Introduction tables: ჟ ž->zh, ღ ḡ->gh, შ š->sh, ჩ č'->ch, ც c'->ts, ძ j->dz, წ c->ts', ჭ č->ch', ხ x->kh, ჯ ǰ->j; glottalized კ k->k', პ p->p', ტ t->t', ყ q->q', წ c->ts', ჭ č->ch'; aspirated თ t'->t, ფ p'->p, ქ k'->k, ჩ č'->ch, ც c'->ts. The 1996 ejective mark (high comma off centre, ISO 5426 4/11, encoded U+0315 in the legacy map) is replaced by the neutral apostrophe U+0027 exactly as the 2026 hex column prints."
+    note "The first edition's clause 5 (three old-Georgian punctuation marks to comma, full stop, and the ISO 5426 2/7 section mark) is removed in this edition as infrequently used; the legacy map never encoded them and their 1996 glyphs are unreadable in the held scan (flagged there)."
+    note "Capitalization: 4.1.2 makes capitalization of transliterated forms optional and outside the scope of the document; the map transliterates to lowercase as the table prints, and document-example tests are lowercased accordingly."
+  }
+}
+
+tests {
+   "ამბროლაური" ->  "ambrolauri"
+   "ბათუმი" ->  "batumi"
+   "გორი" ->  "gori"
+   "დუშეთი" ->  "dusheti"
+   "ერგე" ->  "erge"
+   "ვანი" ->  "vani"
+   "ზუგდიდი" ->  "zugdidi"
+   "თბილისი" ->  "tbilisi"
+   "კასპი" ->  "k'asp'i"
+   "ნინოწმინდა" ->  "ninots'minda"
+   "პანტნარი" ->  "p'ant'nari"
+   "ჟანივრი" ->  "zhanivri"
+   "სამტრედია" ->  "samt'redia"
+   "ღრმაღელე" ->  "ghrmaghele"
+   "ყუმისთავი" ->  "q'umistavi"
+   "შხარა" ->  "shkhara"
+   "ჩუნეში" ->  "chuneshi"
+   "ცაგერი" ->  "tsageri"
+   "ძეძილეთი" ->  "dzedzileti"
+   "წალკა" ->  "ts'alk'a"
+   "აჭარა" ->  "ach'ara"
+   "ხაშური" ->  "khashuri"
+   "ჯვარი" ->  "jvari"
+   "ჰეღო" ->  "hegho"
+   "ზჰ" ->  "z·h"
+   "გჰ" ->  "g·h"
+   "თს" ->  "t·s"
+   "დზ" ->  "d·z"
+   "ჱ" ->  "ē"
+   "ჸ" ->  "ʔ"
+   "ჿ" ->  "ʷ"
+# Exhaustive per-row tests for iso-kat-Geor-Latn-9984-2026, generated from the source
+# document's table.
+# Source: ISO 9984:2026(en), second edition, purchased published edition
+# (ISO Store order OP-1130631, downloaded 2026-11-19; verification-grade
+# provenance). Rows in document order: Table 4 rows 1-33 (the 33 characters
+# of the current Georgian alphabet; hex column authoritative: ejectives
+# carry U+0027 neutral apostrophe, digraphs zh/gh/sh/ch/ts/dz/kh per hex),
+# then the §4.2 digraph-disambiguation provision (middle dot U+00B7 inserted
+# between the six adjoining source pairs whose romanization would form a
+# digraph: გჰ ზჰ სჰ ქჰ თს დზ), then Table 5 rows 1-14 (other characters;
+# rows 1-6 unchanged from the 1996 edition). Expected strings are the
+# printed Latin column (lowercase; capitalization optional per 4.1.2 and not
+# part of the system).
+# Provenance artifact: scripts/row-sources/iso-kat-Geor-Latn-9984-2026.json (53 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-19); regenerate from the artifact, do not hand-edit.
+  "ა" -> "a"
+  "ბ" -> "b"
+  "გ" -> "g"
+  "დ" -> "d"
+  "ე" -> "e"
+  "ვ" -> "v"
+  "ზ" -> "z"
+  "თ" -> "t"
+  "ი" -> "i"
+  "კ" -> "k'"
+  "ლ" -> "l"
+  "მ" -> "m"
+  "ნ" -> "n"
+  "ო" -> "o"
+  "პ" -> "p'"
+  "ჟ" -> "zh"
+  "რ" -> "r"
+  "ს" -> "s"
+  "ტ" -> "t'"
+  "უ" -> "u"
+  "ფ" -> "p"
+  "ქ" -> "k"
+  "ღ" -> "gh"
+  "ყ" -> "q'"
+  "შ" -> "sh"
+  "ჩ" -> "ch"
+  "ც" -> "ts"
+  "ძ" -> "dz"
+  "წ" -> "ts'"
+  "ჭ" -> "ch'"
+  "ხ" -> "kh"
+  "ჯ" -> "j"
+  "ჰ" -> "h"
+  "გჰ" -> "g·h"
+  "ზჰ" -> "z·h"
+  "სჰ" -> "s·h"
+  "ქჰ" -> "k·h"
+  "თს" -> "t·s"
+  "დზ" -> "d·z"
+  "ჱ" -> "ē"
+  "ჲ" -> "y"
+  "ჳ" -> "w"
+  "ჴ" -> "ẖ"
+  "ჵ" -> "ō"
+  "ჶ" -> "f"
+  "ჷ" -> "ȳ"
+  "ჸ" -> "ʔ"
+  "ჹ" -> "ĝ"
+  "ჺ" -> "ʕ"
+  "ჼ" -> "ⁿ"
+  "ჽ" -> "æ"
+  "ჾ" -> "ʸ"
+  "ჿ" -> "ʷ"
+}
+
+stage main {
+  # Section 4.2 digraph disambiguation: adjoining source pairs whose
+  # romanization would form a digraph are separated by the middle dot
+  # U+00B7. Encoded as the document's pair rows; they run before the
+  # parallel stage.
+  sub "გჰ" "g·h"
+  sub "ზჰ" "z·h"
+  sub "სჰ" "s·h"
+  sub "ქჰ" "k·h"
+  sub "თს" "t·s"
+  sub "დზ" "d·z"
+
+  # Table 4 - transliteration of Georgian characters (rows 1-33)
+  # Table 5 - transliteration of other characters (rows 1-14)
+  parallel {
+    sub "ა" "a"
+    sub "ბ" "b"
+    sub "გ" "g"
+    sub "დ" "d"
+    sub "ე" "e"
+    sub "ვ" "v"
+    sub "ზ" "z"
+    sub "თ" "t"
+    sub "ი" "i"
+    sub "კ" "k'"
+    sub "ლ" "l"
+    sub "მ" "m"
+    sub "ნ" "n"
+    sub "ო" "o"
+    sub "პ" "p'"
+    sub "ჟ" "zh"
+    sub "რ" "r"
+    sub "ს" "s"
+    sub "ტ" "t'"
+    sub "უ" "u"
+    sub "ფ" "p"
+    sub "ქ" "k"
+    sub "ღ" "gh"
+    sub "ყ" "q'"
+    sub "შ" "sh"
+    sub "ჩ" "ch"
+    sub "ც" "ts"
+    sub "ძ" "dz"
+    sub "წ" "ts'"
+    sub "ჭ" "ch'"
+    sub "ხ" "kh"
+    sub "ჯ" "j"
+    sub "ჰ" "h"
+
+    sub "ჱ" "ē"
+    sub "ჲ" "y"
+    sub "ჳ" "w"
+    sub "ჴ" "ẖ"
+    sub "ჵ" "ō"
+    sub "ჶ" "f"
+    sub "ჷ" "ȳ"
+    sub "ჸ" "ʔ"
+    sub "ჹ" "ĝ"
+    sub "ჺ" "ʕ"
+    sub "ჼ" "ⁿ"
+    sub "ჽ" "æ"
+    sub "ჾ" "ʸ"
+    sub "ჿ" "ʷ"
+  }
+
+}
+
+}

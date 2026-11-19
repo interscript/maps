@@ -111,6 +111,9 @@ collection.
 |ISO 9:1995 |Cyrillic to Latin |`iso-rus-Cyrl-Latn-9-1995`
 |ISO/FDIS 9:2026 |Cyrillic to Latin, third edition (FDIS ballot N127) |`iso-rus-Cyrl-Latn-9-2026`
 |ISO 9984:1996 |Georgian to Latin |`iso-kat-Geor-Latn-9984-1996`
+|ISO 9984:2026 |Georgian to Latin (second edition) |`iso-kat-Geor-Latn-9984-2026`
+|ISO 9985:2026 |Armenian to Latin (second edition; no first-edition map exists) |`iso-hye-Armn-Latn-9985-2026`
+|ISO 233-3:2026 |Persian to Latin, strict transliteration (third edition) |`iso-prs-Arab-Latn-233-3-2026`
 |ISO/TR 11941:1996 |Korean to Latin, two methods |`iso-kor-Hang-Latn-1996-method1`, `iso-kor-Hang-Latn-1996-method2`
 |ISO 3602:1989 |Japanese (kana) to Latin |`iso-jpn-Hrkt-Latn-3602-1989`
 |===
@@ -210,6 +213,70 @@ lowercase Myrtoion output shows u/y glyphs ambiguous at scan resolution;
 row 20 (Y, y -> U, u) governs. The footnote separator dot (tau-chi,
 tau-sigma) is rendered by the map as a full stop because the printed
 mid dot collides with the ano-teleia -> colon rule.
+
+=== ISO 233-3:2026, ISO 9984:2026, and ISO 9985:2026 (2026 purchases)
+
+The collection holds the purchased published editions of ISO 233-3:2026
+(third edition), ISO 9984:2026 (second edition), and ISO 9985:2026
+(second edition) - verification-grade provenance, acquired from the ISO
+Store (order OP-1130631, downloaded 2026-11-19) - and three new maps are
+encoded from them. The PDF text layers are clean and the hex column was
+treated as authoritative over the printed glyphs throughout. Each map
+carries exhaustive per-row embedded tests generated from its provenance
+artifact `scripts/row-sources/<map-id>.json` in document order, plus the
+documents' worked examples; an exhaustive forward sweep over all 199
+artifact rows passes, and the reverse direction is engine-derived with
+the limitations below recorded in the map notes.
+
+* `iso-prs-Arab-Latn-233-3-2026` encodes the strict, fully reversible
+  clause 4 system: Table 1 consonants (32 rows), Table 2 vowels, Table 3
+  conventional signs, 4.4.3 ta marbuta, 4.4.4 the Allah word, Table 4
+  hamze forms, Table 5 the ezafe he-plus-hamze form, the Table 1 note d
+  strict provision for the yeh-plus-superscript-alef clarity variant,
+  Table 6 punctuation, and Table 7 numerals (61 rows). The clause 5
+  modified transliteration (Tables 8-11) is not reversible - it depends
+  on word position and on whether a letter functions as consonant or
+  vowel - and is not encoded. The standard's own NFC quirk is preserved
+  exactly as printed: the zal and zain rows are precomposed (U+1E95,
+  U+1E93) while the thal and dad rows are decomposed (0073+0331,
+  007A+0324), and the decomposed zal is canonically equivalent to the
+  precomposed one. The tolerance notes (U+2018/U+2019 quotes, Arabic
+  yeh U+064A, U+06C0, bare alef maqsur U+0649) are flagged in the map
+  notes and not encoded as rows. The legacy
+  `iso-prs-Arab-Latn-233-3-1999` (the 1999 first edition, a simplified
+  system) is untouched; the 1999 and 2023 documents are not held.
+* `iso-kat-Geor-Latn-9984-2026` encodes Table 4 (the 33 characters of
+  the current alphabet), Table 5 (the 14 other characters, rows 1-6
+  unchanged from 1996), and the new section 4.2 digraph-disambiguation
+  provision (six adjoining source pairs separated by a middle dot
+  U+00B7); 53 rows. Ten romanizations changed from the 1996 edition and
+  the edition basis is the Georgian national system of 2002, so the 2026
+  map is a separate system, not a revision of the legacy map. The legacy
+  `iso-kat-Geor-Latn-9984-1996` was verified cell-by-cell against the
+  held ISO 9984:1996 scan: all 39 letter rows match, no fixes, goldens
+  untouched (the 1996 scan's clause 5 punctuation marks remain
+  unidentifiable - old-script glyphs unreadable in the text layer - and
+  the 2026 edition removes that provision). The 1996 ejective mark
+  (high comma off centre, encoded U+0315 in the legacy map) is replaced
+  by the neutral apostrophe U+0027 exactly as the 2026 hex column
+  prints.
+* `iso-hye-Armn-Latn-9985-2026` encodes Table 1 (38 case-paired letter
+  rows), the yew-ligature provision (և, a distinct digraph character,
+  to /ew/), and Table 2 punctuation (8 rows); 47 rows. No ISO 9985 map
+  existed before; Armenia remains covered by
+  `din-hye-Armn-Latn-32706-2010`, a different system that is untouched.
+  The 2026 edition moves the aspirate mark from U+2019 to U+0027 and
+  extends the unmarked convention to the Ծ and Ճ pairs. The standard's
+  hex column prints the uppercase J-caron row decomposed
+  (U+004A+U+030C; no precomposed uppercase exists) and the lowercase
+  precomposed (U+01F0), and the map preserves both.
+
+Documented reverse limitations (engine expressibility, not hacks): the
+9984 dotted pair rows and the 233-3 Allah and ezafe rows are
+multi-character on both sides, which the reverse inverter does not
+reconstruct; the 233-3 forward collision where he-plus-standalone-hamza
+and he-plus-hamze-above both romanize h-apostrophe is inherited from the
+source. All are recorded in the map notes.
 
 === ISO 15919, both editions
 
