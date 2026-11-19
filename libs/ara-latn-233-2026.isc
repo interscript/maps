@@ -1,0 +1,97 @@
+system "ara-latn-233-2026" {
+
+# Shared ISO 233-1:2026 Arabic-to-Latin machinery: rows byte-identical between the
+# strict map (iso-ara-Arab-Latn-233-2026, clause 4 Tables 1-5) and the modified map
+# (iso-ara-Arab-Latn-233-2026-modified, clause 5; per 5.1.2 the strict tables apply
+# unless specified otherwise). The rulesets are spliced into each map's single
+# parallel pass so match semantics see one rule set.
+
+ruleset consonants {
+  # Table 1 No. 3-28 (the consonant rows shared verbatim by both systems,
+  # including tāʾ marbūṭaẗ which 5.2.4 renders ẗ in all positions)
+  # bāʾ
+  sub "\u0628" "b"
+  # tāʾ
+  sub "\u062a" "t"
+  # ṯāʾ
+  sub "\u062b" "\u1e6f"
+  # ǧīm
+  sub "\u062c" "\u01e7"
+  # ḥāʾ
+  sub "\u062d" "\u1e25"
+  # ẖāʾ
+  sub "\u062e" "\u1e96"
+  # dāl
+  sub "\u062f" "d"
+  # ḏāl
+  sub "\u0630" "\u1e0f"
+  # rāʾ
+  sub "\u0631" "r"
+  # zāy
+  sub "\u0632" "z"
+  # sīn
+  sub "\u0633" "s"
+  # šīn
+  sub "\u0634" "\u0161"
+  # ṣād
+  sub "\u0635" "\u1e63"
+  # ḍād
+  sub "\u0636" "\u1e0d"
+  # ṭāʾ
+  sub "\u0637" "\u1e6d"
+  # ẓāʾ
+  sub "\u0638" "\u1e93"
+  # ʿayn
+  sub "\u0639" "\u02bf"
+  # ġayn
+  sub "\u063a" "\u0121"
+  # fāʾ
+  sub "\u0641" "f"
+  # qāf
+  sub "\u0642" "q"
+  # kāf
+  sub "\u0643" "k"
+  # lām
+  sub "\u0644" "l"
+  # mīm
+  sub "\u0645" "m"
+  # nūn
+  sub "\u0646" "n"
+  # hāʾ
+  sub "\u0647" "h"
+  # tāʾ marbūṭaẗ
+  sub "\u0629" "\u1e97"
+  # wāw
+  sub "\u0648" "w"
+  # yāʾ
+  sub "\u064a" "y"
+}
+
+ruleset short_vowels {
+  # Table 2 No. 30-32 (bare harakat are identical in both systems)
+  sub "\u064e" "a"
+  sub "\u064f" "u"
+  sub "\u0650" "i"
+}
+
+ruleset punctuation {
+  # Table 4 (fāṣilaẗ, fāṣilaẗ manqūṭaẗ, ʿalāmaẗ istifhām)
+  sub "\u060c" ","
+  sub "\u061b" ";"
+  sub "\u061f" "?"
+}
+
+ruleset numerals {
+  # Table 5 (0660-0669 -> 0030-0039)
+  sub "\u0660" "0"
+  sub "\u0661" "1"
+  sub "\u0662" "2"
+  sub "\u0663" "3"
+  sub "\u0664" "4"
+  sub "\u0665" "5"
+  sub "\u0666" "6"
+  sub "\u0667" "7"
+  sub "\u0668" "8"
+  sub "\u0669" "9"
+}
+}

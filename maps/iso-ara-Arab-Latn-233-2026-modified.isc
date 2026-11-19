@@ -1,0 +1,314 @@
+system "ISO:ara-Arab:Latn:233-2026-modified" {
+
+metadata {
+  authority_id iso
+  id 233-2026-modified
+  language iso-639-2:ara
+  source_script Arab
+  destination_script Latn
+  name "ISO 233-1:2026 Information and documentation -- Transliteration of Perso-Arabic characters into Latin characters -- Part 1: Arabic language (modified transliteration, clause 5; FDIS stage)"
+  url https://www.iso.org/committee/48820.html
+  creation_date 2026
+  adoption_date 2026
+  description {    Modified (clause 5) transliteration of ISO 233-1:2026: Tables 6-8 plus the
+    mechanical clauses (5.2.2 initial alif, 5.2.4 tāʾ marbūṭaẗ, 5.3.2 definite
+    article) over the strict tables (5.1.2). Not necessarily reversible by design
+    (5.1.1). Encoded from ISO/TC 46/WG 3 N129 (FDIS) with the N130 adjudications.
+    See notes for the language-knowledge steps that stay outside stateless scope.  }
+
+  notes {
+    note "Encoded from ISO/FDIS 233-1:2026 (ISO/TC 46/WG 3 N129, 2026-11-02) clause 5, Tables 6-8; adjudications honored from N130: CN-017 rejected (strict and modified treat alif differently by design), CN-018 rejected (the article stands al- even unpronounced; l- only after the prepositions li-/bi-), CN-019 rejected (4.3.2 and 5.3.2 examples intentionally differ). Verify against the published edition when available."
+    note "5.1.2: the strict tables apply unless specified otherwise - the shared rows come from the ara-latn-233-2026 library (byte-identical with the strict map). Map-specific rows: sukūn omitted (5.2.1, Table 8 No. 7), šadda duplication (Table 8 No. 8), tanwīn omitted (Table 6 No. 2/5a/6a), the á/â/ā/ī/ū vowel options (Table 6), hamza options (Table 7), and the article families of 5.3.2."
+    note "Language-knowledge steps of the modified system that stay outside stateless scope and are NOT encoded: supplying unwritten vowels (5.2.1 - the printed example li-l-walad corresponds to لِلْوَلَدِ with the flexional final kasra omitted; this map renders the written vowel, li-l-waladi), general 5.3.1 hyphenation of li-/bi-/ka-/wa- beyond the article constructions (a word-initial لِسَان lisān is one word, not li+sān), the article after wa-/ka- (the 5.3.2 l- exception is encoded only for the documented li-/bi- forms; والشَّمْس-class words are ambiguous, e.g. والد wālid), and the šadda of an assimilated article preceded by wa-/ka-."
+    note "Table 8 No. 8 duplication is encoded as consonant doubling (28 digraph rules - the corpus idiom of iso-ara-Arab-Latn-233-1984), suppressed in the article assimilation context per the 5.3.2 examples (al-šams, bi-l-layl): the article rendering al-/l- carries the assimilation, and the doubled article lām emits the second l (al-ladhi -> al-laḏī). The suppression is a before-constraint on the preceding word-initial article; the parallel group is therefore megaregexp-ordered (specific rules first), which is cross-runtime consistent - the parity audit's G1 divergence concerns capture/ref only."
+    note "Table errata encoded per the governing column/example and flagged against the published edition: Table 6 No. 1 prints hex 0622 where the example (aẖ) and Table 7 No. 4b show the initial alif-with-hamza reading; Table 6 No. 2 prints 0101 in the Hex column of an (omitted) row; Table 7 No. 4 prints sāʾala where the written signs of سَأَلَ yield saʾala."
+    note "Reversibility: the modified system is not necessarily reversible (5.1.1); the reverse direction restores strict-sign equivalents of the outputs (e.g. walâkin -> وَلٰكِن without the omitted sukūn). A stateless map cannot supply unwritten vowels (level (b) is documented on the strict map)."
+  }
+}
+
+dependency "ara-latn-233-2026" as iso233
+
+tests {
+  # Hand-written worked-example and structure tests.
+  "\u0623\u064e\u062e" -> "a\u1e96"  # Table 6 No. 1 + example: aẖ
+  "\u0648\u064e\u0644\u064e\u0670\u0643\u0650\u0646" -> "wal\u00e2kin"  # Table 6 No. 1a + example: walâkin
+  "\u0645\u064e\u0631\u064e\u0627\u064a\u064e\u0627" -> "mar\u0101y\u0101"  # Table 6 No. 1b + example: marāyā
+  "\u0634\u064e\u062c\u064e\u0631\u064e\u0629\u064b" -> "\u0161a\u01e7ara\u1e97"  # Table 6 No. 2 + example: šaǧaraẗ (tanwīn omitted)
+  "\u0623\u064e\u064a\u0652\u0636\u064b\u0627" -> "ay\u1e0dan"  # Table 6 No. 2a + example: ayḍan
+  "\u0623\u064e\u064a\u0652\u0636\u0627\u064b" -> "ay\u1e0dan"  # Table 6 No. 2b + example: ayḍan (alif-first order)
+  "\u0635\u064e\u062f\u0649" -> "\u1e63ad\u00e1"  # Table 6 No. 3 + example: ṣadá
+  "\u0635\u064e\u062f\u0649\u0670" -> "\u1e63ad\u00e1"  # Table 6 No. 3a: ṣadá
+  "\u0635\u064e\u062f\u064e\u0649" -> "\u1e63ad\u00e1"  # Table 6 No. 3b: ṣadá
+  "\u0635\u064e\u062f\u064e\u0649\u0670" -> "\u1e63ad\u00e1"  # Table 6 No. 3c: ṣadá
+  "\u0641\u064e\u062a\u064b\u0649" -> "fat\u00e1"  # Table 6 No. 4 + example: fatá
+  "\u0641\u064e\u062a\u0649\u064b" -> "fat\u00e1"  # Table 6 No. 4a: fatá
+  "\u062f\u064f\u0631\u064f\u0648\u0633" -> "dur\u016bs"  # Table 6 No. 5 + example: durūs
+  "\u0634\u064e\u062c\u064e\u0631\u064e\u0629\u064c" -> "\u0161a\u01e7ara\u1e97"  # Table 6 No. 5a: šaǧaraẗ
+  "\u0633\u064e\u0639\u0650\u064a\u062f" -> "sa\u02bf\u012bd"  # Table 6 No. 6 + example: saʿīd
+  "\u0634\u064e\u062c\u064e\u0631\u064e\u0629\u064d" -> "\u0161a\u01e7ara\u1e97"  # Table 6 No. 6a: šaǧaraẗ
+  "\u0621\u064e\u0644\u064e" -> "\u02beala"  # Table 7 No. 4 (rule-derived saʾala; the printed sāʾala is an erratum)
+  "\u0628\u0650\u0626\u0652\u0631" -> "bi\u02ber"  # Table 7 No. 4a + example: biʾr
+  "\u0623\u064e\u062e\u0628\u064e\u0627\u064c" -> "a\u1e96b\u0101"  # Table 7 No. 4b + example: aḫbār
+  "\u0642\u064f\u0631\u0652\u0622\u0646" -> "qur\u02be\u0101n"  # Table 7 No. 5 + example: qurʾān
+  "\u0622\u062f\u064e\u0627\u0628" -> "\u0101d\u0101b"  # Table 7 No. 5a + example: ādāb
+  "\u0641\u0650\u064a \u0646\u064f\u0648\u0631\u0650 \u0671\u0644\u0652\u0642\u064e\u0645\u064e\u0631" -> "f\u012b n\u016bri al-qamar"  # Table 7 No. 6 + example: fī nūri al-qamar (flexional -i rendered)
+  "\u0647\u064e\u0645\u0652\u0629" -> "ham\u1e97"  # Table 8 No. 7 + example: hamzaẗ (sukūn omitted)
+  "\u0639\u064e\u0628\u0651\u0627\u0633" -> "\u02bfabb\u0101s"  # Table 8 No. 8 + example: ʿabbās
+  "\u0645\u064e\u062f\u0650\u064a\u064e\u0629\u064c" -> "mad\u012ba\u1e97"  # 5.2.4 + example: madīnaẗ
+  "\u0627\u0644\u0634\u0651\u064e\u0645\u0652\u0633" -> "al-\u0161ams"  # 5.3.2 example: al-šams (assimilation šadda suppressed)
+  "\u0627\u0644\u0642\u064e\u0645\u064e\u0631" -> "al-qamar"  # moon article: al-qamar
+  "\u0628\u0650\u0671\u0644\u0644\ufc60\u064a\u0652\u0644" -> "bi-l-layl"  # 5.3.2 example, document encoding (بِٱللَّيْل): bi-l-layl
+  "\u0628\u0650\u0627\u0644\u0644\u064e\u0651\u064a\u0652\u0644" -> "bi-l-layl"  # 5.3.2 example, NFC canonical order: bi-l-layl
+  "\u0628\u0650\u0671\u0644\ufc60\u064a\u0652\u0644" -> "bi-l-layl"  # 5.3.2 example, one-lām encoding: bi-l-layl
+  "\u0628\u0650\u0671\u0644\u0652\u0642\u064e\u0645\u064e\u0631\u0650" -> "bi-l-qamari"  # 5.3.2 bi- moon article: bi-l-qamari
+  "\u0644\u0650\u0644\u0652\u0648\u064e\u0644\u064e\u062f\u0650" -> "li-l-waladi"  # 5.3.2 example: li-l-waladi (flexional -i rendered)
+  "\u0644\u0650\u0644\u0644\ufc60\u0647" -> "li-l-lah"  # li- doubled lām (lillāhi-type): li-l-lahi
+  "\u0627\u0644\u0644\ufc60\u0630\u0650\u064a" -> "al-la\u1e0f\u012b"  # doubled article lām (al-ladhi): al-laḏī
+  "\u0644\u0650\u0633\u064e\u0627\u0646" -> "lis\u0101n"  # no false prefix: lisān (5.3.1 gap: no standalone li- rule)
+  "\u0642\u064e\u0627\u0644\u064e\u0645\u064e" -> "q\u0101lama"  # mid-word al- sequence stays per-letter: qālama
+  "\u0628\u0627\u0628" -> "b\u0101b"  # medial bare alif -> ā (5.2.2)
+  "\u062e" -> "\u1e96"  # shared consonant ruleset passthrough
+
+  # Hand-written worked-example and structure tests below; the exhaustive per-row
+  # tests follow, generated from the source document's tables (Tables 6-8; the 14 non-empty rows transcribed, the six (omitted) rows covered by the hand tests per the artifact note);
+  # the strict-table rows inherited per 5.1.2 carry their provenance in the strict
+  # map's artifact).
+  # Source: ISO/FDIS 233-1:2026, ISO/TC 46/WG 3 N129 (FDIS for ballot, 2026-11-02),
+  # clause 5; adjudications ISO/TC 46/WG 3 N130. Expected strings are the map outputs.
+  # Provenance artifact: scripts/row-sources/iso-ara-Arab-Latn-233-2026-modified.json (21 rows).
+  # generated-by: maps/scripts/gen-row-tests.mjs (2026-11-19); regenerate from the artifact, do not hand-edit.
+# Exhaustive per-row tests for iso-ara-Arab-Latn-233-2026-modified, generated from the source
+# document's table.
+# Source: ISO 233-1:2026 (FDIS) modified transliteration, clause 5 Tables
+# 6-8: the rows with a non-empty romanization, 14 rows in document order,
+# plus eight (omitted or position-qualified) rows documented here because
+# the generator requires a non-empty output: Table 6 No. 1 (word-initial
+# alif with hamza omitted; the printed hex 0622 is an erratum for the
+# initial-alif-with-hamza reading per the row's own example aẖ), No. 2, No.
+# 5a, No. 6a (tanwīn rows omitted), Table 7 No. 4a (the 0654/0655 rows are
+# position-qualified: non-initial ʾ, initial omitted - biʾr/aḫbār are
+# hand-tested; a standalone mark string is word-initial), No. 6 (hamzat
+# al-waṣl omitted), Table 8 No. 7 (sukūn omitted) - all covered by the map's
+# hand tests (aẖ, šaǧaraẗ, aḫbār, fī nūri al-qamar, hamzaẗ).
+# Position-qualified equivalents of the transcribed rows: No. 1 non-initial
+# alif renders ā (5.2.2), No. 5 non-initial 0622 renders ʾā (qurʾān), No. 4b
+# initial hamza omitted (aḫbār). Table 8 No. 8 'duplication of consonant' is
+# implemented as the 28 consonant+šadda digraph rules of the map, so it has
+# no single-row transcription (ʿabbās is hand-tested). The strict-table rows
+# the modified system inherits (5.1.2) carry their provenance in
+# iso-ara-Arab-Latn-233-2026.json. Source: ISO/TC 46/WG 3 N129 with N130
+# adjudications (CN-017/018/019 rejections honored). Verify against the
+# published edition when available.
+# Provenance artifact: scripts/row-sources/iso-ara-Arab-Latn-233-2026-modified.json (14 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-19); regenerate from the artifact, do not hand-edit.
+  "ٰ" -> "â"
+  "َا" -> "ā"
+  "ًا" -> "an"
+  "اً" -> "an"
+  "ى" -> "á"
+  "ىٰ" -> "á"
+  "َى" -> "á"
+  "َىٰ" -> "á"
+  "ًى" -> "á"
+  "ىً" -> "á"
+  "ُو" -> "ū"
+  "ِي" -> "ī"
+  "ء" -> "ʾ"
+  "آ" -> "ā"
+}
+
+stage main {
+  # Pass 1: mark-order and ligature normalization. NFC canonical order places
+  # harakat (ccc 30-32) before šadda (ccc 33); the FDIS examples decompose
+  # U+FC60 shadda-first. This pass normalizes harakat+šadda to šadda+harakat
+  # and decomposes the šadda ligatures, so every source order transliterates
+  # identically and the šadda output attaches to the consonant (Table 3
+  # footnote a: the macron above ā, ī, ū does not represent šaddaẗ).
+  parallel {
+    sub "\ufc5f" "\u0651\u064d"
+    sub "\ufc60" "\u0651\u064e"
+    sub "\ufc61" "\u0651\u064f"
+    sub "\ufc62" "\u0651\u0650"
+    sub "\ufc63" "\u0651\u0670"
+    sub "\u064e\u0651" "\u0651\u064e"
+    sub "\u064f\u0651" "\u0651\u064f"
+    sub "\u0650\u0651" "\u0651\u0650"
+    sub "\u064b\u0651" "\u0651\u064b"
+    sub "\u064c\u0651" "\u0651\u064c"
+    sub "\u064d\u0651" "\u0651\u064d"
+  }
+
+  # Pass 2: clause 5 over the strict tables (5.1.2). The group carries word-initial
+  # article rules (boundary forms) and before-constrained suppressions, so it runs
+  # megaregexp-ordered: specific before generic, suppressions before duplication.
+  parallel {
+    use iso233.consonants
+    use iso233.short_vowels
+    use iso233.punctuation
+    use iso233.numerals
+    # 5.3.2 article assimilation: the šadda of the sun-letter assimilation and of the
+    # doubled article lām is carried by the article rendering al-/l- (examples al-šams,
+    # bi-l-layl, li-l-walad), so the duplication of Table 8 No. 8 is suppressed
+    # immediately after the article. Constrained rules come first: the megaregexp
+    # group resolves equal-position matches in document order.
+    sub { from "\u062a\u0651" to "t" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u062a\u0651" to "t" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u062a\u0651" to "t" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    sub { from "\u062b\u0651" to "\u1e6f" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u062b\u0651" to "\u1e6f" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u062b\u0651" to "\u1e6f" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    sub { from "\u062f\u0651" to "d" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u062f\u0651" to "d" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u062f\u0651" to "d" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    sub { from "\u0630\u0651" to "\u1e0f" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0630\u0651" to "\u1e0f" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0630\u0651" to "\u1e0f" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    sub { from "\u0631\u0651" to "r" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0631\u0651" to "r" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0631\u0651" to "r" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    sub { from "\u0632\u0651" to "z" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0632\u0651" to "z" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0632\u0651" to "z" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    sub { from "\u0633\u0651" to "s" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0633\u0651" to "s" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0633\u0651" to "s" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    sub { from "\u0634\u0651" to "\u0161" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0634\u0651" to "\u0161" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0634\u0651" to "\u0161" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    sub { from "\u0635\u0651" to "\u1e63" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0635\u0651" to "\u1e63" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0635\u0651" to "\u1e63" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    sub { from "\u0636\u0651" to "\u1e0d" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0636\u0651" to "\u1e0d" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0636\u0651" to "\u1e0d" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    sub { from "\u0637\u0651" to "\u1e6d" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0637\u0651" to "\u1e6d" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0637\u0651" to "\u1e6d" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    sub { from "\u0638\u0651" to "\u1e93" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0638\u0651" to "\u1e93" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0638\u0651" to "\u1e93" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    sub { from "\u0644\u0651" to "l" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0644\u0651" to "l" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0644\u0651" to "l" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    sub { from "\u0646\u0651" to "n" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0646\u0651" to "n" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0646\u0651" to "n" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    # doubled article lām (al-ladhi-type): emits the second l
+    sub { from "\u0644\u0651" to "l" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0644\u0651" to "l" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
+    sub { from "\u0644\u0651" to "l" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    # 5.3.2 article families, word-initial (specific before generic).
+    # bi- article, doubled lām (bi-l-layl):
+    sub { from boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + "\u0651\u064e" to "bi-l-la" }
+    sub { from boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + "\u0651\u064f" to "bi-l-lu" }
+    sub { from boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + "\u0651\u0650" to "bi-l-li" }
+    sub { from boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + "\u0651" to "bi-l-l" }
+    # bi- article, moon letters (bi-l-qamar):
+    sub { from boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") to "bi-l-" }
+    # li- article, doubled lām:
+    sub { from boundary + "\u0644\u0650\u0644" + "\u0651\u064e" to "li-l-la" }
+    sub { from boundary + "\u0644\u0650\u0644" + "\u0651\u064f" to "li-l-lu" }
+    sub { from boundary + "\u0644\u0650\u0644" + "\u0651\u0650" to "li-l-li" }
+    sub { from boundary + "\u0644\u0650\u0644" + "\u0651" to "li-l-l" }
+    # li- article, moon letters (li-l-walad):
+    sub { from boundary + "\u0644\u0650\u0644" + maybe("\u0652") to "li-l-" }
+    # bare article, doubled lām (al-ladhi):
+    sub { from boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + "\u0651\u064e" to "al-la" }
+    sub { from boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + "\u0651\u064f" to "al-lu" }
+    sub { from boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + "\u0651\u0650" to "al-li" }
+    sub { from boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + "\u0651" to "al-l" }
+    # bare article (al-qamar, al-šams):
+    sub { from boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") to "al-" }
+    # 
+    # Table 6 - modified transliteration options for vowels (rows 1-6a).
+    # No. 1a: alif ẖanǧariyyaẗ -> â (walâkin); the fatḥa the dagger alif supplies is absorbed
+    sub "\u064e\u0670" "\u00e2"
+    sub "\u0670" "\u00e2"
+    # No. 1b: fatḥa + lengthening alif -> ā (marāyā; 5.2.2)
+    sub "\u064e\u0627" "\u0101"
+    # No. 2/2a/2b: tanwīn al-fatḥ omitted; an before/following alif (ayḍan)
+    sub "\u064b\u0627" "an"
+    sub "\u0627\u064b" "an"
+    sub "\u064b" ""
+    # No. 3-4a: alif maqṣūraẗ -> á (ṣadá, fatá)
+    sub "\u064e\u0649\u0670" "\u00e1"
+    sub "\u0649\u0670" "\u00e1"
+    sub "\u064b\u0649" "\u00e1"
+    sub "\u0649\u064b" "\u00e1"
+    sub "\u064e\u0649" "\u00e1"
+    sub "\u0649" "\u00e1"
+    # No. 5: ḍamma + wāw -> ū (durūs); No. 6: kasra + yāʾ -> ī (saʿīd)
+    sub "\u064f\u0648" "\u016b"
+    sub "\u0650\u064a" "\u012b"
+    # No. 5a/6a: tanwīn al-ḍamm / al-kasr omitted
+    sub "\u064c" ""
+    sub "\u064d" ""
+    # No. 1 + 5.2.2: initial alif omitted, T7 No. 4b: initial hamza omitted (aḫbār);
+    # word-initial only - the multi-char Table 6 rules above take precedence in
+    # megaregexp document order (e.g. اً renders an, not the omission)
+    sub { from boundary + "\u0627" to "" }
+    sub { from boundary + "\u0623" to "" }
+    sub { from boundary + "\u0625" to "" }
+    sub { from boundary + "\u0654" to "" }
+    sub { from boundary + "\u0655" to "" }
+    sub { from boundary + "\u0624" to "" }
+    sub { from boundary + "\u0626" to "" }
+    # Table 7 - hamzaẗ and alif maddaẗ options.
+    # No. 5a/5: 0622 word-initial -> ā (ādāb), non-initial -> ʾā (qurʾān)
+    sub { from boundary + "\u0622" to "\u0101" }
+    sub "\u0622" "\u02be\u0101"
+    # No. 4: hamzaẗ non-initial -> ʾ (saʾala; the printed sāʾala is an erratum, see notes)
+    sub "\u0621" "\u02be"
+    # No. 4a: combining hamzaẗ non-initial -> ʾ (biʾr); initial omitted above (No. 4b)
+    sub "\u0654" "\u02be"
+    sub "\u0655" "\u02be"
+    # 4.1.4 precomposed hamza seats: non-initial -> ʾ (5.2.3: the vocalic-context hamza
+    # is not represented; the seat is not separately represented)
+    sub "\u0623" "\u02be"
+    sub "\u0625" "\u02be"
+    sub "\u0624" "\u02be"
+    sub "\u0626" "\u02be"
+    # No. 6: hamzaẗ al-waṣl omitted (fī nūr al-qamar); the word-initial wasla article
+    # family above renders al- per the table's own example
+    sub "\u0671" ""
+    # 5.2.2 non-initial bare alif: the lengthening alif renders ā
+    sub "\u0627" "\u0101"
+    # Table 8 - other signs.
+    # No. 7: sukūn omitted (hamzaẗ)
+    sub "\u0652" ""
+    # No. 8: šaddaẗ -> duplication of consonant (ʿabbās; the corpus idiom of
+    # iso-ara-Arab-Latn-233-1984); a bare orphan šadda with no consonant to double is dropped
+    sub "\u0651" ""
+    sub "\u0628\u0651" "bb"
+    sub "\u062a\u0651" "tt"
+    sub "\u062b\u0651" "\u1e6f\u1e6f"
+    sub "\u062c\u0651" "\u01e7\u01e7"
+    sub "\u062d\u0651" "\u1e25\u1e25"
+    sub "\u062e\u0651" "\u1e96\u1e96"
+    sub "\u062f\u0651" "dd"
+    sub "\u0630\u0651" "\u1e0f\u1e0f"
+    sub "\u0631\u0651" "rr"
+    sub "\u0632\u0651" "zz"
+    sub "\u0633\u0651" "ss"
+    sub "\u0634\u0651" "\u0161\u0161"
+    sub "\u0635\u0651" "\u1e63\u1e63"
+    sub "\u0636\u0651" "\u1e0d\u1e0d"
+    sub "\u0637\u0651" "\u1e6d\u1e6d"
+    sub "\u0638\u0651" "\u1e93\u1e93"
+    sub "\u0639\u0651" "\u02bf\u02bf"
+    sub "\u063a\u0651" "\u0121\u0121"
+    sub "\u0641\u0651" "ff"
+    sub "\u0642\u0651" "qq"
+    sub "\u0643\u0651" "kk"
+    sub "\u0644\u0651" "ll"
+    sub "\u0645\u0651" "mm"
+    sub "\u0646\u0651" "nn"
+    sub "\u0647\u0651" "hh"
+    sub "\u0629\u0651" "\u1e97\u1e97"
+    sub "\u0648\u0651" "ww"
+    sub "\u064a\u0651" "yy"
+    # 5.3.1 general prefix hyphenation, vowel supplying, and flexional-omission are
+    # language-knowledge steps outside stateless scope (see notes).
+  }
+}
+}
