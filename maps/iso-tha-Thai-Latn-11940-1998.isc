@@ -13,12 +13,153 @@ metadata {
   description 
 
   notes {
+    note "Encoded from the Wikipedia presentation of ISO 11940
+    (https://en.wikipedia.org/wiki/ISO_11940, CC BY-SA 4.0, retrieved
+    2026-11-19) as the interim working source; the official ISO
+    11940:1998 document remains the purchase of record for provenance."
+    note "The standard distinguishes the abbreviation symbol paiyannoi
+    from the sentence terminator angkhandiao (transliterated ǂ and
+    ǀ), but TIS 620-2533 and Unicode encode both uses as U+0E2F; the
+    map carries the paiyannoi reading ǂ. The ICU/CLDR implementation
+    substitutes a double dagger for both uses."
+    note "ICU/CLDR divergences from ISO 11940 are not reproduced: the
+    horn is U+031B, not a prime (ฅ ฒ ษ); ฏ is ṭ, not t̩; ำ is å, not
+    ả; phinthu U+0E3A is ring below U+0325, not ˌ; ฯ is ǂ, not ‡;
+    ๚ is ǁ, not ||. Preposed vowels are not transposed, per the
+    standard's recommendation: เชียงใหม่ transliterates
+    echīyngıh̄m̀, not the ICU form cheīyngh̄ım̀."
+    note "Character sequencing (clause 4.2): left to right, and top to
+    bottom at the same horizontal position, with tone marks and
+    thanthakhat preceding any other marks attached to a consonant.
+    The parallel substitution preserves Thai storage order, so marks
+    stacked on one consonant are emitted in stored order; a stateless
+    map cannot reorder a stack into the clause's tone-marks-first
+    sequence. The standard denies that sara u and nikkhahit can
+    combine; stored together they emit u plus ring above in stored
+    order."
+    note "Consonant diacritics follow the standard's entry order -
+    base letter, macron, then dot below, horn, or macron below -
+    and compose normalises each output to canonical (NFC) form
+    where a precomposed character exists (e.g. k with dot below as
+    U+1E33). U+0E45 (isolated lakkhangyao) transliterates ɨ per the
+    standard's provision, which notes the isolated letter should not
+    occur. U+0E3F (baht) is outside the working source's tables and
+    passes through unchanged."
   }
 }
 
 tests {
    "ภาษาไทย" ->  "p̣hās̛̄āịthy"
    "เชียงใหม่" ->  "echīyngıh̄m̀"
+
+# Exhaustive per-row tests for iso-tha-Thai-Latn-11940-1998, generated from the source
+# document's table.
+# Source: ISO 11940:1998 Thai transliteration, all tables. Working source:
+# the Wikipedia presentation "ISO 11940"
+# (https://en.wikipedia.org/wiki/ISO_11940), CC BY-SA 4.0, retrieved
+# 2026-11-19; used as the interim source pending acquisition of the official
+# ISO 11940:1998 document, which remains the purchase of record for
+# provenance. Rows in document order: the 46-consonant presentation table
+# (44 consonant letters plus the ฤ/ฦ rows), the vowel-sign table (repeated ฤ
+# ฦ ย ว อ entries deduplicated; ฤๅ/ฦๅ encoded as the constituent pairs), the
+# isolated-lakkhangyao provision (ɨ), the other-combining-marks table
+# (phinthu as ring below per the ISO column; the ICU CLDR implementation's ˌ
+# is a recorded divergence), and the punctuation-and-digits table (paiyannoi
+# reading ǂ for U+0E2F; the standard's angkhandiao reading ǀ is
+# unrepresentable because TIS 620/Unicode do not distinguish the two uses).
+# Expected strings are the post-compose (NFC where a precomposed character
+# exists) forms. Excludes U+0E3F baht, which the working source's tables do
+# not cover.
+# Provenance artifact: scripts/row-sources/iso-tha-Thai-Latn-11940-1998.json (88 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-19); regenerate from the artifact, do not hand-edit.
+  "ก" -> "k"
+  "ข" -> "k̄h"
+  "ฃ" -> "ḳ̄h"
+  "ค" -> "kh"
+  "ฅ" -> "k̛h"
+  "ฆ" -> "ḳh"
+  "ง" -> "ng"
+  "จ" -> "c"
+  "ฉ" -> "c̄h"
+  "ช" -> "ch"
+  "ซ" -> "s"
+  "ฌ" -> "c̣h"
+  "ญ" -> "ỵ"
+  "ฎ" -> "ḍ"
+  "ฏ" -> "ṭ"
+  "ฐ" -> "ṭ̄h"
+  "ฑ" -> "ṯh"
+  "ฒ" -> "t̛h"
+  "ณ" -> "ṇ"
+  "ด" -> "d"
+  "ต" -> "t"
+  "ถ" -> "t̄h"
+  "ท" -> "th"
+  "ธ" -> "ṭh"
+  "น" -> "n"
+  "บ" -> "b"
+  "ป" -> "p"
+  "ผ" -> "p̄h"
+  "ฝ" -> "f̄"
+  "พ" -> "ph"
+  "ฟ" -> "f"
+  "ภ" -> "p̣h"
+  "ม" -> "m"
+  "ย" -> "y"
+  "ร" -> "r"
+  "ฤ" -> "v"
+  "ล" -> "l"
+  "ฦ" -> "ł"
+  "ว" -> "w"
+  "ศ" -> "ṣ̄"
+  "ษ" -> "s̛̄"
+  "ส" -> "s̄"
+  "ห" -> "h̄"
+  "ฬ" -> "ḷ"
+  "อ" -> "x"
+  "ฮ" -> "ḥ"
+  "ะ" -> "a"
+  "ั" -> "ạ"
+  "า" -> "ā"
+  "ำ" -> "å"
+  "ิ" -> "i"
+  "ี" -> "ī"
+  "ึ" -> "ụ"
+  "ื" -> "ụ̄"
+  "ุ" -> "u"
+  "ู" -> "ū"
+  "เ" -> "e"
+  "แ" -> "æ"
+  "โ" -> "o"
+  "ใ" -> "ı"
+  "ไ" -> "ị"
+  "ฤๅ" -> "vɨ"
+  "ฦๅ" -> "łɨ"
+  "ๅ" -> "ɨ"
+  "่" -> "̀"
+  "้" -> "̂"
+  "๊" -> "́"
+  "๋" -> "̌"
+  "็" -> "̆"
+  "์" -> "̒"
+  "๎" -> "~"
+  "ํ" -> "̊"
+  "ฺ" -> "̥"
+  "ๆ" -> "«"
+  "ฯ" -> "ǂ"
+  "๏" -> "§"
+  "๚" -> "ǁ"
+  "๛" -> "»"
+  "๐" -> "0"
+  "๑" -> "1"
+  "๒" -> "2"
+  "๓" -> "3"
+  "๔" -> "4"
+  "๕" -> "5"
+  "๖" -> "6"
+  "๗" -> "7"
+  "๘" -> "8"
+  "๙" -> "9"
 }
 
 
@@ -83,7 +224,7 @@ stage main {
     sub "\u0e37" "ụ̄"
     sub "\u0e38" "u"
     sub "\u0e39" "ū"
-    sub "\u0e3a" "–̥"
+    sub "\u0e3a" "̥"
     sub "\u0e40" "e"
     sub "\u0e41" "æ"
     sub "\u0e42" "o"

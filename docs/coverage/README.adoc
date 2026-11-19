@@ -162,9 +162,34 @@ ISO 3602:1989 (official, complete: Table 1-3b, clauses 1-6) for the
 Japanese map, and IS 13194:1991 with Amendment No. 1 (December 2010)
 for the ten ISCII maps. The corpus's remaining ISO maps, which implement
 ISO 233, ISO 11940, and ISO 15919, still have no source document in the
-collection. For ISO 15919 the remaining coverage beyond the corpus's 19
+collection; of these, ISO 11940 is now encoded from an interim working
+source (see the next section). For ISO 15919 the remaining coverage beyond the corpus's 19
 maps, and the blocked unlock paths, are recorded in
 `iso-15919-remainder.adoc` in this directory.
+
+=== ISO 11940:1998 interim source
+
+The corpus's `iso-tha-Thai-Latn-11940-1998` was verified and completed
+against the Wikipedia presentation of ISO 11940
+(https://en.wikipedia.org/wiki/ISO_11940, CC BY-SA 4.0, retrieved
+2026-11-19) as the interim working source, per the full-scope
+transcription rule: every table of that presentation (the consonant
+presentation table, the vowel-sign table, the other-combining-marks
+table, and punctuation and digits) is embedded as per-row tests from
+the provenance artifact
+`scripts/row-sources/iso-tha-Thai-Latn-11940-1998.json`, alongside the
+presentation's two worked examples. One divergence was fixed: phinthu
+U+0E3A emitted a spurious en dash before ring below U+0325. The
+standard's paiyannoi/angkhandiao distinction (ǂ vs ǀ) is
+unrepresentable from Unicode, which encodes both uses as U+0E2F; the
+map carries the paiyannoi reading and records the limitation in its
+notes, together with the ICU/CLDR divergences that were checked and
+deliberately not reproduced (prime for horn, ả for ำ, ˌ for phinthu,
+transposed preposed vowels). U+0E3F (baht) is outside the
+working source's tables and passes through unchanged. ISO 11940 moves
+from purchase-needed to encoded-with-interim-source; the official ISO
+11940:1998 document remains the purchase of record for provenance (the
+owner's P2 acquisition list).
 
 The held copy of SIST ISO 843:2005 is an identical-text adoption of
 ISO 843:1997 and is recorded as informative only; the verification
