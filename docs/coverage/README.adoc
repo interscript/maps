@@ -109,6 +109,7 @@ collection.
 |Standard |Scope |Maps in the corpus
 
 |ISO 9:1995 |Cyrillic to Latin |`iso-rus-Cyrl-Latn-9-1995`
+|ISO/FDIS 9:2026 |Cyrillic to Latin, third edition (FDIS ballot N127) |`iso-rus-Cyrl-Latn-9-2026`
 |ISO 9984:1996 |Georgian to Latin |`iso-kat-Geor-Latn-9984-1996`
 |ISO/TR 11941:1996 |Korean to Latin, two methods |`iso-kor-Hang-Latn-1996-method1`, `iso-kor-Hang-Latn-1996-method2`
 |ISO 3602:1989 |Japanese (kana) to Latin |`iso-jpn-Hrkt-Latn-3602-1989`
@@ -120,6 +121,10 @@ Table 3a, Table 3b, clauses 1-6); the earlier truncation constraint is
 lifted - Tables 2/3a/3b were verified against the real text. The
 corpus's other ISO maps, which implement ISO 233, ISO 843, ISO 11940,
 and ISO 15919, have no source document in the collection.
+`iso-rus-Cyrl-Latn-9-2026` is additionally backed by the held
+ISO/FDIS 9:2026 ballot copy (ISO/TC 46/WG 3 N127, stored in the
+private-references collection) and awaits verification against the
+published third edition.
 |IS 13194:1991 (ISCII) |Indian scripts, Annex F/A romanization |`bis-dev-Deva-Latn-13194-1991`, `bis-ben-Beng-Latn-13194-1991`, `bis-asm-Beng-Latn-13194-1991`, `bis-guj-Gujr-Latn-13194-1991`, `bis-pnj-Guru-Latn-13194-1991`, `bis-ori-Orya-Latn-13194-1991`, `bis-tml-Taml-Latn-13194-1991`, `bis-tel-Telu-Latn-13194-1991`, `bis-kan-Kana-Latn-13194-1991`, `bis-mlm-Mlym-Latn-13194-1991`
 |===
 
