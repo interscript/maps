@@ -1,0 +1,812 @@
+system "ISO:rus-Cyrl:Latn:9-2026" {
+
+metadata {
+  authority_id iso
+  id 9-2026
+  language iso-639-2:rus
+  source_script Cyrl
+  destination_script Latn
+  name "ISO/FDIS 9:2026 Information and documentation -- Transliteration of Cyrillic characters into Latin characters -- Slavic and non-Slavic languages (Russian) (FDIS stage)"
+  url https://www.iso.org/committee/48820.html
+  creation_date 2026
+  description {    Third edition (FDIS stage) of ISO 9, Transliteration of Cyrillic characters into
+    Latin characters. Table 1 encodes all 168 main rows (upper and lower case
+    where given; rows 158-159 are caseless), Table 2 the 15 rare-or-obsolete
+    rows (lower case only), and the clause 4.4 formula example. Hex columns of
+    the source table are authoritative over printed glyphs.
+  }
+
+  notes {
+  note "Encoded from ISO/FDIS 9:2026, ISO/TC 46/WG 3 N127 (FDIS ballot; document date 2026-10-26, id 89763). FDIS stage: verify against the published edition when available."
+  note "Source footnote b: rows 138, 143 and 168 normally transliterate with the lower-case form only; where an upper-case distinction is needed a prefixed circumflex U+02C6 is added (encoded as the printed upper-case forms)."
+  note "Source footnote a: row 97 (OE ligature) has no encoding in the Cyrillic block; the Latin-block codepoints 0152/0153 serve both sides."
+  note "Against the 2nd edition (1995), combining comma below U+0326 is replaced by combining cedilla U+0327 throughout (rows 38 43 60 79 105 109 124 132 167); rows 68 78 87 115 116 152 165 166 are changed or reassigned per the source's informative type column."
+  note "Clause 4.1.2 (precomposed and decomposed characters treated equally on input): each precomposed Cyrillic letter with a canonical Unicode decomposition additionally carries a companion rule keyed on its decomposed sequence, mapping to the same output."
+  note "Clause 4.4 (unlisted Cyrillic + combining mark -> Latin + U+005F LOW LINE + combining mark) is not generically expressible in the stateless longest-match rule engine; only the clause's own worked example (0451+0301 -> 00EB+005F+0301, plus its decomposed twin per 4.1.2) is encoded as a rule."
+  note "Table 2 rows are transcribed verbatim by hex code; several printed Latin outputs do not follow the clause 4.4 pattern (e.g. row 170: 0456+0304+0307 -> 0069+0306; rows 169/171/172/174/175/177/179/181) - encoded as printed, pending the published edition."
+  note "Case-asymmetric rows as printed: row 56 upper 004A+030C / lower 01F0 precomposed; row 127 upper 0048+0331 / lower 1E96 precomposed."
+  }
+}
+tests {
+# Exhaustive per-row tests for iso-rus-Cyrl-Latn-9-2026, generated from the source
+# document's table.
+# Source: ISO/FDIS 9:2026, ISO/TC 46/WG 3 N127 (ballot 2026-10-26), Table 1
+# rows 1-168 (upper and lower case where given; rows 158-159 caseless) and
+# Table 2 rows 169-183 (lower case only); hex columns authoritative. The
+# clause 4.4 example (0451+0301 -> 00EB+005F+0301) is encoded as a hand
+# test, not a table row.
+# Provenance artifact: scripts/row-sources/iso-rus-Cyrl-Latn-9-2026.json (349 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-19); regenerate from the artifact, do not hand-edit.
+  "А" -> "A"
+  "а" -> "a"
+  "Ѧ" -> "Ę"
+  "ѧ" -> "ę"
+  "Ӑ" -> "Ă"
+  "ӑ" -> "ă"
+  "Ӓ" -> "Ä"
+  "ӓ" -> "ä"
+  "Ӕ" -> "Æ"
+  "ӕ" -> "æ"
+  "А́" -> "Á"
+  "а́" -> "á"
+  "А̄" -> "Ā"
+  "а̄" -> "ā"
+  "А̊" -> "Å"
+  "а̊" -> "å"
+  "Б" -> "B"
+  "б" -> "b"
+  "В" -> "V"
+  "в" -> "v"
+  "Ԝ" -> "W"
+  "ԝ" -> "w"
+  "Г" -> "G"
+  "г" -> "g"
+  "Ѓ" -> "Ǵ"
+  "ѓ" -> "ǵ"
+  "Ґ" -> "G̀"
+  "ґ" -> "g̀"
+  "Ғ" -> "Ġ"
+  "ғ" -> "ġ"
+  "Ҕ" -> "Ğ"
+  "ҕ" -> "ğ"
+  "Ӷ" -> "Ģ"
+  "ӷ" -> "ģ"
+  "Ӻ" -> "Ĝ"
+  "ӻ" -> "ĝ"
+  "Д" -> "D"
+  "д" -> "d"
+  "Ђ" -> "Đ"
+  "ђ" -> "đ"
+  "Ԁ" -> "Ḏ"
+  "ԁ" -> "ḏ"
+  "Ԃ" -> "Ḓ"
+  "ԃ" -> "ḓ"
+  "Ԫ" -> "D͜Ž"
+  "ԫ" -> "d͜ž"
+  "Ԭ" -> "D͜Č"
+  "ԭ" -> "d͜č"
+  "Е" -> "E"
+  "е" -> "e"
+  "Ѐ" -> "Ȅ"
+  "ѐ" -> "ȅ"
+  "Ё" -> "Ë"
+  "ё" -> "ë"
+  "Ѣ" -> "Ě"
+  "ѣ" -> "ě"
+  "Ѥ" -> "I͜E"
+  "ѥ" -> "i͜e"
+  "Ӗ" -> "Ĕ"
+  "ӗ" -> "ĕ"
+  "Ә" -> "Ȧ"
+  "ә" -> "ȧ"
+  "Ӛ" -> "A̋"
+  "ӛ" -> "a̋"
+  "Ԑ" -> "Ɛ"
+  "ԑ" -> "ɛ"
+  "Е́" -> "É"
+  "е́" -> "é"
+  "Е̄" -> "Ē"
+  "е̄" -> "ē"
+  "Ж" -> "Ž"
+  "ж" -> "ž"
+  "Џ" -> "D̂"
+  "џ" -> "d̂"
+  "Җ" -> "Ž̧"
+  "җ" -> "ž̧"
+  "Ӂ" -> "Z̆"
+  "ӂ" -> "z̆"
+  "Ӝ" -> "Z̄"
+  "ӝ" -> "z̄"
+  "З" -> "Z"
+  "з" -> "z"
+  "Ѕ" -> "Ẑ"
+  "ѕ" -> "ẑ"
+  "Ҙ" -> "Z̧"
+  "ҙ" -> "z̧"
+  "Ӟ" -> "Z̈"
+  "ӟ" -> "z̈"
+  "Ӡ" -> "Ź"
+  "ӡ" -> "ź"
+  "Ԅ" -> "Z̭"
+  "ԅ" -> "z̭"
+  "Ԇ" -> "Ẕ"
+  "ԇ" -> "ẕ"
+  "И" -> "I"
+  "и" -> "i"
+  "І" -> "Ì"
+  "і" -> "ì"
+  "Ї" -> "Ï"
+  "ї" -> "ï"
+  "Ѝ" -> "Ȉ"
+  "ѝ" -> "ȉ"
+  "Ӣ" -> "Ī"
+  "ӣ" -> "ī"
+  "Ӥ" -> "Î"
+  "ӥ" -> "î"
+  "И́" -> "Í"
+  "и́" -> "í"
+  "Й" -> "J"
+  "й" -> "j"
+  "Ј" -> "J̌"
+  "ј" -> "ǰ"
+  "Ҋ" -> "J̊"
+  "ҋ" -> "j̊"
+  "К" -> "K"
+  "к" -> "k"
+  "Ќ" -> "Ḱ"
+  "ќ" -> "ḱ"
+  "Қ" -> "Ķ"
+  "қ" -> "ķ"
+  "Ҝ" -> "K̂"
+  "ҝ" -> "k̂"
+  "Ҟ" -> "K̄"
+  "ҟ" -> "k̄"
+  "Ҡ" -> "Ǩ"
+  "ҡ" -> "ǩ"
+  "Ӄ" -> "Ḳ"
+  "ӄ" -> "ḳ"
+  "Ԛ" -> "Q"
+  "ԛ" -> "q"
+  "Ԟ" -> "Ḵ"
+  "ԟ" -> "ḵ"
+  "Л" -> "L"
+  "л" -> "l"
+  "Љ" -> "Ĺ"
+  "љ" -> "ĺ"
+  "Ӆ" -> "L̥"
+  "ӆ" -> "l̥"
+  "Ԉ" -> "Ḽ"
+  "ԉ" -> "ḽ"
+  "Ԓ" -> "Ł"
+  "ԓ" -> "ł"
+  "Ԕ" -> "L͜H"
+  "ԕ" -> "l͜h"
+  "Ԡ" -> "Ľ"
+  "ԡ" -> "ľ"
+  "Ԯ" -> "Ļ"
+  "ԯ" -> "ļ"
+  "М" -> "M"
+  "м" -> "m"
+  "Ӎ" -> "M̥"
+  "ӎ" -> "m̥"
+  "Н" -> "N"
+  "н" -> "n"
+  "Њ" -> "Ń"
+  "њ" -> "ń"
+  "Ң" -> "Ņ"
+  "ң" -> "ņ"
+  "Ҥ" -> "Ṅ"
+  "ҥ" -> "ṅ"
+  "Ӈ" -> "Ṇ"
+  "ӈ" -> "ṇ"
+  "Ӊ" -> "N̥"
+  "ӊ" -> "n̥"
+  "Ԋ" -> "Ṋ"
+  "ԋ" -> "ṋ"
+  "Ԣ" -> "Ň"
+  "ԣ" -> "ň"
+  "Ԩ" -> "Ñ"
+  "ԩ" -> "ñ"
+  "О" -> "O"
+  "о" -> "o"
+  "Ѡ" -> "Ò"
+  "ѡ" -> "ò"
+  "Ѹ" -> "O͜U"
+  "ѹ" -> "o͜u"
+  "Ѻ" -> "Ŏ"
+  "ѻ" -> "ŏ"
+  "Ѽ" -> "Ò̱"
+  "ѽ" -> "ò̱"
+  "Ѿ" -> "O͜T"
+  "ѿ" -> "o͜t"
+  "Ӧ" -> "Ö"
+  "ӧ" -> "ö"
+  "Ө" -> "Ȯ"
+  "ө" -> "ȯ"
+  "Ӫ" -> "Ő"
+  "ӫ" -> "ő"
+  "О́" -> "Ó"
+  "о́" -> "ó"
+  "О̄" -> "Ō"
+  "о̄" -> "ō"
+  "Œ" -> "Œ"
+  "œ" -> "œ"
+  "П" -> "P"
+  "п" -> "p"
+  "Ҧ" -> "Ṕ"
+  "ҧ" -> "ṕ"
+  "Ԥ" -> "P̀"
+  "ԥ" -> "p̀"
+  "Р" -> "R"
+  "р" -> "r"
+  "Ҏ" -> "R̥"
+  "ҏ" -> "r̥"
+  "Ԗ" -> "R͜H"
+  "ԗ" -> "r͜h"
+  "С" -> "S"
+  "с" -> "s"
+  "Ҫ" -> "Ş"
+  "ҫ" -> "ş"
+  "Ԍ" -> "S̭"
+  "ԍ" -> "s̭"
+  "Т" -> "T"
+  "т" -> "t"
+  "Ћ" -> "Ć"
+  "ћ" -> "ć"
+  "Ҭ" -> "Ţ"
+  "ҭ" -> "ţ"
+  "Ԏ" -> "Ṱ"
+  "ԏ" -> "ṱ"
+  "У" -> "U"
+  "у" -> "u"
+  "Ў" -> "Ŭ"
+  "ў" -> "ŭ"
+  "Ѵ" -> "Ỳ"
+  "ѵ" -> "ỳ"
+  "Ѷ" -> "Y̏"
+  "ѷ" -> "y̏"
+  "Ү" -> "U̇"
+  "ү" -> "u̇"
+  "Ұ" -> "Ù"
+  "ұ" -> "ù"
+  "Ӯ" -> "Ū"
+  "ӯ" -> "ū"
+  "Ӱ" -> "Ü"
+  "ӱ" -> "ü"
+  "Ӳ" -> "Ű"
+  "ӳ" -> "ű"
+  "У́" -> "Ú"
+  "у́" -> "ú"
+  "Ф" -> "F"
+  "ф" -> "f"
+  "Ѳ" -> "F̀"
+  "ѳ" -> "f̀"
+  "Х" -> "H"
+  "х" -> "h"
+  "Ҳ" -> "Ḩ"
+  "ҳ" -> "ḩ"
+  "Һ" -> "Ḥ"
+  "һ" -> "ḥ"
+  "Ӽ" -> "Ȟ"
+  "ӽ" -> "ȟ"
+  "Ӿ" -> "H̱"
+  "ӿ" -> "ẖ"
+  "Ԧ" -> "Ḣ"
+  "ԧ" -> "ḣ"
+  "Ц" -> "C"
+  "ц" -> "c"
+  "Ҵ" -> "C̄"
+  "ҵ" -> "c̄"
+  "Ч" -> "Č"
+  "ч" -> "č"
+  "Ҷ" -> "Ç"
+  "ҷ" -> "ç"
+  "Ҹ" -> "Ĉ"
+  "ҹ" -> "ĉ"
+  "Ӌ" -> "C̣"
+  "ӌ" -> "c̣"
+  "Ӵ" -> "C̈"
+  "ӵ" -> "c̈"
+  "Ш" -> "Š"
+  "ш" -> "š"
+  "Щ" -> "Ŝ"
+  "щ" -> "ŝ"
+  "Ъ" -> "ˆʺ"
+  "ъ" -> "ʺ"
+  "Ы" -> "Y"
+  "ы" -> "y"
+  "Ӹ" -> "Ÿ"
+  "ӹ" -> "ÿ"
+  "Ы́" -> "Ý"
+  "ы́" -> "ý"
+  "Ы̄" -> "Ȳ"
+  "ы̄" -> "ȳ"
+  "Ь" -> "ˆʹ"
+  "ь" -> "ʹ"
+  "Ҍ" -> "Ĵ"
+  "ҍ" -> "ĵ"
+  "Э" -> "È"
+  "э" -> "è"
+  "Є" -> "Ê"
+  "є" -> "ê"
+  "Ӭ" -> "È̤"
+  "ӭ" -> "è̤"
+  "Э́" -> "È´"
+  "э́" -> "è´"
+  "Э̄" -> "È̱"
+  "э̄" -> "è̱"
+  "Ю" -> "Û"
+  "ю" -> "û"
+  "Ю́" -> "Û´"
+  "ю́" -> "û´"
+  "Ю̄" -> "Û̱"
+  "ю̄" -> "û̱"
+  "Я" -> "Â"
+  "я" -> "â"
+  "Ѩ" -> "I͜Ę"
+  "ѩ" -> "i͜ę"
+  "Ԙ" -> "Ã"
+  "ԙ" -> "ã"
+  "Я́" -> "Â´"
+  "я́" -> "â´"
+  "Я̄" -> "Â̱"
+  "я̄" -> "â̱"
+  "ʼ" -> "ˋ"
+  "ˮ" -> "¨"
+  "Ѫ" -> "Ǫ"
+  "ѫ" -> "ǫ"
+  "Ѭ" -> "I͜Ǫ"
+  "ѭ" -> "i͜ǫ"
+  "Ѯ" -> "X"
+  "ѯ" -> "x"
+  "Ѱ" -> "P͜S"
+  "ѱ" -> "p͜s"
+  "Ҁ" -> "K͜P"
+  "ҁ" -> "k͜p"
+  "Ҩ" -> "Ẅ"
+  "ҩ" -> "ẅ"
+  "Ҽ" -> "Ċ"
+  "ҽ" -> "ċ"
+  "Ҿ" -> "Ç̇"
+  "ҿ" -> "ç̇"
+  "Ӏ" -> "ˆǂ"
+  "ӏ" -> "ǂ"
+  "а̄̈" -> "ạ̈"
+  "і̄̇" -> "ĭ"
+  "ј̵" -> "j́"
+  "к̨" -> "k̀"
+  "л'" -> "l'"
+  "н̨" -> "ǹ"
+  "н̡" -> "n̆"
+  "н̄" -> "n̄"
+  "о̄̈" -> "ọ̈"
+  "с̀" -> "s̀"
+  "т̨" -> "t̀"
+  "т̌" -> "ť"
+  "ӯ̈" -> "ụ̈"
+  "ӱ̄" -> "ǖ"
+  "ч̀" -> "c̀"
+
+  # Hand tests: clause 4.4 example and clause 4.1.2 decomposed-input equivalence.
+  "ё́" -> "ë_́"  # clause 4.4 example: 0451+0301 -> 00EB+005F+0301
+  "ё́" -> "ë_́"  # same input, decomposed (clause 4.1.2)
+  "Й" -> "J"  # row 55 upper, decomposed input (0419 canonical decomposition)
+  "й" -> "j"  # row 55 lower, decomposed input
+  "Ў" -> "Ŭ"  # row 112 upper, decomposed input (040E canonical decomposition)
+  "Ӭ" -> "È̤"  # row 147 upper, decomposed input (04EC canonical decomposition)
+  "Ӛ" -> "A̋"  # row 32 upper, decomposed input (04DA canonical decomposition)
+}
+
+stage main {
+
+  parallel {
+      sub "А" "A"  # row 1; U
+    sub "а" "a"  # row 1; U
+    sub "Ѧ" "Ę"  # row 2; C; formerly Ǎ 01CD; chu
+    sub "ѧ" "ę"  # row 2; C; formerly Ǎ 01CD; chu
+    sub "Ӑ" "Ă"  # row 3; U; chv kca
+    sub "ӑ" "ă"  # row 3; U; chv kca
+    sub "Ӓ" "Ä"  # row 4; U; kca mrj
+    sub "ӓ" "ä"  # row 4; U; kca mrj
+    sub "Ӕ" "Æ"  # row 5; U; oss
+    sub "ӕ" "æ"  # row 5; U; oss
+    sub "А́" "Á"  # row 6; U
+    sub "а́" "á"  # row 6; U
+    sub "А̄" "Ā"  # row 7; U; mns
+    sub "а̄" "ā"  # row 7; U; mns
+    sub "А̊" "Å"  # row 8; U; sel
+    sub "а̊" "å"  # row 8; U; sel
+    sub "Б" "B"  # row 9; U
+    sub "б" "b"  # row 9; U
+    sub "В" "V"  # row 10; U
+    sub "в" "v"  # row 10; U
+    sub "Ԝ" "W"  # row 11; U; kur  (glyph renders like W)
+    sub "ԝ" "w"  # row 11; U; kur  (glyph renders like W)
+    sub "Г" "G"  # row 12; U
+    sub "г" "g"  # row 12; U
+    sub "Ѓ" "Ǵ"  # row 13; U; mkd
+    sub "ѓ" "ǵ"  # row 13; U; mkd
+    sub "Ґ" "G̀"  # row 14; U; ukr
+    sub "ґ" "g̀"  # row 14; U; ukr
+    sub "Ғ" "Ġ"  # row 15; U; azj bak kaa kaz kjh tgk uzn
+    sub "ғ" "ġ"  # row 15; U; azj bak kaa kaz kjh tgk uzn
+    sub "Ҕ" "Ğ"  # row 16; U; abk ess sah
+    sub "ҕ" "ğ"  # row 16; U; abk ess sah
+    sub "Ӷ" "Ģ"  # row 17; N; abk ess ket niv
+    sub "ӷ" "ģ"  # row 17; N; abk ess ket niv
+    sub "Ӻ" "Ĝ"  # row 18; N; niv
+    sub "ӻ" "ĝ"  # row 18; N; niv
+    sub "Д" "D"  # row 19; U
+    sub "д" "d"  # row 19; U
+    sub "Ђ" "Đ"  # row 20; U; srp
+    sub "ђ" "đ"  # row 20; U; srp
+    sub "Ԁ" "Ḏ"  # row 21; N; kom†
+    sub "ԁ" "ḏ"  # row 21; N; kom†
+    sub "Ԃ" "Ḓ"  # row 22; N; kom†
+    sub "ԃ" "ḓ"  # row 22; N; kom†
+    sub "Ԫ" "D͜Ž"  # row 23; N; kom† oss†
+    sub "ԫ" "d͜ž"  # row 23; N; kom† oss†
+    sub "Ԭ" "D͜Č"  # row 24; N; kom†
+    sub "ԭ" "d͜č"  # row 24; N; kom†
+    sub "Е" "E"  # row 25; U
+    sub "е" "e"  # row 25; U
+    sub "Ѐ" "Ȅ"  # row 26; N; mkd
+    sub "ѐ" "ȅ"  # row 26; N; mkd
+    sub "Ё" "Ë"  # row 27; U
+    sub "ё" "ë"  # row 27; U
+    sub "Ѣ" "Ě"  # row 28; U; rus†
+    sub "ѣ" "ě"  # row 28; U; rus†
+    sub "Ѥ" "I͜E"  # row 29; N; chu
+    sub "ѥ" "i͜e"  # row 29; N; chu
+    sub "Ӗ" "Ĕ"  # row 30; U; chv
+    sub "ӗ" "ĕ"  # row 30; U; chv
+    sub "Ә" "Ȧ"  # row 31; C; formerly A 0041+030B; azj bak kaa kaz kca tat tuk
+    sub "ә" "ȧ"  # row 31; C; formerly A 0041+030B; azj bak kaa kaz kca tat tuk
+    sub "Ӛ" "A̋"  # row 32; CR; formerly À 00C0; previously used for char 31; kca
+    sub "ӛ" "a̋"  # row 32; CR; formerly À 00C0; previously used for char 31; kca
+    sub "Ԑ" "Ɛ"  # row 33; N; enf enh
+    sub "ԑ" "ɛ"  # row 33; N; enf enh
+    sub "Е́" "É"  # row 34; N
+    sub "е́" "é"  # row 34; N
+    sub "Е̄" "Ē"  # row 35; N; mns
+    sub "е̄" "ē"  # row 35; N; mns
+    sub "Ж" "Ž"  # row 36; U
+    sub "ж" "ž"  # row 36; U
+    sub "Џ" "D̂"  # row 37; U; mkd srp (D+circumflex, same as ed.2)
+    sub "џ" "d̂"  # row 37; U; mkd srp (D+circumflex, same as ed.2)
+    sub "Җ" "Ž̧"  # row 38; C; formerly Z̦ 017D+0326/017E+0326; tat tuk xal
+    sub "җ" "ž̧"  # row 38; C; formerly Z̦ 017D+0326/017E+0326; tat tuk xal
+    sub "Ӂ" "Z̆"  # row 39; U; mol
+    sub "ӂ" "z̆"  # row 39; U; mol
+    sub "Ӝ" "Z̄"  # row 40; U; udm
+    sub "ӝ" "z̄"  # row 40; U; udm
+    sub "З" "Z"  # row 41; U
+    sub "з" "z"  # row 41; U
+    sub "Ѕ" "Ẑ"  # row 42; U; mkd
+    sub "ѕ" "ẑ"  # row 42; U; mkd
+    sub "Ҙ" "Z̧"  # row 43; C; formerly Z̦ 005A+0326; bak
+    sub "ҙ" "z̧"  # row 43; C; formerly Z̦ 005A+0326; bak
+    sub "Ӟ" "Z̈"  # row 44; U; udm
+    sub "ӟ" "z̈"  # row 44; U; udm
+    sub "Ӡ" "Ź"  # row 45; U; abk
+    sub "ӡ" "ź"  # row 45; U; abk
+    sub "Ԅ" "Z̭"  # row 46; N; kom†
+    sub "ԅ" "z̭"  # row 46; N; kom†
+    sub "Ԇ" "Ẕ"  # row 47; N; kom†
+    sub "ԇ" "ẕ"  # row 47; N; kom†
+    sub "И" "I"  # row 48; U
+    sub "и" "i"  # row 48; U
+    sub "І" "Ì"  # row 49; U; bel kaz kjh koi kpv rus† ukr
+    sub "і" "ì"  # row 49; U; bel kaz kjh koi kpv rus† ukr
+    sub "Ї" "Ï"  # row 50; U; ukr
+    sub "ї" "ï"  # row 50; U; ukr
+    sub "Ѝ" "Ȉ"  # row 51; N; mkd
+    sub "ѝ" "ȉ"  # row 51; N; mkd
+    sub "Ӣ" "Ī"  # row 52; U; mns tgk
+    sub "ӣ" "ī"  # row 52; U; mns tgk
+    sub "Ӥ" "Î"  # row 53; U; udm
+    sub "ӥ" "î"  # row 53; U; udm
+    sub "И́" "Í"  # row 54; U
+    sub "и́" "í"  # row 54; U
+    sub "Й" "J"  # row 55; U
+    sub "й" "j"  # row 55; U
+    sub "Ј" "J̌"  # row 56; U; alt azj mkd srp (upper decomposed J+030C, lower precomposed 01F0)
+    sub "ј" "ǰ"  # row 56; U; alt azj mkd srp (upper decomposed J+030C, lower precomposed 01F0)
+    sub "Ҋ" "J̊"  # row 57; N; sjd
+    sub "ҋ" "j̊"  # row 57; N; sjd
+    sub "К" "K"  # row 58; U
+    sub "к" "k"  # row 58; U
+    sub "Ќ" "Ḱ"  # row 59; U; mkd
+    sub "ќ" "ḱ"  # row 59; U; mkd
+    sub "Қ" "Ķ"  # row 60; C; formerly K̦ 004B+0326; kaa kaz kca tgk uzn
+    sub "қ" "ķ"  # row 60; C; formerly K̦ 004B+0326; kaa kaz kca tgk uzn
+    sub "Ҝ" "K̂"  # row 61; U; azj
+    sub "ҝ" "k̂"  # row 61; U; azj
+    sub "Ҟ" "K̄"  # row 62; U; abk
+    sub "ҟ" "k̄"  # row 62; U; abk
+    sub "Ҡ" "Ǩ"  # row 63; U; bak
+    sub "ҡ" "ǩ"  # row 63; U; bak
+    sub "Ӄ" "Ḳ"  # row 64; U; ckt kca
+    sub "ӄ" "ḳ"  # row 64; U; ckt kca
+    sub "Ԛ" "Q"  # row 65; U; abk† kur oss†
+    sub "ԛ" "q"  # row 65; U; abk† kur oss†
+    sub "Ԟ" "Ḵ"  # row 66; N; ale†
+    sub "ԟ" "ḵ"  # row 66; N; ale†
+    sub "Л" "L"  # row 67; U
+    sub "л" "l"  # row 67; U
+    sub "Љ" "Ĺ"  # row 68; CR; formerly L 004C+0302, previously used for char 173; mkd srp
+    sub "љ" "ĺ"  # row 68; CR; formerly L 004C+0302, previously used for char 173; mkd srp
+    sub "Ӆ" "L̥"  # row 69; N; sjd
+    sub "ӆ" "l̥"  # row 69; N; sjd
+    sub "Ԉ" "Ḽ"  # row 70; N; kom†
+    sub "ԉ" "ḽ"  # row 70; N; kom†
+    sub "Ԓ" "Ł"  # row 71; N; ckt itl kca
+    sub "ԓ" "ł"  # row 71; N; ckt itl kca
+    sub "Ԕ" "L͜H"  # row 72; N; mdf†
+    sub "ԕ" "l͜h"  # row 72; N; mdf†
+    sub "Ԡ" "Ľ"  # row 73; C; formerly L̦ 004C+0326; chv†
+    sub "ԡ" "ľ"  # row 73; C; formerly L̦ 004C+0326; chv†
+    sub "Ԯ" "Ļ"  # row 74; N; itl kca
+    sub "ԯ" "ļ"  # row 74; N; itl kca
+    sub "М" "M"  # row 75; U
+    sub "м" "m"  # row 75; U
+    sub "Ӎ" "M̥"  # row 76; N; sjd
+    sub "ӎ" "m̥"  # row 76; N; sjd
+    sub "Н" "N"  # row 77; U
+    sub "н" "n"  # row 77; U
+    sub "Њ" "Ń"  # row 78; CR; formerly N 004E+0302, previously used for char 84; mkd srp
+    sub "њ" "ń"  # row 78; CR; formerly N 004E+0302, previously used for char 84; mkd srp
+    sub "Ң" "Ņ"  # row 79; C; formerly N̦ 004E+0326; kaa kaz kca kir kjh tat tuk xal
+    sub "ң" "ņ"  # row 79; C; formerly N̦ 004E+0326; kaa kaz kca kir kjh tat tuk xal
+    sub "Ҥ" "Ṅ"  # row 80; U; alt mhr sah
+    sub "ҥ" "ṅ"  # row 80; U; alt mhr sah
+    sub "Ӈ" "Ṇ"  # row 81; U; ckt kca mns sah yrk
+    sub "ӈ" "ṇ"  # row 81; U; ckt kca mns sah yrk
+    sub "Ӊ" "N̥"  # row 82; N; sjd
+    sub "ӊ" "n̥"  # row 82; N; sjd
+    sub "Ԋ" "Ṋ"  # row 83; N; kom†
+    sub "ԋ" "ṋ"  # row 83; N; kom†
+    sub "Ԣ" "Ň"  # row 84; C; formerly Ń 0143; chv†
+    sub "ԣ" "ň"  # row 84; C; formerly Ń 0143; chv†
+    sub "Ԩ" "Ñ"  # row 85; N; oaa
+    sub "ԩ" "ñ"  # row 85; N; oaa
+    sub "О" "O"  # row 86; U
+    sub "о" "o"  # row 86; U
+    sub "Ѡ" "Ò"  # row 87; CR; new character; Ò previously used for char 165; chu
+    sub "ѡ" "ò"  # row 87; CR; new character; Ò previously used for char 165; chu
+    sub "Ѹ" "O͜U"  # row 88; N; chu
+    sub "ѹ" "o͜u"  # row 88; N; chu
+    sub "Ѻ" "Ŏ"  # row 89; N; chu
+    sub "ѻ" "ŏ"  # row 89; N; chu
+    sub "Ѽ" "Ò̱"  # row 90; N; chu
+    sub "ѽ" "ò̱"  # row 90; N; chu
+    sub "Ѿ" "O͜T"  # row 91; N; chu
+    sub "ѿ" "o͜t"  # row 91; N; chu
+    sub "Ӧ" "Ö"  # row 92; U; alt kca kjh koi kpv mhr mrj
+    sub "ӧ" "ö"  # row 92; U; alt kca kjh koi kpv mhr mrj
+    sub "Ө" "Ȯ"  # row 93; C; formerly Ô 00D4; azj bak bxr kaa kaz kca khk kir sah tat tuk tyv xal
+    sub "ө" "ȯ"  # row 93; C; formerly Ô 00D4; azj bak bxr kaa kaz kca khk kir sah tat tuk tyv xal
+    sub "Ӫ" "Ő"  # row 94; U; evn kca
+    sub "ӫ" "ő"  # row 94; U; evn kca
+    sub "О́" "Ó"  # row 95; U
+    sub "о́" "ó"  # row 95; U
+    sub "О̄" "Ō"  # row 96; U; mns
+    sub "о̄" "ō"  # row 96; U; mns
+    sub "Œ" "Œ"  # row 97; U; sel (identity; footnote a on cyr hex)
+    sub "œ" "œ"  # row 97; U; sel (identity; footnote a on cyr hex)
+    sub "П" "P"  # row 98; U
+    sub "п" "p"  # row 98; U
+    sub "Ҧ" "Ṕ"  # row 99; U; abk
+    sub "ҧ" "ṕ"  # row 99; U; abk
+    sub "Ԥ" "P̀"  # row 100; U; abk
+    sub "ԥ" "p̀"  # row 100; U; abk
+    sub "Р" "R"  # row 101; U
+    sub "р" "r"  # row 101; U
+    sub "Ҏ" "R̥"  # row 102; N; sjd
+    sub "ҏ" "r̥"  # row 102; N; sjd
+    sub "Ԗ" "R͜H"  # row 103; N; mdf†
+    sub "ԗ" "r͜h"  # row 103; N; mdf†
+    sub "С" "S"  # row 104; U
+    sub "с" "s"  # row 104; U
+    sub "Ҫ" "Ş"  # row 105; C; formerly Ș 0218; bak chv
+    sub "ҫ" "ş"  # row 105; C; formerly Ș 0218; bak chv
+    sub "Ԍ" "S̭"  # row 106; N; kom†
+    sub "ԍ" "s̭"  # row 106; N; kom†
+    sub "Т" "T"  # row 107; U
+    sub "т" "t"  # row 107; U
+    sub "Ћ" "Ć"  # row 108; U; srp
+    sub "ћ" "ć"  # row 108; U; srp
+    sub "Ҭ" "Ţ"  # row 109; C; formerly Ț 021A; abk
+    sub "ҭ" "ţ"  # row 109; C; formerly Ț 021A; abk
+    sub "Ԏ" "Ṱ"  # row 110; N; kom†
+    sub "ԏ" "ṱ"  # row 110; N; kom†
+    sub "У" "U"  # row 111; U
+    sub "у" "u"  # row 111; U
+    sub "Ў" "Ŭ"  # row 112; U; bel ess kaa kca uzn
+    sub "ў" "ŭ"  # row 112; U; bel ess kaa kca uzn
+    sub "Ѵ" "Ỳ"  # row 113; U; rus†
+    sub "ѵ" "ỳ"  # row 113; U; rus†
+    sub "Ѷ" "Y̏"  # row 114; N; chu
+    sub "ѷ" "y̏"  # row 114; N; chu
+    sub "Ү" "U̇"  # row 115; CR; formerly Ù 00D9; previously used for char 116; azj bak bxr kaa kaz khk kir sah tat tuk tyv xal
+    sub "ү" "u̇"  # row 115; CR; formerly Ù 00D9; previously used for char 116; azj bak bxr kaa kaz khk kir sah tat tuk tyv xal
+    sub "Ұ" "Ù"  # row 116; CR; formerly U 0055+0307; previously used for char 115; kaz
+    sub "ұ" "ù"  # row 116; CR; formerly U 0055+0307; previously used for char 115; kaz
+    sub "Ӯ" "Ū"  # row 117; U; mns tgk
+    sub "ӯ" "ū"  # row 117; U; mns tgk
+    sub "Ӱ" "Ü"  # row 118; U; alt kca kjh mhr mrj
+    sub "ӱ" "ü"  # row 118; U; alt kca kjh mhr mrj
+    sub "Ӳ" "Ű"  # row 119; U; chv
+    sub "ӳ" "ű"  # row 119; U; chv
+    sub "У́" "Ú"  # row 120; U
+    sub "у́" "ú"  # row 120; U
+    sub "Ф" "F"  # row 121; U
+    sub "ф" "f"  # row 121; U
+    sub "Ѳ" "F̀"  # row 122; U; rus†
+    sub "ѳ" "f̀"  # row 122; U; rus†
+    sub "Х" "H"  # row 123; U
+    sub "х" "h"  # row 123; U
+    sub "Ҳ" "Ḩ"  # row 124; C; formerly H̦ 0048+0326; ess kaa kca tgk uzn
+    sub "ҳ" "ḩ"  # row 124; C; formerly H̦ 0048+0326; ess kaa kca tgk uzn
+    sub "Һ" "Ḥ"  # row 125; U; azj bak kaz sah tat xal
+    sub "һ" "ḥ"  # row 125; U; azj bak kaz sah tat xal
+    sub "Ӽ" "Ȟ"  # row 126; N; itl kca niv
+    sub "ӽ" "ȟ"  # row 126; N; itl kca niv
+    sub "Ӿ" "H̱"  # row 127; N; niv (upper decomposed 0048+0331, lower PRECOMPOSED 1E96)
+    sub "ӿ" "ẖ"  # row 127; N; niv (upper decomposed 0048+0331, lower PRECOMPOSED 1E96)
+    sub "Ԧ" "Ḣ"  # row 128; N; jdt ttt
+    sub "ԧ" "ḣ"  # row 128; N; jdt ttt
+    sub "Ц" "C"  # row 129; U
+    sub "ц" "c"  # row 129; U
+    sub "Ҵ" "C̄"  # row 130; U; abk
+    sub "ҵ" "c̄"  # row 130; U; abk
+    sub "Ч" "Č"  # row 131; U
+    sub "ч" "č"  # row 131; U
+    sub "Ҷ" "Ç"  # row 132; C; formerly C̦ 0043+0326; kca tgk
+    sub "ҷ" "ç"  # row 132; C; formerly C̦ 0043+0326; kca tgk
+    sub "Ҹ" "Ĉ"  # row 133; U; azj
+    sub "ҹ" "ĉ"  # row 133; U; azj
+    sub "Ӌ" "C̣"  # row 134; U; kjh
+    sub "ӌ" "c̣"  # row 134; U; kjh
+    sub "Ӵ" "C̈"  # row 135; U; udm
+    sub "ӵ" "c̈"  # row 135; U; udm
+    sub "Ш" "Š"  # row 136; U
+    sub "ш" "š"  # row 136; U
+    sub "Щ" "Ŝ"  # row 137; U
+    sub "щ" "ŝ"  # row 137; U
+    sub "Ъ" "ˆʺ"  # row 138; N,U; upper=02C6+02BA, lower=02BA ALONE
+    sub "ъ" "ʺ"  # row 138; N,U; upper=02C6+02BA, lower=02BA ALONE
+    sub "Ы" "Y"  # row 139; U
+    sub "ы" "y"  # row 139; U
+    sub "Ӹ" "Ÿ"  # row 140; U; mrj
+    sub "ӹ" "ÿ"  # row 140; U; mrj
+    sub "Ы́" "Ý"  # row 141; N
+    sub "ы́" "ý"  # row 141; N
+    sub "Ы̄" "Ȳ"  # row 142; U; mns
+    sub "ы̄" "ȳ"  # row 142; U; mns
+    sub "Ь" "ˆʹ"  # row 143; N,U; upper=02C6+02B9, lower=02B9 ALONE
+    sub "ь" "ʹ"  # row 143; N,U; upper=02C6+02B9, lower=02B9 ALONE
+    sub "Ҍ" "Ĵ"  # row 144; N; sjd
+    sub "ҍ" "ĵ"  # row 144; N; sjd
+    sub "Э" "È"  # row 145; U
+    sub "э" "è"  # row 145; U
+    sub "Є" "Ê"  # row 146; U; kca ukr
+    sub "є" "ê"  # row 146; U; kca ukr
+    sub "Ӭ" "È̤"  # row 147; N; kca sjd
+    sub "ӭ" "è̤"  # row 147; N; kca sjd
+    sub "Э́" "È´"  # row 148; N
+    sub "э́" "è´"  # row 148; N
+    sub "Э̄" "È̱"  # row 149; N; mns
+    sub "э̄" "è̱"  # row 149; N; mns
+    sub "Ю" "Û"  # row 150; U
+    sub "ю" "û"  # row 150; U
+    sub "Ю́" "Û´"  # row 151; N
+    sub "ю́" "û´"  # row 151; N
+    sub "Ю̄" "Û̱"  # row 152; C; formerly Ů 016E; mns
+    sub "ю̄" "û̱"  # row 152; C; formerly Ů 016E; mns
+    sub "Я" "Â"  # row 153; U
+    sub "я" "â"  # row 153; U
+    sub "Ѩ" "I͜Ę"  # row 154; N; chu
+    sub "ѩ" "i͜ę"  # row 154; N; chu
+    sub "Ԙ" "Ã"  # row 155; N; mdf†
+    sub "ԙ" "ã"  # row 155; N; mdf†
+    sub "Я́" "Â´"  # row 156; N
+    sub "я́" "â´"  # row 156; N
+    sub "Я̄" "Â̱"  # row 157; N; mns
+    sub "я̄" "â̱"  # row 157; N; mns
+    sub "ʼ" "ˋ"  # row 158; U; azj bel ckt ess mkd ukr yrk (caseless)
+    sub "ˮ" "¨"  # row 159; U; yrk (caseless)
+    sub "Ѫ" "Ǫ"  # row 160; N; chu
+    sub "ѫ" "ǫ"  # row 160; N; chu
+    sub "Ѭ" "I͜Ǫ"  # row 161; N; chu
+    sub "ѭ" "i͜ǫ"  # row 161; N; chu
+    sub "Ѯ" "X"  # row 162; N; chu
+    sub "ѯ" "x"  # row 162; N; chu
+    sub "Ѱ" "P͜S"  # row 163; N; chu
+    sub "ѱ" "p͜s"  # row 163; N; chu
+    sub "Ҁ" "K͜P"  # row 164; N; chu
+    sub "ҁ" "k͜p"  # row 164; N; chu
+    sub "Ҩ" "Ẅ"  # row 165; C; formerly Ò 00D2; abk
+    sub "ҩ" "ẅ"  # row 165; C; formerly Ò 00D2; abk
+    sub "Ҽ" "Ċ"  # row 166; C; formerly C 0043+0306; abk
+    sub "ҽ" "ċ"  # row 166; C; formerly C 0043+0306; abk
+    sub "Ҿ" "Ç̇"  # row 167; C; formerly C̦ 0043+0306+0326; abk
+    sub "ҿ" "ç̇"  # row 167; C; formerly C̦ 0043+0306+0326; abk
+    sub "Ӏ" "ˆǂ"  # row 168; N,C; formerly 2021; ady ava che dar inh kbd lbe lez tab
+    sub "ӏ" "ǂ"  # row 168; N,C; formerly 2021; ady ava che dar inh kbd lbe lez tab
+    sub "а̄̈" "ạ̈"  # row 169
+    sub "і̄̇" "ĭ"  # row 170
+    sub "ј̵" "j́"  # row 171
+    sub "к̨" "k̀"  # row 172
+    sub "л'" "l'"  # row 173; formerly 013A
+    sub "н̨" "ǹ"  # row 174
+    sub "н̡" "n̆"  # row 175
+    sub "н̄" "n̄"  # row 176
+    sub "о̄̈" "ọ̈"  # row 177
+    sub "с̀" "s̀"  # row 178
+    sub "т̨" "t̀"  # row 179
+    sub "т̌" "ť"  # row 180
+    sub "ӯ̈" "ụ̈"  # row 181
+    sub "ӱ̄" "ǖ"  # row 182
+    sub "ч̀" "c̀"  # row 183
+
+    sub "Ӑ" "Ă"  # 4.1.2 decomposed form of row 3 upper
+    sub "ӑ" "ă"  # 4.1.2 decomposed form of row 3 lower
+    sub "Ӓ" "Ä"  # 4.1.2 decomposed form of row 4 upper
+    sub "ӓ" "ä"  # 4.1.2 decomposed form of row 4 lower
+    sub "Ѓ" "Ǵ"  # 4.1.2 decomposed form of row 13 upper
+    sub "ѓ" "ǵ"  # 4.1.2 decomposed form of row 13 lower
+    sub "Ѐ" "Ȅ"  # 4.1.2 decomposed form of row 26 upper
+    sub "ѐ" "ȅ"  # 4.1.2 decomposed form of row 26 lower
+    sub "Ё" "Ë"  # 4.1.2 decomposed form of row 27 upper
+    sub "ё" "ë"  # 4.1.2 decomposed form of row 27 lower
+    sub "Ӗ" "Ĕ"  # 4.1.2 decomposed form of row 30 upper
+    sub "ӗ" "ĕ"  # 4.1.2 decomposed form of row 30 lower
+    sub "Ӛ" "A̋"  # 4.1.2 decomposed form of row 32 upper
+    sub "ӛ" "a̋"  # 4.1.2 decomposed form of row 32 lower
+    sub "Ӂ" "Z̆"  # 4.1.2 decomposed form of row 39 upper
+    sub "ӂ" "z̆"  # 4.1.2 decomposed form of row 39 lower
+    sub "Ӝ" "Z̄"  # 4.1.2 decomposed form of row 40 upper
+    sub "ӝ" "z̄"  # 4.1.2 decomposed form of row 40 lower
+    sub "Ӟ" "Z̈"  # 4.1.2 decomposed form of row 44 upper
+    sub "ӟ" "z̈"  # 4.1.2 decomposed form of row 44 lower
+    sub "Ї" "Ï"  # 4.1.2 decomposed form of row 50 upper
+    sub "ї" "ï"  # 4.1.2 decomposed form of row 50 lower
+    sub "Ѝ" "Ȉ"  # 4.1.2 decomposed form of row 51 upper
+    sub "ѝ" "ȉ"  # 4.1.2 decomposed form of row 51 lower
+    sub "Ӣ" "Ī"  # 4.1.2 decomposed form of row 52 upper
+    sub "ӣ" "ī"  # 4.1.2 decomposed form of row 52 lower
+    sub "Ӥ" "Î"  # 4.1.2 decomposed form of row 53 upper
+    sub "ӥ" "î"  # 4.1.2 decomposed form of row 53 lower
+    sub "Й" "J"  # 4.1.2 decomposed form of row 55 upper
+    sub "й" "j"  # 4.1.2 decomposed form of row 55 lower
+    sub "Ќ" "Ḱ"  # 4.1.2 decomposed form of row 59 upper
+    sub "ќ" "ḱ"  # 4.1.2 decomposed form of row 59 lower
+    sub "Ӧ" "Ö"  # 4.1.2 decomposed form of row 92 upper
+    sub "ӧ" "ö"  # 4.1.2 decomposed form of row 92 lower
+    sub "Ӫ" "Ő"  # 4.1.2 decomposed form of row 94 upper
+    sub "ӫ" "ő"  # 4.1.2 decomposed form of row 94 lower
+    sub "Ў" "Ŭ"  # 4.1.2 decomposed form of row 112 upper
+    sub "ў" "ŭ"  # 4.1.2 decomposed form of row 112 lower
+    sub "Ѷ" "Y̏"  # 4.1.2 decomposed form of row 114 upper
+    sub "ѷ" "y̏"  # 4.1.2 decomposed form of row 114 lower
+    sub "Ӯ" "Ū"  # 4.1.2 decomposed form of row 117 upper
+    sub "ӯ" "ū"  # 4.1.2 decomposed form of row 117 lower
+    sub "Ӱ" "Ü"  # 4.1.2 decomposed form of row 118 upper
+    sub "ӱ" "ü"  # 4.1.2 decomposed form of row 118 lower
+    sub "Ӳ" "Ű"  # 4.1.2 decomposed form of row 119 upper
+    sub "ӳ" "ű"  # 4.1.2 decomposed form of row 119 lower
+    sub "Ӵ" "C̈"  # 4.1.2 decomposed form of row 135 upper
+    sub "ӵ" "c̈"  # 4.1.2 decomposed form of row 135 lower
+    sub "Ӹ" "Ÿ"  # 4.1.2 decomposed form of row 140 upper
+    sub "ӹ" "ÿ"  # 4.1.2 decomposed form of row 140 lower
+    sub "Ӭ" "È̤"  # 4.1.2 decomposed form of row 147 upper
+    sub "ӭ" "è̤"  # 4.1.2 decomposed form of row 147 lower
+
+    sub "ё́" "ë_́"  # clause 4.4 example (0451+0301 -> 00EB+005F+0301)
+    sub "ё́" "ë_́"  # clause 4.4 example, decomposed input (4.1.2)
+  }
+
+}
+
+}
