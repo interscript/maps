@@ -1,0 +1,264 @@
+system "ISO:hye-Armn:Latn:9985-2026" {
+
+metadata {
+  authority_id iso
+  id 9985-2026
+  language iso-639-2:hye
+  source_script Armn
+  destination_script Latn
+  name "ISO 9985:2026 Information and documentation -- Transliteration of Armenian characters into Latin characters"
+  url https://www.iso.org/committee/48820.html
+  # Source document: interscript-private-references/iso/ISO-9985-2026.pdf
+  # (purchased published edition, ISO Store order OP-1130631, downloaded
+  # 2026-11-19; verification-grade provenance).
+  creation_date 2026
+  adoption_date 2026
+  description {    Second edition (cancels and replaces ISO 9985:1996; no map for the
+    first edition exists in the corpus). Table 1 transliterates all 38
+    letters of the Armenian alphabet, each upper/lower case pair to its
+    upper/lower Latin pair, with the aspirate rows (Թ Չ Ց Փ Ք) carrying
+    the neutral (vertical line) apostrophe U+0027 - the edition's stated
+    change is that all aspirates now share the one visual convention
+    (formerly a right single quotation mark U+2019) and the unaspirated
+    pairs Ծ/Ճ are now shown unmarked like their p/t/k counterparts.
+    The yew ligature և is transliterated as the digraph /ew/; the ու
+    letter sequence romanizes /ow/ character by character. Table 2
+    transliterates the eight Armenian punctuation marks.
+  }
+
+  notes {
+    note "Encoded from the purchased published edition (ISO Store order OP-1130631, downloaded 2026-11-19); the PDF text layer is clean and the hex column is authoritative over the printed glyphs. Extracted 2026-11-19."
+    note "Case-mapping quirk preserved exactly as the standard's hex column prints it: uppercase J-caron (the Ջ row) is the decomposed pair U+004A+U+030C because no precomposed uppercase form exists, while the lowercase row is the precomposed U+01F0; 4.1 requires systems to treat precomposed and decomposed input equally."
+    note "Reverse-direction ambiguity, flagged per the source: forward, both the ligature և (Table 1 provision) and the two-letter sequence ե+ւ produce /ew/, while the document states the system is entirely reversible. This map reverses /ew/ to the ligature և (the standard now treats it as a distinct digraph character of the alphabet); a source sequence ե+ւ therefore does not round-trip. The ու sequence has no ligature row and round-trips as ow."
+    note "Table 2 punctuation, hex column authoritative: row 1 is the identity comma U+002C; row 2 maps the Armenian middle mark (U+2024, the one dot leader as printed in the hex column) to the semicolon; the Armenian full stop U+0589 maps to the full stop; the question/exclamation marks and the shesht (U+055B, to modifier circumflex U+02C6) and hyphen (U+058A) follow the printed column."
+    note "Edition difference (1996 -> 2026), from the 2026 Foreword: aspirates moved from the right single quotation mark U+2019 to the neutral U+0027, and the unaspirated convention was extended to the Ծ (c) and Ճ (c-caron) pairs, formerly shown as c'/c-caron-apostrophe. The 1996 document is not held; no legacy map exists to verify against (Armenia in the corpus is covered by din-hye-Armn-Latn-32706-2010, a different, untouched system)."
+    note "No capitalization provisions: Armenian distinguishes upper and lower case and Table 1 maps each case explicitly; document examples print capitalized name forms only as optional target-language convention."
+  }
+}
+
+tests {
+   "և" ->  "ew"
+   "ու" ->  "ow"
+   "Երևան" ->  "Erewan"
+   "Հայաստան" ->  "Hayastan"
+   "ՀԱՅԱՍՏԱՆ" ->  "HAYASTAN"
+   "Ղարաբաղ" ->  "Ġarabaġ"
+   "Թ" ->  "T'"
+   "թ" ->  "t'"
+   "Չ" ->  "Č'"
+   "Ց" ->  "C'"
+   "Փ" ->  "P'"
+   "Ք" ->  "K'"
+   "Ջ" ->  "J̌"
+   "ջ" ->  "ǰ"
+   "Ընդհանուր" ->  "Ëndhanowr"
+   "․" ->  ";"
+   "։" ->  "."
+   "՝" ->  ":"
+   "՞" ->  "?"
+   "՜" ->  "!"
+   "՛" ->  "ˆ"
+   "֊" ->  "-"
+# Exhaustive per-row tests for iso-hye-Armn-Latn-9985-2026, generated from the source
+# document's table.
+# Source: ISO 9985:2026(en), second edition, purchased published edition
+# (ISO Store order OP-1130631, downloaded 2026-11-19; verification-grade
+# provenance). Rows in document order: Table 1 rows 1-38, each Armenian
+# upper/lower case pair mapping to the upper/lower Latin pair (hex column
+# authoritative; the aspirate rows carry U+0027 neutral apostrophe;
+# uppercase J-caron is the decomposed U+004A+U+030C because no precomposed
+# form exists, lowercase is the precomposed U+01F0 - both exactly as printed
+# in the standard's own hex column), then the post-Table-1 ligature
+# provision (yew ligature U+0587, a distinct digraph character,
+# transliterated as rows 5+34 /ew/), then Table 2 rows 1-8 (Armenian
+# punctuation; row 1 is the identity comma; row 2 maps U+2024 one dot leader
+# to the semicolon).
+# Provenance artifact: scripts/row-sources/iso-hye-Armn-Latn-9985-2026.json (85 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-19); regenerate from the artifact, do not hand-edit.
+  "Ա" -> "A"
+  "ա" -> "a"
+  "Բ" -> "B"
+  "բ" -> "b"
+  "Գ" -> "G"
+  "գ" -> "g"
+  "Դ" -> "D"
+  "դ" -> "d"
+  "Ե" -> "E"
+  "ե" -> "e"
+  "Զ" -> "Z"
+  "զ" -> "z"
+  "Է" -> "Ē"
+  "է" -> "ē"
+  "Ը" -> "Ë"
+  "ը" -> "ë"
+  "Թ" -> "T'"
+  "թ" -> "t'"
+  "Ժ" -> "Ž"
+  "ժ" -> "ž"
+  "Ի" -> "I"
+  "ի" -> "i"
+  "Լ" -> "L"
+  "լ" -> "l"
+  "Խ" -> "X"
+  "խ" -> "x"
+  "Ծ" -> "C"
+  "ծ" -> "c"
+  "Կ" -> "K"
+  "կ" -> "k"
+  "Հ" -> "H"
+  "հ" -> "h"
+  "Ձ" -> "J"
+  "ձ" -> "j"
+  "Ղ" -> "Ġ"
+  "ղ" -> "ġ"
+  "Ճ" -> "Č"
+  "ճ" -> "č"
+  "Մ" -> "M"
+  "մ" -> "m"
+  "Յ" -> "Y"
+  "յ" -> "y"
+  "Ն" -> "N"
+  "ն" -> "n"
+  "Շ" -> "Š"
+  "շ" -> "š"
+  "Ո" -> "O"
+  "ո" -> "o"
+  "Չ" -> "Č'"
+  "չ" -> "č'"
+  "Պ" -> "P"
+  "պ" -> "p"
+  "Ջ" -> "J̌"
+  "ջ" -> "ǰ"
+  "Ռ" -> "Ṙ"
+  "ռ" -> "ṙ"
+  "Ս" -> "S"
+  "ս" -> "s"
+  "Վ" -> "V"
+  "վ" -> "v"
+  "Տ" -> "T"
+  "տ" -> "t"
+  "Ր" -> "R"
+  "ր" -> "r"
+  "Ց" -> "C'"
+  "ց" -> "c'"
+  "Ւ" -> "W"
+  "ւ" -> "w"
+  "Փ" -> "P'"
+  "փ" -> "p'"
+  "Ք" -> "K'"
+  "ք" -> "k'"
+  "Օ" -> "Ō"
+  "օ" -> "ō"
+  "Ֆ" -> "F"
+  "ֆ" -> "f"
+  "և" -> "ew"
+  "," -> ","
+  "․" -> ";"
+  "՝" -> ":"
+  "։" -> "."
+  "՞" -> "?"
+  "՜" -> "!"
+  "՛" -> "ˆ"
+  "֊" -> "-"
+}
+
+stage main {
+  # Table 1 - transliteration of Armenian characters (rows 1-38, each
+  # upper/lower pair to its upper/lower Latin pair), the yew ligature
+  # provision, and Table 2 - Armenian punctuation (rows 1-8)
+  parallel {
+    sub "Ա" "A"
+    sub "ա" "a"
+    sub "Բ" "B"
+    sub "բ" "b"
+    sub "Գ" "G"
+    sub "գ" "g"
+    sub "Դ" "D"
+    sub "դ" "d"
+    sub "Ե" "E"
+    sub "ե" "e"
+    sub "Զ" "Z"
+    sub "զ" "z"
+    sub "Է" "Ē"
+    sub "է" "ē"
+    sub "Ը" "Ë"
+    sub "ը" "ë"
+    sub "Թ" "T'"
+    sub "թ" "t'"
+    sub "Ժ" "Ž"
+    sub "ժ" "ž"
+    sub "Ի" "I"
+    sub "ի" "i"
+    sub "Լ" "L"
+    sub "լ" "l"
+    sub "Խ" "X"
+    sub "խ" "x"
+    sub "Ծ" "C"
+    sub "ծ" "c"
+    sub "Կ" "K"
+    sub "կ" "k"
+    sub "Հ" "H"
+    sub "հ" "h"
+    sub "Ձ" "J"
+    sub "ձ" "j"
+    sub "Ղ" "Ġ"
+    sub "ղ" "ġ"
+    sub "Ճ" "Č"
+    sub "ճ" "č"
+    sub "Մ" "M"
+    sub "մ" "m"
+    sub "Յ" "Y"
+    sub "յ" "y"
+    sub "Ն" "N"
+    sub "ն" "n"
+    sub "Շ" "Š"
+    sub "շ" "š"
+    sub "Ո" "O"
+    sub "ո" "o"
+    sub "Չ" "Č'"
+    sub "չ" "č'"
+    sub "Պ" "P"
+    sub "պ" "p"
+    sub "Ջ" "J̌"
+    sub "ջ" "ǰ"
+    sub "Ռ" "Ṙ"
+    sub "ռ" "ṙ"
+    sub "Ս" "S"
+    sub "ս" "s"
+    sub "Վ" "V"
+    sub "վ" "v"
+    sub "Տ" "T"
+    sub "տ" "t"
+    sub "Ր" "R"
+    sub "ր" "r"
+    sub "Ց" "C'"
+    sub "ց" "c'"
+    sub "Ւ" "W"
+    sub "ւ" "w"
+    sub "Փ" "P'"
+    sub "փ" "p'"
+    sub "Ք" "K'"
+    sub "ք" "k'"
+    sub "Օ" "Ō"
+    sub "օ" "ō"
+    sub "Ֆ" "F"
+    sub "ֆ" "f"
+
+    # post-Table-1 provision: the yew ligature, a distinct digraph
+    # character, transliterated as rows 5+34 /ew/
+    sub "և" "ew"
+
+    # Table 2 - Armenian punctuation (rows 1-8)
+    sub "," ","
+    sub "․" ";"
+    sub "՝" ":"
+    sub "։" "."
+    sub "՞" "?"
+    sub "՜" "!"
+    sub "՛" "ˆ"
+    sub "֊" "-"
+  }
+
+}
+
+}

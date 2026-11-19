@@ -1,0 +1,239 @@
+system "ISO:prs-Arab:Latn:233-3-2026" {
+
+metadata {
+  authority_id iso
+  id 233-3-2026
+  language iso-639-3:prs
+  source_script Arab
+  destination_script Latn
+  name "ISO 233-3:2026 Information and documentation -- Transliteration of Perso-Arabic characters into Latin characters -- Part 3: Persian language"
+  url https://www.iso.org/committee/48820.html
+  # Source document: interscript-private-references/iso/ISO-233-3-2026.pdf
+  # (purchased published edition, ISO Store order OP-1130631, downloaded
+  # 2026-11-19; verification-grade provenance).
+  creation_date 2026
+  adoption_date 2026
+  description {    Third edition (cancels and replaces ISO 233-3:2023 as a minor
+    revision; the corpus's legacy map implements the 1999 first edition).
+    Encodes the strict transliteration of clause 4, the one-to-one
+    fully reversible system: Table 1 consonants (32 rows), Table 2
+    vowels (alef madda and the three written diacritical vowel signs),
+    Table 3 conventional signs (tashdid and the three tanvin marks),
+    4.4.3 ta marbuta per ISO 233, 4.4.4 the Allah word, Table 4 hamze
+    forms, Table 5 the ezafe he-plus-hamze form, Table 1 note d's
+    strict provision for the yeh-plus-superscript-alef clarity variant,
+    Table 6 punctuation and Table 7 numerals. The clause 5 modified
+    transliteration (Tables 8-11) is not reversible - it depends on
+    word position and on whether a letter functions as consonant or
+    vowel - and is not encoded.
+  }
+
+  notes {
+    note "Encoded from the purchased published edition (ISO Store order OP-1130631, downloaded 2026-11-19); the PDF text layer is clean and the hex column is authoritative over the printed glyphs. Extracted 2026-11-19."
+    note "NFC quirk preserved exactly as the published standard prints it: the zal row (ذ, hex 1E95) and the zain row (ظ, hex 1E93) use precomposed codepoints, while the thal row (ث, hex 0073+0331) and the dad row (ض, hex 007A+0324) are printed decomposed; no precomposed forms exist for those two. Note that the decomposed zal (U+007A+U+0331) is canonically equivalent to the precomposed U+1E95, so NFC input affects which of the two Arabic letters a normalized application resolves; 4.1.3 requires systems to treat precomposed and decomposed characters equally on input."
+    note "Clause 4.1.3: a system transliterating from Latin into Persian script shall be case insensitive, and precomposed/decomposed input must be treated equally; both are input-normalization concerns left to the implementing engine, not rows of the map."
+    note "Tolerance notes of the source, flagged and not encoded as rows: Table 1 note b (U+2018 may be encountered for the ayn), note c (Arabic yeh U+064A may be encountered in existing text; no strict value is given for it, so bare U+064A passes through unromanized), Table 1 note d and Table 5 note b (U+06C0 may be encountered; it is not canonically equivalent to the encoded he-plus-hamze sequence U+0647+U+0654 and is not permitted in ISIRI 6219), Table 4 note a (U+2019 may be encountered for the hamze apostrophe). Bare alef maqsur U+0649 likewise has no explicit strict row: the source says Persian usually writes it as U+06CC or, for clarity, U+06CC+U+0670 (the latter is the encoded ý row)."
+    note "Strict alef rule (Table 1 note a and 4.2.1): alef is always transliterated as a-macron, even as the bearer of a written short vowel (alef + pish = a-macron + o, e.g. اُمید = āomyd); this falls out of the character-by-character rows."
+    note "The Allah word (4.4.4, hex 0627 0644 0644 0651 0670 0647) is encoded as one strict multi-character row producing Allāh (capital A as printed); the superscript alef U+0670 occurs in no other row. Reverse-direction limitation, flagged: the transliteration engine inverts rows with a single-character source or target, and this row is multi-character on both sides, so a reversed run does not reconstruct the six-character source from Allāh (the capital A, the shadda and the superscript alef are the unrecoverable parts). The forward direction - the bibliographic direction of the standard - is fully faithful."
+    note "Ezafe in the strict system (4.6): the written zir-e ezafe is treated as zir (e) by the character rows; he plus hamze above (hex 0647+0654) is the encoded h-apostrophe row (Table 5) as a pair row; after final alef or vav the ezafe ye is plain yeh (y) per 4.6.2. The clause 5 modified system's -e/-ye hyphenation and the tashdid double-letter U+035F convention are part of the non-reversible system and are not encoded."
+    note "Forward collision inherited from the source, flagged: he followed by the standalone hamza letter (hex 0647, 0621, Table 4 row 1 + Table 1 row 31) and he with hamze above (hex 0647+0654, Table 5) both romanize h-apostrophe, and the document provides no disambiguator. The reverse direction resolves h-apostrophe to the standalone form (he plus hamza) because the ezafe pair row does not invert; the choice is recorded here rather than hacked around."
+    note "Clause 4.4.1: an Arabic element present in Persian text but not covered by this document follows ISO 233-1; no ISO 233-1 rows are added here."
+    note "Provenance lineage: the legacy corpus map iso-prs-Arab-Latn-233-3-1999.isc implements the 1999 first edition (a simplified system); neither the 1999 nor the 2023 second edition document is held, and the legacy map is untouched. This map is the 2026 third edition strict system."
+  }
+}
+
+tests {
+   "آذَر" ->  "âẕar"
+   "آذر" ->  "âẕr"
+   "سَم" ->  "sam"
+   "سم" ->  "sm"
+   "پُر" ->  "por"
+   "پر" ->  "pr"
+   "سِپَر" ->  "separ"
+   "سپر" ->  "spr"
+   "اُمید" ->  "āomyd"
+   "امید" ->  "āmyd"
+   "مثلاً" ->  "ms̱lāã"
+   "مربّع" ->  "mrbʺʻ"
+   "جزء" ->  "jzʼ"
+   "رأس" ->  "rāʼs"
+   "سؤال" ->  "svʼāl"
+   "پائین" ->  "pāyʼyn"
+   "اللّٰه" ->  "Allāh"
+   "هٔ" ->  "hʼ"
+   "یٰ" ->  "ý"
+   "ة" ->  "ẗ"
+   "،" ->  ","
+   "؛" ->  ";"
+   "؟" ->  "?"
+   "۱۲۳" ->  "123"
+# Exhaustive per-row tests for iso-prs-Arab-Latn-233-3-2026, generated from the source
+# document's table.
+# Source: ISO 233-3:2026(en), third edition, purchased published edition
+# (ISO Store order OP-1130631, downloaded 2026-11-19; verification-grade
+# provenance). STRICT transliteration only (clause 4, the fully reversible
+# system); the clause 5 modified transliteration is not reversible and is
+# not encoded. Rows in document order: Table 1 rows 1-32 (consonants; NFC
+# quirk preserved as printed: the zal row uses precomposed U+1E95 and the
+# zain row precomposed U+1E93, while the sin-e-thalathah row is the
+# decomposed U+0073+U+0331 and the dad row the decomposed U+007A+U+0324 - no
+# precomposed forms exist for these two), Table 2 rows 1-4 (vowels:
+# alef-madda as a-circumflex, zebar a, pish o, zir e), Table 3 (tashdid
+# double-prime U+02BA and the three tanvin rows), 4.4.3 (ta marbuta to
+# t-with-line-below U+1E97 per ISO 233), 4.4.4 (the Allah word as one strict
+# row over hex 0627,0644,0644,0651,0670,0647), Table 4 rows 1-4 (hamze
+# forms; apostrophe U+02BC), Table 5 row 1 (ezafe he plus hamze above h with
+# following U+02BC), Table 1 note d strict provision (yeh plus superscript
+# alef clarity variant to y-acute U+00FD), Table 6 (three punctuation
+# marks), Table 7 (ten numerals).
+# Provenance artifact: scripts/row-sources/iso-prs-Arab-Latn-233-3-2026.json (61 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-19); regenerate from the artifact, do not hand-edit.
+  "ا" -> "ā"
+  "ب" -> "b"
+  "پ" -> "p"
+  "ت" -> "t"
+  "ث" -> "s̱"
+  "ج" -> "j"
+  "چ" -> "č"
+  "ح" -> "ḥ"
+  "خ" -> "x"
+  "د" -> "d"
+  "ذ" -> "ẕ"
+  "ر" -> "r"
+  "ز" -> "z"
+  "ژ" -> "ž"
+  "س" -> "s"
+  "ش" -> "š"
+  "ص" -> "ṣ"
+  "ض" -> "z̤"
+  "ط" -> "ṭ"
+  "ظ" -> "ẓ"
+  "ع" -> "ʻ"
+  "غ" -> "ġ"
+  "ف" -> "f"
+  "ق" -> "q"
+  "ک" -> "k"
+  "گ" -> "g"
+  "ل" -> "l"
+  "م" -> "m"
+  "ن" -> "n"
+  "و" -> "v"
+  "ه" -> "h"
+  "ی" -> "y"
+  "آ" -> "â"
+  "َ" -> "a"
+  "ُ" -> "o"
+  "ِ" -> "e"
+  "ّ" -> "ʺ"
+  "ً" -> "ã"
+  "ٍ" -> "ẽ"
+  "ٌ" -> "õ"
+  "ة" -> "ẗ"
+  "اللّٰه" -> "Allāh"
+  "ء" -> "ʼ"
+  "أ" -> "āʼ"
+  "ؤ" -> "vʼ"
+  "ئ" -> "yʼ"
+  "هٔ" -> "hʼ"
+  "یٰ" -> "ý"
+  "،" -> ","
+  "؛" -> ";"
+  "؟" -> "?"
+  "۰" -> "0"
+  "۱" -> "1"
+  "۲" -> "2"
+  "۳" -> "3"
+  "۴" -> "4"
+  "۵" -> "5"
+  "۶" -> "6"
+  "۷" -> "7"
+  "۸" -> "8"
+  "۹" -> "9"
+}
+
+stage main {
+  # 4.4.4 the Allah word: one strict row over hex 0627 0644 0644 0651 0670 0647
+  sub "اللّٰه" "Allāh"
+  # Table 5 row 1: ezafe, he plus hamze above (hex 0647+0654)
+  sub "هٔ" "hʼ"
+  # Table 1 note d: the clarity variant, yeh plus superscript alef
+  # (hex 06CC+0670), is transliterated y-acute (hex 00FD) in the strict system
+  sub "یٰ" "ý"
+
+  # Table 1 consonants (rows 1-32)
+  parallel {
+    sub "ا" "ā"
+    sub "ب" "b"
+    sub "پ" "p"
+    sub "ت" "t"
+    sub "ث" "s̱"
+    sub "ج" "j"
+    sub "چ" "č"
+    sub "ح" "ḥ"
+    sub "خ" "x"
+    sub "د" "d"
+    sub "ذ" "ẕ"
+    sub "ر" "r"
+    sub "ز" "z"
+    sub "ژ" "ž"
+    sub "س" "s"
+    sub "ش" "š"
+    sub "ص" "ṣ"
+    sub "ض" "z̤"
+    sub "ط" "ṭ"
+    sub "ظ" "ẓ"
+    sub "ع" "ʻ"
+    sub "غ" "ġ"
+    sub "ف" "f"
+    sub "ق" "q"
+    sub "ک" "k"
+    sub "گ" "g"
+    sub "ل" "l"
+    sub "م" "m"
+    sub "ن" "n"
+    sub "و" "v"
+    sub "ه" "h"
+    sub "ی" "y"
+
+    # Table 2 vowels for the fully reversible system (rows 1-4)
+    sub "آ" "â"
+    sub "َ" "a"
+    sub "ُ" "o"
+    sub "ِ" "e"
+
+    # Table 3 conventional signs: tashdid and the three tanvin marks
+    sub "ّ" "ʺ"
+    sub "ً" "ã"
+    sub "ٍ" "ẽ"
+    sub "ٌ" "õ"
+
+    # 4.4.3 ta marbuta per ISO 233 (Arabic)
+    sub "ة" "ẗ"
+
+    # Table 4 hamze forms (rows 1-4)
+    sub "ء" "ʼ"
+    sub "أ" "āʼ"
+    sub "ؤ" "vʼ"
+    sub "ئ" "yʼ"
+
+    # Table 6 punctuation marks (rows 1-3)
+    sub "،" ","
+    sub "؛" ";"
+    sub "؟" "?"
+
+    # Table 7 Persian numerals (rows 1-10)
+    sub "۰" "0"
+    sub "۱" "1"
+    sub "۲" "2"
+    sub "۳" "3"
+    sub "۴" "4"
+    sub "۵" "5"
+    sub "۶" "6"
+    sub "۷" "7"
+    sub "۸" "8"
+    sub "۹" "9"
+  }
+
+}
+
+}
