@@ -1,0 +1,188 @@
+system "ISO:ara-Arab:Latn:233-2026" {
+
+metadata {
+  authority_id iso
+  id 233-2026
+  language iso-639-2:ara
+  source_script Arab
+  destination_script Latn
+  name "ISO 233-1:2026 Information and documentation -- Transliteration of Perso-Arabic characters into Latin characters -- Part 1: Arabic language (strict transliteration, clause 4; FDIS stage)"
+  url https://www.iso.org/committee/48820.html
+  creation_date 2026
+  adoption_date 2026
+  description {    Strict (fully reversible, level (a)) transliteration of ISO 233-1:2026, clause 4,
+    Tables 1-5: written signs only, diacritical vowels transliterated only where written
+    in the source. Encoded from the committee ballot ISO/TC 46/WG 3 N129 (FDIS,
+    2026-11-02; ballot closed 2026-11-07) with the comment adjudications of N130.
+    See notes for provenance, errata and reversibility.  }
+
+  notes {
+    note "Encoded from ISO/FDIS 233-1:2026, ISO/TC 46/WG 3 N129 (2026-11-02, FDIS ballot closed 2026-11-07), clause 4 Tables 1-5; adjudications honored from the collated comments N130: DE-002 accepted (hamzaẗ al-waṣl renders 02BE+0331), CN-017 rejected (alif treatment intentionally differs between strict and modified), CN-016 rejected (Table 4 intentionally lists only Arabic-encoded punctuation). Source documents archived in interscript/interscript-private-references (iso/ISO-TC46-WG3-N129-*, N130-*). Verify against the published edition when available. The FDIS cancels and replaces ISO 233:1984 and ISO 233-2:1993: new work uses this map while the legacy corpus maps iso-ara-Arab-Latn-233-1984 and iso-ara-Arab-Latn-233-2-1993 remain for existing data. ISO 233-3:2026 (Persian) is a separate part, already published; its legacy corpus coverage is iso-prs-Arab-Latn-233-3-1999."
+    note "Three levels of transliteration (Introduction): this map implements level (a), strict fully reversible, written signs only. Level (b) - strict with the diacritical vowels supplied regardless of the source - is an application mode of the same Tables 1-2, not a separate table; a stateless map cannot supply unwritten vowels, so the level is documented here rather than forced into the map."
+    note "Reversibility (4.1.3) holds one-to-one for every row except the merger the standard itself prescribes: Table 1 No. 2a maps both U+0654 and U+0655 to 02C8, so the reverse direction restores 0654. The foreword legacy variants for existing text (02BC, 0329, 02B9, 02BB) are notes, not rules of this map."
+    note "4.1.4 precomposed/decomposed equality: the map adds canonical-decomposition equivalents of the precomposed alef forms (0623, 0625, 0624, 0626; 0622 is a table row itself) and decomposes the šadda-haraka ligatures U+FC5F..U+FC63 in the normalization pass. Letter positional presentation forms (U+FE70..U+FEFF; Annex A is informative) pass through unchanged."
+    note "Mark order: a first pass normalizes harakat+šadda to šadda+harakat (NFC orders harakat ccc 30-32 before šadda ccc 33; the FDIS examples decompose U+FC60 shadda-first), so every source order transliterates identically and the šadda macron (0304) attaches to the consonant output. Per Table 3 footnote a, the macron above ā, ī, ū does not represent šaddaẗ - the precomposed ā/ī/ū outputs of the vowel rows are vowels, not šadda."
+    note "4.3.2 examples: example 1 (أَلشَّمْسُ ʾˈalš̄am̊su) is conformant with the tables and is tested verbatim in NFC-composed form. Printed examples 2-3 are errata: bi-̓llaẙli carries the DIS rendering of U+0671 (U+002D+U+0313) that DE-002 replaced with 02BE+0331 and omits the šadda macron; lilwaladi omits the sukūn ring. The rule-derived forms are tested instead (N130 CN-019: 4.3.2 and 5.3.2 intentionally represent different methods)."
+  }
+}
+
+dependency "ara-latn-233-2026" as iso233
+
+tests {
+  # Hand-written worked-example and structure tests.
+  "\u0623\u064e\u0644\u0634\u0651\u064e\u0645\u0652\u0633\u064f" -> "\u02be\u02c8al\u0161\u0304am\u030asu"  # 4.3.2 example 1 verbatim: ʾˈalš̄am̊su
+  "\u0646\u064e\u0642\u0650\u0641\u064f" -> "naqifu"  # Introduction worked example: naqifu
+  "\u0646\u0642\u0641" -> "nqf"  # Introduction worked example: nqf (unvocalized)
+  "\u0623\u064e\u062e" -> "\u02be\u02c8a\u1e96"  # 4.1.4 precomposed أَ -> ʾˈa
+  "\u0627\u0654\u064e\u062e" -> "\u02be\u02c8a\u1e96"  # 4.1.4 decomposed ا+0654+َ identical
+  "\u0634\ufc60\u0645" -> "\u0161\u0304am"  # U+FC60 ligature
+  "\u0634\u064e\u0651\u0645" -> "\u0161\u0304am"  # NFC order identical
+  "\u0634\u0651\u064e\u0645" -> "\u0161\u0304am"  # typed order identical
+  "\u0628\u0651" -> "b\u0304"  # šadda macron attaches to the consonant
+  "\u0645\u0652" -> "m\u030a"  # sukūn ring attaches to the consonant
+  "\u0628\u0651\u064e\u0642\u064f" -> "b\u0304aqu"  # šadda macron stays on the consonant before a following vowel
+
+  # Hand-written worked-example and structure tests below; the exhaustive per-row tests
+  # follow, generated from the source document's tables (Tables 1-5, 57 rows: 56 document rows, No. 2a split into its 0654/0655 pair).
+  # Source: ISO/FDIS 233-1:2026, ISO/TC 46/WG 3 N129 (FDIS for ballot, 2026-11-02;
+  # ballot closed 2026-11-07), clause 4. Adjudications: ISO/TC 46/WG 3 N130 collated
+  # comments. Expected strings are the map outputs (precomposed Latin per the hex
+  # columns; combining marks 030A/0304/0331 attach to the preceding output character).
+  # Provenance artifact: scripts/row-sources/iso-ara-Arab-Latn-233-2026.json (57 rows).
+  # generated-by: maps/scripts/gen-row-tests.mjs (2026-11-19); regenerate from the artifact, do not hand-edit.
+# Exhaustive per-row tests for iso-ara-Arab-Latn-233-2026, generated from the source
+# document's table.
+# Source: ISO 233-1:2026 (FDIS) strict transliteration, clause 4 Tables 1-5,
+# 57 rows (56 document rows; the 0654-or-0655 pair of No. 2a split) in
+# document order: Table 1 consonants (No. 1-29a including 1a/2a; the
+# 0654-or-0655 pair of No. 2a encoded as two rows sharing 02C8 per the
+# standard), Table 2 vowels for the fully reversible system (No. 30-32a; the
+# foreword's á-to-ã, í-to-ĩ, ú-to-ũ changes), Table 3 other conventional
+# signs (No. 33 sukūn 030A, No. 34 šadda 0304 with footnote a 'The macron
+# above ā, ī, ū does not represent šaddaẗ', No. 35 hamzat al-waṣl 02BE+0331
+# per the accepted DE-002), Table 4 punctuation (the CN-016 rejection:
+# intentionally only Arabic-encoded marks), Table 5 numerals. Source: ISO/TC
+# 46/WG 3 N129 (ISO_FDIS 233-1 ed.1, 2026-11-02; ballot closed 2026-11-07),
+# hex columns authoritative, cross-checked against the N130 collated
+# comments. Ballot documents archived in
+# interscript/interscript-private-references (iso/ISO-TC46-WG3-N129-* and
+# N130-*). Verify against the published edition when available.
+# Provenance artifact: scripts/row-sources/iso-ara-Arab-Latn-233-2026.json (57 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-19); regenerate from the artifact, do not hand-edit.
+  "ا" -> "ʾ"
+  "آ" -> "ʾâ"
+  "ء" -> "ˌ"
+  "ٔ" -> "ˈ"
+  "ٕ" -> "ˈ"
+  "ب" -> "b"
+  "ت" -> "t"
+  "ث" -> "ṯ"
+  "ج" -> "ǧ"
+  "ح" -> "ḥ"
+  "خ" -> "ẖ"
+  "د" -> "d"
+  "ذ" -> "ḏ"
+  "ر" -> "r"
+  "ز" -> "z"
+  "س" -> "s"
+  "ش" -> "š"
+  "ص" -> "ṣ"
+  "ض" -> "ḍ"
+  "ط" -> "ṭ"
+  "ظ" -> "ẓ"
+  "ع" -> "ʿ"
+  "غ" -> "ġ"
+  "ف" -> "f"
+  "ق" -> "q"
+  "ك" -> "k"
+  "ل" -> "l"
+  "م" -> "m"
+  "ن" -> "n"
+  "ه" -> "h"
+  "ة" -> "ẗ"
+  "و" -> "w"
+  "ي" -> "y"
+  "ى" -> "ỳ"
+  "َ" -> "a"
+  "ٰ" -> "ā"
+  "ً" -> "ã"
+  "ُ" -> "u"
+  "ٌ" -> "ũ"
+  "ِ" -> "i"
+  "ٍ" -> "ĩ"
+  "ْ" -> "̊"
+  "ّ" -> "̄"
+  "ٱ" -> "ʾ̱"
+  "،" -> ","
+  "؛" -> ";"
+  "؟" -> "?"
+  "٠" -> "0"
+  "١" -> "1"
+  "٢" -> "2"
+  "٣" -> "3"
+  "٤" -> "4"
+  "٥" -> "5"
+  "٦" -> "6"
+  "٧" -> "7"
+  "٨" -> "8"
+  "٩" -> "9"
+}
+
+stage main {
+  # Pass 1: mark-order and ligature normalization. NFC canonical order places
+  # harakat (ccc 30-32) before šadda (ccc 33); the FDIS examples decompose
+  # U+FC60 shadda-first. This pass normalizes harakat+šadda to šadda+harakat
+  # and decomposes the šadda ligatures, so every source order transliterates
+  # identically and the šadda output attaches to the consonant (Table 3
+  # footnote a: the macron above ā, ī, ū does not represent šaddaẗ).
+  parallel {
+    sub "\ufc5f" "\u0651\u064d"
+    sub "\ufc60" "\u0651\u064e"
+    sub "\ufc61" "\u0651\u064f"
+    sub "\ufc62" "\u0651\u0650"
+    sub "\ufc63" "\u0651\u0670"
+    sub "\u064e\u0651" "\u0651\u064e"
+    sub "\u064f\u0651" "\u0651\u064f"
+    sub "\u0650\u0651" "\u0651\u0650"
+    sub "\u064b\u0651" "\u0651\u064b"
+    sub "\u064c\u0651" "\u0651\u064c"
+    sub "\u064d\u0651" "\u0651\u064d"
+  }
+
+  # Pass 2: Tables 1-5 (clause 4). Single-constraint-free parallel pass (trie semantics).
+  parallel {
+    use iso233.consonants
+    use iso233.short_vowels
+    use iso233.punctuation
+    use iso233.numerals
+    # Table 1 No. 1: alif
+    sub "\u0627" "\u02be"
+    # Table 1 No. 1a: alif maddaẗ
+    sub "\u0622" "\u02be\u00e2"
+    # Table 1 No. 2: hamzaẗ (footnote b: legacy combining vertical line below 0329)
+    sub "\u0621" "\u02cc"
+    # Table 1 No. 2a: hamzaẗ combining above/below (footnote c: legacy modifier letter prime 02B9)
+    sub "\u0654" "\u02c8"
+    sub "\u0655" "\u02c8"
+    # Table 1 No. 29a: alif maqṣūraẗ
+    sub "\u0649" "\u1ef3"
+    # 4.1.4: canonical-decomposition equivalents of the precomposed alef forms
+    sub "\u0623" "\u02be\u02c8"
+    sub "\u0625" "\u02be\u02c8"
+    sub "\u0624" "w\u02c8"
+    sub "\u0626" "y\u02c8"
+    # Table 2 No. 30a: alif ẖanǧariyyaẗ
+    sub "\u0670" "\u0101"
+    # Table 2 No. 30b/31a/32a: tanwīn (foreword: á→ã, í→ĩ, ú→ũ)
+    sub "\u064b" "\u00e3"
+    sub "\u064c" "\u0169"
+    sub "\u064d" "\u0129"
+    # Table 3 No. 33: sukūn (combining ring above)
+    sub "\u0652" "\u030a"
+    # Table 3 No. 34: šaddaẗ (combining macron; footnote a)
+    sub "\u0651" "\u0304"
+    # Table 3 No. 35: hamzaẗ al-waṣl 02BE+0331 (N130 DE-002 accepted)
+    sub "\u0671" "\u02be\u0331"
+  }
+}
+}

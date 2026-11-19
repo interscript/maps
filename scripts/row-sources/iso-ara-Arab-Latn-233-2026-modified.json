@@ -1,0 +1,62 @@
+{
+ "system": "iso-ara-Arab-Latn-233-2026-modified",
+ "rows": [
+  [
+   "ٰ",
+   "â"
+  ],
+  [
+   "َا",
+   "ā"
+  ],
+  [
+   "ًا",
+   "an"
+  ],
+  [
+   "اً",
+   "an"
+  ],
+  [
+   "ى",
+   "á"
+  ],
+  [
+   "ىٰ",
+   "á"
+  ],
+  [
+   "َى",
+   "á"
+  ],
+  [
+   "َىٰ",
+   "á"
+  ],
+  [
+   "ًى",
+   "á"
+  ],
+  [
+   "ىً",
+   "á"
+  ],
+  [
+   "ُو",
+   "ū"
+  ],
+  [
+   "ِي",
+   "ī"
+  ],
+  [
+   "ء",
+   "ʾ"
+  ],
+  [
+   "آ",
+   "ā"
+  ]
+ ],
+ "note": "ISO 233-1:2026 (FDIS) modified transliteration, clause 5 Tables 6-8: the rows with a non-empty romanization, 14 rows in document order, plus eight (omitted or position-qualified) rows documented here because the generator requires a non-empty output: Table 6 No. 1 (word-initial alif with hamza omitted; the printed hex 0622 is an erratum for the initial-alif-with-hamza reading per the row's own example aẖ), No. 2, No. 5a, No. 6a (tanwīn rows omitted), Table 7 No. 4a (the 0654/0655 rows are position-qualified: non-initial ʾ, initial omitted - biʾr/aḫbār are hand-tested; a standalone mark string is word-initial), No. 6 (hamzat al-waṣl omitted), Table 8 No. 7 (sukūn omitted) - all covered by the map's hand tests (aẖ, šaǧaraẗ, aḫbār, fī nūri al-qamar, hamzaẗ). Position-qualified equivalents of the transcribed rows: No. 1 non-initial alif renders ā (5.2.2), No. 5 non-initial 0622 renders ʾā (qurʾān), No. 4b initial hamza omitted (aḫbār). Table 8 No. 8 'duplication of consonant' is implemented as the 28 consonant+šadda digraph rules of the map, so it has no single-row transcription (ʿabbās is hand-tested). The strict-table rows the modified system inherits (5.1.2) carry their provenance in iso-ara-Arab-Latn-233-2026.json. Source: ISO/TC 46/WG 3 N129 with N130 adjudications (CN-017/018/019 rejections honored). Verify against the published edition when available."
+}
