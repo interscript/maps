@@ -150,53 +150,57 @@ stage main {
     # doubled article lām is carried by the article rendering al-/l- (examples al-šams,
     # bi-l-layl, li-l-walad), so the duplication of Table 8 No. 8 is suppressed
     # immediately after the article. Constrained rules come first: the megaregexp
-    # group resolves equal-position matches in document order.
-    sub { from "\u062a\u0651" to "t" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u062a\u0651" to "t" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u062a\u0651" to "t" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
-    sub { from "\u062b\u0651" to "\u1e6f" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u062b\u0651" to "\u1e6f" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u062b\u0651" to "\u1e6f" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
-    sub { from "\u062f\u0651" to "d" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u062f\u0651" to "d" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u062f\u0651" to "d" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
-    sub { from "\u0630\u0651" to "\u1e0f" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0630\u0651" to "\u1e0f" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0630\u0651" to "\u1e0f" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
-    sub { from "\u0631\u0651" to "r" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0631\u0651" to "r" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0631\u0651" to "r" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
-    sub { from "\u0632\u0651" to "z" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0632\u0651" to "z" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0632\u0651" to "z" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
-    sub { from "\u0633\u0651" to "s" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0633\u0651" to "s" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0633\u0651" to "s" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
-    sub { from "\u0634\u0651" to "\u0161" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0634\u0651" to "\u0161" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0634\u0651" to "\u0161" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
-    sub { from "\u0635\u0651" to "\u1e63" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0635\u0651" to "\u1e63" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0635\u0651" to "\u1e63" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
-    sub { from "\u0636\u0651" to "\u1e0d" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0636\u0651" to "\u1e0d" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0636\u0651" to "\u1e0d" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
-    sub { from "\u0637\u0651" to "\u1e6d" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0637\u0651" to "\u1e6d" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0637\u0651" to "\u1e6d" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
-    sub { from "\u0638\u0651" to "\u1e93" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0638\u0651" to "\u1e93" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0638\u0651" to "\u1e93" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
-    sub { from "\u0644\u0651" to "l" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0644\u0651" to "l" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0644\u0651" to "l" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
-    sub { from "\u0646\u0651" to "n" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0646\u0651" to "n" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0646\u0651" to "n" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    # group resolves equal-position matches in document order. The constraints are
+    # fixed-length look-behinds (ruby Onigmo rejects variable length) over the bare
+    # article form; the assimilated article is written bare (the assimilated lam
+    # carries the shadda, not a sukun), and sukun-marked article orthography of the
+    # al-shadda type falls back to duplication (flagged in the notes).
+    sub { from "\u062a\u0651" to "t" before boundary + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u062a\u0651" to "t" before boundary + "\u0628\u0650" + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u062a\u0651" to "t" before boundary + "\u0644\u0650\u0644" }
+    sub { from "\u062b\u0651" to "\u1e6f" before boundary + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u062b\u0651" to "\u1e6f" before boundary + "\u0628\u0650" + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u062b\u0651" to "\u1e6f" before boundary + "\u0644\u0650\u0644" }
+    sub { from "\u062f\u0651" to "d" before boundary + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u062f\u0651" to "d" before boundary + "\u0628\u0650" + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u062f\u0651" to "d" before boundary + "\u0644\u0650\u0644" }
+    sub { from "\u0630\u0651" to "\u1e0f" before boundary + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0630\u0651" to "\u1e0f" before boundary + "\u0628\u0650" + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0630\u0651" to "\u1e0f" before boundary + "\u0644\u0650\u0644" }
+    sub { from "\u0631\u0651" to "r" before boundary + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0631\u0651" to "r" before boundary + "\u0628\u0650" + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0631\u0651" to "r" before boundary + "\u0644\u0650\u0644" }
+    sub { from "\u0632\u0651" to "z" before boundary + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0632\u0651" to "z" before boundary + "\u0628\u0650" + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0632\u0651" to "z" before boundary + "\u0644\u0650\u0644" }
+    sub { from "\u0633\u0651" to "s" before boundary + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0633\u0651" to "s" before boundary + "\u0628\u0650" + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0633\u0651" to "s" before boundary + "\u0644\u0650\u0644" }
+    sub { from "\u0634\u0651" to "\u0161" before boundary + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0634\u0651" to "\u0161" before boundary + "\u0628\u0650" + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0634\u0651" to "\u0161" before boundary + "\u0644\u0650\u0644" }
+    sub { from "\u0635\u0651" to "\u1e63" before boundary + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0635\u0651" to "\u1e63" before boundary + "\u0628\u0650" + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0635\u0651" to "\u1e63" before boundary + "\u0644\u0650\u0644" }
+    sub { from "\u0636\u0651" to "\u1e0d" before boundary + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0636\u0651" to "\u1e0d" before boundary + "\u0628\u0650" + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0636\u0651" to "\u1e0d" before boundary + "\u0644\u0650\u0644" }
+    sub { from "\u0637\u0651" to "\u1e6d" before boundary + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0637\u0651" to "\u1e6d" before boundary + "\u0628\u0650" + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0637\u0651" to "\u1e6d" before boundary + "\u0644\u0650\u0644" }
+    sub { from "\u0638\u0651" to "\u1e93" before boundary + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0638\u0651" to "\u1e93" before boundary + "\u0628\u0650" + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0638\u0651" to "\u1e93" before boundary + "\u0644\u0650\u0644" }
+    sub { from "\u0644\u0651" to "l" before boundary + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0644\u0651" to "l" before boundary + "\u0628\u0650" + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0644\u0651" to "l" before boundary + "\u0644\u0650\u0644" }
+    sub { from "\u0646\u0651" to "n" before boundary + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0646\u0651" to "n" before boundary + "\u0628\u0650" + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0646\u0651" to "n" before boundary + "\u0644\u0650\u0644" }
     # doubled article lām (al-ladhi-type): emits the second l
-    sub { from "\u0644\u0651" to "l" before boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0644\u0651" to "l" before boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") }
-    sub { from "\u0644\u0651" to "l" before boundary + "\u0644\u0650\u0644" + maybe("\u0652") }
+    sub { from "\u0644\u0651" to "l" before boundary + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0644\u0651" to "l" before boundary + "\u0628\u0650" + any("\u0627\u0671") + "\u0644" }
+    sub { from "\u0644\u0651" to "l" before boundary + "\u0644\u0650\u0644" }
     # 5.3.2 article families, word-initial (specific before generic).
     # bi- article, doubled lām (bi-l-layl):
     sub { from boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + "\u0651\u064e" to "bi-l-la" }
@@ -204,21 +208,21 @@ stage main {
     sub { from boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + "\u0651\u0650" to "bi-l-li" }
     sub { from boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + "\u0651" to "bi-l-l" }
     # bi- article, moon letters (bi-l-qamar):
-    sub { from boundary + "\u0628\u0650" + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") to "bi-l-" }
+    sub { from boundary + "\u0628\u0650" + any("\u0627\u0671") + "\u0644" to "bi-l-" }
     # li- article, doubled lām:
     sub { from boundary + "\u0644\u0650\u0644" + "\u0651\u064e" to "li-l-la" }
     sub { from boundary + "\u0644\u0650\u0644" + "\u0651\u064f" to "li-l-lu" }
     sub { from boundary + "\u0644\u0650\u0644" + "\u0651\u0650" to "li-l-li" }
     sub { from boundary + "\u0644\u0650\u0644" + "\u0651" to "li-l-l" }
     # li- article, moon letters (li-l-walad):
-    sub { from boundary + "\u0644\u0650\u0644" + maybe("\u0652") to "li-l-" }
+    sub { from boundary + "\u0644\u0650\u0644" to "li-l-" }
     # bare article, doubled lām (al-ladhi):
     sub { from boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + "\u0651\u064e" to "al-la" }
     sub { from boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + "\u0651\u064f" to "al-lu" }
     sub { from boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + "\u0651\u0650" to "al-li" }
     sub { from boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + "\u0651" to "al-l" }
     # bare article (al-qamar, al-šams):
-    sub { from boundary + any("\u0627\u0671") + maybe("\u0652") + "\u0644" + maybe("\u0652") to "al-" }
+    sub { from boundary + any("\u0627\u0671") + "\u0644" to "al-" }
     # 
     # Table 6 - modified transliteration options for vowels (rows 1-6a).
     # No. 1a: alif ẖanǧariyyaẗ -> â (walâkin); the fatḥa the dagger alif supplies is absorbed
@@ -246,13 +250,13 @@ stage main {
     # No. 1 + 5.2.2: initial alif omitted, T7 No. 4b: initial hamza omitted (aḫbār);
     # word-initial only - the multi-char Table 6 rules above take precedence in
     # megaregexp document order (e.g. اً renders an, not the omission)
-    sub { from boundary + "\u0627" to "" }
-    sub { from boundary + "\u0623" to "" }
-    sub { from boundary + "\u0625" to "" }
-    sub { from boundary + "\u0654" to "" }
-    sub { from boundary + "\u0655" to "" }
-    sub { from boundary + "\u0624" to "" }
-    sub { from boundary + "\u0626" to "" }
+    sub { from "\u0627" to "" before boundary }
+    sub { from "\u0623" to "" before boundary }
+    sub { from "\u0625" to "" before boundary }
+    sub { from "\u0654" to "" before boundary }
+    sub { from "\u0655" to "" before boundary }
+    sub { from "\u0624" to "" before boundary }
+    sub { from "\u0626" to "" before boundary }
     # Table 7 - hamzaẗ and alif maddaẗ options.
     # No. 5a/5: 0622 word-initial -> ā (ādāb), non-initial -> ʾā (qurʾān)
     sub { from boundary + "\u0622" to "\u0101" }
