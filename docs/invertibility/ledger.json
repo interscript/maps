@@ -1,7 +1,28 @@
 {
-  "generated": "2026-10-21T02:12:23Z",
-  "runtime": "3.2.0",
+  "generated": "2026-11-21T03:33:32Z",
+  "runtime": "3.7.4",
   "pairs": [
+    {
+      "map": "alalc-zho-Latn-Latn-2012",
+      "reverse": "alalc-zho-Latn-Latn-2012",
+      "tests": 38,
+      "roundtrip": 3,
+      "failed_count": 35,
+      "failures": [
+        {
+          "src": "chih",
+          "rt": "zhyi"
+        },
+        {
+          "src": "ch‘ih",
+          "rt": "ji"
+        },
+        {
+          "src": "ssu",
+          "rt": "syi"
+        }
+      ]
+    },
     {
       "map": "bgnpcgn-deu-Latn-Latn-2000",
       "reverse": "bgnpcgn-deu-Latn-Latn-2000",
@@ -109,6 +130,27 @@
       ]
     },
     {
+      "map": "icao-mul-Latn-Latn-2015",
+      "reverse": "icao-mul-Latn-Latn-2015",
+      "tests": 29,
+      "roundtrip": 0,
+      "failed_count": 29,
+      "failures": [
+        {
+          "src": "À",
+          "rt": "A"
+        },
+        {
+          "src": "à",
+          "rt": "a"
+        },
+        {
+          "src": "Ä",
+          "rt": "AE"
+        }
+      ]
+    },
+    {
       "map": "masm-mon-Cyrl-Latn-5217-2012",
       "reverse": "masm-mon-Latn-Cyrl-5217-2012",
       "tests": 35,
@@ -194,11 +236,15 @@
       "collisions": 0
     },
     "alalc-aze-Cyrl-Latn-1997": {
-      "tests": 3,
+      "tests": 86,
+      "collisions": 2
+    },
+    "alalc-ban-Bali-Latn-2025": {
+      "tests": 26,
       "collisions": 0
     },
     "alalc-bel-Cyrl-Latn-1997": {
-      "tests": 15,
+      "tests": 16,
       "collisions": 0
     },
     "alalc-ben-Beng-Latn-1997": {
@@ -206,8 +252,36 @@
       "collisions": 0
     },
     "alalc-ben-Beng-Latn-2017": {
-      "tests": 3,
+      "tests": 55,
       "collisions": 0
+    },
+    "alalc-bod-Tibt-Latn-2015": {
+      "tests": 5,
+      "collisions": 0
+    },
+    "alalc-btk-Batk-Latn-2012": {
+      "tests": 26,
+      "collisions": 0
+    },
+    "alalc-bul-Cyrl-Latn-1997": {
+      "tests": 62,
+      "collisions": 1
+    },
+    "alalc-chr-Cher-Latn-2012": {
+      "tests": 103,
+      "collisions": 16
+    },
+    "alalc-chu-Cyrl-Latn-2022": {
+      "tests": 98,
+      "collisions": 2
+    },
+    "alalc-cjm-Cham-Latn-2015": {
+      "tests": 19,
+      "collisions": 0
+    },
+    "alalc-cop-Copt-Latn-2014": {
+      "tests": 16,
+      "collisions": 1
     },
     "alalc-div-Thaa-Latn-1997": {
       "tests": 13,
@@ -245,6 +319,26 @@
       "tests": 10,
       "collisions": 0
     },
+    "alalc-hye-Armn-Latn-2022": {
+      "tests": 140,
+      "collisions": 7
+    },
+    "alalc-jav-Arab-Latn-2012": {
+      "tests": 58,
+      "collisions": 11
+    },
+    "alalc-jav-Java-Latn-2012": {
+      "tests": 28,
+      "collisions": 0
+    },
+    "alalc-jba-Hebr-Latn-2011": {
+      "tests": 92,
+      "collisions": 15
+    },
+    "alalc-jpn-Hrkt-Latn-2022": {
+      "tests": 111,
+      "collisions": 11
+    },
     "alalc-kan-Kana-Latn-1997": {
       "tests": 12,
       "collisions": 0
@@ -254,7 +348,7 @@
       "collisions": 0
     },
     "alalc-kat-Geok-Latn-1997": {
-      "tests": 5,
+      "tests": 81,
       "collisions": 0
     },
     "alalc-kat-Geok-Latn-2011": {
@@ -269,9 +363,37 @@
       "tests": 25,
       "collisions": 0
     },
+    "alalc-kaz-Arab-Latn-2012": {
+      "tests": 42,
+      "collisions": 0
+    },
+    "alalc-khm-Khmr-Latn-2013": {
+      "tests": 10,
+      "collisions": 0
+    },
     "alalc-kor-Hang-Latn-1997": {
       "tests": 30,
       "collisions": 0
+    },
+    "alalc-kur-Arab-Latn-2012": {
+      "tests": 83,
+      "collisions": 4
+    },
+    "alalc-lad-Hebr-Latn-2025": {
+      "tests": 86,
+      "collisions": 13
+    },
+    "alalc-lao-Laoo-Latn-2012": {
+      "tests": 10,
+      "collisions": 0
+    },
+    "alalc-lep-Lepc-Latn-2012": {
+      "tests": 23,
+      "collisions": 0
+    },
+    "alalc-lif-Limb-Latn-2011": {
+      "tests": 2,
+      "collisions": 1
     },
     "alalc-mal-Mlym-Latn-1997": {
       "tests": 11,
@@ -297,8 +419,20 @@
       "tests": 5,
       "collisions": 0
     },
+    "alalc-mnc-Mong-Latn-2012": {
+      "tests": 43,
+      "collisions": 6
+    },
+    "alalc-mni-Mtei-Latn-2022": {
+      "tests": 57,
+      "collisions": 2
+    },
     "alalc-mon-Cyrl-Latn-1997": {
       "tests": 63,
+      "collisions": 0
+    },
+    "alalc-mya-Mymr-Latn-2011": {
+      "tests": 6,
       "collisions": 0
     },
     "alalc-ori-Orya-Latn-1997": {
@@ -308,6 +442,10 @@
     "alalc-ori-Orya-Latn-2011": {
       "tests": 11,
       "collisions": 0
+    },
+    "alalc-ota-Arab-Latn-1997": {
+      "tests": 43,
+      "collisions": 5
     },
     "alalc-pan-Guru-Latn-1997": {
       "tests": 10,
@@ -325,6 +463,14 @@
       "tests": 2,
       "collisions": 0
     },
+    "alalc-pus-Arab-Latn-2013": {
+      "tests": 57,
+      "collisions": 6
+    },
+    "alalc-rue-Cyrl-Latn-2013": {
+      "tests": 78,
+      "collisions": 2
+    },
     "alalc-rus-Cyrl-Latn-1997": {
       "tests": 64,
       "collisions": 3
@@ -337,6 +483,14 @@
       "tests": 9,
       "collisions": 0
     },
+    "alalc-sat-Olck-Latn-2017": {
+      "tests": 33,
+      "collisions": 2
+    },
+    "alalc-shn-Shan-Latn-2012": {
+      "tests": 1,
+      "collisions": 0
+    },
     "alalc-sin-Sinh-Latn-1997": {
       "tests": 11,
       "collisions": 0
@@ -344,6 +498,10 @@
     "alalc-sin-Sinh-Latn-2011": {
       "tests": 11,
       "collisions": 0
+    },
+    "alalc-snd-Arab-Latn-2024": {
+      "tests": 61,
+      "collisions": 10
     },
     "alalc-srp-Cyrl-Latn-1997": {
       "tests": 5,
@@ -369,6 +527,10 @@
       "tests": 11,
       "collisions": 0
     },
+    "alalc-tha-Thai-Latn-2011": {
+      "tests": 3,
+      "collisions": 0
+    },
     "alalc-tir-Ethi-Latn-1997": {
       "tests": 60,
       "collisions": 0
@@ -377,9 +539,45 @@
       "tests": 60,
       "collisions": 0
     },
+    "alalc-tmh-Tfng-Latn-2013": {
+      "tests": 26,
+      "collisions": 0
+    },
+    "alalc-uig-Arab-Latn-2015": {
+      "tests": 52,
+      "collisions": 8
+    },
     "alalc-ukr-Cyrl-Latn-1997": {
       "tests": 26,
       "collisions": 0
+    },
+    "alalc-und-Dsrt-Latn-2016": {
+      "tests": 81,
+      "collisions": 0
+    },
+    "alalc-urd-Arab-Latn-2013": {
+      "tests": 52,
+      "collisions": 6
+    },
+    "alalc-vai-Vaii-Latn-2010": {
+      "tests": 251,
+      "collisions": 10
+    },
+    "alalc-zgh-Tfng-Latn-2012": {
+      "tests": 57,
+      "collisions": 14
+    },
+    "alalc-zho-Hani-Latn-2012": {
+      "tests": 62,
+      "collisions": 8
+    },
+    "alalc-zho-Latn-Latn-2012": {
+      "tests": 38,
+      "collisions": 5
+    },
+    "alalc-zsm-Arab-Latn-2011": {
+      "tests": 55,
+      "collisions": 11
     },
     "apcbg-bul-Cyrl-Latn-1995": {
       "tests": 97,
@@ -421,6 +619,10 @@
       "tests": 97,
       "collisions": 0
     },
+    "bgnpcgn-ady-Cyrl-Latn-2012": {
+      "tests": 137,
+      "collisions": 5
+    },
     "bgnpcgn-amh-Ethi-Latn-1967": {
       "tests": 60,
       "collisions": 0
@@ -432,6 +634,14 @@
     "bgnpcgn-arm-Armn-Latn-1981": {
       "tests": 2,
       "collisions": 0
+    },
+    "bgnpcgn-av-Cyrl-Latn-2011": {
+      "tests": 21,
+      "collisions": 0
+    },
+    "bgnpcgn-ava-Cyrl-Latn-2011": {
+      "tests": 97,
+      "collisions": 4
     },
     "bgnpcgn-aze-Cyrl-Latn-1993": {
       "tests": 2,
@@ -446,7 +656,7 @@
       "collisions": 0
     },
     "bgnpcgn-bel-Cyrl-Latn-1979": {
-      "tests": 83,
+      "tests": 84,
       "collisions": 2
     },
     "bgnpcgn-bul-Cyrl-Latn-1952": {
@@ -461,6 +671,14 @@
       "tests": 11,
       "collisions": 0
     },
+    "bgnpcgn-chv-Cyrl-Latn-2011": {
+      "tests": 84,
+      "collisions": 6
+    },
+    "bgnpcgn-cv-Cyrl-Latn-2011": {
+      "tests": 20,
+      "collisions": 0
+    },
     "bgnpcgn-deu-Latn-Latn-2000": {
       "tests": 5,
       "collisions": 0
@@ -472,6 +690,10 @@
     "bgnpcgn-div-Thaa-Latn-1988": {
       "tests": 10,
       "collisions": 0
+    },
+    "bgnpcgn-dzo-Tibt-Latn-2010": {
+      "tests": 71,
+      "collisions": 13
     },
     "bgnpcgn-ell-Grek-Latn-1962": {
       "tests": 242,
@@ -497,6 +719,10 @@
       "tests": 4,
       "collisions": 0
     },
+    "bgnpcgn-iu-Cans-Latn-2013": {
+      "tests": 118,
+      "collisions": 0
+    },
     "bgnpcgn-jpn-Hrkt-Latn-1976": {
       "tests": 73,
       "collisions": 0
@@ -512,6 +738,10 @@
     "bgnpcgn-kaz-Cyrl-Latn-1979": {
       "tests": 64,
       "collisions": 0
+    },
+    "bgnpcgn-kbd-Cyrl-Latn-2011": {
+      "tests": 118,
+      "collisions": 5
     },
     "bgnpcgn-kir-Cyrl-Latn-1979": {
       "tests": 58,
@@ -529,8 +759,12 @@
       "tests": 13,
       "collisions": 0
     },
+    "bgnpcgn-krc-Cyrl-Latn-2008": {
+      "tests": 80,
+      "collisions": 9
+    },
     "bgnpcgn-kur-Arab-Latn-2007": {
-      "tests": 5,
+      "tests": 6,
       "collisions": 0
     },
     "bgnpcgn-mkd-Cyrl-Latn-1981": {
@@ -548,6 +782,14 @@
     "bgnpcgn-nep-Deva-Latn-2011": {
       "tests": 25,
       "collisions": 1
+    },
+    "bgnpcgn-os-Cyrl-Latn-2009": {
+      "tests": 19,
+      "collisions": 0
+    },
+    "bgnpcgn-oss-Cyrl-Latn-2009": {
+      "tests": 90,
+      "collisions": 6
     },
     "bgnpcgn-per-Arab-Latn-1958": {
       "tests": 17,
@@ -577,6 +819,10 @@
       "tests": 18,
       "collisions": 0
     },
+    "bgnpcgn-sah-Cyrl-Latn-2012": {
+      "tests": 89,
+      "collisions": 6
+    },
     "bgnpcgn-sme-Latn-Latn-1984": {
       "tests": 10,
       "collisions": 0
@@ -589,12 +835,24 @@
       "tests": 24,
       "collisions": 0
     },
+    "bgnpcgn-syc-Syrc-Latn-2011": {
+      "tests": 14,
+      "collisions": 0
+    },
+    "bgnpcgn-syr-Syrc-Latn-2011": {
+      "tests": 30,
+      "collisions": 1
+    },
     "bgnpcgn-tat-Cyrl-Latn-2007": {
       "tests": 16,
       "collisions": 0
     },
     "bgnpcgn-tgk-Cyrl-Latn-1994": {
       "tests": 50,
+      "collisions": 0
+    },
+    "bgnpcgn-tha-Thai-Latn-2002": {
+      "tests": 12,
       "collisions": 0
     },
     "bgnpcgn-tir-Ethi-Latn-2007": {
@@ -608,6 +866,10 @@
     "bgnpcgn-tuk-Cyrl-Latn-1993": {
       "tests": 21,
       "collisions": 0
+    },
+    "bgnpcgn-udm-Cyrl-Latn-2011": {
+      "tests": 82,
+      "collisions": 4
     },
     "bgnpcgn-ukr-Cyrl-Latn-1965": {
       "tests": 33,
@@ -673,6 +935,50 @@
       "tests": 10,
       "collisions": 0
     },
+    "bsi-bel-Cyrl-Latn-1958": {
+      "tests": 38,
+      "collisions": 2
+    },
+    "bsi-bul-Cyrl-Latn-1958": {
+      "tests": 34,
+      "collisions": 0
+    },
+    "bsi-chu-Cyrl-Latn-1958": {
+      "tests": 90,
+      "collisions": 2
+    },
+    "bsi-ell-Grek-Latn-1958": {
+      "tests": 54,
+      "collisions": 3
+    },
+    "bsi-kor-Kore-Latn-6505-1982-t8": {
+      "tests": 14,
+      "collisions": 0
+    },
+    "bsi-kor-Kore-Latn-6505-1982": {
+      "tests": 23,
+      "collisions": 0
+    },
+    "bsi-mkd-Cyrl-Latn-1958": {
+      "tests": 35,
+      "collisions": 2
+    },
+    "bsi-ron-Cyrl-Latn-1958": {
+      "tests": 93,
+      "collisions": 8
+    },
+    "bsi-rus-Cyrl-Latn-2979-1958": {
+      "tests": 89,
+      "collisions": 4
+    },
+    "bsi-srp-Cyrl-Latn-1958": {
+      "tests": 36,
+      "collisions": 0
+    },
+    "bsi-ukr-Cyrl-Latn-1958": {
+      "tests": 17,
+      "collisions": 1
+    },
     "by-bel-Cyrl-Latn-1998": {
       "tests": 45,
       "collisions": 0
@@ -681,25 +987,245 @@
       "tests": 47,
       "collisions": 0
     },
+    "din-ab-Cyrl-Latn-1460-2-2011": {
+      "tests": 44,
+      "collisions": 4
+    },
+    "din-abq-Cyrl-Latn-1460-2-2011": {
+      "tests": 27,
+      "collisions": 4
+    },
+    "din-ady-Cyrl-Latn-1460-2-2011": {
+      "tests": 34,
+      "collisions": 4
+    },
+    "din-ara-Arab-Latn-31635-2011": {
+      "tests": 59,
+      "collisions": 5
+    },
+    "din-atv-Cyrl-Latn-1460-2-2011": {
+      "tests": 41,
+      "collisions": 4
+    },
+    "din-av-Cyrl-Latn-1460-2-2011": {
+      "tests": 35,
+      "collisions": 4
+    },
+    "din-az-Cyrl-Latn-1460-2-2011": {
+      "tests": 41,
+      "collisions": 8
+    },
+    "din-ba-Cyrl-Latn-1460-2-2011": {
+      "tests": 43,
+      "collisions": 5
+    },
+    "din-bxr-Cyrl-Latn-1460-2-2011": {
+      "tests": 38,
+      "collisions": 5
+    },
+    "din-ce-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-cjs-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-ckt-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-crh-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-cv-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-dar-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-dng-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-ess-Cyrl-Latn-1460-2-2011-s14": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-eve-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-evn-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-fas-Arab-Latn-31635-2011": {
+      "tests": 47,
+      "collisions": 2
+    },
+    "din-gag-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-gld-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
     "din-grc-Grek-Latn-31634-2011-t1": {
       "tests": 260,
       "collisions": 0
     },
+    "din-heb-Hebr-Latn-31636-2018": {
+      "tests": 72,
+      "collisions": 21
+    },
     "din-hin-Deva-Latn-33904-2018": {
       "tests": 8,
+      "collisions": 0
+    },
+    "din-hye-Armn-Latn-32706-2010": {
+      "tests": 77,
+      "collisions": 0
+    },
+    "din-inh-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-jpn-Hrkt-Latn-32708-2014": {
+      "tests": 19,
+      "collisions": 1
+    },
+    "din-kaa-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
       "collisions": 0
     },
     "din-kat-Geor-Latn-32707-2010": {
       "tests": 25,
       "collisions": 0
     },
+    "din-kbd-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-kca-Cyrl-Latn-1460-2-2011-s25": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-kca-Cyrl-Latn-1460-2-2011-s36": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-kca-Cyrl-Latn-1460-2-2011-s48": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-kca-Cyrl-Latn-1460-2-2011-s50": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-kca-Cyrl-Latn-1460-2-2011-s62": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-khk-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-kjh-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-kk-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-koi-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-kpy-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-krc-Cyrl-Latn-1460-2-2011-s23": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-krc-Cyrl-Latn-1460-2-2011-s7": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-ku-Cyrl-Latn-1460-2-2011-s32": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-kum-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-kur-Arab-Latn-31635-2011": {
+      "tests": 54,
+      "collisions": 2
+    },
+    "din-kv-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-ky-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-lbe-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-lez-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
     "din-mar-Deva-Latn-33904-2018": {
       "tests": 10,
+      "collisions": 0
+    },
+    "din-mdf-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-mhr-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-mns-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-mrj-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-myv-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
       "collisions": 0
     },
     "din-nep-Deva-Latn-33904-2018": {
       "tests": 16,
       "collisions": 1
+    },
+    "din-niv-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-nog-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-os-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
     },
     "din-pli-Deva-Latn-33904-2018": {
       "tests": 9,
@@ -709,12 +1235,72 @@
       "tests": 3,
       "collisions": 0
     },
+    "din-ro-Cyrl-Latn-1460-2-2011-s38": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-sah-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
     "din-san-Deva-Latn-33904-2018": {
       "tests": 15,
       "collisions": 0
     },
+    "din-sel-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-tab-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
     "din-tam-Taml-Latn-33903-2016": {
       "tests": 12,
+      "collisions": 0
+    },
+    "din-tg-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-tk-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-tt-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-tyv-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-udm-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-ug-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-urd-Arab-Latn-31635-2011": {
+      "tests": 53,
+      "collisions": 4
+    },
+    "din-uz-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-xal-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
+      "collisions": 0
+    },
+    "din-yid-Hebr-Latn-31636-2018": {
+      "tests": 55,
+      "collisions": 16
+    },
+    "din-yrk-Cyrl-Latn-1460-2-2011": {
+      "tests": 4,
       "collisions": 0
     },
     "dos-nep-Deva-Latn-1997": {
@@ -742,7 +1328,7 @@
       "collisions": 0
     },
     "gki-bel-Cyrl-Latn-2000": {
-      "tests": 44,
+      "tests": 45,
       "collisions": 0
     },
     "gost-rus-Cyrl-Latn-16876-71-1983": {
@@ -758,12 +1344,40 @@
       "collisions": 0
     },
     "icao-bel-Cyrl-Latn-9303": {
-      "tests": 8,
+      "tests": 27,
+      "collisions": 1
+    },
+    "icao-bul-Cyrl-Latn-9303": {
+      "tests": 12,
       "collisions": 0
+    },
+    "icao-fas-Arab-Latn-9303": {
+      "tests": 11,
+      "collisions": 2
     },
     "icao-heb-Hebr-Latn-9303": {
       "tests": 1,
       "collisions": 0
+    },
+    "icao-mkd-Cyrl-Latn-9303": {
+      "tests": 23,
+      "collisions": 2
+    },
+    "icao-mul-Latn-Latn-2015": {
+      "tests": 29,
+      "collisions": 4
+    },
+    "icao-rus-Cyrl-Latn-9303": {
+      "tests": 11,
+      "collisions": 0
+    },
+    "icao-srp-Cyrl-Latn-9303": {
+      "tests": 29,
+      "collisions": 4
+    },
+    "icao-ukr-Cyrl-Latn-9303": {
+      "tests": 27,
+      "collisions": 10
     },
     "iso-ara-Arab-Latn-233-1984": {
       "tests": 6,
@@ -773,13 +1387,29 @@
       "tests": 13,
       "collisions": 0
     },
+    "iso-ara-Arab-Latn-233-2026-modified": {
+      "tests": 52,
+      "collisions": 16
+    },
+    "iso-ara-Arab-Latn-233-2026": {
+      "tests": 68,
+      "collisions": 4
+    },
     "iso-asm-Beng-Latn-15919-2001": {
       "tests": 10,
       "collisions": 0
     },
     "iso-ben-Beng-Latn-15919-2001": {
-      "tests": 10,
+      "tests": 12,
       "collisions": 0
+    },
+    "iso-ben-Beng-Latn-15919-2026": {
+      "tests": 83,
+      "collisions": 16
+    },
+    "iso-doi-Takr-Latn-15919-2026": {
+      "tests": 64,
+      "collisions": 9
     },
     "iso-ell-Grek-Latn-843-1997-t1": {
       "tests": 242,
@@ -789,29 +1419,69 @@
       "tests": 1,
       "collisions": 0
     },
+    "iso-ell-Grek-Latn-r843-1968": {
+      "tests": 21,
+      "collisions": 0
+    },
     "iso-guj-Gujr-Latn-15919-2001": {
       "tests": 12,
       "collisions": 0
+    },
+    "iso-guj-Gujr-Latn-15919-2026": {
+      "tests": 85,
+      "collisions": 15
+    },
+    "iso-heb-Hebr-Latn-259-1984": {
+      "tests": 69,
+      "collisions": 20
+    },
+    "iso-heb-Hebr-Latn-259-2-1994": {
+      "tests": 90,
+      "collisions": 46
     },
     "iso-hin-Deva-Latn-15919-2001": {
       "tests": 17,
       "collisions": 0
     },
+    "iso-hye-Armn-Latn-9985-2026": {
+      "tests": 107,
+      "collisions": 16
+    },
     "iso-inc-Deva-Latn-15919-2001": {
       "tests": 3,
       "collisions": 0
     },
+    "iso-inc-Kthi-Latn-15919-2001": {
+      "tests": 43,
+      "collisions": 0
+    },
+    "iso-inc-Kthi-Latn-15919-2026": {
+      "tests": 70,
+      "collisions": 11
+    },
     "iso-jpn-Hrkt-Latn-3602-1989": {
-      "tests": 15,
+      "tests": 23,
       "collisions": 1
     },
     "iso-kan-Kana-Latn-15919-2001": {
-      "tests": 12,
+      "tests": 13,
       "collisions": 0
+    },
+    "iso-kan-Kana-Latn-15919-2026": {
+      "tests": 84,
+      "collisions": 15
+    },
+    "iso-kas-Shrd-Latn-15919-2026": {
+      "tests": 75,
+      "collisions": 13
     },
     "iso-kat-Geor-Latn-9984-1996": {
       "tests": 25,
       "collisions": 0
+    },
+    "iso-kat-Geor-Latn-9984-2026": {
+      "tests": 84,
+      "collisions": 7
     },
     "iso-kor-Hang-Latn-1996-method1": {
       "tests": 28,
@@ -825,21 +1495,41 @@
       "tests": 11,
       "collisions": 0
     },
+    "iso-mal-Mlym-Latn-15919-2026": {
+      "tests": 81,
+      "collisions": 15
+    },
     "iso-mar-Deva-Latn-15919-2001": {
       "tests": 10,
       "collisions": 0
+    },
+    "iso-mar-Modi-Latn-15919-2026": {
+      "tests": 73,
+      "collisions": 13
     },
     "iso-nep-Deva-Latn-15919-2001": {
       "tests": 16,
       "collisions": 1
     },
+    "iso-new-Newa-Latn-15919-2026": {
+      "tests": 80,
+      "collisions": 15
+    },
     "iso-ori-Orya-Latn-15919-2001": {
       "tests": 10,
       "collisions": 0
     },
+    "iso-ori-Orya-Latn-15919-2026": {
+      "tests": 81,
+      "collisions": 15
+    },
     "iso-pan-Guru-Latn-15919-2001": {
       "tests": 11,
       "collisions": 0
+    },
+    "iso-pan-Guru-Latn-15919-2026": {
+      "tests": 78,
+      "collisions": 15
     },
     "iso-pli-Beng-Latn-15919-2001": {
       "tests": 10,
@@ -857,6 +1547,10 @@
       "tests": 11,
       "collisions": 0
     },
+    "iso-pra-Brah-Latn-15919-2026": {
+      "tests": 84,
+      "collisions": 16
+    },
     "iso-pra-Deva-Latn-15919-2001": {
       "tests": 3,
       "collisions": 0
@@ -865,20 +1559,56 @@
       "tests": 9,
       "collisions": 0
     },
-    "iso-san-Deva-Latn-15919-2001": {
-      "tests": 11,
+    "iso-prs-Arab-Latn-233-3-2026": {
+      "tests": 85,
+      "collisions": 7
+    },
+    "iso-rus-Cyrl-Latn-9-1995": {
+      "tests": 5,
       "collisions": 0
+    },
+    "iso-rus-Cyrl-Latn-9-2026": {
+      "tests": 356,
+      "collisions": 6
+    },
+    "iso-san-Deva-Latn-15919-2001": {
+      "tests": 12,
+      "collisions": 0
+    },
+    "iso-san-Deva-Latn-15919-2026": {
+      "tests": 107,
+      "collisions": 25
+    },
+    "iso-san-Gran-Latn-15919-2026": {
+      "tests": 75,
+      "collisions": 13
+    },
+    "iso-sin-Sinh-Latn-15919-2001": {
+      "tests": 60,
+      "collisions": 0
+    },
+    "iso-sin-Sinh-Latn-15919-2026": {
+      "tests": 87,
+      "collisions": 17
     },
     "iso-tam-Taml-Latn-15919-2001": {
       "tests": 12,
       "collisions": 0
     },
+    "iso-tam-Taml-Latn-15919-2026": {
+      "tests": 57,
+      "collisions": 11
+    },
     "iso-tel-Telu-Latn-15919-2001": {
-      "tests": 11,
+      "tests": 14,
       "collisions": 0
     },
+    "iso-tel-Telu-Latn-15919-2026": {
+      "tests": 84,
+      "collisions": 15
+    },
     "iso-tha-Thai-Latn-11940-1998": {
-      "tests": 2,
+      "tests": 90,
       "collisions": 0
     },
     "kp-kor-Hang-Latn-2002": {
@@ -914,7 +1644,7 @@
       "collisions": 0
     },
     "mvd-bel-Cyrl-Latn-2008": {
-      "tests": 11,
+      "tests": 12,
       "collisions": 0
     },
     "mvd-bel-Cyrl-Latn-2010": {
@@ -922,7 +1652,7 @@
       "collisions": 0
     },
     "mvd-rus-Cyrl-Latn-2008": {
-      "tests": 3,
+      "tests": 4,
       "collisions": 0
     },
     "mvd-rus-Cyrl-Latn-2010": {
@@ -938,11 +1668,11 @@
       "collisions": 0
     },
     "odni-aze-Cyrl-Latn-2015": {
-      "tests": 1,
-      "collisions": 0
+      "tests": 39,
+      "collisions": 7
     },
     "odni-bel-Cyrl-Latn-2015": {
-      "tests": 10,
+      "tests": 11,
       "collisions": 0
     },
     "odni-bul-Cyrl-Latn-2005": {
@@ -954,8 +1684,8 @@
       "collisions": 0
     },
     "odni-che-Cyrl-Latn-2015": {
-      "tests": 2,
-      "collisions": 1
+      "tests": 43,
+      "collisions": 11
     },
     "odni-fas-Arab-Latn-2004": {
       "tests": 8,
@@ -978,15 +1708,19 @@
       "collisions": 0
     },
     "odni-kaz-Cyrl-Latn-2015": {
-      "tests": 1,
-      "collisions": 0
+      "tests": 40,
+      "collisions": 7
     },
     "odni-kir-Cyrl-Latn-2015": {
-      "tests": 1,
-      "collisions": 0
+      "tests": 35,
+      "collisions": 4
     },
     "odni-kor-Hang-Latn-2015": {
       "tests": 9,
+      "collisions": 1
+    },
+    "odni-kur-Arab-Latn-2011": {
+      "tests": 30,
       "collisions": 1
     },
     "odni-mkd-Cyrl-Latn-2005": {
@@ -994,7 +1728,7 @@
       "collisions": 0
     },
     "odni-mkd-Cyrl-Latn-2015": {
-      "tests": 2,
+      "tests": 64,
       "collisions": 0
     },
     "odni-prs-Arab-Latn-2004": {
@@ -1022,20 +1756,20 @@
       "collisions": 0
     },
     "odni-tat-Cyrl-Latn-2015": {
-      "tests": 1,
-      "collisions": 0
+      "tests": 38,
+      "collisions": 5
     },
     "odni-tgk-Cyrl-Latn-2015": {
-      "tests": 1,
-      "collisions": 0
+      "tests": 34,
+      "collisions": 2
     },
     "odni-tuk-Cyrl-Latn-2015": {
       "tests": 14,
       "collisions": 0
     },
     "odni-uig-Cyrl-Latn-2015": {
-      "tests": 1,
-      "collisions": 0
+      "tests": 36,
+      "collisions": 3
     },
     "odni-ukr-Cyrl-Latn-2015": {
       "tests": 33,
@@ -1047,6 +1781,14 @@
     },
     "odni-uzb-Cyrl-Latn-2015": {
       "tests": 9,
+      "collisions": 0
+    },
+    "odni-zho-Hani-Latn-2015": {
+      "tests": 132,
+      "collisions": 17
+    },
+    "royin-tha-Thai-Latn-1999": {
+      "tests": 4,
       "collisions": 0
     },
     "sac-zho-Hans-Latn-1979": {
@@ -1094,23 +1836,23 @@
       "collisions": 0
     },
     "un-ara-Arab-Latn-2017": {
-      "tests": 17,
+      "tests": 20,
       "collisions": 0
     },
     "un-asm-Beng-Latn-1972": {
-      "tests": 12,
+      "tests": 16,
       "collisions": 0
     },
     "un-bel-Cyrl-Latn-2007": {
-      "tests": 45,
-      "collisions": 0
+      "tests": 50,
+      "collisions": 1
     },
     "un-ben-Beng-Latn-2016": {
-      "tests": 6,
+      "tests": 11,
       "collisions": 0
     },
     "un-bul-Cyrl-Latn-1977": {
-      "tests": 98,
+      "tests": 105,
       "collisions": 0
     },
     "un-ell-Grek-Latn-1987-phonetic": {
@@ -1118,7 +1860,7 @@
       "collisions": 4
     },
     "un-ell-Grek-Latn-1987-tl": {
-      "tests": 3,
+      "tests": 8,
       "collisions": 0
     },
     "un-ell-Grek-Latn-1987-ts": {
@@ -1138,15 +1880,15 @@
       "collisions": 1
     },
     "un-mal-Mlym-Latn-1972": {
-      "tests": 13,
+      "tests": 15,
       "collisions": 0
     },
     "un-mar-Deva-Latn-2016": {
-      "tests": 17,
+      "tests": 21,
       "collisions": 2
     },
     "un-mkd-Cyrl-Latn-1977": {
-      "tests": 8,
+      "tests": 13,
       "collisions": 0
     },
     "un-mon-Mong-Latn-general-2013": {
@@ -1166,7 +1908,7 @@
       "collisions": 1
     },
     "un-ori-Orya-Latn-1972": {
-      "tests": 14,
+      "tests": 18,
       "collisions": 3
     },
     "un-pan-Guru-Latn-1972": {
@@ -1174,12 +1916,12 @@
       "collisions": 0
     },
     "un-prs-Arab-Latn-1967": {
-      "tests": 14,
-      "collisions": 0
+      "tests": 15,
+      "collisions": 1
     },
     "un-rus-Cyrl-Latn-1987": {
-      "tests": 43,
-      "collisions": 0
+      "tests": 45,
+      "collisions": 1
     },
     "un-sin-Sinh-Latn-1972": {
       "tests": 13,
@@ -1232,6 +1974,10 @@
     "var-jpn-Hrkt-Latn-hepburn-1954": {
       "tests": 1,
       "collisions": 0
+    },
+    "var-jpn-Hrkt-Latn-komaba-2009": {
+      "tests": 37,
+      "collisions": 1
     },
     "var-kor-Hang-Hang-jamo": {
       "tests": 1,
