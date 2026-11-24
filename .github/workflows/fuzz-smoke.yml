@@ -6,6 +6,9 @@ on:
       - scripts/fuzz/**
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   smoke:
     name: Seeded differential-fuzz smoke (ruby + ts)
