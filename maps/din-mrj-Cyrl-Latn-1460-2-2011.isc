@@ -34,6 +34,71 @@ tests {
    "ä" ->  "ä"
    "б" ->  "b"
    "в" ->  "v"
+# Exhaustive per-row tests for din-mrj-Cyrl-Latn-1460-2-2011, generated from the source
+# document's table.
+# Source: DIN 1460-2:2011-45, Tabelle 1, language row 45 (Berg-Mari); held
+# source interscript-private-references/din/din-1460-2.pdf. Rows are the
+# language column's printed cells. The printed grid (pymupdf find_tables
+# re-extraction of the Tabelle pages, 2026-11-26) is authoritative for every
+# cell; the durable #242 mechanical extraction tools/din1460-2-table.json
+# (x-anchored text layer) supplies the position-number headers. Every
+# printed cell of this row was verified against rendered grid crops.
+# Supplementary columns 91-99 (this batch's extraction): the #242 extraction
+# stops at position 90; the printed grid's columns 91-99 are transcribed
+# here from the grid. Correction table (text layer -> print): position 96's
+# header is printed Cyrillic ya while the #242 artifact stores Latin 'ja'
+# (the lookalike-glyph defect documented in the odni batch-1 artifacts);
+# rows 25/62 position 94 print a-grave (à) where the text layer stores
+# a-dot-above (ȧ); the t/n-cedilla targets the grid text layer precomposes
+# (ņ/ţ) are transcribed decomposed (n + U+0327 / t + U+0327), the DIN
+# cedilla series whose other cells are decomposed in the text layer and
+# whose printed marks were visually verified as cedillas. Parenthesised
+# cells are DIN's optional-value notation, transcribed paren-stripped.
+# Findings (map-vs-source; rows present in this artifact but EXCLUDED from
+# the generated tests, never forced green; record for the maps-fix
+# pipeline): ҥ (position 48): printed 'ņ', map outputs 'n' — map rule
+# flattened the DIN cedilla series. Generated tests cover the 37 passing
+# rows of 38; the map's own hand tests are retained (duplicated froms are
+# the batch-2 convention).
+# Provenance artifact: scripts/row-sources/din-mrj-Cyrl-Latn-1460-2-2011.json (37 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-25); regenerate from the artifact, do not hand-edit.
+  "a" -> "a"
+  "ä" -> "ä"
+  "б" -> "b"
+  "в" -> "v"
+  "г" -> "g"
+  "д" -> "d"
+  "е" -> "e"
+  "ё" -> "ё"
+  "ж" -> "ž"
+  "з" -> "z"
+  "и" -> "i"
+  "й" -> "j"
+  "к" -> "k"
+  "л" -> "l"
+  "м" -> "m"
+  "н" -> "n"
+  "о" -> "o"
+  "ӧ" -> "ö"
+  "п" -> "p"
+  "р" -> "r"
+  "с" -> "s"
+  "т" -> "t"
+  "у" -> "u"
+  "ӱ" -> "ü"
+  "ф" -> "f"
+  "х" -> "h"
+  "ц" -> "c"
+  "ч" -> "č"
+  "ш" -> "š"
+  "щ" -> "šč"
+  "ъ" -> "\""
+  "ы" -> "y"
+  "ӹ" -> "ÿ"
+  "ь" -> "'"
+  "э" -> "ė"
+  "ю" -> "ju"
+  "я" -> "ja"
 }
 
 stage main {
@@ -74,6 +139,8 @@ stage main {
     sub "ӹ" "ÿ"
     sub "ь" "'"
     sub "э" "ė"
+    sub "ю" "ju"
+    sub "я" "ja"
   }
 }
 }
