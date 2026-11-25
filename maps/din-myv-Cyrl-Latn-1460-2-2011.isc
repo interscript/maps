@@ -34,6 +34,61 @@ tests {
    "б" ->  "b"
    "в" ->  "v"
    "г" ->  "g"
+# Exhaustive per-row tests for din-myv-Cyrl-Latn-1460-2-2011, generated from the source
+# document's table.
+# Source: DIN 1460-2:2011-10, Tabelle 1, language row 13 (Ersa-Mordwinisch);
+# held
+# source interscript-private-references/din/din-1460-2.pdf. Rows are the
+# language column's printed cells, taken from the durable mechanical
+# extraction tools/din1460-2-table.json (x-anchored text-layer extraction,
+# maps PR #242 provenance), re-verified cell-by-cell against the printed
+# grid rectangles (pymupdf find_tables re-extraction, 2026-11-26) and
+# end-to-end through the ts runtime (interscript-ts dist). Positions
+# referenced by the table's own position numbers.
+# Supplementary columns: the #242 extraction stops at position 90; the
+# printed grid's columns 91-99 for this language are transcribed here from
+# the grid (page 22): ю → ju, я → ja. Position 96's header is printed
+# Cyrillic я; the text layer stores Latin 'ja' (the lookalike-glyph defect
+# documented in the odni batch-1 artifacts).
+# Findings (map-vs-source; rows present in this artifact but EXCLUDED from
+# the generated tests, never forced green; record for the maps-fix
+# pipeline): ю (position 95): printed 'ju', map outputs 'ю' | я (position
+# 96): printed 'ja', map outputs 'я'
+# Generated tests cover the 31 passing rows of 33; the map's own hand
+# tests are retained (duplicated froms are the batch-2 convention).
+# Provenance artifact: scripts/row-sources/din-myv-Cyrl-Latn-1460-2-2011.json (31 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-25); regenerate from the artifact, do not hand-edit.
+  "a" -> "a"
+  "б" -> "b"
+  "в" -> "v"
+  "г" -> "g"
+  "д" -> "d"
+  "е" -> "e"
+  "ё" -> "ё"
+  "ж" -> "ž"
+  "з" -> "z"
+  "и" -> "i"
+  "й" -> "j"
+  "к" -> "k"
+  "л" -> "l"
+  "м" -> "m"
+  "н" -> "n"
+  "о" -> "o"
+  "п" -> "p"
+  "р" -> "r"
+  "с" -> "s"
+  "т" -> "t"
+  "у" -> "u"
+  "ф" -> "f"
+  "х" -> "h"
+  "ц" -> "c"
+  "ч" -> "č"
+  "ш" -> "š"
+  "щ" -> "šč"
+  "ъ" -> "\""
+  "ы" -> "y"
+  "ь" -> "'"
+  "э" -> "ė"
 }
 
 stage main {

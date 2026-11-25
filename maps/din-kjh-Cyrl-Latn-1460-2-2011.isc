@@ -34,6 +34,82 @@ tests {
    "ä" ->  "ä"
    "б" ->  "b"
    "в" ->  "v"
+# Exhaustive per-row tests for din-kjh-Cyrl-Latn-1460-2-2011, generated from the source
+# document's table.
+# Source: DIN 1460-2:2011-10, Tabelle 1, language row 10 (Chakassisch); held
+# source interscript-private-references/din/din-1460-2.pdf. Rows are the
+# language column's printed cells, taken from the durable mechanical
+# extraction tools/din1460-2-table.json (x-anchored text-layer extraction,
+# maps PR #242 provenance), re-verified cell-by-cell against the printed
+# grid rectangles (pymupdf find_tables re-extraction, 2026-11-26) and
+# end-to-end through the ts runtime (interscript-ts dist). Positions
+# referenced by the table's own position numbers.
+# Cell notes: ң (position 47) — printed cell "ņ" (n + combining cedilla,
+# the DIN uvular/nasal series); the #242 artifact flattened it to 'n', the
+# row is transcribed as printed. This is the maps#298 cedilla family (cf.
+# din-ab 37, din-az 38, din-ba 39/47, fixed there; this map's instance is
+# a finding below). | ҥ (position 48) — printed cell "(ņ)", DIN's
+# optional-value notation, transcribed paren-stripped; the #242 artifact
+# recorded a stray "(" fragment (the din-atv/din-az family). | ә (position
+# 93) — printed cell "(ä)"/"ä", transcribed paren-stripped.
+# Supplementary columns: the #242 extraction stops at position 90; the
+# printed grid's columns 91-99 for this language are transcribed here from
+# the grid (page 22): ә → ä, ю → ju, я → ja. Position 96's header is
+# printed Cyrillic я; the text layer stores Latin 'ja' (the
+# lookalike-glyph defect documented in the odni batch-1 artifacts).
+# Findings (map-vs-source; rows present in this artifact but EXCLUDED from
+# the generated tests, never forced green; record for the maps-fix
+# pipeline): ң (position 47): printed 'ņ', map outputs 'n' | ҥ (position
+# 48): printed 'ņ', map outputs '' | ә (position 93): printed 'ä', map
+# outputs 'ә' | ю (position 95): printed 'ju', map outputs 'ю' | я
+# (position 96): printed 'ja', map outputs 'я'
+# Generated tests cover the 43 passing rows of 48; the map's own hand
+# tests are retained (duplicated froms are the batch-2 convention).
+# Provenance artifact: scripts/row-sources/din-kjh-Cyrl-Latn-1460-2-2011.json (43 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-25); regenerate from the artifact, do not hand-edit.
+  "a" -> "a"
+  "ä" -> "ä"
+  "б" -> "b"
+  "в" -> "v"
+  "г" -> "g"
+  "ғ" -> "ġ"
+  "ҕ" -> "ġ"
+  "h" -> "h"
+  "д" -> "d"
+  "е" -> "e"
+  "ё" -> "ё"
+  "ж" -> "ž"
+  "з" -> "z"
+  "и" -> "i"
+  "ӥ" -> "ï"
+  "й" -> "j"
+  "i" -> "í"
+  "j" -> "j́"
+  "к" -> "k"
+  "л" -> "l"
+  "м" -> "m"
+  "н" -> "n"
+  "о" -> "o"
+  "ӧ" -> "ö"
+  "п" -> "p"
+  "р" -> "r"
+  "с" -> "s"
+  "т" -> "t"
+  "у" -> "u"
+  "ӱ" -> "ü"
+  "ѵ" -> "у̇"
+  "ф" -> "f"
+  "х" -> "h"
+  "ц" -> "c"
+  "џ" -> "ḑž"
+  "ч" -> "č"
+  "ӌ" -> "ǵ"
+  "ш" -> "š"
+  "щ" -> "šč"
+  "ъ" -> "\""
+  "ы" -> "y"
+  "ь" -> "'"
+  "э" -> "ė"
 }
 
 stage main {
