@@ -26,6 +26,25 @@ metadata {
     applied word-finally. Mid-word consonant sequences without vowel
     signs romanize with initial values (final values apply
     word-finally); syllabification follows standard Lao dictionaries."
+    note "WO20 coverage audit (maps#283, 2026-11-26): exhaustive per-row
+    tests generated from the held table. 21 map-vs-source findings are
+    recorded in the provenance artifact
+    scripts/row-sources/alalc-lao-Laoo-Latn-2012.json and excluded from
+    the generated tests, never forced green. Largest: ho hip (ຫ) has no
+    standalone rule at all - only the Note-5 silent clusters are encoded,
+    so ຫ before a vowel passes through (ຫາ -> ຫā, printed hā); the five
+    obsolete consonants (printed s/t/t/tsa/l, vernacular cells are pasted
+    bitmaps in the source PDF, identified SHA U+0EA8, DDA U+0E91, DHA
+    U+0E98, LLA U+0EAC shape-confirmed, SSA U+0EA9 uncertain - the glyph
+    skeleton reads PALI BHA) have no rules; seven printed vowel forms
+    (ເັ, ແັ, ົ, ັອ, ໍ, ັຽ, າຽ) and ເົາ are unencoded; value divergences:
+    map ເັຽ -> ia where print gives īa, and Note 4's ຽວ/ເັຽວ -> īeo
+    where the map gives īa+o; ອ bare outputs ʻ where the vowel-table
+    value is ǭ; ຼ passes through where Note 3 makes it silent (only ຫຼ
+    is encoded); ໆ is encoded ... where print gives the parenthetical
+    (syllable repeated); ຯລຯ -> la lacks a composite rule. The notes and
+    description text denying loan-only final application contradict the
+    encoded boundary rules, which apply them (matching print)."
   }
 }
 
@@ -40,6 +59,169 @@ tests {
    "\u0eab\u0ebc\u0eb2\u0e8d" ->  "lāi"
    "\u0ead\u0eb5\u0e81" ->  "ʻīk"
    "\u0e84\u0eb4\u0e94\u0eaa\u0eb0\u0e95\u0ebd\u0e99" ->  "khitsatīan"
+# Exhaustive per-row tests for alalc-lao-Laoo-Latn-2012, generated from the source
+# document's table.
+# Source: ALA-LC Lao Romanization Table, 2012 version, pp. 1-3; held source
+# interscript-private-references/alalc/alalc-lao.pdf. Extraction: PDF text
+# layer (clean Unicode), every printed row cross-checked against rendered
+# page images (200 dpi pages, 600-1400 dpi cell crops); the five
+# obsolete-consonant vernacular cells (p2) and one vowel-table variant cell
+# (p2 v8) carry no text-layer content in the source - they are pasted bitmap
+# images (11-17 px) - and were identified visually.
+# Correction table (text layer -> print): the five obsolete vernacular cells
+# are EMPTY in the text layer; identified by glyph skeleton against the
+# Unicode 18.0 Lao chart and a Noto Sans Lao rendering: s = LAO LETTER
+# SANSKRIT SHA U+0EA8, t = LAO LETTER PALI DDA U+0E91, t = LAO LETTER PALI
+# DHA U+0E98, l = LAO LETTER PALI LLA U+0EAC (all four shape-confirmed), tsa
+# = LAO LETTER SANSKRIT SSA U+0EA9 by set coherence (the printed values
+# {s,t,t,tsa,l} = {śa,ḍa,ḍha,ṣa,ḷa}; L2/17-106 Table 1) - but the printed
+# glyph's skeleton reads LAO LETTER PALI BHA U+0EA0 in modern fonts, so that
+# identification is recorded as uncertain; the same five bitmaps appear
+# unchanged in the LC 1997 scan (web.archive.org copy of loc.gov
+# lao-1997.pdf). The v8 first variant is U+0EB9 itself rendered in a second
+# font (no separate codepoint).
+# Findings (map-vs-source; transcribed rows EXCLUDED from the generated
+# tests, never forced green; record for the maps-fix pipeline):
+# 1. HO HIP ຫ (p1 row 25): printed initial value h has NO map rule; the map
+# encodes only the Note-5 silent clusters (ຫຍ ຫນ ຫມ ຫຣ ຫລ ຫວ ຫຼ) and ຫ
+# before a vowel passes through unchanged (ຫາ -> ຫā). H-initial syllables
+# keep the Lao letter in the output.
+# 2. The five obsolete consonants (p2, romanizations s/t/t/tsa/l): no map
+# rules at all; ຨາ -> ຨā etc. (pass-through). Identifications as in the
+# correction table.
+# 3. Printed vowel rows the map lacks (the map composes neighbours instead):
+# ເ◌ັ -> e (ກັ form composes kēa), ແ◌ັ -> æ (kǣa), ◌ົ -> o (ົ passes
+# through), ◌ັອ -> ǫ (composes kaǭ), ◌ໍ -> ǭ (ໍ passes through), ◌ັຽ -> ia
+# (composes kaຽ), ◌າຽ -> āi (ຽ passes through), ເ◌ົາ -> ao (the map's ົາ ->
+# ao rule covers only the ເ-less form ກົາ, not the printed ເກົາ).
+# 4. VALUE DIVERGENCE: printed ເ◌ັຽ -> īa; the map's ເັຽ rule outputs ia
+# (ເກັຽ -> kia).
+# 5. VALUE DIVERGENCE (Note 4): printed ◌ຽວ and ເ◌ັຽວ -> īeo; the map
+# outputs kīao / kiao (ຽ -> īa, word-final ວ -> o).
+# 6. ອ AS VOWEL (row v16): printed ◌ອ -> ǭ when not word-initial (Note 6);
+# the map's from "ອ" to "ʻ" before boundary rule outputs ʻ for the bare
+# letter. A stateless map cannot distinguish initial ອ (ʻ) from vowel ອ (ǭ);
+# mid-word ອ -> ǭ works.
+# 7. SPECIAL SYMBOLS: printed ໆ -> "(syllable repeated)" (a parenthetical
+# description, not a romanization); the map encodes ໆ -> "...", kept as the
+# existing encoding choice. Printed ຯ ລ ຯ -> la; the map composes "...l..."
+# (no composite rule).
+# 8. ຼ SUBSCRIPT LO LUT (Note 3): printed silent except after ຫ; the map has
+# only ຫຼ -> l; bare ຼ passes through (ຄຼິສຕຽນ khitsatīan unreproducible;
+# the map's hand test uses the ຼ-less spelling ຄິດສະຕຽນ).
+# 9. METADATA INCONSISTENCY: the map description and notes block state that
+# parenthesized (loan-only) final values "occur only in loans and keep the
+# initial value" / "are not applied word-finally", but the encoded boundary
+# rules DO apply them (ກາຂ -> kāk), matching the printed table. The rules
+# match print; the note text is stale.
+# Bookkeeping: 125 rows transcribed; the rows array carries the 99 generated
+# rows exactly (3 further passing rows duplicate the map's hand tests ຫຼາຍ
+# lāi, ຫຍ້າ nyā, ອີກ ʻīk and are retained there; 2 passing duplicates of
+# identical form are dropped, ກາ -> kā (row-1 initial = v2) and ໃກ -> kai
+# (v25); 21 rows are the findings above, excluded from generation).
+# Regenerating via scripts/gen-row-tests.mjs from this artifact reproduces
+# the embedded block byte-for-byte.
+# Provenance artifact: scripts/row-sources/alalc-lao-Laoo-Latn-2012.json (99 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-26); regenerate from the artifact, do not hand-edit.
+  "ກວ" -> "kūa"
+  "ກະ" -> "ka"
+  "ກັ" -> "ka"
+  "ກັຍ" -> "kai"
+  "ກັວ" -> "kua"
+  "ກາ" -> "kā"
+  "ກາກ" -> "kāk"
+  "ກາຂ" -> "kāk"
+  "ກາຄ" -> "kāk"
+  "ກາງ" -> "kāng"
+  "ກາຈ" -> "kāt"
+  "ກາຊ" -> "kāt"
+  "ກາຍ" -> "kāi"
+  "ກາດ" -> "kāt"
+  "ກາຕ" -> "kāt"
+  "ກາຖ" -> "kāt"
+  "ກາທ" -> "kāt"
+  "ການ" -> "kān"
+  "ກາບ" -> "kāp"
+  "ກາປ" -> "kāp"
+  "ກາຜ" -> "kāp"
+  "ກາຝ" -> "kāp"
+  "ກາພ" -> "kāp"
+  "ກາຟ" -> "kāp"
+  "ກາມ" -> "kām"
+  "ກາຣ" -> "kān"
+  "ກາລ" -> "kān"
+  "ກາສ" -> "kāt"
+  "ກາ່" -> "kā"
+  "ກາ້" -> "kā"
+  "ກາ໊" -> "kā"
+  "ກາ໋" -> "kā"
+  "ກິ" -> "ki"
+  "ກິວ" -> "kiu"
+  "ກີ" -> "kī"
+  "ກີວ" -> "kīu"
+  "ກຶ" -> "kư"
+  "ກື" -> "kư̄"
+  "ກຸ" -> "ku"
+  "ກູ" -> "kū"
+  "ກົວ" -> "kūa"
+  "ກົວະ" -> "kua"
+  "ກຽ" -> "kīa"
+  "ກໍາ" -> "kam"
+  "ຂາ" -> "khā"
+  "ຄາ" -> "khā"
+  "ງາ" -> "ngā"
+  "ຈາ" -> "chā"
+  "ຊາ" -> "sā"
+  "ຍາ" -> "nyā"
+  "ດາ" -> "dā"
+  "ດ້ວຍ" -> "dūai"
+  "ຕາ" -> "tā"
+  "ຖາ" -> "thā"
+  "ທາ" -> "thā"
+  "ນາ" -> "nā"
+  "ບາ" -> "bā"
+  "ປາ" -> "pā"
+  "ຜາ" -> "phā"
+  "ຝາ" -> "fā"
+  "ພາ" -> "phā"
+  "ຟາ" -> "fā"
+  "ມາ" -> "mā"
+  "ຢາ" -> "yā"
+  "ຣາ" -> "rā"
+  "ລາ" -> "lā"
+  "ວາ" -> "vā"
+  "ສາ" -> "sā"
+  "ຫນາ" -> "nā"
+  "ອາ" -> "ʻā"
+  "ຮາ" -> "hā"
+  "ຯ" -> "..."
+  "ເກ" -> "kē"
+  "ເກະ" -> "ke"
+  "ເກັຽະ" -> "kia"
+  "ເກາະ" -> "kǫ"
+  "ເກິ" -> "kœ"
+  "ເກິະ" -> "kœ"
+  "ເກີ" -> "kœ̄"
+  "ເກຶອ" -> "kưa"
+  "ເກຶອະ" -> "kưa"
+  "ເກືອ" -> "kư̄a"
+  "ແກ" -> "kǣ"
+  "ແກະ" -> "kæ"
+  "ໂກ" -> "kō"
+  "ໂກະ" -> "ko"
+  "ໃກ" -> "kai"
+  "ໄກ" -> "kai"
+  "໐" -> "0"
+  "໑" -> "1"
+  "໒" -> "2"
+  "໓" -> "3"
+  "໔" -> "4"
+  "໕" -> "5"
+  "໖" -> "6"
+  "໗" -> "7"
+  "໘" -> "8"
+  "໙" -> "9"
+  "ໜາ" -> "nā"
 }
 
 stage main {
