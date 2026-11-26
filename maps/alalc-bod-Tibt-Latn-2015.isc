@@ -38,6 +38,32 @@ metadata {
     p. 1, gives sha, sa, ha, a); the non-Tibetan letters ཛྷ ཥ ཌྷ (p. 2)
     are not encoded as standalone base consonants; tsheg is dropped
     rather than spaced or hyphenated (Punctuation 1, p. 3)."
+    note "WO20 coverage audit (maps#283, 2026-11-26): exhaustive per-row
+    tests generated from the held table. 13 map-vs-source finding groups
+    (12 rows) are recorded in the provenance artifact
+    scripts/row-sources/alalc-bod-Tibt-Latn-2015.json and excluded from
+    the generated tests, never forced green. Largest: the four standalone
+    rows ཤ ས ཧ ཨ print sha sa ha a but the map carries text-layer
+    concatenation artifacts (shaa saa haa aa), which also propagates into
+    their vowel-combination grid rules (36 rules: སོ -> sao, not the
+    printed so; ཧེ -> hae; ཤོ -> shao; ཨེ -> ae); the three Note 8-9
+    disambiguation stacks གཡ ཏས ནཡ are present in the map (gʹya tʹsa
+    nʹya) but unreachable at runtime - the stage applies its parallel
+    groups sequentially and the standalone-consonant group rewrites
+    ga/ya/ta/sa/na first (runtime gaya tasaa naya), so the now-encoded
+    claim of the notes does not hold; ཥ ཛྷ ཌྷ (printed ṣa dzha ḍha) are not
+    standalone-encoded (documented anomaly; subjoined grid members only);
+    Note 5's reversed i ྀ has no rule (print: same as i); Note 6's
+    reverse-d final shorthand -> gs is not encoded; the centered point -> space
+    and guillemets -> quotation marks rules of Punctuation 2-3 are absent;
+    the shad ། and other final marks pass through; the Punctuation 2
+    example (ʼBaʼ Bsod-bhas brtsams) and the Note 7 example
+    (shuddho`haṃ) are not letter-reproducible (final bare-alif འ,
+    capitalization, hyphen division, implicit-a suppression, the
+    ba-ra-tsa triple stack, ddhao composition, haa artifact); the table
+    cell for འ prints a curly apostrophe (U+2019) where Note 3, the gloss
+    and the map use the alif (U+02BC) - map form kept; and the map-only
+    བྷ -> bha rule has no printed row."
   }
 }
 
@@ -47,6 +73,155 @@ tests {
    "\u0f40\u0f90\u0f0b" ->  "kka"
    "\u0f40\u0f7a\u0f0b" ->  "ke"
    "\u0f40\u0f72\u0f42\u0f0b" ->  "kiga"
+# Exhaustive per-row tests for alalc-bod-Tibt-Latn-2015, generated from the source
+# document's table.
+# Source: ALA-LC Tibetan Romanization Table, 2015 version (earlier versions:
+# 2011, 1997), pp. 1-4; held source
+# interscript-private-references/alalc/alalc-tibetan.pdf (the duplicate
+# alalc-tibetan.pdf.pdf is byte-identical, same sha256). The table follows
+# the Wylie transliteration system (Wylie 1959) with diacritics for
+# non-Tibetan letters. Extraction: the PDF text layer is real Unicode text
+# for the 30 consonant cells, the 9 non-Tibetan letter cells, the 4 sign
+# cells (rjes su nga ro U+0F7E -> m-dot-below, sna ldan U+0F83 ->
+# m+candrabindu, rnam bcad U+0F7F -> h-dot-below, paluta U+0F85 -> spacing
+# grave), the notes, the numerals and the glosses; the 13 vowel-table cells,
+# one cluster cell, and three note/example stack heads are PUA garbles.
+# Every table row was cross-checked against rendered page images (300 dpi
+# pages, 600 dpi cell crops).
+# Correction table (text layer -> print): the 13 vowel cells are PUA -
+# U+F300 -> i-sign (U+0F72), U+F302 -> u (U+0F74), U+F303 -> e (U+0F7A),
+# U+F304 -> o (U+0F7C), U+F5FA -> ii (U+0F73), U+F5FB -> uu (U+0F75), U+F5FC
+# -> vocalic r (U+0F76), U+F5FD -> vocalic rr (U+0F77), U+F5FE -> vocalic l
+# (U+0F78), U+F5FF -> vocalic ll (U+0F79; the only cell printed without a
+# tsheg), U+F600 -> ai (U+0F7B), U+F602 -> au (U+0F7D), U+F5F9 -> a-chung
+# (U+0F71) - each visually confirmed at 600 dpi in its carrier form plus
+# tsheg; the t-sa cluster cell's letters are missing from the text layer
+# (bare tsheg only; print = ta+sa stacked); the n-ya cluster cell is PUA
+# U+F7AF (print = na+ya stacked); Note 7's example head (the sha-u-da-ddha
+# stack) is PUA U+F755; Note 8's counter-cell (ga+subjoined ya) is PUA
+# U+F360; the Punctuation 2 example's ba-ra-tsa stack is PUA U+F53F; the
+# table cell for the a-chung letter prints a curly apostrophe (U+2019) where
+# Note 3, the gloss and the map use the alif (U+02BC). Value codepoints
+# verified identical print vs map for every romanization (r+ring-below,
+# r+macron+ring, l+ring, l+ring+macron orders included).
+# Findings (map-vs-source; transcribed rows EXCLUDED from the generated
+# tests, never forced green; record for the maps-fix pipeline):
+# 1. STANDALONE ARTIFACTS (map-note-documented): the printed ཤ ས ཧ ཨ rows
+# are sha sa ha a; the map encodes shaa saa haa aa (text-layer concatenation
+# artifacts) - all four rows fail as printed.
+# 2. ARTIFACT PROPAGATION (MAJOR, systematic consequence of 1): the
+# combination grid's vowel rules for those 4 letters carry the artifact a -
+# 9 vowel signs each, 36 rules: e.g. སོ -> sao (printed so), ཧེ -> hae (he),
+# ཤོ -> shao (sho), ཨེ -> ae; the clean letters compose correctly (ཀེ -> ke,
+# ཀཱ -> kā).
+# 3. CLUSTER RULES UNREACHABLE (MAJOR): the three Note 8-9 disambiguation
+# stacks གཡ ཏས ནཡ are present verbatim in the map (gʹya tʹsa nʹya, modified
+# letter prime U+02B9) but never fire - the stage applies its parallel
+# groups sequentially and the standalone-consonant group rewrites
+# ga/ya/ta/sa/na first (runtime gaya tasaa naya); the map note's now-encoded
+# claim does not hold at runtime. All three printed rows fail.
+# 4. NON-TIBETAN STANDALONES (map-note-documented): ཥ ཛྷ ཌྷ (printed ṣa dzha
+# ḍha) are not encoded as standalone base consonants (they exist only as
+# subjoined grid members) and pass through - three rows fail.
+# 5. NOTE 5: the reversed i ྀ (U+0F80) and reversed ii ཱྀ (U+0F81) have no
+# rules; the print transcribes the reversed i the same as i.
+# 6. NOTE 6: the reverse-d syllable-final scribal shorthand (ཌ for གས -> gs)
+# is not encoded (contextual; no rule).
+# 7. PUNCTUATION 2: the centered point (katakana middle dot U+30FB)
+# indicating a space has no rule and leaks through.
+# 8. PUNCTUATION 3: the angle brackets (guillemets) -> quotation marks rule
+# has no map rules.
+# 9. FINAL MARKS: the shad ། (and other sentence marks) have no rules and
+# pass through unchanged; the print's example romanization omits them.
+# 10. PUNCTUATION 2 EXAMPLE (འབའ・བསོད་བྷས་བརྩམས། -> ʼBaʼ Bsod-bhas brtsams):
+# not reproducible - syllable-final འ is a bare alif (the map's standalone
+# rule gives ʼa), syllable-initial capitalization and gloss hyphen division
+# are caller-level, the implicit-a suppression in བསོད (bsod) is beyond the
+# row rules, the ba-ra-tsa triple stack has no rule (the grid covers
+# base+one subjoin; བ+ra -> bra fires, then the raw subjoined tsa passes
+# through), and the U+30FB and shad leak.
+# 11. NOTE 7 EXAMPLE (ཤུདྡྷོ྅ཧཾ -> shuddho`haṃ): composes as shau + ddhao +
+# grave + haa + m-dot-below - the ཤ+u grid rule carries the artifact a, the
+# ད+ddha grid rule keeps the final-member a and the following o-sign
+# composes standalone (ddhao, printed ddho), and the ཧ artifact gives haa.
+# 12. A-CHUNG ENCODING: the table cell prints a curly apostrophe (U+2019);
+# Note 3, the gloss and the map use the alif (U+02BC) - map form kept,
+# table/note inconsistency recorded.
+# 13. MINOR: the map-only བྷ -> bha rule has no printed table row.
+# Inventory notes: the printed l-rubble-l-long cell (U+0F79) is the only
+# vowel cell without a tsheg (transcription detail; the row passes); the ka
+# cell is exactly hand test 1 and retained there; Note 1 (internal
+# capitalization not followed) and Punctuation 1 (tsheg as hyphen/space; the
+# map drops it - anomaly recorded in the map) are caller-level or already
+# documented.
+# Bookkeeping: 73 printed rows transcribed; the rows array carries the 58
+# generated rows exactly; 12 rows are the findings above, excluded from
+# generation; 2 passing rows dropped as exact duplicates of the tsa/nya
+# consonant rows (the Note 9 letter-vs-stack demo cells; the stack sides of
+# the demo are the t-sa / n-ya cluster rows themselves); 1 printed row (the
+# ka cell) is the retained hand test 1. Regenerating via
+# scripts/gen-row-tests.mjs from this artifact reproduces the embedded block
+# byte-for-byte.
+# Provenance artifact: scripts/row-sources/alalc-bod-Tibt-Latn-2015.json (58 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-26); regenerate from the artifact, do not hand-edit.
+  "༠" -> "0"
+  "༡" -> "1"
+  "༢" -> "2"
+  "༣" -> "3"
+  "༤" -> "4"
+  "༥" -> "5"
+  "༦" -> "6"
+  "༧" -> "7"
+  "༨" -> "8"
+  "༩" -> "9"
+  "ཁ་" -> "kha"
+  "ག་" -> "ga"
+  "གྷ་" -> "gha"
+  "ང་" -> "nga"
+  "ཅ་" -> "ca"
+  "ཆ་" -> "cha"
+  "ཇ་" -> "ja"
+  "ཉ་" -> "nya"
+  "ཊ་" -> "ṭa"
+  "ཋ་" -> "ṭha"
+  "ཌ་" -> "ḍa"
+  "ཎ་" -> "ṇa"
+  "ཏ་" -> "ta"
+  "ཐ་" -> "tha"
+  "ད་" -> "da"
+  "དྷ་" -> "dha"
+  "ན་" -> "na"
+  "པ་" -> "pa"
+  "ཕ་" -> "pha"
+  "བ་" -> "ba"
+  "མ་" -> "ma"
+  "ཙ་" -> "tsa"
+  "ཚ་" -> "tsha"
+  "ཛ་" -> "dza"
+  "ཝ་" -> "wa"
+  "ཞ་" -> "zha"
+  "ཟ་" -> "za"
+  "འ་" -> "ʼa"
+  "ཡ་" -> "ya"
+  "ར་" -> "ra"
+  "ལ་" -> "la"
+  "ཱ་" -> "ā"
+  "ི་" -> "i"
+  "ཱི་" -> "ī"
+  "ུ་" -> "u"
+  "ཱུ་" -> "ū"
+  "ྲྀ་" -> "r̥"
+  "ཷ་" -> "r̥̄"
+  "ླྀ་" -> "l̥"
+  "ཹ" -> "l̥̄"
+  "ེ་" -> "e"
+  "ཻ་" -> "ai"
+  "ོ་" -> "o"
+  "ཽ་" -> "au"
+  "ཾ" -> "ṃ"
+  "ཿ" -> "ḥ"
+  "ྃ" -> "m̐"
+  "྅" -> "`"
 }
 
 stage main {
