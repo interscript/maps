@@ -29,6 +29,27 @@ metadata {
     form romanizes as pâ/pā unchanged. Robat (៌) = r; viriam (៍) = a
     non-combining ring above (U+02DA) word-finally; triisap (៎) = the
     alif; toandakhiat (៏) = the ayn."
+    note "WO20 coverage audit (maps#283, 2026-11-26): exhaustive per-row
+    tests generated from the held table. 19 map-vs-source finding groups
+    (23 rows) are recorded in the provenance artifact
+    scripts/row-sources/alalc-khm-Khmr-Latn-2013.json and excluded from
+    the generated tests, never forced green. Largest: the aa vowel ា
+    prints ā but the map outputs plain a (កា -> ka; ā survives only in
+    the Cាំ combos) - which also loses the macron in the Note 3 ligature
+    (បា -> pa, printed pā) and the Note 2 kaññā example; ឹ prints ẏ
+    (U+1E8F) where the map encodes y-grave ỳ (U+1EF3) - inconsistent
+    with the map's own ឿ rule, which does use ẏ; ឿ prints ẏa and the map
+    truncates to ẏ; nikahit prints ṃ (U+1E43) and the map encodes plain
+    m; ោះ prints oaḥ (U+1E25) and the map outputs koah with plain h,
+    inconsistent with its own aḥ/iḥ/uḥ/eḥ; ឪ prints ýu, map yu; the អ
+    row prints ‛ ʹ (ayn + soft sign) and the map encodes bare ‛ plus
+    អ៊ -> ʹʹ (double prime), inconsistent with its own អុី -> ‛ʹī; the
+    dot-above mark ៱ (U+17F1) has no rule; ្ឡ is encoded as a subscript
+    though the print gives ឡ none (-); X -> hyphen and the ៙ ៚
+    omission rules of Note 6 are absent; and the Note 1/2/5 example
+    words (krakhvák, ñj-glossed ញ្ច, kaññā, ksatriy˚, cāḥʼ, ‛ātmăn˙)
+    are not letter-reproducible from the row rules (the ñj example is
+    internally contradictory: glyph reads ញ្ច, gloss names ញ្ជ's value)."
   }
 }
 
@@ -43,6 +64,240 @@ tests {
    "\u1798\u17bb\u1793" ->  "mun"
    "\u1794\u17bb\u17b8" ->  "p˝ī"
    "\u179f\u17bb\u17b8" ->  "sʹī"
+# Exhaustive per-row tests for alalc-khm-Khmr-Latn-2013, generated from the source
+# document's table.
+# Source: ALA-LC Khmer Romanization Table, 2013 version (earlier versions:
+# October 2012, February 2012, 1997), pp. 1-4; held source
+# interscript-private-references/alalc/alalc-khmer.pdf (the duplicate
+# alalc-khmer.pdf.pdf is byte-identical, same sha256). Extraction: the PDF
+# text layer is real Unicode text for the Latin romanization column
+# (authoritative codepoints dumped per line), the consonant full forms, the
+# diacritics-table marks, and the notes' Khmer marks and signs; the
+# consonant SUBSCRIPT cells and the dependent table's two-part-vowel cells
+# are shape-font lookalikes / PUA garbles. Every printed row was
+# cross-checked against rendered page images (300 dpi pages, 600-900 dpi
+# cell crops, 900 dpi re-crops for the ambiguous note-example clusters).
+# Correction table (text layer -> print): consonant subscript cells carry
+# Latin-extended lookalikes (U+017E, U+017F, U+0180, ... plus control-range
+# bytes) -> real coeng+consonant clusters, identified visually; dependent
+# two-part vowel cells carry PUA U+F152 -> ោ, U+F153 -> ៅ, U+F155 -> ើ,
+# U+021F (ȟ) -> ឿ, U+0222 (Ȣ) -> ៀ; note-example garbles: ƙ = ្រ, ƞ = ្ស, Ɨ
+# = ្ម, ƛ/ƴ = ្វ/្ហ context-dependent, Ƹ = ច-with-vowel ligature, ȥ = ញ, ƃ =
+# ្ច (shape-verified against the ច table cell), Ȧ = ្ញ, ƈ = ញ written as its
+# own subscript with full-form lower element; the diacritics table's marks
+# extract as real codepoints, the dot-above row's mark being ៱ = U+17F1
+# KHMER SYMBOL LEK ATTAK MUOY; the dependent table's leading mark (U+02B9
+# before every value, with row 1 showing open+close quotes around bare 'a')
+# is list-quoting typography, not romanization (as the map description
+# already records).
+# Findings (map-vs-source; transcribed rows EXCLUDED from the generated
+# tests, never forced green; record for the maps-fix pipeline):
+# 1. AA VOWEL (MAJOR): printed ◌ា = ā; the map's ា rules output plain a - កា
+# -> ka (not kā), and ā survives only inside the Cាំ combos. Note 3's បា
+# ligature -> pa (printed pā); Note 2's កញ្ញា (kaññā) example -> kañña; Note
+# 5's អាត្ម័ន example loses the ā as well.
+# 2. ឹ Y-DOT-ABOVE: printed ẏ (U+1E8F); the map encodes ỳ (U+1EF3, y-GRAVE)
+# in the bare ឹ rule, CV (កឹ -> kỳ), ឹះ (kỳḥ) and the whole Note-4
+# form-change family (ងុឹ -> ng˝ỳ ...). The map's own ឿ rule uses ẏ (U+1E8F)
+# - the encoding is internally inconsistent.
+# 3. ឿ TRUNCATED: printed ẏa; the map outputs ẏ (bare ឿ and កឿ -> kẏ,
+# missing the final a).
+# 4. NIKAHIT: printed uṃ/aṃ/āṃ with ṃ (U+1E43, m-dot-below); the map encodes
+# plain m in every nikahit row (ំ -> am, កំ -> kam, កាំ -> kām, កុំ -> kum).
+# 5. oaḥ: printed េ◌ោះ = oaḥ with ḥ (U+1E25); the map's ោះ rule outputs
+# plain h (កោះ -> koah), inconsistent with the map's own aḥ/iḥ/uḥ/eḥ rules
+# which use proper ḥ.
+# 6. ឪ: printed ýu (U+00FD, y-acute); the map encodes yu.
+# 7. អ SERIES: the print's អ row romanization cell = ‛ ʹ "(ayn + soft sign)"
+# (U+201B U+02B9) - bare-value reading ambiguous (the cell may demo the ៊-ed
+# form); the map encodes bare អ -> ‛ and អ៊ -> ʹʹ (double prime, no ‛), the
+# latter inconsistent with both the print and the map's own Note-4
+# form-change rule អុី -> ‛ʹī.
+# 8. ៱ (dot-above row, U+17F1 KHMER SYMBOL LEK ATTAK MUOY; romanization ˙
+# U+02D9 per Note 5): no map rule at all; passes through.
+# 9. ្ឡ COENG: the map's 34x34 coeng table encodes ឡ as a subscript (e.g.
+# ក្ឡ -> kḷ) though the print gives ឡ no subscript form ("-"). The អ coeng
+# omission matches the print (whose អ subscript cell demos the ៊-mark
+# alternative form, not a subscript).
+# 10. ៗ: print "romanized by repeating the preceding word or phrase"; the
+# map placeholder "(repeat)" is kept as the existing encoding choice (lao
+# round F7 class).
+# 11. NOTE-6 SIGNS with no rules: X is romanized as a hyphen (-) - passes
+# through as X; ៙ and ៚ are "omitted in romanization" - pass through
+# unchanged.
+# 12. NOTE-1 EXAMPLE ក្រកហ្វក់ (krakhvák): not letter-reproducible -
+# letter-sequential composition gives krkahvák; the print places the
+# inherent-vowel a after the subscript cluster (word-level rendering, not
+# derivable from the row rules).
+# 13. NOTE-2 EXAMPLE 1 is internally contradictory: the printed cluster's
+# subscript shape-identifies as ្ច (matches the ច table cell; the ជ
+# subscript's double-coil shape differs; the text layer shares the U+0183
+# garble) so the glyph reads ñc, while the parenthetical gloss reads (ñj) =
+# the ញ្ជ value. The map composes both correctly (ញ្ច -> ñc, ញ្ជ -> ñj);
+# neither reproduces the gloss from the printed glyph.
+# 14. NOTE-5 EXAMPLE ក្សត្រីយ៍ (ksatriy˚): not letter-reproducible -
+# composition gives kstrīya˚ (the print reads i where letter composition
+# gives ī, and places an inherent a that composition does not produce).
+# 15. NOTE-5 EXAMPLE ចា៎ះ (cāḥʼ): the C+ា+ះ combination has no map rule;
+# character-order composition gives caʼaḥ (the print, per Note 5, places the
+# kakabat's ʼ word-finally after the last letter).
+# 16. NOTE-5 EXAMPLE អាត្ម័ន (‛ātmăn˙): runtime gives ‛atmăn; the print's
+# trailing ˙ has no source sign in the word (print anomaly).
+# 17. HARD/SOFT MARK ENCODING: the diacritics table prints ″ (U+2033) / ′
+# (U+2032); Note 4 itself prints ˝ (U+02DD) / ʹ (U+02B9). The map follows
+# Note 4 - kept, table/note inconsistency recorded.
+# 18. ALIF ENCODING: the diacritics table prints ’ (U+2019); Note 5 prints ʼ
+# (U+02BC). The map follows Note 5 - kept, recorded.
+# 19. NOTE-9 FORM យ + subscript ឱ (rendered ឱ + subscript យ, "oi, give";
+# alternative spelling with ឲ): no map rule (coeng+ឱ unencoded) - passes
+# through. ឲ has no standalone table row ("never appears alone" per the
+# print) - correctly absent.
+# Inventory notes: the ʻAksar Mul script columns (a separate script shown
+# for every consonant row) share the romanization column and are not
+# encodable in a Khmr->Latn map; the printed ◌◌់ and ◌ា◌់ rows are
+# instantiated on ថ/ឆ (ថ់ -> áth, ឆាក់ -> châk) because the map's hand tests
+# already carry the ក-instantiations (កក់ kák, កាក់ kâk); the Note-4
+# examples បុី p˝ī, សុី sʹī, មុន mun and the p4 examples កក kak, មក mak, សក
+# sak are likewise the retained hand tests.
+# Bookkeeping: 155 rows transcribed; the rows array carries the 132
+# generated rows exactly (0 passing rows dropped as duplicates; 23 rows are
+# the findings above, excluded from generation). Regenerating via
+# scripts/gen-row-tests.mjs from this artifact reproduces the embedded block
+# byte-for-byte.
+# Provenance artifact: scripts/row-sources/alalc-khm-Khmr-Latn-2013.json (132 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-26); regenerate from the artifact, do not hand-edit.
+  "ក" -> "k"
+  "កិ" -> "ki"
+  "កិះ" -> "kiḥ"
+  "កី" -> "kī"
+  "កឺ" -> "kȳ"
+  "កុ" -> "ku"
+  "កុះ" -> "kuḥ"
+  "កូ" -> "kū"
+  "កួ" -> "kua"
+  "កើ" -> "koe"
+  "កៀ" -> "kia"
+  "កេ" -> "ke"
+  "កេះ" -> "keḥ"
+  "កែ" -> "kae"
+  "កៃ" -> "kai"
+  "កោ" -> "ko"
+  "កៅ" -> "kau"
+  "កះ" -> "kaḥ"
+  "ក្ក" -> "kk"
+  "ក្ខ" -> "kkh"
+  "ក្គ" -> "kg"
+  "ក្ឃ" -> "kgh"
+  "ក្ង" -> "kng"
+  "ក្ច" -> "kc"
+  "ក្ឆ" -> "kch"
+  "ក្ជ" -> "kj"
+  "ក្ឈ" -> "kjh"
+  "ក្ញ" -> "kñ"
+  "ក្ដ" -> "kṭ"
+  "ក្ឋ" -> "kṭh"
+  "ក្ឌ" -> "kḍ"
+  "ក្ឍ" -> "kḍh"
+  "ក្ណ" -> "kṇ"
+  "ក្ត" -> "kt"
+  "ក្ថ" -> "kth"
+  "ក្ទ" -> "kd"
+  "ក្ធ" -> "kdh"
+  "ក្ន" -> "kn"
+  "ក្ប" -> "kp"
+  "ក្ផ" -> "kph"
+  "ក្ព" -> "kb"
+  "ក្ភ" -> "kbh"
+  "ក្ម" -> "km"
+  "ក្យ" -> "ky"
+  "ក្រ" -> "kr"
+  "ក្ល" -> "kl"
+  "ក្វ" -> "kv"
+  "ក្ឝ" -> "kś"
+  "ក្ឞ" -> "kṣ"
+  "ក្ស" -> "ks"
+  "ក្ហ" -> "kh"
+  "ខ" -> "kh"
+  "ខ្ញ" -> "khñ"
+  "គ" -> "g"
+  "ឃ" -> "gh"
+  "ង" -> "ng"
+  "ង៉" -> "ng˝"
+  "ច" -> "c"
+  "ឆ" -> "ch"
+  "ឆាក់" -> "châk"
+  "ជ" -> "j"
+  "ឈ" -> "jh"
+  "ញ" -> "ñ"
+  "ញ៉" -> "ñ˝"
+  "ដ" -> "ṭ"
+  "ដ៏" -> "ṭaʻ"
+  "ឋ" -> "ṭh"
+  "ឌ" -> "ḍ"
+  "ឍ" -> "ḍh"
+  "ណ" -> "ṇ"
+  "ត" -> "t"
+  "ថ" -> "th"
+  "ថ់" -> "áth"
+  "ទ" -> "d"
+  "ធ" -> "dh"
+  "ន" -> "n"
+  "ប" -> "p"
+  "ប៉" -> "p˝"
+  "ប៊" -> "pʹ"
+  "ផ" -> "ph"
+  "ព" -> "b"
+  "ភ" -> "bh"
+  "ម" -> "m"
+  "ម៉" -> "m˝"
+  "យ" -> "y"
+  "យ៉" -> "y˝"
+  "រ" -> "r"
+  "រ៉" -> "r˝"
+  "ល" -> "l"
+  "វ" -> "v"
+  "វ៉" -> "v˝"
+  "ឝ" -> "ś"
+  "ឞ" -> "ṣ"
+  "ស" -> "s"
+  "ស៊" -> "sʹ"
+  "ហ" -> "h"
+  "ហ៊" -> "hʹ"
+  "ឡ" -> "ḷ"
+  "ឥ" -> "i"
+  "ឦ" -> "ī"
+  "ឧ" -> "u"
+  "ឩ" -> "ū"
+  "ឫ" -> "ṛ"
+  "ឬ" -> "ṝ"
+  "ឭ" -> "ḷ"
+  "ឮ" -> "ḹ"
+  "ឯ" -> "ae"
+  "ឰ" -> "ai"
+  "ឱ" -> "o"
+  "ឳ" -> "au"
+  "ៈ" -> "à"
+  "៌" -> "r"
+  "៍" -> "˚"
+  "៎" -> "ʼ"
+  "៏" -> "ʻ"
+  "័" -> "ă"
+  "។" -> "."
+  "។ប។" -> ".p."
+  "។ល។" -> ".l."
+  "៕" -> "."
+  "៖" -> ":"
+  "ៗ" -> "(repeat)"
+  "០" -> "0"
+  "១" -> "1"
+  "២" -> "2"
+  "៣" -> "3"
+  "៤" -> "4"
+  "៥" -> "5"
+  "៦" -> "6"
+  "៧" -> "7"
+  "៨" -> "8"
+  "៩" -> "9"
 }
 
 stage main {
