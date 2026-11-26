@@ -33,6 +33,22 @@ metadata {
     medial table's example, lvhā its lvha with the aa sign, and
     upusʻ the word-division example ဥပုသ် (the earlier test
     spellings ကြဝာ, လွီဗှာ and ဥပုစ် were transcription slips)."
+    note "WO20 coverage audit (maps#283, 2026-11-26): exhaustive per-row
+    tests generated from the held table. 8 map-vs-source finding groups
+    (24 rows) are recorded in the provenance artifact
+    scripts/row-sources/alalc-mya-Mymr-Latn-2011.json and excluded from
+    the generated tests, never forced green. Largest: the map keys the
+    whole jha family on Devanagari झ U+091D instead of the Burmese
+    letter ဈ U+1008, so bare ဈ and all its medial/vowel inputs pass
+    through; six consonants (ည ဋ ဌ ဍ ဎ အ) have no rules at all; the ai
+    vowel ဲ has no rules; the oʻ alt spelling ေCါ် is missing while
+    ေCာ် is present; the C + U+1039 conjunct virama rules fire
+    internally (ကမ္ဘာ -> kamʻbhā, print kambhā) where the table
+    reserves ʻ for the asat U+103A case; ေ-lead vowel combos compose
+    raw ေ plus CV plus raw ် (ေကာ -> ေkā); the r-v-h medial stack ြွှ is
+    not encoded (only y-v-h ျွှ); and syllable capitalization with word
+    division is caller-level, so the table's name examples compose
+    lower-case unspaced."
   }
 }
 
@@ -43,6 +59,136 @@ tests {
    "\u1015\u102d\u102f\u1037" ->  "puiʹ"
    "\u1015\u102d\u102f\u1038" ->  "puiʺ"
    "\u1025\u1015\u102f\u101e\u103a" ->  "upusʻ"
+# Exhaustive per-row tests for alalc-mya-Mymr-Latn-2011, generated from the source
+# document's table.
+# Source: ALA-LC Burmese Romanization Table, 2011 version, pp. 1-5; held
+# source interscript-private-references/alalc/alalc-burmese.pdf. Extraction:
+# the PDF text layer is real Burmese and Latin for the p1 consonant and
+# vowel tables, the p2 medial table, the p3 finals/tone/punctuation rows,
+# and the p4 numerals and abbreviation signs; replacement-character garbles
+# affect the p2 medial-example stack, the p3 conjunct examples, and the p5
+# example lines - all resolved visually against rendered page crops (600
+# dpi). The eight p3 conjunct-modified cells are shape-font renderings with
+# no text-layer reading; per the map description they are visual-only and
+# are not encodable rows, so they are not enumerated. Print verification
+# (codepoints plus crops): 34 consonant rows with the inherent a of Note 2,
+# the dependent vowel rows with their variant forms (the dotted ု/ူ/ို cells
+# are font variants of U+102F/U+1030, no separate codepoints), independent
+# vowels, medials in the order y-or-r - v - h, finals (asat ʻ, anusvara ṃ),
+# tone marks ʹ (U+02B9) and ʺ (U+02BA), punctuation, numerals, and the four
+# abbreviation signs.
+# Correction table (text layer -> print): the p2 medial-example words (myha,
+# krva, lvha, mrvhaṅʻʺ), the p3 conjunct examples (takkasuilʻ, tiracchānʻ,
+# kambhā), and the p5 example lines carry replacement characters in the text
+# layer and were transcribed from the rendered pages; the p1 tables extract
+# clean (the အ row prints ʼa with U+2019 straight from the text layer); the
+# tone marks print ʹ (U+02B9, dot below) and ʺ (U+02BA, visarga).
+# Findings (map-vs-source; transcribed rows EXCLUDED from the generated
+# tests, never forced green; record for the maps-fix pipeline):
+# 1. WRONG BASE CHARACTER (MAJOR): the map keys the whole jha family (93
+# rules) on DEVANAGARI झ U+091D instead of the Burmese letter ဈ U+1008 -
+# bare ဈ and every ဈ-medial/vowel input passes through (1 row).
+# 2. SIX CONSONANTS WITH NO RULES: ည (print ñña), ဋ (ṭa), ဌ (ṭha), ဍ (ḍa), ဎ
+# (ḍha), and အ (print ʼa) have no map rules at all and pass through
+# unchanged (6 rows).
+# 3. ဲ ai: the printed vowel row has no map rules (1 row).
+# 4. ေCါ ALT FORM MISSING: the printed oʻ alternative spelling ေCါ် (with ါ)
+# is absent from the map while ေCာ် is present - asymmetric; both forms
+# additionally fail via finding 6.
+# 5. CONJUNCT VIRAMA OVER-APPLICATION: the map's C + U+1039 -> Cʻ rules fire
+# on INTERNAL conjunct viramas - ကမ္ဘာ -> kamʻbhā (print kambhā), တက္ကသိုလ်
+# -> takʻkasuilʻ (print takkasuilʻ), တိရစ္ဆာန် -> tiracʻchānʻ (print
+# tiracchānʻ); the table's ʻ belongs to the asat ◌် (U+103A) / Note 2(b)
+# case only (3 rows).
+# 6. ေ-LEAD VOWEL COMBOS: runtime composes raw ေ + CV + raw ် (ေကာ -> ေkā;
+# ေကာ် -> ေkā်) - a block-interaction defect class; it also blocks the
+# printed o rows ေCာ/ေCါ/ေCာ်/ေCါ် and the example words koʻmītī and
+# koʻpranʻʹ, and two p5 example lines (8 rows).
+# 7. MEDIAL STACK r-v-h: the map encodes the y-v-h stack (ျွှ) but not the
+# r-v-h stack (ြွှ absent for every consonant); the p2 fourth-order example
+# မြွှင်း composes as mrvaှ plus a raw ှ (1 row).
+# 8. CAPITALIZATION AND WORD DIVISION ARE CALLER-LEVEL: the table's
+# Burmese-name examples print syllable capitals and word spaces (Moṅʻ Moṅʻ
+# Cuiʺ Taṅʻʹ and two more names, plus the p5 line Duṭṭhagāmaṇi maṅʻʺ krīʺ
+# vatthu); runtime composes lower-case unspaced (4 rows; the p5 lines
+# additionally hit findings 2 and 6).
+# Bookkeeping: 93 rows transcribed; the rows array carries the 69 generated
+# rows exactly (0 passing rows dropped as duplicates; 24 rows are the
+# findings above, excluded from generation). The tone rows are instantiated
+# on ကို because the map's hand tests already carry the print's own
+# ပို့/ပိုး examples; regenerating via scripts/gen-row-tests.mjs from this
+# artifact reproduces the embedded block byte-for-byte.
+# Provenance artifact: scripts/row-sources/alalc-mya-Mymr-Latn-2011.json (69 rows).
+# generated-by: maps/scripts/gen-row-tests.mjs (2026-11-26); regenerate from the artifact, do not hand-edit.
+  "က" -> "ka"
+  "ကါ" -> "kā"
+  "ကာ" -> "kā"
+  "ကိ" -> "ki"
+  "ကို" -> "kui"
+  "ကို့" -> "kuiʹ"
+  "ကိုး" -> "kuiʺ"
+  "ကီ" -> "kī"
+  "ကု" -> "ku"
+  "ကူ" -> "kū"
+  "ကံ" -> "kaṃ"
+  "က်" -> "kʻ"
+  "ကျ" -> "kya"
+  "ကြ" -> "kra"
+  "ကွ" -> "kva"
+  "ကှ" -> "kha"
+  "ခ" -> "kha"
+  "ဂ" -> "ga"
+  "ဃ" -> "gha"
+  "င" -> "ṅa"
+  "စ" -> "ca"
+  "ဆ" -> "cha"
+  "ဇ" -> "ja"
+  "ဉ" -> "ña"
+  "ဏ" -> "ṇa"
+  "တ" -> "ta"
+  "ထ" -> "tha"
+  "ဒ" -> "da"
+  "ဓ" -> "dha"
+  "န" -> "na"
+  "ပ" -> "pa"
+  "ပန်းကန်" -> "panʻʺkanʻ"
+  "ဖ" -> "pha"
+  "ဗ" -> "ba"
+  "ဘ" -> "bha"
+  "မ" -> "ma"
+  "မျှ" -> "myha"
+  "ယ" -> "ya"
+  "ရ" -> "ra"
+  "လ" -> "la"
+  "လွှ" -> "lvha"
+  "ဝ" -> "va"
+  "သ" -> "sa"
+  "ဟ" -> "ha"
+  "ဠ" -> "ḷa"
+  "ဣ" -> "i"
+  "ဤ" -> "ī"
+  "ဥ" -> "u"
+  "ဦ" -> "ū"
+  "ဧ" -> "e"
+  "ဩ" -> "o"
+  "ဪ" -> "oʻ"
+  "ေက" -> "ke"
+  "၀" -> "0"
+  "၁" -> "1"
+  "၂" -> "2"
+  "၃" -> "3"
+  "၄" -> "4"
+  "၅" -> "5"
+  "၆" -> "6"
+  "၇" -> "7"
+  "၈" -> "8"
+  "၉" -> "9"
+  "၊" -> ","
+  "။" -> "."
+  "၌" -> "n*"
+  "၍" -> "r*"
+  "၎" -> "l*"
+  "၏" -> "e*"
 }
 
 stage main {
